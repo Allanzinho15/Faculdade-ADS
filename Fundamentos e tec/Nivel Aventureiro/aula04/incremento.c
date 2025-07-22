@@ -30,7 +30,7 @@ int main(){
     //mostrando como funciona o Pós-incremento
     //Pós-incremento
     //resultado = recebe Numero e depois Numero recebe mais 1 
-    //ex: Numero = 1, resultado recebe Numero, agora resultado  passa a valer 1, e só depois que resultado recebe Numero que Numero vai receber mais 1 e vai passa a valer 2  
+    //ex: Numero = 1, resultado recebe Numero, agora resultado  passa a valer 1, e só depois que resultado recebe Numero que o Numero vai receber mais 1 e vai passa a valer 2  
     resultado = Numero++;
     printf("Apos Pós-incremento - Numeor 1: %d - resultado:%d\n", Numero, resultado);
 
