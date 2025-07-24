@@ -1,6 +1,7 @@
 #include <stdio.h>
 
 int main(){
+    //variavel onde são armazenadas os dados da carta
     char estado_A[5], estado_B[5];
     char codigo_A[4], codigo_B[4];
     char cidade_A[35], cidade_B[35];
@@ -10,7 +11,8 @@ int main(){
     int numero_pontos_turisticos_A, numero_pontos_turisticos_B;
     float Densidade_Populaciona_A, Densidade_Populaciona_B ;
     float PIB_per_Capita_A, PIB_per_Capita_B;
-
+    
+    //aqui usamos printf para pedir os dados da carta, e scanf para coletar os dados, carta1 
     printf("Carta 1:\n");
     printf("Estado: ");
     scanf(" %s", estado_A);
@@ -32,10 +34,13 @@ int main(){
 
     printf("Número de Pontos Turísticos: ");
     scanf("%d", &numero_pontos_turisticos_A);
-
+    
+    /*aqui é feita os calculo da divisão de pulacão e aréa para ser exibido em densidade populacional 
+    e também a multiplicação de (pib X 1000000000) e depois a divisão por população, é feita a multiplicação do pib primeiro para que seja mostrado em bilhoes, carta1*/
     Densidade_Populaciona_A = (float )populacao_A / area_A;
     PIB_per_Capita_A = (float) (pib_A * 1000000000) / populacao_A;
 
+    //aqui usamos printf para pedir os dados da carta, e scanf para coletar os dados, carta2
     printf("Carta 2:\n");
     printf("Estado: ");
     scanf(" %s", estado_B);
@@ -58,11 +63,13 @@ int main(){
     printf("Número de Pontos Turísticos:");
     scanf("%d", &numero_pontos_turisticos_B);
 
+    /*aqui é feita os calculo da divisão de pulacão e aréa para ser exibido em densidade populacional 
+    e também a multiplicação de (pib X 1000000000) e depois a divisão por população, é feita a multiplicação do pib primeiro para que seja mostrado em bilhoes, carta2*/
     Densidade_Populaciona_B = (float )populacao_B / area_B;
     PIB_per_Capita_B = (float)(pib_B * 1000000000)/ populacao_B;
 
     
-
+    //aqui utilizamos printf para exibe os dados da carta1 e carta2
     printf("Carta 1:\n");
     printf("Estado: %s\n",estado_A);
     printf("Código da Carta: %s\n", codigo_A);
