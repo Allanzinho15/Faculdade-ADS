@@ -116,7 +116,7 @@ int main(){
     scanf("%d", &opcao1);
     printf("\n\n");
 
-    //aqui é onde a comparação das cartas acontece, usanmos o switch e o if-else, ó switch vai verificar qual carta seja comparada e o if-else é quem compara as cartas 
+    //switch é onde escolhemos o atributo que vai ser comparada 
     switch (opcao1){
     case 1:
         printf("Você Escolheu Opcão População\n");
@@ -172,7 +172,7 @@ int main(){
     scanf("%d", &opcao2);
     printf("\n\n");
 
-
+    //esse if-else verifica se você você escolheu os mesmo atributo e verifaca também o segundo atributo que você escolheu, usando condiçoes aninhadas  
     if (opcao1 == opcao2){
         printf("Vocé escolheu o mesmo atributo!\n");
 
@@ -222,7 +222,7 @@ int main(){
 
 
     printf("\n\n");
-
+    //if-else verifica o resultado dos atributo, se ganhou perdeu ou empatou 
     if (resultado1 && resultado2){
         printf("Parabéns, você Ganhou!\n");
 
@@ -231,7 +231,7 @@ int main(){
     }else{
         printf("Infelizmente, você Perdeu!\n");
     }
-    
+
     }
     return 0;
 
