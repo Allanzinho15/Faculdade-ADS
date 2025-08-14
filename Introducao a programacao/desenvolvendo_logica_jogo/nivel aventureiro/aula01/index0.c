@@ -1,11 +1,14 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
     int a = 10;
-    if (!(a > 0)){
+    if (!(a > 0))
+    {
         printf("A variável é negativa\n");
-    }else {
+    }
+    else
+    {
         printf("A variável é positiva.");
     }
-    
 }

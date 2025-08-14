@@ -1,11 +1,15 @@
 #include <stdio.h>
 
-int main() {
+int main()
+{
   int estoque = 3;
 
-  if (estoque < 5) {
+  if (estoque < 5)
+  {
     printf("Estoque baixo\n");
-  } else {
+  }
+  else
+  {
     printf("Estoque adequado\n");
   }
 

@@ -1,7 +1,7 @@
 #include <stdio.h>
 /*Estrutura "while"
 
-*executa repetidamente 
+*executa repetidamente
 *depende de uma condião verdadeira para funciona
 *termina quando a condição se torna falsa
 ____________________________________________________________________________
@@ -9,7 +9,7 @@ ____________________________________________________________________________
 *estrutura "while"
 
 *estrutura:
-*nome da estrutura 
+*nome da estrutura
 *(condição)
 *{código}
 
@@ -30,9 +30,9 @@ como previnir?
 ________________________________________________________________________
 
 estrutura "while"
-importância 
+importância
 
-*permite execução repetitiva 
+*permite execução repetitiva
 *fundamental para qualquer programador
 *controle sobre a execução do código
 *criar programas eficientes e robusto
@@ -43,16 +43,17 @@ dicas
 
 __________________________________________________________________________
 */
-int main(){
+int main()
+{
      int i = 1;
 
-     while (i <= 5){
+     while (i <= 5)
+     {
 
           printf("%d\n", i);
-          
+
           i++;
      }
-     
 
      return 0;
 }

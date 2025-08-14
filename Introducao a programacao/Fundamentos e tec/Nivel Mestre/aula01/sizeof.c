@@ -1,7 +1,8 @@
 #include <stdio.h>
 
-int main(){
-    
+int main()
+{
+
     printf("Taman de int: %lu bytes\n", sizeof(int));
     printf("Taman de long int: %lu bytes\n", sizeof(long int));
     printf("Taman de long long int: %lu bytes\n", sizeof(long long int));

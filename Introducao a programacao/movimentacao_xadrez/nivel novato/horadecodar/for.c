@@ -1,14 +1,16 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
     int numero, i;
-    
+
     printf("Digite um número para calcularmos a tabuada....\n");
     scanf("%d", &numero);
 
-    for(i = 0; i <= 10; i++){
-        
-        printf("%d X %d = %d \n", i , numero, i * numero);
+    for (i = 0; i <= 10; i++)
+    {
+
+        printf("%d X %d = %d \n", i, numero, i * numero);
     }
 
     return 0;

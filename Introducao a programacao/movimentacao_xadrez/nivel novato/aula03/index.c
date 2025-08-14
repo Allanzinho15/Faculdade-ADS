@@ -16,7 +16,7 @@ for(inicialização; condição; incremento){
 código
 }
 
-*define valor inicial 
+*define valor inicial
 *condição booleana
 *incremento ou decremento
 _____________________________________________________________________________________________
@@ -29,7 +29,7 @@ funcionamento
 *incremento: no final da execução
 ________________________________________________________________________________________________
 estrutura "for"
-vantagens 
+vantagens
 
 *código fácil de ler e enteder
 *número fixo de execuçães
@@ -40,17 +40,19 @@ estrutura "for"
 importância
 
 *indispensavável para qualquer programador
-*controle sobre a execução do código 
+*controle sobre a execução do código
 *criar programas eficientes e robustos
 *códigos legíveis
 
-dicas 
+dicas
 
 *a compreensão maior vem da prática
 *explorar condicionais dentro do "for", incrementos e decrementos
 */
-int main(){
-    for(int i = 1; i <= 5; i++){
+int main()
+{
+    for (int i = 1; i <= 5; i++)
+    {
         printf("%d\n", i);
     }
 

@@ -1,11 +1,15 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
     int a = 0;
 
-    if(!a ){
+    if (!a)
+    {
         printf("A variavel a é zero\n");
-
-    }else{
+    }
+    else
+    {
         printf("A variavel é diferente de zero ");
     }
+}

@@ -1,14 +1,15 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
     float temperatura = -20.0;
 
-    if(temperatura >= 30.0){
+    if (temperatura >= 30.0)
+    {
         printf("Está calora\n");
-
-    }else{
+    }
+    else
+    {
         printf("Não está calor, estamos congelando!\n");
     }
-
-
 }

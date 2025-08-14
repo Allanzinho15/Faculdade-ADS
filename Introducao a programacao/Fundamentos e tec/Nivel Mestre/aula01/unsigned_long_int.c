@@ -1,6 +1,7 @@
 #include <stdio.h>
 
-int main(){
+int main()
+{
     unsigned long int numeroGrandePositivo = 4000000000;
     unsigned int numeroPositivo = 4000000000;
     long int numeroGrande = 4000000000;
@@ -11,5 +12,5 @@ int main(){
     printf("Númerp grande: %ld\n", numeroGrande);
     printf("Númerp: %d\n", numero);
 
-    return 0; 
+    return 0;
 }

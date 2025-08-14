@@ -1,11 +1,10 @@
 #include <stdio.h>
 
-
 /*Principais operadores relacionais
 
 Os operadores relacionais disponíveis na linguagem C são:
 
- 
+
 
 > (maior que)
 < (menor que)
@@ -15,7 +14,8 @@ Os operadores relacionais disponíveis na linguagem C são:
 != (diferente de)
 */
 
-int main(){
+int main()
+{
 
     int a = 10;
     int b = 20;
