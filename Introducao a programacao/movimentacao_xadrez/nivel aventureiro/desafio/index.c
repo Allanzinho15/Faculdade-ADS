@@ -422,7 +422,7 @@ int main()
                     printf("cima\n");
                 }
 
-                printf("direita\n");
+                printf("esquerda\n");
 
                 casacavalo--;
 
@@ -431,24 +431,10 @@ int main()
             break;
 
         default:
+            printf("Opção invalida");
             break;
         }
 
-        do
-        {
-
-            for (cavalo = 1; cavalo <= 2; cavalo++)
-            {
-                printf("cima\n");
-            }
-
-            printf("esquerda\n");
-
-            casacavalo--;
-
-        } while (casacavalo);
-
-        break;
 
     default:
 
