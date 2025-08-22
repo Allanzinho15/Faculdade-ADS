@@ -72,6 +72,7 @@ void logicaDojogo(int numeroQueRepresentaNavio, int matriz[linhas][colunas], int
             {
                 matriz[i][j] = numeroQueRepresentaNavio;
             }
+            //habilidades
             else if ((i == 11 && j < 5) || (i == 10 && j > 0 && j < 4) || (i == 9 && j > 1 && j < 3))
             {
                 matriz[i][j] = matrizdaHabilidadeCone[i][j];
