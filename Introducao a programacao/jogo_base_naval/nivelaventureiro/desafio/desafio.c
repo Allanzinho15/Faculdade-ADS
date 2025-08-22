@@ -101,15 +101,8 @@ void ExibicaoDaEstruturaDoJogo(char vetor1[linhas], int vetor2[linhas],int matri
 
     for (int i = 0; i < linhas; i++)
     {
-        if (i < 9)
-        {
-            printf(" %d", vetor2[i]);
-            printf(" ");
-        }
-        else
-        {
-            printf("%d ", vetor2[i]);
-        }
+
+        i < 9 ? printf(" %d", vetor2[i]), printf(" ") : printf("%d ", vetor2[i]);
 
         for (int j = 0; j < colunas; j++)
         {
