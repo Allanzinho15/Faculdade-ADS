@@ -114,6 +114,40 @@ void ExibicaoDaEstruturaDoJogo(char vetor1[linhas], int vetor2[linhas],int matri
 
     }
 }
+
+void MenuInterativo(char vetor1[linhas], int vetor2[linhas], int matriz[linhas][colunas])
+{
+    int inicializacao;
+
+    do
+    {
+
+    printf("Olá, Seja bem Vindo ao jogo Batalha Naval\n");
+    printf("Aperte 1 Para iniciar Jogo\n");
+    printf("Aperte 0 Para sair do Jogo\n ");
+    scanf("%d", &inicializacao);
+    
+    switch (inicializacao)
+    {
+    case 1:
+        ExibicaoDaEstruturaDoJogo(vetor1, vetor2, matriz);
+        break;
+
+    case 0:
+        printf("Você saiu Do Jogo\n ");
+        break;
+    
+    default:
+        printf("Opção invalida\n");
+        printf("Tente Novamente\n");
+        
+        break;
+    }
+       
+
+    } while (inicializacao > 1);
+    
+}
 int main()
 {
     int matriz[linhas][colunas];
@@ -131,7 +165,7 @@ int main()
 
     InicializaçãoDaMatriz(matriz, vetor2);
     logicaDojogo(navio, matriz, matrizdaHabilidadeCone, matrizdaHabilidadeOctaedro, matrizdaHabilidadeCruz);
-    ExibicaoDaEstruturaDoJogo(vetor1, vetor2, matriz);
+    MenuInterativo(vetor1, vetor2, matriz);
 
     return 0;
 }
