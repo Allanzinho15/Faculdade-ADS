@@ -1,0 +1,137 @@
+Serviço de Nomes
+
+DNS
+
+A comunicação entre hospedeiros na internet ocorre por meio de endereços binários de rede. Afinal, para se comunicar com um destino, o hospedeiro precisa conhecer seu endereço.
+
+Entretanto, é bem mais fácil trabalhar com nomes de hospedeiros do que com seus endereços de rede. Além de ser muito difícil conhecer todos os endereços dos hospedeiros com os quais precisamos trabalhar, precisaríamos ser notificados toda vez que algum deles mudasse de endereço.
+
+Para resolver esse problema, foi desenvolvido o Domain Name System (DNS). Sua finalidade é a criação de um sistema de nomes de forma hierárquica e baseada em domínios. Para acessar um hospedeiro, portanto, basta conhecer seu nome de domínio e fazer uma consulta ao servidor DNS, que é responsável por descobrir seu endereço.
+
+Quais são os serviços oferecidos por ele?
+
+
+Comentário
+Além do mapeamento de nomes de hospedeiros em endereços IP, o DNS ainda provê:
+
+• Identificação de servidores de correios eletrônicos;
+• Apelidos para hospedeiros;
+• Distribuição de carga;
+• Descoberta de nomes de hospedeiros (mapeamento reverso).
+
+
+Destacaremos nos tópicos a seguir dois importantes aspectos do DNS.
+
+
+Espaços de Nomes
+
+O espaço de nomes do DNS é dividido em domínios estruturados em níveis. Confira a organização do primeiro nível:
+
+
+
+Veja a seguir a diferença entre os domínios genéricos e de países, bem como alguns breves exemplos desses domínios.
+
+
+
+Domínios genéricos
+
+Informam o tipo de organização ao qual o domínio está vinculado. Alguns exemplos são:
+
+ 
+
+.com = comercial;
+.edu = instituições educacionais;
+.int = algumas organizações internacionais;
+.org = organizações sem fins lucrativos.
+ 
+
+Cada domínio tem seu nome definido pelo caminho entre ele e a raiz, enquanto seus componentes são separados por pontos.
+
+
+
+Domínios de países
+
+Possuem uma entrada para cada país. Alguns exemplos são:
+
+ 
+
+.br = Brasil;
+.pt = Portugal;
+.jp = Japão;
+.ar = Argentina.
+ 
+
+Cada domínio tem seu nome definido pelo caminho entre ele e a raiz, enquanto seus componentes são separados por pontos.
+
+
+Cada domínio controla como são criados seus subdomínios. Para a criação de um novo domínio, é necessária apenas a permissão daquele no qual será incluído.
+
+Não há qualquer restrição sobre a quantidade de subdomínios que podem ser criados dentro de um domínio. Os nomes de domínio não fazem distinção entre letras maiúsculas e minúsculas.
+
+EDU e edu, por exemplo, são o mesmo.
+
+
+Os nomes de componentes podem ter até 63 caracteres, enquanto os de caminhos completos não podem ultrapassar os 255.
+
+
+O DNS é implementado sobre o protocolo UDP (User Datagram Protocol). Trata-se de um protocolo do nível de transporte que não garante a entrega dos dados no destino. Dessa forma, cabe ao software DNS garantir uma comunicação confiável.
+
+
+Resolução de Nomes
+
+O espaço de nomes do DNS é dividido em zonas. Independentes, elas possuem um servidor de nomes principal e pelo menos um de nomes secundário:
+
+
+Servidor de nomes principal
+
+
+Configurado com as informações das zonas sob sua responsabilidade, ele faz o repasse delas para os servidores de nomes secundários.
+
+
+Servidor de nomes secundário
+
+
+Responde pelas zonas caso haja uma falha do servidor de nomes principal.
+
+
+As zonas do DNS definem o que um servidor deve resolver. Se ele for o responsável pela zona pesquisada (servidor autoritativo), deverá fazer a resolução solicitada.
+
+
+
+Três principais componentes do DNS
+
+Registros de recursos armazenados em um banco de dados distribuído;
+Servidores de nomes DNS responsáveis pela manutenção de zonas específicas;
+Solucionadores DNS em execução nos clientes.
+
+Solucionador X servidor DNS
+
+Quando um solucionador solicita a resolução de um nome para o servidor DNS, pode acontecer o seguinte:
+
+ 
+
+O servidor DNS é o responsável pela zona: O servidor resolve o nome solicitado e o devolve ao solucionador;
+O servidor DNS não é o responsável pela zona, mas possui a resolução em cache: O servidor envia a resolução ao solucionador;
+O servidor DNS não é o responsável pela zona nem possui a resolução em cache: O servidor precisa realizar uma busca para resolver o nome.
+Vamos entender como é feita a busca para a resolução do nome www.sus.gov.br:
+
+
+Funcionamento do DNS
+
+
+
+A partir da numeração presente na imagem anterior, continuaremos com o exemplo:
+
+ 
+
+Quando a aplicação do cliente solicita a resolução do nome www.sus.gov.br, o solucionador envia a requisição para o servidor de nomes local, que é o responsável por tratá-la até obter a resposta completa. Desse modo, ele não retorna respostas parciais para o solucionador. A esse tipo de consulta damos o nome de consulta recursiva.
+Para obter a resposta completa, o servidor de nomes precisa realizar uma série de iterações com outros servidores. Caso nenhuma informação parcial esteja em seu cache, o servidor local primeiramente precisa descobrir quem é o servidor responsável por resolver o domínio br.
+Para isso, ele consulta um servidor de nomes raiz, que indica onde o servidor DNS de “br” pode ser encontrado. O servidor local continua realizando consultas para resolver cada domínio parcial até que haja uma resolução completa. Esse tipo de consulta é conhecido como consulta iterativa.
+
+O excesso de consultas em um servidor DNS pode levar à sobrecarga.
+
+Como evitar esse tipo de problema?
+
+
+Comentário
+Os servidores devem evitar responder consultas recursivas de clientes não autorizados. Para isso, os administradores de servidores DNS precisam configurar no servidor aqueles autorizados a realizar consultas recursivas. Dessa forma, se houver a consulta de um que não esteja, ela automaticamente será negada.

@@ -1,0 +1,48 @@
+A Aplicação
+
+Camada de Aplicação
+
+Atualmente, as redes de computadores estão presentes no cotidiano das pessoas, permitindo a interação e a realização de diversas tarefas.
+
+
+
+
+Em relação às redes de comunicação, você já ouviu falar no trabalho da camada de aplicação?
+
+
+Vamos analisar os conceitos estudados na prática? Veja o caso a seguir.
+
+
+Exemplo
+Quando realizamos uma compra com cartão de crédito ou débito em um estabelecimento comercial, é fundamental a existência de uma rede de comunicação, já que ela será o alicerce para execução da operação. Ao inseri-lo na máquina de cartão, precisamos colocar uma senha para confirmar a operação. Tal dado é inserido no sistema por meio de um software executado nessa máquina.
+
+Nesse caso, o software é executado na camada de aplicação!
+
+
+O software de aplicação, também conhecido como software aplicativo, é nossa interface com o sistema (e, por consequência, com toda a rede de comunicação que suporta essa operação). Portanto, sempre que houver um serviço na rede, virá à mente a interface com ele.
+
+Outros exemplos de software de aplicação:
+
+
+
+Navegador web
+
+Cliente de e-mail
+
+Jogos executados em rede
+Ressaltamos que a camada de aplicação é aquela de mais alto nível do modelo OSI, fazendo a interface com os usuários do sistema e realizando as tarefas que eles desejam.
+
+Arquiteturas de Aplicações
+
+
+
+Façamos a seguinte suposição: nosso objetivo é desenvolver uma aplicação a ser executada em rede. Para criá-la, deve-se utilizar uma linguagem de programação que possua comandos e/ou funções para a comunicação em rede. Na maioria das linguagens, esses comandos e/ou funções estão em bibliotecas nativas da linguagem ou criadas por terceiros.
+
+
+Mas não basta conhecer uma linguagem de programação e suas bibliotecas. Antes disso, é preciso definir qual arquitetura terá sua aplicação. Entre as mais conhecidas, destacam-se as seguintes:
+
+
+
+Cliente-servidor
+
+Peer-to-peer (ou P2P)

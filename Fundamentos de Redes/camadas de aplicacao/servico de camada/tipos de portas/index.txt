@@ -1,0 +1,48 @@
+Tipos de portas
+Portas conhecidas
+
+Para que uma aplicação possa acessar outra remota, é necessário conhecer o endereço do hospedeiro no qual ela se encontra. Ele serve, portanto, para que se consiga chegar ao hospedeiro remoto.
+
+Como o protocolo de transporte do destino consegue saber para qual de suas aplicações deve entregar a mensagem? A resposta é o conceito de porta, que é responsável por identificar a aplicação no destino.
+
+
+Como podemos identificar a porta utilizada pela aplicação?
+
+
+Existem duas saídas que respondem a essa questão:
+
+
+1
+
+Empregar um sistema no qual a aplicação é registrada toda vez que inicializa para o cliente poder consultar sua porta.
+
+2
+
+Usar sempre o mesmo endereço de forma que as aplicações a iniciarem a conversação saibam de antemão com qual endereço trocar mensagens.
+
+Uma porta TCP ou UDP é identificada por um número inteiro de 16 bits.
+
+Para que um pacote chegue à aplicação de destino, é necessário que o transmissor saiba, de alguma forma, em que porta a aplicação está esperando a chegada do pacote. Para facilitar o trabalho dele, algumas aplicações esperam seus pacotes sempre na mesma porta: a “porta conhecida” da aplicação.
+
+A RFC 3232 define um repositório on-line no qual podem ser consultadas as portas conhecidas. No momento da criação deste documento, o repositório on-line estava definido como service name and transport protocol port number registry.
+
+A tabela a seguir mostra as portas reservadas para algumas aplicações:
+
+
+PORTA	APLICAÇÃO
+7	echo
+20	ftp-data
+21	ftp
+22	ssh
+23	telnet
+25	smtp
+53	domain
+69	tftp
+80	http
+110	pop-3
+119	nntp
+161	snmp
+162	snmp-trap
+443	https
+Tabela: Portas reservadas para algumas aplicações. 
+Fabio Contarini Carneiro

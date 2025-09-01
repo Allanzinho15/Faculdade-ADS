@@ -1,0 +1,94 @@
+Protocolo TCP
+
+TCP
+
+Enquanto o UDP é um protocolo de transporte simples, voltado para aplicações que não necessitam de confiabilidade na transmissão, o TCP é um orientado à conexão, sendo indicado para aplicações que precisam trocar uma grande quantidade de dados por meio de uma rede com múltiplos roteadores.
+
+
+
+O TCP oferece um fluxo de bytes fim a fim confiável, podendo ser utilizado, inclusive, em redes de baixa confiabilidade.
+
+
+Na transmissão, ele aceita fluxos de dados da aplicação: dividindo-os em partes de, no máximo, 64 KBytes, ele envia cada uma em um datagrama IP distinto.
+
+Quando os datagramas IP com dados TCP chegam ao hospedeiro destino, eles são, em seguida, enviados à entidade TCP, que restaura o fluxo de dados original.
+
+
+Saiba Mais
+Datagrama IP, também conhecido como “pacote”, um datagrama é uma porção de dados trocada por protocolos da camada de rede. Ele contém dados e informações de cabeçalho suficientes para que eles possam seguir seu caminho até o hospedeiro destino.
+
+
+A camada de rede (protocolo IP) não oferece nenhuma garantia de que os datagramas serão entregues corretamente. Portanto, cabe ao TCP administrar os temporizadores e retransmitir os datagramas sempre que for necessário.
+
+
+Os datagramas também podem chegar fora de ordem, cabendo a ele reorganizá-los em mensagens na sequência correta. O TCP deve fornecer a confiabilidade que o IP não oferece.
+
+
+O TCP é definido pelas seguintes RFCs: 793, 2018, 1122, 2581, 1323.
+
+
+Para concluirmos nossa última etapa de estudos, precisamos entender três aspectos fundamentais da TCP: 
+
+
+1
+
+
+Modelo de serviço TCP
+
+
+2
+
+
+Cabeçalho de segmento TCP
+
+
+3
+
+
+Gerenciamento de conexão TCP
+
+
+Modelo de serviço TCP
+
+O serviço TCP é obtido quando tanto o transmissor quanto o receptor criam pontos terminais; denominados portas, eles são identificados por um número de 16 bits. É necessário que uma conexão seja explicitamente estabelecida entre um hospedeiro transmissor e um receptor.
+
+Todas as conexões TCP são:
+
+
+Full-duplex
+
+
+Dados podem ser enviados e recebidos por ela simultaneamente. Uma linha telefônica é um exemplo de sistema full-duplex, pois permite que dois interlocutores falem de forma simultânea. O walkie-talkie, no entanto, é diferente: como tal equipamento está no modo de transmissão ou no de recepção, ele nunca consegue transmitir e receber ao mesmo tempo.
+
+
+Ponto a ponto
+
+
+Interliga diretamente dois hospedeiros, não permitindo a participação de um terceiro na conversação. Exemplo: quando ligamos um smartphone a um computador por meio de seu cabo de dados, ocorre uma ligação ponto a ponto, pois somente eles podem utilizar esse meio (cabo de dados) para a troca de informações.
+
+
+Do ponto de vista da aplicação, uma conexão consiste em dois fluxos independentes de direções opostas. Uma conexão TCP é um fluxo de dados, e não de mensagens. Isso significa que as fronteiras das mensagens não são preservadas de uma extremidade à outra. Quando uma aplicação passa dados para a entidade TCP, ela pode enviá-los imediatamente ou armazená-los em um buffer de acordo com suas necessidades.
+
+As entidades TCP transmissoras e receptoras trocam dados na forma de segmentos. Um segmento consiste em um cabeçalho fixo de 20 bytes mais uma parte opcional, seguido de zero ou mais bytes de dados. O software TCP decide qual deve ser o tamanho dos segmentos, podendo:
+
+ 
+
+Acumular dados de várias escritas em um único segmento.
+Dividir os dados de uma única escrita em vários segmentos.
+Cada segmento não pode ser superior à quantidade máxima de dados que um datagrama do protocolo IP é capaz de carregar.
+
+O protocolo básico utilizado pelas entidades TCP é o de janela deslizante. Quando envia um segmento, o transmissor dispara um temporizador. Assim que ele chega ao destino, a entidade TCP receptora retorna um segmento (com ou sem dados segundo as circunstâncias) com um número de confirmação igual ao próximo número de sequência que ela espera receber. Se o temporizador do transmissor expirar antes de a confirmação ser recebida, o segmento será retransmitido.
+
+Vamos entender melhor o conceito de janela deslizante a seguir:
+
+
+
+Janela deslizante
+
+Para aumentar a eficiência da transmissão, foram elaborados protocolos que permitem o envio de vários segmentos de dados mesmo sem a confirmação daqueles enviados anteriormente. O número máximo de dados que podem ser enviados sem que tenha chegado uma confirmação define o tamanho da janela de transmissão.
+
+Conforme eles vão sendo confirmados, o ponto inicial da janela de transmissão desloca-se no sentido do fluxo de dados; por isso, ela é conhecida como “janela deslizante”. Protocolos que utilizam a janela de transmissão para o envio de dados são conhecidos como protocolos de janela deslizante.
+
+Para saber mais sobre janela deslizante, leia o capítulo 3.4.3 da obra de Kurose e Ross (2013).
+
+Caso um segmento chegue ao destino e apresente erro em sua soma de verificação, o TCP simplesmente o descarta. Como não haverá confirmação de recebimento nesse caso, a entidade TCP do transmissor entenderá que o segmento não chegou ao destino e providenciará sua retransmissão.

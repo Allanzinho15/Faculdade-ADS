@@ -1,0 +1,49 @@
+Modelo OSI
+
+Na década de 1970, a International Organization for Standardization (ISO), um órgão que desenvolve padrões internacionais, criou um modelo de referência de camadas denominado OSI (Open System Interconnection - ISO/IEC 7498-1:1994).
+
+
+
+O objetivo foi elaborar um modelo que permitisse a comunicação entre sistemas diferentes, independentemente de suas arquiteturas, facilitando a comunicação, sem a necessidade de realizar mudanças na lógica do hardware ou software (FOROUZAN, 2010).
+
+
+Observe que o modelo OSI propriamente dito não é uma arquitetura de rede, pois não especifica os serviços e protocolos exatos que devem ser usados em cada camada. Ele apenas informa o que cada camada deve fazer. No entanto, a ISO também produziu padrões para todas as camadas, embora esses padrões não façam parte do próprio modelo de referência. Cada um foi publicado como um padrão internacional distinto. O modelo (em parte) é bastante utilizado, embora os protocolos associados há muito tempo tenham sido deixados de lado.
+
+(TANENBAUM, 2011, p. 45)
+O que utilizamos hoje do modelo OSI é a referência para as funções das camadas. Então, quando ouvimos falar que determinado protocolo é da camada X (1, 2, 3, ...), esse X se refere ao OSI, tanto que é encontrada, em diversos livros e artigos, a expressão modelo de referência OSI (RM-OSI em inglês).
+
+
+
+O modelo OSI possui sete camadas, de cima para baixo: aplicação, apresentação, sessão, transporte, rede, enlace e física.
+
+De acordo com o conceito de camadas que estudamos, cada uma delas é responsável por determinada tarefa no processo de transmissão de dados. Entretanto, já sabemos que, por mais que tenham sido especificados protocolos para cada camada, na prática, eles não são utilizados.
+
+
+Os conceitos estudados de comunicação vertical, comunicação horizontal e encapsulamento são válidos nesse modelo. Portanto, um dado transmitido por um dispositivo de origem será inserido na estrutura de rede a partir da camada de aplicação e descerá até a camada física, quando será enviado pelo meio de transmissão. Cada camada adicionará o seu próprio cabeçalho, encapsulando a PDU da camada superior e permitindo a comunicação horizontal entre camadas de mesmo nível.
+
+
+
+É possível dividir as sete camadas em três subgrupos.
+
+
+Camadas mais altas
+
+As três camadas mais altas (aplicação, apresentação e sessão) estão relacionadas a funções que dão suporte para que os usuários possam acessar os diversos serviços de redes, garantindo a interoperabilidade de sistemas heterogêneos (FOROUZAN, 2010).
+
+
+Camadas mais inferiores
+
+As três camadas mais inferiores (rede, enlace e física) estão relacionadas às operações ligadas aos aspectos da movimentação dos dados de um dispositivo para o outro, dando suporte às operações de rede (FOROUZAN, 2010).
+
+
+Camadas de transporte
+
+A camada de transporte faz a interligação entre o suporte ao usuário e o suporte de rede. Ela vai permitir que os dados que chegaram das camadas mais baixas estejam em condições de serem utilizados pelas camadas mais altas (FOROUZAN, 2010).
+
+
+
+
+
+Agora vamos ver, de modo mais específico, as tarefas de cada camada do modelo OSI.
+
+Sua primeira tarefa será conseguir acesso aos recursos da rede. Escolha com atenção o serviço mais adequado para enviar a sua mensagem!

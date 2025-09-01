@@ -1,0 +1,69 @@
+Serviço WEB
+HTTP (serviço web)
+
+
+Protocolo HTTP
+
+
+Definido pelas RFCs 1945 e 2616, o HTTP (Hypertext Transfer Protocol) é o protocolo padrão para transferência de páginas web na internet.
+
+Em 1991, a web foi idealizada no CERN como uma forma de fazer com que grupos de cientistas de diferentes nacionalidades pudessem colaborar por meio da troca de informações baseadas em hipertextos. Em dezembro daquele ano, foi realizada uma demonstração pública na conferência Hypertext91.
+
+
+Saiba Mais
+RFCs
+
+Ao longo do conteúdo, serão apresentados alguns RFCs (Request for Comments); para acessar o conteúdo referente a cada um, procure na sessão Explore + no final dos seus estudos!
+
+ 
+
+CERN
+
+Sigla originada do francês Conseil Européen pour la Recherche Nucléaire (em português, Organização Europeia para a Pesquisa Nuclear). Trata-se de um laboratório de física de partículas localizado em Meuyrin, que fica na fronteira franco-suíça.
+
+ 
+
+Hipertextos
+
+Documentos construídos com o objetivo de possuir alguns objetos, como palavras, imagens etc. Quando acionados – geralmente, com um clique do mouse –, eles buscam outros documentos que podem (ou não) ser hipertextos.
+
+ 
+
+Hypertext 91
+
+“A conferência sobre hipertexto e hipermídia reúne acadêmicos, pesquisadores e profissionais de diversas disciplinas para considerar a forma, o papel e o impacto do hipertexto e da hipermídia em um fórum de discussão de ideias, design e uso de hipertexto e hipermídia em vários domínios. A conferência também considera o poder transformador da hipermídia e sua capacidade de alterar a maneira como lemos, escrevemos, argumentamos, trabalhamos, trocamos informações e nos divertimos.”
+
+(ACM HYPERTEXT 91 CONFERENCE, 1991, tradução nossa)
+
+ 
+
+
+Esse protocolo é constituído de duas etapas:
+
+
+Etapa 1
+
+
+Uma página web típica é um documento em formato HTML que pode conter imagens e outros tipos de objetos, como vídeos, texto, som etc.
+
+Para exibir determinada página web, o usuário digita no browser o endereço no qual ela se encontra (ou clica em um hiperlink para essa página), indicando o local em que deve ser buscada. Para que uma página seja transferida do servidor até o browser, um padrão deve ser seguido pelos softwares (cliente e servidor). Ele especifica como o cliente solicita a página, e o servidor a transfere para o cliente.
+
+Etapa 2
+
+Esse padrão é o protocolo HTTP. A mensagem HTTP, por sua vez, é carregada pelo outro protocolo: TCP.
+
+
+Uma interação entre cliente e servidor se inicia quando o cliente envia uma requisição a um servidor. A solicitação mais comum consiste em:
+
+ 
+
+Enviar um texto em formato ASCII.
+Iniciar com a palavra GET.
+Inserir página solicitada, protocolo utilizado na transferência e servidor a ser contatado.
+Saiba Mais
+ASCII Do inglês American Standard Code for Information Interchange (código padrão americano para o intercâmbio de informação), essa sigla trata de um código binário que codifica um conjunto de 128 símbolos, incluindo: Sinais gráficos;Letras do alfabeto latino;Sinais de pontuação;Sinais matemáticos;Sinais de controle.
+
+Funcionamento do serviço Web
+
+
+Responda a questão a seguir para consolidar os conhecimentos adquiridos até agora.

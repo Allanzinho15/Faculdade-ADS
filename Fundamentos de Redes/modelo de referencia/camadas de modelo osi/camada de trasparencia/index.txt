@@ -1,0 +1,68 @@
+Camadas de transporte e rede
+Transporte
+
+
+Essa camada tem por finalidade garantir a entrega de processo a processo de todos os dados enviados pelo usuário. Podemos dizer que a camada de transporte é responsável por entregar os dados corretamente para os processos que estão em execução na camada de aplicação.
+
+Esse papel da camada de transporte a torna uma das mais complexas dentro da estrutura do modelo OSI. Para garantir que as mensagens da camada de aplicação sejam entregues corretamente, diversas funções são necessárias:
+
+
+
+Segmentação e remontagem
+
+A camada de transporte receberá os dados originados na camada de sessão (PDU da camada de sessão) e irá dividi-los em pedaços, segmentos de dados (PDU da camada de transporte), que possam ser enviados e, na camada de transporte de destino, irá remontá-los na ordem correta. Para isso, será necessário estabelecer números de sequência para garantir que, independentemente da ordem de chegada, os dados sejam remontados na ordem correta.
+
+
+Controle de erros fim a fim
+
+A camada de transporte verificará se ocorreram erros na comunicação fim a fim, ou seja, entre os processos da camada de aplicação. Na origem, serão adicionadas informações que permitam identificar no destino se durante o tráfego pela rede ocorreu algum erro e, possivelmente, corrigi-lo.
+
+
+Controle de fluxo
+
+A camada de transporte será encarregada de evitar que o processo na origem sobrecarregue o processo no destino.
+
+
+Controle de conexão
+
+A camada de transporte pode ser orientada ou não à conexão. No serviço orientado à conexão, a camada de transporte será responsável por estabelecer a conexão entre os processos de origem e destino.
+
+
+Endereçamento do ponto de acesso ao serviço
+
+Em um dispositivo, normalmente, estão em andamento diversos tipos de serviços executados por vários processos e não apenas um. A camada de transporte será responsável por fazer a entrega para o processo correto e, para isso, será utilizado o chamado endereço de porta. Ele indicará o serviço correto que deverá receber os dados.
+
+
+Controle de congestionamento
+
+No mundo real, as máquinas não estão diretamente conectadas, ou seja, não há uma comunicação ponto a ponto direta. Entre a máquina de origem e de destino existem diversos outros dispositivos cuja finalidade é fazer a informação ir de um ponto a outro. Como esses equipamentos transmitirão dados de diversas outras origens, poderá haver uma sobrecarga desses dispositivos. A camada de transporte será responsável por monitorar esse congestionamento e, possivelmente, tratá-lo.
+
+Sua quinta tarefa será transferir pacotes da origem ao destino, permitindo a ligação entre as redes. Cuidado para não tomar uma rota errada!
+
+
+Rede
+
+
+A camada de rede é responsável por determinar o caminho da origem até o destino. Ela receberá os segmentos gerados pela camada de transporte e, no cabeçalho da camada de rede, irá inserir o endereço da máquina de destino para que seja enviado pela rede por meio dos diversos dispositivos intermediários. Enquanto a camada de transporte é responsável pela comunicação processo a processo, a camada de rede é encarregada da comunicação máquina a máquina.
+
+Veja a representação desse fluxo a seguir:
+
+
+
+Comparação entre camada de transporte e camada de rede.
+Para cumprir nosso objetivo, duas funcionalidades principais devem ser estabelecidas:
+
+
+Endereço lógico
+
+
+O endereço da porta, definido pela camada de transporte, permitirá a entrega no processo de destino. Mas, para que isso aconteça, é necessário que os segmentos cheguem à máquina de destino. Por isso, são empregados endereços lógicos a fim de permitir que os dispositivos intermediários encaminhem os dados pelas redes e alcancem o destino.
+
+
+Roteamento
+
+
+A função de roteamento permite estabelecer um caminho entre origem e destino. Os dispositivos intermediários verificarão o endereço lógico de destino e, com base nas informações de caminho que eles possuem, farão o processo de encaminhamento para outros dispositivos intermediários a fim de alcançar o destino da informação.
+
+
+Sua sexta tarefa será organizar os bits em quadros, fornecendo a entrega nó a nó. Tenha atenção aos erros no caminho!

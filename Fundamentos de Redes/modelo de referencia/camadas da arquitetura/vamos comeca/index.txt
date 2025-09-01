@@ -1,0 +1,42 @@
+Vamos começar!
+Arquitetura e evolução do protocolo TCP/IP
+
+
+Vamos conhecer um pouco mais sobre o protocolo TCP/IP e o seu papel na história da internet.
+
+
+A arquitetura foi batizada por TCP/IP por causa dos seus dois principais protocolos: Transmission Control Protocol (TCP) e Internet Protocol (IP). Ela foi apresentada pela primeira vez em 1974 (CERF, 1974) com o objetivo de criar uma arquitetura que permitisse a interligação de diversas redes de comunicação, sendo posteriormente adotada como padrão, de fato, para a comunidade internet.
+
+(CERF; KAHN, 1974)
+A arquitetura foi criada utilizando quatro camadas: aplicação, transporte, internet e acesso à rede.
+
+As duas últimas camadas podem ser encontradas com nomes diferentes na literatura. A camada de internet pode ser encontrada como rede e inter-rede e a camada de acesso à rede pode ser encontrada como camada de enlace, host-rede, intrarrede e host-network.
+
+
+Após identificarmos que a arquitetura TCP/IP tem apenas quatro camadas, é possível imaginar que algumas das funções executadas pelas camadas de apresentação, sessão, enlace e rede, ausentes na arquitetura TCP/IP, serão acumuladas por outras camadas.
+
+
+
+As funções das camadas de apresentação e sessão serão acumuladas pela camada de aplicação e a funções das camadas de enlace e física serão executadas pela camada de acesso à rede. Observe a relação entre os dois modelos a seguir.
+
+
+
+Relação entre o modelo OSI e a arquitetura TCP/IP.
+Uma grande diferença que temos entre o modelo de referência OSI e a arquitetura TCP/IP é:
+
+
+Modelo OSI
+
+
+É baseado, principalmente, nas funcionalidades das camadas.
+
+
+Arquitetura TCP/IP
+
+
+Não ficou presa apenas nas funcionalidades, mas ampliou para o desenvolvimento de protocolos relativamente independentes e hierárquicos. A hierarquia baseia-se em um protocolo de nível superior que é suportado pelos protocolos de nível inferior.
+
+
+É comum ouvirmos falar da pilha de protocolos TCP/IP. Agora que dominamos o conceito do modelo de camadas, como vimos no modelo OSI, fica fácil de entender que a pilha de protocolos TCP/IP é o conjunto de todos os protocolos implementados pela arquitetura. E não são poucos.
+
+Os principais protocolos de padrão aberto da arquitetura Internet foram desenvolvidos pelo IETF (The Internet Engineering Task Force), uma grande comunidade internacional aberta, composta por designers de rede, operadores, fornecedores e pesquisadores preocupados com a evolução da arquitetura da internet.

@@ -1,0 +1,36 @@
+Endereçamento dos processos
+Endereçamento (camada de transporte)
+
+
+Quando seu programa solicita algo a um servidor, o sistema envia uma mensagem para ser entregue à aplicação que executa em um hospedeiro remoto. Mas podem existir várias aplicações nele.
+
+
+Como identificamos uma aplicação específica?
+
+Surge neste momento o endereçamento no nível de transporte. Sua função é identificar em qual aplicação determinada mensagem deve ser entregue. Afinal, toda mensagem do protocolo de transporte carrega o endereço da aplicação.
+
+Verificaremos agora a importância do endereçamento no nível de transporte. Afinal, é necessário indicar em qual aplicação os dados devem ser entregues por meio de seu endereço (de transporte). Assim, o hospedeiro destino consegue saber o destino deles.
+
+Estudaremos mais adiante TCP e UDP, dois protocolos da camada de transporte da arquitetura TCP/IP. Neles, o endereço de transporte é conhecido como porta. Vejamos o esquema a seguir:
+
+
+
+A partir da numeração presente na imagem anterior, continuaremos com o exemplo:
+
+
+
+1
+
+Como a aplicação do hospedeiro 1 sabe em que endereço de transporte se encontra o servidor no 2? Uma possibilidade é que:
+
+ 
+
+Ele esteja associado ao endereço há anos;
+Aos poucos, todos os usuários da rede tenham se acostumado com isso.
+
+2
+
+Neste modelo, os serviços possuem endereços estáveis que podem ser impressos e distribuídos aos novos usuários quando eles se associam à rede.
+
+Atenção
+Um esquema alternativo é utilizar um processo especial denominado servidor de nomes (name server) ou, às vezes, servidor de diretórios (directory server). Para localizar o endereço de transporte correspondente a determinado nome de serviço, uma aplicação estabelece uma conexão com o servidor de nomes. Em seguida, envia uma mensagem especificando o nome do serviço, enquanto o servidor de nomes retorna o endereço.

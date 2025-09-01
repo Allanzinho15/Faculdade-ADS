@@ -1,0 +1,98 @@
+Camadas de enlace e física
+Enlace
+
+
+A camada de rede tem a responsabilidade da entrega dos dados para a máquina de destino. Normalmente, as máquinas não estão diretamente conectadas, ou seja, origem e destino não estão ligados diretamente por um meio físico, mas por dispositivos intermediários, como a internet. Então, como visto na camada de rede, os dados serão roteados por essa internet até chegar ao destino. Após ser definido por qual caminho os dados devem prosseguir, a camada de enlace surgirá para garantir essa comunicação ponto a ponto ou hop to hop.
+
+Veja a representação desse fluxo a seguir:
+
+
+
+Entrega desde a origem até o destino.
+
+A camada de enlace é responsável por garantir a comunicação entre dispositivos adjacentes. Ela corrigirá quaisquer problemas que tenham ocorrido no meio físico de transmissão e entregará para a camada de rede um serviço de transmissão de dados aparentemente livre de erros.
+
+É possível fazer uma analogia entre as camadas de enlace e de transporte:
+
+
+Transporte
+
+
+Realiza a entrega confiável processo a processo.
+
+
+Enlace
+
+
+Realiza a entrega confiável entre máquinas adjacentes, nó a nó.
+
+
+Por esse motivo, muitas das funções existentes na camada de transporte também estarão presentes na de enlace:
+
+
+
+Controle de erros
+
+Os meios de transmissão não são livres de erro; portanto, os dados que trafegam através deles estão sujeitos a erros. A camada de enlace pode implementar mecanismos de controle de erro com a finalidade de agregar confiabilidade ao serviço de transmissão.
+
+
+Controle de acesso ao meio
+
+Como alguns meios de transmissão são compartilhados, ou seja, mais de um dispositivo pode transmitir pelo mesmo meio, é necessário um mecanismo para controlar qual dos dispositivos pode transmitir naquele momento.
+
+
+Endereçamento físico
+
+Enquanto o endereço de porta indica o processo na máquina de destino e o endereço lógico indica o dispositivo de destino, o endereço físico indicará qual será o próximo dispositivo no caminho origem-destino. Ao chegar à rede de destino, o endereço físico será o do dispositivo final.
+
+
+Controle de fluxo
+
+Semelhante ao que acontece na camada de transporte, o controle de fluxo evitará que o nó de origem sobrecarregue o nó de destino.
+
+
+Enquadramento
+
+A camada de enlace receberá os dados da camada de rede (PDU da camada de rede), encapsulando-os em quadros (PDU da camada de enlace). Os quadros criados pela camada de enlace terão uma função importante, que será a adição de delimitadores de início e fim do quadro na origem, para permitir que, no nó vizinho, a camada de enlace possa ver o fluxo de bits e definir corretamente onde inicia e termina o quadro.
+
+Sua sétima tarefa será transmitir bits através de um meio físico, promovendo especificações mecânicas e elétricas. Garanta a estabilidade do sinal!
+
+
+Física
+
+Essa camada é responsável por transmitir os dados pelo meio de transmissão. Ela receberá os quadros da camada de enlace, que serão formados por uma sequência de bits, e irá codificar corretamente para que sejam enviados pelo meio de transmissão.
+
+A camada física será responsável pela representação dos bits, ou seja, de acordo com o meio de transmissão, ela irá definir se essa representação ocorrerá por pulsos de luz, no caso da fibra ótica, ou pulsos elétricos, no caso de empregar cabos de par trançado. Além disso, a camada física é responsável por:
+
+
+Taxa de dados
+
+A velocidade em que os bits são inseridos no meio de transmissão é responsabilidade da camada física. Quando ouvimos a expressão megabits por segundo (Mbps), que define a taxa de transmissão de determinado enlace, é responsabilidade da camada física estabelecer esse valor. Assim, a taxa de transmissão definirá a duração de um bit: quanto maior a taxa, menor a duração do bit, e vice-versa.
+
+
+Sincronização dos bits
+
+O nó transmissor e o receptor devem operar na mesma velocidade, ou seja, na mesma taxa de bits. Entretanto, os relógios (clocks) das camadas físicas têm pequenas diferenças; portanto, é possível que ocorram falhas de sincronismos. A camada física deve implementar algum tipo de mecanismo que permita o correto sincronismo dos bits entre origem e destino.
+
+
+Topologia física
+
+Define como os nós da rede estão interligados, podendo ser uma configuração de um enlace ponto a ponto, em que cada nó está diretamente conectado a outro, sem compartilhamento do meio, ou uma ligação ponto-multiponto, em que o enlace é compartilhado por diversos nós.
+
+
+Modo de transmissão
+
+A camada física definirá o modo de transmissão em um determinado meio: simplex, half duplex ou full duplex. Considerando dois dispositivos, A e B, no modo simplex só existe envio de dados em um sentido, por exemplo, de A para B; no modo half duplex, os dados podem ser enviados nos dois sentidos, mas não simultaneamente (de A para B em um momento e de B para A em outro momento); e no modo full duplex, os dados podem ser enviados simultaneamente por A e B.
+
+
+
+
+Resumo
+
+Tendo percorrido o caminho da origem até o destino, passando por todas as camadas da rede, você é capaz de entender como as informações são transmitidas pelos dispositivos computacionais. Vamos relembrar o seu percurso!
+
+Veja um resumo das camadas e suas funcionalidades:
+
+
+
+Fluxo das camadas de rede

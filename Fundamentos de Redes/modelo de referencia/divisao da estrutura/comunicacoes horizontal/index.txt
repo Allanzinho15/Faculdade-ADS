@@ -1,0 +1,26 @@
+Comunicações horizontal e vertical
+
+Já vimos que uma camada utiliza os serviços de outra imediatamente inferior, sucessivamente, até chegar à camada mais baixa. Como estão empilhadas, podemos fazer analogia à comunicação vertical, uma vez que o dado original, no topo do conjunto de camadas, desce até a camada 1, caracterizando a verticalidade desse processo.
+
+
+Na origem
+
+
+Na origem, o dado a ser transmitido desce pelas camadas até o nível mais baixo, a camada 1. Essa camada está conectada ao meio de transmissão, por exemplo, uma fibra ótica, um cabo de rede metálico ou o ar, possíveis caminhos para o dado fluir até o destino.
+
+
+No destino
+
+
+No destino, o processo ocorrerá de modo contrário, pois o dado sobe pelas camadas até o nível mais alto da arquitetura. Podemos, assim, associar a comunicação vertical aos serviços das camadas.
+
+
+Conforme o dado passa por determinada camada, o hardware ou o software, responsável por implementar o protocolo, irá preparar esse dado para que a regra (para a qual ele foi projetado) possa ser executada.
+
+Se a camada 2 é responsável pela verificação de erro, o dado será preparado na origem por essa camada para que, ao passar pela camada 2 do destino, seja verificado se houve erro ou não.
+
+No exemplo anterior, vimos que a camada 2 de origem preparou o dado para que a camada 2 de destino verificasse se a informação está correta, caracterizando a existência de uma conversa entre as duas camadas de mesmo nível em computadores distintos. Essa conversa é a comunicação horizontal, realizada pelos protocolos que implementarão a regra.
+
+
+
+Relação entre camadas, protocolos e interfaces.

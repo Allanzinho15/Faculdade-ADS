@@ -1,0 +1,137 @@
+Serviço de correio eletrônico
+Correio Eletrônico (e-mail)
+
+Trouxemos um exemplo para esclarecer essa questão:
+
+Os primeiros sistemas de correio eletrônico foram concebidos como um simples sistema voltado para a troca de arquivos. O destinatário da mensagem era especificado na primeira linha do texto.
+
+Bastava então que o sistema procurasse ali para quem a mensagem deveria ser entregue. Porém, com o passar do tempo, surgiram novas necessidades que dificilmente eram atendidas por ele.
+
+
+
+Em 1982, ainda na era da ARPANET, foram publicadas as RFCs 821 e 822, definindo, respectivamente, o protocolo de transmissão a ser utilizado e o formato da mensagem. Entretanto, apesar de ambas resolverem o problema inicial a que se propunham, elas especificavam que todo o texto deveria ser composto pelo código ASCII.
+
+Tal restrição precisava ser resolvida para ser possível o envio de mensagens:
+
+ 
+
+Em alfabetos não latinos.
+Em idiomas sem alfabetos.
+Que não contêm textos multimídia, como, por exemplo, áudio e vídeo.
+Com caracteres acentuados.
+Para resolver esses novos problemas, foi criada uma solução denominada Multipurpose Internet Mail Extensions (MIME). O MIME contina utilizando o formato da RFC 822, mas passou a incluir uma estrutura para o corpo da mensagem e definir regras para as mensagens especiais.
+
+Essa estratégia fez com que tais mensagens pudessem ser enviadas graças à utilização de protocolos e programas de correio eletrônico existentes, havendo somente a necessidade de alterar os programas de envio e recebimento. Atualmente, o protocolo de transmissão simple mail transfer protocol (SMTP) é definido pela RFC 5321, enquanto o formato da mensagem o é pela RFC 5322.
+
+
+Como é construída a arquitetura do correio eletrônico?
+
+
+A arquitetura do sistema de correio eletrônico é construída com base em dois agentes:
+
+
+1
+
+
+Do usuário
+
+
+2
+
+
+De transferência de mensagens
+
+
+O agente do usuário é o programa que faz a interface do usuário com o sistema de correio eletrônico.É por meio dele que o usuário:
+
+ 
+
+Faz o envio e o download de mensagens e anexos.
+Lê as mensagens.
+Realiza a pesquisa, o arquivamento e o descarte de mensagens.
+Escreve suas mensagens.
+Anexa arquivos.
+
+
+Mozilla Thunderbird
+
+Microsoft Outlook
+
+Eudora
+Já os agentes de transferência de mensagens são os responsáveis por fazer com que elas cheguem até o destino. Eles são mais conhecidos como servidores de correio eletrônico.
+
+
+
+Postfix
+
+Zimbra
+
+Exchange
+Para entendermos melhor o assunto, analisaremos a seguir a comunicação entre Orlando e Maria. Esse caso explicita uma arquitetura do sistema de correio eletrônico:
+
+
+
+A partir da numeração presente na imagem anterior, continuaremos com o exemplo:
+
+ 
+
+Orlando deseja enviar uma mensagem para Maria. Após a compor em seu agente do usuário, ele solicita seu envio para ela.
+A mensagem é enviada do agente do usuário de Orlando até seu agente de transferência de mensagens, que a recebe, analisa e, em seguida, encaminha-a ao agente de Maria.
+No destino, tal agente armazena as mensagens que chegam em um local conhecido como caixa de mensagens (mailbox), onde cada usuário do sistema possui uma caixa própria.
+Quando Maria deseja ler suas mensagens, o agente do usuário dela se liga a seu agente de transferência de mensagens e verifica quais estão armazenadas em sua caixa de mensagens.
+
+Funcionamento do correio eletrônico
+
+
+Para concluirmos esse estudo, analisaremos importantes características dos protocolos apresentados:
+
+
+SMTP
+
+O protocolo responsável pela transferência da mensagem até seu destino é o SMTP. Definido pela RFC 5321, ele utiliza o protocolo de transporte TCP, obtendo, assim, a garantia de que ela será entregue no destino sem erros.
+
+O servidor SMTP aguarda por conexões de seus clientes. Quando uma conexão é estabelecida, o servidor inicia a conversação enviando uma linha de texto na qual se identifica e informa se está pronto (ou não) para receber mensagens. Se ele não estiver, o cliente deverá encerrar a conexão e tentar novamente mais tarde.
+
+Caso o servidor esteja acessível, o cliente precisa informar aos usuários a origem e o destino da mensagem. Se o servidor considerar que se trata de uma transferência válida, sinalizará para que ele a envie. Após o envio, o servidor confirma sua recepção e a conexão é encerrada.
+
+
+Exemplo
+
+Retomando o caso da comunicação anterior, podemos ver, na sequência apresentada adiante, a conversação entre cliente e servidor para estabelecer a transferência da mensagem de orlando@origem.net para maria@destino.net:
+
+
+Python (3.8.1)
+
+
+Light Mode
+
+Copiar
+
+De acordo com o exemplo de conversação entre cliente e servidor representado acima, é importante observar que na “linha 1” o termo “Protegido” refere-se à identificação do servidor que recebe a mensagem, enquanto na “linha 2” o endereço “rayra.origem.net” é o nome do hospedeiro que a envia.
+
+
+Entrega final
+
+Quando uma mensagem chega ao servidor do destinatário, ela deve ser armazenada em algum local para que possa ser acessada mais tarde (assim que o destinatário estiver on-line). Esse local é a caixa de mensagens.
+
+Como o SMTP é responsável somente pela entrega da mensagem no servidor destino, isso requer a utilização de outro protocolo de modo que o cliente possa buscar suas mensagens no mailbox.
+
+
+POP3
+
+A RFC 1939 estipula que o POP3 (Post Office Protocol version 3) tem a finalidade de fazer o download das mensagens que se encontram no mailbox do usuário para o sistema local. Caso estejam neste sistema, ele pode utilizá-las em qualquer momento, mesmo sem ter conexão com a internet.
+
+O POP3 é implementado na maioria dos agentes de usuário. Basta configurar os parâmetros de conta e senha do usuário para que o agente faça o download das mensagens. Ele permite o download seletivo delas, assim como apagar as selecionadas no servidor.
+
+
+IMAP
+
+Assim como o POP3, o IMAP (Internet Message Access Protocol) permite que um usuário tenha acesso às mensagens armazenadas em sua caixa. Porém, enquanto o POP3 é baseado na transferência delas para o sistema local a fim de serem lidas, o IMAP consegue permitir sua leitura diretamente no servidor, dispensando, portanto, a transferência para o sistema local.
+
+Isso será particularmente útil para usuários que não utilizarem sempre o mesmo computador, pois permite que suas mensagens sejam acessadas a partir de qualquer sistema. Definido pela RFC 3501, o IMAP também fornece mecanismos para criar, excluir e manipular várias caixas de correio no servidor.
+
+
+Atenção
+Um webmail não é um protocolo, mas uma forma oferecida por alguns sites da web a fim de que os usuários possam ler suas mensagens de correio eletrônico.
+
+Para usar o sistema, o usuário abre uma página web, na qual entra com uma identificação e uma senha. A partir desse momento, ele tem acesso imediato às suas mensagens (de forma parecida com a de um cliente IMAP).

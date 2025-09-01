@@ -1,0 +1,51 @@
+Camada de Aplicação
+
+Protocolos da Camada de Aplicação
+
+Conforme estudamos, é na camada de aplicação que são executados os processos dos usuários. Nos processos em que eles interagem, realiza-se o que seus usuários esperam. Porém, para que uma aplicação possa trocar dados com outra, é necessário definir um protocolo de aplicação.
+
+Mas o que é um protocolo da camada de aplicação?
+
+
+Comentário
+Um protocolo de camada de aplicação define como processos de uma aplicação, que funcionam em sistemas finais diferentes, passam mensagens entre si. Em particular, um protocolo de camada de aplicação define (KUROSE; ROSS, 2013):
+
+• Os tipos de mensagens trocadas, por exemplo, de requisição e de resposta;
+• A sintaxe dos vários tipos de mensagens, tais como os campos da mensagem e como os campos são delineados;
+• A semântica dos campos, isto é, o significado da informação nos campos;
+• Regras para determinar quando e como um processo envia e responde mensagens.
+
+
+Enquanto o algoritmo da camada de aplicação determina seu funcionamento no ambiente local, o protocolo dela estipula tudo que é necessário para que aplicações em diferentes hospedeiros possam trocar mensagens de maneira estruturada.
+
+Os protocolos públicos da internet são especificados por RFCs. Desse modo, qualquer pessoa é capaz de acessar as especificações de tais protocolos e implementar os próprios softwares.
+
+Para que possamos compreender melhor o funcionamento das camadas de aplicação, analisaremos aquela aplicada na Internet, afinal, trata-se de uma rede de abrangência mundial presente no dia a dia de milhões de pessoas.
+
+Camadas de Aplicação na Internet
+
+Serviços da Camada de Aplicação
+
+Já sabemos como funciona a arquitetura do serviço eletrônico. Assista agora a este vídeo para compreender o trabalho dos protocolos de envio SMTP, POP3 e IMAP.
+
+
+
+Descreveremos a seguir o funcionamento de três importantes aplicações das camadas de aplicação na Internet:
+
+
+Serviço Web (Protocolo HTTP)
+
+
+Implementado pelo protocolo HTTP, que muita gente confunde com a própria Internet.
+
+
+Serviço de Correio (Protocolos SMTP, IMAP e POP)
+
+
+Serviço do correio eletrônico.
+
+
+Serviço de Nomes (DNS)
+
+
+Sistema de resolução de nomes DNS.
