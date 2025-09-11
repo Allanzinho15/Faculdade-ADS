@@ -1,0 +1,46 @@
+Encaminhando os pacotes na rede
+Roteamento
+
+A principal função da camada de rede é rotear pacotes do hospedeiro origem para o hospedeiro destino da melhor forma possível. Na maioria dos casos, os pacotes necessitarão passar por vários roteadores para chegar ao destino.
+
+
+O algoritmo de roteamento é a parte do software da camada de rede responsável pela decisão sobre a linha de saída a ser usada na transmissão do pacote que entra. Caso a sub-rede utilize datagramas, essa decisão deverá ser tomada para todos os pacotes de dados recebidos e se utilizar circuitos virtuais internamente, as decisões de roteamento serão tomadas somente quando o circuito virtual estiver sendo estabelecido.
+
+
+
+Princípio da otimização
+
+O princípio da otimização de Bellman (1957) estabelece que se o roteador B estiver no caminho ótimo entre o roteador A e o roteador C, o caminho ótimo de B a C também estará na mesma rota.
+
+
+Esse princípio nos diz que o conjunto de rotas ótimas de todas as origens para um determinado destino é uma árvore conhecida como árvore de escoamento (sink tree, em inglês), cuja raiz é o hospedeiro destino. Os algoritmos de roteamento precisam descobrir a árvore de escoamento a partir da topologia da rede.
+
+
+
+Roteamento pelo caminho mais curto
+
+O protocolo de roteamento pelo caminho mais curto é um protocolo estático cuja ideia é criar um grafo da sub-rede, com cada nó do grafo representando um roteador e cada arco indicando um enlace. Para escolher uma rota entre um determinado par de roteadores, o algoritmo simplesmente encontra o caminho mais curto entre eles no grafo.
+
+
+
+Uma forma de medir o comprimento do caminho é em número de saltos (quantidade de enlaces que devem ser utilizados). Utilizando essa unidade métrica na figura anterior, os caminhos ABD e ABE são igualmente longos. Outra unidade métrica é a distância geográfica, caso em que ABD é mais longo que ABE.
+
+
+Há também a unidade métrica baseada no tráfego entre os enlaces. Nesse grafo, o caminho mais curto é o caminho mais rápido, e não o caminho com menos arcos ou com menor distância.
+
+
+Os valores dos arcos podem ser calculados como uma função da distância, da largura de banda, do tráfego médio, do custo de comunicação, do comprimento médio de fila, do retardo detectado ou de outros fatores. Alterando a função de atribuição de pesos, o algoritmo calcularia o caminho mais curto medido de acordo com determinados critérios que podem ser ou não combinados.
+
+
+Existem diversos algoritmos para o cálculo do caminho mais curto. O mais conhecido deles foi desenvolvido por Dijkstra, em 1959. Nele, cada roteador armazena sua menor distância até a origem e o caminho a ser seguido. Na inicialização do algoritmo não existe caminho conhecido, assim, a distância é marcada como infinito. Conforme o algoritmo progride, os caminhos e seus custos são encontrados.
+
+Roteamento pelo caminho mais curto (Dijkstra)
+
+
+
+Figura 1
+
+Para encontrar a árvore de escoamento de A, na figura, marca-se o nó A como permanente, o que é indicado por um círculo preenchido (a). Depois, é examinado, um a um, cada nó adjacente a A alterando o rótulo de cada um deles para a distância até A.
+
+
+Sempre que um nó é rotulado novamente, ele também é rotulado com o nó a partir do qual o teste foi feito, assim, pode-se reconstruir o caminho final posteriormente. Após examinar cada nó adjacente a A, verifica-se todos os nós provisoriamente rotulados no grafo tornando permanente o de menor rótulo, que passa a ser o novo nó ativo.

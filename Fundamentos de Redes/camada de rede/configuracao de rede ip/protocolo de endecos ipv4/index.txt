@@ -1,0 +1,19 @@
+Protocolo de endereços IPv4
+Protocolo IP versão 4 (IPv4)
+
+Na Internet, a camada de rede trata cada pacote de forma independente, não tendo qualquer relação com pacotes anteriores ou posteriores. Pacotes com mesma origem e destino podem, inclusive, passar por diferentes rotas.
+
+
+O IPv4 é definido pela RFC 791, sendo atualizado pelas RFC 1349, RFC 2474 e RFC 6864.
+
+
+Datagramas
+
+Fragmentos
+São unidades básicas de informações que passam pela Internet. Dentro do datagrama está seu cabeçalho, que contém informações sobre sua origem e seu destino, assim como informações sobre para qual protocolo o IP deverá passar os dados. Também fazem parte dele os dados que devem ser entregues à camada de transporte no destino.
+
+
+Quando um datagrama é quebrado em fragmentos, cada um desses fragmentos passa a ser um novo datagrama que está passando pela rede.
+
+
+Um datagrama IP consiste em duas partes: cabeçalho e dados. O cabeçalho tem uma parte fixa de 20 bytes e uma parte opcional de tamanho variável.

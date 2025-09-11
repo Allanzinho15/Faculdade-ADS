@@ -1,0 +1,8 @@
+Introdução
+A camada de enlace e física no modelo OSI
+
+Antes de iniciar nosso estudo, vamos conhecer o modelo de referência Open System Interconnection e como as camadas de enlace e física estão inseridas nesse modelo.
+
+
+
+Agora que você entendeu que o modelo de referência OSI divide as funções das redes de computadores em sete camadas, vamos estudar as duas primeiras camadas.

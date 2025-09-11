@@ -1,0 +1,70 @@
+Camada de rede
+No Modelo OSI, a camada de rede situa-se logo acima da camada de enlace (ligação física entre dois ou mais dispositivos que permite a troca de dados entre os dispositivos participantes), utilizando os serviços oferecidos por essa camada.
+
+
+Saiba Mais
+O Modelo OSI (Open System Interconnection) foi criado pela International Organization for Standardization (ISO) com o objetivo de ser um padrão para construção de redes de computadores. Divide a rede em 7 camadas, em que cada camada realiza funções específicas, implementadas pelo protocolo da camada, prestando serviços para sua camada superior.
+
+
+
+A camada de enlace tem como objetivo organizar a comunicação em nível de enlace, ou seja, ela deve garantir que um hospedeiro consiga se comunicar com o hospedeiro vizinho.
+
+ 
+
+O objetivo da camada de rede é, a partir desse serviço de comunicação lado a lado, promover uma comunicação de âmbito global, permitindo que a informação que sai de um hospedeiro chegue a seu destino não importando em qual local da rede esteja esse destino. Para isso, ele deve realizar duas grandes funções: definir um esquema de endereçamento que seja aceito por toda a grande rede, e realizar o roteamento.
+
+
+Saiba Mais
+Hospedeiro: também conhecido como host, é qualquer equipamento conectado à rede capaz de trocar informações com outros equipamentos. Exemplos de hospedeiros são computadores, impressoras de rede, smartphones etc.
+
+ 
+
+Roteamento: processo de determinar o caminho a ser seguido por um pacote de dados em uma rede para que chegue ao destino da melhor forma possível.
+
+
+Conceitos básicos da camada de rede
+
+
+A quantidade máxima de dados que podem ser trocados entre entidades da camada de rede possui um tamanho limitado. Para que as mensagens maiores que o limite possam ser trocadas entre aplicações, a camada de transporte deverá segmentar tais mensagens em partes menores e colocar cada segmento em uma unidade de dados da camada de rede.
+
+
+Essa unidade de dados trocada entre entidades da camada de rede recebe a denominação de pacote.
+
+Comentário
+É um trabalho diferente daquele realizado pela camada de enlace, que necessita apenas entregar a informação na outra extremidade do meio de transmissão.
+
+A camada de enlace de dados cuida apenas da comunicação de um hospedeiro com outro que esteja diretamente conectado a ele por intermédio de um meio de comunicação. Já a camada de rede vai encaminhar os pacotes permitindo que ocorra a comunicação fim a fim.
+
+
+Para conseguir realizar essa comunicação, a camada de rede deve:
+
+ 
+
+Conhecer toda a topologia da sub-rede de comunicação.
+Escolher rotas que evitem sobrecarregar partes da rede enquanto outras ficam ociosas.
+Compatibilizar a comunicação entre os diferentes tipos de sub-redes existentes.
+ 
+
+Na origem, a camada de rede cria um pacote com dados provenientes da camada superior e acrescenta a ele um cabeçalho com informações de endereço origem e destino. Em sistemas com mais de uma interface de rede deve também consultar suas tabelas de repasse para determinar por qual interface o pacote deve ser encaminhado.
+
+
+Nos hospedeiros intermediários, a camada de rede deve receber o pacote, consultar suas tabelas de roteamento e enviar o pacote pela interface de rede apropriada.
+
+
+No destino, a camada de rede deve verificar se o endereço destino do pacote é o mesmo do hospedeiro e, caso seja, entregar o pacote à camada superior (camada de transporte).
+
+
+Saiba Mais
+Topologia: layout da rede de computadores.
+
+ 
+
+Sub-rede: subdivisão de uma grande rede de computadores. Os roteadores que fazem parte de uma sub-rede devem utilizar o mesmo software de roteamento para que possam trocar informações sobre rotas.
+
+ 
+
+Interface de rede: dispositivo que permite que um hospedeiro possa enviar e receber dados por intermédio de uma rede de computadores. Exemplos de interface de rede são placas de rede ethernet, muito comuns em computadores desktop, e placas de comunicação Wi-Fi comuns em notebooks e smartphones.
+
+ 
+
+Tabelas de repasse: tabela interna de um roteador montada por seu algoritmo de roteamento que possui entradas para todos os destinos conhecidos, com indicação por qual interface de saída deve ser enviado um pacote com base em seu endereço destino.

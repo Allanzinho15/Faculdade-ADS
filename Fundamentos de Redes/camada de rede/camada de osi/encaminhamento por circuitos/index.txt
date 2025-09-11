@@ -1,0 +1,65 @@
+Encaminhamento por circuitos virtuais
+Circuitos virtuais
+
+
+A ideia dos circuitos virtuais é evitar a necessidade de escolher uma nova rota para cada pacote que passa, sendo por isso utilizado em sub-redes com serviço de rede orientado à conexão. Ao se estabelecer uma conexão, é criada uma rota entre o hospedeiro origem e o hospedeiro destino como parte do estabelecimento da conexão. Essa rota é utilizada por todo o tráfego que flui pela conexão entre os hospedeiros. Quando a conexão é liberada, o circuito virtual deixa de existir.
+
+
+Um circuito virtual (CV) consiste em:
+
+ 
+
+Um caminho definido entre origem e destino;
+ 
+
+Números de identificação de circuitos virtuais, um para cada enlace ao longo do caminho;
+ 
+
+Registros em tabelas de comutadores ao longo do caminho.
+Considere a rede da figura a seguir. Os números em cada extremidade dos enlaces representam o número da interface do comutador naquele enlace.
+
+
+
+O hospedeiro H1 solicita à rede que estabeleça um circuito virtual até o hospedeiro H2, e a rede estabelece o caminho H1-A-B-E-F-H2, atribuindo respectivamente os seguintes circuitos virtuais: 23, 8, 37, 22, e 16 (numerações aleatórias).
+
+
+Com base nessas informações são montadas as seguintes tabelas de repasse em cada um dos comutadores ao longo do caminho:
+
+
+
+Sempre que um novo circuito virtual (CV) é estabelecido através de um comutador, um registro para este CV é adicionado à tabela do comutador. De forma análoga, sempre que um CV termina, suas informações são removidas das tabelas do comutador ao longo do percurso.
+
+
+A utilização de diferentes identificadores para os CVs, ao longo do caminho, simplifica o trabalho, uma vez que, a utilização de um mesmo CV durante todo o trajeto iria requerer a concordância de todos os comutadores participantes da rota. O importante para que os comutadores possam definir o caminho é que o número de saída do CV de um comutador seja o mesmo número de entrada do CV do comutador seguinte.
+
+
+No exemplo, o circuito estabelecido entre os comutadores E e F possui CV 22 (o CV 22 sai pela linha 3 de E e entra como CV 22 pela linha 1 de F). Da mesma forma, o CV entre A e B possui valor 8 e o CV entre B e E possui valor 37. Reveja as figuras com os circuitos em destaque.
+
+
+
+Ao estabelecer um caminho dessa forma, é como se fosse colocado um circuito físico (como um cabo de rede) ligando diretamente os hospedeiros, por isso o nome circuito virtual.
+
+
+Outra característica da rede de circuitos virtuais é que, como os pacotes seguem sempre pelo mesmo caminho, eles chegam ao destino na mesma ordem em que saíram da origem.
+
+
+Existem 3 fases que podem ser identificadas em um circuito virtual:
+
+
+Estabelecimento do CV
+
+Nesta fase, os comutadores estabelecem os parâmetros da conexão e o caminho pelo qual os pacotes irão seguir durante a fase de transferência de dados.
+
+
+Transferência de dados
+
+Fase seguinte ao estabelecimento do CV, durante a qual ocorre a transferência de pacotes desde a origem até o destino. Todos os pacotes seguem pelo caminho definido durante a fase de estabelecimento do CV.
+
+
+Encerramento do CV
+
+Fase na qual o circuito virtual é desfeito. Necessária para que os comutadores sejam avisados do encerramento e possam retirar de suas tabelas as informações sobre o circuito virtual encerrado.
+
+
+
+

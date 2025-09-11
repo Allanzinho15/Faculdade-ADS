@@ -1,0 +1,38 @@
+Endereçamento na camada de rede
+Endereçamento
+
+
+Alguns tipos de rede permitem que sejam criados vários endereços por hospedeiro, enquanto outros tipos de rede permitem a utilização de apenas um por hospedeiro. Porém, qualquer que seja o tipo de rede, o endereçamento deve ser completamente independente do endereçamento dos protocolos de outras camadas. A camada de rede tem a função de unificar toda a comunicação da rede, portanto ela deve definir uma forma de identificação dos hospedeiros que seja aceita por toda a rede.
+
+
+Basicamente dois tipos de endereçamento são possíveis:
+
+
+
+Endereçamento hierárquico
+
+No endereçamento hierárquico, o endereço de uma entidade é constituído de acordo com os endereços correspondentes aos vários níveis da hierarquia da qual faz parte. O endereço hierárquico é o método sugerido pelo ITU-T para interconexão de redes públicas de telefonia. Nessa recomendação, os endereços são números decimais formados por três campos: um código do país, um código para a rede, e um campo para o endereçamento dentro da rede.
+
+ 
+
+Observação: setor da ITU (International Telecommunication Union) responsável pela elaboração de padrões e normas consensuais sobre tecnologia que garantam o funcionamento, a interoperabilidade e a integração dos sistemas de comunicação em todo o mundo, com a finalidade de facilitar o acesso das indústrias aos diferentes mercados de cada país.
+
+
+Endereçamento horizontal
+
+No endereçamento horizontal, os endereços não têm relação alguma com o lugar onde estão as entidades dentro da rede. Um exemplo comum desse tipo de endereçamento são os endereços utilizados nas placas de rede ethernet, que são gravados durante seu processo de fabricação e serão sempre os mesmos, não importando em qual lugar do mundo a placa seja utilizada.
+
+ 
+
+Observação: placa de rede ethernet é um dispositivo de hardware que permite a ligação de um computador a uma rede de computadores padrão ethernet.
+
+
+Considerações sobre o roteamento indicam vantagens na utilização de endereçamento hierárquico, uma vez que este contém informações explícitas sobre o local onde se localizam as entidades. Já o endereçamento horizontal permite uma mobilidade das entidades sem reconfiguração.
+
+
+Apesar do endereçamento universal ser realizado pela camada de rede, o envio dos pacotes é realizado por camada inferior que possui seu próprio esquema de endereçamento específico da tecnologia da rede física em uso. Ocorre, portanto, um mapeamento entre os endereços físicos e de rede, e essa tarefa deve ser realizada pela camada de rede. Existem duas técnicas usuais para essa conversão: resolução por meio de mapeamento direto e resolução por meio de vinculação dinâmica.
+
+
+Mapeamento direto
+
+A estação sabe como computar o endereço de enlace por intermédio de uma função que mapeia o endereço de rede no endereço de enlace. Por exemplo, o endereçamento hierárquico onde o campo de endereçamento dentro da rede corresponda exatamente ao endereço físico da estação. Conversões mais complexas podem ser realizadas por meio de tabelas de conversão e técnicas de acesso rápido a essas tabelas.

@@ -1,0 +1,34 @@
+Encaminhamento por datagramas
+Datagramas
+
+Em uma sub-rede de datagramas, nenhuma rota é previamente definida. Ao ser transmitido, um pacote passa por uma série de roteadores, e cada roteador, ao longo do caminho, utiliza o endereço destino para determinar por qual interface de saída enviar o pacote (realiza o repasse).
+
+
+Como não há estabelecimento de circuitos para as transferências, os roteadores, ao longo do caminho, deverão manter tabelas de repasse baseadas no endereço destino do pacote, qualquer que seja o destino. Significa dizer que, se as tabelas de repasse forem alteradas durante uma transferência, os datagramas de uma mensagem podem fazer caminhos diferentes até o destino.
+
+
+Exemplo
+Suponha que você esteja assistindo a um filme pela rede e que o vídeo seja enviado até seu equipamento por uma sub-rede de datagramas. Parece real? Sim, é real. Atualmente, assistimos a filmes pela Internet e ela é uma rede de datagramas.
+
+ 
+
+O filme possui cerca de 90 minutos. Será que as rotas de uma rede mudam durante 90 minutos? Sim, essa é uma possibilidade. Isso significa que, em determinado momento, as tabelas de repasse mudarão, então, os datagramas passarão a fazer outro caminho até chegarem em seu equipamento. Assim, vemos que, ao contrário dos circuitos virtuais, os pacotes em uma rede de datagramas não seguem sempre pelo mesmo caminho.
+
+
+Por que a rota é alterada?
+
+
+Uma possibilidade é que os pacotes estavam passando por uma região que ficou sobrecarregada, e os roteadores descobriram outra região com melhores condições de tráfego, preferindo enviar os pacotes por essa nova região. Uma consequência disso é que os primeiros pacotes que estão seguindo pelo novo caminho podem chegar ao destino antes de alguns dos pacotes que seguiram pelo caminho antigo.
+
+
+Assim sendo, existe a possibilidade de que alguns pacotes cheguem ao destino fora de ordem.
+
+
+Os problemas que podem acontecer em uma rede de datagramas são:
+
+ 
+
+A perda de datagramas.
+Datagramas chegarem com erro.
+Datagramas chegarem fora de ordem.
+Datagramas serem duplicados.

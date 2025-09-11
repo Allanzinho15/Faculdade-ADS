@@ -1,0 +1,138 @@
+Meios de transmissão
+Meios físicos de transmissão
+
+Os meios físicos de transmissão que compõem o canal de comunicação são classificados em:
+
+
+Guiados
+
+Sinal é confinado.
+
+
+Não guiados
+
+Transmissão em espaço aberto.
+
+
+Vamos conhecer melhor cada um?
+
+
+Meios de transmissão guiados
+
+São geralmente empregados como meios físicos guiados, o cabo de par trançado, o cabo coaxial ou o cabo de fibra óptica:
+
+
+Par trançado
+
+
+A imagem abaixo apresenta um diagrama esquemático do par trançado. Esse meio físico é composto por dois fios de cobre em espiral. O trançado facilita o manejo e reduz interferências. Cada par trançado pode representar um canal de comunicação isolado.
+
+
+
+Diagrama do par trançado.
+
+Assim como na imagem abaixo, mais de um par é normalmente agrupado em um cabo com capa protetora, sendo geralmente comercializado dessa forma.
+
+
+
+O par trançado é um dos meios físicos mais comuns para telefonia e redes locais prediais. As categorias mais encontradas são: categoria 5, com banda passante de 100Mhz, e a categoria 7, com banda passante de 1Ghz.
+
+
+Coaxial
+
+
+O diagrama esquemático do cabo coaxial está representado na imagem abaixo. O cabo é composto de quatro elementos, de dentro para fora, o condutor interno que é um núcleo de cobre, isolador dielétrico interno, malha de cobre e revestimento plástico. Devido à sua própria confecção, ele é mais imune às interferências do que o par trançado, porém é menos flexível e usualmente mais caro. Alcança bandas passantes superiores a 500 MHz nos cabos de melhor qualidade, sendo muito empregado até os dias de hoje em redes de televisão a cabo.
+
+
+
+Diagrama do cabo coaxial.
+
+Fibra óptica
+
+
+A fibra ótica é o outro tipo de meio físico guiado bastante utilizado.
+
+
+De forma diferente do par trançado e do cabo coaxial, na fibra óptica, os sinais são constituídos de pulsos de luz; sendo assim, a fibra óptica não sofre interferências eletromagnéticas.
+
+
+A fibra óptica é constituída de um filamento flexível e transparente fabricado a partir de vidro ou plástico. Ela é composta de um material com maior índice de refração (núcleo) envolto por um material com menor índice de refração (casca). Na imagem abaixo, o núcleo e o revestimento são caracterizados por diferentes índices de refração da luz n1 > n2.
+
+
+
+
+Imagem: Diagrama da fibra óptica.
+
+Pela Lei de Snell, também conhecida como lei da refração da luz, existe uma relação direta entre os índices e ângulos de incidência da luz, de forma que ela possa ser refletida e seguir se propagando pelo interior da fibra, vide feixe de luz “a” da imagem abaixo. Esse é o princípio de propagação dos sinais luminosos em uma fibra óptica.
+
+
+Reflexão total do raio de luz "a" e refração do raio de luz "b”.
+
+O par trançado e o cabo coaxial transportam o sinal eletromagnético. Na fibra óptica, o sinal é propagado na forma de luz.
+
+
+
+Par trançado
+
+Cabo Coaxial
+
+Fibra óptica
+Vantagens: Mais flexível e barato.
+
+ 
+
+Desvantagens: Enfrenta em maior escala o problema de interferências eletromagnéticas.
+
+
+
+
+
+
+
+
+
+
+A fibra óptica é o meio fisico principal que garante a interconexão global das redes de dados.
+
+
+A imagem abaixo ilustra as conexões por cabos submarinos que empregam as fibras ópticas como meio de transmissão.
+
+
+Embora as fibras oticas sejam amplamente utilizadas em enlaces de longas distâncias, atualmente observa-se o emprego crescente desse material nas residências dos assinantes de serviços de internet.
+
+
+
+Conexões de cabos submarinos empregando fibra óptica como meio de transmissão.
+
+Meios de transmissão não guiados (espaço aberto)
+
+A transmissão de sinais em meios não guiados se refere à transmissão em espaço aberto.
+
+
+Nesse ambiente, uma série de sinais e ondas eletromagnéticas estão presentes e compartilham o espaço em diferentes frequências.
+
+
+É possível classificar as transmissões em meio não guiado (sem fio) de acordo com as frequências das ondas utilizadas. A imagem abaixo ilustra o espectro eletromagnético e a correspondente classificação.
+
+
+
+Espectro eletromagnético.
+
+De acordo com a imagem acima, é possível separar as transmissões em espaço aberto em três grandes grupos que apresentam características distintas: ondas de rádio (radiofrequência – RF), micro-ondas e infravermelho. Cada grupo pode ainda ser dividido em subgrupos.
+
+
+Os sinais de radiofrequência se espalham desde as centenas de Khz até, no máximo, poucas unidades de Ghz. Estão incluídas nessa faixa as ondas de rádio AM e FM, a TV e a telefonia celular. As redes Wi-Fi operam na faixa conhecida como ISM, nas frequências de 900Mhz, 2.4Ghz e 5Ghz.
+
+Nessas faixas de frequência, o sinal transmitido é irradiado em diversas direções, o que permite um bom suporte à mobilidade para as estações receptoras.
+
+
+Na faixa das micro-ondas, os comprimentos de onda dos sinais são pequenos, e existe a necessidade de haver um alinhamento entre as antenas dos transmissores e receptores dos sinais (linha de visada). As frequências mais altas garantem elevadas bandas passantes para os canais de micro-ondas, porém esses canais são mais suscetíveis às interferências causadas pelas condições climáticas.
+
+
+A próxima imagem ilustra a comunicação via satélite que opera na faixa de micro-ondas tanto em enlaces ponto a ponto quanto em enlaces do tipo broadcast.
+
+
+
+Enlaces de micro-ondas via satélite.
+
+O terceiro grupo emprega transmissões em frequências ainda mais elevadas na faixa do infravermelho e dos lasers. Nessa faixa, também é necessário o alinhamento entre transmissor e receptor. Geralmente, são empregados em enlaces de curto alcance, pois apresentam dificuldade para transpor obstáculos.

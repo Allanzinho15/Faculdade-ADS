@@ -1,0 +1,17 @@
+Controle de fluxo
+Outra operação que pode ser implementada aproveitando-se dos protocolos ARQ é o controle de fluxo.
+
+
+O objetivo desse controle é evitar que um transmissor mais rápido acabe sobrecarregando um receptor mais lento com o envio de quadros a uma velocidade mais rápida que o receptor é capaz de suportar, causando um “afogamento” no receptor.
+
+
+Esse descompasso não é desejável, pois o receptor vai acabar descartando os quadros novos e o transmissor teria que retransmiti-los em um outro momento.
+
+
+Uma forma do receptor dosar a velocidade de transmissão de quadros quando estiver empregando os protocolos da família ARQ é simplesmente retardando o envio dos ACKs.
+
+
+Dessa forma, o receptor consegue reduzir a velocidade com que novos quadros são inseridos no canal por parte do transmissor. O receptor pode inclusive reter todos os ACKs em determinado momento o que causaria timeouts no transmissor e a pausa na transmissão de novos quadros.
+
+
+Assim que o receptor estivesse pronto, bastaria enviar os ACKs para que a comunicação fosse reestabelecida e seguisse com os novos quadros.
