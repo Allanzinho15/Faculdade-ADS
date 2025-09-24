@@ -1,0 +1,49 @@
+Certificado digital
+O que é o Certificado Digital
+
+
+Ele é utilizado para vincular a chave pública a uma entidade, como pessoa, empresa, equipamento etc. O certificado contém a chave pública da entidade, que é assinada digitalmente por uma terceira parte confiável chamada de Autoridade Certificadora (AC).
+
+A existência da autoridade certificadora é importante para garantir um ataque conhecido como “homem no meio” (MITM - Man In The Middle). O MITM ocorre quando um atacante pode interceptar o envio da chave pública e ter acesso às informações.
+
+
+Vejamos a descrição deste problema:
+
+
+
+Cifrando a mensagem
+
+Alice quer enviar um documento para Bob. Ela solicita a chave pública dele para poder cifrar a mensagem. 
+
+
+
+Ataque de personificação
+
+Darth, enquanto isso, realiza um ataque de interceptação para monitorar a comunicação entre ambos. Quando percebe que houve uma solicitação da chave pública de Bob, Darth envia para Alice a sua chave. Ao mesmo tempo, se fazendo passar por ela, solicita a Bob a chave pública dele, o que caracteriza um ataque de personificação. 
+
+
+
+Leitura das informações
+
+Alice, dessa forma, cifra a mensagem com a chave privada de Darth. Obviamente, ele consegue ler as informações enviadas. Para que o processo continue, Darth agora cifra a mensagem com a chave pública de Bob e a envia. Bob, em seguida, recebe a mensagem e a decifra com sua chave privada. 
+
+
+
+
+Ao monitorar a troca de mensagens entre Alice e Bob, Darth conseguiu obter as informações, quebrando a confidencialidade desse processo de comunicação.
+
+
+Para resolver esse problema, é necessária uma terceira parte confiável: a AC, responsável por armazenar as chaves públicas das entidades envolvidas no processo de comunicação. Dessa maneira, a chave fica assinada digitalmente pela autoridade certificadora. Veja o esquema:
+
+
+
+Uso do certificado de chave pública.
+
+Voltemos ao exemplo da comunicação entre Alice e Bob. Agora ela já pode solicitar o certificado digital dele para a AC. Ao receber esse certificado, Alice verificará a assinatura digital da AC. Se ela estiver correta, é um indício de que Alice possui o certificado correto de Bob, podendo, dessa forma, realizar a transmissão das mensagens.
+
+
+O processo para obter a chave privada da AC, contudo, pode esbarrar no mesmo problema. Para o processo funcionar corretamente, o usuário deve ir ao site da AC e realizar o download dos certificados – chamados de certificados raiz –, garantindo, assim, a obtenção da chave pública correta.
+
+
+Saiba Mais
+No Brasil, as ACs estão organizadas na Infraestrutura de Chaves Públicas Brasileira (ICP-Brasil). Trata-se de uma cadeia hierárquica de confiança que viabiliza a emissão de certificados digitais para a identificação virtual do cidadão.

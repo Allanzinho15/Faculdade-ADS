@@ -1,0 +1,49 @@
+Funções de hash
+Conhecendo as funções de hash
+
+
+O objetivo das funções de resumo de mensagem ou de hash é a garantia da integridade das informações. Para calcular o resumo, pode ser utilizado qualquer algoritmo que pegue uma mensagem de qualquer tamanho e a mapeie em uma sequência de caracteres de tamanho fixo.
+
+
+Exemplo
+Você tem um arquivo chamado aula.doc e quer calcular o resumo dessa mensagem. Uma das funções de hash bastante utilizadas é o Message-Digest Algorithm 5 (MD5). Então, caso você tenha instalado em seu computador o MD5, pode utilizar o seguinte comando:
+
+ 
+
+md5sum aula.doc
+
+ 
+
+A saída desse comando é uma sequência de caracteres:
+
+ 
+
+5 9 5 f 4 4 f e c 1 e 9 2 a 7 1 d 3 e 9 e 7 7 4 5 6 b a 8 0 d 1
+
+ 
+
+Essa saída será permanente enquanto não ocorrer nenhuma alteração no arquivo. Portanto, toda vez que quiser verificar se ele foi modificado, basta executar novamente a função de hash e compará-la à sequência original. Se ela permanecer a mesma, isso demonstra que o arquivo é íntegro; caso contrário, é uma evidência de que ele foi modificado.
+
+
+Uma propriedade desejável na função de resumo é que, diante de qualquer modificação mínima na informação, o resumo gerado deve ser totalmente diferente. As funções de resumo também são utilizadas como auxiliares no processo de autenticação.
+
+
+Alguns sistemas usam o hash para armazenar a senha de um usuário. Portanto, quando ele cadastra uma senha, o sistema calcula o hash e armazena esse valor. Quando o usuário for digitar sua senha para entrar no mesmo sistema, o sistema calculará o hash, enviará essa informação e comparará com o que está armazenado. Se for igual, o seu acesso será autorizado.
+
+
+A vantagem dessa solução é que a senha do usuário não fica armazenada no sistema nem trafega pela rede. Quem o faz é o hash.
+
+
+
+Outra propriedade desejável das funções de resumo é que ela não é inversível, ou seja, se temos o hash da mensagem, não conseguimos descobrir a mensagem original. Dessa forma, podemos afirmar que ele configura uma função criptográfica, pois esconde o conteúdo de uma mensagem. Então, quando ocorre o envio do hash da senha, não há como um atacante descobrir a senha original.
+
+
+Entretanto, o uso isolado dele na autenticação pode gerar uma facilidade para o ataque de reprodução. Um atacante que conseguir obter o hash das assinaturas poderá repetir o seu processo, enviando o resumo e obtendo a autorização de acesso.
+
+
+Além do MD5, outras funções de resumo muito utilizadas são as seguintes:
+
+
+Secure Hash Algorithm version 1 (SHA-1)
+Secure Hash Algorithm version 2 (SHA-2)
+Secure Hash Algorithm version 3 (SHA-3)

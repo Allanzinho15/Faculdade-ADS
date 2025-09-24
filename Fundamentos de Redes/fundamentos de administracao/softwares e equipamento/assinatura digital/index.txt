@@ -1,0 +1,34 @@
+Assinatura digital
+O que é Assinatura Digital
+
+
+O objetivo do emprego da assinatura digital é assegurar a autenticidade e a integridade das informações. Automaticamente, está garantido o não repúdio. A assinatura ainda garante a validade jurídica dos documentos, pois existe a certeza de que eles não sofreram qualquer adulteração, estando íntegros e completos, e a certeza quanto a sua autoria, asseverando que eles realmente foram assinados por determinada pessoa.
+
+
+
+O processo utilizado para realizar a assinatura digital combina o emprego da criptografia assimétrica com as funções de resumo da mensagem. Para que um documento seja assinado digitalmente, o usuário deve seguir estes passos:
+
+
+
+Calcular
+
+Cifrar
+
+Enviar
+Calcular o resumo da mensagem.
+
+
+
+
+
+
+O esquema a seguir ilustra esse processo:
+
+
+
+Assinatura digital de um documento.
+
+Ao receber o documento, o receptor precisa realizar o seguinte processo para o validar:
+
+
+O usuário deve calcular o hash da mensagem e decifrar o outro recebido com a utilização da chave pública do emissor. Em seguida, ele vai comparar os dois hashes. Se forem iguais, há a garantia de que o documento não foi modificado e o emissor é autêntico. Caso sejam diferentes, algum problema ocorreu. Mas não é possível garantir se o problema reside na modificação dele ou na autenticidade do emissor. Estabelece-se apenas que o documento não é válido.

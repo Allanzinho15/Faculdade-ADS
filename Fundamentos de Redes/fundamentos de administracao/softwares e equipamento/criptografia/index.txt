@@ -1,0 +1,66 @@
+Criptografia
+Entendendo a criptografia
+
+
+Assim como a criptoanálise, que não discutiremos aqui, a criptografia é uma vasta área que compõe a criptologia.
+
+
+A criptografia é uma área que estuda técnicas para esconder não a mensagem real, mas o seu significado. Ela pode ser, inclusive, utilizada para garantir a CID. A propriedade a ser garantida depende do mecanismo utilizado e de que maneira ele foi empregado.
+
+
+Funções
+
+Para entendermos o processo criptográfico, iremos, inicialmente, identificar duas funções principais:
+
+
+
+Ciframento
+
+Transforma um escrito simples, cujo alfabeto comum é utilizado para compor a mensagem original, em um texto cifrado. Nesse texto, as letras originais são substituídas pelas do alfabeto cifrado, escondendo, dessa forma, o conteúdo da mensagem. A função do ciframento é responsável pela criptografia da mensagem original. Já a substituição das letras da mensagem original é feita pelas cifras (Qualquer forma de substituição criptográfica aplicada ao texto original da mensagem.).
+
+
+
+Deciframento
+
+Realiza o processo oposto. Como o texto cifrado é transformado no original, o conteúdo de sua mensagem pode ser entendido. A função de deciframento é a responsável pela decriptografia da mensagem cifrada.
+
+
+As técnicas modernas de criptografia envolvem o uso de um algoritmo de criptografia associado a uma chave. O segredo do processo não está no algoritmo em si, mas na chave utilizada para a realização do ciframento.
+
+
+Classificação
+
+Quanto ao modelo de chave empregada, os algoritmos criptográficos podem ser classificados como:
+
+ 
+
+Algoritmos de chave simétrica ou de chave privada: Empregam uma única chave. Dessa forma, a mesma chave que realiza a cifragem faz a decifragem. Alguns exemplos de algoritmos simétricos: DES, 3DES, Blowfish, RC4, RC5, IDEA, Rinjdael e Advanced Encrytion Standard (AES) - Algoritmo padrão adotado por diversos governos e várias empresas para garantir a confidencialidade.
+ 
+
+Algoritmos de chave assimétrica ou de chave pública: Utilizam duas chaves (pública e privada): uma para cifrar e outra para decifrar. Dependendo da ordem em que ambas são empregadas, o algoritmo pode garantir a confidencialidade ou a autenticidade. A exemplo temos o algoritmo Rivest-Shamir-Adleman (RSA), que é o padrão utilizado para transações comerciais, financeiras etc.
+
+Vamos entender melhor o que ocorre com o uso de cada modelo de chave, de acordo com a ordem na qual são utilizadas:
+
+
+Chave pública
+
+
+Quando a chave pública é utilizada na função de cifragem, apenas a privada pode decifrar. Como o nome sugere, a chave privada fica restrita à entidade.
+
+ 
+
+Exemplo: pessoa, empresa ou equipamento.
+
+ 
+
+Neste caso, está garantida a confidencialidade, porque só quem possui a chave privada pode decifrar o conteúdo.
+
+
+Chave privada
+
+
+Quando a chave privada é empregada no processo de cifragem apenas a pública pode decifrar. Como a chave usada para decifrar é a pública, qualquer pessoa pode possuí-la e, portanto, decifrar a mensagem.
+
+ 
+
+Neste caso, não há como garantir a confidencialidade, mas sim a autenticidade. A aplicação das chaves nesta ordem permite o emprego da assinatura digital.

@@ -1,0 +1,34 @@
+Gerência de detecção e correção de falhas (F = fault)
+A área de gerenciamento de falhas é importante para garantir que os serviços e as redes permaneçam em operação. De acordo com a norma ISO, esta área permite registrar, detectar e reagir às condições de falha da rede. Tal gerenciamento depende do bom funcionamento de cada componente da rede tanto de forma isolada quanto pela interoperação com outros equipamentos dela.
+
+
+As possíveis falhas nas redes podem ser causadas por problemas de:
+
+
+
+Software
+
+Enlace
+
+Equipamento
+Falha no sistema operacional de um servidor ou em um serviço.
+
+
+
+
+
+
+Quando uma falha ocorre, o gerente da rede deve analisar as informações de gerência para identificar a causa raiz do problema, descobrindo, em uma diversidade de equipamentos, softwares e protocolos, o que realmente causou o problema.
+
+
+O gerenciamento de falhas pode ser dividido em dois subsistemas:
+
+
+Reativo
+
+Trata as falhas no curto prazo (detecção, isolamento, correção e registro de falhas).
+
+
+Proativo
+
+Monitora a rede para tentar impedir que ocorram falhas.

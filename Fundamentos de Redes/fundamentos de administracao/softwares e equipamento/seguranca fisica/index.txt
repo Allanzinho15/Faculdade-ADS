@@ -1,0 +1,45 @@
+Segurança física
+Segurança física x Segurança lógica
+
+
+Estar conectado à internet nos expõe a diversos riscos, como roubo de informações e de identidade, adulteração de informações etc. De acordo com a norma ABNT 27001:2013, para minimizar os riscos dessa conexão, é necessário implementar mecanismos de controle a fim de garantir a segurança dela.
+
+
+Esses mecanismos podem ser divididos em dois tipos:
+
+
+Mecanismos de controle físicos
+
+
+Evitam ou dificultam as falhas nos equipamentos e instalações.
+
+
+Mecanismos de controle lógicos
+
+
+Evitam ou dificultam as falhas relacionadas aos softwares utilizados.
+
+
+Vejamos agora a aplicação desses mecanismos na manutenção da segurança de uma conexão.
+
+
+Segurança física abrange todo ambiente em que os sistemas de informação estão instalados. Seu objetivo principal é garantir que nenhum dano físico ocorra nos equipamentos. Por exemplo: roubo de equipamentos, incêndio, inundação e qualquer ameaça às instalações físicas.
+
+
+A norma ABNT NBR ISO/IEC 27002:2013 divide a segurança física em dois itens principais:
+
+
+Áreas seguras: Previnem o acesso físico não autorizado, os danos e as interferências em
+instalações e informações da organização.
+Equipamentos: Impedem perdas, danos, furto ou comprometimento de ativos e interrupção das
+atividades da organização.
+
+A segurança física envolve outras áreas da Engenharia, como a civil e a elétrica, ao permitir a projeção de prédios com paredes adequadas à proteção dos equipamentos, sistemas de para-raios, aterramento, limpeza da área para evitar incêndios etc.
+
+
+Alguns exemplos de mecanismos de controle físicos podem ser encontrados no emprego de:
+
+
+Sistemas de refrigeração e de combate a incêndio
+
+Projetados para os equipamentos poderem operar em condições adequadas de temperatura e umidade. Ainda garantem que os casos de incêndio possam ser combatidos o mais rápido possível.

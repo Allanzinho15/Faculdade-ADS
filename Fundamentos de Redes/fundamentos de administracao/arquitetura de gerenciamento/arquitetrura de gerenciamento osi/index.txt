@@ -1,0 +1,28 @@
+Arquitetura de gerenciamento OSI
+A importância do gerenciamento
+
+
+Com o crescimento das redes, a administração e o gerenciamento delas passaram a ser atividades de suma importância. Afinal, seus ambientes são complexos e heterogêneos, tendo diversos tipos de equipamentos, fabricantes e protocolos em operação.
+
+
+Observe o esquema a seguir:
+
+
+
+Vemos na imagem diversos servidores e várias estações de trabalho com sistemas operacionais Windows e Linux, firewalls, roteadores, switches e equipamentos para redes sem fio.
+
+Imaginemos uma paralisação de algum serviço ou parte da rede. Nesses casos, muitos se perguntam: onde ocorreu a falha? No servidor? No switch? Na estação?
+
+
+
+A gerência de redes auxilia no processo de identificação das falhas e na correção de problemas, permitindo que a rede possa operar corretamente e oferecer níveis de serviços adequados à necessidade dos usuários.O objetivo dessa gerência é monitorar e controlar os elementos físicos ou lógicos da rede, assegurando, segundo Stallings (1998), certo nível de qualidade de serviços.
+
+
+Trata-se do ato de oferecer serviços que atendam à necessidade dos usuários com um funcionamento adequado, bom desempenho e disponibilidade.
+
+
+
+Para oferecer uma organização das tarefas de gerenciamento de redes, a International Organization for Standardization (ISO) criou a M.3400, um modelo de gerência derivado de recomendação publicada pela International Telecommunications Union (ITU).
+
+
+Esse modelo se baseia em cinco áreas conhecidas pela sigla FCAPS (fault, configuration, accounting performance e security). Vamos conhecê-las agora!
