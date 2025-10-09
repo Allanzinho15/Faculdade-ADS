@@ -1,0 +1,76 @@
+Utilizando a computação em nuvem
+Neste vídeo, serão apresentadas as vantagens e desvantagens da computação em nuvem.
+
+
+
+A computação em nuvem se baseia na utilização da infraestrutura computacional de terceiros como uma solução inteligente e eficiente para todos os tipos de usuários. A partir de qualquer computador e em qualquer lugar, podemos acessar informações, arquivos e programas em um sistema único.
+
+
+
+Assim, para realizarmos determinada tarefa, bastaria nos conectarmos ao serviço desejado, acessar as ferramentas, salvar o trabalho e depois acessá-lo de qualquer outro lugar, porque seus dados não estão salvos em um disco no seu computador, mas armazenados em uma complexa infraestrutura de TI de algum provedor.
+
+
+Essa infraestrutura de TI complexa é um ambiente redundante e resiliente, pois pode ser definido como a capacidade de um sistema de informação continuar em operação, mesmo com o mau funcionamento de um ou mais dos seus componentes. Com isso, os serviços podem ser acessados de maneira remota, de qualquer lugar do mundo e a qualquer hora.
+
+
+E o que você precisa para acessar? Um computador ou smartphone, conectado à internet e a um navegador.
+
+
+Podemos perceber que o uso da computação em nuvem está relacionado a uma espécie de terceirização do hardware e do software, trazendo muitas vantagens para empresas de vários portes.
+
+
+Vantagens da computação em nuvem
+
+A grande vantagem da computação em nuvem é a possibilidade de utilizar os recursos de hardware e software disponíveis de forma mais eficiente, permitindo reduzir a capacidade ociosa em armazenamento e processamento de dados, por meio do compartilhamento de computadores e servidores interligados pela internet.
+
+Vamos agora detalhar as principais vantagens da computação em nuvem.
+
+
+
+Economia
+Não há necessidade de investir em software e hardware, ou seja, não há custos iniciais com infraestrutura, pagamos pelos serviços que são consumidos. Além disso, economizamos custos com aluguel de espaços, eletricidade, ar-condicionado, manutenção e despesas operacionais, e ainda temos a possibilidade de pagar para obter recursos adicionais temporários, se necessário, assim como a possibilidade de parar de pagar pelos recursos que não são mais necessários.
+
+
+Escalabilidade
+É possível aumentar o uso de recursos de forma simples, sendo compatível com o escalonamento vertical e horizontal. No escalonamento vertical, há a adição de recursos para aumentar a potência do servidor, por exemplo, adicionando CPUs ou memória. No escalonamento horizontal, há a adição de mais servidores que funcionaram juntos.
+
+
+Elasticidade
+É possível adaptar a disponibilidade de recursos à medida que a demanda aumenta ou diminui. Por exemplo, imagine que um site divulga um furo de notícia, levando a um aumento no tráfego de visitas ao site. Por causa da elasticidade, automaticamente, serão provisionados mais recursos computacionais para lidar com o aumento do tráfego. Quando o tráfego voltar ao normal, os recursos adicionais serão liberados.
+
+
+Atualização constante
+Não há necessidade de a empresa despender esforços e recursos para manter a infraestrutura de equipamentos (hardware ou software) atualizada, podendo concentrar os esforços apenas no seu negócio. Os provedores de serviços na nuvem serão responsáveis por manter a infraestrutura atualizada.
+
+
+Implantação rápida
+Os serviços solicitados por uma empresa podem estar em funcionamento em pouco tempo, diferentemente da abordagem tradicional ou convencional, que é necessário planejar compras de equipamentos, instalar, construir ambientes etc.
+
+
+Acesso global
+Os serviços em nuvem estão disponíveis 24 horas por dia, 7 dias na semana. É possível trabalhar a qualquer momento e em qualquer local, desde que tenha um dispositivo habilitado para internet.
+
+
+Disponibilidade
+Os provedores de computação em nuvem oferecem serviços de backup de dados, recuperação de desastre e replicação de dados, garantindo que seus dados estejam sempre disponíveis.
+
+
+Segurança
+O provedor de computação em nuvem é quem lida com a responsabilidade de segurança. Desde garantindo a segurança física, ao controlar quem tem acesso ao prédio e operação dos servidores, como a segurança lógica, ao controlar quem pode se conectar aos seus sistemas e dados pela rede.
+
+Desvantagens da computação em nuvem
+
+Embora a nuvem seja uma tecnologia recente e tenha muitos benefícios, é importante não negligenciar suas desvantagens. A seguir, citamos as principais.
+
+
+
+Perda de controle
+Ao optar por serviços em nuvem, você está entregando seus dados e aplicativos ao provedor. Você depende do provedor de nuvem caso ocorram problemas de hardware ou software e a velocidade e a qualidade do serviço nessas situações podem não corresponder às suas expectativas.
+
+
+Interrupção dos serviços em nuvem
+No caso de um ataque cibernético, falta de energia ou perda de conectividade com a internet pelo provedor de nuvem, sua empresa pode sofrer períodos de inatividade indesejados.
+
+
+Segurança
+Aqui temos um paradoxo! Apesar da segurança ter sido citada como vantagem, ela também apresenta problemas. Os ataques têm sido direcionados para os grandes provedores de nuvem, aumentando o risco de perdas. Além disso, você pode sofrer perdas de forma indireta, quando outro cliente do mesmo provedor sofrer algum tipo de ataque.

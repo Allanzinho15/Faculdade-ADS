@@ -1,0 +1,39 @@
+Nuvens híbridas e outros tipos
+Neste vídeo, serão apresentados outros tipos de implantação em nuvem.
+
+
+
+Hybrid cloud – nuvem híbrida
+
+As nuvens híbridas são aquelas constituídas pelos serviços da nuvem pública e privada. Alguns serviços são hospedados na nuvem privada, enquanto outros na nuvem pública. Assim, a empresa pode manter dados cruciais na nuvem privada e outros dados na nuvem pública, aproveitando o melhor dos dois mundos.
+
+Ao optar pela nuvem híbrida, a empresa agrega uma solução que mescla características da nuvem privada e da nuvem pública.
+
+
+Resumindo
+Um modelo de computação em nuvem híbrida é aquele que integra duas infraestruturas de cloud computing. Assim, é possível aproveitar as funcionalidades de ambos os modelos sem comprometer a performance, os custos operacionais ou mesmo a privacidade.
+
+
+A nuvem híbrida atende perfeitamente à necessidade de se criar um ambiente de alta performance e controle para as rotinas internas de qualquer empresa. Nesse caso, ao mesmo tempo em que todas as soluções terão sua escalabilidade comparável com a de ambientes públicos, o gestor de TI poderá definir políticas de segurança de acordo com as demandas internas.
+
+
+
+A adoção da nuvem híbrida pode beneficiar a empresa de diferentes formas. A união da cloud computing em ambientes públicos com a cloud computing em ambientes privados traz mais flexibilidade e versatilidade para a empresa.
+
+A principal vantagem da nuvem híbrida está na redução do tempo necessário para efetivamente escalar os recursos, uma vez que a criação de uma infraestrutura mesclada é feita em um prazo menor que a aquisição e a integração de novos dispositivos a uma infraestrutura já existente.
+
+
+Community Cloud – nuvem comunitária
+
+As nuvens comunitárias são compartilhadas por diversas empresas que possuem interesses comuns, como a missão, os requisitos de segurança, políticas, entre outros. Nesse modelo, a nuvem comunitária pode ser administrada tanto pela própria organização ou por terceiros e pode existir tanto dentro (on premises) quanto fora (off premises) da organização.
+
+A nuvem comunitária funciona de modo semelhante à nuvem pública, mas com um número de usuários reduzido. Assim como na nuvem pública, os custos com manutenção, a troca de equipamentos e atualização do hardware nesse tipo de infraestrutura são divididos entre diferentes usuários.
+
+
+Comentário
+Ao contrário da nuvem pública, essa infraestrutura pode ser configurada de acordo com os objetivos das organizações.
+
+
+Distributed Cloud – nuvem distribuída
+
+A nuvem distribuída se caracteriza pela possibilidade de ser acionada em diferentes localidades, mas possui servidores conectados a uma única rede ou hub de serviços. Optando por essa solução, a empresa garante o máximo de disponibilidade de seus recursos, além de uma baixa latência.

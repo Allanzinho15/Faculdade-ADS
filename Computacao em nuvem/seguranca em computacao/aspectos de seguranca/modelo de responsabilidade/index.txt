@@ -1,0 +1,65 @@
+Modelo de Responsabilidade Compartilhada
+Cumprimento de regulações normativas e legais
+
+Neste vídeo, será explicada a importância do cumprimento de regulações normativas e legais.
+
+
+
+A responsabilidade pela segurança não é uma variável binária, estando sob cuidados exclusivos da organização cliente ou do provedor de serviço em nuvem. Dependendo do modelo de serviço contratado, parte dessa responsabilidade pode ser passada para uma ou outra ponta. Existe uma associação óbvia com o preço pago por cada tipo de serviço, mas podemos explicar, de forma mais ampla, o funcionamento dessa divisão de encargos por meio de algo que é conhecido como modelo de responsabilidade compartilhada.
+
+
+A partir dos três modelos de serviço, IaaS, PaaS e SaaS, podemos traçar uma linha divisória no ponto focal da responsabilidade, delegando a cada polo do contrato de serviço maior ou menor responsabilidade sobre os segmentos em particular. Um modelo de responsabilidade compartilhada é uma estrutura de segurança em nuvem que determina as obrigações de segurança de um provedor de computação em nuvem e suas organizações clientes, para garantir a responsabilidade de cada um.
+
+
+Atenção
+Quando falamos em organização cliente, devemos pensar até mesmo em um usuário comum, pessoa física, cliente que contrate uma máquina virtual para rodar algum tipo de aplicação específica na nuvem. Porém, para efeito didático, chamaremos simplesmente de cliente o polo contratante do serviço e provedor o polo contratado.
+
+
+Também para efeito didático, iremos calcar a explicação do conceito de responsabilidade compartilhada no modelo de implantação "nuvem pública", pois é o modelo mais extremo de delegação de responsabilidade ao provedor do serviço em nuvem. A ideia é explicar como as responsabilidades são distribuídas dependendo do provedor e do modelo de serviço específico com base na implantação tipo "nuvem pública". Alguns exemplos de provedores serão apresentados com foco mais intenso nos três principais já mencionados: AWS, Azure e GCP. De forma geral, o tipo de modelo de serviço em nuvem determina quem é responsável por quais atividades relacionadas à segurança.
+
+
+De acordo com o Cloud Standards Customer Council, um famoso grupo de advocacia dedicado a acelerar a adoção de computação em nuvem e defender usuários da nuvem em esfera judicial, as responsabilidades dos usuários geralmente aumentam à medida que passam de SaaS para PaaS e IaaS.
+
+
+A Cloud Security Alliance (CSA) é uma organização sem fins lucrativos cuja missão é “promover o uso das melhores práticas para fornecer garantia de segurança na computação em nuvem e educação sobre os usos da computação em nuvem para ajudar a proteger todas as outras formas de computação”. A CSA também enxerga, de maneira geral, que responsabilidade sobre a segurança pende mais para o lado do cliente no modelo IaaS, como a situação oposta no modelo SaaS e o modelo PaaS ocupando o meio do caminho.
+
+
+
+Grau de responsabilidade sobre a segurança de acordo com o modelo de serviço
+
+De forma geral, e com base em exemplos práticos, a distribuição de responsabilidades ante o modelo de serviço pode ser explicada da seguinte maneira:
+
+
+SaaS
+
+O provedor é responsável por quase todos os aspectos da segurança, desde a infraestrutura subjacente ao sistema aplicativo que suporta o negócio do cliente – por exemplo, uma ferramenta de ERP ou CRM – até os dados que o aplicativo produz. Ficam delegadas ao cliente algumas responsabilidades de segurança, como proteger as credenciais de login contra os ataques de phishing ou engenharia social. Serviços como Dropbox, Zoom, Microsoft 365 e Google Workspace são exemplos do tipo software como serviço e facilitam a compreensão do papel extremo que o provedor dos serviços tem, inclusive com os dados produzidos pelos softwares e armazenados na infraestrutura associada ao serviço.
+
+
+PaaS
+
+O provedor, oferecendo a plataforma como serviço, assume, em geral, uma responsabilidade que se estende aos aplicativos e sistemas operacionais da plataforma. Mas cabe ao usuário a responsabilidade pela segurança de qualquer código, dado ou outro conteúdo produzido na plataforma. Como exemplos dessa modalidade podemos citar serviços como Microsoft Azure App Service, AWS Elastic Beanstalk, Google Kubernetes Engine e Red Hat OpenShift, que cuidam de todas as camadas abaixo da virtualização, porém não se preocupam com a segurança do que é executado nas máquinas virtuais.
+
+
+IaaS
+
+O provedor de nuvem é responsável pelos serviços e armazenamento, que inclui os componentes básicos da infraestrutura de nuvem, como camada de virtualização, discos e redes. O provedor também é responsável pela segurança física dos data centers que abrigam sua infraestrutura. Os usuários de IaaS, no entanto, se responsabilizam geralmente ​​pela segurança do sistema operacional e de toda a pilha de software necessária para executar seus aplicativos, bem como seus dados. Exemplos de serviços que podem ser citados são aqueles que servem como base para os de maior abstração: Microsoft Azure, Amazon Web Service e Google Compute Engine, ou seja, os equipamentos mais básicos, servidores e armazenadores, e os motores que garantem seu funcionamento correto.
+
+
+
+
+Embora a computação em nuvem seja uma tecnologia bem-estabelecida, o conceito de responsabilidade compartilhada pode parecer confuso porque não existe um consenso de mercado para sua aplicação. De qualquer maneira, o conceito traz benefícios para modelar as linhas de demarcação de responsabilidade de segurança sob encargo de cada parte no contrato do serviço.
+
+
+Para explicar o emprego geral, tomaremos como base uma pilha de elementos organizados em camadas. Considerando os três modelos de serviço e a visão sistêmica oferecida pela pilha de elementos constituintes de um serviço em nuvem, apresentamos, na imagem a seguir, a segmentação das responsabilidades com cortes em diferentes fronteiras entre camadas, caracterizando a segmentação de responsabilidades entre cliente e provedor de acordo com o modelo de serviço contratado.
+
+
+
+Grau de responsabilidade sobre a segurança de acordo com o modelo de serviço
+
+Exemplificando em termos práticos, ao trabalhar com IaaS, o cliente pode selecionar uma imagem pré-instalada de um sistema operacional (com ou sem software adicional instalado dentro da imagem), implantar seus aplicativos e gerenciar permissões para acesso seus dados, sendo responsável pela segurança de todas as camadas acima do sistema operacional.
+
+
+Ao trabalhar com PaaS, os clientes podem ter a capacidade de controlar o código em um ambiente gerenciado (serviços como AWS Elastic Beanstalk, Azure Web Apps e Google App Engine) e gerenciar permissões para acessar nossos dados, assumindo responsabilidade pela segurança apenas das próprias aplicações e de seus dados.
+
+
+Ao trabalhar com SaaS, o cliente recebe um serviço totalmente gerenciado, e tudo o que deve fazer é gerenciar permissões para acessar seus próprios dados.

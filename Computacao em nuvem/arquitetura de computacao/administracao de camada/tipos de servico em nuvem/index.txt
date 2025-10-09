@@ -1,0 +1,96 @@
+Tipos de serviços em nuvem
+Neste vídeo falaresmos sobre os tipos de serviço de computação em nuvem, explicar o serviço de armazenamento, de compartilhamento e explicar o emprego de novas tecnologias.
+
+
+
+Serviço de computação em nuvem
+
+
+É uma tecnologia que permite acesso a serviços de computação de qualquer lugar, através de uma conexão de internet. Essa tecnologia permite aos usuários armazenar, processar, gerenciar e acessar dados, aplicações e serviços em um servidor remoto, através de uma interface de usuário.
+
+
+Os serviços de nuvem geralmente são oferecidos por provedores de serviços (hosts) que mantêm e administram os servidores remotos para seus clientes, oferecendo escalabilidade e flexibilidade para as organizações. Isso porque permitem aos usuários acessar recursos de hardware de forma eficiente, de acordo com a demanda.
+
+
+O provedor de serviço de computação, também conhecido como back end, é responsável por disponibilizar recursos que garantam alta escalabilidade e disponibilidade, garantindo funcionamento contínuo com baixa latência. Nesse cenário, são incluídos vários servidores, computadores, sistemas de armazenamento de dados, máquinas virtuais e programas que, juntos, constituem a nuvem de serviços de computação. O lado de back end também é responsável por fornecer mecanismos de segurança, controle de tráfego e protocolos que conectam computadores em rede para comunicação.
+
+
+Atenção
+O back end é composto de diversos componentes, que, de forma semelhante ao front end, pode variar de acordo com o modelo e a arquitetura de nuvem empregadas.
+
+
+Geralmente, encontramos os seguintes componentes:
+
+
+Aplicação (application).
+Serviço (service).
+Tempo de execução na nuvem (cloud runtime).
+Dispositivos de armazenamento (storage).
+Elementos de infraestrutura.
+Serviços de gerenciamento.
+Serviços de segurança.
+
+A aplicação é responsável por receber as requisições do usuário do serviço, assim, podemos afirmar que ela está relacionada à interface de acesso à nuvem. Nessa camada, serão coordenadas as necessidades do usuário com os recursos no back end.
+
+
+Já o serviço é responsável por fornecer a utilidade da nuvem em si. É nesse componente que está o coração da nuvem. Qualquer tarefa que o usuário queira executar será realizada nesse componente, independentemente se a nuvem oferece um serviço de armazenamento, um ambiente de desenvolvimento, ou qualquer outra atividade.
+
+
+O cloud runtime é o local do back end no qual o serviço é executado, e que é criado com a ajuda dos softwares de virtualização, conhecidos por hypervisores ou monitores de máquinas virtuais. O runtime permitirá que várias execuções em paralelo no mesmo servidor possam coexistir.
+
+
+Para facilitar a compreensão, poderíamos dizer que o cloud runtime seria semelhante ao papel de um sistema operacional em um computador convencional. O sistema operacional permite que o usuário possa executar diversas atividades concorrentemente em um único dispositivo físico. O cloud runtime vai permitir, por exemplo, que várias instâncias de máquinas virtuais possam ser executadas de forma paralela.
+
+
+O hypervisor é responsável por implementar a virtualização. É um componente que cria e executa máquinas virtuais, sendo a base do funcionamento de uma nuvem, onde diversos usuários compartilham o mesmo recurso físico, cada um com suas próprias particularidades. Por exemplo, um possui todas as suas aplicações desenvolvidas para executar sob o sistema operacional Windows, enquanto outros utilizam Linux.
+
+
+Serviço de armazenamento
+
+É uma solução de computação na qual os dados são armazenados em servidores remotos e acessados através da internet. Trata-se de um serviço ideal para empresas que desejam acessar seus arquivos e aplicativos em qualquer lugar, a qualquer momento, sem a necessidade de um servidor local. Os serviços de armazenamento na nuvem também permitem que os usuários compartilhem arquivos com outras pessoas de maneira segura.
+
+
+Além disso, o serviço de armazenamento na nuvem oferece flexibilidade e escalabilidade, permitindo que as empresas adicionem ou removam recursos conforme necessário. Isso evita que a empresa tenha que gastar dinheiro com um hardware que pode nunca ser usado.
+
+
+O serviço de armazenamento na nuvem também oferece segurança aprimorada, pois os dados são armazenados em servidores seguros e acessíveis apenas por usuários autorizados.
+
+
+Quanto ao armazenamento, é responsável por manter a consistência das informações, ou seja, é o local da nuvem onde todos os dados estão armazenados. Para realizar o armazenamento dos dados, podem ser utilizados discos rígidos (HD), unidades de estado sólido (SSD – solid state drive) e, mais recentemente, o Optane.
+
+
+Atualmente, ainda é comum o emprego do disco rígido ou HD, os quais continuam sendo desenvolvidos com elevadas capacidades individuais (8TB e 16TB). Os SSDs têm como grande vantagem a velocidade quando comparado ao HD tradicional, entretanto, o custo ainda é elevado para grandes capacidades e bancos de memória de massa.
+
+
+Mais recentemente, a Intel ofereceu o uso da memória Optane, com o dispositivo Intel Optane DC Persistent Storage, embora a capacidade atual desses dispositivos não seja ainda tão elevada quanto desejável para seu custo.
+
+
+
+Em uma área de armazenamento, existirão diversos discos rígidos instalados no próprio servidor ou em dispositivos especializados chamados de storage. Para que esses discos possam ser utilizados, é empregado um software de gerenciamento, particionando os discos da forma que é necessária para que seja oferecido o serviço da nuvem.
+
+
+Muitos fornecedores utilizam sistemas de armazenamento complexos, sempre com o propósito de maior segurança e confiabilidade. Um desses tipos é o NAS (network attached storage), um equipamento robusto para armazenar de forma segura grandes volumes de dados. O NAS é um sistema completo com processador e memória principal e secundária. Ele pode ser usado por empresas nas suas redes locais, bem como dispositivos de armazenamento para sistemas de computação em nuvem.
+
+
+Serviço de compartilhamento
+
+
+Alguns sistemas de computação em nuvem gerenciam o compartilhamento de dados na rede por meio dos protocolos de compartilhamento de recursos, principalmente os arquivos e diretórios.
+
+
+Comentário
+Dois protocolos principais que podem ser utilizados são o CIFS (Commom Internet File System) e o NFS (Network File system - RFC 7530). Trata-se de dois protocolos semelhantes no propósito e na operação, embora com características e origens diferentes.
+
+
+Sistemas de nuvem requerem, na maioria das vezes, muita capacidade de armazenamento e, por estarem afastados geograficamente do cliente da nuvem, esses protocolos requerem compartilhamento, de modo a atender às diferentes demandas.
+
+
+A infraestrutura engloba o hardware de processamento, que permite que todos os serviços sejam executados. Neles estão os servidores de grande capacidade de processamento, usualmente empregando processadores Xeon da Intel ou Opteron da AMD em face de sua grande capacidade de processamento e bastante espaço de memória RAM de baixa latência.
+
+
+Emprego de novas tecnologias
+
+É comum que os servidores também empreguem as chamadas GPUs (graphics processing unit), que, por nós, usuários comuns, são conhecidas por placas de vídeo, mas que são empregadas em servidores de alto desempenho a fim de obter maior capacidade de processamento.
+
+
+Além das GPUs, alguns provedores de nuvem podem usar soluções específicas, como o Google Tensor Processing Unit, ou seja, circuitos integrados de aplicação específica (ASICs) desenvolvidos especialmente pelo Google e disponibilizados para os usuários da Google Cloud Platform, com foco em executar tarefas de inteligência artificial (IA).

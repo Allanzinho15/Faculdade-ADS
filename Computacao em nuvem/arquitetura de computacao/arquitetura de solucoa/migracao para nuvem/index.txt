@@ -1,0 +1,95 @@
+Migração para nuvem
+Neste vídeo iremos apresentar as estratégias que podem ser utilizadas para realizar a migração para a nuvem.
+
+
+
+Adotar a computação em nuvem não é uma decisão simples, porém atualmente tornou-se indispensável para se ter sucesso na era digital. Um número elevado de empresas está migrando para a nuvem corporativa, e assim incluindo no seu orçamento os gastos com TI em soluções cloud.
+
+
+No entanto, apesar dos investimentos na nuvem, uma em cada três empresas não consegue perceber seus benefícios de acordo com o relatório Unisys Cloud Success. A estratégia de migração para a nuvem é um assunto complexo.
+
+
+Quando migrar para a nuvem?
+
+Vejamos algumas respostas para esse questionamento:
+
+
+Quando sua infraestrutura está ultrapassada: Se sua infraestrutura de TI está ultrapassada ou não é mais suficiente para suas necessidades, a computação em nuvem pode ser uma opção viável.
+Quando você precisa escalar rapidamente: Se você precisa aumentar a capacidade de processamento ou armazenamento rapidamente, a computação em nuvem pode ser a solução ideal.
+Quando você precisa acessar de qualquer lugar: A computação em nuvem é ideal para aplicativos que precisam ser acessados de qualquer lugar, pois oferece acesso remoto e seguro aos seus dados e aplicativos.
+Quando você precisa economizar dinheiro: A computação em nuvem elimina muitos dos custos associados à infraestrutura de TI, como aquisição de hardware e licenciamento de software.
+Quando você precisa de maior segurança: A computação em nuvem oferece maior segurança dos dados e aplicativos, pois seu provedor de nuvem pode gerenciar backups e outras medidas de segurança.
+
+Estratégia para migração
+
+
+Inicia com um planejamento adequado e com uma boa seleção da abordagem de migração. Então, vamos conhecer as cinco primeiras estratégias de migração para a nuvem, também conhecidas como 5Rs (atualmente, foram inseridos mais 2Rs, evoluindo para os 7Rs).
+
+
+Rehost (Re-hospedar)
+
+
+É uma estratégia de migração para nuvem também conhecida como lift and shift. Ela consiste em mover aplicações, infraestrutura e dados para um ambiente de nuvem, mantendo intactas as suas configurações.
+
+
+O rehost pode ser aplicado a ambientes on premises e bare metal, migrando os recursos de um ambiente físico para um ambiente de nuvem.
+
+
+A vantagem do rehost é que, apesar de não alterar a arquitetura da aplicação, ele permite a execução em um ambiente de nuvem, aproveitando assim os benefícios da escalabilidade, alta disponibilidade, melhor performance e segurança da nuvem.
+
+
+No entanto, esta estratégia não pode ser aplicada a todos os ambientes, pois existem alguns casos em que a aplicação não poderá ser executada diretamente na nuvem. Por isso, é importante avaliar todos os aspectos técnicos de uma aplicação antes de optar pelo rehosting.
+
+
+A estratégia basicamente resume-se na movimentação de servidores físicos e virtuais existentes para uma solução IaaS. O modelo IaaS hospeda a infraestrutura normalmente encontrada em sites e oferece um ambiente virtualizado por meio de uma camada de hypervisor.
+
+
+Replatform (Replataforma)
+
+
+Nem todo sistema é facilmente migrado. No caso de sistemas legados, muitas organizações possuem sistemas estruturados demais para migrar para plataformas de nuvem IaaS. Nesse caso, a solução é emular as aplicações através de máquina virtual e assim garantir sua compatibilidade com as tecnologias de nuvem.
+
+
+Na prática, esta estratégia permite que se façam algumas alterações de configuração para melhor se adequar ao ambiente de nuvem, sem alterar a arquitetura principal. Os desenvolvedores, geralmente, aplicam essa abordagem para alterar a maneira como se interage com o banco de dados para que possam ser executados em plataformas gerenciadas.
+
+
+Repurchase (Recompra)
+
+É conhecida como uma estratégia de marketing em que uma empresa incentiva seus clientes a comprar novamente seus produtos ou serviços. Ela envolve oferecer descontos, ofertas especiais, programas de fidelidade e outras formas de recompensar os clientes por sua lealdade.
+
+
+A estratégia tem como objetivo aumentar a receita e a lucratividade da empresa, ao mesmo tempo em que ajuda a construir relacionamentos de longo prazo com os clientes.
+
+
+A repurchase, também conhecida como estratégia drop and shop, substitui a aplicação on premise por um software nativo da nuvem. Normalmente, essa abordagem consiste em mudar para uma plataforma de SaaS (Software as a Service) com os mesmos recursos.
+
+
+Refactoring/Re-architecting (Refatorar/Rearquitetar)
+
+
+Consiste em desenvolver os sistemas do zero para torná-los nativos da nuvem. Essa estratégia permite aproveitar todo o potencial das tecnologias, como arquitetura de microsserviços, sem servidor, contêineres e balanceadores de carga.
+
+
+Por exemplo, você pode refatorar ativos ao mover seus ativos digitais de uma arquitetura monolítica local para uma arquitetura totalmente sem servidor na nuvem. Essas estruturas são escaláveis, ágeis, eficientes e retornam ROI, ou seja, um significante retorno sobre o investimento a longo prazo, mesmo nos mercados mais competitivos.
+
+
+Retire (Aposentar)
+
+
+Esta estratégia está relacionada à desativação ou ao desligamento dos serviços (workloads) que não são mais necessários. Sua desativação permite que a organização se concentre em áreas que oferecem mais valor comercial, economizando recursos.
+
+
+Retain (Reter)
+
+Também conhecida como revisit, é a estratégia de refatorar algumas áreas críticas de seus ativos digitais antes de migrar para a nuvem.
+
+
+Eventualmente, você pode descobrir que algumas aplicações são mais adequadas para ainda serem usadas localmente ou foram atualizadas recentemente e precisam ser mantidas. Em outros casos, os sistemas são retidos devido aos requisitos de latência, conformidade ou restrições regulatórias.
+
+
+Relocate (Realocação)
+
+Outra abordagem centrada em infraestrutura, mas, dessa vez, aproveita o mesmo conjunto de componentes básicos. Assim como na re-hospedagem, o software em execução nas máquinas virtuais migradas permanece inconsciente de que algo mudou.
+
+
+Nesse caso, no entanto, as ferramentas e os processos operacionais existentes também podem ser mantidos, mesmo que dependentes de produtos de terceiros. Esse tipo de migração, geralmente, pode ser realizado por uma equipe de operações devidamente qualificada, sem envolvimento de desenvolvedores de aplicativos.

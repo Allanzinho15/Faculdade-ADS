@@ -1,0 +1,48 @@
+Serverless computing e ASP
+Neste vídeo, serão apresentados os conceitos de computação sem servidor (serverless computing) e provedor de serviços de aplicação (ASP).
+
+
+
+Computação sem servidor (serverless computing)
+
+Inicialmente, nossas aplicações estavam hospedadas em servidores físicos. Com a evolução da tecnologia, surgiram as máquinas virtuais — e as soluções Platform as a service (PaaS). As soluções PaaS virtualizavam a entrega de servidores, mas a preocupação em manter os sistemas operacionais virtuais do servidor ainda persistia. O próximo passo foi a chegada da tecnologia dos contêineres. Contudo, ainda era necessário conservar os contêineres por pessoas especializadas nessa solução. Com o objetivo de retirar essa carga de trabalho do profissional de desenvolvimento de software, surgiu a arquitetura serverless.
+
+
+Computação sem servidor ou serverless computing é a tecnologia que permite hospedarmos funções (Plataforma de Função como Serviço – FaaS) sem a preocupação de configuração do servidor, pois todo o ambiente (hardware e software) já está pronto para execução da função desenvolvida.
+
+
+Por volta de 2006, foi lançada uma plataforma com o objetivo de fazer todo o trabalho rotineiro para o desenvolvimento e a implantação de uma aplicação Javascript cobrando apenas pelo código que fosse executado. Assim nascia a plataforma Zimki, que na época não teve aceitação, mas representa o nascimento de um novo conceito de serviço de computação em nuvem, Function as a Service (FaaS), que seria uma plataforma de função como serviço e, consequentemente, um novo modelo de arquitetura, o serverless computing.
+
+O serverless é orientado a eventos e se diferencia das outras tecnologias de servidores físicos, virtuais e contêineres por sua infraestrutura. Esse modelo de infraestrutura é concentrado na entrada, execução e saída de uma função. Essa solução permite ao desenvolvedor criar e executar suas aplicações e serviços sem se preocupar com os servidores. Uma aplicação serverless não exige qualquer tipo de gerenciamento de servidor.
+
+Entre os diferenciais dessa solução, podemos destacar:
+
+
+Baixo custo
+
+São cobradas por uso: isso significa que você só vai pagar aquilo que realmente está utilizando.
+
+Redução de código
+
+É menos complexa, sem a necessidade de ter um sistema back-end de várias camadas. Além de ser escalável e flexível, não são necessárias configurações adicionais para aproveitar a escalabilidade da arquitetura.
+
+Atualmente, existem três principais fornecedores de soluções serverless. São eles: Amazon AWS, Microsoft Azure e Google Cloud. Apesar do conceito serverless ter tomado maior visibilidade atualmente devido às funções e à capacidade de executar código sem um servidor, já há algum tempo estamos consumindo diferentes serviços que também abordam o conceito.
+
+Confira a diferença entre as três tecnologias estudadas até o momento, máquinas virtuais, contêineres e computação sem servidor.
+
+
+
+Comparação entre máquinas virtuais, contêineres e computação sem servidor.
+
+Provedor de serviços de aplicação (ASP)
+
+Provedor de serviços de aplicação ou application service provider (no inglês, ASP) é um formato de terceirização que fornece software e aplicações por meio da internet para usuários finais, pequenas e médias empresas ou até grandes organizações. Em vez de as organizações arcarem com os encargos financeiros, os requisitos de hardware e os conhecimentos técnicos necessários para possuir o software, eles alugam esses aplicativos de terceiros. Nesse modelo, os provedores alugam aplicações e serviços de acordo com a necessidade dos clientes. E os clientes pagam um valor para usufruir desse serviço como uma assinatura.
+
+
+Exemplo
+Os webmails, como o correio do Yahoo, o correio do Google, o armazenamento de documentos e planilhas no Google Docs são serviços ASP gratuitos.
+
+
+Por meio de sistema de identificação e autenticação é possível acessar os documentos, planilhas, vídeos, ou seja, acessar os arquivos armazenados remotamente no servidor do provedor.
+
+Algumas características dessa solução são os baixos custos em relação a ter acesso a recursos tecnológicos de ponta, eliminando a necessidade de realizar investimentos em uma infraestrutura própria ou mesmo melhorias nos sistemas já existentes. Os ASPs fornecem configuração e instalação rápidas, pois não é necessário na implementação de um software fazer estudos de viabilidades, demonstrações, testes; o aplicativo já está operacional para o uso.

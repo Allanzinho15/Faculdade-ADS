@@ -1,0 +1,56 @@
+Infraestrutura on premise x em nuvem
+Neste vídeo, serão apresentados os principais aspectos de infraestrutura de TI on premise e em nuvem.
+
+
+
+Aspectos de infraestrutura de TI on premise e em nuvem
+
+Agora que já entendemos as características essenciais da computação em nuvem, os modelos de serviços e as formas de implantação, vamos fazer uma análise sobre a diferença entre uma empresa manter uma infraestrutura própria tradicional (on premise) ou utilizar uma infraestrutura baseada em nuvem.
+
+A infraestrutura on premise e a infraestrutura em nuvem possuem o mesmo objetivo:
+
+
+Ambas armazenam e integram os dados e os serviços de uma empresa.
+
+
+A diferença está no tipo de servidor, na forma de acesso e na flexibilidade de armazenamento.
+
+
+Tipo de servidor
+
+Veja agora as diferenças das infraestruturas on premise e em nuvem no que diz respeito ao servidor.
+
+
+
+On premise
+
+Em nuvem
+O servidor é físico, pois existe um servidor principal instalado na empresa na qual os computadores estão conectados. Para acessá-lo, os computadores da empresa precisam estar configurados na rede da empresa. A implantação acaba sendo mais complexa devido à necessidade de treinamento, materiais e apoio de equipe especializada para se utilizar o sistema.
+
+
+
+
+Forma de acesso
+
+Confira as diferenças das infraestruturas on premise e em nuvem no que diz respeito ao acesso.
+
+
+
+On premise
+
+Em nuvem
+O acesso aos dados só é possível se o computador estiver devidamente configurado e interligado ao servidor principal. É possível fazer uma consulta remotamente, desde que o equipamento do cliente esteja conectado com o servidor principal.
+
+
+
+
+Flexibilidade de armazenamento
+
+Conheça as diferenças das infraestruturas on premise e em nuvem no que diz respeito à flexibilidade de armazenamento.
+
+
+
+On premise
+
+Em nuvem
+A capacidade de armazenamento é contratada inicialmente por um volume específico e, no caso de uma necessidade de crescimento, será necessário adquirir softwares e hardwares, além de uma equipe de TIC para realizar a instalação.

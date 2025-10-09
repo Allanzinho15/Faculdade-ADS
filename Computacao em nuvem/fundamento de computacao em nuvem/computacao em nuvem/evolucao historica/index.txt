@@ -1,0 +1,145 @@
+Evolução histórica
+Linha do tempo: computação em nuvem e suas tecnologias
+
+Neste vídeo, serão apresentados os principais marcos da computação em nuvem e suas tecnologias.
+
+
+
+Ao analisarmos a evolução do hardware e do software ao longo dos anos, percebemos que as empresas tiveram a necessidade de criar os seus próprios Centros de Processamento de Dados (CPDs) como eram chamados na época. Confira como eram!.
+
+
+
+CPD dos anos 1950/1960.
+
+Os CPDs eram constituídos por equipamentos de grande porte, os mainframes, que eram compostos pela CPU e por seus diversos periféricos, tais como terminais, discos, unidades de fita, impressoras e suas respectivas controladoras.
+
+Em 1964, surgiu o primeiro mainframe, o System/360. Eram máquinas enormes, geravam muitos ruídos, tinham elevado consumo de energia e excessivo tempo de processamento.
+
+
+
+IBM System/360 no Centro de Vôo Espacial da NASA.
+
+Esse colosso da computação foi utilizado inclusive pelo programa Apollo, da NASA, que levou o homem à Lua. No Brasil, foi lançado em 1965 e, no ano seguinte, passou a ser utilizado pelo Incra na realização do recenseamento da propriedade rural e cálculo do imposto territorial em todo o país.
+
+
+O mainframe se antecipou às tendências e descobertas da tecnologia. A virtualização, um dos temas mais atuais em termos de infraestrutura de TI, está disponível no mainframe há mais de 30 anos.
+
+Chegamos aos anos 1980. Época do surgimento dos primeiros computadores pessoais, os PCs, que se popularizaram tanto no ambiente doméstico, como no mundo corporativo, agora, de forma individual, um para cada funcionário, diferentemente do mainframe da empresa.
+
+Surgem assim, nas empresas, as primeiras redes de computadores. Ainda não se falava de terceirização de TI, mas já começava a relacionar conceitos como cliente-servidor.
+
+
+
+Modelo Cliente-Servidor.
+
+Nessa época, os datacenters eram a alma da empresa. O servidor gerenciava todos os serviços da empresa, compartilhando e sincronizando as informações. Porém, se o servidor ficasse fora do ar, a empresa parava de funcionar.
+
+Com a evolução da tecnologia da computação, o servidor central foi substituído por vários servidores, cada um com um serviço específico, como o servidor de arquivos, servidor de impressão, servidor de aplicações web, servidor de banco de dados, servidor de domínio, entre outros.
+
+
+Comentário
+Essa infraestrutura agrega como desvantagem o custo em manter vários servidores na empresa e o valor a ser investido no caso de acréscimo de serviço. Outra desvantagem dessa tecnologia é a capacidade de processamento ociosa, pois não se usava a capacidade máxima dos servidores, ficavam ociosos quando não estavam sendo acessados.
+
+
+Nesse cenário, surgiu um novo conceito, a virtualização de servidores. A virtualização é um conceito que descreve a utilização de mais de um sistema operacional em um único servidor, simulando a estrutura de vários servidores físicos.
+
+O servidor físico hospeda vários servidores virtuais, configurados de acordo com a demanda de serviços da empresa, com sistemas operacionais e recursos independentes (memória, processador, armazenamento etc.). Assim, é possível a utilização da capacidade máxima dos servidores de um datacenter, com maior densidade no uso de hardwares e armazenamento.
+
+Surge, então, a figura do hypervisor, um software com a funcionalidade de prover ao servidor físico a capacidade de se dividir. Com a virtualização, é possível acrescentar novos serviços sem a necessidade de adquirir servidores individuais, aproveitando toda a potencialidade de um único servidor. Essencialmente:
+
+
+Virtualização
+
+É um software (hypervisor) que manipula o hardware.
+
+
+Computação em nuvem
+
+É o resultado dessa manipulação.
+
+
+Podemos concluir que a computação em nuvem depende da virtualização de servidores, essa técnica é a essência do funcionamento da cloud computing.
+
+Segundo Mike Adams, diretor de marketing de produtos na VMware, uma das empresas pioneiras em virtualização e computação em nuvem, "a virtualização é um elemento fundamental à computação em nuvem”. [...] A computação em nuvem é a entrega de recursos, software ou dados de computadores compartilhados. É um serviço sob demanda executado através da internet" (CANALTECH, 2014).
+
+
+Com a computação em nuvem, os serviços virtuais de armazenamento, processamento e acesso às informações que estavam alocados dentro da empresa, passaram a ser acessados em qualquer lugar do mundo, de qualquer dispositivo com acesso à internet.
+
+
+Entretanto, o modelo de disponibilizar serviços na internet não é algo novo. Na década de 1960, Joseph Carl Robnett Licklider, um dos responsáveis pelo desenvolvimento da Advanced Research Projects Agency Network (Arpanet), apresentou o modelo de uma rede de computadores intergaláctica. Nesse modelo, todos estariam conectados entre si, acessando programas e dados de qualquer site e de qualquer lugar, conforme ilustrado a seguir. Surgia o modelo de computação em nuvem.
+
+
+
+Arpanet.
+
+A capacidade de computação de um provedor de nuvem significa que seu serviço será executado por uma máquina virtual em algum servidor físico em um dos datacenters do provedor, geralmente, compartilhando esse servidor com outras máquinas virtuais isoladas e seguras.
+
+
+O provedor de nuvem fornece infraestrutura física necessária para executar os serviços contratados e tem a responsabilidade de mantê-los sempre em funcionamento. Entre os serviços fornecidos, dois são mais comuns por todos os provedores de nuvem: capacidade de computação e armazenamento.
+
+
+Diante do que foi exposto, podemos construir a seguinte linha do tempo da evolução da tecnologia até a computação em nuvem:
+
+
+
+1960
+
+1970
+
+1980
+
+1990
+
+2000
+
+2010
+
+
+1960
+Computação
+
+Utilidade pública. 
+IBM System/360.
+
+
+
+1970
+Mainframes
+
+IBM System/370.
+
+
+
+1980
+Comutadores pessaoais
+
+IBM PC XT.
+
+
+
+1990
+1990
+
+Cliente / servidor GRID
+
+Compaq Portable 486c.
+
+
+
+2000
+Hospedagem / Servidores
+
+Servidor IRC.
+
+
+
+2010
+2010
+
+Computação em nuvem
+
+Cloud, Azure e AWS Console.
+
+
+
+Em resumo, a computação em nuvem representa o aluguel de recursos ao fornecer espaço de armazenamento ou servidores localizados em diversas partes do mundo. Outra característica dessa tecnologia é que se paga apenas pelo que usar. A empresa que fornece esse serviço é conhecida como provedor de nuvem.

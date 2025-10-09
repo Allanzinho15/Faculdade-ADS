@@ -1,0 +1,23 @@
+Itens iniciais
+Propósito
+
+Conhecer a evolução da infraestrutura até chegar à computação em nuvem, compreendendo suas vantagens e desvantagens, sua aplicabilidade, seus modelos e tipos dessa nova tecnologia.
+
+Objetivos
+
+Descrever os conceitos fundamentais da computação em nuvem.
+Descrever os modelos de computação em nuvem, suas camadas e os principais elementos.
+Identificar as tecnologias habilitadoras da computação em nuvem.
+
+Introdução
+
+Computação em nuvem, ou cloud computing como também é conhecida, é o resultado da evolução da virtualização, do modelo orientado a serviços e do processamento de aplicativos. Informações como o local das instalações ou dos tipos de servidores utilizados são desconhecidas para a maioria dos usuários finais, que não precisam mais entender ou controlar completamente os recursos de inovação tecnológica. As alternativas de nuvem e armazenamento fornecem aos clientes e empresas vários modelos para armazenar e processar seus dados em datacenters de terceiros.
+
+
+A computação em nuvem é um novo paradigma na área da tecnologia da informação (TI), pois, basicamente, esse novo paradigma tende a migrar a infraestrutura computacional para a nuvem, isto é, para a internet. Dessa maneira, os custos de software e principalmente de hardware são consideravelmente reduzidos.
+
+
+É impossível pensar em um profissional da área de TI que não utilize algum tipo de serviço baseado em nuvem, seja como provedor de correio eletrônico, plataformas de hospedagem de sites, ferramentas de desenvolvimento, entre outros.
+
+
+Por isso, é imprescindível que o profissional de TI compreenda o que é a computação em nuvem, seus principais fundamentos, os modelos e serviços oferecidos e suas tecnologias habilitadoras.

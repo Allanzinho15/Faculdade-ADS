@@ -1,0 +1,74 @@
+Mercado de Serviço de Nuvem
+Modelos de serviço em nuvem
+
+Neste vídeo, veremos os modelos de serviço em nuvem.
+
+
+
+Existem, atualmente, três grandes empresas que se destacam no provimento de serviços na nuvem em grande escala: Amazon Web Service (AWS); Microsoft Azure; e Google Cloud Platform (GCP). Como grandes cases de cada um dos serviços, podemos citam as empresas a seguir.
+
+
+Netflix
+
+
+Um dos maiores provedores de serviço de streaming de vídeo do planeta utiliza a AWS para abrigar sua infraestrutura e rodar seus sistemas.
+
+
+Mercedes-Benz
+
+
+A famosa marca fabricante de automóveis utiliza os serviços Azure para abrigar tudo relacionado à sua área de pesquisa e desenvolvimento.
+
+
+Home Depot
+
+
+O maior revendedor de materiais de reforma de casas dos Estados Unidos abriga e roda os sistemas de suas lojas on-line na GCP.
+
+
+Cabe destacar que os três exemplos de provedores de nuvem citados abrigam em seu portfólio uma gama de serviços, podendo operar em qualquer um dos três modelos de serviço.
+
+
+IaaS
+
+O mais fundamental dos modelos de serviço permite ao cliente pode selecionar o tamanho da máquina virtual (em termos de quantidade de processamento e de memória), escolher sistemas operacionais previamente configurados e implantar softwares aplicativos dentro da máquina virtual de acordo com as necessidades do negócio. É representado por:
+
+ 
+
+Amazon EC2
+Azure Virtual Machine
+Google Compute Engine
+ 
+
+Existem diversos tamanhos para os serviços citados, incluindo os capazes de serem contratados por pessoas comuns que simplesmente necessitem provisionar uma infraestrutura em minutos para rodar alguma aplicação específica.
+
+
+PaaS
+
+Esse tipo de serviço varia dos serviços de base de dados gerenciadas até os serviços mais completos de aplicativos gerenciados. O cliente pode importar um código e rodá-lo dentro de um ambiente gerenciado. São exemplos práticos os serviços:
+
+ 
+
+AWS Elastic Beanstalk
+Azure Web Apps
+Google App Engine
+
+SaaS
+
+O mais usado entre os modelos é um ambiente de software integralmente gerenciado onde o cliente normalmente abre um navegador web, ingressa em uma aplicação e consome serviços. Abrange uma gama de aplicações como serviço de mensageria, ERP, CRM, business analytics, entre outros. Podemos citar também outras empresas famosas nas suas respectivas áreas, com os seguintes serviços:
+
+ 
+
+Microsoft Office 365
+Google Workspaces
+Salesforce CRM
+SAP Success Factors
+Oracle Cloud HCM
+
+
+A imagem a seguir apresenta uma consolidação sumarizada dos três aspectos trazidos neste conteúdo, com base em documentação do Cloud Security Alliance (CSA), um importante órgão mundial na área de serviços em nuvem que será tema de estudo adiante.
+
+
+
+Consolidação dos aspectos introdutórios de serviços em nuvem
+

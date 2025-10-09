@@ -1,0 +1,17 @@
+Suponha que a empresa na qual você trabalha tenha necessidade de operar o correspondente à capacidade de processamento de 100 equipamentos por três anos.
+
+
+
+Uma primeira opção seria alugar esses equipamentos pelo custo de R$0,40 por equipamento e por hora de processamento.
+
+
+Calculando o custo total desse aluguel, teríamos 100 equipamentos x R$0,40 por equipamento/hora x 3 anos x 8760 horas/ano, então, teríamos o total de R$1.051.200.
+
+
+Outra opção seria comprar os equipamentos e administrá-los.
+
+
+Suponha que o custo para comprar cada equipamento seja de R$750 e que sejam necessários dois funcionários para administrá-los, pagando R$100.000 por ano. Suponha, ainda, que os equipamentos consomem 150 watts cada e o custo da eletricidade é de R$0,10 por quilowatt/hora.
+
+
+Como seria essa conta?

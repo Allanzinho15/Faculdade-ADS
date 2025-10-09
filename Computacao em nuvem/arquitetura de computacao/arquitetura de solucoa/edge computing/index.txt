@@ -1,0 +1,61 @@
+Edge computing
+Neste vídeo explicaremos o conceito da Edge computing, suas características e quando usar a Edge Computing e serverless.
+
+
+
+O que é edge computing?
+
+
+É uma abordagem de computação de borda que permite que os dados sejam processados e armazenados localmente, em vez de forma remota. Isso diminui o tempo de latência e aumenta a confiabilidade da conexão. Ao executar os aplicativos do usuário diretamente nos dispositivos de borda, o edge computing oferece maior desempenho, segurança e escalabilidade.
+
+
+Além disso, ajuda a minimizar os gastos de largura de banda, ao reduzir a quantidade de dados e instruções que precisam ser enviadas para servidores remotos. Isso é especialmente importante para aplicativos que precisam de uma resposta imediata, como os aplicativos de realidade aumentada e jogos. Para entendermos melhor essa tecnologia, vamos analisar cada cenário:
+
+
+Internet das Coisas (IoT)
+
+O processamento dos dados é realizado por meio de dispositivos responsáveis por reunir os dados coletados. A sua quantidade vai depender do equipamento, após a coleta, e armazenamento dos dados, que são enviados para a nuvem em um centro de processamento.
+
+Edge computing
+
+O processamento dos dados é feito de forma local e separa aqueles que podem ser processados ali mesmo, diminuindo o tráfego de dados e a necessidade de enviá-los. Os dados são processados nos extremos de uma rede e apenas uma parte é enviada para a nuvem, por isso o nome computação de borda.
+
+Quando usar edge computing?
+
+
+É usado para processar dados onde os usuários os fazem, ao invés de enviá-los para o cloud ou um datacenter remoto. Isso significa que a computação de borda permite processamento de dados mais rápido e eficiente, pois os dados são processados próximos aos usuários. É frequentemente usado para aplicativos de IoT, como dispositivos móveis e outras soluções inteligentes que necessitam de processamento local para tomar decisões rápidas e ações imediatas.
+
+
+Quando os usuários têm aplicativos ou necessidades que exigem análise de dados em tempo real e processamento de dados no local para redes IoT inteligentes, edge computing pode ser a melhor solução. A computação de borda também pode ser usada para aplicações que exigem tempo de resposta rápido para fornecer serviços em tempo real, como reconhecimento facial ou localização em tempo real.
+
+
+Ainda, pode ajudar a resolver alguns problemas de largura de banda, já que os dados não precisam ser transferidos. Em geral, a computação de borda pode ser usada em qualquer aplicação que precise de processamento de dados rápido e eficiente, que se beneficie do tempo de resposta reduzido e habilidade de fazer decisões quase que instantaneamente.
+
+
+Atenção
+Na hora de tomar a decisão sobre o uso de edge computing, alguns fatores são fundamentais, como: largura de banda de internet, energia, tamanho da infraestrutura, capacidade de processamento, tipo de serviço da sua empresa e custo de implantação.
+
+
+É preciso levar em conta também a rede já existente e a facilidade de encontrar profissionais especializados para a manutenção, entre outros requisitos que a empresa já atenda, para avaliar se os benefícios da edge computing podem ser aplicados ao negócio.
+
+
+Edge computing e serverless
+
+
+Para entendermos melhor a tecnologia edge computing e assim poder explorar seus benefícios, as aplicações edge native devem ser capazes de executar a lógica de serverless computing quando e onde for necessário.
+
+
+Serverless é uma tecnologia de computação que separa a infraestrutura de um back end, como servidores e outras configurações, de aplicações e serviços. Em vez de se preocupar com a configuração, a manutenção e a escalabilidade de uma infraestrutura, o usuário tem a capacidade de executar cargas de trabalho em ambientes gerenciados, sem se preocupar com a infraestrutura.
+
+
+Os serviços gerenciados oferecem escalonamento horizontal automático, configuração de alta disponibilidade, monitoramento e alto desempenho, o que significa que o usuário pode se concentrar em suas cargas de trabalho em vez de gerenciar servidores. Sendo assim, o serverless computing pode ser visto como a evolução natural da tendência em direção à menor complexidade, ao uso de recursos mais eficientes e a serviços pay as you go.
+
+
+Com serverless computing, os clientes não precisam operar ou gerenciar a infraestrutura subjacente, o que em uma arquitetura de rede altamente distribuída – como edge computing – seria quase impossível. Combinar edge computing e serverless é a única forma de permitir que os clientes façam uso de recursos de edge computing de uma maneira muito fácil, com a mesma tecnologia altamente inovadora, colocando líderes de mercado e novos entrantes lado a lado.
+
+
+Com serverless, as empresas podem construir e executar funções com edge computing, pagando apenas pelos recursos usados. Isso significa que os desenvolvedores só precisam se concentrar em escrever códigos, o que acelera o lançamento de novas aplicações e funcionalidades. Na imagem a seguir é possível visualizar a divisão de camadas da arquitetura usando a nuvem e o edge computing. Veja:
+
+
+
+Arquitetura edge e cloud.

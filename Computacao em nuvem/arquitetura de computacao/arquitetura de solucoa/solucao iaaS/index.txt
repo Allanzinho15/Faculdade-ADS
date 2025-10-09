@@ -1,0 +1,86 @@
+Solução IaaS
+Neste vídeo explicaremos as características de cada cenário nas soluções IaaS e o cenário de elasticidade, balanceamento de carga, Multi-Cloud e Cloud híbrida.
+
+
+
+IaaS (Infraestrutura como Serviço)
+
+
+É um modelo de serviço de computação na nuvem em que se fornecem todos os equipamentos de computação e infraestrutura para a criação de aplicativos e serviços. IaaS pode ser considerada ainda como a base prática para a computação na nuvem, pois é o serviço que fornece tudo o que é necessário para que a infraestrutura possa ser provisionada, como servidores e armazenamento. Uma solução de IaaS normalmente inclui componentes de hardware, como:
+
+
+Servidores virtuais.
+Instâncias de servidor.
+Sistemas de armazenamento de dados.
+Sistemas de gerenciamento de dados.
+Ferramentas de balanceamento de carga.
+
+Além disso, uma solução de IaaS também pode incluir componentes de software, como plataformas de orquestração de nuvem, para gerenciar múltiplos provedores de serviços de nuvem em um único ambiente.
+
+
+Dessa forma, as empresas podem obter os benefícios da escalabilidade, alta disponibilidade, elasticidade, balanceamento de carga, cenários multicloud e cloud híbrido, aproveitando todas as vantagens dos ambientes de IaaS. Vamos agora analisar cada um desses cenários.
+
+
+Cenário de elasticidade
+
+É um modelo de provisionamento de recursos que permite a um usuário solicitar rapidamente recursos e serviços adicionais em resposta às demandas do usuário. Utiliza-se para criar e ajustar o tamanho de recursos de computação, armazenamento e rede a fim de acomodar as demandas cambiantes. Esse recurso é útil para empresas que precisam de recursos adicionais de forma rápida e com custo reduzido, pois não precisam adquirir recursos permanentes.
+
+
+A elasticidade no IaaS permite que os usuários adicionem rapidamente recursos, como servidores, memória e armazenamento, para lidar com picos de demandas.
+
+
+A elasticidade no IaaS também permite aos usuários licenciar recursos adicionais de forma rápida e retirá-los quando não são mais necessários. A elasticidade permite que a empresa economize custos operacionais, pois ela só paga por recursos adicionais enquanto estiverem sendo usados. Outra vantagem é que a elasticidade no IaaS pode ser usada para escalar vertical ou horizontalmente a capacidade, a fim de permitir que a empresa aproveite melhor seus recursos.
+
+
+Cenário de balanceamento de carga
+
+Neste cenário, encontramos um sistema projetado para distribuir o tráfego dos usuários e garantir a alta disponibilidade dos servidores. Ele ajuda a balancear o tráfego entre múltiplos dispositivos, como servidores, links de rede, base de dados e serviços de armazenamento. O balanceamento de carga também aumenta a velocidade de resposta dos servidores, monitora o tempo de resposta dos servidores, otimiza o desempenho, evita o congestionamento e mantém os usuários conectados. Além disso, pode ser usado para evitar falhas críticas.
+
+
+Um sistema de balanceamento de carga em camadas permite que as empresas dividam a carga entre vários servidores virtuais ou instâncias de servidor. Esses servidores virtuais ou instâncias de servidor também são gerenciados por um serviço de balanceamento de carga, como o Elastic Load Balancer da Amazon, que garante que todas as requisições sejam atendidas pelos servidores virtuais ou instâncias de servidor que possuem maior capacidade de processamento. Além disso, essa solução de IaaS de balanceamento de carga também pode oferecer suporte a vários serviços de armazenamento, como o S3 da Amazon, que garante a alta disponibilidade dos dados.
+
+
+Cenário de alta disponibilidade
+
+O foco deve estar em garantir o tempo de funcionamento máximo dos serviços fornecidos. Para isso, é necessário implementar medidas a fim de garantir altos níveis de redundância, alta escalabilidade e baixo tempo de latência. Vejamos alguns exemplos de ações que podem ser tomadas para permitir a alta disponibilidade:
+
+
+
+Replicação de dados
+
+É a prática de ter múltiplas cópias dos mesmos dados em diferentes locais. Isso assegura que, caso o sistema seja interrompido em um local, os dados ainda estarão disponíveis em outro lugar.
+
+
+Balanceamento de carga
+
+É o processo de distribuir o tráfego de solicitações entre vários servidores para garantir a alta disponibilidade e escalabilidade.
+
+
+Uso de redundância
+
+É responsável por duplicar os serviços, materiais e equipamentos para que, caso algo falhe, haja sempre uma cópia de backup a ser usada.
+
+
+Monitoramento contínuo
+
+É capaz de detectar e resolver problemas de desempenho antes que causem falhas no sistema.
+
+
+Atualizações frequentes
+
+É responsável por garantir que as vulnerabilidades e erros sejam corrigidos antes que eles possam afetar a operação.
+
+Cenário multicloud
+
+A solução de IaaS multicloud é ideal para empresas que desejam ter a liberdade de utilizar diversos provedores de serviços de nuvem em um único ambiente.
+
+
+Essa solução é normalmente baseada em ferramentas de orquestração de nuvem, como o Kubernetes ou o OpenStack, que permitem que as empresas gerenciem de forma centralizada e unificada todos os serviços de nuvem oferecidos por vários provedores.
+
+
+Cenário de cloud híbrido
+
+A solução de IaaS de cloud híbrido é ideal para empresas que necessitam aproveitar os benefícios da nuvem pública e privada em um único ambiente. Normalmente, consiste em uma combinação de infraestrutura local (servidores físicos) e serviços de nuvem, como o S3 da Amazon e o Elastic Load Balancer.
+
+
+Essa solução permite que as empresas aproveitem os recursos de nuvem de forma eficiente, fazendo com que servidores físicos sejam usados em locais estratégicos e serviços de nuvem sejam usados para lidar com a demanda crescente de forma escalonável. Além disso, oferece suporte a sistemas de gerenciamento de dados, como o MongoDB, para que as empresas possam armazenar, acessar e gerenciar seus dados de forma ágil e segura.

@@ -1,0 +1,30 @@
+Computação em nuvem
+Neste vídeo, serão apresentados os principais conceitos da computação em nuvem.
+
+
+
+Com a evolução da sociedade humana moderna, os serviços básicos e essenciais, como água, eletricidade, telefone passaram a ser cobrados pelo modelo de pagamento baseado no consumo.
+
+Esse modelo tem sido utilizado nos serviços de tecnologia da informação, sendo a computação em nuvem seu precursor.
+
+A computação em nuvem é uma tecnologia com o objetivo de proporcionar serviços sob demanda com pagamento baseado no uso, provendo serviços para todos, desde o usuário final, que hospeda seus documentos pessoais na internet, até empresas que terceirizam toda a parte de tecnologia da informação para outras organizações.
+
+
+Conceitos da computação em nuvem
+
+
+A computação em nuvem ou cloud computing é uma tecnologia que permite que, em qualquer lugar e independentemente da plataforma utilizada, seja possível acessar aplicativos, arquivos e serviços por meio da internet, sem a necessidade de instalação de programas no dispositivo local, apenas utilizando um simples navegador.
+
+
+O uso do termo “nuvem” tem sua origem nos diagramas das antigas redes de dados ISDN (Services Digital Network ou rede de serviços digitais) e Frame Relay, projetadas pelas operadoras de telefonia. Os desenhos de nuvem mostravam a interligação das redes das empresas, sinalizando algo que estava fora do alcance das empresas, bastava a empresa saber, ou acreditar, que por meio daquela nuvem as redes estariam interligadas.
+
+Por isso, falamos “está na nuvem” quando utilizamos uma aplicação ou acessamos um arquivo disponível em um serviço de cloud, porque não é possível saber em que computador ou computadores estão as aplicações, ou os dados. Você simplesmente usa!
+
+
+Resumindo
+Os usuários da nuvem podem armazenar arquivos, dados e aplicativos em servidores remotos e acessar esses dados com a ajuda da internet. Assim, os usuários não precisam estar em determinado local para acessar os dados e podem recuperá-los de qualquer lugar.
+
+
+Utility computing
+
+Também podemos dizer que cloud computing é a evolução dos serviços e produtos de tecnologia da informação sob demanda, chamado de utility computing. Esse tipo de serviço tem o objetivo de fornecer os componentes básicos como armazenamento, processamento e largura de banda de uma rede por meio de provedores especializados com baixo custo.

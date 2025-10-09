@@ -1,0 +1,64 @@
+Computação em grade e utility computing
+Grid e utility computing
+
+Neste vídeo, serão apresentadas as princiáis características do grid computing.
+
+
+
+Grid computing
+
+A grid computing ou computação em grade é a tecnologia que agrupa servidores com o objetivo de trabalhar em conjunto formando uma grande infraestrutura. Esse modelo requer o uso de softwares responsáveis em dividir e distribuir partes de um programa como uma imagem grande do sistema para milhares de computadores.
+
+O termo grid foi usado inicialmente nos anos 1990, no meio acadêmico. Foi originalmente proposto para denotar um sistema de computação distribuída que provia serviços computacionais sob demanda, da mesma forma que os fornecedores de energia elétrica e de água.
+
+
+
+Assim, podemos definir grid computing como um tipo de sistema paralelo e distribuído que permite o compartilhamento, seleção e agregação de recursos geograficamente distribuídos dinamicamente e em tempo de execução dependendo da sua disponibilidade, capacidade, performance, custo e requerimentos dos usuários.
+
+
+Exemplo
+Vamos imaginar duas empresas localizadas em países geograficamente distantes e com fusos horários diferentes: essas empresas poderiam formar um grid ao combinar seus servidores, dessa maneira cada empresa utiliza os ciclos de processamento ociosos da outra em seus horários de pico, já que com horários diferentes, os picos de acessos aos servidores de cada empresa ocorrerão em horários diversos.
+
+
+Entre as características dessa solução, podemos citar a possibilidade de explorar recursos subutilizados e recursos adicionais, como ciclos de CPU, espaço em disco, conexões de rede, equipamentos científicos.
+
+Também se destaca pela capacidade de processamento paralelo, pois uma aplicação utilizando algoritmos e técnicas de programação paralela pode ser dividida em partes menores e essas partes podem ser separadas e processadas independentemente. Cada uma dessas partes de código pode ser executada em uma máquina distinta no grid, melhorando a performance. Com essa tecnologia, os recursos e as máquinas são agrupados, formando uma organização virtual.
+
+Por último, a confiabilidade é uma característica dessa abordagem baseada em máquinas espalhadas por diversos lugares diferentes, quando uma falha e atinge uma parte do grid, as demais podem continuar sua operação, normalmente.
+
+Geralmente, as tecnologias grid e clusters se confundem, porém, existe uma diferença na maneira como os recursos são gerenciados.
+
+
+Cluster
+
+Há um gerenciador de recursos centralizado e responsável pela alocação de todos os recursos dos clusters e, dessa maneira, todos os nós trabalham em conjunto.
+
+
+Grid
+
+Cada nó possui seu próprio gerenciador de recursos e não existe a responsabilidade de prover a visão de que faça parte de um só sistema.
+
+
+Em resumo, o grid forma um ambiente fundamentalmente cooperativo ao compartilhar os ciclos ociosos de processamento em seus sistemas em troca de poder utilizar parte do tempo de processamento do grid.
+
+
+Utility computing
+
+Utility computing ou computação de utilidade pública é um modelo classificado como computação sob demanda, pois o usuário pode contratar software, hardware e serviços conforme sua necessidade de utilização e em função de fatores como picos, quedas e conforme o período de uso. Dessa maneira, podemos fazer um comparativo com os serviços de fornecimento de água, luz ou telefone, conforme a demanda do cliente.
+
+O termo utility computing vem das chamadas utilities, que em inglês são as empresas públicas com modelos de negócios com a cobrança pelo que é consumido. Ao permitir a aquisição de capacidade temporária de processamento e armazenamento de dados, essa tecnologia potencializa a otimização da infraestrutura de hardware, software e serviços com redução dos custos fixos por capacidade não utilizada.
+
+Algumas características importantes da utility computing são:
+
+
+Escalabilidade
+É uma métrica importante que deve ser garantida na computação de utilidade para fornecer recursos de TI disponíveis a qualquer momento. Se a demanda for estendida, o tempo de resposta e a qualidade não deverão ser afetados.
+
+
+Preço sob demanda
+É programado de forma eficaz, pagando de acordo com o uso do hardware, software e serviços contratados.
+
+
+Serviços padronizados
+O catálogo é produzido com serviços padronizados com diferentes contratos de nível de serviço para os clientes. Os serviços web e outros recursos são compartilhados pelo provedor, usando tecnologias de automação e virtualização.
+

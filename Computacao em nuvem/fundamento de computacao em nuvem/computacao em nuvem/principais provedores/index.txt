@@ -1,0 +1,47 @@
+Principais provedores de computação em nuvem
+Neste vídeo, serão apresentados os provedores de computação em nuvem mais utilizados no mercado.
+
+
+
+Amazon Web Services (AWS)
+
+A Amazon Web Services (AWS) é a plataforma de computação em nuvem da Amazon, atualmente, o provedor em nuvem líder de mercado. A plataforma AWS oferece um conjunto de serviços de computação, armazenamento, banco de dados, redes, análise, inteligência artificial, internet das coisas, aplicativos móveis, desenvolvimento de aplicativos, entrega de conteúdo e muito mais.
+
+
+
+A AWS oferece escalabilidade, segurança de dados e inovação para auxiliar as empresas a crescerem e se manterem competitivas no mercado global. Além disso, a Amazon AWS oferece serviços com preços acessíveis e flexíveis, o que torna a Amazon AWS uma escolha óbvia para empresas de todos os tamanhos.
+
+
+Microsoft Azure
+
+A evolução e sofisticação da computação em nuvem ocasionou um elevado crescimento na procura por serviços sob demanda com pagamento baseado no uso. E não demorou muito para que uma das maiores empresas do mundo na área de TI, a Microsoft, entrasse no mercado e oferecesse serviço de computação em nuvem, denominado Microsoft Azure.
+
+
+
+Atualmente, a plataforma de nuvem da Microsoft concentra serviços desde a infraestrutura de cloud computing para hospedar sistemas empresariais até aplicativos e recursos que elevam a produtividade da empresa em vários setores, oferecendo, por exemplo, o famoso pacote Office por meio da nuvem.
+
+
+Google Cloud Platform
+
+
+O Google Cloud Platform (GCP) é um conjunto de produtos e serviços computacionais do Google para computação em nuvem. Podem ser categorizados como poder de computação (compute), armazenamento de dados (storage), banco de dados (database), rede (networking), análise de dados (big data) e aprendizado de máquina (machine learning).
+
+
+IBM Cloud
+
+A IBM Cloud é a plataforma de nuvem da IBM que oferece os serviços de computação em nuvem, como a Plataforma como Serviço (PaaS), Infraestrutura como Serviço (IaaS), Software como Serviço (SaaS) e Função como Serviço (FaaS), com um portfólio em torno de 170 serviços.
+
+A plataforma IBM Cloud fornece acesso aos serviços da IBM, assim como o suporte para acesso a outras ferramentas, como IBM Watson e IBM Cloud Functions para computação sem servidor.
+
+
+
+Uma das características da IBM Cloud é a flexibilidade e a personalização de seus produtos, em uma escala que os outros provedores não oferecem. Porém, o tempo para configurar e implementar um serviço customizado desanima os clientes, fazendo voltarem atrás na escolha do provedor.
+
+
+Oracle Cloud
+
+A plataforma Oracle Cloud fornece serviço de computação em nuvem, como Infraestrutura como Serviço (IaaS), Plataforma como Serviço (PaaS), Software como Serviço (SaaS) e Dados como Serviço (DaaS).
+
+
+
+A Oracle Cloud possui ferramentas com excelente desempenho para migração de máquinas virtuais para a nuvem. Os seus serviços PaaS para gerenciamento de dados, análise de negócios e desenvolvimento de aplicativos atraem um número crescente de usuários que preferem a abordagem da Oracle.
