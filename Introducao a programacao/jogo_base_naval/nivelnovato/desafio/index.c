@@ -38,5 +38,5 @@ int main()
         printf("\n");
     }
 
-    tabuleiro[2][3] = 3;
+
 }

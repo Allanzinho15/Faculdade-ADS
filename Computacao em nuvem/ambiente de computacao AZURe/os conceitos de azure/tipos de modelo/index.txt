@@ -1,0 +1,126 @@
+Tipos de modelo
+O serviço de nuvem e seus tipos
+
+Confira no vídeo os tipos de serviço de nuvem, como IaaS, PaaS e SaaS, suas definições e casos de uso, além dos seus benefícios.
+
+
+
+Modelo de responsabilidade compartilhada
+
+
+Imaginando os ambientes tradicionais, nos quais temos um datacenter tradicional, a responsabilidade sobre a estrutura é toda da empresa, em aspectos como: a compra dos equipamentos, como switches, racks, servidores, cabeamento, refrigeração, energia elétrica e segurança física; as atualizações de patches de segurança nos sistemas operacionais; e as atualizações de firmwares nos equipamentos físicos.
+
+
+No modelo de responsabilidade compartilhada, a responsabilidade é compartilhada com o provedor de nuvem. Toda estrutura física passa a ser responsabilidade do provedor de nuvem, e como o cliente (empresa) não fica localizado na mesma estrutura do provedor de nuvem, como no datacenter físico, não faz sentido o cliente ter essas responsabilidades.
+
+
+Em contrapartida, o cliente passa a ter outras responsabilidades, como toda ingestão de dados e tudo que é armazenado na nuvem. O cliente também será responsável por toda segurança de acesso, login de usuários, autenticação, autorização.
+
+
+Exemplo
+Na utilização de um banco de dados SQL na nuvem, o provedor de nuvem é o responsável pela manutenção do banco de dados, como suas atualizações e patches de segurança, mas o cliente (empresa) será responsável pelos dados inseridos. De outra forma, quando se cria uma máquina virtual e se instala o SQL Server nela, o cliente (empresa) se torna o responsável pelos dados inseridos e pelas atualizações de software, no caso o SQL Server.
+
+
+No modelo em que se é utilizado um datacenter local, o cliente é responsável por tudo. Ao transferir os serviços para a nuvem as responsabilidades mudam e o modelo dependerá de tipos de serviço de nuvem adotado como: IaaS (infraestrutura como serviço), PaaS (plataforma como serviço) e SaaS (software como serviço).
+
+
+Veja o modelo de responsabilidade compartilhada que caracteriza as responsabilidades de cada serviço de nuvem:
+
+
+
+Responsabilidades dos serviços de nuvem.
+
+O cliente (empresa) sempre será responsável pelas informações e dados armazenados na nuvem (como bancos de dados e documentos), assim como pelos dispositivos e suas permissões para acesso por meio dela (telefones celulares, computadores e assim por diante) e por contas e identidades como pessoas, serviços e dispositivos em sua organização. Já o provedor de nuvem é sempre responsável pelo datacenter físico, rede física e lógica e pelos servidores (hosts físicos).
+
+
+O modelo de serviço escolhido pelo cliente (empresa) determinará a responsabilidade por itens como: sistemas operacionais, controles de rede, aplicativos, identidade e infraestrutura.
+
+
+Modelos de nuvem
+
+
+Conheça agora os modelos de nuvem e seu funcionamento!
+
+
+Os modelos de nuvem e sua definição
+
+Confira no vídeo os modelos de nuvem privada, pública e híbrida.
+
+
+
+Nuvem privada
+
+
+É um modelo de nuvem semelhante ao datacenter corporativo local. Oferece controle total do ambiente, mas tem um custo maior e menos vantagens se comparada com a implementação de uma nuvem pública.
+
+
+Atenção
+Os recursos são hospedados no seu datacenter local ou em um ambiente externo (um datacenter de terceiros) que ofereça recursos dedicados à empresa.
+
+
+Nuvem pública
+
+É um modelo de nuvem criada e mantida por um provedor de nuvem de terceiros (grandes empresas como Microsoft, Amazon, Google).
+
+
+A grande vantagem da utilização da nuvem pública é a facilidade de provisionamento de um serviço, tanto pelo custo quanto pelo tempo.
+
+
+Qualquer pessoa pode adquirir, acessar e utilizar serviços em nuvem rapidamente. A disponibilidade pública rápida é o grande diferencial entre nuvens públicas e privadas.
+
+
+Nuvem híbrida
+
+
+É o modelo de nuvem que usa o melhor dos dois mundos (pública e privada), comumente é chamada de extensão da nuvem privada. Ela utiliza interconexão entre as nuvens pública e privada. Normalmente esse modelo é utilizado quando os recursos locais são escassos, dando a possibilidade de escala temporária ou permanente da nuvem privada para a pública. A nuvem privada também oferece recursos de segurança adicional escaláveis na nuvem pública, além de seus usuários terem a possibilidade de alocar recursos na infraestrutura local ou pública.
+
+
+Confira algumas diferenças importantes entre os modelos de nuvem:
+
+
+Nuvem pública	Nuvem privada	Nuvem híbrida
+Nenhuma despesa de capital para escalar verticalmente	As organizações têm controle total sobre os recursos e a segurança	Fornece a maior flexibilidade
+Os aplicativos podem ser provisionados e desprovisionados rapidamente	Os dados não são colocados com os dados de outras organizações	As organizações determinam o local para executar os aplicativos
+As organizações pagam apenas pelo que utilizam	O hardware deve ser comprado para o início e a manutenção	As organizações controlam a segurança, a conformidade ou os requisitos legais
+As organizações não têm controle total sobre os recursos e a segurança	As organizações são responsáveis pela manutenção e pelas atualizações de hardware	 
+Tabela: Modelos de nuvem e suas características.
+Adaptada de Microsoft.com.
+
+Várias nuvens ou multicloud
+
+
+No modelo multicloud (várias nuvens) - atualmente com alta demanda - você poderá utilizar várias nuvens e existe a possibilidade da utilização de vários provedores de nuvem.
+
+
+Exemplo
+Sua aplicação pode ser alocada no provedor X e seu banco de dados no provedor Y, ou até utilizar serviços de gerenciamento multicloud para migração ou manutenção dos serviços instalados.
+
+
+O modelo baseado em consumo
+
+
+Existem dois tipos de modelos de infraestrutura de TI a serem considerados em termos de despesas: CapEx (despesas de capital) e OpEx (despesas operacionais).
+
+
+CapEx
+
+
+É uma despesa inicial única para comprar ou proteger recursos. Um edifício novo, a construção do estacionamento, a renovação de um datacenter ou a compra de um veículo da empresa são exemplos de CapEx.
+
+
+OpEx
+
+
+É o gasto de capital em serviços ou produtos usados ao longo do tempo. Exemplos: aluguel de um local para eventos, leasing de um veículo da empresa ou assinatura de serviços de nuvem.
+
+
+A computação em nuvem é considerada OpEx porque opera em um modelo baseado em consumo, já que você não paga pela infraestrutura física, pela segurança, pela eletricidade e nem por nada relacionado à manutenção de um datacenter. Você paga pelos recursos de TI que usa e, se não usar nenhum recurso de TI durante o mês, você não pagará nada.
+
+
+Em um modelo baseado em consumo existem vários benefícios, como:
+
+
+Não há custos prévios.
+Não há a necessidade de comprar nem gerenciar uma infraestrutura que possivelmente seja subutilizada.
+Há a possibilidade, quando necessário, de pagar para obter mais recursos.
+Há a possibilidade de parar de pagar por recursos que não são mais necessários.

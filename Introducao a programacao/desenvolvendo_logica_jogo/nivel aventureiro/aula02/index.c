@@ -12,7 +12,7 @@ int main()
   // C >= 70
   // D >= 60
   // F
-  int nota;
+  
 
   printf("Digite a sua idade: \n");
   scanf("%d", &nota);
