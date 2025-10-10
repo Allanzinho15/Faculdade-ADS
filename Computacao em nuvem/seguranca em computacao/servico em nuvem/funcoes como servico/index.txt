@@ -1,0 +1,15 @@
+Funções como Serviço (abordagem serverless)
+Embora o nome dê a entender que não há servidores, o termo serverless ou "função como serviço" significa que o cliente do serviço de nuvem não é responsável pela infraestrutura de computação subjacente, isto é, manutenção do sistema operacional, escala, gerenciamento de tempo de execução, e assim por diante.
+
+
+
+Por intermédio dessa abordagem, basta importar um código com sintaxe de acordo com o provedor do serviço de nuvem, selecionar o interpretador, selecionar a quantidade de CPU e memória necessárias para rodar a função e definir o gatilho para invocar a função. Podemos dizer que o serverless é orientado a eventos, permitindo que os desenvolvedores criem, executem e gerenciem pacotes de aplicações como se fosse funções.
+
+
+A imagem a seguir apresenta um diagrama esquemático que mostra as similaridades e diferenças da abordagem serverless para os já mencionados esquemas de implementação por contêiner e máquina virtual.
+
+
+
+Comparação entre serverless, contêiner e máquina virtual
+
+Alguns provedores classificam essa abordagem como um novo tipo de serviço, diferente da categorização estabelecida pelo NIST. Nesse caso, além dos tipos IaaS, PaaS e SaaS, haveria o FaaS, isto é, função como serviço.

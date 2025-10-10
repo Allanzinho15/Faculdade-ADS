@@ -1,0 +1,30 @@
+Serviço de Base de Dados Gerenciadas
+Mais uma vez, para sermos precisos, é preciso esclarecer que cada provedor tem sua própria forma de implementação de bases de dados gerenciadas.
+
+
+De forma geral, quando o cliente tem a necessidade de implantar uma compilação específica de um banco de dados, isso pode ser feito dentro de uma VM. Porém, de acordo com o modelo de responsabilidade compartilhada, se o cliente partiu para uma abordagem usando base de dados gerenciada, significa que o cliente “fugiu” do modelo IaaS. Nesse caso, o provedor do serviço de nuvem supervisiona a segurança de todo o sistema operacional e do banco de dados (incluindo hardening, backup, gerenciamento de patches, monitoramento e auditoria).
+
+
+Então, uma solução gerenciada para executar um banco de dados – seja ele do tipo mais comum, como MySQL, PostgreSQL, Microsoft SQL Server, um servidor de banco de dados Oracle ou bancos de dados proprietários, como Amazon DynamoDB, Azure Cosmos DB ou Google Cloud Spanner – emprega basicamente o mesmo conjunto geral de passos a serem realizados pelo cliente.
+
+ 
+
+Selecionar o tipo de banco de dados de acordo com sua finalidade ou caso de uso (banco de dados relacional, banco de dados NoSQL, banco de dados gráfico, banco de dados em memória, dentre outros).
+Selecionar o banco de dados (por exemplo, MySQL, PostgreSQL, Microsoft SQL Server ou servidor de banco de dados Oracle).
+No caso de bancos de dados relacionais, selecionar um tipo de máquina (ou tamanho) e uma proporção entre a quantidade de vCPU e memória, de acordo com seus requisitos (uso geral, otimização de memória e assim por diante).
+Decidir, de acordo com suas necessidades, se há exigência de alta disponibilidade.
+Implementar uma instância do banco de dados gerenciada (ou cluster).
+Configurar o controle de acesso à rede do seu ambiente de nuvem para seu banco de dados gerenciado.
+Ativar o registro (em logs) para qualquer tentativa de acesso ou alterações de configuração em seu banco de dados gerenciado.
+Configurar backups em seu banco de dados gerenciado para fins de recuperação.
+Conectar seu aplicativo ao banco de dados gerenciado e começar a usar o serviço.
+
+Vários podem ser os motivos para se optar pelo uso de um serviço de banco de dados gerenciado em detrimento de simplesmente provisionar uma VM e instalar tudo lá dentro. Dentre essas vantagens, podemos destacar:
+
+
+A manutenção do banco de dados é de responsabilidade do provedor de nuvem.
+A atualização de patches de segurança é de responsabilidade do provedor de nuvem.
+A disponibilidade do banco de dados é de responsabilidade do provedor de nuvem.
+Os backups estão incluídos como parte do serviço (até certa quantidade de armazenamento e de histórico de backup) de acordo com planos oferecidos.
+A criptografia do tráfego e dos dados armazenados são incorporadas como parte da solução gerenciada.
+A auditoria também é incorporada como parte de uma solução gerenciada, como registro de logs e monitoramento oferecido pelo provedor.

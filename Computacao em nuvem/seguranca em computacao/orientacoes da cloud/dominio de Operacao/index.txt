@@ -1,0 +1,24 @@
+Domínios de Governança
+Governança e gestão de risco empresarial
+
+É a capacidade de uma organização governar e gerir o risco corporativo introduzido a partir da adoção da computação em nuvem. Em termos práticos, tais preocupações encampam, por exemplo:
+
+
+A capacidade de as organizações clientes avaliarem adequadamente os riscos associados aos serviços do seu provedor de nuvem.
+Precedência legal para os casos de violações de acordos.
+Delegação de responsabilidades na proteção de dados confidenciais quando ambas as partes podem ser culpadas por vazamentos, perdas e outros danos associados aos dados.
+Como as questões jurisdicionais, limites internacionais etc. podem afetar esses problemas.
+
+Aspectos legais
+
+Possíveis problemas legais no uso da computação em nuvem. Incluem requisitos de proteção para informações e sistemas computacionais; leis de não divulgação e de violação de segurança; requisitos regulatórios; requisitos de privacidade; leis internacionais etc.
+
+
+Compliance e gerenciamento de auditorias
+
+Manter e comprovar a conformidade no uso da computação em nuvem. As questões relacionadas à avaliação de como a computação em nuvem afeta a conformidade com as políticas de segurança interna bem como vários requisitos de conformidade (regulamentares, legislativos e outros) estão incluídos nesse domínio, que engloba ainda algumas orientações sobre como provar a conformidade durante uma auditoria.
+
+
+Governança da informação
+
+Governança dos dados que são colocados na nuvem. Tais preocupações devem encampar a identificação e o controle de dados na nuvem, bem como controles de compensação que possam ser usados para lidar com a perda de controle físico ao mover dados para a nuvem. Além disso, também lida com questões como quem é responsável pela confidencialidade, integridade e disponibilidade dos dados.

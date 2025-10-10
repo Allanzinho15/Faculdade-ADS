@@ -1,0 +1,55 @@
+Serviço de Rede
+Neste vídeo, detalharemos os serviços de armazenamento.
+
+
+
+Outra classe de serviços em nuvem são os associados ao recurso rede, tais como:
+
+
+Domain Name System (DNS);
+Content Delivery Network (CDN);
+Virtual Private Network (VPN);
+Web Application Firewall (WAF);
+Proteção Distributed Denial of Service (DDoS protection).
+
+Dentro de uma infraestrutura de nuvem, as redes são configuradas virtualmente, o que é conhecido como virtual networking. As redes virtuais dão poder para o cliente realizar configurações específicas. Porém, com essa abordagem, criam um desvio no modelo comum de responsabilidade compartilhada, uma vez que tornam a responsabilidade pela segurança da rede algo dividido entre cliente e provedor.
+
+
+A camada física da rede permanece sob encargo do provedor, mas a camada que possibilita o acesso entre servidores virtuais, serviços de armazenamento e bancos de dados gerenciados fica a cargo do cliente.
+
+
+Os serviços gerenciados de DNS incluem funcionalidade para traduzir nomes de host para endereços IP, diferentes tipos de serviços de registros DNS (como Alias, CNAME etc.), balanceamento de carga, e outros.
+
+
+Um serviço CDN é um serviço de entrega de conteúdo com base na abordagem de que quanto mais próximo do cliente estiver o conteúdo, mais eficiente o serviço será. Então, uma CDN armazena conteúdo em cache (como imagens, vídeos ou páginas da web estáticas) em vários locais ao redor do mundo, permitindo que os clientes recebam o conteúdo rapidamente de um desses locais mais próximos. CDNs também servem como um mecanismo extra de defesa contra os ataques DDoS por servirem de camada prévia de resposta a requisições, ou seja, um dos primeiros serviços que atendem a solicitação de um cliente, antes mesmo que a solicitação chegue aos servidores ou aplicativos.
+
+
+
+As VPNs oferecem acesso mais seguro a recursos privados em redes não confiáveis. Combinadas com um firewall, uma VPN permite que as organizações acessem e gerenciem seus recursos internos (por meio do que é conhecido como túnel VPN) de maneira segura. Uma VPN permite que usuários corporativos se conectem ao ambiente de nuvem de sua organização a partir da rede corporativa ou de casa por uma conexão criptografada. A conexão com o ambiente de nuvem é transparente para o cliente, isto é, tem a mesma aparência que trabalhar localmente de dentro da rede corporativa. É bastante comum nos principais provedores que a VPN imponha o uso de autenticação multifator (MFA) para usuários finais que se conectam ao ambiente.
+
+
+Um serviço WAF é um firewall de camada de aplicação com capacidade de detectar e mitigar ataques comuns ao protocolo HTTP/HTTPS. Suas regras tomam por base a defesa aos ataques expostos publicamente sobre aplicações web.
+
+
+Como têm largura de banda muito grande, os provedores de nuvem podem oferecer, adicionalmente, mecanismos para proteger os ambientes dos clientes contra os ataques DDoS, usualmente utilizando grupos de recurso autoescaláveis combinados com serviços de balanceamento de carga.
+
+
+
+Amazon
+
+
+Possui um serviço específico para esse fim, chamado AWS Shield, que no modo avançado opera conjuntamente com Route53 (DNS), CloudFront (CDN) e Elastic Load Balancing (ELB).
+
+
+
+Microsoft
+
+
+Oferece o Azure DDoS Protection, também com um modo de operação avançada que se combina com outras ferramentas como gateway e WAF.
+
+
+
+Google
+
+
+Emprega a mesma abordagem com o Google Cloud Armor Standard para configurações mais básicas e o Managed Protection Plus integrado a outros serviços.

@@ -1,0 +1,44 @@
+Serviço de Conteinerização
+Vamos descrever brevemente o que é um contêiner. Podemos dizer que se trata de uma evolução da máquina virtual, devido às similaridades em termos de comportamento, porém, são extremamente mais enxutos e leves em termos de uso de recursos de computação. É uma abordagem de virtualização que busca implantar e executar aplicativos distribuídos.
+
+
+Um contêiner contém tudo que é necessário para a execução da aplicação, como arquivos, variáveis de ambiente e bibliotecas próprias. Por meio dessa abordagem de virtualização, podem ser acionados vários contêineres (aplicativos distribuídos) em um único host, acessando um único kernel, ou seja, sem a necessidade de uma VM para cada aplicação. A leveza dessa abordagem propicia facilidades de escala, com os benefícios da computação em nuvem.
+
+
+Em vez de precisar implantar um aplicativo rodando sobre um sistema operacional inteiro, você pode usar contêineres para implantar o aplicativo necessário, com apenas as bibliotecas e os binários mínimos do sistema operacional. Os contêineres têm os seguintes benefícios em relação às VMs:
+
+
+
+Portabilidade
+
+Um aplicativo pode ser desenvolvido dentro de um contêiner em uma máquina caseira e executado em grande escala em um ambiente de produção com centenas ou milhares de instâncias de contêiner.
+
+
+Espaço reduzido
+
+Apenas as bibliotecas e os binários necessários são armazenados dentro de um contêiner.
+
+
+Velocidade
+
+As implementações e atualizações são mais rápidas se comparadas com as VMs.
+
+A imagem a seguir apresenta as diferenças de arquitetura entre contêineres e VMs.
+
+
+
+Comparação entre contêiner e máquina virtual
+
+Ainda na fase de desenvolvimento, é possível instalar um serviço de contêiner em uma máquina caseira, criar um novo contêiner (ou baixar um existente) e concluir todo o desenvolvimento localmente. Passando para a produção, com um orquestrador (serviço de conteinerização) é possível executar centenas de instâncias do contêiner. O serviço é autogerenciado para implantação, monitoramento e verificação de integridade, reciclagem de contêineres e muito mais. Veja a seguir as características do Docker e do Kubernetes.
+
+
+Docker
+
+
+Foi adotado pela indústria como um padrão, de fato, para encapsular contêineres e, nos últimos anos, mais e mais fornecedores de nuvem começaram a oferecer suporte a uma nova iniciativa para encapsular contêineres, chamada Open Container Initiative (OCI).
+
+
+Kubernetes
+
+
+É um projeto de código aberto (desenvolvido originalmente pela Google) e agora está se popularizando no setor de computação em nuvem para orquestrar, implantar, dimensionar e gerenciar contêineres.

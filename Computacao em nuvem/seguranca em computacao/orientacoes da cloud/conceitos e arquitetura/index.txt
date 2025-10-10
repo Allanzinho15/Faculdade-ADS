@@ -1,0 +1,101 @@
+Conceitos e Arquiteturas de Computação em Nuvem
+Esse domínio provê uma estrutura conceitual (framework) que descreve e define computação em nuvem, propõe uma terminologia base e detalha estruturas lógicas e arquiteturais para ambientes em nuvem.
+
+
+A computação em nuvem pode ser vista como uma tecnologia ou coleção de tecnologias, um modelo de operações, modelo de negócios, um paradigma etc. A definição mais enxuta para computação em nuvem, na visão da CSA, é "um novo modelo operacional e conjunto de tecnologias para gerenciar conjuntos de recursos computacionais compartilhados". Sob uma perspectiva prática e simples, a nuvem pode ser descrita como um conjunto de recursos, tais como processadores e memórias, colocado para trabalhar conjuntamente (resource pooling) em uma operação que utiliza virtualização.
+
+
+Comentário
+O NIST define o usuário da nuvem, mencionado aqui como cliente ou organização cliente, como "a pessoa ou organização que requisita e usa recursos", e provedor de serviços de nuvem como "a pessoa ou organização que entrega os recursos".
+
+
+As técnicas-chave para criar uma nuvem são abstração e orquestração. O provedor abstrai os recursos de infraestrutura física para criar o pool e utiliza orquestração para coordenar a montagem e entrega do pool de recursos para os clientes. Essa nova abordagem é uma evolução da virtualização tradicional, com a qual se fazia possível abstrair os recursos, mas não orquestrava a operação deles de forma conjunta. Outros importantes conceitos são:
+
+
+Segregação
+
+
+Que "permite que o provedor de nuvem divida os recursos para os diferentes grupos"
+
+
+Isolamento
+
+
+Que "garante que um grupo não possa ver ou modificar os ativos uns dos outros".
+
+
+A junção da segregação com o isolamento é conhecida como multilocação e não se aplica apenas a diferentes organizações, podendo também ser usada para dividir recursos entre diferentes unidades em uma única empresa ou organização.
+
+
+A CSA usa modelagem preconizada pelo NIST sintetizada na imagem: Consolidação dos aspectos introdutórios de serviços em nuvem. Endossa também o modelo preconizado pela Norma ISO/IEC 17788:2014 – Information technology – Cloud computig – Overview and vocabulary, um documento mais detalhado e exaustivo que apresenta um modelo de referência adicional.
+
+Sobre a modelagem arquitetural, a CSA provê fundamentos para ajudar os profissionais de segurança a tomarem decisões embasadas, bem como uma linha de base para a compreensão de modelos emergentes mais complexos.
+
+
+Podemos dizer que o modelo de arquitetura preconizado pela CSA se presta a um metamodelo para os provedores montarem e oferecerem seus serviços da forma mais adequada a seus modelos de infraestrutura e negócios no mundo real. A arquitetura de referência da CSA é apresentada na imagem adiante.
+
+
+
+Arquitetura de referência da CSA
+
+Observando por um ponto de vista de mais alto nível, tanto a computação em nuvem quanto a tradicional aderem a um modelo lógico que ajuda a identificar diferentes camadas com base na sua funcionalidade. Isso é útil para ilustrar as diferenças entre os diferentes modelos de computação:
+
+
+
+Infraestrutura
+
+Os principais componentes de um sistema de computação, que são: computação, rede e armazenamento. São as partes móveis que funcionam como a base sobre a qual todo o resto é construído
+
+
+Metaestrutura
+
+Os protocolos e mecanismos que fornecem a interface entre a camada de infraestrutura e as demais camadas. É o amálgama que une as tecnologias e possibilita o gerenciamento e a configuração.
+
+
+Appliestrutura
+
+A palavra é uma contração que representa os aplicativos implantados na nuvem e os serviços de aplicativos subjacentes usado para construí-los. Por exemplo, recursos de plataforma como serviço, filas de mensagens, análise de inteligência artificial ou notificação, e todos de mais alto nível de abstração.
+
+
+Infoestrutura
+
+Os dados e informações que podem ser o conteúdo em um banco de dados, armazenamento de arquivos etc.
+
+A imagem a seguir apresenta a pilha de camadas que representa essa arquitetura na visão funcional.
+
+
+
+Arquitetura funcional de computação e nuvem
+
+Os enfoques de segurança variam de acordo com a camada, mas guardam os mesmos princípios básicos de segurança da informação: confidencialidade, integridade e disponibilidade. Computação tradicional ou em nuvem se diferenciam sobretudo pela camada de metaestrutura. A nuvem inclui os componentes para gerenciamento dos recursos das camadas superiores. A infraestrutura da nuvem também se diferencia pelo já explicado conceito da multilocação.
+
+
+Os modelos de segurança na nuvem são ferramentas para ajudar a orientar as decisões de segurança. O CSA recomenda alguns modelos:
+
+
+CSA Enterprise Architecture;
+CSA Cloud Controls Matrix;
+NIST – Cloud Computing Security Reference Architecture (NIST Special Publication 500-299);
+ISO/IEC FDIS 27017 – Information technology – Security techniques – Code of pratice for information security controls based on ISO/IEC 270002 for cloud services.
+
+A CSA estabelece um processo de alto nível, relativamente simples para gerenciar a segurança em nuvem, descrito textualmente pelos passos:
+
+
+Identificar os requisitos de segurança e conformidade necessários a quaisquer controles existentes;
+Selecionar o provedor de nuvem, serviço e modelos de implantação;
+Definir a arquitetura;
+Avaliar os controles de segurança;
+Identificar lacunas de controle;
+Projetar e implementar controles para preencher as lacunas;
+Gerenciar as mudanças ao longo do tempo.
+
+Veja a seguir sintetizados na imagem a seguir:
+
+
+
+Processo para gestão de segurança em nuvem
+
+Uma vez estudado o domínio mais fundamental das orientações de segurança em nuvem do CSA, apresentaremos uma visão geral sintetizada dos outros treze domínios. Eles destacam áreas com as quais a computação em nuvem deve se preocupar. Os domínios restantes são divididos em duas grandes categorias: governança e operação.
+
+
+Os domínios de governança são amplos e abordam questões estratégicas e políticas em um ambiente de computação em nuvem. Já os domínios de operação se concentram em questões de segurança mais táticas e implementação dentro da arquitetura.
