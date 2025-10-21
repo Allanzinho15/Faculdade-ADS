@@ -1,0 +1,29 @@
+Segurança em Google Cloud
+O Google Cloud, por mais que seja um provedor de serviços gerenciados, necessita estar alinhado com boas práticas de segurança. Dentro de uma matriz de responsabilidades, em um provedor, existem diferentes níveis para cada tipo de serviço, e cada parte terá sua responsabilidade pela segurança. A imagem a seguir nos mostra essa matriz:
+
+
+
+Matriz de responsabilidades de segurança.
+
+Como vemos na imagem, quanto mais gerenciado for o serviço, menor a responsabilidade do usuário com a segurança. Assim, ao utilizar uma infraestrutura como serviço (IaaS), por exemplo, toda a responsabilidade de segurança com hardware e boot é do provedor. Por outro lado, a segurança da aplicação, da implantação dessa aplicação, sistema operacional e rede é totalmente do usuário. Caso utilize uma plataforma como serviço (PaaS), a responsabilidade passa a ser somente em nível de aplicação.
+
+
+Em um provedor de nuvem, é importante estarmos atentos às normas nas quais ele está adequado. As normas regulamentadoras servem para assegurar um serviço prestado, e podem ser internacionais ou nacionais.
+
+
+No Brasil, por exemplo, temos a Lei Geral de Proteção de Dados, também conhecida como LGPD, que visa normatizar a utilização e processamento de dados de maneira correta, impondo regras na transferência e circulação de dados pessoais.
+
+
+
+ISO 27001: referência internacional para gestão da segurança da informação.
+
+Outra norma muito comum é a ISO/IEC 27001, na qual a Organização Internacional de Normatização (ISO) descreve os requisitos de um sistema de gestão de segurança e especifica um conjunto de práticas recomendadas, mostrando detalhes sobre os controles exigidos. O Google Cloud está adequado a essas e inúmeras outras normas, com servidores certificados.
+
+
+Toda infraestrutura física do Google Cloud, em todos os servidores, tem um protocolo de segurança extremamente rígido. Para acesso aos datacenters, por exemplo, existem seis camadas de segurança, desde a autorização para entrar no local, passando por câmeras de detecção térmica, segurança 24h, sistemas de alarme, até chegar no acesso ao piso de servidores. Um fato interessante é que apenas funcionários autorizados possuem acesso aos datacenters, e esses funcionários representam menos de 1% do total de funcionários do Google.
+
+
+Como é a segurança em ambientes Google Cloud?
+
+
+Neste vídeo, falaremos sobre as responsabilidades de cada persona a respeito da segurança no ambiente de nuvem em cada tipo de serviço (IaaS, PaaS e SaaS). Além disso, ele aborda as melhores práticas executadas atualmente.

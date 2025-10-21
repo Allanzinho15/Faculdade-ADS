@@ -1,0 +1,49 @@
+Aplicações para ambientes de nuvem
+Existem inúmeras maneiras de desenvolver uma aplicação. Isso porque os requisitos podem ser diferentes e, com isso, podem ser usadas tecnologias diferentes para cada um dos casos, como uma linguagem de programação específica. Um dos requisitos que devem ser levados em conta é o ambiente no qual a aplicação será implementada, já que deve estar adequada aos recursos que consumirá e deve estar alinhada com os requisitos de negócio e de investimento.
+
+
+Atenção
+Quando pensamos no ambiente de nuvem, lembramos que ele é cobrado por recursos consumidos. Então, como necessidade, devemos adequar nossas aplicações para consumir o mínimo de CPU e memória possíveis, mas que, ao mesmo tempo, se mantenham estáveis. Esse tipo de arquitetura tem um nome próprio, aplicativo nativo da nuvem (cloud native application).
+
+
+Uma aplicação nativa de nuvem consiste em um software que utiliza recursos como serviço e que é desacoplado, ou seja, seus componentes não dependem de outros componentes externos, é independente. Um dos principais benefícios é se adaptar e agregar valor tecnológico ao negócio, fornecendo uma experiência de desenvolvimento mais ágil e com as melhores práticas.
+
+
+Duas arquiteturas comuns são a “com estado” (do termo em inglês, stateful) e a “sem estado” (do termo em inglês, stateless). As duas opções têm pontos positivos e negativos e suas complexidades particulares. Entenda a seguir:
+
+
+Aplicações stateful (com estado)
+
+
+O termo “estado” refere-se ao armazenamento de informações, assim, uma arquitetura stateful consiste em uma aplicação que, além da lógica, armazena os dados em si.
+
+
+Aplicações stateless (sem estado)
+
+
+Tem todos os dados armazenados em um componente externo, ficando apenas responsável pela lógica e processamento.
+
+
+A arquitetura stateless traz uma possibilidade de implantação em uma infraestrutura “sem servidor” (do termo em inglês, serverless). A ideia não é literalmente implantar em nenhum servidor, mas consiste em ser uma infraestrutura elástica do ponto de vista de escalabilidade. Sendo assim, podemos facilmente escalar para mais de uma “cópia” do aplicativo para atender à demanda e, caso não exista nenhum tipo de requisição, é possível “desligar” o servidor. Como vimos, em ambientes de nuvem a cobrança é feita com base no aluguel de recursos e, ao escalar para zero, essa aplicação não vai gerar consumo, sendo assim, não pagaremos por isso.
+
+
+Aplicações com estado possuem algumas peculiaridades em algumas arquiteturas. Imagine que tenhamos que duplicar uma aplicação que armazena dados para poder atender a uma alta demanda. Nesse caso, como poderíamos garantir a consistência de informações entre elas? Ou, caso fôssemos utilizar uma aplicação com estado em uma estratégia “sem servidor”, ao escalar para zero ou “desligar” o servidor, como iremos garantir que as informações não serão perdidas?
+
+
+
+Estratégia serverless.
+
+Fora todas essas indagações, uma estratégia serverless precisa ter um tempo de resposta extremamente alto, tendo que “ligar” a aplicação no servidor no menor tempo possível. Devido a isso, devem ser leves e portáteis. Arquiteturas stateful tendem a ser mais pesadas e, por isso, possuem um tempo de início mais longo.
+
+
+O Google Cloud possui um PaaS que entrega uma infraestrutura sem servidor para as aplicações. Essa solução se chama Cloud Run e suporta as principais linguagens de programação, como Node.JS, Python, Java, Go, entre outras. Um dos grandes benefícios de uma plataforma como serviço é que podemos nos preocupar somente com a aplicação e sua lógica e isso agrega muito, pois podemos nos concentrar nos processos e regras de negócio, trazendo maior agilidade produtiva.
+
+
+Dica
+Para aplicações com estado, dentro do Google Cloud é possível utilizar o Compute Engine, solução de máquinas virtuais do Google, ou até mesmo tecnologias mais atuais, como contêineres e kubernetes.
+
+
+Como desenvolver aplicações para a nuvem?
+
+
+Neste vídeo, falaremos sobre as especificações de uma aplicação nativa de nuvem e quais seus benefícios, explicando por que é necessário desenvolver uma aplicação preparada para um ambiente de nuvem e como isso pode impactar todo o processo de desenvolvimento.

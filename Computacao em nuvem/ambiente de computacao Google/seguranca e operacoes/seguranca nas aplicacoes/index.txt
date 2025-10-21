@@ -1,0 +1,23 @@
+Segurança nas aplicações
+Como vimos, em ambientes de nuvem utilizando soluções como serviço IaaS ou PaaS, a camada de aplicação é responsabilidade do usuário e, por isso, devemos tomar todas as medidas de segurança possíveis.
+
+
+Um consenso básico de segurança das aplicações é sempre manter as versões de linguagens de programações e frameworks de código livre (open source) atualizados para a versão estável, o que não significa necessariamente que essa seja a última disponível. Sempre que uma nova versão de algo é lançada, normalmente ela não é estável, pois ainda não teve o período de amadurecimento e, devido a isso, pode possuir brechas de segurança que ainda não foram descobertas.
+
+
+Outro conceito bem maduro e útil é o DevOps, que é um processo de entrega de software que envolve desenvolvimento e operações juntos. Esses dois times possuem visões diferentes. Enquanto desenvolvedores se preocupam com regras de negócio, linguagens de programação e construir a aplicação, os operadores estão visando à performance, segurança geral e monitoramento do ambiente e, assim, o desempenho de entrega de softwares acaba tornando complexo todo o processo.
+
+
+
+DevOps: utilização de tecnologia para desenvolvimento em ciclos.
+
+Por isso, a teoria do DevOps busca envolver ambos os lados e compartilhar a responsabilidade utilizando, para isso, tecnologia para um desenvolvimento em ciclos. Essa técnica agrega a segurança da aplicação, pois cada persona se preocupa com a segurança de sua especialidade. Desse modo, o desenvolvedor não precisa se preocupar com as configurações de infraestrutura dentro da aplicação, pois as tecnologias padronizam os ambientes. Todo processo de entrega de novas versões de software acaba se tornando mais seguro e documentado, pois existe uma prática por trás, e isso torna-se mais nítido para os envolvidos.
+
+
+Todas essas práticas são recomendadas e adotadas pelo Google Cloud, que também fornece ferramentas e tecnologias para sua execução, como: Cloud Repository, um versionador de códigos fontes GIT; o Cloud Build, um integrador e construtor de aplicações com base em códigos-fontes, que têm como função automatizar todo o processo; e Cloud Deploy, ferramenta de entrega de aplicações em ambientes finais (produtivos) em nuvem.
+
+
+Como garantir a segurança das aplicações?
+
+
+Neste vídeo, falaremos sobre as melhores práticas para garantir a segurança de aplicações em ambiente de nuvem pensando na infraestrutura que será utilizada e nas ferramentas (linguagem de programação, ferramentas utilitárias, plataformas) que serão adotadas.

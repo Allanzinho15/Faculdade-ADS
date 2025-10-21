@@ -1,0 +1,35 @@
+Aplicação da arquitetura de infraestrutura
+Como vimos, existem práticas dentro do ambiente de nuvem do Google para desenvolvimento de uma arquitetura de infraestrutura, como redes virtuais em nuvem e máquinas virtuais, e que podem ser divididas em regiões diferentes.
+
+
+O primeiro ponto, quando aplicamos a prática desses conceitos juntos, é a definição das redes necessárias dentro de um projeto e, por isso, iniciamos com a VPC.
+
+
+
+Arquitetura de VPC em Google Cloud.
+
+Como vemos na imagem, foi definida uma rede VPC chamada de “rede-vpc-1”, que está expandida em duas regiões: “southamerica-east1”, localizada no Brasil, e “us-east1” localizada nos Estados Unidos.
+
+
+O próximo passo é definir as sub-redes (subnets) com as possibilidades de variações (ranges) de IP e, como demonstramos na imagem a seguir, temos duas subnets: “subnet1” e “subnet2”, cada qual com seu range de IP.
+
+
+
+Subnets Google Cloud.
+
+Dentro das nossas subnets podemos definir quais serão as zonas de disponibilidades utilizadas nas regiões. Para esse projeto, definimos utilizar na “subnet1” somente a zona denominada “southamerica-east1-a”, enquanto na “subnet2”, vamos utilizar duas zonas, “us-east1-a” e “us-east1-b”.
+
+
+
+Zonas na arquitetura de infraestrutura.
+
+Com esse desenho básico de rede, já podemos começar a adicionar as funções de infraestrutura para a aplicação, como nossas VMs. As máquinas virtuais ficam diretamente relacionadas a uma subnet de uma VPC, e agregam em si os valores de ranges de IP preestabelecidos para cada uma dessas subnets. A partir disso, já podemos disponibilizar nossas aplicações para a internet.
+
+
+
+Arquitetura de rede com máquinas virtuais.
+
+Como um website funciona na prática em Google Cloud?
+
+
+Neste vídeo, falaremos sobre como funcionaria um website em ambiente Google Cloud. Explica também importância de todo conteúdo aprendido e sua aplicabilidade na prática, expondo que isso é o que o mercado de trabalho desenvolve.

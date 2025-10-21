@@ -1,0 +1,62 @@
+Gerenciamento de custos no Azure
+Demonstração da calculadora de preços
+
+Confira no vídeo a estimativa de custo de alguns recursos do Azure e a exportação para um orçamento em Excel por meio da calculadora de preços.
+
+
+
+Fatores que podem afetar os custos no Azure
+
+
+O Azure desloca os custos de desenvolvimento, destinados a criar e manter a infraestrutura e instalações, de CapEx (despesa de capital) para OpEx (despesa operacional), de forma a alugar a infraestrutura conforme necessário, seja ela de computação, armazenamento, rede etc.
+
+
+Esse custo OpEx pode ser afetado por muitos fatores, como:
+
+
+Tipo de recurso
+Consumo
+Manutenção
+Painel geografia do app selecionado
+Tipo de assinatura
+Azure Marketplace
+
+Calculadoras de preço e custo total de propriedade
+
+Calculadora de preço
+
+É uma ferramenta on-line que ajuda na estimativa de custos de recursos no Azure. Nela, você poderá encontrar cenários de exemplo, estimativas salvas, perguntas frequentes, além de poder salvar seus orçamentos e ter acesso a uma estimativa de custos bem detalhada dos recursos que deseja provisionar na nuvem da Microsoft.
+
+
+
+Calculadora do Azure.
+
+Calculadora de TCO
+
+
+Ao contrário da calculadora do Azure, essa calculadora foi desenhada com a finalidade de ajudar nos projetos de migração da infraestrutura local para a infraestrutura da nuvem do Azure, gerenciando custos atuais e futuros, sendo possível determinar quais são os recursos locais (servidores, bancos de dados, armazenamento, tráfego), de maneira que a calculadora se responsabiliza em ofertar um orçamento baseado no seu custo atual e uma previsão de economia de 1 a 5 anos.
+
+
+
+Calculadora de TCO.
+
+Gerenciamento de custos
+
+
+Tem a função de verificar, de forma rápida e visual, os custos de recursos do Azure. É possível criarmos alertas com base nos gastos dos recursos e criar orçamentos (budgets) que podem ser usados para automatizar o gerenciamento de recursos.
+
+
+Exemplo
+Se existe um orçamento de R$ 20.000,00 você pode criar um alerta para quando chegar em 80% desse valor, o Azure realiza o envio de um e-mail com este aviso.
+
+
+A análise de custo é uma parte do gerenciamento de custos que apresenta uma visualização rápida para os custos do Azure. Usando essa ferramenta, você pode visualizar rapidamente o custo total de várias maneiras como, por ciclo de cobrança, por região, por recurso etc.
+
+
+
+Análise de custos da assinatura.
+
+Finalidade das marcas (tags)
+
+
+As marcas (tags) são metadados associados a recursos ou grupo de recursos. Por exemplo, imagine que você queira criar dez máquinas virtuais para o setor de RH e dez máquinas para o setor de almoxarifado, e você pode criar para cada recurso uma marca. Você cria uma marca chamada setor com os valores RH e Almoxarifado e, futuramente, poderá filtrar os recursos de cada setor por sua marca específica e até gerar relatórios financeiros por marca.

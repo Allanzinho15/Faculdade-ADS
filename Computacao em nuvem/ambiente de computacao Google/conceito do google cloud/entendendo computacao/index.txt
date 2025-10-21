@@ -1,0 +1,29 @@
+Entendendo computação em nuvem
+A ideia de computação em nuvem não é algo novo, e vem se destacando nos últimos anos, devido às possibilidades e facilidades que agrega em todo o processo de jornada tecnológica.
+
+
+Tudo o que utilizamos para o desenvolvimento de aplicações, seja a hospedagem, banco de dados ou ferramentas, deve estar localizado em algum lugar, mais tradicionalmente “no local” (do termo em inglês, on-premises).
+
+
+
+Servidores.
+
+Isso significa que toda a infraestrutura é localizada em um ambiente físico gerenciado por quem a utiliza. E essa infraestrutura inclui, além de servidores, também os sistemas de refrigeração, discos rígidos, energia elétrica, espaço físico, internet, cabeamento e mão de obra para suportar todas essas necessidades.
+
+
+Além da preocupação com o que é tangível, existe todo o processo de gerenciamento dos softwares que suportam os aplicativos e servidores. Isso inclui instalações, configurações e atualizações de sistemas e versões.
+
+
+A computação em nuvem provê um ambiente sob demanda, ou seja, toda a capacidade de processamento e desenvolvimento de acordo com o que for necessário, sem a necessidade de se preocupar com o gerenciamento de uma infraestrutura local, tudo a um clique de distância para ter acesso.
+
+
+Imagine em um data-center on-premises, no qual a quantidade de servidores chegou no limite de processamento e, para conseguir suprir, será necessário comprar mais uma unidade. Nesse processo, existem inúmeras preocupações além da compra de um novo servidor, como também onde ele ficará localizado. Ainda existe espaço físico que suporte? Existem tomadas para isso? Quem instalará e gerenciará todos os softwares necessários, como sistemas operacionais? E quando não se precisar mais desse servidor, o que acontecerá com o investimento que já foi feito?
+
+
+Com a computação em nuvem, essas preocupações não existem, pois todos os recursos necessários, máquinas com diferentes programações de CPU e memória estão disponíveis sob demanda, alugando recursos somente quando necessário e, se um dia não forem mais necessárias, podemos simplesmente excluir essas máquinas, sem a necessidade de continuar pagando.
+
+
+Por que aprender nuvem e Google Cloud?
+
+
+Neste vídeo, daremos um panorama geral e fala sobre o impacto tecnológico que a nuvem vem causando nos últimos 10 anos na inovação de TI.

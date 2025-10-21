@@ -1,0 +1,42 @@
+Soluções como serviço
+A chegada da computação em nuvem trouxe novas ofertas para o mundo da tecnologia. Algumas delas são a infraestrutura como serviço (infrastructure as a service, ou IaaS), a plataforma como serviço (platform as a service, ou PaaS) e o software como serviço (software as a service, ou SaaS).
+
+
+Entenda a seguir:
+
+
+
+Iaas (infraestrutura como serviço)
+
+É o modelo que oferece infraestrutura sob demanda, alugando recursos computacionais como armazenamento, rede e virtualização. Esse modelo ajuda a eliminar grande parte da complexidade e custos associados à criação e manutenção de infraestrutura física de um datacenter próprio.Mesmo utilizando IaaS do Google Cloud, o cliente ainda tem a responsabilidade de gerenciar a camada de sistema operacional, dados e aplicação.
+
+
+
+PaaS (plataforma como serviço)
+
+É um modelo que engloba a IaaS, mas com uma camada de abstração maior, tirando toda responsabilidade do ponto de vista de operações e infraestrutura, ou seja, o usuário não precisa se preocupar com nada além da sua aplicação. Enquanto na IaaS ainda existe uma responsabilidade do ponto de vista de sistema operacional e dados, por exemplo, na PaaS isso é desnecessário, visto que tudo é provido sob demanda.
+
+
+
+SaaS (software como serviço)
+
+É o serviço mais gerenciado possível, no qual o usuário vai apenas utilizar o software, sem necessidade de gestão, instalação ou até mesmo o desenvolvimento. O SaaS é uma oferta que visa acelerar ainda mais o processo de adequação à nuvem, já que o tempo para começar a utilizar esse serviço é praticamente imediato. Por outro lado, trata-se de um serviço com pouquíssima flexibilidade, no qual o usuário não tem controle e não pode opinar sobre nenhum componente de infraestrutura ou desenvolvimento.
+
+
+
+
+Cada uma dessas ofertas possui pontos positivos e negativos, sobre os quais devemos identificar a necessidade da aplicação, do time ou da empresa para utilização de algum provedor como serviço. Quanto mais se abstrai de responsabilidades de gerenciamento, menos flexibilidade se tem no ambiente.
+
+
+Exemplo
+Em uma IaaS, se toda a infraestrutura é provida sob demanda e gerenciada pelo Google, como podemos escolher qual o hardware utilizar? Isso não é possível, visto que é responsabilidade do provedor. Da mesma maneira, em uma PaaS, além de estar em uma IaaS, também agrega os softwares de plataforma, sendo assim, como vou alterar algo como módulos, bibliotecas ou versão do sistema operacional? Também não é possível. Então, imagine que uma aplicação só pode ser implantada em um sistema operacional em uma versão específica ou com bibliotecas customizadas e, nesse caso, utilizar uma plataforma como serviço não seria o ideal.
+
+
+Sempre devemos identificar primeiro as necessidades para depois escolher em qual modelo de serviço o aplicativo estará hospedado.
+
+
+O que é a computação em nuvem do Google Cloud?
+
+Neste vídeo, falaremos sobre a história e os conceitos básicos da computação em nuvem, diferenças entre IaaS, PaaS e SaaS, abordando seus pontos positivos tecnicamente, e o quão impactante ela é para o negócio.
+
+

@@ -1,0 +1,214 @@
+Máquinas virtuais – Amazon EC2
+O Amazon Elastic Compute Cloud é um serviço que provê capacidade computacional segura e redimensionável na nuvem, em formato de máquinas virtuais, conhecidas como instâncias do Amazon EC2. Em poucos minutos você pode ligar um novo servidor, usufruir imediatamente da capacidade computacional dele e desligar quando quiser, encerrando o custo dessa infraestrutura. Comparado ao modelo on-premise, no qual você é o responsável pela infraestrutura de TI de uma empresa, caso você queira provisionar uma nova aplicação na internet como, por exemplo, um sistema de sites/blog Wordpress, você precisará seguir alguns passos:
+
+
+Encontrar um fornecedor de equipamentos de TI e pagar adiantado a aquisição do equipamento.
+Esperar o processo logístico de entrega dos equipamentos para a sua empresa.
+Montar e ligar todos os equipamentos dentro da sua infraestrutura de datacenter.
+Fazer instalação de sistema operacional com todas as configurações mínimas para iniciar a implantação da sua aplicação.
+Baixar e configurar o Wordpress e todas suas dependências.
+
+Se o mesmo desafio fosse proposto para ser realizado utilizando uma instância EC2, você seguiria os seguintes passos:
+
+
+Iniciar o processo de lançamento de uma nova instância, optando por uma configuração básica na qual você pode escolher o sistema operacional, plataforma e até a possibilidade de já escolher um aplicativo (como o Wordpress).
+Selecionar o tipo de hardware virtual que deseja, escolhendo o conjunto de vCPU e memória.
+Selecionar detalhes como segurança, armazenamento local e rede.
+Fazer uma revisão e iniciar a instância, podendo em seguida conectá-la remotamente.
+A partir desse momento você já pode ter um Wordpress pré-instalado com suas dependências, ou fazer uma instalação da mesma forma que um servidor físico.
+
+Um processo de semanas foi resolvido em poucos minutos com o uso da AWS, de forma self-service e com a vantagem de, ao final, caso você não precise mais do recurso, ter a possibilidade de desligar e encerrar os custos dessa operação. Essa mudança de paradigma na TI foi o que tornou o Amazon EC2 um serviço tão amplamente utilizado e estimulou várias empresas a migrarem do on-premise para a nuvem. Veremos agora, em detalhes, cada passo para fazer esse processo, seguindo boas práticas.
+
+
+Amazon Machine Image (imagens de aplicações e sistema operacional)
+
+
+No mundo tradicional de infraestrutura de TI, após a instalação física do servidor, o primeiro passo seria a instalação do sistema operacional a ser utilizado, utilizando discos, drivers ou pela rede. No Amazon EC2, a responsabilidade da instalação do sistema operacional não é do usuário, pois a AWS fornece imagens prontas, conhecidas como Amazon Machine Images (AMI).
+
+
+Nesse caso, sua única responsabilidade é apenas de escolher qual sistema operacional é mais adequado ao seu cenário.
+
+
+Além do sistema operacional, algumas imagens já podem vir com plataforma, aplicativos pré-instalados e suas dependências. A AWS fornece um catálogo de milhares de imagens prontas para uso fornecidas pela própria Amazon e por empresas parceiras, por meio de um marketplace ou da comunidade, que oferece imagens customizadas disponibilizadas por outros usuários da nuvem.
+
+
+
+Campo de busca de imagens da AWS, marketplace e comunidade, no painel de lançamento de uma nova instância.
+
+Como uma boa prática para iniciantes, devem ser utilizadas apenas AMI recomendadas pela AWS e com garantia de integridade, que estão localizadas na seção "Quick Start”. Existe uma diversidade de opções de sistemas operacionais e suas variações, que podem ser selecionadas a depender da versão e, em alguns casos, da arquitetura disponível.
+
+
+
+AMI do sistema Ubuntu tem disponível a versão 22.04 LTS e a arquitetura ARM.
+
+Note que as AMIs possuem um identificador único (AMI ID), com prefixo “ami-” seguido de um hash com números e letras, que representa todo o conjunto de características, como o sistema, a versão, a arquitetura e a região. Isso significa que cada região AWS terá suas próprias AMIs para as características selecionadas, não podendo uma mesma AMI ser utilizada em regiões diferentes, pois são únicas.
+
+
+
+AMI ID para Ubuntu 22.04 LTS, arquitetura ARM, na região N. Virginia.
+AMIs podem ser criadas pelo usuário a partir de uma instância em execução e isso permite sua customização e reutilização para novos provisionamentos de sistemas, com configurações próprias para o seu cenário. Isso é de grande utilidade para cenários de autoescalabilidade, nos quais a instância precisa ser ligada automaticamente e já deve estar pronta para funcionamento.
+
+
+Podemos imaginar a AMI como um código DNA, que possui suas próprias características, mas pode ser modificado e melhorado para seu uso específico.
+
+
+Como exemplo, podemos usar a AMI do Ubuntu 22.04 LTS, recomendada pela AWS, mas que só possui instalado o sistema operacional base. Para seu cotidiano operacional, você deseja lançar várias máquinas virtuais com o servidor web Apache para hospedagem de sites. Ao invés de sempre instalar o Apache para cada instância recém-criada, você criará uma AMI a partir de uma instância com o Apache instalado, gerando uma nova AMI, com um novo “DNA”. Essa será sua AMI de partida, com Ubuntu 22.04 LTS e o Apache pré-instalado.
+
+
+No futuro, se você quiser adicionar novas características como, por exemplo, permitir o uso de sites na plataforma PHP, pode repetir o processo modificando o “DNA” da sua AMI de referência.
+
+
+
+Ciclo de criação e reuso de uma AMI customizada.
+
+Na criação de uma nova AMI, a partir de uma instância, será importante você definir um nome para a imagem, para facilitar a identificação futura. Você também terá a opção de criar uma AMI com a instância em execução, sem precisar desligar, marcando a opção “no reboot”.
+
+
+Atenção
+Eventuais dados que sejam modificados durante a criação da imagem podem ficar inconsistentes. Para evitar isso, a AMI deve ser feita com a instância desligada.
+
+
+A seguir, podemos ver a criação de uma AMI.
+
+
+
+Exemplo de tela de criação de AMI de uma instância em execução.
+
+Para cada AMI criada em sua conta vai existir ao menos um snapshot associado, podendo existir mais de um se a instância que foi usada de base para criação possuir mais de um disco. Esses snapshots não podem ser apagados até que a AMI vinculada seja desregistrada antes. As AMIs em si não possuem custo, mas sim os snapshots vinculados que você armazenará em sua conta, que serão cobrados por seu tamanho.
+
+
+Tipos de instâncias EC2
+
+
+Confira como identificar qual tipo é mas indicado para cada uso.
+
+
+
+Instâncias EC2 são uma combinação de processadores virtuais (vCPU), memória, rede e, em alguns casos, armazenamento e processadores gráficos (GPUs). Quando você cria uma instância EC2, precisa escolher de quantos desses componentes você vai precisar. A Amazon define tipos de instâncias EC2 que são as combinações desses componentes otimizadas para diferentes casos de uso. Os tipos de instância seguem uma nomenclatura que consiste em um prefixo, que identifica a família e sua geração, seguido pelo tamanho. Em alguns casos, características adicionais como o processador utilizado, especificidades de armazenamento, rede ou virtualização podem estar indicados no prefixo. Vamos tomar como exemplo dois tipos: m5.large e t4g.small.
+
+
+m5
+
+
+Quinta geração da família M.
+
+
+t4g
+
+
+Quarta geração da família T, que passou a adotar a letra “g” para identificar que esse tipo utiliza processadores Graviton 2, baseados em ARM.
+
+
+Large e small
+
+
+Tamanhos que definem qual a capacidade daquela instância.
+
+
+Vamos conhecer as principais famílias e qual é o caso de uso indicado para cada uma delas:
+
+
+
+De uso geral
+
+É aquele que provê um equilíbrio entre memória, processamento e rede, e pode ser utilizado para uma ampla gama de workloads. Ex.: t4g, t3, t3a, m6i, m6g, m6a, m5, m5a, m5n, m4.
+
+
+Otimizado para computação
+
+É ideal para workloads de uso intensivo de CPU, beneficiando-se de processadores de alta performance. Ex.: c6g, c6i, c6a, c5, c5a, c4.
+
+
+Otimizado para memória
+
+É ideal para workloads que precisam processar grandes conjuntos de dados em memória. Ex.: r6a, r6g, r6i, r5, r5a, r4.
+
+Com cada vez mais tipos utilizando processadores Graviton (baseados na arquitetura ARM), a AWS passou a identificar as instâncias que utilizam processadores Intel e AMD com as letras “i” e “a”, respectivamente, após o número que identifica a geração (c6i, m6i, r6i, c5a, c6a e m5a, por exemplo). Porém, alguns tipos utilizam processadores Intel e não possuem a letra “i”, como também podem existir tipos com outras letras que indicam uma característica que não está diretamente relacionada ao modelo do processador e/ou processadores que não foram citados entre os tipos mais populares.
+
+
+Par de chaves
+
+Durante o processo de lançamento de uma instância EC2, é solicitado que você selecione um key pair (par de chaves) ou que crie um, caso ainda não tenha feito. Esse par de chaves consiste em uma chave pública e uma chave privada. O Amazon EC2 armazena a chave pública em sua instância e você deve armazenar de forma segura a chave privada, pois qualquer um de posse dela pode conectar-se na sua instância. Para instâncias do Windows, a chave privada é necessária para descriptografar a senha do administrador e em instâncias Linux, para conectar remotamente, usando o SSH.
+
+
+
+Tela de criação de uma key pair onde é solicitado um nome, tipo e formato.
+
+Rede e firewall de EC2
+
+
+Durante o processo de criação de uma instância no Amazon EC2 são solicitadas, ou até mesmo pré-selecionadas, algumas informações relacionadas à rede (VPC) e ao firewall (security group) da máquina que você está prestes a criar.
+
+
+O Amazon VPC permite que você execute recursos da AWS em uma rede virtual dedicada à sua conta, conhecida como nuvem privada virtual (VPC). Ao iniciar uma instância, você pode selecionar uma sub-rede da VPC (ou deixar que a AWS escolha por você). A instância é configurada com uma interface de rede primária, que é uma placa de rede virtual lógica. A instância recebe um endereço IP privado primário do endereço IPv4 da sub-rede, que é atribuído à interface de rede primária.
+
+
+Você pode controlar também se a instância receberá um endereço IP público do pool de endereços IP públicos da Amazon. O endereço IP público de uma instância é associado à sua instância somente até que ela seja desligada ou encerrada. Se você precisar de um endereço IP público persistente, poderá alocar um endereço IP elástico para sua conta da AWS e associá-lo a uma instância ou interface de rede.
+
+
+Saiba Mais
+Um endereço IP elástico permanece associado à sua conta da AWS até que você o libere, e você pode movê-lo de uma instância para outra conforme necessário.
+
+
+O botão “Edit” habilitará a escolha de VPC, subnets e se deseja associar IP público automaticamente, como podemos ver a seguir.
+
+
+
+Indicação do botão Edit para escolha do VPC.
+Já o security group (SG) atua como um firewall virtual para suas máquinas EC2, controlando o tráfego de entrada e saída. Você pode especificar um ou mais security groups durante o processo de criação de uma instância e, caso você não especifique um grupo de segurança, o Amazon EC2 usará o grupo de segurança padrão. Você pode adicionar regras a cada grupo de segurança que permite o tráfego de saída ou entrada para suas instâncias associadas e pode modificar essas regras a qualquer momento. As regras novas ou modificadas são aplicadas automaticamente a todas as instâncias associadas ao grupo de segurança.
+
+
+
+Modo simplificado de criação de security group durante o passo a passo de lançamento de EC2.
+
+Ao clicar no “Edit”, o painel oferece mais opções de personalização de um novo security group.
+
+
+
+Painel de personalização do security group.
+
+Durante o processo de criação de uma nova instância, você poderá selecionar um SG previamente criado ou criar um novo, de forma simplificada ou personalizada. Ao criar um novo SG, é provável que já exista uma regra liberando a porta de acesso remoto (SSH para linux, RDP para Windows), sendo recomendado que você restrinja o acesso para que esse canal não fique aberto a qualquer um.
+
+
+Disco do EC2
+
+
+O Amazon EC2 oferece opções de armazenamento de dados para suas instâncias que são flexíveis, econômicas e fáceis de usar. Cada opção tem uma combinação única de desempenho e durabilidade.
+
+
+Essas opções de armazenamento podem ser usadas independentemente ou em combinação para atender às suas necessidades.
+
+
+Em geral, durante a criação de uma instância EC2, um disco raiz EBS (Elastic Block Store) de tamanho mínimo e tipo sugerido para a AMI selecionada já é adicionado, podendo ser alterado e até adicionados novos tipos de armazenamento.
+
+
+
+Indicação de tamanho (8GB) e tipo (gp2) de disco.
+
+Como podemos ver na imagem, um disco de 8 GB do tipo gp2(SSD) é o padrão para instâncias Ubuntu 22.04.
+
+
+Atenção
+Deve-se respeitar a configuração mínima de tamanho e tipo que vêm pré-preenchidos, podendo ser alterados para tamanhos maiores ou tipos melhores. Do contrário, a instância pode ter problemas de performance ou até não dar boot no sistema operacional.
+
+
+Scripts de boot nas instâncias EC2
+
+
+Confira a técnica para aprender a executar o scripts durante o provisionamento de uma instância.
+
+
+
+Detalhes avançados
+
+
+Ao final do processo de criação de uma instância EC2, antes de lançar, ainda é possível selecionar algumas opções, onde podemos destacar:
+
+
+
+Termination protection
+
+Detailed Cloudwatch
+
+User Data
+Se ativado, a instância não pode ser encerrada até que a proteção contra encerramento seja desativada.

@@ -1,0 +1,48 @@
+Ferramentas de monitoramento do Azure
+Assistente do Azure (Azure Advisor)
+
+Essa ferramenta monitora, em tempo real, os recursos do Azure para avaliação e gera recomendações em cinco áreas específicas: melhorar a confiabilidade, a segurança e o desempenho, alcançar a excelência operacional e reduzir os custos.
+
+
+O assistente do Azure foi desenhado para ajudar você a otimizar e poupar tempo na nuvem. Possui uma interface intuitiva e clara, com recomendações que ajudam na tomada de decisão. Essa decisão pode ser adotada imediatamente, ser adiada ou ignorada.
+
+
+
+Tela do Azure Advisor.
+
+Integridade do serviço do Azure
+
+
+É uma solução global que ajuda no processos de tomada de decisão relacionados a infraestrutura, principalmente nos processos de alcance, inovação e adaptação dos clientes de forma rápida e visual. Existem três diferentes serviços no Azure que ajudam nesse processo de forma combinada:
+
+
+Status do Azure
+
+
+Ajuda de forma gráfica como está o status do Azure ao redor do mundo. Rapidamente você consegue visualizar os incidentes que estão gerando impacto generalizado. Outra grande vantagem é a possibilidade de efetuar download do relatório para documentação.
+
+
+Integridade do serviço
+
+
+Fornece as regiões e serviços do Azure de forma mais detalhada, focando nos serviços e regiões que estão sendo utilizados no momento, ajudando na tomada de decisão.
+
+
+Resource health
+
+
+Gera uma visão personalizada dos recursos reais do Azure, oferecendo informações sobre a integridade de cada serviço disponível no momento.
+
+
+Azure Monitor
+
+
+É uma ferramenta que coleta dados sobre seus recursos, analisa e visualiza as informações e age de forma proativa com base nos resultados. O Azure Monitor pode monitorar recursos em vários locais como no próprio Azure, em seus recursos locais dentro da empresa e até mesmo recursos de várias nuvens, como máquinas virtuais hospedadas na AWS ou no Google Cloud.
+
+
+Veja o nível de abrangência do Azure Monitor:
+
+
+
+
+Visão geral do Azure Monitor.

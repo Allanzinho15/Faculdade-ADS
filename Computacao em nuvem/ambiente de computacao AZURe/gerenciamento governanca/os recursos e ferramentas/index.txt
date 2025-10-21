@@ -1,0 +1,41 @@
+Os recursos e ferramentas de governança e conformidade no Azure
+Criando uma política por meio do Azure Policy
+
+
+Confira no vídeo a criação e a implementação de uma política por meio do Azure Policy, aderindo as regras de conformidade e segurança.
+
+
+
+Azure Policy
+
+É um serviço do Azure que permite criar, atribuir e gerenciar políticas que controlam ou auditam os recursos. Essas políticas impõem regras diferentes sobre as configurações desses recursos, de modo que essas configurações permaneçam em conformidade com os padrões corporativos.
+
+
+Atenção
+O Azure Policy permite que você defina políticas individuais e grupos de políticas relacionadas, conhecidas como iniciativas. Também avalia seus recursos e realça aqueles que não estão em conformidade com as políticas criadas por você e pode impedir a criação de recursos sem conformidade.
+
+
+Bloqueio de recursos (Locks)
+
+É uma ferramenta muito importante na governança de recursos. Com ela você pode determinar quais usuários podem ou não excluir ou alterar determinados recursos a partir dos tipos de bloqueios de recursos: um que impede que os usuários excluam e outro que impede que os usuários alterem ou excluam um recurso. Entenda:
+
+
+
+Exclusão
+
+ReadOnly
+Significa que os usuários autorizados ainda poderão ler e modificar um recurso, mas não poderão excluir o recurso.
+
+
+
+
+Portal de confiança do serviço (Service Trust)
+
+
+Existe uma documentação oficial da Microsoft sobre governança e boas práticas relacionadas ao Azure. Toda documentação necessária está disponível no portal de confiança do serviço.
+
+
+O portal de confiança do serviço da Microsoft é um local que oferece acesso a vários conteúdos, ferramentas e outros recursos sobre práticas de segurança, privacidade e conformidade da Microsoft.
+
+
+Esse conteúdo é altamente necessário para casos nos quais seja necessário expor documentos de conformidade legal com determinados órgãos de governança, por exemplo. No portal encontraremos a documentação que atesta que o Azure está em conformidade com o NIST e com a ISO 27001 (normas regulatórias).

@@ -1,0 +1,51 @@
+Aplicação da arquitetura de aplicativos
+Conforme já vimos, as aplicações precisam estar adequadas às infraestruturas que serão executadas da melhor forma possível. Para ambientes de nuvem, utilizamos uma arquitetura chamada de nativa de nuvem (cloud native architecture), cujo objetivo é se adequar às tecnologias como serviço oferecidas pelo provedor de nuvem.
+
+
+Dentro do Google Cloud, existem opções para facilitar o desenvolvimento e agregar valor ao negócio, assim como impulsionar e agilizar todo o processo de criação de aplicativos.
+
+
+Vamos imaginar um cenário: um site web de compras, e-commerce, que possui em sua arquitetura as funções de página do produto e finalização de compras, o check-out, com emissão de nota fiscal. Apenas nessas duas funções já existem inúmeros desafios a se enfrentar do ponto de vista de desenvolvimento. Vamos exercitar alguns a seguir.
+
+
+Página do produto
+
+
+A função da página do produto é mostrar seu nome, descrição, preço e o estoque disponível. Porém, devemos saber a origem dessas informações com consistência e disponibilidade, evitando problemas como, por exemplo, ter inúmeras pessoas na mesma página e isso ocasionar uma indisponibilidade do serviço por alta demanda ou até mesmo apresentar inconsistências. Para sanar isso, precisaremos de um banco de dados organizado em tabelas, sendo necessário escalar, ou seja, tornar mais “disponível” em altas demandas, para cenários de grande volume de acesso. Para essa estratégia, podemos aprovisionar um banco de dados gerenciado pelo usuário, ou como estamos em ambiente de nuvem, utilizar como serviço.
+
+
+
+Cloud SQL: banco de dados do Google Cloud.
+
+O Google Cloud oferece o Cloud SQL, um banco de dados SQL reacional, completamente gerenciado e com alta disponibilidade, escalável e em nuvem. Com isso, podemos nos concentrar no desenvolvimento da aplicação utilizando alguma linguagem de programação, evitando preocupações com o gerenciamento de infraestrutura para nosso banco de dados.
+
+
+Finalização de compras e checkout
+
+
+A finalização da compra é um dos momentos mais importantes de um e-commerce. É o processo final do usuário, e deve ser o mais fluido possível para evitar transtornos. A grande dificuldade desse sistema é depender de outros sistemas para funcionar perfeitamente.
+
+
+Imagine uma situação em que, ao finalizar uma compra, é necessário notificar outros sistemas financeiros da empresa, dar baixa no estoque, enviar os dados do cliente para o processo de entrega e utilizar um sistema público para emissão de nota fiscal. Imagine a frustração do cliente ao ter que esperar por todo esse processo na tela de checkout, ou pior, algum desses serviços estar indisponível e o cliente não conseguir efetuar sua compra. Isso impactaria diretamente a experiência do usuário e, consequentemente, o negócio. Esse processo, no qual um sistema depende de outro para ser executado, chama-se “comunicação síncrona”, e necessita que os sistemas estejam sincronizados ao mesmo tempo para conseguir um resultado.
+
+
+
+Comunicação assíncrona.
+
+Para mitigar problemas como esse utilizamos, dentro da arquitetura nativa de nuvem, uma estratégia chamada de “comunicação assíncrona” (troca de mensagens de maneira assíncrona, por isso também conhecida como “mensageria assíncrona”) que, como o próprio nome diz, não necessita de sincronicidade entre os sistemas para finalizar uma tarefa.
+
+
+A ideia principal é utilizar uma tecnologia intermediando as comunicações, e que fica responsável por notificar cada sistema dependente dessas informações. Então, no nosso cenário, ao finalizar uma compra, o cliente final não precisa ficar na tela aguardando o processo interno da compra. As informações são enviadas para essa ferramenta distribuidora, que fica responsável por notificar os outros sistemas. Caso algum deles esteja indisponível no momento dessa transação, a ferramenta armazena a mensagem e transmite quando o sistema voltar a ficar disponível.
+
+
+Atenção
+O Google Cloud oferece uma solução como serviço chamada Pub/Sub, uma ferramenta de mensageria assíncrona, completamente gerenciada, que intermedia as comunicações entre sistemas, tornando-as assíncronas. Utilizar o Pub/Sub em uma arquitetura a torna mais desacoplada e torna os serviços dinâmicos, já que não ficam dependentes uns dos outros.
+
+
+No nosso exemplo, ao finalizar uma compra no e-commerce, uma mensagem é disparada para o Pub/Sub, que distribui para o sistema de emissão de notas fiscais, entregas e estoque e se, por acaso alguns desses sistemas estiverem indisponíveis, a mensagem poderá continuar a ser consumida quando a aplicação estiver disponível novamente.
+
+
+Comunicação assíncrona e serverless em Google Cloud
+
+
+Neste vídeo, falaremos sobre o que são comunicações síncronas e assíncronas no desenvolvimento de software, assim como a arquitetura serverless e quando utilizá-la.
