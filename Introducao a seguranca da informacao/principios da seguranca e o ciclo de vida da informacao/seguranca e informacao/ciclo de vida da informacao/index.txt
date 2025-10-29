@@ -1,0 +1,105 @@
+Ciclo de vida da informação
+
+Por se tratar de um dado contextualizado, a informação possui o seguinte ciclo de vida:
+
+
+Criação
+Transporte
+Manuseio
+Descarte
+
+Após a primeira etapa (criação), o dado pode ser transportado ou manuseado. A ordem do ciclo representa o transporte antes do manuseio por tal procedimento ser o mais comum nesses casos, porém é perfeitamente possível que ele seja manuseado anteriormente. Na etapa final, a informação é descartada.
+
+
+Durante todas essas etapas, a informação deve ser protegida. Seu vazamento em quaisquer etapas pode provocar problemas em vários aspectos. Vamos analisar as seguintes hipóteses:
+
+
+
+Transporte inadequado de dados por uma transportadora que não realiza todos os procedimentos de segurança necessários.
+
+
+
+Laptop levado para a manutenção sem que os dados do disco rígido dele sejam protegidos. Não é raro haver casos de roubos de unidades que possuíam informações sensíveis de empresas.
+
+
+
+Analista de dados tem um laptop e um disco rígido externo roubados em sua residência com informações, não criptografadas, de 26,5 milhões de veteranos do exército americano. Ele informou que rotineiramente levava os dados para a sua residência. Neste caso, o problema ocorreu no manuseio da informação.
+
+
+
+Empresa forense de Nova Iorque, a Kessler International realizou o seguinte estudo: durante seis meses, ela foi adquirindo discos rígidos usados no portal eBay. Cerca de 40% deles continham informações de seus usuários.
+
+
+
+Facebook, uma das companhias mais novas do mercado de tecnologia e com um altíssimo valor agregado, sendo usado por milhões de pessoas no mundo, teve um disco rígido furtado de um veículo. Ele continha informações de aproximadamente 29.000 empregados norte-americanos.
+
+
+Que conclusão podemos tirar dos casos apresentados? A informação, que é o dado contextualizado, precisa de proteção em todo o seu ciclo de vida. A partir dos exemplos citados, conseguimos entender a necessidade de sempre estabelecer uma proteção adequada dela em qualquer etapa do seu ciclo de vida.
+
+
+No caso do transporte de mídias magnéticas contendo informações sigilosas de usuários de determinada empresa, por exemplo, uma boa proteção é o emprego da criptografia, que pode ser definida como o embaralhamento das informações por meio de uma sequência de dados que utiliza uma chave e um algoritmo. Esta chave é usada para embaralhar (criptografar) e desembaralhar (decriptografar) as informações.
+
+
+Quando a mesma chave é usada nas duas etapas, a criptografia é dita simétrica; quando são usadas chaves distintas, ela é assimétrica. Vejamos os exemplos nas imagens a seguir:
+
+
+
+Exemplo de criptografia simétrica
+Criptografia simétrica
+
+
+
+Exemplo de criptografia assimétrica
+Criptografia assimétrica
+
+
+
+
+Como você manuseia seu pen drive? Hoje em dia, por estarmos na era da informação, é comum sempre levarmos um desses dispositivos no bolso, mochila ou na carteira. Afinal, como você cuida das suas informações?
+
+
+Certamente, seu pen drive contém alguns arquivos nos quais você ainda deve estar trabalhando. Ele pode servir para várias pessoas e diferentes tipos de trabalho, como:
+
+
+Se você é um programador, pode estar mexendo em alguma parte de um sistema que está desenvolvendo.
+Se você trabalha na direção, pode estar atualizando alguma planilha com os dados financeiros da sua empresa.
+
+Uma prática simples - mas eficiente - nestes casos é simplesmente compactar os seus arquivos usando uma senha, veja:
+
+
+
+Mais inseguro
+
+
+Arquivos no pen drive sem senha.
+
+
+
+Menos inseguro
+
+
+Arquivo compactado contendo todos os arquivos com senha.
+
+
+Praticamente todas as ferramentas (até mesmo as gratuitas) possuem essa funcionalidade. Cada uma conta com uma metodologia para acrescer a senha ao processo de compactação. Um bom exemplo disso é a ferramenta 7-zip.
+
+
+Essas ferramentas utilizam os melhores algoritmos de criptografia existentes no mercado. Além de economizar o espaço do pen drive, essa simples prática cria ainda uma camada de proteção para as informações contidas no dispositivo.
+
+
+
+A proteção e a facilidade caminhando em sentidos opostos
+
+Devemos observar que a proteção e a facilidade caminham em direções contrárias. Por isso, o processo de compactar com senha gera um aumento de tempo no manuseio da informação, pois ele sempre torna necessária a tarefa de descompactar e compactar para tratar a informação.
+
+ 
+
+Dessa forma, seu descarte deve ser realizado de forma padronizada, já que o propósito é evitar a recuperação de suas informações. Exemplo: pen drives, discos rígidos e outras mídias usadas precisam ser descartadas com o uso de trituradores adequados. Veja dois tipos de trituradores:
+
+
+
+Triturador de papel
+
+
+
+Triturador de disco rígido

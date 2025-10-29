@@ -1,0 +1,65 @@
+Aspectos da segurança da informação
+
+O três principais aspectos da informação requerem cuidados especiais:
+
+
+Confidencialidade
+
+
+Capacidade do acesso à informação apenas para quem possui autorização.
+
+
+Integridade
+
+
+Possibilidade de alteração da informação por pessoas ou sistemas autorizados.
+
+
+Disponibilidade
+
+
+Faculdade de a informação poder ser acessada, em qualquer tempo, por pessoas ou sistemas autorizados para tal.
+
+
+Citados por diversos autores como pilares, estes três aspectos correspondem à prioridade do que deve ser protegido em relação à informação. Todos os exemplos citados correspondem à confidencialidade da informação em três momentos diferentes do seu ciclo de vida.
+
+
+Portanto, a segurança da informação pode ser definida como as atividades, os procedimentos e as metodologias que objetivam a proteção da informação, principalmente no que tange à confidencialidade, integridade e disponibilidade (CID).
+
+
+Os aspectos seguintes, contudo, também são considerados importantes:
+
+
+
+Autenticidade
+
+Legalidade
+
+Não repúdio
+Assegura que a informação foi gerada por pessoa ou sistema autorizado para isso.
+
+
+
+
+
+
+Juntos, todos eles compõem os principais aspectos empregados pelos controles - ou pelas ferramentas que proporcionam a segurança da informação - para proteger a informação. Além dos 3 principais aspectos já citados, temos ainda:
+
+
+Irretratabilidade
+
+Capacidade do emissor de negar a autoria de uma informação divulgada.
+
+
+Autenticidade
+
+Capacidade de assegurar que a informação foi gerada por pessoa ou sistema autorizado para isso.
+
+
+Legalidade
+
+Capacidade de alinhar a informação ou os processos com normas, portarias, leis e quaisquer outros documentos normativos.
+
+
+
+
