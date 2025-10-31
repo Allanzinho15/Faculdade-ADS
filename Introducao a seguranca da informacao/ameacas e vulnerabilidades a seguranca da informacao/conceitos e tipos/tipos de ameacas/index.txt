@@ -1,0 +1,131 @@
+Tipos de ameaças e vulnerabilidades
+Tipos de ameaças e vulnerabilidades - Física e Lógica
+
+
+Tipos de ameaças e vulnerabilidades - medidas de prevenção
+
+
+A segurança da informação é fundamentada em três aspectos:
+
+
+
+Diagrama dos três aspectos da segurança da informação.
+Tomando por base esses três aspectos, pode-se classificar alguns tipos de ameaças e os respectivos controles que podem ser adotados.
+
+
+
+Problemas de invasão nas contas de WhatsApp.
+
+Nos últimos meses, as ocorrências de pessoas relatando problemas de invasão nas contas de WhatsApp multiplicaram. Esse incidente permite que alguém se aproprie da conta do serviço de mensagem de outra pessoa para pedir dinheiro em nome do dono da conta. Podemos perceber o acesso não autorizado, que poderia ser corrigido pelo uso de senhas, evitando possíveis problemas de alteração de dados, ou pela adoção de métodos múltiplos de autenticação.
+ 
+
+São exemplos clássicos de perdas de confidencialidade e integridade. Poderá haver recuperação de dados dos usuários por meio de backups realizados pelo sistema. Para esse problema, recomenda-se o uso da confirmação em duas etapas.
+
+
+Outro exemplo que podemos citar é o armazenamento de documentos eletrônicos. Atualmente, em termos de aplicações que conseguem colocar o rosto de uma pessoa em outra, alterar documentos torna-se uma ação simples de ser realizada. Logo, uma forma de proteger o documento eletrônico é guardar um selo de autenticidade para assegurar que o documento está íntegro. Uma ferramenta bem disseminada é o uso de funções de hashes.
+
+
+Podemos resumir esses exemplos relativos ao data center na tabela a seguir:
+
+
+Aspecto	Ameaça	Segurança
+Confidencialidade	Acesso não autorizado	Uso de senhas
+Acesso não autorizado	Uso de criptografia
+Perda de fitas backup durante o transporte
+Integridade	Alteração dos dados por pessoa/software/processo não autorizado	Uso de métodos de autenticação
+Corrupção dos dados	Uso de hashes
+Disponibilidade	Fenômenos oriundos de causas naturais, como incêndio e enchentes	Uso de servidores de backup e/ou redundâncias
+Ataques de negação de serviço	Uso de servidores de redundância
+ 
+
+Outra forma de abordar as ameaças descritas é utilizando a classificação quanto a ser física ou lógica. Fenômenos naturais e perdas de dispositivos de armazenamento são exemplos de ameaças físicas enquanto as demais são exemplos de ameaças lógicas.
+
+
+Podemos reorganizar a tabela anterior e reapresentar as ameaças de acordo com a taxonomia física e lógica, obtendo a seguinte tabela:
+
+
+Classificação	Ameaça	Segurança
+Física	Fenômenos oriundos de causas naturais, como incêndio e enchentes	Uso de servidores de backup e/ou redundâncias
+Perda de fitas backup durante o transporte	Uso de criptografia
+Lógica	Alteração dos dados por pessoa/software/processo não autorizado	Uso de métodos de autenticação
+Corrupção dos dados	Uso de hashes
+Escuta na ligação ou tráfego de rede	Uso de criptografia
+Ataques de negação de serviço	Uso de servidores de redundância
+Acesso não autorizado	Uso de senhas
+ 
+
+Podemos consolidar da seguinte forma: se ocorrer falha em equipamentos e instalações, a ameaça é física. Caso contrário, se estiver relacionada a problemas de software, algoritmos etc., é considerada ameaça lógica.
+
+
+Quando a ameaça tiver algum agente humano, é classificada dessa forma. Caso contrário, como, por exemplo, nos fenômenos oriundos de causas naturais, como incêndio e enchentes, é conhecida como ameaça não humana. Veremos os detalhes na próxima tabela:
+
+
+Classificação	Ameaça	Segurança
+Humano	Acesso não autorizado	Uso de senhas
+Escuta na ligação ou tráfego de rede	Uso de criptografia
+Perda de fitas backup durante o transporte
+Alteração dos dados por pessoa/software/processo não autorizado	Uso de métodos de autenticação
+Corrupção dos dados	Uso de hashes
+Ataques de negação de serviço	Uso de servidores de redundância
+Não Humano	Fenômenos	Uso de servidores de backup e/ou redundâncias
+ 
+
+As ameaças humanas são aquelas que foram provocadas por seres humanos, e as não humanas são provocadas pela natureza ou por problemas de infraestrutura. As ameaças provocadas por seres humanos podem ainda ser classificadas das duas formas a seguir:
+
+
+Colaboradores
+
+As oriundas de colaboradores ou pessoas mal-intencionadas e aquelas oriundas de pessoas ou colaboradores que não possuem o conhecimento adequado (mal treinados). Nesse caso, o colaborador, propositalmente, faz ações que podem provocar incidentes e prejuízos financeiros, seja pela perda de confidencialidade de algum ativo, seja pela adulteração de algum ativo para agente ou processo não autorizado.
+
+
+Hackers
+
+Os oriundos dos hackers que exploram as vulnerabilidades para demonstrar conhecimento e exibir seu feito para a comunidade; ou ainda pelo simples desafio de alcançar o objetivo, como se fosse um jogo; ou mesmo para obter ganhos financeiros a partir da obtenção de ativos das instituições. Exemplo disso são as notícias que circularam em junho de 2020, quando o governo norte-americano alegou terem sido realizadas invasões para o roubo da pesquisa farmacológica de remédios do coronavírus.
+
+
+As ameaças não humanas podem ainda ser classificadas em ameaças oriundas de desastres ou de problemas de infraestrutura. Essas ameaças podem ser mitigadas pela gestão do risco envolvido na implantação dos ativos.
+
+
+Por exemplo, na construção do data center, se a região possui enchentes com certa regularidade, é razoável pensar em alternativas concretas para mitigar esses riscos. A enchente é um exemplo de causa natural. Na contramão, um incêndio causado por uma sobrecarga elétrica é um exemplo de uma ameaça não humana, resultante de problemas de infraestrutura.
+
+
+
+Regiões de enchentes oferecem riscos.
+
+Quando a ameaça tiver algum agente humano, é classificada dessa forma. Caso contrário, como, por exemplo, nos fenômenos oriundos de causas naturais, como incêndio e enchentes, é conhecida como ameaça não humana. Veremos os detalhes na próxima tabela:
+
+
+Tipo de classificação	Tipo de ameaça
+Quanto ao tipo de ativo envolvido	
+Relacionadas com a Confidencialidade
+Relacionadas com a Integridadee
+Relacionadas com a Disponibilidade
+Quanto ao vetor de ataque	
+Física
+Lógica
+Humano
+Não Humano
+Quanto ao fenômeno que deu origem (subclassificação das não humanas)	
+Desastre naturais
+Infraestrutura
+ 
+
+Essas classificações se sobrepõem e permitem que determinada ameaça possa ser classificada por vários critérios.
+
+
+Exemplo
+Considere uma chuva torrencial em uma região metropolitana, onde tenha um data center implantado. Nosso país, pela sua geografia, possui locais em que há chuvas em determinadas épocas do ano, em especial as chuvas durante o verão no Rio de Janeiro. Trata-se de um problema que ocorre em diversas capitais brasileiras. Se uma rua inundasse, como ficaria um data center? Já imaginou a perda ocasionada por essa ameaça?
+
+
+No caso de uma inundação em um data center, o principal problema gerado é a disponibilidade. Dependendo dos controles (proteções) escolhidos pelo gestor, até mesmo problemas de integridade dos dados podem ser gerados. Por isso, sempre é necessário realizar a abordagem em camadas. Nesse cenário, alguns controles simples poderiam ser desenvolvidos como:
+
+
+Contingência: desenvolvimento de alguma técnica/metodologia para suprir a ausência ou falha do data center.
+Processo e treinamento do uso da contingência.
+Processo e realizações de cópias de segurança, bem como a verificação do status dessas cópias, inclusive com simulação de desastres.
+
+Comentário
+Lógico que não é possível esgotar totalmente o assunto, pois várias situações complementares poderão ocorrer e a lista estaria incompleta, mas, por si só, essas seriam as principais abordagens.
+
+
+Um exemplo de classificação das ameaças, como uma inundação, pode afetar a disponibilidade e/ou integridade (quanto ao tipo de ativo envolvido), é física e não humana (quanto ao vetor de ataque) e causada por desastre natural (quanto ao fenômeno que deu origem).

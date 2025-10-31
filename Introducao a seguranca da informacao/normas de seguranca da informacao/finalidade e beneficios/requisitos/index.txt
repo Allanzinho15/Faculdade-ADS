@@ -1,0 +1,43 @@
+Requisitos
+O que é a Norma ISO/IEC 27001
+
+
+Estrutura geral da Norma ISO/IEC 27001
+
+
+Conforme a ABNT NBR ISO/IEC 27001 (2013), o título da Norma ABNT NBR ISO/IEC 27001:2013 é Sistemas de Gestão da Segurança da Informação – Requisitos.
+
+
+Especifica os requisitos para estabelecer, implementar, manter e melhorar continuamente um sistema de gestão da segurança da informação dentro do contexto da organização.
+
+
+Também inclui requisitos para a avaliação e o tratamento de riscos de segurança da informação voltados para a necessidade da organização.
+
+
+A principal característica, ou palavra-chave, é: DEVE. O leitor observará que a norma sempre indicará o que o gestor deverá fazer em relação às cláusulas das disciplinas do SGSI. Por exemplo, em 4.3, a organização deve determinar os limites e a aplicabilidade do sistema de gestão da segurança da informação para estabelecer o seu escopo.
+
+
+Para você que está começando a se familiarizar com a norma, uma boa maneira de ter uma noção geral dos conteúdos de normas é analisando o sumário e assimilando o que possuem as suas estruturas. A estrutura da Norma ABNT NBR ISO/IEC 27001:2013 pode ser conferida na tabela 2.
+
+Algumas razões para adotar a norma incluem:
+
+
+Eficácia melhorada da Segurança da Informação.
+Diferenciação do mercado.
+Satisfazer exigências dos clientes.
+Único padrão com aceitação global.
+Responsabilidades focadas na equipe de trabalho.
+A Tecnologia da Informação cobre padrões tão bem quanto organização, pessoal e facilidades.
+Mandados e leis.
+
+A Norma ISO/IEC 27001 é passível de certificação acreditada. Alguns benefícios da certificação ISO/IEC 27001 incluem:
+
+
+Responsabilidade reduzida devido às políticas e aos procedimentos não implementados ou reforçados.
+Oportunidade de identificar e eliminar fraquezas.
+A gerência participa da Segurança da Informação.
+Revisão independente do seu SGSI.
+Fornece segurança a todas as partes interessadas.
+Melhor consciência da segurança.
+Une recursos com outros sistemas de gerenciamento.
+Mecanismo para medir o sucesso do sistema.
