@@ -1,0 +1,183 @@
+Controle de acesso
+
+Imagine que uma empresa decida adquirir serviços de computação em nuvem e precise determinar os níveis de acesso dos usuários aos recursos contratados.
+
+
+Como realizar esse procedimento?
+
+
+Por meio do controle de acesso, que é uma maneira de limitar a abordagem a um sistema ou a recursos físicos ou virtuais. Na computação, o controle de acesso é um modo pelo qual os usuários recebem acesso e certos privilégios a sistemas, recursos ou informações.
+
+
+
+Nos sistemas de controle de acesso, os usuários devem apresentar credenciais antes de obter o acesso. Essas credenciais podem ser de várias formas como, por exemplo, físicas, biométricas, senhas, portas eletrônicas. Existem três tipos de sistemas de controle de acesso:
+
+
+
+Controle de Acesso Discricionário ou Discretionary Access Control (DAC)
+
+ 
+
+Nesse método, o administrador do sistema, dos dados ou de recursos protegidos define as políticas de quem tem permissão de acesso, ou seja, o sistema responsabiliza o proprietário da empresa por decidir quais pessoas são permitidas em um local específico, física ou digitalmente.
+
+O DAC é menos restritivo em comparação aos outros sistemas, pois permite, essencialmente, um controle completo individual sobre quaisquer objetos que se possua, bem como sobre os programas associados a esses objetos. A desvantagem do controle de acesso discricionário é o fato de fornecer ao usuário final o controle completo para definir configurações de nível de segurança para outros usuários. Além disso, as permissões concedidas ao usuário final são herdadas em outros programas usados, o que pode levar à execução de malware, ainda que o usuário final não esteja ciente disso.
+
+ 
+
+
+Controle de Acesso Obrigatório ou Mandatory Access Control (MAC)
+
+ 
+
+De acordo com Red Hat (2020), uma empresa líder mundial no fornecimento de soluções de software open source, incluindo tecnologias de alto desempenho em Linux, esse mecanismo de segurança restringe o nível de controle dos usuários (sujeitos) sobre os objetos que eles criam. Diferentemente da implementação do DAC, em que os usuários têm controle total sobre seus próprios arquivos, diretórios etc., o MAC acrescenta rótulos ou categorias adicionais a todos os objetos do sistema de arquivos. Usuários e processos devem ter acesso apropriado a essas categorias antes de interagir com os objetos.
+
+Para entender melhor, o sujeito é normalmente um processo ou thread enquanto objetos são construções, como arquivos, diretórios, portas TCP/UDP, segmentos de memória compartilhada, dispositivos de entrada e saída. Sujeitos e objetos possuem um conjunto de atributos de segurança. Sempre que um sujeito tenta acessar um objeto, uma regra de autorização imposta pelo kernel do sistema operacional examina esses atributos de segurança e decide se o acesso pode ocorrer.
+
+ 
+
+
+Controle de Acesso Baseado em Função ou Role-Based Access Control (RBAC)
+
+Concede acesso com base em funções de negócios definidas e não na identidade do usuário. A meta é fornecer aos usuários somente o acesso a dados considerados necessários para exercer sua função nas organizações. Esse método é baseado em uma combinação de atribuições de funções, autorizações e permissões.
+
+Quando se trata da proteção dos recursos computacionais, os itens que devem ser contemplados são: aplicativos e arquivos de dados, além de utilitários e o sistema operacional das máquinas tanto dos usuários como da rede institucional.
+
+
+Você sabe os motivos pelos quais esses recursos devem ser protegidos?
+
+
+Entenda no exemplo a seguir:
+
+
+Exemplo
+Júlia trabalha em uma pequena empresa de investimentos que ainda não possui uma política de controle de acessos bem definida, o que resultou no acesso de uma pessoa mal-intencionada aos dados e sistemas da empresa.
+
+
+A empresa possui um aplicativo para que o usuário possa acompanhar os seus investimentos. Com o acesso indevido, o comportamento do aplicativo foi alterado e os comandos que os usuários davam não eram executados.
+
+
+O banco de dados da empresa foi completamente apagado.
+
+
+E os arquivos de log foram apagados, o que dificultou a rastreabilidade das ações que foram realizadas pelo hacker.
+
+
+
+Percebeu o quanto é prejudicial para uma empresa ter aplicativos, arquivos de dados e sistema operacional desprotegidos?
+
+Por isso, vamos conhecer a importância da proteção de cada recurso.
+
+
+Aplicativos
+
+Caso um usuário não autorizado tenha acesso ao código-fonte dos aplicativos, ele poderá alterar o comportamento esperado do programa. Alguns exemplos desse tipo de fraude podem ocorrer em transações financeiras, em que o aplicativo é modificado para beneficiar o fraudador.
+
+
+Arquivos de dados
+
+As bases de dados, os arquivos ou as transações só podem ser alterados ou excluídos por usuários credenciados. Ainda assim, é muito importante que sejam implementados recursos de rastreabilidade para saber quem realizou cada operação no sistema.
+
+
+Utilitários e sistema operacional
+
+O acesso a utilitários deve ser restrito. Essas ferramentas são utilizadas para desenvolver e dar manutenção aos aplicativos e para configurar o sistema operacional. Caso um atacante tenha acesso a essas ferramentas e não haja mecanismos de proteção, comprometerá a segurança de todos os aplicativos, arquivos e sistema operacional.
+
+
+Arquivos de senha
+
+Os arquivos que armazenam as senhas precisam de um esquema de proteção adequado. Na ausência dessa proteção, uma pessoa não autorizada pode causar danos ao sistema.
+
+
+Arquivos de log
+
+São usados como mecanismos de rastreabilidade das ações realizadas pelos usuários nos sistemas. Portanto, é uma fonte de informação importante para auditorias futuras. Nos arquivos de log estão os registros de quem acessou os recursos computacionais, quando isso foi feito e que tipo de operações foram realizadas. Uma pessoa mal-intencionada pode tentar acessar o sistema, apagar ou alterar dados, acessar aplicativos, alterar a configuração do sistema operacional para facilitar futuras invasões e, posteriormente, alterar os arquivos de log para que suas ações não possam ser identificadas, fazendo com que o administrador do sistema não perceba a invasão.
+
+
+
+
+Podemos dizer, então, que os objetivos dos controles de acesso são garantir:
+
+
+O acesso aos recursos apenas por usuários autorizados.
+A correspondência entre os recursos necessários e as atividades dos usuários. 
+O monitoramento e a restrição do acesso a recursos críticos.
+Execução de transações compatíveis com as funções e responsabilidades dos usuários.
+
+Controles de acesso
+
+Para saber um pouco mais sobre os controles de acesso, assista ao vídeo a seguir.
+
+
+
+Diante de tudo o que vimos, podemos definir o controle de acesso em termos de:
+
+
+
+1
+
+
+Funções de identificação e autenticação de usuários.
+
+
+
+2
+
+
+Alocação, gerência e monitoramento de privilégios.
+
+
+
+3
+
+
+Limitação, monitoramento e desabilitação de acessos.
+
+
+
+4
+
+
+Prevenção de acessos não autorizados.
+
+
+Em relação à identificação e autenticação dos usuários nos sistemas, essas ações são feitas durante o logon. Esse processo permite conceder acesso aos dados e aplicativos em um sistema computacional e envolve a entrada de um ID (identificação do usuário), normalmente chamado de login, e uma senha (autenticação do usuário).
+
+
+A identificação define para o sistema quem é o usuário, e a senha é um autenticador, ou seja, é o modo como o sistema verifica que o usuário é realmente quem ele diz ser.
+
+
+
+Devido à importância de entrar no sistema, o procedimento de logon deve divulgar o mínimo de informações que possam ser utilizadas por um invasor para conseguir identificar um usuário legítimo.
+
+Nesse sentido, um procedimento de logon eficiente deve:
+
+
+ 
+
+Informar que o sistema só deve ser acessado por pessoas autorizadas.
+Não apresentar informações sobre o sistema até que o processo de logon esteja completamente concluído.
+Não fornecer, durante o processo de logon, mensagens de ajuda que possam auxiliar um usuário não autorizado a acessar o sistema.
+Validar os dados de entrada só após a conclusão do processo de logon. O sistema não deve indicar qual parte do dado de entrada está correta ou incorreta, como, por exemplo, ID ou senha, caso ocorra algum erro.
+Limitar a quantidade de tentativas de logon sem sucesso, como, por exemplo, um máximo de três tentativas.
+Guardar as tentativas de acesso inválidas para futura verificação.
+Forçar um tempo de espera antes de permitir novas tentativas de entrada no sistema ou rejeitar qualquer tentativa posterior de acesso sem autorização específica.
+Terminar as conexões com o sistema.
+Limitar o tempo para o procedimento de logon. Se demorar, o sistema deverá encerrar o procedimento.
+Quando o procedimento de logon no sistema finalizar corretamente, mostrar as seguintes informações: data e hora do último logon com sucesso; detalhes de qualquer tentativa de logon sem sucesso, desde o último procedimento realizado com sucesso.
+ 
+
+
+A identificação do usuário deve ser única e pode ser composta por um código de caracteres (que é o caso mais comum, chamado de login), ou cartão inteligente (Smart Card), por exemplo. Desse modo, é possível fazer um controle das ações praticadas pelos usuários por meio dos logs. Após a identificação do usuário por meio do login, deve-se proceder à sua autenticação, isto é, o sistema deve confirmar se o usuário é realmente quem ele diz ser.
+
+
+Vamos a um exemplo prático:
+
+
+Imagine que você esteja programando as mensagens que aparecerão para o usuário durante o processo de logon. De acordo com as orientações que vimos, observe as mensagens que devem ou não aparecer ao usuário:
+
+
+Senhas 	Válida ou inválida 	Justificativa 
+A sua senha está incorreta.	Inválida	Essa mensagem não deve aparecer para o usuário, pois o sistema não deve indicar qual parte do dado de entrada está correta ou incorreta, como, por exemplo, ID ou senha, caso ocorra algum erro.
+Seus dados de logon estão incorretos. Você tem mais duas tentativas.	Válida	Essa mensagem pode aparecer para o usuário, pois o sistema deve limitar a quantidade de tentativas de logon sem sucesso, como, por exemplo, um máximo de três tentativas.
+Este sistema pode ser acessado por qualquer pessoa.	Inválida	Essa mensagem não deve aparecer para o usuário. Ao contrário, o sistema deve informar que o sistema só deve ser acessado por pessoas autorizadas.
+Sérgio Assunção Monteiro.

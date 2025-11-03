@@ -1,0 +1,126 @@
+Política contra vírus
+Um vírus de computador é um programa carregado em qualquer computador — incluindo computadores pessoais e servidores — sem que o proprietário tenha o conhecimento da sua existência, sendo executado contra a sua vontade. Além disso, é um programa malicioso que faz cópia de si mesmo e infecta o computador e os arquivos.
+
+
+
+Atualmente, os vírus se dividem em várias categorias e cada uma apresenta diferentes objetivos e formas de ataques. A seguir, são apresentados alguns dos principais tipos de vírus de computador (GEEKS FOR GEEKS, 2020):
+
+1
+Vírus de arquivo
+
+
+Infecta o sistema anexando-se ao final de um arquivo e altera o início de um programa para controlar o código. Após a execução do código do vírus, o controle retorna ao programa principal. Sua execução nem é notada. Também é chamado de vírus parasitário, porque danifica os arquivos atacados.
+
+
+2
+Vírus de boot
+
+
+Atinge o setor de inicialização do sistema, sendo executado durante essa etapa, antes do carregamento do sistema operacional. Esse vírus infecta outras mídias inicializáveis, como discos rígidos.
+
+
+3
+Vírus de macro
+
+
+É acionado quando um programa executa macro, uma série de comandos e instruções que são agrupados como um único comando para realizar uma tarefa automaticamente, bastante utilizadas em documentos do Word e planilhas do Excel. Por exemplo, esse tipo de vírus pode estar contido em arquivos de planilha.
+
+
+4
+Código-fonte vírus
+
+
+Procura o código-fonte e o modifica para incluir vírus e ajudar a espalhá-lo.
+
+
+5
+Mutante
+
+
+Vírus programado para dificultar a detecção por antivírus, pois se altera a cada execução do arquivo contaminado.
+
+
+6
+Polimórfico
+
+
+É uma variação do vírus mutante que tenta dificultar a ação do antivírus ao mudar sua estrutura interna ou suas técnicas de codificação.
+
+
+7
+Cavalo de Troia (trojan)
+
+
+Trata-se de programas aparentemente inofensivos que trazem embutidos em si outro programa malicioso, ou seja, o vírus.
+
+
+8
+Vírus multipartite
+
+
+Esse tipo de vírus é capaz de infectar várias partes de um sistema, incluindo o setor de inicialização, memória e arquivos. Isso dificulta a sua detecção e contenção.
+
+
+9
+Vírus stealth
+
+
+É um vírus muito complicado, pois altera o código usado para detectá-lo. Portanto, a sua detecção se torna muito difícil. Por exemplo, ele pode alterar a chamada do sistema de leitura para, sempre que o usuário solicite a leitura de um código modificado por vírus, a forma do original do código ser mostrada em vez do código infectado.
+
+
+10
+Vírus de encapsulamento
+
+
+Esse vírus tenta ignorar a detecção pelo antivírus, instalando-se na cadeia do manipulador de interrupções. Os programas de interceptação, que permanecem no fundo de um sistema operacional e capturam vírus, ficam desabilitados durante o curso de um vírus de encapsulamento. Vírus semelhantes instalam-se nos drivers de dispositivo.
+
+
+11
+Vírus criptografado
+
+
+Usado para evitar a detecção por antivírus. Esse tipo de vírus existe na forma criptografada e carrega consigo um algoritmo de descriptografia. Assim, o vírus primeiro descriptografa e depois executa.
+
+
+12
+Vírus blindado
+
+
+É codificado para dificultar a identificação e o entendimento do antivírus. Usa uma variedade de técnicas para fazer isso, como enganar o antivírus e fazê-lo acreditar que o arquivo malicioso está em outro lugar que não seja a sua localização real. Também pode usar a compactação para complicar seu código.
+
+
+Atente-se para as seguintes orientações:
+
+
+Antivírus
+
+Todos os computadores conectados à rede de uma instituição devem ter um antivírus padrão instalado, programado para ser executado em intervalos regulares. Além disso, o software antivírus e os arquivos de definição de vírus devem ser sempre atualizados.
+
+
+Atualização
+
+Todos os computadores devem ser configurados de forma a agendar atualizações regulares dos servidores antivírus centralizados dos serviços de rede.
+
+
+Verificação
+
+Todos os arquivos de dados e programas que foram transmitidos eletronicamente para um computador de outro local, interno ou externo, devem ser verificados quanto à existência de vírus imediatamente após o recebimento.
+
+
+Atenção com dispositivos
+
+Todos os dispositivos de armazenamento, como, por exemplo, pendrives e HDs externos, são uma fonte potencial de vírus de computador. Portanto, eles devem ser verificados quanto à infecção por vírus antes de usá-los em um computador ou servidor da rede.
+
+
+Atenção com fontes externas
+
+Os computadores e servidores de rede nunca devem ser inicializados a partir de um dispositivo externo recebido de uma fonte externa.
+
+
+Software de proteção
+
+O software de proteção contra vírus deve ser carregado em cada computador e servidor de rede como um programa residente para monitorar constantemente possíveis ataques de vírus e impedir que infectem a rede.
+
+
+
+

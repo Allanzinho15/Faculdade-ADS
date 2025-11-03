@@ -1,0 +1,110 @@
+Governança, risco e compliance
+A GR compõe alguma ferramenta utilizada no mundo dos negócios? Como obter maiores vantagens competitivas no âmbito da gestão?
+
+Faremos agora algumas considerações que esclarecem tais questões.
+
+A GR compõe uma ferramenta cada vez mais utilizada no mundo dos negócios: Governança, Riscos e Compliance (GRC). A organização que tiver a GRC como parte de suas diretrizes estará mais preparada para obter maiores e melhores vantagens competitivas.
+
+Qual é o papel da GRC neste cenário?
+
+
+
+Governança corporativa
+
+
+Cuida para que o controle da gestão seja tão importante quanto ela própria.
+
+
+
+Gestão de riscos
+
+
+Gerencia o efeito da incerteza nos objetivos.
+
+
+
+Compliance
+
+
+Adere aos padrões da legislação (regulamentos oficiais vigentes, políticas empresariais e normas internas de procedimentos)
+
+
+Para compreendermos melhor a aplicação desses conceitos, analisaremos o caso a seguir:
+
+
+Exemplo
+Uma empresa do ramo de energia possui um departamento de TI que realiza operações gerenciadas e suportadas pela GRC. Por meio de entrevistas semiestruturadas, foi realizada uma análise dos esforços de integração da GRC de TI com base em um modelo com cinco dimensões, que serão aqui representadas pelos seguintes termos:
+
+1. G-TI: Nível de maturidade da governança de TI
+2. gR-TI: Nível de maturidade do gerenciamento de riscos de TI
+3. C-TI: Nível de maturidade do processo de conformidade de TI
+4. GRC-TI: Grau de integração entre G-TI, gR-TI e GRC-TI
+5. GRC/GRC-TI: Grau de integração entre a GRC corporativa e a GRC da TI
+
+Todas as dimensões podem ter um dos três valores possíveis que representam o nível de maturidade de seus processos: alto, médio e baixo. Para cada uma das três disciplinas (GRC), verificou-se se os quatro componentes a seguir eram integrados e aplicados holisticamente em toda a organização: estratégia, processos, pessoas e tecnologia.
+
+
+Nesse contexto, foram encontrados os seguintes resultados:
+
+
+
+G-TI: Nível de maturidade da governança de TI
+
+A empresa concentra-se em três entregas da G-TI: maturidade dos serviços prestados, satisfação do parceiro de negócios e eficácia do gerenciamento de projetos. Ela usa a governança para “abordar o comportamento correto para alcançar as metas corporativas”.
+
+Garante alinhamento e contribuição para o valor comercial um triângulo do CIO (sigla de chief information officer ou, em português, gerente de TI). Ele representa os interesses de TI do grupo, o fornecedor interno de serviços e projetos de TI e as operações de negócios que definem a demanda de TI.
+
+O CIO é responsável por todas as facetas do G-TI, compartilhando responsabilidades e tarefas de suporte com os líderes de TI da unidade de negócios e líderes de divisão, além de envolver vários comitês.
+
+Para uma perspectiva em que a governança é claramente formalizada, mesmo se concentrando mais em responsabilidades e objetivos, e centrada no CIO, o grau de maturidade pode ser definido como "alto".
+
+
+gR-TI: Nível de maturidade do gerenciamento de riscos de TI
+
+O processo gR-TI normalmente começa com uma fase de planejamento na qual os objetivos de risco são definidos.
+
+A identificação e a avaliação de riscos são realizadas antes que as medidas de resposta a eles sejam selecionadas e implementadas. Os riscos são monitorados e relatados às partes interessadas relevantes.
+
+A empresa utiliza um produto de software para a implementação do gR-TI que lembra a metodologia ISO 270005. O software não usa probabilidades, baseando-se na comparação dos impactos reais com os valores-alvo.
+
+O gR-TI apresenta alta maturidade ("alto").
+
+
+C-TI: Nível de maturidade do processo de conformidade de TI
+
+A empresa não possui um processo C-TI independente definido, pois as atividades do C-TI são integradas ao gR-TI. Essas atividades integradas evoluem em torno dos padrões da linha ISO/IEC 27000 e de outros padrões.
+
+O escritório do CIO realiza auditorias de TI constantemente. Existe um software que suporta o gerenciamento de conformidade, enquanto os aplicativos de outros fornecedores garantem prevenção, monitoramento e detecção de conformidade. Um outro aplicativo permite gerenciar suas políticas de controle de acesso e autorização.
+
+Pode-se avaliar que a maturidade é "média" devido à menor formalização.
+
+
+GRC-TI: Grau de integração entre G-TI, gR-TI e GRC-TI
+
+No nível do processo, a integração do C-TI ao gR-TI está muito avançada, sendo o C-TI realizado como parte do gR-TI.
+
+A empresa implantou um software para gerenciamento de conformidade, enquanto os aplicativos de vários outros fornecedores garantem prevenção, monitoramento e detecção de conformidade. Existe um aplicativo para gerenciar controles de acesso e autorização, mas, por ser mais uma ferramenta operacional, ele não está no escopo do gerenciamento de GRC-TI.
+
+A ferramenta de gerenciamento de riscos ajudou a padronizar o gR-TI, porém as soluções automatizadas adicionais de controle e monitoramento estão desconectadas. Embora a empresa não dependa de planilhas, suas atividades de gerenciamento de GRC de TI não são suportadas por uma solução abrangente.
+
+A maturidade da integração pode ser descrita como "média", pois pode-se observar a integração principalmente nos níveis de processo e de pessoal, ainda que a integração da tecnologia fique para trás.
+
+
+GRC/GRC-TI: Grau de integração entre a GRC corporativa e a GRC da TI
+
+Na empresa, a governança corporativa influenciou na criação de seu modelo G-TI, assim como o papel do CIO na governança corporativa também o vincula ao G-TI. A empresa usa aplicativos de software para gerenciamento estratégico de riscos.
+
+Diferentes processos (com atividades semelhantes) são usados ​​para realizar o gR-TI e o gerenciamento de riscos corporativo.
+
+A C-TI está conectada à conformidade corporativa de várias maneiras. Apenas uma parte da infinidade de requisitos de GRC é direcionada para operações de TI. Assim, os processos devem ser examinados de ponta a ponta.
+
+A empresa não possui uma ferramenta central que armazena todos os dados relevantes à conformidade (normas, resultados de auditoria, registros, informações de controle etc.).
+
+Devido à baixa automação do processo, a maturidade é classificada como "média".
+
+Pra finalizar nosso assunto, vamos saber um pouco mais no video a seguir.
+
+
+Processo de gestão de risco e exemplo de matriz de risco
+
+Confira agora os meandros do processo de gestão de risco e alguns exemplos para contribuir com sua análise.

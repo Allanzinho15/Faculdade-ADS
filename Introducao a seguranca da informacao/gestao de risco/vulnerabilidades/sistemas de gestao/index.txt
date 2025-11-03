@@ -1,0 +1,65 @@
+Sistemas de gestão
+Sistemas de gestão de riscos (SGR)
+
+Você já ouviu falar em SGR?
+
+Trata-se do conjunto de práticas e procedimentos utilizado para gerenciar os riscos.
+
+Tanto a ocorrência de um incidente de segurança da informação quanto o impacto causado por seu incidente poderão ser minimizados se uma organização adotar um SGR. Sua aplicação é importante a fim de diminuir possíveis danos e prejuízos causados por eventuais incidentes. Vejamos!
+
+
+
+Sistema de Gestão de Segurança da Informação (SGSI)
+
+De acordo com a norma ABNT NBR ISO/IEC 27001, o processo de gestão de riscos de segurança da informação deve atender aos requisitos de um SGSI. Confira um pouco mais sobre o SGSI.
+
+
+
+Para encerrarmos essa etapa de aprendizado, apresentaremos um resumo dos termos e das definições relacionadas à segurança da informação.
+
+
+1. Controle: (ISO/IEC 27000:2018, item 3.14) - Medida que pode modificar o risco por meio de um processo, política, dispositivo, prática ou outras ações que modifiquem a ameaça e/ou a vulnerabilidade – e, consequentemente, o risco.
+
+ 
+
+2. Ameaça: (ISO/IEC 27000:2018, item 3.74) - Causa potencial de um incidente indesejado, podendo resultar em dano para um sistema ou uma organização por meio da quebra de segurança.
+
+ 
+
+3. Vulnerabilidade: (ISO/IEC 27000:2018, item 3.77) - Fragilidade de um ativo ou grupo de ativos que pode ser explorada por uma ou mais ameaças e, por consequência, comprometer a segurança de sistemas ou informações.
+
+ 
+
+4. Análise de vulnerabilidades: Processo de levantar falhas ou ausências em um conjunto de proteções.
+
+ 
+
+5. Avaliação de vulnerabilidades: Combinação da análise e de uma lista de ameaças para avaliar a probabilidade de elas ocorrerem.
+
+ 
+
+6 Evento de segurança da informação: (ISO/IEC 27000:2018, item 3.30) - Ocorrência identificada de um estado de rede, serviço ou sistema que indique uma possível falha da política de segurança ou das salvaguardas, ou mesmo uma situação até então desconhecida que pode se tornar relevante em termos de segurança.
+
+ 
+
+7. Incidente de segurança da informação:(ISO/IEC 27000:2018, item 3.31) - Evento ou série de eventos indesejados ou inesperados que provavelmente compromete as operações da empresa ou ameaça a segurança da informação.
+
+ 
+
+8. Risco: (ISO/IEC 27000:2018, item 3.61) - Combinação das consequências de um evento (incluindo mudanças nas circunstâncias) e de sua probabilidade associada de ocorrência.
+
+ 
+
+9. Impacto: Mudança não desejável nos objetivos de negócios.
+
+ 
+
+10. Escopo de ativos:Define o conjunto de ativos coberto pelo processo.
+
+ 
+
+11. Parte envolvida: Indivíduos, grupos ou organizações afetados diretamente por um risco.
+
+ 
+
+12. Parte interessada: Indivíduo ou grupo com interesse no desempenho ou sucesso de uma organização.

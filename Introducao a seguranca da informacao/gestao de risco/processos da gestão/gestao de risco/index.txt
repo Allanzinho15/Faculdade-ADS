@@ -1,0 +1,29 @@
+Gestão de riscos
+As seguintes normas relacionadas à gestão de riscos (GR) podem ser levadas em consideração pelos profissionais da segurança da informação:
+
+
+ABNT NBR ISO/IEC 27005 - Gestão de riscos de segurança da informação
+ABNT NBR ISO/IEC 31000 - Gestão de riscos – princípio de diretrizes
+
+Com elas, é possível entender o conceito, o funcionamento e as etapas de uma GR.
+
+Mas, afinal, qual é o papel da GR?
+
+
+Conceito
+
+
+A gestão de riscos é o processo que identifica e trata os riscos de forma sistemática e contínua. Trata-se de um dos componentes mais importantes da GSI.
+
+
+Funcionamento
+
+
+Para ter sucesso, a GR deve ser permanente, mostrando-se capaz de identificar novas vulnerabilidades e ameaças que podem afetar os três pilares de segurança da informação: confidencialidade, integridade e disponibilidade (CID).
+
+
+Mas fique atento a alguns detalhes importantes.
+
+
+Atenção
+É necessário criar uma estrutura adequada para essa gestão. Dessa forma, tão importante quanto a definição de funções e responsabilidades é o desenvolvimento de uma cultura de GR. Com isso, uma organização mantém seu nível de risco em patamares aceitáveis.

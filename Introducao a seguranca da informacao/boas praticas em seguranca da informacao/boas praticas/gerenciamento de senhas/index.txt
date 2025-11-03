@@ -1,0 +1,33 @@
+Gerenciamento de senhas
+
+O ponto de partida de qualquer sistema de segurança é garantir o acesso a dados, equipamentos, demais sistemas e ambientes físicos e eletrônicos aos indivíduos autorizados. A essa característica dá-se o nome de autenticidade e a forma mais simples de oferecê-la é por meio do login e da senha de acesso.
+
+
+Deve-se dar atenção particular à senha, mais especificamente ao gerenciamento das senhas, visto que, com o login e a senha, um usuário pode ter acesso a equipamentos, sistemas e demais recursos de uma companhia, como, por exemplo, instituições de ensino, comerciais, governamentais ou religiosas.
+
+
+
+Além da óbvia preocupação de garantir segredo sobre a senha, também é necessário preocupar-se com o grau de dificuldade ao elaborá-la. Senhas fáceis − como datas de aniversários de familiares ou placas de carro − são alvo de pessoas mal-intencionadas, já existindo muitos ataques a senhas baseados na exploração de informações pessoais. As senhas com sequências do tipo “123” também devem ser evitadas. De acordo com Shay et al. (2010), para criar uma senha segura é recomendável que os colaboradores observem as seguintes instruções:
+
+As senhas devem ter, pelo menos, oito caracteres.
+Deve-se alterar as senhas com frequência e nunca as repetir.
+Observar se houve algum tipo de vazamento de dados de determinados serviços. Caso tenha ocorrido, as credenciais de acesso aos sistemas, equipamentos e demais recursos devem ser modificadas para evitar que dados sejam obtidos por indivíduos mal-intencionados.
+Para aumentar a segurança das senhas, elas devem conter letras maiúsculas e minúsculas, números e caracteres não alfanuméricos (por exemplo: @, $, #). Ou seja, não se deve utilizar apenas letras ou números.
+As senhas não devem conter nomes dos usuários e nem o nome da empresa em que trabalham ou qualquer variação desse tipo.
+Não utilizar a mesma senha para todas as contas, em especial nas contas institucionais, pois, caso alguém descubra uma das senhas do usuário, não conseguirá acessar todos os serviços em que ele possui cadastro.
+Nunca informar a senha a terceiros, nem as anotar em papel ou em arquivos digitais, ou inclui-las em um processo automático de acesso ao sistema. Senhas devem ser sempre memorizadas e de uso estritamente pessoal, de modo a nunca serem compartilhadas ou acessíveis a terceiros.
+
+Diante dessas recomendações, vamos a um exemplo prático:
+
+
+Imagine que você trabalhe no setor de Tecnologia da Informação (TI) de uma empresa e, juntamente com os demais funcionários, definiu os critérios para a criação das senhas de acesso aos sistemas com base nas instruções vistas anteriormente. De acordo com essas instruções, observe no quadro a seguir as senhas que não serão válidas e inválidas e os respectivos esclarecimentos:
+
+
+Senhas	Aceita ou Não aceita	Justificativa
+K03Y0@	Não aceita	Essa senha não será aceita, pois as senhas devem ter pelo menos oito caracteres.
+RTGE1598	Não aceita	Essa senha não será aceita, pois não se deve utilizar apenas letras ou números.
+Kut@4896	Aceita	Essa senha será aceita, pois além de letras e números ela possui o caractere @.
+Jose_6523	Não aceita	Essa senha não será aceita, pois contém o nome do usuário.
+Senhas aceitas e não aceitas de acordo com as recomendações de segurança da informação.
+
+As recomendações que vimos são muito importantes para garantir que as senhas realmente atuem como um mecanismo de segurança para acesso dos indivíduos aos sistemas. Trata-se de recomendações simples que demandam disciplina e conscientização de todos os envolvidos no processo: tanto os responsáveis pelas políticas de criação e controle das senhas quanto os usuários que as utilizam para acessar os sistemas.

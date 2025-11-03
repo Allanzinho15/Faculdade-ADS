@@ -1,0 +1,194 @@
+Treinamento
+Não importa o quão abrangentes sejam as defesas de segurança de uma organização e nem quanto foi investido em produtos de segurança eletrônica, essas defesas podem ser quebradas com um único e-mail de phishing. Você pode estar se perguntando:
+
+
+O que é phishing?
+
+É um tipo de fraude, que se dá por meios eletrônicos, utilizada por indivíduos mal-intencionados.
+
+ 
+
+É aplicada, principalmente, para roubar senhas de banco e outras informações pessoais, causando prejuízos materiais e morais, uma vez que os criminosos podem fazer compras e saques se passando pela vítima.
+
+
+Como ocorre?
+
+Pode ocorrer por meio de websites ou e-mails falsos, muito parecidos com os de uma empresa com imagem consolidada no mercado de modo a atrair as vítimas.
+
+ 
+
+Os sites ou e-mails com phishing oferecem promoções para o usuário muito atrativas como: “Parabéns, você ganhou nossa promoção especial desse mês! Para receber seu prêmio, basta clicar no link e fornecer o que é solicitado.”
+
+ 
+
+Ou, ainda, solicitam que façam uma atualização dos dados bancários para evitar o cancelamento da conta, por exemplo.
+
+
+
+
+Perceba que, se um e-mail contendo um ataque de phishing chegar a um usuário que não possua um entendimento básico de segurança e ele responder à mensagem, um malware poderá ser instalado, ou o invasor poderá, ainda, acessar a rede por meio da análise do endereço de IP do usuário, causando um dano ainda maior para outros usuários.
+
+Atenção
+O risco desse tipo de ataque levou muitas organizações a desenvolverem um programa de conscientização sobre segurança. Ao ensinar a todos os colaboradores as melhores práticas de segurança cibernética – da diretoria aos funcionários –, a postura de segurança pode ser bastante aprimorada e a vulnerabilidade a ataques de phishing e outros ataques cibernéticos pode ser bem reduzida.
+
+
+No entanto, simplesmente fornecer aos funcionários uma sessão de treinamento quando eles ingressam na empresa não é suficiente, tampouco tentar disseminar a segurança cibernética com apenas uma sessão anual de reciclagem. Não se espera que os funcionários mantenham o conhecimento por um longo período, a menos que sejam fornecidas sessões frequentes de atualização. Além disso, os cibercriminosos estão constantemente desenvolvendo novas estratégias para enganar os usuários. Os programas de treinamento devem estar contextualizados com o intuito de refletir a realidade dos tipos de ataques.
+
+
+
+A ISO/IEC 27002 - Código de Prática para a Gestão de Segurança da Informação, norma da Associação Brasileira de Normas Técnicas (ABNT), trata de todos os aspectos necessários para garantir que as melhores práticas sejam aplicadas para a segurança da informação. Essa norma tem como objetivo dar suporte para a implantação, manutenção e melhoria contínua dos controles de segurança da informação, padronizando diretrizes e procedimentos para auxiliar na sua gestão. A norma ISO 27002 possui 133 controles, divididos em 11 seções (que abrangem a segurança da informação em todos os seus aspectos, tratando de ferramentas, processos e pessoas):
+
+
+1
+Política da Segurança da Informação
+
+
+Prover orientação e apoio da direção para a segurança da informação de acordo com os requisitos do negócio e com as leis e regulamentações pertinentes.
+
+
+2
+Organizando a Segurança da Informação
+
+
+Estrutura de gerenciamento para iniciar e controlar a implementação da segurança da informação na organização.
+
+
+3
+Gestão de Ativos
+
+
+Alcançar e manter a proteção adequada dos ativos da organização.
+
+
+4
+Segurança em Recursos Humanos
+
+
+Assegurar que os funcionários, fornecedores e terceiros entendam suas responsabilidades e estejam de acordo com os seus papéis, além de reduzir o risco de furto, roubo, fraude ou mau uso de recursos.
+
+
+5
+Segurança Física e do Ambiente
+
+
+Prevenir acesso físico não autorizado, danos e interferências com as instalações e informações da organização.
+
+
+6
+Gestão das Operações e Comunicações
+
+
+Garantir a operação segura e correta dos recursos de processamento da informação.
+
+
+7
+Controle de Acesso
+
+
+Controlar o acesso à informação com base nos requisitos de negócio e segurança da informação.
+
+
+8
+Aquisição, Desenvolvimento e Manutenção de Sistemas de Informação
+
+
+Garantir que a segurança seja parte integrante de sistemas da informação.
+
+
+9
+Gestão de Incidentes de Segurança da Informação
+
+
+Assegurar que fragilidades e eventos de segurança da informação associados aos sistemas de informação sejam comunicados, permitindo a tomada de ação em tempo hábil.
+
+
+10
+Gestão da Continuidade do Negócio
+
+
+Não permitir a interrupção das atividades dos negócios e proteger os processos críticos contra efeito de falhas ou desastres significativos e assegurar a sua retomada em tempo hábil.
+
+
+11
+Conformidade
+
+
+Adequar os requisitos de segurança para não permitir a violação de regulamentações ou leis estabelecidas, além de obrigações contratuais.
+
+
+Com o objetivo de apoiar as organizações a desenvolverem um programa eficaz de treinamento em conscientização de segurança, são sugeridas as seguintes recomendações baseadas na ISO/IEC 27002:
+
+
+
+Obrigatoriedade do envolvimento da diretoria
+
+ 
+
+Todos os funcionários de uma organização são responsáveis por sua segurança, portanto, precisam estar comprometidos com as políticas de proteção dos dados. Dada a importância estratégica para a organização, espera-se que a diretoria entenda que a sua responsabilidade é maior do que a dos demais funcionários, pois tem direitos de acesso a dados e sistemas que, se caírem nas mãos de pessoas mal-intencionadas, podem causar grandes prejuízos.
+
+Se a diretoria não se interessar ativamente pela segurança e não perceber a importância do elemento humano nisso, é improvável que sejam fornecidos recursos suficientes e suporte adequado. O envolvimento de executivos na segurança cibernética também pode facilitar a criação de uma cultura de segurança na organização, estimulando a colaboração dos funcionários.
+
+ 
+
+
+Envolvimento de toda a organização
+
+ 
+
+É muito provável que a responsabilidade de desenvolver e implementar um programa de conscientização de segurança seja de uma única área. Essa atividade, porém, não pode ser feita sem o apoio dos demais setores. Os líderes dos diferentes departamentos podem ajudar a garantir que o programa de treinamento de conscientização sobre segurança receba a prioridade que merece.
+
+Para ajudar o departamento de TI (Tecnologia da Informação), os membros de outros departamentos podem ser treinados e colaborar com o fornecimento de suporte ou nos esforços de treinamento. Departamentos, como o de marketing, podem desenvolver conteúdo para boletins e outros materiais de treinamento. O departamento de RH (Recursos Humanos) pode ajudar com a definição de políticas e procedimentos.
+
+ 
+
+
+Criação de conteúdo para treinamento e conscientização de segurança
+
+ 
+
+Fala-se, cada vez mais, sobre a segurança da informação. Com o passar do tempo, os dados tornaram-se mais valorizados devido ao avanço das pesquisas em áreas como a de ciências de dados, por exemplo. Então, não é complicado encontrar cursos sobre esse assunto, que podem ser adaptados para a realidade das empresas, gerando, provavelmente, menor custo de produção interna de material de treinamento.
+
+ 
+
+
+Diversidade de treinamento
+
+ 
+
+O treinamento efetivo é um importante instrumento para criar uma cultura de segurança da informação dentro da organização. Nesse sentido, deve-se perceber que as pessoas respondem de maneira distinta aos diferentes métodos de treinamento. Alguns aprendem melhor com treinamento em sala de aula, outros podem precisar de treinamento individual e há aqueles que serão mais beneficiados com seminários periódicos de treinamento.
+
+O programa de treinamento, portanto, deve incluir uma ampla variedade de métodos tendo em vista os diferentes estilos de aprendizado. Quanto mais envolvente for o programa, maior será a retenção de conhecimento. Com a divulgação de material informativo por e-mail, jogos e questionários, haverá grandes melhorias na conscientização sobre segurança entre os funcionários.
+
+ 
+
+
+Exercícios de simulação
+
+ 
+
+A divulgação de conhecimento é uma etapa muito importante do treinamento. Por isso, é necessário garantir a capacitação dos funcionários para que eles possam aplicar os conhecimentos adquiridos a situações de seu cotidiano. A única maneira de determinar a eficácia do programa de treinamento é por meio de simulações de ataques.
+
+Exercícios de simulação de phishing e de outros cenários de ataque devem ser realizados em todas as etapas de treinamento. Com a aplicação desses exercícios, é possível medir a eficácia dos assuntos que foram tratados no programa de treinamento e fornecer o feedback necessário para identificar os pontos fracos e tomar medidas para a melhoria do treinamento.
+
+ 
+
+
+Periodicidade na realização do treinamento de conscientização de segurança
+
+ 
+
+O treinamento de conscientização de segurança deve ser feito periodicamente. Ao longo do ano, os funcionários devem estar envolvidos em diferentes atividades que os ajudem a fixar conhecimento, identificar pontos de melhoria e, principalmente, aplicar as boas práticas adquiridas ao seu cotidiano. O objetivo deve ser garantir que os problemas de segurança estejam sempre atualizados e contextualizados na realidade da organização.
+
+ 
+
+O treinamento é um importante instrumento para fortalecer o corpo funcional com o conhecimento necessário para evitar armadilhas que exponham a segurança da organização.
+
+
+A importância do treinamento na segurança da informação
+
+
+Para saber um pouco mais sobre a importância do treinamento como medida para a segurança da informação, assista ao vídeo a seguir.
+
+
+
+Espera-se que os conhecimentos adquiridos nos treinamentos sejam traduzidos em ações diárias que priorizem o uso racional dos recursos com o objetivo de proteger os sistemas, os dados e os ambientes. Estamos falando dos mecanismos de proteção que serão abordados a seguir.
