@@ -1,0 +1,115 @@
+Ciclo PDCA
+O PDCA é um modelo de processo de melhoria contínua composto de 4 passos:
+
+
+
+P (Plan)
+
+D (Do)
+
+C (Check)
+
+A (Action)
+Planejar.
+
+
+
+
+
+
+
+
+Para atingir seu objetivo – a melhoria contínua do processo – esse modelo foca em um processo central e analisa seus resultados comparando-os com as suas metas predefinidas, ou seja, como o processo deveria se comportar idealmente. A diferença entre o processo real e o ideal direcionará quais medidas corretivas devem ser adotadas.
+
+
+Saiba Mais
+O ciclo PDCA teve sua origem com a palestra do Dr. William Edwards Deming no Japão, em 1950, e, por isso, o PDCA também é conhecido como ciclo de Deming.
+
+
+De acordo com Lewis (1998), as etapas do ciclo PDCA podem ser descritas como:
+
+
+
+Planejar
+Definir os objetivos e determinar as condições e os métodos necessários para alcançá-los. É crucial descrever claramente as metas e políticas necessárias para alcançar os objetivos nesta fase. Um objetivo específico deve ser documentado numericamente se for possível. Os procedimentos e as condições para alcançar os objetivos devem ser descritos nesta fase.
+
+
+Executar
+Nesta etapa, deve-se executar todos os planos definidos no planejamento. A coleta de dados, inclusive, deve ser feita também nesta etapa, ainda que essas informações sejam utilizadas apenas nas fases posteriores.
+
+
+Checar
+É verificado se a progressão do trabalho está ocorrendo de acordo com o plano e se os resultados esperados estão sendo obtidos. De forma periódica, os resultados do trabalho devem ser comparados com os objetivos preestabelecidos. Se for detectada alguma anormalidade, ou seja, se o valor real for diferente do valor esperado, deve ser iniciada uma busca pela causa da anormalidade para impedir sua recorrência. Às vezes é necessário treinar novamente os trabalhadores e revisar os procedimentos. É importante garantir que essas alterações sejam refletidas para o próximo planejamento.
+
+
+Agir
+Se o exame revelar que o trabalho não está sendo realizado de acordo com o plano ou que os resultados não estão em concordância com o que foi antecipado, medidas devem ser planejadas para realizar a ação apropriada.
+
+A aplicação do PDCA auxilia no desenvolvimento de um PCN robusto, pois a aplicação do ciclo de melhoria contínua torna possível identificar fragilidades nos processos mapeados e inserir novos procedimentos a partir da observação da dinâmica do sistema do negócio como um todo.
+
+
+O modelo PDCA é simples, portanto, é possível envolver facilmente outros profissionais da organização em seu desenvolvimento.
+
+
+O próximo esquema ilustra como um ciclo PDCA pode ser aplicado ao PCN:
+
+
+1 - Mapeamento de negócios
+Caracteriza as unidades que compõem o negócio e descreve os relacionamentos entre elas.
+
+
+2 - Análise de impacto de negócios
+Quais são os pontos frágeis nos processos das unidades de negócio? É essencial responder a essa pergunta com objetividade, pois é a partir dessa identificação que será possível fazer uma previsão do impacto que uma situação de desastre pode causar para o negócio.
+
+
+3 - Definições de melhores estratégias
+A construção da estratégia de continuidade é feita após a análise dos impactos de um ou de vários cenários de desastre. Na estratégia, são definidas as ações que devem ser executadas. As descrições delas e dos respectivos responsáveis são apresentadas na próxima etapa.
+
+
+4 - Documentação de planos
+Aqui é descrito o PCN com todas as etapas: Plano de Contingência, Plano de Administração de Crises, Plano de Recuperação de Desastres e Plano de Continuidade Operacional.
+
+
+5 - Testes e simulações
+Com as estratégias e os planos definidos, é necessário testar sua eficácia. Isso é obtido a partir da criação de situações que estejam sob controle, mas que permitam verificar se os planos foram bem compreendidos. Além disso, é nesta etapa que todos os indivíduos da organização se integram a fim de divulgar quais procedimentos devem ser adotados caso ocorra uma situação de desastre.
+
+
+Essas simulações são essenciais e devem ser colocadas em prática por meio de exercícios em campo – obviamente em ambiente controlado –, bem como pela aplicação de testes teóricos para criar o hábito da leitura dos manuais e dos comunicados da organização. Desse modo, os responsáveis pelo PCN poderão avaliar a eficácia dele. Com essa verificação, o ciclo de melhoria contínua fortalece o plano, tornando-o mais robusto.
+
+
+
+O PCN pode precisar de ajustes. Alguns dos motivos para que isso ocorra são:
+
+
+A avaliação e o teste das estratégias podem revelar sua ineficácia ou ineficiência.
+Pode haver deficiências nas estratégias.
+Algumas funções e responsabilidades são vagas e precisam de esclarecimentos.
+Mudança das funções e dos membros da equipe de continuidade de negócios.
+Introdução ou ocorrência de fatores ou de circunstâncias, como novos equipamentos, abertura de nova filial,
+realocação de operações e nova tecnologia ou sistema que modificou processos críticos.
+
+A avaliação e o teste das estratégias podem revelar sua ineficácia ou ineficiência.
+Pode haver deficiências nas estratégias.
+Algumas funções e responsabilidades são vagas e precisam de esclarecimentos.
+Mudança das funções e dos membros da equipe de continuidade de negócios.
+Introdução ou ocorrência de fatores ou de circunstâncias, como novos equipamentos, abertura de nova filial,
+realocação de operações e nova tecnologia ou sistema que modificou processos críticos.
+
+Testes e avaliações devem ser feitos periodicamente devido à natureza de constante mudança dos negócios.
+
+
+Plano de recuperação de desastre
+
+Confira agora uma breve contextualização sobre o PRD.
+
+
+
+Para ilustrar a aplicação do PRD, será apresentado um caso real, segundo Alevate (2014), do dia 11 de setembro de 2001, em Nova York, quando as Torres Gêmeas sofreram um ataque terrorista:
+
+
+Duas torres, 110 andares cada, 550 empresas. Duas empresas tornaram-se cases mundiais: Deutsche Bank e Morgan Stanley. Ambas possuíam grande parte de suas instalações de TI no complexo. Quatro horas depois do desastre, estavam funcionando a 30%; 24 horas depois, a 60%; 48 horas depois, o incidente era transparente aos clientes.
+
+Quando seus sites voltaram a funcionar (4 horas depois do incidente), ambas apresentaram parte de seu plano na internet, informando as medidas emergenciais aos clientes, parentes de funcionários desaparecidos e funcionários, explicando para onde tinham que se deslocar e colocando telefones à disposição para informações presenciais.
+
+
+O PRD é uma ferramenta valiosa que ajuda as organizações a se prepararem contra circunstâncias fora de seu controle para garantir a capacidade de cumprir compromissos com prazo determinado, apesar dos contratempos adversos. Além disso, nos setores em que a concorrência é muito acirrada, com muito pouco para distinguir um fornecedor do outro, a recuperação de desastre fornece às organizações os meios de reter seus clientes e adquirir novos, especialmente quando a aderência aos prazos é essencial para as operações.

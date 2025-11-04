@@ -1,0 +1,45 @@
+Continuidade de Serviços de Tecnologia da Informação (GCSTI)
+O objetivo do GCSTI é gerenciar riscos capazes de afetar os serviços de TI. Desse modo, ajuda a manter de maneira adequada a capacidade de recuperação de serviços de TI para atender às necessidades acordadas, aos requisitos e aos prazos do negócio.
+
+
+O GCSTI garante que o prestador de serviços sempre possa fornecer os níveis mínimos de qualidade preestabelecidos. Para isso, aplica a Análise de Impacto nos Negócios e Gerenciamento de Riscos, produzindo o plano de continuidade de serviços de TI, que é um aspecto do Plano Geral de Continuidade de Negócios.
+
+
+Benefícios
+
+A aplicação do GCSTI para organização traz diversos benefícios, por exemplo:
+
+
+Em caso de acidente ou desastre, os serviços de Tecnologia da Informação e Comunicação (TIC) podem voltar a operar
+considerando sua ordem de importância.
+Apoio de reação mais rápido, auxiliando na recuperação de um acidente ou desastre.
+Atua na prevenção de acidentes, pois faz projeção de cenários de desastre com antecedência.
+
+Implementação
+
+O GCSTI é um processo que, naturalmente, evolui ao longo do tempo. Para implementá-lo, a organização precisa aplicar algumas etapas:
+
+
+Identificação dos serviços e dos ativos.
+Identificação dos riscos e das ameaças.
+Desenvolvimento de planos de contingência.
+Documentação do plano de recuperação.
+
+Desafios
+
+Por se tratar de um processo complexo, existem desafios que devem ser considerados para o sucesso do seu desenvolvimento:
+
+
+Criação de planos de gerenciamento de continuidade de serviços de TI quando não existirem processos ou planos
+gerais de gerenciamento de continuidade de negócios.
+Adoção das melhores práticas em TI por parte da área de negócios da organização sob a orientação do departamento
+de TI.
+
+Os planos de TI sempre devem estar alinhados com os planos de negócios da organização, pois a função da tecnologia é apoiar o negócio.
+
+
+
+É necessário, portanto, que haja comprometimento da área de negócios em fornecer adequadamente, ao GCSTI, informações sobre os planos e as estratégias futuras dos negócios da organização.
+
+
+Finalizando, o GCSTI atua no fornecimento de consultoria e assistência para evitar que, na ocorrência de um desastre, haja problemas de continuidade e de recuperação. Além disso, mantém um conjunto de planos sobre a continuidade e recuperação dos serviços de TI que dá suporte aos planos gerais de continuidade de negócios. Desse modo, auxilia na minimização de incertezas ao desenvolver ações proativas que possam ser implementadas na ocorrência de desastres.
