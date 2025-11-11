@@ -1,0 +1,88 @@
+Paradigmas e ambientes de programação
+O universo da programação é diverso e cheio de possibilidades. Para criar diferentes tipos de sistemas e resolver variados problemas, surgiram maneiras distintas de organizar o pensamento e o desenvolvimento de programas — os chamados paradigmas de programação. Além disso, ferramentas conhecidas, como ambientes de desenvolvimento integrado (IDEs) tornaram o processo mais intuitivo, produtivo e acessível até mesmo para quem está começando.
+
+ 
+
+Neste vídeo, você descobrirá o que são paradigmas de programação, seus principais tipos e como os ambientes de desenvolvimento integrado (IDEs) tornam o processo de criação de software mais organizado, eficiente e adaptado às demandas profissionais.
+
+
+
+Paradigmas de programação
+
+
+São os modelos ou estilos que orientam como os programas são estruturados e como as soluções para problemas são desenhadas. Os paradigmas ajudam a pessoa programadora a escolher o melhor caminho para construir um software, dependendo do tipo de desafio e das necessidades do projeto.
+
+
+No cotidiano profissional, uma vez que entendemos os paradigmas de programação, podemos escolher o melhor modelo para cada desafio, otimizar o trabalho em equipe e trabalhar com sistemas mais eficientes e fáceis de manter. Cada paradigma traz vantagens e é mais adequado para certos tipos de problemas. 
+
+
+Na sequência, vamos conferir cada um dos paradigmas. 
+
+
+Paradigma procedural (ou estruturado)
+
+
+Possibilita que o programa seja desenvolvido como uma sequência de instruções ou procedimentos, organizados em blocos claros, como funções ou rotinas. É como seguir uma receita de bolo: cada passo deve ser realizado em uma ordem específica para que o resultado final seja atingido. Esse modelo facilita o entendimento e a manutenção de programas, sobretudo em se tratando de tarefas sequenciais.
+
+
+Paradigma orientado a objetos
+
+
+Propõe que o programa seja organizado em “objetos”, os quais representam entidades do mundo real ou conceitos do problema. Cada objeto possui características (atributos) e comportamentos (métodos). 
+
+
+Exemplo
+Em um sistema bancário, pode haver objetos como “Conta”, “Cliente” e “Transação”, cada um com suas próprias regras e funções. Isso ajuda a tornar o código mais modular e próximo da forma como pensamos o mundo ao nosso redor.
+
+
+Paradigma imperativo
+
+
+É o paradigma mais próximo das linguagens de baixo nível, e muitos paradigmas (inclusive o procedural) derivam deste modelo. Aqui, o foco está nas instruções que mudam o estado do programa. A pessoa programadora detalha o passo a passo de como a tarefa deve ser feita, controlando o fluxo de execução diretamente.  
+
+
+Exemplo
+Imagine um manual detalhado para montar um móvel, em que cada instrução executada altera o estado da montagem.
+
+
+Paradigma funcional
+
+
+Organiza o programa em funções matemáticas puras, sem efeitos colaterais — ou seja, cada função, ao receber o mesmo valor, sempre retorna o mesmo resultado e não altera variáveis externas. Esse paradigma é bastante utilizado para resolver problemas complexos de forma concisa e segura, facilitando a criação de programas paralelos e distribuídos.
+
+
+Ambientes de desenvolvimento integrado (IDEs)
+
+
+São ferramentas que reúnem, em uma única interface, tudo o que a pessoa programadora precisa: editor de texto para escrever o código, ferramentas de depuração (para encontrar e corrigir erros), gerenciamento de arquivos, integração com sistemas de controle de versões e, em muitos casos, recursos inteligentes que sugerem comandos ou corrigem erros de forma automática.
+
+ 
+
+Vejamos alguns exemplos de IDEs!
+
+
+Visual Studio Code
+
+
+Muito utilizado para desenvolvimento web e várias linguagens.
+
+
+Eclipse
+
+
+Tradicional em Java e aplicações empresariais.
+
+
+PyCharm
+
+
+Especializado em Python.
+
+
+NetBeans
+
+
+Usado em Java e C/C++.
+
+
+Essas ferramentas tornam o processo de programação mais rápido, produtivo e menos sujeito a erros, sendo fundamentais no mercado de trabalho.

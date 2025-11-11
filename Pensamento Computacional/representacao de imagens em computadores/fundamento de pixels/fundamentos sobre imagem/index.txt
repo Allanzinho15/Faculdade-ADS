@@ -1,0 +1,44 @@
+Fundamentos sobre imagem digital
+Estamos acostumados a ver e a entender o mundo de forma natural e orgânica. Mas, no mundo digital, as imagem precisam ser representadas, assim como no mundo real, utilizando pequenas partes chamadas pixels, com características como posição e cor. Essas imagens podem ter as suas características manipuladas, por meio da sua combinação de cores. Isso exemplifica o pensamento computacional, que envolve abstrair e traduzir conceitos do mundo real em operações numéricas, permitindo ajustes precisos e automáticos nas imagens.
+
+ 
+
+Neste vídeo, vamos entender os pixels, as cores e sua representação numérica, que são a base da criação, da manipulação e da visualização precisa de imagens em diversas aplicações tecnológicas e criativas.
+
+
+
+As características fundamentais de uma imagem digital são:
+
+ 
+
+Pixel
+ 
+Unicidade de cor em um pixel
+ 
+As imagens digitais são formadas por milhões de pixels, os menores elementos de uma imagem, cada um com uma única cor. Para transpor um fenômeno do mundo real para um computador em forma de imagem digital, é necessário usar duas habilidades do pensamento computacional, veja!
+
+
+Decomposição
+
+
+Enquanto habilidade do pensamento computacional, consiste em dividir um problema complexo em problemas menores para que sejam mais facilmente solucionados, pois permite que se possa focar cada um dos problemas menores por vez. De maneira análoga, a decomposição de imagens significa "quebrar" uma imagem em pedaços menores (pixels), promovendo o mapeamento preciso de suas características fundamentais.
+
+
+Abstração
+
+
+Em termos de pensamento computacional, é a habilidade de desconsiderar detalhes/ características menos importantes, destacando apenas os relevantes para a solução de um problema ou tarefa. A abstração é fundamental no processo de transposição de representação de imagens digitais, pois envolve a escolha das características que queremos representar. Utilizando abstração, decidimos quais elementos são essenciais para a representação da imagem. Isso pode incluir formas, cores e padrões.
+
+
+
+
+Criação da imagem digital
+
+
+A decomposição e abstração, juntas, permitem a criação de imagens digitais detalhadas e precisas, nas quais cada pixel contribui para a construção visual da imagem final, refletindo suas características essenciais. Acompanhe!
+
+
+
+Demonstração de pixels.
+
+Nas imagens, cada pixel é um pequeno quadrado de uma única cor, destacando o processo de decomposição de uma imagem detalhada em pixels individuais e mostrando a abstração necessária para representar formas, cores e padrões essenciais.

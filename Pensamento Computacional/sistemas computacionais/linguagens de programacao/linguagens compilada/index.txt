@@ -1,0 +1,77 @@
+Linguagens: compilada e interpretada
+Para quem deseja dar os primeiros passos no mundo da programação, é preciso entender como os programas são executados. Ao criar um software, o caminho até que ele funcione no computador envolve processos diferentes, dependendo da linguagem utilizada. As linguagens compiladas e interpretadas representam essas duas formas principais de transformar o código em ações reais, e compreender suas diferenças ajuda a escolher a ferramenta certa para cada desafio.
+
+ 
+
+Neste vídeo, explicaremos a diferença entre linguagens compiladas e interpretadas, mostrando como o código se transforma em programas executáveis e quais são as vantagens, desvantagens e aplicações profissionais de cada abordagem no desenvolvimento de sistemas.
+
+
+
+Linguagem compilada
+
+
+Exige que todo o código seja traduzido de forma prévia para o “idioma” do computador, antes de ser executado. Esse processo é feito por um programa chamado compilador, que lê o código-fonte escrito pelo programador e o converte em um arquivo executável próprio para aquele tipo de computador ou sistema. Exemplos clássicos de linguagens compiladas incluem C, C++, Go e Rust.
+
+
+Confira as vantagens e desvantagens das linguagens compiladas:
+
+
+Vantagens
+
+
+Desempenho, em geral, superior, pois o código final é otimizado para o hardware.
+ 
+Maior controle sobre o funcionamento interno, sendo ideal para sistemas que exigem velocidade e eficiência.
+ 
+O usuário final não precisa do código-fonte, apenas do executável.
+
+Desvantagens
+
+
+Menor flexibilidade: qualquer mudança no programa exige uma nova compilação.
+ 
+Dependência da plataforma: programas compilados para um tipo de computador costumam não funcionar em outros sem adaptações.
+ 
+Processo de desenvolvimento pode ser mais demorado, sobretudo para testes rápidos.
+
+Linguagem interpretada
+
+
+É um tipo de linguagem em que o código-fonte é lido e executado, linha por linha, por um programa chamado interpretador, no próprio momento da execução. Isso torna o processo mais flexível e dinâmico, possibilitando que mudanças sejam testadas de forma rápida sem a necessidade de compilar tudo novamente. Exemplos populares incluem Python, JavaScript, PHP e Ruby.
+
+
+Agora, vamos explorar as vantagens e desvantagens das linguagens interpretadas.
+
+
+Vantagens
+
+
+Maior facilidade para testar e modificar programas durante o desenvolvimento.
+ 
+O mesmo código pode ser executado em diferentes plataformas, desde que o interpretador esteja disponível.
+ 
+Ideal para automação, scripts, prototipação rápida e ensino de programação.
+
+Desvantagens
+
+
+Desempenho, em geral, inferior ao das linguagens compiladas, pois cada linha é traduzida “ao vivo”.
+ 
+Dependência do interpretador instalado na máquina em que o código será executado.
+ 
+Maior exposição do código-fonte, o que pode ser uma preocupação em termos de segurança.
+
+Exemplos do cotidiano
+
+
+Um aplicativo como o Google Chrome, desenvolvido em C++ (compilado), é preparado sobretudo para o sistema operacional em que vai rodar, buscando máximo desempenho.
+
+
+Um script de automação para organizar arquivos no computador pode ser feito em Python (interpretado), permitindo ajustes frequentes e execução em diferentes sistemas sem recompilar.
+
+
+Atenção
+No ambiente profissional, a escolha entre uma linguagem compilada e uma interpretada depende das necessidades do projeto. Sistemas que precisam de máxima performance, como jogos ou softwares de controle industrial, normalmente usam linguagens compiladas. Já para projetos que mudam de forma rápida ou exigem adaptação fácil, como sites e scripts de análise de dados, as interpretadas são favoritas. Portanto, você precisa analisar caso a caso, tudo bem?
+
+
+Por isso, é necessário dominar os conceitos de compilação e interpretação, pois esse conhecimento amplia as possibilidades de atuação profissional. Assim, você poderá escolher as ferramentas certas para cada desafio, aumentando sua versatilidade no mercado de trabalho.

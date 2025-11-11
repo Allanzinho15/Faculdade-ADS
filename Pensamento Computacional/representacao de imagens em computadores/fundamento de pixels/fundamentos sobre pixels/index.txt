@@ -1,0 +1,108 @@
+Fundamentos sobre pixels
+Imagens digitais são representadas em computadores por meio de uma grande quantidade de pequenos quadrados, chamados de pixels, os menores elementos de uma imagem.
+
+ 
+
+Cada pixel é um quadrado de uma única cor, e ao ampliar uma imagem, podemos ver que ela é composta por esses pequenos quadrados. Quanto mais pixels uma imagem tiver, mais detalhada e próxima da realidade será. Por exemplo, uma imagem com 800 pixels de largura e 600 de altura tem 480.000 pixels.
+
+ 
+
+Neste vídeo, vamos abordar o pixel e seu papel na imagem digital, a representação nas cores e a sua composição na imagem completa.
+
+
+
+Agora, vamos aprender como imagens são representadas em computadores, ou seja, estudaremos as imagens digitais. Observe o exemplo a seguir, de um lindo pássaro, em que vemos as cores amarelo, roxo, azul, verde, preto e um fundo branco:
+
+
+
+Exemplo de imagem digital.
+
+Você certamente observou como essa imagem é natural e arredondada. Temos a nítida impressão de que estamos olhando para um pássaro de verdade.
+
+ 
+
+Na parte interna do computador, entretanto, essa imagem, e qualquer outra, resume-se a uma grande quantidade de números pequenos.
+
+
+Lembre-se: computadores são capazes de lidar somente com números. Então, como é que isso funciona?
+
+
+O primeiro passo para compreendermos as imagens digitais, ou seja, como o computador representa uma imagem por meio de um conjunto de números pequenos, é darmos um bom “zoom” na imagem para observarmos mais detalhes. Veja:
+
+
+
+Zoom no início do colar azul do pássaro.
+
+Você pode observar que há uma área azul no meio, uma parte maior em preto à esquerda e uma parte branca à direita.
+
+ 
+
+Você também pode constatar que a imagem é formada por pequenos quadrados, cada um de uma cor diferente. Eles são o que chamamos de pixels.
+
+
+Cada pixel é um quadrado.
+
+
+
+Quando olhamos para uma imagem digital como um todo, sequer percebemos que ela é formada por esses pequenos quadrados.
+
+ 
+
+Isso ocorre porque os pixels são tão pequenos que geram uma ilusão de ótica, assemelhando-se a uma imagem natural e arredondada.
+
+ 
+
+Realmente, só conseguimos notar que imagens são formadas por pixels quando usamos o recurso de zoom.
+
+ 
+
+Antes de prosseguirmos, faremos a seguinte e breve provocação: Você conhece algum outro exemplo, fora do mundo dos computadores, em que pontos (pixels) também sejam usados para representar imagens? 
+
+ 
+
+A ideia básica por trás de imagens digitais é praticamente a mesma usada pelas nossas avós quando costuravam lindos bordados ponto de cruz. Nesses bordados, as imagens também são formadas por um conjunto de pequenos “x” (pontos de cruz), cada um de uma cor. Os pontos de cruz são os pixels dos lindos bordados das nossas avós.
+
+
+
+Bordado ponto de cruz.
+
+Por exemplo, se a imagem anterior do pássaro for representada por apenas 1.600 pixels, ficará conforme mostra a seguir:
+
+
+
+O mesmo pássaro com número total de pixels reduzido para 1.600.
+
+Não há um número-esquema para o número de pixels contidos em uma imagem.
+
+
+Quanto mais pixels houver em uma imagem, mais próxima ela será da realidade.
+
+
+As características fundamentais de qualquer imagem digital são:
+
+ 
+
+Elas são formadas por pixels, que são quadrados.
+ 
+Um pixel só pode assumir uma cor por vez. Você não pode, em um mesmo instante, representar mais de uma cor em um pixel.
+
+Se você quiser analisar a quantidade de pixels em uma imagem, basta checar quantos formam sua largura (colunas) e quantos formam sua altura (linhas). Então, o número total de pixels é apenas uma questão de multiplicação.
+
+
+Exemplo
+Se houver uma imagem com 800 pixels de largura por 600 de altura, o total de pixels será: 800 x 600 = 480.000.
+
+
+A imagem do pássaro é formada por 3.892 pixels de largura (colunas) e 3.328 pixels de altura (linhas): 3.892 x 3.328. Aquele lindo pássaro foi representado pelo uso de 12.952.576 pixels, ou seja, quase 13 milhões. Agora fica fácil entender por que a imagem nos parece tão natural.
+
+
+
+Você, provavelmente, já deve ter ouvido o termo megapixel. Ele é usado para se referir a 1.000.000 (um milhão) de pixels. Então, o exemplo do passáro possui praticamente 13 megapixels.
+
+ 
+
+Telefones celulares, atualmente, são capazes de capturar imagens com resoluções de 5, 10, 12, 16, 20 e até 100 megapixels.
+
+ 
+
+Com o passar dos anos, as câmeras digitais se tornaram capazes de capturar cada vez mais megapixels.

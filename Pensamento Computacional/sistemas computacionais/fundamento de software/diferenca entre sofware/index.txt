@@ -1,0 +1,54 @@
+Diferença entre software e hardware
+Distinguir o que é software e o que é hardware é um passo importante para compreender como funcionam computadores, celulares e outros dispositivos digitais. Embora atuem juntos e dependam um do outro, esses dois conceitos representam universos distintos: um é visível e tangível, o outro é invisível, mas indispensável. Entender essa diferença facilita a escolha, o uso e a manutenção de tecnologias em qualquer contexto profissional ou pessoal.
+
+ 
+
+Neste vídeo, vamos esclarecer as diferenças entre software e hardware, destacando suas características, exemplos e como identificar problemas relacionados a cada um, reforçando a importância desse conhecimento para diagnóstico e solução de questões técnicas no dia a dia profissional.
+
+
+
+Hardware e software: o que são?
+
+
+Hardware é todo componente físico de um sistema computacional, ou seja, tudo aquilo que podemos ver e tocar: processador, placas, cabos, memória, disco rígido, tela, teclado, mouse, entre outros. É como a estrutura de uma casa, formada por tijolos, portas, janelas e telhado.
+
+
+
+Software, por sua vez, é o conjunto de programas, instruções e dados que “dizem” ao hardware como se comportar. Pode ser um sistema operacional, um aplicativo de mensagens, um navegador de internet ou até mesmo os jogos que rodamos no celular. O software é como o projeto e as regras de uso da casa: define como cada espaço deve ser utilizado e o que pode ou não ser feito ali.
+
+ 
+
+Como você já sabe, software e hardware são interdependentes: um não existe de forma útil sem o outro. O hardware, sozinho, não faz nada — é como um aparelho desligado ou um robô sem ordens. O software, sem hardware, é apenas um monte de instruções que não podem ser executadas. Juntos, dão origem a sistemas computacionais capazes de realizar tarefas das mais simples às mais complexas.
+
+ 
+
+Acompanhe a seguinte analogia!
+
+
+
+Imagine um carro moderno: o hardware são as peças físicas (motor, rodas, volante, painel). O software são os sistemas que controlam a injeção eletrônica, os sensores de estacionamento, o GPS e até o rádio. Se você tiver apenas as peças, mas nenhum sistema para coordená-las, o carro não funciona plenamente. Se tiver apenas os programas, mas nenhum carro para instalar, não há como rodar.
+
+ 
+
+Agora, veremos alguns exemplos para facilitar o entendimento.
+
+ 
+
+Quando você clica em um ícone do celular (software), o toque é captado pela tela sensível (hardware) e uma sequência de instruções é executada para abrir o aplicativo desejado.
+ 
+Ao salvar um documento, o software (processador de texto) organiza os dados e envia ao hardware (memória ou HD) para armazená-los fisicamente.
+ 
+Se um computador apresenta problemas, identificar se o defeito está no hardware (por exemplo, HD queimado) ou no software (como um vírus ou sistema corrompido) é fundamental para resolver a situação.
+
+Hardware e software: o dia a dia profissional
+
+
+No mercado de trabalho, compreender essa distinção ajuda a dialogar com técnicos, fornecedores e clientes. Também é útil para identificar soluções e evitar erros, como tentar “consertar” via software um problema que é puramente físico (hardware) ou gastar dinheiro com peças novas quando o problema pode ser corrigido por uma atualização de software. 
+
+
+Resumindo
+Hardware: parte física, tangível, pode ser substituído ou atualizado por peças novas.
+ 
+Software: parte lógica, intangível, pode ser atualizado, corrigido, personalizado e até mesmo desenvolvido do zero para necessidades específicas.
+
+Apesar das diferenças, a sinergia entre ambos é o que possibilita a existência e evolução de toda a tecnologia que usamos em nosso dia a dia.

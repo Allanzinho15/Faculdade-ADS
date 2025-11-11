@@ -1,0 +1,85 @@
+Computação no Direito
+
+A tecnologia evolui de forma crescente e avança sobre as mais diversas áreas de conhecimento, mas ela seria capaz de automatizar atividades classificadas como propriamente humanas? Será que poderíamos confiar a máquinas a tomada de decisões tão importantes para nossa sociedade? Estas perguntas vêm sendo respondidas em diversos lugares do mundo por meio de sistemas de apoio à decisão que, por si só, não têm autonomia para realizar escolhas, mas são de grande valia para facilitar o trabalho de profissionais das mais variadas áreas.
+
+
+Exemplo
+Na telemedicina, um médico auxiliado por tecnologia pode ter exames de imagem mais detalhados, diagnósticos facilitados, inúmeros robôs para dar mais precisão a seus movimentos. Mesmo com todas essas ferramentas, quem será responsável por realizar a cirurgia será o médico. E se ele souber aplicar o pensamento computacional para dominar toda essa tecnologia, a chance de sucesso será muito maior.
+
+ 
+
+No Brasil, em um passado muito recente, nos departamentos jurídicos das empresas, existiam pessoas responsáveis por verificar rotineiramente o Diário Oficial, para procurar por nomes, números de processos e outras informações relevantes para sua atividade. Todo esse trabalho manual, além de custoso e cansativo, poderia gerar erros, imprecisões ou atrasos. Hoje em dia, sistemas computacionais fazem essa verificação em minutos e com alta precisão, trazendo, consequentemente, vantagens financeiras para as organizações.
+
+
+Dessa forma, algumas pesquisas apontam que profissões podem ser substituídas por máquinas em um futuro breve.
+
+
+Curiosidade
+Certas funções relacionadas ao Direito, como assistente jurídico e paralegal, foram classificadas como de alto risco, mas outras funções, que envolvem inteligência social e criatividade, como as de advogado, apresentaram baixo risco de substituição.
+
+ 
+
+Paralegal é alguém que, não sendo advogado, auxilia e assessora advogados, realizando funções paralelas e de grande importância para o sucesso do escritório de advocacia. Como é evidente, esse profissional não pode exercer atividades típicas de um advogado, como dar consultas ou assinar petições junto aos tribunais (FREITAS, 2010)
+
+
+O avanço, porém, do pensamento computacional não se limita apenas a automatizar trabalhos manuais. Os algoritmos vêm evoluindo para, por meio de inteligência artificial, interpretar textos, identificar tendências e até mesmo sugerir decisões com base nessas informações. Softwares já fazem buscas inteligentes na literatura jurídica, identificam os pontos mais relevantes em um processo, geram hipóteses a partir do aprendizado da máquina e elaboram respostas utilizando redação própria.
+
+
+Exemplo
+Um escritório de advocacia americano anunciou, em 2016, que havia contratado um robô-advogado. Tratava-se do software ROSS Intelligence que, por meio do sistema de computação cognitiva da empresa International Business Machines Corporation (IBM), é capaz de utilizar inteligência artificial para realizar pesquisas jurídicas avançadas. Empregando linguagem comum, os advogados da empresa podem fazer perguntas ao sistema como se estivessem conversando com um colega de trabalho.
+
+ 
+
+Em 2016, a mídia especializada mostrou grande alvoroço ao noticiar a primeira contratação de ROSS, o ‘robô advogado’, pela banca de advocacia nova-iorquina Baker & Hostetler. A notícia levou o público, sobretudo os advogados ao redor do globo, a cogitar que a advocacia estaria prestes a sofrer mudanças decisivas... O principal atributo que diferencia o Watson dos demais computadores é sua capacidade de trabalhar diretamente com a linguagem humana, dispensando assim que seu interlocutor tenha conhecimentos de programação. (AB2L, 2017)
+
+
+Quanto mais o software é utilizado, mais elaboradas se tornam suas pesquisas, pois o algoritmo aprende por meio de um sistema de feedback. Esse sistema tem por objetivo diminuir os custos com pessoal e o tempo necessário para realizar pesquisas, uma vez que pode executar milhares de instruções por segundo.
+
+
+Exemplo
+No estado americano de Wisconsin, outro algoritmo, denominado Correctional Offender Management Profiling for Alternative Sanctions (COMPAS), também ganhou muito destaque. Ele é utilizado para calcular a probabilidade de reincidência de um réu, baseado apenas em fatos e comportamentos, evitando, assim, erros humanos. Esse sistema funciona por meio de um formulário que, após preenchido e processado, gera um valor entre 1 e 10. Quanto maior é o valor, maior é considerada a periculosidade do indivíduo.
+
+
+O algoritmo utiliza diversos critérios para o cálculo da probabilidade de reincidência dos acusados. Entre eles estão:
+
+
+CRITÉRIOS DO ALGORITMO 
+A existência de outros na família ou entre grupos de amizade
+O nível de envolvimento em crimes
+O grau de escolaridade
+A situação financeira
+Os hábitos relacionados à recreação e ao lazer
+O histórico de uso de drogas
+Os dados sobre "pensamentos criminosos"
+
+Tais informações são fornecidas pelos próprios acusados ao responderem o questionário, que gera uma árvore de decisão. O sistema traça o perfil do suspeito e o disponibiliza para que o juiz responsável tome as medidas cabíveis.
+
+
+Inicialmente, a intenção do sistema era avaliar a necessidade de prisão do acusado em fases anteriores ao julgamento, porém, mesmo que indiretamente, o juiz e o júri acabam sendo influenciados pelo perfil traçado pelo algoritmo no momento de decidirem a sentença. Veja a seguir as implicações desse sistema:
+
+
+Desvantagem
+
+
+As ferramentas de apoio de tomada de decisão geram muita polêmica em todo o mundo, pois o resultado obtido pelo sistema pode influenciar diretamente no tipo de pena ou no tempo de prisão de acusados.
+
+
+Vantagem
+
+
+O algoritmo opera de forma imparcial, não observando, gênero, etnia, religião ou qualquer outra fonte de preconceito, além de não ser passível de alterações de humor ou outras variações subjetivas.
+
+
+Outro modelo que ganhou muita atenção foi o de Daniel Martin Katz, desenvolvido em 2014. Por meio de um algoritmo de aprendizado de máquina (machine learning) com métodos estatísticos, ele conseguiu prever 70% das decisões da Suprema Corte americana. Para isso, foram analisadas 28 mil decisões anteriores e mais de 240 mil votos. Utilizando apenas essas informações, as previsões foram realizadas.
+
+
+Qual objetivo de Katz?
+
+
+O objetivo de Katz é reduzir os custos da Justiça e, consequentemente, torná-la mais acessível e eficiente. Seus resultados são considerados um avanço na denominada ciência da Previsão Legal Quantitativa — Quantitative Legal Prediction (QLP) — propiciando ampliação das potenciais aplicações de métodos quantitativos na análise do Direito.
+
+
+Em seu artigo, Katz afirma que chegou o momento em que softwares passarão a desenvolver tarefas próprias de advogados, inclusive algumas consideradas não triviais. Dessa maneira, uma vez criadas as soluções computacionais, a pressão pela redução de despesas forçaria escritórios e clientes a utilizarem a tecnologia para funções antes realizadas por equipes de operadores jurídicos. O resultado seria tão impactante que seria necessário repensar a própria prática do Direito.
+
+
+Após estudarmos esses três casos, podemos concluir que o pensamento computacional está cada vez mais presente no mundo jurídico. Apesar de não sabermos quanto tempo demorará para ele ocupar um espaço significativo nos tribunais brasileiros, precisamos estar preparados para essa nova realidade que está se desenhando, tornando-nos verdadeiros profissionais do século XXI, compreendendo e dominando o pensamento computacional.

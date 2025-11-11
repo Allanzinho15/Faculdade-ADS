@@ -1,0 +1,119 @@
+Pilares do pensamento computacional
+Apresentação
+
+De forma geral, há quatro pilares ou habilidades necessárias para que possamos exercer o pensamento computacional, conforme ilustrado a seguir:
+
+
+
+Pilares do pensamento educacional
+
+O objetivo é desenvolver um raciocínio mais estruturado e direto, o que pode auxiliar muito na solução de problemas complexos. Vamos entender cada um deles agora.
+
+
+Decomposição e abstração
+
+
+Primeiro pilar - decomposição
+
+A decomposição busca dividir um problema ou sistema complexo em partes menores, mais fáceis de compreender, gerenciar e resolver. Quando deixamos de olhar para um sistema como um todo e estudamos cada uma de suas peças menores, fica mais simples de compreender e buscar a solução desejada.
+
+
+Para entender melhor a decomposição, imagine a seguinte situação.
+
+
+
+Uma companhia aérea precisa levar pessoas e bagagens de uma cidade até a outra, usando aviões. Se você precisasse explicar esse problema, como faria?
+
+ 
+
+Explicaria sobre aviões, pilotos, bagagens e emissão de passagens, tudo ao mesmo tempo?
+
+
+Para tornar essa complicada questão tratável, precisamos abordá-la por partes, ou seja, decompor o problema.
+
+ 
+
+Primeiro, você falaria sobre todas as possíveis formas de se comprar a passagem aérea: por meio do site da própria companhia ou de parceiros, por telefone ou, ainda, presencialmente.
+ 
+
+Depois, você explicaria sobre as opções para a realização do check-in para confirmar sua presença naquele voo. Na sequência, daria orientação sobre o despacho de bagagens, caso necessário e esclareceria os procedimentos de embarque na aeronave.
+ 
+
+Por fim, você gastaria algum tempo expondo os procedimentos realizados pelo piloto e pelo controle de tráfego aéreo para que a aeronave consiga decolar, voar até a cidade destino e pousar. Essa parte, por si só, é tão complicada, que você poderia decompô-la novamente em pedaços menores para facilitar suas explicações.
+
+Neste exemplo, estamos desagrupando uma questão complexa em outras menores que, por sua vez, também podem ser fragmentadas. A ideia principal da decomposição é dividir o problema até que se torne algo tratável e possa ser executado com satisfatório nível de eficiência.
+
+
+Recomendação
+No mundo da computação, o processo de decomposição ocorre de forma frequente, já que os computadores são inacreditavelmente rápidos, mas desprovidos de qualquer inteligência. Então, para que tenham utilidade, precisamos indicar quais instruções simples devem realizar, uma após a outra, até que o problema seja resolvido por completo.
+
+
+Segundo pilar — abstração
+
+Buscamos desconsiderar informações ou detalhes que não sejam imprescindíveis para resolver nosso problema. Ainda no exemplo da companhia aérea, vamos pensar no procedimento de embarque.
+
+
+Diariamente, os atendentes responsáveis pelo embarque fazem a verificação de milhares de passageiros que precisam viajar em seus aviões. Essas pessoas possuem diferentes características, além de portarem malas, bolsas, mochilas, casacos ou diversos outros tipos de objetos pequenos.
+
+
+Para cada avião, a verificação realizada pelos atendentes deve ser rápida e objetiva. A equipe tem poucos minutos para embarcar centenas de pessoas ao mesmo tempo, registrar informações importantes para o fornecimento adequado do serviço. Para isso, é preciso aplicar o princípio da abstração, que propõe ignorar detalhes irrelevantes para concentrar-se no que realmente importa.
+
+ 
+
+Em nosso exemplo, o atendente deve focar-se apenas nos dados de nome e foto presentes na carteira de identidade e confrontá-los com as informações do cartão de embarque, abstraindo todas as outras averiguações ou características físicas. O funcionário também deve se atentar ao número, ao peso e à dimensão dos itens de bagagem de mão, de modo que estejam em conformidade com as diretrizes de segurança.
+
+
+Não se preocupar com informações desnecessárias, além de economizar tempo, permite que possamos desenvolver a solução mais genérica possível, que atenderá a uma série de problemas que segue o mesmo padrão. Este será nosso próximo foco de estudo.
+
+
+Reconhecimento de padrões e Algoritmos
+
+
+Terceiro pilar - reconhecimento de padrões
+
+Padrões são semelhanças ou características que alguns dos problemas compartilham entre si. O reconhecimento dessas referências tem por objetivo aproveitar soluções já usadas no passado para lidar com uma nova dificuldade que seja suficientemente similar.
+
+
+
+Em grandes aeroportos, é comum precisarmos caminhar longas distâncias para conseguirmos embarcar no voo. Sabemos que pessoas mais idosas ou com dificuldade de locomoção tendem a andar mais devagar.
+
+ 
+
+Porém, para que as companhias aéreas consigam cumprir a apertada agenda de viagens diárias, é importante que não haja atrasos.
+
+ 
+
+Logo, todos os passageiros precisam se deslocar em tempo hábil.
+
+ 
+
+Para solucionar essa questão, os aeroportos disponibilizam esteiras rolantes muito similares às escadas rolantes de shopping centers, porém mais apropriadas ao propósito de auxiliar o deslocamento de passageiros. Então, mesmo que um deles consiga andar por conta própria, poderá caminhar sobre a esteira com o intuito de diminuir o tempo de chegada ao portão de embarque. Note que, embora esse problema seja diferente de ajudar pessoas a subir ou descer pisos de shopping centers, as soluções são muito parecidas: um sistema de esteiras rolantes de metal movimentadas por motores elétricos.
+
+
+Podemos imaginar que um profissional, em algum momento, tentando solucionar essa questão, pensou:
+
+
+“Talvez possamos usar escadas rolantes modificadas para resolver o problema de demora no deslocamento de passageiros dentro de um terminal de aeroporto, pois, em ambos os casos, precisamos locomover pessoas a pé por alguns metros”.
+
+
+Os padrões podem ser observados tanto entre problemas diferentes quanto entre partes de uma mesma dificuldade.
+
+
+Quarto pilar — algoritmos
+
+Pilar fundamental do pensamento computacional é a automação por meio de algoritmos.
+
+
+
+Em nosso exemplo de uma empresa aérea, podemos relacionar a criação de algoritmos aos documentos com instruções dadas a cada funcionário, onde ele acessa detalhes passo a passo dos procedimentos que deve seguir para a realização de seu trabalho.
+
+ 
+
+Isso permite que o colaborador, mesmo que novato e sem conhecer as complexas engrenagens da companhia, possa facilmente seguir um conjunto de instruções simples, garantindo que o problema, pelo qual seja responsável, receba o tratamento adequado.
+
+
+Nesses exemplos, utilizamos analogias diferentes para várias situações típicas de uma empresa área, de modo a facilitar a compreensão dos quatro pilares do pensamento computacional. Entretanto, é importante que você mantenha em mente que a decomposição, a abstração, o reconhecimento de padrões e os algoritmos trabalham juntos para resolver um problema, não existindo uma ordem de importância ou de prioridade entre eles. São como as quatro pernas de uma mesa: sem uma delas, não é possível chegar ao resultado esperado.
+
+
+Dica
+Experimente aplicar em uma dificuldade que tenha ou em uma situação de seu cotidiano os quatro pilares do pensamento computacional e veja como eles podem facilitar ou acelerar sua resolução.
