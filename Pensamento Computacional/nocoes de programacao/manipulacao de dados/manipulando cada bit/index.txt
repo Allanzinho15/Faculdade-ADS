@@ -1,0 +1,52 @@
+Manipulando cada bit
+Vamos utilizar duas novas instruções, as quais vão possibilitar alterar o zoom da imagem e modificar a cor do pixel. Compreender tais técnicas é fundamental para profissionais de TI, design gráfico e outras áreas que dependem de representações visuais precisas e de alta qualidade.
+
+ 
+
+Neste vídeo, veremos como utilizar uma linguagem de programação para manipular imagens, ajustando as características de cada pixel. Assista!
+
+
+
+Agora, vamos partir para um segundo cenário um pouco mais interessante.
+
+ 
+
+Queremos estender o código usado na Prática 1 para sermos capazes de manipular individualmente cada pixel.
+
+ 
+
+Para isso, tudo que precisamos fazer é ajustar os passos da tabela 1 e adicionar duas novas instruções logo antes da instrução print, veja a seguir. Essas instruções também fazem parte das funções padronizadas pela linguagem JavaScript.
+
+
+Passo	Instrução	Significado em português
+1	img = new SimpleImage("circulo.bmp");	Carrega a imagem circulo.bmp na memória e a armazena na variável chamada img.
+2	img.setZoom(20);	20 vezes o tamanho original para a imagem armazenada na variável img. Um zoom menor do que 0 (zero) equivale a um afastamento. Por exemplo, um zoom de 0.5 equivale a um afastamento de 2x.
+3	pixel = img.getPixel(4,4)	Obtém a referência ao pixel (4,4) da imagem armazenada na variável img e atribui essa referência à variável pixel.
+4	pixel.setRed(255)	Instrui o computador a ajustar para 255 o nível de vermelho para o pixel em questão.
+5	print(image);	Apresenta a imagem na tela.
+Tabela 2: Modificando um dos pixels de circulo.bmp para que ele fique vermelho.
+Guilherme Dutra Gonzaga Jaime.
+
+Onde aparece a primeira instrução nova da tabela 2? A primeira instrução nova que vemos na tabela 2 é a do passo 3, que instrui o computador a obter a referência ao pixel (4,4) da imagem armazenada na variável img e, então, a atribuir essa referência à variável pixel.
+
+ 
+
+A partir de agora, qualquer operação que fizermos com a variável img será efetuada sobre o pixel (4,4).
+
+ 
+
+Em seguida, no passo 4, a instrução pixel.setRed (255) ordena que o computador ajuste a saturação de vermelho do pixel para o nível 255, que é o maior valor possível.
+
+
+Considerações
+
+
+Assim como a função setRed() ajusta o nível de vermelho para o pixel, temos duas outras funções análogas para manipular os níveis de azul e de verde de um pixel. A tabela 3 apresenta as três funções possíveis para essa manipulação, veja!
+
+
+Passo	Instrução	Significado em português
+1	pixel.setRed(número)	Ajusta o nível de vermelho do pixel conforme o número informado. O número deve ser entre 0 e 255.
+2	pixel.setGreen(número)	Ajusta o nível de verde do pixel conforme o número informado. O número deve ser entre 0 e 255.
+3	pixel.setBlue(número)	Ajusta o nível de azul do pixel conforme o número informado. O número deve ser entre 0 e 255.
+Tabela 3: Três funções disponíveis para manipulações de cores de um pixel.
+Guilherme Dutra Gonzaga Jaime.

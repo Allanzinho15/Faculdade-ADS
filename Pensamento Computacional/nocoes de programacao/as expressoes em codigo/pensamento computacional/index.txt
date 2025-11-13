@@ -1,0 +1,75 @@
+Pensamento computacional
+É uma habilidade essencial que será indispensável nas próximas décadas, similar à leitura, à escrita e à aritmética. Essa competência é indispensável para o mercado de trabalho, abrangendo diversas áreas, como educação, ciência, engenharia, medicina e direito.
+
+ 
+
+O estudo do pensamento computacional envolve entender como os computadores representam conceitos do mundo real através de números, especificamente para imagens, utilizando a posição e cor de pixels. A abstração, que é a habilidade de focar os elementos essenciais de uma imagem, é a base desse pensamento, permitindo a criação de códigos para manipular e ajustar imagens automaticamente. Assista ao vídeo e confira!
+
+
+
+O pensamento computacional já é visto em vários países como uma habilidade essencial para todos nas próximas décadas. Assim como a leitura, a escrita e a aritmética, essa competência será indispensável para o mercado de trabalho.
+
+
+
+De início, compreendemos que o computador representa qualquer conceito do mundo real por meio de números. No caso de imagens, os números indicam a posição do pixel e sua cor.
+
+ 
+
+Para isso, precisamos desconsiderar qualquer outro detalhe da imagem que não seja fundamental para sua representação:
+
+ 
+
+Quantos pixels usaremos para representá-la.
+Qual é a cor de cada pixel.
+
+
+Esse tipo de habilidade é denominada abstração e constitui um dos pilares primordiais do pensamento computacional.
+
+ 
+
+Em seguida, escrevemos linhas de códigos (instruções) de computador para que ele fosse capaz de automaticamente manipular esses números e, assim, realizarmos ajustes nas imagens, conforme o objetivo proposto. 
+
+
+Comentário
+Dessa forma, praticamos outra habilidade chave do chamado pensamento computacional, que é a automação, ou seja, escrever soluções na forma de instruções que o computador é capaz de seguir automaticamente para chegar ao resultado desejado.
+
+
+Durante o desenvolvimento das práticas, sempre paramos para observar e analisar os resultados obtidos nas imagens apresentadas. Refletimos sobre como poderíamos melhorar os resultados alcançados e realizamos ajustes em nosso código para alcançar resultados mais adequados. Isso constitui outra base do pensamento computacional denominada análise/avaliação.
+
+ 
+
+Observe que, durante as práticas realizadas, o código-fonte que escrevemos sempre decompôs o problema proposto em partes mais simples, que seguiram este passo a passo padrão:
+
+
+
+Passo 1
+
+Passo 2
+
+Passo 3
+
+Passo 4
+
+Passo 5
+Carregar a imagem na memória para que fosse trabalhada – escrevemos uma linha de código que carrega a imagem.
+
+
+
+
+
+
+
+
+
+
+A habilidade de decompor um problema em problemas bem menores e mais simples, que podem ser resolvidos isoladamente com uma ou poucas linhas de código de computador, é mais um dos pilares do pensamento computacional, denominado decomposição.
+
+ 
+
+Além disso, durante a prática do ajuste de cor do meio-fio de amarelo para escala de cinza, foi preciso observar um padrão natural/orgânico de qualquer pixel de tonalidades amareladas. Eles possuem os componentes verde e vermelho maiores do que o componente azul.
+
+
+Aproveitamos essa observação para escrever um código que automaticamente selecionou pixels em vários tons de amarelo, permitindo ajustar suas cores. Essa habilidade é conhecida como detecção de padrões.
+
+
+A aprendizagem de todos esses pilares permitirá que você desenvolva cada vez mais saberes na área da computação.

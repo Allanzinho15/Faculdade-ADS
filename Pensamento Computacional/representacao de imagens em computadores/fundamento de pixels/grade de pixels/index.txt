@@ -1,0 +1,84 @@
+Grade de pixel
+Uma imagem digital é representada por uma grade de pixels, em que cada pixel é um quadrado que pode assumir apenas uma cor por vez. Para identificar cada pixel na imagem, é utilizado um esquema de endereçamento que indica a coluna (eixo x) e a linha (eixo y) em que o pixel se encontra, com 0 (zero) representando a primeira coluna ou linha. Essas coordenadas (x, y) identificam de forma única qualquer pixel dentro da imagem, independentemente do número total de pixels.
+
+ 
+
+Neste vídeo, vamos entender o funcionamento da grade de pixels, organização de pequenos pontos de cor em uma matriz e a formação das imagens digitais.
+
+
+
+Notamos que uma imagem digital é representada pelo computador como uma grade de pixels. Cada pixel é um quadrado que só é capaz de assumir uma cor por vez. Além disso, é necessário que haja um esquema de endereçamento para identificar cada pixel na composição da imagem.
+
+ 
+
+Nos computadores, foi padronizado o uso de um conjunto de números para representar a coluna em que o pixel se encontra, onde 0 (zero) corresponde à primeira coluna, 1 (um) corresponde à segunda, e assim por diante. Temos o conjunto de valores do eixo y, onde 0 (zero) representa a primeira linha (topo), 1 (um) representa a segunda, 2 (dois) representa a terceira etc. Historicamente, é assim que os pixels de uma imagem são enumerados pelo computador:
+
+
+
+Gráfico: Imagem digital representada em um computador.
+
+No gráfico, podemos ver três pixels indicados por setas. O pixel (5,0), em azul, o pixel (1,1), em branco, e o pixel (2,4), em amarelo. É bem comum dizer que esses valores são as coordenadas de um pixel, algo como o endereço da posição do pixel em referência ao canto superior esquerdo.
+
+ 
+
+Mesmo que uma imagem tenha 100.000.000 pixels, qualquer pixel em particular tem um número x,y que o identifica unicamente em relação a todos os demais da imagem.
+
+
+Resolução da imagem
+
+
+Imagens fazem parte do nosso cotidiano. Desde fotos pessoais armazenadas em smartphones até gráficos complexos utilizados em pesquisas científicas, a representação digital de imagens é uma tecnologia que molda a forma como vemos e interagimos com o mundo.
+
+ 
+
+A qualidade de uma imagem digital é frequentemente medida pela sua resolução, ou seja, ao número de pixels por polegada (PPI) na imagem. Entenda melhor!
+
+
+Imagem com resolução mais alta
+
+
+Significa mais pixels por polegada, resultando em uma imagem mais detalhada e clara.
+
+
+Imagens com baixa resolução
+
+
+Têm menos pixels por polegada, o que pode levar a uma perda de detalhes e uma aparência pixelada quando ampliadas.
+
+
+Podemos perceber a importância da resolução em diversas aplicações, desde a impressão de fotografias de alta qualidade até a visualização de imagens médicas em diagnósticos.
+
+ 
+
+Imagens com alta resolução garantem que os detalhes finos sejam capturados e representados com precisão. A seguir, confira uma imagem que ilustra a diferença de resolução em pixels.
+
+
+Comparativo de imagens
+Diferença de resoluções em pixels.
+
+As cores em uma imagem digital não são apenas para estética, elas podem transmitir informações essenciais. Vejamos alguns exemplos!
+
+
+
+Mapas meteorológicos
+
+
+Diferentes cores podem indicar variáveis, como temperatura ou precipitação.
+
+
+
+Imagens médicas
+
+
+Cores diferentes podem destacar áreas de interesse ou anomalias.
+
+
+A escolha e a representação das cores são importantes para a eficácia da comunicação visual.
+
+ 
+
+A representação digital de imagens é uma tecnologia que permite a manipulação, o armazenamento e o compartilhamento de imagens de maneira precisa. Através de pixels e coordenadas, conseguimos recriar imagens reais em um formato digital, tendo diversas aplicações em nosso dia a dia.
+
+ 
+
+A resolução e a escolha das cores são elementos-chave, responsáveis por determinar a qualidade e a utilidade das imagens digitais, destacando sua importância em diversas áreas, desde a arte até a ciência.

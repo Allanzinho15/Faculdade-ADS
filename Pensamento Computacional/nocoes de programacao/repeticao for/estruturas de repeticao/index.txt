@@ -1,0 +1,81 @@
+Estruturas de repetição
+É essencial em linguagens de programação devido à sua eficiência na automatização de tarefas repetitivas. A estrutura de repetição for permite iterar sobre coleções de dados, processar elementos individualmente e realizar múltiplas operações de maneira sistemática.
+
+ 
+
+O uso do for facilita o controle preciso sobre o número de iterações, tornando o código mais legível e menos propenso a erros. Essa estrutura é indispensável para operações como manipulação de arrays, geração de sequências numéricas e processamento de listas. Ela otimiza o desenvolvimento de algoritmos e a execução de tarefas complexas de forma organizada e eficiente.
+
+ 
+
+Neste vídeo, vamos descobrir como usar a estrutura de repetição for para modificar as características de imagens. Confira!
+
+
+
+Estruturas de repetição são extremamente importantes, pois aumentam significativamente a capacidade de quem escreve códigos, permitindo a manipulação eficiente de múltiplos dados, ao contrário dos códigos que lidam apenas com dados individuais. Vamos explorar agora os princípios dessas estruturas. Observe a imagem de um pássaro.
+
+
+
+Imagem com 584 pixels de largura e 500 pixels de altura representando um pássaro.
+
+Se multiplicarmos o número de pixels de largura pelo número de pixels de altura, teremos o total de pixel da imagem. Nesse caso: 584x500 = 292.000 pixels ou quase 0.3 megapixels.
+
+Essa nem é uma imagem tão grande, dado que os telefones celulares atuais são capazes de tirar fotografias de mais de 10 milhões de pixels (10 megapixels). 
+
+
+Atenção
+Se o autor de um código de computador, sem usar estruturas de repetição, tentar escrever um código de computador para manipular cada um dos pixels da imagem, precisará repetir 292 mil vezes as instruções que apontam para determinado pixel (exemplo: pixel = img.getPixel( x,y )), cada uma delas seguidas com as instruções de manipulação desejada (exemplo: pixel.setRed(255)).
+
+
+Claramente, isso não é uma maneira prática de realizar uma operação com grande quantidade de dados. As desvantagens vão desde um código de computador difícil de ler, por ser muito extenso, até a dificuldade de manutenção, atualização ou correção do código, caso haja necessidade futura.
+
+ 
+
+O que buscamos é uma forma de escrever algumas poucas linhas de código que capturem as mudanças desejadas. Em seguida, podemos deixar o computador executar essas linhas repetidamente, uma vez para cada dado que precisamos manipular — nesse caso, uma vez para cada pixel da imagem.
+
+ 
+
+Existem diferentes maneiras de realizar isso em códigos de computador, mas, por motivos de simplicidade, vamos estudar a estrutura de repetição for, também chamada de loop for.
+ 
+Agora, analise a sintaxe da estrutura de repetição for apresentada a seguir.
+
+
+
+Sintaxe da estrutura de repetição for destacada em negrito.
+
+A linha de código for i in range(image.width):, traduzida de código de computador para português, significa: para cada posição horizontal da imagem armazenada na variável image, execute todas as instruções recuadas (em Python, usamos a indentação para definir o que pertence a esse bloco, e não chaves {} como em outras linguagens). Logo a seguir, temos for j in range(image.height):, que, para cada posição vertical da imagem, também executa as instruções abaixo.
+
+ 
+
+Dentro dessa estrutura de repetição dupla, a primeira instrução r, g, b = pixels[i, j] lê as três cores (vermelho, verde e azul) do pixel localizado na posição (i, j) da imagem "pássaro.jpg". Depois, cada cor é aumentada de intensidade pela variável aumento, tomando cuidado para não ultrapassar o valor máximo permitido (255), usando a função min. Por exemplo, o novo valor de vermelho é calculado por r = min(255, r + aumento), e o mesmo acontece para o verde e o azul.
+
+ 
+
+Por fim, pixels[i, j] = (r, g, b) grava de volta no pixel (i, j) a nova cor ajustada.
+
+ 
+
+Essas instruções são repetidas para cada um dos 292 mil pixels da imagem "pássaro.jpg", produzindo um resultado em que toda a imagem fica mais clara.
+
+
+Toda a sintaxe apresentada é requerida para que o computador entenda que se trata de uma estrutura for e quais são as instruções a serem repetidas.
+
+
+Na prática, o que o computador fará com o código apresentado é fixar o foco no primeiro pixel da imagem "pássaro.jpg", localizado na posição (0,0) — no canto superior esquerdo — e executar as instruções que leem os valores das cores vermelho, verde e azul. Em seguida, ele aumenta cada um desses valores em uma quantidade definida por aumento (sem ultrapassar o limite de 255) e reescreve o pixel com os novos valores. Esse primeiro pixel, portanto, ficará mais claro. Acompanhe!
+
+ 
+
+1. Em Python, não há o uso de chaves {} para indicar o começo e o fim do bloco de repetição. O que marca as instruções pertencentes ao for é o recuo (indentação) para a direita. Quando o computador chega ao final das instruções recuadas, ele retorna automaticamente para o início do laço for, passando para o próximo valor.
+
+
+2. Assim, o computador se fixará no segundo pixel (1,0) da imagem e executará novamente as instruções: leitura das cores, ajuste dos valores e gravação do novo pixel. Esse processo se repetirá para o terceiro, quarto, quinto e todos os 292 mil pixels da imagem "pássaro.jpg", até que toda a imagem fique mais clara.
+
+
+3. O recuo das instruções para a direita em Python não é apenas uma convenção visual: é obrigatório para que o interpretador compreenda que as linhas fazem parte da estrutura de repetição. Sem o recuo correto, o código não funciona.
+
+
+4. Mostrar que as linhas de dentro da estrutura de repetição são especiais em relação às demais é uma convenção muito comum, porque são executadas várias vezes, até que a condição estabelecida no início da estrutura for seja satisfeita.
+
+Nesse exemplo, a condição para finalizar é que todas as instruções internas (leitura das cores, aumento dos valores e atualização do pixel) sejam executadas pelo computador para todos os pixels da imagem "pássaro.jpg".
+ 
+
+A técnica de recuar a linha de código para deixar claro ao leitor que essas são instruções internas à estrutura de repetição é amplamente conhecida como indentação.

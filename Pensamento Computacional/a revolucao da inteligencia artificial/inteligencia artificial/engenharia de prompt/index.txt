@@ -1,0 +1,37 @@
+Engenharia de prompt
+
+Na era da IA generativa, saber se comunicar com clareza se tornou uma habilidade necessária. Isso porque a qualidade das respostas que recebemos da IA depende diretamente da forma como formulamos nossas perguntas — ou prompts. A engenharia de prompt é o conjunto de estratégias para elaborar comandos mais específicos, claros e eficazes. Assim como em uma pizzaria é mais fácil acertar o pedido quando damos detalhes, a IA também responde melhor quando orientada com precisão. Em áreas como educação, direito, administração e contabilidade, bons prompts já fazem a diferença entre uma resposta genérica e uma solução útil.
+ 
+
+Este vídeo explica o que é um prompt e a importância de saber construí-lo, usando a analogia de um pedido em uma pizzaria para mostrar que comandos claros e específicos geram resultados muito mais úteis e precisos. Veja!
+
+
+
+Conversar com uma IA generativa é como falar com um assistente que entende o que se pede — desde que você explique bem. Isso nos leva a um conceito cada vez mais valorizado: a engenharia de prompt.
+
+ 
+
+Nesse contexto, prompt significa o comando ou a pergunta que você envia à IA. A qualidade da resposta depende muito de como se escreve esse comando.
+
+Imagine que você está em uma pizzaria. Se você disser que quer uma pizza, o atendente pode perguntar: “De que sabor? Qual tamanho? Com borda recheada?”. No entanto, se você disser que quer uma pizza grande, de calabresa, com borda de catupiry e sem cebola, o pedido será mais rápido e certeiro. Com a IA, é igual.
+
+
+Exemplo de prompts por área
+
+
+Veja a seguir como a qualidade dos prompts pode fazer toda a diferença em diferentes áreas do conhecimento.
+
+
+Área	Prompt fraco	Prompt eficaz
+Educação	Faça um plano de aula.	Crie um plano de aula para alunos do 5º ano sobre o ciclo da água, com uma atividade prática e uma pergunta de revisão.
+Direito	Resuma essa lei.	Resuma em linguagem simples os principais pontos da Lei Maria da Penha, com foco em proteção à vítima.
+Administração	Me ajude a planejar um projeto.	Crie um plano de projeto para lançar um novo produto em três meses, considerando marketing, logística e equipe reduzida.
+Contabilidade	Explique o Simples Nacional.	Explique de forma clara para um microempreendedor como funciona o Simples Nacional e quais são suas vantagens.
+Tabela: Efeitos de prompts mal formulados e eficazes em distintas áreas de aplicação.
+Curadoria de TI.
+
+Ao melhorar seu prompt, você aumenta a chance de receber respostas úteis e precisas. É por isso que dizem que “quem sabe perguntar tem metade da resposta”.
+
+ 
+
+Recentemente, muitas empresas criaram cargos de prompt engineer, com o papel de elaborar comandos eficazes para extrair o máximo das IAs. Isso mostra que, mais do que saber programar, saber se comunicar com clareza se tornou uma habilidade bastante valiosa na era digital.

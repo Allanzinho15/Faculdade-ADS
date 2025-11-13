@@ -1,0 +1,157 @@
+As principais IAS generativas no mercado
+
+A IA generativa deixou de ser uma tendência do futuro e se consolidou como uma realidade em diversos setores profissionais. Com o avanço de modelos cada vez mais sofisticados, empresas de tecnologia ao redor do mundo têm desenvolvido soluções que transformam a maneira como criamos textos, imagens, músicas e códigos. Essas IAs funcionam como verdadeiros motores criativos, automatizando tarefas, melhorando processos e aumentando a produtividade. Modelos como GPT-4, Gemini, Claude e DeepSeek são apenas alguns exemplos de ferramentas integradas a plataformas bastante utilizadas atualmente. Conhecer essas soluções é importante para aproveitar seu potencial com consciência e estratégia.
+
+ 
+
+O vídeo apresenta um panorama das principais ferramentas de IA generativa disponíveis, destacando os modelos mais influentes como GPT-4, Gemini e LLaMA, e as empresas por trás deles, como OpenAI, Google e Meta.
+
+
+
+A IA generativa deixou de ser uma promessa distante e passou a fazer parte da rotina de milhões de profissionais ao redor do mundo. Contudo, por trás das ferramentas que criam textos, imagens, músicas e códigos em segundos, há modelos muito sofisticados, desenvolvidos por empresas líderes globais que vêm disputando espaço com soluções cada vez mais poderosas.
+
+ 
+
+Essas IAs generativas funcionam como parceiras digitais: ajudam a escrever e a organizar informações, dar ideias e até tomar decisões assistidas. 
+
+
+Tipos de IAS generativas
+
+
+A seguir, conheça as principais IAs generativas que estão transformando o mercado:
+
+
+
+GPT-4/ChatGPT – OpenAI (parceria com Microsoft)
+
+
+É o modelo mais popular e acessível ao público geral na atualidade. O GPT-4, usado no ChatGPT Plus, consegue entender textos complexos, responder com naturalidade e até resolver problemas avançados. A Microsoft integrou esse modelo nas ferramentas do Office 365 (Word, Excel, PowerPoint) sob o nome Copilot, permitindo automatizar e agilizar tarefas como redação de documentos, criação de fórmulas e construção de apresentações.
+
+
+
+Gemini – Google (Alphabet)
+
+
+Modelo multimodal, ou seja, entende texto, imagens e voz ao mesmo tempo, é a aposta da Google para competir com o GPT. Já está sendo integrado ao Gmail, ao Google Docs e a ferramentas de produtividade. Um exemplo prático: você escreve uma frase no Gmail e o Gemini sugere um texto completo, com tom adequado ao contexto.
+
+
+
+LLaMA – Meta (Facebook)
+
+
+O LLaMA 2 e o novo LLaMA 3 são modelos de código aberto desenvolvidos pela Meta. Embora voltados inicialmente para a pesquisa, já estão sendo integrados em aplicativos do WhatsApp, Instagram e outras soluções de atendimento. Sua vantagem é o acesso gratuito e personalizável, útil para empresas que desejam adaptar a IA às suas necessidades internas.
+
+
+
+Amazon Bedrock – Amazon
+
+
+Oferece uma plataforma chamada Bedrock, que permite acessar modelos de IA generativa como Titan (da própria Amazon), Claude (Anthropic) e Stable Diffusion (para imagens). É voltada para empresas que querem usar IA sem treinar modelos do zero, com foco em automação, atendimento e comércio eletrônico.
+
+
+
+Ernie Bot – Baidu
+
+
+É o concorrente direto do ChatGPT, sendo a principal IA generativa da China. A Baidu lidera o movimento de IA no setor público e privado na Ásia, e já é usado em serviços de busca, educação e atendimento.
+
+
+
+Tongyi Qianwen – Alibaba
+
+
+Desenvolvido para integrar as soluções de comércio eletrônico da Alibaba, como marketplaces e atendimento automatizado. É utilizado para criar descrições de produtos, chats inteligentes e até planejamento logístico.
+
+
+
+DeepSeek (open-source, China)
+
+
+Tem ganhado destaque por seus modelos abertos de alta performance, como o DeepSeek-V2 (modelo geral) e o DeepSeek-Coder (focado em programação). Compete com soluções como o GPT e Claude, com o diferencial de permitir adaptação e uso corporativo com menor custo.
+
+
+
+
+Conheça a seguir algumas das IAs generativas mais poderosas do mercado e como elas vêm transformando diferentes setores.
+
+
+
+OpenAI (EUA)
+
+Modelo/plataforma: GPT-4 / ChatGPT
+ 
+Foco: geração de texto, código e imagens
+ 
+Recursos e diferenciais: multimodalidade (texto + imagem), chat em linguagem natural, extensões, plugins e base do Copilot da Microsoft
+ 
+Tipo de acesso: fechado (gratuito e pago)
+
+Google
+
+Modelo/plataforma: Gemini
+ 
+Foco: multimodalidade (texto, imagem, áudio)
+ 
+Recursos e diferenciais: integração com Gmail e Docs, análise de dados e imagens, forte em pesquisa
+ 
+Tipo de acesso: fechado (acesso via Google)
+
+Microsoft
+
+Modelo/plataforma: Copilot (via GPT)
+ 
+Foco: Produtividade (Office 365)
+ 
+Recursos e diferenciais: resumos, fórmulas, textos e apresentações no Word, Excel e PowerPoint
+ 
+Tipo de acesso: fechado (Microsoft 365)
+
+Meta (Facebook)
+
+Modelo/plataforma: LLaMA 2 / LLaMA 3
+ 
+Foco: pesquisa, open-source
+ 
+Recursos e diferenciais: gratuito, adaptável, bom para desenvolvedores e pesquisadores
+ 
+Tipo de acesso: aberto (licença)
+
+Amazon
+
+Modelo/plataforma: Bedrock (Titan, Claude)
+ 
+Foco: infraestrutura para IA empresarial
+ 
+Recursos e diferenciais: plataforma que oferece múltiplos modelos, integração com AWS
+ 
+Tipo de acesso: Fechado (empresas)
+
+Baidu (China)
+
+Modelo/plataforma: Ernie Bot
+ 
+Foco: geração de texto em chinês
+ 
+Recursos e diferenciais: IA para buscas, educação e serviços públicos, alternativa ao GPT na China
+ 
+Tipo de acesso: fechado (nacional)
+
+Alibaba
+
+Modelo/plataforma: Tongyi Qianwen
+ 
+Foco: comércio eletrônico e automação
+ 
+Recursos e diferenciais: IA para descrição de produtos, suporte ao cliente, automação em marketplaces
+ 
+Tipo de acesso: fechado (Alibaba Cloud)
+
+DeepSeek
+
+Modelo/plataforma: DeepSeek-V2 / Coder
+ 
+Foco: texto e programação (open-source)
+ 
+Recursos e diferenciais: Código aberto, ótimo desempenho técnico, ideal para personalização empresarial
+ 
+Tipo de acesso: Aberto (open-source)

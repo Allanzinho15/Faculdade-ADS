@@ -1,0 +1,145 @@
+Continuando a prática com estruturas condicionais
+Que tal praticar o uso de estruturas condicionais na manipulação de imagens um pouco mais? As práticas a seguir solidificarão os conceitos aprendidos sobre estruturas condicionais. Assista ao vídeo!
+
+
+
+Observe a seguinte imagem:
+
+
+
+Uma calçada com o meio-fio pintado de amarelo.
+
+Imagine que desejamos ajustar a imagem para que o meio-fio fique cinza em vez de amarelo.
+
+ 
+
+Pela tabela 1 sabemos que o amarelo é uma cor composta pela combinação de vermelho e verde. Vamos utilizar o código-fonte a seguir para experimentar com diferentes abordagens de construção para a instrução if até alcançarmos uma solução mais refinada que nos pareça suficientemente boa.
+
+
+
+No código que já consta no código-fonte, o if está testando se os níveis de verde e de vermelho de cada pixel são maiores do que 120. Isso reflete a ideia de que um bom nível de verde e vermelho indica que o pixel pode ser amarelo.
+
+
+Se o teste do if for positivo, o pixel que atende à condição será para a cor preta: RGB (0,0,0). Isso será interessante, pois, ao analisarmos a imagem resultante, basta observarmos o que estiver em preto. Estes terão sido os pixels selecionados pela instrução if.
+
+
+Clique em Executar e observe o resultado:
+
+
+
+Mostrar solução
+
+Veja: 
+
+
+Repare que boa parte do meio-fio amarelo foi pintado de preto. Porém, analisando melhor, podemos detectar um problema: parte importante da calçada e do asfalto foram pintados de preto. Isso ocorre pois essas são áreas da imagem original em que os pixels são mais iluminados/claros.
+
+ 
+
+Então, os três componentes, vermelho, verde e azul, devem estar acima de 120, gerando um tom cinza suficientemente claro. Instrua o computador a selecionar apenas pixels cujos componentes vermelho e verde estejam acima de 150.
+
+
+
+Em seguida, clique em Executar e observe o resultado:
+
+
+
+Mostrar solução
+
+Vamos praticar mais um pouco?
+
+
+Ajuste a estrutura if, a fim de selecionar apenas pixels ainda mais claros e em tom de amarelo. Clique em Experimentar e observe o resultado:
+
+
+
+
+A seleção parece melhor, certo? Temos menos quantidade pintada de preto na calçada. Porém outro problema tornou-se evidente: os pixels da lateral do meio-fio não foram selecionados pelo if. Isso ocorre porque seu tom de amarelo é mais escuro. Certamente, seu nível de luminosidade é menor do que 150. Portanto, esses pixels não passam no teste do if.
+ 
+
+No último passo desta prática, tentaremos pensar em uma solução mais inteligente para a instrução if, de forma que consigamos, também, selecionar os pixels da lateral para realizar o ajuste de cores. Então, vamos construir uma estratégia melhor. Para começar, observe nosso “laboratório RGB” com controles deslizantes para os componentes vermelho, verde e azul:
+
+
+
+Repare que você obteve um amarelo-escuro. Agora, deslize o controle azul de 0(zero) para 84. Se tiver dificuldade em obter o valor exato, use as setas direcionais direita/esquerda no teclado. Observe o resultado:
+
+
+
+
+Observe o amarelo gradativamente aproximando-se do cinza.
+
+
+Considerações
+
+
+Queremos tirar proveito do padrão da natureza que acabamos de observar.
+
+ 
+
+Tons de amarelo são caracterizados por níveis equivalentes de vermelho e verde e um nível de azul muito mais baixo. Como, porém, podemos escrever uma estrutura if para instruir o computador a selecionar os pixels que atendam a esse padrão? Felizmente, isso é muito simples! Observe as duas imagens a seguir.
+
+
+
+
+
+
+Na primeira imagem, se calcularmos a média dos três componentes R(97), G(97) e B(0), obteremos o valor 64.6. A linha tracejada representa onde estaria esse valor nos controles deslizantes. Repare que os componentes vermelho e verde estão acima da média. O mesmo comportamento se repete na segunda figura.
+
+
+Que tal praticar um pouco? Alterando a cor do meio-fio para cinza!
+
+
+
+Então, vamos usar essa observação para construir uma solução mais inteligente para a instrução if e observar se, desse modo, selecionamos os pixels em amarelo do meio-fio de forma mais satisfatória. Volte ao código-fonte desta prática e realize os ajustes destacados em sublinhado a seguir:
+
+
+JavaScript (Node.js 12.14.0)
+
+
+Light Mode
+
+Copiar
+
+
+Adicionaremos uma linha para o computador calcular a média automaticamente e, na estrutura if, testaremos se o valor do vermelho e do verde são maiores do que a média. Depois, clique em Executar e observe o resultado:
+
+
+
+Mostrar solução
+
+Agora, confirmamos que a nossa estrutura if é capaz de selecionar, de forma bem satisfatória, os pixels que desejamos ajustar para a tonalidade cinza. Já pensamos em uma forma de escrever a instrução if, de modo que os pixels do meio-fio sejam corretamente selecionados para modificação de cor. O último passo para alcançarmos nosso objetivo é ajustar as instruções internas à estrutura if, em que, de fato, as cores dos pixels selecionados são ajustadas.
+
+ 
+
+Durante os passos anteriores, deixamos as instruções alterando o valor dos componentes RGB para 0 (zero), para que pudéssemos observar o que ficou em preto e refletir se a nossa estrutura if estava correta.
+
+
+Agora, pense um pouco: queremos que o meio-fio, que era amarelo, apareça em escala de cinza.
+
+
+Pela tabela 1 já sabemos que a escala de cinza equivale a dizer que os três componentes R, G e B possuem o mesmo valor. Ora, nós já ordenamos que o computador calcule automaticamente a média dos três componentes do pixel.
+
+ 
+
+Então, a variável chamada media contém uma estimativa de quanta luminosidade existe no pixel sendo tratado. Uma boa tentativa seria trocar o 0 (zero) das instruções de ajuste de cor internas ao if pela variável media. Realize esses ajustes no código-fonte, conforme destacado em sublinhado:
+
+
+JavaScript (Node.js 12.14.0)
+
+
+Light Mode
+
+Copiar
+
+
+Observe o resultado:
+
+
+
+Mostrar solução
+
+Isso realmente parece bem melhor! Conseguimos alcançar o nosso objetivo.
+
+ 
+
+Escrevemos um código de computador que é capaz de instruí-lo a detectar automaticamente a região em amarelo do meio-fio, para, então, ajustar sua tonalidade de cor de amarelo para cinza.

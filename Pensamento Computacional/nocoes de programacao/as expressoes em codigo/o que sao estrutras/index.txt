@@ -1,0 +1,74 @@
+O que são estruturas condicionais?
+A estrutura condicional if é fundamental em programação, permitindo que o código execute ações diferentes com base em condições específicas. Essa estrutura permite a tomada de decisões no código, possibilitando a implementação de lógica complexa e adaptativa. O domínio das condicionais if é importante para criar programas eficientes e dinâmicos, capazes de responder de forma adequada a diferentes situações e entradas de dados.
+
+ 
+
+Neste vídeo, vamos explorar o conceito de estruturas condicionais, também chamadas de estruturas de decisão, e como elas são aplicadas na manipulação de imagens. Assista!
+
+
+
+Estruturas condicionais são as linhas de código de computador empregadas para expressar a ideia de lógica ou seletividade. 
+
+
+
+Usando esses tipos de instruções, somos capazes de preparar o computador para realizar um teste, cujo resultado será verdadeiro ou falso, aplicando-o para controlar se determinado pedaço de código será ou não executado. Todas as linguagens de programação possuem estruturas condicionais.
+
+
+Vamos analisar aqui um tipo específico: a declaração if (do inglês, if-statement). Lembre-se de que if, em inglês, significa “se”.
+
+ 
+
+Vamos nos basear em exemplos e práticas na linguagem Python, estando sempre voltados para a resolução de problemas interessantes relacionados à manipulação de imagens.
+
+
+Estrutura condicional
+
+
+Veja a sintaxe de uma declaração if conforme a linguagem de programação Python:
+
+
+Python (3.8.1)
+
+
+Light Mode
+
+Copiar
+
+Repare na linha if intensidade > limiar. Em português, essa instrução significa:
+
+
+Se a intensidade média das cores (vermelho, verde e azul) do pixel for maior do que o valor definido pela variável limiar, então execute a instrução que colore o pixel de vermelho (255, 0, 0).
+
+
+Em outras palavras, as instruções das linhas 8 e 10 só serão executadas pelo computador dependendo do resultado desse teste. Pense nessa instrução como uma forma de selecionar os pixels da imagem "pássaro.jpg" que serão alterados para vermelho ou azul, conforme a intensidade medida. Veja!
+
+
+1. Ainda na linha 7, se o valor da intensidade média do pixel em questão for, por exemplo, 100 e o limiar for 128, então o teste if intensidade > limiar retornará falso, e o computador irá para a linha 10, pintando o pixel de azul (0, 0, 255).
+
+
+2. Se a intensidade do pixel for exatamente igual ao valor do limiar (por exemplo, 128), o teste if intensidade > limiar também será falso, e novamente o pixel será colorido de azul.
+
+
+3. A execução da linha 8, que define o pixel como vermelho, só ocorrerá se a intensidade for maior que o limiar, por exemplo, 129, 200 ou 255.
+
+
+4. Em Python, diferentemente do JavaScript, o teste dentro do if não precisa obrigatoriamente de parênteses, mas o uso deles é permitido para melhorar a clareza. O importante é que o computador entenda que se trata de uma decisão: se a condição for verdadeira, ele executa o que está recuado (indentado) logo abaixo do if; caso contrário, ele passa para a parte do else.
+ 
+
+Na prática, frequentemente vemos uma declaração if ser usada dentro de uma estrutura de repetição, como o for duplo que percorre todos os pixels da imagem. Esse tipo de combinação permite que problemas bastante interessantes sejam resolvidos.
+
+
+Comentário
+Na prática, frequentemente vemos uma declaração if ser usada dentro de uma estrutura de repetição, como a estrutura for. Esse tipo de combinação permite que problemas bastante interessantes sejam resolvidos.
+
+
+A partir de agora experimentaremos a estrutura condicional if. Abordaremos várias práticas simples que envolvem manipulação de imagens digitais, começando por casos bem rudimentares e chegando a aplicações do mundo bem interessantes, ainda que simples.
+
+ 
+
+Optamos por usar exemplos com imagens digitais, pois esta é uma forma muito simples, intuitiva e rápida para você observar os efeitos da execução de algumas linhas de código de computador. Isso ocorre porque estamos acostumados a observar imagens do mundo real desde que nascemos. Então, esse é um processo altamente intuitivo para todos.
+
+
+Para analisar e avaliar o efeito de determinadas linhas de código, basta observar a imagem e comparar o antes e o depois da execução do código.
+
+

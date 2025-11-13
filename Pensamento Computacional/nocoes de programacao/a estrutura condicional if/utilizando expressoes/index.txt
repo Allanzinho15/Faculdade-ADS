@@ -1,0 +1,26 @@
+Utilizando expressões na manipulação de imagens
+Como você deve ter percebido, é muito importante entender que estamos o tempo todo falando de comunicação. Claro que, tratando-se da máquina, não podemos nos comunicar com ela da mesma forma que eu me comunico com você.
+
+
+Prática 3
+
+
+Como você viu, o simples comando “torne a imagem um pouco mais laranja” não poderia ser realizado apenas com estas palavras. Foi necessário traduzir essa mensagem para código de computador, de forma que o comando fosse obedecido.
+
+
+Nesse sentido, apenas com a realização de tentativas, com a identificação de erros nos comandos e sua correção, é que podemos nos aprimorar e, pouco a pouco, dar embasamento ao nosso pensamento computacional.
+
+
+Você deverá usar as caixas de códigos para realizar as atividades apresentadas a seguir. A primeira caixa de código será utilizada para a primeira atividade e a segunda caixa de código para a segunda atividade.
+
+ 
+
+Clique em Executar para ordenar ao computador que execute as instruções escritas por você de acordo com o enunciado de cada atividade adiante.
+
+
+
+
+O que você achou do conteúdo?
+
+Relatar problema
+
