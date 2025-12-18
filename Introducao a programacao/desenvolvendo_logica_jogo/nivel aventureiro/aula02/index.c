@@ -4,8 +4,8 @@ int main()
 {
   int nota;
 
-  printf("Digite a sua idade: \n");
-  scanf("%d", &nota);
+  // printf("Digite a sua idade: \n");
+  // scanf("%d", &nota);
 
   // A >= 90
   // B >= 80

@@ -39,7 +39,7 @@ int main()
     // resultado = ja recebe mumero1 com mais 1
     // ex: resultado ele ja recebe Numero valendo dois, antes do resultado receber Numero o Numero ele recebe mais 1 e passa valer dois, e resultado ja recebe Numero valendo dois assim resultado tambem passa a valer 2
     resultado = ++Numero;
-    printf("Apos Pós-incremento - Numeor 1: %d - resultado:%d\n", Numero, resultado);
+    printf("Apos Pré-incremento - Numeor 1: %d - resultado:%d\n", Numero, resultado);
 
     // mostrando como funciona o Pós-Decremento
     // pós-Decremento
@@ -53,5 +53,5 @@ int main()
     // resultado = ja recebe mumero1 com menos -1
     // ex: resultado ele ja recebe Numero com menos -1, antes do resultado receber Numero o Numero ele recebe  -1 e passa valer 0, e resultado ja recebe Numero valendo 0 assim resultado tambem passa a valer 0
     resultado = --Numero;
-    printf("Apos Pós-incremento - Numeor 1: %d - resultado:%d\n", Numero, resultado);
+    printf("Apos Pré-incremento - Numeor 1: %d - resultado:%d\n", Numero, resultado);
 }

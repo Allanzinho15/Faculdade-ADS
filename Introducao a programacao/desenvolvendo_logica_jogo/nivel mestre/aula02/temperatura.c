@@ -6,11 +6,11 @@ int main()
     int resultado;
 
     // primeira maneira de fazer
-    temperatura > 30 ? printf("esta calor\n") : printf("esta frio\n");
+    temperatura >= 30 ? printf("esta calor\n") : printf("esta frio\n");
 
     // segunda maneira de fazer
-    resultado = temperatura > 30 ? 1 : 0;
-    if (resultado == 1)
+    resultado = temperatura >= 30 ? 1 : 0;
+    if (resultado)
     {
         printf("esta calor\n");
     }

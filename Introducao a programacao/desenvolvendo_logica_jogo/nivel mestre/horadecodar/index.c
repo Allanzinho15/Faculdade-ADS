@@ -18,7 +18,7 @@ int main()
     printf("N. Menor \n");
     printf("I. igual \n");
 
-    printf("Escolha a Comparção");
+    printf("Escolha a Comparção \n");
     scanf("%c", &tipocomparacao);
 
     printf("Digite seu Número (entre 1 e 100) \n");
@@ -53,7 +53,7 @@ int main()
         break;
     }
 
-    if (resultado == 1)
+    if (resultado)
     {
         printf("Parabéns, Você ganhou\n");
     }
