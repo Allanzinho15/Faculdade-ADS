@@ -12,4 +12,6 @@ int main()
     {
         printf("A variavel é diferente de zero ");
     }
+
+    return 0;
 }
