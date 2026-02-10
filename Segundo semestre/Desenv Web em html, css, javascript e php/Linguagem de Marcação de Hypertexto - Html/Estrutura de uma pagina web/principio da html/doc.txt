@@ -1,0 +1,190 @@
+Princípio da HTML
+
+O objetivo principal de uma linguagem de marcação de hypertexto, mais especificamente, da HTML, que será usada como linguagem padrão e alvo de nosso estudo, é estruturar o conteúdo de um documento. Esse conteúdo pode ser composto de textos, figuras, tabelas etc.
+
+ 
+
+Uma estrutura, por sua vez, pode ser definida como a organização dos elementos de conteúdo. Para realizar essa função, a HTML faz uso de um sistema hierárquico de elementos chamados de tags.
+
+
+A linguagem HTML
+
+Assista ao vídeo e entenda o que é HTML, a origem dessa linguagem, as suas versões e os tipos de documentos.
+
+
+
+O que é HTML?
+
+A linguagem de marcação de hipertexto (HTML) é uma linguagem de marcação formada por elementos conectados (textos, imagens, vídeos etc.), cujo principal objetivo é organizar o conteúdo e estabelecer a estrutura básica de uma página web.
+
+
+Como tudo começou
+
+A especificação da HTML foi criada a partir da junção de dois padrões: 
+
+
+SGML (standard generalized markup language) 
+
+
+É um padrão ISO que especifica as regras para a criação de linguagens de marcação que sejam independentes de plataforma.
+
+
+HyTime (Hypermedia/Time-Based Structuring Language)
+
+
+É um padrão desenvolvido pela ISO com o objetivo de possibilitar que hiperdocumentos de hipermídia pudessem ser descritos em função de sua estrutura e conteúdo e, consequentemente, utilizados por quaisquer sistemas conformantes (NEWCOMB; KIPP; NEWCOMB, 1991).
+
+
+Inicialmente, a especificação da HTML e a sua evolução foram mantidas pelo IETF (Internet Engineering Task Force), desde sua primeira publicação formal, em 1993. Entretanto, a partir de 1996, passou a ser mantida pelo World Wide Web Consortium (W3C), além de ter ganhado o status de norma internacional (ISO/IEC) em 2000.
+
+Evolução da HTML: versões
+
+Ao longo dos anos, a HTML tem passado por uma série de aperfeiçoamentos. Esse processo é liderado pelo W3C. Desde a sua criação, a HTML obteve diferentes versões, tais como: HTML, HTML 2.0, HTML 3.2, HTML 4.01, XHTML, HTML 5, HTML 5.1 e HTML 5.2.
+
+ 
+
+Veja o histórico de versões da HTML!
+
+
+
+1991
+
+1995
+
+1997
+
+1999
+
+2000
+
+2014
+
+2016 / 2017
+
+2017
+
+
+1991
+HTML
+
+Tim Berners-Lee cria a HTML.
+
+
+1995
+HTML 2
+
+Grupo de Trabalho HTML define a HTML 2.0.
+
+
+1997
+HTML 3.2
+
+W3C publica a Recomendação HTML 3.2.
+
+
+1999
+HTML 4.01
+
+W3C publica a Recomendação HTML 4.01.
+
+
+2000
+XHTML
+
+W3C publica a Recomendação XHTML 1.0.
+
+
+2014
+HTML5
+
+W3C publica a Recomendação HTML5.
+
+
+2016 / 2017
+HTML 5.1
+
+W3C candidata a Recomendação HTML 5.1.
+ 
+W3C publica a Recomendação HTML 5.1 2ª edição.
+
+2017
+HTML 5.2
+
+W3C publica a Recomendação HTML5.2.
+
+
+Cada versão lançada da HTML representa algum tipo de evolução em relação à versão anterior: formalização de regras e características; correção de problemas de compatibilidade; criação de novas tags; suporte a novos recursos; entre outras mudanças.
+
+
+Definição de tipos de documento (DTD)
+
+
+O ponto inicial da estrutura de uma página web é o tipo de documento a ser utilizado. Inicialmente, a HTML continha apenas tags para marcações simples, uma vez que ainda não existia um dispositivo com interface gráfica no qual pudesse ser exibida.
+
+ 
+
+Com isso, as primeiras tags eram relacionadas a elementos como títulos, parágrafos, quebras de linha etc. Entretanto, com a sua rápida expansão e sobretudo pelo lançamento do primeiro navegador, o Mosaic, surgiu a necessidade de criação de novas tags, para marcações mais complexas.
+
+ 
+
+Essa necessidade se tornou contínua, tendo como principais pilares os seguintes eventos: a rápida expansão da web e a construção de novos navegadores.
+
+ 
+
+O fato de que cada navegador implementava seus próprios padrões, incluindo tags que só podiam ser interpretadas por eles mesmos, tornou necessária a adoção de padrões reconhecidos por todos. Por isso, o W3C criou a definição de tipos de documentos (DTD) ou document type definition, uma lista de elementos, atributos e requisitos relacionados a determinada linguagem ou variação da linguagem.
+
+
+Utilizando doctypes: document types
+
+A importância dos document types na criação de páginas HTML diz respeito ao conjunto de tags que podem ser usadas e que serão ou não renderizadas a partir do tipo utilizado.
+
+
+
+Exemplos de tags na HTML.
+
+Antes da HTML5, existia um conceito chamado concordância de documento. Embora relevante apenas nas versões anteriores da HTML, é importante abordá-lo, uma vez que muitas páginas web ainda não foram portadas para a HTML5. Isso significa que cada página precisa ser concordante com a especificação W3C oficial para a qual foi escrita.
+
+ 
+
+A especificação da HTML 4, por exemplo, previa três tipos de doctypes: strict, transitional e frameset. Vamos conhecer cada um desses tipos?
+
+
+
+Strict
+
+Transitional
+
+Frameset
+É responsável por determinar uma série de restrições e exigências: obrigatoriedade de separação entre a estrutura e a apresentação; limitação nos elementos de apresentação disponíveis - como tags de fonte e atributos de alinhamento −; ausência de suporte a tags obsoletas etc.
+
+
+
+Veja a seguir o fragmento do código inicial de uma página HTML 4.01:
+
+
+Plain Text
+
+<!DOCTYPE HTML PUBLIC "-/W3C/DTD HTML 4.01 Transitional//EM"
+http://www.w3.org/TR/html4/loose.dtd>
+
+
+
+Na declaração, são definidas as seguintes informações sobre a página HTML:
+
+ 
+
+Tipo de Documento: HTML.
+ 
+Acesso à DTD: Public – logo, a DTD a que se refere está disponível para uso de forma pública.
+ 
+Onde se encontra o DTD: local em que foi criado e está hospedado no W3C.
+ 
+URL da especificação: o endereço http://www.w3.org/TR/html4/loose.dtd leva à especificação em questão.
+ 
+
+Portanto, o doctype não é uma tag HTML, mas, sim, uma instrução. É uma declaração que serve para informar ao navegador qual a versão da HTML usada em um arquivo HTML. A partir da HTML5, quando a HTML deixou de ser baseada na SGML, a declaração do doctype foi simplificada, como visto a seguir.
+
+
+
+Comentário
+Comparando as declarações do doctype entre a HTML5 e a HTML4, notamos algumas diferenças. A principal diferença é que a HTML5, ao contrário das versões anteriores, não se baseia na SGML, portanto não requer referência a um DTD.

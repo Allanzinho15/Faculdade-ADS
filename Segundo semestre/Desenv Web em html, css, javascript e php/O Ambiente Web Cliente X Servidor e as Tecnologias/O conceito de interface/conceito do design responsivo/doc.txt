@@ -1,0 +1,123 @@
+O conceito do design responsivo
+No passado, as telas dos monitores utilizados nos computadores tinham tamanhos semelhantes. Entretanto, com o avanço da tecnologia e o surgimento de outros dispositivos, como notebooks, tablets e smartphones, há diversos tamanhos de telas e, sendo assim, é importante que os usuários possam acessar as páginas web de forma adequada independentemente do dispositivo que estejam utilizando. Diante disso, surgiram alguns conceitos como design responsivo, em que as páginas web se adaptam ao tamanho de tela do dispositivo utilizado, proporcionando melhor experiência aos usuários. Essa abordagem implica layouts mais fluidos, em que os conteúdos podem ser exibidos de formas diferentes.
+
+
+O vídeo vai explicar a necessidade que surgiu de layouts mais fluidos, que garantam a possibilidade de acesso às páginas web de forma adequada independentemente do dispositivo que os usuários estejam utilizando.
+
+
+
+Segundo Knight (2011), o design responsivo é a abordagem que sugere que o design e o desenvolvimento devam responder ao comportamento e ao ambiente do usuário com base no tamanho da tela, na plataforma e na orientação do dispositivo por ele utilizado.
+
+
+Essa definição, na prática, implica que a página web/aplicação acessada deve ser capaz de, automaticamente, responder às preferências do usuário e, com isso, evitar que seja necessário construir diferentes versões de uma mesma página/aplicação para diferentes tipos e tamanhos de dispositivos.
+
+
+A origem do design responsivo
+
+
+O conceito de design responsivo teve sua origem no projeto arquitetônico responsivo. Tal projeto prega que uma sala ou um espaço deve se ajustar automaticamente ao número e fluxo de pessoas dentro dele. Para tanto, é utilizada uma combinação de robótica e tecnologia, como: sensores de movimento; sistemas de controle climático com ajuste de temperatura e iluminação; juntamente com materiais — estruturas que dobram, flexionam e expandem.
+
+
+Da mesma forma que no Projeto Arquitetônico Responsivo, arquitetos não refazem uma sala ou um espaço de acordo com o número, fluxo e as características de seus ocupantes, no ambiente web não devemos ter que precisar construir uma versão de uma mesma página de acordo com as características dos seus visitantes. Isso traria ainda outros custos, como identificar uma enorme combinação de tamanhos de tela e tecnologia, entre outros fatores, para criar uma mesma quantidade de páginas correspondentes.
+
+
+Design responsivo na prática
+
+
+Na prática, ao aplicarmos o conceito de design responsivo, fazemos uso de uma combinação de técnicas, como layouts fluidos, media query e scripts. A seguir veremos cada uma dessas técnicas em detalhes.
+
+
+Para entender o conceito de layout fluido, é necessário entender primeiro o que seria o seu oposto, ou seja, o layout fixo.
+
+
+
+Layout fixo
+
+Layout fluido
+
+
+Já os layouts fluidos fazem uso de unidades flexíveis — no lugar de definir as dimensões com o uso de quantidades fixas são utilizados valores flexíveis. Isso permite, por exemplo, que em vez de definir que o cabeçalho de uma página tenha 1366 pixels de largura, possamos definir que ele ocupe 90% do tamanho da tela do dispositivo que o visualiza. Daí o conceito de fluido, ou seja, de adaptabilidade ao campo de visão conforme dimensões do dispositivo que visualiza a página.
+
+
+
+Além dos valores percentuais, há outras unidades de medidas flexíveis, por exemplo:
+
+
+
+EM
+
+Unidade de medida tipográfica, estando relacionada à letra “M”. O tamanho base dessa unidade equivale à largura da letra “M” em maiúscula.
+
+
+REM
+
+Enquanto o EM está relacionado ao tamanho do elemento de contexto (ou seja, definimos o valor EM de um elemento tomando como base o seu elemento pai), no REM definimos que o elemento de contexto, o elemento pai, será sempre a tag HTML . Daí a letra “R” nessa unidade, que faz referência à raiz (root).
+
+Além das unidades, fixas e flexíveis já mencionadas, há ainda outras disponíveis. A listagem completa pode ser acessada no site do W3C – CSS Units.
+
+
+A função de apresentação, de estruturar o layout de uma página, no ambiente web, cabe às folhas de estilo (CSS). Trataremos mais a fundo do CSS ao longo do nosso estudo. Por ora, para definir o que é media query, falaremos um pouco também sobre CSS.
+
+
+Com base na afirmação de que cabe ao CSS estruturar o layout de uma página web, temos normalmente associada a uma página web uma ou mais folhas de estilo — que são códigos que definem aspectos de toda a página, como as dimensões dos elementos, cores de fundo, as cores e os tipos de fonte etc.
+
+
+Comentário
+Media query é a utilização de media types (tipos de mídia) a partir de uma ou mais expressões para definir formatações para dispositivos diversos. Com o seu uso podemos, por exemplo, definir que determinado estilo de um ou mais elementos seja aplicado apenas a dispositivos cuja largura máxima de tela seja igual ou menor que 600px.
+
+
+A imagem seguinte mostra um fragmento de código em que uma media query é utilizada para impedir que um menu lateral (o elemento HTML cuja classe equivale a “menu_lateral”) seja exibido caso a largura da tela do dispositivo seja menor que 360px.
+
+
+
+Exemplo de declaração de media query.
+
+O resultado das expressões utilizadas na media query pode ser verdadeiro ou falso. No caso de nosso exemplo, será verdadeiro sempre que a largura da tela do dispositivo que visualiza a página seja inferior a 360px. Do contrário, será falso. Ou seja, para todos os dispositivos cuja largura de tela seja superior a 360px, o código CSS em questão será ignorado.
+
+
+Atenção
+Na media query, podemos utilizar expressões como a definição do tipo de mídia (media type) — ou seja, um estilo que se aplica apenas a um ou mais tipos de documento, como a versão para impressão de uma página web, por exemplo — e a combinação entre escalas de valores.
+
+
+Scripts
+
+
+
+Quando falamos em scripts no lado cliente, no ambiente web, estamos falando de linguagens de programação que rodam no navegador e cujo exemplo mais comum é o JavaScript.
+
+
+Essa linguagem adiciona interação a uma página web, permitindo, por exemplo, a atualização dinâmica de conteúdos, o controle de multimídia, a animação de imagens e muito mais. No contexto do design responsivo, sua faceta mais importante é a de atualização dinâmica de conteúdo — e não só do conteúdo, mas também da apresentação dele.
+
+
+Design responsivo X Design adaptativo
+
+
+O conceito de design adaptativo, muitas vezes, confunde-se com o de design responsivo. Enquanto o segundo, como já visto anteriormente, consiste na utilização de uma combinação de técnicas para ajustar um site automaticamente em função do tamanho da tela dos dispositivos utilizados pelos usuários, no design adaptativo são usados layouts estáticos baseados em pontos de quebra (ou de interrupção), em que, após o tamanho de tela ser detectado, é carregado um layout apropriado para ele. Em linhas gerais, no design adaptativo, são criados layouts com base em seis tamanhos de tela mais comuns. A aplicação desses dois conceitos na prática acontece da seguinte forma:
+
+
+
+Design responsivo
+Medias queries são utilizadas, em conjunto com scripts, para criar um layout fluido que se adapte — por meio, sobretudo, da adequação das dimensões de seus elementos — ao tamanho da tela do dispositivo utilizado pelo visitante.
+
+
+Design adaptativo
+Um site é planejado e construído com a definição de seis layouts predefinidos, em que são previstos pontos de quebra para que a página se adapte às seis diferentes dimensões utilizadas.
+
+Poderíamos ainda dizer que o design responsivo é mais complexo, porém mais flexível. Já o adaptativo, mais trabalhoso, embora menos flexível.
+
+
+Como dito, no design responsivo é preciso criar uma série de combinações de media query para que o layout se adapte aos mais variados tamanhos de tela. Já no adaptativo, imaginemos uma situação em que foram definidos os seguintes layouts e quebras: 360px, 720px, 900px, 1080px, 1440px e 1800px. Caso a largura da tela do dispositivo seja superior a 360px e inferior a 720px — por exemplo, 700px —, será carregado o layout de 360px, que equivale, praticamente, à sua metade. É possível imaginar que, nesse caso, o resultado não seja visualmente muito agradável ou otimizado.
+
+
+Mobile first
+
+Uma das abordagens de design responsivo mais utilizadas atualmente é a mobile first. Tal abordagem está centrada no crescente uso de dispositivos móveis na navegação no ambiente web e defende que em primeiro lugar seja pensado o design para telas menores e, posteriormente, para telas maiores. Trata-se de um enfoque progressivo (progressive enhancement), no qual se parte dos recursos e tamanhos de tela disponíveis nos dispositivos menores, progredindo com a adição de recursos e conteúdo tendo em vista as telas e os dispositivos maiores.
+
+
+A partir da definição de mobile first podemos identificar o seu contraponto com o desenvolvimento web tradicional, em que temos o conceito de degradação graciosa (graceful degradation):
+
+
+As páginas web são projetadas tendo em vista dispositivos desktop e telas maiores e, posteriormente, adaptadas para dispositivos móveis e telas menores.
+
+
+A aplicação prática do mobile first consiste em planejar o desenvolvimento de um site priorizando os recursos e as características presentes nos dispositivos móveis, como o tamanho de tela, a largura de banda disponível e até mesmo recursos específicos, como os de localização, por exemplo.

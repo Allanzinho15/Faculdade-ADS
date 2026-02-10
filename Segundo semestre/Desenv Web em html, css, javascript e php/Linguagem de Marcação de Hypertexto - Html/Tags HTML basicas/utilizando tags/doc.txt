@@ -1,0 +1,51 @@
+Utilizando TAGs
+Como já vimos, uma página web é composta por uma série de tags, cada uma exercendo um papel específico. Para fixarmos toda a teoria vista até aqui, vamos realizar algumas atividades, nas quais usaremos algumas das tags HTML estudadas.
+
+
+Aplicando as tags na prática
+
+Assista ao vídeo e confira a proposta da confecção de uma página HTML com as tags: tags doctype, html, head, title e bod. Veja também um exemplo e como abrir a página no navegador.
+
+
+
+Roteiro de prática
+
+Siga os passos necessários para realização dessa prática. Para isso, você precisará de um editor de textos – pode ser o próprio Bloco de Notas do Windows ou o Nano Editor do Linux, ou então algo um pouquinho mais avançado, como o software (livre/gratuito) Notepad++ e de um navegador – Google Chrome, Firefox, MS Edge etc.
+
+
+Em seu editor de textos, crie a estrutura básica de uma página HTML (tags doctype, html, head, title e body). Salve o documento com a extensão “html” ou “htm”.
+Dentro da tag body, insira um título principal, seguido de um parágrafo. Aqui você deverá utilizar as tags HTML adequadas para tais funções.
+Por fim, insira uma linha de separação horizontal no documento, procedida de um subtítulo e de um novo parágrafo de texto. Ao final, salve o documento e visualize o resultado no navegador.
+
+Como resolução, teremos o seguinte código:
+
+
+Python (3.8.1)
+
+<!doctype html>
+<html>
+    <head>
+		<title>Título da Página</title>
+    </head>  
+    <body>
+		<h1>Primeiro título</h1>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+		Donec congue nisl a magna tempus dignissim. 
+		Curabitur eget porta lacus, eu bibendum leo. 
+		Mauris enim lorem, convallis eget sodales ullamcorper, semper eu purus. 
+		Aenean vitae varius ex. Maecenas sagittis diam quis tincidunt blandit. 
+		Donec id egestas nisl. Nullam sollicitudin arcu quis risus dignissim eleifend. 
+		Morbi ipsum augue, aliquet eget ante ac, feugiat interdum nisl.	
+		</p>
+		
+		<hr/>
+	
+		<h2>Subtítulo</h2>
+		<p>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+		Donec congue nisl a magna tempus dignissim. 
+		</p>
+	
+    </body>
+</html>

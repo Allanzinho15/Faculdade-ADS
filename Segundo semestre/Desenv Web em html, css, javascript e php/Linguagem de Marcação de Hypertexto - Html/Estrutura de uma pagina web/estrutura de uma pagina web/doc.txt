@@ -1,0 +1,124 @@
+Estrutura de uma página web
+Quando falamos de estrutura de uma página HTML, estamos nos referindo aos elementos – ou tags – que irão compor o documento em questão. Entre esses elementos, alguns são considerados obrigatórios para a correta renderização da página nos navegadores. Além desses, há outros elementos que possuem papéis distintos e são usados para diferentes fins, como criação de tabelas, listas, inserção de links etc. Esse conjunto de elementos, obrigatórios e básicos, forma a estrutura de uma página web escrita com HTML.
+
+
+Assista ao vídeo e entenda quais são os elementos da estrutura de uma página web, como os elementos obrigatórios, a raiz, o cabeçalho, o corpo, os elementos básicos e o funcionamento da HTML.
+
+
+
+Elementos obrigatórios
+
+Como vimos, a estruturação de uma página web tem início na definição do doctype a ser utilizado. Em seguida, é necessário inserir um conjunto de tags que, com o doctype, formam a sua estrutura básica, apresentada a seguir.
+
+
+Python (3.8.1)  
+
+<!doctype html>
+<html>
+    <head>
+    </head>  
+    <body>
+    </body>
+</html>
+
+
+Vamos entender o que significa cada tag?
+
+
+Raiz
+
+A tag inicial, após a declaração do doctype, é a . Esse elemento é a raiz do documento. Logo, lembrando que o código HTML é composto por uma estrutura hierárquica de tags, podemos dizer que a é a raiz da árvore do documento. Outra característica importante é que uma tag deve ser aberta e fechada.
+
+
+A declaração é a abertura, e o seu fechamento ocorre com a declaração . Com isso, observando o código anterior, é possível perceber que as demais tags estão contidas dentro da tag raiz, .
+
+
+Comentário
+Cabe destacar outro elemento importante referente à tag raiz: o atributo “lang”. Esse atributo global (por ser declarado na tag raiz) deve ser utilizado para definir o idioma da página – podendo também ser aplicado a outras tags, definindo o idioma delas. Veja alguns exemplos de sua declaração:
+
+<html lang=”en-US”> 
+<html lang=”en-GB”> 
+<html lang=”pt”>
+
+
+Cabeçalho
+
+A tag é chamada de cabeçalho do documento. Em uma analogia ao corpo humano, devemos vê-la como a “cabeça”, uma vez que contém as tags que serão usadas para manter todo o documento funcionando e em ordem.
+
+
+Vejamos agora as tags que fazem parte do cabeçalho e entenderemos para que servem. Vamos lá?
+
+
+1
+
+<title>
+
+É o título do documento, sendo visualizado na barra de título do navegador.
+
+
+2
+
+<meta>
+
+Engloba uma série de informações – comumente chamadas de metainformações – como a descrição da página, palavras-chave etc.
+
+
+3
+
+<script>
+
+É responsável pela inclusão e/ou definição de scripts relacionados ao documento.
+
+
+4
+
+<link>
+
+É responsável pela inclusão de folhas de estilo (externas) relacionadas ao documento. Também possibilita a inclusão de favicons (pequenos ícones que aparecem na barra de endereços do navegador).
+
+
+5
+
+<style>
+
+É responsável pelo vínculo de folhas de estilo ao documento − quando elas são declaradas diretamente no documento.
+
+
+Corpo
+
+Logo abaixo do cabeçalho, deve ser inserida a tag , responsável pela estruturação do documento, sobretudo de seu conteúdo, e também pela apresentação. Apesar disso, recomenda-se que a apresentação do documento seja feita por meio de folhas de estilo (CSS).
+
+
+Quando navegamos em um website, todo o conteúdo que vemos – textos, imagens e demais elementos – está contido na tag .
+
+
+Elementos básicos
+
+Embora as páginas web sejam diferentes umas das outras, elas tendem a compartilhar uma mesma estrutura. Isso significa que, além da estrutura apresentada anteriormente, uma página web também é composta por seções, sendo as mais comuns:
+
+
+Cabeçalho
+
+É a área inicial, logo na parte superior da página. Normalmente, nesta seção vemos título, logomarca ou algo do tipo.
+
+Barra de navegação
+
+É uma área que pode ser horizontal e/ou vertical, e contém os links para navegação pelas seções/páginas do site.
+
+Conteúdo
+
+É o conteúdo principal da página, o qual pode ser dividido em subseções.
+
+Barra lateral
+
+É possível conter tanto links de navegação quanto informações adicionais que forneçam complemento ao conteúdo principal.
+
+Rodapé
+
+É a área final da página, na qual normalmente são dispostos links, avisos de direitos autorais, informações complementares sobre o proprietário do site etc.
+
+
+
+Funcionamento da HTML
+
+Após concluído, o documento estruturado, composto por tags, deve ser salvo com a extensão “html” ou “htm”. Assim, ele estará pronto para ser lido por um dispositivo, como um navegador web – em um computador pessoal ou em um smartphone. Quando uma página web é exibida no navegador, o que vemos é o seu conteúdo: texto, imagens etc., e não o código ou as tags. Esse processo consiste no que chamamos de interpretação e renderização.

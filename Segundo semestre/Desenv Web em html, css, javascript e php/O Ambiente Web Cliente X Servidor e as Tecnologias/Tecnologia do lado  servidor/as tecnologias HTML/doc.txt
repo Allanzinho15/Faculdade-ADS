@@ -1,0 +1,109 @@
+Inserindo Javascript em código HTML
+Como foi estudado anteriormente, por meio de JavaScript, podemos alterar a parte comportamental de páginas web. JavaScript tem diversos recursos que podem ser explorados como eventos que ocorrem quando o usuário clicar no mouse, entre outros. JavaScript é uma linguagem de programação multiparadigma e o seu uso não se limita à alteração da parte comportamental de páginas web. Entretanto, o foco do nosso estudo se refere aos recursos tecnológicos que podem ser empregados no frontend. Portanto, com JavaScript, podemos alterar imagens que são exibidas na tela, estilo dos seletores, entre várias outras possibilidades. E, assim como aconteceu com HTML e CSS, é fundamental que os estudantes realizem atividades práticas para consolidar o conhecimento, de modo a explorarem todo o potencial desses recursos que, combinados, possibilitam a criação de páginas web interativas, eficientes e com boa usabilidade.
+
+
+O vídeo vai demonstrar de forma prática como explorar os recursos de JavaScript, com foco nos recursos que podem ser empregados no frontend, lembrando que essa linguagem não se limita apenas a alterar a parte comportamental de páginas web.
+
+
+
+Roteiro de prática
+
+Vamos considerar uma aplicação que utilize JavaScript para alterar a imagem que é exibida em uma página web. A partir de dois botões, o usuário pode definir se acende ou apaga a luz de uma lâmpada. A aplicação mostrada a seguir é uma adaptação de uma contida no site do W3schools.
+
+
+Considere que ilustramos uma página web com a imagem de uma lâmpada e dois botões: Acender e Apagar. Nesta imagem, a lâmpada está apagada e permanecerá assim até que o usuário clique no botão Acender.
+
+
+O que o JavaScript pode fazer?
+
+JavaScript pode alterar valores de atributos HTML.
+
+
+Neste exemplo, o JavaScript altera o valor do atributo src (source) de uma imagem.
+
+
+
+Quando o usuário clicar no botão ACENDER, a página web mudará conforme exposto a seguir.
+
+
+O que o JavaScript pode fazer?
+
+JavaScript pode alterar valores de atributos HTML.
+
+
+Neste caso, o JavaScript altera o valor do atributo src (source) de uma imagem.
+
+
+Agora, vamos analisar o código da página web, mostrado adiante.
+
+
+JavaScript (Node.js 12.14.0)
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>
+
+
+
+Inicialmente, vamos analisar a linha de código relacionada ao carregamento da imagem da lâmpada na página, conforme mostraremos agora.
+
+
+Plain Text
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+
+
+A tag tem alguns atributos que serão descritos a seguir:
+
+
+id: é o identificador (myImage) da imagem, que será utilizado pelo código JavaScript;
+ 
+
+src: se refere source ou origem da imagem. Neste caso, foi inserido o nome da imagem (pic_bulboff.gif);
+ 
+
+sytle: neste caso, está definindo a largura (width) da imagem para 100 pixels.
+
+Agora, vamos analisar a linha de código relacionada ao clique no botão de Acender.
+
+
+JavaScript (Node.js 12.14.0)
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Acenda a luz</button>
+
+
+
+
+
+A tag <button> cria o botão e também utiliza o evento onclick, que define a ação que será realizada quando o usuário clicar no botão denominado Acender. Vamos analisar mais detalhadamente:
+
+ 
+
+
+document.getElementById(‘myImage’): vincula a ação do clique do botão ao identificador myImage, que se refere à imagem estudada anteriormente.
+ 
+
+src: altera o conteúdo de src do identificador myImage, ou seja, altera a figura que será exibida na tela.
+ 
+
+pic_bulbon.gif: é o nome do arquivo da figura que será carregado na tela.
+
+De forma semelhante ao que acabamos de ver, quando o usuário clicar no botão Apagar, a figura será alterada novamente para pic_bulboff.gif, conforme mostraremos a seguir.
+
+
+JavaScript (Node.js 12.14.0)
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Apague a luz</button>

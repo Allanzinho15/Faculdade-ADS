@@ -1,0 +1,321 @@
+Princípio da HTML
+A HTML, desde a sua criação, no início de 1990, vem passando por uma série de transformações, em uma constante evolução. A versão inicial da HTML se baseou em uma outra linguagem, o SGML, herdando desta algumas de suas primeiras tags, como as de título (h1, h2, etc.), parágrafo (p), entre outras.
+
+
+Como principal diferença entre essas linguagens, vemos, na HTML, já em sua primeira versão, um dos princípios do funcionamento da web: a interligação entre documentos – sendo essa relação feita com o uso da tag a partir do seu atributo “href”.
+
+
+Ao longo dos anos, novas tags foram adicionadas ao HTML, assim como outras foram descontinuadas. A seguir, veremos mais sobre algumas das tags básicas da HTML.
+
+
+Usando tags HTML
+
+Assista ao vídeo e entenda como declarar tags, a composição de uma tags, tags textuais e semânticas e tags de formatação.
+
+
+
+Aprofundando o conceito de tags
+
+Como já aprendemos, a HTML é uma linguagem de marcação que utiliza tags para estruturar o seu conteúdo. Mas o que são tags?
+
+
+Tags são palavras, escritas entre os caracteres de menor “<” e maior “>” e que servem para informar ao navegador a estrutura e o significado do conteúdo inserido em uma página web.
+
+
+Um dos exercícios propostos anteriormente consistia em inserir na estrutura básica de tags da HTML − mais precisamente dentro da tag − um texto qualquer e, em seguida, salvar e carregar essa página no navegador. Como pôde ser visto, o navegador exibiu o texto, que provavelmente era curto.
+
+
+Agora, tente imaginar o site de um portal de notícias com todo o conteúdo amontoado dentro da tag . Embora exibido pelo navegador, tudo seria uma grande bagunça, uma confusão! Agora, imagine que seja possível dizer ao navegador que determinado conteúdo é o título de uma seção, sendo procedido de um parágrafo que diga respeito a tal seção. Você ainda pode ir além, inserindo uma imagem e vários outros elementos. Para isso servem as tags!
+
+
+Como declarar tags
+
+Antes de conhecermos mais a fundo as tags, a sua composição e os seus tipos, vamos voltar à sua criação.
+
+
+Primeiro, devemos ter em mente que existe um conjunto já definido de tags, padronizado pelo W3C. Logo, não é possível criarmos as nossas próprias tags HTML. Outro ponto importante é o modo como uma tag é escrita: como já sabemos, entre os sinais de menor e maior. Lembre-se, a tag deve, obrigatoriamente, ser fechada! Para isso, repetimos a declaração da tag e utilizamos uma barra “/” antes do seu nome.
+
+
+Observe os exemplos:
+
+
+Título de uma seção
+
+
+<h1> Título de uma seção </h1>
+
+Parágrafo contendo um texto
+
+
+<p> Parágrafo contendo um texto </p>
+
+
+Com base no primeiro exemplo, dizemos que a tag foi iniciada ao inserirmos o <h1> e fechada em </h1>.
+
+
+Existem algumas tags que fogem a essa regra. Por exemplo, a tag de quebra de linha:
+. Repare que, nesse caso, a tag é fechada com a utilização da “/” logo antes do sinal de maior.
+
+
+Atenção
+A tag de quebra de linha tornou-se obsoleta a partir da HTML5.
+
+
+Tipos e composição das tags
+
+As tags podem ser divididas nos seguintes tipos de acordo com as suas funções: estruturais, textuais e semânticas. Outra característica importante é o fato de que as tags também podem ter atributos, a respeito dos quais falaremos a seguir.
+
+
+Atributos
+
+Servem para que algumas características sejam adicionadas a um elemento, a uma tag. São compostos por um nome e por um valor.
+
+
+
+Exemplo
+
+<img src=”imagem.jpg” alt=”minha imagem”/>
+
+Essa tag é utilizada para a inserção de imagens no documento. Temos dois exemplos de atributos em sua declaração: “src” e “alt”, que são nomes de atributo; e “imagem.jpg” e “minha imagem” são seus valores, respectivamente.
+
+O atributo “src” define o endereço e o nome da imagem. Já o atributo “alt” define um texto alternativo a ser exibido no navegador caso a imagem não seja carregada.
+
+Há uma enorme variedade de atributos, assim como de relacionamentos entre esses atributos e as tags. O site do W3C contém a lista completa de atributos e combinações. Por ora, cabe destacar dois atributos de extrema importância no desenvolvimento web:
+
+
+
+ID
+
+Class
+Utilizado para definir um identificador, que deve ser único, para uma tag em um documento.
+
+
+
+
+Com base nesses dois tipos de identificação, é possível, por exemplo, fazer referência a um ou mais atributos para inserirmos estilização visual nas páginas, por meio de folhas de estilo ou eventos e interação, usando o Javascript.
+
+
+Tipos de tags: textuais e semânticas
+
+Agora, vamos conhecer os tipos de tag textuais e semânticas.
+
+
+Tags textuais: São responsáveis por organizar o conteúdo da página, ou seja, textos, mídias e links, por exemplo. Algumas das principais tags textuais são: <p>, <h1>, …, <h6>, <img> e <a>. Essas tags e suas funções serão descritas a seguir.
+Tags semânticas: A partir da HTML5, foram inseridas tags com a função semântica de organizar a estrutura de conteúdo de uma página.
+
+Logo, voltando ao exemplo de seções básicas de uma página, nossa página ficaria da seguinte maneira:
+
+
+
+
+
+Tags estruturais básicas de uma página web.
+Ao analisar a imagem, é possível perceber que existem tags específicas para cada seção do conteúdo. Essa é uma característica importante da HTML, chamada de semântica, que, nesse contexto, pode ser considerada a correta utilização de uma tag HTML de acordo com o seu conteúdo ou a sua finalidade.
+
+
+Em muitos casos, ao visualizarmos uma página no navegador, é indiferente o fato de as tags serem utilizadas para guardar determinado conteúdo. Entretanto, recomenda-se usá-las de acordo com sua função. Esse uso cria uma organização no documento que facilita tanto para você, que o escreveu, quanto para outras pessoas que venham a editar o mesmo documento. Além disso, muitos dispositivos fazem uso dessa marcação para uma correta interpretação do conteúdo ali contido.
+
+
+Vamos agora conhecer outras tags e suas respectivas funções!
+
+
+1
+
+<article>
+
+Inclui um bloco de conteúdo que deve ser usado quando se deseja inserir um artigo, como um post de um blog, por exemplo.
+
+
+2
+
+<section>
+
+Define uma seção no documento. É normalmente utilizado para agrupar seções. Por exemplo: uma <section> poderia conter vários <articles>.
+
+
+3
+
+<h1>, <h2>, <h3>, <h4>, <h5> e <h6>
+
+Apresenta a inserção de títulos ao longo da página. É uma boa prática que cada seção ou cada bloco de texto seja precedido por um título. Trata-se de uma tag hierárquica, logo, no título mais importante, deve ser usada a tag <h1>; no subtítulo seguinte, <h2>, e assim por diante. Além disso, uma página poderá conter várias <h1>, <h2>... <h6>. A exceção aqui fica por conta da tag <h1>, uma vez que é recomendado utilizar apenas uma em uma mesma página.
+
+
+4
+
+<p>
+
+Aponta a inserção de parágrafos de texto.
+
+
+5
+
+<pre>
+
+Aponta a inserção de um texto pré-formatado.
+
+
+6
+
+<div>
+
+Aponta o agrupamento de algum tipo de conteúdo que não tenha nenhuma semântica específica ou que não se encaixe bem dentro de uma tag semântica, embora não seja considerada semântica.
+
+
+7
+
+<span>
+
+Apresenta semelhança com a <div>. Entretanto, enquanto a <div> é um elemento não semântico no bloco (quando usada, quebra o conteúdo em uma seção), a <span> é embutida (não quebra o conteúdo, apenas o agrupa).
+
+ 
+
+
+8
+
+<a>
+
+Aponta a inserção de links.
+
+
+9
+
+<br>
+
+Aponta a inserção de uma quebra de linha.
+
+
+10
+
+<hr>
+
+Aponta a inserção de uma linha horizontal no documento. Normalmente, é utilizada quando se pretende alterar a temática de um texto.
+
+
+Tags de formatação <strong> e <bold> vs <b> e <em>
+
+
+A última versão HTML ainda dá suporte a algumas tags direcionadas à formatação visual de conteúdo. Embora possam ser substituídas por CSS, quatro dessas tags merecem atenção especial:
+
+
+
+1
+
+2
+
+3
+
+4
+
+
+1
+<b>
+
+Aplica o efeito de negrito em um texto.
+
+
+2
+<strong>
+
+Aplica o efeito de negrito em um texto e o marca como importante.
+
+
+3
+<i>
+
+Aplica o efeito de itálico em um texto.
+
+
+4
+<em>
+
+Aplica o efeito de itálico e dá ênfase a um texto.
+
+
+O destaque que tais elementos merecem diz respeito à função semântica que as tags e exercem.
+
+
+É interessante notar que ambas produzem o mesmo efeito visual das tags e , respectivamente, em um texto, ou seja, marcam em negrito e/ou itálico. Entretanto, há uma diferença importante entre essas tags que vai além da visualização do texto no navegador pela maioria dos usuários. A função semântica é perceptível em dispositivos de leitura de tela, que transformam o texto em áudio, e normalmente são utilizados por pessoas com deficiência visual.
+
+
+Tags obsoletas
+
+A cada nova versão da HTML, novas tags são criadas, assim como antigas são descontinuadas. As tags descontinuadas, chamadas de obsoletas, embora ainda possam ter suporte em boa parte dos navegadores, devem ser evitadas pelos seguintes motivos:
+
+
+Porque, provavelmente, foram substituídas por novas tags, com melhor semântica.
+Por causa do risco de desconfigurarem o conteúdo da página, uma vez que os browsers podem deixar de suportá-las a qualquer momento.
+
+Veja alguns exemplos de tags obsoletas!
+
+
+1
+
+<applet>
+
+Identifica a inclusão de um applet Java.
+
+
+2
+
+<center>
+
+Centraliza horizontalmente o conteúdo de um bloco.
+
+
+3
+
+<dir>
+
+Apresenta container para lista de diretórios ou arquivos.
+
+
+4
+
+<font>
+
+Determina características relacionadas a fontes de um determinado elemento.
+
+
+5
+
+<image>
+
+Apresenta relação ancestral com a tag , que era usada nas primeiras versões HTML para a inserção de imagens.
+
+
+Atualmente consideradas obsoletas, as tags
+
+e ainda são usadas em muitas páginas HTML. Ambas se enquadram no conceito de que não é função da HTML cuidar da apresentação. Logo, as duas foram substituídas por propriedades CSS.
+
+
+1. A Estrutura de Identidade
+Estas tags definem as grandes áreas da sua página:
+
+<header> (Cabeçalho): É a "testa" de uma seção ou da página inteira. Geralmente contém o logotipo, o título principal ou o menu de navegação.
+
+<nav> (Navegação): Reserva um espaço específico para os links de menu. A lógica é dizer: "Se você quer ir para outro lugar do site, procure aqui dentro".
+
+<footer> (Rodapé): É o "pé" da página. Contém informações de contato, direitos autorais (copyright) ou links secundários.
+
+2. O Conteúdo Principal
+Dentro do corpo da página, organizamos a informação de forma hierárquica:
+
+<main> (Principal): Esta é a tag mais importante para o conteúdo. Ela diz ao navegador: "O assunto principal desta página está aqui". Só deve existir um <main> por página.
+
+<section> (Seção): Serve para agrupar conteúdos que têm um tema comum. Por exemplo, em uma página sobre futebol, você teria uma <section> para "Tabela" e outra para "Notícias".
+
+<article> (Artigo): A lógica aqui é a independência. Use esta tag para um conteúdo que faria sentido se fosse recortado da página e lido sozinho, como um post de blog, um comentário ou uma notícia específica.
+
+3. Elementos de Apoio e Detalhes
+<aside> (Lateral): Serve para conteúdos relacionados, mas que não são o foco principal. Sabe aquela barra lateral com "posts mais lidos" ou banners de propaganda? Essa é a função do <aside>.
+
+<figure> e <figcaption>: Usadas para imagens que ilustram o texto. A lógica é que o <figure> contém a imagem e o <figcaption> é a legenda explicativa logo abaixo.
+
+Por que essa lógica é "perfeita"?
+Se você usar apenas <div> (que não tem significado nenhum) para tudo, o computador vê apenas "caixas vazias". Quando você usa tags semânticas:
+
+Acessibilidade: Cegos que usam leitores de tela conseguem "pular" direto para o <nav> ou para o <main> para ganhar tempo.
+
+SEO (Busca do Google): O robô do Google dá mais valor ao texto que está dentro de um <article> do que ao texto que está perdido em uma <div> qualquer.
+
+Manutenção: Quando outro programador ler seu código, ele saberá exatamente o que cada parte faz só de olhar o nome da tag.

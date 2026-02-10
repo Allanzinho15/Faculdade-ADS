@@ -1,0 +1,40 @@
+Criando a primeira página HTML
+Após termos visto a estrutura de uma página HTML, chegou a hora de colocarmos a mão na massa para vermos, na prática, como funciona um documento HTML.
+
+
+Assista ao vídeo e entenda o roteiro da atividade descrita logo a seguir. Observe, ainda, os aspectos importantes e implícitos ao conhecimento necessário para a criação de uma página HTML.
+
+
+
+Roteiro de prática
+
+Nesta prática, seguindo o roteiro, você codificará sua primeira página HTML. Para isso, além dos conhecimentos vistos anteriormente, será necessário usar as seguintes ferramentas: um editor de textos – pode ser o próprio Bloco de Notas do Windows ou o Nano Editor do Linux, ou então algo um pouquinho mais avançado, como o software (livre/gratuito) Notepad++, e também de um navegador – Google Chrome, Firefox, MS Edge etc.
+
+
+Siga o passo a passo:
+
+
+Com o seu editor de textos aberto, insira a estrutura básica demonstrada no código da imagem “Estrutura básica de uma página web”. Feito isso, salve seu documento com a extensão “html” ou “htm”. Agora, basta clicar duas vezes sobre o documento criado para que ele seja exibido no navegador.
+Agora que você já viu o seu primeiro código HTML no navegador – na verdade, você viu uma página em branco – avance um pouco: relembre o que aprendeu até aqui, insira uma tag
+
+Python (3.8.1)
+
+<html>
+ <head>
+	
+		<title>Título da Página</title>
+	
+ </head>  
+ <body>
+	
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+		Donec congue nisl a magna tempus dignissim. 
+		Curabitur eget porta lacus, eu bibendum leo. 
+		Mauris enim lorem, convallis eget sodales ullamcorper, semper eu purus. 
+		Aenean vitae varius ex. Maecenas sagittis diam quis tincidunt blandit. 
+		Donec id egestas nisl. Nullam sollicitudin arcu quis risus dignissim eleifend. 
+		Morbi ipsum augue, aliquet eget ante ac, feugiat interdum nisl.	
+	
+	
+ </body>
+</html>

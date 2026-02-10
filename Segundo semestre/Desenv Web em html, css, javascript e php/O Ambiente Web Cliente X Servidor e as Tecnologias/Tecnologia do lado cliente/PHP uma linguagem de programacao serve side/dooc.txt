@@ -1,0 +1,88 @@
+PHP: uma linguagem de programação server side
+PHP é uma linguagem de programação que possibilita a criação de scripts que atuam no lado do servidor, assim como outras linguagens, como Java, Python, entre outras. Com PHP, podemos extrair dados provenientes de requisições de clientes, fazer integração com banco de dados, é multiparadigma e, dessa forma, é possível trabalhar com paradigma orientado a objetos, entre outros recursos. PHP é interpretada e, sendo assim, necessita de um servidor web para funcionar. Outro aspecto importante é que os scripts em PHP são convertidos para HTML. Então, os usuários veem apenas o código HTML gerado, não vendo o código PHP de origem.
+
+
+O vídeo vai abordar a linguagem PHP e mostrar sua importância para permitir a integração com o banco de dados e possibilitar a criação de scripts que atuam do lado do servidor.
+
+
+
+Uma das principais funções das linguagens de programação server side é permitir o acesso a informações armazenadas em bancos de dados. Uma vez que apenas utilizando HTML e JavaScript isso não é possível, faz-se necessária a utilização de uma linguagem no lado servidor. Entre as diversas linguagens disponíveis no lado servidor estão o Java, o Python, o ASP, o .NET e o PHP, que conheceremos um pouco mais ao longo deste estudo.
+
+
+PHP
+
+PHP (Hypertext Preprocessor) é uma linguagem de programação baseada em script, open source e destinada, sobretudo, ao desenvolvimento web. Trata-se de uma linguagem criada para ser simples, tendo nascida estruturada e, posteriormente, adotado o paradigma de orientação a objetos — apenas 10 anos depois da sua criação.
+
+
+Saiba Mais
+O principal foco do PHP são os scripts do lado servidor, dando suporte a funções como coleta e processamento de dados oriundos de formulários HTML, geração de conteúdo dinâmico com o acesso a bancos de dados, entre outras. Além do foco nos scripts no lado servidor, é possível também utilizar o PHP por meio de scripts em linha de comando e na criação de aplicações desktop (com a utilização da extensão PHP-GTK), embora não seja a melhor linguagem para isso.
+
+
+Como o PHP funciona
+
+O PHP é uma linguagem interpretada, ou seja, ela precisa “rodar” sobre um servidor web. Com isso, todo o código gerado é interpretado pelo servidor, convertido em formato HTML e então exibido no navegador.
+
+
+Etapa 1: O código PHP gerado é interpretado pelo servidor.
+Etapa 2: Esse código é convertido em formato HTML.
+Etapa 3: O código é exibido no navegador.
+
+Logo, o código fonte não pode ser visto no lado cliente, mas apenas o HTML gerado.
+
+
+Outra característica importante do PHP é poder ser utilizado na maior parte dos sistemas operacionais, assim como em vários servidores web diferentes, como o Apache, o IIS e o Nginx, entre outros.
+
+
+Anatomia de um script PHP
+
+Um script PHP é composto por código delimitado pelas tags . A última, de fechamento, não é obrigatória. Devido à sua simplicidade, um mesmo script PHP pode conter tanto código estruturado quanto orientado a objetos. Pode até conter código de marcação HTML. Neste último caso, o código próprio do PHP deverá ficar entre as tags de abertura e fechamento. A imagem a seguir mostra dois exemplos de código, um apenas em PHP e outro mesclado com HTML. Ao analisarmos os códigos, inicialmente é importante notar que ambos possuem a extensão “.php”. Outras extensões possíveis, mas atualmente em desuso, são “.php3”, “.php4”, “.phtml”.
+
+
+
+
+Exemplos de código PHP.
+No primeiro código da imagem, temos as tags de um arquivo HTML comum, com exceção do código inserido dentro das tags . Aqui temos a função “echo”, que serve para imprimir algo na tela, associado a uma frase. Quando visualizado no navegador, o código será renderizado como HTML normal. Caso exibamos a fonte, só será possível ver as tags HTML e o conteúdo, sem o código PHP em questão.
+
+
+Na segunda parte da imagem, temos um exemplo de código em que são definidas duas variáveis, $nome e $email, que recebem dois valores enviados de um formulário HTML, por meio do método POST. Daí a utilização do array superglobal $_POST — cujos índices ‘nome’ e ‘email’ correspondem ao atributo ‘name’ dos campos input do formulário. A seguir, é utilizada a função “echo” para a impressão de uma frase e do conteúdo das variáveis recebidas. Repare ainda na utilização, mais uma vez, de uma tag html, a
+, em meio ao código PHP.
+
+
+Sintaxe
+
+Veja a seguir um resumo sobre a sintaxe do PHP.
+
+
+
+Variáveis
+No PHP, as variáveis são criadas com a utilização do símbolo de cifrão ($). Além disso, PHP é case sensitive, ou seja, sensível a letras maiúsculas e minúsculas, pois faz diferença quando utilizamos uma e outra.
+
+
+Tipos de dados
+O PHP é uma linguagem fracamente tipada. Logo, embora possua suporte para isto, não é necessário definir o tipo de uma variável em sua declaração. Os tipos de dados disponíveis em PHP são: booleanos, inteiros, números de ponto flutuante, strings, arrays, interáveis (iterables), objetos, recursos, NULL e call-backs.
+
+
+Operadores condicionais
+No PHP, há suporte às condicionais if, else, if e else ternários, if else e switch.
+
+
+Laços de repetição
+No PHP estão disponíveis os laços for, foreach, while e do-while.
+
+
+Funções e métodos
+O código PHP possui uma grande quantidade de funções e métodos nativos.
+
+Inclusão de scripts dentro de scripts
+
+O PHP permite a inclusão de um script dentro de outro script. Isso é muito útil, sobretudo se pensarmos no paradigma de orientação a objetos, em que temos, em um programa, diversas classes, codificadas em diferentes scripts. Logo, sempre que precisarmos fazer uso de uma dessas classes, de seus métodos ou atributos, basta incluí-la no script desejado. Para incluir um script em outro, o PHP disponibiliza algumas funções:
+
+
+Include
+Require
+Include once
+Require_once
+
+Acesso ao sistema de arquivos
+
+Por meio do PHP, é possível ter acesso ao sistema de arquivos do servidor web. Com isso, pode-se por exemplo, manipular arquivos e diretórios, desde a simples listagem à inclusão ou à exclusão de dados.
