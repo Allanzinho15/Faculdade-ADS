@@ -1,0 +1,67 @@
+Validação de dados em formulários
+Uma boa prática, quando utilizamos formulários HTML, é validarmos os dados submetidos. Isso nos garante que serão cumpridos alguns requisitos preestabelecidos, como a quantidade de caracteres ou o formato do dado, por exemplo. O processo de validação, assim como toda a HTML, tem mudado ao longo dos anos. Se, anteriormente, tal processo era restrito ao uso de outra linguagem, o Javascript, hoje já é possível, na HTML5, usarmos alguns de seus atributos para tal finalidade.
+
+
+Assista ao vídeo e entenda como funciona a validação aplicando a técnica para validar um código de rastreamento do correio brasileiro, que é composto por duas letras, seguidas por nove algarismos e letras BR.
+
+
+
+Para explicarmos a criação de um formulário HTML, apresentamos tags e atributos que nos permitem montar um formulário já funcional, pronto para ser preenchido e submetido. Entretanto, há outro aspecto relacionado a esses elementos que precisa ser discutido: a validação de dados.
+
+
+A validade dos dados concorre com a utilização das tags corretas que permitam a melhor experiência possível aos usuários. Podemos dizer que, ao pensarmos na estrutura do formulário, nas tags e nos atributos, estamos pensando em quem vai preencher o formulário.
+
+
+Exemplo
+Imagine que podemos permitir a inserção de uma data de nascimento com a digitação de valores ou a partir da seleção em um elemento do tipo calendário. Agora pense em quem vai receber as informações provenientes do formulário. Em um campo de texto simples, sem nenhum tipo de padrão, serão recebidas as mais variadas combinações de dados. Por exemplo: 01 de janeiro de 1980; 01/01/1980; 01011980 etc. Imaginando esse cenário, é possível entender a importância da validação das informações.
+
+
+Como funciona a validação?
+
+A validação é um processo que pode e deve ocorrer tanto no lado cliente – no navegador – quanto no lado servidor. Pensando no lado cliente, essa ação ocorre assim que o formulário é submetido, antes que os dados sejam recebidos pelo servidor de destino.
+
+
+Há pouco tempo, para validar um formulário, era necessário usar o Javascript. Entretanto, na HTML5 é possível fazê-lo de forma nativa, sem o uso de linguagens de programação.
+
+
+Tipos de validação
+
+Na HTML5, há dois tipos possíveis de validação:
+
+
+Tipagem
+
+
+Um tipo verifica se o dado inserido em um campo é consistente com o seu tipo e/ou padrão (pattern).
+
+
+Obrigatoriedade
+
+
+Outro tipo verifica se um campo obrigatório foi preenchido.
+
+
+Vejamos o exemplo!
+
+
+Exemplo
+Quanto à primeira validação, podemos citar novamente o elemento input do tipo “e-mail”.
+
+Um endereço de e-mail é um dado que possui uma formatação predefinida: precisa ter o “@”; precisa ter a extensão de domínio “.com / .com.br” etc.
+
+Logo, declarar uma tag input com o type “e-mail” faz com que, naturalmente, seja validado o seu conteúdo.
+
+
+Algo semelhante acontece com a utilização do atributo “pattern”, sendo que, nesse caso, é você quem define o que um campo precisa conter para ser considerado válido. Por exemplo: determinar o formato desejado para um campo que receba um número de telefone.
+
+
+Você pode definir que ele contenha o DDD, com dois caracteres numéricos, seguido por dois conjuntos de números – um contendo 5 e outro contendo 3 ou 4 caracteres – o que geraria este código: pattern=“
+
+
+[0-9]{5}-[0-9]{3,4}$”
+
+
+Além da validação pelo tipo de dado, há também a validação de campos obrigatórios. Logo, quando precisamos que determinado campo não fique em branco, usamos o atributo “required”.
+
+
+O comportamento padrão da HTML5 é validar os dados quando ocorre o envio do formulário. Entretanto, é possível desativar essa funcionalidade. Para isso, deve ser atribuído o atributo “novalidate” à tag <form>.

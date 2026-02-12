@@ -1,0 +1,156 @@
+Formulários HTML
+Tudo o que vimos até este ponto nos permitiu criar um documento HTML estruturado contendo textos, listas, tabelas, vídeo e áudio. Neste módulo, abordaremos o formulário. Esse elemento é um dos mais utilizados para prover interação entre usuários e uma página web ou até mesmo um aplicativo mobile.
+
+
+Exemplo
+Usamos formulários quando visitamos um site e desejamos solicitar uma informação adicional ou um serviço, nos cadastramos para receber e-mails com ofertas ou realizamos uma reclamação.
+
+
+Ao longo deste módulo, veremos os elementos básicos necessários para a construção de formulários HTML.
+
+
+Assista ao vídeo e entenda os principais componentes de um formulário e as tags associadas, com exemplos da sua aplicação.
+
+
+
+Estrutura do formulário
+
+A exemplo do que vimos com as tabelas, o formulário é composto por uma tag principal, um container, e várias tags “filhas”. Fazem parte de sua estrutura tags como as de campos de texto, de uma ou mais linhas, campos de seleção e botões.
+
+
+Além disso, para maior clareza, também usamos tags para informar a função dos campos do formulário. São as chamadas label. Veja agora uma lista as tags comumente usadas em um formulário. Vamos lá?
+
+
+1
+
+<form>
+
+Container principal do formulário.
+
+
+2
+
+<input>
+
+Campo do formulário. Como há diversos tipos de campos, fazemos uso do atributo “type” para informar o tipo a ser utilizado – conforme veremos mais adiante.
+
+
+3
+
+<textarea>
+
+Campo de texto de múltiplas linhas.
+
+
+4
+
+<select> e <option>
+
+Campos de seleção, onde o container é definido pela tag <select> e os itens pela tag <option>.
+
+
+5
+
+“button”
+
+Campo de botão. Permite que uma ação seja executada no formulário – enviar o formulário; limpar os dados etc.
+
+
+6
+
+“label”
+
+Campo usado para definir um título, uma legenda, que descreva para que serve cada campo do formulário.
+
+
+Conhecendo melhor os elementos e atributos do formulário
+
+Na próxima imagem, temos o fragmento HTML correspondente a um formulário. É possível observar as tags já mencionadas, assim como algumas tipificações nos campos e novos atributos, que serão abordadas a seguir:
+
+
+
+É fácil identificar para o que serve cada campo do formulário anterior ao lermos o conteúdo da tag <label>. Além disso, a tag <fieldset> cria seções dentro do formulário, ajudando a separar os campos no código e a visualizar a página no navegador.
+
+ 
+
+
+Isso fica ainda mais claro quando vinculamos ao <fieldset> a tag <legend>.
+
+ 
+
+
+Como vimos, é necessária uma atenção especial aos atributos quando tratamos de formulários. Para melhor visualização e entendimento, todos os atributos contidos no código mencionado são descritos a seguir:
+
+
+<form>
+
+action
+
+Define a URL (endereço) para a qual os dados do formulário serão enviados.
+
+
+<form>
+
+method
+
+Define o método HTTP (POST ou GET) para envio dos dados.
+
+
+<label>
+
+for
+
+Vincula a tag <label> ao campo ao qual ela se refere. Esse vínculo faz com que seja possível clicar na label para ativar o campo relacionado.
+
+
+<input>
+
+minlength, maxlength
+
+Define a quantidade de caracteres mínima e máxima, respectivamente, permitida em um campo.
+
+
+<input> e <button>
+
+type
+
+Define o tipo do campo e, sobretudo, como ele se comporta.
+
+
+<option>
+
+value
+
+Define o valor do campo, e também pode ser utilizado na tag <input>. No caso da <option>, os seus valores possíveis são previamente definidos quando a página é codificada. Já na <input>, embora também possa ser previamente definido, normalmente é o usuário quem define o seu valor.
+
+
+Atributos do formulário: o atributo type
+
+Este atributo, dada a sua importância, precisa ser visto de forma aprofundada. Como já dito, além de definir o tipo do campo, também determina como este se comporta. No código apresentado na tabela, é utilizado apenas o tipo “text”, que, no caso da tag “input”, corresponde ao seu valor padrão.
+
+
+Ao longo de vários anos, havia apenas esses tipos disponíveis na HTML. Com isso, algumas necessidades − fossem de inserção de tipos de dados específicos fossem de validação de valores − não podiam ser supridas apenas com a utilização de tags, sendo necessário combinar códigos Javascript e CSS. Por exemplo: um campo para seleção de data.
+
+
+Além disso, novos tipos de dados, com características específicas, ganharam importância ao longo dos anos. Podemos citar, como exemplo, o e-mail. Embora seja um campo de texto, ele possui um padrão de composição próprio, como o uso de @, entre outras características.
+
+
+Novos atributos e tipos
+
+Pensando nas deficiências citadas, a HTML5 definiu novos tipos de entrada e também novos atributos relacionados a formulários. Destacamos alguns desses novos atributos e tipos, veja!
+
+
+
+Atributos
+
+placeholder Função: Exibir um texto no campo de input. Comentário: Utilizado para dar uma dica ao usuário sobre o dado a ser inserido.
+required Função: Determinar se um campo é obrigatório. Comentário: Utilizado na validação dos dados de um formulário.
+autofocus Função: Fixar o foco no campo. Comentário: Utilizado quando desejamos que, ao carregar o formulário, um determinado campo seja focado.
+pattern Função: Validar o valor de um campo com base em uma expressão regular. (as RegEX – expressões regulares – podem ser consideradas um recurso de linguagem de programação para a análise e manipulação de texto) Comentário: O campo de tel. é um bom exemplo de utilização desse atributo. Com ele podemos, por exemplo, determinar a quantidade de caracteres e o formato esperado para um campo.
+
+Tipos
+
+tel Função: Inserir números de telefone. Comentário: Para uma melhor usabilidade, deve ser usado em conjunto com o atributo “pattern”.
+datetime Função: Inserir datas com o fuso horário em UTC a partir de um calendário.
+date Função: Inserir datas sem fuso horário a partir de um calendário.
+number Função: Inserir números. Comentário: Cria um componente diferente do imput normal, em que, por meio de setas, os números podem ser incrementados ou decrementados.
