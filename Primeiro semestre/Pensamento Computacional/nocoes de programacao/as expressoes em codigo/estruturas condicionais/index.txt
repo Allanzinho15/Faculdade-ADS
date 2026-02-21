@@ -1,0 +1,108 @@
+Estruturas condicionais na prática
+Agora chegou a hora de aplicarmos o uso de estruturas condicionais na prática, sempre no contexto de manipulação de imagens digitais.
+
+
+Prática 1
+
+
+Considere a seguinte imagem:
+
+
+
+Imagem representativa do esquema de Cores RGB.
+
+Imagine que desejamos escrever um código de computador que altere somente a região em vermelho, transformando-a em cinza.
+
+ 
+
+Para entender como é possível escrever um código de computador a fim de alterar a região em vermelho, considere a tabela 7, que indica como cada cor é representada segundo o esquema RGB:
+
+
+Esquema RGB	R - Vermelho	G - Verde	B - Azul
+Branco	255	255	255
+Azul	0	0	255
+Vermelho	255	0	0
+Verde	0	255	0
+Amarelo	255	255	0
+Magenta	255	0	255
+Ciano	0	255	255
+Preto	0	0	0
+Escala de cinza     (1,1,1) cinza muito escuro (quase preto) 
+(2,2,2) 
+(3,3,3) 
+(4,4,4) 
+(5,5,5) 
+(6,6,6) 
+. 
+. 
+. 
+(252,252,252) 
+(253,253,253) 
+(254,254,254) cinza muito claro (quase branco) 
+Tabela: Esquema RGB – Exemplos de cores comuns.
+Tabela 1: Esquema RGB – Exemplos de cores comuns.
+Guilherme Dutra Gonzaga Jaime.
+
+Note que o vermelho equivale ao código RGB(255,0,0). Uma primeira tentativa para transformar a região vermelha em cinza seria pensar nesse código RGB.
+
+ 
+
+Então, podemos escrever um código que ordena ao computador que, para cada pixel da imagem, verifique se o componente vermelho é 255. Em caso positivo, ajuste a cor do pixel para cinza, ou seja, RGB(120,120,120).
+
+
+Vamos experimentar?
+
+
+No código-fonte à esquerda estão listadas as linhas de código que representam, em código de computador, o passo a passo da tentativa do parágrafo anterior. Clique em Rodar/Executar e observe o resultado.
+
+
+
+Veja a solução a seguir:
+
+
+
+Mostrar solução
+
+Repare que não só a região vermelha foi transformada em cinza, mas também as regiões amarelo, branco e magenta. Colorimos mais do que a região proposta pelo exercício. Observe a tabela 7. Você notará que as cores amarelo, branco e magenta também possuem, assim como o vermelho, o valor 255 para o componente R.
+
+ 
+
+Então, nossa instrução if ao computador precisa ser mais específica.
+
+
+Relembrando
+O computador faz exatamente o que ordenamos. Na prática, precisamos checar três tarefas: para que apenas a região vermelha seja ajustada para cinza, devemos verificar se o Red é igual a 255, se o Green é igual a 0 (zero), e se o Blue é igual a 0 (zero).
+
+
+Então, você precisará substituir no código-fonte toda a linha da instrução if pela instrução a seguir:
+
+
+JavaScript (Node.js 12.14.0)
+
+
+Light Mode
+
+Copiar
+
+Você pode usar o recurso de copiar e colar para isso:
+
+
+
+Em seguida, clique em Rodar/Executar e observe que o objetivo desta prática será alcançado.
+
+
+
+Mostrar solução
+
+Veja: 
+
+
+Observe que, com essa ação, você programou para que a região somente vermelha fosse ajustada para cinza, mas, ao mesmo tempo, permitiu que as regiões de interseção entre as três cores se apresentassem sem alteração.
+
+
+Prática 2
+
+
+Preparamos um vídeo abordando outra prática.
+
+

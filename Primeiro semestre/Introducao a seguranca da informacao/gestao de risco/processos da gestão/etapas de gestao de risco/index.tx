@@ -1,0 +1,138 @@
+Etapas da gestão de riscos
+A GR compreende as seguintes etapas:
+
+
+Definição do contexto
+
+Inicialmente, deve-se fazer a listagem e um breve resumo dos objetivos organizacionais, pois, se seus riscos não forem atingidos, eles terão de ser gerenciados. Dessa forma, é feito um levantamento de informações relevantes sobre o ambiente no qual será executada a análise de riscos.
+
+Deve estar claro nesse levantamento o entendimento sobre as atividades da organização e os propósitos que a levaram à GSI, como suporte ao SGSI, conformidade legal, plano de continuidade de negócios e de resposta a incidentes (BEZERRA, 2013).
+
+Bezerra (2013) ainda elenca os itens que devem constar nessa análise da organização:
+
+
+
+Itens da análise da organização
+
+ 
+
+Propósito principal da organização
+Negócio
+Missão
+Visão de futuro
+Valores
+Estrutura organizacional
+Organograma
+Estratégias
+Produtos
+Parceiros
+Terceiros
+Instalações
+Funcionários
+ 
+
+Por fim, são estabelecidos parâmetros para o gerenciamento dos riscos.
+
+Processo de análise/avaliação de riscos de segurança da informação
+
+Esta etapa se divide em:
+
+
+
+A análise/avaliação de riscos consiste nas seguintes atividades: Análise de riscos (Seção 8.2) compreende: - Identificação dos riscos (Seção 8.2.1); - Estimativa dos riscos (Seção 8.2.2); - Avaliação de riscos (Seção 8.3).
+
+A identificação de riscos mapeia os eventos de risco que podem impedir uma empresa de atingir os objetivos desejados. A análise de riscos, por sua vez, compreende a identificação e a estimativa deles.
+
+Pode-se começar com uma lista dos eventos de risco associados aos objetivos institucionais, evoluindo, em seguida, para um nível maior de detalhamento. Após realizar o mapeamento e a relação desses eventos, listam-se as suas possíveis causas e consequências de cada um deles.
+
+Já a estimativa de riscos mede os eventos de risco por meio do cálculo do nível de risco. Deve-se iniciar tal processo realizando o cálculo do nível de risco bruto.
+
+Para isso, são avaliados a probabilidade e o impacto de um evento de risco antes que uma medida de controle qualquer seja implementada, conforme os exemplos das duas tabelas a seguir:
+
+
+
+Medição qualitativa da probabilidade – exemplificação. Probabilidade: chance de um evento acontecer.Tabela: Peltier, 2005, p. 173
+
+
+Medição qualitativa da probabilidade – exemplificação. Impacto: medida para avaliar a magnitude de uma eventual perda.Tabela: Peltier, 2005, p. 173)
+
+Em seguida, é avaliada a qualidade das medidas de controle que existem para impedir o risco bruto. Obtém-se, com isso, o risco residual, ou seja, o que sobra do bruto depois de ele ser mitigado pela atividade de controle.
+
+Monta-se uma tabela em ordem decrescente em relação ao nível de risco residual para verificar os eventos de risco que devem ser tratados com prioridade. Para cada risco considerado prioritário, elabora-se uma matriz de impacto versus probabilidade. Observemos esta tabela:
+
+
+
+Matriz de riscos.
+
+Tabela: Brasil, 2019.
+
+A avaliação de riscos, por sua vez, define as medidas de tratamento a serem implementadas para cada um dos eventos de risco, entre as quais destacamos:
+
+
+
+Ao lado de cada evento de risco, deve ser informada a forma de tratamento a ser adotada. Isso é feito tendo como base o nível de risco residual e o apetite a risco identificado na definição do contexto.
+
+
+Tratamento do risco de segurança da informação
+
+Esta etapa estabelece como cada opção de tratamento é implementada.
+
+
+Exemplo
+Caso um evento de risco seja deliberado para ser mitigado, é necessária a indicação, entre outros itens, da medida de controle responsável por fazer essa mitigação, do seu prazo e de quem é o responsável por implementá-la.
+
+
+Toda medida de tratamento deve conter a indicação dos responsáveis por sua implementação – no caso, os gestores do risco. No tratamento do risco, são selecionadas e implementadas medidas de forma a reduzir os riscos identificados. Desse modo, o plano de tratamento do risco (PTR) é definido. A seguir, são feitas recomendações para que a empresa crie ou modifique os mecanismos de segurança existentes.
+
+Para cada forma de ameaça, deve ser definida uma ou mais medidas de proteção (controles). Tais medidas precisam ser aplicadas nos ativos, além de seus custos. Um exemplo disso é o uso de criptografia e senha robusta.
+
+Os resultados serão as respostas às seguintes questões:
+
+
+O que deve ser protegido?
+A que custo?
+De quem proteger?
+Com que riscos?
+
+No custo desejado, a proteção provavelmente não dará uma segurança total.
+
+
+Medidas de controle ou proteção
+
+As medidas de controle ou proteção podem ser classificadas como:
+
+
+Preventiva: Evita que incidentes ocorram.
+Desencorajadora: Desencoraja a prática de ações.
+Monitoradora: Monitora o estado e o funcionamento.
+Corretiva: Corrige falhas existentes.
+Recuperadora: Repara danos causados por incidentes.
+Reativa: Reage a determinados incidentes.
+Detectora: Detecta a ocorrência de incidentes.
+Limitadora: Diminui os danos causados.
+
+Aceitação do risco de segurança da informação
+
+A decisão de aceitar os riscos residuais não basta: é necessário se responsabilizar por ela. Afinal, é responsabilidade da política de gestão de riscos oferecer suporte a essa tomada de decisão.
+
+
+Comunicação do risco de segurança da informação
+
+Recomenda-se que as informações sobre riscos sejam trocadas ou compartilhadas entre o tomador de decisão e as outras partes interessadas para haver um consenso sobre como eles devem ser administrados.
+
+
+Monitoramento e análise crítica de riscos de segurança da informação
+
+Nesta etapa, é avaliado se tudo o que foi feito saiu de acordo com o planejado. Além disso, são averiguados, dentre outros, os seguintes casos:
+
+
+Necessidade de atualizações.
+Listagem correta dos objetivos.
+Impossibilidade de um risco ser visto como esperado pelas atividades de controle.
+Cálculo correto dos níveis de risco.
+
+A imagem a seguir ilustra uma visão do processo de gestão de risco (GR) segundo a norma ABNT NBR ISO/IEC 27005:
+
+
+
+Processo de GR

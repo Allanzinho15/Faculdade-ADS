@@ -1,0 +1,184 @@
+Os serviços de armazenamento do Azure
+Criação de uma conta de armazenamento
+
+Confira no vídeo o passo a passo da criação de uma conta de armazenamento, além da criação de um Azure Files e seu acesso a partir de uma máquina virtual.
+
+
+
+Uma conta de armazenamento fornece um namespace exclusivo para os dados do armazenamento do Azure que podem ser acessados de qualquer lugar do mundo por HTTP ou HTTPS. Os dados nesta conta são seguros, altamente disponíveis, duráveis e maciçamente escalonáveis.
+
+
+Veja os tipos de conta de armazenamento e suas características:
+
+
+Tipo	Serviços com suporte	Opções de redundância	Uso
+Uso geral v2 standard	Armazenamento de blobs (incluindo Data Lake Storage), armazanamento de filas, armazenamento de tabelas e arquivos do Azure.	LRS, GRS, RA-GRS, ZRS, GZRS, RA-GZRS	Tipo de conta de armazenamento básico para blobs, compartilhamento de arquivos, filas e tabelas. Recomendado para a maioria dos cenários que usam o armazenamento do Azure.
+Blobs de blocos premium	Armazenamento de blobs (incluindo Data Lake Storage)	LRS, ZRS	Tipo de conta de armazenamento premium para blobs de blocos e blobs de acréscimo. Recomendado para cenários com altas taxas de transação ou que usam objetos menores ou exigem uma latência de armazenamento sempre baixa.
+Compartilhamentos de arquivos premium	Arquivos do Azure	LRS, ZRS	Tipo de conta de armazenamento premium somente para compartilhamentos de arquivos. Use esse tipo de conta caso deseje ter uma conta de armazenamento que dê suporte a compartilhamentos de arquivos SMB e NFS.
+Blobs de página premium	Blobs de páginas somente	LRS	Tipo de conta de armazenamento premium somente para blobs de páginas.
+Tabela: Características das contas de armazenamento do Azure.
+Francisco Ferreira
+
+Redundância de armazenamento do Azure
+
+
+No Azure existem fatores que ajudam a determinar qual opção de redundância você deve escolher, veja:
+
+
+1
+
+
+Como os dados são replicados na região primária.
+
+
+2
+
+
+Se os dados são replicados em uma segunda região que está geograficamente distante da região primária, para protegê-los contra desastres regionais.
+
+
+3
+
+
+Se o aplicativo requer acesso de leitura aos dados replicados na região secundária, caso a região primária não esteja disponível.
+
+
+Redundância na região primária
+
+
+Armazenamento com redundância local
+
+
+A replicação LRS é trabalhada de forma local, os seus dados são replicados três vezes no mesmo datacenter e na mesma região primária. Esse tipo de replicação fornece no mínimo 11 noves de durabilidade (99,999999999%) dos objetos armazenados durante um ano.
+
+
+
+Região primária e redundância local.
+
+Armazenamento com redundância de zona
+
+
+A replicação com redundância de zona é disponibilizada nas regiões habilitadas (regiões que possuem 3 zonas), ela é chamada de ZRS (armazenamento com redundância de zona). Esse tipo de replicação grava, de forma síncrona, em três zonas de disponibilidade do Azure na mesma região primária. Da mesma forma ela fornece durabilidade dos objetos gravados de, no mínimo, 12 noves (99,9999999999%) durante um ano.
+
+
+
+Região primária e redundância de zona.
+Redundância em uma região secundária
+
+
+Armazenamento com redundância geográfica
+
+No armazenamento com redundância geográfica é realizada a replicação por meio da cópia de seus dados. Esse tipo de replicação é do tipo GRS e ocorre de forma síncrona, três vezes dentro do mesmo datacenter e na mesma região usando LRS. Logo após, é realizada, de maneira assíncrona, a cópia dos dados em um único datacenter na região secundária (o par da região) usando LR, sendo essa uma das replicações de maior custo. O GRS oferece durabilidade para dados armazenados de, no mínimo, 16 noves (99,99999999999999%) durante um ano.
+
+
+
+Região secundária e redundância geográfica.
+
+Armazenamento com redundância de zona geográfica
+
+O armazenamento com redundância de zona geográfica é caracterizado pela redundância entre zonas de disponibilidade, em conjunto com a proteção contra interrupções regionais (desastres naturais ou falta de comunicação) fornecidas pelo modelo de replicação geográfica. A replicação do tipo GZRS possui as características da alta disponibilidade e serve como exemplo desse tipo de armazenamento. Logo, os dados em uma conta de armazenamento GZRS são copiados entre três zonas de disponibilidade no mesmo datacenter, na mesma região primária (semelhante ao ZRS), e são replicados em uma região geográfica secundária usando LRS para proteção contra desastres regionais.
+
+
+
+Região secundária e redundância de zona geográfica.
+Serviços de armazenamento do Azure
+
+As contas de armazenamento do Azure possuem os seguintes serviços:
+
+
+Blobs do Azure
+
+
+É um espaço de armazenamento para dados considerados não estruturados, como arquivos de texto, vídeos, imagens, documentos e dados binários, dados que crescem de uma forma escalonável. Esse tipo de armazenamento também dá suporte a análise de Big Data por meio do Data Lake Storage Gen2.
+
+
+Arquivos do Azure
+
+
+É o compartilhamento de arquivos (usando o protocolo SMB) bem familiar (que conhecemos nos sistemas Windows), que pode ser utilizado em implementações locais e em nuvem.
+
+
+Filas do Azure
+
+
+É um tipo de armazenamento de mensagens para um sistema de mensagens entre componentes do aplicativo, também usado para logs.
+
+
+Azure Disks
+
+
+É um tipo de armazenamento usado para dos discos de máquina virtual, que é usado em nível de bloco.
+
+
+Armazenamento de blob
+
+
+Os blobs do Azure servem para armazenar objetos na nuvem. Muito utilizados para grandes volumes de dados, como textos, imagens, streaming e/ou dados binários. Eles também são conhecidos como armazenamento de dados não estruturados, e são chamados assim porque podem armazenar qualquer tipo de dados sem impedimentos. Os blobs do Azure também têm a capacidade de gerenciar milhares de transferências simultâneas, grandes volumes de dados de vídeo, arquivos de log, além da possibilidade de serem acessados de qualquer lugar que possua internet. Os blobs normalmente são entregues a aplicações, como apps de celular e/ou softwares de backup.
+
+
+O armazenamento de blobs é usado para armazenamento de:
+
+
+Imagens, documentos, vídeos para acesso por meio de um navegador.
+Arquivos para acesso distribuído.
+Transmissões por streaming de áudio e vídeo (como Youtube, Netflix).
+Dados para backup e restauração, recuperação de desastres e arquivamento, normalmente usados com softwares escritos para enxergar as contas de armazenamento.
+Dados para análise por um serviço local ou hospedado no Azure.
+
+No armazenamento do Azure existem diferentes camadas, chamadas de tiers. Para acesso e para seu armazenamento de blobs, cada camada possui características específicas, relacionadas a performance e custo. As camadas de acesso disponíveis são:
+
+
+
+Camada de acesso quente (hot)
+
+Camada usada para armazenar dados que são acessados com frequência (por exemplo, imagens e vídeos de seu site).
+
+
+Camada de acesso frio (cool)
+
+Camada usada para armazenar dados que são acessados com menos frequência e guardados pelo menos 30 dias (por exemplo, faturas de seus clientes, laudos médicos).
+
+
+Camada de acesso aos arquivos (archive)
+
+Camada usada para armazenar dados acessados de forma rara e guardados por pelo menos por 180 dias, com latências flexíveis (por exemplo, arquivamento de backups).
+
+Arquivos do Azure (Azure Files)
+
+
+Os arquivos do Azure são um tipo de armazenamento em nuvem que possui compatibilidade com os protocolos SMB ou NFS, usando a familiar tecnologia de compartilhamento de arquivos. Esse compartilhamento de arquivos pode ser mapeado tanto por máquinas virtuais no Azure como por máquinas locais. Devido a utilização do protocolo SMB, o compartilhamento de arquivos pode ser acessado por máquinas que utilizam sistemas operacionais Windows, Linux e macOS. Além disso, pode ser usado como cache nos servidores Windows Server com a sincronização de arquivos (Azure File Sync) para acesso rápido a partir de onde os dados estão sendo usados. Um detalhe importante é que a porta 445 deve estar aberta para utilização no provedor de internet.
+
+
+Veja algumas vantagens dos arquivos do Azure:
+
+
+Acesso compartilhado
+
+Os compartilhamentos de arquivo do Azure utilizam protocolos SMB e NFS, que são familiares no mercado.
+
+
+Totalmente gerenciados
+
+Os compartilhamentos de arquivo do Azure podem ser criados diretamente na nuvem e não precisam ser gerenciados por um sistema operacional ou hardware, pois o mapeamento é feito de forma simples.
+
+
+Script e ferramentas
+
+Os scripts PowerShell e o Az-Cli podem ser usados para criar, montar e gerenciar compartilhamentos de arquivo rapidamente.
+
+
+Resiliência
+
+Serviço altamente disponível, que permite substituir compartilhamentos locais pelos arquivos do Azure. Portanto, você não precisa se preocupar com interrupções inesperadas, como energia elétrica ou redes locais, pois como os arquivos estão na nuvem, o gerenciamento é feito pelo Azure.
+
+
+Gerenciamento familiar
+
+Como já é utilizado e familiar aos usuários, podem acessar dados no compartilhamento e APIs do sistema de arquivos.
+
+
+
+
+Armazenamento de filas (Azure Queues)
+
+É um tipo de armazenamento usado para armazenar mensagens em grande escala. Após o armazenamento, é possível acessá-las de qualquer local por meio de autenticação HTTP ou HTTPS. Em uma fila é possível armazenar mensagens em uma quantidade muito grande (possivelmente milhões). As filas são usadas para criar uma lista de pendências de trabalho para

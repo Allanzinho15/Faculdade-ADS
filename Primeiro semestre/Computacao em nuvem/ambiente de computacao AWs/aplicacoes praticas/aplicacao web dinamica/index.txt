@@ -1,0 +1,78 @@
+Aplicação web dinâmica
+Neste vídeo, você verá como encontrar e escolher AMIs de comunidade e marketplace.
+
+
+
+
+Diagrama de acesso ao EC2.
+
+A maior parte dos softwares web existentes no mercado utilizam uma tecnologia dinâmica de conteúdo e, por isso, não conseguem ser atendidos pela solução anterior. Assim, precisamos de servidores de aplicação com capacidade de processar essas tecnologias. Com o Amazon EC2 é possível criar um ambiente aplicável a qualquer tecnologia disponível no mercado de linguagens e frameworks de programação e servir conteúdo dinâmico e estático.
+
+
+Utilizaremos como exemplo o Wordpress, um software web de blogging, mas que também é amplamente utilizado para sites de diversos propósitos. Como ponto de partida pode ser utilizada uma AMI pronta, com toda plataforma necessária para permitir que o Wordpress rode na instância, concentrando todo o trabalho de provisionamento na infraestrutura AWS.
+
+
+Faça a busca pela palavra “wordpress” em “Application and OS Images” e uma lista de AMI de Wordpress aparecerá para a sua seleção.
+
+
+
+Indicação de palavra-chave para busca de AMI de Wordpress.
+
+As AMIs são ordenadas por padrão e por relevância, de forma que as mais recomendadas aparecerão primeiro. Você pode escolher a imagem fornecida pela Bitnami by VMware, que costuma ser validada pela própria AWS.
+
+
+
+Lista de AMIs com destaque para a da Bitnami.
+
+Uma vez selecionada a AMI, podemos seguir o processo tradicional de provisionamento de uma nova EC2, escolhendo tamanho e um par de chaves. Para esse tipo de aplicação, é recomendada, em ambiente de testes, ao menos uma t3.small de tipo/tamanho.
+
+
+
+AMI da Bitnami com indicação de fornecedor verificado pela AWS, que confere garantia sobre a solução fornecida.
+
+Na seção de configurações de rede e segurança da instância, encontraremos um security group personalizado e com configurações específicas para a AMI que selecionamos. Algumas AMIs facilitam o processo de provisionamento, adequando configurações necessárias para o pleno funcionamento do software que está embarcado. No caso do Wordpress, as portas 80 e 443 (http e https) são liberadas para o pleno acesso via web da aplicação.
+
+
+
+Detalhes do seurity group na seção de configurações de rede.
+
+A instância pode ser provisionada sem mais ajustes e, após inicializada, localizar as informações de acesso. Busque pelo endereço de DNS público e o utilize no seu navegador.
+
+
+
+Indicação do DNS público nos detalhes da instância.
+
+Você deve visualizar o conteúdo da imagem a seguir, indicando que carregamos um blog do Wordpress:
+
+
+
+Tela que indica que o o blog foi instalado com sucesso.
+
+O trabalho de provisionamento da nossa aplicação dinâmica está completo, mas podemos avançar um pouco mais e fazer um novo post na plataforma. Para isso, precisamos recuperar o usuário e senha da parte administrativa do Wordpress. A documentação da AMI (que pode ser encontrada no Marketplace da AWS ou uma busca na internet) indica que as credenciais de acesso podem ser encontradas no log de boot da instância. O acesso ao log pode ser feito selecionando a instância, clicando no botão “action”, e será exibido o menu com a seguinte opção:
+
+
+
+Indicação do caminho para obter o log de boot da instância.
+Role a tela de log até encontrar o bloco onde estão as credenciais de acesso ao admin do Wordpress:
+
+
+
+Bloco com as credenciais de acesso.
+
+Com as credenciais em mãos, o endereço do admin do Wordpress é o path “/wp-admin” do endereço que utilizamos para acessar a plataforma:
+
+
+
+Tela de login do Wordpress.
+
+Após feito o login, caso não conheça a plataforma, faça um novo post, indo na seção “posts” e clicando no botão “add new”. Um editor aparecerá e você pode editar da forma que for mais conveniente, salvando em seguida no botão “publish”.
+
+
+
+Interface administrativa do Wordpress permite fazer novas publicações na plataforma.
+
+O conteúdo deverá ser refletido no endereço principal do site, indicando que houve modificação e consulta da plataforma para exibição dos dados salvos.
+
+
+
+Arquivamento e backups no S3.

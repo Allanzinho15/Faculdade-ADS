@@ -1,0 +1,66 @@
+Identidade e segurança do Azure
+Serviços de diretório do Azure
+
+
+O Azure AD (Azure Active Directory) é um serviço de diretório que permite que você entre e acesse aplicativos de nuvem da Microsoft e aplicativos de nuvem que você desenvolve. O Azure AD também pode ajudar a manter sua implantação do Active Directory local.
+
+
+
+O Azure AD permite gerenciamento de identidade e acessos.
+
+Em ambientes locais, o Active Directory em execução no Windows Server, fornece um serviço de gerenciamento de identidade e acesso gerenciado pela sua organização. O Azure AD é o serviço de gerenciamento de acesso e identidade baseado em nuvem da Microsoft. Com o Azure AD, você controla as contas de identidade, mas a Microsoft garante que o serviço esteja disponível globalmente.
+
+
+Quando você protege identidades locais com o Active Directory, a Microsoft não monitora tentativas de conexão. Quando você conecta o Active Directory ao Azure AD, a Microsoft pode ajudar a protegê-lo, detectando tentativas de conexão suspeitas, sem custo adicional. Por exemplo, o Azure AD pode detectar tentativas de conexão de locais inesperados ou dispositivos desconhecidos.
+
+
+O Azure AD fornece serviços como:
+
+
+1
+Autenticação
+
+
+Inclui verificar a identidade para acessar aplicativos e recursos. Também inclui fornecer funcionalidades, como redefinição de senha por autoatendimento, autenticação multifatorial, uma lista personalizada de senhas banidas e serviços de bloqueio inteligente.
+
+
+2
+Logon único
+
+
+Permite lembrar apenas de um nome de usuário e uma senha para acessar vários aplicativos. Uma única identidade é vinculada a um usuário, o que simplifica o modelo de segurança.
+
+
+3
+Gerenciamento de aplicativo
+
+
+Permite gerenciar seus aplicativos de nuvem e locais usando o Azure AD. Recursos como proxy de aplicativo, aplicativos SaaS, o portal Meus Aplicativos e o login único proporcionam uma experiência do usuário aprimorada.
+
+
+4
+Gerenciamento de dispositivo
+
+
+Permite suporte ao registro de dispositivos. O registro permite que os dispositivos sejam gerenciados por meio de ferramentas como o Microsoft Intune. Também permite que políticas de acesso condicional baseadas no dispositivo restrinjam tentativas de acesso somente às contas provenientes de dispositivos conhecidos, independentemente da conta de usuário solicitante.
+
+
+Controle de acesso baseado em função (RBAC)
+
+
+O gerenciamento de acesso para recursos de nuvem é uma função crítica para qualquer organização que esteja usando a nuvem. O RBAC do Azure (controle de acesso baseado em funções do Azure) ajuda a gerenciar quem tem acesso aos recursos do Azure, o que pode fazer com esses recursos e a quais áreas tem acesso.
+
+
+O RBAC do Azure é um sistema de autorização baseado no Azure Resource Manager, que fornece gerenciamento de acesso refinado para recursos do Azure.
+
+
+Exemplo
+Imagine possuir dois grupos de recursos, um com os recursos do setor de marketing e outro com os recursos do setor financeiro. Através do RBAC você pode determinar que apenas os usuários do setor financeiro acessem os recursos do seu setor, da mesma forma com o setor de marketing. Cada usuário acessará apenas os recursos do seu próprio setor. A isso chamamos de segmentação do gerenciamento de recursos.
+
+
+Defesa em profundidade
+
+
+É um conjunto de camadas, com os dados a serem protegidos no centro e as demais camadas operando para proteger a camada central. Envolvem todo o processo de acesso do datacenter, passando pela segurança física, identidade, perímetro, rede, computação, aplicativo e até chegar ao dado propriamente dito.
+
+

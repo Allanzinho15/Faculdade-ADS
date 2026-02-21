@@ -1,0 +1,76 @@
+Máquinas virtuais em ambientes Google Cloud
+Uma máquina virtual, também conhecida como VM (virtual machine), não é diferente de um computador ou laptop físico tradicional. Ela possui CPU, memória, armazenamento e rede, de maneira que pode se conectar à internet, caso necessário. A grande diferença é que essa máquina está sendo “emulada”, ou virtualizada, em um ambiente físico. Um único hardware pode virtualizar várias máquinas utilizando seus recursos e, com isso, ter uma grande variedade de aplicações e diferentes sistemas operacionais, todos utilizando apenas um hardware.
+
+
+O Google Cloud oferece máquinas virtuais como IaaS, uma infraestrutura como serviço, e essa oferta é chamada de Compute Engine, de forma que é possível selecionar a máquina que mais encaixar com os requisitos de recursos. As máquinas virtuais estão divididas em algumas categorias no Google Cloud:
+
+
+Família de máquinas
+
+Um conjunto selecionado de configurações de processador e hardware otimizadas para cargas de trabalho (aplicações) específicas. Ao criar uma VM, podemos escolher um tipo de máquina predefinido.
+
+
+Série
+
+As famílias de máquinas são classificadas também por série e geração. Por exemplo, a série N1 dentro da família de máquinas de uso geral é a versão mais antiga da série N2. Geralmente, usa-se um número maior para descrever as gerações mais atuais. Sendo assim, a N3 é mais nova que a N2 que, por sua vez, é mais nova que a N1.
+
+
+Tipo de máquina
+
+Cada série tem tipos de máquinas predefinidas, que possuem um conjunto de recursos para a VM. Se nenhum deles atender sua necessidade, é possível criar uma máquina personalizada.
+
+
+
+
+As máquinas disponibilizadas pelo Google Cloud são apresentadas na tabela a seguir:
+
+
+Tipo de uso	Econômico	Equilibrado	Escalonamento horizontal otimizado	Otimização de memória	Otimizado para computação	Otimização de acelerador
+Família	E2	N2, N2D, N1	Tau T2D, Tau T2A	M3, M2, M1	C2, C2D	A2
+Objetivo	Computação básica a um custo menor	Desempenho e preços equilibrados	Melhor desempenho para cargas que precisam de escalabilidade horizontal	Cargas de trabalho com memória ultraelevada	Ultradesempenho para cargas de trabalho que demandam uso intensivo de CPU	Otimizada para cargas de trabalho de computação de alto desempenho
+Exemplos	
+Aplicação web
+Front-end
+Banco de dados pequenos
+Ambientes para desenvolvimento
+API
+Microsserviços
+Streaming de mídia
+Banco de dados médios e grandes
+Aplicações web
+Cache
+Aplicativos Java em grande escala
+Microsserviços em containers
+Banco de dados de análises em memória
+Bancos de dados como Microsoft SQL Server
+Jogos
+Computação de alto desempenho (HPC)
+Inteligência artificial
+Aplicações web de alto desempenho
+Treinamento de modelos de aprendizagem de máquinas (machine learning)
+Computação paralela de uso massivo
+Tabela: Famílias e classificações de máquinas virtuais Google Cloud. cloud.google.com.
+
+Após selecionarmos o tipo de máquina e aprovisionarmos essa máquina utilizando o serviço de IaaS do Google Cloud, ela se torna uma estação de trabalho utilizando o sistema operacional que foi escolhido, pronto para implantação da sua aplicação.
+
+
+Uma das vantagens de uma VM é a facilidade de gerenciamento. Além de ser flexível, do ponto de vista de recursos computacionais, podemos facilmente deletá-la e recriá-la de maneira muito simples. Outro ponto é a flexibilidade em customizações, de forma que podemos instalar a versão que melhor nos atender de um software e customizar as bibliotecas.
+
+
+
+Servidores da Google em Hamina, Finlândia.
+
+A responsabilidade de gerenciamento da VM é mista. Toda a infraestrutura física é provida e gerenciada pelo Google, mas o gerenciamento de utilização dos recursos, instalação e atualizações de softwares é de responsabilidade única do usuário. O que também se aplica para responsabilidades de segurança, nas quais o Google Cloud é responsável pelo hardware. Entretanto, do lado do software instalado nas VMs, é dever do usuário administrar e monitorar.
+
+
+Vejamos os exemplos a seguir sobre gerenciamento da VM.
+
+
+Exemplo
+Para exemplificar, imagine que aprovisionamos uma máquina virtual Linux, com 8 CPUs e 4 GB de memória. Em dado momento, minha VM ficou indisponível, pois o servidor no qual ela estava localizada em São Paulo teve falta de energia elétrica. De quem é a responsabilidade? Nesse caso, é do Google, pois, como vimos, é ele o responsável por gerenciar e disponibilizar a infraestrutura física. Outro exemplo: imagine que aprovisionamos a mesma VM do exemplo anterior, mas minha aplicação necessita de 8 GB de memória ao invés dos 4 GB que solicitamos. De quem é a responsabilidade de gerenciar isso? Do usuário, pois trata-se do gerenciamento de consumo de recursos no qual o cliente pode, se necessário, solicitar mais memória ou reduzir, por exemplo.
+
+
+Qual a função de uma máquina virtual?
+
+
+Neste vídeo, falaremos sobre como funciona uma máquina virtual do ponto de vista de arquitetura, melhores práticas e operação, fazendo um panorama geral dos diferentes tipos de máquinas e qual a usabilidade de cada uma.

@@ -1,0 +1,69 @@
+Aplicação web estática e web dinâmica
+Confira um caso de uso e arquiteturas de referência para provisionamento de aplicações na AWS, com os recursos a serem utilizados.
+
+
+
+Com uma infinidade de propósitos, a Amazon Web Services permite que empresas e profissionais experimentem soluções antes mesmo de provisionarem suas cargas definitivas, a um baixo custo e sem compromissos de longo prazo. Vamos conhecer e experimentar alguns cenários que podem ser expandidos e customizados para se tornarem ambientes de produção, aplicáveis em nosso cotidiano.
+
+
+A aplicação web é uma solução de software executada diretamente no navegador, não havendo instalação na máquina do usuário. Todo processamento da aplicação se concentra nos servidores de hospedagem e o usuário interage de forma remota. Na AWS existem várias arquiteturas para esse tipo de solução, que dependem das características e dos requisitos do ambiente da aplicação.
+
+
+
+Arquitetura de site estático hospedado em um bucket do Amazon S3.
+
+O Amazon S3 tem capacidade de atuar como serviço de hospedagem para sites estáticos, sendo uma opção muito interessante para esse tipo de aplicação quando comparado ao Amazon EC2, pois não possui custo de execução por hora, além do processo ser bastante simples.
+
+
+Um dos primeiros passos é habilitar, nas propriedades do bucket, o Static website hosting, informando o nome de arquivo que será tratado como página padrão do site.
+
+
+
+Como habilitar e designar o arquivo que será hospedado.
+
+Após salvar essa alteração, já estará disponível na seção Static website hosting o endereço que será usado para acesso público. Salve para uso posterior.
+
+
+
+URL gerada para acesso público.
+
+Será necessário alterar as permissões do bucket que, em geral, estará com bloqueios de acesso público. Porém, justamente por se tratar de um site de acesso público, liberaremos esse tipo de acesso. Na aba de permissões, todas as opções de bloqueio devem ficar desmarcadas no “Block public access”.
+
+
+
+Aba de permissões de acesso público.
+
+Ainda na parte de permissões do bucket, uma política precisa ser preenchida no “Bucket policy”, liberando o acesso de leitura dos objetos que estarão armazenados. A política apresentada a seguir pode ser usada para qualquer bucket, precisando apenas readequar o “nomedobucket” para o nome do bucket que você está utilizando.
+
+
+Python (3.8.1)
+
+
+Light Mode
+
+Copiar
+
+
+Print do campo de política do bucket.
+
+O bucket deve estar preparado para fazer hospedagem de sites estáticos a essa altura, caso tenha sido criado com todas as opções padrão, e você poderá fazer upload dos arquivos do site e utilizar o endereço gerado para fazer o acesso pelo seu navegador. Para fins didáticos, vamos utilizar um site estático de exemplo, da Cloud Academy, que pode ser baixado direto do GitHub, jogando todo conteúdo na raiz do bucket:
+
+
+https://github.com/cloudacademy/static-website-example
+
+
+
+Tela de upload de site estático.
+
+Este será o site que você visualizará, indicando que a configuração da sua hospedagem está correta:
+
+
+
+Página inicial do site estático usado como exemplo.
+
+Nome do bucket para web hosting
+
+
+Neste vídeo, você verá a importância do nome do bucket para uso de hospedagem web estática.
+
+

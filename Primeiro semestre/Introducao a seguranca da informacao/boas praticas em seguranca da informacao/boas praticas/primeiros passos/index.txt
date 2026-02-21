@@ -1,0 +1,44 @@
+Primeiros passos
+Vamos refletir sobre algumas situações do dia a dia?
+
+
+Pense nos seguintes cenários:
+
+
+ 
+
+1. Você está se organizando para sair de férias em seu trabalho e realiza todas as tarefas necessárias de modo que nada fique pendente. No entanto, você sabe que poderão ocorrer imprevistos e sua equipe pode precisar de informações que estão disponíveis apenas no seu computador.
+
+ 
+
+2. Você recebeu um e-mail de um remetente desconhecido com um anexo executável.
+
+ 
+
+3. Você precisa realizar uma compra. Pesquisa na internet as lojas que vendem o produto e em quais estão os melhores preços.
+
+ 
+
+4. Um colega de trabalho pediu para abrir em seu computador um arquivo que estava no pendrive dele.
+
+ 
+
+5. Você precisa baixar um programa no computador do trabalho.
+
+ 
+
+
+Diante dessas situações, o que você faz?
+
+
+Observe, a seguir, as ações que ajudam a garantir a segurança da informação:
+
+
+Nunca compartilhar senhas; 
+Sempre utilizar antivírus e mantê-lo atualizado;
+Observar se os sites acessados são confiáveis; 
+Nunca abrir links ou fazer download de arquivos enviados por e-mails não confiáveis ou de remetentes desconhecidos; 
+Baixar programas apenas de fornecedores oficiais; 
+Fazer backup de arquivos regularmente; 
+Habilitar o firewall do sistema operacional; 
+Manter o sistema sempre atualizado.

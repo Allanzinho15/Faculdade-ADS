@@ -1,0 +1,150 @@
+Segurança da informação
+Pilares
+
+Para identificarmos a quais riscos um ativo de informação pode estar submetido, precisaremos, antes disso, estudar alguns termos e conceitos relacionados à preservação dos seguintes pilares da segurança da informação:
+
+
+
+No CID, minimiza-se o risco da ocorrência de incidentes de:
+
+
+Confidencialidade
+
+
+Que disponibilizem uma informação para pessoas, entidades ou processos não autorizados.
+
+
+Integridade
+
+
+Que afetem a exatidão e a integralidade de ativos.
+
+
+Disponibilidade
+
+
+Que tornem os recursos inacessíveis e inutilizáveis sob demanda.
+
+
+Esmiuçaremos todos os elementos a seguir:
+
+
+
+Ativos
+
+Toda empresa possui seus ativos, ou seja, algo que possui valor para a organização. Exibiremos a seguir alguns de seus exemplos:
+
+
+Ativos de informação: Base de dados, arquivos, contratos e acordos.
+Ativos de software: Aplicativos e sistemas.
+Ativos físicos: Equipamentos computacionais e de comunicação.
+Serviços: Eletricidade e refrigeração.
+Pessoas: Suas qualificações, habilidades e experiências.
+Intangíveis: Aqueles que não podemos tocar, como a reputação e a imagem da organização.
+
+Ameaças
+
+Em seu item 3.74, a norma ISO/IEC 27000:2018 define ameaça como “a causa potencial de um incidente indesejado que pode resultar em dano para um sistema ou organização por meio da quebra de segurança”.
+
+Nenhuma organização deseja que qualquer tipo de ativo sofra algum dano ou furto. No entanto, justamente pelo fato de possuírem uma percepção de valor, os ativos estão sujeitos a ameaças de várias naturezas. Elas podem ser:
+
+
+
+Físicas
+
+
+Falhas de equipamentos e instalações, como relâmpagos, terremotos, ataques a bombas, deterioração dos meios de armazenamento, fraude, roubo, invasão etc.
+
+
+
+Lógicas
+
+
+Vulnerabilidades em softwares, como bugs, vírus, malwares etc.
+
+
+Note que o contrário de ameaça é oportunidade, cujo significado é: “Ocasião favorável; circunstância oportuna e propícia para a realização de alguma coisa; ensejo” (MICHAELIS, 2020, n. p.).
+
+Podemos então reescrever o conceito de oportunidade como a causa potencial de um incidente desejado que pode resultar em ganho para um sistema ou uma organização.
+
+
+Medidas de proteção (controle)
+
+Certas ameaças rondam os ativos a todo instante.
+
+Como uma organização deseja mantê-los a salvo, deve adotar medidas de proteção (controle) para esconder ou diminuir o acesso ou a exposição às vulnerabilidades deles.
+
+
+
+Segundo o item 3.14 da norma ISO/IEC 27000:2018, controle é uma medida que pode modificar o risco por meio de processo, política, dispositivo, prática ou outras ações que modifiquem a ameaça e/ou a vulnerabilidade e, consequentemente, o risco.
+
+
+Vulnerabilidades
+
+A vulnerabilidade “é uma fragilidade de um ativo ou grupo de ativos que pode ser explorada por uma ou mais ameaças e, por consequência, comprometer a segurança de sistemas ou informações”. A identificação dela em um ativo, porém, não é um processo trivial.
+
+Desse modo, deve-se inicialmente realizar uma análise de vulnerabilidades, que é o processo de levantar falhas ou ausências em um conjunto de proteções adotadas. Em seguida, a avaliação de vulnerabilidades é feita com uma lista de ameaças no intuito de avaliar sua probabilidade de ocorrência.
+
+A tabela a seguir apresenta alguns exemplos de ameaças, vulnerabilidades e medidas de controle cabíveis:
+
+
+Ameaças	Vulnerabilidades	Medidas de controle
+Lógicas	
+Problemas no sistema operacional;
+Falhas em aplicativos;
+Sites perigosos da web.
+Instalação de antivírus;
+Firewall;
+Lista de controle de acesso;
+Atualização do sistema operacional.
+Físicas	
+Falta de identificação de visitantes na empresa;
+Fios soltos;
+Sala do datacenter acessível para qualquer pessoa.
+Instalação de câmeras de segurança;
+Acesso à sala por controle biométrico;
+Piso elevado contra enchentes;
+Para-raios;
+Nobreaks.
+Ameaças, vulnerabilidades e medidas de controle.
+Tabela: Fabio Henrique Silva
+
+Incidente
+
+Nenhuma medida de proteção é infalível. Portanto, uma ameaça pode explorar uma ou mais vulnerabilidades não cobertas pelas medidas de proteção adotadas. Quando uma delas ocorre, há um incidente de segurança da informação.
+
+
+Exemplo
+A instalação de um malware, o roubo de senhas ou um usuário conseguir copiar dados não autorizados com seu pen drive.
+
+
+O conceito de incidente de segurança da informação é definido pelo item 3.31 da norma ISO/IEC 27000:2018 como um “evento ou série de eventos indesejados ou inesperados que provavelmente comprometerão as operações da empresa ou ameaçam a segurança da informação”.
+
+
+Evento
+
+Um evento de segurança da informação não implica necessariamente um incidente de segurança da informação. Com base no item 3.30 da norma ISO/IEC 27000:2018, um evento de segurança da informação significa uma “ocorrência identificada de um estado de rede, serviço ou sistema que indique uma possível falha da política de segurança ou falha das salvaguardas, ou mesmo uma situação até então desconhecida que pode se tornar relevante em termos de segurança”.
+
+
+Exemplo
+O travamento não esperado de uma aplicação ou uma pessoa que acidentalmente desconecta um cabo.
+
+
+Vamos entender melhor a seguir a diferença entre impacto e risco.
+
+
+Impacto
+
+
+Já sabemos que uma ameaça explora vulnerabilidade(s) de um ativo e causa um incidente de segurança da informação. Tal incidente, por sua vez, pode gerar um impacto na organização. Segundo a norma ISO/IEC 27000:2018, “ele é caracterizado como uma mudança não desejável nos objetivos de negócios”.
+
+
+Risco
+
+
+É caracterizado no item 3.61 da norma ISO/IEC 27000:2018 como a combinação das consequências de um evento (incluindo mudanças nas circunstâncias) e de sua probabilidade associada de ocorrência.
+
+
+O que você achou do conteúdo?
+
+Relatar problema

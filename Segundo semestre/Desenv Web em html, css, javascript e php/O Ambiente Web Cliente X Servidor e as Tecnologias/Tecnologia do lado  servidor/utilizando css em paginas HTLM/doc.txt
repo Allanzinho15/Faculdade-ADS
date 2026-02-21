@@ -1,0 +1,136 @@
+Utilizando CSS em página HTML
+Como foi estudado anteriormente, HTML quer dizer linguagem de marcação de hipertexto e tem diversas tags pré-definidas. Além disso, CSS tem vários recursos que podem ser utilizados para alterar o estilo de páginas web. Consequentemente, para se ter o domínio adequado de tantos recursos, é fundamental que os estudantes pratiquem por meio de atividades práticas, de modo que possam explorar os detalhes de tantas possibilidades. Por exemplo, como implementar uma página web que demande as alterações das cores do título e subtítulo, cor de fundo da página, alinhamento do parágrafo? Como reunir os recursos de CSS integrados em páginas HTML?
+
+
+Essas são perguntas pertinentes e, para respondê-las, é muito importante conhecer as características de cada uma dessas tecnologias, como a sintaxe. Podemos utilizar CSS de diferentes formas. Será que opção de CSS inline é a mais eficiente? Ou então devemos utilizar sempre o CSS interno? E se utilizarmos o CSS externo, isso altera a página final visualizada pelos usuários? Qual opção escolher? Portanto, o bom conhecimento sobre esses recursos auxilia na escolha mais adequada das abordagens tecnológicas dos projetos de frontend.
+
+
+O vídeo vai demonstrar na prática como usar os recursos do CSS para alterar vários estilos de páginas HTML. Você verá como implementar uma página web com alterações das cores do título e subtítulo, cor de fundo da página, alinhamento do parágrafo e reunir os recursos de CSS integrados em páginas HTML.
+
+
+
+Roteiro de prática
+
+Observe o exemplo do código mostrado a seguir. Trata-se de um exemplo de código CSS interno em página HTML. Inserimos o código CSS utilizando a tag
+
+Plain Text   
+
+<|DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: Linen;
+}
+h1 {
+    color: maroon;
+    margin-left: 40px;
+}
+h2 {
+    color: maroon;
+    margin-left: 70px;
+}
+p {
+    text-align: justify;
+}
+</style>
+</head>
+<body>
+<h1>Titulo com h1</h1>
+<p>Texto do parágrafo. Estamos estudando o uso de CSS em páginas web estruturadas
+com HTML.</p>
+<h2>Titulo com h2</h2>
+<p>Com CSS, podemos alterar o estilo de páginas web. Podemos inserir os códigos
+CSS de diferentes formas. Neste exemplo, estamos utilizando o CSS interno, para
+facilitar a visualizaçäo.</p>
+</body>
+</htm><|DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+    background-color: Linen;
+}
+h1 {
+    color: maroon;
+    margin-left: 40px;
+}
+h2 {
+    color: maroon;
+    margin-left: 70px;
+}
+p {
+    text-align: justify;
+}
+</style>
+</head>
+<body>
+<h1>Titulo com h1</h1>
+<p>Texto do parágrafo. Estamos estudando o uso de CSS em páginas web estruturadas
+com HTML.</p>
+<h2>Titulo com h2</h2>
+<p>Com CSS, podemos alterar o estilo de páginas web. Podemos inserir os códigos
+CSS de diferentes formas. Neste exemplo, estamos utilizando o CSS interno, para
+facilitar a visualizaçäo.</p>
+</body>
+</htm>
+
+
+
+A página web resultante do código anterior está mostrada a seguir. Observe!
+
+
+
+Página web resultante do código anterior.
+
+A seguir, mostraremos o código CSS do seletor body. A cor de fundo (background-color) da página é alterada para linen.
+
+
+Plain Text
+
+            body {
+                background-color: linen;
+            }
+            
+
+Adiante, mostraremos o código CSS do seletor h1. Nesse caso, duas propriedades são alteradas: a cor do texto (color) é alterada para maroon; e a margem esquerda (margin-left) é alterada para 40 pixels.
+
+
+Plain Text
+
+            h1 {
+                color: maroon;
+                margin-left: 40px;
+            }
+            
+
+
+A seguir, mostraremos o código CSS do seletor h2. Duas propriedades são alteradas também: a cor do texto (color) é alterada para maroon; e a margem esquerda (margin-left) é alterada para 70 pixels.
+
+
+Plain Text
+
+
+            h2 {
+                color: maroon;
+                margin-left: 70px;
+            }
+            
+
+
+Adiante, mostraremos o código CSS do seletor de parágrafo (p). Nesse caso, o alinhamento do texto (text-align) é definido para justificado (justify).
+
+
+Plain Text
+
+
+            p {
+                text-align: justify;
+            }
+            
+
+
+Observando os códigos CSS dos seletores body, h1, h2 e parágrafo, podemos concluir que podemos alterar uma ou mais propriedades dos seletores. As propriedades podem ser repetidas para os seletores conforme mostram os códigos de h1 e h2.
+
+
+Se utilizássemos o CSS externamente, com os mesmos códigos mostrados nesse exemplo com CSS interno, o resultado da página não seria alterado, ou seja, os usuários veriam a mesma página. Entretanto, o CSS externo proporciona melhor separação de conceitos, ou seja, um arquivo exclusivo com HTML e outro arquivo exclusivo com CSS.

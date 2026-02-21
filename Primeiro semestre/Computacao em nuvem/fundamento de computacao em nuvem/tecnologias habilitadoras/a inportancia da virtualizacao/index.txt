@@ -1,0 +1,67 @@
+A importância da virtualização
+Neste vídeo, será apresentado o conceito de virtualização.
+
+
+
+A computação em nuvem é resultado da evolução natural e da união de várias outras tecnologias da área de TI, sendo que a definição da computação em nuvem tem como foco principal a transformação da rotina tradicional de como empresas e usuários finais utilizam e adquirem os recursos da tecnologia da informação (TI). Isto é, toda a infraestrutura de TI (hardware, software e gestão de dados e informação), até então tratada como um ativo das empresas, passa a ser administrada pelos provedores da computação em nuvem e acessada pelas empresas e usuários por meio da internet.
+
+
+
+Esse acesso remoto é possível de ser realizado de qualquer tipo de equipamento – celulares, notebooks, tablets, computadores etc. Dessa maneira, os provedores de nuvem passam a prover a infraestrutura e os serviços capacitados para atender a essa demanda. Trata-se de um modelo eficiente para utilizar softwares, acessar, armazenar e processar dados por meio de diferentes dispositivos e tecnologias web.
+
+
+O formato proposto pela computação em nuvem reúne conceitos, tendências e recursos trabalhados na área de TI, como virtualização, conteinerização, computação sem servidor (serverless computing), application service provider (ASP), grid computing, utility computing e software como serviço. Essas tecnologias habilitam a computação em nuvem, tornando-se parte fundamental da arquitetura dos provedores de nuvem.
+
+
+Virtualização
+
+O termo virtualização tem origem no conceito “virtual”, ou seja, algo abstrato que simula as características de algo real. Esse conceito surgiu na década de 1960, sendo mais divulgado na década posterior. Porém, as limitações tecnológicas da época impediram maiores avanços dessa inovadora tecnologia para a época. Após a chegada da internet, a possibilidade de processar informações e executar operações com o acesso remoto impulsionaram a virtualização e seus recursos.
+
+
+A virtualização é a tecnologia que permite que diversas aplicações e sistemas operacionais sejam processados em uma mesma máquina.
+
+
+Dessa maneira, foi possível o datacenter das empresas trabalhar com inúmeras plataformas de sistemas operacionais, sem a necessidade do aumento no número de servidores físicos. Ou seja, a virtualização permite um alto nível de flexibilidade e portabilidade.
+
+Esse tipo de tecnologia permite compartilhamento dos recursos de hardware como processador, memória, interface de rede, disco rígido, entre outros, da máquina física com as máquinas virtuais ali presentes. Todo o gerenciamento e a alocação de recursos de hardware de uma máquina virtual é feito pelo hypervisor ou monitor de máquina virtual (virtual machine monitor – VMM). O hypervisor é uma camada de software localizada entre a camada de hardware e o sistema operacional.
+
+
+Exemplo
+Um usuário utiliza o sistema operacional Windows em seu computador, mas deseja utilizar um software que está disponível apenas para o Linux. Com a virtualização, esse usuário pode executar uma versão de qualquer sistema operacional e seus aplicativos em seu próprio computador, sem necessariamente ter que o instalar fisicamente.
+
+
+Geralmente, existem dois tipos de hypervisores.
+
+
+Hypervisores de tipo 1, chamados de "bare metal" ou “Stand Alone” que são executados diretamente no hardware da máquina física. Este tipo de hipervisor é mais empregado para a virtualização de servidores.
+Hypervisores de tipo 2, conhecidos como “hosted” ou "hospedados", são executados como uma camada de software, um aplicativo instalado no sistema operacional, como outros programas de computador. Este tipo de hipervisor é mais empregado em soluções para desktop, como o VirtualBox.
+
+O tipo hosted possui uma camada a mais de aplicação junto com a camada do hypervisor, e ambas acima do sistema operacional da máquina física.
+
+
+Ambiente virtual e também permite que os usuários possam executar aplicações tais como web browsers e clientes de e-mail paralelamente ao ambiente virtualizado. Isto não é possível no tipo bare-metal.
+
+
+A maioria dos hypervisores oferecem recursos adicionais de hardware, que vão desde controladores USB até o emprego de direct memory access (DMA), visando melhorar o desempenho de controladores de storage, no que diz respeito ao acesso a disco, e placas de rede.
+
+
+Visto isso, a decisão de usar hypervisor bare-metal ou hosted vai além de “ter ou não ter sistema operacional no host”.
+
+
+A tipo 1, por exemplo, por estar situado diretamente sobre o hardware, consegue prover um número maior de opções de acesso de entrada e saída (I/O access), disponibilizando mais desempenho para aqueles que optam por essa arquitetura. Importante notar que ao usar o hypervisor bare-metal o sistema operacional a ser utilizado na máquina virtual precisa ser adaptado para esse tipo de solução.
+
+
+Já o tipo 2 consegue prover maior compatibilidade de hardware, o que permite executar o software de virtualização em uma gama mais ampla de configurações de hardware, diferentemente do modo bare-metal.
+
+
+Os hypervisores tipo 1 e tipo 2 irão definir dois tipos de vitualização: paravirtualização e virtualização completa.
+
+
+
+Comparação entre virtualização total e paravirtualização.
+
+Na completa, o hypervisor emula todo o hardware da máquina física para as máquinas virtuais. Nesse caso, o sistema operacional executa como se não estivesse em um ambiente virtual. A paravirtualização entrega para as máquinas virtuais um hardware igual ao real, com isso, o sistema a ser virtualizado pode sofrer alterações no decorrer do tempo. Essa funcionalidade não é permitida na virtualização completa, pois nela o hardware é entregue de forma virtual.
+
+Em resumo, a virtualização é um tipo de tecnologia que permite que diversas aplicações e sistemas operacionais sejam processados em uma mesma máquina física, conforme ilustrado na imagem a seguir.
+
+

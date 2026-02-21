@@ -1,0 +1,38 @@
+Encapsulamento
+
+Ainda pode estar um pouco abstrata a forma como realmente a comunicação vertical e, principalmente, a horizontal funcionam.
+
+Como a camada 2 da máquina de origem consegue conversar com a mesma camada na máquina de destino?
+
+A comunicação horizontal ocorre de forma virtual. A camada 2 da máquina de origem, ao preparar o dado para ser enviado, adiciona informações que serão lidas e tratadas única e exclusivamente pela mesma camada do dispositivo de destino. Essas informações são denominadas cabeçalhos.
+
+
+
+Comunicação horizontal por meio de cabeçalho.
+Cada camada adicionará um novo cabeçalho ao dado que será enviado, e esse processo é chamado de encapsulamento.
+
+Cada camada receberá o dado da camada superior, através da interface, e adicionará seu próprio cabeçalho, encapsulando o dado recebido.
+
+
+
+Processo de encapsulamento de dados.
+Nesse processo, quando determinada camada recebe os dados, ela não se preocupa com o conteúdo que recebeu, apenas adiciona o seu cabeçalho para permitir que o protocolo execute as regras necessárias à comunicação.
+
+Esse procedimento acontece, repetidamente, até alcançar a camada 1 e a informação ser transmitida ao destino, onde ocorrerá o processo inverso. A informação subirá, desencapsulando as informações, da camada 1 até o usuário do serviço.
+
+
+Atenção
+Ao realizar o encapsulamento, a unidade de dados do protocolo ou PDU (Protocol Data Unit, na sigla em inglês) é criada.
+
+A PDU é constituída pela informação que vem da camada superior (PDU da camada superior) e o cabeçalho da própria camada.
+
+
+Entendendo na prática sobre encapsulamento
+
+Compreenda o conceito de encapsulamento e a comunicação entre as camadas da rede.
+
+
+
+Após analisar o conceito de arquitetura de camadas e ver o processo de encapsulamento, é possível deduzir que a grande desvantagem é o acréscimo de informações ao dado original, aumentando o volume de tráfego.
+
+Entretanto, essa desvantagem é mínima comparada às vantagens que temos de modularização, facilidade de manutenção e atualização dos protocolos, que permitiram uma enorme evolução na área de redes.

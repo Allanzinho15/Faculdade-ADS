@@ -1,0 +1,24 @@
+Gerência de desempenho e otimização (P = performance)
+O objetivo do gerenciamento de desempenho e otimização é garantir que uma rede esteja em operação da forma mais eficiente possível. De acordo com a ISO, sua função é quantificar, medir, informar, analisar e controlar o desempenho de diferentes componentes dela.
+
+
+Dentro desta área de gerenciamento, é possível realizar dois tipos de avaliação de desempenho:
+
+
+
+Avaliação de diagnóstico
+
+Detecta problemas e ineficiências na operação da rede.
+
+ 
+
+Exemplo: Se o gerente da rede percebe um equipamento ou enlace com baixa utilização, ele pode alterar a configuração para permitir que haja uma melhor distribuição de carga. Esse tipo de avaliação auxilia no gerenciamento de falhas, porque é capaz de antever situações que poderiam causar uma falha na rede.
+
+
+Avaliação de tendências
+
+Auxilia no planejamento da evolução da rede, observando seu comportamento e estimando a necessidade de aumento de determinado recurso.
+
+ 
+
+Exemplo: O monitoramento de um enlace entre matriz e filial poderá indicar a necessidade de um aumento na capacidade dele quando a utilização média ultrapassar determinado valor. Para avaliar a operação da rede, devem ser utilizadas, aponta Forouzan (2010), medidas mensuráveis, como capacidade, tráfego, vazão (throughput) e tempo de resposta.

@@ -1,0 +1,30 @@
+Operações em Google Cloud
+As operações em nuvem consistem no processo de operar ou executar uma infraestrutura em ambiente de nuvem. Isso tudo é complementado com o gerenciamento geral para garantir e assegurar que todos os processos e recursos estejam normatizados, a fim de manter essas operações funcionando, garantindo o máximo desempenho e a disponibilidade para satisfazer as necessidades e expectativas dos clientes.
+
+
+Uma das principais responsabilidades de operações é o monitoramento e, para que isso seja feito, é necessário identificar as métricas que devem ser analisadas e as tecnologias que podem ser utilizadas.
+
+
+O monitoramento mais básico possível ocorre por meio de LOGS que, por definição, consistem no registro de eventos relevantes no sistema ou infraestrutura, de maneira geral. Ou seja, é todo o histórico de acontecimentos importantes, com data e hora registrada. Com o uso dos LOGS, é possível identificar erros, acessos e alterações realizadas, para que, a partir dessas informações, seja possível fazer um trabalho preventivo e corretivo, quando necessário.
+
+
+
+Cloud Monitoring: monitoramento de aplicativos e da infraestrutura.
+
+O Google Cloud disponibiliza ferramentas do Cloud Monitoring para monitoramento de aplicações e infraestrutura de maneira mais minuciosa, coletando um grande volume de dados para disponibilização, pois o monitoramento de um ambiente é um dos papéis mais importantes em nuvem.
+
+
+Por meio dessa ferramenta é possível traçar estratégias para melhoria contínua, tomar uma ação preventiva para evitar qualquer problema ou empecilho que possa prejudicar a operação do sistema e, caso ocorra, identificar a falha por meio do registro histórico e agir o mais rápido possível.
+
+
+O Cloud Monitoring permite coletar dados e métricas de latência, por exemplo, o que nos indicará qual o tempo médio de transações e comunicação entre servidores. Indica também a quantidade de acessos e requisições em nossas aplicações, para que possamos entender e programar a infraestrutura para o volume que está sendo monitorado.
+
+
+Saiba Mais
+O Google acredita que a prevenção é sempre mais vantajosa que a remediação. Qualquer problema impacta diretamente o negócio, receita e claramente o time. Estar constantemente analisando as métricas de operações previne esse tipo de problema e auxilia na hora de tomar uma decisão final, que será embasada em dados reais.
+
+
+Operações e gerenciamento em ambientes Google Cloud
+
+
+Neste vídeo, falaremos sobre as principais métricas analisadas em um ambiente de nuvem (consumo de memória, CPU, latência e requisições) e como essas métricas impactam nossas aplicações e infraestrutura.

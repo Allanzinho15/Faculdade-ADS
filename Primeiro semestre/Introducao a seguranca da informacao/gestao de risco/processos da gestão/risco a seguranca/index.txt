@@ -1,0 +1,35 @@
+Risco à segurança da informação
+Antes de conhecê-los, precisamos entender como são realizados os processos da gestão de riscos (GR) dentro da Gestão de Segurança da Informação (GSI). Para isso, analisaremos um exemplo.
+
+A organização XPTO possui um servidor que executa um banco de dados com os seguintes elementos:
+
+
+Escopo de ativos: Servidor e banco de dados.
+Vulnerabilidades identificadas: Falha no software que pode ser explorada devido a outra no sistema operacional.
+Ameaça: Malware codificado para explorar as vulnerabilidades citadas e roubar dados do banco de dados.
+Medida de controle adotada: Instalação de suíte de antivírus.
+Medidas de controle não adotadas: Atualização de sistema operacional e software.
+Possível incidente de segurança da informação: Malware chega por e-mail para um usuário, que executa o arquivo anexado.
+Impactos: Roubo de dados sensíveis e prejuízo financeiro.
+Risco: Risco extremo.
+
+Um malware chamado No pain, no gain está causando pânico nas empresas ao redor do mundo justamente por explorar as vulnerabilidades identificadas nelas e roubar seus dados sensíveis. Existe, portanto, uma alta probabilidade de esse malware explorar tais vulnerabilidades, caso as medidas de controle restantes não sejam adotadas, causando, com isso, um impacto grave nos negócios dessas organizações. Para a XPTO, esse risco é relevante e foi classificado como risco extremo.
+
+
+Neste caso, que medidas devem ser tomadas?
+
+
+O plano de tratamento definido, nesse caso, foi o seguinte: evitar a ocorrência do incidente de forma preventiva, instalando as atualizações de software necessárias. Para isso, deve ser realizada uma comunicação às partes envolvidas antes e depois das atualizações. Após a aplicação delas, o risco será monitorado para prever a ocorrência de outras possíveis vulnerabilidades.
+
+
+
+Cada organização percebe os riscos de forma diferente. Neste exemplo, a organização Ajax (concorrente da XPTO) realizou uma percepção de risco diferente da empresa XPTO. Ela utiliza outro tipo de sistema operacional e outro tipo de software de banco de dados, que não são afetados pelo malware No pain no gain. Logo, dentro de seu atual contexto, esse malware pode não fazer parte da percepção de risco.
+
+
+Uma vez percebido, um risco passa pelo crivo de tolerância, determinando se ele será tratado ou não.
+
+
+O nome desse processo é critério de risco (o que a organização define como tolerável).
+
+
+Os que sobram após o tratamento são chamados de riscos residuais: trata-se daqueles considerados pequenos ou que, apesar das respostas não implementáveis, devem ser monitorados.

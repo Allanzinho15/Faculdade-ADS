@@ -1,0 +1,132 @@
+Estruturas de repetição
+Neste vídeo, você vai conhecer as estruturas de repetição do JavaScript: for, while, do/while e for/in.
+
+
+
+As estruturas de repetição – também chamadas de laços – permitem que uma ação seja executada de maneira repetitiva. Logo, sempre que uma ação recorrente se fizer necessária, no lugar de criar N linhas de código para repetir tal ação, podemos executá-la dentro de um laço, diminuindo, assim, nosso código, além de facilitar o trabalho.
+
+
+for
+
+No emulador de código a seguir, podemos ver a sintaxe do laço “for”: uma das estruturas de repetição presentes no JavaScript.
+
+
+Em sua forma mais comum, no laço ”for”, há uma variável, chamada normalmente de contador, que recebe um valor inicial (no exemplo, 0) e é incrementada (pelo “++”) até atingir uma condição (ser menor que 10).
+
+
+
+JavaScript (Node.js 12.14.0)
+
+var contador;
+for (contador = 0; contador < 10; contador ++){
+     //As instruções incluídas aqui serão executadas 10 vezes
+     /*
+     Será exibido o valor da variável contador 10 vezes no Console. O primeiro número será 0 e o último será 9 (repare que começamos com a nossa variável contador recebendo o número 0 e sendo incrementada até ser menor do que 10, ou seja, até o número 9.
+     */
+     console.log(contador);
+}
+
+Algumas variações possíveis nesse código seriam iniciar o contador em 1, por exemplo (o mais usual, em programação, é iniciarmos nossos índices em zero), ou ir até o número 10. Desse modo, no lugar do sinal de menor, utilizaríamos o “menor igual”, dessa forma: “ <= 10”. Teste essas variações no emulador anterior e veja as diferenças.
+
+
+A seguir, veremos as outras estruturas de repetição, além do “for”, presentes na linguagem JavaScript.
+
+
+while
+
+Veja o fragmento a seguir para entender o comportamento do laço “while” (enquanto):
+
+
+JavaScript (Node.js 12.14.0)
+ var contador = 0;
+while (contador < 10){
+     console.log(contador);
+     contador++;
+}
+
+
+Esse código tem o mesmo resultado daquele visto no exemplo utilizando o laço “for”. Sua sintaxe é simples: “Enquanto uma condição fornecida for verdadeira, faça isso.” Clique em Executar no emulador anterior e verifique!
+
+
+do/while
+
+Embora semelhante ao laço “while”, há uma diferença fundamental entre ambos. Observe:
+
+
+do/while
+
+
+A condição é testada no final.
+
+
+while
+
+
+A condição é testada no início.
+
+
+Com isso, pelo menos uma vez, a instrução (ou as instruções) do laço “do/while” será, obrigatoriamente, executada. Veja o exemplo:
+
+
+JavaScript (Node.js 12.14.0)
+
+var contador = 0;
+do{
+     console.log(contador);
+     contador += 1;
+} while (contador < 10);
+
+
+Execute o código no emulador anterior e veja que o resultado é exatamente igual ao do código usando “while”.
+
+ 
+
+Agora, modifique a última linha do código do laço “do/while” para:
+
+ 
+
+} while (contador < 0);
+
+ 
+
+Execute novamente o código e perceba que, apesar de a condição nunca ter sido verdadeira, o bloco de instruções do laço foi executado uma vez. Essa é a diferença entre o laço “do/while” e o laço “while”.
+
+
+for/in
+
+Assim como os demais laços em uma linguagem de programação, o “for/in” é bastante utilizado com arrays (vetor ou matriz contendo dados não ordenados).
+
+
+Normalmente, precisamos percorrer o conteúdo de um array e manipular ou apenas exibir seu valor. Para isso, podemos usar laços.
+
+
+Na emulador a seguir, serão apresentados dois fragmentos de código para uma mesma função: um utilizando “for” e outro, “for/in”.
+
+
+
+
+JavaScript (Node.js 12.14.0)
+
+var frutas = ['Laranja', 'Uva', 'Pera'];
+/*Imprimindo na caixa de diálogo o conteúdo do array 'frutas' utilizando o laço 'for'*/
+for(var i = 0; i < frutas.length; i++){
+     console.log('Nome da Fruta contida no Array: ' + frutas[i]);
+}
+/*Imprimindo na caixa de diálogo o conteúdo do array 'frutas' utilizando o laço 'for/in'*/
+for(var fruta in frutas){
+     console.log('Nome da Fruta contida no Array: ' + frutas[fruta]);
+}
+
+Analisando o código, é possível notar as diferenças de sintaxe entre os laços “for” e “for/in”. Observe:
+
+
+“for”
+
+
+Definimos uma variável contador (“i”) e devemos percorrer o array “frutas” começando em seu índice 0 até seu tamanho (length).
+
+
+“for/in”
+
+
+Declaramos uma variável contador (“fruta”) e dizemos ao código que percorra o array imprimindo seu conteúdo a partir do índice fornecido – nesse caso, a variável “fruta”.

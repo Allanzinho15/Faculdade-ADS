@@ -1,0 +1,42 @@
+Principais protocolos de controle
+Protocolo de controle da Internet
+
+O protocolo IP é o responsável por manter a unidade de toda a Internet, porém, ele não consegue realizar sozinho todo o trabalho necessário. Para auxiliá-lo nessa tarefa, foram desenvolvidos protocolos auxiliares na camada de rede, conhecidos como protocolos de controle.
+
+
+Neste módulo, estudaremos os principais protocolos de controle que trabalham em conjunto com o protocolo IP.
+
+
+ARP (Address Resolution Protocol)
+
+
+Embora na Internet cada hospedeiro possua um ou mais endereços IP, na verdade eles não podem ser usados diretamente para o envio de informações pela rede, pois o hardware da camada de enlace de dados não entende os endereços Internet.
+
+
+
+Suponha que você esteja utilizando um notebook e que ele enviará dados para um servidor na mesma rede. O software IP do notebook receberá os dados a serem enviados e construirá um pacote com o endereço IP do servidor no campo ENDEREÇO DESTINO do datagrama para transmissão. O software IP descobrirá que o servidor está em sua própria rede e que, portanto, deverá transmitir os dados diretamente a ele.
+
+
+Neste ponto existe um problema. A placa de rede trabalha com endereços físicos da camada de enlace, ela não reconhece endereços IP. Logo, é necessário encontrar uma forma de mapear os endereços de rede nos endereços de enlace.
+
+
+A solução adotada é fazer com que o hospedeiro que precise descobrir o endereço de enlace do destinatário envie um pacote por difusão perguntando: “A quem pertence o endereço IP A.B.C.D?”. Então, o hospedeiro destinatário responderá com seu endereço de enlace. O protocolo que faz essa pergunta e obtém a resposta é o ARP (Address Resolution Protocol, que é definido na RFC 826).
+
+
+No exemplo da imagem a seguir, a requisição ARP é enviada para o endereço de enlace ff-ff-ff-ff-ff-ff, o que permite que a camada de enlace promova uma difusão (entregue a requisição a todos os hospedeiros ligados ao meio de transmissão).
+
+
+
+Continuando em nosso exemplo, o software IP do notebook constrói um quadro de enlace endereçado ao servidor, coloca o pacote IP no campo de carga útil e o envia. A placa de rede do destinatário detecta esse quadro, reconhece-o como um quadro destinado a ela e o recolhe. O software de enlace extrai o pacote IP da carga útil e o repassa para o software IP, que verifica se ele está corretamente endereçado e o processa.
+
+
+São possíveis várias otimizações para tornar o arp mais eficaz. Em primeiro lugar, depois que uma máquina executa o ARP, ela armazena o resultado em um cache.
+
+
+Em muitos casos, o destinatário precisará enviar uma resposta, o que forçará também a execução do ARP para determinar o endereço de enlace do transmissor. Essa difusão do ARP pode ser evitada fazendo-se com que o destinatário inclua em sua tabela o mapeamento entre os endereços de rede e de enlace do transmissor.
+
+
+Se um hospedeiro precisar enviar dados para outro hospedeiro que se encontra em uma sub-rede diferente da sua, esse sistema de entrega direta não funcionará. Nesse caso, o hospedeiro transmissor precisará enviar seus dados para um roteador, que deverá providenciar o encaminhamento do datagrama para a sub-rede do destinatário. Poderá ser necessário que o protocolo ARP seja utilizado mais de uma vez ao longo do caminho.
+
+
+Para saber mais sobre o funcionamento do ARP quando existe um roteador no meio do caminho, assista ao vídeo.

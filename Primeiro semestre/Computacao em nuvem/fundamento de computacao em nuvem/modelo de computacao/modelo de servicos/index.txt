@@ -1,0 +1,73 @@
+Modelos de serviços para computação em nuvem
+Neste vídeo, serão apresentados os três principais modelos de serviço de computação em nuvem, ilustrados com um caso real.
+
+
+
+Principais modelos de serviços
+
+A computação em nuvem distribui os recursos na forma de serviços e podemos dividir em três cenários principais, de acordo com o nível de serviço oferecido.
+
+
+Infraestrutura como Serviço (IaaS)
+
+É um modelo de serviço de nuvem que permite ao usuário utilizar recursos de infraestrutura sob demanda, como armazenamento, virtualização e rede. Nesse cenário, os serviços de virtualização e rede são fornecidos pelo provedor enquanto o usuário cuida do sistema operacional, dos aplicativos e dados. Exemplos desse tipo de serviço incluem o serviço de máquinas virtuais do Azure e da AWS.
+ 
+
+
+Plataforma como Serviço (PaaS)
+
+É um tipo de modelo de serviço de computação em nuvem que oferece uma plataforma de nuvem flexível e escalonável para desenvolver, implantar, executar e gerenciar apps. Nesse cenário, o usuário tem todas as ferramentas necessárias para criar aplicativos, as necessidades de software, hardware, rede e sistemas operacionais são atendidas pelo provedor de serviços. Exemplo desse tipo de serviço é o Google App Engine.
+ 
+
+
+Software como Serviço (SaaS)
+
+É um modelo que permite aos usuários se conectar e usar aplicativos baseados em nuvem pela internet, como e-mail, serviços de armazenamento, entre outros. Nesse cenário, as necessidades de computação e armazenamento são atendidas pelo provedor de serviços em nuvem, o usuário só precisa fazer upload e baixar dados. Manutenção, tempo de inatividade, atualização e segurança são atendidos pelo provedor de serviços. Exemplos desse tipo de serviço são o Dropbox, Google APPS, Pipedrive e Shopify.
+ 
+
+
+
+
+A diferença principal entre os modelos apresentados está relacionada às responsabilidades dos atores envolvidos na computação em nuvem.
+
+
+No IaaS, o usuário é responsável por gerenciar tudo, aplicativos, middleware, sistemas operacionais e máquinas virtuais. O provedor de serviço é responsável por manter a infraestrutura do datacenter que hospedará as máquinas virtuais dos usuários.
+No PaaS, a responsabilidade do usuário diminui e aumenta a do provedor. O provedor é responsável por entregar todos os recursos de hardware e software necessários para que o usuário possa construir seus aplicativos. O código e os dados gerados pela aplicação são responsabilidade do usuário.
+O SaaS é aquele com o qual o usuário tem menor responsabilidade, bastando apenas se conectar aos aplicativos disponibilizados e utilizar. Ao contrário, o provedor de serviços é o que tem maior responsabilidade. Ele é responsável por gerenciar toda a pilha de aplicativos, desde o hardware, passando pelos sistemas operacionais, até o aplicativo.
+
+Confira uma lista de recursos gerenciados pelo usuário e pelo provedor, de acordo com cada categoria de serviço em nuvem. Convém ressaltar que na imagem aparece um quarto modelo que é o on premises, relacionado aos modelos de implantação que serão discutidos à frente. Nesse modelo, toda a infraestrutura fica a cargo do cliente.
+
+
+
+Quadro de responsabilidades.
+
+IaaS – Requer o máximo de gerenciamento do usuário entre os serviços da nuvem.
+PaaS – Requer menos gerenciamento do usuário.
+SaaS – Requer o mínimo de gerenciamento do usuário.
+
+Uma breve analogia dos modelos de serviços de nuvem
+
+Para fazer uma breve analogia entre os diferentes modelos de serviço, imagine a organização de um evento: vamos supor uma comemoração de 15 anos.
+
+Como seriam os serviços em cada modelo?
+
+
+
+Confira aqui!
+
+No caso, usar o SaaS é semelhante a fazer a comemoração de 15 anos na casa de festa com todos os serviços inclusos, por exemplo. Além do salão da casa de festa, estão inclusos o buffet, a decoração, o DJ, a cerimonialista, o fotógrafo, o serviço de maquiagem e o cabeleireiro, além do estilista para a criação dos vestidos da debutante. A única coisa a fazer é pagar por todos os serviços e aparecer no dia da festa.
+
+No PaaS, você contrata o salão da casa de festa com o buffet, a decoração, o DJ e a cerimonialista já incluídos no pacote, porém, é de sua responsabilidade a contratação dos profissionais para foto e filmagem, o estilista e a maquiagem da debutante.
+
+No IaaS, você faz a comemoração no salão de festa, mas os outros serviços são de sua responsabilidade. Assim, cabe à família da debutante contratar e administrar os serviços de buffet, decoração, DJ, cerimonialista, foto/filmagem, estilista do vestido e maquiagem.
+
+Por último, no caso de on premises, a cerimônia de 15 anos será realizada em casa, e a contratação e manutenção de todos os serviços será de responsabilidade da família.
+
+Outros modelos de serviços
+
+A computação em nuvem estreou oferecendo a SaaS, depois acrescentou ao seu portfólio soluções IaaS e PaaS. Como a nuvem tem capacidade infinita de prover serviços, estão surgindo diversas soluções em outros modelos de serviços como:
+
+
+DRaaS (Recuperação de Desastres como Serviço), voltada para segurança da informação, responsável pela replicação dos servidores, dados e aplicações.
+CaaS (Comunicação como Serviço), quando as soluções de comunicação, tais como VoIP, mensagens e streaming de vídeos, são oferecidas como serviço.
+FaaS (Função como Serviço), DBaas (Banco de Dados como Serviço), MaaS (Malware como Serviço), entre outras.

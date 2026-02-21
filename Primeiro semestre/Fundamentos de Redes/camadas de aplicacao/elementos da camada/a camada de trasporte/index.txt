@@ -1,0 +1,52 @@
+A camada de transporte na Internet
+Mas para que serve a camada de transporte?
+
+Executadas na camada de aplicação, as aplicações precisam de um modelo de rede no qual haja a entrega de uma mensagem (ou um fluxo de dados) tanto em um ponto de rede quanto em sua aplicação par no hospedeiro destino.
+
+
+O objetivo da camada de transporte é, independentemente das redes físicas em uso, promover a confiabilidade na transferência de dados entre os hospedeiros origem e destino.
+
+
+Como veremos no decorrer do nosso estudo, essa camada deve oferecer um serviço de transferência confiável, embora caiba à aplicação decidir sobre o seu uso.
+
+
+Serviço de Transporte
+
+Aspectos Fundamentais da Camada de Transporte
+
+Assista a este vídeo para compreender aspectos fundamentais da camada de transporte.
+
+
+
+Em uma arquitetura de camadas, podemos afirmar que o objetivo geral de uma camada é oferecer serviços àquela imediatamente superior. No caso da camada de transporte, sua pretensão é oferecê-los à de aplicação.
+
+
+Atenção
+Lembre-se de que, neste estudo, estamos considerando a arquitetura TCP/IP, na qual não existem as camadas de sessão e de apresentação.
+
+
+Como um dos principais objetivos da camada de transporte é ofertar um serviço confiável e eficiente a seus usuários, ela precisa oferecer, no mínimo, um serviço orientado à conexão e outro sem conexão.
+
+Para atingir esse objetivo, a camada de transporte utiliza os serviços oferecidos pela de rede. No serviço de transporte orientado à conexão (serviço confiável), existem três fases:
+
+
+
+Por meio de um controle apurado da conexão, esse serviço de transporte consegue verificar quais pacotes chegaram com erro ao destino e até mesmo aqueles que não foram enviados, sendo capaz de retransmiti-los até que os dados estejam corretos.
+
+Já no serviço de transporte sem conexão, não existe nenhum controle sobre os pacotes enviados. Se um deles se perder ou chegar ao destino com erro, nada será feito para obter a sua recuperação.
+
+Se a rede oferece um serviço com que garanta uma entrega sem erros, por que uma aplicação optaria por um serviço sem essa garantia?
+
+
+A resposta é simples: por questões de desempenho.
+
+
+Pelo fato de ser preciso cuidar de cada pacote no serviço orientado à conexão, verificando-os e retransmitindo-os em caso de necessidade, esse controle gera um overhead. Como nada disso é feito no serviço sem conexão, os pacotes são entregues no destino de forma mais simples e rápida.
+
+
+Aplicações como transferência de arquivos e e-mail exigem que seus dados cheguem ao destino livres de erros. Dessa forma, elas utilizam um serviço orientado à conexão.
+
+Ainda assim, em certas aplicações, o mais importante é a chegada a tempo de uma informação, mesmo que ela contenha erros ou que a mensagem anterior tenha se perdido.
+
+
+No serviço de telefonia em rede, por exemplo, o atraso na transmissão tem um efeito pior que um pequeno ruído causado pela eventual perda de pacote.

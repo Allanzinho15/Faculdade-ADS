@@ -1,0 +1,34 @@
+Tabelas de rota
+Quando você cria uma VPC, a AWS cria tabelas de rota principal. As tabelas de rota contêm um conjunto de regras, chamadas rotas, que são usadas para determinar para onde é direcionado o tráfego de rede. A AWS supõe que, ao criar uma nova VPC com sub-redes, você deseja que o tráfego flua entre elas. Portanto, a configuração padrão da tabela de rota principal tem por objetivo permitir o tráfego entre todas as sub-redes da rede local. A seguir, apresentamos um exemplo de uma tabela de rota principal.
+
+
+Vamos considerar que o destino e o alvo são duas partes principais dessa tabela de rotas.
+
+
+O destino (destination) é um intervalo de endereços IP para o qual você deseja que seu tráfego vá. No exemplo do envio de uma carta, você precisa de um destino para encaminhá-la ao local apropriado. O mesmo ocorre para o tráfego de roteamento. Nesse caso, o destino é o intervalo de IP da rede VPC.
+O alvo (target) é a conexão por meio da qual será enviado o tráfego. Nesse caso, o tráfego é roteado pela rede VPC local.
+
+
+Tabela de rota indicando destino (destination) e alvo (target).
+
+VPC padrão
+
+Neste vídeo, você conhecerá a VPC que a AWS já pré-provisiona na região.
+
+
+
+Ao criar uma conta na AWS, você já encontra uma VPC padrão (default) em cada região (a própria AWS já deixou isso pré-provisionado). Uma VPC padrão vem com uma sub-rede pública em cada zona de disponibilidade, um gateway de internet e configurações para habilitar a resolução de DNS, permitindo que você possa iniciar imediatamente as instâncias do Amazon EC2.
+
+
+Uma VPC padrão é adequada para começar rapidamente e iniciar instâncias públicas, como um blog ou site simples. Você pode modificar os componentes de sua VPC padrão conforme necessário para adequar às suas necessidades.
+
+
+A VPC padrão possui as seguintes características:
+
+
+VPC com um bloco CIDR IPv4 de tamanho /16 (172.31.0.0/16), o que permite fornecer até 65.536 endereços IPv4 privados.
+Sub-redes de tamanho /20 em cada zona de disponibilidade. Isso fornece até 4.096 endereços por sub-rede, lembrando que alguns são de uso reservado.
+Um gateway de internet já conectado à VPC padrão.
+Uma tabela de rotas principal que aponta todo o tráfego (0.0.0.0/0) para o gateway da internet.
+Grupo de segurança padrão.
+Opções de DHCP padrão definidas para sua conta da AWS com sua VPC padrão.

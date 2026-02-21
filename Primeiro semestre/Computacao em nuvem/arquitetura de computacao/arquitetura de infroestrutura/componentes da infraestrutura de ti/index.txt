@@ -1,0 +1,98 @@
+Componentes da infraestrutura em nuvem
+Confira agora os grandes componentes da computação em nuvem (back end e front end) e os diversos componentes que a compõem.
+
+
+
+Agora é hora de definir e conhecer os principais componentes da arquitetura em nuvem. Vamos lá?
+
+
+
+Hardware do servidor
+
+É o componente básico para a execução de serviços em nuvem. Os servidores compartilham recursos físicos para prover escalabilidade, melhor desempenho e alta disponibilidade.
+
+
+Virtualização
+
+
+
+Modelos de serviço
+
+É o componente responsável pelas arquiteturas altamente escaláveis usadas para oferecer serviços em nuvem, como SaaS (Software as a Service), PaaS (Platform as a Service) e IaaS (Infrastructure as a Service).
+
+
+Gerenciamento de nuvem
+
+É o componente responsável por gerenciar recursos de computação, alocação de recursos e otimização de serviços em nuvem.
+
+
+Redes em nuvem
+
+É o componente das redes em nuvem que fornece conectividade, e suporta aplicativos e serviços em tempo real, permitindo que os usuários acessem serviços de nuvem de qualquer lugar.
+
+
+Segurança em nuvem
+
+É o componente que garante a segurança e privacidade dos dados nos serviços em nuvem, usando criptografia para proteção de dados e controles de acesso para garantir a segurança dos serviços.
+
+Quando estamos projetando uma arquitetura de um sistema de computação em nuvem, qualquer que seja o tipo, modelo de funcionamento ou serviço a oferecer, sua constituição se baseia na divisão dos componentes em dois grandes grupos, conforme sua localização e atribuições no processo de funcionamento do sistema.
+
+
+Grandes grupos de componentes da arquitetura
+
+
+Os grandes grupos que podemos inserir os componentes da arquitetura são:
+
+
+Front end
+
+
+Interface que o usuário utiliza para acessar a nuvem.
+
+
+Back end
+
+
+Interface da própria nuvem.
+
+
+A internet é o elemento mediador que permite a comunicação entre o front end e o back end. A imagem abaixo apresenta a arquitetura com seus grupos e componentes. Veja:
+
+
+
+Visão simplificada de arquitetura de computação em nuvem.
+
+O front end caracteriza os elementos disponibilizados para o usuário ou cliente do serviço de computação em nuvem. Na parte superior da imagem a seguir, observamos um exemplo de componentes físicos, mas há componentes lógicos (como um navegador da web) que também constituem a arquitetura front end. Veja:
+
+
+
+Componentes da arquitetura de computação em nuvem.
+
+O usuário pode utilizar diversos tipos de dispositivos, como smartphones, computadores, tablets, normalmente, utilizando um navegador para acessar os recursos da nuvem. Atualmente, é mais comum ao usuário de um serviço de nuvem interagir apenas com os componentes que servem de interface para acesso, como o navegador da web. Dependendo do tipo de serviço implementado pela arquitetura em uso, as tarefas do usuário podem crescer.
+
+
+Atenção
+O back end pode ser, genericamente, entendido como sendo a própria nuvem e é constituído de diversos componentes – tanto de hardware e software quanto de gestão ­– responsáveis, em conjunto, pelo fornecimento dos serviços aos diversos usuários (clientes), especialmente em modelos de nuvem pública, sempre que eles solicitarem algum serviço ao fornecedor/provedor (servidores).
+
+
+Os elementos do back end variam, naturalmente, conforme o modelo e tipo de serviço adotados pela arquitetura. A imagem que vimos ilustra os elementos da parte back end, a qual engloba alguns componentes da arquitetura do sistema de computação em nuvem, isto é, os servidores, dispositivos de armazenamento com alta capacidade e disponibilidade, além dos aplicativos de gerenciamento e controle da nuvem. Em geral, estes equipamentos são distribuídos geograficamente distantes dos usuários, o que contribui para o uso do termo nuvem.
+
+
+Da mesma forma que os componentes da parte front end variam de modelo e organização entre os usuários, embora basicamente sejam do mesmo tipo, os componentes da parte back end tem genericamente as mesmas aptidões e características, mesmo que variando em quantidade, tipo e organização de arquitetura para arquitetura.
+
+
+Os diversos componentes normalmente requeridos para uma arquitetura back end podem ser agrupados conforme sua utilidade no conjunto de atividades, a fim de operar e manter o sistema de computação em nuvem. Vejamos os principais componentes:
+
+
+Aplicação.
+Serviços.
+Cloud runtime (execução na nuvem).
+Armazenamento.
+Infraestrutura.
+Gerenciamento.
+Segurança.
+
+Podemos entender que a computação em nuvem se torna viável quando ocorre a conexão entre os elementos do front end, ou seja, da parte do usuário/cliente, e os elementos do back end, isto é, da nuvem propriamente dita, que nada mais é do que os servidores e aplicativos que fornecem os serviços requeridos pelos clientes.
+
+
+Essa conexão é realizada usualmente através da internet, permitindo ao usuário solicitar tarefas e serviços de qualquer parte geográfica do globo terrestre. É uma excelente vantagem da computação em nuvem.

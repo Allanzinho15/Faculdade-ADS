@@ -1,0 +1,54 @@
+Gateway de internet (internet gateway)
+Para habilitar a conectividade para sua VPC, você deve criar um gateway de internet. Pense nele como algo semelhante a um modem. Da mesma forma que um modem conecta seu computador à internet, o gateway conecta sua VPC. Ao contrário do seu modem em casa, que às vezes fica inativo ou offline, o gateway de internet é altamente disponível e escalável, abrangendo todas as AZs disponíveis. Depois de criar um gateway da internet, você o anexa à sua VPC.
+
+
+
+Gateway anexado à sua VPC.
+
+Gateway NAT
+
+
+Um gateway NAT é um serviço de Network Address Translation (NAT que pode ser usado para que as instâncias em uma sub-rede privada possam se conectar a serviços fora de sua VPC, mas os serviços externos não podem iniciar uma conexão com essas instâncias.
+
+
+Ao criar um gateway NAT, você especifica um dos seguintes tipos de conectividade:
+
+
+
+Pública (padrão)
+
+As instâncias em sub-redes privadas podem se conectar à internet por meio de um gateway NAT público, mas não podem receber conexões de entrada não solicitadas. Você cria um gateway NAT público em uma sub-rede pública e deve associar a ele, na criação, um endereço IP elástico. Você roteia o tráfego do gateway NAT para o gateway da internet para a VPC. Como alternativa, pode ser usado um gateway NAT público para se conectar a outras VPCs ou à sua rede local. Nesse caso, você roteia o tráfego do gateway NAT por meio de um gateway de trânsito ou de um gateway privado virtual.
+
+
+Privada
+
+As instâncias em sub-redes privadas podem se conectar a outras VPCs ou à sua rede local por meio de um gateway NAT privado. Serve basicamente para isolar, mas dar conectividade a outras redes privadas, como em outras VPCs ou com redes on-premise via VPN ou conectividade direta. Você não pode associar um endereço IP elástico a um gateway NAT privado. É possível anexar um gateway da internet a uma VPC usando um gateway NAT privado. Porém, se rotear o tráfego do gateway NAT para o gateway da internet, este último vai descartar o tráfego.
+
+O gateway NAT substitui o endereço IP de origem das instâncias por endereço IP próprio. Para um gateway NAT público, este é o seu endereço IP elástico. Para um gateway NAT privado, este é o endereço IP privado do gateway NAT. Ao enviar tráfego de resposta para as instâncias, o dispositivo NAT converte os endereços de volta para o endereço IP original.
+
+
+Os principais casos de uso do gateway NAT são:
+
+
+Acesso à internet a partir de uma sub-rede privada
+
+Você pode usar um gateway NAT público para permitir que instâncias em uma sub-rede privada enviem tráfego de saída para a internet, evitando sua conexão com as instâncias.
+
+
+Acesso a uma rede usando endereços IP permitidos
+
+Se você precisa se comunicar com outra rede, pública ou privada, mas precisa restringir o acesso a determinados IPS, pode usar um gateway NAT, público ou privado, para representar um pool de IPs de instâncias, ao invés de criar regras de liberação para cada uma delas.
+
+
+Ativar a comunicação entre redes sobrepostas
+
+Você pode usar um gateway NAT privado para permitir a comunicação entre as redes, mesmo que tenham intervalos CIDR sobrepostos. Por exemplo, suponhamos que as instâncias na VPC A precisem acessar os serviços fornecidos pelas instâncias na VPC B. Elas utilizarão o mesmo bloco de IPs 10.0.0.0/24.
+
+
+
+
+A seguir, veremos um diagrama com gateway NAT público em conjunto com o gateway de Internet para garantir conectividade.
+
+
+
+Gateway NAT público em conjunto com o gateway de internet para garantir conectividade.

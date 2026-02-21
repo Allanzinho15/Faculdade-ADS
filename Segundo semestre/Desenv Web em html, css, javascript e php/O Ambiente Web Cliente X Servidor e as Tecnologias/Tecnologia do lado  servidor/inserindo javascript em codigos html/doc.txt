@@ -1,0 +1,68 @@
+As tecnologias HTML
+HTML, sigla para linguagem de marcação de hipertexto, é utilizada para a estruturação de páginas web. Objetivando materializar a ideia, vamos fazer uma comparação com a construção civil. O terreno pode ser comparado ao servidor web, que hospeda as aplicações. A estrutura de vigas e pilares da edificação pode ser comparada ao HTML, que define a estrutura de páginas web. O acabamento pode ser comparado a outras tecnologias, como CSS (Cascading Style Sheet). HTML tem várias tags predefinidas, como para a definição de títulos, parágrafos, formulários, inserção de imagens, vídeos, entre outras.
+
+
+O vídeo vai demonstrar, por meio de uma comparação com a construção civil, como a tecnologia HTML é fundamental, permitindo estruturar páginas da web.
+
+
+
+HTML
+
+
+A HTML é considerada a tecnologia fundamental da web, pois sua função é definir a estrutura de uma página web. Essa linguagem de marcação, criada por Tim Berners-Lee na década de 1990, inicialmente objetivava permitir a disseminação de pesquisas entre Lee e seus colegas pesquisadores, mas foi rapidamente difundida até formar a rede que, posteriormente, veio a se tornar a World Wide Web como a conhecemos atualmente.
+
+
+Em linhas gerais, a HTML é uma linguagem de marcação simples, composta por elementos, chamados tags, que são relacionados a textos e outros conteúdos a fim de lhes dar significado. Por exemplo: podemos marcar um texto como sendo um parágrafo, uma lista ou uma tabela. É possível, ainda, inserir vídeos e imagens. Além disso, também utilizamos essa marcação para definir a estrutura de um documento de forma lógica: menu de navegação, cabeçalho, rodapé etc. As tags podem ser agrupadas nos seguintes tipos:
+
+
+
+Estruturais
+
+Juntamente com o elemento de definição do DocType, como pode ser visto na imagem seguinte, compõem a estrutura obrigatória de uma página web.
+
+
+Estrutura obrigatória de uma página web.
+
+De conteúdo
+
+Como nome sugere, têm o papel de marcar o conteúdo pelo seu tipo.
+
+
+Tags de conteúdo de uma página web.
+
+Semânticas
+
+Relacionadas ao tipo de conteúdo e à criação de seções para agrupá-lo de acordo com sua função no documento. Para melhor entender esse conceito, veja a imagem a seguir:
+
+ 
+
+Como visto na imagem apresentada, as tags < header >, < nav >, < main > e < footer > desempenham papel semântico, uma vez que estruturam a página em seções. Como seus nomes indicam, elas separam o conteúdo em partes lógicas que formam o esqueleto da maioria das páginas HTML, ou seja: cabeçalho, menu de navegação, conteúdo principal e rodapé. Logo, tags de parágrafo, imagem, entre outras, são inseridas dentro de cada uma dessas seções, formando assim um documento HTML completo.
+
+
+Tags estruturais básicas de uma página web.
+Uma listagem completa de tags e atributos (usados para adicionar características a uma tag) pode ser encontrada no site do W3C.
+
+
+HTML5
+
+
+A versão mais recente da HTML é a 5, que trouxe algumas importantes evoluções em relação às anteriores. Entre tais novidades destacam-se:
+
+
+
+Novos atributos e elementos, com foco sobretudo na semântica.
+
+
+Melhorias de conectividade.
+
+
+Possibilidade de armazenamento de dados no lado cliente.
+
+
+Otimização nas operações offline.
+
+
+Suporte estendido a multimídia — áudio e vídeo.
+
+
+

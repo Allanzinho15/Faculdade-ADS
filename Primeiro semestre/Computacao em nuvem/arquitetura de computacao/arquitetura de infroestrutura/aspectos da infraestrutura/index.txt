@@ -1,0 +1,119 @@
+Aspectos da infraestrutura de TI
+Infraestrutura: on premise x em nuvem
+
+Neste vídeo, abordaremos as diferenças entre a estrutura on premise e nuvem, iremos explicar a infraestrutura em nuvem, e suas características.
+
+
+
+Para entendermos melhor a diferença entre a infraestrutura on premise e a infraestrutura em nuvem, precisamos primeiro conferir seus conceitos. Vejamos:
+
+
+
+Infraestrutura on premise
+
+Refere-se a qualquer tipo de tecnologia que seja comprada ou alugada e hospedada em um local definido dentro da empresa. É possível incluir servidores, computadores, serviços de nuvem privada, conexões de rede, software, impressoras e outros recursos. Essa infraestrutura, geralmente, é mantida e operada pela própria empresa, em vez de ser fornecida por terceiros.
+
+
+Infraestrutura em nuvem
+
+É um conjunto de serviços de computação em nuvem (cloud computing) que oferece soluções de infraestrutura para organizações. Os serviços incluem computação virtual, armazenamento, processamento, rede, bancos de dados e serviços especializados, como análise de dados, inteligência artificial, machine learning e suporte de programação. Esses serviços podem ser usados em escala, ajudando as empresas a gerir economias de escala ao otimizar seus gastos em TI e aumentar a produtividade por meio da automação.
+
+Entendemos que a infraestrutura on premise é aquela em que os elementos de hardware e software necessários para o funcionamento dos sistemas informáticos são providos, geridos e mantidos internamente pela organização, sendo instalados no próprio local.
+
+
+Por outro lado, a computação em nuvem é uma infraestrutura baseada na internet, em que a capacidade computacional é fornecida por provedores de serviços que hospedam aplicações de software, dados e serviços web na internet e os fornecem aos seus clientes por meio de um contrato de serviço. Veja as principais diferenças entre infraestrutura on premise e computação em nuvem:
+
+
+Infraestrutura on premise
+
+
+Não é flexível e limita a capacidade de escalonamento.
+Exige mais custos de investimento inicial.
+A gestão tende a ser mais complexa.
+Custos de manutenção mais elevados.
+
+Computação em nuvem
+
+
+É altamente escalável e pode oferecer serviços on demand.
+Requer um investimento limitado e é mais barata em longo prazo.
+Fornece maior facilidade de gerenciamento.
+Custo de manutenção reduzido.
+
+Infraestrutura em nuvem
+
+
+A arquitetura de infraestrutura de computação em nuvem é a base para a criação de sistemas de computação escaláveis e altamente disponíveis na nuvem. Ela descreve os serviços, componentes, aplicativos e as tecnologias necessárias para implantar e gerenciar uma infraestrutura de computação em nuvem.
+
+
+As três principais camadas de serviço da infraestrutura em nuvem típica consistem em: camada de servidor, camada de armazenamento e camada de rede. Vamos conferi-las?
+
+
+Camada de servidor
+
+
+Inclui servidores virtuais, servidores físicos ou um híbrido dos dois.
+
+
+Camada de armazenamento
+
+
+Inclui sistemas de arquivo, banco de dados e outros tipos de armazenamento.
+
+
+Camada de rede
+
+
+Inclui serviços de conectividade, segurança e gerenciamento de aplicativos.
+
+
+Uma arquitetura em nuvem também pode incluir ferramentas de automação de nuvem, soluções de monitoramento e ferramentas de gerenciamento de configuração. Essas ferramentas ajudam os administradores de sistemas a implantar, gerenciar e monitorar a infraestrutura de computação em nuvem. Além disso, a arquitetura de infraestrutura em nuvem também pode incluir ofertas de serviços em nuvem, como: serviços de plataforma, serviços de computação, serviços de armazenamento, serviços de rede e outros.
+
+
+Comentário
+A arquitetura em nuvem permite que organizações criem e gerenciem aplicativos e serviços de forma eficaz, escalável e altamente disponível. É uma solução ideal para empresas que buscam aumentar a produtividade, reduzir custos e melhorar o tempo de resposta.
+
+
+Características da infraestrutura em nuvem
+
+
+A computação em nuvem se enquadra como um serviço e, como tal, deve ter seu projeto bem elaborado para atender a diversos requisitos, como: segurança, confiabilidade, integridade, disponibilidade.
+
+
+Ao se estudar ou analisar o processo de criação, fabricação e operação de determinado produto/serviço, seja ele qual for, deve-se tratar o assunto sob dois pontos de vista diferentes, cada um deles sendo utilizado em momentos diferentes da criação ou fabricação do referido produto/serviço. Estamos falando de:
+
+
+Arquitetura do produto/serviço
+Implementação (ou engenharia)
+
+O produto pode ser de qualquer natureza, como uma geladeira, um edifício de apartamentos, um computador, um processador, uma rede de computadores ou um serviço como a computação em nuvem.
+
+
+Em geral, há profissionais especializados em cada caso, como os arquitetos e engenheiros civis, que até podem ter formação acadêmica distinta, como no caso do projeto (arquiteto) e construção (engenheiro) de um edifício, ou ser o mesmo profissional se o produto ou serviço não apresenta grande complexidade.
+
+
+A arquitetura, então, descreve as características e funções do produto e apresenta os elementos que permitirão ao engenheiro e desenvolvedor fabricá-lo e implementá-lo.
+
+
+Exemplo
+Em uma arquitetura de rede de computadores, suas funções são agrupadas em camadas, isto é, os elementos que permitirá você acessar uma página da web, enviar um e-mail ou transferir um arquivo.
+
+
+No projeto dessa arquitetura, são definidos os formatos das mensagens, com seus diversos itens para controle, detecção de erros etc. O implementador deverá, assim, usar tais especificações e construir ou desenvolver o produto/serviço.
+
+
+No que se refere à computação em nuvem, sua arquitetura deve mostrar e descrever os aspectos inerentes à sua funcionalidade; como os seus diversos elementos funcionais estão organizados; e o que fazer para realizar a atividade de computação em nuvem.
+
+
+Veja abaixo a estrutura básica de uma computação em nuvem com seus elementos constitutivos, os quais se organizam e funcionam conforme a arquitetura idealizada:
+
+
+
+Exemplo de estrutura de computação em nuvem.
+
+Na imagem, podemos observar o que qualquer arquitetura deve conter:
+
+
+Usuários que estão dispersos geograficamente em seus locais de origem.
+Provedores dos serviços que disponibilizarão os elementos da infraestrutura requerida para fornecimento dos serviços.
+Canais de comunicação entre os usuários e os provedores dos diversos serviços.

@@ -1,0 +1,221 @@
+Frameworks e o desenvolvimento web
+O uso de frameworks no processo de desenvolvimento de software não é algo novo. Você encontrará várias discussões apoiando ou desestimulando o seu uso. Independentemente da sua linha de pensamento, é importante saber que tais frameworks também estão disponíveis no desenvolvimento web, incluindo na estilização de páginas web via CSS.
+
+
+Neste vídeo, vamos apresentar o conceito de frameworks e o uso desse recurso no desenvolvimento web.
+
+
+
+Frameworks e CSS
+
+A CSS é uma tecnologia poderosa, flexível e, muitas vezes, complexa. São várias propriedades e valores possíveis. Inúmeras combinações podem se sobrepor umas às outras, inclusive.
+
+
+A marcação HTML tem um comportamento natural em relação aos elementos, além de pequenas variações entre navegadores. Por outro lado, há bastante similaridade em relação aos layouts de diversos sites.
+
+
+
+Exemplo de layout de site
+
+Os sites de e-commerce, por exemplo, costumam ter um layout bem parecido para facilitar a experiência do usuário ao trafegar entre um e outro.
+
+ 
+
+Nesses casos, vale o ditado: “não é necessário reinventar a roda”; aliás, um bom ponto de partida para falarmos sobre frameworks CSS.
+
+ 
+
+A CSS é uma tecnologia poderosa, flexível e, muitas vezes, complexa. São várias propriedades e valores possíveis. Inúmeras combinações podem se sobrepor umas às outras, inclusive.
+
+
+A marcação HTML tem um comportamento natural em relação aos elementos, além de pequenas variações entre navegadores. Por outro lado, há bastante similaridade em relação aos layouts de diversos sites. Os sites de e-commerce, por exemplo, costumam ter um layout bem parecido para facilitar a experiência do usuário ao trafegar entre um e outro. Nesses casos, vale o ditado: “não é necessário reinventar a roda”; aliás, um bom ponto de partida para falarmos sobre frameworks CSS.
+
+
+Frameworks podem ser definidos como um conjunto de componentes reutilizáveis que permitem a otimização do processo de programação.
+
+
+A maioria dos frameworks CSS mantém similaridades entre si, além de prós e contras específicos, que vão desde a facilidade de aprendizagem ao suporte e à documentação disponíveis, entre outros fatores.
+
+
+Logo, a escolha de um framework pode se dar por fatores objetivos, relacionados às suas características ou aos requisitos específicos de determinado projeto, ou mesmo por fatores subjetivos, como gosto pessoal. Ao decidir utilizar um framework, é fundamental ter em mente o quanto ele poderá auxiliá-lo em seu trabalho. Para isso, é importante conhecer suas as principais características, vantagens e desvantagens de cada opção.
+
+
+Fique agora com Bootstrap, Foundation e Semantic UI, os três principais frameworks CSS existentes!
+
+
+Bootstrap
+
+Desenvolvido pela equipe do Twitter em 2011, posteriormente passou a ser mantido de modo independente. Sua licença é open source e, atualmente, é o framework CSS mais popular.
+
+
+Trata-se de um framework responsivo baseado na premissa mobile-first – cujo foco inicial são os dispositivos móveis e, em seguida, os desktops. Possui componentes prontos para uso (ready-to-use) desenvolvidos em HTML, CSS e Javascript.
+
+
+Sistema de grid
+
+O Grid Layout é um sistema de layout generalizado. Com ênfase em linhas e colunas, pode parecer um retorno ao layout da tabela, mas há muito mais no layout da grade do que no layout da tabela (MEYER, 2017).
+
+
+Uma das principais características dos frameworks CSS é o seu sistema de grid. Veja agora a difença entre grid e sistema grid:
+
+
+Grid
+
+
+É um elemento de design, uma ferramenta que serve para ordenar elementos visuais.
+
+
+Sistema de grid
+
+
+Consiste em uma série de containers, linhas e colunas que servem para arranjar e alinhar conteúdo.
+
+
+Embora compartilhem da mesma fundamentação teórica, há pequenas diferenças de implementação entre os frameworks.
+
+
+A grid do Bootstrap, por exemplo, possui 12 colunas e 5 breakpoints responsivos, que são pontos de quebra nos quais o layout será ajustado para atender a diferentes resoluções de tela. Esses breakpoints são:
+
+
+Extra small
+Small
+Medium
+Large
+Extra large
+
+Na prática, esse sistema deve ser corretamente utilizado para que todos os elementos da página sejam alinhados e visualizados em diferentes tamanhos de tela.
+
+
+ 	Extra small 
+<576px	Small 
+≥576px	Medium 
+≥768px	Large 
+≥992px	Extra large 
+≥1200px
+Max container width	None (auto)	540px	720px	960px	1140px
+Class prefix	.col-	.col-sm-	.col-md-	.col-lg-	.col-xl-
+# of columns	12
+Gutter width	30px (15px on each side of a column)
+Nestable	Yes
+Column ordering	Yes
+Sistema de grid do Bootstrap
+Bootstrap Grid System, 2023
+
+Como utilizar o Bootstrap
+
+É necessário incluir a sua biblioteca, composta por dois arquivos: um CSS e outro Javascript. Essa instalação é simples e pode ser feita pela inclusão dos respectivos arquivos diretamente na HTML.
+
+
+
+Ferramenta Jquery
+
+Outra forma de instalação é por meio de ferramentas gerenciadoras de pacotes, como npm ou gem. Em termos de dependência, para a utilização completa de todas as suas funcionalidades, é necessário ainda incluir outras bibliotecas Javascript, a Jquery e a Popper.
+
+ 
+
+Por fim, é importante considerar a compatibilidade das versões do framework, tanto em relação a bibliotecas de terceiros quanto às funcionalidades que possam estar obsoletas ou depreciadas.
+
+
+Comentário
+O Bootstrap possui inúmeras classes predefinidas para as mais diversas necessidades. Para utilizá-las, é preciso combiná-las com uma marcação HTML predefinida, conforme documentação oficial. Por exemplo: há uma classe que pode ser aplicada em tabelas para criar o efeito zebra (alternância de cores entre as linhas da tabela), a “.table-striped”. Para usar essa classe, basta incluir seu nome no atributo class de uma tabela.
+
+
+Foundation
+
+Framework criado em 2011 e que está entre os mais conhecidos e utilizados. É responsivo e baseado na abordagem mobile-first. Sua principal característica é fazer uso nativo do pré-processador de CSS, chamado de SASS.
+
+
+Sistema de grid
+
+Sistema do Foundation também composto por 12 colunas. Nas versões mais recentes, o sistema básico de grid foi substituído por um novo sistema, o XY grid. novas funcionalidades foram adicionadas, como alinhamento vertical e horizontal, dimensionamento automático e grid vertical completa.
+
+
+Como utilizar o Foundation
+
+É semelhante à do Bootstrap: é preciso incluir um arquivo CSS e outro Javascript ou então utilizar um gerenciador de pacotes. Além disso, é recomendado também incluir a biblioteca jQuery.
+
+
+A respeito da compatibilidade, lembre-se, algumas funcionalidades são descontinuadas entre uma versão ou outra. Logo, tome cuidado para que nada deixe de funcionar ao atualizar versões.
+
+
+Comentário
+Em termos de recursos extras, destaca-se nesse framework a existência de recursos específicos para a criação de HTML responsivo para e-mail. Trata-se do Foundation for Emails.
+
+
+Semantic UI
+
+O Semantic UI se destaca por utilizar, nativamente, um pré-processador CSS, o LESS, e a biblioteca Javascript Jquery. Também é um framework open source. Suas classes utilizam sintaxe de linguagem natural, como substantivos, por exemplo, para vincular conceitos de maneira mais intuitiva.
+
+
+Como utilizar o Semantic UI
+
+A sua inclusão é semelhante à dos demais frameworks, ou seja, por meio de arquivos CSS e JS, além da biblioteca jQuery, ou via gerenciadores de pacotes.
+
+
+Outros frameworks
+
+Há vários outros disponíveis, sendo os mais conhecidos os seguintes:
+
+
+Pure
+
+
+Considerado o framework mais leve, foi desenvolvido pela Yahoo.
+
+
+Materialize CSS
+
+
+Baseado no Material Design, ambos criados pelo Google e utilizados em seus produtos.
+
+
+Bulma
+
+
+Framework baseado unicamente em CSS, não faz uso de Javascript.
+
+
+Skeleton
+
+
+Framework minimalista. Possui apenas 400 linhas de código.
+
+
+Como visto em suas definições e em seus exemplos de utilização, os frameworks têm a mesma finalidade, servindo para as mesmas funções. Em outras palavras, tudo que é possível criar com um framework também é possível criar com outro. Porém há prós e contras em cada um deles, como tamanho do framework e seus impactos no carregamento da página, facilidade ou dificuldade de aprendizagem e simplicidade de sintaxes.
+
+
+Recomendação
+Na prática, é recomendado usar um framework sempre que possível. Escolha aquele que melhor atenda às suas necessidades. Na dúvida, escolha o mais utilizado – afinal de contas, ele não deve ser o mais usado à toa.
+
+
+Vantagens e desvantagens da utilização de frameworks
+
+Não existe uma recomendação definitiva sobre usar ou não um framework em um projeto web. Se, por um lado, a utilização de frameworks ajuda a otimizar o tempo de desenvolvimento, por outro lado, tira um pouco do controle do programador sobre o que está sendo feito, uma vez que não é recomendado alterar o comportamento padrão dos códigos fornecidos pelos frameworks.
+
+
+
+Vantagens
+
+Padronização do código: muito válido, sobretudo, quando se trabalha em equipe.
+ 
+
+Economia de tempo: uma vez que não é preciso criar todo o código CSS do zero.
+ 
+
+Seguimento de padrões: já que os frameworks estão sempre antenados às especificações e recomendações oficiais.
+ 
+
+Compatibilidade entre navegadores: funcionam em diferentes navegadores.
+
+Desvantagens
+
+Tamanho/peso do framework: Pode impactar no carregamento da página.
+ 
+
+Restrições de design: Lembre-se de que o framework possui um layout padrão, baseado em grids. Isso pode acabar limitando a imaginação no momento de criação do design ou impactando no tempo de desenvolvimento para que seja possível encaixar o layout criado no padrão estabelecido pelo framework.
+ 
+
+Curva de aprendizado: aprender a utilizar adequadamente um framework pode levar algum tempo.
+ 
+
+Controle sobre o código: sendo obrigado a utilizar a estrutura definida pelo framework, acabamos por perder o controle total sobre o código. Além disso, utilizar frameworks sem uma boa base teórica sobre CSS pode limitar o seu entendimento e aprendizado.

@@ -1,0 +1,44 @@
+Controle de erros (codificação)
+Existem duas estratégicas básicas para o controle de erro no nível de enlace: open loop (malha aberta, sem canal de retorno) e feedback (malha fechada, com canal de retorno).
+
+
+
+Open loop
+
+
+Na estratégia de open loop, a detecção e correção de erros são feitas completamente pelo receptor. São empregados códigos especiais (FEC: Forward Error Correction) para inserir informação redundante no quadro. Tudo isso para que, ao receber um quadro, o receptor:
+
+ 
+
+Possa usar a codificação para verificar a integridade do quadro;
+Havendo algum problema, possa, por si só, alterar o quadro para a forma correta.
+ 
+
+
+A desvantagem dessa técnica é a necessidade de se inserir grande quantidade de informação redundante no quadro, de forma que o receptor possa executar as duas tarefas listadas acima sozinho. No entanto, pode ser a única solução, caso a transmissão não tenha canal de retorno.
+
+
+Exemplo
+O código hamming é o exemplo mais simples de código de correção de erros.
+
+
+Feedback
+
+
+A estratégia feedback emprega apenas códigos de detecção de erros, isto é, insere informação redundante que seja suficiente apenas para o receptor testar a integridade do quadro. Havendo um problema, o receptor solicita ao transmissor que retransmita aquele quadro. Assim, é necessário haver um canal de retorno do receptor ao transmissor, situação comum em redes de dados, pois as estações geralmente precisam transmitir e receber dados.
+
+
+Um exemplo simples de código de detecção de erros é o bit de paridade, que é inserido ao final do quadro. Assumindo a escolha da paridade par, o transmissor, ao transmitir o quadro, verifica a quantidade de bits “1” presentes nele. Se houver um número par de números 1, a paridade estará correta, e o bit de paridade receberá o valor “0”. Caso haja um número ímpar de bits “1” a ser transmitido no quadro, o transmissor fechará a paridade par inserindo o bit “1” no campo do bit de paridade. Ao receber o quadro, o receptor deve checar a paridade; se não for par, certamente houve algum problema com a recepção do quadro, e ele deve solicitar uma nova transmissão deste mesmo quadro.
+
+
+
+O bit de paridade, apesar de ser simples e de fácil implementação, não é eficaz em muitos casos, como, por exemplo, na situação em que houve um problema no sinal, fazendo com que o receptor interprete erradamente dois bits do quadro. Assim, quando o receptor fizer o teste, a paridade estará correta, e o receptor não perceberá o erro na recepção do quadro.
+
+
+Dessa forma, outros códigos de detecção mais poderosos foram desenvolvidos e padronizados para uso em redes de computadores, como, por exemplo, o CRC (Verificação Cíclica de Redundância), conforme ilustrado no quadro sobre técnica de enquadramento por caractere. (STALLINGS, 2004)
+
+
+
+Enquadramento por caractere.
+
+Depois de termos estudado as técnicas de enquadramento e codificação, entendemos como os quadros podem ser formados e como o receptor é capaz de verificar se houve ou não erro na recepção do quadro. Falta agora estudarmos como as retransmissões são realizadas automaticamente por meio de protocolos de enlace.

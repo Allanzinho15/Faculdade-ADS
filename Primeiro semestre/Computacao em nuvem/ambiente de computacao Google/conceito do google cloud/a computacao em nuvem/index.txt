@@ -1,0 +1,38 @@
+A computação em nuvem do Google
+O Google é uma empresa de tecnologia fundada em 1998 e que hoje atua em diversos segmentos além do mais conhecido, o buscador. O provedor de nuvem, conhecido como Google Cloud Platform, ou GCP, foi lançado em 2008. Desde então, vem agregando novas tecnologias ao mercado.
+
+
+Um provedor de nuvem disponibiliza uma infraestrutura como serviço. Isso significa que o Google precisa ter datacenters físicos em algum lugar para que possa prover esses recursos computacionais. As chamadas regiões são os locais onde estão localizados esses datacenters, o que pode ser em países ou estados diferentes.
+
+
+Por exemplo, no Brasil existe um datacenter localizado em São Paulo, conhecido como southamerica-east1. Dentro de cada região, existe uma divisão chamada de “zonas”, o que representa uma divisão de servidores, denominados “a”, “b” e “c”, e isso visa garantir a disponibilidade da sua aplicação dentro de um único servidor, assim podemos ter redundância do nosso software, tendo uma maior disponibilidade em caso de falhas de servidores na região.
+
+
+Na imagem a seguir, podemos ver as regiões disponíveis no Google Cloud Platform.
+
+
+
+Regiões do Google Cloud Platform em dezembro de 2022.
+
+Com todos esses datacenters espalhados pelo mundo, talvez você esteja se perguntando: como é a comunicação entre eles? Diferentemente de outros provedores de nuvem, o Google possui rede própria de cabos submarinos interligando todas as regiões, isso agrega muita segurança e agilidade na entrega de recursos. Pense que todos os dados que trafegam entre os datacenters do Google estão em uma rede privada, sem a necessidade de passar pela rede tradicional da internet.
+
+
+Curiosidade
+Todos os sites e produtos do Google utilizam a mesma infraestrutura do Google Cloud. Aplicações que possuem bilhões de usuários, como o YouTube, Gmail e o Google.com, estão hospedados e utilizam essa mesma rede que é ofertada para outros clientes.
+
+
+A imagem a seguir ilustra os cabos de conexão entre datacenters do Google ao redor do mundo.
+
+
+
+Rotas de cabos do Google em dezembro de 2022.
+
+Por meio de toda essa infraestrutura, o Google consegue disponibilizar todos os seus produtos e ofertar seu provedor de nuvem Google Cloud Platform, com tecnologias como serviço para locação de recursos computacionais, processamento de aprendizado de máquinas, inteligência artificial e plataformas para hospedagem e implantação de aplicativos.
+
+
+Como são os servidores do Google Cloud?
+
+
+Neste vídeo, daremos um panorama de como funcionam os servidores do Google Cloud, qual a função de uma região e uma zona dentro da computação em nuvem.
+
+

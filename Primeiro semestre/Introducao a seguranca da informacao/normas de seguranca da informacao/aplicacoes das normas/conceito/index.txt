@@ -1,0 +1,67 @@
+Conceito
+Requisitos da Norma ISO/IEC 27001
+
+
+Benefícios da Norma ISO/IEC 27001
+
+
+Como estamos supondo o início dos seus estudos nas normas, considere as seguintes sugestões e premissas:
+
+
+O enquadramento aos itens será realizado com fins didáticos, sem necessariamente levar em consideração ou conceituar termos que são utilizados no âmbito de um sistema de gestão.
+Leia cada descrição do estudo de caso como se estivesse ouvindo essas palavras diretamente da parte envolvida.
+Atenha-se apenas à descrição da cena, evite suposições sobre outros eventos que não estão descritos.
+Faça uso das estruturas das normas (tabelas 3 e 4) para facilitar a localização dos itens.
+Cada descrição do estudo de caso poderá ser enquadrada em mais de um item da norma e poderá haver outros itens não referenciados nesses exemplos.
+Faça suas análises somente com base nos itens da norma. Não utilize outros norteadores que não estejam escritos lá. Se a ocorrência descrita não se enquadrar em nada do que estiver escrito, considere que esta não precisa ser levada em consideração na análise.
+
+O segundo exemplo é um estudo de caso para aplicação dos itens da Norma ABNT NBR ISO/IEC 27002:2013.
+
+
+Leia, a seguir, uma notícia extraída de um site da web.
+
+
+
+Notícia
+
+AT&T apresentou, esta semana, ação na Justiça do Texas contra 25 falsos clientes que contrataram serviços da companhia com o intuito de roubar informações de sua base de dados.
+
+ 
+
+Os acusados criaram contas de clientes na AT&T que lhes permitiam armazenar gravações de voz no banco de dados da empresa. A intenção dos acusados, no entanto, era apenas ter acesso ao sistema da AT&T e, então, tentar ouvir gravações de outras companhias.
+
+ 
+
+De acordo com a AT&T, o grupo conseguiu acessar gravações de 2.500 clientes da empresa. As informações seriam provavelmente usadas em disputas entre concorrentes ou para planejar estratégias de marketing.
+
+ 
+
+A AT&T diz que gravações com dados sensíveis e informações financeiras são armazenadas em bancos especialmente seguros, que não foram acessados pelos falsos clientes.
+
+ 
+
+Como os registros criados eram falsos, as 25 contas de clientes citadas no processo ainda precisam ser investigadas. O caso causou certa controvérsia ao ser apresentado à Justiça, já que o processo é movido contra falsos clientes, ou seja, pessoas que, em tese, não existem.
+
+ 
+
+Assim que detectou o problema, a AT&T bloqueou o acesso às gravações dos 2.500 clientes envolvidos no caso e cancelou as contas de acesso dos acusados. Todos os clientes envolvidos foram notificados sobre o caso, diz a AT&T (ZMOGINSKI, 2008).
+
+9.4.1: Restrição de acesso à informação.
+9.4.2: Procedimentos seguros de entrada no sistema (log-on).
+9.4.3: Sistema de gerenciamento de senha.
+9.4.4: Uso de programas utilitários privilegiados.
+9.4.5: Controle de acesso ao código-fonte de programas.
+
+Lembrando que cada um desses itens possui seu respectivo controle, diretrizes para implementação e informações adicionais.
+
+
+Comentário
+Como estamos trabalhando com a premissa de nos ater apenas à descrição da cena, e estamos analisando uma matéria jornalística (que carece de muitos detalhes), vamos considerar que o atacante poderá ter explorado qualquer uma das medidas de controle dos itens pertencentes ao item 9.4.
+
+
+Exemplo de aplicação da Norma ISO/IEC 27001
+
+
+Estudo de caso para aplicação dos itens da Norma ABNT NBR ISO/IEC 27001:2013
+
+Confira agora um estudo de caso para aplicação dos itens da Norma ABNT NBR ISO/IEC 27001:2013.

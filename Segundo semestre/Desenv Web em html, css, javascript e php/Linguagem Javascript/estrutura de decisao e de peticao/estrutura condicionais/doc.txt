@@ -1,0 +1,379 @@
+Estruturas condicionais
+Neste vídeo, você vai compreender as estruturas condicionais do JavaScript, entre elas as instruções if, else, else if e switch. Confira!
+
+
+
+Segundo Flanagan (2011), as estruturas de decisão, também conhecidas como condicionais, são instruções que executam ou pulam outras instruções, dependendo do valor de uma expressão especificada. São os pontos de decisão do código, também conhecidos como ramos, uma vez que podem alterar o fluxo do código, criando um ou mais caminhos.
+
+
+Aprofundando o conceito
+
+Para melhor assimilação do conceito de estruturas condicionais, vamos usar um exemplo a partir do código construído anteriormente, como veremos a seguir:
+
+
+JavaScript (Node.js 12.14.0)
+    <!doctype html>
+<html lang="pt-BR">
+<head>
+     <meta charset="utf-8">
+     <title>Incorporando Javascript em Páginas HTML</title>
+     <!-- Incorporando um arquivo .js externo -->
+     <script src="script.js"></script>
+</head>
+<body>
+     <div id="exibe_resultado"> Resultado da Multiplicação: </div>
+</body>
+     <!-- Incorporando códigos Javascript diretamente na página -->
+     <script type="text/javascript">
+          //Com duas barras criamos um comentário de linha em Javascript
+          //Comentários de mais de uma linha podem ser feitos dentro de /* */
+          var variavel; //Declarando uma variável cujo nome é 'variavel'
+          variavel = 3 + 3; // Atribuindo valores e aplicando uma operação matemática em uma variável
+          /* Utilizando a função nativa 'alert' para exibir uma caixa de
+diálogo na tela cujo conteúdo será o valor da variável 'variavel' */
+          alert(variavel);
+          var resultadoMultiplicacao = multiplique(10, 50); // chamando a função 'multiplique' passando dois valores - 10 e 50
+          //Manipulando a Árvore DOM a fim de exibir, dentro da DIV declarada no HTML, o resultado da multiplicação juntamente com o seu texto inicial
+var divLocal = document.getElementById('exibe_resultado');
+          /*
+          Neste ponto a variavel divLocal é um objeto que representa a div declarada no HTML.
+          Sendo um objeto é possível acessar seus atributos, como innerHTML, precedido do nome do objeto seguido de um '.'
+          */
+          divLocal.innerHTML += resultadoMultiplicacao;
+          //Definição da função 'multiplique' que recebe dois parâmetros - numero1 e numero2
+          function multiplique(numero1, numero2){
+               /*
+               Declarando uma nova variável que guardará o resultado da operação de multiplicação;
+               Iniciando a variável com o valor de 0.
+               */
+               var resultado = 0;
+               //Atribuindo à variável 'resultado' o valor resultante da multiplicação dos 2 parâmetros recebidos
+               resultado = numero1 * numero2;
+               //Retornando (devolvendo) o valor da variável resultado
+               return resultado;
+          }
+     </script>
+</html>
+
+Light Mode
+
+Copiar
+
+As orientações do programa afirmam que deve ser realizada a divisão de dois números inteiros positivos.
+
+
+O que acontece se o usuário inserir um número inteiro que não seja positivo? Ou como forçá-lo a inserir um número positivo?
+
+ 
+
+Para essa função, podemos utilizar uma condição, ou seja, se o usuário inserir um número inteiro não positivo, deve-se avisar que o número não é válido, solicitando que seja inserido um número válido.
+
+Nesse caso, o fluxo normal do programa é receber dois números positivos, calcular a divisão e exibir o resultado. Perceba que a condição cria um novo fluxo, um novo ramo, em que outro diálogo é exibido, e o usuário é levado a inserir novamente o número.
+
+
+O fluxo normal e o fluxo resultado da condicional podem ser vistos na imagem a seguir, em que são apresentados os passos correspondentes ao nosso exercício, separando as ações do programa e as do usuário.
+
+
+
+
+Fluxo normal e fluxo alternativo
+
+Repare que a verificação “é um nº inteiro positivo” permite apenas duas respostas: “sim” e “não”. Essa condição, mediante a resposta fornecida, é responsável por seguir o fluxo normal do código ou o alternativo.
+
+
+O fluxograma de exemplo foi simplificado para fornecer mais detalhes. Logo, a respectiva notação padrão não foi utilizada em sua confecção.
+
+
+Nas linguagens de programação, utilizamos as instruções condicionais para implementar o tipo de decisão apresentado no exemplo. Em JavaScript, estão disponíveis as instruções "if/else" e "switch", como veremos a seguir.
+
+
+Instrução “If”
+
+A sintaxe da instrução "if/else" em JavaScript possui algumas formas. A primeira e mais simples é apresentada do seguinte modo:
+
+
+if (condição) instrução
+
+Nessa forma, é verificada uma única condição. Caso seja verdadeira, a instrução será executada. Do contrário, não. Antes de continuarmos, cabe destacar os elementos da instrução:
+
+ 
+
+É iniciada com a palavra reservada “if”.
+É inserida, dentro de parênteses, a condição (ou condições).
+É inserida a instrução a ser executada, caso a condição seja verdadeira.
+
+Outro detalhe importante: caso exista mais de uma instrução para ser executada, é necessário envolvê-las em chaves. Veja o exemplo:
+
+
+JavaScript (Node.js 12.14.0)
+if (condição1 && condição2){
+instrução1;
+instrução2;
+}
+
+Light Mode
+
+Copiar
+
+Nesse segundo caso, além de mais de uma instrução, também temos mais de uma condição. Quando é necessário verificar mais de uma condição, em que cada uma delas precisa ser verdadeira, utilizamos os caracteres “&;&;”.
+
+
+Na prática, as instruções 1 e 2 só serão executadas caso as condições 1 e 2 sejam verdadeiras. Vamos a outro exemplo:
+
+
+JavaScript (Node.js 12.14.0)
+if (condição1 || condição2){
+instrução1;
+instrução2;
+}
+
+Light Mode
+
+Copiar
+
+Repare que, nesse código, os caracteres “&;&;” foram substituídos por “||”. Esses últimos são utilizados quando uma ou outra condição precisa ser verdadeira para que as instruções condicionais sejam executadas.
+
+
+E o que acontece se quisermos verificar mais condições?
+
+
+Nesse caso, podemos fazer isso tanto para a forma em que todas as condições precisam ser verdadeiras, separadas por “&;&;”, quanto para a forma em que apenas uma deve ser verdadeira, separadas por “||”. Além disso, é possível combinar os dois casos na mesma verificação. Veja o exemplo:
+
+
+JavaScript (Node.js 12.14.0)
+if ( (condição1 && condição2) || condição3){
+instrução1;
+instrução2;
+}
+
+Light Mode
+
+Copiar
+
+Nesse fragmento, as duas primeiras condições são agrupadas por parênteses. A lógica aqui é a seguinte:
+
+
+Execute as instruções 1 e 2 SE as condições 1 e 2 forem verdadeiras OU se a condição 3 for verdadeira.
+
+
+Por fim, há outra forma: a de negação.
+
+
+Como verificar se uma condição é falsa (ou não verdadeira)?
+
+
+Veremos a seguir:
+
+
+JavaScript (Node.js 12.14.0)
+if (!condição1){
+instrução1;
+instrução2;
+}
+
+Light Mode
+
+Copiar
+
+O sinal “!” é utilizado para negar a condição. As instruções 1 e 2 serão executadas caso a condição 1 não seja verdadeira.
+
+
+Vamos praticar?
+
+Nos três emuladores de código a seguir, apresentamos as estruturas de decisão vistas até o momento. No primeiro emulador, temos o uso da estrutura de decisão “if” de maneira simples, contendo apenas uma única condição:
+
+
+var a = 10;
+var b = 3;
+console.log ("if com uma única condição:");
+if (a > b){
+    console.log("a é maior que b");
+}
+if (a == b){
+    console.log("a é igual a b");
+}
+if (a < b){
+    console.log("a é menor que b");
+}
+if (b < a){
+    console.log("b é menor que a");
+}
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+JavaScript (Node.js 12.14.0)
+
+123456789101112131415
+Input
+
+Digite cada input em uma linha.
+
+Executar
+Console
+
+Já no emulador seguinte, a estrutura de decisão “if” é implementada com duas condições, além dos operadores lógicos AND (&;&;) e OR (||):
+
+
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+JavaScript (Node.js 12.14.0)
+
+Input
+
+
+Executar
+Console
+
+Por fim, no emulador a seguir, temos a estrutura “if” sendo usada de uma maneira mais elaborada, com mais de duas condições, combinação dos operadores &;&; e II, assim como o uso do operador lógico de negação NOT ( ! ):
+
+
+var c = 5;
+var d = -1;
+console.log("if com duas condições, onde ambas precisam ser verdadeiras:");
+if (c > d && d > 0){
+
+    console.log("c é maior que d E d é um número positivo");
+}
+if (c > d && d <= 0){
+
+    console.log("c é maior que d E d não é um número positivo");
+}
+
+    console.log("if com duas condições, onde pelo menos uma precisa ser verdadeira:");
+if (c < d || d > 0){
+
+    console.log("c é menor que d OU d é um número positivo");
+}
+if (c < d || d <= 0){
+
+    console.log("c é menor que d OU d não é um número positivo")
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+JavaScript (Node.js 12.14.0)
+
+789101112131415161718192021
+Input
+
+Digite cada input em uma linha.
+
+Executar
+Console
+
+Instrução “else”
+
+A instrução “else” acompanha a instrução “if”. Embora não seja obrigatória, como vimos nos exemplos, sempre que “else” for utilizado, deve vir acompanhado de “if”. O “else” indica se alguma instrução deve ser executada caso a verificação feita com o “if” não seja atendida. Vejamos:
+
+
+JavaScript (Node.js 12.14.0)
+if(número fornecido é inteiro e positivo){
+     Guarde o número em uma variável;
+}else{
+     Avise ao usuário que o número não é válido;
+     Solicite ao usuário que insira novamente um número;
+}
+
+Light Mode
+
+Copiar
+
+Perceba que o “else” (senão) acompanha o “if” (se). Logo, SE as condições forem verdadeiras, faça isto; SENÃO, faça aquilo.
+
+
+No último fragmento, foi utilizado, de modo proposital, português-estruturado nas condições e instruções. Isso porque, mais adiante, você mesmo codificará esse "if/else" em JavaScript.
+
+Instrução “else if”
+
+Veja o exemplo a seguir:
+
+
+JavaScript (Node.js 12.14.0)
+if (numero1 < 0){
+     instrução1;
+     }else if(numero == 0){
+          instrução2;
+     }else{
+          instrução3;
+     }
+
+Light Mode
+
+Copiar
+
+Repare que uma nova instrução foi usada no fragmento. Trata-se de “else if”, instrução utilizada quando queremos fazer verificações adicionais sem agrupá-las todas dentro de um único “if”. Além disso, ao utilizarmos essa forma, caso nenhuma das condições constantes no “if” e no(s) “if else” seja atendida, a instrução “else” será executada obrigatoriamente ao final.
+
+
+Recomendação
+Otimize os códigos presentes nos emuladores anteriores usando o “else if”. Como exemplo, apresentamos o código do primeiro emulador modificado, no qual as quatro estruturas de decisão com “if” foram transformadas em uma única estrutura de decisão.
+
+
+Note que, antes, eram geradas duas saídas redundantes (“a é maior que b” e “b é menor que a”), pois se tratava de quatro estruturas independentes. Por isso, todas elas eram avaliadas. Isso não ocorrerá mais com o uso de uma estrutura de decisão composta de “if” e “else if”, pois, quando a primeira condição verdadeira for encontrada (“a é maior que b”), nenhuma das outras condições será avaliada. Logo, teremos:
+
+
+JavaScript (Node.js 12.14.0)
+var a = 10;
+var b = 3;
+
+console.log ("if com uma única condição:");
+if (a > b){
+     console.log("a é maior que b");
+} else if (a == b){
+     console.log("a é igual a b");
+} else if (a < b){
+     console.log("a é menor que b");
+} else if (b < a){
+     console.log("b é menor que a");
+}
+
+Light Mode
+
+Copiar
+
+Instrução “switch”
+
+A instrução “switch” é bastante útil quando uma série de condições precisa ser verificada. É bastante similar à instrução “else if”. Vejamos:
+
+
+JavaScript (Node.js 12.14.0)
+
+switch(numero1)
+switch(numero1){
+     case 0:
+          instrução1;
+          break;
+     case 1:
+          instrução2;
+          break;
+     default:
+          instrução3;
+          break;
+}
+Light Mode
+
+Copiar
+
+De maneira geral, o switch é usado quando há uma série de condições, nas quais diversos valores para a mesma variável são avaliados. Vamos detalhar o código anterior:
+
+ 
+
+Após o “swicth” dentro de parênteses, temos a condição a ser verificada.
+A seguir, temos os “case”, em quantidade equivalente às condições que queremos verificar.
+Depois, dentro de cada “case”, temos a(s) instrução(ões) e o comando “break”.
+Por fim, temos a instrução “default”, que será executada caso nenhuma das condições representadas pelos “case” seja atendida.

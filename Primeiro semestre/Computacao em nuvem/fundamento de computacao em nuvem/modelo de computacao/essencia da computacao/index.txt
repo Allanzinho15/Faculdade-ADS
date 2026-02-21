@@ -1,0 +1,94 @@
+Essência da computação em nuvem
+Neste vídeo, serão apresentadas as características essenciais da computação em nuvem.
+
+
+
+O National Institute of Standards and Technology (NIST) define a computação em nuvem como um modelo que possibilita acesso, de modo conveniente e sob demanda, a um conjunto de recursos computacionais configuráveis (por exemplo, redes, servidores, armazenamento, aplicações e serviços) que podem ser rapidamente adquiridos e liberados com mínimo esforço gerencial ou interação com o provedor de serviços (NIST, 2011).
+
+Esse modelo de nuvem é composto por:
+
+
+Cinco características essenciais
+
+
+ 
+
+Autoatendimento sob demanda
+Amplo acesso à rede
+Agrupamento de recursos
+Elasticidade dinâmica
+Serviço mensurável
+
+Três modelos de serviço
+
+
+ 
+
+Infraestrutura como um Serviço - (IaaS)
+Plataforma como um Serviço (PaaS)
+Software como um Serviço (SaaS)
+
+Quatro modelos de implantação
+
+
+ 
+
+Nuvem privada
+Nuvem comunitária
+Nuvem pública
+Nuvem híbrida
+
+Características essenciais da computação em nuvem
+
+Segundo o NIST, a computação em nuvem possui cinco características essenciais e determinantes para a tecnologia, são elas (NIST, 2011):
+
+
+
+On-demand self-service (autoatendimento sob demanda)
+
+Acesso direto e sob demanda, garantindo que a alocação e a liberação de recursos ocorram sem a necessidade de interação humana entre o usuário e o provedor.
+
+
+Broad network access (amplo acesso à rede)
+
+Capacidade da infraestrutura de rede de se conectar a uma ampla variedade de dispositivos, como telefones celulares, laptops, estações de trabalho e tablets, para permitir acesso contínuo aos recursos de computação nessas diversas plataformas.
+
+
+Resource pooling (agrupamento de recursos)
+
+Os recursos de computação do provedor são agrupados para atender a vários consumidores usando um modelo multilocatário, ou seja, os recursos computacionais são compartilhados entre diversos usuários, os quais não precisam ter conhecimento acerca da localização dos recursos que estão utilizando. Esses recursos computacionais devem ser abstraídos por dispositivos físicos reais, o que é alcançado na maioria das vezes por meio de virtualização.
+
+
+Rapid elasticity (elasticidade dinâmica)
+
+Capacidade de ampliar e reduzir conforme necessário, seja automática ou manualmente, sem a necessidade de lead times. Dessa maneira, a rápida alocação e liberação de recursos da nuvem a qualquer momento e conforme a demanda da aplicação proporciona ao usuário a não preocupação com a quantidade de recurso a que tem direito e tenha a sensação de capacidade de armazenamento infinita, podendo a qualquer momento requisitar recursos.
+
+
+Measured Service (serviço mensurável)
+
+A capacidade de medir exatamente quais recursos estão sendo usados, monitorar e controlar esses serviços para podermos posteriormente apresentar esses dados ao cliente ou ao usuário final, por exemplo. O conceito de serviço mensurável contribuiu para o surgimento do modelo pay-as-you-go.
+
+Camadas e atores na computação em nuvem
+
+As três camadas da computação em nuvem são: camada de infraestrutura, camada de plataforma e camada de aplicação.
+
+
+A camada de infraestrutura é a camada mais baixa. Nessa camada, os provedores de infraestrutura disponibilizam os serviços de armazenamento e rede. Nela encontram-se os servidores, os sistemas de armazenamento e os roteadores.
+A camada de plataforma está relacionada com os serviços de aplicações que podem ser utilizadas para desenvolver, testar e implementar aplicações na nuvem.
+A camada de aplicação fornece o maior nível de abstração, oferecendo diversas aplicações como serviços para serem consumidos pelos usuários.
+
+Na imagem a seguir é possível visualizar as três camadas de computação em nuvem.
+
+
+
+Camadas de computação em nuvem.
+
+Os três principais atores da computação em nuvem são: os provedores de serviço, os usuários da nuvem e os provedores de infraestrutura.
+
+Os provedores de serviços são aqueles que desenvolvem e disponibilizam os serviços aos usuários por meio de interfaces baseadas na internet. Já os serviços precisam de uma infraestrutura sobre a qual serão instalados; e essa infraestrutura é fornecida na forma de um serviço pelos provedores de infraestrutura.
+
+Confira os provedores de serviço e sua relação com gerenciamento da interface da infraestrutura e com os seus serviços. Os usuários também aparecem na imagem como aqueles que utilizam os serviços disponíveis na nuvem.
+
+
+
+Esquema de relacionamento entre os atores da computação em nuvem.

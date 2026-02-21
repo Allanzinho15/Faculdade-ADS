@@ -1,0 +1,53 @@
+Termos e definições
+Muitos dos termos utilizados pelo PCN são de uso comum e intuitivos. Para esclarecer seus significados, serão apresentados alguns desses termos e dos acrônimos baseados no processo de Gerenciamento de Continuidade de Serviço de Tecnologia da Informação:
+
+
+
+Risco
+É a probabilidade de ocorrer um evento que prejudique o alcance do objetivo preestabelecido para o negócio ou algum processo. Também pode ser descrito como a chance – o risco é mensurável – de ocorrer uma falha dentro de determinado período.
+
+
+Serviço
+Criação de atividade a fim de gerar valor para os clientes obterem os resultados que desejam sem que, para isso, precisem gerenciar custos e riscos.
+
+
+Disponibilidade
+É a característica de um serviço executar sua função preestabelecida sempre que for requisitado.
+
+
+Desastre
+É um evento imprevisível que provoca grandes perdas ou danos a uma organização. Quando os desastres ocorrem, as organizações não conseguem realizar suas principais funções de negócios durante um período mínimo predeterminado.
+
+
+Prática de gerenciamento de continuidade de serviço
+Conjunto de ações que visa a garantir que os níveis de disponibilidade e de desempenho dos serviços estejam dentro de patamares de qualidade suficientes em caso de desastre.
+
+
+Planos de recuperação de desastre
+Conjunto de planos definidos contendo a estratégia de recuperação de uma empresa após um desastre e de seu retorno à condição anterior a esse desastre.
+
+
+Análise de impacto no negócio
+Identifica as principais funções do negócio e suas dependências. Trata-se de uma atividade essencial na prática do gerenciamento de continuidade de serviço.
+
+
+Garantia
+É a expectativa de que um produto ou serviço funcionará de acordo com as condições expostas quando ele foi adquirido.
+
+
+Avaliação de risco
+Corresponde a identificar, analisar e mensurar os riscos a que uma organização, processo, produto ou pessoa estejam expostos.
+
+
+Prática de gerenciamento de risco
+Corresponde à análise, à compreensão e ao tratamento eficaz dos riscos pela organização.
+
+O PCN é fundamental para garantir que os principais processos de uma organização possam continuar funcionando em um cenário de desastres. Infelizmente, muitas empresas não se preparam para esses cenários, subestimando a ocorrência de situações tão complexas. Contudo, as que são precavidas passam pelas crises com mais robustez, pois conseguem se manter em funcionamento e proteger a vida dos seus colaboradores.
+
+
+Para a implementação do PCN é necessário passar por algumas etapas. O instrumento mais utilizado para isso é o PDCA.
+
+
+Por que planejar é tão fundamental para os negócios?
+
+Confira agora a apresentação sobre algumas ferramentas para garantir a continuidade dos negócios.

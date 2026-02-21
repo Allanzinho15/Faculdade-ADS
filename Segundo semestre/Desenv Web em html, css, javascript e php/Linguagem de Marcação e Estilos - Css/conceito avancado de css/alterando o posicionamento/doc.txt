@@ -1,0 +1,157 @@
+Alterando o posicionamento de elementos utilizando CSS
+Neste vídeo, demonstramos como alterar o posicionamento de elementos em uma página HTML utilizando CSS.
+
+
+
+Roteiro de prática
+
+Você aplicará os conceitos de posicionamento e layout para modificar o layout inicial de uma página, organizando seus elementos e definindo novas propriedades. Você verá a seguir o “antes” e o “depois”, assim como o código-fonte inicial.
+
+
+Mas antes de começar, vamos revisar as ferramentas e também o roteiro da prática. Primeiro, as ferramentas: um editor de textos – pode ser o próprio bloco de notas do Windows ou o Nano Editor do Linux, ou então algo um pouquinho mais avançado, como o software (livre/gratuito) Notepad++ e também de um navegador – Google Chrome, Firefox, MS Edge etc.
+
+
+Agora, vamos ao roteiro!
+
+ 
+
+Copie o código disponibilizado a seguir e o salve, utilizando seu editor, com a extensão “.html”.
+ 
+
+Criando uma página com o mesmo código ou apenas alterando esse inicial, modifique os elementos HTML e propriedades CSS para que a página fique com o layout desejado (imagem a seguir).
+ 
+
+Salve todo o seu trabalho e teste a página do navegador.
+
+Código HTML inicial:
+
+
+Plain Text
+
+Light Mode
+    <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Posicionamento elementos com CSS</title>
+<style type="text/css">
+.img {
+width: 400px;
+height: 200px;
+}
+
+#container-texto {
+width: 400px;
+background-color: blue;
+height: 150px;
+overflow: auto;
+}
+
+.texto {
+font-weight: bold;
+text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<h1>Visão Inicial da Página</h1>
+<img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Boxmodell-detail.png/220px-Boxmodell-detail.png">
+<div id="container-texto">
+<p>
+	<span class="texto">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+	In euismod nibh sit amet justo cursus, eget posuere arcu pharetra. 
+	</span>. 
+	Donec vestibulum, lectus non consectetur condimentum, ex purus 
+	luctus lectus, at lacinia augue sem euismod diam.
+</p>
+<p>
+	<span class="texto">
+	Aliquam aliquam accumsan varius. Fusce facilisis sollicitudin tortor. 
+	</span>. 
+	Curabitur aliquet bibendum ligula, vitae porta nunc ornare sed. 
+ 	Aliquam dapibus scelerisque turpis, eget hendrerit turpis elementum in. 
+	Aliquam accumsan sit amet nisi euismod imperdiet. 
+	Integer non pellentesque ante, nec gravida leo.
+</p>
+</div>
+</body>
+</html>	
+
+
+Veja como estará a página antes da estilização pedida no roteiro:
+
+
+
+Página antes da estilização
+
+Como resolução, teremos o código a seguir.
+
+
+Plain Text
+
+
+Light Mode
+    <!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Posicionamento elementos com CSS</title>
+<style type="text/css">
+div#main {
+margin: auto;
+width: 400px;
+background-color: orange;
+border: 1px solid #000;
+padding: 10px;
+}
+.img {
+width: 394px;
+height: 200px;
+border: 3px inset yellow;
+}
+#container-texto {
+width: 382px;
+background-color: blue;
+height: 150px;
+overflow: auto;
+margin-top: 20px;
+padding-left: 5px;
+padding-right: 5px;
+border: 4px dashed grey;
+}
+.texto {
+font-weight: bold;
+text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<div id="main">
+<h1>Visão Final da Página</h1>
+<img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Boxmodell-detail.png/220px-Boxmodell-detail.png">
+<div id="container-texto">
+<p><span class="texto">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+	In euismod nibh sit amet justo cursus, eget posuere arcu pharetra. 
+	</span>. 
+	Donec vestibulum, lectus non consectetur condimentum, ex purus 
+	luctus lectus, at lacinia augue sem euismod diam.</p>
+<p><span class="texto">
+	Aliquam aliquam accumsan varius. Fusce facilisis sollicitudin tortor. 
+	</span>. 
+	Curabitur aliquet bibendum ligula, vitae porta nunc ornare sed. 
+ 	Aliquam dapibus scelerisque turpis, eget hendrerit turpis elementum in. 
+	Aliquam accumsan sit amet nisi euismod imperdiet. 
+	Integer non pellentesque ante, nec gravida leo.</p>
+</div>
+</div>
+</body>
+</html>
+Copiar
+
+Veja como ficará a página depois da estilização pedida no roteiro:
+
+
+
+Página depois da estilização

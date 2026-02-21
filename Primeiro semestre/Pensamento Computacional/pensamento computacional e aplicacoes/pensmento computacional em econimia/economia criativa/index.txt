@@ -1,0 +1,148 @@
+Economia Criativa
+Agora que você já sabe o que é pensamento computacional, vamos entender como ele se aplica às mais variadas áreas do conhecimento e como ele vem transformando o mundo a nosso redor, por meio da seguinte linha cronológica:
+
+
+Séc. XVIII
+
+Economia de bens tangíveis
+
+A sociedade pautava sua economia em bens tangíveis de consumo desde a Primeira Revolução Industrial.
+
+
+Séc. XXI
+
+Pensamento computacional
+
+A situação começou a mudar com o advento do pensamento computacional.
+
+
+2001
+
+Economia criativa
+
+O jornalista australiano Peter Coy publicou um artigo na revista americana Businessweek sobre uma nova modalidade econômica, que estaria se formando a partir de empresas com foco em conhecimento e inventividade. Assim, surgiu a expressão Economia Criativa. O governo local passou a incorporar, em sua estratégia política e macroeconômica, segmentos que tinham como base o capital intelectual e a criatividade, para impulsionar o desenvolvimento local, regional e nacional.
+
+ 
+
+Ao mesmo tempo, o Reino Unido incluiu pela primeira vez em sua balança comercial alguns itens, como: artes performáticas, artesanato, arquitetura, design, design de moda, editoração, editoração eletrônica, música, publicidade, rádio, TV, software, games, vídeo, cinema e fotografia.
+
+
+2007
+
+Rede de Cidades Criativas
+
+A Organização das Nações Unidas (ONU) se articulou, por meio da Organização das Nações Unidas para a Educação, a Ciência e a Cultura (Unesco) com a Conferência das Nações Unidas para o Comércio e o Desenvolvimento (UNCTAD), difundindo conceitos de Economia da Cultura e Economia Criativa em escala global. Foram desenvolvidas pesquisas sobre o setor cultural, sendo criada a coordenação da Rede de Cidades Criativas. Isso abriu possibilidades de desenvolvimento local com base em vocações criativas, conectando várias cidades do mundo que, a partir da obtenção do selo Cidade Criativa, passaram a compartilhar suas experiências e entrar em contato direto com um amplo repertório de práticas bem-sucedidas de desenvolvimento local.
+
+ 
+
+A Rede de Cidades Criativas reúne mais de 180 municípios em todos os continentes, com o objetivo de promover a cooperação entre cidades que têm na criatividade um fator estratégico para o desenvolvimento urbano sustentável. Atualmente, os municípios integrantes da rede estão distribuídos em sete diferentes setores criativos: gastronomia, cinema, música, design, artesanato e artes folclóricas, arte mídia e literatura.
+
+ 
+
+Oito cidades brasileiras já integram a Rede: Belém (PA), Florianópolis (SC) e Paraty (RJ), no campo da gastronomia; Brasília (DF) e Curitiba (PR), em design; João Pessoa (PB), em artesanato e artes folclóricas; Salvador (BA), na música; e Santos (SP), no cinema.” (BRASIL, 2019, n. p.).
+
+
+A UNCTAD afirma que o conceito de Economia Criativa está em constante evolução (UNITED NATIONS, 2004). Essa instituição estimula o debate para a criação de novas metodologias que gerem informações internacionalmente relevantes. Atualmente, podemos subdividir a Economia Criativa nos seguintes tipos de atividades:
+
+
+Artes performáticas
+
+Música ao vivo, teatro, dança, circo etc.
+
+
+Artes visuais
+
+Pintura, escultura, fotografia e antiguidades.
+
+
+Audiovisual
+
+Cinema, rádio, TV etc.
+
+
+Edição e impressão
+
+Livros, imprensa e outras publicações.
+
+
+Expressões culturais tradicionais
+
+Artesanato, festivais etc.
+
+
+Design
+
+Design gráfico de moda, de joias e de brinquedos.
+
+
+Novas mídias
+
+Software, games e demais conteúdos digitais.
+
+
+Patrimônio cultural
+
+Museus, bibliotecas, sítios arqueológicos etc.
+
+
+Serviços criativos
+
+Arquitetura, publicidade, recreação e pesquisa e desenvolvimento.
+
+
+
+
+A Economia Criativa, porém, não acontece sozinha. Para que seja possível, é necessário um ambiente propício com infraestrutura, política de incentivo e suporte tecnológico. O pensamento computacional é peça fundamental nessa nova área da Economia, pois é por meio dele que novas mídias podem ser desenvolvidas, como softwares, games e outros conteúdos digitais.
+
+
+Como tem ocorrido a prática da Economia Criativa?
+
+
+Vejamos, a seguir, sua aplicação em diversas áreas:
+
+
+
+Bibioteca e museus
+
+Esses locais têm se reinventado com base na tecnologia, seja por meio de sistemas de busca mais rápidos e precisos para localizar suas obras, seja por hologramas, realidade virtual e outros efeitos que tornam ainda mais fascinantes as experiências de seus visitantes.
+
+
+
+Publicidade
+
+Essa área deixou de ser algo genérico e passou a ser direcionada exatamente para o público que pode converter-se em potencial consumidor. Essa inovação torna a experiência de uso melhor para os clientes, que veem anúncios de seu real interesse, e proporciona mais rentabilidade para as empresas, com maior retorno sobre a quantidade de propaganda exibida.
+
+
+
+Arquitetura e Design de interiores
+
+Essas áreas avançaram por meio de ferramentas gráficas que permitem que o cliente veja projetos em 3D ou até adentre sua nova casa, antes mesmo de a obra ser iniciada. O equivalente ocorre com a indústria da moda, de veículos, de joias, de brinquedos e de todas as outras áreas relacionadas ao Design.
+
+
+
+Shows e festivais
+
+Esses locais passaram a ser muito mais seguros e organizados a partir da tecnologia do pensamento computacional: desde a venda de ingressos inteligentes, que não podem ser falsificados ou revendidos ilegalmente, até o uso de robôs, para um ajuste perfeito dos equipamentos de som e luz. Isso sem falar dos festivais, transmitidos pela internet para todo o mundo, em tempo real.
+
+
+
+Fotografia e filmagem
+
+Essas áreas ultrapassaram todos os limites alcançados anteriormente por suas lentes de altíssima qualidade. Essa evolução ocorreu pelos inúmeros algoritmos de inteligência artificial, que corrigem cores, luzes, imperfeições e que, recentemente, vêm substituindo até a necessidade do uso da maquiagem, tornando as imagens capturadas melhores que a própria realidade.
+
+
+
+Cinema
+
+Os famosos efeitos especiais do cinema, antes exclusivos de produções milionárias como as de Hollywood, estão cada vez mais acessíveis devido ao barateamento da tecnologia. Isso permite que produtoras menores, de todas as partes do mundo, pratiquem sua criatividade e criem obras fantásticas, retratando a cultura de diferentes países e regiões.
+
+
+
+
+A Economia Criativa está em constante evolução com o apoio do pensamento computacional. A criatividade humana é inestimável e ainda insubstituível. Com o uso de algoritmos, a tecnologia é potencializada alcançando resultados inimagináveis. Você pode estar se perguntando:
+
+
+O pensamento computacional só afeta essa nova economia, que é movida pela criatividade?
+
+
+Isso é o que veremos a seguir.

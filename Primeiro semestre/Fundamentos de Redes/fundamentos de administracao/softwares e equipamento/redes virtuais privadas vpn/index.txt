@@ -1,0 +1,31 @@
+Redes virtuais privadas (VPN)
+O que é uma VPN
+
+
+A VPN (virtual private network) permite a utilização de um meio inseguro de forma segura. Afinal, quando estamos conectados à internet e desejamos acessar algum serviço ou rede, ficamos vulneráveis a diversos tipos de ataques.
+
+
+Para minimizar o risco inerente a esse acesso, podemos empregar uma VPN, que utilizará um túnel de comunicação entre dois dispositivos. Considere a topologia desta imagem na qual as redes da matriz e da filial desejam trocar informações por meio da internet:
+
+
+
+Ao trafegar pela internet, as informações trocadas entre as redes da matriz e da filial estão sujeitas a diversos tipos de ataque. Na utilização de uma VPN, é criado um túnel virtual entre essas redes. Veja:
+
+
+
+Na utilização do túnel, as informações trafegadas ficam protegidas, já que os dados são criptografados. Além disso, podem ser utilizados mecanismos de autenticação e integridade para garantir tanto a entrada em cada rede só de pacotes autorizados quanto a manutenção de sua estrutura, ou seja, que eles não sejam modificados.
+
+
+Firewall, sistemas de detecção de intrusão e antivírus
+
+Confira a seguir os mecanismos de segurança lógica.
+
+
+
+Veja o trecho da seguinte notícia:
+
+
+“PF identifica invasão nos celulares de presidentes de STJ, Câmara e Senado; PGR também foi alvo”. (Fonte: G1, 2019)
+
+
+Percebemos aqui a importância dos softwares, cuja função é a de garantir a CID nas instituições. Pesquise outras situações similares e procure perceber como foi a intervenção da segurança lógica nesses casos.

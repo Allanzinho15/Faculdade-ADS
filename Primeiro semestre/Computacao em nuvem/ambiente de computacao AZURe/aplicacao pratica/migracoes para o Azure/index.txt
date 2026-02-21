@@ -1,0 +1,72 @@
+Migrações para o Azure
+Acessando o dashboard do Migrações para o Azure
+
+Confira no vídeo o dashboard do Migrações para o Azure e todas as formas de migração disponíveis. Saiba também o passo a passo de como criar um projeto.
+
+
+
+Processos e ferramentas para a migração
+
+As migrações para Azure fornecem um serviço simplificado de migração, modernização e otimização. Todas as etapas de pré-migração, como descoberta, avaliações e dimensionamento correto de recursos locais, estão incluídas em infraestrutura, dados e aplicativos. A estrutura extensível das migrações para Azure permite a integração de ferramentas de terceiros, expandindo assim o escopo de casos de uso com suporte e fornecem as seguintes funcionalidades:
+
+
+Plataforma de migração unificada.
+Variedade de ferramentas.
+Avaliação, migração e modernização.
+
+Entenda agora cada funcionalidade!
+
+
+Plataforma de migração unificada
+
+Essa funcionalidade oferece um único portal para iniciar, executar e acompanhar sua migração para o Azure.
+
+
+Variedade de ferramentas
+
+Existe uma variedade de ferramentas disponíveis para avaliação e migração. As ferramentas das migrações incluem itens como o Migrações para Azure, descoberta, avaliação e ferramenta de Migração do Servidor. As migrações para Azure também se integram a outros serviços do Azure e a outras ferramentas, assim como com ofertas de ISVs (fornecedores independentes de software).
+
+
+Avaliação, migração e modernização
+
+No hub de Migrações para Azure, você pode avaliar, migrar e modernizar:
+
+
+Servidores, bancos de dados e aplicativos web
+
+Responsáveis por avaliar servidores locais, incluindo aplicativos Web e instâncias do SQL Server e migrá-los para máquinas virtuais do Azure ou a AVS (Solução VMware no Azure) – versão prévia.
+
+
+Bancos de dados
+
+Responsáveis por avaliar bancos de dados e instâncias locais do SQL Server para migrá-los para um SQL Server em uma VM do Azure ou uma instância gerenciada de SQL do Azure ou para um banco de dados SQL do Azure.
+
+
+Aplicativos web
+
+Responsáveis por avaliar aplicativos web locais e migrá-los para o serviço de aplicativo do Azure e para o serviço de Kubernetes do Azure.
+
+
+Áreas de trabalho virtuais
+
+Responsáveis por avaliar VDI (Infraestrutura de área de trabalho virtual) local e migrá-la para a área de trabalho virtual do Azure.
+
+
+Dados
+
+Responsáveis por migrar grandes quantidades de dados para o Azure de maneira rápida e econômica usando os produtos Azure Data Box.
+
+
+
+
+Observe o processo de migração no software Azure:
+
+
+
+Migrações para Azure.
+
+Os processos de migração e modernização são guiados por um projeto de migração e modernização para o Azure. As operações são simplificadas usando um portal único para visualização de ponta a ponta do local (empresa) para a nuvem (Azure).
+
+
+Comentário
+Também pode ser utilizada uma ferramenta de descoberta sem agente para otimizar custos, essa ferramenta verificará todas as dependências necessárias para a migração. O Insights pode estimar o custo de migração dos seus recursos para o tamanho correto a um custo ideal. Outra forma de migrar recursos é modernizar suas aplicações, saindo de um modelo de IAAS (máquina virtual) para PAAS (plataforma) ou SAAS (Software) e reduzir custos.

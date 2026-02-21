@@ -1,0 +1,64 @@
+O que é IA generativa?
+
+Tem revolucionado a forma como interagimos com a tecnologia ao permitir que máquinas respondam a comandos e criem conteúdos originais com base em grandes volumes de dados. Diferentemente de sistemas tradicionais que apenas reconhecem padrões, essa nova geração de IA pode escrever textos, produzir imagens, compor músicas, desenvolver códigos e muito mais — tudo a partir de simples instruções em linguagem natural. Ferramentas como ChatGPT, DALL·E e GitHub Copilot mostram como essa tecnologia já está sendo usada por jornalistas, programadores e criadores de conteúdo, tornando-se uma verdadeira aliada na criatividade e na produtividade diária.
+
+O vídeo a seguir define a IA generativa, diferenciando-a da IA tradicional ao explicar sua capacidade de criar conteúdos originais, como textos, imagens e músicas, a partir de comandos simples. Confira!
+
+
+
+Trata-se de uma subárea da inteligência artificial focada em desenvolver modelos computacionais capazes de criar conteúdos a partir de grandes volumes de dados previamente analisados. Esses conteúdos incluem textos, imagens, músicas, códigos de programação, vídeos ou qualquer outro tipo de informação estruturada. 
+
+ 
+
+Diferentemente de sistemas que apenas reconhecem ou classificam padrões, a IA generativa utiliza técnicas de aprendizado profundo — redes neurais generativas — para produzir saídas originais que imitam a criatividade e a linguagem humanas. 
+
+
+O funcionamento da IA generativa se baseia em prompts — modelos probabilísticos que aprendem com exemplos e geram respostas coerentes e contextualizadas a partir de comandos em linguagem natural.
+
+
+Imagine que você pudesse pedir a alguém para criar um poema sobre amizade em forma de rap ou desenhar um gato astronauta andando na Lua e essa pessoa fizesse isso em segundos, com qualidade surpreendente. Esta é a ideia da IA generativa: sistemas que não apenas analisam ou respondem, mas criam algo novo com base em comandos humanos.
+
+ 
+
+A IA generativa é um tipo especial de inteligência artificial treinada para produzir conteúdos originais — como textos, imagens, músicas, vídeos e até códigos de programação. Em vez de apenas repetir o que já existe, ela combina informações aprendidas em grandes bancos de dados para gerar algo inédito, que se pareça com algo feito por humanos.
+
+
+Vamos a alguns exemplos de utilização da IA
+
+
+Na prática, a IA generativa atua como uma caixa de ferramentas criativas, pronta para ser usada por qualquer pessoa — mesmo por quem não entende nada de programação. Basta escrever o que se deseja, em linguagem natural, e o sistema entrega o resultado. É possível usar a IA para criação de diversos elementos:
+
+
+
+Textos
+
+
+O ChatGPT pode escrever resumos, e-mails, receitas, artigos e até cartas formais. Já foi usado por jornalistas para rascunhar reportagens e por estudantes para criar trabalhos escolares — o que gerou inclusive debates sobre ética no uso educacional.
+
+
+
+Imagens
+
+
+O DALL·E, da OpenAI, e o Canva Magic Media permitem que o usuário descreva uma cena (um castelo flutuando no céu ao pôr do sol, por exemplo) e receba uma imagem correspondente em segundos. Os profissionais de design e marketing já usam utilizam ferramentas para criar artes personalizadas com agilidade.
+
+
+
+Músicas e sons
+
+
+Plataformas como Soundraw e Amper Music elaboram trilhas sonoras com base no clima desejado (alegre, calmo, épico). Algumas empresas já utilizam esse tipo de tecnologia para produzir jingles e ambientações para vídeos.
+
+
+
+Códigos de programação
+
+
+O GitHub Copilot, desenvolvido pela Microsoft e OpenAI, é um parceiro de programação que sugere trechos de código conforme o programador digita. Isso tem revolucionado o trabalho de desenvolvedores e reduzido o tempo de produção de software.
+
+
+Uma notícia recente mostrou que o jornal britânico The Guardian usou IA para gerar sugestões de manchetes e iniciar textos jornalísticos, enquanto o Spotify lançou uma funcionalidade de DJ com IA, que comenta suas músicas favoritas com uma voz gerada artificialmente.
+
+ 
+
+Esses exemplos mostram que a IA generativa está ganhando espaço com rapidez porque entrega resultados úteis e surpreendentes. Contudo, o mais interessante é que ela aprende com os dados disponíveis e melhora com o uso — quanto mais a usamos, melhor ela nos entende.

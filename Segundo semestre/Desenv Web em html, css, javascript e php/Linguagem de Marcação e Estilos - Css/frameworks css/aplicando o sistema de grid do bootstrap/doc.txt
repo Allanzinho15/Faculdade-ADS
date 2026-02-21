@@ -1,0 +1,36 @@
+Aplicando o sistema de grid do Bootstrap
+Como já vimos, o Bootstrap fornece, dentro de sua grid, um conjunto de containers + linhas + colunas que nos permite organizar e alinhar os elementos e, consequentemente, o conteúdo de uma página web. Siga o próximo roteiro para testar seus conhecimentos!
+
+
+Neste vídeo, demonstramos a aplicação do sistema de grid do Bootstrap.
+
+
+
+Roteiro de prática
+
+Você usará o framework Bootstrap e seu Sistema de Grids para organizar os elementos de uma página, alinhando, com o uso de containers, linhas e colunas, ou seja, o conteúdo (siga a disposição mostrada na próxima imagem). Para a realização desse exercício, você precisará das seguintes ferramentas: um editor de textos – pode ser o próprio bloco de notas do Windows ou o Nano Editor do Linux, ou então algo um pouquinho mais avançado, como o software (livre/gratuito) Notepad++ – e também de um navegador (Google Chrome, Firefox, MS Edge etc).
+
+
+Agora, vamos ao roteiro!
+
+ 
+
+Observe a disposição do conteúdo na imagem.
+A partir do seu editor, crie a estrutura básica de uma página HTML e importe o framework CSS.
+Dentro da tag body, crie a estrutura de <div> ou outro elemento que preferir, aplicando as classes do Bootstrap necessárias para que, ao exibir a página, a sua disposição visual fique como na imagem.
+Salve todo o seu trabalho e veja o resultado no navegador.
+
+Como resolução, teremos o código a seguir.
+
+
+Plain Text
+
+<div class="container">  <div class="row">    <div class="col">
+
+Light Mode
+
+Copiar
+
+Ao final, a página web deverá ser visualizada desta forma:
+
+

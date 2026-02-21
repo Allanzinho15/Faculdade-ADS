@@ -1,0 +1,139 @@
+O que é um prompt?
+
+Na era da IA generativa, saber se comunicar com clareza tornou-se uma habilidade ainda mais importante. A qualidade da resposta que recebemos da IA depende da forma como formulamos nosso pedido, conhecido como prompt — uma instrução escrita em linguagem natural, que orienta a IA sobre o que produzir, para quem, com qual objetivo e em que formato. Quanto mais estratégico for esse comando, melhor será o resultado. Assim como um bom pedido em uma biblioteca gera a sugestão certa, um bom prompt é a chave para interações úteis e precisas com a IA.
+
+ 
+
+O vídeo detalha os componentes essenciais de um prompt eficaz, explicando como definir o público-alvo, o objetivo, o formato e o estilo da resposta para obter resultados mais precisos e personalizados da IA. Confira!
+
+
+
+Conversar com uma IA generativa é como interagir com um assistente muito eficiente — mas que só acerta quando recebe instruções claras e bem-direcionadas. Confira a seguir!
+
+
+Prompt mal formulado
+
+
+Imagine que você está em uma biblioteca digital e pede:
+ 
+
+- Me dê um livro.
+ 
+
+A atendente pode trazer qualquer coisa — um romance, um manual técnico, um dicionário. 
+
+
+Prompt bem formulado
+
+
+Mas se você disser:
+ 
+
+- Me recomende um livro de introdução à psicologia, com linguagem acessível, voltado para estudantes do ensino médio.
+ 
+
+As chances de acerto aumentam de forma considerável.
+
+
+Um pedido bem-elaborado é o que chamamos de prompt: uma instrução em linguagem natural, enviada à IA, que deve ser clara, específica e intencional. O prompt orienta a IA sobre o que produzir, para quem, com qual objetivo e em qual formato. Quanto melhor a construção do prompt, melhor e mais útil será a resposta gerada pela IA. 
+
+ 
+
+Funciona como um pedido à IA, que pode ser simples (“traduza este texto”) ou mais elaborado (“explique para um aluno do 9º ano o que foi a Revolução Francesa, com exemplos e linguagem acessível”). 
+
+ 
+
+Portanto, prompt é uma instrução ou comando direcionado à IA, escrito de forma clara e estratégica, para obter uma resposta útil e relevante. Não é preciso usar uma linguagem técnica — basta ser claro, específico e alinhado ao que se espera como resultado.
+
+
+Componentes de um prompt
+
+
+Um bom prompt necessita dos seguintes elementos:
+
+
+
+Público-alvo
+
+
+Para quem a IA está escrevendo? Criança, aluno do 5º ano, estudante, paciente, cliente, leigo, especialista, gestor ou juiz.
+
+
+
+Objetivo da resposta
+
+
+Qual é a finalidade? Informar, resumir, explicar, criar, revisar, convencer, inspirar ou corrigir?
+
+
+
+Formato desejado
+
+
+Como o conteúdo deve ser apresentado? Texto corrido, lista, e-mail, plano, resumo, carta ou infográfico.
+
+
+
+Estilo e tom
+
+
+A linguagem deve ser? Formal, técnica, simples, didática ou persuasiva.
+
+
+
+Limites ou instruções
+
+
+Quais os limites do conteúdo? Quais tamanhos, linguagens, nível de detalhe, estrutura e exemplos específicos devemos incluir ou evitar?
+
+
+
+
+Prompt fraco X Prompt eficaz
+
+
+Veja a seguir a diferença entre prompts fracos e eficazes aplicados a diferentes áreas:
+
+
+Área	Prompt fraco	Prompt eficaz
+Educação	Elabore uma atividade sobre frações.	Crie uma atividade de matemática para alunos do 6º ano sobre frações equivalentes, com foco visual e resposta explicada passo a passo.
+Direito	Resuma a Lei Maria da Penha.	Resuma em linguagem simples os principais direitos garantidos pela Lei Maria da Penha, voltado para mulheres que nunca leram a lei antes.
+Marketing	Crie um slogan.	Crie 3 opções de slogan para uma campanha de lançamento de um app de meditação voltado para mulheres entre 30 e 50 anos, com tom inspirador.
+Saúde	Explique o que é colesterol.	Explique, em linguagem acessível, para pacientes acima de 60 anos com baixa escolaridade, o que é colesterol e como controlá-lo.
+Contabilidade	Explique o Simples Nacional.	Explique para um microempreendedor iniciante como funciona o regime do Simples Nacional e quais são as suas principais vantagens tributárias.
+Tabela: Efeitos de prompts mal formulados e eficazes em distintas áreas de aplicação.
+
+Como construir bons prompts
+
+
+Vamos ver a seguir algumas dicas práticas para elaborar um prompt eficaz:
+
+
+1. Comece pelo objetivo
+
+
+O que você quer como resultado? Um plano? Um exemplo? Uma explicação?
+
+
+2. Use frases completas
+
+
+Evite palavras soltas ou comandos vagos. Quanto mais completo, mais relevante o retorno.
+
+
+3. Dê contexto suficiente
+
+
+Quanto mais a IA souber da situação, mais personalizada será a resposta.
+
+
+4. Evite ambiguidades
+
+
+Palavras genéricas geram respostas genéricas. Especifique sempre que possível.
+
+
+5. Teste, avalie e refine
+
+
+Se a resposta não agradar, melhore o prompt com mais detalhes ou mude o foco.

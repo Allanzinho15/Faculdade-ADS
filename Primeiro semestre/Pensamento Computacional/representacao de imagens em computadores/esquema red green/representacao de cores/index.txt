@@ -1,0 +1,88 @@
+Representação de cores em computadores
+A maneira como as cores são representadas garante a exatidão e a vivacidade das imagens que vemos em telas e impressões. Essa representação se baseia em padrões internacionalmente adotados, como o RGB e o CMYK.
+
+ 
+
+Enquanto o modelo RGB combina a intensidade de luz nas cores vermelho, verde e azul para criar uma gama de cores que compõem imagens em monitores e dispositivos digitais, o modelo CMYK baseia-se em pigmentação, misturando ciano, magenta, amarelo e preto para produzir cores em impressões. Entender tais padrões, principalmente o RGB, é fundamental para que se compreenda como imagens são representadas em computadores.
+
+ 
+
+Neste vídeo, vamos analisar a representação de cores em computadores utilizando o modelo RGB.
+
+
+
+Agora que sabemos como os computadores identificam pixels de uma imagem, vamos descobrir como representam a cor de cada um deles. Para entendermos como isso é feito, precisaremos recordar o lendário físico Isaac Newton e seu experimento com o prisma de cores, que atualmente chamamos de prisma de Newton, ilustrado na imagem a seguir:
+
+
+
+Prisma de Newton.
+
+Newton bolou e realizou esse famoso experimento com um prisma, que é apenas um pedaço triangular de vidro. Conforme mostrado, a luz solar branca vem da esquerda, e o prisma de vidro transparente divide esse fecho de luz em um espectro de cores, que está projetado na cadeira (o ideal é uma superfície branca), revelando que a luz branca não é algo puro e indivisível.
+
+ 
+
+Em vez disso, a luz branca pode ser separada em um espectro de cores constituintes. Essas são justamente as cores que você vê em um arco-íris. Portanto, as cores estão realmente em um espectro contínuo, conforme ilustrado a seguir:
+
+
+
+O prisma de Newton divide a luz branca em um espectro contínuo de cores.
+
+Uma forma de representar cores é pensar em cores puras como uma espécie de paleta. Um esquema mundialmente aceito é o uso das cores puras vermelho, verde e azul.
+
+ 
+
+Você consegue identificar essas cores na imagem do prisma de Newton? Costuma-se utilizar essas três cores puras como constituintes para representar qualquer outra cor que desejarmos.
+
+ 
+
+Enquanto Newton usou um prisma para dividir a cor branca em um espectro contínuo de cores que a constituem (exemplo: arco-íris), desejamos usar cores constituintes e combiná-las para obter outras cores, e até mesmo a luz branca.
+
+
+
+
+Por trás desse “experimento de Newton ao contrário”, os pressupostos de Física não são exatamente os mesmos que Newton observou no experimento com o prisma de vidro. Contudo, é uma forma intuitiva de pensar como o computador usa cores constituintes e as combina para gerar qualquer outra cor. 
+
+ 
+
+Se o espectro de cores é contínuo, ou seja, possui infinitas cores, por que só damos nomes às sete cores do arco-íris? Newton era adepto de convicções místicas, aquilo que acreditamos não ser científico, e, na época, havia sete planetas conhecidos. Então, Newton pensou que fazia sentido nomear sete cores conforme o número de planetas conhecidos. É como se ele tivesse forçado o nome Anil/Índigo para uma cor que poderia ser o azul apenas para potencializar o seu misticismo.
+
+ 
+
+No que diz respeito à representação de cores, um dos padrões mundialmente usados — talvez o mais utilizado — é o padrão RGB, que é uma sigla em inglês para vermelho, verde e azul, e possui 3 valores: R, G e B. Um outro padrão muito usado é o CMYK, que é uma abreviação em inglês para ciano, magenta, amarelo e preto. Vamos entender as diferenças!
+
+
+Padrão CMYK X Esquema RGB
+
+
+O padrão CMYK (ciano, magenta, amarelo e preto) e o esquema RGB (vermelho, verde e azul) são modelos de cores utilizados em diferentes contextos. Entenda melhor!
+
+
+
+CMYK
+
+
+É um modelo subtrativo que funciona combinando diferentes porcentagens de ciano, magenta, amarelo e preto para criar diversas cores. Quando misturadas, essas cores removem luz branca, resultando em preto. Esse modelo é usado principalmente em impressão e é ideal para essa finalidade, pois na impressora as tintas são combinadas para produzir as cores desejadas no papel.
+
+
+
+RGB
+
+
+É aditivo e funciona combinando luz vermelha, verde e azul em diferentes intensidades para criar cores. Quando todas as três cores são combinadas com intensidade máxima, o resultado é luz branca. Esse modelo é mais utilizado em dispositivos digitais, como monitores e telas, e é ideal para esse contexto, pois utiliza a emissão de luz para gerar a variedade de cores visíveis.
+
+
+
+
+A principal diferença entre CMYK e RGB está na sua aplicação e no método de criação de cores. Veja!
+
+
+CMYK
+
+
+É ótimo para impressão devido à sua capacidade de reproduzir cores com tintas.
+
+
+RGB
+
+
+É perfeito para telas digitais, aproveitando a emissão de luz para criar cores vibrantes.

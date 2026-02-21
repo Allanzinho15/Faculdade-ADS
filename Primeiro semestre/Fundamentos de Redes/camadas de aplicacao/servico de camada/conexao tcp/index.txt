@@ -1,0 +1,11 @@
+Conexão TCP
+Gerenciamento de conexão TCP
+
+As conexões estabelecidas no TCP utilizam um esquema conhecido como three way handshake. Para estabelecer uma conexão, um lado aguarda passivamente, enquanto o outro solicita uma especificando o endereço de rede (endereço IP) e a porta com a qual deseja se conectar.
+
+
+
+É enviado então um segmento TCP com o bit SYN ativado e o bit ACK desativado. Quando ele chega ao destino, a entidade TCP do destino verifica se existe um processo aguardando na porta destino. Se não existir, ela enviará uma resposta com o bit RST ativado para rejeitar a conexão.
+
+
+No entanto, se algum processo estiver na escuta dessa porta, a ele será entregue o segmento TCP recebido. Em seguida, tal processo poderá aceitar ou rejeitar a conexão. Se ele aceitar, um segmento de confirmação será retornado.

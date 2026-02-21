@@ -1,0 +1,114 @@
+Praticando o uso do for na manipulação de imagens
+Vamos praticar o uso da estrutura de repetição for na manipulação de imagens, através das quatro práticas a seguir.
+
+
+Prática 1
+
+Assita ao vídeo e acompanhe a primeira prática.
+
+
+
+Vamos experimentar a estrutura for. Observe o código-fonte abaixo:
+
+
+
+Lembre-se de que, ao clicar em Executar, o computador realizará os seguintes passos, conforme instruções:
+
+
+
+Instrução 1
+
+Carregar a imagem “passaro.jpg” e armazená-la na variável img.
+
+
+Instrução 2
+
+Note que o computador as executará para cada um dos 292 mil pixels da imagem. Então, temos um total de 876 mil operações a serem realizadas pelo computador. Ao clicar em Executar, tente observar quanto tempo o computador leva para ajustar/executar as 876 mil instruções necessárias para colorir de preto cada um dos 292 mil pixels da imagem “passaro.jpg” e, depois, apresentar a imagem na tela.
+
+ 
+
+A imagem preta deve aparecer na tela muito rapidamente:
+
+
+
+
+Ao executar a Prática 1, você obteve um retângulo preto, o que não é muito útil. Entretanto, não deixe de refletir sobre o quão rapidamente o computador foi capaz de seguir suas instruções para manipular os quase 300 mil pixels da imagem.
+
+
+Prática 2
+
+
+Vamos seguir assistindo a um vídeo com uma segunda prática.
+
+
+
+Prática 3
+
+
+Agora, vamos obter o canal alfa vermelho da imagem do pássaro apresentado anteriormente com base neste código-fonte: execute o código-fonte e observe o canal alfa em vermelho da imagem apresentada:
+
+
+
+
+O que você notou? Assim como na Prática 1, observe o quão rapidamente o computador foi capaz de remover os componentes azul e verde da imagem em questão. Lembre-se: as instruções de dentro da estrutura for foram repetidas 876 mil vezes.
+
+ 
+
+Compare com a imagem original do pássaro apresentada anteriormente, replicada logo a seguir (por comodidade), com a imagem resultante do item “a”.
+
+
+
+Observe, também, que o lindo colar azul do pássaro praticamente desapareceu na imagem canal alfa vermelho resultante. Isso significa que o colar é constituído principalmente dos componentes verde e azul.
+
+ 
+
+Você compreendeu como o canal alfa em vermelho foi obtido? Para compreender melhor o código que foi executado, observe na caixa de código-fonte que a instrução pixel.setRed() está comentada, ou seja, marcada com “//” no início da linha:
+
+
+
+Comentários de códigos são interessantes por duas razões: A primeira, é permitir que o autor do código-fonte documente seu código com frases que esclarecem o que ele estava pensando quando escreveu aquele trecho; A segunda, é fazer com que o computador ignore uma ou mais instruções.
+
+ 
+
+Você consegue alterar o código-fonte para obter os outros canais? Tente!
+
+ 
+
+Obtenha os canais verde e azul respectivamente.
+
+
+
+
+Verde.
+
+
+
+Azul.
+
+Prática 4
+
+
+Afinal para que serve a estrutura de repetição for?
+
+
+Atenção
+A estrutura de repetição for é um recurso muito poderoso, que nos permite escrever algumas poucas linhas de código capazes de ordenar ao computador que processe/manipule uma enorme quantidade de dados.
+
+
+Neste módulo, usamos exemplos de imagens para demonstrar o enorme potencial das estruturas de repetição. Este foi apenas um exemplo.
+
+ 
+
+Esteja certo de que essa estrutura é amplamente usada em computação e faz parte do dia a dia de todos que, de alguma forma, escrevem códigos para computador. Por fim, devemos mencionar um detalhe da linguagem usada aqui: JavaScript. Essa linguagem não possui uma estrutura de repetição for tão compacta e simples como a que estudamos.
+
+
+
+Usamos uma versão com sintaxe propositalmente simplificada, pois nosso objetivo era compreender os princípios que motivam o uso de estruturas de repetição.Entendemos que o uso de uma estrutura simplificada ajudaria você a compreender melhor o que se passa.´
+
+ 
+
+Não queríamos gastar muito tempo fazendo-o compreender detalhes de sintaxe. Este comentário é importante, pois, se você tentar aproveitar os códigos de computador que escrevemos aqui, provavelmente terá problemas devido ao nosso uso simplificado da estrutura de repetição for.
+
+ 
+
+Há outras linguagens de programação que possuem estrutura de repetição bem simular àquela que usamos aqui, mas não JavaScript.

@@ -1,0 +1,139 @@
+Demonstrando o uso de variáveis
+Neste vídeo, faremos demonstrações simples a respeito da declaração e do uso de variáveis na linguagem de programação Python. Assista!
+
+
+
+Variáveis são como caixas de armazenamento no computador, nas quais guardamos valores para uso posterior. Elas ocupam espaços na memória, permitindo a troca fácil de valores no código. Ao simplesmente alterar o valor atribuído à variável, todo o código adotará o novo valor. Isso oferece flexibilidade ao programador para ajustar e adaptar o software conforme necessário, simplificando o processo de desenvolvimento e manutenção do código.
+
+ 
+
+Então, com relação ao conceito de variável, se tivermos uma linha de código como descrito a seguir, no qual atribuímos o valor 7 a uma variável V, o que isso significa, metaforicamente falando, que há uma 'caixa' no computador chamada V. Nessa caixa, nós simplesmente podemos armazenar um valor, como um número 7. Também poderíamos armazenar qualquer outro valor que quiséssemos.
+
+ 
+
+Veja o código para atribuir valor a uma variável V.
+
+
+Python (3.8.1)
+
+
+Light Mode
+
+Copiar
+
+O que significa na prática?
+
+
+“Caixa” de nome V, onde atribuímos o valor numérico 7
+ 
+
+"Caixa" V ⬅️ 7
+
+
+Sendo um pouco mais específico, essa “caixa” é, na verdade, um espaço na memória do computador, em que podemos armazenar valores, e V é o nome que damos a esta área reservada para armazenar o valor que desejarmos.
+
+ 
+
+Em linhas posteriores, no código, se um V aparecer, o computador sabe o que colocamos dentro da caixa (em nosso exemplo, o 7). A variável se torna uma espécie de abreviação conveniente para qualquer valor que eu queira usar.
+
+ 
+
+Veja o exemplo a seguir.
+
+ 
+
+Na primeira linha, atribuímos o valor 7 à variável que optamos por chamar de V.
+ 
+Na segunda linha, damos um comando para imprimir o valor da variável, que será 7 neste exemplo.
+ 
+Na terceira linha, imprimimos uma string informando “O valor da variável é:” e, depois, indicamos “V” para que o computador imprima de fato o valor recuperado da variável.
+ 
+Clique em Executar e observe os resultados. Notou que, sempre que V é referenciado no código, o computador o substitui pelo valor 7? Este é o equivalente a ler o valor armazenado na caixa.
+
+
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+Python (3.8.1)
+
+123
+Input
+
+
+Executar
+Console
+
+Uma grande vantagem do uso de variáveis é que, se o programador quiser usar um valor diferente em seu código, basta trocar o valor na linha de atribuição de valor à variável, e todo o restante do código passará a usar o novo valor sempre que houver referência à variável, que, em nosso exemplo, é V.
+
+ 
+
+Vamos ver na prática o uso de variáveis nas duas práticas a seguir.
+
+
+Prática 1
+
+
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+Python (3.8.1)
+
+123
+Input
+
+
+Executar
+Console
+
+Observou que aconteceu quando substituímos o 7 por 1980 e clicamos em Executar?
+
+ 
+
+Todos os locais que em que a variável V foi referenciada resultaram em 1980 na saída!
+
+
+Prática 2
+
+
+Escreva, no quadro a seguir, um código que atribua a uma variável chamada nome1 a string "Mariah" e a uma variável chamada nome2 a string "Luiza". Depois, clique em Executar para obter a Saída a seguir destacada em vermelho:
+ 
+
+Mariah Luiza
+ 
+
+Mariah e Luiza são irmãs
+
+
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+Python (3.8.1)
+
+1
+Input
+
+
+Executar
+Console
+
+
+Chave de resposta
+Brinque à vontade com as práticas anteriores, até que fique à vontade para definir mais do que uma variável e imprimir mais do que um valor, até estar confortável com a ideia de que, para computadores, o uso do sinal de igual (=) significa atribuição e é usado quando se deseja atribuir valor a uma variável. Isso é importante, pois, em Matemática, o sinal de igual possui um significado diferente.

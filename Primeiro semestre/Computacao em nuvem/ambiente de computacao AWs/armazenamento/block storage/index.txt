@@ -1,0 +1,90 @@
+Block Storage – Amazon EBS
+O Amazon Elastic Block Storage é um serviço que fornece volumes de armazenamento em blocos, e que pode ser usado com instâncias EC2. Se você desligar ou apagar uma instância do Amazon EC2, todos os dados no volume do EBS anexo permanecerão disponíveis, permitindo reanexar a uma instância.
+
+
+Para criar um volume do EBS, basta definir a configuração (como tamanho e tipo do volume) e a zona de disponibilidade da região onde será provisionado.
+
+
+Depois de criar um volume do EBS, ele pode ser anexado a uma instância do Amazon EC2, similar à forma como você anexa um HD externo ao seu computador. Os volumes EBS agem de forma muito parecida a um HD externo. Grande parte dos volumes do Amazon EBS só pode ser conectada a uma instância por vez. A maioria dos volumes do EBS tem uma relação um para um com instâncias do EC2, portanto, eles não podem ser compartilhados ou anexados a várias instâncias ao mesmo tempo (recentemente, a AWS anunciou o recurso multi-atach do Amazon EBS, que permite que volumes sejam anexados a várias instâncias do EC2 ao mesmo tempo. Esse recurso não está disponível para todos os tipos de instância e todas as instâncias devem estar na mesma zona de disponibilidade).
+
+
+Dica
+Você pode desanexar um volume do EBS de uma instância do EC2 e anexá-lo a outra instância do EC2 que esteja na mesma zona de disponibilidade para acessar os dados nela contidos.
+
+
+A unidade externa é separada do computador. Isso significa que, se ocorrer um acidente e o computador cair, você ainda terá seus dados na unidade externa. Isso também vale para volumes EBS em relação a uma instância Amazon EC2.
+
+
+Soluções de armazenamento
+
+Neste vídeo, você conhecerá as principais soluções de armazenamento na Amazon Web Services, características que as diferenciam e casos de uso de cada uma.
+
+
+
+Snapshots de EBS
+
+
+Como os volumes do EBS são para dados que precisam perdurar, é importante fazer backup dos dados. Você pode fazer backups complementares de volumes do EBS criando snapshots do Amazon EBS.
+
+
+Um snapshot do EBS é um backup incremental. Isso significa que o primeiro backup de um volume copia todos os dados. Nos backups subsequentes, somente os blocos de dados que foram alterados desde o snapshot mais recente serão salvos.
+
+
+Exemplo
+Se você tiver 10 GB de dados em um volume e apenas 2 GB de dados tiverem sido modificados desde o último snapshot, apenas os 2 GB que foram alterados serão gravados no Amazon Simple Storage Service (Amazon S3).
+
+
+Quando você faz um snapshot de qualquer um dos seus volumes EBS, os backups são armazenados de forma redundante em várias zonas de disponibilidade usando o Amazon S3. Esse aspecto de armazenar o backup no Amazon S3 é tratado pela AWS e, portanto, você não precisará interagir com o Amazon S3 para trabalhar com seus snapshots do EBS. Você os gerencia no console do Amazon EBS, que faz parte do console do Amazon EC2.
+
+
+Os snapshots do EBS podem ser usados para criar vários volumes, estejam eles na mesma zona de disponibilidade ou em outra.
+
+
+Quando você cria um novo volume a partir de um snapshot, ele é uma cópia exata do volume original no momento em que o snapshot foi obtido.
+
+
+Casos de uso do EBS
+
+O Amazon EBS é útil quando você precisa recuperar dados rapidamente e manter os dados por um longo prazo. Os volumes são comumente usados nos seguintes cenários:
+
+
+
+Sistemas operacionais
+
+Volumes de inicialização/raiz para armazenar um sistema operacional. O dispositivo raiz de uma instância executada a partir de uma imagem de máquina da Amazon (AMI) geralmente é um volume do Amazon EBS. Eles são comumente referidos como AMIs com suporte de EBS.
+
+
+Bancos de dados
+
+Uma camada no Amazon EC2 de armazenamento para bancos de dados em execução que dependem de leituras e gravações transacionais.
+
+
+Aplicativos corporativos
+
+O Amazon EBS fornece armazenamento de blocos confiável para executar aplicativos essenciais aos negócios.
+
+
+Aplicativos com taxa de transferência intensiva
+
+Aplicativos que executam leituras e gravações longas e contínuas.
+
+Tipos de EBS
+
+Neste vídeo, você aprenderá a escolher o tipo ideal de EBS para cada uso.
+
+
+
+Os volumes do Amazon EBS são organizados em duas categorias principais: unidades de estado sólido (SSDs) e unidades de disco rígido (HDDs). Os SSDs oferecem forte desempenho para entrada/saída aleatória (E/S), enquanto os HDDs oferecem forte desempenho para E/S sequencial. A AWS oferece dois tipos de cada um. A tabela a seguir pode ajudar você a decidir qual volume de EBS é a melhor opção para sua carga de trabalho.
+
+
+Tipos de volume EBS	Descrição	Caso de uso	Tamanho	IOPS Máximo	Throughput Máximo
+EBS Provisioned IOPS SSD (io1)	SSD de desempenho mais alto, projetado para carga de trabalho transacional sensível à latência	NoSQL com uso intensivo de I/O e bancos de dados relacionais	4 GB– 
+16 TB 
+ 	64,000	1,000 MB/s
+EBS General Purpose SSD (gp2/gp3)	SSD de uso geral que equilibra preço e desempenho para uma ampla variedade de cargas de trabalho transacionais	Volumes de boot, aplicativos interativos de baixa latência, desenvolvimento e teste	1 GB–16 TB	16,000	250 MB/s
+Throughput Optimized HDD (st1)	HDD de baixo custo projetado para cargas de trabalho com alto rendimento e acesso frequente	Big data, data warehouses, processamento de logs	500 GB– 
+16 TB	500	500 MB/s
+Cold HDD (sc1)	HDD de menor custo projetado para cargas de trabalho acessadas com menos frequência	Dados mais frios que exigem menos varreduras por dia	500 GB– 
+16 TB	250	250 MB/s
+Volumes EBS e suas características.
+Gustavo Ribeiro

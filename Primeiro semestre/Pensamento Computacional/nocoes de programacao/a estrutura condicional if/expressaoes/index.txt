@@ -1,0 +1,303 @@
+Expressões
+Permitem manipular e processar dados de forma dinâmica, simplificando a resolução de problemas e a criação de soluções personalizadas em nossos programas. Essas expressões são fundamentais para desenvolver habilidades de programação e criar códigos mais eficientes em JavaScript, essenciais para uma programação eficaz.
+
+ 
+
+Confira neste vídeo a importância da utilização de expressões simples de programação para manipulação de imagens.
+
+
+
+Expressões são muito importantes, pois, em vez de usar apenas valores simples em instruções, podemos combinar diferentes valores para calcular parâmetros mais personalizados. Isso nos permite escrever códigos de computador que alcançam resultados mais realistas. Quando apresentarmos exemplos práticos de manipulação de imagens, você entenderá melhor o assunto.
+
+ 
+
+Usaremos a linguagem de programação JavaScript, com algumas simplificações para facilitar a compreensão. Se analisarmos o código/instrução a seguir, veremos um tipo bem simples de passagem de valor (51): print(51). Essa instrução imprimirá o valor 51 na tela.
+
+Dizemos que 51 é o valor passado como parâmetro para a função print.
+
+ 
+
+As linguagens de programação compreendem códigos que envolvem expressões.
+
+
+Exemplo
+print(40+11);
+ 
+
+Então, o termo 40+11, passado como parâmetro para a função print, é o que chamamos de expressão.
+
+
+Basicamente, em vez de um número fixo conhecido antecipadamente, podemos usar um pouco de expressão aritmética. Assim, temos uma forma mais rica de fornecer parâmetros para funções.
+
+
+
+Isso funciona da seguinte maneira: quando o computador executar a linha de código que contém a expressão, o primeiro passo será avaliá-la. Assim, ele lerá e resolverá a expressão para chegar ao valor resultante. Nesse exemplo, 40+11 é apenas uma soma. O computador calcula que 40+11 é igual a 51. Uma vez que a expressão foi avaliada e o resultado foi 51, então, o computador continua a execução do código, usando o resultado da expressão como parâmetro para a função. Em nosso exemplo o computador simplesmente imprimirá o valor 51 na tela.
+
+ 
+
+De fato, podemos usar expressões em qualquer local do código de computador onde valores numéricos são admitidos. Portanto, é possível sempre embutir expressões aritméticas para que seja computado o valor que desejamos usar de fato. Isso nos possibilita resolver problemas mais realistas.
+
+ 
+
+Antes de continuar, vamos conhecer três funções de manipulações de pixels que fazem parte da linguagem de programação JavaScript.
+
+
+Passo	Instrução	Significado em português
+1	pixel.getRed()	Obtém/Lê o valor atual para o componente RGB vermelho do pixel.
+2	pixel.getGreen()	Obtém/Lê o valor atual para o componente RGB verde do pixel.
+3	pixel.getBlue()	Obtém/Lê o valor atual para o componente RGB azul do pixel.
+ 
+Tabela 1: Dado um pixel da imagem, como saber qual é o valor atual para os componentes RGB do pixel?Guilherme Dutra Gonzaga Jaime.
+
+Suponha um pixel em amarelo (exemplo: Código RGB 255,255,0). Nesse caso, a função pixel.getRed() retornará o valor 255, pois este é o valor atual do componente vermelho (R) do pixel.
+
+
+De forma análoga, a função pixel.getBlue() retornaria 0 (zero), pois este é o valor atual do componente azul (B) do pixel em questão. Isso ocorre porque o amarelo puro não possui azul em sua composição.
+
+
+Agora, imagine duplicar o valor atual do componente vermelho de um pixel. Se esse valor for 50, ele será ajustado para 100; se for 105, será ajustado para 210. Em resumo, o objetivo é fazer um ajuste relativo no valor, duplicando o valor atual, seja qual for.
+
+ 
+
+Já conhecemos a função pixel.getRed() e a possiblidade do uso de expressões. Logo, a tarefa ficou mais fácil. Uma primeira solução seria usar este código:
+
+
+JavaScript (Node.js 12.14.0)
+
+
+Light Mode
+
+Copiar
+
+Agora veja as informações sobre a 1ª e a 2ª linhas:
+
+
+1ª linha
+
+
+Chama pixel.getRed() e armazena o valor retornado na variável ultimo. Escolhemos esse nome para indicar que ele representa o último valor lido do componente vermelho do pixel.
+
+
+2ª linha
+
+
+Usa a função pixel.setRed() para informar que o novo valor deste pixel será o dobro do último valor.
+
+
+Confira o que acontece ao iniciar a execução da segunda linha:
+
+ 
+
+1. O primeiro passo do computador será avaliar qual é o resultado da expressão ultimo*2. Se imaginarmos que o último valor para o pixel é 60, a expressão multiplicará esse valor por 2, o que resultará em 120.
+
+2. Em seguida, o computador executará a função pixel.setRed() com o valor 120 como parâmetro, o que dobrará a intensidade de vermelho do pixel em questão.
+
+3. Como resultado, as duas linhas de código efetivamente duplicam a intensidade de vermelho do pixel atual.
+
+Agora que entendemos os princípios do uso de expressões em códigos de computadores, vamos analisar o mesmo exemplo de duplicação do valor atual da intensidade de vermelho de um pixel, porém com uma solução muito mais comum no mundo real. Veja a linha de código a seguir:
+
+
+JavaScript (Node.js 12.14.0)
+
+
+Light Mode
+
+Copiar
+
+Na prática, desejamos mostrar que a solução em questão pode ser condensada em apenas uma linha de código.
+
+ 
+
+Note que a variável ultimo não tinha um objetivo muito importante no código. Ela apenas armazenava temporariamente o último valor do componente vermelho do pixel para que este fosse usado na instrução seguinte.
+
+ 
+
+Vamos supor que o pixel em questão esteja com os valores RGB (50,20,30). Então, o componente vermelho possui o valor 50. O computador fará o seguinte:
+
+ 
+
+1. Executar a instrução pixel.getRed() para obter o valor atual do pixel, que é 50.
+ 
+
+2. Avaliar a expressão pixel.getRed()*2 e resolvê-la, multiplicando o valor atual do pixel por 2 e obtendo o resultado 100.
+ 
+
+3. Executar a instrução pixel.setRed() usando como parâmetro o resultado da operação aritmética do passo 2, ou seja, o valor duplicado do componente vermelho do pixel, que é 100.
+
+Com isso, o novo valor RGB para o pixel em questão será RGB (100,20,30). Se fizermos o mesmo para todos os pixels de uma imagem, o usuário perceberá essa alteração como uma imagem com os tons de vermelho mais destacados.
+
+ 
+
+Se, no mesmo exemplo, desejássemos reduzir pela metade a intensidade de vermelho do pixel, a linha de código ficaria assim:
+
+
+JavaScript (Node.js 12.14.0)
+
+
+Light Mode
+
+Copiar
+
+Note que, em vez de usarmos o asterisco, que denota multiplicação, utilizamos o “/”, que denota divisão.
+
+ 
+
+Outra forma de escrever a mesma solução seria multiplicar o pixel atual por 0.5, o que é o mesmo que dividir por 2. Então, nesse caso, teríamos:
+
+
+JavaScript (Node.js 12.14.0)
+
+
+Light Mode
+
+Copiar
+
+Prática 1
+
+
+Assista ao vídeo e acompanhe o primeiro exemplo prático!
+
+
+
+Vamos ajustar a tonalidade de cores de uma imagem por meio de instruções simples. Comecemos por esta:
+
+
+
+Imagem de flores em amarelo com 587x330 pixels, totalizando quase 194 mil pixels.
+
+Suponha que desejemos ajustar essa imagem para obtermos tonalidades mais para o laranja. 
+
+ 
+
+Para alcançar o objetivo desta prática, basta reduzir um pouco a intensidade do componente verde (G) de cada um dos pixels da imagem.
+
+
+JavaScript (Node.js 12.14.0)
+
+
+Light Mode
+
+Copiar
+
+O que essa instrução faz é ajustar a intensidade de verde do pixel em questão para 70% do valor atual. Esse é o resultado aritmético que você obtém quando multiplica um valor por 0.7.
+
+ 
+
+Note que o código-fonte fornecido não contém a instrução citada. Apenas disponibilizamos o “esqueleto” do código contendo a solução:
+
+
+
+Se você clicar em Executar, o computador apenas apresentará a imagem original com as flores em amarelo. Isso ocorre porque não há instruções de ajuste de cores no código-fonte.
+
+ 
+
+Você mesmo deve inserir a instrução que realiza a redução da tonalidade de verde do pixel. Insira a instrução dentro da estrutura de repetição for logo abaixo do comentário que indica aposição correta. Depois, clique em Executar para que o computador execute seu código. Observe o resultado.
+
+ 
+
+Se tiver dúvidas, clique em Solução, mas não deixe de tentar implementar sua solução no código-fonte fornecido. Basta inserir uma linha de código!
+
+
+
+Mostrar solução
+
+Aqui, vemos lindas flores de cor laranja! Experimente reduzir ainda mais o componente de verde da imagem. Observe que, quanto menor o componente de verde, mais as cores das flores se aproximarão do vermelho.
+
+
+Considerações
+
+
+Reflita sobre a quantidade de operações realizada em um piscar de olhos pelo computador, dado o código-fonte que geramos.
+
+ 
+
+Para cada um dos 194 mil pixels da imagem de flores em amarelo, vista anteriomente, o computador fez as seguintes operações:
+
+ 
+
+Obteve a intensidade de verde do pixel.
+ 
+Multiplicou a intensidade de verde do pixel por 0.7.
+ 
+Ajustou a intensidade de verde do pixel para o resultado dos dois passos anteriores.
+
+Então, em português, poderíamos descrever o objetivo deste exercício simplesmente como: tornar a imagem um pouco mais laranja.
+
+
+Reflita sobre como esse objetivo foi traduzido do português para o código de computador que usamos ao realizarmos a operação. 
+
+ 
+
+A capacidade de fazer essa tradução e escrever uma solução que computadores são capazes de executar rapidamente é uma habilidade chave para o chamado pensamento computacional.
+
+
+Voltando à imagem de flores em amarelo, suponha, agora, que desejamos convertê-la em uma imagem de escala de cinza.
+
+ 
+
+Recorde, na tabela 2, que uma imagem em escala de cinza possui, para cada pixel, exatamente o mesmo valor para os componentes RGB (vermelho, verde e azul):
+
+Esquema RGB	R - Vermelho	G - Verde	B - Azul
+Branco	255	255	255
+Azul	0	0	255
+Vermelho	255	0	0
+Verde	0	255	0
+Amarelo	255	255	0
+Magenta	255	0	255
+Ciano	0	255	255
+Preto	0	0	0
+Escala de cinza     (1,1,1) cinza muito escuro (quase preto) 
+(2,2,2) 
+(3,3,3) 
+(4,4,4) 
+(5,5,5) 
+(6,6,6) 
+. 
+. 
+. 
+(252,252,252) 
+(253,253,253) 
+(254,254,254) cinza muito claro (quase branco) 
+Tabela 2: Escala de cinza do esquema de cores RGB.
+Guilherme Dutra Gonzaga Jaime.
+
+Use os controles deslizantes do visualizador RGB para comprovar este conceito:
+
+
+
+Transformar a imagem para a escala de cinza
+
+
+Assista ao vídeo e entenda sobre transformar a imagem para a escala de cinza.
+
+
+
+Para alcançar o objetivo de converter a imagem de flores amarelas em uma imagem em escala de cinza, vamos calcular, para cada pixel, o valor médio dos componentes RGB. Depois, ajustaremos cada um dos três componentes para esse valor médio. Veja o trecho de código que calcula a média dos três componentes (R, G e B) para um dado pixel, depois, atribui esse valor médio aos três componentes de cor do pixel:
+
+
+JavaScript (Node.js 12.14.0)
+
+
+Light Mode
+
+Copiar
+
+Copie e cole estas linhas de código no código-fonte de experimento de programação disponível no início desta prática:
+
+
+
+Como desejamos tornar todos os bits da imagem em escala de cinza, você deverá colar este trecho dentro da estrutura de repetição for. Depois, clique em Executar. Observe o computador executar suas instruções e transformar a imagem para a escala de cinza:
+
+
+
+Mostrar solução
+
+Fique à vontade para experimentar com o código-fonte, obter diferentes resultados e refletir sobre o resultado obtido com as instruções que você testou. Por exemplo, você pode multiplicar a média por 1.1, 1.5 ou 2 e observar como a imagem vai ficando mais clara. Não tenha medo de errar!
+
+
+Prática 2
+
+
+Assista ao vídeo com uma segunda prática.
+
+

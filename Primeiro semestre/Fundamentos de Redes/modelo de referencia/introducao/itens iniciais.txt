@@ -1,0 +1,19 @@
+Itens iniciais
+Propósito
+
+
+Reconhecer como as redes de computadores estão organizadas e estruturadas para definir as ferramentas adequadas ao processo de troca de dados entre todos os dispositivos.
+
+Objetivos
+
+
+Identificar o objetivo da divisão da estrutura das redes em camadas.
+Identificar as camadas do modelo OSI e suas funcionalidades.
+Identificar as camadas da arquitetura TCP/IP e suas funcionalidades.
+
+Introdução
+
+Uma infinidade de serviços é oferecida por meio da internet, por exemplo, os governamentais, financeiros, educacionais, entre muitos outros que mudaram o comportamento humano. Ao ficarmos sem acesso à internet, sentimos como se estivéssemos em uma ilha deserta. Experimente colocar seu smartphone em modo avião durante um dia e perceba como se sentirá isolado.
+
+
+Mas, para que todos esses serviços possam funcionar, um conjunto de funcionalidades complexas e difíceis de implementar deve ser disponibilizado pelos dispositivos que compõem uma rede. Portanto, desde o início das redes de comunicação de dados, foram pensadas formas de otimizar o processo da transmissão de dados.

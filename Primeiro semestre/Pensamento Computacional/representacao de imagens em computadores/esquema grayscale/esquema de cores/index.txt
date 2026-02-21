@@ -1,0 +1,84 @@
+Esquema de cores em grayscale (escala de cinza)
+A escala de cinza, ou grayscale, é um esquema de representação de imagens no qual cada pixel assume um valor que varia do preto ao branco, passando por tons de cinza.
+
+ 
+
+Diferentemente das imagens coloridas que usam múltiplas componentes de cor (como RGB), a grayscale utiliza apenas uma intensidade luminosa para representar tonalidades. Esse tipo de imagem é monocromática e cada pixel possui um valor de intensidade de 0 (preto) a 255 (branco) em uma imagem de 8 bits. A linearidade na variação da intensidade é fundamental para a percepção visual, pois permite uma transição suave entre tons. A manipulação de intensidades é comum em processamento de imagens.
+
+ 
+
+Entenda neste vídeo como se dá a representação de cinza nas imagens digitais, bem como sua variação de preto ao branco.
+
+
+
+Conceitos da grayscale
+
+
+Vimos que as imagens coloridas utilizam diversos componentes de cor (como RGB). Aqui, as imagens em grayscale usam apenas uma única intensidade luminosa para representar as diferentes tonalidades. Esse tipo de representação é utilizado em várias áreas da computação gráfica, processamento de imagens, impressão e diagnósticos médicos.
+
+
+
+
+Modelo de cores em grayscale.
+
+Em imagens de maior profundidade de bits, esse intervalo pode ser ainda mais amplo, resultando em uma representação mais rica de tons.
+
+
+Pixels na grayscale
+
+
+Cada pixel em uma imagem grayscale é definido por um único valor de intensidade luminosa. Esse valor determina o quanto o pixel é claro ou escuro. Por exemplo, um pixel com valor 0 será preto, enquanto um pixel com valor 255 será branco. Os valores intermediários representam os diversos tons de cinza entre o preto e o branco.
+
+ 
+
+A variação da intensidade luminosa em uma imagem grayscale é linear, ou seja, a diferença entre cada nível de intensidade é a mesma.
+
+
+Comentário
+A diferença de intensidade entre os valores 0 e 1 é a mesma que a diferença entre os valores 254 e 255. Essa linearidade auxilia a percepção visual das imagens, uma vez que gera transições suaves entre os tons de cinza.
+
+
+A manipulação da intensidade luminosa dos pixels é uma técnica comum em processamento de imagens para melhorar a qualidade visual de uma imagem ou para extrair informações específicas.
+
+ 
+
+Técnicas como equalização de histograma, ajuste de contraste e brilho, e filtragem de intensidade são aplicadas diretamente aos valores de intensidade dos pixels para alcançar o efeito desejado.
+
+
+Grade de pixel na grayscale
+
+
+Funciona da mesma maneira que em qualquer outra imagem digital. A imagem é composta por uma matriz bidimensional de pixels, na qual cada posição na matriz corresponde a um pixel com um valor de intensidade luminosa.
+
+ 
+
+Para entender melhor, imagine uma matriz de 10x10 pixels. Cada célula da matriz contém um valor de intensidade luminosa que vai de 0 a 255. A resolução da imagem é determinada pelo número de pixels na matriz; quanto maior o número de pixels, maior será a resolução da imagem e, consequentemente, maior será a capacidade de representar detalhes finos.
+
+
+As imagens em escala de cinza são formadas por diferentes intensidades de luz. Além disso, a resolução espacial da imagem, que é a densidade de pixels por unidade de área, é essencial para a qualidade da imagem.
+
+ 
+
+Em dispositivos de exibição como monitores e impressoras, essa densidade é medida em pixels por polegada (PPI) ou pontos por polegada (DPI). Entenda os tipos de resolução de imagem!
+
+
+
+Demonstrando pixels em tons de cinza.
+
+As imagens em escala de cinza são formadas por diferentes intensidades de luz. Além disso, a resolução espacial da imagem, que é a densidade de pixels por unidade de área, é essencial para a qualidade da imagem.
+
+ 
+
+Em dispositivos de exibição como monitores e impressoras, essa densidade é medida em pixels por polegada (PPI) ou pontos por polegada (DPI). Entenda os tipos de resolução de imagem!
+
+
+Alta resolução espacial
+
+
+Resulta em uma imagem mais nítida e detalhada.
+
+
+Baixa resolução espacial
+
+
+Pode tornar a imagem pixelada e menos detalhada.

@@ -1,0 +1,8 @@
+Protocolos de Transporte da Internet
+Agora que já estudamos os serviços que um protocolo de transporte deve oferecer, apresentaremos casos reais de protocolos utilizados em redes de computadores. Para isso, vamos utilizar como exemplo os protocolos de transporte da internet: TCP e UDP.
+
+Iniciaremos nosso estudo pelo UDP. Mesmo sendo um protocolo simples, ele se revela bastante eficiente, principalmente no quesito agilidade de entrega, quando a aplicação requer uma entrega rápida.
+
+
+
+Em seguida, vamos nos debruçar sobre o TCP. Protocolo de transporte completo, ele é capaz de garantir a entrega de mensagens livres de erros, não importando a qualidade da rede em que ele trabalhe. Por fim, apontaremos alguns exemplos de portas, um mecanismo que permite que as aplicações sejam encontradas pela Internet.

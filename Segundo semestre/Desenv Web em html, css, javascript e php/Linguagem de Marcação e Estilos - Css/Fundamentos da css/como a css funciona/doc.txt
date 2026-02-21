@@ -1,0 +1,418 @@
+Como a CSS funciona?
+A CSS é uma linguagem de estilo que fornece total controle sobre a apresentação de um documento escrito em HTML. Com ela, é possível alterar, entre outras coisas, a forma e o posicionamento dos elementos, as cores, os tipos e tamanhos de fontes.
+
+
+Neste vídeo, você vai entender como funcionam as folhas de estilos CSS, incluindo sintaxe, seletores e propriedades. Além disso, você vai compreender a relação entre CSS e HTML.
+
+
+
+Sintaxe da CSS
+
+A CSS permite a aplicação seletiva de estilos a elementos em uma página HTML. Ou seja, um ou mais estilos podem ser aplicados em um documento inteiro ou mesmo em apenas parte dele. Além disso, um mesmo tipo de elemento pode ter, ao longo do documento, diferentes estilos.
+
+
+Para aplicar um estilo CSS a um elemento específico, é necessário identificá-lo e apontar qual de suas propriedades queremos alterar e qual valor queremos atribuir a ele. Essas três informações definem a sintaxe da CSS.
+
+
+Veja o código a seguir. Consegue identificar o seletor, a propriedade e o valor?
+
+
+
+Sintaxe da CSS
+
+Vamos ver agora cada uma das informações necessárias para aplicarmos um estilo utilizando CSS apontadas na imagem:
+
+
+
+Sintaxe da CSS
+O seletor
+
+Nesse caso, a tag HTML <p>.
+ 
+
+
+
+Sintaxe da CSS
+Ao menos uma propriedade
+
+Nesse caso, a cor de fundo (background-color).
+
+
+
+Sintaxe da CSS
+Ao menos um valor para a propriedade
+
+Nesse caso, a cor azul (blue).
+
+
+
+
+Essa declaração de estilo faria com que todas as tags <p> do documento apresentassem a cor azul ao fundo.
+
+ 
+
+Além disso, há outros aspectos importantes com relação à sintaxe:
+
+ 
+
+A propriedade e seu valor devem ser separados por dois pontos :
+Uma declaração deve ser separada da declaração subsequente com utilização do ponto e vírgula ;
+O conjunto de estilos aplicados a um seletor é envolvido por chaves {...}
+É possível inserir várias declarações (propriedade + valor) em conjunto
+
+Veja um exemplo de duas propriedades atribuídas à tag <p> e o resultado dessas declarações no navegador.
+
+
+
+
+Demonstração da aplicação de estilos.
+Seletores
+
+Nos exemplos anteriores, um estilo foi declarado em uma tag HTML <p>. Nós nos referimos a essa tag como sendo o seletor ao qual o estilo foi aplicado. Existem muitos outros seletores disponíveis além daqueles correspondentes às tags HTML.
+
+
+Seletores class e id
+
+O seletor de classe é definido a partir da declaração do atributo class em um elemento HTML. Já o seletor de identificação é definido com o atributo id.
+
+
+Atenção
+Não existe uma regra a ser seguida em termos de nomenclatura para a definição do nome da classe ou do identificador. Procure utilizar nomes que tenham relação com a função do elemento na página e que, de fato, ajudem a identificá-lo ou classificá-lo.
+
+
+No fragmento de código seguinte, veja um exemplo de sintaxe correspondente à declaração desses atributos na HTML.
+
+
+
+Sintaxe de declaração de seletores de classe e identificação na HTML
+
+Na imagem, observamos que uma mesma classe, a “texto vermelho”, foi atribuída à tag <h1> e a uma das tags <p>. Com isso, vemos que uma classe pode ser atribuída a mais de um elemento. Em seguida, note a sintaxe para atribuição de múltiplas classes a um elemento na segunda tag <p> à qual foram atribuídas as classes “texto_descricao” e “texto_vermelho”.
+
+
+Observe agora o código CSS:
+
+
+
+Primeira forma de sintaxe CSS
+
+
+Segunda forma de sintaxe CSS
+
+Veja que o seletor de id é representado por uma “#” e o de class é representado por um “.”, sendo seguidos de seus nomes. Além disso, foram apresentadas duas formas de sintaxe que produzirão o mesmo efeito. A diferença entre ambas é que, na segunda, o nome da tag à qual a identificação ou classe foi atribuída precede o respectivo sinal.
+
+
+Restrições e boas práticas na utilização do identificador
+
+Embora não exista um padrão ou preferência para utilização do seletor id ou class, é importante frisar que um id deve ser aplicado a apenas um elemento, enquanto a class pode ser aplicada a um ou vários elementos.
+
+
+Dica
+O navegador não verifica se um mesmo id foi utilizado em diferentes elementos. Porém, como esse seletor também é bastante usado pelo Javascript, podem ocorrer problemas de estilização e comportamento. Por isso, defina identificadores únicos.
+
+
+Seletores de atributo
+
+Utilizam nomes de atributos dentro de colchetes, sendo possível combiná-los com valores. Observe alguns dos seletores de atributo disponíveis:
+
+
+[checked]
+
+
+Seleciona todos os elementos que possuem o atributo checked.
+
+
+[type=’text’]
+
+
+Seleciona todos os elementos do tipo text.
+
+
+Os seletores de atributo são flexíveis, permitindo inúmeras combinações. Por exemplo, é possível usá-los para selecionar todas as imagens com determinada extensão, selecionar todos os elementos com o atributo title contendo determinado valor etc.
+
+
+Seletores baseados em relacionamento
+
+É possível declarar estilos utilizando a relação entre os elementos. Confira os principais seletores baseados em relacionamento:
+
+
+H1 P
+
+
+Qualquer elemento P que seja descendente (filho, neto etc.) de um elemento H1.
+
+
+H1 > P
+
+
+Qualquer elemento P que seja filho de um elemento H1.
+
+
+H1 + P
+
+
+Qualquer elemento P que seja o próximo irmão de um elemento H1 (ou seja, o próximo filho de um mesmo pai).
+
+
+Para uma melhor compreensão quanto à descendência e ao parentesco mencionados, veja uma representação simbólica da árvore DOM (representação estruturada do documento HTML em formato de árvore) contendo elementos representando tags HTML. Veja ainda a explicação de cada relação e aplicação dos seletores baseados em relacionamento.
+
+
+
+Relação entre elementos em uma página HTML
+
+Propriedades CSS
+
+Existem inúmeras propriedades CSS, desde as definidas pela sua especificação, ditas propriedades padrão, até as proprietárias, que funcionam apenas em alguns navegadores. A fim de garantir uma maior compatibilidade, assim como otimizar o desenvolvimento, devemos sempre dar preferência às propriedades padrão. Estas são algumas das propriedades mais comuns da CSS:
+
+
+
+background
+
+Estiliza o fundo de elementos. Para tal, há uma série de propriedades, além do atalho “background”, como “background-color”, “background-image” etc.
+
+
+border
+
+Controla as bordas de um elemento, sendo possível definir suas cores, espessuras, entre outras propriedades.
+
+
+top, bottom, right e left
+
+Controlam o posicionamento, relativo ou absoluto, dos elementos em relação a outros elementos.
+
+
+color
+
+Estiliza a cor do conteúdo textual de um elemento.
+
+
+font-family, font-size, font-weight etc.
+
+Série de propriedades usada para estilizar o conteúdo textual de um elemento no que diz respeito à fonte, como a família de fontes, seu tamanho, peso (mais clara ou mais escura - negrito) etc.
+
+
+height
+
+Define a altura de um elemento.
+
+
+list-style, list-style-image etc.
+
+Propriedades usadas para estilizar as listas HTML.
+
+
+margin
+
+Controla a distância em função da margem de um elemento para outro.
+
+
+padding
+
+Controla a distância entre as bordas e o conteúdo de um elemento.
+
+
+position
+
+Define como um elemento deve ser posicionado na página.
+
+
+text-...
+
+Muitas propriedades controlam o comportamento do conteúdo textual de um elemento, como alinhamento (justificado, centralizado etc.), aparência (sublinhado etc.) etc.
+
+
+width
+
+Define a largura de um elemento.
+
+
+z-index
+
+Define a profundidade de um elemento – usado, por exemplo, para sobreposição de elementos.
+
+CSS e HTML
+
+Há três formas usuais de aplicar estilos em um documento HTML usando CSS: Inline, Interna e Externa. Além dessas, a HTML5 permite a aplicação em escopo.
+
+
+CSS inline
+
+Essa forma envolve a declaração do estilo CSS diretamente na tag, no código HTML. A declaração inline faz uso do atributo style procedido por declarações separadas por ponto e vírgula “;”. Esse atributo pode ser usado em qualquer tag HTML.
+
+
+
+Aplicação de estilo inline.
+
+CSS interna
+
+Também chamada de CSS incorporada, é declarada na seção <head> do documento HTML.
+
+
+
+Aplicação de estilo CSS interna
+
+CSS externa
+
+Nesse caso, os estilos são declarados em um arquivo externo, com extensão “.css” e vinculados ao documento HTML por meio da tag <link> ou da diretiva @import dentro da tag <head>.
+
+
+
+plicação de estilo externa
+
+CSS em escopo
+
+Criada a partir da HTML5, por meio dessa forma de aplicação de estilo, é possível aplicar estilos no âmbito de escopo, ou seja, específicos para as seções da página em que foram declarados, incluindo os seus elementos filhos. No código a seguir, a tag <p> receberá os estilos definidos, sendo a mesma regra válida para outros estilos e elementos que, porventura, venham a fazer parte da <div>.
+
+
+
+Aplicação de estilo a nível de escopo
+
+Efeito cascata
+
+Quando trabalhamos com CSS, é comum nos depararmos com a declaração conflitante de estilos, ou seja, diferentes definições de estilo para um mesmo elemento. Nessas situações, entra em ação o efeito cascata. Para entendermos a definição desse efeito, é preciso abordarmos dois conceitos: herança e especificidade.
+
+
+Herança
+
+A CSS permite que a aplicação de propriedades a elementos pais seja herdada pelos seus elementos filhos. Tomemos como exemplo o código a seguir.
+
+
+
+Exemplo de herança em CSS
+
+O resultado do fragmento de código mostrará tanto o texto solto quanto o texto dentro da tag <p> com a cor azul. Isso significa que a tag <p> herdou o estilo definido para o seu pai, a tag <div>.
+
+
+A capacidade de herdar estilos caracteriza o que chamamos de efeito cascata.
+
+
+Nem todas as propriedades CSS podem ser herdadas pelos filhos! Um exemplo são as propriedades relacionadas à formatação das boxes (que veremos mais adiante), como largura, altura, entre outras.
+
+
+Especificidade
+
+Para entender o que é a especificidade no âmbito das folhas de estilo, vamos recorrer a mais um exemplo.
+
+
+
+
+Exemplo de especificidade em CSS.
+Perceba que o fragmento da imagem “Exemplo de herança em CSS” foi adaptado. Antes, era aplicado o conceito de herança, assim, o texto dentro da tag filha assumia o estilo definido para o seu pai. Agora, há um estilo específico definido para todas as tags <p> que sejam filhas de tags <div>. Com isso, ao visualizarmos o resultado no navegador, teremos o texto solto na cor azul e o texto dentro da tag <p> na cor vermelha.
+
+ 
+
+A CSS é bastante flexível e nos permite definir diferentes níveis de especificidade. Entretanto, é importante termos cuidado com a sobreposição de estilos, ou seja, diferentes estilos definidos para um mesmo elemento em diferentes partes de nosso código CSS. A regra nesse caso é: prevalecerá o estilo mais específico. No exemplo anterior, a primeira declaração (para a tag div) é generalizada; a segunda (div p), específica.
+
+
+Regras de precedência
+
+Em relação às formas de inclusão da CSS, a regra de precedência obedece a seguinte ordem:
+
+
+1
+
+
+Os estilos internos e de escopo têm precedência sobre estilos em arquivos externos.
+
+
+2
+
+
+Os estilos inline têm precedência sobre estilos internos, de escopo e externos.
+
+
+Quanto aos seletores, a regra de precedência obedece a ordem seguinte:
+
+
+1
+
+
+Seletores de elemento (utilização apenas do nome da tag) são os de menor precedência, por serem muito genéricos.
+
+
+2
+
+
+Seletores de classe têm mais precedência que os de elemento.
+
+
+3
+
+
+Seletores de identificação têm mais precedência que os de classe.
+
+
+Veja este novo exemplo:
+
+
+
+Exemplo de aplicação do valor !important
+
+Seguindo as regras de especificidade, sua aplicação resultaria na apresentação do texto dentro da tag <p> na cor vermelha, pois sua declaração de estilo é mais específica que a utilizada para a tag <p> (texto azul), que é generalizada. Entretanto, a utilização do valor !important, que se enquadra no que chamados de CSS hack, na declaração mais generalizada, faz com que esse estilo se sobreponha ao específico. Logo, o código anterior resulta na apresentação do texto dentro da tag <p> na cor azul.
+
+Abreviaturas ou atalhos em CSS
+
+As folhas de estilo permitem a aplicação de algumas propriedades utilizando abreviaturas ou atalhos. O exemplo a seguir mostra as duas formas de realizar uma mesma declaração:
+
+
+p{ 
+;margin-top: 10px; 
+margin-bottom: 8px; 
+margin-right: 6px; 
+margin-left: 4px; 
+}	p{ 
+margin: 10px 6px 8px 4px; 
+}
+p{ 
+padding-top: 10px; 
+padding-bottom: 8px; 
+padding-right: 6px; 
+padding-left: 4px; 
+}	p{ 
+padding: 10px 6px 8px 4px; 
+}
+p{ 
+border-width: 2px; 
+border-style: solid; 
+border-color: #cccccc; 
+}	p{ 
+border: 2px solid #cccccc; 
+}
+p{ 
+background-color: #000000; 
+background-image: url(imagem.jpg); 
+background-repeat: no-repeat; 
+background-position: top left; 
+}	p{ 
+background: #000000 url(imagem.jpg) no-repeat top left; 
+}
+p{ 
+font-size: 1em; 
+line-height: 1.5em; 
+font-weight: bold; 
+font-style: italic; 
+font-family: verdana; 
+}	p{ 
+1em/1.5em bold italic verdana; 
+}
+ul{ 
+list-style: #000000; 
+list-style-type: disc; 
+list-style-position: outside; 
+list-style-image: url(imagem.jpg); 
+}	ul{ list-style: disc outside url(imagem.jpg); 
+}
+Duas formas de realizar a mesma declaração
+Alexandre Paixão
+
+CSS3
+
+A CSS, atualmente, está em sua terceira versão. Dentre as diversas novidades dessa versão, destacam-se:
+
+ 
+
+Melhorias nos seletores, com novas possibilidades de seleção: primeiro e/ou último elemento, elementos pares ou ímpares etc.
+Efeito gradiente e de sombra em textos e elementos.
+Bordas arredondadas.
+Manipulação de opacidade.
+Controle de rotação e perspectiva.
+Animações.

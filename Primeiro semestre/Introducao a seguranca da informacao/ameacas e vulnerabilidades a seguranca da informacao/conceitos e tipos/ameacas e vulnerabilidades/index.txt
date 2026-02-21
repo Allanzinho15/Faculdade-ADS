@@ -1,0 +1,117 @@
+Ameaças e vulnerabilidades
+
+Atualmente, a informação é um dos principais ativos das empresas. Por meio das informações, novas tecnologias são obtidas, novos fármacos são ofertados no mercado e salvam vidas. O filme Trocando as Bolas (do inglês, Trading Places, de 1983) ilustra bem essa questão.
+
+
+
+Pôster do filme Trading Places.
+O enredo trata de dois corretores bem-sucedidos, os irmãos Duke, que resolvem apostar 1 dólar pela troca de um alto executivo, personagem de Dan Aykroyd, por uma pessoa em situação de rua, interpretado por Eddie Murphy. Com o desenrolar da história, aborda-se o acesso a informações privilegiadas dos irmãos Duke sobre a safra da laranja no mercado norte-americano.
+
+
+Pensando no contexto atual, imagine, agora, quanto seria o valor de mercado de uma empresa que já tivesse a patente da vacina contra o coronavírus no inicio da pandemia.
+
+
+As instituições têm o seu valor de mercado calculado a partir de seu market share, produtos, patentes, instalações, bens e informações, ou seja, de seus ativos. Os ativos podem ser classificados como tangíveis, quando é possível medir o seu valor, e como intangíveis, quando é difícil, ou impossível, medir o seu valor.
+
+
+Para compreender melhor esses conceitos, vejamos alguns exemplos!
+
+
+
+Ativos intangíveis
+
+São a imagem de uma organização ou um produto. Algumas operadoras de telefonia tiveram a qualidade de seus serviços prejudicada em função de problemas técnicos de cobertura de sinal. Esse “fantasma” assola os corredores dessas empresas. Que campanha pode ser realizada para mudar tal situação? Percebeu o quão intangível é a imagem de uma companhia?
+
+
+Ativos tangíveis
+
+São aqueles que conseguimos medir. Eles podem ser classificados como lógicos, quando nos referimos a informações ou softwares; físicos, quando nos referimos a equipamentos ou infraestruturas; e humanos, quando nos referimos a colaboradores e prestadores de serviço.
+
+Vejamos uma explicação mais detalhada de cada ativo tangível:
+
+
+Ativos tangíveis lógicos
+
+São aqueles que envolvem a informação e sua representação em algoritmos, por exemplo, uma fórmula química, os detalhes sobre a safra da laranja no mercado norte-americano, o algoritmo principal de busca do Google, os detalhes técnicos das baterias dos carros do Elon Musk.
+
+Ativos tangíveis físicos
+
+São aqueles que conseguimos tocar, como a usina hidrelétrica de Itaipu, a ponte Golden Gate e o Cristo Redentor. Esses são exemplos de infraestruturas cuja ausência poderá provocar uma perda significativa que ficará marcada na memória. Provavelmente, você se lembra de onde estava no dia 11 de setembro de 2001. Em termos de equipamentos, podemos citar as prensas de papel moeda da Casa da Moeda; o supercomputador Santos Dumont, que permite fazer o sequenciamento do genoma de diversos seres vivos etc.
+
+Ativos tangíveis físicos
+
+São aqueles referentes aos colaboradores e prestadores de serviço, como, por exemplo, a troca de jogadores de futebol e técnicos nos clubes e as cifras astronômicas que circulam nesse mercado. A mesma situação ocorre em outros esportes, como automobilismo, basquete etc.
+
+
+
+De maneira geral, os ativos tangíveis e intangíveis se posicionam e se desdobram desta maneira:
+
+
+
+Fluxograma do posicionamento dos ativos tangíveis e intangíveis.
+A perda ou a danificação desses ativos poderia acarretar problemas financeiros gigantescos.
+
+
+Exemplo
+Vamos analisar o caso da Apple. Em 1997, Steve Jobs (1955-2011) retornou para a Apple e, até o seu falecimento, as ações da empresa aumentaram 9000%. Em termos comparativos, nos últimos dois anos de vida de Jobs, os valores das ações mais do que dobraram, enquanto os da Microsoft subiram 5,1% e os da Intel valorizaram 14% no mesmo período. Quando Jobs faleceu, as ações da Apple tiveram uma queda, não tão acentuada, mas ainda assim uma queda. Trata-se de um claro exemplo de um ativo humano e da perda financeira causada quando ocorre um problema desse tipo. Do mesmo modo, pode ocorrer também a hipervalorização quando um novo ativo é obtido.
+
+
+Para proteger esses ativos, precisamos criar barreiras de proteção aos diversos tipos de problemas que possam acontecer. Os controles de Segurança da Informação, também conhecidos como medidas de proteção, são as ferramentas, os equipamentos, as metodologias e os processos que usamos para proteger um ativo contra uma ameaça e a(s) sua(s) vulnerabilidade(s) associada(s).
+
+
+Como relacionar uma ameaça e uma vulnerabilidade? Vamos pensar em um exemplo baseado em um desenho infantil, o Papa-Léguas.
+
+
+Na animação, o coiote tentava jogar uma bigorna em cima do pássaro, mas vamos trocar nossos atores. Em vez do pássaro, imaginemos um refrigerante, cuja fórmula está salva em um dispositivo de armazenamento externo (pen drive). Nesse caso, a bigorna é uma ameaça contra o nosso dispositivo. Para proteger o nosso pen drive, podemos colocá-lo dentro de uma caixa de metal hiper-resistente. Certamente, criamos uma proteção (controle) contra a ameaça (bigorna).
+
+
+Vamos agora trocar o pen drive por uma folha de papel. Uma bigorna é uma ameaça contra uma folha de papel? Não necessariamente. Mas o fogo seria uma ameaça antes e continua sendo agora. Então, nesses dois casos, o fogo persiste e provavelmente o controle anterior não protegeria o pen drive nem a folha de papel contra essa ameaça. Podemos perceber, portanto, que, para explorar a vulnerabilidade de um ativo, pode existir uma ou mais ameaças. Da mesma forma, contra uma vulnerabilidade pode haver uma ou mais ameaças. A imagem, a seguir, representa bem essa situação:
+
+
+
+Ameaça contra a vulnerabilidade de um ativo.
+O ativo corresponde à forma estrelada central. Cada sulco é uma vulnerabilidade que pode ser explorada por uma ameaça. Cada ameaça tem uma chance (probabilidade) de acontecer, representada na imagem pelo tamanho da seta. Assim, há ameaças com grande probabilidade (setas maiores) de acontecer e outras com pouca probabilidade de acontecer (setas menores).
+
+
+Os semicírculos vermelhos correspondem aos controles que podem proteger o ativo contra uma ou mais ameaças.
+
+
+Exemplo
+Um incêndio e uma enchente são ameaças físicas para um servidor em um data center. Mais do que isso, são pesadelos para os melhores administradores de TIC. Um sistema anti-incêndio com sprinklers, detectores de fumaça, extintores e uma brigada contra incêndio com treinamentos periódicos correspondem a bons controles que podem envolver equipamentos, pessoas e processos.
+
+
+Antes de continuarmos, é importante sabermos o significado da sigla TIC.
+
+
+Saiba Mais
+TIC significa Tecnologia da Informação e Comunicação. Essa sigla foi utilizada pela primeira vez em uma proposta de currículo escolar elaborado no Reino Unido, no fim dos anos 90. TIC também pode ser definida como um conjunto de recursos tecnológicos utilizados de maneira integrada, tendo como objetivos o processamento de informação e o auxílio na comunicação. A TIC se faz presente na indústria (no processo de automação), no comércio (no gerenciamento, nas formas de publicidade), no setor de investimentos (informação simultânea, comunicação imediata), na educação (como ferramenta de auxílio ao ensino e aprendizagem, na Educação a Distância), dentre outros setores da sociedade.
+
+
+Em um incêndio, os itens citados são boas formas de proteção. Mas e em uma enchente? Esses controles são totalmente ineficientes. E durante a falta de energia elétrica? Ou mesmo em uma sobrecarga de energia elétrica? O que seria mais usual de acontecer: incêndio, enchente, falta de energia elétrica ou sobrecarga de energia elétrica?
+
+
+Certamente, isso dependeria de uma análise geográfica do local de instalação do data center.
+
+
+Se ele estivesse instalado no cerrado nordestino, seria razoável pensar em uma enchente? Ou se o data center estivesse instalado em uma região de mangues mato-grossenses, seria razoável pensar em uma enchente? Ou em uma região da Amazônia conhecida pelo elevado número de descargas atmosféricas que ocorrem por ano?
+
+
+O correto seria a análise e avaliação dos riscos associados à instalação de data centers na região, devendo obedecer a critérios específicos de probabilidade de ocorrência e sorte, afinal de contas, qual seria a probabilidade de dois aviões colidirem em duas torres de um mesmo prédio?
+
+
+Veja, a seguir, um sistema de combate a incêndio:
+
+
+
+Sistema de combate a incêndio.
+
+Após a análise e avaliação do risco e a sua probabilidade de ocorrência, podemos adotar uma metodologia como a identificação dos ativos e o cálculo do seu valor. Será mesmo que precisamos usar todo e qualquer controle para proteger o ativo? E se o ativo valer menos do que o controle, ainda seria vantajoso implementar esse controle? Com a definição do valor do ativo, a análise e avaliação do risco e os custos para implementar as proteções necessárias, começam as decisões.
+
+
+
+Seguro de automóvel.
+
+Uma boa comparação está no seguro de um automóvel. Ao contratarmos uma seguradora, o valor da franquia do seguro nos é apresentado. Se ocorrer um sinistro e ele for mais barato do que o valor da franquia, valerá a pena acionar o seguro? Não, pois pagaremos mais caro.
+ 
+
+Um risco na carroceria é o suficiente para acionar o seguro? E uma batida frontal? E quando o carro sofre perda total? A seguradora decide pagar o valor segurado, pois é mais barato do que

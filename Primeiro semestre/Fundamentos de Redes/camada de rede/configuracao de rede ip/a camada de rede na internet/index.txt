@@ -1,0 +1,12 @@
+A camada de rede na Internet
+
+Na camada de rede, a Internet pode ser vista como um conjunto de sub-redes ou Sistemas Autônomos (SA) conectados entre si. Não existe uma estrutura real, mas diversos backbones que interligam redes regionais, que por sua vez estão conectadas às redes locais.
+
+O protocolo que mantém a Internet unida é o protocolo de camada de rede IP (Internet Protocol). A tarefa do IP é fornecer a melhor forma de transportar datagramas da origem para o destino, independentemente de esses hospedeiros estarem na mesma rede ou em outras redes intermediárias.
+
+
+
+Imagine que você está solicitando a transferência de dados de seu computador para um hospedeiro remoto (está fazendo o upload do arquivo). A camada de transporte de seu computador receberá o fluxo de dados referente à transferência de seu arquivo. Como provavelmente esse fluxo é muito grande para caber em um único pacote IP, ele será quebrado em partes menores pela camada de transporte e cada parte desta será entregue para a camada de rede (cada um será colocado em um datagrama IP).
+
+
+Esses datagramas serão transmitidos pela Internet, podendo ainda serem fragmentados ao longo do caminho. Quando todos os fragmentos de um datagrama chegam ao destino, o datagrama original é remontado pela camada de rede do destino sendo entregue à camada de transporte que recriará o fluxo original para o processo de recepção.

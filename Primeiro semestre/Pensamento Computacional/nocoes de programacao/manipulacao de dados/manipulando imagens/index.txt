@@ -1,0 +1,71 @@
+Manipulando imagens na prática
+Após todo o conhecimento teórico adquirido, chegou a hora de colocar a mão na massa e aplicar esses conceitos. Vamos praticar!
+
+
+Prática 1
+
+
+À esquerda, temos o Código-Fonte; à direita, a Saída resultante do processamento das instruções fornecidas. Logo abaixo, o botão Executar, que é a forma como ordenamos ao computador que executa as instruções fornecidas.
+
+
+
+Após clicar no botão Executar e observar o resultado em Saída, compare a seguir a solução:
+
+
+
+Mostrar solução
+
+Veja:
+
+
+Percebeu a diferença? Note que aparece um círculo de 20x20 pixels, maior do que o apresentado na primeira imagem.
+
+ 
+
+Agora altere a instrução setZoom para realizar um zoom de 10 vezes em vez de 20. Clique em Executar e observe o resultado.
+
+
+
+Mostrar solução
+
+Note que a execução das instruções resulta em um círculo de 10x10 pixels, agora menor que o anterior.
+
+
+Dica
+Fique à vontade: pratique e experimente com qualquer valor que deseje para a instrução setZoom. Não tenha medo de errar!
+
+
+Prática 2
+
+
+A seguir, assista a uma breve contextualização da Prática 1, seguida do nosso segundo exemplo prático.
+
+
+
+Agora, vamos realizar alguns experimentos simples com o código da tabela 2, manipulando o código-fonte a seguir para observarmos o que acontece:
+
+
+
+Após clicar no botão Executar e observar o resultado em Saída, compare a solução:
+
+
+
+Mostrar solução
+
+Note que o pixel (4,4), que fica mais ou menos no meio do círculo, ficou vermelho. Agora, observe as soluções em alterações na mudança de alguns parâmetros!
+
+
+Alternando o parâmetro da função getPixel para (4, 9)
+
+
+Observe que, como fornecemos a coordenada de outro pixel (linha 9 em vez de linha 4), o pixel vermelho ficou mais abaixo.
+
+
+
+
+Colocando diferentes valores para o parâmetro da função setRed
+
+
+Observe que, quanto menor o valor da saturação vermelha do pixel, mais escuro será o vermelho apresentado no pixel em questão.
+
+

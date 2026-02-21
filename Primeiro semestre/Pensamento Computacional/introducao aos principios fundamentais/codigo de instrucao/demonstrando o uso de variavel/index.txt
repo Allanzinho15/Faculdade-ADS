@@ -1,0 +1,193 @@
+Entendendo o código na prática
+Neste vídeo, faremos demonstrações de códigos simplificados utilizando uma das linguagens de programação mais utilizadas atualmente, a linguagem de programação Python.
+
+
+
+Sintaxe refere-se às regras e à estrutura gramatical específicas que devem ser seguidas ao escrever códigos em uma linguagem de programação. Cada linguagem de programação tem sintaxe única, que define como o código deve ser escrito para que seja considerado válido e compreensível pelo compilador ou interpretador. Lidar com erros de sintaxe é uma parte fundamental do processo de desenvolvimento de software e a resolução desses erros é uma habilidade essencial para o dia a dia do desenvolvedor. Com a grande quantidade de linguagens e ferramentas de desenvolvimento, pode acontecer a utilização de sintaxe de uma linguagem, enquanto desenvolve, com outra diferente. Outro caso comum é a ausência de caracteres necessários para o entendimento das instruções pelo computador. Hoje em dia, as interfaces de desenvolvimento fazem sugestões de sintaxe e uma verificação prévia, a qual já aponta os erros e possíveis soluções, minimizando, assim, os erros de sintaxe.
+
+ 
+
+Utilizaremos, nas práticas a seguir, códigos-fonte simples. Os elementos de código que serão mostrados aqui não são chiques, chamativos ou complexos. Eles são muito simples. Talvez seja um pouco como um brinquedo de peças de encaixe, isoladas, dispersas, complexas; porém, com o tempo e a familiaridade, as possibilidades e o uso vão se modificando.
+
+ 
+
+Aqui, utilizaremos uma das linguagens de programação mais usadas na atualidade, a linguagem Python. Usaremos somente os principais recursos, para que você possa escrever e manipular códigos bem simples e brincar com a ideia-chave: compreender de fato como funcionam os computadores.
+
+ 
+
+Para compreender como imprimir strings, veja a Prática 1 a seguir.
+
+Prática 1
+
+
+Clique em Executar e observe o resultado apresentado em Saída.
+
+
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+Python (3.8.1)
+
+123
+
+Input
+
+
+Executar
+Console
+
+O que temos de novidade aqui?
+
+
+O que fizemos foi usar a sintaxe padrão para informar ao computador que o que está sendo impresso é um texto (string). Para isso, cercamos as strings Teste, Bom dia e Tchau com aspas duplas.
+
+ 
+
+Ao clicar em Executar, você pode ver os textos corretamente impressos no output do code compiler. A string "\n" pula uma linha, ou seja, faz com que a próxima impressão seja feita na linha seguinte.
+
+
+Atenção
+Um comentário em Python começa com o sinal de jogo da velha (#). Outra possibilidade é colocar todo o comentário entre 3 aspas duplas (""" ... """) ou 3 aspas simples ('''....'''). Em seguida, você pode escrever notas para você mesmo, para lembrá-lo, no futuro, do que você pretendia ou do que está tentando fazer neste ponto do seu código. O computador sabe ignorar comentários, então é apenas uma maneira de adicionar decorações/lembretes ao código com pequenas observações.
+
+ 
+
+O uso de comentários é considerado bastante importante, pois ajuda o programador a compreender um código que não foi escrito por ele, ou até mesmo um código que foi escrito por ele há tanto tempo, que ele não lembra mais como raciocinou para escrever aquele trecho de código.
+
+
+Um exemplo intrigante que podemos citar aqui é colocar a palavra print no lugar de Tchau. Isso é intrigante, pois print também é o nome da instrução de impressão reconhecida pela linguagem de programação que estamos usando.
+
+ 
+
+O que ocorrerá ao substituirmos Tchau por print e clicarmos e Rodar?
+
+ 
+
+Se você mesmo fizer este teste na Prática 1, obterá o seguinte resultado:
+
+
+Teste
+Bom dia
+print
+
+
+Portanto, quando sequências de caracteres são colocadas entre aspas duplas, como neste exemplo, o computador entende que se trata apenas de dados passivos, e lida com eles conforme esperado.
+
+
+Note que temos uma lição importante aqui sobre sintaxe. Nós já sabemos que ela é restrita e mecânica. No entanto, é importante entender que você está seguindo um padrão/convenção ao escrever um código de computador que envolve a sintaxe, o que é característico da linguagem de programação. Então, é muito comum, mesmo para programadores muito profissionais, a ocorrência de pequenos erros de sintaxe.
+
+
+Quando há um erro de sintaxe, ao clicarmos no botão de execução, haverá alguns erros de sintaxe listados em Saída. Então, é parte da tarefa de quem escreveu o código corrigir esses erros de sintaxe até que o computador aceite que as instruções estão de acordo com o padrão de sintaxe da linguagem de programação em uso. Esse é apenas um processo rápido, superficial e comum.
+
+ 
+
+A razão pela qual estamos discutindo isso neste módulo é que, quando alguém está apenas começando a aprender a escrever códigos (programar), será bastante comum se deparar com erros de sintaxe, pois isso é realmente comum. Então, jamais se permita ter a impressão de que você não está entendendo como escrever código. Apenas entenda que todo mundo passa por erros de sintaxe, inclusive programadores com décadas de experiência. Então, quando se deparar com erros de sintaxe, apenas faça uma checagem rápida e cuidadosa para corrigir os erros e seguir adiante.
+
+ 
+
+Para promover a ideia de que o erro de sintaxe não é grande coisa, queremos mostrar como consertar isso. Veremos alguns exemplos práticos a seguir. São apenas alguns exemplos de código, todos com erros de sintaxe. Queremos que você treine o processo de identificá-los e corrigi-los.
+
+
+Prática 2
+
+
+Todo mundo passa por erros de sintaxe.
+
+ 
+
+Vamos aprender a identificá-los e corrigi-los?
+
+ 
+
+O resultado de cada um dos seis exemplos a seguir deve ser imprimir em Saída as letras destacadas em verde. Você precisa corrigir a sintaxe de cada um dos seis exemplos. Depois que você corrigir a sintaxe das instruções, cada um dos 4 exemplos imprimirá exatamente as três linhas indicadas em vermelho mais à frente.
+
+ 
+
+Saída esperada para cada um dos cinco exemplos práticos a seguir:
+
+
+
+1
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+Python (3.8.1)
+
+123
+Input
+
+
+Executar
+Console
+
+2
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+Python (3.8.1)
+
+123
+Input
+
+
+Executar
+Console
+
+3
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+Python (3.8.1)
+
+123
+Input
+
+
+Executar
+Console
+
+4
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+Python (3.8.1)
+
+123
+Input
+
+
+Executar
+Console
+
+
+Chave de resposta
+Como podemos perceber, devemos tomar cuidado com a sintaxe ao escrever os nossos códigos, porque, por um pequeno detalhe, podemos escrever códigos com erros de sintaxe (SyntaxError).

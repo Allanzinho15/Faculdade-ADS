@@ -1,0 +1,50 @@
+Camadas de aplicação, apresentação e sessão
+Aplicação
+
+
+A camada de aplicação é a que está mais próxima de nós, usuários da rede. Podemos citar algumas das aplicações oferecidas por essa camada:
+
+
+ 
+
+Serviço web.
+Serviço de correio eletrônico.
+Serviço de transferência de arquivos.
+Serviço de streaming de áudio e vídeo.
+Serviço de compartilhamento de arquivos.
+ 
+
+
+Os serviços citados acima ou quaisquer outros oferecidos pela camada de aplicação são executados por processos dos usuários que estão em andamento em determinado dispositivo.
+
+
+Sua segunda tarefa será traduzir, criptografar e comprimir dados. Organização é a palavra-chave!
+
+
+Apresentação
+
+A camada de apresentação é responsável por garantir a interoperabilidade dos sistemas heterogêneos, ou seja, permitir que, independentemente do dispositivo que você esteja utilizando (computador, smartphone, televisão, carro etc.) e do sistema operacional (MS Windows, Apple IOS, Linux etc.), seja possível acessar qualquer tipo de serviço disponibilizado pela rede.
+
+Para que haja essa interoperabilidade, a camada de apresentação é responsável por fazer a transformação dos dados, por isso, podemos chamá-la de tradutor da rede. Ela será responsável pela conversão entre formatos, compressão de dados e criptografia.
+
+Sua terceira tarefa será estabelecer, gerenciar e encerrar sessões, garantindo a sincronia da comunicação.
+
+
+Sessão
+
+Essa camada é responsável por organizar a comunicação entre os dispositivos e permitirá que os usuários, em diferentes máquinas, possam estabelecer sessões de comunicação; cada sessão terá dois serviços básicos: controle de diálogo e sincronização.
+
+
+
+Controle de diálogo
+
+Define quem transmitirá em determinado momento. Considerando a existência de dois usuários, A e B, a camada de sessão determinará se eles podem transmitir simultaneamente, caracterizando a comunicação full duplex, ou de forma intercalada, em um sentido por vez, a exemplo da comunicação half duplex.
+
+Sincronização
+
+Permite que sejam estabelecidos pontos de controle em determinado fluxo de dados. Esses pontos permitem que, se houver uma perda de comunicação, a transmissão de dados seja restabelecida a partir daquele ponto e não desde o início da transmissão.
+
+
+
+
+Sua quarta tarefa será prover a entrega confiável de mensagens processo a processo e a recuperação de erros. Fique atento ao fluxo de informações!

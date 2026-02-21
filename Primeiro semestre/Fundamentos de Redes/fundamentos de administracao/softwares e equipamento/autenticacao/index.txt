@@ -1,0 +1,16 @@
+Autenticação
+
+Está relacionada à garantia da propriedade da autenticidade, evitando que terceiros possam fingir ser uma das partes legítimas a fim de acessar sistemas ou informações não autorizadas.
+
+
+A autenticação diminui o risco de um ataque de personificação ou fabricação. Para realizá-la, podem ser utilizados os seguintes mecanismos: senhas, controles biométricos, tokens, certificados digitais.
+
+
+O mecanismo escolhido deve se adequar ao objetivo de segurança a ser alcançado. Atualmente, os controles biométricos são considerados os mais eficientes, mas é recomendado que seja utilizada a chamada autenticação de dois fatores.
+
+
+A autenticação de dois fatores utiliza dois mecanismos para autenticar um usuário, por exemplo, utilizando senha e um código enviado por e-mail.
+
+
+Exemplo
+Digitais, reconhecimento de íris, palma da mão e certificados digitais.

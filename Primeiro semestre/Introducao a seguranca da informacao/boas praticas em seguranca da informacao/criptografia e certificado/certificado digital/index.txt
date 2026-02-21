@@ -1,0 +1,78 @@
+Certificado digital
+
+O certificado digital é um documento eletrônico que identifica pessoas e instituições, provando identidades e permitindo o acesso a serviços informatizados que garantam:
+
+
+Autenticidade
+Integridade
+Não repúdio
+
+O certificado digital também é usado para assinar documentos digitalmente. Ele é destinado a qualquer pessoa, física ou jurídica, sendo emitido por uma Autoridade Certificadora (AC). Com ele, pode-se anexar a chave pública, também chamada de infraestrutura de chave pública − do inglês Public Key Infrastructure (PKI) −, a um indivíduo ou entidade específica. Um certificado digital criptografado deve conter:
+
+
+O nome do sujeito (a organização ou indivíduo certificado);
+A chave pública do sujeito (usada para descriptografar mensagens e assinaturas digitais);
+Um número de série (para identificar exclusivamente o certificado);
+Uma data de validade;
+A assinatura digital da autoridade emissora do certificado e a mensagem.
+Qualquer outra informação relevante.
+
+O caminho vinculado de verificação e validação de um certificado digital da entidade final para uma AC que atua como uma âncora de confiança é chamado de cadeia de confiança. Vejamos um exemplo de utilização de certificado digital:
+
+
+
+Bancos
+
+
+Os bancos possuem certificado para autenticar-se perante o cliente, assegurando que o acesso está realmente ocorrendo com o servidor deles (aqui cabe lembrar o nome dessa característica de segurança da informação: autenticidade).
+
+
+
+Cliente
+
+
+Em contrapartida, o cliente, ao solicitar um serviço, como, por exemplo, acesso ao extrato da conta corrente, pode utilizar o seu certificado para autenticar-se perante o banco.
+
+
+A figura a seguir mostra como os certificados digitais podem ser usados para validar a identidade de um provedor de conteúdo. Observe que os usuários de certificados digitais têm um vínculo de confiança comum com uma AC. Nele, é possível ver como o proprietário e o usuário do conteúdo trocam informações de identificação com a AC. Ambos possuem um relacionamento de confiança entre si.
+
+
+
+Diagrama do Certificado Digital.
+
+O usuário do conteúdo se registra na AC e recebe um certificado; o proprietário do conteúdo se registra na AC e recebe um par de chaves e um certificado assinado pela AC. Quando o usuário solicita informações de um proprietário do conteúdo, ele envia sua chave pública presente no certificado assinado. Como o usuário pode validar a assinatura no certificado usando a chave pública da AC, ele pode confiar no certificado e usar a chave pública fornecida pelo proprietário do conteúdo.
+
+
+A certificação digital no Brasil tomou impulso a partir de 2001 quando o governo federal criou a Infraestrutura de Chaves Públicas Brasileira (ICP-Brasil), que teve um grande crescimento desde então. Os certificados são utilizados em diversas aplicações:
+
+Automatização da prestação de informações fiscais à Receita Federal do Brasil.
+Nota fiscal eletrônica.
+Informatização do Poder Judiciário.
+Informatização de serviços cartoriais.
+Informatização de processos para abertura de empresas.
+Informatização de prontuários médico-odontológicos.
+Compras governamentais por meio de pregão eletrônico.
+
+Os regulamentos sobre os quais se alicerça a ICP-Brasil são: Medida Provisória 2.200-2 (BRASIL, 2001), decretos, resoluções do Comitê Gestor da ICP-Brasil, instruções normativas da AC Raiz, documentos complementares.
+
+A Medida Provisória 2.200-2 (BRASIL, 2001) é o principal marco legal da ICP-Brasil. Publicada em 24 de agosto de 2001, tem força de lei, mesmo não tendo sido analisada no Congresso Nacional, uma vez que o mecanismo de caducidade das MPs não analisadas somente foi instituído pela Emenda Constitucional 32, de 11 de setembro de 2001. (BERTOL; SOUSA; PEOTTA, 2009)
+
+
+Atenção
+Cada usuário é responsável pela guarda e utilização de seu certificado digital, portanto, o usuário nunca deve fornecer o certificado digital a terceiros, pois é um documento pessoal e intransferível. Assim como outros documentos pessoais (CPF, RG e passaporte), não deve ser fornecido a terceiros por questões de segurança.
+
+
+Com o objetivo de forçar os usuários a atualizarem seus pares de chaves periodicamente, os certificados digitais possuem data de validade. Caso uma chave privada seja comprometida antes da data de vencimento, o certificado digital pode ser cancelado e o usuário poderá obter um novo par de chaves e certificado digital. Os certificados cancelados e revogados são colocados em uma lista de certificados de revogação − do inglês Certificate Revocation List (CRL) −, mantida pela autoridade de certificação que emitiu os certificados. (DEITEL; DEITEL; CHOFFNES, 2005)
+
+
+O comércio eletrônico ainda é considerado inseguro por uma grande parcela da população, principalmente pela falta de conhecimento e inexperiência no uso dos recursos computacionais e, com especial destaque, da internet. Mas é necessário entender que as transações que usam certificados digitais são mais seguras do que informações pessoais trocadas através de meios que não garantam segurança por si mesmos, como comprar por telefone, ou entregar um cartão de crédito a um vendedor.
+
+
+O avanço da ciência no desenvolvimento de algoritmos de criptografia mais robustos usados na maioria das transações on-line aumenta a segurança nas operações realizadas no mundo virtual. Cabe destacar que o usuário continua a ser o centro de todo esse desenvolvimento e é por meio da conscientização e educação nas boas práticas de segurança da informação que pode se sentir seguro e usufruir melhor das facilidades que a tecnologia pode fornecer no cotidiano.
+
+
+Criptografia e certificado digital
+
+Para saber mais sobre criptografia e certificado digital, assista ao vídeo a seguir.
+
+

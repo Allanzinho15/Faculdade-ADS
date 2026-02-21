@@ -1,0 +1,33 @@
+Tipos de ataques
+Veja as principais características dos ataques ativos e passivos.
+
+
+
+Para haver a identificação dos riscos, será necessário entender e classificar os tipos de ataques que podem ser realizados contra uma rede de computadores.
+
+
+Interligadas, as tabelas a seguir apresentam os critérios de classificação desses tipos de ataques e as suas descrições:
+
+
+ATAQUES	DESCRIÇÃO	TIPOS
+ATIVOS	Tentam alterar os recursos do sistema ou afetar a sua operação.	Ataques de interrupção
+Ataques de modificação
+Ataques de fabricação ou personificação
+Ataques de repetição
+PASSIVOS	Tentam descobrir ou utilizar as informações do sistema sem o objetivo de afetar seus recursos.	Ataques de interceptação
+Classificação primária dos tipos de ataques.
+
+CRITÉRIOS	TIPOS	DESCRIÇÃO	ATAQUES
+PONTO DE INICIAÇÃO	Ataques internos (inside attack)	Realizados dentro da própria rede. O atacante e a vítima estão na mesma rede (doméstica ou corporativa).	 
+Ataques externos (outside attack)	Feitos a partir de um ponto externo à rede da vítima.	 
+METODO DE ENTREGA	Ataques diretos	O atacante, sem a ajuda de terceiros, realiza uma ação diretamente contra a vitima.	 
+Ataques indiretos	O atacante emprega terceiros, ou seja, outros usuários da rede, para que o ataque seja realizado.	 
+OBJETIVO	Ataques de interceptação	Buscam obter informações que trafegam a rede, atacando a confidencialidade.	Ataques passivos (predominantemente)
+Ataques de interrupção	Seu objetivo é indisponibilizar um ou mais serviços de rede sobrecarregando os sistemas, as redes ou simplesmente desligando o equipamento.	Ataques ativos
+Ataques de modificação	Ocorrem quando um atacante tem acesso não autorizado a um sistema ou a uma rede e modifica o conteúdo das informações ou as configurações de um sistema.
+Ataques de fabricação ou personificação	Buscam quebrar, principalmente, a autenticidade de um serviço, um dispositivo ou de uma rede.
+Ataques de repetição	Uma entidade maliciosa intercepta e repete uma transmissão de dados válida que trafega através de uma rede para produzir um efeito não autorizado, como a repetição de pedidos de um item ou o processo de login em um ambiente.
+Classificação primária dos tipos de ataques.
+
+Saiba Mais
+Terceiros: o uso de terceiros pode amplificar o poder de ataque ao, por exemplo, aumentar o volume de tráfego contra a vítima em um ataque contra a disponibilidade.

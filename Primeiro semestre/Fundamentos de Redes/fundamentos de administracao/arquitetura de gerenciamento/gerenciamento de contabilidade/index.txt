@@ -1,0 +1,10 @@
+Gerência de contabilidade e faturamento (A = accounting)
+De acordo com a ISO, a gerência de contabilidade e faturamento permite especificar, registrar e controlar o acesso de usuários e dispositivos aos recursos da rede. Por meio desta área de gerenciamento, é possível contabilizar o consumo de determinado recurso da rede.
+
+
+Exemplo
+A franquia de consumo de internet de uma linha telefônica, o que possibilita a tarifação para o usuário.
+
+ 
+
+Este tipo de gerenciamento impede que usuários possam monopolizar os recursos da rede e libera a elaboração de planos de evolução de acordo com a demanda de uso dela.

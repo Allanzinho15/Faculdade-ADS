@@ -1,0 +1,117 @@
+Conceito
+Normas ISO e Segurança da Informação
+
+
+A ISO - International Organization for Standardization (Organização Internacional de Padronização) é uma entidade fundada em 1947, sediada na Suíça e que congrega organismos de normalização nacionais.
+
+
+Sua principal atividade é elaborar padrões para especificações e métodos de trabalho nas mais diversas áreas da sociedade.
+
+
+A ISO colabora estreitamente com a International Electrotechnical Commission (IEC) em todos os assuntos de padronização eletrotécnica. As normas internacionais para sistemas de gerenciamento fornecem um modelo a ser seguido para a configuração e operação de um sistema de gerenciamento.
+
+
+Por meio do uso da família de padrões de um Sistema de Gestão da Segurança da Informação - SGSI (do inglês Information Security Management System – ISMS), torna-se possível o desenvolvimento e a implementação de uma estrutura visando à gerência da segurança dos ativos de informações.
+
+
+Dentre outros documentos que eventualmente podem existir, a família ISO/IEC 27000 oferece um conjunto de normas relacionadas à Segurança da Informação.
+
+
+Saiba Mais
+A Norma ISO/IEC 27000 traz os princípios e o vocabulário utilizados nas normas seguintes da família 27000. O download pode ser feito gratuitamente (em inglês) na página da ISO.
+
+
+De acordo com a ABNT NBR ISO/IEC 27001:2013:
+
+
+A Norma ISO/IEC 27001 (Information Technology - Information Security Management Systems - Requirements foi preparada para prover requisitos para estabelecer, implementar, manter e melhorar continuamente um Sistema de Gestão de Segurança da Informação (SGSI).
+
+
+Cabe à alta direção de cada organização decidir pela adoção de um Sistema de Gestão da Segurança da Informação (SGSI).
+
+
+A norma cita alguns fatores de influência para o seu estabelecimento e a sua implementação, como:
+
+
+Necessidades;
+Objetivos;
+Requisitos de segurança;
+Processos organizacionais;
+Tamanho e estrutura da organização.
+
+O SGSI preserva a tríade CID (confidencialidade, integridade e disponibilidade) da informação, aplicando um processo de gestão de riscos. Com isso, as partes interessadas (stakeholders) poderão ter uma maior confiança de que os riscos serão convenientemente gerenciados.
+
+
+Segundo a ABNT (2013), é importante que um SGSI seja parte, e esteja integrado com os processos da organização e com a estrutura de administração global, e que a segurança da informação seja considerada no projeto dos processos, sistemas de informação e controles.
+
+
+A Norma ISO/IEC 27001, em conjunto com a Norma ISO/IEC 27002 (Código de Boas Práticas da Gestão da Segurança da Informação), formam as principais referências, atualmente, para quem procura tratar a questão da segurança da informação de maneira eficiente e com eficácia.
+
+
+As normas técnicas nacionais são estabelecidas por um organismo nacional de normalização para aplicação em um dado país. No Brasil, as Normas Brasileiras (NBRs) são elaboradas pela ABNT (Associação Brasileira de Normas Técnicas).
+
+
+Atenção
+A ABNT é reconhecida pelo Estado brasileiro como o Fórum Nacional de Normalização, e as NBRs são reconhecidas formalmente como as normas brasileiras.
+
+ 
+
+As nomenclaturas das normas ISO/IEC 27001 e 27002 são, respectivamente, ABNT NBR ISO/IEC 27001 e ABNT NBR ISO/IEC 27002.
+
+
+Ao longo do texto, podem ser consideradas tanto as normas brasileiras quanto as normas ISO, mas as NBRs são idênticas às normas ISO, sendo possível fazer referência a ambas sem prejuízo no contexto do conteúdo e no entendimento. Observe, a seguir, sobre o que a Norma ISO/IEC 27001 é e não é.
+
+
+
+A Norma ISO/IEC 27001 é:
+
+Uma metodologia estruturada reconhecida internacionalmente dedicada à segurança da informação.
+Um processo definido para validar, implementar, manter e gerenciar a segurança da informação.
+Um grupo detalhado de controles compreendidos das melhores práticas de segurança da informação.
+Desenvolvido pelas empresas para as empresas.
+
+A Norma ISO/IEC 27001 não é:
+
+Um padrão técnico.
+Um produto ou tecnologia dirigida.
+Uma metodologia de avaliação do equipamento.
+Mas pode exigir a utilização de níveis de garantia dos equipamento.
+A versão mais atual da norma (até a escrita desse texto) a ser considerada nesse texto é a ISO/IEC 27001: 2013, que sucede e substitui a versão de 2005.
+
+
+Uma grande novidade dela é o alinhamento com as diretrizes do Anexo L, chamado até 2019 de Anexo SL (conhecido antigamente como ISO Guide 83).
+
+
+O Anexo L é uma seção da ISO/IEC Directives, Part 1, Consolidated ISO Supplement, que padroniza definições e estruturas de diferentes sistemas de gestão ISO. Com isso, a norma está alinhada com outros padrões de sistemas de gestão, como ISO 9001, ISO 14000, ISO 20000, ISO 22000, ISO 22301.
+
+
+Na versão 2013 da Norma ISO/IEC 27001 houve o alinhamento com as diretrizes do Anexo L, que padroniza definições e estruturas de diferentes sistemas de gestão ISO. No Anexo L, todas as normas de sistema de gestão do futuro terão a mesma estrutura de alto nível (tabela 1), texto principal idêntico, bem como termos e definições comuns.
+
+
+Atenção
+A estrutura de alto nível não pode ser modificada; por sua vez, podem ser acrescentadas subcláusulas e textos específicos para cada disciplina abordada.
+
+
+Veja a tabela a seguir:
+
+
+Cláusula 1:	Escopo
+Cláusula 2:	Referência normativa
+Cláusula 3:	Termos e definições
+Cláusula 4:	Contexto da organização
+Cláusula 5:	Liderança
+Cláusula 6:	Planejamento
+Cláusula 7:	Suporte
+Cláusula 8:	Operação
+Cláusula 9:	Avaliação de Desempenho
+Cláusula 10:	Melhoria
+Tabela 1: Estrutura geral de uma norma de gestão que segue as diretrizes do Anexo L
+Fabio Henrique Silva
+
+Cláusula 3 - Termos e definições
+
+Confira agora sobre a Norma ABNT NBR ISO/IEC 27001:2013.
+
+
+
+O ISO/IEC Directives, Part 1, Consolidated ISO Supplement – Procedures specific to ISO, documento do qual o Anexo L faz parte, pode ser lido na página da ISO.

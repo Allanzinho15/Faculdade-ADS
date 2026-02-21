@@ -1,0 +1,107 @@
+Conceitos
+O Plano de Continuidade de Negócios (PCN), determinado pela norma ABNT NBR 15999 Parte 1, consiste na elaboração preventiva de estratégias e planos de ação para identificar e preservar os serviços essenciais de uma organização caso ocorra um desastre, garantindo a recuperação, a continuidade e a retomada da situação normal de funcionamento da empresa.
+
+Os desastres podem ser ocasionados por diversos motivos:
+
+
+Causas naturais
+
+Falhas de segurança
+
+Acidentes
+
+Falhas de equipamentos
+
+Ações propositais
+
+O PCN orienta e define como e quais ações devem ser executadas de modo que a organização tenha a capacidade de responder efetivamente e proteger os negócios.
+
+
+
+Cada organização tem um propósito que justifica a sua existência denominado de negócio. É a partir dessa definição que todas as demais áreas da organização se estruturam. Segundo Alevate (2014), o negócio possui quatro pilares fundamentais:
+
+
+
+Unidade
+Refere-se às células de atividade da empresa, relacionando-as com suas próprias atividades. Por exemplo, em uma organização que venda produtos alimentícios, existem diversas áreas, como a de compras, a de distribuição e a de vendas. As unidades do negócio também são chamadas de centro de custos, onde ocorre o relacionamento entre receitas e despesas, com o objetivo de lucro.
+
+
+Processos
+É o conjunto de atividades relacionadas que tem por objetivo transformar, montar, manipular e processar matéria-prima para produzir bens e serviços que serão oferecidos para os clientes.
+
+
+Componentes
+Representa a combinação estratégica das unidades com os processos do negócio. Por exemplo, as áreas críticas e não críticas fazem parte das unidades do negócio. A junção de ambas define quais componentes (unidade - processo) são efetivamente críticos, sintetizando as análises e, por extensão, o foco dos planos de continuidade.
+
+
+Ativos
+São elementos que dão suporte aos processos e às unidades do negócio, divididos em sete tipos distintos:
+
+
+Tecnologia da Informação: qualquer componente que processe informações.
+Não Tecnologia da Informação: outros equipamentos genéricos como, por exemplo, ar-condicionado, móveis e catracas.
+Provedores e Parceiros: empresas prestadoras de serviços em geral.
+Infraestrutura Interna: toda a estrutura física da empresa.
+Infraestrutura Externa: ambientes remotos que façam parte da execução dos processos do negócio.
+Insumos: elementos necessários à cadeia produtiva da empresa, como papel, parafusos, chapas de aço.
+RH: Recursos Humanos da empresa.
+O Plano de Continuidade de Negócios (PCN) descreve como a empresa deve atuar diante da identificação das ameaças e dos impactos nas operações a fim de garantir a preservação do negócio. Desse modo, tenta minimizar os problemas advindos das interrupções nas atividades de negócios e proteger os processos críticos dos efeitos de grandes falhas ou desastres.
+
+
+Seu objetivo é, portanto, estabelecer as diretrizes e as responsabilidades a serem observadas no Sistema de Gestão de Continuidade de Negócios.
+
+
+Resumidamente, o PCN pode ser entendido como um plano para:
+
+
+Identificar operações críticas de negócios.
+Identificar o risco associado a essas operações.
+Identificar maneiras de mitigar ou evitar o risco.
+Prosseguir as operações em caso de emergência ou desastre.
+Restabelecer os negócios novamente o mais rápido possível.
+
+Identificar operações críticas de negócios.
+Identificar o risco associado a essas operações.
+Identificar maneiras de mitigar ou evitar o risco.
+Prosseguir as operações em caso de emergência ou desastre.
+Restabelecer os negócios novamente o mais rápido possível.
+
+O PCN é justificável, mesmo sendo uma atividade complexa que envolve os profissionais das diversas áreas da organização em uma análise das possíveis consequências de falhas de segurança, desastres e perda de serviço. É bem menos dispendioso agir preventivamente do que não analisar os possíveis cenários que, concretizando-se, podem gerar enormes prejuízos materiais e humanos.
+
+
+Saiba Mais
+Desastres de grandes proporções podem acontecer repentina e sequencialmente. No ano de 2020, moradores do Rio de Janeiro sofreram com a contaminação da água para consumo distribuída pela Companhia Estadual de Águas e Esgotos (CEDAE) e, no mesmo ano, junto com população mundial, vivenciaram impactos sociais, econômicos e políticos provocados pela pandemia do coronavírus.
+
+
+Os planos de contingência devem ser desenvolvidos e implementados para garantir que os processos de negócios possam ser restaurados dentro dos prazos planejados. Tais planos devem ser mantidos e praticados de modo a se tornarem partes integrantes de todos os outros processos de gerenciamento.
+
+
+O gerenciamento da continuidade dos negócios deve incluir controles para identificar e reduzir riscos, limitar as consequências de incidentes prejudiciais e garantir a retomada oportuna das operações essenciais.
+
+
+O PCN é constituído pelos seguintes planos:
+
+
+Plano de Contingência (emergência)
+
+A partir da análise de possíveis cenários desastrosos, são estabelecidas as necessidades e ações prioritárias que devem ser executadas imediatamente para garantir a continuidade das operações das atividades mais importantes.
+
+Plano de Administração de Crises (PAC)
+
+Nele são estabelecidas as funções e responsabilidades das equipes para neutralizar ou administrar as consequências da crise com as ações de contingência.
+
+Plano de Recuperação de Desastres (PRD)
+
+Estabelece o plano para que a empresa retome seus níveis originais de operação depois do controle da contingência e do término da crise.
+
+Plano de Continuidade Operacional (PCO)
+
+Semelhante aos demais planos, faz a análise dos possíveis cenários de desastre a fim de estabelecer procedimentos que reestabeleçam o funcionamento dos principais ativos que suportam as operações de uma organização. Um exemplo é a continuidade de conexão à internet.
+
+
+
+O objetivo principal desses planos é formalizar quais ações devem ser tomadas para que, em momentos de crise, as empresas possam recuperar, retomar e dar prosseguimento aos seus processos de negócio mais importantes, minimizando os danos e reduzindo as perdas financeiras.
+
+
+Atenção
+Em relação à necessidade de atualizações, o Plano de Continuidade de Negócios precisa ser revisado regularmente, pois é natural que haja mudanças em componentes, atividades ou processos críticos de negócio. Essas mudanças devem ser levadas em consideração para traçar novas estratégias e planos de ação, reduzindo as consequências oriundas de eventuais desastres.

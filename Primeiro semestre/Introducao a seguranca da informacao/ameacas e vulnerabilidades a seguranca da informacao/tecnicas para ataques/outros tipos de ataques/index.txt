@@ -1,0 +1,86 @@
+Outros tipos de ataques cibernéticos
+Ataques de Negação de Serviço
+
+
+Engenharia social
+
+
+Técnicas aplicadas
+
+Veja, a seguir, outras técnicas utilizadas em ataques cibernéticos:
+
+
+
+Ip spoofing
+
+Ocorre quando o atacante forja o seu endereço IP, colocando outro valor nesse campo, fingindo ser a fonte dos dados de outra origem. É muito comum por explorar a vulnerabilidade do protocolo.
+
+
+Pharming ou dns cache poisoning
+
+Ocorre quando os servidores de DNS são atacados, visando alterar a troca dos nomes de domínios por endereços IPs e, assim, destinando a vítima para equipamentos e softwares falsos. Explora vulnerabilidades em determinadas implementações e marcas de equipamento. É uma técnica difícil de ser identificada pelo usuário final.
+
+
+Ip session hijacking
+
+Ocorre quando a conexão entre o cliente e o servidor na internet é realizada através de troca de comandos HTTP de requisição e resposta, por exemplo. Durante esse processo, é comum ter alguma sessão de usuário (HTTP Session) configurada e em execução, visando identificar o usuário que está acessando o portal.
+
+ 
+
+Uma das técnicas utilizadas, seja para quebrar a confidencialidade do usuário, ou para realizar um ataque ao portal, é o sequestro de sessão do usuário. Logo, o invasor captura essa troca de informações e se faz passar por um dos equipamentos. Trata-se de uma técnica com certo grau de sofisticação e difícil de ser identificada por gerentes de rede e usuários finais.
+
+
+Quebra de senhas
+
+Ocorre quando as senhas nos sistemas de informação ficam codificadas no servidor. A codificação pode ser realizada por meio de técnicas proprietárias do sistema, onde são desenvolvidos algoritmos específicos de codificação, ou por meio de funções de condensação, também conhecidas como hash.
+
+ 
+
+As quebras de senha podem usar conjuntos especiais de tabelas, conhecidas como rainbow tables, ou até mesmo a testagem de todas as combinações possíveis, chamada de força bruta. Nessa técnica, o grau de conhecimento do atacante determinará a eficácia do ataque.
+
+
+Hash
+
+Ocorre quando alguns algoritmos são criados usando manipulações algébricas que transformam os dados de entrada em um conjunto finito de números hexadecimais, chamado de hash do dado. Essas manipulações impedem que os valores iniciais sejam recuperados a partir dos dados gerados.
+
+ 
+
+Vamos ver como isso acontece? Faça download do documento.
+
+
+Trashing dumpster diving
+
+Ocorre quando são realizadas buscas nos lixos corporativos na expectativa de ter sido realizado algum descarte de forma inapropriada. Isso nos remete ao primeiro módulo, onde tratamos do ciclo de vida da informação. Se o descarte não for feito de forma apropriada, técnicas como essa permitem a recuperação da informação direto do lixo. Em muitos países, não há legislação que torne essa técnica ilegal.
+
+
+Wardriving
+
+Ocorre quando a pesquisa de locais físicos contém sinal de Wi-Fi desprotegido visando à exploração da vulnerabilidade encontrada. Nessa técnica, o invasor percorre os espaços públicos procurando os sinais desprotegidos, podendo ser a pé, de carro ou utilizando drones.
+
+Softwares maliciosos
+
+
+Malwares são softwares maliciosos que objetivam a infecção dos ativos de TI. Nessa categoria, há uma variação muito grande e com diversos tipos. Podemos citar os vírus Cavalos de Troia relacionados com propaganda, ferramentas de suporte usadas indevidamente, exploits e worms.
+
+
+Saiba Mais
+Cavalo de Troia - inspirado no exemplo histórico que deu origem à técnica, mascara-se um vetor de ataque, normalmente um malware, dentro de um documento ou ferramenta, enganando a vítima do ataque.
+
+ 
+
+Exploits e worms - são as aplicações construídas especificamente para explorar determinadas vulnerabilidades existentes e os worms, muitas vezes confundidos com os vírus, utilizam as estruturas de comunicação para sua disseminação.
+
+
+Há divergências entre as formas de classificação dos tipos de malwares. Porém, de maneira geral, pode-se dizer que os vírus são os malwares que precisam de um ambiente para a sua execução.
+
+
+Os vírus relacionados com propaganda, como os spywares (por exemplo, aplicações que capturam tudo o que é digitado pelo usuário, conhecidas como keyloggers) e adwares (aplicações que trazem propaganda para o usuário, sem sua autorização) monitoram o usuário de alguma forma, visando explorar o aspecto comportamental humano.
+
+
+Ainda há o uso mal-intencionado de ferramentas de suporte, como sniffers (farejadores) de rede e port scanners. O primeiro permite analisar o tráfego de rede e o segundo permite verificar quais são as portas de comunicação dos protocolos da camada de transporte que estão disponíveis para conexão.
+
+
+Ransomware
+
+
+Software malicioso, com alto poder de reprodutibilidade, que invade a máquina da vítima, criptografa os seus dados e solicita um resgate. Nos últimos anos, esse tipo de ataque tem sido bem frequente, tendo como caso emblemático o WannaCry.

@@ -1,0 +1,14 @@
+Criando tabelas HTML
+As tabelas são um recurso importante dentro do HTML, apesar de, por muitas vezes, controverso. Como já mencionado, esse elemento já foi utilizado para fins de agrupamento de conteúdo, embora sua real finalidade seja a de exibir dados tabulares. Para melhor fixar os elementos e a estrutura de uma tabela, vamos realizar algumas atividades práticas.
+
+
+Confira, neste vídeo, a atividade proposta no roteiro a partir de exemplos e seus respectivos resultados.
+
+
+
+Roteiro de prática
+
+Como vimos, um documento HTML pode conter tanto tabelas simples quanto mais complexas. Tendo como base o arquivo HTML utilizado nas práticas anteriores, chegou a hora de codificarmos. No editor de texto, comece criando uma nova seção no seu HTML e insira:
+
+
+Como resolução, teremos o seguinte código:

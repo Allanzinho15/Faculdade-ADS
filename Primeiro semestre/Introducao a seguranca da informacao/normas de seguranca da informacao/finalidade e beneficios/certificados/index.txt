@@ -1,0 +1,74 @@
+Certificados
+Uma visão geral da situação dos certificados no mundo pode ser obtida através dos dados disponibilizados no The ISO Survey of Certifications.
+
+
+Trata-se de uma pesquisa anual do número de certificados válidos para os padrões do sistema de gerenciamento ISO em todo o mundo. Os dados são fornecidos pelos organismos de certificação credenciados. Veja mais a seguir.
+
+
+Certificado
+
+
+É o documento emitido por um organismo de certificação.
+
+
+Site
+
+
+É um local permanente em que uma organização realiza trabalho ou serviço.
+
+
+O conteúdo do gráfico, que você verá a seguir, foi extraído da planilha disponível na página da ISO. Ele exibe um trecho do número total de certificados válidos e o número total de sites para o padrão ISO/IEC 27001:2013.
+
+
+
+Lista dos 10 países com maior número de certificados. O Brasil aparece na posição 39
+
+A Norma ABNT NBR ISO/IEC 27002:2013 apresenta as melhores práticas a serem utilizadas na gestão da segurança da informação. Seu título é Código de Prática para a Gestão da Segurança da Informação. A sua principal característica, ou palavra-chave, como já foi explicado anteriormente, é: CONVÉM.
+
+
+A versão mais atual da norma (até a escrita desse texto) a ser considerada neste tema é a ISO/IEC 27002:2013, que sucede e substitui a versão de 2005. No passado, era conhecida como ISO/IEC 17799.
+
+
+Em comparação com a versão 2005, na versão 2013 o número de seções aumentou de 11 para 14.
+
+
+A versão 2013 recomenda 114 tipos de controles básicos.
+
+
+Cada seção principal contém:
+
+
+Um objetivo do controle declarando o que se espera que seja alcançado.
+Um ou mais controles que podem ser aplicados para se alcançar o objetivo de controle.
+
+As descrições do controle estão estruturadas da seguinte forma:
+
+
+
+Controle
+
+Define a declaração específica do controle, para atender ao objetivo de controle.
+
+ 
+
+Segundo a ISO/IEC 27000 (2018), o controle é uma medida que pode modificar o risco, seja ele através de um processo, política, dispositivo, prática ou outras ações que modifiquem a ameaça e/ou a vulnerabilidade e, consequentemente, o risco.
+
+
+Diretrizes para implementação
+
+Apresenta informações mais detalhadas para apoiar a implementação do controle e alcançar o objetivo do controle.
+
+ 
+
+As diretrizes podem não ser totalmente adequadas ou suficientes em todas as situações e podem, portanto, não atender completamente aos requisitos de controle específicos de uma organização.
+
+
+Informações adicionais
+
+Apresenta mais dados que podem ser considerados, como questões legais e referências normativas.
+
+ 
+
+Se não existem informações adicionais, esta parte não é mostrada no controle.
+
+A tabela 3 traz as principais seções da Norma ABNT NBR ISO/IEC 27002:2013. Note que os tópicos específicos abordados pela norma começam na seção 5.

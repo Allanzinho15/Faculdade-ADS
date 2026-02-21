@@ -1,0 +1,36 @@
+Tipos de serviço de nuvem
+Infraestrutura como serviço e o modelo de responsabilidade compartilhada
+
+
+O IaaS (infraestrutura como serviço) é a forma mais flexível de serviços de nuvem, pois oferece o máximo de controle sobre os recursos de nuvem. Em um modelo de IaaS, o provedor de nuvem é responsável por manter o hardware (servidores físicos), a conectividade de rede (com a internet) e a segurança física. O cliente (empresa) é responsável por todo o resto, desde a instalação, configuração e manutenção do sistema operacional, até as atualizações de patches, configuração de rede, configuração de banco de dados e armazenamento e assim por diante.
+
+
+Plataforma como serviço e o modelo de responsabilidade compartilhada
+
+
+O PaaS (plataforma como serviço) é um meio termo entre locar espaço de um datacenter (infraestrutura como serviço) e pagar por uma solução completa e implantada (software como serviço). Em um ambiente de PaaS, o provedor de nuvem é responsável pela infraestrutura e segurança físicas, além da conexão com a internet. Ele também é responsável por manter os sistemas operacionais, as ferramentas de desenvolvimento e os serviços de business intelligence que compõem uma solução de nuvem. Em um cenário de PaaS, você (cliente/ empresa) não precisa se preocupar com as licenças nem com a aplicação de atualizações em sistemas operacionais e bancos de dados.
+
+
+O PaaS é a melhor forma para fornecer um ambiente de desenvolvimento completo sem a preocupação de manter toda a infraestrutura de desenvolvimento.
+
+
+
+No modelo PaaS a responsabilidade é compartilhada.
+
+No PaaS, a responsabilidade é dividida entre o cliente e o provedor de nuvem. O provedor de nuvem é responsável por manter a infraestrutura física e o acesso à internet, como no IaaS. O ideal é pensarmos no PaaS como o uso de um computador conectado ao domínio, de forma que o departamento de TI mantém o dispositivo com atualizações, patches e renovações regulares.
+
+
+Dependendo da configuração, o cliente (empresa) ou o provedor de nuvem são responsáveis pelas configurações de rede e a conectividade no ambiente de nuvem, a segurança da rede e do aplicativo e a infraestrutura de diretório.
+
+
+Software como serviço e o modelo de responsabilidade compartilhada
+
+
+O SaaS (software como serviço) é a forma de serviço de nuvem mais completo, do ponto de vista do produto. Com o SaaS, o cliente (empresa) está praticamente alugando ou usando um aplicativo totalmente desenvolvido. E-mail, aplicativos de mensagens, software financeiro e software de conectividade são exemplos comuns de uma implementação de SaaS.
+
+
+Atenção
+Mesmo que o modelo de SaaS possa ser o menos flexível, também é o mais fácil de colocar em funcionamento, pois requer a menor quantidade de conhecimento técnico ou experiência para a implementação total.
+
+
+Quanto ao modelo de responsabilidade compartilhada, o SaaS é o serviço que atribui a maior responsabilidade ao provedor de nuvem e a menor responsabilidade ao cliente. Em um ambiente de SaaS, você (cliente/empresa) é responsável pelos dados que coloca no ambiente, pelos dispositivos que permite que se conectem ao sistema e pelos usuários que têm acesso ao recurso. Praticamente, todo o resto é de responsabilidade do provedor de nuvem. O provedor de nuvem é responsável pela segurança física dos datacenters, pela energia, pela conectividade de rede e pelo desenvolvimento e aplicação de patch dos aplicativos.

@@ -1,0 +1,62 @@
+stilizando páginas HTML com CSS
+Tendo visto os fundamentos da CSS, chegou a hora de colocar o conhecimento adquirido em prática. Nesse contexto, aplicaremos as folhas de estilo em uma página HTML.
+
+
+Confira neste vídeo a estilização de páginas HTML usando a linguagem de marcação e estilos (CSS).
+
+
+
+Roteiro de prática
+
+Você aplicará alguns dos conceitos vistos sobre os fundamentos da CSS – mais precisamente, aplicará a estilização de texto utilizando o seletor de ID. Para isso, em termos de ferramentas, precisará do seguinte: um editor de textos – pode ser o próprio bloco de notas do Windows ou o Nano Editor do Linux, ou então algo um pouquinho mais avançado, como o software (livre/gratuito) Notepad++ e também de um navegador – Google Chrome, Firefox, MS Edge etc.
+
+
+Vamos ao roteiro!
+
+ 
+
+No editor, crie a estrutura base de uma página HTML. Dentro da tag <body>, insira uma tag <p> e algumas linhas de texto dentro dela.
+ 
+
+Atribua um ID para essa tag <p>.
+ 
+
+Insira, de forma inline, alguns estilos para modificar a aparência do texto: modifique o tamanho da fonte e também a sua cor, por exemplo.
+ 
+
+Salve a página no editor e a abra no navegador para ver o resultado.
+
+Como resolução, teremos o código a seguir.
+
+
+Plain Text
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Estilizando uma página HTML</title>
+  	<style> 
+	#text-container{
+		color:red;
+		font-size:18px;
+	}
+	</style>
+</head>
+<body>
+<div class="container">
+	<p id="text-container">
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+	In euismod nibh sit amet justo cursus, eget posuere arcu pharetra. 
+	Donec vestibulum, lectus non consectetur condimentum, ex purus 
+	luctus lectus, at lacinia augue sem euismod diam. 
+	Aliquam aliquam accumsan varius. Fusce facilisis sollicitudin tortor. 
+	Curabitur aliquet bibendum ligula, vitae porta nunc ornare sed. 
+	Aliquam dapibus scelerisque turpis, eget hendrerit turpis elementum in. 
+	Aliquam accumsan sit amet nisi euismod imperdiet. 
+	Integer non pellentesque ante, nec gravida leo.
+	</p>
+</div>
+</body>
+</html>

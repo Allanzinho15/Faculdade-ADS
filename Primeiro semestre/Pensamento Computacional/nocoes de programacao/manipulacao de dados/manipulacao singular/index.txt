@@ -1,0 +1,68 @@
+Manipulação singular de dados
+Refere-se à prática de escrever códigos simples para tratar dados de forma individual, sem a capacidade de manipular múltiplos dados eficientemente. Nesse contexto, vamos explorar instruções básicas para manipulação de dados, como carregar uma imagem, aplicar zoom e apresentar a imagem na tela.
+
+ 
+
+Esse método envolve etapas simples: carregamos a imagem para a memória; em seguida, aplicamos um zoom para ampliar a imagem; depois, exibimos a imagem ampliada na tela. Essas instruções básicas são essenciais para entender os fundamentos da manipulação de dados em programação.
+
+ 
+
+Neste vídeo, apresentaremos uma introdução à manipulação singular de dados no contexto da edição básica de imagens, incluindo instruções fundamentais de programação. Confira!
+
+
+
+
+Neste conteúdo, vamos aprender a escrever códigos simples de computador para manipulação singular de dados.
+
+ 
+
+Por singular, entenderemos a ausência de condições de realizar uma manipulação de múltiplos dados de forma eficiente.
+
+ 
+
+Vamos com calma! Um pixel de cada vez...
+
+ 
+
+Para ilustrar melhor nossa discussão, usaremos imagens para aplicação de nossos códigos/instruções.
+
+
+Como são instruções simples de manipulação de dados, você notará que, nos exemplos, manipularemos apenas um pixel de cada vez.
+
+ 
+
+Para começar, veja a imagem a seguir, cujo nome é circulo.bmp, composta por uma grade de 10x10 pixels:
+
+
+
+Pequena imagem de 10 pixels de largura por 10 pixels de altura com fundo branco e círculo preto ao meio.
+
+A imagem possui um fundo branco, com um círculo desenhado.
+
+ 
+
+O BMP (bitmap image file ou arquivo de imagem bitmap) é um formato de arquivo usado para armazenar imagens digitais. Não se preocupe, pois o tamanho da figura não é um erro. A imagem realmente está muito pequena.
+
+ 
+
+Nosso primeiro impulso é realizar uma ampliação ou zoom para vê-la melhor. Esse é o ímpeto que queríamos provocar em você quando a colocamos com esse tamanho.
+
+
+Como escrever um código que instrua o computador a ampliar a imagem circulo.bmp?
+
+
+Para isso, usaremos três instruções que fazem parte do conjunto de funções da linguagem de programação JavaScript, veja!
+
+
+Passo	Instrução	Significado em português
+1	img = newSimpleImage("circulo.bmp");	Carrega a imagem circulo.bmp na memória e a armazena na variável que, neste exemplo, chamamos de img.
+2	img.setZoom(20);	Estabelece ampliação de 20 vezes o tamanho original para a imagem armazenada na variável img.
+3	print(img);	Apresenta a imagem na tela.
+Tabela 1: Ampliando e apresentando na tela a imagem circulo.bmp.
+Guilherme Dutra Gonzaga Jaime.
+
+Embora sejam simples, as instruções na tabela 1 nos permitiram instruir o computador a ampliar imagens digitais conforme nosso comando.
+
+ 
+
+Agora que você aprendeu como ampliar a imagem circulo.bmp, vamos experimentar para atingir um nível de ampliação confortável.

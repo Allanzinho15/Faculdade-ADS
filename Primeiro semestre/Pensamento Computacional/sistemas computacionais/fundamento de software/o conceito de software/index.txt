@@ -1,0 +1,54 @@
+O conceito de software
+O conceito de software nos ajuda a compreender o funcionamento de computadores, celulares, aplicativos e praticamente qualquer dispositivo inteligente do nosso cotidiano. Muito além dos programas tradicionais, o software é a força invisível que dá vida ao hardware, para que ele realize as mais diversas tarefas, do simples envio de uma mensagem à execução de processos complexos em empresas.
+
+ 
+
+Neste vídeo abordaremos o conceito de software, suas funções, tipos e a relação essencial entre software, hardware e usuário. Explicaremos como o software torna possível a execução de tarefas, diferencia programas de software completos e mostra o impacto dessas ferramentas no ambiente profissional.
+
+
+
+Software é o conjunto de instruções, programas e dados que faz qualquer dispositivo eletrônico funcionar. Se o hardware é o corpo, o software é a mente — aquele cérebro que manda no jogo. O software envolve códigos escritos em linguagens de programação que dizem ao hardware o que fazer, quando e como fazer. Sem software, um computador seria só um amontoado de peças, como um time sem técnico: cheio de talento, mas sem direção.
+
+
+Atenção
+Quando você abre um aplicativo ou programa, o que acontece nos bastidores? Primeiro, o software, que, em geral, está armazenado em algum tipo de memória persistente (como HD ou SSD), é carregado para a memória RAM. A partir daí, a CPU pode acessar e executar as instruções desse software, realizando operações como cálculos, exibição de imagens e resposta aos comandos do usuário. Essa interação é o coração do funcionamento dos sistemas computacionais modernos.
+
+
+Tipos de software: código aberto x código fechado
+
+
+O universo do software é vasto, mas uma classificação importante envolve o modo como ele é disponibilizado para uso, estudo e modificação. Vejamos!
+
+
+Software de código aberto
+
+
+O código-fonte é liberado para o público, permitindo que qualquer pessoa estude, modifique e distribua o software. Exemplos famosos são o sistema operacional Linux e o navegador Firefox. Essa abordagem estimula a colaboração, inovação e transparência.
+
+
+Software de código fechado
+
+
+O código-fonte não é divulgado. Apenas a empresa ou o desenvolvedor original pode modificar ou atualizar o software. Programas como o Windows e o Microsoft Office são exemplos clássicos. O usuário pode utilizá-los, mas não pode ver como foram feitos nem os adaptar livremente.
+
+
+Diferença entre software e programa
+
+
+É comum confundir os termos, mas nem todo software é apenas um programa isolado. Um programa é um conjunto de instruções criado para realizar uma tarefa específica, como uma calculadora ou editor de texto. Já um software completo pode ser composto por vários programas, bibliotecas e arquivos auxiliares que trabalham juntos para fornecer uma solução mais ampla.
+
+
+
+Por exemplo, o Microsoft Office é um software que inclui diferentes programas, como Word, Excel e PowerPoint, além de arquivos de configuração, dicionários, recursos de atualização e muito mais.
+ 
+
+Ao assistir a um vídeo no celular, estamos utilizando diversos tipos de software em conjunto: o sistema operacional (que gerencia o aparelho), o aplicativo de vídeo, drivers internos e, muitas vezes, plugins ou bibliotecas de decodificação. Todos esses elementos trabalham de maneira integrada para proporcionar a experiência desejada pela pessoa usuária.
+
+
+O impacto do software na vida profissional
+
+
+No mercado de trabalho, o domínio de conceitos de software é cada vez mais valorizado. Empresas dependem de sistemas e aplicativos para organização, produtividade, segurança e inovação. Saber identificar tipos de software, escolher ferramentas adequadas e entender as permissões de uso pode influenciar o sucesso de um projeto, a segurança de dados e até mesmo a economia de recursos.
+
+
+O mundo do software está em constante transformação. Novos aplicativos, atualizações e tendências surgem todos os dias. Aprender os conceitos fundamentais traz autonomia para navegar por esse universo dinâmico, seja como pessoa usuária, gestora ou futura desenvolvedora.

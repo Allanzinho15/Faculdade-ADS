@@ -1,0 +1,115 @@
+Educação no século XXI
+
+Após compreender a mudança que vem ocorrendo no mundo, você pode se perguntar: como podemos garantir que todos tenham a mesma oportunidade de sucesso nessa nova economia? A resposta a este questionamento não é simples, mas podemos iniciar com mudanças significativas na Educação.
+
+
+Os resultados das mudanças no campo da Educação não são de curto prazo. Uma mudança metodológica ou curricular pode levar uma geração inteira até ser percebida. Isso se deve à própria natureza do campo da Educação, que trabalha a formação do indivíduo, e não apenas o acúmulo de conhecimento.
+
+
+Ao longo do tempo, foi sendo desenvolvido, nas sociedades ocidentais, um pensamento mais utilitarista acerca da educação, que envolve questões como:
+
+
+Para que aprender isso?
+Para que serve?
+Como se aplica?
+
+Essa maneira de encarar a educação desvirtua a concepção do próprio campo educacional, que pensa na formação como um todo, e não de forma fragmentada. Forma-se o indivíduo e o cidadão, lançando-se mão de saberes diversos, oriundos das Ciências Humanas, Sociais, da Natureza, Exatas, Biológicas e afins.
+
+
+Contudo, isso não significa, de forma alguma, que a teoria esteja afastada da prática. Ao contrário, a educação contemporânea está cada vez mais vinculada à prática, e as tecnologias educacionais são ferramentas fundamentais na construção desse processo, o que transforma a aprendizagem em algo tangível, estimulando o interesse do aluno.
+
+
+
+As aulas de Matemática, muitas vezes, podem ser o terror dos estudantes, pois alguns deles não compreendem a importância de aprender a calcular uma equação de 2º grau, por exemplo. Muito do que aprendemos pode ser utilizado em situações cotidianas, enquanto outros conhecimentos servem para desenvolver nosso raciocínio e nos tornar capazes de resolver problemas complexos de diversas naturezas.
+
+ 
+
+O desenvolvimento do pensamento crítico e de competências emocionais prepara os alunos para o sucesso a longo prazo. O aprendizado do pensamento computacional ajuda os jovens a desenvolver habilidades importantes não apenas para as disciplinas da área de Exatas, mas também de Ciências Sociais, Artes e Linguagem. Assim, eles serão mais capazes de articular um problema e de pensar logicamente.
+
+
+Esses aprendizados os ajudam não só a resolver problemas, mas também a perceber certas abordagens adotadas para a solução, ajudando a explorar causa e efeito, além de analisar como suas ações ou as de outras pessoas afetam a situação em questão. Essas habilidades podem ter impactos poderosos sobre os jovens e sobre como gerenciam seus relacionamentos com as pessoas a seu redor.
+
+
+Curiosidade
+O governo dos Estados Unidos possui uma iniciativa para preparar as crianças desde cedo para o “emprego do futuro”. Isso não significa simplesmente saber utilizar computadores, mas agir e tomar decisões com base nos quatro pilares do pensamento computacional.
+
+ 
+
+Por meio do programa Ciência da Computação para Todos, o governo dos Estados Unidos leva essa iniciativa a centenas de escolas por todo o país, oferecendo a crianças, principalmente a meninas e minorias, a oportunidade de criar suas próprias soluções para os problemas do mundo e, também, de ter melhores condições para concorrer a vagas no mercado de trabalho dos anos vindouros.
+
+ 
+
+Para que isso seja possível, os professores, formados em uma geração anterior, precisam receber treinamento especial para conhecer os diferentes tipos de abordagem para cada faixa etária, garantindo que o processo de ensino e aprendizagem tenha qualidade.
+
+
+É o que nos diz Blikstein a seguir:
+
+
+A inserção do pensamento computacional na escola não visa tão somente à empregabilidade, à competitividade e à ascensão econômica, mas principalmente à construção de competências e habilidades fundamentais aos seres humanos para o efetivo exercício da cidadania em uma sociedade digital.
+
+(BLIKSTEIN, 2008, n. p.)
+Ainda sobre os Estados Unidos, em 2010, algumas organizações propuseram um conjunto de ferramentas, denominadas Computational Thinking Toolkit (Kit de ferramentas para pensamento computacional), a fim de desenvolver as habilidades do pensamento computacional em escolas de educação básica.
+
+
+As ferramentas foram estruturadas em nove conceitos, baseados nos quatro pilares estudados anteriormente. São eles:
+
+ 
+
+Coleta de dados
+Análise de dados
+Representação de dados
+Decomposição de problemas
+Abstração
+Algoritmos
+Automação
+Paralelismo
+Simulação
+
+Esses nove conceitos devem ser aplicados em atividades práticas, de modo a proporcionar o desenvolvimento cognitivo dos alunos, substituindo, assim, a metodologia tradicional de aulas expositivas. Dessa maneira, o aluno deixa de ser apenas um receptor passivo e passa a ser ator principal na construção de seu conhecimento, aumentando seu grau de entendimento e o interesse pelas aulas.
+
+
+Além dos Estados Unidos, diversos países desenvolvidos apresentam iniciativas promissoras na inclusão do pensamento computacional nos ensinos fundamental e médio, pois, assim como a alfabetização e o raciocínio lógico, quanto mais cedo se aprender o pensamento computacional, maior será a facilidade no processo de aprendizagem.
+
+
+Como é no Brasil?
+
+
+Atualmente, no Brasil, o ensino do pensamento computacional ainda está em fase embrionária, mas já há algumas iniciativas muito interessantes. A Base Nacional Comum Curricular (BNCC), homologada em 2018, referencia diretamente o pensamento computacional em diversos trechos. A parte a seguir trata da progressão das aprendizagens essenciais do ensino fundamental para o ensino médio:
+
+
+A área de Matemática, no Ensino Fundamental, centra-se na compreensão de conceitos e procedimentos em seus diferentes campos e no desenvolvimento do pensamento computacional, visando à resolução e formulação de problemas em contextos diversos.
+
+(BRASIL, 2017, p. 471)
+Nesse aspecto, o pensamento computacional atua como ferramenta importante para combater a rejeição à Matemática, da qual tratamos anteriormente. Mas, para além disso, atua no sentido de pensar problemas de forma global, construindo diversas soluções possíveis. Novas habilidades e competências passam a ser desenvolvidas como análise e lógica, operacionalizadas a partir do conhecimento matemático desde a infância.
+
+
+Assim, a BNCC indica que o pensamento computacional:
+
+
+[...] envolve as capacidades de compreender, analisar, definir, modelar, resolver, comparar e automatizar problemas e suas soluções, de forma metódica e sistemática, por meio do desenvolvimento de algoritmos.
+
+(BRASIL, 2017, p. 474)
+A proposta da Base Nacional Comum Curricular é criar uma familiaridade com as tecnologias e suas ferramentas, como planilhas eletrônicas e calculadoras, desde o ensino fundamental.
+
+
+Quando falamos nessa tecnologia, de imediato, muitos se remetem à área de Exatas, certo?
+
+
+Devemos lembrar, porém, que todas as áreas do conhecimento necessitam dessas habilidades e competências.
+
+
+Exemplo
+Construir gráficos a partir do domínio das planilhas eletrônicas é importante para compreender a demografia no estudo da Geografia, o tráfico de escravizados no estudo de História, entre tantos outros exemplos e demais possibilidades.
+
+
+O Ministério da Educação (MEC) incentiva o desenvolvimento de competências e habilidades relacionadas ao uso das tecnologias de forma transversal, presentes em todas as áreas do conhecimento. Além disso, aborda o assunto de forma direcionada, focando a compreensão das tecnologias e sua aplicação em diversas práticas sociais.
+
+
+O papel dessas tecnologias não é apenas tornar o processo de aprendizagem mais estimulante, mas sim trabalhar com o aluno na construção do conhecimento por meio de tais ferramentas. Na implantação do pensamento computacional nas escolas, esbarramos em alguns problemas. Vejamos dois deles:
+
+ 
+
+A limitação das aulas de informática e a operação de editores de textos e navegadores de internet.
+A falta de professores capacitados para aplicar esse conteúdo.
+
+A tendência é que tal cenário mude em breve: professores de todas as áreas poderão reestruturar o conteúdo que lecionam para transformá-lo em um problema que possa ser solucionado a partir da aplicação do pensamento computacional em atividades tanto escolares quanto extracurriculares.

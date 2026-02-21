@@ -1,0 +1,27 @@
+Precisamos dividir um ataque em sete etapas para poder analisá-lo de forma mais criteriosa:
+
+
+Reconhecimento
+Armamento (weaponization)
+Entrega (delivery)
+Exploração
+Instalação
+Comando e controle
+Ações no objetivo
+
+Etapas de um ataque
+
+
+Os atacantes passam a ter mais privilégios no alvo à medida que avançam nas etapas. Portanto, pelo lado da defesa, o objetivo é pará-los o mais cedo possível para diminuir o dano causado.
+
+
+Vejamos a seguir cada etapa de um ataque:
+
+
+
+Reconhecimento
+
+Na primeira etapa, o ator da ameaça realiza uma pesquisa para coletar informações sobre o local a ser atacado. Trata-se de uma fase preparatória na qual o atacante procura reunir o máximo de informações sobre o alvo antes de lançar um ataque ou analisar se vale a pena executá-lo. As informações podem ser obtidas por meio de diversas fontes: sites, dispositivos de rede voltados para o público, artigos de notícias, anais de conferências, meios de comunicação social. 
+
+
+Qualquer local público é capaz de ajudar a determinar o que, onde e como o ataque pode ser realizado. O atacante escolhe alvos negligenciados ou desprotegidos, pois eles possuem a maior probabilidade de serem penetrados e comprometidos. 

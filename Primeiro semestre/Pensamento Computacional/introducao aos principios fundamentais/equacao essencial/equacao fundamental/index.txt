@@ -1,0 +1,72 @@
+Equação fundamental
+Enquanto os sistemas modernos processam vastas quantidades de informações rapidamente, a habilidade de reflexão e análise crítica, muitas vezes, fica em segundo plano. A tecnologia oferece acesso ilimitado ao conhecimento, mas a verdadeira compreensão requer contemplação e raciocínio profundo. É essencial equilibrar a eficiência do processamento com a qualidade do pensamento para alcançar uma sociedade verdadeiramente informada e consciente.
+
+
+Vídeo sobre o acesso ilimitado ao conhecimento que a tecnologia nos proporciona.
+
+
+
+Anotem a equação para não se esquecerem dela. O computador é igual a:
+
+
+Imensa capacidade de processar
+
+Terrível deficiência do pensar
+
+Vamos entender o que é isso. Este conteúdo trata dos recursos básicos do funcionamento dos computadores. Isso é muito importante, pois, em pleno século XXI, não é desejável que um profissional pense no computador como algum tipo de caixa mágica com a qual todos interagem diariamente. De fato, no mercado de trabalho atual, é cada vez mais importante que os profissionais saibam como o computador faz o que faz.
+
+
+
+É essencial perceber que o mercado de trabalho não é um ente determinador, mas, sem dúvida, a relação com a empregabilidade é fundamental. Você consegue perceber alguma função em que o uso tecnológico não é necessário? Pense bem: as salas de aula, os treinamentos... Enfim, tudo, de alguma forma, vivencia o uso da tecnologia.
+
+
+Com isso, nós nos deparamos com um dilema: a adoção da tecnologia não é linear, nem todos têm acesso a ela nem possuem a mesma experiência como usuários.
+
+
+Durante muito tempo, pensou-se que lidar com os computadores consistia em dominar a tecnologia vigente e aprender suas técnicas e seus fundamentos, pois, assim, você estaria seguro. Mas como isso é possível tendo em vista que parte das pessoas já estão no topo do uso da tecnologia, enquanto outros ainda estão dando os primeiros passos?
+
+
+Atenção
+O desespero de diversas instituições gerou o processo mais absurdo: já que todos não podem dispor de tecnologia, então vamos abrir mão dela. Isso só aumentou a segregação, a fragilidade de grupos sociais que não têm acesso à tecnologia. Quando fazemos isso, negamos a vários profissionais a possibilidade de diminuir essas diferenças.
+
+
+Porém, o que pode ser feito? Se não aprendermos a usar a tecnologia do momento, se renegarmos a tecnologia para garantir igualdade, qual a solução proposta? Uma ideia é entender o funcionamento básico dos computadores, perceber como funcionam essas máquinas e, independentemente da tecnologia atual, compreender qual o sentido de sua atualização — os computadores estão sempre sendo atualizados, uma vez que o homem precisa constantemente de novas respostas e possibilidades.
+
+
+Felizmente, qualquer pessoa pode compreender, basicamente, como os computadores funcionam. Nosso objetivo é explorar as qualidades essenciais dos computadores, como eles funcionam, o que eles podem e o que não podem fazer. Este conteúdo não requer nenhum conhecimento prévio em informática.
+
+
+A essência fundamental dos computadores é composta pelas seguintes características:
+
+
+Extremamente poderosos
+
+São poderosos, pois um computador pode fazer bilhões de operações por segundo e consegue gerar dados a uma velocidade inconcebível para nós, humanos.
+
+
+Profundamente tolos
+
+São tolos, pois as operações que ele pode realizar são extremamente simples. Por exemplo, adicionar dois números para obter um terceiro número ou verificar se um número é zero.
+
+
+Você provavelmente deve pensar “portanto, operações tão simples como essas não são capazes de gerar discernimentos ou entendimentos mais elaborados, como, por exemplo, identificar a impressão digital de uma pessoa, certo?”. Embora você pense dessa forma, computadores fazem isso: identificam digitalmente um indivíduo.
+
+
+Saiba Mais
+Estudos revelaram que os humanos possuem impressões digitais singulares. Com base nisso, foi elaborada uma forma de retirar esses dados — primeiro, foi utilizada graxa para colher digitais; atualmente, usam-se luz e calor —, criando um banco de dados com essas informações. Portanto, o trabalho de discernimento é humano; o computador apenas cruza, de forma mais rápida e efetiva, os dados armazenados pelas pessoas.
+
+
+Isso ocorre porque discernimento e compreensão são qualidades humanas! É importante compreender o seguinte: o computador é realmente um mundo mecânico, em que é possível executar operações muito simples a uma velocidade incrivelmente alta. Por exemplo, desde 2005, processadores são capazes de executar mais de 1 bilhão de instruções por segundo. Já os processadores lançados em meados de 2019 são capazes de executar mais de 48 bilhões de instruções por segundo.
+
+
+
+Ao longo do tempo, Hollywood tem retratado em seus filmes computadores que nunca são mostrados como mecânicos, mas sim como entidades com características essencialmente humanas, como discernimento, compreensão, criatividade e capacidade de se emocionar.
+
+
+A realidade não poderia estar mais distante daquilo que é mostrado nos filmes. O que temos é uma combinação engraçada, que une a poderosa capacidade de executar instruções a um conjunto de instruções que, inicialmente, parecem tolas.
+
+
+Saiba Mais
+Filmes Na seção Explore+, indicaremos um vídeo da lendária cena do filme 2001: uma odisseia no espaço, e esperamos que, ao ver esse trecho, você entenda como computadores são bem diferentes do que é mostrado em filmes como esse. A descrição de filmes que mostram isso é interessante, como Matrix, Exterminador do futuro e Eu, robô. Basta ler uma sinopse para perceber como o senso comum olha para o desenvolvimento das máquinas.
+
+Então, é necessário compreender como é possível, mesmo assim, criar recursos/soluções interessantes e poderosos. Qualquer pessoa que interage com computadores, provendo instruções em alguma linguagem de programação, experimenta uma sensação vívida dessa combinação.

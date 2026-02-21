@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-size: 2rem;
+        }
+        #container{
+            width: 1070px;
+            margin: 0 auto;
+            /* display: flex; */
+            /* flex-direction: row;*/ /*todos os elementos numa única linha */
+            /* flex-direction: column; */  /*todos os elementos numa única coluna */
+        }
+        /* uso da pseudoclasse :hover */
+        #link:hover{
+            color: orange;
+        }
+         /* uso da pseudoelemento ::first-letter */
+        #container-texto::first-line{
+            color: blue;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>PseudoClasse</h1>
+        <a href="" id="link">link</a>
+
+        <h1>PseudoElementos</h1>
+        <p id="container-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, debitis veritatis. Enim ex possimus aut dolor eos, perferendis, adipisci, suscipit sequi asperiores recusandae numquam illum? Blanditiis, sit perspiciatis. Odio, quidem!</p>
+
+        <h1></h1>
+    </div>
+</body>
+</html>

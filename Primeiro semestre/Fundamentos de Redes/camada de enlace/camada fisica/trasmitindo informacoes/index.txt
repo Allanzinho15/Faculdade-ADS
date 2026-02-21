@@ -1,0 +1,187 @@
+Transmitindo informações
+Transmissão de sinais
+
+Em redes de comunicação, a informação deve ser codificada em um sinal transmitido pelo canal do transmissor até o receptor.
+
+
+Os sinais podem ser analógicos ou digitais.
+
+
+Você sabe qual é a diferença?
+
+
+
+Sinais analógicos
+
+
+Apresentam a intensidade (amplitude), variando suavemente com o tempo.
+
+
+
+Sinais digitais
+
+
+Mantêm um nível constante de intensidade e, depois, mudam abruptamente para outro nível constante de intensidade.
+
+
+Diferenças entre sinais analógico e digital
+
+
+Sinal periódico
+
+Sinal periódico e suas propriedades
+
+
+Sinal periódico é qualquer sinal (analógico ou digital) que se repete em um período de tempo T, conforme imagem abaixo:
+
+
+
+Gráfico: Sinal periódico.
+
+A frequência do sinal é dada pelo valor inverso do período de repetição:
+
+
+f = 1 / T
+f = 1 / T
+O Período (T) é expresso em segundos (s), e a frequência (f), em hertz (Hz).
+
+
+Quanto mais rápida for a variação do sinal (menor período), maior será a frequência.
+
+
+É importante guardar essa relação quando formos estudar outros conceitos mais avançados, como banda passante e taxa de transmissão de dados.
+
+
+Além da frequência, o sinal apresenta ainda como propriedades:
+
+
+Amplitude A
+
+Ponto máximo de intensidade.
+
+Fase Φ
+
+Posição relativa do sinal dentro de um período de repetição.
+
+É possível codificar a informação variando as grandezas do sinal (f, A, Φ); assim, o sinal pode transportar o dado de um ponto ao outro do enlace.
+
+
+Os gráficos abaixo mostram os sinais variando em amplitude, frequência e fase.
+
+
+
+Gráfico: Variação do sinal em amplitude, frequência e fase. Stallings, 2005.
+
+Nas imagens dos sinais expostos anteriormente, apresentamos os sinais em função de suas variações ao longo do tempo, mas os sinais podem também ser representados no domínio da frequência.
+
+
+Exemplo
+A senoide, que vimos na imagem do sinal periódico, apresenta uma única componente no domínio da frequência, que é o próprio valor de f.
+
+
+Pela análise de Fourier, é possível demonstrar que qualquer sinal pode ser decomposto em componentes (senoides) de frequência e intensidades diferentes.
+
+
+No gráfico a seguir, o sinal resultante (à direita) pode ser obtido pela soma do primeiro sinal de frequência f e amplitude A com o segundo sinal de frequência 3f e amplitude 0,4A.
+
+
+
+Gráfico: Decomposição de sinais em componentes de frequência.
+
+Banda passante
+
+
+Agora, podemos entender o conceito de banda passante do canal de comunicações.
+
+
+Trata-se do conjunto contíguo de frequências de sinal que, ao passarem pelo canal de comunicação, são praticamente inalteradas.
+
+
+As componentes de frequência do sinal que estão além da banda passante sofrem forte atenuação e são eliminadas.
+
+
+Podemos imaginar o canal de comunicação como um filtro que deixa passar as componentes dentro da faixa de frequências especificadas pela banda passante e bloqueia as demais componentes fora da banda passante.
+
+
+Vamos ver um exemplo?
+
+
+Digamos que o sinal resultante (à direita) da imagem acima será transmitido por um canal de largura de banda 2f Hz, que deixa passar sem atenuação componentes de frequência entre valores 0,5f e 2,5f.
+
+
+Ao transmitir esse sinal pelo canal, a componente de frequência 3f será completamente eliminada, e o sinal que aparecerá do outro lado será simplesmente a senoide de frequência f, conforme gráfico abaixo.
+
+
+
+Gráfico: Exemplo teórico de um canal ideal filtrando a componente 3f do sinal TX. Ronaldo Moreira Salles.
+
+Um sinal digital apresenta variações abruptas na sua intensidade, o que pode ser representado no domínio da frequência por componentes de frequência muito elevados.
+
+
+Assim, ao passar por um canal de comunicação, o sinal sofre distorções causadas pela banda passante do canal.
+
+
+Quanto maior for a banda passante, menor será o efeito de filtragem do canal. Com isso, o receptor terá mais facilidade para interpretar a informação contida no sinal.
+
+
+O gráfico abaixo ilustra a codificação de um caractere de informação (101111011) em uma possível representação por um sinal digital. Os desenhos que se seguem ilustram os efeitos de diferentes larguras de banda sobre a composição do sinal.
+
+
+
+Gráfico: Efeitos da largura de banda sobre o sinal digital. Stallings, 2005.
+
+Taxa de transmissão
+
+Outro conceito importante é a taxa de transmissão (bit rate) de um canal ou meio físico, que é dada pela quantidade de bits que esse meio consegue transmitir por segundo.
+
+
+
+Essa taxa pode ser expressa em:
+
+ 
+
+Bits por segundo (bps)
+Kilobits por segundo (Kbps)
+Megabits por segundo (Mbps)
+Gigabites por segundo (Gbps)
+
+Pelos conceitos estudados, sabemos que:
+
+
+
+O sinal recebido pelo receptor é diferente do sinal que foi transmitido, pois sofreu todos os efeitos introduzidos pelo canal de comunicação.
+
+
+Esses efeitos degradam o sinal e podem gerar erros de bits, ou seja, erros de interpretação na decodificação do sinal pelo receptor, em razão das alterações sofridas.
+
+
+Além das distorções causadas pela banda passante limitada dos meios físicos, o sinal pode sofrer também uma série de outras degradações, como:
+
+
+
+Atenuação
+
+A atenuação é a perda de potência do sinal devido à passagem pelo meio de transmissão (canal), fazendo com que a potência do sinal recebido pelo receptor seja menor do que a potência do sinal no momento em que foi transmitido. Caso a potência seja muito baixa na recepção (abaixo de determinado limiar), o sinal estará muito fraco e mais sujeito aos ruídos, podendo gerar erros no receptor.
+
+ 
+
+O sinal transmitido em espaço livre (meio físico) sem obstáculos, onde o transmissor e o receptor são separados por uma distância d, sofre uma atenuação proporcional ao inverso do quadrado da distância 1/d2.
+
+ 
+
+Em outras palavras, a razão entre a potência do sinal recebido (Pr) e a potência do sinal transmitido (Pt) é proporcional ao inverso do quadrado da distância: Pr/Pt ~ 1/d2 (RAPPAPORT, 2001). Para outros meios físicos e contextos de transmissão, as relações seguem outra formulação.
+
+
+Ruído
+
+Pode ser entendido de forma ampla como sinais indesejados que são inseridos pelo meio físico de transmissão ou causados por fontes externas, comprometendo a integridade do sinal.
+
+ 
+
+Os ruídos são classificados em diversos tipos e podem ser provenientes de fontes distintas.
+
+O tipo de ruído mais comum é o ruído térmico (ou ruído branco), que afeta todos os sistemas, pois ocorre em função da agitação dos elétrons no meio físico em virtude da temperatura.
+
+ 
+
+O ruído térmico não pode ser eliminado completamente, limitando a capacidade máxima de um sistema de comunicação. A imagem ilustra o efeito do ruído do canal sobre o sinal digital e os erros de interpretação de bits por parte do receptor.

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="get">
+        <label for="">Valor A</label>
+        <input type="number" name="v1" id="v1">
+
+        <label for="">Valor B</label>
+        <input type="number" name="v2" id="v2">
+
+        <label for="">Operação</label>
+        <select name="" id="oper">
+            <option value="">Soma</option>
+            <option value="">multiplicação</option>
+            <option value="">Subtração</option>
+            <option value="">divisão</option>
+            <option value="">Potência</option>
+        </select>
+        <a href="#" onclick="executar()">Executar</a>
+    </form>
+    <div id="res">Oresultado Aparece Aqui</div>
+</body>
+    <Script>
+        function somar(a,b){
+            return a+b;
+        }
+
+        function subtrair(a,b){
+            return a-b;
+        }
+
+        function multiplicar(a,b){
+            return a*b;
+        }
+
+        function dividir(a,b){
+            if(b==0){
+                alert("Divisão por Zera!!!!!")
+            }
+            return a/b;
+        }
+
+        function exponencial(a,b){
+            return Math.pow(a,b)
+        }
+
+        const executar = () => {
+            const Valor1 = Number(document.getElementById("v1").value);
+            const Valor2 = Number(document.getElementById("v2").value);
+            const Operacao = Number(document.getElementById("oper").selectedIndex);
+            let Resposta = document.getElementById("res");
+
+
+            let resultado = (Operacao == 0) ? somar(Valor1,Valor2) : (Operacao == 2) ? subtrair(Valor1,Valor2) : (Operacao == 1) ? multiplicar(Valor1,Valor2) : (Operacao == 3) ? dividir(Valor1,Valor2) : exponencial(Valor1,Valor2);
+
+            Resposta.innerHTML = `O Resultado da Opertação é ${resultado}`
+        }
+        
+
+    </Script>
+</html>

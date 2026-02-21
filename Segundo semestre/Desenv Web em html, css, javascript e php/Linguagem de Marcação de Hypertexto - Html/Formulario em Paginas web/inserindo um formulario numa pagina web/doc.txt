@@ -1,0 +1,53 @@
+Inserindo um formulário numa página web
+O formulário HTML é uma das principais formas de interação em uma página web. Com esse elemento, podemos inserir dados em um cadastro, filtrarmos buscas, entre outras ações. Para realizar tais tarefas, o formulário é composto por uma estrutura de tags e atributos. Vamos agora colocar em prática o que aprendemos até aqui para criarmos um formulário HTML.
+
+
+Assista ao vídeo e confira a atividade em que se cria a estrutura básica da página HTML e o container do formulário, contendo os campos para inserção de nome, e-mail, telefone de contato, calendário, data de nascimento e o campo para inserção de texto livre.
+
+
+
+Roteiro de prática
+
+A criação de um formulário precisa seguir algumas regras, como inserir o elemento container e os demais elementos, e também atributos, de acordo com a sua funcionalidade. Aqui, seguindo os passos abaixo, você deverá criar um formulário de contato.
+
+
+Utilizando um editor, crie a estrutura básica da página HTML e o container do formulário.
+O formulário deverá conter campos para inserção de: nome, e-mail e telefone de contato.
+O usuário deverá poder selecionar, em um calendário, a sua data de nascimento.
+O formulário deverá conter um campo para inserção de texto livre.
+Indique ao usuário o que ele deverá preencher em cada campo.
+Ao final, salve sua página e a teste no navegador. Lembre-se de incluir também o botão de submissão do formulário.
+
+Como resolução, teremos o seguinte código:
+
+
+Python (3.8.1)
+
+<!doctype html>
+<html>
+  <head>
+		<title>Formulário HTML</title>
+  </head>  
+  <body>
+		<form>
+			<label for="nome">Nome: </label>
+			<input type="text" name="nome"  required>
+			<br>
+				<br>
+			<label for="email">Email: </label>
+			<input type="email" name="email"  required>
+			<br>
+			<label for="tel">Telefone: </label>
+			<input type="tel" name="telefone"  required>
+			<br>
+			<label for="nascimento">Data de Nascimento: </label>
+			<input type="date" name="nascimento"  required>
+			<br>
+			<label for="mensagem">Mensagem: </label>
+			<textarea name="mensagem" cols="30" rows="4"></textarea>
+			<br>
+			<input type="submit" value="Enviar">
+		</form>
+	
+  </body>
+</html>

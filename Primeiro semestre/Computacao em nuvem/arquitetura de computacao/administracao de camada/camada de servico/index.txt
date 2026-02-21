@@ -1,0 +1,63 @@
+Camada de servidores
+Confira neste vídeo as características e como funciona a administração das camadas das plataformas de servidores.
+
+
+
+Conceitos
+
+
+A camada de servidores é uma parte crítica de qualquer infraestrutura de TI. Ela consiste em servidores físicos ou virtuais que hospedam serviços, aplicativos e dados para seus usuários. Os servidores também são usados para armazenar e gerenciar dados, como: arquivos, backups e imagens.
+
+
+Essa camada deve ser monitorada e gerida para garantir que os serviços sejam executados de maneira consistente e para hospedar serviços, como sites web, servidores de e-mail e sistemas de banco de dados. Dessa forma, os dados podem ser armazenados e recuperados com segurança. Isso inclui monitorar o desempenho dos servidores, garantindo que eles estejam funcionando corretamente e que os recursos sejam usados de forma otimizada. Além disso, é necessário gerenciar as configurações dos servidores e aplicativos, aplicar patches de segurança e realizar backups regulares dos dados.
+
+
+Atenção
+Para gerenciar a camada de servidores, é importante usar ferramentas de administração de servidor. Essas ferramentas permitem aos administradores de servidor monitorar, configurar e gerenciar servidores de maneira eficiente, otimizando a performance e a segurança. Algumas ferramentas comuns incluem: servidores de gerenciamento, gerenciadores de configuração, monitoramento de servidores e ferramentas de automação de tarefas. Além disso, é importante usar soluções de segurança para proteger o ambiente de servidor.
+
+
+Administração de camada de servidores
+
+
+Envolve diversos aspectos, desde o monitoramento de desempenho e segurança até a configuração de serviços e aplicativos. Todas essas tarefas podem ser difíceis de se executar manualmente em grandes ambientes, por isso é importante usar ferramentas de administração de servidor, a fim de automatizar e otimizar tais tarefas.
+
+
+As principais ferramentas de administração de servidor incluem servidores de gerenciamento, gerenciadores de configuração, monitoramento de servidor, ferramentas de automação de tarefas e ferramentas de segurança.
+
+
+Os servidores de gerenciamento são usados para configurar e monitorar servidores e dispositivos de rede, enquanto os gerenciadores de configuração são usados para gerenciar as configurações e os aplicativos em um servidor.
+
+
+As ferramentas de monitoramento de servidor são usadas para monitorar o desempenho dos servidores e as ferramentas de automação de tarefas são usadas para automatizar tarefas, como backup e restauração. Por fim, as ferramentas de segurança são usadas para garantir que o ambiente de servidor seja seguro e protegido.
+
+
+Além disso, é importante gerenciar os usuários e controlar o acesso ao servidor. Isso inclui definir direitos de acesso ao servidor e configurar regras de segurança para os usuários. Também é importante manter uma documentação detalhada sobre as configurações do servidor, para que as alterações possam ser facilmente rastreadas.
+
+
+Em suma, a administração de um ambiente de servidor é uma tarefa complexa que exige a utilização de várias ferramentas de administração. Portanto, é importante que os administradores de servidor se familiarizem com essas ferramentas e assim consigam garantir que o ambiente seja gerenciado com êxito.
+
+
+Plataforma de administração de camada de servidores
+
+Os principais provedores possuem soluções que permitem criação, administração e gerenciamento de servidores. Vamos analisar alguns deles!
+
+
+
+Amazon Web Services (AWS)
+
+É uma plataforma de computação em nuvem amplamente utilizada para hospedar aplicativos, sites e soluções. Fornece ferramentas para gerenciar a camada de servidores, como o Amazon EC2, que permite criar, dimensionar e gerenciar instâncias de servidores virtuais, e o Amazon CloudWatch, que monitora e controla o desempenho de suas instâncias de servidores.
+
+
+Microsoft Azure
+
+É uma plataforma de computação em nuvem baseada em Microsoft. Oferece serviços de computação em nuvem escalonáveis, como o Azure Virtual Machines, que permite criar, dimensionar e gerenciar instâncias de servidores virtuais, e o Azure Monitor, que monitora e controla o desempenho de suas instâncias de servidores.
+
+
+Google Cloud Platform (GCP)
+
+É uma plataforma de computação em nuvem baseada em Google. Oferece uma série de serviços para gerenciar a camada de servidores, como o Compute Engine, que permite criar, dimensionar e gerenciar instâncias de servidores virtuais, e o Cloud Monitoring, que monitora e controla o desempenho de suas instâncias de servidores.
+
+
+IBM Cloud
+
+É uma plataforma de computação em nuvem da empresa IBM (International Business Machines Corporation). Oferece uma série de serviços para gerenciar a camada de servidores, como o IBM Virtual Servers, que permite criar, dimensionar e gerenciar instâncias de servidores virtuais, e o IBM Cloud Monitoring, que monitora e controla o desempenho de suas instâncias de servidores.

@@ -1,0 +1,58 @@
+Comutação na camada de rede
+Neste vídeo, o especialista explica sobre comutação de pacotes.
+
+
+
+Comutação de pacotes store and forward
+
+Neste momento você deve estar se perguntando como o pacote vai da origem até o destino. Diretamente? Saltando de hospedeiro em hospedeiro?
+
+
+Lembre-se de que, no Modelo OSI, uma camada utiliza os serviços da camada imediatamente inferior para realizar seus trabalhos e oferecer serviços para a camada superior. Assim, um hospedeiro com um pacote a enviar o transmite para o roteador mais próximo. O pacote é então totalmente recebido pelo roteador e, após ter chegado por completo, é conferido. Em seguida, ele é encaminhado para o próximo roteador ao longo do caminho até alcançar o hospedeiro de destino, onde é entregue. Esse mecanismo que tem como base armazenar totalmente o pacote antes de enviá-lo ao próximo hospedeiro é conhecido como comutação de pacotes store and forward.
+
+
+Confira esse passo a passo na imagem abaixo:
+
+
+
+Entenda as diferenças entre repasse e roteamento:
+
+
+
+Repasse
+
+Roteamento
+Um roteador é um equipamento que possui, normalmente, várias interfaces de rede. Quando um pacote chega por uma de suas interfaces, o roteador deve verificar o destino desse pacote e decidir por qual de suas linhas o pacote deve ser enviado para que consiga chegar ao destino. Chamamos de repasse o trabalho (local) de escolher por qual das interfaces deve seguir o pacote que chega.
+
+
+
+
+
+
+O repasse refere-se a uma ação realizada localmente por um roteador sobre um pacote que chega, enquanto no roteamento há uma ação global envolvendo todos os roteadores de uma sub-rede para a escolha do melhor caminho.
+
+
+Você já deve ter percebido que existe uma relação bastante próxima entre repasse e roteamento, mas como é essa relação?
+
+
+Vamos iniciar pelos algoritmos de roteamento. Para escolher a melhor rota, um conjunto de roteadores precisa trocar informações sobre a situação da rede em sua vizinhança, de modo que os roteadores do conjunto possam decidir sobre o caminho a ser seguido em cada situação. Diferentes algoritmos com diferentes propriedades podem ser utilizados nessa tarefa.
+
+
+Como funcionam esses algoritmos e de que forma eles se diferenciam, estudaremos adiante. Por ora, o importante é que existem algoritmos capazes de encontrar o melhor caminho em uma rede.
+
+
+O mesmo algoritmo é então executado nos roteadores da sub-rede, trocando informações de tráfego e calculando a melhor rota. Uma vez calculadas as rotas para cada destino, os algoritmos de roteamento criam as chamadas tabelas de repasse, as quais são indexadas pelos possíveis endereços destino de um pacote e indicam a interface pela qual o pacote deve ser enviado com base em seu endereço destino.
+
+
+Ao chegar um pacote em um roteador, e sendo necessário fazer seu repasse, o processo responsável por essa função verifica o endereço de destino do pacote, consulta a tabela de repasse utilizando o endereço destino como índice e obtém a interface pela qual o pacote deve seguir. Resumidamente, as tabelas de repasse são montadas pelos algoritmos de roteamento e consultadas pelo processo de repasse para determinar por qual interface deve seguir um pacote que chega.
+
+Circuitos virtuais e datagramas
+
+Há basicamente duas formas para a organização da camada de rede de uma sub-rede: uma utilizando conexões e a outra trabalhando sem conexão. Na camada de rede, um serviço orientado à conexão costuma ser chamado de circuito virtual, enquanto um serviço que realiza a entrega de pacotes independentes, sem conexão, costuma ser chamado de serviço de datagramas.
+
+
+A camada de transporte também oferece serviços com conexão e sem conexão, mas estes se diferem dos serviços oferecidos pela camada de rede.
+
+
+Comentário
+Pensando na arquitetura TCP/IP, a camada cliente da camada de transporte é a camada de aplicação, portanto, o serviço de transporte com conexão é um serviço aplicação a aplicação, ou seja, uma conexão de transporte conecta diretamente duas aplicações. Já a camada de rede é voltada para a interligação de hospedeiros, logo, uma conexão da camada de rede é uma conexão hospedeiro a hospedeiro.

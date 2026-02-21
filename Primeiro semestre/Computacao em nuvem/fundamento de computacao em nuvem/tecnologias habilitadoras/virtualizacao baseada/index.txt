@@ -1,0 +1,49 @@
+Virtualização baseada em contêineres
+Neste vídeo, será apresentado o conceito de conteinerização.
+
+
+
+Conteinerização
+
+A conteinerização, também conhecida como virtualização baseada em contêineres, é um método utilizado na implantação e execução de aplicativos distribuídos sem a necessidade de configuração de uma virtual machine (VM) completa para cada um deles. Em vez disso, vários sistemas isolados, chamados de contêineres, são executados em um único host de controle, acessando um único kernel, conforme ilustrado a seguir.
+
+
+
+A tecnologia de conteinerização permite a entrega de uma determinada aplicação dentro de uma estrutura virtual (contêiner) que se assemelha a uma VM, consumindo menos recursos e com uma estrutura de portabilidade mais simples entre diferentes ambientes tanto físicos como virtuais. Isto é, um contêiner é a versão enxuta de uma VM padrão (que necessita de um hypervisor para ser executada).
+
+Os contêineres são virtualizados no nível do sistema operacional, com vários contêineres sendo executados diretamente acima do kernel do sistema operacional. Isso significa que são muito mais leves: compartilham o kernel do sistema operacional, iniciam muito mais rápido e usam apenas uma pequena parte da memória, em comparação com a inicialização de um sistema operacional completo.
+
+
+Exemplo
+Vamos imaginar um navio cargueiro com vários contêineres. Se um desses danificar, não afetará os outros ou o navio, pois cada um está isolado e protegido.
+
+
+Ao contrário do que muita gente pensa, essa tecnologia não é assim tão nova. Vejamos:
+
+
+Anos 70
+
+Unix V7
+
+Durante o desenvolvimento do Unix V7, foi introduzido o system call ou chamada de sistema, também conhecido como chroot, alterando o diretório raiz de um processo e seus filhos para um novo local no sistema de arquivos, recurso muito utilizado até hoje para eventuais manutenções. Essa evolução trouxe o conceito de isolamento do processo, segregando o acesso a arquivos para cada processo.
+
+
+Anos 2000
+
+FreeBSD
+
+O FreeBSD Jails dá forma à tecnologia de contêineres ao permitir que os administradores de sistema (sysadmins) dividam o sistema operacional FreeBSD em vários sistemas menores e independentes conhecido como jails, inclusive com a capacidade de atribuir IP e hostname para cada sistema e configuração. No mesmo período, é lançado o Linux-VServer "old-school"; a primeira versão do Solaris Contêiner; além do lançamento do projeto OpenVZ (Open Virtuozzo) e do "Process Container", pelo Google.
+
+
+2008
+
+LXC
+
+Surge a primeira e mais completa implementação do gerenciador de contêiner do Linux, o projeto LXC (Linux Contêiner), que serviu de base para outras tecnologias como o Warden, em 2011, e o Docker, em 2013, que levou a tecnologia de contêiner a um novo patamar.
+
+O Docker é uma plataforma open source escrito em Go, uma linguagem de programação de alto desempenho desenvolvida dentro do Google, que facilita a criação e administração de ambientes isolados. Isto é, o Docker é uma implementação de virtualização de contêineres que vêm conquistando cada vez mais espaço devido à computação em nuvem.
+
+
+E assim, surge o conceito de cloud containers ou contêineres na nuvem, isto é, virtualização baseada em contêiner, um modelo de virtualização na nuvem em nível de sistema operacional, com o objetivo de implantar e executar aplicativos distribuídos. Dessa forma, vários sistemas isolados são acionados em um único host, acessando um único kernel.
+
+Apesar do uso do termo virtualização baseada em contêiner, não podemos confundir com virtualização em si, pois, nesta última, o servidor é configurado para atuar como se fosse uma máquina física, com sistema operacional próprio, garantindo um ambiente funcional. Essencialmente, um conjunto de SO é instalado em um único equipamento físico. E no caso do cloud containers, não há uso de sistemas operacionais. Os contêineres são independentes e realizam a execução da aplicação, sendo só ela a instalada, facilitando o processo.

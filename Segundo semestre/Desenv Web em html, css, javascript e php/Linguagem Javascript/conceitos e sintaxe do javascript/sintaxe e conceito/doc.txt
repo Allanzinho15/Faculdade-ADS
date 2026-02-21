@@ -1,0 +1,178 @@
+Sintaxe e conceitos
+A linguagem JavaScript oferece uma série de recursos, além de possuir uma sintaxe própria de utilização. Veremos, no vídeo a seguir, alguns desses recursos e como fazer para incorporar código JS em páginas HTML.
+
+
+
+Sintaxe JavaScript
+
+Observe o código a seguir:
+
+
+Java (OpenJDK 13.0.1)
+<!doctype html>
+<html lang="pt-BR">
+<head>
+     <meta charset="utf-8">
+     <title>Incorporando Javascript em Páginas HTML</title>
+     <!-- Incorporando um arquivo .js externo -->
+     <script src="script.js"></script>
+</head>
+<body>
+     <div id="exibe_resultado"> Resultado da Multiplicação: </div>
+</body>
+     <!-- Incorporando códigos Javascript diretamente na página -->
+     <script type="text/javascript">
+          //Com duas barras criamos um comentário de linha em Javascript
+          //Comentários de mais de uma linha podem ser feitos dentro de /* */
+
+          var variavel; //Declarando uma variável cujo nome é 'variavel'
+
+          variavel = 3 + 3; // Atribuindo valores e aplicando uma operação matemática em uma variável
+
+          /* Utilizando a função nativa 'alert' para exibir uma caixa de
+diálogo na tela cujo conteúdo será o valor da variável 'variavel' */
+          alert(variavel);
+
+          var resultadoMultiplicacao = multiplique(10, 50); // chamando a função 'multiplique' passando dois valores - 10 e 50
+
+          //Manipulando a Árvore DOM a fim de exibir, dentro da DIV declarada no HTML, o resultado da multiplicação juntamente com o seu texto inicial
+          var divLocal = document.getElementById('exibe_resultado');
+          /*
+          Neste ponto a variavel divLocal é um objeto que representa a div declarada no HTML.
+          Sendo um objeto é possível acessar seus atributos, como innerHTML, precedido do nome do objeto seguido de um '.'
+          */
+          divLocal.innerHTML += resultadoMultiplicacao;
+
+          //Definição da função 'multiplique' que recebe dois parâmetros - numero1 e numero2
+          function multiplique(numero1, numero2){
+
+               /*
+               Declarando uma nova variável que guardará o resultado da operação de multiplicação;
+               Iniciando a variável com o valor de 0.
+               */
+               var resultado = 0;
+
+               //Atribuindo à variável 'resultado' o valor resultante da multiplicação dos 2 parâmetros recebidos
+               resultado = numero1 * numero2;
+
+               //Retornando (devolvendo) o valor da variável resultado
+               return resultado;
+
+          }
+     </script>
+</html>
+
+
+Light Mode
+
+Copiar
+
+O código visto mostra tanto as formas de inserção do JavaScript em uma página HTML (linhas 7 e 13) quanto alguns aspectos de sua sintaxe. Esses aspectos serão vistos em detalhes a seguir, mas, antes de começarmos, recomendamos que você copie o código e o execute – pode ser em seu computador ou utilizando uma ferramenta de codificação on-line, como o CodePen ou JSFiddle.
+
+
+Existem duas formas de inserir comentários no código JavaScript. Observe!
+
+
+Uma linha
+
+
+Utilizamos as duas barras “//”.
+
+
+Múltiplas linhas
+
+
+Utilizamos “/*” e “*/”.
+
+
+A seguir, vamos conhecer a sintaxe de JavaScript, na qual serão utilizados os números das linhas do editor do código anterior para facilitar a localização de fragmentos e elementos abordados.
+
+
+Variáveis
+
+Vamos declarar as variáveis utilizando a palavra reservada “var”, sucedida por seu nome. Não devem ser utilizados caracteres especiais como nomes de variáveis.
+
+
+Dica
+Embora existam diferentes convenções, procure utilizar um padrão e segui-lo ao longo de todo o seu código para a nomeação das variáveis, sobretudo as compostas.
+
+
+
+Na linha 25, a palavra composta “resultado multiplicação” foi transformada em uma variável por meio do padrão camelcase, ou seja, a segunda palavra (e demais palavras, quando for o caso) é iniciada com a primeira letra maiúscula.
+
+
+Outra característica importante de uma variável em JS é que, por se tratar de uma linguagem fracamente tipada, não é necessário declarar o tipo de dado. Com isso, uma variável que armazenará um número (inteiro, decimal etc.) e outra que armazenará uma palavra (string, char etc.) são declaradas da mesma forma.
+
+Após declaradas, as variáveis podem ser utilizadas sem a palavra reservada “var”, como visto nas linhas 19 e 33 do código anterior.
+
+
+Atribuição
+
+As variáveis precisam ser declaradas antes de sua utilização. Entretanto, há uma forma simplificada, vista na linha 25, na qual é feita uma atribuição de valores no momento de declaração da variável “resultadoMultiplicacao”.
+
+
+A respeito da atribuição de valores, embora declarados da mesma maneira, os tipos de dados são atribuídos de formas distintas.
+
+
+Um número pode ser atribuído diretamente a uma variável, enquanto uma string precisará estar envolta em aspas – simples ou duplas. A linha 13 mostra dois números sendo atribuídos à “variável”.
+
+
+Ao atribuirmos uma string a uma variável, obtemos:
+
+
+JavaScript (Node.js 12.14.0)
+var nomeDisciplina = “Javascript”
+
+Light Mode
+
+Copiar
+
+Ponto e vírgula
+
+Repare o final de cada linha de código – todas as linhas foram terminadas com a utilização de um ponto e vírgula.
+
+
+Recomendação
+Diferentemente de outras linguagens, em JavaScript, não é obrigatória a utilização de caracteres para indicar o final de uma linha de código. Porém, seguindo uma linha de boas práticas, adote uma convenção e a utilize em todo o seu código.
+
+
+Outros elementos
+
+Ao longo do código apresentado anteriormente, foram utilizados outros elementos. Na tabela a seguir, cada um deles será descrito:
+
+
+Elemento	Para que serve	Linha do código
+alert	Exibir uma caixa de diálogo no navegador. Existem outras funções nativas de diálogo, inclusive para receber input de valores.	23
+document.getElementById	Referenciar um elemento da árvore DOM por meio do valor de seu atributo “id”. Pesquise também sobre document.getElementByClassName.	28
+innerHTML	Propriedade DOM relativa ao conteúdo de um elemento. Permite tanto a inclusão quanto a exclusão e a modificação do conteúdo do elemento.	33
++=	Operador de atribuição composta. A linha em questão poderia ser escrita de forma simplificada com esse operador, ou em sua forma completa, como: “divLocal.innerHTML = divLocal.innerHTML + resultadoMultiplicacao”.	33
+function	Palavra reservada, utilizada para indicar que será declarada uma função. É procedida pelo nome da função e por parênteses. Caso receba parâmetros, eles devem ser declarados dentro dos parênteses._ipsum	36
+return	Palavra reservada, utilizada para indicar o conteúdo a ser retornado pela função. Nem todas as funções retornam valores. Logo, essa instrução só deve ser utilizada por funções que retornem algum resultado.	48
+Lista de elementos utilizados no código de exemplo
+Alexandre de Oliveira Paixão
+
+Incorporando o JavaScript à HTML
+
+A incorporação do JavaScript a páginas HTML pode ser feita de duas maneiras:
+
+
+Códigos no corpo da página
+
+
+Incluindo os códigos diretamente no corpo da página – utilizando a tag .</body>
+
+
+Arquivos externos
+
+
+Mediante arquivos externos, com extensão .js, linkados ao documento também dentro da seção .
+
+
+Para a otimização do desempenho do carregamento da página, devemos mover todo o código JavaScript para seu final, após o fechamento da tag .
+
+
+Atenção
+Cuidado para não mover códigos ou scripts incluídos que sejam necessários à correta visualização ou aos comportamentos da página, já que os códigos movidos para o final só serão lidos e interpretados após todo o restante da página.
+
+
+No código demonstrado na seção Sintaxe Javascript, você poderá ver os exemplos de incorporação do JS em uma página HTML. Todo o código está comentado, a fim de descrever o que acontece em cada linha.

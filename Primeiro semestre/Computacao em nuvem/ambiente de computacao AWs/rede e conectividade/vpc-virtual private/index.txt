@@ -1,0 +1,116 @@
+VPC – Virtual Private Cloud
+Neste vídeo, você conhecerá a VPC (Amazon Virtual Private Cloud), a distribuição de endereçamento e recursos de conectividade com a internet.
+
+
+
+Imagine os milhões de clientes que usam os serviços AWS e os milhões de recursos criados por eles, como as instâncias do Amazon EC2. Sem limites de acesso para todos esses recursos, o tráfego de rede fluiria sem restrições entre eles, permitindo que todos os recursos de todos os clientes tenham acesso uns ao outros.
+
+
+Um serviço de rede que pode ser usado para definir limites para seus recursos AWS é o Amazon Virtual Private Cloud (Amazon VPC).
+
+
+Esse serviço permite que você provisione uma seção isolada da nuvem AWS. Nessa seção, você pode executar os recursos em uma rede virtual que definir. Em uma Virtual Private Cloud (VPC), você pode organizar seus recursos em sub-redes. Uma sub-rede é uma seção de uma VPC que pode conter recursos como instâncias do Amazon EC2.
+
+
+Ao criar uma VPC, você deve escolher três fatores principais:
+
+
+O nome do VPC.
+A região onde o VPC vai ser provisionado, já que cada VPC abrange várias zonas de disponibilidade na região selecionada.
+O intervalo de IP para a VPC na notação CIDR. Isso determina o tamanho da sua rede. Cada VPC pode ter até quatro intervalos de IP /16.
+
+Usando essas informações, a AWS provisionará uma rede e endereços IP para essa rede.
+
+
+VPCs ficam dentro da região escolhida, mas podem se estender por múltiplas zonas de disponibilidade.
+
+
+
+Zonas de disponibilidade das VPCs.
+
+Sub-redes de VPC
+
+
+Depois de criar sua VPC, você deve criar sub-redes dentro da rede. Pense nelas como redes menores dentro de sua rede base – ou redes locais virtuais (VLANs) em uma rede local tradicional. Em uma rede local, o caso de uso típico para sub-redes é isolar ou otimizar o tráfego de rede. Na AWS, essas sub-redes são usadas para fornecer alta disponibilidade e opções de conectividade para seus recursos.
+
+
+Ao criar uma sub-rede, você deve especificar:
+
+
+A VPC na qual você deseja que sua sub-rede resida.
+A zona de disponibilidade na qual você deseja que sua sub-rede resida.
+O bloco CIDR para sua sub-rede, que deve ser um subconjunto do bloco VPC CIDR.
+
+
+Ao iniciar uma instância do EC2, você a inicia dentro de uma sub-rede, que estará localizada dentro da zona de disponibilidade que você escolher.
+
+
+As sub-redes são basicamente de dois tipos: públicas e privadas.
+
+
+Sub-redes públicas
+
+
+Possuem um gateway de internet (que veremos mais adiante) que permite o acesso à internet diretamente, de origem e destino, para as instâncias e recursos que foram provisionados nela.
+
+
+Sub-redes privadas
+
+
+Não possuem um gateway e o acesso à internet pode acontecer por intermédio de um gateway NAT ou uma instância NAT, provisionada em uma sub-rede pública.
+
+
+A seguir, podemos ver as divisões em sub-rede dentro de uma mesma VPC e em diferentes zonas de disponibilidade.
+
+
+
+Divisões em sub-rede dentro de uma mesma VPC.
+
+Alta disponibilidade em VPC
+
+
+Ao criar suas sub-redes, tenha em mente a alta disponibilidade. Para manter a redundância e a tolerância a falhas crie, ao menos, duas sub-redes configuradas em duas zonas de disponibilidade. Lembre-se de que “tudo falha o tempo todo”. Com a rede de exemplo, se uma das AZs falhar, você ainda terá seus recursos disponíveis em outra AZ como backup/redundância. Recursos como instâncias EC2 não usufruem automaticamente de alta disponibilidade com múltiplas AZs pois, ao lançar um novo servidor virtual, este estará localizado em apenas uma AZ determinada. Aplicações hospedadas em instâncias EC2 e que possuem capacidade de escala horizontal (múltiplos servidores, com a mesma aplicação, funcionando como um cluster) podem usufruir de alta disponibilidade se for provisionada mais de uma máquina virtual em AZs diferentes e essas máquinas utilizarem, como exemplo, um balanceador de carga para distribuição do tráfego.
+
+
+
+Sub-redes distribuidas em duas zonas de disponibilidade.
+
+Endereço IP elástico
+
+
+Neste vídeo, você verá como se beneficiar dos IPs elásticos.
+
+
+
+Um endereço IP elástico (Elastic IP) é um endereço IPv4 público e estático projetado para computação em nuvem dinâmica. Você pode associar um endereço IP elástico a qualquer instância ou interface de rede em qualquer VPC em sua conta. Com um endereço IP elástico, você pode mascarar a falha de uma instância remapeando rapidamente o endereço para outra instância em sua VPC. A seguir, algumas considerações sobre IPs elásticos:
+
+
+Um endereço IP elástico pode ser associado a uma única instância ou interface de rede por vez.
+Você pode mover um endereço IP elástico de uma instância ou interface de rede para outra.
+Se você associar um endereço IP elástico à interface de rede primária de sua instância, seu endereço IPv4 público atual (se houver) será liberado para o pool de endereços IP públicos. Se você desassociar o endereço IP elástico, a interface de rede primária receberá automaticamente um novo endereço IPv4 público em alguns minutos. Isso não se aplica se você tiver anexado uma segunda interface de rede à sua instância.
+Existe uma cobrança de 0,005 dólares por hora quando eles não estão associados a uma instância em execução ou quando estão associados a uma instância interrompida ou a uma interface de rede não conectada. Enquanto sua instância estiver em execução, você não será cobrado por um endereço IP elástico associado à instância, mas por quaisquer endereços IP elásticos adicionais (a partir do segundo na mesma instância) associados à instância.
+Endereços IP elásticos para IPv6 não são suportados.
+
+IPs reservados
+
+
+Para que a AWS configure sua VPC adequadamente, ela reserva cinco endereços IP em cada sub-rede. Esses endereços IP são usados para roteamento, Domain Name System (DNS) e gerenciamento de rede.
+
+
+Exemplo
+Considere uma VPC com o intervalo de IP 10.0.0.0/22. A VPC inclui um total de 1.024 endereços IP. Isso é dividido em quatro sub-redes de tamanho igual, cada uma com um intervalo de IP /24 com 256 endereços IP. De cada um desses intervalos de IP, existem apenas 251 endereços IP que podem ser usados, já que a AWS reserva cinco. A primeira subnet pode ser 10.0.0.0/24.
+
+
+Vejamos como são reservados pela AWS os cinco endereços IP:
+
+
+Endereço IP	Propósito
+10.0.0.0	Endereço de rede
+10.0.0.1	Roteador da VPC
+10.0.0.2	Servidor DNS
+10.0.0.3	De uso futuro
+10.0.0.255	Endereço de broadcast
+Especificação de IPs e seus propósitos no AWS.
+Gustavo Ribeiro
+
+Os cinco endereços IP reservados podem afetar a forma como você projeta sua rede. Um ponto de partida comum para quem é novo na nuvem é criar uma VPC com um intervalo de IP de /16 e criar sub-redes com um intervalo de IP de /24. Isso fornece uma grande quantidade de endereços IP para trabalhar nos níveis de VPC e sub-rede.

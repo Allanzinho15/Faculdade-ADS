@@ -1,0 +1,44 @@
+A camada física
+
+A camada física é responsável pela geração e transmissão do sinal propriamente dito, que é levado de um transmissor ao receptor correspondente. Eles estão conectados por um enlace físico de transmissão.
+
+
+Geração e transmissão de sinal de um transmissor para um receptor.
+
+Para ativar, manter e desativar o link físico entre sistemas finais, a camada física define especificações:
+
+ 
+
+Eletricas
+Mecânicas
+Funcionais
+Mecânicas
+
+A partir disso, são determinadas características como:
+
+ 
+
+Níveis de voltagem
+Temporização de alterações de voltagem
+Taxas de dados físicos
+Distância máximas de transmissão
+Conectores físicos
+Outros atributos similares
+
+Essa camada está completamente associada ao hardware dos equipamentos e enlaces.
+
+
+Na camada física, a unidade de dados é o bit de informação. O bit é codificado em um sinal elétrico ou óptico, de forma a ser transmitido pelo transmissor do enlace até o receptor através do meio físico de transmissão.
+
+
+O sinal sofre diversos efeitos ao ser enviado pelo meio de transmissão (como interferências, ruídos, atenuação) e chega ao receptor após ter experimentado todas essas alterações.
+
+
+Ao chegar ao destino, o receptor precisa decodificar o sinal para receber o bit de informação. Dependendo da situação, o receptor pode ou não decodificar corretamente o bit enviado.
+
+
+A imagem abaixo ilustra um diagrama em blocos simplificado do procedimento descrito anteriormente, em que o ruído e outros fatores podem dificultar a recepção do sinal e causar erros na interpretação dos bits.
+
+
+
+Diagrama em blocos simplificado da transmissão do sinal em um canal de comunicação.

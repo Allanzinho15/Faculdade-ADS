@@ -1,0 +1,55 @@
+O que é inteligência artificial?
+
+É uma área da computação que desenvolve sistemas capazes de simular habilidades humanas, como aprender, decidir e resolver problemas. Funciona como uma espécie de cérebro digital, que aprende observando padrões e se torna mais preciso com a prática. No dia a dia, a IA está presente em serviços como YouTube, Google Maps, assistentes virtuais e filtros de e-mail. Embora não pense como um ser humano, a IA analisa grandes volumes de dados e age com base em padrões. Para ser útil e segura, ela precisa de dados, treinamento e direcionamento consciente feito por pessoas.
+
+ 
+
+O vídeo a seguir define IA de forma simples, explicando seu funcionamento com analogias e mostrando como ela já está presente em ferramentas do nosso cotidiano, como aplicativos de recomendação e assistentes virtuais. Confira!
+
+
+
+Inteligência artificial é um campo da ciência da computação dedicado ao desenvolvimento de sistemas capazes de simular capacidades humanas como raciocínio, aprendizado, percepção, tomada de decisão e resolução de problemas. Esses sistemas utilizam algoritmos e modelos matemáticos para processar grandes volumes de dados, identificar padrões e executar tarefas de forma autônoma ou assistida, com o objetivo de reproduzir ou ampliar funções cognitivas humanas. 
+
+
+
+A IA abrange desde soluções simples, como filtros de spam em e-mails, até sistemas avançados que geram textos, imagens ou tomam decisões complexas com base em informações contextuais.
+
+
+Imagine um cérebro digital que, em vez de sentir emoções ou manifestar desejos, aprende observando padrões. Esta é uma forma simples de explicar a IA: uma tecnologia que emula certas capacidades humanas — como reconhecer vozes, identificar rostos, escrever textos ou tomar decisões.
+ 
+
+A IA funciona como uma criança curiosa: observa muitos exemplos e aprende com eles. Por exemplo, se você mostrasse para essa “criança digital” milhares de fotos e dissesse em quais há gatos e em quais não há, com o tempo a IA começaria a reconhecer um gato sozinha. E quanto mais exemplos ela visse, mais precisa ela ficaria.
+
+ 
+
+Mas onde isso aparece na nossa rotina? Isso ocorre bem mais do que a gente imagina: 
+
+
+Recomendações no YouTube
+
+
+Quando você entra no YouTube e encontra sugestões de vídeos com base no que você já assistiu, é a IA trabalhando nos bastidores.
+
+
+Rotas no Google Maps
+
+
+Quando você abre o Google Maps e recebe o caminho mais rápido até um destino, é a IA analisando o trânsito em tempo real.
+
+
+Assistentes virtuais por voz
+
+
+Quando você fala com Alexa, Siri ou o Google Assistente, está conversando com um sistema de IA que entende comandos de voz e busca respostas.
+
+
+Filtro de spam no e-mail
+
+
+Quando você acessa sua caixa de e-mails e vê o spam separado das mensagens importantes, é a IA fazendo a filtragem automática.
+
+
+As inteligências artificiais não são capazes de pensar como os humanos, mas analisam grandes volumes de dados e tomam decisões baseadas em padrões. Um exemplo recente foi o uso da IA para identificar possíveis surtos de doenças analisando posts em redes sociais e dados de localização — algo que ajudou as autoridades de saúde em diversas regiões do mundo.
+ 
+
+A IA, contudo, não é uma caixa mágica. Precisa ser treinada, alimentada com dados e, acima de tudo, bem-direcionada. Assim como um carro precisa de um bom motorista, a IA precisa de um bom comando — e é aí que entra o ser humano.

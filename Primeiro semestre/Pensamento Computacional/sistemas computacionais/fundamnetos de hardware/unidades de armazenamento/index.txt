@@ -1,0 +1,72 @@
+Unidades de armazenamento de dados
+No universo digital em que vivemos, saber o que significam termos como “megabyte” ou “terabyte” deixou de ser um conhecimento restrito aos profissionais de TI. Hoje, quase todo mundo precisa lidar com arquivos, aplicativos e mídias digitais. Portanto, entender as unidades de armazenamento de dados é de extrema relevância para tomar decisões inteligentes sobre compra, uso e organização de dispositivos eletrônicos, além de evitar surpresas desagradáveis por falta de espaço ou desempenho.
+
+ 
+
+Neste vídeo, explicaremos como os dados digitais são medidos, destacando a diferença entre bits, bytes, kilobyte, megabyte, gigabyte, terabyte e outras unidades. Apresentaremos exemplos práticos de uso dessas unidades no cotidiano e sua relevância para planejamento e gestão de recursos digitais.
+
+
+
+Bits e bytes: a base do armazenamento
+
+
+Todo dado digital começa com o bit, a menor unidade de informação possível em computação, que pode assumir apenas dois valores: 0 ou 1. O agrupamento de 8 bits forma um byte, que é capaz de representar, por exemplo, um único caractere como uma letra ou número em um texto. Todas as operações de computadores, desde os cálculos mais simples até a transmissão de vídeos em alta definição, dependem da manipulação de enormes quantidades de bits e bytes.
+
+
+Atenção
+O crescimento exponencial da quantidade de dados gerados e armazenados exige o uso de unidades maiores que o byte para facilitar o entendimento e a comunicação. Assim, quando falamos do tamanho de uma foto, de um vídeo ou da capacidade de um disco rígido, utilizamos unidades como kilobyte, megabyte e gigabyte, entre outras.
+
+
+Principais unidades de medida
+
+
+A seguir, vamos explorar a definição das principais unidades de medida das operações em computadores. Acompanhe!
+
+
+A
+Kilobyte (KB)
+
+
+Equivale a 1.024 bytes. Em geral, documentos de texto pequenos ocupam alguns kilobytes.
+
+
+B
+Megabyte (MB)
+
+
+Equivale a 1.024 kilobytes, ou cerca de 1 milhão de bytes. Um arquivo de música em MP3 pode ter entre 3 e 5 megabytes.
+
+
+C
+Gigabyte (GB)
+
+
+Equivale a 1.024 megabytes, ou cerca de 1 bilhão de bytes. A maioria dos smartphones atuais possui entre 64 e 256 GB de armazenamento interno.
+
+
+D
+Terabyte (TB)
+
+
+Equivale a 1.024 gigabytes, ou aproximadamente 1 trilhão de bytes. Discos rígidos e SSDs modernos costumam ter capacidades de 1 TB ou mais.
+
+
+E
+Petabyte (PB)
+
+
+Equivale a 1.024 terabytes. Usado em data centers, grandes empresas e plataformas de nuvem.
+
+
+F
+Exabyte (EB)
+
+
+Equivale a 1.024 petabytes. Para efeito de comparação, estima-se que todo o conteúdo publicado na internet por alguns anos seja medido em exabytes.
+
+
+G
+Zettabyte (ZB) e Yottabyte (YB)
+
+
+São unidades ainda maiores, usadas para representar volumes globais de dados. O tráfego mundial de dados na internet já se aproxima de zettabytes.

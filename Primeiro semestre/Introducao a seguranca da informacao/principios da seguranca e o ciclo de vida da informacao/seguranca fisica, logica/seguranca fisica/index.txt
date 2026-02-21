@@ -1,0 +1,83 @@
+Segurança física
+
+No módulo anterior, vimos o exemplo de roubo de dados no transporte. Mesmo que eles estivessem criptografados, a ação poderia ocorrer da mesma forma, pois ela foi uma consequência de vulnerabilidades na segurança física das mídias em questão. Assim, dois aspectos poderiam ser transgredidos:
+
+
+Integridade
+
+
+Depende da informação ser ou não totalmente impactada, pois a mídia poderia ser destruída.
+
+
+Confidencialidade
+
+
+Depende da informação armazenada ter ou não algum controle de proteção, como a criptografia.
+
+
+A família de normas ABNT ISO/IEC 27.000 divide a segurança física em dois aspectos: um é relacionado aos equipamentos e o outro, ao ambiente.
+
+
+
+Informação em camadas
+
+A segurança da informação age dessa forma. Ela é entendida como camadas justapostas que permitem à informação ficar cada vez mais protegida. É como se nossa informação recebesse camadas de proteção similar a uma cebola.
+
+ 
+
+Quanto ao ambiente, em uma instalação empresarial, por exemplo, é possível observar as camadas de segurança físicas e, a partir daí, estabelecer um paralelo com a imagem da cebola.
+
+ 
+
+Imaginemos a seguinte situação: Ao nos aproximarmos de uma instalação, alcançamos a cancela para automóveis, que, geralmente, conta com dois seguranças. Sua função é solicitar identificação ou verificar se o veículo possui algum selo de identificação. Normalmente, esse selo é único para aquela instituição. Em alguns casos, essa verificação pode ser feita de forma automatizada com alguma tecnologia de emissão de sinal de baixa frequência, como o RFID.
+
+
+Após a ultrapassagem dessa primeira barreira (camada mais externa à nossa cebola de segurança), geralmente existe mais uma etapa: catraca e elevador. Ela está vinculada a algum controle biométrico ou de crachá. O RFID novamente surge como um exemplo.
+
+
+
+Exemplo de RFID
+
+Esses controles físicos são justapostos, permitindo que a vulnerabilidade de um deles possa ser recoberta por outro controle. Isso funciona de forma similar nas salas de servidores, data centers e salas-cofres, criando camadas de segurança que dificultam o acesso físico ao servidor.
+
+
+Outro aspecto que deve ser levado em consideração é a proteção contra ameaças da natureza, como enchentes, incêndios e outras calamidades provocadas pela natureza e/ou pelo homem.
+
+
+Tendo isso em vista, certos controles de monitoramento e prevenção devem ser instalados e controlados.
+
+
+Exemplo
+Câmeras de segurança, controles de temperatura, extintores de incêndio e sprinkles (algumas vezes traduzidos como chuveiros automáticos).
+
+
+O cabeamento e o acesso à rede externa (internet), bem como ao fornecimento de energia, são fatores fundamentais nesse processo. Como eles dependem de um fornecimento feito por terceiros, certos aspectos contratuais e de redundância precisam ser estabelecidos.
+
+
+Além disso, políticas e instruções normativas devem ser instituídas, treinadas e simuladas visando à prontidão. Nesse sentido, é razoável haver uma redundância no fornecimento de rede (internet), bem como uma independência física desse fornecimento no que tange ao tipo de conexão estipulada. Veja:
+
+
+
+Uso segmentado
+
+É necessário evitar o uso compartilhado de conexões entre fornecedores distintos. Desse modo, se, para um fornecedor, a conexão é feita por meio de fibra ótica, para o outro ela poderia ser realizada por intermédio de link rádio.
+
+
+
+Uso de geradores
+
+É necessário, sobre a parte de energia elétrica, o uso de bancos de bateria (e/ou no-breaks) e de geradores. Quanto aos geradores, deve-se levar em consideração o fornecimento de insumos necessários e periódicos, como o combustível.
+
+
+
+Segurança com acessos físicos
+
+É necessário adotar medidas como senha na BIOS e configuração de botões físicos e de ordem de execução na inicialização dos computadores, pois em relação aos equipamentos, a ideia de segurança tem a ver com o acesso físico aos componentes de hardware e aos dispositivos de entrada.
+
+
+
+
+Os maiores computadores do mundo são organizados em uma lista conhecida como Top 500 (top500.org). Pelo custo e poder computacional deles, esses equipamentos requerem uma série de recursos de proteção.
+
+
+Maior recurso computacional do Brasil, o supercomputador Santos Dumont consta nessa lista. Para prover os recursos necessários de segurança, uma série de medidas foi tomada e, em seguida, publicada no Youtube.

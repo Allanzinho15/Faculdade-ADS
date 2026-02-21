@@ -1,0 +1,18 @@
+Serviço de Monitoramento e Auditoria
+O monitoramento é uma parte crucial da segurança na nuvem. O monitoramento refere-se às atividades de registro feitas nos serviços do ambiente de nuvem. Eventos de login do usuário (sucesso e falha) e ações tomadas (quem fez o quê e quando, e qual foi o resultado final com sucesso ou falha) são os exemplos principais.
+
+
+O registro documentado de todas as ações realizadas é conhecido como trilha de auditoria. É importante que esse registro de eventos seja armazenado em um repositório central de logs com acesso limitado, cumprindo o conceito da necessidade de conhecimento.
+
+
+O sistema de geração de alertas de acordo com regras pré-configuradas, como só alertar quando a conta root ou o administrador conseguir fazer login com sucesso no console de gerenciamento, também faz parte do serviço de monitoramento e auditoria.
+
+
+Atenção
+Ao falarmos sobre monitoramento e auditoria, todos os serviços da nuvem vistos neste conteúdo podem e devem enviar seus logs para um serviço central que os organize e os mantenha em formato compatível para análise posterior. Recomenda-se realizar uma análise de risco nos respectivos serviços para habilitar o registro de eventos de dados de acordo com os objetivos de segurança estipulados porque o custo do armazenamento de eventos versus o valor pode não ser compensador, uma vez que o armazenamento de logs pode ser explosivo em termos de consumo de recursos.
+
+
+Existe uma classe de produto conhecida como Security Information and Event Management (SIEM), muito empregada atualmente em soluções complexas de monitoramento e auditoria que se responsabiliza por alertar condições associadas de logs em mais de um serviço conjuntamente.
+
+
+Isto é, se um evento ocorre no serviço A e outro no serviço B, a correlação entre essa conjunção de fatores pode representar uma assinatura de risco muito mais alta do que cada um dos eventos separadamente. Apenas nessa condição específica seria disparado o alerta, economizando recursos para análise de um problema ou resultando numa ação inadequada de proteção devido a um falso positivo de ataque ao ambiente de nuvem.

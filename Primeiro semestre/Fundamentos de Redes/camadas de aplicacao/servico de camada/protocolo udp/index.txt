@@ -1,0 +1,42 @@
+Protocolo UDP
+
+UDP
+
+O protocolo de transporte mais simples que poderia existir seria aquele que, no envio, fosse limitado a receber mensagens da camada de aplicação e as entregasse diretamente na de rede. Na recepção, ele, por outro lado, receberia os pacotes da camada de rede e os entregaria na de aplicação. Esse tipo de protocolo, em suma, não efetua nenhum trabalho para garantir a entrega das mensagens. Felizmente, o UDP não se limita a isso.
+
+
+Atenção
+O UDP é um protocolo rápido na entrega das mensagens no destino, realizando a multiplexação e demultiplexação; além disso, ele oferece um mecanismo de verificação de erros nessa entrega.
+
+
+Um processo pode ter um ou mais endereços de transporte (conhecidos como portas na arquitetura TCP/IP) pelos quais dados passam da rede para o processo e vice-versa. Desse modo, a camada de transporte do hospedeiro destino os entrega diretamente a uma porta.
+
+A imagem a seguir ilustra os campos do cabeçalho de um segmento UDP:
+
+
+
+Os campos porta origem e porta destino têm a função de identificar os processos nas máquinas origem e destino. Quando uma aplicação A deseja enviar dados para uma B, o UDP coloca o número da porta da aplicação origem (A) no campo “porta origem” e o de porta da aplicação (B) em “porta destino”.
+
+
+Comentário
+Quando a mensagem chega ao destino, o UDP pode entregá-la para a aplicação correta por meio do campo “porta destino”. Já a “porta origem” é importante para a aplicação que recebe a mensagem, pois ela torna possível saber o número da porta para a qual a resposta deve ser enviada. É por meio desses campos que o UDP realiza a multiplexação e a demultiplexação.
+
+
+O campo tamanho especifica o tamanho do segmento, incluindo o cabeçalho. Como se trata de um campo de 16 bits, isso significa que o maior segmento UDP será de: 216 = 65.536 bytes (64 KBytes).
+
+O campo soma de verificação tem a função de garantir que a mensagem chegue ao destino livre de erros. Para tanto, o UDP calcula o CRC dela e o envia nesse campo. No destino, o CRC é novamente calculado e comparado. Se ambos forem iguais, a mensagem é considerada livre de erros e entregue na aplicação destino.
+
+
+Saiba Mais
+Para saber mais sobre CRC e hash, consulte, respectivamente, os capítulos 5.2.3 e 8.3.1 da obra de Kurose e Ross (2013).
+
+Atenção
+Cabe ao programador cuidar dessa garantia no código da própria aplicação.
+
+
+São protocolos de aplicações que utilizam o UDP:
+
+DNS
+SNMP
+TFTP
+RPC

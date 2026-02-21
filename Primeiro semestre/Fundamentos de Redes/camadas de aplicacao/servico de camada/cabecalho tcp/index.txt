@@ -1,0 +1,102 @@
+Cabeçalho TCP
+Cabeçalho de Segmento no TCP
+
+Cada segmento TCP começa com um cabeçalho de formato fixo – podendo ser seguido por opções de cabeçalho – de 20 bytes. Depois das opções, é possível haver 65.515 bytes de dados.
+
+Válidos, os segmentos sem dados, em geral, são utilizados para confirmações e mensagens de controle. A tabela seguir mostra um exemplo de segmento TCP:
+
+
+
+Tabela: 32 Bits.
+
+A seguir, apresentaremos o destrinchamento de cada elemento mostrado na tabela acima.
+
+
+
+Porta origem e porta destino
+
+Identificam, respectivamente, os processos origem e destino nos hospedeiros. Da mesma forma que os campos porta origem e porta destino do UDP, eles permitem que aplicações compartilhem o uso do protocolo de transporte (multiplexação e demultiplexação).
+
+
+Número de sequência
+
+Indica o número de sequência do segmento, ou seja, em que posição (byte) dos dados ele deve ser colocado.
+
+
+Número de confirmação
+
+Especifica o próximo byte aguardado no fluxo contrário. Quando é enviado do processo A para o B, indica o próximo byte que A espera receber no fluxo de B para A. Quando informa que espera receber o byte N, fica implícito que todos os bytes até N-1 foram recebidos corretamente.
+
+
+HLEN
+
+Abreviação de header length (tamanho do cabeçalho), o HLEN informa o tamanho do cabeçalho em palavras de 32 bits.
+
+
+Reservado
+
+Campo não utilizado. Qualquer valor preenchido nele será desconsiderado.
+
+
+Campo de flags de 1 bit cada
+
+Um flag é um campo de 1 bit que pode possuir apenas os valores 0 e 1. Normalmente, 0 representa “desligado” e 1, “ligado”.
+
+Exemplo: Quando o flag ACK do TCP está com o valor 1 (ligado), isso significa que o segmento TCP carrega um número de confirmação. Se ele estiver com 0 (desligado), é a indicação de que TCP não conta com tal número.
+
+
+URG
+
+O urgent pointer (ou ponteiro urgente) é usado para apontar que o segmento carrega dados urgentes.
+
+
+ACK
+
+O acknowledgement serve para indicar que o campo “número de confirmação” contém uma confirmação. Se estiver com valor 0, este campo deve ser desconsiderado.
+
+
+PSH
+
+O push se trata de uma solicitação ao receptor para entregar os dados à aplicação assim que eles chegarem em vez de armazená-los em um buffer.
+
+
+RST
+
+O reset é utilizado para reinicializar uma conexão que tenha ficado confusa devido a uma falha. Também serve para rejeitar um segmento inválido ou recusar uma tentativa de conexão.
+
+
+SYN
+ 
+
+Aplicado para estabelecer conexões.
+
+
+FIN
+
+Usado para encerrar uma conexão.
+
+
+Tamanho da janela
+
+O controle de fluxo no TCP é gerenciado por meio de uma janela deslizante de tamanho variável. O campo “tamanho da janela” indica quantos bytes podem ser enviados a partir do byte confirmado.
+
+
+Soma de verificação
+
+Utilizada para verificar se existem erros nos dados recebidos. Ela confere a validade tanto do cabeçalho quanto dos dados.
+
+
+Ponteiro urgente
+
+Válido somente se o flag URG estiver ativado, ele indica a porção de dados do campo de dados que contém os que são urgentes.
+
+
+Opções
+
+Projetadas como uma forma de oferecer recursos extras, ou seja, aqueles que não foram previstos pelo cabeçalho comum.
+
+
+Dados
+
+São os dados enviados pela camada superior. Neste campo, estão os que serão entregues na camada superior do hospedeiro destino.
+

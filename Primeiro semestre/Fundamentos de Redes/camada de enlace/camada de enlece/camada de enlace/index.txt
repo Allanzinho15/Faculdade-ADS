@@ -1,0 +1,26 @@
+A camada de enlace
+Serviços da camada de Enlace
+
+
+A camada de enlace está situada imediatamente acima da camada física. Elas atuam juntas de forma direta.
+
+
+Conforme estudado, apresentamos diversos fatores que podem afetar a transmissão do sinal no meio físico. Alguns desses fatores representam características do meio, não sendo possível eliminá-los (como o ruído térmico).
+
+
+Os erros na recepção dos sinais são previstos e a camada física por si só não pode recuperá-los, cabendo à camada de enlace controlá-los.
+
+
+Para que o serviço de transmissão de bits pelo meio físico seja confiável, a camada de enlace realiza as seguintes funções:
+
+ 
+
+Delimitação de quadros
+Controle de erros
+Controle de fluxo
+Controle de acesso ao meio
+
+Observação importante é que o modelo OSI considera que todas as funções acima são desempenhadas pela camada de enlace, mas para facilitar o entendimento, iremos adotar a estrutura definida na arquitetura IEEE 802 que considera a camada de enlace dividida em duas subcamadas: LLC (Controle de Enlace Lógico) e MAC (Controle de Acesso ao Meio).
+
+
+Estudaremos neste módulo a subcamada LLC responsável pelas três primeiras funções. Vamos lá?

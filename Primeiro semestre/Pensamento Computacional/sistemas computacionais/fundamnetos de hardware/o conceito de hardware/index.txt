@@ -1,0 +1,36 @@
+O conceito de hardware
+O profissional que utiliza ou pretende atuar com tecnologia precisa entender a fundo o que é hardware e seu funcionamento. Mesmo quem não segue carreira em TI se depara com dispositivos que dependem do funcionamento correto de seus componentes físicos. Ao compreender o conceito de hardware, é possível tomar decisões mais informadas na aquisição, manutenção e no uso de equipamentos, além de reconhecer o impacto dessas escolhas em nosso dia a dia, no trabalho e em casa.
+
+ 
+
+Neste vídeo, vamos apresentar com mais detalhes o conceito de hardware, destacando sua definição, evolução e papel fundamental no funcionamento de computadores e dispositivos eletrônicos.
+
+
+
+Hardware é o termo utilizado para descrever todos os componentes físicos que formam um dispositivo eletrônico, como computadores, celulares, tablets, smart TVs e até eletrodomésticos inteligentes. Em outras palavras, hardware é tudo aquilo que você pode ver, tocar ou, de alguma forma, manusear em um equipamento tecnológico.
+
+
+Em um cenário em que a tecnologia avança de forma rápida, a estrutura física dos dispositivos é, muitas vezes, aprimorada para atender a demandas de velocidade, armazenamento e eficiência energética. O hardware é o alicerce de qualquer sistema computacional, pois é nele que todas as operações ocorrem e onde o software pode ser executado.
+
+
+Quando pensamos em um computador, o hardware abrange desde a placa-mãe, o processador (CPU) e as memórias (RAM e de armazenamento) até os periféricos, como teclado, mouse, monitor e impressora. Já nos celulares, além desses componentes em versões miniaturizadas, estão presentes câmeras, sensores, microfones e outros elementos integrados ao dispositivo.
+
+
+Evolução e atualização do hardware
+
+
+Os componentes de hardware evoluem muito rápido. Processadores, memórias e dispositivos de armazenamento tornam-se cada vez mais potentes, compactos e acessíveis. Essa evolução é possível, em grande parte, devido à miniaturização dos circuitos eletrônicos, em especial dos transistores presentes nos chips, um fenômeno explicado historicamente pela Lei de Moore.
+
+ 
+
+Com o avanço constante da tecnologia, novos modelos de computadores e celulares são lançados a cada ano, oferecendo melhor desempenho por preços cada vez mais acessíveis. No entanto, é preciso lembrar que o conceito de hardware permanece o mesmo: trata-se dos componentes físicos responsáveis por executar as funções essenciais dos dispositivos.
+
+O impacto do hardware na vida profissional e pessoal
+
+
+
+Hoje, o hardware não está presente apenas em computadores pessoais. Está em quase tudo: carros, eletrodomésticos, relógios inteligentes, sensores industriais, equipamentos médicos, termostatos, entre outros. Os chamados sistemas embarcados ou microcontroladores são exemplos de hardware especializado, capazes de realizar tarefas muito específicas em dispositivos cada vez menores e mais eficientes.
+
+ 
+
+Entender hardware vai além da teoria. No mercado de trabalho, saber identificar e compreender as funções dos componentes físicos pode auxiliar na solução de problemas, na escolha de equipamentos adequados para cada tarefa e até na economia de recursos. Em casa, contribui para o uso consciente da tecnologia, evitando desperdícios e otimizando o desempenho de aparelhos.

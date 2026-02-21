@@ -1,0 +1,38 @@
+Redes em ambientes Google Cloud
+Toda infraestrutura necessita de uma rede para comunicação entre aplicações, seja internamente (componentes que estão na mesma infraestrutura), seja externamente (componentes que estão em infraestruturas diferentes, por exemplo, outro servidor ou provedor de nuvem). Isso não é diferente em ambientes de nuvem. Para todo ambiente alocado em Google Cloud deve haver uma rede configurada.
+
+
+Na plataforma do Google Cloud, por se tratar de uma virtualização de um ambiente físico disponibilizado como serviço para o usuário, utilizamos uma rede virtual privada para configurações, conhecida como VPC (virtual private cloud).
+
+
+Uma VPC é um modo de rede seguro, individual e privado, hospedado em Google Cloud e, por meio dela, os usuários podem disponibilizar suas aplicações, armazenar dados e hospedar sites, por exemplo. Uma cloud privada virtual conecta os recursos do Google Cloud a qualquer outro recurso na internet, e por meio dela é possível configurar políticas de firewall, IPs (internet protocol), portas e protocolos.
+
+
+A VPC do Google Cloud é global. Isso significa que, ao criá-la, podemos ser atendidos em qualquer região disponível. Para isso, dentro das redes privadas virtuais, são configuradas as sub-redes, conhecidas como subnets (da palavra em inglês subnetwork), que podem estar alocadas em qualquer região onde sejam necessárias e, com isso, todas as políticas e regras podem ser feitas regionalmente. Utilizar uma rede global e subnets alocadas em regiões diferentes possibilita uma grande diversidade de arquiteturas. Uma estratégia muito utilizada é a de disponibilidade por regiões. Entenda melhor:
+
+
+Acesso e tempo de resposta
+
+
+Imagine uma empresa que presta serviços globais, para todos os continentes. Para um usuário da Europa acessar a região do Brasil no Google Cloud é mais complexo, pois a distância é grande, e isso impacta no tempo de entrega e resposta.
+
+
+Subnets: acesso por geolocalização
+
+
+Então, ao traçarmos um planejamento de subnets em regiões diferentes, possibilitamos o acesso por geolocalização, ou seja, quem está na América do Sul acessa o servidor do Brasil, quem está na Europa acessa o servidor mais próximo, e o mesmo ocorre com a América do Norte.
+
+
+Agilidade em comunicação
+
+
+Isso traz agilidade no tempo de resposta e latência da comunicação e a empresa consegue prestar um serviço com uma boa experiência para o usuário.
+
+
+Essa mesma estrutura de ter a aplicação em regiões diferentes funciona para uma estratégia de recuperação de desastres (disaster recovery). Isso funciona para o caso de uma indisponibilidade de uma região inteira, como, por exemplo, um desastre meteorológico como um furacão ou tsunami, ou até mesmo algo mais simples, como um incêndio. Nesse caso, teremos uma segunda opção de acesso em outra região disponível e, por mais que a experiência não seja a melhor possível, ainda assim as aplicações e serviços estarão disponíveis.
+
+
+Redes, infraestrutura e aplicações: como funcionam na nuvem?
+
+
+Neste vídeo, falaremos sobre rede, infraestrutura e aplicações na nuvem, explicando por que é essencial entender e executar as melhores práticas.

@@ -1,0 +1,53 @@
+Domínios de Operação
+Plano de gestão e continuidade do negócio
+
+Proteção do plano de gestão e de todas as interfaces administrativas usadas para acessar a nuvem, incluindo consoles da web e APIs. Além disso, observa as garantias para a continuidade dos negócios nas implantações em nuvem.
+
+
+Segurança da infraestrutura
+
+Fundamentos para se operar seguramente. Seus aspectos incluem a segurança dos níveis inferiores da pilha de serviços, como segurança física das instalações, hardware para processamento, memória e armazenamento, rede, e software para orquestração do pool de recursos.
+
+
+Virtualização e conteinerização
+
+Neste vídeo, será explicado os detalhes sobre o domínio de operação “Virtualização e Conteinerização”.
+
+
+
+Aspectos de segurança que cobrem uma grande camada de tecnologia associada à abstração do pool de recursos, especificamente a computação, a rede, os armazenadores e os contêineres em sua relação com o serviço de virtualização. Em termos práticos refere-se à segurança dos hipervisores, contêineres e redes definidas por software.
+
+
+Compreender os impactos da virtualização na segurança é fundamental para arquitetar e implementar adequadamente a segurança na nuvem.
+
+
+Em termos práticos, refere-se à segurança dos hipervisores, contêineres e redes definidas por software.
+
+
+Resposta a incidentes
+
+Detecção, resposta, notificação e remediação de incidentes de formas apropriadas. Estabelece os limites de responsabilidade por ações compartilhadas entre provedor e cliente para permitir o tratamento adequado de incidentes e a análise forense.
+
+
+Segurança das aplicações
+
+Neste vídeo, serão explicados os detalhes sobre o domínio de operação “Segurança das aplicações”.
+
+
+
+Proteção dos softwares aplicativos que estão sendo executados ou implantados na nuvem. Na prática, inclui questões como saber se é apropriado migrar ou projetar um aplicativo para ser executado na nuvem e, em caso afirmativo, que tipo de plataforma de nuvem é mais apropriada (SaaS, PaaS ou IaaS).
+
+
+Criptografia e segurança de dados
+
+Implementação dos mecanismos de segurança e criptografia de dados e toda a garantia de gerenciamento de chaves, considerando os aspectos de escalabilidade dos serviços e dos aplicativos que rodam no ambiente da nuvem.
+
+
+Gerenciamento de acessos, privilégios e identidades
+
+Gerenciamento de identidades apoiado nos serviços de diretório para fornecer controle de acesso. Identidades, privilégios e acessos (IAM) são profundamente impactados pela computação em nuvem. Tanto na nuvem pública quanto na particular, as duas pontas (provedor e cliente) são necessárias para gerenciar o IAM sem comprometer a segurança, e a divisão exata das responsabilidades é um aspecto extremamente crítico.
+
+
+Tecnologias relacionadas
+
+Tecnologias estabelecidas e emergentes que tenham estreito relacionamento com a computação em nuvem, incluindo Big Data, Internet das Coisas (IoT), computação móvel etc.

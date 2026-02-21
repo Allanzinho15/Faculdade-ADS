@@ -1,0 +1,57 @@
+Aplicação do pensamento computacional
+
+Vamos conhecer agora algumas ferramentas utilizadas para tornar possível a aplicação do pensamento computacional na área educacional.
+
+
+Bell, Witten e Fellows (2011) propõem uma técnica para ensinar Ciência da Computação por meio de atividades de entretenimento, sem a necessidade do uso do computador. Além de ser de fácil aplicação, essa técnica favorece países e lugares menos desenvolvidos, onde não há fácil acesso a tecnologias, fazendo, assim, um papel social.
+
+
+Utilizando jogos, atividades interativas e desenvolvimento colaborativo, essa técnica ensina pequenos conceitos de computação, conforme mostra a tabela a seguir:
+
+
+Jogos 	Objetivos 
+De cartas pintadas e ordenadas	Aprender números binários
+De palavras	Reconhecer padrões e técnicas de compactação
+Bell; Witten; Fellows, 2011
+
+Vamos ver um exemplo? No jogo de palavras, a criança deve procurar pelo conjunto de letras repetido e substituir por um retângulo em branco com uma seta. A imagem, a seguir, ilustra a atividade:
+
+
+
+Computação sem computador
+
+Em uma amostra pequena, a quantidade de letras economizadas parece pouca, mas quando aplicamos a mesma técnica em um poema completo, a economia pode ser muito grande. Veja:
+
+
+
+Computação sem computador
+
+Apesar de parecer uma brincadeira ou um joguinho muito simples, essa mesma técnica é utilizada para compactar arquivos nos computadores. Além disso, outras ferramentas são usadas. Confira algumas delas:
+
+
+
+Plataforma Scratch
+
+Oferece uma linguagem de programação visual baseada em blocos, voltada para crianças de 8 a 16 anos, mas utilizada por pessoas de todas as idades. É disponibilizada em mais de 40 idiomas e ajuda os jovens a aprenderem a pensar criativamente, raciocinar sistematicamente e trabalhar em colaboração.
+
+
+Plataforma hora do código
+
+Propõe uma experiência de uma hora de Ciência da Computação. Seu objetivo é mostrar que qualquer um pode aprender o básico de programação e ampliar a participação no campo computacional. Também com adesão mundial, já alcançou 100 milhões de alunos que programaram em um dos 45 idiomas disponíveis.
+
+ 
+
+O estudante pode selecionar entre os diversos temas de programação um que seja de seu interesse, desde a construção de um jogo simples até a criação de músicas com seleção de instrumentos e notas musicais. Uma vantagem dessa ferramenta é que, quando não houver laboratório de informática disponível para os alunos, eles poderão utilizar smartphones que, individualmente ou em pares, podem proporcionar o aprendizado necessário.
+
+
+Code.org
+
+É uma organização sem fins lucrativos, com maior destaque e apoio direto de governos e das principais empresas de tecnologia (Amazon, Microsoft, Facebook, Google etc.). Seu objetivo é alcançar todas as crianças em todas as escolas do mundo, para que possam ter a oportunidade de aprender o pensamento computacional.
+
+ 
+
+Desde 2013, em parceria com todas as iniciativas vistas anteriormente, o projeto já alcançou 10% de todos os alunos do mundo, o que é um número incrível para tão pouco tempo, se considerarmos todas as desigualdades sociais do planeta. Isso foi possível devido a parcerias com mistérios da Educação de diversos países e apoio da Unesco.
+
+ 
+
+A Code.org é uma plataforma totalmente gratuita que oferece cursos para estudantes, treinamento e capacitação para professores e educadores e organiza campanhas para quebrar estereótipos criados em relação à Ciência da Computação. Para tornar o aprendizado mais atrativo aos estudantes, essas iniciativas utilizam a gamificação, expressão criada em 2002 para representar técnicas que utilizam dinâmicas de jogos, cujo objetivo é facilitar o entendimento de determinado assunto por meio da interatividade e da motivação.

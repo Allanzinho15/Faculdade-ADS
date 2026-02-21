@@ -1,0 +1,92 @@
+Mecanismos de Proteção
+
+Trata-se do conjunto de ações e recursos que visa a proteger um sistema ou uma organização. Esses mecanismos são definidos considerando o ponto de vista da organização e dos sistemas. Vejamos:
+
+
+
+Do ponto de vista da organização
+
+
+Referem-se às restrições de comportamento de seus membros e de possíveis atacantes por meio de mecanismos como portas, fechaduras, chaves e paredes.
+
+
+
+Do ponto de vista dos sistemas
+
+
+A política de segurança aborda restrições de funções e de fluxo, entre elas, restrições de acesso por sistemas externos e adversários, incluindo programas e acesso a dados por pessoas.
+
+
+A seguir estão alguns exemplos de princípios que se aplicam aos mecanismos de proteção:
+
+
+Economia de mecanismo (objetividade do mecanismo)
+
+O projeto de um sistema deve ser o mais simples e pequeno possível para que possa ser facilmente analisado, testado e validado.
+
+ 
+
+Esse princípio se aplica a qualquer aspecto de um sistema, mas merece ênfase nos mecanismos de proteção, pois erros de processos e de implementação resultam em caminhos de acesso indesejados, ou seja, não serão notados durante o uso normal, uma vez que tentativas para fazer acessos inadequados não fazem parte do uso normal de um projeto.
+
+
+Padrões à prova de falhas
+
+O tipo de acesso que um usuário deve ter em um sistema deve ser feito com base na permissão e não na exclusão. Esse princípio significa que o padrão é a falta de acesso e o esquema de proteção identifica as condições sob as quais o acesso é permitido. Portanto, trata-se de um equívoco tentar identificar as condições sob as quais o acesso a um sistema deve ser recusado. Um projeto conservador deve ser baseado em argumentos sobre os motivos em que os objetos devem estar acessíveis e não por que não deveriam.
+
+ 
+
+Por exemplo, o servidor Apache ou Servidor HTTP Apache é o mais bem-sucedido servidor web livre que existe. Ele possui um arquivo de configuração chamado de .htaccess. A omissão de um parâmetro de uma chamada do sistema do controle de acesso no .htacess do Apache deve resultar em menos permissão.
+
+
+Mediação completa
+
+Todos os acessos a recursos, tanto diretos quanto indiretos, devem ser verificados pelos mecanismos de segurança. Eles devem ser organizados de forma a ser impossível contorná-los. Esse princípio, quando aplicado sistematicamente, é o principal fundamento do sistema de proteção.
+
+ 
+
+Ele dá uma visão geral do controle de acesso que, além da operação normal, inclui o início, a recuperação, o desligamento e a manutenção. Isso implica o desenvolvimento de um método para identificar a fonte de cada solicitação. Se ocorrer uma mudança de acesso, esses resultados deverão ser atualizados no sistema.
+
+
+Projeto aberto
+
+Os mecanismos de segurança não devem depender da ignorância de possíveis invasores, mas da posse de chaves criptográficas ou de senhas, que garantem mais proteção para os sistemas. Essa dissociação permite que os mecanismos sejam examinados por muitos revisores sem a preocupação de que a própria revisão comprometa o que deve ser protegido. Além disso, qualquer usuário cético pode se convencer de que o sistema que ele está prestes a usar é adequado para seu objetivo. Por fim, não é realista tentar manter o sigilo de qualquer sistema que receba ampla distribuição.
+
+
+Separação de privilégios
+
+Segundo Saltzer e Schroeder (1975), um mecanismo de proteção que requer duas chaves para desbloqueá-lo é mais robusto e flexível do que aquele que permite o acesso ao apresentador de apenas uma única chave. A relevância dessa observação para os sistemas de computador foi apontada por Roger Needham (1935-2003). O motivo é que, uma vez bloqueado o mecanismo, as duas chaves podem ser separadas fisicamente, e diferentes programas, organizações ou indivíduos são responsáveis por elas. Assim, nenhum acidente, engano ou quebra de confiança é suficiente para comprometer as informações protegidas.
+
+ 
+
+Esse princípio é frequentemente usado em cofres de bancos. Também está em ação no sistema de defesa que dispara uma arma nuclear apenas se duas pessoas diferentes derem o comando correto. Em um sistema de computador, chaves separadas se aplicam a qualquer situação em que duas ou mais condições sejam atendidas antes que o acesso seja permitido. Por exemplo, sistemas que fornecem tipos de dados protegidos extensíveis ao usuário geralmente dependem da separação de privilégios para sua implementação.
+
+
+Privilégio mínimo
+
+Um privilégio define uma permissão individual associada a um nome autorizado, habilitando-o a acessar ou modificar um recurso do sistema. Os privilégios também podem ser concedidos a grupos de usuários. Por exemplo, o gerenciamento de privilégios em um banco de dados é feito por meio da execução do comando GRANT no SQL, sigla inglesa para Structured Query Language, ou seja, linguagem de consulta estruturada. O SQL é a linguagem mais usada para fazer pesquisas em bancos de dados relacionais.
+
+ 
+
+O princípio de privilégio mínimo diz que todos os programas e todos os usuários do sistema devem operar usando o menor conjunto de privilégios necessário para concluir o trabalho. Portanto, esse princípio limita os danos que podem resultar de um acidente ou erro. Desse modo, se for necessário investigar o uso indevido de um privilégio, o número de programas que deve ser auditado é reduzido.
+
+
+Compartilhamento mínimo
+
+Diz respeito à minimização de recursos compartilhados entre diferentes programas, pois, se um programa pode corromper um recurso compartilhado, então ele pode corromper outros programas que dependem dele.
+
+ 
+
+Por exemplo, caso uma funcionalidade do sistema operacional possa ser implementada, como chamada ao núcleo (system call), ou como função de biblioteca, deve-se preferir a última forma, já que envolve menos compartilhamento.
+
+
+Aceitação psicológica
+
+É essencial que a interface de um sistema seja projetada para facilitar o uso, para que os usuários apliquem rotineira e automaticamente os mecanismos de proteção.
+
+ 
+
+Além disso, à medida que o usuário associe o sistema aos mecanismos que ele deve usar, os erros serão minimizados. Por exemplo, alguns sistemas obrigam o usuário a cadastrar senhas muito complicadas que eles esquecem ou anotam, gerando uma vulnerabilidade para o sistema.
+
+
+
+

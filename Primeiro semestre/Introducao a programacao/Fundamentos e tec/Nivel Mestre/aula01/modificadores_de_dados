@@ -1,0 +1,60 @@
+
+/*signed (Com sinal)
+É o padrão para tipos inteiros. Se você declara uma variável como int x;, ela é, por padrão, signed int x;.
+
+Significa que a variável pode armazenar números positivos, negativos e zero.
+
+
+
+
+unsigned (Sem sinal)
+Significa que a variável só pode armazenar valores positivos e zero. Ela não pode armazenar números negativos.
+
+Como nenhum bit é usado para o sinal, todos os bits da variável são usados para representar o valor do número.
+
+Isso permite que a variável armazene um valor máximo positivo que é aproximadamente o dobro do que um signed do mesmo tamanho pode armazenar.
+
+
+
+short (Curto)
+Usado para solicitar um tipo inteiro com um tamanho menor ou igual ao de um int.
+
+É útil quando você sabe que os valores a serem armazenados são pequenos e você quer economizar memória, especialmente em grandes arrays ou em sistemas embarcados com memória limitada.
+
+
+
+long (Longo)
+Usado para solicitar um tipo inteiro com um tamanho maior ou igual ao de um int.
+
+É necessário quando você precisa armazenar números que excedem o limite de um int.
+
+
+Você pode combinar esses modificadores.
+
+short int
+
+unsigned short int
+
+int
+
+unsigned int
+
+long int
+
+unsigned long int
+
+long long int
+
+unsigned long long int
+
+
+
+Quando Usar Cada Um?
+signed int: O padrão. Use para a maioria dos números inteiros de propósito geral (contadores, cálculos, etc.) onde valores negativos são possíveis.
+
+unsigned int: Use quando o valor nunca pode ser negativo (por exemplo, contagem de itens, índices de array, tamanhos). Isso também documenta a intenção do seu código.
+
+short: Use para economizar memória quando você tem certeza de que os números caberão em seu intervalo limitado (ex: em sistemas embarcados).
+
+long / long long: Use quando precisar de um intervalo de valores maior do que um int padrão pode oferecer (ex: manipulação de tempo em segundos, IDs de banco de dados, cálculos científicos, tamanho de arquivos).
+*/

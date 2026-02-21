@@ -1,0 +1,52 @@
+Serviço de aplicativo
+Criando um serviço de aplicativo no Azure
+
+Confira no vídeo o passo a passo de como cria um serviço de aplicativo.
+
+
+
+O serviço de aplicativo do Azure é a forma de criar aplicativos por meio do Azure. A criação ocorre rapidamente e aplicativos web e móveis ficam facilmente prontos para empresas usando qualquer plataforma ou dispositivo. O serviço de aplicativo do Azure também permite que os aplicativos criados sejam implantados em uma infraestrutura na nuvem confiável e escalonável.
+
+
+O serviço de aplicativos do Azure pode rodar tanto em ambientes Linux como em Windows, além de suportar várias linguagens como .NET, Java, Ruby, Node.js, PHP ou Python. Utiliza PAAS (plataforma como serviço), não sendo necessária a atualização de servidores ou máquinas virtuais, o que fica por conta do provedor de nuvem, que é a Microsoft.
+
+
+Algumas vantagens de utilizar aplicativos no Azure:
+
+
+Serviço gerenciado de ponta a ponta com manutenção de infraestrutura, aplicação de correções de segurança e dimensionamento internos.
+CI/CD (integração contínua e entrega contínua) integrada e implantações sem tempo de inatividade, com suporte ao Azure Devops e outros.
+Suporte para redes virtuais e capacidade de execução em um Ambiente do Serviço de Aplicativo isolado e dedicado.
+Padrões de segurança e conformidade rigorosos, incluindo SOC e PCI, para implantações diretas na nuvem, no Azure Government e localmente.
+
+Você pode criar aplicativos web e APIs rapidamente e pode utilizar Kubernetes, tanto em máquinas virtuais como em serviço, tanto local como na nuvem. No Azure, o serviço de Kubernetes é chamado de AKS (Azure Kubernetes Services).
+
+
+Além disso, o serviço de aplicativos possui integração com Visual Studio Code e Visual Studio, vários módulos de integração estão disponíveis no gerenciador de dependências. Você pode, ainda, usar servless (código sem servidor) para tarefas sob demanda, sem a necessidade de criar uma infraestrutura complexa para dar suporte a sua aplicação.
+
+
+
+Criando um aplicativo web.
+
+Planos de serviço no Azure (service plan)
+
+
+Os serviços de aplicativo são executados dentro de um plano de serviço, que é equivalente ao poder computacional disponível para o aplicativo. O plano de serviço é composto pelo poder computacional e pelos recursos de computação que serão disponibilizados para sua aplicação.
+
+
+Exemplo
+Se você escolher determinado plano de serviço, poderá dispor de um poder computacional específico e recursos que darão suporte a sua aplicação. Imagine que você necessite de 10GB de armazenamento, suporte a certificado digital e suporte a escala automática, você deverá escolher um plano de serviço que dê suporte a esse conjunto de características.
+
+
+Confira alguns tipos de plano de serviço e o número máximo de aplicativos que ele suporta:
+
+
+Tipo do plano de serviço de aplicativo	Máximo de aplicativos
+B1, S1, P1v2, I1v1	8
+B2, S2, P2v2, I2v1	16
+B3, S3, P3v2, I3v1	32
+P1v3, I1v2	16
+P2v3, I2v2	32
+P3v3, I3v2	64
+Tabela: Planos de serviço com número máximo de aplicativos.
+Francisco Ferreira.

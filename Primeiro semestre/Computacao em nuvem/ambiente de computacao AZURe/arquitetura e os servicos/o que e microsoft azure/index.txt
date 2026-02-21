@@ -1,0 +1,99 @@
+O que é Microsoft Azure?
+O Azure é a nuvem da Microsoft, um conjunto de serviços de nuvem, em constante crescimento, que ajuda você a superar os desafios empresariais atuais e se preparar para os desafios futuros. Oferece a oportunidade de criar, gerenciar e implantar aplicativos em uma enorme rede global usando suas ferramentas e estruturas favoritas.
+
+
+Contas do Azure
+
+Para criar e utilizar recursos do Azure você precisa criar uma assinatura, que é o limite lógico e de custos do seu diretório. Recursos são alocados a assinaturas e um diretório pode ter uma ou mais assinaturas. Ao criar uma conta no Azure, automaticamente você cria o diretório e sua primeira assinatura.
+
+
+Você pode criar mais assinaturas no seu diretório, por exemplo: você criou a conta da sua empresa e definiu que cada setor terá uma assinatura específica. Após a criação dessa estrutura, você poderá criar seus recursos dentro de cada assinatura específica.
+
+
+
+Esquema de criação e funcionamento da conta Azure.
+
+O que é uma conta gratuita do Azure?
+
+
+A conta gratuita do Azure é uma assinatura com acesso gratuito a produtos populares do Azure por 12 meses, com um crédito de 100 dólares para serem utilizados em até 30 dias, além disso você terá à disposição mais de 25 produtos que são sempre gratuitos.
+
+
+Infraestrutura física
+
+
+
+Datacenter.
+
+Os datacenters são a base da infraestrutura física do Azure, possuem grande poder computacional e são distribuídos ao redor do mundo. São instalações com recursos redundantes e poderosos, vários links de operadoras de internet, infraestrutura de rede dedicada, servidores e switches organizados em racks e com refrigeração, nobreaks e fornecimento de energia individuais.
+
+
+Regiões
+
+As regiões do Azure são áreas geográficas do planeta que possuem ao menos um datacenter, e, possivelmente, vários outros próximos, o que proporciona redes de baixa latência conectadas por redes de fibra ótica. Cada região garante a residência dos dados. Portanto, se uma máquina virtual for criada na região Sul do Brasil, por exemplo, a Microsoft garante que os dados estão localizados no Brasil. O Azure garante que as cargas de trabalho sejam balanceadas corretamente dentro das regiões disponibilizadas.
+
+
+Zonas de disponibilidade
+
+São datacenters dentro da mesma região que são separados fisicamente, mas conectados a uma rede de alta velocidade. Cada zona possui um ou mais datacenters, geralmente até três com energia, refrigeração e rede independentes. Uma zona é um limite de isolamento de forma que, caso uma zona fique indisponível, as outras continuam funcionando.
+
+
+
+Zonas de disponibilidade do Azure.
+
+Pares de regiões
+
+O emparelhamento de regiões proporciona a redução da possibilidade de interrupções devido a desastres naturais (enchentes, terremotos etc.), quedas de energia, conflitos civis (guerras) e interrupções de rede física na região específica. A maioria das regiões possui o seu par na mesma geografia, ou a pelo menos 300 milhas, ou 480 km. Alguns serviços do Azure já possuem, habilitados por padrão, essa configuração de regiões pares, possibilitando que, em caso de algum dos desastres citado, ocorra a migração do serviço para a região par.
+
+
+Exemplo
+Se um serviço no Leste dos EUA falhar, o serviço pode subir automaticamente na região par que é o Oeste dos EUA.
+
+
+Veja a divisão das regiões por pares:
+
+
+
+
+Azure e suas regiões.
+
+Recursos e grupos de recursos do Azure
+
+
+Um recurso é um container ou caixa, no qual todos os recursos são literalmente alocados como em uma gaveta de guarda-roupa. Qualquer recurso que for criado necessita de um grupo de recursos, como máquinas virtuais, bancos de dados, redes virtuais etc. Todos esses são recursos que, obrigatoriamente, precisam estar em um grupo de recursos.
+
+
+
+Ilustração dos grupos de recursos.
+
+Uma das características dos grupos de recursos é que um recurso pode pertencer unicamente a um grupo de recursos, ou seja, o mesmo recurso não pode estar em mais de um grupo de recurso. Entretanto, você pode mover recursos entre grupo de recursos. Além disso, não podemos aninhar grupo de recursos, colocar um dentro do outro.
+
+
+Os grupos de recursos foram criados para a organização dos recursos e normalmente são organizados por setor, região ou empresas. Ao aplicar uma política ou ação a um grupo de recursos, essa ação será aplicada a todos os recursos contidos nesse grupo.
+
+
+Assinaturas do Azure
+
+
+Têm um papel fundamental no gerenciamento, cobrança e escala. Servem para a organização lógica dos recursos, permitindo organizar, de forma lógica, seus grupos de recursos e facilitar a cobrança, pois são responsáveis pela bilhetagem e cobrança daquilo que está sendo utilizado.
+
+
+
+Esquematização do funcionamento da conta e assinaturas no Azure.
+
+A assinatura do Azure é necessária para utilização dos recursos de maneira que, sem uma assinatura, não podemos criar e gerenciar recursos. Outra característica da assinatura é a possibilidade de fornecer acesso autenticado e autorizado aos serviços do Azure. Ao criar a assinatura, você pode associá-la à sua conta do Azure, que é uma identidade (diretório) no Azure AD (Azure Active Directory).
+
+
+Podemos usar dois tipos de limites de assinatura:
+
+
+Limite de cobrança
+
+
+São requisitos de cobrança conforme o tipo e quantidade de assinaturas realizadas pelo uso de uma conta do Azure.
+
+
+Limite de controle de acesso
+
+
+São políticas de gerenciamento de acesso no nível da assinatura da conta Azure, de maneira que podemos criar assinaturas separadas para refletir diferentes estruturas organizacionais.

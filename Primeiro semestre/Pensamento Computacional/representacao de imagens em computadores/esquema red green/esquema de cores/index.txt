@@ -1,0 +1,157 @@
+Esquema de Cores RGB
+A representação de um pixel no padrão RGB envolve três cores básicas: vermelho (red), verde (green) e azul (blue). Cada cor é ajustada em intensidades que variam de 0 a 255. A combinação dessas intensidades permite criar uma variedade de cores. Por exemplo, um pixel com valores RGB de (255, 0, 0) será puro vermelho, enquanto (0, 255, 0) puro verde, e (0, 0, 255) puro azul. Ajustando as intensidades, podemos formar cores como o branco (255, 255, 255) ou o preto (0, 0, 0). Essa combinação possibilita exibir milhões de cores distintas em uma imagem digital.
+
+ 
+
+Neste vídeo, vamos explorar o esquema de cores RGB, que combina vermelho, verde e azul em diferentes intensidades.
+
+
+
+Funcionamento
+
+Agora, vamos estudar o esquema de codificação de cores específico chamado de Red Green Blue (RGB) ou Vermelho, Verde e Azul. Desejamos que esse esquema seja simples o suficiente para que nos tornemos capazes de instruir (codificar ou programar) computadores a representar qualquer cor como uma combinação dessas três.
+
+ 
+
+Se olharmos para a grade de pixels do gráfico visto anteriormente, precisaremos refletir sobre o que cada cor representa dentro da grade. No esquema RGB, vamos usar luzes vermelhas, verdes e azuis puras, e misturá-las em diferentes combinações para alcançarmos todas as cores possíveis.
+
+ 
+
+Vamos descrever o funcionamento do explorador RGB, que é bem simples, a seguir:
+
+ 
+
+Há três controles deslizantes. Cada um serve para ajustar as intensidades de verde, azul e vermelho.
+ 
+Se você escolher o valor 0 (zero) para o azul, significa que está ajustando o “pixel grande” do centro para que não tenha absolutamente nenhuma intensidade de azul. 
+ 
+À medida que você desliza o controle para a direita, vai aumentando a intensidade de luz azul para 1, 2, 3... até chegar ao nível 255, que representa o máximo de intensidade de luz azul que sua tela é capaz de emitir. O mesmo vale para o vermelho e para o verde.
+
+Não precisamos memorizar os valores RGB para cada cor, mas compreender que qualquer cor pode ser representada manipulando três cores básicas: vermelho, verde e azul.
+
+Vamos, então, manipular o seguinte explorador RGB:
+
+
+
+A seguir, veja cada um dos passos a ser seguidos:
+
+
+
+Passo 1
+
+Observe que, na situação inicial, todos os controles deslizantes estão totalmente para a esquerda, ou seja, 0 (zero) de intensidade para as luzes vermelha, verde e azul. Com a ausência total de cores, o “pixel grande” à direita está preto. Note que os valores R (vermelho), G (verde) e B (azul) para a cor preta são (0,0,0).
+
+
+Passo 2
+
+Se você escolher o valor 0 (zero) para o vermelho, estará ajustando o “pixel grande” do centro para que não tenha absolutamente qualquer intensidade de vermelho.
+
+ 
+
+À medida que você desliza o controle para a direita, vai aumentando a intensidade de luz vermelha para 1, 2, 3... até chegar ao nível 255, que representa o máximo de intensidade que sua tela é capaz de emitir.
+
+ 
+
+a) Nesse ponto, anote em um papel o código RGB que representa o vermelho puro em sua maior intensidade.
+
+
+b) Agora, retorne o controle do vermelho para a posição 0 (zero). O “pixel grande” voltou a ficar preto, certo?
+
+
+Passo 3
+
+Faça o mesmo para o controle do verde: deslize-o lentamente para a direita. Observe que o “pixel grande” vai ganhando intensidade até a máxima de verde, que é 255.
+
+ 
+
+a) Nesse ponto, anote em um papel o código RGB que representa o verde puro em sua maior intensidade.
+
+
+b) Agora, retorne o controle do verde para a posição 0 (zero). O “pixel grande” voltou a ficar preto, certo?
+
+
+Passo 4
+
+Por fim, faça o mesmo para o controle do azul.
+
+ 
+
+a) Nesse ponto, anote em um papel o código RGB que representa o azul puro em sua maior intensidade.
+
+b) Agora, retorne o controle do azul para a posição 0 (zero). O “pixel grande” voltou a ficar preto, certo?
+
+
+Passo 5
+
+O que acontecerá se você deslizar os três controles RGB até a posição 50, e o código RGB resultante for (50,50,50)?
+
+ 
+
+a) O pixel resultante possui uma tonalidade cinza bem escura.
+
+
+b) À esquerda do cinza-escuro, há um retângulo vermelho na vertical que indica quanto de vermelho foi aplicado para obter o cinza do nosso “pixel grande”.
+
+
+c) Abaixo do pixel cinza-escuro, há um retângulo na horizontal que indica quanto de verde foi aplicado no “pixel grande” para obter a tonalidade cinza-escura.
+
+
+d) À direita do “pixel grande”, há um retângulo azul na vertical que indica quanto de azul foi aplicado para obter o tom cinza-escuro resultante.
+
+
+Passo 6
+
+Agora, deslize os controles para a direita, a fim de obter o código RGB (100,100,100). A situação é análoga ao experimento 5 anterior. Você alcançará uma tonalidade de cinza que, agora, estará bem mais clara. Observe que os componentes constituintes vermelho, verde e azul estão mais saturados. Foi a combinação dos três que gerou esse cinza mais claro.
+
+
+Passo 7
+
+Chegou a hora de experimentarmos uma situação bastante interessante: mover os controles R, G e B totalmente para a direita e obter o código RGB (255,255,255).
+
+ 
+
+a) Ao realizar este experimento, você notará que a cor resultante é branca!
+
+
+b) Vamos unir este resultado ao que observamos nos experimentos 5 e 6 para tentar fazer uma breve reflexão sobre a chama escala de cinza. Segundo o esquema RGB, essa escala é alcançada por meio de códigos RGB, nos quais temos o mesmo valor numérico para a intensidade dos constituintes de cores azul, verde e vermelho.
+
+
+c) RGB (0,0,0) resulta em preto, RGB (255,255,255) resulta em branco, valores intermediários entre 0 e 255 representam diferentes tonalidades de cinza. Quanto menores os valores, mais escura será a tonalidade de cinza, e quanto maiores, mais clara ela será.
+
+
+Passo 8
+
+Para este experimento, você vai manter o controle verde sempre em 0 (zero). Manipularemos apenas os controles azul e vermelho, ambos até o 255, para obtermos o código RGB (255,0,255). Observe que alcançamos um roxo bem saturado.
+
+
+Passo 9
+
+Para este experimento, você vai manter o controle azul sempre em zero. Manipularemos apenas os controles vermelho e verde, ambos até o 255, para obtermos o código RGB (255,255,0). Observe que alcançamos um amarelo bem saturado.
+
+
+Passo 10
+
+Para este experimento, você vai manter o controle azul sempre em 0 (zero). Manipularemos apenas os controles vermelho e verde, ambos até o 125, para obtermos o código RGB (125,125,0). Observe que alcançamos um amarelo mais escuro.
+
+
+Passo 11
+
+Com tudo o que foi mencionado, podemos refinar a compreensão de como os computadores usam o esquema RGB para representar cores em pixels. Cada pixel tem três números que formam o código RGB, representando uma única cor. Toda a informação necessária para a cor de um pixel está nesses três números, permitindo a criação de imagens digitais detalhadas. Observe!
+
+
+
+
+Gráfico: Imagem digital representada em um computador, incluindo a cor de cada pixel.
+
+Essencialmente, cada um desses pixels tem seus próprios três números, que formam o código RGB de cores. Como já vimos, cada pixel possui uma única cor por vez. Toda a informação necessária para representar a cor de um pixel está nesses três números.
+
+
+Combinações de cores RGB
+
+
+A imagem a seguir apresenta vinte combinações de cores utilizando o padrão RGB, a base para a criação de cores em dispositivos digitais. Observe a composição RGB de cada cor junto com uma amostra visual, para entender as diferentes tonalidades que podem ser obtidas com esse modelo de cores.
+
+
+
+
+A capacidade de representar cores de forma precisa e diversificada é essencial em design gráfico, desenvolvimento de interfaces, fotografia digital e muitas outras áreas que dependem de uma reprodução fiel das cores.

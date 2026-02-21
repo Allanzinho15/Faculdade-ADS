@@ -1,0 +1,23 @@
+Itens iniciais
+Propósito
+
+Conhecer os riscos da operação e da utilização de redes de computadores, bem como os protocolos de segurança e os tipos de ferramentas adequadas para a administração e o gerenciamento de tais processos.
+
+Objetivos
+
+Identificar os riscos de segurança nas redes de computadores.
+Selecionar softwares e tipos de equipamentos adequados para a diminuição dos riscos de segurança nas redes.
+Reconhecer a arquitetura de gerenciamento de redes.
+
+Introdução
+
+A internet é uma rede comercial que pode ser utilizada por qualquer pessoa ou empresa em todos os cantos do mundo. Com isso, possíveis problemas de segurança afloram.
+
+
+Pessoas mal-intencionadas utilizam essa rede para realizar atividades maliciosas, como roubo de informações e de identidade, paralisação de serviços etc.
+
+
+Por isso, o tópico segurança destaca-se atualmente como uma das grandes preocupações dos administradores de redes. Garantir a segurança na comunicação de dados passou a ser uma das questões cruciais na utilização da internet.
+
+
+É fundamental que tanto usuários quanto profissionais de tecnologia da informação (TI) tenham conhecimento dos riscos no uso da rede e saibam identificar ferramentas capazes de minimizá-los.

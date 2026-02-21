@@ -1,0 +1,170 @@
+Se eu fosse um profissional da área de marketing, publicidade ou design
+
+Você irá vivenciar o papel de um publicitário criativo responsável por lançar uma campanha para o aplicativo Respira+, voltado ao bem-estar emocional de mulheres adultas com rotinas intensas. A proposta é explorar como a IA generativa apoia o processo criativo na concepção de slogans, legendas e ideias visuais, com foco em comunicação estratégica e empática. A IA será usada como uma parceira de inspiração — mas a construção final, o olhar estético e a sensibilidade comunicacional continuarão sob sua responsabilidade. Prepare-se para transformar um briefing simples em uma peça criativa real.
+
+Demonstração prática para a área de marketing, mostrando como a IA pode ser uma ferramenta de apoio para criar elementos de uma campanha, como slogans, legendas para redes sociais e ideias visuais.
+
+
+
+Roteiro de prática 
+
+
+Prática: Construção de campanha 360° em uma única conversa estratégica
+
+
+Objetivo: 
+
+ 
+
+Demonstrar como um publicitário pode usar o ChatGPT não como uma ferramenta de perguntas e respostas, mas como um parceiro criativo para desenvolver os pilares de uma campanha (conceito, texto e visual) de forma integrada, em que cada passo alimenta o próximo.
+ 
+
+Passo 1: o briefing mestre (alimentando o contexto)
+ 
+
+Se eu fosse um publicitário, ou melhor, um bom publicitário, em vez de começar direto com o slogan, vamos primeiro alinhar o nosso parceiro criativo. 
+ 
+
+"Ok, pessoal, a primeira coisa que fazemos em uma agência é o briefing. Em vez de usar o ChatGPT como um buscador, vamos tratá-lo como um membro da nossa equipe. Vou começar dando a ele todo o contexto da campanha em um único “super prompt”. Isso vai garantir que todas as respostas seguintes sejam muito mais alinhadas e precisas."
+
+
+Construindo o prompt: 
+
+ 
+
+“Aja como um publicitário sênior e diretor de criação. Estamos lançando um novo aplicativo de meditação chamado "Respira+". Nosso público-alvo principal são mulheres de 30 a 50 anos, com rotinas intensas, que buscam bem-estar emocional e uma forma prática de inserir hábitos saudáveis no dia a dia. Os pilares da nossa comunicação são serenidade, praticidade, rotina saudável e empoderamento feminino. O tom de voz da marca deve ser inspirador, acolhedor e moderno. Entendido? A partir de agora, todas as suas sugestões devem seguir este briefing.
+
+
+Por que isso é poderoso? 
+
+ 
+
+Você estabeleceu uma "persona" e um contexto para o ChatGPT. Agora, ele não é mais um modelo de linguagem genérico; ele é seu parceiro de criação focado no projeto Respira+.
+
+
+Passo 2: A centelha criativa (criação do slogan)
+
+ 
+
+Agora que o ChatGPT "entendeu" o projeto, você pode pedir a primeira entrega criativa.
+
+ 
+
+"Com o briefing na cabeça do nosso parceiro de IA, vamos para o coração da campanha: o slogan. Note que eu não preciso repetir o público-alvo, ele já sabe."
+ 
+
+Construindo o prompt: 
+
+ 
+
+“Otimo. Agora, crie três sugestões de slogan para o Respira+. Mantenha o tom inspirador e positivo, com até dez palavras”.
+ 
+
+Análise do resultado (o que você comenta na tela):
+
+O ChatGPT provavelmente retornará algo como:
+
+
+1
+Respira+: sua pausa, sua força
+
+
+Foca no empoderamento e na praticidade.
+
+
+2
+Encontre seu centro em minutos.
+
+
+Foca no benefício e na rotina.
+
+
+3
+Respira+:cultive sua calma interior
+
+
+Foca no bem-estar emocional.
+
+
+"Perfeito. Olha como as opções já vêm alinhadas aos pilares que definimos. Gostei muito da primeira: 'sua pausa, sua força.' É curta, poderosa e fala diretamente com a necessidade da nossa persona. Vamos seguir com ela."
+
+ 
+
+Passo 3: a execução tática (post de Instagram)
+
+ 
+
+"Agora a mágica acontece. Eu não preciso começar do zero. Vou pedir a legenda do post fazendo referência ao slogan que acabamos de escolher."
+
+ 
+
+Construindo o prompt: 
+
+ 
+
+Adorei o slogan "Sua pausa, sua força." Com base nele, crie uma legenda envolvente para o post de lançamento no Instagram. Mantenha o tom acolhedor e convide à experimentação, usando emojis que combinem com a marca.
+
+ 
+
+Análise do resultado: 
+
+ 
+
+Você vai mostrar um texto completo, com quebras de linha, emojis (✨🧘‍♀️🌿) e hashtags (#RespiraPlus #BemEstarFeminino #PausaDoDia). Você vai destacar como a IA usou o conceito do slogan para construir a legenda, criando uma peça de comunicação 100% coesa.
+
+ 
+
+Passo 4: a direção de arte (o universo visual)
+
+ 
+
+Para fechar o ciclo, "Temos o conceito e o texto. Mas como essa campanha se parece? Vamos pedir ao nosso parceiro Gemini para atuar como Diretor de Arte e nos dar um guia visual".
+
+ 
+
+Construindo o prompt: 
+
+ 
+
+Excelente. Para finalizar este conceito inicial, descreva uma sugestão visual para o post de feed do Instagram que transmita a serenidade e modernidade do Respira+ e do nosso slogan. Pense em cores, elementos e fontes.
+
+ 
+
+Análise do resultado (ponto alto da demonstração): 
+
+O Gemini irá gerar um mini-briefing de design. 
+
+ 
+
+Por exemplo:
+
+
+Paleta de cores
+
+
+Tons terrosos suaves (areia, argila), combinados com um verde sálvia e um toque de lilás para transmitir calma e feminilidade.
+
+
+Elementos gráficos
+
+
+Uso de gradientes suaves e formas orgânicas que lembram a respiração. Uma folha de monstera ou outra planta para simbolizar crescimento e bem-estar.
+
+
+Fotografia
+
+
+Uma mulher real (não modelo) em um momento de pausa, com luz natural invadindo o ambiente, olhos fechados e um sorriso leve. Ela não está em posição de lótus, mas talvez sentada em uma poltrona confortável ou olhando pela janela.
+
+
+Fonte
+
+
+Uma fonte serifada elegante e moderna para os títulos (ex: Playfair Display) e uma sans-serif limpa e legível para o corpo do texto (ex: Montserrat).
+
+
+Conclusão: 
+
+ 
+
+E aí está! Em menos de 10 minutos, e em uma única conversa, saímos de um briefing em branco e chegamos a um conceito de campanha completo: temos slogan, texto para a primeira peça de social e um guia de direção de arte detalhado para passar para a equipe de design. Isso é usar a IA não como um executor de tarefas, mas como um acelerador estratégico para o trabalho de um publicitário.

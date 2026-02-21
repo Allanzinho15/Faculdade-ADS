@@ -1,0 +1,56 @@
+Serviço de Armazenamento
+Neste vídeo, detalharemos os serviços de armazenamento.
+
+
+
+Outro serviço comumente oferecido nos serviços em nuvem é o armazenamento (storage). Os serviços apresentados até então neste conteúdo guardam relação com recursos de computação. Storage diz respeito a um recurso de armazenamento e, normalmente, se divide em três categorias: file storage, object storage e block storage (que vamos traduzir aqui respectivamente como armazenamento de arquivo, armazenamento de objeto e armazenamento de bloco).
+
+
+Todos se prestam a armazenar os dados do cliente em diferentes formatos e estão sujeitos, de maneira geral, às seguintes ameaças de segurança:
+
+
+Acesso não autorizado;
+Vazamento de dados;
+Exfiltração de dados;
+Perda de dados.
+
+Existe outra categoria mais moderna de serviço de armazenamento, chamada de Container Storage Interface, conhecida pela sigla CSI.Para todos os serviços de armazenamento, considerando as principais ameaças apresentadas, existem contramedidas a serem empregadas, como veremos a seguir.
+
+
+
+Lista de controle de acesso
+
+Conhecidas nos provedores pela sigla ACL.
+
+
+Gerenciamento de acesso e identidade
+
+Conhecida em alguns provedores como IAM, sigla sugestiva que passa a ideia de identidade. Assim como a ACL, busca restringir o acesso ao serviço de armazenamento no ambiente da nuvem.
+
+
+Criptografia
+
+Conhecida tanto nos dados em trânsito como nos dados armazenados, busca assegurar confidencialidade.
+
+
+Auditoria
+
+Feita a partir de registro de logs de acesso sobre quem, quando e que ações foram executadas sobre os dados armazenados (por exemplo, uploads, downloads, modificações, apagamentos etc.).
+
+
+Backups
+
+Conhecidos por permitirem resgate de dados apagados, alterados ou, ao menos, retorno para uma versão anterior do dado.
+
+Os armazenadores de objeto são um tipo especial de armazenamento destinado a armazenar dados. Os objetos (ou arquivos) são armazenados em buckets, que podem ser compreendidos como um conceito lógico similar ao conceito de algo de conhecimento mais amplo, diretórios. O acesso a arquivos nos armazenadores de objeto é feito por meio de Application Programming Interface (API) no protocolo HTTPS, com linha de comando ou interface específica, dependendo do provedor. Esses armazenadores não se destinam a armazenar sistemas operacionais ou bancos de dados.
+
+
+Comentário
+O armazenamento em bloco é um esquema de armazenamento como Storage Area Network (SAN) local. Oferece ao cliente funcionalidade para que ele monte um volume (disco), formate-o em um sistema de arquivos comum (como NTFS para Windows ou Ext4 para Linux, por exemplo) e armazene vários arquivos, bancos de dados ou sistemas operacionais inteiros.
+
+
+O armazenamento de arquivos é um tipo de armazenamento similar ao Network-attached Storage (NAS) local. Oferece suporte para protocolos comuns de compartilhamento de arquivos (como NFS e SMB/CIFS). Tem a capacidade de montar um volume de um serviço de arquivo gerenciado em um sistema operacional para armazenar e recuperar arquivos paralelamente para várias VMs e de controlar as permissões de acesso ao sistema de arquivos remoto. Além disso, permite o crescimento automático do sistema de arquivos de forma transparente para o usuário.
+
+
+Finalizando sobre o serviço de armazenamento, descrevemos o tipo CSI. De forma simples, podemos dizer que um CSI é um driver padrão para conectar sistemas de orquestração de contêineres, como Kubernetes, a fim de bloquear e armazenar arquivos de vários provedores de nuvem.Os provedores de serviço de nuvem mais citados, AWS, Azure e GCP, possuem serviços de armazenamento de arquivos, objetos, blocos e contêineres.
+

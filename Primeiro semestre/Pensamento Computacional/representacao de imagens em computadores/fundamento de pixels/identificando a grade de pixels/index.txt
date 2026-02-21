@@ -1,0 +1,49 @@
+Identificando a grade de pixels em uma imagem
+Para entender e manipular a qualidade visual das imagens digitais, precisamos identificar a grade de pixels. Cada pixel representa um ponto específico de cor e brilho, formando a base de qualquer imagem digital.
+
+ 
+
+Quando a grade de pixels é bem compreendida, é possível realizar edições precisas, melhorando a clareza, a definição e a qualidade geral da imagem. Esse conhecimento pode ser usado para várias aplicações, desde a fotografia digital, em que a nitidez e a fidelidade de cores são significativas, até o diagnóstico por imagem na medicina, no qual cada detalhe pode ser relevante.
+
+ 
+
+Na área de design gráfico e arte digital, os artistas podem criar trabalhos mais detalhados e profissionais usando a grade de pixels. Em tecnologias de reconhecimento de imagem e visão computacional, a análise precisa dessa grade auxilia o desenvolvimento de algoritmos. Portanto, identificar a grade de pixels melhora a qualidade visual das imagens e é um passo importante em diversas áreas que dependem da manipulação e da análise de imagens digitais.
+
+ 
+
+Acompanhe, neste vídeo, uma demonstração prática de identificação da grade de pixels em uma imagem.
+
+
+
+Roteiro de prática
+
+
+Nesta prática, vamos ver o passo a passo de como carregar uma imagem em alta resolução, exibi-la com sua respectiva grade de pixels, identificar a quantidade de pixels na imagem e exibir informações sobre a cor de um pixel selecionado.
+
+
+Passo 1: interagindo com a aplicação
+
+
+Carregue uma imagem usando o analisador de imagem e clique em Escolher arquivo. 
+
+
+
+
+Carregue uma imagem em alta resolução.
+
+
+
+
+Carregamento de imagem.
+
+Clique em algum local da imagem que foi carregada para ver os valores RGB do pixel selecionado, conforme o exemplo a seguir.
+
+
+
+
+Cores de pixels.
+
+Passo 2: compreendendo o resultado
+
+
+Cada pixel na imagem carregada tem os seus valores de cores no formato RGB (r, g, b) exibidos.

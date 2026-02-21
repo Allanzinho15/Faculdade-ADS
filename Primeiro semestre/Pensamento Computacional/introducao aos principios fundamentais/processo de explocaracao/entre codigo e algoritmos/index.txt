@@ -1,0 +1,39 @@
+Entre códigos e algoritmos: aprendendo a lógica do computador
+Um computador opera por meio de uma série de instruções codificadas, executadas rapidamente, mas individualmente simples. A utilidade surge da combinação dessas instruções para atender às necessidades humanas, como edição de fotos ou envio de e-mails. Os programadores são essenciais nesse processo, transformando demandas em algoritmos executáveis, possibilitando diversas funcionalidades, desde operações bancárias até filtros de maquiagem. A evolução tecnológica reflete a evolução social, em que as demandas são captadas e traduzidas em código para solucionar problemas específicos, permitindo a criatividade na resolução de desafios reais.
+
+
+Vídeo sobre os princípios da lógica de programação e como ele atende às necessidades humanas.
+
+
+
+Vamos voltar à dinâmica do entendimento do pensamento computacional. Você está fazendo uma prova de matemática, e o conteúdo é análise combinatória; portanto, aprendeu todas as fórmulas e métricas, basta aplicá-las. Agora, é ler o problema e colocar tudo lá.
+
+
+
+Se a máquina é extremamente rápida, mas muito tola, como é possível a implementação de tantos recursos úteis nos computadores?
+
+
+Você repetiu o dia inteiro: C 
+n.k
+​
+ = 
+k!(n−1)!
+(n+k−1)!
+​
+ 
+
+
+E na hora surge uma dúvida:
+
+
+“É uma combinação simples ou com repetição? Não sei, eu só aprendi que essa é a fórmula. Não basta apenas colocar os números, e o resultado será alcançado?”.
+
+
+Claro que não! Uma fórmula é uma simplificação, e cada um de seus elementos só tem sentido se for observado dentro de um contexto. Demos o exemplo matemático, porém a matemática é apenas uma leitura da vida.
+
+
+Imagine um motorista que condicionou o seguinte: sinal (farol) amarelo é para parar. Porém, no trânsito, nem todos pensam da mesma forma. Logo, se esse motorista vê um sinal amarelo e para, pode ser que o condutor que vem atrás, por não pensar como ele, não consiga frear. O resultado é a colisão. O ponto é que, para que um computador execute o que você deseja, ele precisa de informações, padrões e leituras, pois só assim ele será capaz de ampliar suas possibilidades de soluções.
+
+
+Comentário
+Os computadores, e incluímos aí o seu celular ou o PC que você usa, têm a mesma dinâmica. Todos receberam informações — processos e procedimentos — para que pudessem executar o que se espera deles. É isso que vamos estudar agora.

@@ -1,0 +1,218 @@
+Recursos da CSS3
+A CSS tem evoluído ao longo dos anos, como as tecnologias de forma geral, passando por diferentes versões/especificações. Sua versão mais atual, a CSS3, trouxe como novidades recursos interessantes voltados para estilização de cores, textos e fontes, por exemplo. Ao longo deste módulo, veremos algumas dessas novidades.
+
+
+Conheça neste vídeo o CSS3 e os seus recursos de cores, textos, fontes e web fontes.
+
+
+
+Recursos de cores
+
+Com a utilização de CSS, podemos manipular as cores de elementos HTML, seja na aparência das caixas seja na cor de texto. Para isso, há uma série de propriedades CSS disponíveis para diversos elementos, mas antes vamos abordar as formas de definição de cores.
+
+
+Formas de escrita de cores
+
+As cores em CSS podem ser escritas de três modos:
+
+ 
+
+Com palavras-chave, nas quais podem ser usados os nomes das cores (seguindo as definidas pela especificação CSS) ou a notação hexadecimal. Por exemplo: blue, red, #FFFFFF etc.]
+ 
+
+Com um sistema de coordenada cúbica RGB, com as notações rgb() e rgba().
+ 
+
+Com um sistema de coordena cilíndrica HSL, com as notações hsl() e hsla().
+
+Propriedades de cor
+
+Essas propriedades se referem a quais elementos podemos definir cores.
+
+
+Observe a seguir as quatro principais propriedades relacionadas à cor e aos elementos em que podem ser aplicadas.
+
+
+
+color
+
+background-color
+
+border-color
+
+outline-color
+
+
+
+
+
+
+
+
+
+
+
+
+Serve para definir: Cor da borda externa.
+
+ 
+
+Onde pode ser utilizada: Aplica-se a qualquer elemento HTML.
+
+
+Recursos de textos
+
+A estilização de textos com o uso de CSS é dividida em duas partes:
+
+
+Layout do texto: Espaçamento entre os caracteres e linhas; alinhamento em relação ao container.
+Estilos das fontes: Família, tamanho, efeitos como negrito etc.
+
+Em linhas gerais, os navegadores aplicam estilos padrões quando renderizam conteúdos textuais. Observe algumas propriedades CSS que alteram esse comportamento padrão.
+
+
+Alinhamento de texto
+
+A propriedade text-align é usada para controlar o alinhamento do texto em razão do container no qual está inserido.
+
+
+Tal propriedade pode assumir quatro valores: left, right, center e justify. Como os nomes indicam, essas propriedades alinham o texto à esquerda, à direita, ao centro ou de forma justificada.
+
+
+Espaçamento entre linhas
+
+A propriedade line-height permite alterar o espaçamento vertical entre as linhas de texto. Seus valores possíveis são:
+
+
+Normal
+
+
+Valor padrão do navegador (entre 1 e 1.2 em relação ao font-size, dependendo do navegador).
+
+
+Número
+
+
+Valor inteiro ou decimal que será multiplicado ao tamanho da fonte.
+
+
+Comprimento
+
+
+Valor de unidades, como pixels, pontos, “em” etc.
+
+
+A maneira mais recomendada para declarar o espaçamento entre linhas é utilizando o valor em número. Desse modo, o espaçamento será o resultado da multiplicação do valor definido pelo tamanho da fonte.
+
+
+Exemplo
+Line-height: 1.5; font-size: 12px. Sendo o valor 1.5 multiplicado pelo valor da propriedade font-size, resultando no valor de 18px de espaçamento.
+
+
+Espaçamento entre letras e palavras
+
+As propriedades letter-spacing e word-spacing permitem alterar o espaçamento entre letras e/ou palavras. Podem assumir valores de comprimento – “px”, “pt” etc.
+
+
+Recursos de fontes
+
+Em relação às fontes, há propriedades CSS para definir família, tamanho, estilo, entre outras possibilidades. Vamos conhecer as propriedades mais usadas!
+
+
+Font-family
+
+Essa propriedade é utilizada para definir a família da fonte utilizada em página web ou em partes de seu conteúdo. Utilizando essa propriedade, é possível definir, por exemplo, desde uma única fonte a uma lista de fontes, no qual seus valores são declarados em ordem de importância, da esquerda para direita. Desse modo, caso determinada fonte não esteja disponível no dispositivo cliente, a próxima fonte definida será usada, e assim sucessivamente. Caso nenhuma das fontes definidas esteja disponível no cliente, o navegador fará uso de uma fonte padrão.
+
+
+
+Exemplo de família de fonte (Verdana)
+
+Estes são exemplos de famílias de fonte: Arial, Verdana, Times New Roman (fontes com nomes compostos devem ser declaradas utilizando-se aspas), entre outras.
+
+
+Essas fontes e algumas outras formam o conjunto chamado de fontes seguras para web (Web Safe Fonts).
+
+ 
+
+Prefira usar fontes seguras sempre que possível, pois elas são suportadas pela maioria dos sistemas operacionais.
+
+
+Font-size
+
+Essa propriedade é responsável por definir o tamanho do texto. Seus valores podem ser definidos com a utilização de diferentes unidades de medida, como pixels, além de porcentagem etc.
+
+
+Font-style
+
+Propriedade usada na estilização de textos aplicando o efeito de itálico. Seus valores possíveis são: normal (ou seja, tira o efeito do texto, sendo o estilo padrão de todo elemento), italic e oblique (uma versão mais inclinada em relação ao itálico).
+
+
+Font-weight
+
+O peso de uma fonte é definido com a utilização dessa propriedade. Com ela, é possível aplicar o efeito de negrito em uma escala. Seus valores possíveis são: normal, bold, lighter e bolder (aumentam ou diminuem o peso da fonte em relação ao peso da fonte de seu elemento pai); e uma escala numérica de 100 a 900.
+
+
+Atenção
+Existem boas práticas e cuidados a serem considerados quando se trabalha com estilização de fontes usando CSS. Um desses cuidados diz respeito ao controle sobre a possível degradação que pode ocorrer na página. Portanto, tome os devidos cuidados optando pela utilização de uma lista de fontes e mantendo por último as fontes genéricas, como Serif, Sans Serif e Monospace. Desse modo, haverá maior garantia e controle sobre o que o usuário verá como resultado.
+
+
+Web fontes
+
+São um importante recurso em termos de tipografia. Se antes a sua estilização ficava restrita àquelas disponíveis nos sistemas operacionais dos usuários, a partir da implementação da regra @font-face tornou-se possível a utilização de web fontes. Essa nova propriedade permite a utilização de fontes que, ao serem definidas, são baixadas pelo navegador no momento de carregamento da página. Logo, sua utilização permite um controle maior do layout de uma página no que diz respeito às fontes, além da possibilidade de serem usadas fontes com maior apelo visual.
+
+
+Como utilizar a regra @font-face
+
+A declaração da regra @font-face é feita pela definição de duas principais propriedades:
+
+
+font-family
+
+
+Definimos um nome para a família da fonte que estamos importando, usando-o ao longo do arquivo CSS.
+
+
+src
+
+
+Aponta para a url na qual o arquivo da fonte se encontra.
+
+
+Vejamos agora a fonte Awesome sendo declarada.
+
+
+
+Declaração de web fonte. Captura de tela do Notepad++
+
+Como podemos observar, além das propriedades font-family e src, há outras que podem ser aplicadas às web fontes. Em relação à font-family, a partir do momento da sua declaração, o nome definido poderá ser utilizado para estilizar qualquer outro elemento ao longo do CSS – considere que podemos tanto utilizar uma única família de fontes para o documento HTML inteiro como a combinação de diferentes famílias.
+
+
+O código também mostra que as fontes incorporadas podem estar hospedadas localmente e na internet. Além disso, há outros elementos na declaração: as funções local e format. Vamos lá conferir!
+
+
+
+Função local
+
+Essa função instrui o navegador a verificar se a fonte definida está disponível na máquina do usuário antes de fazer o download.
+
+
+Função format
+
+Também chamada de dica, essa função opcional é utilizada quando se deseja declarar vários formatos de fontes, indicando justamente o formato de cada uma. No exemplo acima, temos os formatos “woff”, “woff2”, “ttf” e “eot”.
+
+Tipos de web fontes
+
+Atualmente existem diferentes tipos de web fontes. Ao escolher, considere a compatibilidade com a maioria dos navegadores e o tamanho dos arquivos. Vejamos os tipos mais comuns de web fontes!
+
+
+Tipo	Navegadores x Versões (iniciais com suporte)
+Google Chrome	Firefox	Internet Explorer / Edge	Safari	Opera
+TTF/OTF	4.0	3.5	9.0	3.1	10.0
+WOFF	5.0	3.6	9.0	5.1	11.1
+WOFF2	36.0	35.0	--	--	26.0
+SVG	4.0	--	--	3.2	9.0
+EOT	--	--	6.0	--	--
+Tipos mais comuns de web fontes.
+Alexandre Paixão
+
+Como vimos, alguns tipos oferecem melhor suporte em relação aos navegadores mais atuais. Entretanto, não dão suporte às versões antigas. Isso reforça a recomendação anterior de usar sempre diferentes fontes para oferecer uma melhor experiência aos usuários.

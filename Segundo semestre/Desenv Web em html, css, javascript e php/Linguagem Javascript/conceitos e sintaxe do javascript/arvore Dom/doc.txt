@@ -1,0 +1,74 @@
+Árvore DOM
+O JavaScript é uma linguagem client side, ou seja, uma linguagem que roda no lado do cliente, considerando o ambiente web. Nesse ambiente, além do JavaScript, temos ainda duas outras principais tecnologias: a linguagem de marcação HTML e o CSS. No vídeo a seguir, você aprenderá a utilizar o JavaScript para interagir com páginas HTML por meio da árvore DOM.
+
+
+
+JavaScript
+
+Esta linguagem faz parte da tríade de tecnologias que compõem o ambiente web. Veja a seguir:
+
+
+HTML
+
+
+Cuida da estrutura e do conteúdo das páginas.
+
+
+CSS
+
+
+É responsável pela apresentação das páginas.
+
+
+JavaScript
+
+
+Cuida do comportamento e da interatividade das páginas web.
+
+
+Trata-se de uma linguagem de programação interpretada e multiparadigma, uma vez que possui suporte à programação estruturada, orientada a objetos e funcional.
+
+
+O JavaScript, conhecido como JS, foi criado inicialmente para o ambiente web, no lado cliente. Entretanto, evoluiu a ponto de atualmente ser utilizado também no lado servidor, além de ser uma das principais linguagens para o desenvolvimento de aplicativos mobile.
+
+
+Embora possuam nomes parecidos, as linguagens de programação JavaScript e Java não têm nenhuma relação.
+
+
+Interface DOM
+
+Iniciaremos nosso estudo de JavaScript entendendo o que é e como manipular a interface, ou árvore, DOM. Isso auxiliará o entendimento de como essa linguagem se integra e interage com a HTML.
+
+
+
+A sigla DOM (document object model) significa modelo de objeto de documento. Trata-se de uma interface que permite a manipulação, via programação, de documentos HTML (e outros, como XML, por exemplo). Além de interface, é também chamado de árvore, por fornecer uma representação estruturada do documento nesse formato.
+
+
+A árvore DOM é composta por nós e objetos. Ambos possuem propriedades e métodos, além de eventos. Por meio dessa estrutura, é possível acessar, por exemplo, o conteúdo textual de um elemento − como a tag
+
+
+Atenção
+Embora sejam frequentemente associados, o DOM não faz parte do JavaScript, podendo também ser manipulado por outras linguagens. Neste conteúdo, ficaremos restritos à manipulação do DOM por meio do JavaScript.
+
+
+Veja a seguir uma ilustração da árvore DOM e de seus elementos:
+
+
+
+Árvore DOM
+
+Manipulando o DOM com JavaScript
+
+Por meio do JavaScript, é possível:
+
+ 
+
+Inserir dinamicamente, em tempo de execução, novos elementos à árvore DOM, mesmo que eles não façam parte da estrutura inicial da página.
+ 
+
+Excluir e alterar elementos preexistentes ou dinamicamente criados.
+ 
+
+Manipular os estilos de um documento, de modo similar ao que é feito via CSS.
+
+Os elementos preexistentes ou dinamicamente criados, porém, existirão somente enquanto durar a sessão atual do usuário, ou seja, trata-se de uma manipulação dinâmica e dependente de estado, de ações e interações por parte do usuário, mas que se perderão quando ele sair da página.

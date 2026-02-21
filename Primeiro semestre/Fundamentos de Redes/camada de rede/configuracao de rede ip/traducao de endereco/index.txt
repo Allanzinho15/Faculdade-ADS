@@ -1,0 +1,32 @@
+Tradução de endereços
+NAT
+
+Atualmente, endereços IP são escassos e esse esgotamento não é um problema teórico que pode ocorrer em algum momento no futuro distante, ele já está acontecendo, e a solução atual para esse problema é o NAT (Network Address Translation – Tradução de Endereço de Rede), descrito na RFC 3022.
+
+
+Com essa técnica, uma organização pode utilizar internamente uma faixa de endereços que não é válida na Internet, e quando é necessário fazer acesso externo, o dispositivo responsável pelo NAT faz a tradução do endereço da rede interna para o endereço válido da organização. Dessa forma, a organização poderá obter internamente uma quantidade maior de hospedeiros do que endereços disponíveis para utilização da Internet.
+
+
+
+A ideia básica do NAT é atribuir a cada organização uma pequena quantidade de endereços IP para tráfego na Internet. Dentro da organização, todo computador obtém um endereço IP exclusivo (também conhecido como endereço IP privado) usado para roteamento do tráfego interno e, quando um pacote sai da organização e vai para a Internet, ocorre uma conversão do endereço.
+
+
+Para tornar esse esquema possível, três intervalos de endereços IP foram declarados como endereços privativos (reservados) e as organizações podem utilizá-los internamente da maneira que quiserem, a única regra é que nenhum pacote contendo esses endereços pode aparecer na própria Internet. Os três intervalos reservados são:
+
+
+Faixa	Máscara	Classe
+10.0.0.0 a 10.255.255.255	255.0.0.0	A
+172.16.0.0 a 172.31.255.255	255.255.0.0	B
+192.168.0.0 a 192.168.255.255	255.255.255.0	C
+Intervalos reservados.
+Fábio Contarini Carneiro.
+
+Dentro da organização, toda máquina tem um endereço exclusivo que não é válido na Internet. Quando um pacote deixa a organização, ele passa por uma caixa NAT (normalmente um roteador), que converte o endereço de origem no endereço IP válido da organização. Desse modo, o pacote poderá transitar sem problemas pela Internet, porém, a resposta do pacote voltará para o endereço IP válido da organização, e não para a máquina que fez tal requisição. Por causa disso, a caixa NAT deverá manter uma tabela na qual poderá mapear a máquina que enviou a requisição para Internet, de forma que, quando a resposta voltar, ela possa ser mapeada para a máquina correta.
+
+
+Na técnica de NAT, os endereços utilizados pelos hospedeiros de uma organização não são válidos na Internet, não há como tais equipamentos receberem acesso direto da rede externa, conferindo um certo grau de proteção aos hospedeiros da rede interna.
+
+
+Funcionamento do NAT
+
+Para saber mais sobre o funcionamento do NAT, assista ao vídeo.

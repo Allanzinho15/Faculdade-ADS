@@ -1,0 +1,160 @@
+Listas, tabelas e mídias em HTML
+Você já deve conhecer as tags HTML básicas e ter criado páginas web simples usando esses elementos. No HTML, existem diversas outras tags mais avançadas que podem ser usadas para diferentes fins, como exibição de listas e tabelas ou/e inserção de vídeos e áudios. E é justamente esse o tópico que trataremos a seguir.
+
+
+Aplicando as tags avançadas
+
+Assista ao vídeo e confira o conceito de lista, tabelas e a estrutura sintática das tags relacionadas a esses objetos. Veja também como inserir mídias na estrutura da página.
+
+
+
+Listas na HTML
+
+O HTML fornece suporte para a representação visual de três tipos de listas: as ordenadas, as não ordenadas e as de definição. Vamos conhecer cada uma dessas listas a seguir.
+
+
+Ordenadas
+
+Usadas quando desejamos listar dados com a necessidade de representar a sua ordenação de forma numérica ou alfabética.
+
+Não ordenadas
+
+Usadas quando não há necessidade de listar ordenadamente.
+
+De definição
+
+Usadas quando precisamos listar itens e atribuirmos uma descrição a eles.
+
+Outra característica importante das listas se deve ao fato de que a sua marcação HTML é composta por uma tag de container, ou tag “pai”, e por seus itens, ou “filhos”. Além disso, a lista de definição possui ainda um terceiro item, que é justamente o utilizado para descrevê-lo. Veja na tabela cada tipo de lista:
+
+
+Tipo	Tag container	Tag item	Tag descrição
+Ordenadas	<ol>	<li>	--
+Não ordenadas	<ul>	<li>	--
+Definição	<dl>	<dt>	<dd>
+
+Tabela: Tags utilizadas para a representação de Listas. 
+Alexandre de Oliveira Paixão.
+
+
+Agora acompanhe exemplos de como as tags são utilizadas e seu resultado na tela:
+
+
+Lista ordenada
+
+
+Lista não ordenada
+
+
+Lista de definição
+
+
+Cabe destacar, em relação às tags demonstradas anteriormente, que tanto o símbolo de ordenação (a numeração 1,2,3) quanto o símbolo visual (o bullet) podem ser alterados com a utilização de CSS.
+
+
+Atenção
+A HTML permite que sejam criadas listas dentro de listas – as chamadas listas aninhadas (nested lists).
+
+
+Tabelas na HTML
+
+Quando precisamos lidar com dados tabulares em uma página web, utilizamos tabelas. As tabelas usadas nesse documento são exemplos do tipo de dado e também da apresentação obtida ao utilizarmos tais elementos na HTML.
+
+
+Estrutura das tabelas
+
+A marcação HTML relacionada às tabelas contém outras tags além da principal, a saber: <table>. A tag principal define o container geral.
+
+
+De forma hierárquica, temos as tags para a definição de linhas <tr> e colunas <td>. Com essas três tags é possível representarmos uma tabela simples. Entretanto, há tags adicionais que podem ser usadas e que ajudam a melhor organizar o conteúdo.
+
+
+O esquema seguinte apresenta as tags de marcação, e suas respectivas funções, relacionadas às tabelas:
+
+
+1
+
+<table>
+
+Representa container principal da tabela.
+
+
+2
+
+<tr>
+
+Representa as linhas, sendo composta pelas tags relacionadas às colunas.
+
+
+3
+
+<td>
+
+Representa as colunas e precisa ser inserida dentro da tag de linha.
+
+
+4
+
+<th>
+
+Representa colunas e é usada para exibir o título de uma coluna, possuindo, neste sentido, função semântica. Assim como a tag <td>, deve estar contida em uma tag de linha. Esse elemento apresenta estilos próprios, sendo renderizado de forma diferente das colunas comuns.
+
+
+5
+
+<thead>
+
+Armazena o cabeçalho da tabela, sendo composto por linhas e colunas. Esse elemento, a exemplo do que vimos anteriormente, tem função semântica em termos de estruturação de conteúdo.
+
+
+6
+
+<tfoot>
+
+Armazena o rodapé da tabela, tendo também função semântica em termos de estruturação.
+
+
+As tabelas, normalmente, são organizadas de maneira uniforme: linhas sobre linhas, colunas após colunas, célula ao lado de célula. Logo, as colunas costumam ter a mesma largura, assim como as linhas a mesma altura. Entretanto, há situações nas quais é preciso mudar um pouco essa organização. Por exemplo, pode ser necessário mesclar duas colunas ou mesmo duas ou mais linhas.
+
+
+Para isso, fazemos uso de alguns atributos, que têm função de destaque ao tratarmos das tags relacionadas às tabelas. São eles:
+
+
+Linha
+
+
+Rowspan
+
+
+Coluna
+
+
+Colspan
+
+
+Esses atributos têm a função de expandir as linhas ou colunas. Sua declaração é acompanhada de um número que indica a quantidade de células a serem utilizadas para expansão da linha ou coluna. Ao final deste módulo, teremos a oportunidade de praticarmos um pouco mais e vermos como esses atributos funcionam.
+
+
+As tabelas e a semântica
+
+Desde a criação do código HTML, as tabelas foram o elemento mais utilizado fora de sua função semântica. Isso se deve ao fato de que a estrutura básica de uma página HTML lembra muito a estrutura de uma tabela: cabeçalho, rodapé, seções (linhas) etc. Logo, foi prática comum ao longo de muitos anos a codificação de páginas web completas fazendo-se uso de tabelas. Além de ir de contra a semântica, tal uso traz consigo outros problemas, como o peso das páginas e a redução da acessibilidade, entre outros.
+
+
+Mídias na HTML: vídeo e áudio
+
+O suporte à multimídia na HTML vem melhorando ao longo dos anos e versões. Com o advento da HTML5, tornou-se possível, de forma muito simples, incorporar vídeo e áudio em uma página web. Para isso, são usadas as tags <video> e <audio>, veja:
+
+
+Python (3.8.1)
+
+<video src= “http://www.youtube.com/watch?v=20SHvU@PKsM” controle></video>
+<audio src= “/audios/sample.ogg” controls autoplay loop></audio>
+
+
+Como visto, os atributos também têm suma importância ao fazermos uso das tags de vídeo e áudio. No exemplo acima, temos, inicialmente, o atributo “src” – que informa o endereço, podendo ser de um site ou mesmo de um arquivo local – no seu computador ou no servidor em que a página web fica hospedada.
+
+
+Os atributos “controls”, “autoplay” e “loop”, que são específicos para esse tipo de mídia em questão, fornecem suporte ao controle do conteúdo (vídeo ou áudio) incorporado pelo navegador, além de definirem alguns comportamentos, como o “autoplay” e o “loop”, que são autoexplicativos.
+
+
+Os três atributos aqui descritos são apenas uma prévia, uma vez que há alguns outros disponíveis. Outros componentes importantes, contidos na especificação do HTML5, são os eventos que permitem o controle de mídia embutida com a utilização de Javascript. São os chamados “Media Events”.

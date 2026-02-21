@@ -1,0 +1,30 @@
+Serviço de Máquinas Virtuais
+Serviços em nuvem
+
+Neste vídeo, apresentaremos as principais reflexões sobre os serviços em nuvem.
+
+
+
+Já vimos, pela categorização atribuída pelo NIST para os tipos de serviços em nuvem, que infraestruturas, plataformas, softwares ou tecnologias acessadas pelos clientes a partir da internet, sem a necessidade de fazer download de nenhum outro software, podem ser considerados serviços de computação em nuvem. Veremos de forma mais específica alguns serviços associados às camadas de computação, armazenamento, rede, monitoramento e auditoria.
+
+
+
+Falando sobre serviços em nuvem, especificamente para IaaS, o recurso mais comum e básico é a computação, que engloba desde as tradicionais máquinas virtuais (VMs), passando por bancos de dados gerenciados (executados nas VMs no back-end), até arquiteturas de computação mais modernas, conhecidas como contêineres e, eventualmente, arquiteturas que usam funções como serviço (abordagem conhecida como serverless).
+
+
+Cada provedor na nuvem implementa as VMs de uma maneira diferente; porém, todas guardam a mesma ideia básica em comum com o cliente executando os passos abaixo:
+
+ 
+
+Selecionar um tipo de máquina, normalmente caracterizada pelo tamanho, uma proporção entre a quantidade de CPU virtual (vCPU) e memória, de acordo com seus requisitos (uso geral, otimizado para computação, otimizado para memória e assim por diante).
+Selecionar uma imagem pré-instalada de um sistema operacional (variando normalmente entre uma versão do Windows ou distribuições do Linux).
+Configurar a parte de armazenamento (adicionando volumes adicionais, conectando-se a serviços de compartilhamento de arquivos e outros).
+Definir as configurações de rede (desde controles de acesso à rede até microssegmentação de áreas dentro dela).
+Configurar permissões para acessar cada um dos recursos da nuvem.
+Implantar seus próprios aplicativos.
+Ligar todos os serviços e começar a usar.
+Fazer a manutenção contínua do sistema operacional, aplicando patches de atualização.
+
+O que você achou do conteúdo?
+
+Relatar

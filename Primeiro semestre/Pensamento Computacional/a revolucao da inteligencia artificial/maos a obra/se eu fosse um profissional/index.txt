@@ -1,0 +1,204 @@
+Se eu fosse um profissional da área de educação
+
+A IA generativa tem se mostrado uma aliada para profissionais da área de pedagogia, oferecendo suporte em diversas tarefas do cotidiano escolar, sem substituir o papel do educador. Com o uso adequado da IA, é possível otimizar a elaboração de planos de aula, gerar atividades adaptadas a diferentes perfis de estudantes, sugerir formas de avaliação e até produzir explicações personalizadas sobre conteúdos curriculares. O diferencial está em como o pedagogo conduz o uso dessas ferramentas: com senso crítico, intencionalidade e domínio da função docente, para que a tecnologia seja um apoio — e não um substituto — do processo educativo.
+
+Este vídeo demonstra como um profissional da educação pode usar a IA em três práticas: eu sou um professor de geografia; eu sou uma coordenadora pedagógica; eu sou uma psicopedagoga.
+
+
+
+Roteiro de prática 
+
+
+Prática 1: "Eu sou um professor de geografia
+
+
+Certo, primeiro chapéu. Agora, eu sou um professor de geografia do 7º ano. Meu desafio é ensinar sobre biomas do mundo. É um tema fascinante, mas que pode ser muito abstrato para os alunos. Falar sobre a tundra, a savana e a taiga apenas com textos e fotos de livros didáticos pode ser monótono. Eu quero que meus alunos sintam como é estar em cada um desses lugares. Quero criar uma experiência de imersão.
+
+ 
+
+É aqui que eu chamo meu laboratório de IA para me ajudar a criar uma "viagem pelo mundo" sem sair da sala de aula.
+
+ 
+
+A prática: criando cartões-postais dos biomas
+
+ 
+
+Meu plano é usar a IA para duas coisas: criar descrições vívidas e gerar imagens impactantes para cada bioma, como se fossem cartões-postais de uma expedição.
+
+ 
+
+Passo 1: gerando o texto descritivo (com ChatGPT ou similar)
+
+ 
+
+Construindo o prompt de texto: 
+
+ 
+
+"Aja como um explorador e biólogo, no estilo de David Attenborough. Escreva cinco parágrafos curtos e descritivos, um para cada um dos seguintes biomas: Floresta Amazônica, Deserto do Saara, Tundra Ártica, Savana Africana e Floresta de Coníferas (taiga). O texto deve ser narrado em primeira pessoa, como se você estivesse no local, descrevendo os sons, os cheiros, o clima e a vida que você observa. A linguagem deve ser cativante para adolescentes de 12-13 anos."
+
+ 
+
+Passo 2: executar o prompt
+
+ 
+
+Passo 3: gerando as imagens (com Midjourney, DALL-E ou similar)
+
+ 
+
+Agora, vou usar trechos dessas descrições para criar os visuais.
+
+ 
+
+Construindo o prompt de imagem para a Amazônia: 
+
+ 
+
+"Fotografia de paisagem, vista do chão da Floresta Amazônica, raios de sol intensos atravessando a copa densa das árvores, iluminando samambaias e orquídeas vibrantes no solo úmido. Estilo National Geographic, câmera grande angular, hiper-realista. --ar 16:9"
+
+ 
+
+O toque humano do professor: 
+
+ 
+
+Com esses textos e imagens em mãos, minha aula está transformada. Eu vou imprimir as imagens em formato de cartão-postal e, no verso, colar o texto narrativo. Em sala, vou dividir a turma em grupos, cada um recebendo um "cartão-postal" de um bioma. A tarefa deles será ler a descrição, analisar a imagem e, usando a criatividade, criar uma pequena apresentação sobre como seria um dia vivendo naquele lugar: o que comeriam, como se abrigariam e que animais encontrariam.
+
+ 
+
+Passo 4: executar o prompt
+
+ 
+
+Conclusão da persona: 
+
+ 
+
+A IA não deu a aula por mim. Ela me deu os recursos imersivos. Ela foi minha equipe de produção, criando o cenário para a aventura que eu, como professor, vou guiar. Transformamos um tema abstrato em uma experiência sensorial e colaborativa.
+
+
+Prática 2: "Eu sou uma coordenadora pedagógica
+
+
+Ok, agora troco de chapéu. Sou a coordenadora pedagógica da escola. O tema do nosso próximo encontro de formação de professores é Saúde mental e bem-estar na sala de aula. É um assunto muito importante, mas delicado. Eu não sou uma especialista em psicologia, mas preciso fornecer aos meus professores informações de qualidade, estratégias práticas e iniciar uma conversa produtiva.
+ 
+
+Preciso preparar uma palestra de 40 minutos que seja informativa, sensível e útil. Meu laboratório de IA será meu assistente de pesquisa e roteirista.
+
+
+O objetivo é estruturar uma palestra de formação completa.
+
+ 
+
+Passo 1: gerando a estrutura e o conteúdo da palestra (com ChatGPT, Claude ou similar)
+
+ 
+
+Construindo o prompt: 
+
+ 
+
+"Aja como um especialista em psicologia educacional e bem-estar docente. Crie o roteiro detalhado para uma palestra de 40 minutos intitulada “Promovendo a saúde mental na sala de aula”. O público-alvo são professores do ensino fundamental. 
+
+ 
+
+O roteiro deve ser dividido em três partes:
+
+
+1
+Introdução (5 min)
+
+
+Por que este tema é urgente? Apresente dados breves sobre ansiedade e estresse em alunos.
+
+
+2
+Desenvolvimento (25 min)
+
+
+Apresente 5 estratégias práticas e de baixo custo que os professores podem aplicar em sala de aula (ex: minutos de atenção plena, check-in emocional, criação de um ambiente seguro). Descreva cada estratégia com um exemplo prático.
+
+
+3
+Conclusão (10 min)
+
+
+Enfatize a importância do autocuidado do professor e abra espaço para uma discussão com 3 perguntas norteadoras para o debate em grupo."
+
+
+Passo 2: executar o prompt
+
+ 
+
+O toque humano da coordenadora: a IA me deu um conteúdo e uma apresentação de altíssima qualidade. Meu papel agora é o de curadora e mediadora.
+
+ 
+
+Validação: vou checar os dados da introdução com fontes confiáveis, como a OMS ou pesquisas acadêmicas.
+ 
+Contextualização: vou adicionar exemplos de situações que já aconteceram na nossa escola para ilustrar as estratégias, tornando a palestra mais próxima da realidade dos meus professores.
+ 
+Facilitação: durante a formação, meu papel não será ler os slides, mas usá-los como um guia para facilitar uma conversa genuína e empática, garantindo que todos se sintam seguros para compartilhar suas experiências.
+ 
+Conclusão da persona: A IA foi minha pesquisadora e designer. Ela montou a base técnica. Eu, como coordenadora, serei a facilitadora humana que transformará essa informação em um momento de aprendizado, troca e acolhimento para minha equipe.
+
+
+Prática 3: "Eu sou uma psicopedagoga
+
+
+Agora, meu papel é mais íntimo e individualizado. Sou a psicopedagoga do colégio. Estou trabalhando com a Júlia, uma aluna brilhante do 6º ano que tem dislexia. Ela tem dificuldade com a decodificação de textos longos, o que afeta sua autoconfiança em disciplinas como história e literatura. Meu objetivo é criar recursos que a ajudem a acessar o conteúdo de forma mais amigável e que reforcem seus pontos fortes.
+ 
+
+Meu laboratório de IA será minha ferramenta de acessibilidade e personalização.
+ 
+
+Passo 1: criação do texto da Grécia Antiga
+
+ 
+
+Construindo o prompt: 
+
+ 
+
+“Crie um texto sobre a Grécia Antiga”.
+
+ 
+
+Passo 2: executar o prompt
+ 
+
+Passo 3: simplificando e resumindo textos complexos (com ChatGPT ou similar)
+ 
+
+A professora de história gerou um texto sobre a Grécia Antiga. É muito denso para a Júlia.
+
+ 
+
+Construindo o prompt: 
+
+ 
+
+"Aja como um especialista em design instrucional para alunos com dislexia. Considere o texto gerado sobre a Grécia Antiga e faça o seguinte:
+ 
+
+Resuma os pontos principais em uma lista com marcadores (bullet points).
+ 
+Reescreva o resumo em parágrafos curtos, usando linguagem simples, frases diretas e uma fonte amigável para dislexia (sugira uma, como OpenDyslexic).
+ 
+Destaque as palavras-chave mais importantes em negrito."
+ 
+Passo 4: executar o prompt
+ 
+
+Conclusão da persona: 
+
+ 
+
+A IA não substituiu minha intervenção. Pelo contrário, ela me permitiu criar, em pouco tempo, um kit de ferramentas personalizado que atende exatamente às necessidades da Júlia. Ela me ajudou a construir pontes para que a aluna pudesse atravessar as barreiras do texto e acessar o conhecimento, fortalecendo sua autonomia e autoestima.
+
+
+O que você achou do conteúdo?
+
+Relatar problema

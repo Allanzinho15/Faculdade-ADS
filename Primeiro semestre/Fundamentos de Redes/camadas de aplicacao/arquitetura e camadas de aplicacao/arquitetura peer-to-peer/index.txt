@@ -1,0 +1,23 @@
+Arquitetura Peer-to-peer
+Utilizando a arquitetura Peer-to-Peer
+
+
+Peer-to-peer
+
+Enquanto existe uma distinção bem clara entre os processos que trocam informações na arquitetura cliente-servidor, na peer-to-peer – também conhecida como arquitetura P2P –, todos os processos envolvidos desempenham funções similares.
+
+Em geral, nesses sistemas, os processos não são uma propriedade de corporações. Quase todos os participantes (senão todos) são provenientes de usuários comuns executando seus programas em desktops e notebooks.
+
+Tanto o processamento quanto o armazenamento das informações são distribuídos entre os hospedeiros. Isso lhes confere maior escalabilidade em comparação à arquitetura cliente-servidor.
+
+
+Saiba Mais
+Hospedeiro, também conhecido como host, o hospedeiro é qualquer equipamento conectado à rede capaz de trocar informações com outros equipamentos. Exemplos: computadores, roteadores, impressoras de rede, smartphones etc.
+
+
+Modelo de arquitetura peer-to-peer:
+
+Na ordem, 1, 2 e 3, o fluxo de informações e como elas se organizam.
+
+
+Tente responder a atividade discursiva a seguir para consolidar os conhecimentos adquiridos até agora.

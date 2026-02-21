@@ -1,0 +1,33 @@
+Infraestrutura dos datacenters
+Neste vídeo será apresentado como funciona os datacenters e explicaremos a organização física e lógica deles.
+
+
+
+Organização física dos datacenters
+
+Os datacenters são construções projetadas para abrigar de forma bastante segura a infraestrutura das empresas. Neles estão os servidores e os dispositivos de armazenamento, todos interconectados por redes de alto desempenho. Os datacenters são mantidos por organizações especializadas em armazenar e processar volumes de dados para múltiplos usuários e são um dos pilares de sistemas de computação em nuvem.
+
+
+Ainda na infraestrutura, podemos acrescentar os componentes de rede do back end. Esses dispositivos de rede são responsáveis pelas conexões entre os servidores da nuvem com os dispositivos de armazenamento e com os sistemas de gerenciamento e segurança.
+
+
+Genericamente, os dispositivos são normais a qualquer rede, como switches, roteadores e modems, além, naturalmente, do software de rede apropriado. A grande diferença está relacionada ao volume de informações que esses equipamentos devem tratar, principalmente quando pensamos em nuvens de grande capacidade.
+
+
+Uma observação interessante relativa a redes, mas não necessariamente a componentes que implementam o acesso aos extremos da computação em nuvem (usuário e servidores da nuvem), é a possibilidade de o fornecedor de serviços de nuvem também oferecer serviços de rede para o usuário. Isso é uma tarefa que pode ser típica em serviços de computação em nuvem do tipo SaaS, aquele que oferece uma vastidão de serviços aos usuários. Um deles pode ser o serviço de implementação e manutenção da rede do usuário, que dispensará, assim, seu esforço e custo para manter e crescer sua rede.
+
+
+Organização lógica dos datacenters
+
+
+Além dos equipamentos físicos (hardware) utilizados no back end, há uma apreciável quantidade de programas de aplicação (software) que viabilizam a gerência, o funcionamento, o controle e a segurança da computação em nuvem.
+
+
+Em especial, podemos citar os que são utilizados para os serviços de gerenciamento e segurança. Os serviços de gerenciamento permitem que os recursos sejam gerenciados de acordo com as necessidades do usuário final.
+
+
+Exemplo
+Em um servidor, existirão inúmeras instâncias de máquinas virtuais em execução simultaneamente, compartilhando os recursos do mesmo servidor físico. Portanto, o software de gerenciamento será essencial para que os recursos sejam corretamente alocados a cada tarefa, evitando gargalos e permitindo o bom funcionamento da nuvem.
+
+
+O serviço de segurança é uma parte importante da arquitetura de software da nuvem. É primordial que a arquitetura de segurança permita, por exemplo, que os serviços e as informações sejam acessados por usuários autorizados, que as tarefas críticas não sejam interrompidas, protegendo o servidor de tentativas de invasão e garantindo que o sistema continue em operação, mesmo quando está sob ataque ou com alguma falha devido a hardware com defeito. Esses serviços são essenciais para permitir que o usuário da nuvem tenha uma boa experiência de uso.

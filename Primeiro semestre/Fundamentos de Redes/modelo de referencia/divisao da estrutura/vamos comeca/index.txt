@@ -1,0 +1,58 @@
+
+
+Modelo em camadas
+
+
+A internet é um conjunto de redes de computadores que permite a troca de informações entre dispositivos computacionais. Para que essa troca seja realizada de forma eficiente, devem ser estabelecidas regras de comunicação. Essas regras são os protocolos de rede, que devem garantir que a comunicação ocorra de forma confiável, segura, eficaz, no momento certo e para a pessoa certa.
+
+De maneira intuitiva, percebemos que satisfazer a todos esses requisitos não é uma tarefa fácil. São muitas regras que devem ser implementadas para garantir a efetividade da comunicação, tornando o processo de troca de dados entre computadores uma tarefa extremamente complexa.
+
+Por causa dessa complexidade, os engenheiros e projetistas de redes do passado pensaram em formas de facilitar o desenvolvimento das regras nos dispositivos computacionais. Eles utilizaram um princípio básico de resolução de diversos outros problemas: a técnica de dividir para conquistar.
+
+
+Na técnica dividir para conquistar, os projetistas dividem o problema em problemas menores e resolvem cada um de forma isolada. Se cada pequeno problema for resolvido, o grande problema será resolvido.
+
+
+Para que essa divisão ocorresse de forma simplificada, os projetistas dividiram a organização das redes de computadores em camadas, sendo cada camada responsável por cuidar de determinada regra ou protocolo necessário ao processo de comunicação.
+
+A quantidade de camadas utilizadas depende de como as funcionalidades são divididas. Quanto maior a divisão, maior o número de camadas que serão empilhadas, numerando da mais baixa, camada 1, para a mais alta, camada n.
+
+
+
+As camadas se inter-relacionam da seguinte maneira: a camada superior utiliza os serviços oferecidos por outra imediatamente inferior, portanto, a camada 3 utiliza os serviços oferecidos pela camada 2.
+
+De forma contrária, podemos dizer que a camada inferior oferece serviços para outra imediatamente superior, logo, a camada 2 oferece serviços para a camada 3.
+
+
+Elementos da camada
+
+
+As camadas são formadas por três elementos principais:
+
+
+Serviço
+
+
+É o conjunto de funcionalidades que uma determinada camada oferece. Por exemplo, uma camada pode ser responsável pela verificação de erros na transmissão, por determinar o endereço de um computador, entre outras funcionalidades. O serviço diz o que a camada faz e não como ela faz.
+
+
+Protocolo
+
+
+Responsável por como a camada faz. Assim, o protocolo é a implementação do serviço da camada, ou seja, executa as regras para que os erros possam ser corrigidos ou para que um computador possa ser identificado. "Um conjunto de camadas e protocolos é a arquitetura de rede e o conjunto de protocolos utilizados por determinado sistema é uma pilha de protocolos." (TANENBAUM, 2011, p. 38)
+
+
+Interface
+
+
+Para que uma camada possa utilizar a camada imediatamente inferior, é necessário que haja um ponto de comunicação entre ambas, chamado interface. Por meio dela, uma camada pode utilizar o serviço de outra, passando informações para a camada vizinha.
+
+
+Os elementos da camada
+
+
+Onde, exatamente, tudo isso é implementado no computador?
+
+O que está implementado são os protocolos e interfaces, que podem estar desenvolvidos em um hardware, como uma placa de rede, ou em um software, como no sistema operacional da máquina.
+
+Agora que os elementos da camada foram apresentados, é possível entender dois conceitos importantes da arquitetura de redes: Comunicação Vertical e Comunicação Horizontal.

@@ -1,0 +1,73 @@
+Nuvens públicas e privadas
+Neste vídeo, serão apresentadas as principais características dos modelos de implantação para computação em nuvem.
+
+
+
+Modelos de implantação para computação em nuvem
+
+Na computação em nuvem existem três modelos principais de implantações para a computação em nuvem. Esses modelos definem o local onde os dados são armazenados e como os usuários interagem com eles. Vamos explorar os três modelos principais de forma mais detalhada e outros modelos existentes, de forma mais simples.
+
+
+Public cloud – nuvem pública
+
+As nuvens públicas são aquelas nas quais os provedores de serviços disponibilizam todos os recursos, como computação, armazenamento e aplicativos para o público em geral pela internet. Qualquer usuário pode efetuar login e usar esses serviços. Você paga pelo número de recursos que usa. Nesse modelo, os usuários possuem menos controle sobre seus dados.
+
+As vantagens desse modelo são:
+
+
+
+Preço
+
+
+Facilidade de contratação, configuração e infraestrutura
+
+
+Escalabilidade
+
+
+Performance
+
+Algumas desvantagens são:
+
+
+
+Segurança
+
+
+Controle feito por terceiros
+
+
+Requisitos legais
+
+Mas é importante lembrar que essas desvantagens são minimizadas quando o provedor é de confiança e qualidade. Por isso, quando você decide pela nuvem pública, é bom partir para as marcas mais consolidadas e que oferecem mais dispositivos de segurança.
+
+
+Private cloud – nuvem privada
+
+As nuvens privadas são ambientes de nuvem construídos exclusivamente para um único usuário, ou uma única empresa, normalmente localizados por trás do firewall do usuário.
+
+
+Saiba Mais
+Tradicionalmente, as nuvens privadas são on premise (dentro da empresa), porém, atualmente, as organizações estão construindo esse tipo de nuvens em datacenters de terceiros, de propriedade do provedor, em locais off premise (fora da empresa).
+
+
+Ela oferece todos os benefícios da nuvem pública, como flexibilidade, escalabilidade, provisionamento, automação, monitoramento, entre outros, com a diferença de não ser dividida com outras empresas.
+
+Normalmente, esse tipo de nuvem é usado por organizações com foco na segurança de dados e que gerenciam dados muito sensíveis, como transações financeiras, por exemplo. Ela também pode ser empregada por empresas que possuem controle interno bem rígido.
+
+Algumas vantagens desse modelo são:
+
+
+
+Disponibilidade
+
+
+Customização de infraestrutura
+
+
+Suporte exclusivo
+
+
+Segurança
+
+Algumas desvantagens desse modelo são: custo inicial e a necessidade de uma equipe de TI própria. O custo inicial é elevado, pois será necessário a compra do hardware, instalação e configuração. E a contratação de profissionais de TI, pois são necessárias habilidades de TI pelo usuário ou empresa.

@@ -1,0 +1,38 @@
+A subcamada MAC da camada de enlace
+Camada MAC
+
+Serviços da camada MAC
+
+
+Como vimos, a camada de enlace é subdividida em duas subcamadas: LLC (Controle de Enlace Lógico) e MAC (Controle de Acesso ao Meio), para lidar com o problema de acesso em enlaces multiponto, tema deste módulo. Vamos conferir?
+
+
+A imagem abaixo ilustra uma rede de computadores composta de quatro redes locais (LANs) conectadas por uma sub-rede. Na sub-rede, os roteadores são conectados por enlaces ponto a ponto, enquanto nas LANs as estações estão ligadas a enlaces multiponto.
+
+
+Os enlaces ponto a ponto são dedicados e o fluxo de informação segue sempre de um único transmissor a um único receptor. Já os enlaces multiponto são de uso compartilhado entre transmissores e receptores diferentes.
+
+
+
+Rede de computadores com quatro redes locais (LANs) conectadas por uma sub-rede e empregam enlaces multiponto (broadcast).
+
+Nas ligações multiponto, o enlace é compartilhado por diversas estações, porém, para que uma transmissão seja recebida com sucesso pela estação receptora, é necessário que cada estação transmissora envie seus dados em momentos diferentes.
+
+
+Havendo mais de uma transmissão ao mesmo tempo no enlace multiponto, a estação receptora não terá condições de decodificar o sinal – fenômeno conhecido como colisão.
+
+
+Dessa forma, em enlaces multiponto, é necessário haver uma regra de acesso a fim de organizar as transmissões, evitando (ou minimizando), com isso, as colisões.
+
+
+O uso do recurso compartilhado, no caso o enlace multiponto, requer o emprego de protocolos de controle de acesso ao meio, o que constitui a principal função da subcamada MAC.
+
+
+Em suma, o controle de acesso ao meio se faz necessário sempre que houver contenção (disputa) de múltiplas estações pelo acesso ao meio de transmissão.
+
+
+Exemplo de uso compartilhado do enlace:
+
+
+
+Redes móveis celulares nas quais o uplink (canal de subida dos terminais celulares para a estação-base) é compartilhado pelos usuários móveis.

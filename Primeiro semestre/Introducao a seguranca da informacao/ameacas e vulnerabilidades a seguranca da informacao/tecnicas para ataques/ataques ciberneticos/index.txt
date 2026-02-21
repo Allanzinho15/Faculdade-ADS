@@ -1,0 +1,101 @@
+Ataques cibernéticos
+
+Definição
+
+
+Ameaças cibernéticas.
+
+Abordaremos as seguintes ameaças cibernéticas: ataques; engenharia social; pichação de sites e softwares maliciosos. Esses tópicos correspondem à maioria das atividades relacionadas com este conteúdo.
+ 
+
+Sendo assim, deve-se ter em mente que, por mais que possamos explorar esses itens na sua plenitude, eles nunca estarão totalmente completos porque constantemente são criadas novas técnicas e metodologias envolvidas na atividade hacktivista.
+
+
+As ameaças cibernéticas são concretizadas por meio do uso de técnicas que normalmente exploram a vulnerabilidade de uma tecnologia, de um processo ou de uma metodologia.
+
+
+No caso de uma vulnerabilidade relacionada à tecnologia, ela se vincula com a forma de desenvolvimento da ferramenta e, certamente, novas versões daquele software trarão a correção adequada. Um bom exemplo disso é o ping da morte (ping of death) que durante muitos anos foi o pesadelo dos gerentes de TI e atualmente não passa de história nos livros sobre segurança.
+
+
+Ataques cibernéticos são ações maliciosas intencionais, provocadas por hackers ou por funcionários insatisfeitos. Essas ameaças humanas já foram objeto de explicação anteriormente e vimos que as pessoas estão envolvidas. Aqui falaremos do que essas pessoas poderiam realizar.
+
+
+As razões e motivações já foram explicadas, mas podermos resumi-las ao estímulo de se obter determinada informação (ferindo a confidencialidade), danificar a informação (ferindo a integridade) e interromper o funcionamento de determinado sistema (ferindo a disponibilidade).
+
+
+No campo do exibicionismo que motiva essas pessoas, podemos exemplificar as informações divulgadas pelo site zone-h, que possui uma lista dos últimos ataques que aconteceram, funcionando como um hall da fama, onde os hackers disputam a quantidade e qualidade dos ataques realizados. Percebe-se que o principal fator é a motivação do hacker em proferir o ataque.
+
+
+
+Conquistas de defacement.
+Mas como tornar um serviço indisponível por meio de outro tipo de ameaça que não a humana? Outras situações podem gerar a indisponibilidade do serviço, como enchentes etc. Um simples poste caído devido a uma batida de carro pode gerar uma perda de comunicação e a indisponibilidade do serviço.
+
+
+De qualquer forma, uma boa análise e a avaliação do risco associado devem ser realizadas buscando o desenvolvimento dos controles associados para a criação da contingência necessária.
+
+
+Dica
+Redundâncias e contingências são sempre úteis e, quando possível, devem sempre ser utilizadas.
+
+
+Ataques de negação de serviço (DOS)
+
+Corresponde a um tipo de ataque que tem por objetivo indisponibilizar determinado sistema ou equipamento. Ou seja, o equipamento pode até estar funcionando, mas seu uso fica prejudicado pela impossibilidade de acesso ao serviço prestado. Nesse tipo de ataque, são exploradas vulnerabilidades de softwares, de equipamentos e de algoritmos/protocolos.
+
+
+
+Ataques de negação de serviço
+São exemplos o pod (ping of death), syn flood
+udp flood e o tcp flood. Esses ataques exploram vulnerabilidades na implementação de algum serviço de rede, sistema operacional ou protocolo utilizado. Foram muito famosos no início de disseminação desse tipo de ataque e atualmente são utilizados com mais de um agente (fonte), caracterizando assim uma nova classe de ataques, os distribuídos, que é interpretada como uma variante do DOS quando a fonte do ataque é distribuída, ou seja, quando há mais de uma fonte de emissão de sinais de ataques destinados para uma ou mais vítimas.
+
+
+Antes eram utilizados os mesmos tipos de ataques para cada fonte. Atualmente, é comum encontrarmos situações em que cada fonte possui um tipo de ataque diferente, utilizando vulnerabilidades em implementação, sistema operacional ou protocolo. Assim, fica claro que há uma coordenação que determina a sincronicidade e o momento que os ataques serão proferidos. A necessidade de coordenação tornou urgente o desenvolvimento de uma infraestrutura de ataque e que diversas etapas predecessoras fossem criadas, situação esta denominada botnet.
+
+
+Engenharia social
+
+
+Engenharia social, ameaça para as organizações.
+
+ 
+
+Situação em que são usadas as fraquezas humanas para se obter informação (ferir a confidencialidade) de uma pessoa ou organização.
+ 
+
+Normalmente, comenta-se que o elo mais fraco, exatamente aquele que poderá ser o primeiro a ser explorado, é o humano.
+
+ 
+
+Em uma organização é difícil que todos os colaboradores tenham o mesmo entendimento e a mesma maturidade com relação ao sigilo de informações.
+
+
+O exemplo mais comum desse tipo de ataque é o phishing, comumente utilizado para obter dados de cartões de crédito, visando ao ganho financeiro.
+
+
+Ações de phishing podem acontecer de diversas formas. Pode ser um e-mail semelhante ao de uma instituição financeira, um SMS com um link para regularizar uma situação, uma página (ou post) em uma rede social e até mesmo um site inteiro clonado.
+
+
+Outro exemplo bem comum na década de 1990 eram dispositivos, que possuíam várias formas e partes diferentes, que liam os cartões de crédito (naquela época sem chip) para copiar a tarja magnética. No Brasil, eles ganharam o apelido de chupa-cabra, fazendo menção a uma situação ocorrida em Minas Gerais, que era creditada à presença de alienígenas naquela região, na mesma época da aparição desses mecanismos.
+
+
+O que chama bastante atenção é o grau de sofisticação usado pelos fraudatários na construção dos dispositivos de fixação e com aparência bem próxima aos dos bancos.
+
+
+Pichação de site
+
+Corresponde à técnica mais utilizada e se caracteriza pela alteração não autorizada de determinado site na internet. Também conhecido como defacement, essa técnica objetiva a adulteração do portal, sem o consentimento do proprietário. São exploradas as vulnerabilidades dos portais e, por meio disso, são realizadas as modificações.
+
+
+Esse ataque é mais popular pela repercussão gerada após a sua realização. É relativamente fácil encontrá-lo em ferramentas de gestão de conteúdos (CMS), onde o proprietário do site apenas customiza determinados assuntos no portal, ou faz uso de plug-ins para ofertar novas formas de interação com o usuário.
+
+
+Comentário
+Inicialmente, apresentamos a imagem do zone-h, onde são exibidas as conquistas de defacement.
+
+
+Botnets
+
+Também conhecido como rede zumbi, é um conjunto de equipamentos que sofreu um ataque, resultando no controle do equipamento pelo hacker. O ataque é realizado através de um software chamado bot, que explora uma vulnerabilidade do equipamento e faz a instalação nele.
+
+
+Na botnet, existem alguns equipamentos cuja finalidade é orquestrar o ataque, permitindo a manutenção do sigilo do hacker. Esses equipamentos são chamados de centros de comando e controle. Os bots se assemelham aos worms no que se refere à forma de proliferação, porém divergem por acatarem às ordens dos centros de comando e controle. Através de botnets é possível fazer ataques de negação de serviço, envios de e-mails em massa e vários outros.

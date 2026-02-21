@@ -1,0 +1,29 @@
+Modelos de implantação da computação em nuvem
+
+Neste vídeo, vamos conhecer os principais modelos de implementação da computação em nuvem.
+
+
+
+A publicação do NIST destaca três modelos de serviço possíveis, como veremos a seguir.
+
+
+Software as a service (SaaS)
+
+
+Também chamado de software como serviço. Por esse modelo, o provedor do serviço oferece ao cliente a possibilidade de usar os aplicativos do provedor a partir de uma infraestrutura em nuvem. Toda a gestão da infraestrutura da nuvem, incluindo rede, servidores, sistemas operacionais, armazenadores e mesmo os recursos de aplicativos individuais, fica totalmente transparente para o cliente, salvo pela eventual e limitada configuração de alguns aplicativos específicos do usuário.
+
+
+Exemplo
+O acesso aos aplicativos pode ocorrer por um navegador web ou interface de um programa acessado remotamente.
+
+
+Platform as a service (PaaS)
+
+
+Também chamado de “plataforma como serviço”. Por intermédio desse modelo, o cliente do serviço recebe a capacidade de implantar na infraestrutura de nuvem seus próprios aplicativos, criados ou adquiridos, usando linguagens de programação, bibliotecas, serviços, bem como outras ferramentas suportadas pelo provedor do serviço de nuvem. Assim como no modelo SaaS, não são delegadas ao cliente as tarefas de gerenciamento e controle da infraestrutura de nuvem, incluindo rede, servidores, sistemas operacionais ou armazenadores, mas apenas o controle sobre os aplicativos criados, adquiridos ou implantados pelos próprios clientes e, possivelmente, sobre algumas definições de configuração do ambiente de hospedagem dos aplicativos.
+
+
+Infrastructure as a service (IaaS)
+
+
+Também chamado de “infraestrutura como serviço”. Com esse modelo, o provedor do serviço oferece processamento, armazenamento, rede e outros recursos computacionais fundamentais onde o cliente consegue implantar e executar softwares aplicativos e sistemas operacionais específicos. O cliente não tem responsabilidade sobre o gerenciamento e controle da infraestrutura de nuvem em si. Fica sob encargo do cliente apenas o controle sobre os sistemas operacionais, armazenamento e aplicativos implantados, além de algum possível controle limitado a componentes de rede específicos, como firewalls de host.

@@ -1,0 +1,81 @@
+Segurança lógica
+Medidas baseadas em software
+
+
+Em adição às medidas de segurança física, há as de segurança lógica, que correspondem às medidas baseadas em software. Dessa lista, podemos destacar as senhas, as listas de controle de acesso, a criptografia, e o firewall.
+
+Repetindo o padrão já apresentado, esses mecanismos estão justapostos, isto é, intercalados entre si. Dessa forma, a demanda de uma camada pode criar uma adicional a outra que possua alguma vulnerabilidade particular.
+
+ 
+
+Repetindo o padrão já apresentado, esses mecanismos estão justapostos, isto é, intercalados entre si. Dessa forma, a demanda de uma camada pode criar uma adicional a outra que possua alguma vulnerabilidade particular.
+
+
+Como exemplo disso, existem no próprio equipamento controles de acessos biométricos, como a leitura de digital e o reconhecimento facial. Esses sistemas de controle biométricos são caracterizados pela captura da geometria humana, a qual, em grande parte, difere em cada pessoa.
+
+
+
+Atualmente, os leitores de digitais têm dado espaço para o reconhecimento facial pela disseminação dos sensores e da tecnologia empregada. Há diversas APIs disponibilizadas para uso gratuito e comercial, como a API do Amazon Rekognition. Esses controles atuam na proteção da confidencialidade da informação.
+
+
+A criptografia corresponde ao conjunto de técnicas que permite o embaralhamento de dados por intermédio do uso de chaves e de algoritmos computacionais baseados em funções matemáticas. Essas funções propiciam, em linhas gerais, a presença de duas grandes classes de algoritmos: os simétricos e os assimétricos. Vejamos!
+
+
+Criptografia simétrica
+
+Segurança lógica - criptografia simétrica
+
+
+Utiliza funções matemáticas mais simples e uma única chave para criptografar e decriptografar. Esta classe de algoritmos é composta por, entre outros exemplos, Cifra de César, Blowfish, Twofish e Rijnadel. Graças a esse controle, é possível assegurar a confidencialidade da informação. Veja o conjunto na tabela a seguir:
+
+
+Algoritmo	Tamanho da chave
+AES (Rijnadel)	128, 192 e 256 bits
+Twofish	128, 192 e 256 bits
+Serpent	128, 192 e 256 bits
+Blowfish	32 a 448-bits
+RC4	40-128 bits
+3DES (baseado no DES)	168 bits
+IDEA	128 bits
+Rafael D'orsi
+
+Criptografia assimétrica
+
+Segurança lógica - criptografia assimétrica
+
+
+Caracteriza-se por algoritmos que normalmente envolvem técnicas matemáticas mais sofisticadas, como a fatoração de números grandes e o logaritmo discreto. Esta família emprega duas chaves: uma é utilizada para cifrar; a outra, para decifrar. Tais chaves são conhecidas como:
+
+
+Pública
+
+
+Fica disponibilizada em um servidor de confiança.
+
+
+Privada
+
+
+Está sob a posse do usuário.
+
+
+Com a combinação dessas chaves, é possível assegurar não somente a confidencialidade, mas também o não repúdio ou irretratabilidade. Afinal, pode-se combinar o uso desse controle tanto com a chave privada do emissor (não repúdio) quanto com a pública do destinatário (confidencialidade). Diffie-Hellman, El Gamal e Curvas Elípticas são alguns dos algoritmos dessa família. Quanto aos controles aplicados às redes, destacam-se os firewalls, os sistemas detectores de intrusão e os VPNs.
+
+Esses controles permitem a criação de zonas de segurança dentro e fora da instituição. Tais zonas possibilitam a criação de segregações de funcionalidades. Das zonas de segurança, a mais comumente encontrada é a DMZ. Zona desmilitarizada, ela limita a região onde os servidores web e de aplicação podem ficar. Observe:
+
+
+
+Diagrama simplificado de uma DMZ
+
+As regras dos firewalls podem seguir duas políticas:
+
+
+
+Negar por padrão
+
+
+Todo o tráfego é negado. Apenas os servidores e os protocolos são autorizados.
+
+ 
+
+Trata-se da política normalmente encontrada e recomendada no mercado. Como todos os tráfegos são negados, apenas podem trafegar os tráfegos cujas regras (R1) são aceitas.

@@ -1,0 +1,31 @@
+Apresentando a Cloud Security Alliance (CSA)
+Orientações da Cloud Security Alliance
+
+Neste vídeo, abordaremos as principais reflexões sobre as orientações da Cloud Security Alliance.
+
+
+
+A Cloud Security Alliance (CSA) é a organização líder em escala global dedicada a definir e fomentar conscientização sobre as melhores práticas de segurança em ambientes de computação em nuvem.
+
+
+Dica
+O site cloudsecurityalliance.org mantém um blog com diversos artigos interessantes para vários níveis de conhecimento na área, além de white papers instrutivos sobre resultados de pesquisas em segurança na nuvem. Também mantém cursos e certificações e um programa de associação para membros.
+
+
+A CSA fornece orientações sobre segurança na nuvem como forma de suporte aos objetivos de negócio, gerenciando e mitigando riscos associados com a adoção de soluções abrigadas em ambiente de nuvem organizadas em quatorze domínios, veja a seguir.
+
+
+DOMAIN 1: Conceitos e arquiteturas de computação em nuvem.
+DOMAIN 2: Governança e gestão de risco corporativo.
+DOMAIN 3: Questões legais, contratos e descoberta eletrônica.
+DOMAIN 4: Gestão de conformidade e auditoria.
+DOMAIN 5: Governança da informação.
+DOMAIN 6: Plano de gestão e continuidade do negócio.
+DOMAIN 7: Segurança de infraestrutura.
+DOMAIN 8: Virtualização e contêineres.
+DOMAIN 9: Resposta a incidentes.
+DOMAIN 10: Segurança de aplicativos.
+DOMAIN 11: Segurança e criptografia de dados.
+DOMAIN 12: Gerenciamento de identidade, direitos e acesso.
+DOMAIN 13: Segurança como serviço.
+DOMAIN 14: Tecnologias relacionadas.

@@ -1,0 +1,114 @@
+Demonstração prática da Arquitetura cliente X Servidor
+Com a evolução da web, a geração de páginas web dinâmicas se tornou fundamental. Mas o que são páginas web dinâmicas? Em poucas palavras, são páginas geradas com conteúdos personalizados. Há vários exemplos de geração de páginas web dinâmicas: redes sociais, bankline, streaming, entre tantos outros. Portanto, seja qual for a aplicação, você acessa um navegador de sua preferência, insere o endereço (exemplo fictício: www.xpto.com.br) e aciona a tecla enter.
+
+
+Ao fazer isso, a sua solicitação (requisição) chegará no servidor que hospeda a aplicação que, por sua vez, devolve uma resposta contendo os códigos (HTML, CSS, JavaScript) que serão executados no seu próprio navegador. A página que você visualiza tem formulários de login e senha, que você preenche e, depois, aciona a tecla enter novamente. Os seus dados de login e senha serão enviados ao servidor da aplicação, que fará o processamento deles e, depois, devolverá os códigos da página que você visualizará no seu navegador, contendo os seus dados da sua rede social, da sua conta bancária etc. E isso se repetirá com cada usuário que acessar tais serviços, ou seja, cada um deles verá um conteúdo específico, destinado a eles.
+
+
+O vídeo vai demonstrar de forma prática o funcionamento das páginas web dinâmicas, apresentando como fazê-las exibir conteúdos personalizados a cada usuário que acessar seus serviços.
+
+
+
+Roteiro de prática
+
+
+Para materializar a ideia, vamos considerar o exemplo disponibilizado pelo W3schools em Formulários PHP na aba PHP.
+
+
+Vamos analisar a execução do exemplo e, depois, analisaremos seus códigos. Há uma página de frontend que contém dois campos de formulário: Name e E-mail, conforme mostra a imagem.
+
+
+
+Formulário do frontend.
+
+Ao inserir os dados de nome igual a José Oliveira e de e-mail igual a joseoliveira@xpto.com.br e clicar no botão Enviar, os dados serão levados ao servidor que hospeda a aplicação, que fará o processamento desses dados, gerando a página que será devolvida ao usuário, contendo uma mensagem personalizada, conforme mostra a seguir.
+
+
+
+Welcome Jonh
+
+Your email adress is jonh.doe@exemplo.com
+
+
+Esse exemplo ilustra o ciclo requisição e resposta. Na requisição, o nome e o e-mail foram enviados ao servidor que, por sua vez, envia a resposta com a mensagem personalizada ao usuário. Trata-se de um exemplo bem simples, mas que ilustra, em linhas gerais, o que acontece com exemplos mais complexos.
+
+
+Depois da visão geral que foi mostrada, vamos analisar os códigos tanto do frontend quanto do backend. Começaremos com os códigos da página do frontend, conforme mostra a seguir.
+
+
+Plain Text
+
+
+<html>
+<body>
+
+<form action="welcome.php" method="POST">
+Name: <input type="text" name="name"><br>
+E-mail: <input type="text" name="email"><br>
+<input type="submit">
+</form>
+
+</body>
+</html>
+
+Observe que a primeira linha de código do formulário tem dois atributos: action e method, conforme mostra a imagem.
+
+
+Plain Text
+
+<form action="welcome.php" method="post">
+
+O atributo action contém o nome da aplicação que processará os dados do formulário no servidor e, nesse caso, trata-se de uma página PHP denominada welcome.php.
+
+
+O atributo method especifica o método de envio dos dados que, neste caso, é o post, o que quer dizer que os dados serão enviados no corpo da mensagem. Há outros métodos de envio, como o GET, que anexa os dados no endereço.
+
+
+Em seguida, há os códigos dos campos de formulário, definidos por meio das tags input, conforme mostra a imagem.
+
+
+Plain Text
+
+<input type="text" name="name"><br>
+<input type="text" name="email"><br>
+
+
+As tags input do tipo text possibilitam criar campos de formulário em que os caracteres digitados ficam visíveis. O atributo name possibilita dar um nome aos campos, o que é importante para que a aplicação do servidor possa extrair e processar adequadamente os dados contidos nestes campos. Finalmente, é criado o botão que envia os dados ao servidor, por meio da tag input com tipo submit, conforme mostra a imagem.
+
+
+Plain Text
+
+<input type="submit">
+
+E os códigos da página welcome.php podem ser semelhantes aos que estão mostrados a seguir.
+
+
+PHP (7.4.1)
+
+<html>
+<body>
+
+Welcome <?php echo $_POST["name"]; ?><br>
+Your email address is: <?php echo $_POST["email"]; ?>
+
+</body>
+</html>
+
+
+Essa página extrai os dados provenientes da requisição e mostra uma mensagem personalizada utilizando a instrução echo.
+
+
+A imagem mostra o trecho de código PHP que extrai o conteúdo do campo name que chegou na requisição via método Post.
+
+
+PHP (7.4.1)
+
+<?php echo $_POST["name"]; ?>
+
+
+E a imagem mostra o trecho de código PHP que extrai o conteúdo do campo e-mail que também chegou na requisição via método Post.
+
+
+PHP (7.4.1)
+
+<?php echo $_POST["email"]; ?>

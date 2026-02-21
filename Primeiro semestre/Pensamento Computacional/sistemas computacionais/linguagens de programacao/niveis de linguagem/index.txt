@@ -1,0 +1,50 @@
+Níveis de linguagem de programação
+Quando falamos em programação, é comum ouvirmos expressões como “baixo nível” e “alto nível”. Esses termos ajudam a entender o quão próxima ou distante uma linguagem está do funcionamento interno do computador. Compreender os níveis de linguagem de programação é relevante para escolher a ferramenta adequada para cada tarefa, além de facilitar o aprendizado para quem está começando.
+
+ 
+
+Neste vídeo, exploraremos os níveis de linguagem de programação, diferenciando linguagens de baixo e alto nível, suas características e aplicações. Abordaremos como a escolha do nível afeta o desenvolvimento de sistemas e a produtividade no mercado de trabalho.
+
+
+
+As linguagens de programação podem ser classificadas conforme a proximidade que têm do hardware do computador. Isso impacta tanto a complexidade para o programador quanto o controle oferecido sobre o funcionamento da máquina. Quanto mais baixo o nível, mais próxima do funcionamento real do computador está a linguagem; quanto mais alto, mais próxima da lógica humana. Vamos entender melhor esses tipos de linguagem!
+
+
+Linguagens de baixo nível
+
+
+Envolvem a linguagem de máquina e o Assembly, os quais trabalham com os componentes eletrônicos do computador. O código de máquina é formado apenas por instruções em binário (0 e 1) que a CPU entende diretamente. Assembly, embora um pouco mais amigável, ainda requer conhecimento detalhado do hardware, pois cada comando se refere a operações específicas dos processadores.
+
+
+Exemplo
+Imagine que você precise dar instruções detalhadas a uma pessoa para ela andar: “Levante o pé direito, avance 30 centímetros, coloque o pé no chão, transfira o peso do corpo...”. Isso se parece com programar em Assembly ou linguagem de máquina — tudo deve ser descrito passo a passo.
+
+
+Linguagens de alto nível
+
+
+Envolvem as linguagens Python, Java, C#, JavaScript e muitas outras. Essas linguagens foram desenvolvidas para se aproximar mais do modo como pensamos e falamos. Nelas, o programador pode escrever comandos mais intuitivos, como “calcule a média de uma lista de números” ou “mostre uma mensagem na tela”. O computador, com o auxílio de tradutores (compiladores ou interpretadores), converte essas instruções em códigos compreensíveis pela máquina.
+
+
+Usar uma linguagem de alto nível é como pedir: “Caminhe até aquela porta”. Não é necessário detalhar cada movimento — a linguagem cuida dos detalhes, tornando a tarefa mais fácil e rápida de ser desenvolvida.
+
+
+O principal objetivo das linguagens de alto nível é simplificar a vida do programador e tornar o desenvolvimento de sistemas mais rápido, acessível e menos sujeito a erros. Por outro lado, linguagens de baixo nível oferecem máximo controle sobre o hardware e são ainda usadas em situações em que cada recurso precisa ser gerenciado com precisão, como em sistemas embarcados e drivers de dispositivos.
+
+
+A escolha do nível de linguagem depende do desafio a ser enfrentado. Observe!
+
+ 
+
+Para sistemas críticos, que precisam ser muito eficientes e otimizados, linguagens de baixo nível podem ser preferidas.
+ 
+Para a maioria dos softwares atuais — aplicativos, sites, jogos, sistemas empresariais — linguagens de alto nível aumentam a produtividade e facilitam a manutenção.
+
+Evolução e tendências
+
+
+
+A evolução da tecnologia tem impulsionado o uso de linguagens cada vez mais abstratas e poderosas, permitindo que desenvolvedores foquem mais a solução de problemas do que os detalhes de funcionamento do computador. Hoje, até mesmo áreas tradicionalmente ligadas ao baixo nível, como a robótica e a internet das coisas, já contam com frameworks de alto nível para acelerar a inovação.
+ 
+
+No mercado de trabalho, compreender os níveis de linguagem auxilia na comunicação entre equipes de TI, na escolha da tecnologia para cada projeto e no entendimento dos limites e das possibilidades das ferramentas. Para quem está começando, conhecer essa classificação ajuda a desmistificar o universo da programação e torna a aprendizagem mais fluida.

@@ -1,0 +1,63 @@
+Segurança na nuvem
+A computação em nuvem trouxe grandes facilidades e agilidade para a inovação. Da mesma maneira, com as ofertas como serviço, tirou do usuário grande parte da responsabilidade de segurança. Mesmo assim, ainda é necessário adotar medidas para garantir a seguridade das aplicações, dados e infraestrutura.
+
+
+Ameaças
+
+
+A grande realidade é que, atualmente, existem incontáveis tipos de ameaças, e isso é uma grande preocupação e ponto de atenção para todas as empresas. Qualquer tipo de ataque, seja para sequestros de dados ou para gerar indisponibilidade, impacta diretamente, desestabilizando o negócio.
+
+
+Segurança na nuvem
+
+
+Devido a todas essas preocupações, surgiu um termo chamado de “segurança na nuvem” (cloud security), que se refere às melhores práticas de gerenciamento de segurança na nuvem, incluindo tecnologias, políticas, controles e serviços, que mantém dados, aplicativos e infraestrutura sob a maior proteção possível contra ameaças externas e internas.
+
+
+A segurança na nuvem está muito relacionada a tecnologias e processos que podem ser utilizados, como: gestão de acesso e identidade, segurança contra ataques, lista de bloqueio. Vamos ver como funcionam?
+
+
+Gestão de acesso e identidade
+
+
+Também conhecido como IAM (identity and access management), é um processo que visa controlar o acesso às informações, recursos e ações do ambiente. O Google Cloud oferece sua solução de IAM integrada à plataforma e, com isso, é possível gerir todos os usuários e seu nível de acesso.
+
+
+Exemplo
+Se um usuário tem acesso de desenvolvedor, estará autorizado a somente visualizar ou talvez editar configurações relacionadas à sua alçada, não podendo visualizar, utilizar ou configurar nada de infraestrutura, tecnologias ou aplicações que não são de sua responsabilidade.
+
+
+O login pode ser combinado com mais uma camada de segurança, com múltiplos fatores de autenticação, ou seja, além do padrão usuário e senha, é necessário mais um fator para comprovar a identidade do usuário como, por exemplo, um SMS no telefone celular, ou um token físico como um pen drive.
+
+
+Com esse nível de gestão, utilizando políticas e limites de acesso, evita-se qualquer possibilidade de alguém não autorizado utilizar algo. Ou até mesmo, caso alguma credencial seja roubada, as limitações de acessos dão maior segurança.
+
+
+Segurança contra ataques
+
+
+Empresas vêm regularmente sofrendo ataques e, para se proteger contra isso, é necessário uma boa estratégia e ferramentas. O Google Cloud possui uma oferta chamada de Cloud Armor, que consiste em uma tecnologia que utiliza inteligência artificial e aprendizado de máquinas para mitigar ataques contra aplicações e servidores dos clientes.
+
+
+Por meio de inúmeros dados processados pelo Google, o Cloud Armor consegue entender quando um comportamento é uma ameaça e evitá-lo. Por exemplo, um ataque de negação de serviço distribuída (DDoS), que ocorre por meio de um grande volume de requisições falsas para o serviço, gerando indisponibilidade.
+
+
+Outra tecnologia que é muito utilizada para segurança contra ataques às aplicações é o reCAPTCHA, uma tecnologia do Google que permite distinguir entre um acesso humano ou automatizado por meio do uso de identificações visuais ou auditivas. Isso é importante pois, a cada dia, cresce o número de bots maliciosos, que visam buscar brechas em sistemas.
+
+
+
+Exemplos de reCAPTCHA.
+
+Lista de bloqueio
+
+
+Outra estratégia muito utilizada é a de lista de bloqueios (blocklist) e lista de permitidos (allowlist). Seu objetivo é ter uma lista de bloqueios ou permissões de acessos ao sistema, e isso pode ser baseado em IPs ou regiões.
+
+
+Essa estratégia é muito útil para podermos negar o acesso de IPs externos da nossa rede, por exemplo, a uma aplicação. Outra possibilidade é a de bloquear todo acesso que venha de outro país, o que mitiga ataques em massa que utilizam servidores, bots e computadores do mundo todo para atingir nossos ambientes.
+
+
+Quais as responsabilidades de segurança na nuvem?
+
+
+Neste vídeo, falaremos sobre a responsabilidade do servidor e do cliente quanto a cada serviço prestado (IaaS, PaaS e SaaS) e qual a diferença de manter a segurança em um servidor próprio.

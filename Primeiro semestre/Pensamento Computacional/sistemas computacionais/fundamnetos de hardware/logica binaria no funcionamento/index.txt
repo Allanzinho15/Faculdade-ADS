@@ -1,0 +1,72 @@
+Lógica binária no funcionamento de computadores
+A lógica binária é a base do funcionamento de todos os computadores e dispositivos digitais. Mesmo quem nunca estudou programação já ouviu falar em “zeros e uns”. Compreender por que e como essas duas unidades são usadas para representar informações ajuda a desvendar muitos mistérios dos sistemas computacionais e facilita o entendimento de como os dispositivos armazenam, processam e transmitem dados em diferentes contextos, do trabalho à vida cotidiana.
+
+ 
+
+Neste vídeo, você aprenderá por que computadores funcionam com base na lógica binária, como bits e bytes representam dados e como esse sistema permite o processamento de informações, armazenamento de arquivos e comunicação digital em diferentes contextos profissionais.
+
+
+
+Computadores operam de forma diferente dos seres humanos. Enquanto raciocinamos por palavras, sons ou imagens, os sistemas digitais trabalham com sinais elétricos que possuem apenas dois estados possíveis: ligado ou desligado, presença ou ausência de corrente. Essa limitação é, na verdade, uma grande vantagem, pois reduz o risco de erro e torna a construção dos circuitos muito mais simples e confiável.
+
+ 
+
+Por esse motivo, o sistema binário, formado apenas pelos dígitos 0 e 1, foi adotado como linguagem universal das máquinas digitais. Cada 0 ou 1 é chamado de bit, abreviação de binary digit (dígito binário).
+
+
+Representação binária e combinações possíveis
+
+
+Os bits são usados para representar qualquer tipo de informação, desde números até letras, imagens, sons e vídeos. Para isso, combinam-se vários bits em sequência. 
+
+
+Exemplo
+Dois bits podem representar quatro combinações diferentes (00, 01, 10, 11). Com oito bits, ou seja, um byte, é possível representar 256 combinações distintas, o que já permite codificar todos os caracteres do alfabeto, números, símbolos e até cores básicas em uma imagem digital.
+
+
+Quando você salva um arquivo, tira uma foto com o celular ou escreve um texto, tudo é convertido para uma sequência de bits. Um caractere, como a letra “A”, é transformado em um padrão de 8 bits (por exemplo: 01000001). Cada pixel de uma imagem ou cada nota de uma música digitalizada é, igualmente, traduzido para combinações de zeros e uns.
+
+
+Como os computadores armazenam e representam dados numéricos
+
+
+
+A principal vantagem do sistema binário é a facilidade com que computadores conseguem armazenar, ler e manipular essas informações. Dentro dos chips, milhões (ou bilhões) de transistores agem como pequenos interruptores, cada um podendo assumir dois estados. O estado de cada transistor (ligado/desligado) corresponde a um bit. Assim, conjuntos desses transistores armazenam bytes, kilobytes e até terabytes de dados.
+
+
+No armazenamento físico, seja em HDs, SSDs, pen drives ou cartões SD, diferentes tecnologias são usadas para garantir que cada bit seja gravado de forma correta e possa ser recuperado quando necessário. Nos HDs, por exemplo, campos magnéticos representam o 0 ou 1. Já em SSDs e memórias flash, cargas elétricas dentro dos chips realizam esse papel.
+
+ 
+
+Números, letras e cores; tudo vira binário. Acompanhe a seguir.
+
+
+A
+Números
+
+
+O sistema decimal que usamos no dia a dia (0 a 9) é convertido para binário para ser processado pelas máquinas. O número 5, por exemplo, é representado como 00000101 em um byte.
+
+
+B
+Letras e símbolos
+
+
+Cada caractere do teclado possui um código binário próprio, definido em tabelas como ASCII ou Unicode.
+
+
+C
+Cores e imagens
+
+
+Cada pixel de uma foto pode ser representado por uma combinação de bits, indicando a intensidade de vermelho, verde e azul (RGB). Por exemplo, uma imagem colorida pode usar 24 bits por pixel, permitindo milhões de combinações de cores.
+
+
+Aplicações práticas da lógica binária
+
+
+O domínio do funcionamento binário vai além da informática, sendo basilar para profissionais das áreas de tecnologia, eletrônica, automação e campos relacionados. Entender como os dados são codificados, transmitidos e interpretados possibilita não só compreender as limitações dos sistemas, mas escolher os equipamentos mais adequados e identificar, com eficiência, falhas em ambientes digitais.
+
+
+Comentário
+Apesar de toda a complexidade dos sistemas modernos, a lógica binária é como o craque do time da computação — o jogador que faz o jogo fluir. Dos grandes computadores aos sensores inteligentes das casas conectadas, tudo depende da precisão dos bits e bytes. Essa simplicidade de estrutura é o que torna possível criar dispositivos cada vez menores, mais rápidos e integrados ao nosso dia a dia. No mundo digital, eles são a bola da vez, sem dúvidas! Se fosse um jogo, os bits e bytes estariam sempre driblando os desafios e marcando os gols decisivos.

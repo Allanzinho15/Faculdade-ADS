@@ -1,0 +1,15 @@
+Gerência de configuração e operação (C = configuration)
+As redes são compostas por diversos equipamentos interligados entre si que possuem uma configuração.
+
+
+Essas configurações devem ser consistentes em todos eles, permitindo que, no caso de uma reinicialização, o dispositivo volte a operar com a configuração correta.
+
+
+Desse modo, é necessário realizar o gerenciamento das configurações dos equipamentos para:
+
+
+Garantir seu funcionamento com os ajustes corretos.
+Identificar quais dispositivos estão presentes na rede.
+Verificar se eles estão com as configurações corretas.
+
+De acordo com Forouzan (2010), um sistema de gerenciamento de configuração precisa saber o estado de cada entidade e sua relação com outras entidades a todo instante.

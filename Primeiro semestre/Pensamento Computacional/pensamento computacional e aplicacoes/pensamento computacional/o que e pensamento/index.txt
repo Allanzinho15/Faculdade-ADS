@@ -1,0 +1,86 @@
+O que é pensamento computacional?
+
+A velocidade em que a sociedade está mudando nunca foi tão acelerada. A evolução, nas primeiras décadas do século XXI, equivale a centenas de anos da história humana. Nesse tempo, vimos tecnologias inovadoras serem lançadas e, alguns anos depois, serem substituídas por outras ainda mais disruptivas.
+
+Vejamos dois exemplos dessas tecnologias e seus impactos.
+
+
+
+A escrita e a superação da transmissão oral de conhecimento
+
+
+Antes de a escrita ser popularizada, grande parte do conhecimento produzido por indivíduos era perdida, pois a transmissão oral não tinha capacidade de ser perpetuada. A escrita acabou com essa limitação! Assim, o novo desafio passou a ser armazenar e difundir o conhecimento desenvolvido para todo o mundo.
+
+
+
+Difusão do conhecimento
+
+
+A tecnologia veio suprir essa lacuna seja com a criação da imprensa no século XVI, seja com os computadores ultramodernos. Atualmente, o conhecimento gerado em qualquer parte do mundo pode ser consultado em segundos por outra pessoa do outro lado do globo. Isso permite melhor cooperação e, consequentemente, uma evolução mais rápida e efetiva de tudo ao nosso redor.
+
+
+O avanço da ciência e da tecnologia continua a progredir de forma cada vez mais rápida, tendo como uma das consequências desse processo uma sociedade largamente dependente e diferenciada da computação. Se compararmos o comportamento de diversos profissionais do século passado com os atuais, por exemplo, encontraremos grandes diferenças nas formas de pensar e fazer seu trabalho.
+
+
+Vejamos o caso de um cientista:
+
+
+
+Pesquisa e experimentos em laboratórios
+
+
+O cientista de antigamente passava dias em seu laboratório isolado com seus tubos de ensaio, fazendo experimentos.
+
+
+
+Auxíliio de computadores
+
+
+O atual usa o computador, seja pesquisando artigos que o auxiliarão em seu trabalho, seja desenvolvendo modelos computacionais que possam comprovar seus estudos.
+
+
+Outro exemplo bastante claro são os engenheiros, que trocaram o lápis e o papel por softwares capazes de desenhar, projetar em 3D e realizar cálculos específicos de Engenharia de forma precisa e extremamente rápida.
+
+
+Essas e muitas outras profissões já utilizam o pensamento computacional para desenvolver soluções que permitem que a tecnologia se torne uma grande aliada de seus processos. E essa é uma tendência cada vez mais forte.
+
+
+Assim, observamos uma importante mudança no mercado de trabalho: algumas habilidades e competências, que antes eram específicas da área de Computação, passam a ser consideradas fundamentais para qualquer profissional do século XXI. Esse conjunto de habilidades denominamos pensamento computacional.
+
+
+Você compreendeu o que é pensamento computacional até aqui? Veremos a seguir mais detalhes sobre o assunto.
+
+
+Antes de entrarmos em detalhes, contudo, sobre o real significado do pensamento computacional, entenderemos primeiramente o que ele não é. Isso será importante para esclarecermos alguns mitos. Veja dois exemplos a seguir:
+
+
+Pensar como computadores
+
+É comum associarmos, erroneamente, o termo pensamento computacional à ação de pensar como um computador. Mas computadores não pensam! Apenas seguem instruções expressas, objetivas e simples — por exemplo, somar dois números.
+
+
+Pensamento computacional é o mesmo que programar
+
+É comum considerarmos que pensamento computacional seja o mesmo que programar, o que também não é verdade. Afinal, nem mesmo precisamos de um computador para praticar o pensamento computacional.
+
+
+
+
+De acordo com Blikstein (2008), pensamento computacional não se trata de saber navegar na internet, enviar e-mail, publicar material na web ou operar um processador de texto. Pensamento computacional significa saber usar o computador como um instrumento de aumento dos poderes cognitivo e operacional humanos. Em outras palavras, trata-se de usar computadores e suas redes para aumentar nossa produtividade, inventividade e criatividade.
+
+
+Agora, vamos começar a refletir sobre o que é, de fato, o pensamento computacional.
+
+
+
+Para que um computador funcione, por meio de linhas de código simples e diretas, é necessário que um indivíduo ou uma equipe reflita sobre como estruturar e organizar as instruções que serão passadas para a máquina. Essa pessoa ou grupo deve, então, escrever as instruções de forma que o computador resolva o problema proposto ao segui-las.
+
+ 
+
+Essa maneira de compreender a dificuldade, raciocinar e buscar a melhor solução possível é a etapa que antecede à programação, também conhecida como pensamento computacional.
+
+
+A maior parte das pessoas aprende a utilizar o computador apenas como usuário de soluções já existentes. Por exemplo, por meio de um sistema de busca na web, os indivíduos usam palavras-chave para encontrar o assunto desejado e, assim, por meio das opções “copiar” e “colar”, tornam-se apenas repetidores de um conhecimento já existente.
+
+
+A partir de modelos, o pensamento computacional nos permite analisar um problema complexo, entender seus detalhes e propor possíveis soluções. É possível, então, escrever essas respostas de maneira que um computador, um humano ou ambos possam entendê-las. Note que, ao agir dessa forma, as pessoas estão construindo seu próprio conhecimento, no sentido de solucionar determinada questão proposta.

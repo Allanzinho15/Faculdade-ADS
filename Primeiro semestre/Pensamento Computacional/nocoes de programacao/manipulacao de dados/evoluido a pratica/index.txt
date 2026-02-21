@@ -1,0 +1,72 @@
+Evoluindo a prática
+Vamos praticar um pouco mais sobre manipulação simples de dados usando imagens, através das práticas 3 e 4 a seguir.
+
+
+Prática 3
+
+
+Assita ao vídeo e acompanhe a prática.
+
+
+
+Vamos realizar alguns experimentos simples com o código da tabela 3, manipulando o código-fonte a seguir para observar o que acontece:
+
+
+
+Durante essa prática, observe com atenção a proposição em português feita no enunciado, em que o efeito desejado é descrito. Depois, tente refletir: Qual é o código de computador que você deve escrever, ou seja, as instruções e os valores digitados no código-fonte para alcançar o efeito proposto?
+
+ 
+
+Na prática, você aprenderá a traduzir do português para a linguagem do computador.
+
+O código fornecido ajusta o pixel (4,0) para vermelho. Ajuste o código para que o pixel (4,0) fique verde. Veja na solução!
+
+
+
+
+Agora, observe as soluções em alterações na mudança de alguns parâmetros!
+
+
+Manipulação do pixel (4,0) para que fique amarelo
+
+
+Aqui, o pixel (4,0) estava originalmente preto, ou seja, código RGB (0,0,0). Como sabemos que o amarelo é a combinação de verde e vermelho, a solução é bem simples: basta adicionar o nível máximo (255) dessas cores constituintes.
+
+
+
+
+Manipulação do pixel (5,0) para que fique amarelo
+
+
+A solução aqui é muito simples: basta alterar o código da solução anterior para que a instrução getPixel(4,0) passe a ser getPixel(5,0).
+
+
+
+
+Prática 4
+
+
+Suponha que, em vez de manipular apenas um pixel por vez, conforme fizemos neste módulo, desejássemos manipular todos os pixels de uma imagem, digamos de 10x10 pixels (exemplo: circulo.bmp). Se usássemos o código que aprendemos a escrever, teríamos de escrever 100 vezes a instrução pixel = img.getPixel(), em que, a cada vez, passaríamos os valores x,y para cada um dos pixels da imagem.
+
+ 
+
+Isso traz vários problemas. Veja!
+
+ 
+
+O primeiro deles é que o código ficaria difícil de ler/compreender.
+ 
+O segundo é que, se for uma imagem maior, de 1980x1024 pixels, teríamos cerca de 2 milhões de pixels.
+
+Portanto, a instrução pixel = img.getPixel() teria de ser escrita cerca de 2 milhões de vezes no código fonte, a cada vez fazendo referência para um pixel diferente. Isso seria inviável, não é mesmo?
+
+
+
+Mostrar solução
+
+No mundo real, quase sempre desejamos realizar operações com uma quantidade muito grande de dados. Os engenheiros e cientistas de computação pensaram nesta questão décadas atrás.
+
+ 
+
+Felizmente, há técnicas de programação/codificação que nos permitem manipular uma quantidade arbitrária de dados, sem ter de escrever muitos códigos de computador.
+

@@ -1,0 +1,44 @@
+Visão geral de interface de usuários
+As interfaces de usuário podem ser entendidas como sendo a ponte de ligação entre os usuários e as aplicações. E grande parte das aplicações são acessadas por usuários que não têm conhecimento das tecnologias utilizadas no projeto de software. Sendo assim, é de fundamental importância que as interfaces sejam claras e tenham usabilidade adequada, de modo a proporcionar boa experiência aos usuários. Além disso, atualmente, há computadores, tablets e smartphones com diferentes tamanhos de telas e, dessa forma, é importante que as interfaces possam funcionar adequadamente em todos os dispositivos.
+
+
+O vídeo vai abordar a interação entre as aplicações de computador e os seres humanos que os utilizam, destacando a importância da clareza e usabilidade da interface.
+
+
+
+O conceito de interface está ligado à área de Interação Humano-Computador (IHC), que pode ser resumida como o estudo da interação entre pessoas e computadores. Nesse contexto, a interface, muitas vezes chamada de interface do utilizador, é quem provê a interação entre o ser humano e o computador. No início da utilização dos computadores, tal interação era realizada por meio de linha de comando e, posteriormente, também mediante interfaces gráficas (Graphical User Interface - GUI). Segundo Morais (2014), no início, a interação foi, de certo modo, primária, deixando um pouco de lado o ser humano, por não existir um estudo aprofundado desses aspectos.
+
+
+
+Dessa forma, o foco do estudo da interface envolvia principalmente o hardware e o software, e o ser humano simplesmente tinha que se adaptar ao sistema criado. Posteriormente, com o avanço da tecnologia e do acesso a computadores, e mais recentemente a outros dispositivos, sobretudo os smartphones, a necessidade de melhorar a interação tem crescido continuamente.
+
+
+A interface do lado cliente
+
+
+Como Silva (2014) explica, a evolução tecnológica levou a uma crescente utilização de dispositivos móveis que possuem os mais variados tamanhos de tela e funcionalidades.
+
+
+
+Sobre essa variedade nas características dos dispositivos utilizados como interface para o acesso a aplicações no ambiente web, é necessário garantir a usabilidade, ou seja, que sejam desenvolvidos sistemas fáceis de usar e de aprender, além de flexíveis. Em complemento a esse conceito, e partindo do ponto de vista da usabilidade, esta deve estar alinhada ao conceito de design responsivo, o qual deverá permitir que as páginas web e consequentemente as aplicações web respondam a qualquer dispositivo sem perda de informações por parte do usuário.
+
+
+O site StatCounter Global Stats mantém ativa uma série de dados e estatísticas sobre dispositivos, tamanhos de tela, além de outras informações relacionadas. Sobre o tamanho de telas, e considerando o período de abril de 2019 a abril de 2020, temos os seguintes dados:
+
+
+Tamanho da tela em pixels 
+(largura x altura)	Percentual de utilização
+360 x 640	10,11%
+1366 x 768	9,69%
+1920 x 1080	8,4%
+375 x 667	4,24%
+414 x 896	3,62%
+1536 x 864	3,57%
+Tabela: Estatísticas mundiais sobre resolução de telas de dispositivos.
+Alexandre Paixão.
+
+Quando consideramos essas mesmas estatísticas, mas levando em conta especificamente os dados de navegação do Brasil, temos um cenário diferente, conforme pode ser visto na imagem a seguir.
+
+
+
+Estatísticas sobre resoluções de telas de dispositivos - Brasil.

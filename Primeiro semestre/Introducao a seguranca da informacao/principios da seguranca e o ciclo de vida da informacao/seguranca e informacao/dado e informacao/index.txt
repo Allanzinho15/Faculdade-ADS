@@ -1,0 +1,53 @@
+Dado e informação
+
+
+Pintura rupestre
+
+As primeiras figuras rupestres datam de mais de 70 mil anos antes de Cristo.
+
+ 
+
+Dos manuscritos do Mar Morto até o último livro disponibilizado pela Amazon, a humanidade sempre precisou armazenar seus conhecimentos de alguma forma. Isso nos remete ao conceito de conhecimento - ou, mais especificamente, de informação.
+
+
+O conceito fundamental que dá origem à informação, é conhecido como dado. Mas como defini-lo?
+
+ 
+
+O dado pode ser considerado o valor de determinada medida sem uma contextualização e, portanto, sem valor para ser aplicado ou tratado. No momento em que um dado é contextualizado, ou seja, é atribuído a um contexto ou a uma situação, torna-se uma informação, consequentemente, obtendo valor.
+
+
+Observe o gráfico de uma empresa na Bolsa de Valores: Na abscissa, ele apresenta o eixo temporal; na ordenada, o valor da ação na Bolsa.
+
+
+
+Suponhamos que ela tenha registrado um crescimento durante a pandemia de covid-19. O valor das ações desta empresa praticamente dobrou na Bolsa de Valores. Vamos analisar:
+
+
+Situação 1
+
+
+Imagine que você conheça somente os pares de dados, ($85, Maio 2019) e ($200, Maio 2020), fora de contexto.
+
+
+Situação 2
+
+
+Imagine que os dois valores sejam registrados nos meses de maio de 2019 e 2020, e que você seja informado sobre isso em meados de dezembro de 2019.
+
+
+Normalmente, uma situação do tipo não ocorre. Afinal, é muito difícil existir uma valorização tão grande em um curto espaço de tempo. Veja o que ocorre em cada situação:
+
+
+Na situação 1, os valores US$85 e US$200 são dados – e não contextualizados. Portanto, não é possível auferir ganhos financeiros ou elaborar uma percepção monetária a respeito deles. Mesmo que o maior expert em investimentos da Bolsa de Valores tivesse ciência de ambos, ele nada poderia fazer para lucrar com tais dados.
+ 
+
+Na situação 2, esses valores são dados contextualizados; por isso, conhecê-los configuraria uma informação passível de se auferir ganhos monetários.
+
+Com o exemplo apresentado, como podemos definir uma informação?
+
+
+
+Resposta
+
+Ela pode ser definida como um dado contextualizado no qual existe uma percepção de valor. É necessário haver uma atenção quanto à sua preservação.

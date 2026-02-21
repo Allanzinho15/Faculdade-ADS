@@ -1,0 +1,75 @@
+Arquitetura Cliente Servidor
+Utilizando a arquitetura Cliente – Servidor
+
+
+Cliente-servidor
+
+Nesta arquitetura, há pelo menos duas entidades: um cliente e um servidor. O servidor executa operações continuamente aguardando por requisições do(s) cliente(s). O mais comum, é que hajam diversos clientes e um único servidor. A figura abaixo ilustra a situação.
+
+
+
+Quando um dos clientes precisa que o trabalho seja realizado pelo servidor, ele monta uma mensagem, especificando o que deve ser realizado. A mensagem normalmente contém dados que devem ser processados pelo servidor.
+
+Quando a mensagem está montada, é enviada ao servidor por intermédio de algum sistema de comunicação (internet). Este recebe a mensagem, processa seu conteúdo e envia a resposta ao cliente.
+
+O servidor comporta-se passivamente, normalmente limita-se a aguardar solicitações, e quando estas chegam, processa as mensagens com os dados necessários e enviar o resultado do processamento de volta a seus clientes.
+
+
+Servidor
+
+Quando chega uma solicitação, o servidor pode:
+
+
+Atender imediatamente caso esteja ocioso.
+ 
+
+Gerar um processo-filho para o atendimento da solicitação.
+Enfileirar a solicitação para ser atendida mais tarde
+ 
+
+Criar uma thread para esse atendimento.
+Independentemente do momento em que uma solicitação é processada, o servidor, no final, envia ao cliente uma mensagem contendo o resultado do processamento.
+ 
+
+Quem utiliza esse tipo de arquitetura é a aplicação web.
+
+Vamos analisar esse processo no exemplo a seguir.
+
+
+
+Você deseja fazer uma receita especial, descobrindo, em um site, aquele prato que gostaria de preparar. Ao clicar em um link, ela aparecerá. Para isso acontecer, o servidor web (software servidor do site de receitas) fica aguardando as conexões dos clientes.
+
+
+
+Quando você clica no link da receita, seu browser envia uma mensagem ao servidor indicando qual delas você quer.
+
+
+
+Ele faz então o processamento solicitado e devolve ao browser o resultado disso (sua receita).
+
+
+É muito importante compreender, de maneira prática, o funcionamento do processamento de resultados.
+
+
+Atenção
+O que determina se uma entidade é cliente ou servidor é a função desempenhada pelo software, e não o tipo de equipamento.
+
+
+É fundamental saber que servidores desempenham uma função muito importante; por isso, há equipamentos apropriados para eles, com MTBF alto e recursos redundantes.
+
+O tipo de software instalado nesse equipamento é o responsável por determinar se ele é cliente ou servidor.
+
+Além disso, um processo pode atuar simultaneamente como cliente e servidor.
+
+
+Voltemos ao exemplo da aplicação web:
+
+
+Quando seu browser solicita a receita ao servidor web, aquele está atuando como cliente e este, como servidor.
+
+Mas esse processo nem sempre é simples; afinal, a aplicação que executa no servidor web e realiza o processamento solicitado pode precisar de uma informação armazenada em um banco de dados externo.
+
+Para obtê-la, esse servidor deve enviar uma mensagem ao servidor de banco de dados solicitando aqueles de que necessita para continuar. Nesse momento, ele atua como um cliente do servidor de banco de dados.
+
+
+

@@ -1,0 +1,43 @@
+Algoritmo
+Um algoritmo é um conjunto de instruções com uma finalidade útil, podendo ser expresso em linguagem comum. Por exemplo, calcular a idade com base na data de nascimento. Para implementá-lo, escreve-se um código em linguagem de programação. O algoritmo só é válido quando alcança seu propósito. Programadores implementam algoritmos que, por sua vez, serão executados em computadores. Já o computador se destaca por sua velocidade e economia.
+
+
+Vídeo sobre o conjunto de instruções com uma finalidade específica, chamada algoritmo.
+
+
+
+Definição
+
+
+Para usar o e-mail, assistir a um vídeo, conversar pelo WhatsApp, realizar operações bancárias, ou qualquer outro recurso útil via computador, smartphones etc., foi preciso que, em algum momento, uma pessoa ou uma equipe pensasse: “Bem, deveríamos escrever um algoritmo para isso”.
+
+
+Alguém estruturou os procedimentos necessários e, depois, transformou os passos de alto nível em instruções suficientemente simples, para que o computador ou o smartphone pudesse executá-las. Essa pessoa ou a equipe trabalhou, então, escrevendo o código para a solução. Em seguida, um bom tempo foi gasto para testar e melhorar o código, até que ele, de fato, representasse com fidelidade o algoritmo projetado originalmente.
+
+
+O programador pode se concentrar em ser criativo, para, então, criar um algoritmo capaz de resolver um problema real.
+
+
+Programadores versus computadores
+
+
+Programadores de computadores são os responsáveis por discernir um aproveitamento útil, transformar a ideia de aplicação (ex.: redução de olhos vermelhos em fotos) em um algoritmo e traduzir esse discernimento em uma sequência de instruções simples, compreensíveis para o computador. As máquinas, por outro lado, são inacreditavelmente rápidas. Assim, programadores e computadores formam uma combinação extremamente poderosa. Vamos entender agora a diferença entre código e algoritmo:
+
+
+Código (definição simplificada)
+
+É um conjunto qualquer de instruções simples escrito em alguma linguagem padrão compreensível para o computador. Deve ser escrito em uma linguagem de programação padrão, senão os computadores não conseguirão executá-lo.
+
+
+Algoritmo (definição simplificada)
+
+É um termo que reflete uma ideia mais completa, em que o conjunto de instruções possuem uma finalidade útil. Não precisa ser escrito em linguagem de computador, podendo ser escrito, por exemplo, em português.
+
+
+Suponha que você tenha pensado em um algoritmo com a finalidade de calcular a idade de pessoas com base em sua data de nascimento. Então, você começa a escrever um código que deve seguir uma das linguagens de programação padrão. Enquanto não estiver funcionando, não poderá ser classificado como um algoritmo, pois ainda não alcança sua finalidade.
+
+
+Então, no que o computador é bom? Bem, o computador é bom em ser rápido e barato.
+
+
+Com a lei de Moore, os computadores têm ficado mais baratos, e isso ocorre há várias décadas. Como resultado, eles podem ser mais difundidos e é possível embutir mais pesquisa científica para desenvolvê-los, tornando-os ainda mais rápidos. Conheça mais a seguir.

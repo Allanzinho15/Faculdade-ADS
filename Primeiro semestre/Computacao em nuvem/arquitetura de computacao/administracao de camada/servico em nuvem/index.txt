@@ -1,0 +1,27 @@
+Serviços em nuvem
+Neste vídeo será apresentado os grandes componentes da computação em nuvem (back end e front end) e os diversos componentes que os compõe.
+
+
+
+Os componentes principais do sistema em nuvem são os hardwares de processamento e armazenamento. Geralmente, são constituídos por um conjunto de servidores, em um local geograficamente distante, que normalmente chamamos de datacenter.
+
+
+O modelo de serviços em nuvem geralmente se concentra na entrega de computação, armazenamento de dados, plataformas e serviços de aplicativos gerenciados a partir de um conjunto de infraestrutura de serviços distribuídos e escaláveis.
+
+
+Comentário
+Os serviços em nuvem é essencialmente um modelo de TIC (Tecnologia da Informação e Comunicação), em que os recursos de software e hardware são fornecidos como um serviço aos usuários pela internet. Assim, os usuários podem aproveitar serviços de armazenamento, computação e serviços de aplicativos em nuvem.
+
+
+Em geral, os serviços em nuvem permitem aos usuários acessar recursos e serviços de hardware e software sem ter que se preocupar com a configuração e a manutenção da infraestrutura.
+
+
+Os serviços de computação em nuvem são serviços de TI que são hospedados em ambientes virtuais remotos, acessíveis através da internet. Esses serviços permitem aos usuários acessar aplicativos, armazenamento, servidores, banco de dados e serviços de rede sem precisar ter seus próprios sistemas de computação. Vejamos agora alguns exemplos de serviços de computação em nuvem:
+
+
+Serviços de armazenamento na nuvem: Permitem aos usuários armazenar e acessar arquivos, independentemente da localização física.
+Serviços de computação na nuvem: Permitem computação em escalas variadas, desde servidores virtuais até clusters de computadores.
+Serviços de infraestrutura na nuvem: Permitem aos usuários acessar servidores e serviços de rede, como VPNs e firewalls.
+Serviços de plataforma na nuvem: Permitem aos usuários criar, implantar e gerenciar aplicativos através de um ambiente baseado na nuvem.
+Serviços de análise na nuvem: Permitem aos usuários processar, analisar e gerenciar grandes quantidades de dados.
+Serviços de desenvolvimento na nuvem: Permitem aos usuários criar aplicativos baseados na nuvem por meio de uma interface de programação de aplicativos (API).

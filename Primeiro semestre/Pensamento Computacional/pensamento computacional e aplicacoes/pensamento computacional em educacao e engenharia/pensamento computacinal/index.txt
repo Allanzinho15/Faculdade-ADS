@@ -1,0 +1,63 @@
+Pensamento computacional e ensino da Engenharia
+
+Grande parte do ensino de Engenharia requer uma base sólida de Matemática, além de compreensão e vivência práticas. Porém, muitas mudanças recentes no ensino médio resultaram em queda nas habilidades e nos conhecimentos dos alunos em áreas como Aritmética e Leitura. Combinado com os alunos provenientes de uma distribuição geográfica maior, isso resulta em um conjunto heterogêneo de habilidades iniciais entre os estudantes.
+
+
+
+Engenharia
+
+
+
+Matemática
+
+
+
+Vivências
+
+
+Um segundo desafio está relacionado à crescente complexidade dos sistemas que os engenheiros recém-qualificados deverão analisar, projetar e testar em sua carreira. Não é mais adequado apenas compreender os princípios subjacentes. Um engenheiro graduado deve agora ter um conhecimento de trabalho muito mais profundo dos processos envolvidos no projeto desses sistemas complexos.
+
+
+Abordar a crescente lacuna entre as habilidades desiguais dos novos alunos e as expectativas mais altas dos alunos de graduação, dentro da duração limitada dos cursos típicos de Engenharia, é um desafio cada vez mais difícil. Para promover essa transformação, tais cursos precisam integrar o pensamento computacional em todos os aspectos do currículo.
+
+
+Comentário
+As experiências de várias instituições acadêmicas líderes dos Estados Unidos e da Europa demonstram que, quando isso é feito de forma sistemática, os alunos aprendem rapidamente conceitos matemáticos desde o início, usando ferramentas de software simbólicas e numéricas. Além disso, os estudantes adquirem uma compreensão mais profunda de programação e de Engenharia de Sistemas com o aprendizado prático baseado em projetos, por meio de laboratórios virtuais.
+
+
+Os alunos também aprendem a:
+
+
+Pensar de forma independente.
+Investigar e explorar ambientes.
+Aplicar as ferramentas usadas pelos engenheiros em sua profissão.
+
+As plataformas de programação e simulação numérica, por exemplo, o MATLAB, podem atuar como facilitadoras para promover a transição dos cursos tradicionais de Engenharia para os cursos modernos, em que os requisitos de análise definidos pelos organismos de acreditação, como o Conselho Regional de Engenharia e Agronomia (CREA), são atendidos.
+
+ 
+
+Essas plataformas permitem a integração do pensamento e das ferramentas computacionais para promover uma compreensão mais profunda dos princípios de Engenharia. Elas também permitem o uso de aplicativos simples para dar vida a conceitos, antes de incentivar e capacitar os alunos a desenvolverem suas próprias soluções.
+
+
+Uma superfície criada no Matlab
+
+Hoje em dia, a maioria dos estudantes se sente confortável usando computadores ao iniciar seus estudos, mas poucos se sentem à vontade em aplicá-los para resolver problemas de Engenharia. Para fechar essa lacuna, o pensamento computacional e o desenvolvimento de habilidades associadas têm sido cada vez mais integrados ao longo do currículo.
+
+
+Embora a base matemática para o ensino dessa área seja relativamente estável, a complexidade e a natureza multidisciplinar dos problemas de Engenharia exigem atualmente que os cursos atendam a vários objetivos de aprendizado ao mesmo tempo. A capacidade de usar softwares não é apenas um requisito para os engenheiros de hoje, mas também uma solução que permite aos alunos colocarem em prática a teoria que aprenderam em sistemas reais.
+
+
+A experiência com uma variedade de ferramentas pode ajudar os estudantes a ampliar seus horizontes, mas esse benefício deve ser ponderado em relação à capacidade de explorar conceitos de Engenharia em maior profundidade, usando — e ganhando experiência com isso – o mesmo ambiente de ferramentas em cada ano de seus estudos. Professores em todo o mundo descobriram que o uso do mesmo conjunto de softwares, desde o primeiro ano até o final do curso, aprimora a experiência de aprendizado — particularmente quando essas mesmas ferramentas são usadas por engenheiros que trabalham com problemas do mundo real na indústria.
+
+
+Em vez de começar no primeiro ano de estudo com construções abstratas de programação, os alunos são introduzidos à computação por simulação e experimentam conceitos de Engenharia usando plataformas de hardware, como o LEGO Mindstorms. Essa introdução promove a retenção e ajuda a mitigar a lacuna de conhecimento de Matemática e Engenharia que são abordados nos semestres posteriores. As habilidades de programação são aprimoradas nos primeiros semestres dos cursos de Matemática e Física, que servem como pré-requisitos para entrar na sequência da Engenharia.
+
+
+Comentário
+À medida que o nível de conforto dos alunos com programação aumenta e a complexidade dos problemas estudados também, o componente de computação é estendido para incluir um simulador.
+
+
+Geralmente, os currículos de Engenharia culminam em uma série de cursos aplicados em laboratório, nos quais os estudantes são incentivados a demonstrar as habilidades de resolução de problemas, adquiridas com desenvolvimento de projetos desenvolvidos anteriormente.
+
+
+Ao ajudar a gerar entusiasmo, estabelecer um objetivo cedo e introduzir habilidades que são reforçadas posteriormente, a integração do pensamento computacional serve para envolver os alunos, mantendo-os motivados à medida que o nível de complexidade dos projetos aumenta. Isso permite aprimorar o aprendizado e aumentar a retenção.

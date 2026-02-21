@@ -1,0 +1,226 @@
+Conceitos avançados
+Agora que já vimos os conceitos básicos de CSS, sua sintaxe, seus elementos e suas formas de integração com HTML, vamos analisar os conceitos avançados, como o box model (modelo de caixas ou retângulos).
+
+
+Neste vídeo, abordamos os conceitos avançados de CSS, como box-model, pseudoclasses, pseudoelementos, posicionamento e layout.
+
+
+
+Conceitos de box model
+
+Podemos comparar os elementos de uma página web, quando pensamos na organização de seus elementos e marcação, a brinquedos de montar do estilo blocos. Vejamos!
+
+
+
+Montagem
+
+
+Nos brinquedos de bloco há peças de diferentes tamanhos, larguras, alturas, cores e formatos. Tendo em mãos tais elementos, é nosso papel montá-los, encaixá-los de forma harmoniosa para, ao final, obtermos o resultado esperado.
+
+
+
+Resultado
+
+
+Para chegar a esse resultado, é importante entendermos o comportamento, a composição e as características de cada bloco, assim como os estilos que podem receber.
+
+
+Nesse sentido, dentro do conceito de box model – que, em CSS, está relacionado a design e layout – nossos boxes possuem quatro componentes principais: margem (margin), borda (border), preenchimento (padding) e conteúdo (content).
+
+
+
+Componentes do box model
+
+Repare que na imagem anterior foram definidas 3 caixas com o elemento <div> e, para cada uma delas, foram definidos diferentes estilos, como largura, altura e cor de fundo. Para a <div> com identificador “box_exemplo” foram declarados ainda valores para margin, padding, border e content. Veja a explicação desses valores:
+
+
+
+Margin
+
+Como indicado no lado direito da imagem anterior, a margem permitiu que um espaço fosse criado entre a primeira, a segunda e a última div. Também criou um espaçamento entre a box exemplo e a lateral esquerda da página. As margens de um elemento podem ser controladas com as propriedades CSS margin-top, margin-bottom, margin-right e margin-left – além do atalho margin, como visto no código de exemplo.
+
+
+
+Border
+
+A borda define a área do elemento, incluindo altura e largura, e também permite a definição de uma cor diferente para essas extensões do elemento. Ela é controlada pela propriedade CSS "border" e suas variantes, que permitem definir a largura, a cor e o tipo de borda.
+
+ 
+
+O tamanho declarado para a borda é somado ao tamanho declarado para o elemento, compondo, assim, o seu tamanho final.
+
+
+
+Padding
+
+Para entender a função do padding, repare que os textos da primeira e da última <div> estão colados no topo e na lateral esquerda. Entretanto, na div do meio, há um espaçamento em relação ao topo e à lateral esquerda. Esse espaço de preenchimento equivale ao padding. Assim como a margem, suas dimensões são a altura e largura.
+
+ 
+
+Atente-se para a seguinte diferença: margin diz respeito ao espaço entre elementos; já o padding refere-se ao conteúdo interno do próprio elemento, além de fazer parte dele.
+
+ 
+
+Na prática, a diferença entre margin e padding significa que a div #box_exemplo, cuja largura foi declarada como 400px e altura como 200px tem, na verdade, 500px de altura e 300px de largura. Ou seja, o padding aumentou suas dimensões: width + padding-right + padding-left => 400px + 50px + 50px = 500px height + padding-top + padding-bottom => 200px + 50px + 50px = 300px.
+
+ 
+
+Para controlar o preenchimento de um elemento, são utilizadas as propriedades CSS padding-top, padding-bottom, padding-right e padding-left, além do atalho padding.
+
+
+
+Content
+
+Essa é a área interna do elemento, ocupada pelo seu conteúdo. Suas dimensões são altura e largura. Além disso, sua cor de fundo (background), a cor da fonte (color) de seu conteúdo, sua largura (width, min-width, max-width) e altura (height, min-height, max-height) podem ser estilizadas com CSS.
+
+
+Conceitos de pseudoclasses e pseudoelementos
+
+Uma declaração CSS é composta pelo elemento que se deseja estilizar, pela propriedade a ser estilizada e pelo valor a ser atribuído. Além disso, vimos que o elemento pode ser definido de maneira ampla (utilizando-se o nome da tag), específica (pelo seu identificador único) e seletiva (com a utilização de classes).
+
+
+Um elemento filho pode, ainda, herdar as propriedades de um elemento pai. Todos esses modos de definir estilo são bastante abrangentes. Entretanto, existem algumas formas especiais e muito úteis para se aplicar estilos: as pseudoclasses e os pseudoelementos.
+
+
+Pseudoclasses
+
+São utilizadas para definir um estado especial de um elemento. Por exemplo, podemos mudar o estilo de um elemento ao passarmos o mouse sobre ele (evento mouseover). Esse novo estilo é temporário, ou seja, não corresponde ao seu estado natural. Também podemos mudar o estilo de um link que foi clicado, alterando sua cor ou alguma outra propriedade.
+
+
+A sintaxe para declaração da pseudoclasse é composta pela palavra-chave correspondente ao nome da pseudoclasse precedido pelo sinal de dois pontos.
+
+
+Exemplo
+div:hover{background-color:#000000;}
+
+
+Veja a seguir a lista básica de cinco pseudoclasses.
+
+
+
+:active
+
+:checked
+
+:first-child
+
+:last-child
+
+:hover
+Como declarar: a:active
+
+ 
+
+Para que serve: Selecionar todos os links ativos.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Pseudoelementos
+
+São palavras-chave que podem ser adicionadas ou relacionadas a um seletor para estilizar uma parte específica dele. A imagem a seguir mostra duas declarações CSS, uma sem e outra com o uso de pseudoelemento. Em ambas, é definido que a primeira letra de texto em um parágrafo tenha tamanho e cor diferentes do restante do texto.
+
+
+
+
+Exemplo de utilização de pseudoelementos
+
+Ao analisar, codificar e testar o código acima, você perceberá que, no primeiro parágrafo, foi necessário utilizar um elemento a mais, a tag , ao redor da primeira letra do texto para poder estilizá-la. Já no segundo parágrafo, o mesmo estilo foi alcançado apenas com o uso do pseudoelemento first-letter. A utilização do pseudoelemento diminui a quantidade de código, tornando sua compreensão mais clara.
+
+
+Cabe destacar outro ponto do exemplo relacionado à sintaxe dos pseudoelementos: neles são usados dois pontos duplos (ou dobrados) para a declaração. Esse uso proposital é para diferenciá-los das pseudoclasses.
+
+
+Veja a seguir os cinco pseudoelementos principais.
+
+
+
+::after
+
+::before
+
+::first::letter
+
+::first-line
+
+::selection
+Exemplo: img::after
+
+ 
+
+Para que serve: Inserir conteúdo após o elemento indicado.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Conceitos de posicionamento e layout
+
+Para lidar com posicionamento em CSS, é necessário revisitar alguns conceitos já abordados, principalmente aqueles relacionados ao box model. Além disso, é importante lembrar que os elementos HTML possuem estilos e comportamentos padrão. Alguns desses padrões diferem um pouco de um navegador para outro e podem ser modificados por CSS, onde as tais diferenças são resolvidas e, de fato, um padrão de comportamento pode ser definido.
+
+
+Layout em colunas e grid layout
+
+Esses dois conceitos são importantes quando tratamos da estrutura visual de páginas HTML. Em uma definição simplista, ambos tratam de como os elementos boxes podem ser posicionados e organizados em uma página. Veja a seguir a estrutura em colunas de uma página:
+
+
+
+Layout CSS em colunas
+
+Em termos de HTML, apenas utilizando boxes (header, footer, section, aside, nav, div etc.), os elementos ficariam empilhados uns sobre os outros. Para aplicar o layout visto na imagem e posicionar os elementos na página, precisaremos utilizar CSS.
+
+
+Propriedade position
+
+É a propriedade CSS responsável pelo posicionamento. Seus valores possíveis são: static, relative, fixed, absolute e sticky. Além disso, as propriedades top, bottom, right e left são usadas em conjunto, a fim de definir os valores das respectivas distâncias e, consequentemente, do posicionamento. Tais propriedades, inclusive, só podem ser usadas quando for definido um valor para position.
+
+
+Conheça agora cada propriedade position!
+
+
+
+Position static
+É a posição padrão dos elementos. Desse modo, elementos definidos como static ou sem a propriedade position são posicionados naturalmente, de acordo com o fluxo normal da página, não assumindo nenhuma localização especial. Inclusive, as propriedades top, bottom, right e left não são refletidas em elementos estáticos.
+
+
+Position relative
+Faz com que um elemento seja alocado de modo relativo à sua posição normal. Com isso, ao definirmos valores para as propriedades top, bottom, right e left, ajustamos a sua localização em relação à sua posição natural.
+
+
+Position fixed
+É utilizado quando desejamos definir uma posição fixa para um elemento na página. Com isso, independentemente do scroll, de rolarmos a página para cima ou para baixo, o elemento sempre permanecerá no mesmo local. As propriedades top, bottom, right e left devem ser usadas para definir o lugar no qual o elemento será fixado. Esse elemento é posicionado em relação à viewport/janela do navegador. Com isso, ele “flutuará” sobre os demais conteúdos da página, ficando fixo onde foi colocado e não ocupando, assim, a posição original na qual foi declarado no HTML.
+
+
+Position absolute
+Permite que um elemento seja posicionado em relação à localização do seu elemento ancestral mais próximo – o qual também deverá estar posicionado, ou seja, não poderá ser static. Quando o elemento definido como absolute for o primeiro elemento da página, ele então será posicionado em relação ao . Com isso, tal elemento acompanhará a rolagem da página.
+
+
+Position sticky
+Permite que um elemento seja posicionado com base na posição de rolagem da página (scroll). Com isso, seu comportamento varia entre o relativo e o fixado, dependendo da posição do scroll. Essa propriedade é mais recente em termos de especificação e não possui suporte em todas as versões dos navegadores. É usada, normalmente, quando queremos criar um efeito de sobreposição de conteúdo. Na prática, o elemento é visualizado ao abrirmos uma página. Ao rolarmos para baixo, ele se mantém fixo, com os demais conteúdos passando sob ele.

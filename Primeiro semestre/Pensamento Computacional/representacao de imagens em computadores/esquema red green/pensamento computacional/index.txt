@@ -1,0 +1,36 @@
+Pensamento computacional
+Como seres humanos, estamos acostumados a ver e interpretar o mundo de forma natural e orgânica. Um arquivo de computador que armazena uma imagem contém dados de cada pixel: números para a posição x,y do pixel na tela e números (RGB) que indicam a cor do pixel.
+
+ 
+
+Se quisermos modificar uma foto e torná-la um pouco mais clara, traduzimos isso em operações com números no computador. Por exemplo, ao aumentar os valores RGB de cada pixel em 15%, obteremos uma imagem mais clara. Isso exemplifica o conceito de pensamento computacional.
+
+ 
+
+Neste vídeo, vamos entender a formação de imagens sobre pixels, seus valores e a representação detalhada das imagens para dispositivos digitais.
+
+
+
+Como humanos, estamos naturalmente acostumados a ver o mundo, pensar e refletir a respeito dele sob a ótica de tudo o que é natural e orgânico. Você lembra da imagem de um lindo pássaro vista no início? Primeiro, supomos que essa imagem fosse do mundo real e orgânico.
+
+ 
+
+Depois, fomos gradativamente reduzindo o desafio de representar uma imagem do mundo real em computador. A partir desse momento, passamos a empregar a grade de valores do segundo gráfico como um esquema cujos números representam digitalmente qualquer imagem que possamos imaginar.
+
+
+
+Quando temos um arquivo de computador que armazena uma imagem, na prática, o que está dentro desse arquivo são os dados de cada pixel, ou seja, números para a posição x,y do pixel na tela, e números (RGB) usados para indicar qual é a cor do pixel.
+
+ 
+
+E se pensarmos em um processamento nos dados? Por exemplo, se quiséssemos tirar uma foto e, talvez, torná-la um pouco mais clara? No computador, vamos traduzir isso em alguma operação com números.
+
+ 
+
+Agora que já estudamos a representação de imagens digitais, é fácil imaginar o que precisaríamos fazer. Por exemplo, poderíamos pegar cada pixel da referida imagem e aumentar os valores RGB em, digamos, 15%. Pronto! Geraríamos uma imagem mais clara!
+
+
+Comparativo de imagens
+Manipulação de valores RGB.
+
+Nas imagens, quando aumentamos os valores RGB em 15%, tornamos uma imagem mais clara, com as cores da imagem mais brilhantes e vivas.

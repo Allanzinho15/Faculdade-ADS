@@ -1,0 +1,30 @@
+Estruturas de repetição na prática
+Para fixar melhor os conceitos sobre estruturas de repetição, vamos praticar um pouco. Neste vídeo, vamos criar um script em que utilizaremos o laço de repetição “for” para realizar a soma de números naturais. Vamos lá?
+
+
+
+Roteiro de prática
+
+Para realizar a prática proposta, siga estes passos:
+
+1 Crie um script “.js” utilizando o editor ou ide de sua preferência.
+2 Declare duas variáveis – uma para conter o resultado da soma (somaTotal) e outra para conter a quantidade máxima de interações (qtdeInteracoes) – e atribua a elas os seguintes valores: 0 e 50, respectivamente.
+3 Crie um laço “for” que seja decrementado de 1 em 1, começando na quantidade máxima de interações e chegando a 2 (ou a maior do que 1).
+4 Dentro do laço, incremente em uma unidade a variável que armazena o resultado da soma.
+5 Ao final do script, fora do laço “for”, imprima o resultado da soma.
+
+
+
+Ao final do script, fora do laço “for”, imprima o resultado da soma.
+
+
+Como solução, teremos o seguinte código:
+
+
+JavaScript (Node.js 12.14.0)
+let somaTotal = 0;
+const qtdeInteracoes = 50;
+for(let i = qtdeInteracoes; i >= 1; i-- ) {
+     somaTotal += i; // equivalente a utilizar somaTotal = somaTotal + i
+}
+console.log('soma total:',somaTotal);

@@ -1,0 +1,44 @@
+Sistemas de backup
+
+Backup é a criação de cópias redundantes de informações. Os sistemas de backups são utilizados como cópia de segurança de arquivos e dados.
+
+
+Você sabe por que o backup é tão importante?
+
+
+Lembra-se do caso da empresa de Júlia?
+
+
+
+Com o ataque, eles tiveram todo o banco de dados apagado. Caso eles tenham investido na realização de backups, o prejuízo sofrido pela empresa pode ser minimizado com a restauração dos dados. O ideal para uma empresa ou um usuário é realizar o backup de todos os dados em tempo real, para garantir que não haverá a perda de dados.
+
+
+Na prática, quase sempre é inviável aplicar essa recomendação devido à concorrência de atividades que fazem parte do cotidiano de uma empresa. No entanto, é muito importante que haja uma política específica para isso com a definição de responsáveis, periodicidade, locais de armazenamento e procedimentos de restauração, caso seja necessário.
+
+
+A organização também deve ter uma periodicidade para a manutenção dos backups, ou seja, por quanto tempo devem ser guardados e se existe alguma legislação que seja aplicável de forma específica. Por exemplo, no caso de instituições de ensino, um questionamento comum é sobre o período que o histórico escolar de um aluno será guardado.
+
+
+Atenção
+É importante que as empresas realizem testes com os backups a fim de garantir que os dados salvos possam ser restaurados e disponibilizados quando for preciso.
+
+
+Os backups são apenas um recurso de segurança usado para minimizar os problemas de uma companhia ou de um usuário em caso de perda de dados ou indisponibilidade nos sistemas. Quanto melhor for a política de backup (armazenamento e restauração de dados), menores serão os problemas para que a companhia possa continuar suas atividades. De acordo com Mayer (2017), existem alguns tipos de sistemas de backups, conforme apresentado a seguir:
+
+
+
+Backup completo
+
+Backup incremental
+
+Backup diferencial
+
+Faz cópias de todos dados, inclusive dos logs de transações associadas para outro conjunto de mídia, como, por exemplo, disco rígido, DVDs, CDs, pendrives, entre outros, independentemente de terem sido modificados ou não.
+
+
+
+
+
+
+
+Para garantir que as organizações possam continuar trabalhando em caso de perdas de dados, é extremamente recomendável possuir ferramentas conhecidas como Disaster Recovery. Essa infraestrutura tecnológica possibilita a operação da companhia em caso de falha de sistema.

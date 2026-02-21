@@ -1,0 +1,54 @@
+Ambiente WEB
+Com o avanço tecnológico da arquitetura cliente x servidor, passamos pelos modelos de duas, três e quatro camadas. Nessa última abordagem, de quatro camadas, não há necessidade de instalação de softwares adicionais nas máquinas dos clientes, ou seja, até mesmo a interface fica por conta do servidor web, que fornece os códigos que serão processados por navegadores nas máquinas dos clientes. Além disso, há outros servidores com tarefas específicas como os servidores de aplicações e de dados. Portanto, o que se conhece como servidor, nesta abordagem, é composto por outros servidores, aumentando a robustez e portabilidade das aplicações.
+
+
+O vídeo vai explorar a evolução da web até chegar ao modelo de quatro camadas, caracterizando o aumento da robustez e da portabilidade das aplicações nessa abordagem.
+
+
+
+Como vimos, inicialmente, as aplicações ficavam hospedadas dentro de uma rede interna, onde estavam os clientes e os servidores. Posteriormente, elas migraram para a internet, surgindo o ambiente web, cuja base é justamente prover aos clientes, usuários, o acesso a várias aplicações a partir de diversos dispositivos, como navegadores em desktops e smartphones ou a partir de aplicações mobile.
+
+
+Comentário
+É importante destacar um aspecto quando tratamos do ambiente web: a comunicação.
+
+
+Até aqui, vimos que esse ambiente é composto pelo:
+
+
+
+Cliente
+Utiliza um navegador ou aplicativo e consome serviços hospedados em um servidor web.
+
+
+Servidor web
+Pode comportar as camadas de apresentação, aplicação e dados em uma única máquina ou em diversas máquinas, sendo essa distribuição indistinguível para o cliente.
+
+Quando falamos de comunicação, estamos tratando mais especificamente de como trafegam os dados entre a requisição enviada por um cliente e a resposta provida, por um servidor.
+
+
+Comunicação no ambiente web
+
+
+A comunicação, nesse ambiente, é feita sobre a internet, com o uso dos seus protocolos de comunicação, sendo o principal protocolo o HTTP (HyperText Transfer Protocol), que é um protocolo para transferência de hipertexto. Na imagem seguinte, podemos ver um exemplo de comunicação no ambiente web.
+
+
+
+Comunicação no ambiente web.
+
+No exemplo apresentado, temos, de um lado, o cliente que, com um desktop ou smartphone, faz a requisição, através da internet, de um serviço — representada pelo arquivo Listar-TV.php — a um servidor. O servidor web, após processar a requisição, retorna a informação solicitada, representada pelo arquivo Listagem-TV.php. Com isso, podemos entender como funcionam as aplicações disponíveis no ambiente web, como websites de notícias, comércio eletrônico, e-mail, redes sociais etc. Em cada um desses casos, há uma requisição sendo feita pelo cliente e o servidor processando a requisição e respondendo ao cliente com o que foi solicitado.
+
+
+Solicitação e resposta
+
+
+O processo de comunicação no ambiente web é conhecido como solicitação (request) e resposta (response). Normalmente, a solicitação é iniciada pelo cliente, mas é possível que também o servidor a inicie, como em serviços PUSH — serviços que disparam notificações/mensagens para os clientes que fizeram opção por recebê-las.
+
+
+
+Processo de solicitação e resposta .
+
+Client side X Server side
+
+
+Essas duas expressões são muito comuns quando falamos de aplicações rodando no ambiente web. Ambas se referem a tecnologias e códigos disponibilizados no lado cliente (nesse caso, o dispositivo utilizado por um usuário para fazer uma requisição) e no lado servidor.

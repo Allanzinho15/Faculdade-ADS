@@ -1,0 +1,72 @@
+Definições
+Para identificar os riscos relacionados ao uso de uma rede de computadores, é importante conhecer algumas definições. Por conta disso, iremos nos basear na norma ABNT NBR ISO IEC 27001:2013, reconhecida mundialmente como uma referência na área de segurança. Essa norma apresenta as seguintes definições:
+
+
+Conceitos de segurança da informação
+
+
+Ameaça
+
+
+Causa potencial de um incidente indesejado que pode resultar em danos a um sistema ou organização.
+
+
+Ataque
+
+
+Tudo aquilo que tenta destruir, expor, alterar, desativar, roubar, obter acesso não autorizado ou fazer uso não autorizado de um ativo.
+
+
+Ativo
+
+
+Qualquer coisa que tenha valor para uma pessoa ou organização. Exemplo: os dados do cartão de crédito, um projeto de uma empresa, um equipamento e até mesmo os colaboradores de uma empresa podem ser definidos como ativos humanos.
+
+
+Como é possível perceber nessas definições, a ameaça está relacionada a algo que pode comprometer a segurança, enquanto o ataque é a ação efetiva contra determinado ativo.
+
+
+Um incidente de segurança ocorre quando uma ameaça se concretiza e causa um dano a um ativo.
+
+
+Se uma ameaça se concretizou e causou um dano, isso significa que alguma propriedade da segurança foi comprometida.
+
+
+Três propriedades são tratadas como os pilares da segurança: Confidencialidade, Integridade e Disponibilidade (CID).
+
+
+Além delas, outras propriedades também são importantes no contexto de segurança. A norma ABNT NBR ISO IEC 27001:2013 destaca as seguintes:
+
+
+Propriedades da segurança da informação
+
+
+
+Confidencialidade
+Propriedade cuja informação não está disponível para pessoas, entidades ou processos não autorizados. A confidencialidade está relacionada ao sigilo dos dados. Somente entes autorizados podem acessá-los.
+
+
+Integridade
+Propriedade que protege a exatidão e a completeza de ativos. Trata-se da indicação de que o dado não foi adulterado. Exemplo: um ativo permanece intacto após ser armazenado ou transportado.
+
+
+Disponibilidade
+Propriedade de tornar o dado acessível e utilizável sob demanda por fontes autorizadas. Se uma pessoa ou um processo autorizado quiser acessar um dado ou equipamento, ele estará em funcionamento.
+
+
+Autenticidade
+Propriedade que assegura a veracidade do emissor e do receptor das informações que são trocadas. A autenticidade assegura que quem está usando ou enviando a informação é realmente determinada pessoa ou processo. Em outras palavras, garante a identidade.
+
+
+Não repúdio ou irretratabilidade
+Propriedade muito importante para fins jurídicos. Trata-se da garantia de que o autor de uma informação não pode negar falsamente a autoria dela. Desse modo, se uma pessoa praticou determinada ação ou atividade, ela não terá como negá-la. O não repúdio é alcançado quando a integridade e a autenticidade são garantidas.
+
+
+Confiabilidade
+Propriedade da garantia de que um sistema vai se comportar segundo o esperado e projetado. Exemplo: se determinado equipamento foi projetado para realizar uma operação matemática, esse cálculo será realizado corretamente.
+
+
+Legalidade
+Propriedade relacionada com o embasamento legal, ou seja, ela afere se as ações tomadas têm o suporte de alguma legislação ou norma. No caso do Brasil, podemos citar o Marco Civil da Internet, a Lei Geral de Proteção de Dados (LGPD) e o conjunto de normas 27.000 da ABNT.
+
+Os mecanismos de proteção se relacionam a práticas, procedimentos ou mecanismos capazes de proteger os ativos contra as ameaças, reduzindo ou eliminando vulnerabilidades. Além disso, eles evitam que uma dessas propriedades sejam comprometidas.

@@ -1,0 +1,90 @@
+Política de Gestão de Continuidade de Negócios (PGCN)
+A Política de Gestão de Continuidade de Negócios (PGCN) é o conjunto dos processos e das atividades que uma organização deve ter para garantir resistência aos diversos problemas e gerenciar adequadamente os riscos. As PGCNs caracterizam-se pelas particularidades de cada organização e dos setores em que atuam. Além disso, devem ser revisadas periodicamente à medida que as tecnologias evoluem e os riscos comerciais mudam.
+
+
+Veja, a seguir, qual é o propósito da PGCN, de acordo com a NBR15999-1 (2007) — norma que estabelece o processo, os princípios e a terminologia da PGCN.
+
+
+O propósito da PGCN é fornecer uma base para que se possa entender, desenvolver e implementar a continuidade de negócios em uma organização, além de fortalecer a confiança nos negócios junto aos clientes e a outras organizações. A PGCN permite também que a organização avalie sua capacidade de Gestão de Continuidade de Negócios (GCN) de uma maneira consistente e reconhecida.
+
+
+A PGCN é um processo de gestão que identifica as potenciais ameaças para uma organização e os possíveis danos nas operações de negócio. Portanto, ela cria uma estrutura de ações direcionadas a capacitar as organizações no caso de desastres. Assim, as organizações aumentam a sua capacidade de responder de forma eficaz e eficiente na concretização dos cenários de adversidades.
+
+
+Comentário
+A PGCN deve garantir o controle das crises dentro de um sistema de gerenciamento por meio da clara identificação dos responsáveis por cada ação e da descrição das ações que devem ser executadas para garantir a continuidade dos negócios.
+
+
+Trata-se de um processo vivo que deve ser aperfeiçoado e divulgado constantemente. Destina-se a preparar a organização para agir com ações previamente estabelecidas capazes de reduzir os possíveis prejuízos humanos, materiais e de imagem.
+
+
+Infelizmente, muitos problemas podem acontecer, fazendo com que as organizações interrompam suas atividades temporariamente ou, em situações mais complexas, sem prazo definido de retorno. O trabalho de mapear esses cenários de desastres e de caracterizar as ações adequadas para tratá-los não é simples, porém é extremamente necessário.
+
+
+Atenção
+Você provavelmente já deve ter ouvido o seguinte ditado popular: “chorar sobre o leite derramado”. Essa frase é usada quando alguém (no nosso caso, uma organização) não desenvolveu o trabalho preventivo e, na concretização de um cenário de desastre, passa a lamentar os prejuízos sem ter ações predefinidas para minimizar os danos às suas operações. Fica evidente a relevância de a organização ter uma PGCN. O principal resultado da PGCN é o Plano de Continuidade de Negócios.
+
+
+A organização deve desenvolver sua PGCN de modo que descreva os objetivos (definição do PCN), o escopo (qual é a abrangência) e os papéis de responsabilidade dos envolvidos nos processos da Gestão de Continuidade de Negócios.
+
+
+Na descrição da PGCN, a organização deve considerar:
+
+
+Alocação dos recursos para gestão contínua dos negócios (GCN).
+Definição dos princípios, dos guias e das políticas que precisem ser incluídos ou que possam ser utilizados como
+referência.
+Referência às normas pertinentes, aos regulamentos, às legislações ou às políticas que tenham de ser incluídos ou
+que possam ser usados como parâmetro.
+
+Construir, manter e divulgar uma PGCN exige comprometimento dos responsáveis da empresa com a preservação das vidas dos seus colaboradores e com a continuidade da atuação do negócio quando um cenário de desastre se concretiza. Não há nenhuma dúvida, portanto, da necessidade da PGCN.
+
+
+Alguns dos benefícios da sua aplicação são:
+
+
+Identificação dos impactos e das consequências antes da ocorrência de um desastre.
+
+Minimização dos efeitos de interrupções na organização.
+
+Redução do risco de perdas financeiras.
+
+Preservação da imagem da organização por meio da confiança na continuidade dos serviços.
+
+Retorno das atividades de sistemas críticos dentro de um prazo acordado.
+
+Cumprimento das obrigações legais e estatutárias.
+
+A PGCN é essencial para as organizações como estratégia para preservar não só o negócio como também os seus colaboradores frente a um possível desastre. A seguir, será apresentada a biblioteca ITIL, que trata de forma mais específica do gerenciamento de serviços de Tecnologia da Informação.
+
+
+ITIL (Gerenciamento de Continuidade)
+
+Confira agora o que é ITIL.
+
+
+
+Os processos da biblioteca ITIL estão incluídos em cinco publicações separadas:
+
+
+Estratégia de serviço
+Define os serviços como ativos estratégicos.
+
+
+Design de serviço
+Inclui a avaliação dos processos de gerenciamento de negócios (nível de serviço, disponibilidade, capacidade etc.) para projetar e desenvolver novas ofertas de serviços ou melhorar as ofertas existentes.
+
+
+Transição de serviço
+Abrange a transição do desenvolvimento para as operações de produção, incluindo testes e controle de qualidade.
+
+
+Operação de serviço
+Define como gerenciar serviços quando eles estão operando.
+
+
+Melhoria contínua de serviço
+Define novos requisitos para as fases anteriores da ITIL, com base nas informações, sugestões e reclamações oriundas da aplicação do serviço. Nesta fase, ocorre a aplicação do PDCA para apoiar a evolução do serviço.
+
+
+Destacaremos a fase do design de serviço, que trata do modo como o serviço é projetado, e de todos os elementos de suporte para introdução no ambiente de produção, pois um dos seus subprocessos é o Gerenciamento de Continuidade de Serviços de Tecnologia da Informação (GCSTI), que é uma tradução literal de Information Technology Service Continuity Management (ITSCM).

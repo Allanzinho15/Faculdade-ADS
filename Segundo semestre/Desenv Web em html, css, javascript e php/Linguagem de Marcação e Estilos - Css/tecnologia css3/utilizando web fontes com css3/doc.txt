@@ -1,0 +1,30 @@
+Utilizando web fontes com CSS3
+A versão 3 da CSS trouxe algumas novidades em relação às versões anteriores. Entre elas, a expansão das possibilidades de fontes a serem usadas numa página HTML. Nessa prática você aplicará o que vimos sobre Web Fontes, criando uma página HTML simples e a estilizando com tal recurso.
+
+
+Assista ao vídeo e entenda como utilizar o recurso de web fontes, disponível apartir da especificação da CSS3.
+
+
+
+Roteiro de prática
+
+Você criará uma página HTML simples, composta por dois parágrafos de texto. A partir desses textos, e seguindo o roteiro abaixo, você deverá estilizá-los usando duas diferentes Web Fontes. Vale lembrar que, para a realização deste exercício, você precisará das seguintes ferramentas: um editor de textos – pode ser o próprio bloco de notas do Windows ou o Nano Editor do Linux, ou então algo um pouquinho mais avançado, como o software (livre/gratuito) Notepad++ e de um navegador – Google Chrome, Firefox, MS Edge etc.
+
+
+Agora, vamos ao roteiro!
+
+ 
+
+Procure e baixe duas diferentes web fontes – tenha cuidado com os direitos de licença.
+Salve as web fontes (dê preferência aos arquivos .woff2 ou .woff) na mesma pasta em que for salvar a página HTML.
+Insira o código básico de uma página HTML e duas tags de parágrafo, com algum texto dentro.
+Atribua diferentes seletores para cada um dos blocos de parágrafo.
+Utilizando CSS, crie as propriedades @font-face para cada fonte que baixou.
+Atribua as propriedades acima para cada parágrafo de texto.
+Teste a página por meio do navegador.
+
+Como resolução, teremos o código a seguir.
+
+
+Plain Text
+

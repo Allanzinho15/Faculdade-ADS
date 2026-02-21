@@ -1,0 +1,40 @@
+Modelos de Implantação
+A publicação 800-145 do NIST relaciona ainda quatro modelos de implantação para os serviços em nuvem.
+
+
+Private cloud
+
+
+Traduzindo, “nuvem privada”. Representa a infraestrutura de nuvem que é provisionada para uso exclusivo por uma única organização. Pode-se pensar na organização como unidades de negócios compondo os diversos clientes diferentes, consumidores dos serviços. Uma nuvem privada pode ser de propriedade, gerenciada e operada pela própria organização, por terceiros ou por alguma combinação deles, podendo ser implantada fisicamente dentro ou fora das instalações da organização.
+
+
+Community cloud
+
+
+Traduzindo, “nuvem comunitária”. Representa a infraestrutura de nuvem que é provisionada para uso por uma comunidade específica de clientes consumidores dos serviços, composta por entes que compartilhem as mesmas preocupações, como a missão, os requisitos de segurança, a política e as regras de conformidade.
+
+
+Uma nuvem comunitária pode ser administrada e operada por uma ou mais organizações da comunidade dona da nuvem, um terceiro ou uma combinação de ambos.
+
+
+Pode também existir localmente, dentro ou fora das instalações das organizações participantes da comunidade.
+
+
+Public cloud
+
+
+Traduzindo, “nuvem pública”. Representa a infraestrutura de nuvem que é provisionada para uso aberto ao público em geral. Uma nuvem pública pode ser gerenciada e operada por uma organização empresarial, acadêmica ou governamental proprietária, ou ainda por alguma combinação delas. É implantada sempre nas instalações de um provedor de nuvem, fisicamente fora das instalações do proprietário da nuvem em si.
+
+
+Hybrid cloud
+
+
+Traduzindo, “nuvem híbrida”. Representa a infraestrutura de nuvem composta por duas ou mais infraestruturas de nuvem de modelos distintos:
+
+ 
+
+Privadas
+Comunitárias
+Públicas
+
+Em termos físicos, as diferentes infraestruturas são vistas como entidades únicas, mas são logicamente unidas por tecnologia proprietária ou alguma tecnologia padrão que permita a portabilidade de dados e aplicativos.
