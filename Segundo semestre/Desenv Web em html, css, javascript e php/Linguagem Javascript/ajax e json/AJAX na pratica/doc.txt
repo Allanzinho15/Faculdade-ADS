@@ -1,0 +1,79 @@
+Chegou a hora de praticarmos tudo o que vimos até aqui. Neste vídeo, você vai aprender a implementar uma requisição assíncrona utilizando AJAX.
+
+
+
+Roteiro de prática
+
+Para validar os conceitos sobre requisições assíncronas em JavaScript (AJAX), crie uma página HTML e os códigos JavaScript, conforme instruções a seguir:
+
+
+
+1 A página HTML deverá conter um título introdutório e um parágrafo, informando ao usuário que ele deverá clicar no botão disponível a seguir, cujo título deverá ser “Clique para carregar imagens aleatórias”.
+
+2 Crie um botão, conforme mencionado, que, ao ser clicado, chamará uma função JavaScript.
+
+3 Na função JavaScript, utilize a API Fetch para acessar a URL https://dog.ceo/api/breeds/image/random e ler o JSON retornado a partir dela.
+
+4 O JSON mencionado retorna, como uma de suas chaves, uma URL para uma imagem, aleatória, de cachorros. Essa URL deverá ser atribuída ao atributo “src” de uma tag contida no HTML – tudo isso utilizando JavaScript.
+
+5 Os possíveis erros provenientes da chamada da URL, pela API Fetch, deverão ser tratados no código.
+
+
+
+
+
+
+
+
+
+
+
+Durante a realização do exercício, lembre-se:
+
+
+Dica
+Há mais de uma forma de desenvolver o programa. Logo, não há código certo ou errado.
+
+
+Como solução, teremos o seguinte código:
+
+
+JavaScript (Node.js 12.14.0)
+
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Requisição XMLHttpRequest</title>
+</head>
+<body>
+	<h1>Imagens Aleatórios de Cachorros</h1>
+	<p>A partir do click no botão abaixo uma nova imagem aleatória de cachorros será carregada utilizando requisições assíncronas com XMLHttpRequest</p>
+
+	<img id="img_dog" src="" alt="Aguardando a imagem ser carregada" />
+	<br/>
+	<button onclick="carregarImagens()">Carregar Imagens</button>
+</body>
+	<script type="text/javascript">
+	
+		function carregarImagens(){
+		
+			var url = "https://dog.ceo/api/breeds/image/random"
+			fetch(url, {
+				method: 'get'
+			})
+			.then(function(response) {
+				response.json().then(function(data){
+					console.log('Resultado da Requisição: ' + data.message);
+
+					var imgDog = document.getElementById("img_dog");
+					imgDog.src = data.message;
+				});
+			})
+			.catch(function(err) {
+				console.error('O seguinte erro ocorreu durante a requisição: ' + err);
+			});
+
+		}
+	</script>
+</html>

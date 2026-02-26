@@ -1,0 +1,292 @@
+Requisições assíncronas em JavaScript
+Neste vídeo, você vai compreender as requisições assíncronas na linguagem de programação JavaScript.
+
+
+
+O conceito de requisição no ambiente web diz respeito às informações solicitadas ou submetidas no lado cliente − por meio do navegador, por exemplo − e tratadas pelo lado servidor, que, após processar a requisição, devolverá uma resposta ao solicitante. Ainda no contexto do ambiente web, há dois tipos de requisições: síncronas e assíncronas.
+
+
+Requisições síncronas e assíncronas
+
+No ambiente web, há dois tipos possíveis de requisições. Vamos conhece-lâs a seguir:
+
+
+
+Síncronas
+
+Quando realizadas, bloqueiam o remetente, ou seja, o cliente faz a requisição e fica impedido de realizar qualquer nova solicitação até que a anterior seja respondida pelo servidor. Com isso, só é possível realizar uma requisição de cada vez.
+
+
+Assíncronas
+
+Quando realizadas, não são dotadas de sincronismo. Logo, várias requisições podem ser realizadas em simultâneo, independentemente de ter havido resposta do servidor às solicitações anteriores.
+
+E a qual tipo de requisição devemos dar preferência?
+
+
+Em comparação às requisições síncronas, devemos dar preferência à utilização das assíncronas, porque elas não apresentam os problemas de desempenho e congelamento do fluxo da aplicação – naturais das síncronas.
+
+
+Como as requisições assíncronas funcionam na prática?
+
+
+Para entendermos melhor o funcionamento das requisições assíncronas, vamos usar como exemplo o feed das redes sociais. Nessas páginas, novos conteúdos são carregados sem que seja necessário recarregar o navegador e, consequentemente, todo o conteúdo visto.
+
+
+Eventos como a rolagem de tela, por exemplo, fazem com que os conteúdos sejam carregados do servidor e exibidos na tela do dispositivo.
+
+
+AJAX
+
+Em JavaScript, quando tratamos de requisições assíncronas, naturalmente, falamos de AJAX (Asynchronous JavaScript and XML). Esse termo foi empregado pela primeira vez em 2005 e engloba o uso não de uma, mas de várias tecnologias: HTML (ou XHTML), CSS, JavaScript, DOM, XML (e XSLT), além do elemento mais importante, o objeto XMLHttpRequest.
+
+
+Resumindo
+A utilização de AJAX permite que as páginas e aplicações Web façam requisições a scripts do lado servidor e carreguem, de forma rápida e muitas vezes incremental, novos conteúdos sem que seja necessário recarregar a página inteira.
+
+
+Embora o “X” no acrônimo se refira a XML, esse não é o único formato disponível. Além dele, temos:
+
+
+HTML;
+Arquivos de texto;
+JSON.
+
+Este último o mais utilizado atualmente. Veremos sobre ele mais adiante.
+
+
+Em relação aos recursos para realização de requisições, há dois disponíveis em JS:
+
+
+Objeto XMLHttpRequest;
+Interface Fetch API.
+
+XMLHttpRequest
+
+Inicialmente, foi implementado no navegador Internet Explorer por meio de um objeto do tipo ActiveX. Posteriormente, outros fabricantes fizeram suas implementações, dando origem ao XMLHttpRequest, que se tornou o padrão atual.
+
+
+Versões antigas do Internet Explorer só possuem suporte ao ActiveX.
+
+
+O XMLHttpRequest possui alguns métodos e algumas propriedades. Veja um exemplo simples de sua utilização:
+
+
+JavaScript (Node.js 12.14.0)
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Requisição XMLHttpRequest</title>
+</head>
+<body>
+	<h1>Imagens Aleatórios de Cachorros</h1>
+	<p> A partir do click no botão abaixo uma nova imagem aleatória de cachorros será carregada utilizando requisições assíncronas com XMLHttpRequest</p>
+
+	<img id="img_dog" src="" alt="Aguardando a imagem ser carregada" />
+	<br/>
+	<button onclick="carregarImagens()">Carregar Imagens</button>
+</body>
+	<script type="text/javascript">
+
+		function carregarImagens(){
+
+			var xmlHttpRequest = new XMLHttpRequest();
+			var url = https://dog.ceo/api/breeds/image/random
+
+			xmlHttpRequest.open("GET", url, true);
+
+			xmlHttpRequest.onreadystatechange = function() {
+				if (xmlHttpRequest.readyState == 3) {
+					console.log('Carregando o conteúdo');
+				}
+				if (xmlHttpRequest.readyState == 4) {
+
+					var jsonResponse = JSON.parse(xmlHttpRequest.responseText);
+
+					console.log('Requisição Finalizada');
+					console.log('Resultado da Requisição: ' + jsonResponse);
+					console.log('Resultado da Requisição: ' + jsonResponse.message);
+
+					var imgDog = document.getElementById("img_dog");
+					imgDog.src = jsonResponse.message;
+				}
+			};
+
+			xmlHttpRequest.send(null);
+
+		}
+	</script>
+</html>
+
+<body>
+
+Light Mode
+
+Copiar
+
+O código anterior contém tanto funcionalidades JavaScript vistas neste conteúdo quanto algumas novas, além do XMLHttpRequest, que veremos mais adiante. Ao utilizar esse código, você terá um exemplo real de dados sendo requisitados a um servidor – nesse caso, uma API que retorna imagens aleatórias de cachorros – e exibidos na página, sem que ela seja recarregada a cada nova requisição/click no botão.
+
+
+Por ora, vamos nos concentrar no XMLHttpRequest. Utilizando as linhas contidas no código anterior, observe:
+
+
+Na linha 19, uma instância do objeto é criada. Esse é o primeiro passo para sua utilização. A partir desse ponto, toda referência deverá ser feita pelo nome da variável utilizada (em nosso exemplo, xmlHttpRequest).
+ 
+
+A linha 22 mostra a utilização do método open, que recebe três parâmetros: o método de requisição dos dados, a url remota/do servidor que queremos acessar e o tipo de requisição – onde “true” define que será feita uma requisição assíncrona e “false”, uma síncrona. Esse argumento é opcional. Logo, pode não ser definido, assumindo o valor padrão “true”.
+ 
+
+Continuando o código, na linha 24 temos a propriedade “onreadystatechange”, que monitora o status da requisição XMLHttpRequest – propriedade “readyState” − e especifica uma função a ser executada a cada mudança.
+ 
+
+Repare, agora, na linha 25: o status 3 significa que a requisição ainda está sendo processada. Logo, poderíamos, por exemplo, exibir em nossa tela uma mensagem (ou imagem, como é muito comum) avisando que a informação requisitada está sendo carregada. Perceba que, dependendo do tempo de resposta do servidor remoto, nem sempre será possível ver essa informação.
+ 
+
+Já na linha 28, temos o tratamento do status quando ele for igual a 4, ou seja, quando a requisição estiver concluída. Além da propriedade “readyState”, também poderíamos monitorar a propriedade “status”, que armazena o código de resposta do servidor Http utilizado pela XMLHttpRequest.
+ 
+
+Ainda na linha 30, repare que também foi utilizado outro método: o parse. Esse método não pertence ao objeto XMLHttpRequest, mas é necessário quando o recurso requisitado devolve o conteúdo em formato JSON.
+ 
+
+Por fim, na linha 41, é utilizado o método send, que envia a requisição.
+
+Outros métodos e outras propriedades
+
+O código anterior mostra um exemplo simples do que é possível fazer utilizando AJAX. Além disso, apenas algumas propriedades e alguns métodos foram vistos.
+
+
+Saiba Mais
+Na seção Explore +, estão disponíveis sugestões de conteúdo que permitirão um aprofundamento do uso do AJAX. É recomendável a leitura desse material, assim como a implementação e até mesmo modificação do código anterior para melhor assimilação do conteúdo.
+
+
+API Fetch
+
+Esta API é, em termos conceituais, similar a XMLHttpRequest – ou seja, permite a realização de requisições assíncronas a scripts do lado servidor. Entretanto, por ser uma implementação mais recente, essa interface JavaScript apresenta algumas vantagens, como:
+
+
+1
+
+
+O uso de promise ("Promise" significa promessa. É um objeto utilizado para processamento assíncrono, representando um valor que pode estar disponível agora, no futuro ou nunca).
+
+
+2
+
+
+O uso em outras tecnologias, como service workers, por exemplo ("Service workers" são scripts executados em segundo plano no navegador, separados da página web).
+
+
+O código a seguir apresenta o mesmo exemplo utilizado no tópico sobre XMLHttpRequest, mas substituindo o XMLHttpRequest pela API Fetch. Vejamos alguns métodos e algumas propriedades:
+
+
+JavaScript (Node.js 12.14.0)
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Requisição XMLHttpRequest</title>
+</head>
+<body>
+	<h1>Imagens Aleatórios de Cachorros</h1>
+	<p>A partir do click no botão abaixo uma nova imagem aleatória de cachorros será carregada utilizando requisições assíncronas com XMLHttpRequest</p>
+
+	<img id="img_dog" src="" alt="Aguardando a imagem ser carregada" />
+	<br/>
+	<button onclick="carregarImagens()">Carregar Imagens</button>
+</body>
+	<script type="text/javascript">
+
+		function carregarImagens(){
+
+			var url = "https://dog.ceo/api/breeds/image/random" 
+			fetch(url, { 
+				method: 'get' 
+			})
+			.then(function(response) { 
+				response.json().then(function(data){
+					console.log('Resultado da Requisição: ' + data.message); 
+
+					var imgDog = document.getElementById("img_dog");
+					imgDog.src = data.message;
+				});
+			})
+			.catch(function(err) { 
+				console.error('O seguinte erro ocorreu durante a requisição: ' + err);
+			});
+
+		}
+	</script>
+</html>
+
+              
+
+Light Mode
+
+Copiar
+
+Em relação à sua sintaxe, podemos notar algumas semelhanças com a XMLHttpRequest:
+
+
+URL do servidor remoto – definida na linha 19 e utilizada na linha 20.
+ 
+
+Fetch options – em nosso exemplo, utilizamos apenas um parâmetro, o método. Esse parâmetro, inclusive, é opcional. Veja a linha 21, na qual declaramos o GET, que é o método padrão. Além desse parâmetro, há outros disponíveis.
+ 
+
+Tipo de dado retornado pela requisição – veja a linha 24, onde foi utilizado o objeto correspondente ao tipo de dado retornado pela requisição – nesse caso, JSON. Há outros tipos de objetos, como texto e até mesmo bytes, sendo possível, por exemplo, carregar imagens, arquivos pdf, entre outros.
+
+Ainda em relação à sintaxe, merece destaque a forma, própria, como a API Fetch trata a requisição (request) e seu retorno (response).
+
+
+Resumindo
+Quando o método fetch é executado, retorna uma promessa (promise) que fornece a resposta (response) à requisição, sendo esta bem-sucedida ou não.
+
+
+JSON
+
+
+Pode ser traduzido para notação de objetos JavaScript. Trata-se de um tipo ou formatação leve para troca de dados. Essa, inclusive, é sua principal vantagem em relação aos outros tipos. Além disso, destaca-se também sua simplicidade para ser interpretado tanto por pessoas quanto por “máquinas”.
+
+
+Embora normalmente associado ao JavaScript – tendo sido definido, inclusive, na especificação ECMA-262, de dezembro de 1999 –, o JSON é um formato de texto independente de linguagem de programação.
+
+
+A facilidade do uso em qualquer linguagem contribuiu para que o JSON se tornasse um dos formatos mais utilizados para a troca de dados.
+
+
+A imagem a seguir apresenta alguns exemplos da estrutura de um objeto JSON:
+
+
+
+Estrutura de objetos JSON
+
+Observe a seguir a legenda da imagem:
+
+
+O objeto é englobado por chaves;
+Objeto JSON (par nome/valor);
+Os valores são separados por vírgulas;
+Os valores do array são englobados por colchetes;
+Array.
+
+Como vemos, um objeto JSON tem as seguintes características:
+
+ 
+
+É composto por um conjunto de pares nome/valor – “status” é o nome de um objeto e “success”, seu valor. Esses pares são separados por dois pontos “:”.
+ 
+
+Utiliza a vírgula para separar pares, valores ou objetos.
+ 
+
+O objeto e seus pares são englobados por chaves “{ }”.
+ 
+
+É possível definirmos arrays, que são englobados por colchetes “[ ]”.
+
+O JSON fornece suporte a uma gama de tipos de dados. Além disso, possui alguns métodos, como o JSON.parse(), visto em um de nossos exemplos.
+
+
+Saiba Mais
+A seção Explore + sugere materiais adicionais sobre o JSON. Recomendamos a leitura desse material.

@@ -1,0 +1,91 @@
+Composição e criação de vetores
+Neste vídeo, você vai compreender a composição e a criação de vetores de repetição no JavaScript.
+
+
+
+Um vetor é uma estrutura de dados simples utilizada para armazenamento de objetos do mesmo tipo. Vamos aprender mais sobre o assunto!
+
+
+Função e composição dos vetores
+
+Na literatura relacionada, a linguagens de programação, um vetor é chamado de array.
+
+
+Normalmente, um array é tratado em conjunto com outra estrutura: a matriz.
+
+
+Em linhas gerais:
+
+
+Vetor
+
+
+É um array unidimensional.
+
+
+Matriz
+
+
+É um array multidimensional (um vetor de vetores).
+
+
+A função prática de um vetor é simplificar a utilização de variáveis. No exemplo apresentado anteriormente, vimos que eram necessárias duas variáveis para guardar os números solicitados ao usuário. Com a utilização de um vetor, porém, precisaríamos de apenas uma variável de duas posições.
+
+
+Exemplo
+Imagine que seja necessário armazenar as notas de 50 alunos para, ao final, calcular as respectivas médias. Embora possa parecer sem importância o uso de arrays nesse caso, seriam necessárias 50 variáveis (ou apenas 1 array).
+
+
+Os vetores também são vistos na matemática quando usamos uma tabela organizada em linhas e colunas no formato m X n, sendo m o número de linhas e n, o de colunas.
+
+
+Um vetor é composto por uma coleção de valores, e cada um deles é chamado de elemento. Além disso, cada elemento possui uma posição numérica dentro do vetor, conhecida como índice.
+
+
+No exemplo a seguir, usando notação da linguagem JavaScript, veja um array contendo nomes de frutas:
+
+
+JavaScript (Node.js 12.14.0)
+
+var frutas = ['Laranja', 'Uva', 'Limão'];
+
+Light Mode
+
+Copiar
+
+Nesse exemplo, “Laranja”, “Uva” e “Limão” são os elementos do vetor “frutas”. Considerando que o índice de um array inicia em 0, temos: o conteúdo do vetor “frutas” na posição/índice 0 é “Laranja”; na posição/índice 1 é “Uva”; e na posição/índice 2 é “Limão”.
+
+
+A seguir, veremos como declarar e utilizar vetores na linguagem JavaScript.
+
+
+Criação e utilização de vetores
+
+Em JavaScript, os vetores não possuem tipo, a exemplo do que vimos quando tratamos das variáveis. Logo, é possível criar um array composto por números, strings, objetos e até mesmo outros arrays.
+
+
+Comentário
+Em JS, um vetor pode ter, no máximo, 4.294.967.295 elementos. Outra característica importante é que, em JavaScript, os arrays possuem tamanho dinâmico, ou seja, não é necessário informar o tamanho do vetor ao declará-lo.
+
+
+Vejamos mais alguns exemplos de criação de vetores em JS:
+
+
+JavaScript (Node.js 12.14.0)
+
+var alunos = []; //array vazio
+var alunos = ['Alex', 'Anna', 'João']; // array de strings
+var notas = [10.0, 9.5, 9.5]; // array de números decimais
+var mistura = ['Um', 2, 3, 'Quatro']; //array de diversos tipos de dados
+
+Light Mode
+
+Copiar
+
+Outra forma de criação de vetores em JavaScript é usando o construtor (conceito relacionado à programação orientada a objetos) array. Veja o exemplo:
+
+
+JavaScript (Node.js 12.14.0)
+
+var alunos = new Array();
+var alunos = new Array('Alex', 'Anna', 'João');

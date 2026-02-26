@@ -1,0 +1,41 @@
+JSON na prática
+Após termos visto alguns conceitos e a estrutura de um documento no formato JSON, vamos manipular uma string em tal formato, utilizando JavaScript e o método fetch. Neste vídeo, você aprenderá a implementar uma requisição assíncrona utilizando JSON.
+
+
+
+Roteiro de prática
+
+Uma das formas mais comuns de manipularmos strings no formato JSON é coletarmos esse dado por meio de requisições a APIs REST. Na prática proposta, utilizamos uma API free, que possui dados fake, conforme estes passos:
+
+
+
+1Nosso recurso, a string JSON, será consumido a partir da URL https://dummyjson.com/products/1. Se você abrir esse recurso diretamente no navegador, terá como resposta uma string JSON, com dados falsos de um produto.
+
+2Para consumir o recurso anterior, crie uma página HTML e, dentro dela, o código JavaScript necessário para realizar a requisição. Use a API Fetch para essa tarefa.
+
+
+
+3Há diferentes formas de realizar o passo anterior. Por exemplo, você pode inserir um botão no HTML por meio do qual um método JS será acionado. Dentro desse método, você incluirá a chamada ao recurso. 
+
+4Analise a string retornada a partir da URL anterior para entender quais chaves estão disponíveis.
+
+5Por fim, imprima – pode ser a partir do “console.log” – os valores de todas as chaves contidas na string JSON.
+
+
+
+
+
+
+
+
+
+
+
+Durante a realização do exercício, lembre-se que há mais de uma forma de desenvolver o programa. Logo, não há código certo ou errado.
+
+
+Como possível resolução, teremos o seguinte código:
+
+
+JavaScript (Node.js 12.14.0)
+
