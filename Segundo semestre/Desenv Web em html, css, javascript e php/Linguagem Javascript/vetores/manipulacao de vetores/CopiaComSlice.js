@@ -1,2 +1,1 @@
-const dias = ["dom", "seg", "ter", "qua", "qui", "sex", "sab"];
- console.log(dias.slice(1,6))
+const dias = ["dom", "seg", "ter", "qua", "qui", "sex", "sab"];console.log(dias.slice(1,6))

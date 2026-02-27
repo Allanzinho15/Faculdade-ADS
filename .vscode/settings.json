@@ -2,55 +2,31 @@
     "files.associations": {
         "stdio.h": "c"
     },
-    "git.autofetch": true,
-    "files.autoSave": "afterDelay",
-    "editor.fontSize": 19,
-    "editor.wordWrap": "on",
-    "workbench.iconTheme": "material-icon-theme",
-    "editor.formatOnSave": true,
-    "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[css]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
-    "liveServer.settings.donotShowInfoMsg": true,
-    "workbench.colorTheme": "Mosaic",
-    "explorer.confirmDragAndDrop": false,
-    "debug.onTaskErrors": "debugAnyway",
-    "json.schemas": [],
-    "cSpell.userWords": [
-        "Indice",
-        "inicio",
-        "meio",
-        "Numero",
-        "vetor"
-    ],
-    "workbench.tree.indent": 15, 
-    "workbench.tree.renderIndentGuides": "always",
     
-    "workbench.editor.empty.hint": "hidden",
-    /* ESSAS LINHAS SÃO OBRIGATÓRIAS PARA O PLUGIN FUNCIONAR */
-    "editor.guides.indentation": false,
-    "indentRainbow.indicatorStyle": "classic",
-    "indentRainbow.lightIndicatorStyleLineWidth": 0.2,
-    "indentRainbow.colors": [
-        "rgba(255,255,64,0.07)",
-        "rgba(127,255,127,0.07)",
-        "rgba(255,127,255,0.07)",
-        "rgba(79,236,236,0.07)"
-    ],
-    "indentRainbow.decorations": {
-        "borderStyle": "solid",
-        "borderWidth": "0 0 0 1px",
-        "borderColor": [
-        "rgba(255, 255, 0, 0.6)",
-        "rgba(255, 0, 255, 0.6)",
-        "rgba(0, 255, 255, 0.6)",
-        "rgba(0, 255, 0, 0.6)"
-        ]
-    },
+  "workbench.tree.indent": 15, 
+  "workbench.tree.renderIndentGuides": "always",
+    
+  "workbench.colorTheme": "Mosaic",
+  "editor.fontSize": 18,
+  
+
+  /* 1. ATIVAR AS LINHAS COLORIDAS (INDENT RAINBOW) */
+  "indentRainbow.indicatorStyle": "light",
+  "indentRainbow.lightIndicatorStyleLineWidth": 2,
+  "indentRainbow.colors": [
+    "rgba(255, 255, 0, 0.3)",
+    "rgba(255, 0, 255, 0.3)",
+    "rgba(0, 255, 255, 0.3)",
+    "rgba(0, 255, 0, 0.3)"
+  ],
+
+  /* 2. LIMPAR AS LINHAS PADRÃO PARA NÃO FICAR GROSSO */
+  "editor.guides.indentation": false,
+  "editor.guides.bracketPairs": false,
+
+  /* 3. CORES DAS GUIAS NAS PASTAS (EXPLORER) */
+  "workbench.colorCustomizations": {
+    "tree.indentGuidesStroke": "#ffffff33"
+  }
+    
 }
