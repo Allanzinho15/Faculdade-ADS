@@ -1,0 +1,196 @@
+Operadores PHP
+PHP, assim como outras linguagens de programação, possibilita o uso de diferentes operadores, conferindo maior flexibilidade ao desenvolvimento das aplicações. Os operadores aritméticos são os mais intuitivos, tendo em vista que as aplicações podem demandar certos cálculos. Entretanto, existem outros tipos de operadores, como aqueles de atribuição, quando se passam certos conteúdos às variáveis; operadores de comparação que têm a finalidade de fazer a comparação entre variáveis; operadores lógicos, que possibilitam elaborar expressões mais complexas em estruturas de repetição ou condicionais, por exemplo.
+
+
+Neste vídeo, exploramos como a linguagem PHP utiliza diferentes operadores para aumentar a flexibilidade no desenvolvimento de aplicações. Desde operadores matemáticos, usados em cálculos, até operadores de atribuição, comparação e lógicos, aprenda como cada tipo permite criar expressões complexas e eficientes em seu código. Ideal para desenvolvedores que desejam dominar o uso de operadores em PHP. Assista!
+
+
+
+Um operador – no contexto de linguagens de programação ou mesmo em outras áreas, como na Matemática – tem a função de receber um ou mais valores e resultar em outro valor ou valores. Por exemplo:
+
+
+
+Os sinais “+”, “-“, “*” e “/” representam as operações matemáticas de adição, subtração, multiplicação e divisão, respectivamente. Logo, são chamados de operadores aritméticos. Em PHP, além dos operadores aritméticos, há outros disponíveis. Veremos os principais a seguir.
+
+
+Operadores aritméticos
+
+
+Além dos mencionados no exemplo, também estão disponíveis em PHP outros quatro operadores aritméticos, sendo os dois a seguir os mais importantes:
+
+
+Operador: %
+
+Exemplo de utilização: $var1 % $var2
+ 
+
+Para que serve: operador de módulo. Retorna o resto da divisão inteira de $var1 por $var2.
+
+
+Operador: **
+
+Exemplo de utilização: $var1 ** $var2
+
+ 
+
+Para que serve: operador exponencial. Retorna o resultado de $var1 elevado a $var2.
+
+
+Esse tipo de operador é usado, sobretudo, com números (int/integer e float) para a realização de cálculos. Quando utilizado com outra forma de dado, é feita a conversão para o tipo numérico antes que a operação seja realizada.
+
+
+Operadores de atribuição
+
+
+São utilizados na atribuição de valores a variáveis. Além de casos simples, como o que vimos com o operador “=”, é possível realizar a combinação de operadores de atribuição com os aritméticos. Para ficar mais claro, vamos aos exemplos:
+
+
+PHP (7.4.1)
+
+<?php
+
+$var1 = 4; //a variável foi inicializada com o valor de 4
+$var1 += 2; //com a utilização da combinação de operadores a variável $var1 passou a ter o valor de 6 (4 + 2)
+$var1 *= 2; //com a utilização da combinação de operadores a variável $var1 passou a ter o valor de 12 (4 + 2) * 2
+
+$var2 = "Programação";
+$var2 .= " com PHP"; //com a utilização da combinação de operadores a variável $var2 passou a ter o conteúdo "Programação com PHP"
+
+$var = ($var4 = "Copie esses códigos") . " e pratique seus conhecimentos!" ;
+/*
+No exemplo acima o conteúdo da variável $var3 é igual a "Copie esses códigos e pratique seus conhecimentos!"
+Já a variável $var4 possui o conteúdo "Copie esses códigos"
+*/
+
+Light Mode
+
+Copiar
+
+Repare nos comentários inseridos na imagem, onde o resultado de cada combinação é explicado. Para melhor fixação, copie os exemplos e os execute. Tente também alterar os valores ou realizar outras combinações.
+
+
+Operadores de comparação
+
+
+São utilizados para comparar dois valores. Veja a seguir os operadores disponíveis e suas funções.
+
+
+==
+
+$var1 == $var2
+
+Verifica se $var1 é igual a $var2
+
+
+===
+
+$var1 === $var2
+
+Verifica se $var1 é idêntica a $var2. Nesse caso, além do valor, verifica se ambas são do mesmo tipo
+
+
+!=
+
+$var1 != $var2
+
+Verifica se $var1 é diferente de $var2
+
+
+<>
+
+$var1 <> $var2
+
+Verifica se $var1 é diferente de $var2
+
+
+!==
+
+$var1 !== $var2
+
+Verifica se não são idênticas/iguais ou se não são do mesmo tipo
+
+
+<
+
+$var1 < $var2
+
+Verifica se $var1 é menor que $var2
+
+
+>
+
+$var1 > $var2
+
+Verifica se $var1 é maior que $var2
+
+
+<=
+
+$var1 <= $var2
+
+Verifica se $var1 é menor ou igual a $var2
+
+
+>=
+
+$var1 >= $var2
+
+Verifica se $var1 é maior ou igual a $var2
+
+
+A partir da versão 7 do PHP, um novo operador foi incluído, o “spaceship”, cuja forma de utilização é “$var1<=> $var2”. Ele retorna -1, 0 ou 1 quando $var1 for, respectivamente, menor, igual ou maior que $var2.
+
+
+Operadores lógicos
+
+
+São usados para combinar expressões lógicas. Veja a seguir os operadores lógicos disponíveis em PHP.
+
+
+and
+
+$var1 and $var2
+
+Retorna true se $var1 E $var2 forem verdadeiras
+
+
+or
+
+$var1 or $var2
+
+Retorna true se $var1 OU $var2 forem verdadeiras
+
+
+xor
+
+$var1 xor $var2
+
+Retorna true se $var1 OU $var2 forem verdadeiras, mas não ambas
+
+
+!
+
+!$var1
+
+Retorna true se $var1 não for verdadeira
+
+
+&&
+
+$var1 && $var2
+
+Retorna true se $var1 E $var2 forem verdadeiras
+
+
+||
+
+$var1 || $var2
+
+Retorna true se $var1 OU $var2 forem verdadeiras
+
+
+Como visto, os operadores “and” / “&;&;” e “or” / “||” têm a mesma função. Entretanto, “and” e “or” têm maior precedência que seus equivalentes.
+
+
+Saiba Mais
+Além dos operadores apresentados, há outros disponíveis em PHP, como os bit a bit (bitwise) e os de controle de error. Na seção Explore+, destacamos um site que contém a lista completa de operadores.

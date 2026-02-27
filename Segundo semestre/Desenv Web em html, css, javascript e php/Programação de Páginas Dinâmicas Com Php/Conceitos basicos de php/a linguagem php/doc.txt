@@ -1,0 +1,25 @@
+A linguagem PHP
+PHP é uma linguagem baseada em scripts, que possibilita o desenvolvimento de aplicações do lado do servidor, gerando páginas web interativas e dinâmicas, ou seja, com conteúdos personalizados. Além disso, PHP é gratuita e bastante difundida, de modo que é possível encontrar muitas referências a respeito. PHP ainda possibilita o uso do paradigma de orientação a objetos, é fracamente tipada, permite a integração com diferentes bancos de dados, pode ser usada para controle de acesso, entre outros recursos. Outra característica importante é a possibilidade de se utilizarem scripts PHP diretamente em páginas HTML.
+
+
+Neste vídeo, exploramos como PHP, uma linguagem de scripts gratuita e amplamente difundida, possibilita o desenvolvimento de aplicações do lado do servidor e gera páginas web interativas. Descubra seus recursos, como orientação a objetos, integração com diferentes bancos de dados, controle de acesso e facilidade de inserir scripts PHP diretamente em HTML. Ideal para quem quer criar conteúdos web personalizados e dinâmicos.
+
+
+
+O PHP é uma linguagem de script open source de uso geral. Muito utilizada, é especialmente adequada para o desenvolvimento Web e pode ser embutida dentro do HTML (PHP).
+
+A explicação anterior consta no site oficial do PHP, de onde os fragmentos a seguir também foram retirados:
+
+
+O que distingue o PHP de algo como o JavaScript no lado do cliente é que o código é executado no servidor, gerando o HTML que é então enviado para o navegador. O navegador recebe os resultados da execução desse script, mas não sabe qual era o código-fonte (PHP).
+ 
+
+O PHP, como é conhecido atualmente, é na verdade o sucessor para um produto chamado PHP/FI. Criada em 1994 por Rasmus Lerdof, a primeira encarnação do PHP foi um simples conjunto de binários Common Gateway Interface (CGI) escrito em linguagem de programação C (PHP).
+ 
+
+Em junho de 1995, Rasmus liberou o código-fonte do PHP Tools para o público, o que permitiu que desenvolvedores usassem da forma como desejassem. Isso permitiu − e encorajou − usuários a fornecerem correções para bugs no código e, em geral, aperfeiçoá-lo. Em setembro do mesmo ano, Rasmus expandiu o PHP e − por um breve período − mudou o nome, referindo-se, agora, à ferramenta como FI, abreviação para "Forms Interpreter". A nova implementação incluiu algumas funcionalidades básicas do PHP como bem conhecemos hoje. Tinha variáveis no estilo Perl, interpretação automática de variáveis de formulários e sintaxe HTML embutida (PHP).
+
+(PHP, s.d.)
+Essas citações ajudam a entender o contexto e os propósitos iniciais da criação da linguagem. Como veremos a seguir, a primeira finalidade do PHP foi interpretar, do lado servidor, os formulários HTML, fornecendo, assim, dinamismo às páginas Web. Isso porque, com essa linguagem, é possível adicionar recursos como consulta a banco de dados, processamento e tratamento de dados e consumo de recursos externos − como APIs −, entre tantas outras possibilidades.
+
+Para descrevermos a linguagem PHP, é necessário começar pela sua sintaxe básica, apresentando as variáveis, os operadores e as formas de leitura de dados a partir da integração com a HTML.

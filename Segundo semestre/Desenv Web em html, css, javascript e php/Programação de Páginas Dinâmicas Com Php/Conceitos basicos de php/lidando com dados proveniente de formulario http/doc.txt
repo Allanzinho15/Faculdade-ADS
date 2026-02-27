@@ -1,0 +1,85 @@
+Lidando com dados provenientes de formulário HTTP
+Grande parte das aplicações web lidam com páginas dinâmicas, ou seja, páginas geradas com conteúdos personalizados para cada usuário. Exemplos de aplicações são os mais diversos: e-commerce, bankline, sistemas educacionais, entre tantos outros. Portanto, entender como se implementam aplicações que contenham páginas web, com formulários que enviam os dados ao servidor, que, por sua vez, extrai e os processa, devolvendo uma resposta ao usuário, é uma tarefa muito importante. Isso constitui o ciclo requisição e resposta, sendo que as aplicações dos servidores esperam por solicitações dos usuários.
+
+
+Para simplificar, vamos considerar uma aplicação bem simples, que exibe uma mensagem de boas-vindas a um usuário, que enviou seu nome e e-mail em um formulário de uma página web (front-end). A aplicação do servidor (back-end) deve extrair os dados e construir o código da página que será devolvida ao usuário, que a vê no seu navegador. PHP pode realizar essa tarefa de forma bem simples, com poucas linhas de código. Consequentemente, a compreensão sobre como funcionam as requisições e as respostas para uma aplicação simples darão subsídios para aplicações mais complexas.
+
+
+Neste vídeo, exploramos como as aplicações web lidam com páginas dinâmicas, essenciais em e-commerce, sistemas bancários e educacionais. Você aprenderá sobre o ciclo de requisição e resposta. Usando um exemplo simples em PHP, mostraremos como capturar dados de um formulário e exibir uma mensagem de boas-vindas personalizada, preparando você para criar aplicações web mais complexas.
+
+
+
+Roteiro de prática
+
+
+Considere uma aplicação bem simples, que exibe uma mensagem de boas-vindas a um usuário, que enviou seu nome e e-mail em um formulário de uma página web (front-end). A aplicação do servidor (back-end) deve extrair os dados e construir o código da página que será devolvida ao usuário, que a vê no seu navegador.
+
+
+A referência para este exemplo é o W3schools (seção PHP do site).
+
+
+Inicialmente, vamos considerar a página HTML que contém o formulário com dois campos: nome e e-mail.
+
+
+Plain Text
+<html>
+<body>
+
+    <form action="welcome.php" method="POST">
+        Name: <input type="text" name="name"><br>
+        E-mail: <input type="text" name="email"><br>
+        <input type="submit">
+    </form>
+
+</body>
+</html>
+
+Light Mode
+
+Copiar
+
+A página resultante do código anterior é a seguinte:
+
+
+
+Página web resultante.
+
+Quando o usuário preencher os campos do formulário e clicar no botão, os dados serão enviados ao servidor, por meio do método POST, para serem processados pela aplicação welcome.php, que pode conter linhas de código conforme mostrado a seguir.
+
+
+Plain Text
+<html>
+<body>
+
+Welcome <?php echo $_POST["name"]; ?><br>
+Your email address is: <?php echo $_POST["email"]; ?>
+
+</body>
+</html>
+
+Light Mode
+
+Copiar
+
+E a página resultante, que o usuário visualiza no navegador, pode ser semelhante à seguinte imagem. Observe!
+
+
+
+Exemplo da resposta.
+
+Vamos detalhar um pouco mais as linhas de código da imagem de exemplo de aplicação para welcome.php , começando pela linha de código mostrada a seguir.
+
+
+
+Obtendo o dado name da requisição.
+
+O código $_POST[“name”] extrai o conteúdo do campo do formulário, denominado name, que foi enviado na requisição por meio do método POST.
+
+
+Agora, vamos analisar a próxima linha de código.
+
+
+
+Obtendo o dado email da requisição.
+
+De forma semelhante, o código $_POST[“email”] extrai o conteúdo do campo do formulário, denominado email, que também foi enviado na requisição por meio do método POST.

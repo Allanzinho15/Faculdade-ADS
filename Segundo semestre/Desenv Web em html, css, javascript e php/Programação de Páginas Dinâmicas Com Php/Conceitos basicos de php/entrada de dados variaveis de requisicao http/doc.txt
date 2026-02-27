@@ -1,0 +1,109 @@
+Entrada de dados: variáveis de requisição HTTP
+Em aplicações que geram páginas web dinâmicas, é comum a utilização de formulários, nos quais os usuários inserem conteúdos a serem enviados aos servidores, também conhecidos como requisições. Os servidores recebem os dados, fazem o devido processamento e, depois, enviam as respostas aos usuários na forma das páginas web. Cada dado que é enviado ao servidor pode ser comparado a variáveis em um programa, isto é, tem nome e conteúdo. A aplicação do servidor consegue extrair os dados baseados nos seus nomes. Além disso, há diferentes métodos de envio dos dados, como o GET e POST. O método GET anexa os dados na URL, enquanto o POST insere os dados no corpo da mensagem.
+
+
+Neste vídeo, exploramos como aplicações web dinâmicas utilizam formulários para coletar e enviar dados dos usuários aos servidores. Entenda o processo de requisições, em que os servidores recebem, processam e respondem com páginas web. Aprenda sobre os métodos de envio de dados, como GET e POST, e suas diferenças fundamentais.
+
+
+
+Na linguagem PHP estão disponíveis algumas variáveis predefinidas – também chamadas de superglobais. Entre elas, estão as de requisição HTTP: $_REQUEST, $_POST e $_GET. Em linhas gerais, essas três variáveis têm a mesma função, ou seja, receber dados provenientes de formulários HTML ou de outras requisições HTTP que façam uso dos métodos POST e GET.
+
+Métodos de requisição HTTP
+
+
+A especificação do protocolo HTTP estabelece uma série de métodos de requisição cuja função é indicar qual ação deve ser executada por determinado recurso. Nesse sentido, cada um deles implementa uma diferente semântica. São nove os métodos disponíveis:
+
+
+GET
+ 
+HEAD
+ 
+POST
+ 
+PUT
+ 
+DELETE
+ 
+CONNECT
+ 
+OPTIONS
+ 
+TRACE
+ 
+PATCH
+
+Além dos métodos aqui mencionados, o protocolo HTTP possui, ainda, uma série de outras propriedades relevantes no que tange à programação Web. Recomenda-se, portanto, uma leitura mais aprofundada sobre esse protocolo. A seguir, veremos exemplos de utilização dos métodos GET e POST, que são os mais usados em programas PHP.
+
+
+Método GET
+
+
+Este método é utilizado na requisição e na recuperação de recursos de um servidor, como uma página ou um arquivo, entre outros. Veja o exemplo de uma requisição GET:
+
+
+PHP (7.4.1)
+/endereco_servidor/script.php?var1=value1&var2=value&var#=value3
+
+Light Mode
+
+Copiar
+
+Como visto na imagem, a requisição GET é composta pelo endereço (URL e URI) e pela query string – pares de nome/valores (var1=value1, ...).
+
+
+Em linhas gerais, não deve ser utilizado quando estamos lidando com informações sensíveis, uma vez que a query string fica visível na barra de endereços do navegador. Outra característica importante desse método é que ele pode ser usado a partir de formulários HTML.
+
+
+Método POST
+
+
+Este método é usado no envio de dados para o servidor a fim de criar ou atualizar um recurso. A figura seguinte mostra o corpo de uma requisição feita com POST:
+
+
+PHP (7.4.1)
+POST / endereco_servidor/script.php
+Host: dominio.com.br
+var1=value1&var2=value2&var3=value3
+
+Light Mode
+
+Copiar
+
+Assim como o GET, esse método pode ser utilizado em formulários HTML, com a vantagem de não deixar os dados transmitidos visíveis na barra de endereços do navegador – embora seja possível acessá-los analisando a requisição em si.
+
+
+Variável $_GET
+
+
+Em PHP, essa variável predefinida é um array associativo que contém as variáveis recebidas de métodos HTTP GET. Voltando ao exemplo da figura “Exemplo de uma requisição GET”, no script “script.php” as variáveis passadas seriam representadas da seguinte forma:
+
+
+PHP (7.4.1)
+<?php
+
+//Requisição GET: /endereco_servidor/script.php?var1=value1&var2=value2&var3=value3
+
+
+echo $_GET['var1']; //imprimiria value1
+echo $_GET['var2']; //imprimiria value2
+echo $_GET['var3']; //imprimiria value3
+
+
+Light Mode
+
+Copiar
+
+Como visto anteriormente, no array $_GET, os índices correspondem aos nomes das variáveis da query string submetida com o método GET, assim como seus valores.
+
+
+Variável $_POST
+
+A exemplo de $_GET, a variável predefinida $_POST também é um array associativo. Entretanto, ela contém as variáveis recebidas por meio de métodos POST.
+
+
+Variável $_REQUEST
+
+
+É considerada "curinga", uma vez que exerce múltiplos papéis. Com ela, é possível receber tanto variáveis provenientes de métodos GET quanto POST – e também do método cookies ($_COOKIE).
+
+Sua utilização é semelhante ao que foi visto em $_GET e $_POST.

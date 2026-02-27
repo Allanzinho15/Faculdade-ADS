@@ -1,0 +1,105 @@
+A sintaxe PHP
+Como qualquer linguagem, PHP também tem suas regras de sintaxe, que devem ser obedecidas para o bom funcionamento das aplicações. Além disso, os servidores podem lidar com aplicações implementadas com diferentes tecnologias e, dessa forma, é preciso passar algumas dicas aos servidores para que saibam como proceder. Ou seja, para iniciar um script em PHP, deve-se utilizar a sequência de caracteres . Ainda, para finalizar as instruções, utiliza-se ponto e vírgula. Para definir variáveis, utiliza-se o símbolo $, sem a necessidade de especificar tipos de dados. A fim de definir uma variável denominada nome, basta fazer o seguinte: $nome.
+
+
+Neste vídeo, exploramos as regras essenciais para escrever e executar scripts em PHP. Descubra como iniciar e finalizar um script; a importância do ponto e vírgula para terminar instruções; como definir variáveis sem especificar tipos de dados. Esse conteúdo é ideal para iniciantes que desejam entender os fundamentos da linguagem e garantir o bom funcionamento de suas aplicações. Não perca!
+
+
+
+O script PHP deve ser iniciado pela tag “” e fechado com a tag “?>”. Isso é necessário para que o servidor Web entenda qual código deve ser interpretado e qual deve ser apenas renderizado, uma vez que tags HTML podem ser inseridas dentro de um arquivo contendo código PHP. Veja o exemplo a seguir:
+
+Plain Text
+
+
+Light Mode
+
+Copiar
+
+O código anterior poderia ser salvo como um script PHP.
+
+
+Por exemplo: “ola_mundo.php”. Ao serem interpretados pelo servidor, tanto o código HTML quanto o código PHP, dentro das tags , são convertidos em código HTML normal e renderizados no navegador. O servidor Web pode ser configurado para interpretar scripts PHP sem que seja necessário utilizar a extensão “.php”. Nesse caso, é usada outra extensão, ou nenhuma − isso é útil quando não queremos revelar a linguagem utilizada em nosso site.
+
+
+Término de instruções e comentários
+
+
+As instruções PHP devem ser, obrigatoriamente, terminadas com a utilização de ponto e vírgula. Logo, ao final de cada comando, devemos indicar que ele foi terminado.
+
+
+Em relação aos comentários, temos duas opções:
+
+
+Opção 1
+
+
+Os de uma linha são iniciados com duas barras: //
+
+
+Opção 2
+
+
+Os de múltiplas linhas são delimitados por /* e */
+
+
+Veja os exemplos de finalização de comandos e de utilização de comentários no emulador de códigos a seguir. Clique em Executar para verificar a saída do código:
+
+<?php
+//Comentários de uma linha são realizados com a utilização de barras duplas
+
+/*
+Cada comando deve ser terminado com ;
+Abaixo temos alguns exemplos de término de comandos
+*/
+
+echo "Olá, mundo\n";
+$var1 = 2 + 2;
+
+echo "O Resultado da soma é igual a: " . $var1;
+
+Repare que a tag de fechamento “?>” não é obrigatória quando temos apenas código PHP em um script.
+
+
+Variáveis em PHP
+
+As variáveis são um dos principais recursos em uma linguagem de programação. Em PHP, a definição de uma variável é feita com a utilização do símbolo “$” seguido do nome da mesma. No código de exemplo anterior, a variável “$var1” foi declarada e, ao mesmo tempo, inicializada.
+
+
+Em PHP, diferentemente de linguagens como Java, não é necessário informar o tipo de variável. Tal fato concede ao PHP a característica de linguagem fracamente tipada. Com isso, não há diferenças no momento da criação de variáveis para receber dados numéricos, textuais, alfanuméricos, entre outros.
+
+
+Atenção
+O único cuidado diz respeito ao momento de atribuição de valores, já que dados do tipo string, por exemplo, precisam ser envolvidos por aspas duplas (“ ”) ou simples (‘ ’).
+
+
+A respeito dos nomes das variáveis temos, ainda, as seguintes regras:
+
+ 
+
+Os nomes de variável são case-sensitive. Logo, há diferença entre letras maiúsculas e minúsculas.
+ 
+Para ser válido, o nome da variável deve começar com uma letra ou um sublinhado (underscore).
+ 
+Após o primeiro caractere (letra ou sublinhado), podem ser utilizadas letras, números e sublinhados.
+
+Atribuição de valores
+
+
+A atribuição de valores a variáveis em PHP é realizada com a utilização do sinal de igual “=”. Veja este novo exemplo:
+
+
+PHP (7.4.1)
+
+<?php
+ $_nomeCurso = "Programação de Páginas Dinâmicas com PHP";
+ $ano_criacao = 1994;
+ $flagLinguagemScript = true;
+
+Light Mode
+
+Copiar
+
+Repare que diversos tipos de dados foram utilizados e atribuídos às variáveis declaradas. Além disso, diferentes convenções de nomeação foram aplicadas – início com underscore; separação por underscore; CamelCase. É boa prática escolher um único padrão e utilizá-lo em todo o projeto.
+
+Atenção
+Em PHP, as variáveis não inicializadas possuem um valor padrão. Nas do tipo booleano, por exemplo, o valor padrão é false. Logo, é recomendado – e também uma boa prática − inicializar as variáveis antes de utilizá-las, embora isso não seja obrigatório.
