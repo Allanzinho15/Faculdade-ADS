@@ -1,0 +1,56 @@
+1.
+A Classe PDO em banco de dados
+Exceções em PHP
+Considere que uma aplicação crítica parou de funcionar de forma inesperada. Os prejuízos podem ser enormes. Portanto, deve-se evitar ao máximo esse tipo de situação. Uma alternativa muito importante é a denominada tratamento de exceções.
+
+
+Mas, o que são as exceções?
+
+
+Podemos considerar exceções os comportamentos atípicos dos programas, algo que fuja do esperado. Então, se uma exceção ocorrer, o programa deve detectá-la e executar outras linhas de código para contornar o problema, possibilitando a continuação do funcionamento.
+
+
+PHP, assim como várias outras linguagens, tem recursos para lidar com o tratamento de exceções.
+
+
+Neste vídeo, vamos entender a importância de considerar o tratamento de exceções no desenvolvimento de aplicações, tendo em vista que esta abordagem contribui para a robustez dos sistemas, evitando paradas de modo intempestivo.
+
+
+
+Tratamento de exceções
+
+
+Uma boa prática, em qualquer linguagem de programação, é tratar as possíveis exceções que possam ocorrer no código. Cada linguagem possui uma sintaxe própria, sendo muito comum na maioria a utilização da instrução “try/catch”.
+
+
+A maioria das linguagens de programação conta com instruções específicas para o tratamento de exceções. Em linhas gerais, temos uma exceção que pode ser lançada (throw) e capturada (catch), estando o respectivo código envolvido por um bloco try, cuja sintaxe deve contar com, ao menos, um bloco catch ou finally. Por fim, temos que o objeto lançado, ou seja, a exceção, precisa ser uma instância ou subclasse da classe Exception.
+
+
+Em relação ao bloco catch, podemos ter vários relacionados a um bloco try, sendo cada um responsável pelo tratamento de um tipo de exceção. Já o conteúdo do bloco finally será sempre executado após o bloco try ou catch.
+
+
+Saiba Mais
+Consulte por Exceções no Manual do PHP.
+
+
+O tratamento de exceções é uma prática recomendadíssima em qualquer código produzido. Além de informar ao usuário ou mesmo ao desenvolvedor que um erro ocorreu e que, com isso, o programa não funcionará de acordo com o esperado, o tratamento de exceções possibilita também que outras partes do programa permaneçam funcionais ou que o programa não seja encerrado de forma inesperada, mesmo que um erro tenha ocorrido.
+
+
+A partir de um dos exemplos anteriores, poderíamos utilizar o seguinte código, com tratamento de possíveis exceções, para realizar a conexão com o MySQL, por exemplo:
+
+
+PHP (7.4.1)
+<?php
+
+//Constantes para armazenamento das variáveis de conexão.
+define('HOST', '127.0.0.1');
+define('PORT', '5432');
+define('DBNAME', 'test');
+define('USER', 'user');
+define('PASSWORD', 'psswd');
+
+try {
+	$dsn = new PDO("mysql:host=". HOST . ";port=".PORT.";dbname=" . DBNAME .";user=" . USER . ";password=" . PASSWORD);
+} catch (PDOException $e) {
+	echo 'A conexão falhou e retornou a seguinte mensagem de erro: ' .$e->getMessage();
+}

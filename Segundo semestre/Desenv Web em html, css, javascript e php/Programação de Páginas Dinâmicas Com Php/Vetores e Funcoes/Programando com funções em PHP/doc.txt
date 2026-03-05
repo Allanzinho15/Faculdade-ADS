@@ -1,0 +1,68 @@
+Programando com funções em PHP
+As funções são muito utilizadas no desenvolvimento de software, pois possibilitam a divisão dos programas em partes menores, de mais fácil entendimento, implementação e testes. Além disso, favorecem o reaproveitamento de código, otimizando o trabalho. Portanto, o bom entendimento de como implementar e utilizar as funções, combinado com outros recursos de programação, é fundamental no trabalho do desenvolvedor. PHP tem várias funções nativas, mas permite a criação de novas funções. Considere, ainda, a possibilidade de se utilizar funções associadas a arrays. Por exemplo, suponha que os parâmetros de entrada de uma função sejam elementos de um array. Como fazer isso? É simples. Basta referenciar os elementos dos arrays por meio dos seus índices, de modo que cada elemento se comporte como se fosse uma variável convencional.
+
+
+Descubra neste vídeo como as funções podem facilitar o desenvolvimento de software, dividindo programas em partes menores e otimizando o trabalho dos desenvolvedores. Aprenda a implementar e utilizar funções em PHP, explorando as funções nativas e a criação de novas funções. Saiba como associar funções a arrays e utilizar elementos de arrays como parâmetros de entrada. Assista ao vídeo e aprimore suas habilidades de programação!
+
+
+
+Roteiro de prática 2
+
+O uso de arrays é muito comum no desenvolvimento de software. Para exemplificar, vamos considerar um array unidimensional, que contém o nome de um aluno, além de suas notas em duas provas. Devemos implementar uma função que calcule a média das duas notas e, depois, que mostre uma mensagem informando o nome do aluno e sua média.
+
+
+De início, mostraremos o programa completo e, posteriormente, vamos analisá-lo com mais detalhes.
+
+
+Plain Text
+
+<!DOCTYPE html>
+<html>
+<body>
+
+    <?php
+    //Implementação da função que calcula a média
+    function calc_media($n1,$n2) {
+        return ($n1 + $n2)/2;
+    }
+    //Definição do array que contém os dados do aluno
+    $aluno = array("Joăo",8.8,9.4);
+
+    //Chamada da função que calcula a média
+    $media = calc_media($aluno[1], $aluno[2]);
+
+    //Imprimindo os dados na tela
+    echo $aluno[0]." tem média igual a ".$media;
+
+    ?>
+    
+</body>
+</html>
+
+Light Mode
+
+Copiar
+
+Antes de usarmos alguma função que não é nativa, precisamos implementá-la. O trecho de código compreendido entre as linhas 7 a 9 mostra a implementação da função que calcula a média de dois números passados como parâmetros de entrada dentro dos parênteses, conforme mostrado na imagem seguinte.
+
+
+
+Implementação da função que calcula a média de dois números.
+
+Na sequência, é definido o array que contém os dados do aluno, como se vê na próxima imagem.
+
+
+
+Definição do array com os dados do aluno.
+
+Depois, é feita a chamada da função que calcula a média das notas do aluno. Observe que os parâmetros de entrada da função são os elementos de índice 1 e 2 do array $aluno.
+
+
+
+Chamada da função que calcula a média das notas do aluno.
+
+Por fim, o nome e a média do aluno são mostrados na tela para o usuário, de acordo com a imagem a seguir. Observe que o nome do aluno foi obtido a partir do índice zero do array $aluno.
+
+
+
+Código para mostrar o nome e a média do aluno.

@@ -1,0 +1,93 @@
+Demonstração prática do uso de array multidimensional em PHP
+O uso de arrays, uni ou multidimensionais, é muito importante no desenvolvimento de software e, consequentemente, entender como implementá-los é tarefa essencial para os desenvolvedores. Considere a situação em que os alunos de uma turma fazem duas provas no semestre letivo, P1 e P2. Isto é, ao lado dos nomes dos alunos, devem aparecer as notas de provas, conforme mostrado a seguir.
+
+
+João: P1:8.7, P2: 9.4
+Maria: P1: 9.2, P2: 8.9
+Luís: P1: 7.8, P2: 8.4
+Fernanda: P1: 8.7, P2: 9.1
+João: P1:8.7, P2: 9.4
+Maria: P1: 9.2, P2: 8.9
+Luís: P1: 7.8, P2: 8.4
+Fernanda: P1: 8.7, P2: 9.1
+Nesse contexto, a utilização de array multidimensional é mais indicada para armazenar os nomes e as notas dos alunos. Podemos considerar o array multidimensional um agrupamento de arrays unidimensionais, que armazenam o nome e as notas de um único aluno.
+
+
+Assim, o primeiro array unidimensional terá os seguintes elementos:
+
+
+João 8.7 9.4
+João 8.7 9.4
+O segundo array unidimensional terá os seguintes elementos:
+
+
+Maria 9.2 8.9
+Maria 9.2 8.9
+E assim por diante. Os arrays unidimensionais são agrupados e fazem parte do array externo que compreende todos eles, formando o array multidimensional.
+
+
+Nesse exemplo, o array multidimensional tem duas dimensões dadas por linhas e colunas. Logo, para referenciar algum elemento, precisamos de dois índices: um para referenciar a linha e outro para referenciar a coluna do elemento.
+
+
+No campo do desenvolvimento de software, a utilização de arrays é essencial, especialmente quando se trata de armazenar informações como notas de alunos. Neste vídeo, você verá uma situação em que cada aluno possui notas de P1 e P2. Os arrays multidimensionais se destacam como a melhor opção para organizar os dados de maneira eficiente. Essas estruturas permitem agrupar os dados de maneira que seja possível armazenar, além dos nomes dos alunos, suas respectivas notas.
+
+
+
+Roteiro de prática 1
+
+
+Considere a situação em que os alunos de uma turma fazem duas provas no semestre letivo: P1 e P2. Ou seja, ao lado dos nomes dos alunos, devem aparecer as notas de provas, conforme mostrado a seguir.
+
+
+João: P1:8.7, P2: 9.4
+Maria: P1: 9.2, P2: 8.9
+Luís: P1: 7.8, P2: 8.4
+Fernanda: P1: 8.7, P2: 9.1
+João: P1:8.7, P2: 9.4
+Maria: P1: 9.2, P2: 8.9
+Luís: P1: 7.8, P2: 8.4
+Fernanda: P1: 8.7, P2: 9.1
+Como implementar uma aplicação em PHP que possa utilizar um array multidimensional para mostrar os nomes e as notas dos alunos, além de mostrá-las ao usuário?
+
+
+Inicialmente, vamos mostrar todo o código e, depois, vamos analisá-lo mais detidamente.
+
+
+Plain Text
+<!DOCTYPE html>
+<html>
+<body>
+
+<?php
+$alunos = array (
+    array("João", 8.7,9.4),
+    array("Maria", 9.2,8.9),
+    array("Luis", 7.8,8.4),
+    array("Fernanda", 8.7,9.1)
+);
+
+echo $alunos[0][0].": P1:".$alunos[0][1].", P2: ".$alunos[0][2]."<br>";
+echo $alunos[1][0].": P1: ".$alunos[1][1].", P2: ".$alunos[1][2]."<br>";
+echo $alunos[2][0].": P1: ".$alunos[2][1].", P2: ".$alunos[2][2]."<br>";
+echo $alunos[3][0].": P1: ".$alunos[3][1].", P2: ".$alunos[3][2]."<br>";
+?>
+
+</body>
+</html>
+
+
+Light Mode
+
+Copiar
+
+O código das linhas 6 a 11 dessa imagem mostra a criação do array multidimensional $alunos, contendo quatro arrays unidimensionais. Cada um desses arrays tem o nome e as notas de P1 e P2 dos alunos, conforme destacado na próxima imagem.
+
+
+
+Criação de array multidimensional.
+
+Em seguida, os elementos de cada array interno são exibidos na tela por meio da referência de linha e coluna a que pertencem, utilizando dois pares de colchetes. O primeiro par de colchete refere-se ao índice da linha, e o segundo, ao da coluna, como mostrado em seguida.
+
+
+
+Manipulação dos elementos do array.

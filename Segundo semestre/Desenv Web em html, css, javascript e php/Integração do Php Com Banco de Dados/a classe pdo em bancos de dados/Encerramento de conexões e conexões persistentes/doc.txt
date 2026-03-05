@@ -1,0 +1,41 @@
+Encerramento de conexões e conexões persistentes
+É comum liberarmos recursos que não são mais utilizados nos programas como, por exemplo, espaços de memórias de variáveis as quais não serão usadas novamente, assim como conexões a bancos de dados após o encerramento das operações.
+
+
+Considere o usuário de um sistema que o acessou para realizar uma consulta aos seus dados e, após isso, ele finaliza sua aplicação. Consequentemente, não há necessidade de a conexão com o banco de dados permanecer ativa. Por outro lado, se o mesmo usuário desejar consultar outros dados em seguida, é interessante manter a conexão ativa. Com PHP, podemos alcançar esses dois objetivos.
+
+
+Neste vídeo, vamos mostrar como, com PHP, é possível atingir os objetivos de desativar a conexão com o banco de dados, quando ela for desnecessária e, em seguida, se ela for necessária para consulta de novos dados, manter a conexão ativa.
+
+
+
+Encerramento de conexões
+
+
+Para encerrar uma conexão aberta através de PDO, basta atribuir NULL à variável que contém a instância da classe. O mesmo deve ser feito com as variáveis que armazenam o resultado da execução dos métodos que executam instruções SQL, como Exec e Query – que serão vistos mais adiante.
+
+
+A linha a seguir demonstra o encerramento da conexão aberta no código anterior:
+
+
+PHP (7.4.1)
+//...
+$dsn = null;
+
+Conexões persistentes
+
+
+PDO oferece suporte a conexões persistentes – que, em linhas gerais, consiste em não encerrar uma conexão aberta com o SGBD ao final de execução de um script. Com isso, é possível fazer cache da conexão e reutilizá-la quando outros scripts requisitarem uma conexão semelhante (com as mesmas credenciais) a essa que ficou aberta. Para usar conexões persistentes em PDO, é necessário incluir um parâmetro a mais no momento de criação da instância. Veja como ficaria o nosso exemplo de conexão com o PostgreSQL:
+
+
+PHP (7.4.1)
+<?php
+//...
+
+try {
+
+	$dsn = new PDO("pgsql:host=". HOST . ";port=".PORT.";dbname=" . DBNAME .";user=" . USER . ";password=" . PASSWORD, array(PDO::ATTR_PERSISTENT => true)) ;
+
+} catch (PDOException $e) {
+	echo 'A conexão falhou e retornou a seguinte mensagem de erro: ' .$e->getMessage();
+}

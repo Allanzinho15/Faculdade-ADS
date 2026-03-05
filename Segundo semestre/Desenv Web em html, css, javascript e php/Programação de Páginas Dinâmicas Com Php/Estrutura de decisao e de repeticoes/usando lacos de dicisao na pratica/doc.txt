@@ -1,0 +1,66 @@
+Usando laços e estruturas de decisão na prática
+Considere uma aplicação que calcule a média das notas de prova dos alunos de uma turma, ou seja, deve-se somar todas as notas e dividir o valor resultante pela quantidade de alunos. Se essas notas estiverem em um array, basta percorrer os elementos do array, calculando a soma total das notas. Com PHP, há estruturas prontas para facilitar trabalhos repetitivos como o de percorrer os elementos de um array, poupando tempo dos desenvolvedores e otimizando a quantidade de linhas finais no código. Se não fossem essas estruturas de repetição, teríamos mais trabalho para implementar programas que possam realizar a tarefa descrita.
+
+
+E se, além do cálculo da média da turma, fosse necessário exibir uma mensagem ou realizar alguma ação de acordo com o resultado da média? Como fazer isso? Com as estruturas de decisão, é simples resolver esse problema. Basta vincular as ações que serão realizadas por meio de linhas de código inseridas dentro de cada condição possível. Tanto as estruturas de repetição quanto aquelas de decisão são fundamentais para o bom desenvolvimento de programas e, consequentemente, o entendimento de como utilizá-las é requisito necessário aos desenvolvedores de software.
+
+
+A partir deste vídeo, imagine que você, desenvolvedor de software, precisa calcular a média das notas de uma turma de alunos. Parece complicado, não é mesmo? Mas com PHP, tudo fica mais fácil! Com estruturas prontas para percorrer arrays, você economiza tempo e linhas de código. E se precisar tomar decisões com base na média, também é moleza! As estruturas de decisão estão aí para ajudar. Então, já sabe: dominar essas ferramentas é essencial para o sucesso no mundo da programação.
+
+
+
+Roteiro de prática
+
+
+Considere uma turma com dez alunos. Eles fizeram uma prova e as notas já foram lançadas, pelo professor, no sistema computacional da instituição de ensino. Para simplificar, vamos imaginar que essas notas estejam em um array. Inicialmente, deve-se calcular a média da turma, depois, exibir alguma mensagem de acordo com o resultado final da média. O código, mostrado a seguir, ilustra como é possível resolver esse problema. Observe!
+
+
+Plain Text
+<html>
+<body>
+<?php
+    $notas=[6.6, 8.4, 9.2, 7.8, 5.1, 7.9, 8.3, 7.7, 6.4, 8.6];
+    foreach ($notas as $i) {
+        $soma += $i;
+    }
+    $media = $soma / 10;
+    if($media < 6.0) {
+        echo "Média da turma = " .$media. ". Estude mais!";
+    }
+    elseif ($media == 6.0) {
+        echo "Média da turma = " .$media. ". Na média!";
+    }
+    else {
+        echo "Média da turma = " .$media. ". Acima da média!";
+    }
+?>
+</body>
+</html>
+
+Light Mode
+
+Copiar
+
+Inicialmente, o vetor $notas contém as notas dos dez alunos da turma.
+
+
+
+Definição do array $notas.
+
+Na sequência, a estrutura de repetição foreach percorre os elementos do array $notas, atribuindo o valor de cada elemento à variável $i. Dentro do bloco do foreach, a cada iteração, a variável $soma adiciona o valor correspondente da variável $i, conforme mostra o trecho de código a seguir.
+
+
+
+Uso do foreach.
+
+Depois, a média das notas é calculada.
+
+
+
+Cálculo da média.
+
+Em seguida, dependendo do valor da média, é mostrada uma mensagem. Para isso, foi utilizada uma estrutura de decisão, conforme mostrado na imagem que segue.
+
+
+
+Uso da estrutura de decisão.

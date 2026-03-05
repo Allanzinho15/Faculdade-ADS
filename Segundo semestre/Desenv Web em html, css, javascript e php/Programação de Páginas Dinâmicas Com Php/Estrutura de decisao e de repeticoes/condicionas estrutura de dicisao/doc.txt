@@ -1,0 +1,233 @@
+Condicionais: estruturas de decisão
+Com frequência, há situações em que o mesmo programa pode seguir caminhos diferentes dependendo de certas condições, o que reflete situações cotidianas, por exemplo, se a idade for até 11 anos, trata-se de criança. Se for de 12 até 18 anos, é adolescente. Para traduzir essas condições para os programas, há certas instruções específicas denominadas condicionais ou estruturas de decisão. São estruturas bastante úteis e versáteis, utilizadas em programas desenvolvidos por meio das mais diversas linguagens, como PHP. Portanto, o entendimento dessas estruturas, assim como as respectivas sintaxes, é bastante importante para o desenvolvimento de aplicações.
+
+
+Neste vídeo, explicamos como programas podem seguir diferentes caminhos com base em certas condições, refletindo situações cotidianas como classificar idade em criança ou adolescente. Exploramos as instruções condicionais ou estruturas de decisão, essenciais em várias linguagens de programação como PHP. Aprenda neste vídeo a aplicar essas estruturas versáteis e fundamentais para o desenvolvimento de aplicações.
+
+
+
+
+Fluxo das estruturas de decisão.
+
+A figura anterior demonstra o fluxo de uma estrutura de decisão. Nela é possível ver que, a partir da verificação de uma condição, o programa se divide em dois caminhos possíveis. Esse é um exemplo simples, uma vez que várias condições podem ser verificadas ao mesmo tempo, assim como vários caminhos alternativos podem ser seguidos.
+
+
+if
+
+
+As estruturas de decisão e de repetição são recursos importantes em uma linguagem de programação. Com elas, é possível mudar o fluxo de um programa por meio de verificações (estruturas de decisão) e também executar diversas vezes partes do programa (estruturas de repetição). A seguir, veremos como utilizá-las em PHP.
+
+
+A sintaxe da estrutura de controle if em PHP é composta pela condição (ou condições) a ser verificada e, caso seja verdadeira, é seguida da instrução (ou instruções) a ser executada. Logo, temos que as condições são avaliadas por seus valores booleanos, isto é, se são verdadeiras ou falsas. Vejamos este fragmento de código PHP a seguir:
+
+
+PHP (7.4.1)
+ <?php
+
+ $var1 = 10;
+ $var2 = 20;
+
+ if($var1 > $var2){
+	echo "$var1 é maior que $var2";
+ }
+
+Light Mode
+
+Copiar
+
+No exemplo foi realizada apenas uma verificação – a comparação entre as duas variáveis definidas. Caso a primeira seja maior que a segunda, uma mensagem é exibida na tela. É possível também realizar outras verificações em um mesmo if. Para isso, basta utilizar subgrupos.
+
+
+Antes de prosseguirmos, cabe destacar mais alguns elementos da sintaxe do if:
+
+
+A condição (ou condições) a ser avaliada deve ser envolvida por parênteses, sendo possível incluir subgrupos dentro de novos parênteses.
+ 
+Múltiplas instruções devem ser envolvidas com chaves. No exemplo, como só há uma instrução a ser executada, as chaves são opcionais e podem ser omitidas.
+
+Else
+
+
+Para apresentar a estrutura else, voltaremos ao exemplo anterior, no qual é verificado se uma variável era maior do que a outra e, em caso positivo, exibida uma mensagem.
+
+
+O que acontece em nosso programa caso a condição em questão não seja verdadeira? Qual retorno é exibido nesse caso?
+
+
+Digite o código no emulador seguinte, execute-o e veja você mesmo:
+
+
+Como $var1 é menor que $var2, nada é exibido no navegador, já que a condição é falsa. Nessa situação, para imprimirmos uma mensagem informando que a condição é falsa, ou seja, que $var1 é menor que $var2, faremos uso do else. Veja como ficaria nosso código nesse ponto:
+
+
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+PHP (7.4.1)
+
+<?php
+
+ $var1 = 10;
+ $var2 = 20;
+
+ if($var1 > $var2){
+	echo "$var1 é maior que $var2";
+ }else{
+	echo "$var1 é menor que $var2";
+ }
+
+
+Executar
+Console
+
+Como demonstrado no exemplo, a estrutura else tem a função de definir um fluxo alternativo ao nosso programa, caso uma determinada condição seja falsa.
+
+
+Em relação à sua sintaxe, vale o que foi dito para if, sobre múltiplas instruções precisarem ser envolvidas em chaves.
+
+
+Elseif/else if
+
+É uma combinação das duas instruções vistas. Logo, sua função é definir fluxo (ou fluxos) alternativo caso uma condição verificada com if seja falsa. Entretanto, ela permite ainda que uma nova condição (ou até mesmo condições) seja avaliada. Vamos ao exemplo de seu uso:
+
+
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+PHP (7.4.1) 
+
+<?php
+
+ $var1 = 10;
+ $var2 = 10;
+
+ if($var1 > $var2){
+	echo "$var1 é maior que $var2";
+ }elseif($var1 < $var2){
+	echo "$var1 é menor que $var2";
+ }else{
+	echo "$var1 e $var2 são iguais";
+ }
+
+
+Executar
+Console
+
+Repare que além da primeira verificação, com o if, foi inserida uma segunda, com elseif. Ao final, a instrução else representa o fluxo caso nem a condição do if nem a do elseif sejam verdadeiras.
+
+
+Sobre sua sintaxe, além do que já foi dito no if, cabe destacar que não há limites de instruções elseif dentro de uma declaração if.
+
+
+Switch
+
+
+Pode ser comparada a uma série de instruções if, possuindo uma sintaxe um pouco diferente e usada sobretudo quando se deseja verificar diferentes valores, inúmeras vezes, em uma mesma variável. Vejamos sua sintaxe por meio de um novo exemplo:
+
+
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+PHP (7.4.1)
+
+<?php
+ $var1 = 10; 
+ switch($var1){
+	case 10:
+		echo "var1 é igual a 10";
+        break; 
+	case 20:
+		echo "var1 é igual a 20";
+		break;
+	default:
+		echo "var1 não é igual a 10 e nem a 20";
+		break;
+ }
+
+
+Executar
+Console
+
+Com o switch temos uma série de verificações e, ao final, uma instrução padrão (default) a ser executada, caso nenhuma das condições seja verdadeira. Para fins de prática, modifique o valor da variável $var1 no emulador anterior, execute o código e veja o resultado obtido.
+
+
+Formas alternativas
+
+
+PHP permite que sejam utilizadas formas alternativas das instruções vistas. Em linhas gerais, troca-se a chave de abertura por dois pontos e a de fechamento pela palavra reservada “end” seguida do nome da instrução. Veja o exemplo:
+
+
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+PHP (7.4.1)
+
+<?php
+
+ $var1 = 10;
+ $var2 = 10;
+
+ if($var1 > $var2):
+	echo "$var1 é maior que $var2";
+ elseif($var1 < $var2):
+	echo "$var1 é menor que $var2";
+ else:
+	echo "$var1 e $var2 são iguais";
+ endif;
+
+
+Executar
+Console
+
+Essa sintaxe é muito utilizada quando misturamos código HTML e PHP.
+
+
+Outra sintaxe alternativa interessante presente no PHP é o operador ternário. Por meio dele é possível avaliar uma condição e atribuir um valor de acordo com a validação. Veja o exemplo para ficar mais claro:
+
+
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+PHP (7.4.1)
+
+<?php
+
+ $var1 = 10;
+ $var2 = ($var1 >= 10) ? 11 : 9;
+ echo $var2; //imprimirá 11
+
+
+Executar
+Console
+
+Note que uma condição foi verificada dentro de parênteses. Caso verdadeira, após o sinal “?” é atribuído o valor “11”. Caso negativa, após o sinal “:” é atribuído o valor “9”. Execute novamente o código no emulador acima, mas antes modifique o valor da variável $var1. Analise o resultado obtido.

@@ -1,0 +1,81 @@
+A Classe PDO
+Existem diversas linguagens de programação, assim como vários sistemas de gerenciamento de banco de dados. Consequentemente, na nossa trajetória profissional, podemos lidar com projetos que sejam desenvolvidos utilizando diferentes abordagens.
+
+
+Independentemente das tecnologias consideradas, é importante conhecer as características essenciais para que uma aplicação se conecte ao banco de dados, permitindo a realização das operações CRUD (create, read, update, delete), ou seja, operações de: criação de um novo registro no banco de dados, leitura, atualização e remoção de algum dado já existente.
+
+
+Portanto, com PDO, podemos estabelecer a conexão de aplicações com bancos de dados.
+
+
+Neste vídeo, vamos entender a importância de se conhecer os processos de integração de aplicações com bancos de dados, de modo que se possa realizar as operações CRUD (create, read, update, delete).
+
+
+
+PDO
+
+
+PDO, acrônimo para PHP Data Objects, ou Objetos de Dados PHP, e conforme definição vista anteriormente, é uma classe contida dentro de uma biblioteca e, por consequência, dentro de uma extensão. Ao referi-la, vamos chamá-la apenas de classe ao longo deste material.
+
+
+Trata-se de uma interface leve para acesso a bancos de dados em PHP. Nesse sentido, cabe a cada banco de dados implementar a interface PDO a fim de expor os seus recursos e funções específicos que, então, ficarão disponíveis para serem utilizados através do código PHP.
+
+
+
+Funcionamento da Camada de Abstração.
+
+Para utilizarmos a Classe PDO, é necessário habilitar sua extensão no servidor web, ou seja, habilitar a extensão que contém o driver específico para cada banco de dados com os quais se deseja trabalhar.
+
+
+Dica
+Em relação à instalação e configuração da extensão PDO e drivers mencionados, há diversos tutoriais disponíveis na internet. Lembre-se de que esse processo é diferente de acordo com o sistema operacional utilizado. Na seção Explore +, separamos algumas referências base para esse processo.
+
+
+Como mostrado na imagem Funcionamento da Camada de Abstração, assim como nos códigos de exemplo relacionados à conexão e execução de instruções próprios do MySQL e do PostgreSQL, vistos anteriormente, a principal vantagem em se utilizar PDO no lugar das funções nativas do PHP para cada SGBD é o fato dessa extensão fornecer uma camada de abstração de acesso a dados. Em outras palavras, isso significa que:
+
+É possível utilizar os métodos e as funções PDO independentemente do SGBD.
+
+
+Na prática, e voltando aos códigos PHP para integração com cada SGBD, perceba que, se fôssemos trocar o banco de dados utilizado, precisaríamos também mudar algumas linhas de código: as de conexão com o banco de dados; as de execução de query, entre outras não vistas nos exemplos. Entretanto, fazendo uso do PDO, só precisaríamos mudar, nessa situação, o nome do driver a ser utilizado – conforme poderá ser visto adiante. No mais, todas as funções de execução de query, de tratamento de resultados, e demais, permaneceriam exatamente iguais.
+
+
+Drivers PDO
+
+
+Atualmente, estão disponíveis 12 drivers PDO, ou seja, é possível utilizá-lo com doze diferentes SGBDs. A tabela a seguir ilustra os drivers e os bancos de dados suportados. Vejamos!
+
+
+Driver	      SGBD Suportados
+PDO_CUBRID	  Cubrid
+PDO_DBLIB	  FreeTDS / Microsoft SQL Server / Sybase
+PDO_FIREBIRD	Firebird
+PDO_IBM	IBM DB2
+PDO_INFORMIX	 IBM Informix Dynamic Server
+PDO_MYSQL	     MySQL 3.x/4.x/5.x
+PDO_OCI	         Oracle Call Interface
+PDO_ODBC	     ODBC v3 (IBM DB2, unixODBC e win32 ODBC)
+PDO_PGSQL	     PostgreSQL
+PDO_SQLITE	     SQLite 3 e SQLite 2
+PDO_SQLSRV	     Microsoft SQL Server / SQL Azure
+PDO_4D	         4D
+
+
+Tabela: Drivers PDO.
+PHP, 2020.
+
+Conexão com o SGBD utilizando PDO
+
+
+A primeira ação necessária ao trabalharmos com banco de dados é realizar a conexão com o próprio. Para isso, utilizamos o construtor da classe PDO, que é responsável por criar uma instância de conexão. O fragmento abaixo demonstra a conexão com MySQL e com o PostgreSQL.
+
+
+PHP (7.4.1)
+
+$dsn = new PDO("mysql:host=localhost;dbname=test", $user, $pass);
+
+$dsn = new PDO("pgsql:host=localhost;dbname=test"; $user, $pass);
+
+
+Como pode ser visto, o que muda entre as duas instruções é o nome do drive/SGBD. Na primeira, temos “mysql” e na segunda “pgsql”. Além disso, outras opções/parâmetros podem ser passados no construtor, como a porta , por exemplo.
+
+Reforçando o que foi dito, caso precisássemos alterar o SGBD usado em nosso projeto, só precisaríamos modificar essas informações acima e todo o restante do código, relacionado ao database, permaneceria inalterado.

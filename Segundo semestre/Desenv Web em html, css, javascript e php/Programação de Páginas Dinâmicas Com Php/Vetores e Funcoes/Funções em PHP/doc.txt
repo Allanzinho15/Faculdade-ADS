@@ -1,0 +1,105 @@
+Funções em PHP
+O uso de funções é muito comum no desenvolvimento de software e está relacionado ao conceito de modularização, isto é, à divisão de um problema maior e mais complexo em partes menores, denominadas módulos, de mais fácil entendimento e implementação. PHP, assim como outras linguagens de programação, tem várias funções prontas, denominadas funções nativas, que podem ser utilizadas diversas vezes nos programas para facilitar o trabalho de desenvolvimento de software. Entretanto, os desenvolvedores também podem implementar suas próprias funções e reaproveitá-las em outros programas, desde que as funções tenham sido devidamente testadas e validadas, otimizando o trabalho.
+
+
+No mundo do desenvolvimento de software, as funções desempenham um papel fundamental na modularização de problemas complexos. Este vídeo explora a importância das funções, tanto as nativas das linguagens de programação quanto as personalizadas pelos desenvolvedores. Descubra como a utilização eficiente de funções pode otimizar o trabalho de desenvolvimento de software e facilitar a implementação de soluções criativas.
+
+
+
+Funções, em linguagens de programação, são pedaços de código, encapsulados, que podem ser chamados em qualquer outro trecho do programa ou do código. Em relação à sua sintaxe, uma função deve ter um nome, uma definição e uma posterior invocação à mesma.
+
+
+Em uma linguagem, as funções podem ser nativas − como a função “print_r”, utilizada em alguns exemplos anteriores − ou construídas pelo desenvolvedor – também chamadas de funções definidas pelo usuário.
+
+
+Dica
+Em termos práticos, pense nas funções como um código criado para resolver problemas singulares ou executar tarefas específicas. Além disso, tenha em mente que esses códigos poderão ser usados mais de uma vez ao longo do seu projeto. Logo, em vez de reescrever um mesmo código, faça uso de funções.
+
+
+O exemplo a seguir descreve a sintaxe de criação de uma função em PHP e a forma de invocá-la.
+
+
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+PHP (7.4.1)
+<?php
+ $num1 = 10;
+ $num2 = 15;
+
+ $num3 = soma($num1,$num2);
+ imprimir_resultado($num3);
+
+
+ function soma($numero1, $numero2)
+ {
+	return $numero1 + $numero2;
+ }
+ function imprimir_resultado($numero)
+ {
+	echo "O resultado da operação é igual a: " . $numero;
+ }
+
+Input
+
+
+Executar
+Console
+
+Como visto no exemplo (aproveite para executá-lo antes de continuar a leitura), a sintaxe de uma função contém os seguintes elementos:
+
+
+Palavra reservada “function” seguida do nome da função.
+ 
+Nome da função seguido de parênteses – “()”. Caso receba parâmetros, eles deverão ser declarados dentro dos parênteses. Do contrário, deverão ficar sem conteúdo.
+ 
+Instruções da função envoltas em chaves – “{}”.
+
+As funções em PHP podem ou não retornar resultados. A primeira delas, “soma”, por meio do operador “return”, devolve o resultado da soma entre os dois parâmetros recebidos. Repare que a variável “$num3” recebe justamente esse resultado. Já a função “imprimir_resultado” não retorna valores, apenas imprimindo uma frase na tela.
+
+
+Atenção
+Outra particularidade em PHP é que as funções não precisam estar definidas para serem invocadas. Repare que chamamos as duas antes mesmo de codificá-las. Devemos, porém, nos atentar para a quantidade de parâmetros a serem passados. Além disso, sua sintaxe é simples: “nome-da-funcao(parâmetros)” ou “nome-da-funcao()”.
+
+
+Nomenclaturas de funções e outras boas práticas
+
+
+A nomeação de funções em PHP segue as mesmas regras para a definição de variáveis, com alguns padrões utilizados e que são considerados como boas práticas. As mesmas dicas cabem, portanto, aqui:
+
+
+Você pode criar nomes de funções separando nomes compostos por underscore “_” ou como CamelCase, por exemplo. Defina um padrão e siga-o por todo o seu código.
+
+
+Sobre a sintaxe da função, mais precisamente sobre o posicionamento da chave de abertura, há duas vertentes defendendo que:
+
+
+1° Vertente
+
+
+A chave de abertura deve ser inserida logo após o fechamento dos parênteses que guardam os parâmetros da função.
+
+
+2° Vertente
+
+
+A chave de abertura deve ser inserida na linha seguinte – essa foi a aplicada nos códigos anteriores.
+
+
+Por fim, outra boa prática recomendada: indente seu códigoi − não só nas instruções inseridas dentro das funções, mas ao longo de todo o programa. Veja o código de exemplo e perceba que as instruções dentro da função não estão coladas no início da linha. Indentar um código ajuda na sua compreensão e no seu entendimento, além de deixar clara a hierarquia existente.
+
+
+Funções nativas
+
+
+A linguagem PHP disponibiliza uma série de funções nativas, para as mais variadas necessidades. Há funções para a manipulação de arrays (como as que vimos nos exemplos anteriores), de strings, de arquivos, de acesso de banco de dados, entre tantas outras. A documentação oficial da linguagem ou Manual do PHP é uma fonte extensa e que deve ser sempre consultada.
+
+
+Saiba Mais
+A Zend, fabricante norte-americana de software orientado para PHP, é uma das empresas mais conhecidas e relevantes sobre o assunto. Além de um Framework bastante conhecido, que leva o seu nome, ela também é responsável pela certificação profissional PHP mais importante do mercado. Entre todo o material que disponibiliza, há um manual de boas práticas com uma série de convenções relacionadas à produção de código em PHP. Vale a pena a leitura desse material, conforme sugerido na seção Explore +.

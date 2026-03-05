@@ -1,0 +1,267 @@
+Arrays: vetores
+Os arrays são recursos muito utilizados no desenvolvimento de sistemas computacionais e podem ser uni ou multidimensionais. No caso dos arrays unidimensionais, podemos compará-los a vetores, em que é possível armazenar vários conteúdos em uma única variável de apenas uma dimensão. E cada elemento tem seu respectivo índice, que possibilita referenciá-lo facilmente. Em PHP, assim como em várias outras linguagens, podemos utilizar os arrays para armazenar dados numéricos e textuais. Podemos utilizar um array para armazenar as notas dos alunos de uma turma. Podemos também ter um array com os nomes dos alunos, ou seja, string de caracteres.
+
+
+Descubra neste vídeo como os arrays podem facilitar o desenvolvimento de sistemas computacionais. Entenda a diferença entre arrays uni e multidimensionais, e aprenda como utilizá-los em PHP e outras linguagens. Saiba como armazenar notas e nomes de alunos em arrays de forma prática e eficiente. Assista ao vídeo e domine essa poderosa ferramenta de programação!
+
+
+
+Os vetores, ou arrays, são variáveis que armazenam um grupo de itens relacionados. Observando o exemplo utilizado ao final do último módulo, vimos a variável “$carros” armazenar nomes de carros.
+
+
+Os arrays podem ser vistos, numa abstração com o nosso dia a dia, como listas escritas em uma folha: nela inserimos vários itens, de forma ordenada. Com isso, cada novo elemento é incluído ao final da lista – embora seja possível inseri-los também em outra ordem. Nas linguagens de programação em geral, e especificamente em PHP, os arrays funcionam exatamente desta forma: uma lista ordenada na qual novos itens podem ser inseridos, assim como os existentes podem ser deletados ou substituídos.
+
+
+Os arrays são compostos por dois elementos principais: o item em si e o seu índice, que é a posição que este ocupa dentro de um array. Esse número se inicia em 0. Entretanto, os índices também podem ser formados por strings.
+
+
+Em PHP estão presentes diferentes tipos de arrays. São eles:
+
+
+array numérico
+
+
+Índice composto por números inteiros.
+
+
+array associativo
+
+
+Índice composto por strings.
+
+
+array misto
+
+
+Índices numéricos e associativos.
+
+
+O mesmo vale para os elementos de um vetor: podemos tanto ter strings quanto números, entre outros tipos de dados, como arrays de arrays.
+
+
+Criação de arrays e atribuição de valores
+
+
+A linguagem PHP, por ser simples e bastante flexível, permite diferentes formas de declarar e atribuir valores em um array. Não existe uma maneira melhor do que a outra − qualquer uma delas pode ser utilizada. Nesse sentido, cabe destacar a última forma: ela é bastante útil em situações nas quais não sabemos o tamanho do array ou a quantidade de itens que ele receberá.
+
+
+Ao estudar os exemplos, repare, ainda, nos comentários inseridos no código. Vamos a eles:
+
+
+PHP (7.4.1)
+<?php
+//Declarando um array vazio
+$carros = array();
+
+//Primeira forma de declaração e atribuição de valores
+$carros = Array("Fusca", "Monza", "Passat");
+
+//Segunda forma de declaração e atribuição de valores
+//Esta forma é semelhante à anterior, mas utilizando sintaxe similar a do Javascript
+$carros = ["Fusca", "Monza", "Passat"];
+
+//Terceira forma de declaração e atribuição de valores
+$carros[0] = "Fusca";
+$carros[1] = "Monza";
+$carros[2] = "Passat";
+
+//Quarta forma de declaração e atribuição de valores
+$carros[] = "Fusca";
+$carros[] = "Monza";
+$carros[] = "Passat";
+
+Light Mode
+
+Copiar
+
+Os arrays anteriores são numéricos. Vejamos outros exemplos, agora com vetores associativos. Repare que a principal diferença é a utilização de strings no lugar de números para definir os seus índices.
+
+
+PHP (7.4.1)
+<?php
+ //Primeira forma
+ $carros = array (
+	'vw'        => "Fusca",
+	'chevrolet' => "Monza",
+	'fiat'      => "Tempra"
+ );
+
+ //Segunda forma
+ $carros = [
+	'vw'        => "Fusca",
+	'chevrolet' => "Monza",
+	'fiat'      => "Tempra"
+ ];
+
+ //Terceira forma
+ $carros['vw']        = "Fusca";
+ $carros['chevrolet'] = "Monza";
+ $carros['fiat']      = "Tempra";
+
+Light Mode
+
+Copiar
+
+Por fim, veremos exemplos de array com índices numéricos e associativos. Repare que a sintaxe é parecida com a vista na declaração dos associativos, ou seja, cada par “índice/valor” é separado por ‘=>’. Vamos ao código:
+
+
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+PHP (7.4.1)
+
+<?php
+ $carros = array (
+	'vw'        => "Fusca",
+	0           => "Passat",
+	'chevrolet' => "Monza",
+	1           => "Chevette",
+	'fiat'      => "Tempra",
+	2           => "Uno"
+ );
+ //A impressão desse array gera a seguinte saída
+ /*
+ Array
+ (
+	[vw] => Fusca
+	[0] => Passat
+	[chevrolet] => Monza
+	[1] => Chevette
+	[fiat] => Tempra
+	[2] => Uno
+ )
+ */
+ 819
+Input
+
+
+Executar
+Console
+
+Vamos praticar mais um pouco! No código do emulador anterior, insira a seguinte linha em seu final:
+
+
+print_r($carros);
+
+
+Após isso, execute o código novamente e veja que o array será impresso no campo INPUT do emulador.
+
+
+As formas vistas nos exemplos anteriores são as mais simples para a criação e inserção de elementos. Entretanto, a linguagem oferece outras formas, por meio do uso de funções como a array_push (que adiciona elementos ao final de um array) e a array_unshift (adiciona elementos no início de um array).
+
+
+Saiba Mais
+Além dessas, há funções que permitem gerar novos vetores, combinar vetores existentes e muito mais. Pesquise nos sites indicados no Explore+.
+
+
+Remoção de elementos de um array
+
+
+Há algumas formas de remover elementos de um array.
+
+
+Primeira forma
+
+
+A primeira é definindo o valor do elemento como vazio. Nesse caso, embora o valor do elemento seja removido, o seu índice permanece no vetor, que também mantém o seu tamanho inicial.
+
+
+Segunda forma
+
+
+Outra forma é fazendo uso de duas funções: unset e array_splice.
+
+
+O código a seguir − que como os demais é totalmente funcional e, portanto, deverá ser executado por você − contém exemplos de utilização das formas apresentadas. Seguem algumas observações sobre o código e o uso das funções:
+
+
+
+“print_r”
+A função “print_r” imprime os elementos de um array.
+
+
+“count”
+A função “count” retorna o tamanho (quantidade de elementos) de um array. Essa função, inclusive, é muito útil quando trabalhamos com vetores.
+
+
+“unset”
+A função “unset” recebe como parâmetro o array e índice ou índices que desejamos remover. Além disso, é possível também remover o vetor inteiro, passando-o como parâmetro e sem definir nenhum índice.
+
+
+“array_splice”
+A função “array_splice” recebe como parâmetros o array a ser manipulado, o offset (índice a partir do qual desejamos excluir elementos) e o length (quantidade de itens que queremos excluir).
+
+PHP (7.4.1)
+<?php
+ $carros = array (
+	'vw'        => "Fusca",
+	0           => "Passat",
+	'chevrolet' => "Monza",
+	1           => "Chevette",
+	'fiat'      => "Tempra",
+	2           => "Uno"
+ );
+ print_r($carros);
+ echo "O tamanho atual do array é: " . count($carros);
+ echo "\n\n";
+ //Definindo o valor do índice 0 como vazio
+ $carros[0] = '';
+
+ print_r($carros);
+ echo "O tamanho atual do array é: " . count($carros);
+ echo "\n\n";
+
+ //Removendo dois elementos do array com unset
+ unset($carros['fiat'], $carros[1]);
+
+ print_r($carros);
+ echo "O tamanho atual do array é: " . count($carros);
+ echo "\n\n";
+
+ //Removendo elementos do array com array_splice
+ array_splice($carros, 1,2);
+
+ print_r($carros);
+ echo "O tamanho atual do array é: " . count($carros);
+
+Light Mode
+
+Copiar
+
+Arrays multidimensionais
+
+
+O array que será visto no exemplo a seguir é multidimensional. Ou seja, ele é composto por mais de uma dimensão – nesse caso, duas. Olhando para o exemplo, temos:
+
+
+PHP (7.4.1)
+
+$frutas = array (
+    "vermelhas" => array(
+        "melancia",
+        "cereja",
+        "framboesa",
+        "morango"
+    ),
+
+    "citricas" => array(
+        "laranja",
+        "limao",
+        "abacaxi",
+        "mexerica"
+    ),
+);
+
+Light Mode
+
+Copiar
+
+Dois índices principais, associativos, cujas chaves são ‘vermelhas’ e ‘cítricas’.
+ 
+Cada uma dessas chaves possui um novo array numérico, que contém quatro elementos.

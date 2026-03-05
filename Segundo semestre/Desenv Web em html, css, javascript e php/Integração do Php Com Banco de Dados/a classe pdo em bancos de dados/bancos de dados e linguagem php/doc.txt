@@ -1,0 +1,162 @@
+Banco de dados e linguagem PHP
+É comum aplicações precisarem armazenar dados de alguma forma. Diversas aplicações utilizadas no nosso cotidiano ilustram essa afirmativa, como os sistemas da faculdade, as redes sociais, o bankline, entre tantas outras. Toda vez que acessamos o bankline, informamos nossas credenciais (login e senha), as quais são enviadas ao servidor responsável por hospedar a aplicação.
+
+
+O servidor, por sua vez, analisa as credenciais recebidas. e, uma vez corretas, interage com o banco de dados e, posteriormente, envia a página de resposta contendo os dados bancários do cliente. Podemos utilizar PHP para desenvolver as aplicações que, entre outras tarefas, possibilita interagir com bancos de dados.
+
+
+Neste vídeo, vamos demonstrar como podemos utilizar a linguagem PHP para desenvolver as aplicações que, entre outras tarefas, possibilita interagir com bancos de dados, de fundamental importância para acessar bankline, redes sociais etc.
+
+
+
+Os bancos de dados são o ponto central de muitos sites, sistemas e aplicativos. Tais estruturas permitem o armazenamento e a recuperação de qualquer tipo de informação, desde dados simples, como os posts de um blog pessoal, a dados altamente sensíveis, como os dados bancários ou financeiros, por exemplo. Nesse sentido, a linguagem de programação PHP oferece amplo suporte à integração com bancos de dados, sejam relacionais ou não, sejam suportados por diversos Sistemas Gerenciadores de Bancos de Dados (SGBD), como SQL Server, Oracle, MySQL e PostgreSQL – sendo esses dois últimos, normalmente, associados ao PHP.
+
+Inicialmente, antes de tratarmos da Classe PDO e de sua utilização com dois dos principais SGBDs existentes, vamos observar um pouco mais esses sistemas e sua integração com PHP.
+
+
+Sistemas Gerenciadores de Banco de Dados
+
+
+MySQL
+
+O MySQL é um sistema de gerenciamento de banco de dados criado em 1995. Inicialmente de código aberto, foi adquirido posteriormente pela Oracle, que, atualmente, mantém tanto uma versão GPL quanto uma versão comercial. Trata-se de um dos SGBDs mais utilizados na web, sendo, normalmente, associado ao PHP, dada a facilidade de conexão entre ambos.
+
+
+
+Notebook em cima de uma mesa com o símbolo do MySQL exibido na tela.
+
+Em PHP, estão disponíveis vários métodos e funções, através da extensão que leva o mesmo nome do SGBD, para conexão e execução de instruções SQL no MySQL.
+
+
+Para fins de comparação, o código abaixo demonstra a conexão com o MySQL e a execução de uma instrução de consulta SQL utilizando as funções PHP específicas para o SGBD em questão.
+
+
+PHP (7.4.1)
+
+<?php
+
+//Constantes para armazenamento das variáveis de conexão.
+define('HOST', '127.0.0.1');
+define('DBNAME', 'test');
+define('USER', 'user');
+define('PASSWORD', 'psswd');
+
+//Conectando com o Servidor
+$conn = mysqli_connect(HOST, USER, PASSWORD, DBNAME) or die( ' Não foi possível conectar.' );
+
+//Realizando uma consulta no BD
+$instrucaoSQL = "Select nome, cpf, telefone From Cliente";
+$stmt = mysqli_prepare($conn, $instrucaoSQL);
+mysqli_stmt_bind_result($stmt, $nome, $cpf, $tel);
+mysqli_stmt_execute($stmt);
+
+while (mysqli_stmt_fetch($stmt)) {
+	echo $nome . "\t";
+	echo $cpf . "\t";
+	echo $tel . "\n";
+}
+
+//Encerrando a conexão
+mysqli_close($conn);
+
+
+PostgreSQL
+
+O PostgreSQL é um SGBD de código aberto, atualmente disponível sob a licença BSD, criado em 1996. Enquanto o MySQL é um SGBD puramente relacional, o PostgreSQL é considerado um SGBD objeto-relacional. Na prática, essa diferença pode ser vista nas funcionalidades que o PostgreSQL possui, como a herança de tabelas e a sobreposição de funções. Outra diferença importante é que o PostgreSQL adere de forma mais próxima aos padrões SQL.
+
+
+
+Notebook em cima de uma mesa com o símbolo do PHP exibido na tela.
+
+A linguagem PHP também possui uma série de métodos e funções, habilitados através da extensão pgsql, para conexão com o PostgreSQL.
+
+
+A exemplo do que fizemos com o MySQL, vejamos um código que utiliza funções PHP para conectar com o PostgreSQL e realizar uma instrução SQL de consulta de dados.
+
+
+PHP (7.4.1)
+<?php
+
+//Constantes para armazenamento das variáveis de conexão.
+define('HOST', '127.0.0.1');
+define('DBNAME', 'test');
+define('USER', 'user');
+define('PASSWORD', 'psswd');
+
+//Conectando com o Banco de dados
+$stringConn = "host=".HOST." dbname=".DBNAME." user=".USER." password=".PASSWORD;
+$conn = pg_connect($stringConn) or die( ' Ocorreu um erro e não foi possível conectar ao banco de dados.' );
+
+//Realizando uma consulta no BD
+$instrucaoSQL = "Select nome, cpf, telefone From Cliente";
+$result = pg_query( $conn, $instrucaoSQL ) or die(' Ocorreu um erro na execução da instrução: ' . $instrucaoSQL );
+
+//pg_query($dbcon, "SELECT id, nome FROM clientes");
+
+//Imprimindo os dados da consulta
+while ($row = pg_fetch_array( $result )){
+	echo $row['nome'] . "\t";
+	echo $row['cpf'] . "\t";
+	echo $row['telefone'] . "\n";
+}
+
+//Encerrando a conexão
+pg_close($conn);
+
+
+Conceitos básicos da linguagem de programação PHP
+
+
+A linguagem PHP é uma linguagem server side, ou seja, atua no lado servidor, sobre um servidor web como o Apache, Nginx ou IIS. Trata-se de uma linguagem de script e que é gratuita, o que faz dela uma linguagem amplamente utilizada no ambiente web.
+
+
+Em relação à sua sintaxe, é possível combinar código PHP com tags HTML, ou utilizar apenas código PHP em um script. Tal código deverá estar entre a tag inicial “ ” – sendo essa última não obrigatória, quando houver apenas código PHP em um script.
+
+
+Tomando como base os exemplos de código anteriores, temos alguns recursos da linguagem sendo utilizados. A seguir, esses recursos serão revistos:
+
+
+
+Constantes
+
+As constantes são identificadores ou nomes que contêm um valor único e imutável, ao contrário das variáveis que, conforme o nome indica, possuem valor variável ao longo de um programa.
+ 
+
+No exemplo, foram declaradas constantes para armazenarem as credenciais de acesso ao SGBD. A sintaxe de utilização de constantes é composta pela palavra reservada DEFINE, seguida de parênteses, onde são incluídos o nome da constante e o seu valor.
+
+
+Variáveis
+
+As variáveis são objetos, ou espaços reservados na memória do computador, destinados a armazenarem e a exibirem os dados utilizados, e alterados, durante a execução de um programa.
+ 
+
+Em PHP, as variáveis são representadas por um $ seguido pelo seu nome, que é case-sensitive, ou seja, uma letra maiúscula é diferente de uma letra minúscula ($var é diferente de $Var). Em relação à declaração e atribuição de valores, ambos os processos podem ocorrer ao mesmo tempo. Veja no último exemplo que a variável $stringConn foi declarada (inserida pela primeira vez no código) ao mesmo tempo que recebeu um valor (processo de atribuição). Por último, as variáveis em PHP não possuem tipo. Logo, não é necessário indicar o tipo de dado a ser armazenado por uma variável.
+
+
+Estruturas de decisão e repetição
+
+Nos exemplos, foi vista a estrutura de repetição while. Além dela, há outras estruturas de repetição disponíveis em PHP: do-while, for e foreach.
+ 
+
+A respeito das estruturas de decisão, estão disponíveis em PHP: if, else, elseif e switch.
+
+
+Arrays
+
+Os arrays, ou vetores, são variáveis que guardam uma lista de itens relacionados. Tais variáveis são compostas pelo par índice/valor. A variável $row, nos exemplos, é um array associativo, ou seja, seus índices são compostos por strings – o nome de cada coluna selecionada do banco de dados. Há ainda os arrays numéricos e os híbridos (arrays com índices associativos e numéricos).
+
+
+Funções
+
+As funções são pedaços de código que podem ser chamados a partir de qualquer parte do programa e que executam tarefas específicas. Além das funções definidas pelo usuário, em PHP estão disponíveis inúmeras funções nativas. Em nossos exemplos, temos as funções define e echo, além das relacionadas à conexão e ao manuseio de dados, como mysql_connect ou pg_connect, mysql_query ou pg_query, entre outras.
+
+
+Extensões, bibliotecas e classes
+
+As extensões, bibliotecas e classes são um importante recurso presente na maioria das linguagens de programação. Através delas, é possível estender as funções básicas de uma linguagem, adicionando novos recursos para a execução de determinadas tarefas.
+
+Em relação à definição, em PHP, temos as extensões, que são arquivos binários (no S.O. Windows, as .dll, em S.O.s unix-like, os .so) que contêm bibliotecas. Já as bibliotecas são um conjunto de funções e/ou classes. As classes, então, dentro do paradigma de orientação a objetos, são um conjunto de códigos compostos por atributos e métodos. São exemplos de extensões os drivers para os SGBDs MySQL e PostgreSQL, que, quando habilitados, permitem a sua utilização com o PHP.
+
+
+Dica
+Consulte o Manual do PHP para uma lista completa de todas as suas extensões.

@@ -1,0 +1,53 @@
+Conectando o PHP ao PostgreSQL
+As aplicações podem ser desenvolvidas em várias linguagens diferentes como, por exemplo, Java, C#, .NET, PHP, entre outras. E, também, há vários softwares de bancos de dados, como PostgreSQL, MySQL, MariaDB, entre outros. Mas, independentemente das tecnologias utilizadas, é preciso que as aplicações se conectem aos bancos de dados para realizarem as operações CRUD.
+
+
+Neste vídeo, vamos ver como conectar o PHP ao PostgreSQL para realizar as operações CRUD e os recursos para facilitar a conexão.
+
+
+
+Embora cada linguagem e cada banco tenham suas particularidades, normalmente, há recursos prontos para facilitar a conexão, de modo que os desenvolvedores podem utilizá-los para facilitar o trabalho.
+
+
+A conexão entre PHP e PostgreSQL não é diferente. Há métodos prontos para se realizar a conexão e, geralmente, precisamos informar alguns parâmetros, como:
+
+
+Endereço da máquina em que está o banco de dados, podendo ser a mesma máquina em que a aplicação é executada (localmente) ou em máquina distinta (remotamente).
+ 
+Nome do banco de dados que se deseja conectar.
+ 
+Login de acesso ao banco de dados.
+ 
+Senha de acesso ao banco de dados.
+
+Com a classe PDO, podemos instanciar um objeto e, durante esse processo, passar os dados citados da seguinte forma:
+
+
+$dsn = new PDO("pgsql:host=". HOST . ";port=".PORT.";dbname=" . DBNAME .";user=" . USER . ";password=" . PASSWORD);
+
+
+Roteiro na prática
+
+
+Observe o trecho de código mostrado a seguir. Trata-se da conexão a um banco de dados PostgreSQL por meio de PHP.
+
+
+PHP (7.4.1)
+
+Da linha 4 até a 8, são definidos os parâmetros utilizados na conexão com o banco de dados, a saber:
+
+
+Linha 4: Local onde está o banco. Nesse exemplo hipotético, está na máquina com endereço IP igual a 127.0.0.1. Se estivesse na mesma máquina em que está a aplicação, seria localhost.
+ 
+Linha 5: Porta de acesso ao banco.
+ 
+Linha 6: Nome do banco.
+ 
+Linha 7: Login de acesso ao banco.
+ 
+Linha 8: Senha de acesso ao banco.
+
+O código de acesso ao banco (linha 14) está dentro do bloco try, ou seja, se a conexão com o banco falhar por alguma razão, o bloco catch (linha 17) será executado e será mostrada a mensagem correspondente à execução do método getMessage().
+
+
+Analisando novamente a linha de conexão (linha 14), instancia-se um objeto de PDO, denominado $dsn, que está relacionado à conexão com o banco. E, durante a instanciação desse objeto, passam-se os parâmetros de conexão definidos nas linhas 4 a 8, de modo que seus conteúdos serão concatenados com as demais strings de caracteres presentes nesse trecho de código, necessárias para o estabelecimento da conexão.

@@ -1,0 +1,174 @@
+Laços: estruturas de repetição
+As estruturas de repetição também são bastante utilizadas independentemente do paradigma adotado e de linguagens de programação. Proporcionam a redução da quantidade de linhas de código, pois, dentro dessas estruturas, são inseridas as linhas de código que vão se repetir determinado número de vezes, de modo que o código fique mais suscinto, facilitando a leitura e o entendimento. PHP suporta diferentes estruturas de repetição, a saber: while, do-while, for e foreach. Cada uma delas tem suas particularidades, que devem ser observadas para o bom funcionamento dos programas. Podem ser utilizadas mais de uma vez e combinadas em um mesmo código.
+
+
+Descubra, neste vídeo, a importância das estruturas de repetição, independentemente do paradigma adotado e da linguagem de programação utilizada. Saiba como essas estruturas podem reduzir a quantidade de linhas de código, tornando-o mais conciso e fácil de entender. Em PHP, você encontrará diferentes opções, como while, do-while, for e foreach, cada uma com suas particularidades. Aprenda a utilizá-las de forma eficiente e a combiná-las para obter o melhor desempenho em seus programas.
+
+
+
+As estruturas de repetição, muitas vezes também chamadas de laços, permitem que instruções ou trechos de códigos sejam executados de forma repetitiva. Sua sintaxe define as condições ou expressões que devem ser verificadas e, caso essas sejam verdadeiras, quais instruções devem ser executadas e por quantas vezes. A próxima figura apresenta o fluxo básico das estruturas de repetição.
+
+
+Em PHP estão disponíveis as seguintes estruturas: while, do-while, for, foreach. A seguir, descreveremos cada uma delas.
+
+
+
+Fluxo das estruturas de repetição.
+
+While
+
+O laço While possui uma sintaxe simples: enquanto uma expressão for verdadeira, uma série de instruções será executada de forma repetida. Para imprimirmos na tela os números de 2 a 20, pulando de 2 em 2, poderíamos utilizar o seguinte código:
+
+
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+PHP (7.4.1)
+
+<?php
+
+ $i = 2;
+ while ($i <= 20) {
+	echo $i;
+	$i+=2;
+	echo "\n";
+ }
+
+ /*Sintaxe alternativa*/
+ $i = 2;
+ while ($i <= 20):
+	echo $i;
+	$i+=2;
+	echo "\n";
+ endwhile;
+Input
+
+
+Executar
+Console
+
+Repare que, no exemplo foram mostradas a forma normal e a forma alternativa do laço while – também presente nas demais estruturas de repetição em PHP. Para praticar, tente alterar a condição no emulador anterior e veja o resultado, executando o código novamente.
+
+
+O comando echo “\n” é utilizado para imprimir uma linha em branco quando o script é executado via linha de comando.
+
+
+Do-while
+
+Esse laço é semelhante ao anterior, exceto pelo fato de que a verificação, aqui, é feita ao final. Com isso, todas as instruções do laço serão executadas pelo menos uma vez. Veja o exemplo:
+
+
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+PHP (7.4.1)
+
+<?php
+
+ $i = 2;
+ do {
+	echo $i;
+	$i+=2;
+	echo "\n";
+ }while ($i <= 20);
+Input
+
+
+Executar
+Console
+
+For
+
+Esse laço possui sintaxe um pouco diferente do que vimos nos anteriores. Vamos ao exemplo:
+
+
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+PHP (7.4.1)
+
+ <?php
+
+ for ($i = 1; $i <= 20; $i++) {
+	echo $i;
+	echo "\n";
+ }
+Input
+
+
+Executar
+Console
+
+Com o laço for, temos três expressões sendo avaliadas. Considerando o exemplo anterior, temos:
+
+ 
+
+A primeira expressão − “$i = 1” − é avaliada, incondicionalmente, no início da repetição.
+ 
+A seguir, a cada interação, a segunda expressão − “$i <= 20” − é avaliada. Caso seja verdadeira, o loop continuará.
+ 
+Por último, ao final de cada interação, a terceira expressão − “$i++” − é avaliada e executada.
+
+Outra possibilidade nesse laço é avaliar múltiplas expressões, que deverão ser separadas por vírgulas. Além disso, também é possível inserir expressões vazias.
+
+
+Foreach
+
+
+A última estrutura de repetição que veremos em PHP é a foreach. Esse laço é parecido com o for, possuindo uma sintaxe mais simples e sendo muito propício para realizar interações em arrays. Veja o exemplo:
+
+
+
+
+Light Mode
+
+Tutorial
+
+
+Copiar
+
+PHP (7.4.1)
+<?php
+ $carros = Array("Fusca", "Monza", "Passat");
+
+ foreach($carros as $carro){
+	echo $carro;
+	echo "\n";
+ }
+
+ for ($i = 0; $i < count($carros); $i++) {
+	echo $carros[$i];
+	echo "\n";
+ }
+
+Input
+
+
+Executar
+Console
+
+Para fins de comparação e demonstração da diferença entre ambos, em nosso exemplo a mesma operação – imprimir os nomes dos carros – foi realizada tanto com o laço foreach quanto com o laço for.
+
+
+Saiba Mais
+Além dessas estruturas, em PHP estão disponíveis outros comandos relacionados às estruturas de repetição, como o break e o continue.
+
+
