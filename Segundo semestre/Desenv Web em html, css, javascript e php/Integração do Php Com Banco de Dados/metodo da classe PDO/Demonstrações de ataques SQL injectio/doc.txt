@@ -1,0 +1,46 @@
+Demonstrações de ataques SQL injection
+É muito importante fazer a validação dos dados desde o frontend para evitar problemas de injeção de SQL, ou seja, a inserção de códigos SQL maliciosos em formulários de páginas web que, se não forem detectados a priori, podem acabar sendo executados no banco de dados, trazendo consequências desastrosas.
+
+
+Os problemas de violação de dados representam perdas financeiras significativas para as organizações, além de diversos outros problemas como a exposição de dados pessoais, entre outros. Por isso, é recomendado tratar os dados sempre que possível, tanto no frontend quanto no backend, e levar em conta os preceitos de segurança cibernética.
+
+
+Neste vídeo, vamos demonstrar de forma prática a importância de fazer a validação dos dados desde o frontend para se evitar problemas de injeção de SQL.
+
+
+
+Roteiro de prática
+
+
+Observe este trecho de código:
+
+
+PHP (7.4.1)
+
+
+Light Mode
+
+Copiar
+
+Os dados de login e senha, provenientes de formulários de uma aplicação, são obtidos por meio do método POST (linhas 4 e 5) e são passados diretamente para comporem a instrução SQL da linha 6.
+
+
+Mas, e se alguém inserisse o código a seguir no campo de login do formulário?
+
+
+login = ‘ ‘ OR true = true;
+
+
+E, se no campo de senha, fosse inserido o seguinte código?
+
+
+'*/--'
+
+
+Consequentemente, a instrução SQL da linha 6 ficaria da seguinte forma:
+
+
+$instrucaoSQL = "Select * From Usuario Where login = '' OR true = true;/* And password = '*/--'";
+
+
+Resultando no acesso a alguém que pode não ter as credenciais adequadas para esse fim e, dessa forma, representando vulnerabilidade importante na segurança do sistema.

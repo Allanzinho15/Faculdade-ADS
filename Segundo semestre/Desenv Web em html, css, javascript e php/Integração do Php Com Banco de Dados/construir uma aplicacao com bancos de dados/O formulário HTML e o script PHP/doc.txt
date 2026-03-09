@@ -1,0 +1,121 @@
+O formulário HTML e o script PHP
+HTML tem recursos para criação de formulários, amplamente utilizados em diversas aplicações, sejam aquelas que envolvem login e senha de acesso, ou campos de endereço para uma compra on-line.
+
+
+É importante validar os dados antes do envio efetivo. Após o envio dos dados, pode-se utilizar códigos em PHP que os recebam e também façam a devida validação, aumentando a segurança das aplicações. Além disso, é possível utilizar PHP para a conexão com os bancos de dados e realizar as operações CRUD necessárias.
+
+
+Neste vídeo, vamos entender a importância de se implementar páginas web com formulários em que os dados inseridos sejam extraídos por scripts feitos em PHP.
+
+
+
+A instrução SQL a seguir contém um exemplo de como a tabela cliente pode ser criada, observe:
+
+
+SQL (SQLite 3.27.2)
+
+CREATE TABLE cliente (
+     id_cliente serial NOT NULL,
+     nome_cliente varchar(255),
+     cpf_cliente varchar(11),
+     email_cliente varchar(255),
+     data_nascimento_cliente timestamp,
+     PRIMARY KEY (id_cliente)
+);
+
+Light Mode
+
+Copiar
+
+A seguir, temos uma dica para você!
+
+
+Dica
+A sintaxe completa da instrução “Create Table”, para o PostgreSQL, pode ser vista em seu próprio manual.
+
+
+Confeccionando o formulário HTML
+
+
+O formulário HTML deverá ser escrito utilizando a HTML5. Além disso, os campos deverão ser validados de acordo com seu tipo (quando possível), tamanho e obrigatoriedade de preenchimento. Poderá ser utilizado um framework CSS, como o Bootstrap, para uma melhor apresentação do cadastro.
+
+
+O código do formulário poderá ser visto ao final deste módulo, junto aos demais exemplos de código. Tal código poderá ser usado como template para desenvolvimentos similares.
+
+
+Considerações sobre o formulário HTML
+
+O formulário HTML possui elementos de ligação com o script PHP para o qual será submetido. A tabela a seguir apresenta esses elementos, seus atributos e uma breve descrição.
+
+
+Elemento	Atributo	Obrigatório?	Descrição
+form	action	Sim	Contém a URL ou nome do script, quando na mesma pasta que o arquivo HTML, que processará o documento.
+form	method	Não. O padrão é POST	Define o método HTTP a ser utilizado para transmissão dos dados – GET ou POST.
+input	name	Sim	Contém o nome do campo que será recebido no PHP como índice associativo no array $_GET, $_POST ou $_REQUEST.
+button ou input	type	Sim	O valor “submit”, atribuído ao atributo type em um desses campos, cria o evento de envio do formulário.
+Tabela: Elementos de ligação entre o formulário HTML e o script PHP.
+Alexandre de Oliveira Paixão.
+
+Em termos de boas práticas, é recomendado validar os dados a serem submetidos tanto no lado cliente, ou seja, no código HTML diretamente, com a utilização dos recursos introduzidos pela HTML5, ou através de Javascript, assim como no lado servidor. Com isso, caso a validação falhe, por algum motivo, do lado cliente, teremos a garantia de validação do lado servidor. Veremos a seguir como realizar a validação de nosso formulário nos dois ambientes – cliente e servidor.
+
+
+Validação no lado cliente - HTML5
+
+A partir da HTML5, é possível marcar um elemento como de preenchimento obrigatório fazendo uso do atributo required. No código do formulário, visto ao final deste módulo, os campos “Nome”, “CPF”, “Endereço de E-mail” e “Data de Nascimento” receberam esse atributo. Além disso, foram incluídas outras regras de validação: o campo CPF precisa ter exatos 11 caracteres (definidos com o uso dos atributos minlength e maxlength) e o endereço de e-mail precisa ser válido – tal validação é feita diretamente pela HTML, ao definirmos a tag <input> sendo do tipo (type) “email”.
+
+
+Validação no lado cliente - Javascript
+
+Para validar formulários, antes da HTML5, era necessário utilizar funções em códigos escritos na linguagem Javascript. Com isso, o formulário é verificado e, caso passe pelas validações, submetido ao servidor. Do contrário, a respectiva mensagem de falha é exibida, para as devidas correções. A validação do nosso formulário, utilizando Javascript, pode ser vista no código a seguir:
+
+
+JavaScript (Node.js 12.14.0)
+
+function validarFormulario(formulario){
+  if(formulario.nome_cliente.value === "" || formulario.nome_cliente.value === null) {
+    alert("O campo Nome não pode ficar vazio.");
+    formulario.nome_cliente.focus();
+    return false;
+  }
+  if(formulario.cpf_cliente.value.length != 11) {
+    alert("O campo CPF precisa ter 11 caracteres.");
+    formulario.cpf_cliente.focus();
+    return false;
+  }
+  //o campo e-mail precisa ser válido, ou seja, deve : "@" e "."
+  if(formulario.email_cliente.value.indexOf("@") == -1 || formulario.email_cliente.value.indexOf(".") == -1) {
+    alert("O campo E-mail não é válido.");
+    formulario.email_cliente.focus();
+    return false;
+  }
+  if(formulario.data_nascimento_cliente.value === "" || formulario.data_nascimento_cliente.value === null) {
+    alert("O campo Data de Nascimento não pode ficar vazio.");
+    formulario.data_nascimento_cliente.focus();
+    return false;
+  }
+}
+
+Light Mode
+
+Copiar
+
+Para utilizar a função Javascript acima, é necessário mudar um pouco o código do arquivo HTML que contém o formulário, removendo os atributos da HTML5, modificando o DocType para uma versão anterior da HTML, entre outros ajustes. Para facilitar, o código completo desse arquivo HTML foi adicionado ao final, junto aos demais códigos.
+
+
+Codificando o script PHP que processará o formulário
+
+
+O script PHP definido no atributo “action” da tag “form”, no arquivo HTML, é o responsável por receber os dados do formulário, validar os dados recebidos, conectar com o banco de dados e inserir as informações.
+
+
+O atributo method, do formulário HTML, define o método HTTP utilizado para a transmissão dos dados – POST ou GET, sendo POST o valor padrão, caso esse atributo seja omitido no formulário. Para tratar os dados transmitidos por cada um desses métodos, há uma variável global pré-definida em PHP: $_POST e $_GET. Além disso, há também a variável $_REQUEST, que recebe os dados transmitidos por ambos os métodos.
+
+
+Essas variáveis pré-definidas são, na verdade, um array associativo, cujos índices equivalem ao valor definido para o atributo name, em cada campo do formulário. Logo, se um input no formulário HTML for definido com “name=nome_cliente”, em PHP ele poderá ser lido dessa forma: $_REQUEST[‘nome_cliente’] - ou através de $_POST[‘nome_cliente’] ou $_GET[‘nome_cliente’], dependendo do método utilizado.
+
+
+Dica
+Normalmente, em cenários reais, são utilizados padrões de projeto, como o MVC (Model-View-Controller), e paradigmas como a orientação a objetos, para realizar a integração entre a HTML, o PHP e o banco de dados. Tais questões foram deixadas de lado em nosso cenário, por estarem fora do escopo deste conteúdo. Entretanto, é recomendado estudar sobre esses padrões e paradigmas a fim de aplicá-los, garantindo assim maior qualidade ao código gerado, além de outros benefícios.
+
+
+O script PHP que processa o formulário pode ser visto ao final deste módulo. Tal script realiza a conexão com o SGBD PostgreSQL, prepara a instrução SQL com o método Prepare e os insere no banco de dados através do método Execute. Mais adiante, é realizada uma verificação e, em caso de sucesso ou erro, exibida uma mensagem correspondente. Por fim, tanto a instância de conexão PDO quanto o objeto PDOStatement são encerrados.

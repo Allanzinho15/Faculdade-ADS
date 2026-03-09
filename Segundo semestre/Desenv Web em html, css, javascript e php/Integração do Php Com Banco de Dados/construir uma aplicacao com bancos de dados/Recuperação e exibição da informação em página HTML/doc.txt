@@ -1,0 +1,82 @@
+Recuperação e exibição da informação em página HTML
+Grande parte das aplicações são dinâmicas, ou seja, geram conteúdo de acordo com interações com os usuários e seus dados. Como exemplo, podemos citar os sistemas de bankline, redes sociais, sistemas acadêmicos, entre tantos outros. Os usuários entram com suas credenciais de login e senha e o sistema acessa algum banco de dados e exibe-os na tela como resposta do servidor. Portanto, o uso de formulários em páginas web é fundamental para aplicações dessa natureza.
+
+
+Por outro lado, as aplicações dos servidores devem estar aptas a receber as solicitações, obter os dados enviados pelos usuários, processá-los, acessar bancos de dados e devolver os códigos das páginas de resposta ao usuário. HTML tem tag de criação de formulários e seus campos, assim como PHP tem recursos para extrair os dados enviados em uma requisição e processá-los adequadamente.
+
+
+Neste vídeo, vamos reforçar a importância de se implementar aplicações que possam recuperar dados armazenados em bancos de dados e exibi-los em páginas web.
+
+
+
+Roteiro de prática
+
+
+Inicialmente, vamos pensar em um banco de dados o qual deve ser modelado. Em seguida, implementam-se as tabelas do banco, utilizando códigos (como exemplificado a seguir), em que é criada uma tabela denominada cliente e tem os seguintes campos: id_cliente, nome_cliente, cpf_cliente, email_cliente, data_nascimento_cliente.
+
+
+PHP (7.4.1)
+CREATE TABLE cliente (
+     id_cliente serial NOT NULL,
+     nome_cliente varchar(255),
+     cpf_cliente varchar(11),
+     email_cliente varchar(255),
+     data_nascimento_cliente timestamp,
+     PRIMARY KEY (id_cliente)
+);
+
+Light Mode
+
+Copiar
+
+Depois, acessa-se o banco de dados com linhas de código semelhantes às mostradas a seguir:
+
+
+PHP (7.4.1)
+<?php
+/***CONEXÃO COM O BD ***/
+//Parâmetros utilizados na conexão.
+define('HOST', '192.168.52.128');
+define('PORT', '5432');
+define('DBNAME', 'minimundo');
+define('USER', 'postgres');
+define('PASSWORD', '159753');
+try {
+              //Estabelecimento da conexão:
+	$dsn = new PDO("pgsql:host=". HOST . ";port=".PORT.";dbname=" . DBNAME .";user=" . USER . ";password=" . PASSWORD);
+} catch (PDOException $e) {
+	echo 'A conexão falhou e retorno a seguinte mensagem de erro: ' .$e->getMessage();
+}
+/***PREPARAÇÃO E INSERÇÃO NO BANCO DE DADOS ***/
+$instrucaoSQL = "Select id_cliente, nome_cliente, cpf_cliente, email_cliente,data_nascimento_cliente From cliente";
+$resultSet = $dsn->query($instrucaoSQL);
+?>
+
+Light Mode
+
+Copiar
+
+Depois que as tabelas foram criadas e inseridos os registros, pode-se utilizar códigos para fazer a leitura desses dados e exibi-los em páginas web. Existem abordagens diferentes, mas pode-se utilizar linhas de código (como a mostrada a seguir) para exibir na tela os dados lidos em uma consulta.
+
+
+PHP (7.4.1)
+
+<?php
+<?php
+	while ($row = $resultSet->fetch(PDO::FETCH_ASSOC){
+	echo $row['id_cliente']; 
+	echo $row['nome_cliente'];
+	echo preg_replace("/(\d{3})(\d{3})(\d{3})(\d{2})/", "\$1.\$2.\$3-\$4",$row['cpf_cliente']); 
+	
+
+echo $row['email_cliente']; 
+	echo date('d/m/Y', strtotime($row['data_nascimento_cliente'])); 
+	}
+?>
+Light Mode
+
+Copiar
+
+O método $resultSet->fetch(PDO::FETCH_ASSOC) em PHP é usado para obter uma linha de dados do resultado de uma consulta SQL usando a extensão PDO (PHP Data Objects). Na sequência, para cada linha, são lidos os dados de cada coluna e exibidos na tela.
+
+

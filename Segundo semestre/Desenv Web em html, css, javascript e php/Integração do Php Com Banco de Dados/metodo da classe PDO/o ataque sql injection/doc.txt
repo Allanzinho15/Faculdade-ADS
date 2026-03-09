@@ -1,0 +1,124 @@
+O Ataque SQL injection
+A segurança cibernética é uma área muito importante em computação. Além disso, temos a cultura DevSecOps, que incorpora conceitos de segurança durante o processo de desenvolvimento de software. Essa abordagem é importante, pois a computação está cada vez mais espalhada em diversos segmentos e, consequentemente, as preocupações com segurança devem acompanhar esta evolução.
+
+
+Considerando uma aplicação web, que pode ser acessada por grande número de pessoas, uma tarefa muito importante é a validação de dados, desde a entrada nas páginas web por meio de formulários, para se evitar problemas como a inserção de códigos SQL maliciosos, denominados injeção SQL.
+
+
+Neste vídeo, vamos entender a importância de evitar a injeção SQL, por meio da validação de dados, no contexto das preocupações com a segurança durante desenvolvimento de software.
+
+
+
+SQL injection
+
+
+O SQL Injection, ou Injeção de SQL, é um tipo de ataque baseado na manipulação e alteração de instruções SQL. Tal ataque é possível devido a vulnerabilidades encontradas em aplicações e sistemas que aceitam dados de entrada sem fazer o devido tratamento, além de executarem a conexão e as instruções SQL utilizando usuários com privilégios altos.
+
+
+Vejamos um exemplo prático, normalmente, utilizado em formulários de login, onde poderia ser aplicada uma injeção de SQL:
+
+
+PHP (7.4.1)
+<?php
+//...
+//Realizando uma consulta no BD através do login e senha recebidos por POST
+$login = $_POST['login'];
+$pswd = $_POST['pswd'];
+$instrucaoSQL = "Select * From Usuario Where login = '$login' And password = '$pswd'";
+$result = mysql_query( $instrucaoSQL ) or die(' Ocorreu um erro na execução da instrução: ' . $instrucaoSQL . ' ' .
+mysql_error() );
+
+Light Mode
+
+Copiar
+
+Perceba que, no código, o conteúdo das variáveis POST ‘login’ e ‘pswd’, equivalentes aos campos input de um formulário HTML para login, são recebidos no PHP e atribuídos a novas variáveis. A seguir, o conteúdo dessas variáveis é utilizado em uma instrução SQL. Veja o que poderia acontecer se no formulário HTML fossem inseridos valores diferentes do previsto, por exemplo, os seguintes valores:
+
+
+
+Exemplo de SQL injection em um formulário HTML.
+
+Os valores inseridos no formulário mostrado na imagem anterior seriam recebidos no código PHP da seguinte maneira:
+
+
+PHP (7.4.1)
+<?php
+//...
+//Realizando uma consulta no BD através do login e senha recebidos por POST
+$login = $_POST['login'];
+$pswd = $_POST['pswd'];
+$instrucaoSQL = "Select * From Usuario Where login = '' OR true = true;/* And password = '*/--'";
+//...
+
+Light Mode
+
+Copiar
+
+Veja que, no lugar dos valores esperados – login e senha –, seriam recebidos comandos que modificariam o sentido original da instrução SQL, no código PHP, permitindo assim o acesso ao sistema em questão.
+
+
+Métodos Prepare e Execute
+
+
+Para resolver os problemas acima, de SQL Injection, poderíamos escrever alguns códigos em PHP. Em linhas gerais, esses códigos conteriam instruções para tratar os dados recebidos antes de utilizá-los em instruções SQL. Esse trabalho poderia ser maçante, já que precisaria prever e tratar diversas formas de códigos maliciosos. Para facilitar e resolver tais questões, a Classe PDO possui um método chamado Prepare.
+
+
+O método Prepare, como o nome indica, prepara uma instrução antes de ser executada, retornando um objeto do tipo statement, que será então executado através do método Execute (pertencente à classe PDOStatement). Ele faz uso de um recurso chamado bind. Tal recurso vincula a variável ou valor a ser utilizado na instrução SQL a uma outra variável (também pode ser utilizado o sinal “?”). Durante esse processo de preparação da instrução e bind dos valores, a Classe PDO realiza, de forma interna, ou seja, sem que precisemos nos preocupar com eles, uma série de tratamentos para evitar a SQL Injection.
+
+
+Vejamos um exemplo prático de utilização do método Prepare:
+
+
+PHP (7.4.1)
+<?php
+
+//Constantes para armazenamento das variáveis de conexão.
+define('HOST', '127.0.0.1');
+define('PORT', '5432');
+define('DBNAME', 'test');
+define('USER', 'user');
+define('PASSWORD', 'psswd');
+
+try {
+	$dsn = new PDO("mysql:host=". HOST . ";port=".PORT.";dbname=" . DBNAME .";user=" . USER . ";password=" . PASSWORD);
+} catch (PDOException $e) {
+	echo 'A conexão falhou e retorno a seguinte mensagem de erro: ' .$e->getMessage();
+}
+
+//Realizando uma consulta no BD através do login e senha recebidos por POST
+$login = $_POST['login'];
+$pswd = $_POST['pswd'];
+
+$stmt = $dsn->prepare("Select * From Usuario Where login = :login And password =:password");
+$stmt->execute([':login' => $login, ':password' => $pswd]);
+
+/*Aqui entraria o código para tratar o resultado da instrução SQL acima*/
+
+
+//Destruindo o objecto statement e fechando a conexão
+$stmt = null;
+$dsn = null;
+
+Light Mode
+
+Copiar
+
+Fique atento à dica a seguir:
+
+
+Dica
+Repare no código que o método Prepare recebe como parâmetro a instrução SQL a ser executada e que, nos lugares onde seriam utilizadas as variáveis PHP com os valores provenientes do formulário HTML, são usadas outras variáveis, chamadas parâmetros nomeados (named parameters).
+
+
+O método Execute faz o vínculo (bind) entre os named parameters e as variáveis PHP. O mesmo código apresentado anteriormente poderia ser executado tendo o sinal de interrogação “?” no lugar dos parâmetros nomeados. Veja, a seguir, como ficaria esse fragmento de código:
+
+
+PHP (7.4.1)
+
+<?php
+//...
+
+$stmt = $dsn->prepare("Select * From Usuario Where login = ? And password = ?");
+$stmt->execute([$login, $pswd]);
+
+//...

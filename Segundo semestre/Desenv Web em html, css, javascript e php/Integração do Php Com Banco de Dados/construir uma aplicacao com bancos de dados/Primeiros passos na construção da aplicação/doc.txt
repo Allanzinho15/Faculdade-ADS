@@ -1,0 +1,27 @@
+Primeiros passos na construção da aplicação
+É comum que aplicações precisem acessar bancos de dados. Mas, como fazer isso na prática? PHP possibilita o acesso a bancos de dados? Precisamos de recursos adicionais? As respostas a essas perguntas já foram mostradas, mas vamos reavivar na nossa memória alguns conceitos importantes.
+
+
+Inicialmente, é preciso ter páginas web que possibilitem a interação com o banco por trás da interface de usuário. Além disso, é necessário ter o banco de dados de modo efetivo. Inicialmente, é necessário trabalhar na sua modelagem, especificando suas características.
+
+
+Neste vídeo, vamos ver como é possível fazer a integração de páginas web com bancos de dados por meio de PHP.
+
+
+
+Preparação
+
+
+Este módulo terá caráter prático. Logo, todos os conceitos vistos nos módulos anteriores serão utilizados na confecção de um Formulário HTML, que enviará dados para um script PHP que os inserirá em um SGBD, nesse caso, no PostgreSQL, e de uma página para listagem desses mesmos dados. Cada etapa desse processo será apresentada em detalhes, desde a criação das tabelas no SGBD, passando pela criação do formulário HTML e chegando nos scripts PHP que farão a conexão e inserção dos dados através das classes PDO e PDOStatement.
+
+
+Motivação
+
+
+Deverá ser criado um formulário para armazenar os dados de clientes, contendo o seu nome completo (obrigatório), o seu CPF (obrigatório; apenas os números), um endereço de e-mail válido (obrigatório) e sua data de nascimento (obrigatório; dia, mês e ano). Além disso, deverá ser criada uma listagem para exibição dos clientes cadastrados.
+
+
+Esquematizando o banco de dados
+
+
+Os dados dos clientes deverão ser armazenados em uma tabela. Tal tabela deverá possuir um campo identificador, autoincremental e único.

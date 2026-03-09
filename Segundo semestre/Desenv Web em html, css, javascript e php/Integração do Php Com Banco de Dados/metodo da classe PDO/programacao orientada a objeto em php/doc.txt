@@ -1,0 +1,135 @@
+Programação orientada a objetos em PHP
+O paradigma de orientação a objetos (OO) é muito utilizado em diversos sistemas computacionais, pois tira proveito de uma habilidade que temos desde crianças: a categorização. A partir de certa idade, sabemos identificar cachorros, gatos, bolas, carrinhos, bonecas, entre outros. Vamos considerar a categoria cachorros. Independentemente de tamanhos, cores, raças etc., a criança sabe identificar que se trata de cachorros. Então, nos referimos à classe de cachorros, e cada cachorro representa um objeto dessa classe.
+
+
+Sim, em OO, objetos podem ser seres vivos também. Com PHP, podemos implementar aplicações sob o paradigma de OO.
+
+
+Neste vídeo, vamos demonstrar como podemos implementar aplicações com o paradigma de orientação a objetos com PHP, sendo empregadas categorizações.
+
+
+
+Orientação a objetos em PHP
+
+
+Como mencionado, uma classe, em linguagens de programação, é um conceito vinculado ao paradigma de orientação a objetos. Logo, antes de descrever a Classe PDO e seus métodos e, para melhor entendimento, serão descritos os conceitos básicos de OO (orientação a objeto) em PHP.
+
+
+O paradigma de orientação a objetos, na engenharia de software, representa uma mudança na forma de se construir programas: no lugar de um conjunto de procedimentos e variáveis agrupados por determinado contexto ou objetivo, muitas vezes, não organizados adequadamente, na OO temos uma visão mais próxima ao mundo real representada por objetos e estruturas (classes) com as quais temos maior familiaridade.
+
+
+Classes e objetos
+
+
+Esses dois elementos são a base da programação orientada a objetos. As classes podem ser definidas como estruturas que definem um tipo de dados e podem ser compostas por atributos (variáveis) e por funções (métodos). Em alusão ao mundo real, são exemplos de classes: pessoas, produtos, veículos, imóveis etc. Assim como no mundo real, essas classes são compostas por características – os seus atributos. Por exemplo: uma pessoa possui nome, data de nascimento, CPF etc. Para acessar essas características, utilizamos métodos. Veja a representação dessa classe na imagem a seguir:
+
+
+
+Diagrama de Classes – Classe Pessoa.
+
+A partir dessa classe, poderíamos construir novas classes que compartilhassem os mesmos atributos e funcionalidades que a Classe Pessoa, além de poderem possuir propriedades e funções próprias. Veja, a seguir, o próximo exemplo:
+
+
+
+Diagrama de classes – exemplo de herança entre classes.
+
+Esse compartilhamento de atributos e comportamentos, na orientação a objetos, recebe o nome de herança. Logo, dentro desse conceito, é possível criar classes, como as classes Cliente e Funcionário, que além de herdarem características de uma classe “pai”, possuem ainda suas próprias características distintas – data de cadastro e data da primeira compra, em Cliente e data de admissão e cargo, em Funcionário.
+
+
+Comentário
+Há muito mais a ser visto sobre orientação a objetos. As considerações apresentadas anteriormente foram apresentadas de maneira resumida, a fim de iniciar esse assunto, ou mesmo revisá-lo, uma vez que utilizaremos alguns desses conceitos a seguir, quando abordarmos a Classe PDO, seus atributos e propriedades.
+
+
+Por fim, a seguir, serão demonstrados exemplos práticos, em PHP, da criação de classes. Note os comentários inseridos no código, pois eles contêm algumas informações extras.
+
+
+PHP (7.4.1)
+
+
+Light Mode
+
+Copiar
+
+A partir dessa estrutura, a Classe “Fruta”, podemos declarar vários objetos “filhos” provenientes dela mesma. Esses objetos também são chamados de instâncias e contêm valores distintos, uma vez que a estrutura é dinâmica.
+
+
+Veja a seguir um exemplo de criação de objeto oriundo da Classe “Fruta” e utilização dos métodos dessa classe através do objeto criado.
+
+
+PHP (7.4.1)
+
+<?php
+class Fruta
+{
+//Propriedades ou atributos da Classe
+var $nome;
+var $tipo;
+//Construtor da Classe: Essa função é executada todas as vezes em que uma instância da classe é criada.
+//Como abaixo, essa função pode ser vazia. Ou seja, não realiza nenhuma ação.
+public function __construct(){ }
+public function setNome($nome)
+{
+$this->nome = $nome;
+}
+public function getNome()
+{
+return $this->nome;
+}
+public function setTipo($tipo)
+{
+$this->tipo = $tipo;
+}
+public function getTipo()
+{
+return $this->tipo;
+}
+}hj
+
+Como visto no código acima, a criação de novas “frutas”, ou de objetos da classe “Frutas”, é feita com a criação de uma variável que recebe o operador “new” seguido do nome da Classe. A partir desse ponto, essa variável em questão torna-se uma instância da classe. Na prática, essa instância possui os mesmos atributos e propriedades da classe da qual se originou.
+
+
+Vamos praticar mais um pouco? Utilize o emulador abaixo, que contém o código da classe “Fruta” visto anteriormente. Após o código da classe, instancie novos objetos “Fruta” e utilize os seus métodos, como demonstrado no código anterior. Lembre-se de utilizar o comando “echo” para imprimir o valor de retorno dos métodos “getNome” e “getTipo”.
+
+
+
+
+Light Mode
+
+// instanciando um objeto da classe Fruta
+$fruta1 = new Fruta(); 
+// utilizando o objeto criado para chamar o método “setNome”
+$fruta1->setNome("morango"); 
+// utilizando o objeto criado para chamar o método “setTipo”
+$fruta1->setTipo("vermelha");
+// utilizando o comando “echo” para imprimir o resultado da chamada ao método “getNome” 
+echo $fruta1->getNome(); 
+// utilizando o comando “echo” para imprimir o resultado da chamada ao método “getTipo” 
+echo $fruta1->getTipo(); 
+
+
+PHP (7.4.1)
+
+<?php
+class Fruta{
+    var $nome;
+    var $tipo;
+
+    public function __construct(){ } 
+    
+    public function setNome($nome)
+    {
+        $this->nome = $nome;
+    }
+    public function getNome()
+    {
+        return $this->nome;
+    }
+    public function setTipo($tipo)
+    {
+        $this->tipo = $tipo;
+    }
+    public function getTipo()
+    {
+        return $this->tipo;
+    }
+}
