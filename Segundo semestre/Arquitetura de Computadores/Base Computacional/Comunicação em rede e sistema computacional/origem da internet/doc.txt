@@ -1,0 +1,18 @@
+Origem da internet
+Neste vídeo, você vai conhecer a origem da ARPANET, projeto desenvolvido pelo Departamento de Defesa dos EUA nos anos 1960, e entender como ela deu início à revolução das redes de computadores, dando origem à internet. Veja como a troca de informações evoluiu de sistemas isolados para a conectividade global que transforma o mundo hoje.
+
+
+
+Assista ao vídeo!
+
+
+
+Na década de 1960, os computadores já eram uma realidade consolidada. Desse modo, o Departamento de Defesa Norte-Americano resolveu iniciar os estudos para a construção de uma rede de comunicação capaz de permitir trabalhos em conjunto de pessoas muito distantes geograficamente. Assim, a ARPANET foi criada.
+
+
+
+Evolução da ARPANET, uma rede de armazenamento de dados que, inicialmente, conectava algumas universidades e alguns centros de pesquisa.
+
+Pensado para possibilitar uma troca de informações, o conceito de sistemas computacionais em rede necessariamente evoluiu, permitindo, hoje em dia, a interação com diversas aplicações, o que era uma realidade até então impensável para sistemas isolados.
+
+

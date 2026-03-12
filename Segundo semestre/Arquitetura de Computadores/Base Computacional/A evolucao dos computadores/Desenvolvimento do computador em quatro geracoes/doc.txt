@@ -1,0 +1,100 @@
+
+Desenvolvimento do computador em quatro gerações
+Neste vídeo, exploramos a evolução dos computadores ao longo de quatro gerações, destacando os avanços tecnológicos que tornaram possível a transição de máquinas gigantes para dispositivos pessoais modernos. Conheça as inovações marcantes de cada geração e o papel de empresas como Microsoft e Apple nessa transformação.
+
+
+
+Veja os principais marcos da invenção e da evolução dos computadores, entendendo como e por que os sistemas computacionais surgiram e quais foram suas etapas de desenvolvimento.
+
+
+Máquina de Turing
+
+Antes de entender o desenvolvimento do primeiro computador, assista a este vídeo sobre a máquina de Turing: um precursor matemático do computador.
+
+
+
+Vamos ver agora como ocorreu o desenvolvimento do computador, conhecendo suas quatro gerações. Vamos lá!
+
+
+Gerações dos computadores
+
+ 
+
+Confira no vídeo!
+
+
+
+Primeira geração: vávulas termiônicas
+
+Ainda durante a Segunda Guerra Mundial, nos Estados Unidos, foi desenvolvido o primeiro computador eletrônico da história. Trata-se do ENIAC, um computador integrador numérico eletrônico, cujos números impressionam. Veja a seguir uma foto deste modelo:
+
+
+
+ 
+
+Componentes: 170.000 válvulas termiônicas.
+Peso: cerca de 30 toneladas.
+Espaço utilizado: Sala de 150 m².
+Capacidade de processamento (número de cálculos por segundo): 1 bilhão de vezes menor que a dos celulares usados hoje em dia.
+ 
+
+Componentes: 170.000 válvulas termiônicas.
+Peso: cerca de 30 toneladas.
+Espaço utilizado: Sala de 150 m².
+Capacidade de processamento (número de cálculos por segundo): 1 bilhão de vezes menor que a dos celulares usados hoje em dia.
+
+Para evoluirmos desse verdadeiro elefante para os computadores atuais, foi preciso substituir as válvulas, já que elas eram pesadas e espaçosas.
+
+
+Mas o que permitiu a evolução dos enormes computadores de válvulas para os modelos atuais?
+
+
+Segunda geração: transistores
+
+
+O transistor possibilitou a evolução dos computadores e deu início à era da microeletrônica. Com ele, surgia a segunda geração de computadores, marcada pela substituição das válvulas e pela redução significativa de tamanho, consumo de energia e custo.
+
+ 
+
+Os primeiros transistores ocupavam apenas alguns milímetros, precisando de bem menos energia que as válvulas. Assim, foi possível reduzir o tamanho de rádios, equipamentos eletrônicos, em geral, e computadores.
+
+
+Terceira geração: circuitos integrados
+
+
+Na década de 1960, o próximo salto de evolução foi dado com a criação dos circuitos integrados (CI): pastilhas de silício que contêm um circuito eletrônico miniaturizado. É o que, de forma comum, chamamos de chip de computador.
+
+
+Com o uso de transistores e CI, os computadores ficaram menores e cada vez mais baratos.
+
+
+Em meados da década de 1970, houve a eclosão dos computadores pessoais, denominados PCs (personal computers).
+
+
+Duas gigantes da tecnologia foram fundadas na década de 1970.
+
+
+
+Microsoft Corporation
+
+
+Empresa americana fundada em 1975 por Bill Gates e Paul Allen. É a maior em faturamento no setor de programas de computador, conhecida pelo sistema operacional Windows e pelo pacote de produtividade Office.
+
+
+
+Apple Inc.
+
+
+Em 1976, a empresa vendeu 200 unidades do Apple I, seu primeiro computador pessoal. No ano seguinte, o Apple II alcançou vendas de milhares de unidades, e a companhia abriu seu capital na Bolsa de Nova York.
+
+
+Quarta geração: microprocessadores
+
+A década de 1980 presenciou a proliferação de PCs cada vez mais potentes, baratos e conectados por meio do surgimento das redes locais de computadores e da internet: a rede mundial.
+
+
+Além disso, um novo aparelho chegava aos lares: o videogame, um tipo de computador especializado, com programas em forma de jogos eletrônicos que destacam gráficos e interação com os usuários.
+
+
+
+Após o fim do século XX, os computadores se tornaram pequenos e potentes, sendo incorporados a diversos equipamentos do dia a dia, como automóveis, aviões e videogames. O uso de laptops também se tornou mais comum nas residências. Pouco depois, computadores começaram a ser integrados a televisões e celulares e, na década 2010, essa integração passou a ocorrer principalmente por meio de smartphones e smart TVs.

@@ -1,0 +1,39 @@
+Hardware e software
+Neste vídeo, exploramos a relação entre hardware e software — os dois pilares fundamentais do funcionamento dos computadores. Entenda o que são, como se complementam e descubra exemplos práticos e analogias que tornam mais fácil compreender essa interação essencial para os sistemas computacionais do nosso dia a dia.
+
+
+
+Os computadores são feitos com um conjunto de componentes dividido em dois grandes grupos:
+
+
+Hardware (HW)
+
+Componentes físicos, ou seja, o que pode ser visto e tocado.
+
+
+Software (SW)
+
+Programas executados no computador.
+
+
+Apresentaremos, a seguir, os diversos tipos de hardware presentes em um computador e os tipos de software mais importantes. Além disso, entenderemos como a interação entre eles permite que nossos PCs sejam capazes de resolver quase todos os problemas, abrindo o caminho para soluções inovadoras e não planejadas.
+
+
+Conceitos
+
+A grande propagação dos computadores se deve à implementação de diversas funções genéricas (hardware) e ao uso delas para gerar programas úteis a muitas pessoas (software). O hardware forma a base para o que conseguimos extrair de um sistema computacional.
+
+
+Exemplo
+Se você tentar se conectar à internet em um computador sem placa de rede, não conseguirá. Isso se deve à falta do hardware, que é o responsável por dar uma capacidade de conexão à internet: a placa de rede.
+
+
+Para exemplificarmos os conceitos de hardware e software, podemos fazer uma analogia com a linha de produção de um automóvel. A montadora constrói um modelo, colocando nele:
+
+
+
+Isso equivale ao hardware do computador. O automóvel tem todas essas possibilidades já descritas, mas não sabemos de antemão como ele vai ser usado. Sua função, afinal, dependerá do motorista que o comprar. A pessoa pode resolver usar o carro para viajar nos finais de semana, ir ao trabalho e voltar todo dia – ou até para trabalhar como motorista de aplicativo. A função do carro só será decidida pelo motorista. Isso equivale ao software de nosso computador. Da mesma maneira, os programas executados definem como o computador vai ser usado. 
+
+ 
+
+No entanto, se o motorista quiser usar seu veículo para levar um reboque, só vai conseguir fazer isso se possuir um engate, já que ele não tem essa capacidade instalada. Do mesmo modo, um computador só consegue executar programas se tiver o hardware necessário para tal.

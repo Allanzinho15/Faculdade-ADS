@@ -1,0 +1,53 @@
+Funções do sistema operacional
+Neste vídeo, exploramos as funções essenciais do sistema operacional, o software que faz a ponte entre o hardware e os programas. Você vai entender como o OS gerencia recursos, reconhece componentes físicos e cria um ambiente seguro e eficiente para o funcionamento dos aplicativos, facilitando o uso dos computadores.
+
+
+
+Assista ao vídeo!
+
+
+
+Vamos entender as funções do sistema operacional analisando o seguinte exemplo:
+
+
+
+Pense em um automóvel. Imagine-se como um motorista (programa) ciente de que precisa acelerar, frear, passar as marchas e virar para a direita e a esquerda a fim de chegar a seu destino. Como motorista (programa), você, então, é capaz de dirigir um automóvel (hardware) até um destino.
+
+
+Mas o que aconteceria se, em vez de um carro, você estivesse a bordo de uma motocicleta ou de um carro de Fórmula 1?
+
+
+Os conceitos de acelerar, frear e virar são parecidos, mas a forma com que são executados é completamente diferente. O sistema operacional funcionaria, então, como um intermediário que sabe como executar cada operação em seu veículo específico (hardware), para que programas possam ser genéricos e independentes do hardware no qual estão sendo executados.
+
+
+Imagine que você decide entrar em um carro de Fórmula 1. Como motorista (programa), você não precisa se preocupar com a mecânica da troca de marchas, pois o sistema do carro faz isso para você, apenas recebendo o seu pedido e o executando. 
+
+ 
+
+De forma similar, o sistema operacional (OS) atua como uma camada de abstração, intermediando a relação entre o hardware e o usuário, para que você não precise gerenciar diretamente os componentes do computador.
+
+ 
+
+Uma das funções mais importantes do sistema operacional é cuidar da alocação de armazenamento e da memória principal. Quando você decide executar um programa, o OS é o responsável por encontrar e alocar o espaço necessário na memória do computador para que tanto o programa quanto os dados que ele irá manipular possam ser processados.
+
+ 
+
+Além disso, o OS é fundamental para gerenciar os programas. Atualmente, diversos programas podem ser executados ao mesmo tempo, tanto em primeiro plano (os que você está vendo na tela) quanto em segundo plano (aqueles que rodam em segundo plano ou background). Por exemplo, ao ligar o computador, vários programas como antivírus e aplicativos de comunicação, como Skype ou Discord, já são iniciados.
+
+ 
+
+Para gerenciar a execução de todos esses programas de forma eficiente, o sistema operacional usa um subsistema chamado escalonador. A principal tarefa do escalonador é decidir quando e quais programas têm acesso ao uso do processador. Como os processadores modernos costumam ter vários núcleos, o escalonador considera tanto todos os núcleos disponíveis quanto as características de cada programa para distribuir o tempo de processamento de maneira otimizada.
+
+
+O sistema operacional (OS) é o programa que gerencia todos os recursos do computador e permite que os outros programas funcionem. 
+
+
+
+No entanto, o OS é carregado depois que um programa chamado BIOS (Basic Input/Output System) é executado. Gravado em um chip na placa-mãe, o BIOS é o primeiro programa a ser inicializado ao ligar o computador. Ele é essencial, pois quando o computador é ligado, a memória principal está vazia. 
+
+
+Sem o BIOS, não seria possível carregar o OS, que está na memória secundária (geralmente o disco rígido), para a memória principal, onde ele precisa estar para ser executado.
+
+
+Atenção
+O sistema operacional é um programa e, para ser executado, precisa ser carregado do disco rígido para a memória principal.

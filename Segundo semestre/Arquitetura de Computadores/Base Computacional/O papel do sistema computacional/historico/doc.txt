@@ -1,0 +1,25 @@
+Histórico
+Tendências para o futuro dos OS
+
+ 
+
+Assista ao vídeo!
+
+
+
+Os primeiros sistemas operacionais eram específicos para as máquinas que os empregavam. Basicamente, eles serviam de interface entre os programas do usuário e o hardware. Veja sua evolução histórica!
+
+
+
+Década de 1970
+
+
+Surge o Unix, um OS de uso geral muito difundido por ter sido distribuído gratuitamente para o setor acadêmico e o público nos Estados Unidos. Como ele não possuía uma interface gráfica, todos os seus comandos eram dados via console a partir de um texto.
+
+ 
+
+Exemplo 
+
+ 
+
+Se estiver em um Windows, segure a tecla Windows + R, digite cmd e aperte Enter. No Linux, segure as teclas Ctrl + Alt + T. Você verá o terminal aparecer. Podem ser dados ali comandos de texto para executar programas em sua máquina. 

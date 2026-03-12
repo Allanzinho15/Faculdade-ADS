@@ -3,11 +3,11 @@
         "stdio.h": "c"
     },
     
-  "workbench.tree.indent": 15, 
+  "workbench.tree.indent": 18, 
   "workbench.tree.renderIndentGuides": "always",
     
   "workbench.colorTheme": "Mosaic",
-  "editor.fontSize": 18,
+  "editor.fontSize": 19,
   
 
   /* 1. ATIVAR AS LINHAS COLORIDAS (INDENT RAINBOW) */

@@ -11,7 +11,7 @@ int main()
 
     // segunda maneira de fazer
     resultado = idade >= 18 ? 1 : 0;
-    if (resultado == 1)
+    if (resultado)
     {
         printf("você é maior de idade\n");
     }

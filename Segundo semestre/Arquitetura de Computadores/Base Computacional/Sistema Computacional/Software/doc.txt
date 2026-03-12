@@ -1,0 +1,22 @@
+Neste vídeo, vamos aprofundar o estudo sobre software, analisando como diferentes tipos — como os softwares de sistema e de aplicação — atuam no funcionamento do computador. Através de exemplos práticos, você entenderá como esses programas tornam o uso do hardware possível, eficiente e acessível no dia a dia.
+
+
+
+O hardware de um computador só revela suas funcionalidades por meio da execução de programas, que formam o software. Esse software costuma ser dividido em dois tipos:
+
+
+
+Softwares finalísticos ou de aplicação
+
+Geralmente, são rodados de forma consciente nos computadores, entregando as funcionalidades desejadas por seu usuário. Exemplos:
+
+ 
+
+Navegadores de internet - Chrome, Firefox e Internet Explorer.
+Planilhas: - Excel e Libreoffice Calc.
+Editores de texto - Word e Libreoffice Writer.
+Jogos eletrônicos - LoL e Fortnite.
+
+Softwares de sistema
+
+Permitem que os programas finalísticos funcionem em diferentes máquinas, mesmo com hardwares variados. Os softwares de sistema incluem os drivers dos dispositivos instalados no computador, que controlam o acesso e o funcionamento de cada periférico, como uma placa de rede. O principal software de sistema é o sistema operacional.

@@ -1,0 +1,197 @@
+Principais componentes de hardware dos computadores
+Neste vídeo, você vai conhecer os principais componentes de hardware que fazem os computadores funcionarem. Descubra o papel do processador, da memória RAM, da placa-mãe, dos periféricos e muito mais — elementos essenciais que estão presentes desde os desktops até os smartphones e servidores.
+
+
+
+Vamos conhecê-los a seguir.
+
+
+
+Processador
+
+ 
+
+Assista ao vídeo!
+
+
+
+
+Também conhecido como CPU (Central Processing Unit ou Unidade Central de Processamento, em português), processador é o cérebro do computador, pois recebe as instruções e as executa sequencialmente. Seu principal componente é a unidade lógica e aritmética, responsável por operações como adicionar e subtrair.
+
+
+A execução das instruções em um processador é regulada pela presença de um pulso de frequência constante denominado clock, que é medido em Hertz (Hz) – número de pulsos por segundo.
+
+
+Uma das principais características de um processador é a velocidade com que consegue executar instruções. Isso depende diretamente da frequência do clock.
+
+
+Como vimos, os processadores foram criados na década de 1970. Inicialmente, eles tiveram sua velocidade aumentada, gerando uma competição acirrada entre as produtoras de microprocessadores. Era comum medir a qualidade do CPU pela velocidade de seu clock. Entendia-se que um processador de 1800 MHz era melhor que um de 1600 MHz.
+
+
+Saiba Mais
+Overclocking é o processo para customizar a velocidade do clock do processador acima de sua frequência de uso normal. Tal prática deixa o computador mais rápido, pois uma maior quantidade de operações pode ser realizada ao mesmo tempo. Há certos riscos envolvidos no overclocking, como danos ao processador e sobreaquecimento.
+
+
+O aumento de clock a cada geração de processadores seguiu ao longo dos anos, até que, por conta de interferências físicas entre seus componentes, ficou inviável a continuação desse procedimento. A solução dada pelos projetistas foi colocar diversos miniprocessadores (chamados de núcleos) dentro de um mesmo chip de processador. Em termos práticos, é como se houvesse dois, quatro ou até mais processadores trabalhando em um mesmo chip. Essa técnica é conhecida como multicore, mas, em função do número de núcleos, também é chamada de:
+
+
+
+Dual core (dois núcleos)
+
+Quad core (quatro núcleos)
+Atualmente, a maioria dos processadores de mercado (inclusive os de celulares) utiliza ao menos quatro cores e frequências de clock de alguns bilhões de pulsos por segundo (GHz). Além do clock e do número de núcleos, outra característica importante do processador é a memória cache.
+
+ 
+
+A memória cache corresponde a uma pequena parte da memória principal integrada ao próprio chip do processador.
+Nela, as informações são lidas e gravadas com muito mais velocidade do que nos pentes de memória.
+Quanto maior a quantidade de memória cache, maior tende a ser a velocidade de processamento.
+Por fim, outra característica importante na avaliação do processador é o seu encaixe, conhecido como pinagem. Para ser fixado na placa-mãe, o processador possui pinos que precisam corresponder ao formato dos orifícios do soquete.
+
+
+Memória principal (RAM)
+
+
+Confira no vídeo!
+
+
+
+
+A memória principal é parte fundamental do computador, pois se trata do espaço onde são armazenados os dados e os programas executados no processador. Ela funciona como uma série de células em que cada uma armazena um conjunto de oito bits (chamado de um byte). Essas células funcionam como caixas de correio: cada uma tem seu endereço, embora só armazene uma carta por vez.
+
+
+A memória também é chamada de RAM (em seu formato mais comum) por permitir o acesso a qualquer endereço em qualquer ordem. Disso resulta o nome Memória de Acesso Aleatório (em inglês, Random Access Memory). Normalmente, as memórias RAM são vendidas em pentes de memória.
+
+
+A memória RAM é volátil, ou seja, seus dados são apagados quando o sistema fica sem energia.
+
+
+Veja as principais características de uma memória RAM:
+
+
+Capacidade de armazenamento
+
+Se possui 4 GB (quatro gigabytes) de armazenamento, a memória RAM conta com 4 bilhões dessas células, podendo armazenar até 32 bilhões de bits de dados.
+
+Velocidade de comunicação com o barramento
+
+Trata-se da velocidade com que a memória consegue transferir os dados para o processador. Por exemplo, uma memória de 400 MHz consegue transferir dados para o processador com uma taxa de até 3200 Mbps (3 bilhões e 200 milhões de bits por segundo).
+
+
+
+Placa-mãe
+
+ 
+
+Confira no vídeo!
+
+
+
+A placa-mãe é um circuito impresso que reúne diversos componentes conectados entre si. Os principais são:
+
+
+
+A função básica da placa-mãe é conectar o processador, a memória principal e os periféricos (outros componentes não essenciais do computador). Essas conexões são chamadas de barramentos. Conforme a tecnologia se desenvolve, a placa-mãe começa a integrar em si periféricos que, até então, precisavam ser encaixados nela, como placas de vídeo, placas de rede, placas controladoras de portas seriais e paralelas.
+
+
+Atenção
+As placas-mãe dos celulares atuais são circuitos altamente complexos, contando com processador, memória, controladora de vídeo, controladora de tela touchscreen, acelerômetros, GPS e placa de rede sem fio e celular. Todos eles estão diretamente integrados à placa-mãe.
+
+
+Periféricos
+
+Por se conectarem à parte central do computador, seus demais componentes são chamados, em geral, de periféricos. Muitos mostram ser tão relevantes que não seríamos capazes de imaginar sistemas computacionais sem eles. O primeiro computador usava apenas uma série de lâmpadas como saída e alguns cartões perfurados como entrada. Inicialmente, são necessários apenas dois instrumentos nesse processo, embora haja outro que também precisa ser apontado.
+
+
+Dispositivos de entrada
+
+Usados para interagir com o computador. Os mais comuns são:
+
+
+1. Tela touchscreen: permite a seleção de elementos sem precisar de um mouse.
+
+
+2. Teclado: segue um padrão já difundido das máquinas de escrever, facilitando seu uso e sua aceitação.
+
+
+3. Mouse: abre novos rumos por permitir a indicação de pontos na tela e a seleção deles, o que gerou um grande impacto no desenvolvimento de interfaces gráficas.
+
+
+4. Microfone: capta o áudio.
+
+
+5. Câmera: capta áudio com vídeo.
+
+
+6. Placa de rede: recebe os dados transmitidos pela rede.
+
+
+Veja na imagem os dispositivos listados:
+
+
+
+Dispositivos de saída
+
+Eles leem os resultados por computador. Os mais usuais são:
+
+
+
+Sistema de vídeo
+
+
+Composto, geralmente, por uma placa de vídeo e um monitor ou uma tela.
+
+
+
+Alto-falantes ou caixas de som
+
+
+Emite sons e sinais sonoros.
+
+
+
+Impressora
+
+
+Imprime documentos elaborados no computador.
+
+
+
+Placa de rede
+
+
+Envia os dados pela rede.
+
+
+Mesmo com a operacionalidade garantida por esses dispositivos, ainda existe o seguinte problema: a memória principal perde as informações quando se desliga o computador, ou seja, ela é volátil.
+
+
+Mas é possível resolver esse tipo de problema?
+
+
+A resposta é: sim. Precisamos de um sistema de armazenamento persistente que não perca as informações após esse desligamento.
+
+
+
+Para isso, são usadas as memórias secundárias. Mais conhecidas como HD (Hard disk ou disco rígido, em português), elas possuem essa nomenclatura porque sua tecnologia predominante envolve discos magnéticos lidos e escritos por um cabeçote. Atualmente, essa tecnologia tem sido substituída por discos de estado sólido (SSD), que são muito mais rápidos e menos propensos a falhas e desgaste por não haver partes móveis mecânicas neles.
+
+
+As características das memórias secundárias, em comparação com as primárias, incluem:
+
+
+
+Capacidade de armazenamento
+
+Velocidade de transmissão
+Normalmente medida em GB (gigabytes ou bilhões de bytes) ou TB (terabytes ou trilhões de bytes).
+
+
+
+
+Hoje, a principal tecnologia de barramento de memória secundária é o SATA2, que é capaz de atingir taxas de transmissão de 3 Gb/s (3 gigas por segundo).
+
+
+Principais componentes de hardware
+
+
+Confira neste vídeo quais são os principais componentes de hardware de um computador e suas funções.

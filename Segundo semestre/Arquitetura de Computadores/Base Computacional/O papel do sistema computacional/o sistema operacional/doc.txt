@@ -1,0 +1,10 @@
+O sistema operacional
+Neste vídeo, acompanhe a evolução dos sistemas operacionais desde seus primórdios até os dias atuais. Conheça os marcos históricos, como Unix, MS-DOS, Windows, iOS e Android, e descubra as tendências que estão moldando o futuro dos sistemas operacionais, especialmente no universo dos dispositivos móveis.
+
+
+
+
+O OS é um dos principais softwares de sistema, responsável por gerenciar o hardware do computador e executar diversas funções essenciais.
+
+
+Essas funções incluem gerenciar o acesso dos programas ao processador e aos periféricos, garantindo um uso organizado e eficiente. A seguir, exploraremos a importância do sistema operacional e sua evolução.

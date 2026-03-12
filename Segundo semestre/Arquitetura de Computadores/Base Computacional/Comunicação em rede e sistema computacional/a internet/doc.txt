@@ -1,0 +1,178 @@
+A internet
+Neste vídeo, você vai acompanhar a evolução da internet e entender como recursos como e-mail, páginas web, chats, jogos online e aplicativos transformaram nossa forma de viver e nos comunicar. Explore os marcos dessa jornada digital que moldou — e ainda molda — um mundo cada vez mais conectado.
+
+
+
+Rede de redes
+
+Embora os primeiros computadores não tivessem sido projetados para se conectar, a ideia de comunicação em rede surgiu nas décadas de 1960 e 1970. Nesses anos, ocorreram os primeiros passos que levaram à criação da internet Veja!
+
+
+Década de 1960
+
+
+Surgiu a ideia de conectar computadores espalhados pelos centros acadêmicos norte-americanos.
+
+
+Década de 1970
+
+
+A ARPANET foi montada para permitir o trabalho de pesquisa em conjunto por pessoas nas duas costas dos Estados Unidos. Essa ligação foi efetivada em 1970, surgindo, dessa forma, a primeira rede a integrar a internet.
+
+
+Apesar da ideia de conexão ter surgido, conectar computadores exigiu a solução de alguns desafios técnicos, como:
+
+
+Comunicação entre computadores
+
+
+Foi preciso criar meios de comunicação, como cabos de cobre ou sinais de rádio, para que os computadores pudessem se conectar.
+
+
+Protocolos de comunicação
+
+
+Para que os computadores pudessem "conversar", foi necessário criar regras (protocolos) de comunicação. Eles definem como enviar e receber dados pela rede.
+
+
+Conforme outras redes iam se juntando, crescia a rede de redes (que passou a ser chamada de internet em 1986). Os computadores pessoais já estavam entrando no mercado, e as pessoas queriam se conectar de suas casas.
+
+
+Internet discada
+
+Por uma questão de simplicidade, as empresas de telefonia assumiram o papel de prover conexão à internet para os usuários domésticos. Surgia, assim, o modem de internet discada, que se conectava como se estivéssemos fazendo um telefonema e atingia taxas de transmissão de 14400 bps (s por segundo).
+
+
+
+Endereço IP e roteador
+
+Uma das barreiras a serem vencidas para interligar tantas máquinas foi a forma de endereçamento, ou seja, como identificar unicamente um computador com o qual se deseja falar. A solução foi dar um endereço – como o da sua casa, por exemplo – para cada máquina. Trata-se de um processo denominado endereço IP, abreviação de internet protocol (protocolo de internet). O endereço IP consistia em uma sequência de quatro números entre 0 a 255 (representados em 8 bits). Como exemplos de endereço IP, temos:
+
+
+
+127.0.0.1
+
+192.168.1.1
+
+8.8.8.8
+Ao ser enviado, o pacote de dados — também chamado de datagrama — viaja pela rede até chegar ao seu destino. Nas fronteiras das redes, os roteadores funcionam como postos de controle, que selecionam a rota que o pacote deve seguir. Dessa forma, passando de roteador em roteador, o datagrama chega com sucesso ao seu destino.
+
+
+
+Exemplo de estrutura de roteamento
+
+ 
+
+Internet - Rede Mundial de Computadores.
+Tier 3 Network - Rede de camada 3, que costuma prover acesso à internet para a maioria dos usuários caseiros.
+Metro-fiber - Fibra ótica metropolitana, geralmente usada por empresas para ter acesso de banda larga à internet.
+Ethernet - Rede local cabeada.
+PSTN - Public Switched Telephone Network - Rede de telefonia local, base de conexão inicial à internet.
+Leased line - Linha (alugada) que fornece conexão dedicada à PSTN.
+Router - Roteador.
+PABX - Private Automatic Branch Exchange - Serviço de ramais telefônicos locais, geralmente usados em empresas.
+Cable Operator - Empresa de serviço de televisão a cabo que também pode prover acesso à internet.
+Cable plant - Interligação do cabo até a casa do assinante.
+Cable customer - Assinante do serviço de TV a cabo.
+DSLAM - Digital Subscriber Line Access Multiplexer - Multiplexador que permite o uso de linhas telefônicas convencionais para acesso à internet (banda larga).
+ADSL - Assymetrical Digital Subscriber Line - Tecnologia para transmissão de dados em banda larga sobre o par trançado de cobre (linha telefônica comum).
+ADSL customer - Assinantes de linha ADSL (geralmente telefone mais acesso à internet via empresa telefônica). O triple play indica que também há sinal de televisão e que todo o serviço é feito via internet (roteador na entrada da casa).
+POTS - Plain Old Telephone Service - Linha telefônica comum. Nas origens de acesso à internet, os modems enviavam sinais por meio de uma ligação telefônica convencional entre o usuário e o provedor de serviço de acesso à internet.
+
+E-mail e páginas disponíveis na rede
+
+A conexão de tantos usuários em rede não trouxe só dificuldades técnicas a serem superadas como também – e principalmente – propiciou a criação de oportunidades para outros mercados e outras tecnologias.
+
+
+
+No início, os correios eletrônicos (e-mails) eram enviados pela rede em analogia ao sistema de correios que inspirou o conceito da ARPANET. Três décadas depois, o correio tradicional quase não transporta cartas, ficando restrito a encomendas e boletos. Hoje, a maior parte do tráfego de correspondência é eletrônica.
+
+
+Da mesma forma, quando se desenvolveu o conceito de páginas disponíveis na rede (originalmente chamado de World Wide Web: WWW) e se criou um navegador capaz de passear por essa rede de páginas, surgiu o que a maior parte das pessoas entende ser a internet. Essa tecnologia mudou a maneira como:
+
+ 
+
+Fazemos comércio (por meio de sites de e-commerce).
+Vamos ao banco (internet banking).
+Acessamos serviços públicos (a maioria está disponível na rede).
+Adquirimos informação.
+
+Páginas de pesquisa, chats e programas de troca de mensagens
+
+Para organizar a procura por tanta informação e pelas páginas disponíveis na World Wide Web, o software de busca Google se mostrou vitorioso entre diversos concorrentes.
+
+
+Atualmente, é possível buscar qualquer página ou tópico na web. Isso tornou a Google uma das empresas mais ricas do mundo.
+
+
+Após alguns anos, as pessoas se acostumaram a ficar sentadas diante de seus computadores, estando conectadas à internet em grande parte do dia. Com essa nova realidade, a comunicação por e-mail ficou lenta, pois podia levar dias para que uma troca de mensagens fosse realizada. Surgiram, então, os servidores de chat, nos quais os usuários podiam interagir entre si em tempo real. O IRC, por exemplo, é usado até hoje. Também foram desenvolvidos programas de trocas de mensagem, como o ICQ.
+
+Comentário
+Ao longo dos anos, com a criação de smartphones, o ICQ (e seus demais concorrentes) foram naturalmente substituídos por versões mais modernas, como WhatsApp, Telegram e Discord.
+
+
+Interação entre usuários
+
+Com a conexão de diversos usuários domésticos, uma nova geração que crescia na década de 1990 via seus jogos eletrônicos começarem a permitir uma interação entre usuários.
+
+
+
+Inicialmente, essa interação foi realizada em redes locais (chamadas de LAN), o que impulsionou o surgimento de LAN Houses: lojas onde era possível jogar em rede usando os computadores e a LAN dos estabelecimentos. Em um processo de evolução natural, as empresas começaram a realizar jogos por meio da internet.
+
+
+Com sua Battle.net, a Blizzard Entertainment pavimentou o caminho para o surgimento do que é conhecido como e-sports: jogos competitivos entre usuários de computador via internet.
+
+Saiba Mais
+A Blizzard Entertainment, empresa de jogos eletrônicos da Califórnia, foi fundada em 1991 com o nome Silicon & Synapse. Ela é conhecida por jogos de sucesso como Lost Vikings, Warcraft, StarCraft, Diablo e Overwatch.
+
+
+Banda larga, streaming e aplicativos
+
+Banda larga
+
+
+Graças ao desenvolvimento de novas tecnologias de transmissão, como a fibra ótica, o aumento da banda de internet disponível ao usuário doméstico permitiu que novos serviços fossem oferecidos, como música e vídeo via internet. Atualmente, testemunhamos a gradual – embora inevitável – substituição da televisão por serviços de streaming, como:
+
+
+
+Netflix
+
+Youtube
+
+A profissão de influenciador digital tornou-se rentável. Novos tipos de programas surgiram com a conexão em nível pessoal. Os celulares passaram a funcionar como computadores de bolso, e a tecnologia de transmissão de dados já possibilita até envio de vídeo (acima de 1 Mbps). Assim, as pessoas permanecem conectadas o tempo todo. Essa conectividade constante impulsionou o desenvolvimento de mensageiros, redes sociais, jogos e, principalmente, de aplicativos colaborativos. Veja!
+
+
+
+Waze
+
+
+Evitar engarrafamentos nas cidades grandes.
+
+
+
+Uber
+
+
+Locomover-se, substituindo serviços de táxi.
+
+
+
+Tinder
+
+
+Buscar relacionamentos.
+
+
+
+
+Tendências
+
+
+Elon Musk.
+
+A conexão em rede dos computadores mudou o paradigma de uso dessas máquinas, moldando diversos hábitos de nossa sociedade. Atualmente, o mundo caminha em direção à conectividade plena. A maioria dos aplicativos já é planejada para trabalhar conectada à internet ou contém funcionalidades adicionais que dependem de tal conexão. Cientistas e engenheiros trabalham em soluções para entregar uma rede de comunicação que permita o acesso à internet de qualquer ponto do planeta. O chamado Projeto Starlink é encabeçado pelo futurista Elon Musk e por sua empresa SpaceX.
+
+
+Inovações tecnológicas que a internet possibilitou
+
+Confira neste vídeo as inovações tecnológicas que a operação de rede possibilitou em diversos ramos.

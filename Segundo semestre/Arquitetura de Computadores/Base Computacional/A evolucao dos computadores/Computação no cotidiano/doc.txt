@@ -1,0 +1,22 @@
+Computação no cotidiano
+Neste vídeo, discutimos como a computação moderna está integrada ao nosso cotidiano de maneira quase invisível, influenciando áreas como saúde, mobilidade e comunicação. Abordamos também as tendências emergentes da ciência da computação e como elas moldam o futuro da tecnologia e da sociedade.
+
+
+
+Hoje em dia, muitos celulares já são, de fato, computadores pessoais portáteis, plenamente conectados pela rede de telefonia móvel (celular). Nossa dependência em relação a eles para as tarefas do cotidiano já é tão forte que nem percebemos quando os utilizamos, inclusive estranhando sua ausência. Diversas atividades do dia a dia dependem do uso de computadores, por exemplo:
+
+
+
+Comunicação.
+
+
+Meios de transporte.
+
+
+Transações bancárias e comerciais.
+
+Atualmente, até o dinheiro não é guardado mais em cofres. Os saldos bancários são armazenados digitalmente nos servidores dos bancos. Se todos os correntistas de um banco solicitassem retirar inteiramente o dinheiro guardado nele, não haveria cédulas suficientes no cofre para atendê-los.
+
+
+Saiba Mais
+Para demonstrar a evolução desse conceito, foi desenvolvido um sistema de troca de dinheiro independente dos bancos. Proposto em 2008, o coin utiliza uma cadeia de transações descentralizada que qualquer pessoa pode auditar: o blockchain. Com essa tecnologia, é possível receber e enviar dinheiro sem precisar de bancos, além de todas as suas transações serem verificáveis por qualquer pessoa com acesso à internet.
