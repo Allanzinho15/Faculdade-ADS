@@ -1,0 +1,171 @@
+Organização de um sistema de computação
+video_library
+Organização básica de um sistema de computação
+
+A organização funcional de um sistema de computação (S.C.) possui os seguintes componentes:
+
+Dispositivo de entrada
+
+fotografia mouse e teclado
+Exemplos dispositivo de entrada.
+
+Dispositivo de saída
+
+fotografia monitores
+Exemplos dispositivo de saída.
+
+Processador
+
+ilustração processador (CPU)
+Exemplos processador.
+
+Memória principal (primária)
+fotografia memória ram (primária)
+Exemplos Memória principal.
+
+Memória secundária
+
+Exemplos Memória secundária.
+
+Veja a seguir qual é a relação de funcionamento entre estes componentes:
+
+ilustração relação de funcionamento, dispositivo de entrada conversa com o processador que troca informações entre ele e a memória principal (ram), a qual também conversa com a memória secundária, e volta ao processador conversando com o dispositivo de saída.
+Componentes de um sistema de computação.
+
+A Arquitetura de John von Neumann (pronuncia-se fon Noiman) foi concebida a partir de 1946, precursora da arquitetura que conhecemos hoje. Ela possibilita a uma máquina digital armazenar seus programas no mesmo espaço de memória que os dados, permitindo, assim, a manipulação de tais programas.
+
+John von Neumann (1903-1957) foi um matemático húngaro, considerado um dos grandes gênios da humanidade.
+
+Possui contribuições em diversas áreas do conhecimento, desde a Economia, Teoria dos Jogos, Computação até a Física Nuclear.
+
+Fotografia Jhon Von Neumman
+John von Neumann.
+
+A arquitetura a seguir é um projeto modelo de um computador digital de programa armazenado que utiliza uma unidade de processamento (CPU) e uma de armazenamento (memória) para comportar, respectivamente, instruções e dados, conforme ilustrado.
+
+Ilustração do modelo de processamento, entre si conversam a memória, a unidade de controle e a unidade de aritmética e lógica, a qual possui um acumulador que gerencia a entrada e saída de dados
+Projeto modelo de um computador digital.
+
+Barramento
+Fundamentalmente, todo sistema de computação (computador) é organizado (funcionalmente) em três grandes módulos ou subsistemas:
+
+1
+Processador
+
+2
+Memória
+
+3
+Entrada/saída (E/S)
+
+Como se trata de componentes eletrônicos, a comunicação e o controle entre eles realiza-se por sinais elétricos que percorrem fios. Estes fios são chamados, em conjunto, de barramento.
+
+ilustrção funcionamneto do barramento, o barramento realiza a comunicação entre o processador, a memória cache, a memória principal e os dispositivos de entrada e saída, onde o barramento é composto m=por múltiplos fios individuais.
+Organização funcional de um S.C.
+
+A partir do que foi apresentado e com base em seus conhecimentos, você sabe definir qual é a função do barramento?
+
+forum
+Resposta
+Barramento é um conjunto de fios que têm por função transportar sinais de informação e sinais de controle e comunicação entre os componentes interligados.
+
+
+
+Veja a seguir os tipos de barramento:
+
+chevron_left
+
+
+
+chevron_right
+chevron_left
+1 de 3
+chevron_right
+A soma dos fios do BC, do BD e do BE é igual ao total de pinos do processador ou total de furos do soquete, ou seja: Totalpinos = BD + BE + BC.
+
+Em uma operação de transferência ou acesso (seja para leitura ou para escrita, exemplificado na (figura A), o barramento é único, embora dividido em grupos de fios que realizam funções diferentes (figura B):
+
+
+
+ilustração de transferencia processador memória: os dois se comunicam pelo barramento de controle, o processador envia 75 para memória pelo barremento de endereço, a memória recupera 37 no endereço 75 e evnai ao processador pelo barramento de dados
+Operação de transferência.
+
+Se o processador precisar de um dado específico ao longo da execução de uma instrução, ele saberá o endereço dele, que, por exemplo, é o endereço 37 em decimal, 0000100101 em binário [com o barramento de endereços (BE) possuindo 10 fios]. Ao acessar o endereço especificado através do barramento de endereços, o processador, então, realizará uma operação de leitura, transferindo o dado, por exemplo, 7510, que se encontra no interior da célula de memória, pelo barramento de dados (BD). O barramento de controle (BC) será responsável pelos sinais de controle (exemplificados a seguir).
+
+Após o dado chegar ao processador e ser processado, um dado resultante desse processamento poderá agora seguir pelo BD, para ser armazenado em um endereço de memória, em uma operação denominada operação de escrita. O exemplo aqui descrito encontra-se ilustrado na figura a seguir:
+
+ilustração igual anterior: ilustração de transferencia processador memória: os dois se comunicam pelo barramento de controle, o processador envia 75 para memória pelo barremento de endereço, a memória recupera 37 no endereço 75 e evnai ao processador pelo barramento de dados
+Funcionamento dos BE, BD e BC.
+
+Com a finalidade de complementar os estudos a respeito de barramentos, vejamos o vídeo a seguir.
+
+video_library
+Tipos de barramentos
+Assista a uma breve explanação das características de cada um dos tipos de barramentos.
+
+
+Processadores
+video_library
+Funções básicas de um processador
+
+Os processadores são projetados com a capacidade de realizarem diretamente (pelo hardware) pequenas e simples (primitivas) operações, tais como:
+
+keyboard_arrow_right
+Executar operações aritméticas com 2 números (somar, subtrair, multiplicar, dividir)
+keyboard_arrow_right
+Mover um número (dado) de um local para outro
+keyboard_arrow_right
+Mover um número (dado) de dispositivo de entrada ou de saída
+keyboard_arrow_right
+Desviar a sequência de controle
+A execução de um comando em linguagem de alto nível (por exemplo, Pascal), como X = A + B requer, primeiro, sua conversão para instruções de máquina e, em seguida, sua execução propriamente dita (figura), ou seja, somar o valor indicado por A com o valor indicado por B e armazenar o resultado no local indicado por A.
+
+1001 00111 equivale a instrução binária de máquina (SOMAR), enquanto SOMAR A, B representa a mesma instrução em linguagem Assenbly
+Uma mesma instrução em linguagens diferentes.
+
+Os processadores, então:
+
+Interpretam
+O que fazer (qual a operação – no exemplo anterior, a operação era SOMAR).
+
+Executam
+A operação (como fazer– algoritmo para completar a operação propriamente dita).
+
+Uma instrução de máquina consiste no conjunto de bits que identifica uma determinada operação primitiva a ser realizada diretamente pelo hardware, por exemplo, 1001 00111 00001.
+
+Podemos citar como exemplos de operações primitivas:
+
+Operações aritméticas– Somar, subtrair, multiplicar e dividir;
+Operações lógicas– AND, OR, XOR;
+Operações de entrada e saída de dados;
+Operações de desvio de controle;
+Operações de movimentação de dados.
+
+
+
+
+
+
+
+
+
+
+
+
+Ciclo de instruções
+Você sabe a diferença entre conjunto de instrução e ciclo de instrução?
+
+Conjunto de instruções são todas as possíveis instruções que podem ser interpretadas e executadas por um processador. Por exemplo, o Intel 8080 tinha 78 instruções de máquina, o Pentium 4 tinha 247;
+
+Ciclo de instruções é um conjunto de instruções de máquina sequencialmente organizadas para a execução de um programa.
+
+Ilustração ciclo de instrução: Início, Buscar a instrução na memória, interpretar a operação a ser realizada, buscar operandos (se houver), Executar a operação, retornar ao início
+Ciclo de instrução.
+
+O formato básico de uma instrução de máquina é constituído de duas partes. Vamos conferir!
+
+Código de operação (C.Op.): Identificação da operação a ser realizada.
+Operando(s) (Op.): Pode ter 1, 2 ou 3.
+
+Ilustração instruções de máquina: Add A representa  o código de operação (C. Op) e Operando, Add A, B representa  o código de operação (C. Op), Operando 1, operando 2, Add A, B, C representa  o código de operação (C. Op), Operando 1, Operando 2 e Operando 3
+Instruções de máquina com um, dois e três operandos.

@@ -1,0 +1,46 @@
+Linguagem de programação
+
+Sistemas, dados e informação
+Um algoritmo pode ser formalizado em comandos de uma linguagem de programação, entendida pelo sistema de computação. Por exemplo, um algoritmo para soma de 100 números (1 a 100) está exemplificado, a seguir - exemplo adaptado de Monteiro (2007, p. 9):
+
+keyboard_arrow_right
+1
+Escrever e guardar N = 0 e SOMA = 0
+
+keyboard_arrow_right
+2
+Ler número da entrada
+
+keyboard_arrow_right
+3
+Somar valor do número ao de SOMA e guardar resultado como SOMA
+
+keyboard_arrow_right
+4
+Somar 1 ao valor de N e guardar resultado como novo N
+
+keyboard_arrow_right
+5
+Se valor de N for menor que 100 então passar para item 2
+
+keyboard_arrow_right
+6
+Se não for, imprimir valor de SOMA
+
+keyboard_arrow_right
+7
+Parar
+
+Tipos de linguagens
+Um programa pode ser escrito em diferentes tipos de linguagens, por exemplo, Assembly, Pascal, C, Cobol, Basic etc.
+
+Uma linguagem de máquina (código de máquina) é formada por sequências de bits que representam as operações. Dessa forma, temos a seguinte comparação:
+
+Linguagem de baixo nível de abstração
+Usa os chamados mnemônicos ao invés de bits. Está relacionada diretamente à arquitetura do processador. Pode ser conhecida como linguagem de montagem e Assembly.
+
+close
+Linguagem de alto nível de abstração
+Possui um nível de abstração relativamente elevado, mais afastado da linguagem de montagem e mais próximo à linguagem humana.
+
+Exemplos: Pascal, Fortran, C++, Delphi.

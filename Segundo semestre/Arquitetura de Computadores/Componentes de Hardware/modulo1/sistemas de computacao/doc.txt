@@ -1,0 +1,40 @@
+Sistemas de computação
+video_library
+O que é um Sistema?
+
+A área conhecida como implementação de computadores se relaciona, em geral, com a abordagem de aspectos que são desnecessários ao programador. Por exemplo, a tecnologia usada na construção da memória, a frequência do relógio, sinais de controle para iniciar as micro-operações etc.
+
+fotografia memória ram
+A implementação de computadores difere do conceito de arquitetura de computadores, cujo termo se relaciona, em geral, ao tratamento de pontos que são de interesse do programador, a saber, conjunto de instruções do processador, tamanho da palavra, modos de endereçamento de instruções, entre outros. A implementação de computadores e a arquitetura de computadores estão inseridas no domínio mais geral dos sistemas de computação. Podemos citar como alguns exemplos de sistema:
+
+
+Sistema jurídico
+Sistema nervoso
+Sistema de informação
+Sistema familiar
+Sistema social
+Sistema solar
+A definição de computação pode ser entendida como a realização de cálculos de forma ordenada ou apenas a manipulação de valores.
+
+Partindo dessa definição, como você definiria um sistema de computação?
+
+forum
+Resposta
+Um sistema de computação é um conjunto de partes coordenadas que concorrem para a realização do objetivo de computar (dados).
+
+Antes de avançarmos, é necessário que você conheça algumas definições de termos importantes:
+
+bar_chart
+Dados
+Constituem um conjunto de fatos em estado bruto a partir dos quais conclusões podem ser tiradas.
+
+account_tree
+Informação
+É a inteligência e o conhecimento derivados dos dados.
+
+Outro termo importante que devemos incluir no vocabulário é o data processing ou, processamento de dados que consiste em uma série de atividades ordenadamente realizadas (receita de bolo), com o objetivo de produzir um arranjo determinado de informações a partir de outras obtidas inicialmente.
+
+Veja a seguir as etapas de um processamento de dados:
+
+ilustração de etapas: Primeiro, entrada (digitação do programa e dos dados), Segundo, processamento (cálculo e testes), Terceiro, saída (impressão dos resultados)
+Etapas do processamento de dados.
