@@ -1,0 +1,50 @@
+Avaliação de uma expressão lógica
+Avaliar uma expressão lógica exige respeitar a ordem de precedência dos operadores, semelhante à utilizada em expressões aritméticas: o operador NOT tem prioridade, seguido por AND e depois OR. O uso de parênteses ajuda a organizar e tornar mais clara a avaliação. Seguindo essa hierarquia, é possível construir tabelas-verdade precisas, que ajudam a analisar e projetar sistemas digitais de forma correta e sem ambiguidades.
+
+ 
+
+Neste vídeo, você aprenderá a avaliar corretamente expressões lógicas, seguindo a ordem de precedência dos operadores: NOT primeiro, depois AND, e por fim OR. 
+
+
+
+Assim como na matemática, em que a multiplicação vem antes da soma, as expressões lógicas também seguem uma ordem de precedência entre os operadores.
+
+ 
+
+Primeiro avaliamos o operador NOT (negação).
+ 
+Depois o AND (conjunção).
+ 
+E por último o OR (disjunção).
+
+Os parênteses indicam partes da expressão que devem ser resolvidas antes de outras operações, garantindo que a lógica seja avaliada corretamente. Isso evita ambiguidades e erros na interpretação. Ou seja, os conteúdos entre parênteses devem ser executados primeiro.
+
+Seguindo o exemplo anterior, X = A + B · C, lê-se:
+
+
+X = A OR (NOT B) AND C
+X = A OR (NOT B) AND C
+A seguir, no diagrama lógico da função, podemos observar como cada porta representa uma operação lógica da expressão: a porta NOT atua sobre B, depois o resultado é combinado com C pela porta AND, e finalmente o resultado dessa operação é combinado com A pela porta OR.
+
+
+
+
+Diagrama lógico da função X.
+Agora, vamos proceder com a construção dessa tabela-verdade seguindo a ordem de precedência da expressão:
+
+
+X = A + B · C
+X = A + B · C
+Observe como a saída X varia conforme as entradas, e como a ordem das operações influencia o resultado final. Essa prática ajuda a entender o impacto de cada operador e a importância da precedência para obter resultados corretos.
+
+ 
+
+Ou seja, NOT B, (NOT B) AND C, A OR (NOT B) AND C. Como temos três variáveis de entrada com dois valores possíveis (0 e 1) para cada uma, temos 2³ = 8 combinações, conforme a tabela-verdade da função X a seguir:
+
+
+
+Expressões lógicas
+
+Para encerrar este tópico, assista ao vídeo a seguir. 
+
+

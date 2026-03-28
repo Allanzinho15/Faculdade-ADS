@@ -1,0 +1,230 @@
+Operadores e portas lógicas básicas
+São elementos centrais da lógica digital, pois permitem que decisões e controles sejam implementados em sistemas computacionais. Através de combinações simples de sinais binários, operadores como AND, OR e NOT definem comportamentos lógicos em algoritmos, circuitos e dispositivos eletrônicos. 
+
+ 
+
+Já as portas lógicas são suas representações físicas em hardware, capazes de executar essas operações em alta velocidade. É importante compreender essas estruturas para analisar e projetar circuitos digitais, e para interpretar o modo como máquinas “pensam” e reagem a diferentes combinações de entrada.
+
+ 
+
+Neste vídeo, você conhecerá os operadores lógicos AND, OR e NOT e entender como eles se transformam em portas lógicas no hardware. 
+
+
+
+Operadores lógicos
+
+
+São símbolos ou palavras que conectam valores lógicos (verdadeiro ou falso) para formar expressões que descrevem condições ou decisões. Eles são a base da lógica booleana e permitem a manipulação e combinação de informações em sistemas digitais, como computadores e circuitos eletrônicos. Através desses operadores, podemos construir regras que determinam o funcionamento de programas, equipamentos e processos automatizados, possibilitando tomadas de decisão claras e precisas.
+
+
+Portas lógicas básicas
+
+
+
+São dispositivos eletrônicos fundamentais que realizam operações lógicas básicas, processando sinais binários (0 e 1). Cada porta executa uma função específica, como combinar ou inverter sinais de entrada, e entrega um resultado que depende das condições dessas entradas. São os blocos construtores dos circuitos digitais, presentes em tudo, desde computadores até aparelhos eletrônicos do dia a dia, viabilizando o processamento e controle de informações de forma rápida e confiável.
+
+
+O operador e a porta OR (OU)
+
+O operador OR (OU) é a primeira das três operações básicas que vamos estudar e, para ilustrar a sua aplicação, vamos utilizar o seguinte cenário:
+
+
+
+Ao abrir a porta de um automóvel, a lâmpada de iluminação da cabine do veículo deverá acender?
+
+A resposta é sim.
+
+E, ao fechar a porta, a lâmpada deverá ser desligada.
+
+Dessa forma, a lâmpada estará acesa em duas situações distintas, se a porta do veículo estiver aberta OU (OR) o interruptor da lâmpada for acionado, mesmo com a porta fechada.
+
+ 
+
+Neste cenário, vamos representar cada uma dessas seguintes possibilidades:
+
+ 
+
+A variável A representará a abertura da porta.
+ 
+A variável B representará o interruptor.
+ 
+A variável X representará o estado da lâmpada, se está acesa ou apagada.
+ 
+
+Assim, a expressão booleana para a operação OR é definida como:
+
+
+X = A + B
+X = A + B
+Em que o sinal (+) não representa uma soma, e sim a operação OR, cuja expressão é lida como:
+
+
+X é igual a A OR B.
+
+
+Ao analisar as combinações possíveis, levando em consideração os valores, temos o seguinte:
+
+
+
+
+Resultado das análises das combinações dos valores.
+
+Na tabela a seguir, estão representadas as combinações dos valores possíveis com a construção da tabela-verdade para o operador OR com duas entradas. Confira!
+
+
+
+Ao analisar a tabela-verdade, chegaremos à conclusão de que a lâmpada estará apagada (valor igual a 0, FALSO) se — e somente se — tanto o interruptor quanto a porta possuírem o valor de entrada igual a FALSO (igual a 0) e, para as demais combinações, a lâmpada estará acesa (igual a 1, VERDADEIRO).
+
+Nos circuitos digitais, uma porta OR é um circuito que tem duas ou mais entradas e a sua saída é igual à combinação das entradas através da operação OR, como ilustrado na seguinte imagem:
+
+
+
+
+Símbolo de uma porta OR com duas entradas e uma saída.
+
+A seguir, veja outro caso e a sua correspondente tabela-verdade com três entradas e uma saída:
+
+
+
+
+Símbolo de uma porta OR.
+
+Vamos praticar!
+
+Seja A = 1100, B = 1111 e C = 0001, para calcular L = A + B + C (A or B or C), o cálculo deve ser realizado em duas etapas, utilizando a seguinte Tabela Verdade da porta OR:
+
+
+
+Sempre utilizando as combinações de entrada e os resultados definidos nas tabelas-verdade da porta OR, vamos iniciar os cálculos. Na primeira etapa, vamos calcular M = A + B (A or B):
+
+
+
+
+Em seguida, o resultado parcial obtido M (1111) será combinado com C (0001) em outra operação lógica OR, L = M + C (M or C):
+
+
+
+
+O resultado final obtido será: L = 1111.
+
+
+O operador e a porta AND (E)
+
+O operador AND (E) é a segunda das três operações básicas que vamos estudar. Para ilustrar a sua aplicação, vamos utilizar o seguinte cenário:
+
+
+
+Ao acionar a botoeira da cabine de um elevador, será acionado o motor do elevador imediatamente?
+
+Esta resposta dependerá de que outras condições estejam atreladas ao seu acionamento.
+
+Vamos analisar o acionamento deste botão em conjunto com um sensor que identificará se a porta do elevador está fechada. Logo, a resposta será sim.
+
+Se a porta estiver fechada, então o motor será ligado. O motor será acionado (valor igual a 1, verdadeiro) em uma única situação, se a porta do elevador estiver fechada (valor igual a 1, verdadeiro) E (AND) o botão do elevador for acionado (valor igual a 1, verdadeiro).
+
+
+Neste cenário, vamos representar cada uma dessas possibilidades:
+
+
+ 
+
+A variável A representará o sensor da porta.
+A variável B representará o botão.
+A variável X representará o acionamento do motor.
+ 
+
+
+Deste modo, a expressão booleana para a operação AND é definida como:
+
+
+X = A · B
+X = A · B
+Em que o sinal ( · ) não representa uma multiplicação, e sim a operação AND e a expressão é lida como:
+
+
+X é igual a A AND B.
+
+
+Agora, ao analisar as combinações possíveis, levando em consideração os valores, temos o seguinte:
+
+
+
+
+Resultado das análises das combinações dos valores.
+A seguir, estão representadas as combinações com dois valores de entrada e uma saída para a tabela -verdade com o operador AND.
+
+
+
+Ao analisar a tabela-verdade, chegaremos à conclusão de que o motor será acionado (valor igual a 1, verdadeiro) se — e somente se — tanto o botão quanto o sensor da porta possuírem o valor igual a verdadeiro (igual a 1) e, para as demais combinações, o motor estará desligado (igual a 0).
+
+Nos circuitos digitais, uma porta AND é um circuito que tem duas ou mais entradas e a sua saída é igual à combinação das entradas através da operação AND, conforme ilustrado na imagem a seguir:
+
+
+
+
+Símbolo de uma porta AND com duas entradas e uma saída.
+
+Observe agora outro caso e a sua correspondente tabela-verdade com três entradas e uma saída.
+
+
+
+
+Símbolo de uma porta AND.
+Vamos praticar!
+
+Prática 1
+
+Seja A = 1 e B = 0, calcule o valor de X, quando X = A • B (A and B). 
+
+ 
+
+Vamos analisar a seguinte tabela-verdade da porta AND:
+
+
+
+Podemos verificar que o valor de X = 0, pois 1 and 0 = 0.
+
+
+Prática 2
+
+Agora, seja A = 0110 e B = 1101, calcule o valor de X, quando X = A • B (A and B). Analisando a seguinte tabela-verdade da porta AND:
+
+
+
+Temos o seguinte:
+
+
+
+Operando bit a bit, encontramos o valor de X = 0100.
+
+
+O operador e a porta NOT (NÃO)
+
+O operador NOT (NÃO) ou inversor é a terceira das três operações básicas que estudaremos, sendo este operador totalmente diferente dos outros já estudados, porque pode ser realizado através de uma única variável.
+
+Como exemplo, se uma variável A for submetida à operação de inversão, o resultado X pode ser expresso como:
+
+
+X = A
+X = A
+Em que a barra sobre o nome da variável representa a operação de inversão e a expressão é lida como:
+
+
+X é igual a NOT A ou X é igual a A negado ou X é igual ao inverso de A ou X é igual ao complemento de A.
+
+
+Como utilizaremos a barra para identificar a negação, outra representação também é utilizada para a inversão por outros autores, que é a seguinte:
+
+
+A' = A
+A' = A
+A seguir, veja a representação da tabela-verdade para o operador NOT com uma entrada e uma saída.
+
+
+
+Nos circuitos digitais, uma porta NOT é um circuito que tem uma entrada, e a sua saída, a negação, é indicada por um pequeno círculo:
+
+
+
+
+Símbolo de uma porta NOT com uma entrada e uma saída.

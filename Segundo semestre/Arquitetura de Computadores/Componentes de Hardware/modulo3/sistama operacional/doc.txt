@@ -1,0 +1,41 @@
+Considerações finais
+Continuando com os estudos em organização e arquitetura de computadores, o estudante aqui pôde aprender sobre os componentes vitais de um computador, que são o processador, a memória e os dispositivos de entrada e saída.
+
+Se o estudante quiser realizar uma grosseira aproximação com a máquina humana, o processador seria a parte do cérebro que executa tarefas, a memória seria a parte do cérebro que guarda as informações e os dispositivos de entrada e saída seriam os diversos órgãos que possibilitam captar recursos externos e oferecer um resultado após a transformação no interior do corpo.
+
+Essa analogia, apesar de um tanto simplista e até discutível, serve para uma primeira tentativa de aproximação da premissa de que podemos extrair melhores resultados e expandir suas possibilidades ao conhecermos melhor como são e como funcionam tanto a nossa máquina, de carne e osso, quanto a máquina que constitui um sistema de computação.
+
+headset
+Podcast
+A seguir, abordaremos o tema por meio de perguntas e respostas.
+
+Explore +
+Para reforçar os conhecimentos adquiridos, realize mais exercícios.
+
+Referências
+HARRIS, D.; HARRIS, S. Digital Design and Computer Architecture. 2. ed. San Francisco: Morgan Kaufmann, 2012.
+
+HENNESSY, JOHN L. Organização e projeto de computadores: A interface hardware/software. 2. ed. Rio de Janeiro: LTC, 2000.
+
+IBM. What is Virtualization? Consultado na internet em: 18 mar. 2020.
+
+MACHADO, F. B.; MAIA, L. P. M. Arquitetura de sistemas operacionais. 4. ed. Rio de Janeiro: LTC, 2007.
+
+MONTEIRO, M. Introdução à organização de computadores. 5. ed. Rio de Janeiro: LTC, 2007.
+
+MURDOCCA, M. J.; HEURING, V. P. Introdução à Arquitetura de Computadores. Rio de Janeiro: Campus, 2000.
+
+PATTERSON, D. A. et al. Computer Architecture, a quantitative approach. 5. ed. San Francisco: Morgan Kaufmann, 2011.
+
+PATTERSON, D. A. et al. Organização e projeto de computadores. 2. ed. Rio de Janeiro: LTC, 2000.
+
+POUNDSTONE, William. John von Neumann – Biography, Accomplishments, Inventions & Facts. Consultado na internet em: 18 mar. 2020.
+
+STALLINGS, W. Arquitetura e organização de computadores. 8. ed. São Paulo: Pearson Prentice Hall, 2010.
+
+TANEMBAUM, A. S.; BOS, H. Sistemas Operacionais Modernos. 3. ed. São Paulo: Pearson, 2010.
+
+TANENBAUM, A. S. Organização estruturada de computadores. 5. ed. Rio de Janeiro: LTC, 2007.
+
+Material para download
+Clique no botão abaixo para fazer o download do conteúdo completo em formato PDF.

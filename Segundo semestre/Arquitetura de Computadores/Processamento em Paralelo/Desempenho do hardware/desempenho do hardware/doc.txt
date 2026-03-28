@@ -1,0 +1,29 @@
+Desempenho do hardware
+Desempenho do Hardware
+
+
+O projeto de evolução dos processadores se baseou, inicialmente, no aumento de paralelismo em nível das instruções, buscando realizar mais trabalho em cada ciclo do clock, o que resultou em soluções como o pipeline, estrutura superescalar e SMT (multithreading simultâneo). Em cada uma delas, os projetistas tentaram aumentar o desempenho do sistema incrementando a complexidade das soluções.
+
+
+Entretanto, muitas dessas soluções se depararam com algumas limitações (nos processos de fabricação, nos materiais utilizados) e exigência de melhores controles para que fosse possível garantir a sua eficiência.
+
+
+Com a construção de novos processadores, houve o acréscimo do número de transistores por chip e altas frequências de clock. Nesse contexto, o aumento do consumo de energia cresceu exponencialmente e, por conseguinte, a produção de calor, entre outras inúmeras situações.
+
+
+Observe a comparação:
+
+
+
+Arquitetura superescalar.
+
+
+Arquitetura multithreading - Multithreading simultâno.
+
+
+Arquitetura multicore - Multicore.
+
+Seguindo essa linha de raciocínio, podemos referenciar a Regra de Pollack. Ela determina que o aumento de desempenho é diretamente proporcional à raiz quadrada do aumento da complexidade. Nesse caso, se a lógica utilizada em um core do processador for dobrada, apenas conseguirá um aumento de 40% no seu desempenho. Logo, com o uso de vários cores, cria-se potencial para aumentar o desempenho de forma quase linear, caso o software possa usar essa vantagem.
+
+
+Outro ponto importante deve-se à capacidade de integração das pastilhas, o que permite aumentar proporcionalmente o espaço destinado ao uso das caches, reduzindo, assim, o consumo de energia.

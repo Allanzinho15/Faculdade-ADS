@@ -1,0 +1,275 @@
+Equivalência de funções lógicas
+No estudo dos circuitos digitais, é comum encontrar diferentes expressões lógicas que, apesar de escritas de formas distintas, apresentam exatamente o mesmo comportamento. Identificar quando duas funções são logicamente equivalentes permite otimizar circuitos, reduzir custos e melhorar o desempenho de sistemas digitais.
+
+ 
+
+Neste vídeo, você vai entender como diferentes expressões podem representar a mesma função lógica. Vamos explorar critérios para identificar essa equivalência e mostrar como ela pode ser usada para otimizar circuitos digitais.
+
+
+
+Conceito
+
+Duas funções lógicas são consideradas equivalentes se, e somente se, para todas as possíveis combinações de entrada, elas produzirem os mesmos valores de saída. Em outras palavras, quando duas funções lógicas resultam em tabelas-verdade idênticas, dizemos que representam circuitos logicamente equivalentes, mesmo que utilizem portas diferentes em sua construção.
+
+
+Vamos praticar!
+
+Prática 1
+
+Seja a função X = A · A, ao construir a tabela-verdade da função X, temos:
+
+
+
+
+Como você pode verificar, o resultado da tabela-verdade da função X = A · A é idêntico à tabela-verdade da função Y = A.
+
+
+Assim, podemos afirmar que tanto a função X como a função Y são equivalentes.
+
+
+Prática 2
+
+Escreva a expressão lógica a partir do diagrama lógico a seguir:
+
+
+
+
+Diagrama lógico.
+
+Partindo da variável saída X, nós podemos representar a expressão deste circuito nas seguintes partes:
+
+
+A partir da variável F, nós temos a porta OR que receberá os seguintes valores de entrada X e um resultado intermediário T1, assim F = X + T1.
+
+
+Para resolver o valor de T1, iremos identificar que T1 será o valor de saída da porta AND que possui os seguintes valores de entrada: not Y e Z, assim, T1 = X· Y.
+
+
+Substituindo a equação que possui T1 como saída na primeira equação, temos:
+F = X +Y· Z.
+
+
+Prática 3
+
+Escreva a expressão lógica a partir do diagrama lógico a seguir:
+
+
+
+
+Partindo da variável saída F, nós podemos representar a expressão deste circuito nas seguintes partes:
+
+
+A partir da variável X nós temos a porta NAND que receberá os seguintes valores de entrada not B e um resultado intermediário T1, assim, X= 
+T 
+1
+​
+ ⋅ 
+Bd
+ˉ
+ 
+​
+ .
+
+
+Para resolver o valor de T1, iremos identificar que T1 será o valor de saída da porta NAND que possui os seguintes valores de entrada: not B e A, assim, T 
+1
+​
+ = 
+A⋅ 
+B
+ 
+ .
+
+
+Substituindo a equação que possui T1 como saída na primeira equação, temos: X= 
+A 
+Bd
+ˉ
+ 
+  
+Bd
+ˉ
+ 
+ = 
+A 
+B
+ 
+ 
+ + 
+B
+ 
+ =A 
+B
+ +B
+
+
+Prática 4
+
+Seja A = 1, B = 0, C = 1, D = 1, calcule X = A +B · C ⊕ D.
+
+
+Adotando o esquema de prioridade, o valor de X será obtido com a realização das quatro etapas seguintes:
+
+
+
+Realizar a operação AND (maior prioridade, além de ter uma inversão determinada sobre a operação). Assim, trata-se de calcular B · C = T1.
+
+
+Inverter o resultado parcial T1.
+
+
+Realizar a operação OR (as operações OR e XOR têm mesma prioridade, optando-se pela que está primeiro à esquerda).
+
+Assim, calcula-se: T2 = A + T1.
+
+
+Realizar a operação XOR, calculando-se X = T2 ⊕ D.
+
+
+Assim, vamos efetuar as etapas indicadas:
+
+
+0 · 1 = 0 = T1
+
+
+0 = 1
+
+
+1 + 1 = 1 = T2
+
+
+1 ⊕ 1 = 0 = X
+
+
+Prática 5
+
+Seja A = 0, B = 0, C = 1, D = 1, calcule: X= 
+(A+ 
+B
+ ⊕D)
+​
+ +( 
+C
+ ∙B)⊕A.
+
+
+Adotando uma sequência de etapas, vamos considerar a ordem de precedência de cada operação.
+
+
+A primeira prioridade é solucionar os parênteses, e dentro ou fora destes, a prioridade é da operação AND sobre as demais, exceto se houver inversão (NOT).
+
+Assim, temos:
+
+
+
+Calcular o parêntese mais à esquerda; dentro deste parêntese, efetuar primeiro a inversão do valor de B: B = 0 e notB = 1.
+
+
+Ainda dentro do parêntese, efetuar A + notB ou 0 + 1 = 1 = T1.
+
+
+Encerra-se o cálculo do interior do parêntese efetuando T1 ⊕ D = T2. Total do parêntese:
+
+1 ⊕ 1 = 0 = T2
+
+T1 = 1 e T2 = 0
+
+
+Calcula-se o outro parêntese, primeiro invertendo o valor de C (NOT), depois efetuando a operação AND daquele resultado com a variável B. O valor final é, temporariamente, T3. C = 1 e not C = 0, 0 · 0 = 0 = T3
+
+
+Finalmente, calcula-se a operação OR do resultado do primeiro parêntese (T2) com o do outro parêntese (T3), para concluir com a operação XOR com A.
+
+0 + 0 = 0, X = 0 ⊕ 0 = 0.
+
+Resultado: X = 0
+
+
+Prática 6
+
+Vamos realizar operações lógicas com palavras de dados? Isto é, com variáveis de múltiplos bits.
+
+
+A = 1 0 0 1, B = 0 0 1 0, C = 1 1 1 0, D = 1 1 1 1, calcule o valor de X na seguinte expressão lógica:
+
+
+X = A ⊕ (B · C + D) + (B ⊕ D)
+X = A ⊕ (B · C + D) + (B ⊕ D)
+Para resolver essa expressão, utilizaremos o mesmo método, execução por etapas, mas, agora, são 4 algarismos binários em vez de um apenas. Considerando as prioridades já definidas anteriormente, temos:
+
+
+Etapa a
+Executar a operação AND de B e C, obtendo resultado parcial T1.
+
+
+Etapa b
+Inverter o valor de T1 (not T1).
+
+
+Etapa c
+Executar a operação OR de not T1, com D, atualizando um novo resultado parcial T2, que é a solução do primeiro parêntese.
+
+
+Etapa d
+Inverter o valor de D no segundo parêntese.
+
+
+Etapa e
+Executar a operação XOR de B com o inverso de D, obtendo o resultado parcial T3, que é a solução do segundo parêntese.
+
+
+Etapa f
+Executar a operação XOR de A com T2, obtendo um valor temporário para T4.
+
+
+Etapa g
+Executar a operação OR de T4 com T3, obtendo o resultado de X.
+
+
+Executando as etapas aqui indicadas, temos etapa (a): T1 = B • C, com resultado parcial: T1 = 0010. Veja a tabela a seguir:
+
+
+
+Temos a etapa (b): T1 = not T1 em que T1 = 0010 e not T1 = 1101. Como resultado parcial, fica o novo T1 = 1101.
+
+Temos a etapa (c): T1 = T1 + D, com o resultado parcial: T1 atualizado: T1 = 1111.
+
+Observe!
+
+
+
+Temos a etapa (d): not D, em que D = 1111 e not D = 0000.
+
+Temos a etapa (e): T 
+2
+​
+ =B⊕notD em que o resultado parcial é T2 = 0010. Confira!
+
+
+
+Temos a etapa (f): X = A ⊕ T1, em que o resultado parcial X = 0110. Veja a tabela a seguir:
+
+
+
+Temos a etapa (g): X = X + T2, em que o resultado de X = 0100. Vejamos!
+
+
+
+A etapa g será concluída na tabela a seguir. Lembrando que a operação or retornará um valor falso quando todas entradas forem falsas.
+
+ 
+
+Etapa (g):X = X + T2
+
+
+
+Assim, sendo: A=1001, B=0010, C=1110, D=1111.
+
+ 
+
+Calcular o valor de X na seguinte expressão lógica:
+
+
+X = A ⊕ (B · C + D) + (B ⊕ D)
+X = A ⊕ (B · C + D) + (B ⊕ D)
+Irá retornar o valor final de X=0110.

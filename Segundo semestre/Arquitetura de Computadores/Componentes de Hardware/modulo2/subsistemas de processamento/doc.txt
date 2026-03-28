@@ -1,0 +1,10 @@
+Subsistemas de processamento
+Um processador ou Unidade Central de Processamento – UCP (Central Process Unit – CPU) possui basicamente duas funções principais:
+
+Responsável pelo processamento dos dados.
+
+É a parte funcional que realiza as atividades de buscar a instrução; interpretar as ações; gerar os sinais de controle para ativar as atividades requeridas (dentro ou fora do processador).
+
+video_library
+Processador
+Veja a seguir um vídeo que fala mais detalhadamente sobre os componentes dessas funções de processamento.

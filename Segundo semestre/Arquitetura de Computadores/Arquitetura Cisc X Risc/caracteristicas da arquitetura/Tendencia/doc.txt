@@ -1,0 +1,5 @@
+Tendências
+Tendências de junção das arquiteturas CISC e RISC nos processadores atuais
+
+
+Como vimos, a abordagem CISC surgiu de forma natural, com a evolução dos processadores; na verdade, ela só foi assim denominada após o surgimento da abordagem “rival”: RISC. Hoje em dia, como os processadores tentam misturar as melhores características de ambas as abordagens, é difícil encontrar processadores CISC “puros”. O mais usual é encontrar processadores híbridos, que disponibilizam diversas instruções complexas, com abordagem CISC, mas com um subconjunto reduzido de instruções otimizadas, como na abordagem RISC, capazes de serem executadas em pouquíssimos ciclos de clock.

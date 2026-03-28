@@ -1,0 +1,31 @@
+Evolução dos computadores
+Questões de desempenho
+
+Nas últimas décadas, o custo dos sistemas computacionais diminuiu à medida que o desempenho e a capacidade das máquinas aumentaram significativamente. Exemplos disso são os equipamentos usados em nosso cotidiano, como computadores, tablets, smartphones e outros, que possuem uma capacidade computacional superior em comparação a um computador (mainframe) da década de 1960 ou 1970, considerado um supercomputador para a época. Observe a imagem a seguir:
+
+
+
+A evolução da máquina
+
+As limitações do passado foram colocadas de lado, tanto pelo custo quanto pela capacidade de processamento. Podemos citar algumas aplicações que, atualmente, possuem uma grande capacidade de processamento em sistemas baseados em microprocessadores:
+
+
+Processamento de imagem
+Renderização tridimensional
+Reconhecimento de linguagem
+Videoconferência
+Modelagem e simulação
+
+Agora, responda: qual seria o resultado se determinada tarefa fosse realizada por várias pessoas ao invés de apenas uma?
+
+
+As respostas poderiam ser várias, inclusive a possibilidade de não conclusão dessa tarefa. Mas, se olhássemos a distribuição das ações que compõem a tarefa de forma organizada, buscando controlar a sua eficiência, poderíamos obter as seguintes respostas:
+
+
+Reflexão
+A tarefa será realizada no mesmo tempo.
+
+O tempo de conclusão da tarefa será reduzido.
+
+
+A partir dessa análise, podemos compreender a importância da busca por soluções paralelizáveis, já que, atualmente, a maior parte das aplicações com software e hardware é implementada dessa forma.

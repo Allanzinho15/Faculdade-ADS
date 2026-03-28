@@ -1,0 +1,151 @@
+Conversão entre sistemas de numeração
+Embora os sistemas de computação expressem seus valores na base 2 (binária), eles poderão ser representados em outras bases quando houver a necessidade de promover uma melhor visualização e compactar os seus valores. Geralmente, são usadas as bases 8 (octal) e 16 (hexadecimal), pois ambas são múltiplas de 2.
+
+Esta tabela mostra a equivalência dos valores nas bases 2, 8, 10 e 16:
+
+Base 2	Base 8	Base 10	Base 16
+0	0	0	0
+1	1	1	1
+10	2	2	2
+11	3	3	3
+100	4	4	4
+101	5	5	5
+110	6	6	6
+111	7	7	7
+1000	10	8	8
+1001	11	9	9
+1010	12	10	A
+1011	13	11	B
+1100	14	12	C
+1101	15	13	D
+1110	16	14	E
+1111	17	15	F
+10000	20	16	10
+10001	21	17	11
+Fabio Henrique Silva.
+
+Em bases de valor superior a 10, usamos letras do alfabeto para representação de algarismos maiores que 9. As tabelas a seguir comparam os valores entre as bases 10 e 16:
+
+Base 10	0	1	2	3	4	5	6	7	8	9	10	11	12	13	14	15
+Base 16	0	1	2	3	4	5	6	7	8	9	A	B	C	D	E	F
+Base 10	16	17	18	19	20	21	22	23	24	25	26	27	28	29	30	31
+Base 16	10	11	12	13	14	15	16	17	18	19	1A	1B	1C	1D	1E	1F
+Base 10	32	33	34	35	36	37	38	39	40	41	42	43	44	45	46	47
+Base 16	20	21	22	23	24	25	26	27	28	29	2A	2B	2C	2D	2E	2F
+Fabio Henrique Silva.
+
+Agora conheceremos duas maneiras de realizar a conversão de valores.
+
+De uma base X para outra Y
+A conversão sempre precisa ser realizada tendo a base 10 como intermediária, pois ela é a utilizada para efetuar cálculos aritméticos.
+
+O vídeo abaixo mostra como converter um número escrito em uma base X para base 10.
+
+video_library
+Conversão entre sistema de numeração de uma base b para base 10
+
+Em seguida, converte-se o resultado da conversão para base 10 para a base Y, conforme vídeo abaixo.
+
+video_library
+Conversão entre sistema de numeração de uma base 10 para base b
+
+Acompanhe o passo a passo abaixo:
+
+arrow_drop_down
+1
+Vamos converter 234 da base 6 para um valor equivalente na base 8. O número a ser convertido é expresso em N produtos, em que N é igual à quantidade algarismo do número. Assim, temos:
+
+2346 = 2 × 62 + 3 × 61 + 4 × 60
+
+arrow_drop_down
+2
+Calcularemos, agora, os produtos usando a aritmética da base 10. Desse modo, o resultado será expresso em valores decimais. Continuando a realizar o cálculo, teremos:
+
+(2 × 36) + 18 + 4 = 9410
+
+arrow_drop_down
+3
+Dessa vez, o resultado (decimal 94) será convertido para a base desejada (8). Esse processo é o inverso do anterior, afinal, o inverso da multiplicação é a divisão. Dividimos o valor (94) pela base desejada (8). O resto obtido é o primeiro algarismo do número desejado (aquele mais à direita):
+
+94 ÷ 8 = 11 e resto = 6
+
+arrow_drop_down
+4
+O quociente obtido na divisão é novamente dividido por 8. A seguir, o novo resto é acrescentado à esquerda do primeiro algarismo:
+
+11 ÷ 8 = 1 e resto = 3
+
+arrow_drop_down
+5
+O número a ser obtido na base 8 é: 36.
+
+arrow_drop_down
+6
+Novamente, faremos a divisão até obtermos um quociente 0 (zero):
+
+1 ÷ 8 = 0 e resto = 1
+
+arrow_drop_down
+7
+O número obtido, portanto, é: 1368.
+
+Casos especiais
+As conversões de valores entre as bases 2 e 8; 2 e 16; e 8 e 16 podem ser realizadas com este método. Tenha em mente o seguinte: se você tomar o valor da base binária e o elevar à sua posição (em decimal), obterá o valor relativo da posição da base 2 representado em decimal.
+
+A seguir, analisaremos dois exemplos.
+
+
+Observe estes três bits:
+22 = 4
+
+21 = 2
+
+20 = 1
+
+
+Toda vez que o dígito 1 for inserido em uma posição, ela corresponderá ao valor relativo da posição (escrito em decimal). Em outras palavras, toda vez que você colocar:
+
+1
+“Liga” o bit na posição.
+
+0
+“Desliga” o bit na posição.
+
+Logo, o valor final em decimal será a soma de todos os valores (escritos em decimal) relativos das posições em que estiverem “ligados”.
+
+Para “ligar” algumas posições, colocaremos, agora, o valor 1 nelas:
+(1) 22 = 4
+
+(0) 21 = 2
+
+(1) 20 = 1
+
+
+Foram colocados valores 1 nas posições 0 e 2. Somando os relativos às posições em decimal, temos: 4 + 1 = 5.
+
+Desse modo, o binário 101 corresponde ao valor 5 em decimal.
+
+A tabela a seguir mostra algumas correspondências:
+
+20 = 1	27 = 128
+21 = 2	28 = 256
+22 = 4	29 = 512
+23 = 8	210 = 1024
+24 = 16	211 = 2048
+25 = 32	212 = 4096
+26 = 64	(...)
+Valores relativos às posições em decimal para os números correspondentes em binário.
+Fabio Henrique Silva.
+
+Com essas informações, podemos observar, dentro dos casos especiais citados, como são realizadas as conversões entre as seguintes bases:
+
+
+
+
+
+
+
+
+
+O que você achou do conteúdo?
+Relatar problema

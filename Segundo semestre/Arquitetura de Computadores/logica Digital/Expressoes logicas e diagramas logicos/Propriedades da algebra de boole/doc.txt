@@ -1,0 +1,125 @@
+Propriedades da álgebra de Boole
+As regras da álgebra de Boole oferecem ferramentas para analisar, simplificar e otimizar expressões lógicas em circuitos digitais. Ao aplicar essas propriedades, podemos demonstrar equivalências, reduzir o número de portas e componentes físicos necessários e preparar designs mais eficientes e econômicos. Essas leis ajudam na verificação formal de projetos, na identificação de falhas e na adaptação de sistemas eletrônicos já existentes.
+
+ 
+
+Neste vídeo, você vai conhecer as principais propriedades da álgebra de Boole e entender como elas são aplicadas para simplificar expressões lógicas em projetos digitais. 
+
+
+
+As regras básicas da álgebra de Boole são bastante úteis quando devemos analisar a equivalência e a simplificação das expressões booleanas (lógicas) que definem uma função de um determinado dispositivo digital.
+
+Essas regras também facilitam a compreensão do funcionamento de dispositivos digitais, assim como a redução de custos na fabricação de circuitos digitais com a redução de componentes eletrônicos usados.
+
+
+Regras básicas da álgebra booleana
+
+
+Cada regra será mostrada em sua forma algébrica, acompanhada de uma explicação que ajuda na sua aplicação prática no projeto e na simplificação de circuitos.
+
+ 
+
+Confira, a seguir, a tabela das regras básicas da álgebra booleana.
+
+
+
+Tabela álgebra booleana.
+
+Vamos compreender a tabela com mais detalhes a seguir.
+
+
+A
+Identidade
+
+
+Lei: A + 0 = A; A · 1 = A
+ 
+Explicação: Somar 0 ou multiplicar por 1 não altera o valor lógico.
+
+B
+Elemento nulo
+
+
+Lei: A + 1 = 1; A · 0 = 0
+ 
+Explicação: Somar 1 torna a expressão verdadeira; multiplicar por 0 torna falsa.
+
+C
+Equivalência
+
+
+Lei: A + A = A; A · A = A
+ 
+Explicação: Repetir a mesma variável em uma operação não muda o resultado.
+
+D
+Complemento
+
+
+Lei: A + A̅ = 1; A · A̅ = 0
+ 
+Explicação: Variável e seu complemento cobrem todas as possibilidades (tornam sempre verdadeiro ou falso).
+
+E
+Involução
+
+
+Lei: (A̅)̅ = A
+ 
+Explicação: A negação da negação retorna ao valor original.
+
+F
+Comutativa
+
+
+Lei: A + B = B + A; A · B = B · A
+ 
+Explicação: Ordem dos operandos não altera o resultado.
+
+G
+Associativa
+
+
+Lei: (A + B) + C = A + (B + C); (A · B) · C = A · (B · C)
+ 
+Explicação: Agrupamento de variáveis pode ser alterado sem mudança de valor.
+
+H
+Distributiva
+
+
+Lei: A · (B + C) = A·B + A·C; A + (B · C) = (A + B) · (A + C)
+ 
+Explicação: Misturar operações de soma e multiplicação segue regras semelhantes à matemática.
+
+I
+Absorção 1
+
+
+Lei: A + (A · B) = A
+ 
+Explicação: Se A é verdadeiro, A·B pode ser ignorado; resultado já garantido.
+
+J
+Absorção 2
+
+
+Lei: A · (A + B) = A
+ 
+Explicação: Se A for falso, A+B reduz à variável B mas A·(A+B) mantém falso.
+
+K
+Lei do consenso (Cobertura)
+
+
+Lei: (A · B) + (A̅ · C) + (B · C) = (A · B) + (A̅ · C)
+ 
+Explicação: O termo B·C é redundante quando os outros dois termos já cobrem as combinações.
+
+L
+De Morgan
+
+
+Lei: (A · B)̅ = A̅ + B̅; (A + B)̅ = A̅ · B̅
+ 
+Explicação: Negações de conjunções viram disjunções de negações, e vice-versa.

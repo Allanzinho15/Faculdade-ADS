@@ -1,0 +1,107 @@
+Organização multicore
+As principais variáveis em uma organização multicore são:
+
+
+Número de cores processadores no chip
+Número de níveis da memória cache
+Quantidade de memória cache compartilhada
+Emprego do multithreading simultâneo (SMT)
+
+Níveis de cache e cache compartilhada
+
+Dada a importância dos caches em uma arquitetura multicore, ilustramos as organizações de cache a seguir:
+
+
+
+Cache L1 dedicada
+
+Há dois ou mais processadores semelhantes (capacidades que podem ser comparadas).
+
+
+
+Cache L2 dedicada
+
+As caches L1 não são compartilhadas, mas, neste caso, há espaço suficiente no chip para permitir a cache L2. Exemplo: AMD Opteron e Athlon X2.
+
+
+
+Cache L2 compartilhada
+
+É representada uma organização semelhante ao item anterior, mas agora o uso de cache L2 é compartilhada. Exemplo: Intel Core Duo – esse foi um marco definido pela Intel para a construção de processadores multicore com maior eficiência.
+
+ 
+
+O uso de caches L2 compartilhadas no chip possui inúmeras vantagens quando comparado à dependência exclusiva das caches dedicadas, como, por exemplo, a comunicação mais eficiente entre os processadores e a implementação de caches coerentes.
+
+
+
+Cache L3 compartilhada
+
+Representa a possibilidade de expansão na quantidade de área disponível para caches no chip. Aqui, temos a divisão de uma cache L3 separada e compartilhada, com caches L1 e L2 dedicadas para cada core do processador. Exemplo: o Intel Core I7.
+
+
+Arquitetura Multicore
+
+No vídeo a seguir o especialista fala sobre arquitetura multicore ou multi-núcleo.
+
+
+
+Multithreading simultâneo
+
+
+Outro ponto importante, que deve ser considerado no projeto de sistemas multicore, são os cores individuais e a possibilidade de implementação de multithreading simultâneo (SMT), também conhecido comercialmente como hyper-threading.
+
+
+Veja a comparação entre as duas arquiteturas:
+
+
+Intel Core Duo
+
+
+Utiliza cores superescalares puros.
+
+
+Intel Core I7
+
+
+Utiliza cores SMT (O SMT permite ampliar o uso de threads em nível de hardware que o sistema multicore suporta. Um sistema multicore com quatro cores e SMT, que suporta quatro threads simultâneos em cada core, assemelha-se a um sistema multicore de 16 cores. Exemplo: Blue Gene/Q da IBM possui SMT de 4 vias).
+
+
+Veja, a seguir, a comparação da execução de várias threads com a implementação de um processador de diferentes arquiteturas:
+
+
+
+Exemplo de execução de threads com: (a) um processador escalar; (b) dois processadores; (c) um processador habilitado com hyper-threading; (d) dois processadores habilitados com hyper-threading
+
+Observe a descrição:
+
+
+A
+Superescalar
+
+
+No primeiro exemplo, com um único processador superescalar – o processador está em uso, mas cerca de metade do tempo do processador permanece sem uso.
+
+
+B
+Multiprocessing
+
+
+No multiprocessamento, é possível verificar um sistema de CPU dupla trabalhando em dois threads separados. No entanto, novamente cerca de 50% do tempo de ambas as CPUs permanecem sem uso.
+
+
+C
+Hyper-threading
+
+
+No terceiro caso, um único processador está habilitado para hyper-threading, os dois threads estão sendo computados simultaneamente e a eficiência da CPU aumentou de cerca de 50% para mais de 90%.
+
+
+D
+Multiprocessing with hyper-threading
+
+
+No último exemplo, há dois processadores habilitados para hyper-threading que podem funcionar em quatro threads independentes ao mesmo tempo. Novamente, a eficiência da CPU é de cerca de 90%. Nesse caso, teríamos quatro processadores lógicos e dois processadores físicos.
+
+
+Para concluir, devemos avaliar os benefícios quando os softwares forem desenvolvidos com a capacidade de usufruir de recursos paralelos, valorizando a abordagem SMT.

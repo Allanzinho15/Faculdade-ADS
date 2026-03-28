@@ -1,0 +1,168 @@
+Simplificação de expressões lógicas
+Agora, as propriedades da álgebra de Boole serão aplicadas de forma sistemática para reduzir expressões lógicas, mantendo o comportamento funcional. Cada exercício apresenta uma expressão que pode ser simplificada com o uso de leis como absorção, distributiva e de Morgan. O objetivo é desenvolver a habilidade de reconhecer termos redundantes e demonstrar equivalências, favorecendo projetos de circuitos digitais mais econômicos e eficientes.
+
+ 
+
+Neste vídeo, você aprenderá a aplicar as propriedades da álgebra de Boole para simplificar expressões lógicas de forma sistemática. Exploraremos leis como absorção, distributiva e de Morgan, com foco em identificar redundâncias e otimizar circuitos digitais, tornando-os mais eficientes e econômicos.
+
+
+
+Vamos praticar!
+
+
+Prática 1
+
+
+Vamos analisar a possibilidade de simplificar a seguinte expressão lógica:
+
+
+X=[ 
+( 
+A
+ +B)⋅ 
+B
+ 
+​
+ ]
+X=[ 
+( 
+A
+ +B)⋅ 
+B
+ 
+​
+ ]
+A seguir, veja o diagrama dessa expressão:
+
+
+
+Como primeiro passo, vamos analisar as regras básicas da álgebra booleana e verificar se é possível aplicar alguma dessas regras na expressão.
+
+
+A
+Etapa a
+
+
+Agora, podemos iniciar o processo de simplificação usando a regra 12 referente ao Teorema de de Morgan na versão AND de X · Y = X + Y:
+X=[( 
+Ad
+ˉ
+ +B
+​
+ )+ 
+Bd
+ˉ
+ ]
+
+
+B
+Etapa b
+
+
+Usando novamente o Teorema de Morgan na versão OR de X + Y = X · Y:
+X= 
+A
+ 
+ ⋅ 
+B
+ + 
+B
+ 
+ 
+
+
+C
+Etapa c
+
+
+Aplicando a regra 5 da involução  
+Xd
+ˉ
+ 
+ =X em A e B, temos: 
+X = A · B + B
+
+
+D
+Etapa d
+
+
+Continuando com a simplificação pela regra 6 da comutatividade, temos: X = B + B · A
+
+
+E
+Etapa e
+
+
+Usando a regra 9 da absorção 2, temos: X = A + B
+
+
+Por fim, podemos perceber que tanto na expressão inicial quanto na expressão simplificada, ambas produzem o mesmo resultado através da seguinte tabela-verdade e, neste caso, pode ser utilizada uma simplificação de um circuito com uma porta NAND e inversores (NOT) sendo substituído por uma única porta OR.
+
+
+
+E a tabela-verdade da expressão X=A+B:
+
+
+
+Prática 2
+
+
+Vamos simplificar a seguinte expressão:
+
+
+X = A · B · C + A · B · C + A · B · C + A · B · C
+X = A · B · C + A · B · C + A · B · C + A · B · C
+Usando as regras básicas da álgebra booleana, temos:
+
+ 
+
+Usando a regra 8:
+X = A · B · (C + C) + A · C · (B + B)
+ 
+Usando a regra 4:
+X = A · B · 1 + A · C · 1
+ 
+Usando a regra 1:
+X = A · B + A · C
+
+Prática 3
+
+
+Vamos simplificar a seguinte expressão:
+
+
+X = A · B · C + A · C + A · B
+X = A · B · C + A · C + A · B
+Usando as regras básicas da Álgebra booleana, temos:
+
+ 
+
+Usando a regra 8:
+X = A · (B · C + C + B)
+ 
+
+Ordenando os termos:
+X = A · (B · C + (C + B))
+ 
+Usando a regra 12:
+X = A · (B · C + (B · C))
+ 
+Explicitando o termo B · C = Y:
+X = A · (Y +Y)
+ 
+Usando a regra 4:
+X = A · 1
+ 
+Usando a regra 1:
+X = A
+
+Prática 4
+
+
+Vamos simplificar a seguinte expressão:
+
+
+X = A · (A + B)
+X = A · (A + B)
+Usando a regra 9, temos: X = A.

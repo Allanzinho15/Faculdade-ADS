@@ -1,0 +1,87 @@
+Operações aritméticas com números inteiros em qualquer base
+
+Agora, vamos estudar as operações aritméticas em bases numéricas diferentes. Dentro de uma unidade especializada (unidade lógica e aritmética), o processador usa seus circuitos lógicos digitais para realizar operações lógicas e aritméticas, tendo o bit como unidade para representação de dados.
+
+Veremos, a seguir, as operações de adição e subtração.
+
+Adição
+As parcelas são somadas algarismo por algarismo (pares da mesma coluna), partindo da posição mais à direita até a última posição à esquerda.
+
+Se o resultado da soma de dois algarismos (fazendo em decimal) for igual ou maior que o valor da base, o excesso será subtraído do valor da base e o resultado será colocado na respectiva posição. Passamos uma unidade (“vai 1”) para a posição imediata à esquerda, que será somada aos dois algarismos seguintes. Observe os exemplos a seguir para entender melhor esse conceito.
+
+add
+Na base 10
+Base numérica mais utilizada no nosso cotidiano.
+
+574 + 893, digito a digito, 4 + 3 da 7, 7 + 9 da 16, fica 6 vai 1, 1 + 5 + 8 da 14, fica 4 vai 1, 1 + 0  0 da 1, assim 574 + 893 = 1467
+add
+Na base 2
+Na base binária, 1 + 1 = 0, com o “vai 1” = 10
+Logo, veja na imagem:
+
+1 1 0 1 + 0 1 1 1, digito a digito, 1 + 0 da 1, 0 + 1 da 1, 1 + 1 da 10, fica 0 vai 1, 1 + 1 + 1 da 11, fica 1 vai 1, 1 + 0 + 0 da 1, assim 1 1 0 1 + 1 1 1 0 = 1 1 0 1 1
+add
+Na base 16
+Antes de abordarmos as regras para cálculos com números hexadecimais, é importante sabermos a equivalência dos números decimais e seus respectivos hexadecimais.
+
+C D 9 4 + 8 E 7 7, digito a digito, 4 + 7 da B, 9 + 7 da fica 0 vai 1, 1 + D + E fica C vai 1, 1 + C + 8 fica 5 vai 1, 1 + 0 + 0 fica 1, assim C D 9 4 + 8 E 7 7 = 1 5 C 0 B
+
+Uma maneira de pensar a adição em qualquer base é:
+
+Somar os números na posição na base 10.
+Diminuir o número obtido nessa base pelo valor dela se ele passar do seu último algarismo.
+Não se esquecer do “vai 1”.
+Veja o exemplo na base 8:
+
+Somar na base 10 (decimal): 4 + 5 = 9.
+Como passou do último algarismo (7), diminuímos 9 da base 8: 9 − 8 = 1.
+“Vai-1” para a próxima posição, 6 + 3 + 1 = 10. Como passou de 7: 10 − 8 = 2.
+
+“Vai-1” para a próxima posição. Logo, vale 1.
+
+64 + 35, digito a digito na base 8,  4 + 5 da 9, fica 1 vai 1, 1 + 6 + 3 da 10, fica 2 vai 1, 1 + 0 + 0 da 1, assim 64 + 35, na base 8 = 121
+Subtração
+As parcelas são subtraídas algarismo por algarismo (pares da mesma coluna) do mais à direita até o último à esquerda.
+
+Em relação ao minuendo (algarismo superior) e ao subtraendo (inferior), há duas possibilidades no processo de subtração:
+
+Minuendo maior que subtraendo
+Realiza a operação e registra sua diferença embaixo.
+
+Minuendo menor que subtraendo
+É subtraída uma unidade do algarismo à esquerda (trata-se do famoso “pedir 1 emprestado”).
+
+O valor da base é somado ao valor existente de minuendo à direita, efetuando-se, assim, a subtração.
+
+Observemos os exemplos a seguir para entendermos melhor esse conceito:
+
+
+
+
+
+
+
+Quando temos 0 − 1, precisamos "pedir emprestado" do primeiro algarismo diferente de 0. Esse empréstimo vale 2 (valor dois em decimal) por ser um número binário.
+
+Então, no caso da coluna 0 − 1 = 1, a operação feita é 2 − 1 = 1. Como esse processo se repete, o elemento que cedeu o "empréstimo" e valia 1 passa a valer 0.
+
+É possível verificar que, quando encontramos 0 − 1:
+
+O zero desta coluna vale 2.
+Todos os zeros à esquerda até o primeiro "número 1" valem 1.
+Este "primeiro número 1" vale 0 (zero).
+Se acontecer novamente 0 − 1, o processo se repetirá.
+1 0 0 0 1 menos 0 1 1 1 0, digito a digito na base 2, 1 menos 0 da 1, 0 menos 1 pre cisamos pedir do primeiro digito 1, assim 1 vira 0, todos os 0 no caminho se tornam 1, e o que recebeu o emprestimo se torna 2, assim 2 menoes 1 da 1, 1 menos 1 da 0, 1 menos 1 da 0, e o antigo 1 vira 0 menos 0 que da 0, assim 1 0 0 0 1 menos 0 1 1 1 0, na base dois = 0 0 0 1 1
+O "empresta 1" no binário tem valor 2.
+
+Computação útil
+Com recursos de computação cada vez mais baratos e ricos em possibilidades, nossa tendência é não nos preocuparmos tanto com seus aspectos fundamentais. Entretanto, o domínio desse estado da arte lhe possibilitará pensar como um projetista de máquinas e linguagens de programação, podendo desenvolver, no futuro, protótipos capazes de fazer a diferença do ponto de vista tecnológico.
+
+Podemos realmente fazer computação útil com 4.096 bits de memória? [...] O avanço da tecnologia minimizou essas restrições. [...] Em um nível prático, você verá que é bastante viável desenvolver implementações em linguagem de máquina que realizam todos os tipos de tarefas.
+
+(SEDGEWICK; WAYNE, 2017, p. 930, tradução nossa)
+A maior parte dos primeiros programas aplicativos foi implementada dessa maneira. Afinal, por muitos anos, a penalidade sofrida pelo desempenho do uso de uma linguagem de alto nível era grande demais para poder ser paga. A maioria desses códigos foi escrita em assembly, cujo funcionamento é similar ao da linguagem de máquina, exceto pelo fato de permitir nomes simbólicos para códigos de operação, registros e localizações de memória.
+
+assignment_ind
+Comentário
+Na década de 1970, era comum ver programas em linguagem assembly que se estendiam a dezenas de milhares de linhas de código.

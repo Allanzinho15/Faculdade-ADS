@@ -1,0 +1,64 @@
+Coerência de cache
+A coerência de memória passou a ser uma consideração de projeto quando surgiram os caches, porque as arquiteturas de computador permitiam caminhos de acesso diferentes aos dados, ou seja, por meio da cópia do cache ou da cópia da memória principal. Em sistemas multiprocessadores, o tratamento da coerência é complexo porque cada processador mantém um cache privado.
+
+
+Entenda melhor:
+
+
+
+Coerência de cache UMA
+
+Implementar protocolos de coerência de cache para multiprocessadores UMA é simples porque os caches são relativamente pequenos e o barramento que conecta a memória compartilhada é relativamente rápido.
+
+ 
+
+Quando um processador atualiza um item de dado, o sistema também deve atualizar ou descartar todas as instâncias daquele dado nos caches de outros processadores e na memória principal, o que pode ser realizado por escuta do barramento (também denominado escuta do cache). Nesse protocolo, um processador “escuta” o barramento, determinando se a escrita requisitada de outro processador é destinada ao item de dado que está no cache. Se o dado residir no cache do processador, ele remove o item do seu cache.
+
+ 
+
+A escuta de barramento é simples de implementar, mas gera tráfego adicional no barramento compartilhado.
+
+
+NUMA com cache coerente (CC-NUMA)
+
+NUMA com cache coerente (Cache Coherent NUMA — CC-NUMA) são multiprocessadores NUMA que im­põem coerência de cache. Em uma arquitetura CC-NUMA típica, cada endereço de memória física está associado a um nó nativo responsável por armazenar o item de dado com aquele endereço de memória principal. Muitas vezes o nó nativo é simplesmente determinado pelos bits de ordem mais alta do endereço.
+
+ 
+
+Quando ocorrer uma falha de cache em um nó, ele contata o nó associado ao endereço de memória requisitado:
+
+ 
+
+Se o item de dado estiver limpo (se nenhum outro nó tiver uma versão modificada do item em seu cache), o nó nativo o despachará para o cache do processador requisitante;
+
+ 
+
+Se o item de dado estiver sujo (se outro nó escreveu para o item de dado desde a última vez que a entrada da memória principal foi atualizada), o nó nativo despachará a requisição para o nó que tem a cópia suja; esse nó envia o item de dado para o requisitante e também para o nó nativo.
+
+ 
+
+Requisições para modificar dados são realizadas via nó nativo. O nó que desejar modificar dados em determinado endereço de memória requisita propriedade exclusiva dos dados.
+
+ 
+
+A versão mais recente dos dados, ou seja, se não estiver no cache do nó modificador, é obtida da mesma maneira que uma requisição de leitura. Após a modificação, o nó nativo notifica a outros nós com cópias dos dados que os dados foram modificados.
+
+ 
+
+Esse protocolo é relativamente simples de implementar porque todas as leituras e escritas contatam o nó nativo e, embora possa parecer ineficiente, requer o número máximo de comunicações de rede. Além disso, ele também facilita a distribuição de carga por todo o sistema, designando cada nó nativo com aproximadamente o mesmo número de endereços, o que aumenta a tolerância à falha e reduz a contenção. Contudo, esse protocolo pode ter mau desempenho se a maioria dos acessos aos dados vier de nós remotos.
+
+Dentre as arquiteturas de máquinas multiprocessadas, existem diferentes formas de classifica-las. No vídeo a seguir vamos abordar estes tipos de classificação.
+
+
+Arquiteturas de acesso à memória
+
+
+Assista o vídeo a seguir para conhecer os tipos de arquiteturas de acesso à memória.
+
+
+
+A seguir, apresentamos a taxonomia de múltiplos processadores e classificação segundo o acesso à memória:
+
+
+
+Taxonomia de múltiplos processadores e classificação segundo o acesso à memória

@@ -1,0 +1,29 @@
+Tabela-verdade
+Compreender o comportamento lógico de um circuito é importante para a formação de qualquer profissional da computação. A tabela-verdade permite visualizar todas as combinações possíveis de entradas e suas saídas. Vamos agora aprender a interpretar e montar tabelas-verdade de circuitos lógicos simples, e ver como essa representação se relaciona com situações do dia a dia que envolvem escolhas, regras e consequências.
+
+ 
+
+Neste vídeo, serão mostradas todas as combinações possíveis de entradas e como elas determinam as saídas, com exemplos práticos que conectam lógica digital a situações do dia a dia.
+
+
+
+A tabela-verdade é uma técnica utilizada para descrever como a saída de um circuito lógico é dependente dos níveis lógicos de entrada, isto é, são tabelas que conterão todas as possíveis combinações das variáveis de entrada de uma determinada função e, como resultado, os valores de saída.
+
+Neste caso, a tabela-verdade conterá o número necessário de linhas para representar todas as combinações possíveis das suas variáveis de entrada.
+
+Os valores 0 e 1 são considerados como 0 = FALSO e 1 = VERDADEIRO. Como exemplo, observe a imagem a seguir:
+
+
+
+
+Representação de um circuito com duas entradas e uma saída
+Imagine uma cena simples e familiar: um prédio com uma porta automática que só abre se duas condições forem verdadeiras ao mesmo tempo: o visitante deve ser um morador (Entrada A = 1) e possuir o cartão de acesso ativo (Entrada B = 1).
+
+ 
+
+Se qualquer uma dessas condições não for satisfeita (ou ambas forem falsas), a porta permanecerá fechada (Saída = 0). Essa é exatamente a lógica que um circuito com duas entradas e uma saída, do tipo AND, representa e que a tabela-verdade revela com precisão (estudaremos circuitos AND, OR, entre outros). Pensar nesses circuitos como portarias digitais pode ajudar bastante!
+
+
+Agora, veja como fica a tabela-verdade do circuito com duas entradas e uma saída:
+
+

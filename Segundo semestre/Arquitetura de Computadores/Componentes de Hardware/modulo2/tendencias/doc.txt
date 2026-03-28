@@ -1,0 +1,15 @@
+Tendências
+Segundo Patterson (2011), no que tange aos futuros processadores, eles incluirão vários núcleos específicos de domínio, que executam apenas uma classe de cálculos, mas o fazem notavelmente melhor do que os núcleos de uso geral, visando a melhoria do custo de desempenho energético. É a especialização.
+
+Quanto às memórias, em todas as camadas da pirâmide de hierarquia de memória, temos significativos avanços ocorridos:
+
+keyboard_arrow_right
+A memória cache possui velocidades e tamanhos cada vez maiores, que auxiliam no desempenho dos processadores.
+
+keyboard_arrow_right
+As memórias DDR SDRAM possuem latência (atraso que existe para que o dado seja acessado pelo processador na memória) cada vez menor e maior capacidade de armazenamento, sendo utilizadas inclusive em placas gráficas de alto desempenho.
+
+keyboard_arrow_right
+Os dispositivos de memória secundária, principalmente discos, estão sendo fabricados com novas tecnologias diferentes da tecnologia dos antigos discos rígidos, por exemplo, Solid State Disks (SSDs), o que confere uma maior velocidade de acesso aos dados.
+
+Além disso, cabe ressaltar o uso de serviços de recursos remotos, ou seja, em nuvem, que empregam recursos compartilhados com alta disponibilidade, capacidade e qualidade de experiência para os usuários.

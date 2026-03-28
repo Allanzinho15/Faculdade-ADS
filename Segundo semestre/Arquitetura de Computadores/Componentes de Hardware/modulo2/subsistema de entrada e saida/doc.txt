@@ -1,0 +1,131 @@
+Subsistema de entrada e saída (E/S)
+Objetivos e funções
+O subsistema de entrada e saída (E/S) tem por função interligar o mundo exterior (o nosso mundo) ao mundo interior (processador-memória). Os dispositivos de entrada e saída também são chamados periféricos, pois estão na periferia do núcleo processador/memória principal.
+
+São funções do subsistema de E/S:
+
+keyboard_arrow_right
+Receber ou enviar informações do/para o meio exterior..
+
+keyboard_arrow_right
+Converter as informações (de entrada ou de saída) em uma forma inteligível para a máquina (se estiver recebendo) ou para o operador (estar enviando).
+
+Dispositivo e interface
+Todo componente de E/S é constituído de 2 partes: O dispositivo propriamente dito; um componente denominado interface. Vejamos alguns exemplos:
+
+extension
+Exemplo
+Monitor de vídeo (dispositivo) e placa de vídeo (interface); disco magnético (composto pelo dispositivo hard disk e pelo controlador ou interface).
+
+Agora, vejamos como o subsistema de E/S se comunica dentro de um sistema de computação a partir do esquema a seguir:
+
+ilustração esquema de entrada e saída: no sistema geral estão o processador, os barramentos de endereço, dados e memória fazendo a comunicação geral, o subsistema de memória (composto pelas memórias cahce e principal) e o subsistema de E/S, composto pela interface de E/S comunicando com o disco, a interface E/S comunicando com o vídeo e a interface E/S comunicando com a rede
+Como o subsistema de E/S se comunica dentro de um sistema de computação.
+
+Interface ou controlador serve para compatibilizar as diferentes características entre o processador/memória e o dispositivo que controla, bem como controlar o funcionamento do referido dispositivo.
+
+extension
+Exemplo
+Uma placa de vídeo é interface do monitor, assim como a placa controladora de um HD.
+
+Confira um esquema visual da localização do controlador:
+
+ilustração ilustração controlado, uma barramento liga o UCP (unidade central de processamento), o controlador e mamória principal, onde o controlador se conecta a dispositivos de E/S
+Esquema ilustrativo da localização do controlador.
+
+A necessidade do emprego de interfaces tem origem em diversos fatores:
+
+keyboard_arrow_right
+1
+Cada dispositivo possui suas próprias características. Exemplo: velocidade de transferência de dados, quantidade de bits enviados em cada instante, formato do dado a ser transferido etc.
+
+keyboard_arrow_right
+2
+As atividades de E/S são assíncronas, isto é, não são sincronizadas pelos pulsos do relógio interno. Nunca se sabe quando uma tecla será pressionada no teclado, nem quando termina o movimento de braço de leitura e gravação dentro de um disco rígido. Há necessidade de um acordo para a comunicação fluir corretamente.
+
+keyboard_arrow_right
+3
+Podem ocorrer ruídos e outras interferências, pois os fios externos (geralmente cabos) têm comprimento apreciável.
+
+Em relação aos dispositivos de E/S devemos ressaltar que cada um possui suas próprias características. Veja melhor na imagem a seguir:
+
+ilustração dispositivos e E/S, pendrive grupo com muitos bits e boa velociade, disco rígido grupos com muitos bits e velocidade muito alta, mouse 1 bit de cada vez e velocidade muito baixa, impressoa 1 ou mais bits de cada vez e velocidade baixa à média, vídeo grupos de bits e boa velocidade (ainda crescendo), teclado 1 bit de cada vez e baixa velocidade
+Características dos dispositivos de E/S.
+
+Exemplos de dispositivos ou periféricos são:
+
+Teclado, mouse, mesa digitalizadora, scanner etc.
+
+Exemplo: O teclado possui o seguinte processo de funcionamento:
+
+Detecção do pressionamento de uma tecla;
+Confirmação do pressionamento;
+Geração do código de identificação da tecla;
+Sinal de interrupção (grosso modo, incluir o pedido de processamento da tecla no meio de outras execuções que estão sendo realizadas);
+O programa de controle (BIOS) processa o significado daquela tecla (por exemplo, um caractere), e envia o resultado para a aplicação que está em execução; utilizará o resultado desse processamento.
+Impressora, caixa de som, monitor.
+
+Exemplo: A impressora pode ser dos tipos:
+
+Impacto (esfera, matricial);
+Sem impacto (jato de tinta, laser, sublimação de tinta).
+Disco magnético, pen drive, SD Card, disco SSD etc.
+
+Disco magnético
+video_library
+Funcionamento básico do disco magnético
+
+Um disco magnético é composto por um prato circular construído de material não magnético, chamado substrato, revestido com um material magnetizável.
+
+Os dados são gravados e posteriormente recuperados do disco por meio de uma bobina condutora chamada cabeça. Em muitos sistemas, existem duas cabeças, uma de leitura e uma de gravação. Durante uma operação de leitura ou gravação, o cabeçote fica parado enquanto o prato gira embaixo dele.
+
+fotografia componentes do disco rígidos, eixo de rotação, pratos, cabeça de leitura e gravaçãop, braço atuador, eixo do atuador, cabo de conexão interna, atuador, conector da interface, pinos do jumper, jumper, anel de vedação, invólucro da base, orifício para prender o sistema, orifício para prender a caixa
+Disco magnético ou Hard Disk.
+
+A organização dos dados no prato é feita em um conjunto concêntrico de anéis, chamados trilhas. As trilhas adjacentes são separadas por intervalos. Isso impede ou minimiza erros devido ao desalinhamento da cabeça ou simplesmente interferência de campos magnéticos.
+
+report_problem
+Atenção!
+Os dados são transferidos para o disco em setores. Normalmente, existem centenas de setores por faixa, e estes podem ter comprimento fixo ou variável.
+
+Algumas unidades de disco acomodam vários pratos empilhados verticalmente com uma fração de polegada de distância. Os discos de múltiplos pratos empregam uma cabeça móvel, com uma cabeça de leitura e gravação por superfície do prato.
+
+Todas as cabeças são fixadas mecanicamente, para que todas fiquem à mesma distância do centro do disco e se movam juntas. Assim, a qualquer momento, todas as cabeças são posicionadas sobre trilhos que estão a uma distância igual do centro do disco. O conjunto de todas as faixas na mesma posição relativa no prato é chamado de cilindro.
+
+Confira alguns dos elementos da estrutura de um disco magnético:
+
+ilustração estrutura do disco magnético, trilhas disco divididos em trilhas (níveis) dividas em setores (bloco), acessados por uma cabeça de leitura/gravação enquanto o disco roda em sentido anti horário. O disco é composto por vários pratos com duas superfícies
+Estrutura de um disco magnético.
+
+Nos primeiros sistemas de computação, a CPU e os periféricos se comunicavam por instruções de E/S executadas pelo próprio processador. Essas instruções continham detalhes específicos de cada periférico, por exemplo, em qual trilha e em qual setor de um disco deveria ser lido ou gravado um bloco de dados. Existia uma forte dependência entre processador e dispositivos de E/S.
+
+Com o surgimento do controlador ou interface, estes passaram a agir independentemente dos dispositivos. Uma técnica de ação se chama E/S controlada por programa, no qual o processador fica ocupado até o término da operação de E/S. Outra técnica é denominada E/S controlada por interrupção, na qual o processador permanece livre para processar outras tarefas.
+
+A técnica de E/S controlada por interrupção é bem eficiente, porém, na ocorrência da transferência de um grande volume de dados, o processador tem que intervir mais vezes. A solução adotada para isso veio na forma da técnica conhecida como DMA (Direct Access Memory).
+
+post_add
+Saiba mais
+No DMA, um bloco de dados pode ser transferido entre memória principal e dispositivos de E/S sem a intervenção do processador, exceto no início e no final da transferência.
+
+Driver de dispositivo
+Cada dispositivo de E/S ligado ao computador precisa de algum código específico do dispositivo para controlá-los. A esse código dá-se o nome de driver de dispositivo.
+
+Exemplo A
+Um driver de disco deve saber sobre setores, trilhas, cilindros, cabeçotes, movimento do braço etc.
+
+Exemplo B
+Um driver de mouse deve aceitar informações dizendo o quanto se moveu e qual botão foi pressionado.
+
+Os dispositivos podem transmitir dados em grupos de bits (paralela) ou bit por bit em série (ou serial):
+
+Transmissão paralela
+Na transmissão paralela, um grupo de bits é transmitido de cada vez, cada um sendo enviado por uma linha separada de transmissão.
+
+sync_alt
+Transmissão serial
+Na transmissão serial, o periférico é conectado ao dispositivo controlador por uma única linha de transmissão de dados, um bit de cada vez.
+
+A transmissão em série utiliza menos condutores e, por isso, tem menor custo que a paralela. A transmissão paralela foi usada muito tempo para conexão de periféricos (vídeo, impressoras etc.) ao processador/memória. No entanto, ela possui um problema chamado deslizamento (em altas taxas). Isso significa que, se houver um mínimo atraso em qualquer um dos sinais enviados simultaneamente pelas várias linhas, o receptor não captará o dado. Hoje em dia a maioria das transmissões paralelas foram substituídas por serial, tais como USB, SATA etc. A transmissão paralela é usada apenas nas conexões internas do processador e placas-mãe para a ligação entre processador, cache e memória principal.
+
+ilustração tipos de transmissão, trnasmissão serial, passa multiplos bits 1 por vez (bit a bit) do transmissor ao receptor através uma conexão única, transmissão paralela comunica os bits simultaneamente atraveés de multiplas conexões entre o transmisso e o recptor
+Transmissão serial e transmissão paralela.

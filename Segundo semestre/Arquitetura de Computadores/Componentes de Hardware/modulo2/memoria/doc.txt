@@ -1,0 +1,232 @@
+Memória
+Tipos de memória
+A memória é um sistema constituído de vários componentes, cada um com velocidades, custos e capacidades diferentes. Todos, no entanto, com mesma função – armazenar e recuperar valores, quando desejado.
+
+Existem diferentes tipos de memória, para diferentes finalidades, no que é conhecido como hierarquia de memórias:
+
+Registradores;
+Memória cache;
+Memória principal– MP (ex.: RAM);
+Memória secundária (ex.: HDs, Pendrive);
+Memória virtual.
+
+
+Registradores
+Os registradores são memórias com as características do topo da pirâmide, localizadas dentro do processador.
+
+Existem:
+
+Armazenam os dados que serão processados pelas unidades de cálculo, separados em unidades para números inteiros e números de ponto flutuante.
+
+Para transferências externas de dados.
+
+Para transferências externas de endereços de memória.
+
+Para buscar a próxima instrução.
+
+Armazena instrução.
+
+Para armazenar endereços de Segmentos [apontam para determinados segmentos (programa, dados, pilha, etc.)].
+
+Podem ser usadas para indicar o resultado de certas instruções.
+
+Memória cache
+A memória cache é uma memória de pequena capacidade, situada entre a memória principal (MP) e o processador. Essa memória armazena certa quantidade dos dados que estão sendo utilizados no momento, e que são transferidos para o processador em alta velocidade.
+
+Uma pergunta que muitos podem fazer é:
+Por que muitas memórias e não apenas uma?
+
+O ideal seria haver apenas uma memória nos computadores, com os seguintes requisitos:
+
+keyboard_arrow_right
+Tempo de acesso muito curto (semelhante ao do processador)
+keyboard_arrow_right
+Grande capacidade de armazenamento
+keyboard_arrow_right
+Armazenamento permanente (não volátil)
+keyboard_arrow_right
+Baixo custo
+Como, em termos práticos, hoje ainda não é possível a existência desse tipo de memória, faz-se necessária a adoção de soluções mais viáveis para compensar a diferença de velocidades que existe entre o processador e a MP.
+
+A figura ao lado ilustra a comparação de velocidades que existem entre o processador e a MP (apenas processador e MP).
+
+Há uma grande diferença de tempo entre a transferência da MP para o processador e este usar os dados. No exemplo, o processador gasta 2 nanosegundos para somar e espera 100 nanosegundos para receber novos dados.
+
+ilustração de velocidade, a opreação de soma demora 2 nano segundos para ocorrer no processador, enquanto a transferência de dados entre o processador e mamória princippal leva 100 nano segundos
+Comparação de velocidades entre o processador e a MP.
+
+Princípio da localidade
+O princípio da localidade é um princípio de programação que determina o modo como as instruções são executadas (em sequência, durante certo tempo).
+
+Nele, os programas são organizados de modo que as linhas de código costumam ser executadas em sequência.
+
+Apenas em alguns momentos a sequência é interrompida e o processo desvia da sequência, sendo esta retomada em seguida.
+
+ilustração detalhando a memória principal, compostas pro ários programas onde cada um tem suas partes executadas em sequência, a parte 1 do programa A passa para a call da sub rotina 1 que executa em loop, passando para o loop 2 e chegando a sub rotina, encerrando assim a parte 1 e passando para as partes seguintes (2 e 3 em nosso exemplo)
+O modo como as instruções são executadas na MP.
+
+O princípio da localidade é dividido em:
+
+Localidade espacial
+Sempre que o processador realiza um acesso a um endereço de memória, é provável que o próximo acesso seja ao endereço contíguo seguinte.
+
+close
+Localidade temporal
+Sempre que o processador realiza um acesso a um endereço de memória, é provável que, em curto tempo, ele acesse novamente o mesmo endereço.
+
+Devido ao princípio da localidade (espacial), é possível incluir uma memória de pequena capacidade, chamada memória cache, entre a MP e o processador.
+
+A figura a seguir ilustra novamente a comparação de velocidades que existem entre o processador e a MP, mas, agora, utilizando memória cache como intermediária.
+
+Caso seja usada uma memória intermediária de alta velocidade entre a MP e o processador (que armazena uma cópia dos dados sendo imediatamente usados), este irá esperar 2 nanosegundos pelos dados, ao invés de 100 nanosegundos.
+
+Ilustração velocidade de transferência, o processador demora 2 nanosegundos para comunicar com a memória cache, enquanto a memória cache demora 100 nanosegundos para se comunicar com a memória principal
+Comparação de velocidades entre o processador e a MP usando a memória cache intermediária.
+
+Memória principal (MP)
+A memória principal (MP) é a memória básica, na qual o programa que será executado e seus dados são armazenados, para que o processador busque cada instrução ao longo do tempo de processamento.
+
+Memórias muito antigas usavam o método de acesso sequencial, em que o endereço de cada acesso era sempre relativo ao endereço inicial. Exemplo de acesso sequencial é o dos sistemas VHS (videocassete) e das fitas magnéticas.
+
+post_add
+Saiba mais
+Em 1968, um cientista da IBM criou uma memória constituída apenas de componentes eletrônicos e cujo acesso dependia apenas de seu endereço, sendo independente dos demais. Por isso, ele chamou-a de memória de acesso aleatório ou RAM (Ramdom-Access Memory). Estas memórias (logo chamadas de DRAM, cujo D vem da palavra dinâmica) passaram progressivamente a ser o tipo usado para acesso pelo processador e, daí, tornaram-se a memória principal de praticamente todos os sistemas de computação.
+
+A memória principal (RAM) permite a realização de duas operações:
+
+Escrita (armazenar)
+O dado anteriormente armazenado é apagado.
+
+Leitura (recuperar)
+Normalmente se recupera uma cópia do dado.
+
+A memória é organizada como um conjunto de N partes iguais, com cada parte possuindo um conteúdo fixo de M bits.
+
+O valor de M depende do tipo de memória. Usualmente é 8 bits (1 Byte) nas memórias RAM, mas existem valores maiores para outras memórias.
+
+ilustrações memórias principais, cada linha representa 1 endereço, a MP 1 possui 16 linhas (0 à 15) com 8 bits cada = 128 bits,  a MP 2 possui 8 linhas (0 à 7) com 16 bits cada = 128 bits,  a MP 3 possui 12 linhas (0 à 11) com 4 bits cada = 48 bits
+Diferentes tamanhos de memórias.
+
+Cada parte (chama-se célula ou, em alguns casos, palavra nas memórias RAM, linha nas memórias cache, setor nos HDs etc.) é identificada por um número, chamado endereço. Todos os N endereços têm mesma largura de endereço, de E bits. Vejamos um breve exemplo.
+
+extension
+Exemplo
+Para o endereço 1011101, a largura de endereço E será 7 bits.
+
+Uma memória com N partes também possui N endereços. O cálculo de N no endereçamento pode ser realizado da seguinte maneira:
+
+
+Onde:
+
+E = Largura de cada endereço;
+
+N = Quantidade de endereços (partes endereçáveis).
+
+Vejamos um breve exemplo:
+
+extension
+Exemplo
+Se a largura de endereços é igual a 6 bits, a quantidade de endereços N será: 26 = 64 endereços
+
+Esta figura esquematiza simplificadamente os termos apresentados anteriormente:
+
+ilustração  organização da memória, uma memória de n partes vai da parte 0 até a parte n menos 1, com cada uma contendo M bits, onde E é a largura de cada endereço, N é a quantidade de partes, M é o conteúdo de cada parte. Não confunda a largura de cada endereço com  conteúdo de cada parte
+Organização básica de uma memória.
+
+As memórias eletrônicas que empregam o acesso aleatório podem ser fabricadas para permitir duas aplicações:
+
+Para leitura e escrita
+Read/Write – R/W
+
+Somente para leitura
+Read Only Memory – ROM
+
+
+As memórias RAM são constituídas de dois tipos:
+
+Cada bit é constituído de 5 a 7 transístores;
+Não requer recarregamento, sendo, por isso, mais rápidas, mas ocupam mais espaço e são mais caras;
+Usadas como memória cache.
+Cada bit é constituído por 1 capacitor e 1 transístor;
+O capacitor serve para representar o valor do bit e o transístor para ser usado nas leituras/escritas;
+Como o capacitor se descarrega, é preciso recarregar periodicamente (sinal de refresh – gasta tempo);
+Usadas como memória principal.
+As memórias dinâmicas podem ser de dois tipos, vejamos a seguir:
+
+chevron_left
+
+
+chevron_right
+chevron_left
+1 de 2
+chevron_right
+Hoje em dia, é comum o uso de memórias DDR SDRAM, pois as memórias Single Data Rate (SDRAM) só transferem dados na subida do sinal de clock; Já as memórias Double Data Rate (DDR-SDRAM) transferem dados na subida e na descida do sinal de clock, dobrando a taxa de transferência de dados (data rate); Assim, uma memória DDR-SDRAM operando num clock de 100MHz (real) consegue desempenho equivalente a 200MHz (efetivo).
+
+Também existe a classificação quanto ao tipo de encapsulamento das memórias (formatos dos módulos):
+
+SIMM (Single In Line Memory Module)
+O contato elétrico de um lado é igual ao do outro lado.
+
+DIMM (Dual In Line Memory Module)
+Os contatos dos dois lados são independentes.
+
+Memória secundária
+Terminando a pirâmide da hierarquia de memória, a memória secundária objetiva o armazenamento persistente (permanente) aos programas de usuário e seus dados.
+
+O emprego de diferentes tecnologias para compor os diferentes tipos de memórias da hierarquia pode ser feito através de parâmetros para análise, tais como:
+
+keyboard_arrow_right
+Tempo de acesso: Também conhecido como tempo de acesso para leitura ou tempo de leitura.
+
+keyboard_arrow_right
+Ciclo de memória: É outro parâmetro (apenas para memórias eletrônicas), indica o tempo entre 2 operações sucessivas de leitura ou escrita.
+
+keyboard_arrow_right
+Capacidade.
+
+keyboard_arrow_right
+Volatilidade.
+
+keyboard_arrow_right
+Tecnologia de fabricação: Memórias de semicondutores, memórias de meio magnético, memória de meio óptico.
+
+keyboard_arrow_right
+Temporariedade: Permanente, transitório
+
+keyboard_arrow_right
+Custo.
+
+Para os tipos de memória da hierarquia, podem ser exemplificados alguns parâmetros de análise, conforme exibido na tabela:
+
+Internamente no processador	Na placa-mãe	Externa
+Registrador(es)	Cache L1	Cache L2	Memória principal (RAM)	Memória secundária (pen drives, discos etc.)
+Tecnologia de fabricação	Eletrônica	Eletrônica	Eletrônica	Eletrônica	Várias tecnologias (ótica, magnética, eletrônica)
+Volatilidade	Volátil	Volátil	Volátil	Volátil (parte é não volátil ‒ ROM)	Não volátil
+Tempo de acesso	Ex.: 1 a 2ns	Ex.: 2 a 6ns	Ex.: 2 a 6ns	Ex.: 5 a 10ns	Ex.: de 8ns até alguns segundos
+Capacidade	32 ou 64 bits	8KB, 256KB, ...	2MB, 8MB, ...	4GB, 8GB, ...	Depende da mídia
+Tabela: Parâmetros de análise das memórias.
+
+Fabio Henrique Silva
+
+A sequência de transferência de dados realizada entre o processador e as memórias em um sistema computacional é hierárquica, conforme mostrado na imagem a seguir.
+
+Ou seja, grosso modo, em uma operação de leitura, o processador:
+
+keyboard_arrow_right
+Irá verificar primeiro se o dado está localizado na cache L1.
+
+keyboard_arrow_right
+Caso não esteja, verificará se o dado se encontra na cache L2 e L3 (se houver).
+
+keyboard_arrow_right
+Finalmente, irá buscar o dado na memória principal, caso o dado não esteja localizado em nenhuma das memórias cache consultadas.
+
+O mesmo raciocínio pode ser aplicado na operação de escrita, na qual o processador escreverá sempre na cache mais próxima dele, mas o dado precisa estar atualizado na memória principal (RAM) para, em seguida, ser armazenado na memória permanente (HD, por exemplo).
+
+ilustração de transferencia entre tamnhos distintos de memória, caso 1, cpu comunica com uma cache (tranferência de bytes) que comunica com a memória principal (transferência de blocos). Caso dois cpu comunica com uma cache l1 nível 1, muito mais rápida, que se comunica com uma cache l2 nível 2 (mais rápida), que se comunica com uma cahce l3 nível 3 (rápida), até chegar na comunicação com a memória principal (lenta)
+Diferentes tamanhos de memórias.
+
+video_library
+Memória
+Confira agora com mais detalhes os conceitos apresentados.
+

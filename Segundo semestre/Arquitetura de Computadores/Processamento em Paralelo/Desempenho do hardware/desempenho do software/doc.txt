@@ -1,0 +1,32 @@
+Desempenho do software
+Desempenho no Software
+
+
+Diferentes análises podem ser realizadas para medir o desempenho em softwares, partindo das medições do tempo necessário para realizar as partes serial e paralelizável, considerando a sobrecarga de escalonamento.
+
+
+Estudos apontam que, mesmo com uma pequena parte do código sendo serial, executar esse código no sistema multicore poderia ser vantajoso quando comparado a soluções de um único core. Os softwares desenvolvidos para servidores também podem utilizar de forma eficiente uma estrutura multicore paralela, pois os servidores geralmente lidam com numerosas transações em paralelo e, em muitos casos, independentes.
+
+
+É possível identificar vantagens nos softwares de uso geral para servidores, de acordo com a habilidade de dimensionar o rendimento em função do número de cores. Stallings (2017) lista vários exemplos:
+
+
+
+Aplicações multithread nativas (paralelismo em nível de thread)
+
+São caracterizadas por possuírem um pequeno número de processos com alto nível de paralelização.
+
+
+Aplicações com múltiplos processos (paralelismo em nível de processo)
+
+São caracterizadas pela presença de muitos processos de thread única (threads podem ser consideradas como fluxos de um processo).
+
+
+Aplicações Java
+
+Aceitam threads de uma maneira natural, isto é, a Máquina Virtual Java (JVM) é um processo multithread que permite o escalonamento e o gerenciamento de memória para aplicações Java.
+
+
+Aplicações com múltiplas instâncias (paralelismo em nível de aplicação)
+
+Mesmo que uma aplicação individual não possa ser dimensionada para obter vantagem em um número grande de threads, ainda é possível que se beneficie com a execução de várias instâncias da aplicação em paralelo.

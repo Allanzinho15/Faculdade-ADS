@@ -1,0 +1,6 @@
+Computadores multicore
+Um processador é considerado multicore quando combina duas ou mais unidades de processamento (chamados de core) em uma única pastilha de silício. De modo geral, cada um dos cores possui os componentes de um processador de forma independente, tais como registradores, ULA, hardware de pipeline e UC, além das caches L1 de dados e instruções e caches L2 e L3.
+
+
+Saiba Mais
+Alguns processadores multicore também incluem memória e controladores de periféricos.

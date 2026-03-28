@@ -1,0 +1,99 @@
+
+Operações básicas da álgebra booleana
+Portas lógicas e lógica booleana
+
+As ações realizadas por computadores, como comparar ou somar dados, são resultado de operações lógicas simples com bits. Essas operações ocorrem por meio de circuitos eletrônicos chamados portas lógicas, baseados na lógica booleana. Com apenas dois estados possíveis — 0 e 1 — é possível representar decisões, comandos e fluxos de controle. 
+
+ 
+
+A lógica booleana ajuda a descrever e projetar esses circuitos de forma clara e eficiente. Compreender o funcionamento das portas lógicas e a forma como geram saídas a partir de entradas binárias permite entender o funcionamento de sistemas digitais e dispositivos eletrônicos.
+
+ 
+
+Neste vídeo, você verá como portas lógicas (AND, OR, NOT) são usadas pelos computadores para processar bits e tomar decisões com base apenas nos estados 0 e 1. 
+
+
+
+Em um computador binário, suas operações internas podem ser vistas como movimentos simples — quase como em um jogo de pecinhas de Lego: juntar duas peças, virar uma delas, deslizar outra ou conferir qual é maior. Essas ações são conduzidas por “caixinhas mágicas” no interior do computador que, como guardiãs, analisam as combinações de entrada e decidem o que deve sair.
+
+ 
+
+Embora pareçam complexas, essas operações podem ser compreendidas como combinações básicas de ações lógicas e aritméticas (por analogia, simples “movimentos de pecinhas de Lego”), como mostrado a seguir.
+
+
+
+Somar bits
+
+Complementar bits
+
+Mover bits
+
+Comparar bits
+Juntar duas peças de Lego.
+
+
+
+
+
+
+
+
+Essas operações são realizadas por circuitos eletrônicos chamados gates ou portas lógicas — as “caixinhas mágicas” que mencionamos — responsáveis por tornar possível toda a lógica de funcionamento de um sistema digital.
+
+Na lógica digital, há somente duas condições, 1 e 0, e os circuitos lógicos utilizam faixas de tensões predefinidas para representar esses valores binários. Assim, é possível construir circuitos lógicos que possuem a capacidade de produzir ações que irão permitir tomadas de decisões inteligentes, coerentes e lógicas.
+
+ 
+
+Pense no bit 0 e no bit 1 como duas posições de um interruptor:
+
+ 
+
+0 = desligado (tensão baixa)
+ 
+
+1 = ligado (tensão alta)
+
+É importante que tenhamos a capacidade de descrever a operação dos circuitos, pois eles são citados repetidas vezes em textos técnicos.
+
+ 
+
+Boole desenvolveu a sua lógica a partir de símbolos e representou as expressões por letras, efetuando a sua ligação através dos conectivos (símbolos algébricos). A seguir, vamos entender no que consiste a então chamada lógica booleana.
+
+
+Lógica booleana
+
+Assista ao vídeo a seguir para conhecer a lógica booleana e como ela está presente em nossa vida.
+
+
+
+Para este tipo de aplicação, podemos analisar a conversão de um valor de uma tensão em um determinado circuito, conforme apresentado na gráfico a seguir, em que os valores considerados como baixos serão convertidos em 0 (zeros) e os valores considerados altos serão convertidos em 1 (um).
+
+
+
+Perceba que, com a tensão baixa (bit 0), o equipamento estará desligado, já, com a tensão alta (bit 1), ele estará ligado.
+
+
+
+Em 1938, o pesquisador Claude Shannon, do Instituto de Tecnologia de Massachusetts (MIT), propôs o uso da álgebra booleana para resolver problemas no projeto de circuitos com comutadores. As técnicas de Shannon passaram a ser aplicadas na análise e no desenvolvimento de circuitos digitais eletrônicos.
+
+
+Comentário
+Da mesma forma que um cozinheiro segue um livro de receitas para preparar um prato, a álgebra booleana seria uma espécie de receita utilizada para montar circuitos.
+
+
+A álgebra booleana, por meio de suas propriedades básicas, funciona como uma ferramenta para:
+
+
+Análise
+
+
+A função de um circuito digital é descrita de acordo com a análise de um modo simplificado.
+
+
+Projeto
+
+
+A lógica booleana é utilizada para que seja desenvolvida uma implementação simplificada desta função, ao especificar uma determinada função de um circuito.
+
+
+Iniciando o nosso estudo, representaremos os operadores lógicos e, a partir desses, perceberemos a representação das suas respectivas portas lógicas. Neste caso, para que possamos compreender os valores resultantes de cada operador lógico, é necessário conhecer as tabelas-verdade (tabelas que representam todas as possíveis combinações dos valores das variáveis de entrada com os seus respectivos valores de saída).

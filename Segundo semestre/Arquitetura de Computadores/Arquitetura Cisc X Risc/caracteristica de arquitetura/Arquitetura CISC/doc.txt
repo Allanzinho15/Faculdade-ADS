@@ -1,0 +1,91 @@
+Arquitetura CISC
+Abordagem CISC na arquitetura de processadores
+
+
+
+O conceito da arquitetura
+
+
+A abordagem CISC (Complex Instruction Set Computer - Computador com Conjunto Complexo de Instruções) está relacionada às possibilidades na hora de se projetar a arquitetura de um processador, com instruções específicas para o maior número de funcionalidades possível. Além disso, essas instruções realizam operações com diferentes níveis de complexidade, buscando, muitas vezes, operandos na memória principal e retornando a ela os resultados.
+
+Isso faz com que a quantidade de instruções seja extensa e que a Unidade de Controle do processador seja bastante complexa para decodificar a instrução a ser executada. Entretanto, a complexidade é compensada por poucos acessos à memória e soluções adequadas para problemas específicos.
+
+Veja um esquema que ilustra a arquitetura CISC:
+
+
+
+Esquema ilustrativo da arquitetura CISC.
+Origem
+
+A abordagem CISC surgiu de uma evolução dos processadores. Essa sigla só começou a ser usada após a criação do conceito de RISC no início da década de 1980 (a ser visto no próximo módulo), quando os processadores anteriores passaram a ser chamados de CISC de forma retroativa.
+
+Conforme a tecnologia de fabricação e a capacidade computacional evoluíam, problemas mais complexos puderam ser resolvidos pelos processadores. Para esses problemas, foram sendo criadas novas instruções específicas.
+
+
+Exemplo
+É possível adicionar uma instrução específica para multiplicar números reais em vez de realizar repetidas somas (instrução mais simples).
+
+
+Características
+
+Veja na tabela exemplos de processadores CISC, sua evolução no que diz respeito à quantidade e ao tamanho das instruções.
+
+
+Processador	Ano	Tamanho da instrução	Quantidade de instruções	Tamanho do registrador	Endereçamento
+IBM 370	1970	2 a 6 bytes	208	32 bits	R-R; R-M; M-M
+VAX11	1978	2 a 57 bytes	303	32 bits	R-R; R-M; M-M
+Intel 8008	1972	1 a 3 bytes	49	8 bits	R-R; R-M; M-M
+Intel 286	1982	2 a 5 bytes	175	16 bits	R-R; R-M; M-M
+Intel 386	1985	2 a 16 bytes	312	32 bits	R-R; R-M; M-M
+Tabela: Exemplos de processadores CISC.
+Leandro Ferreira.
+
+Múltiplo endereçamento
+
+Observando a última coluna da tabela anterior, é possível perceber o conceito principal e uma das definições mais usuais de arquitetura com abordagem CISC: diversos tipos de endereçamento.
+
+Dessa forma, temos:
+
+
+
+R-R
+
+R-M
+
+M-M
+
+Para instruções que usam registradores como entrada e saída.
+
+
+
+
+
+
+
+O princípio fundamental da abordagem CISC é a realização de operações complexas, que envolvem buscar operandos na memória principal, operar sobre eles (na ULA) e guardar o resultado já na memória.
+
+
+Nesses casos, o código de máquina é mais simples de se gerar pelo compilador, pois, geralmente, há relação direta entre uma linha de código em alto nível e uma instrução da arquitetura, veja:
+
+Plain Text
+
+
+Light Mode
+
+Copiar
+
+Na linha 1, temos a declaração da variável a. Vamos assumir que ela está alocada na memória principal em M[&a] (em que &a representa o endereço de a).
+
+Na linha 2, desejamos realizar a soma entre os valores de a e 5 e guardar o resultado, sobrescrevendo o valor da variável a para 8.
+
+No caso de uma abordagem CISC, há uma instrução que realiza exatamente esse processo. Como exemplo, na arquitetura do 386, temos a instrução ADDI, que realiza a adição de um valor imediato. Veja a instrução em Assembly:
+
+
+Assembly (NASM 2.14.02)
+
+
+Light Mode
+
+Copiar
+
+Segundo o manual do Processador 386, essa instrução leva 2 pulsos de clock (2 CLK) quando operada sobre um registrador e 7 CLK quando operada sobre um endereço de memória. Essa diferença se dá pela necessidade de buscar o operando e escrever o resultado na memória.

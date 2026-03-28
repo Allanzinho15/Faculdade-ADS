@@ -1,0 +1,151 @@
+Unidades de informação
+
+Você já comparou como são realizados os processos de comunicação entre o computador e o ser humano?
+
+As pessoas normalmente podem criar textos formados por frases, as quais, por sua vez, utilizam palavras compostas por letras (caracteres).
+
+Da mesma forma, um sistema de computação precisa usar representações simbólicas para que o processamento dos dados seja realizado corretamente e em conformidade com as expectativas de seus projetistas e usuários.
+
+Demonstraremos, a seguir, como as unidades de informação são fundamentais para a realização desse processo.
+
+O computador armazena e move os dados eletronicamente sob a forma de voltagem ou corrente elétrica. A representação dos valores elétricos é feita na forma binária; portanto, ela utiliza somente dois valores: 0 e 1. Quando os bits são agrupados em um conjunto ordenado com oito valores, temos a unidade de medida denominada byte.
+
+imagem conversa entre estudantes, aluno A: parabens pelo aniversario, ALuna B: voce lembrou!
+Você pode ver no exemplo a seguir várias sequências de 8 bits, que formam o byte. Essas sequências são entendidas pelo computador e decodificadas, dando origem ao caractere.
+
+3 sequências de 8 bits, sequencia A 0 0 0 0 0 1 1 0, seqeuncia B 0 1 0 0 0 0 0 1, sequencia C 0 0 1 0 1 0 1 0, cada unidade 0 e 1 corresponde a 1 bit, o conjunto de 8 bits forma o byte
+Por isso, a menor unidade de informação possível em um sistema de computação é o bit.
+
+Vamos entender como é feita a conversão entre bit e byte?
+
+Sabemos que 8 bits = 1 byte. Então, como convertemos 512 bits em byte?
+
+Fazendo uma regra de três simples:
+
+8 bits ⇔ 1 byte
+
+x bits ⇔ x
+
+x = 512 ÷ 8 = 64 bytes
+
+
+Desse modo, a regra geral para a conversão é:
+
+De bit para byte
+Dividimos o valor por 8.
+
+De byte para bit
+Multiplicamos o valor por 8.
+
+Apontaremos, a seguir, quatro conjuntos formados nas unidades de informação:
+
+Um conjunto ordenado de bytes, que representa uma informação útil para os computadores, constitui uma palavra.
+Um conjunto estruturado de palavras forma um registro.
+Um conjunto organizado de registros forma um arquivo.
+Um conjunto organizado de arquivos forma um banco de dados.
+Múltiplos e submúltiplos
+Da mesma forma que fazemos no nosso cotidiano, podemos empregar múltiplos e submúltiplos para grandezas nos sistemas de unidades a fim de exprimir valores de grandeza maiores ou menores que uma unidade.
+
+Por exemplo, para medir a grandeza comprimento, é usada a unidade de base metro, conforme o no Sistema Internacional de Medidas. Veja o exemplo a seguir:
+
+Medido na Via Dutra, o comprimento entre Rio de Janeiro e São Paulo é de aproximadamente 434.000 metros.
+
+Esse valor pode ser abreviado usando o prefixo quilo, que é múltiplo do metro no fator de 10³ (1.000). Assim, dizemos que 434 km (quilômetros) é igual a 434 × 1.000 = 434.000 metros.
+
+trajeto do Rio de Janeiro para São Paulo: google maps
+Mapa indicando a distância entre Rio de Janeiro e São Paulo.
+
+Também podemos utilizar prefixos de múltiplos e submúltiplos das unidades bit e byte. Em geral, a abreviação simbólica do bit é realizada com o “b” minúsculo e a do byte, com o “B” maiúsculo.
+
+Observe estas representações:
+
+4.000 Kb (4.000 × 103 = 4.000.000 bits)
+567 MB (567 × 106 = 567.000.000 bytes)
+
+report_problem
+Atenção!
+No exemplo, a representação dos múltiplos e submúltiplos foi realizada com uma base numérica decimal, que possui 10 números (de 0 a 9), já que a utilizamos normalmente no nosso dia a dia. Entretanto, seus resultados expressam valores aproximados (e não exatos) da quantidade de bits ou bytes medidos em um computador.
+
+Como vimos, o bit é a menor unidade de informação dos computadores atuais. Como só possui dois valores possíveis (0 e 1), ele é representado pela base numérica binária.
+
+Se reescrevermos o exemplo anterior representando os valores decorrentes do cálculo com a base 2, obteremos:
+
+4.000 Kb (4.000 x 210 = 4.096.000 bit)
+567 MB (567 x 220 = 594.542.592 bytes)
+
+A tabela a seguir mostra alguns prefixos empregados na computação a fim de abreviar valores medidos em uma unidade base (por exemplo, bit ou byte) para valores em potências de 2 (binário) e de 10 (decimal):
+
+Unidade	Valor em potência de 2	Valor unitário	Valor em potência de 10	Valor unitário
+1K(quilo)	210	1024	103	1.000
+1M(mega)	220	1.048.576	106	1.000.000
+1G(giga)	230	1.073.741.824	109	1.000.000.000
+1T(tera)	240	1.099.511.627.776	1012	1.000.000.000.000
+Fabio Henrique Silva.
+
+Esses são os prefixos tipicamente adotados na computação com unidades de medida para exprimir valores de grandezas muito maiores ou menores que aqueles da unidade usada sem um prefixo.
+
+Os valores unitários podem ser obtidos a partir da notação dos múltiplos da grandeza em:
+
+Potência de 2
+Potência de 10
+Expressam os valores (em decimal) que, de fato, são manipulados pelo computador em binário.
+
+Suponha que você queira mudar o prefixo do valor a seguir:
+
+52,9 GB ⇒ TB ?
+
+Usando como referência os valores mostrados na tabela anterior, veja uma maneira de realizar isso:
+
+filter_1
+Escrever os prefixos em sua sequência (B, KB, MB etc.).
+
+filter_2
+Colocar o valor (no caso, 52,9) embaixo da unidade com o prefixo dado. Esse será seu ponto de partida ou ponto de referência relacionado ao novo valor obtido.
+
+filter_3
+Desenhar uma seta no sentido do prefixo pretendido. Do lado esquerdo dela, fica o operador matemático "+"; do direito, o sinal "−". O sinal resultante fica ao lado do valor do expoente da base utilizada.
+
+
+
+
+Assim, você terá:
+
+tablea B KB MB GB TB (...), 52,9 GB -assando para TB, de mais para menos , 10 elevado a menos 3, 2 elevado a menos 10
+Conforme os valores mostrados na tabela anterior, observemos sua aplicação com múltiplos nas potências de 10 e de 2:
+
+Potência de 10
+52,9 × 10−3 = 0,0529 TB
+
+Isso ocorrerá se considerarmos os múltiplos em potência de 10.
+
+Potência de 2
+52,9 × 2−10 TB ∼ 0,05166
+
+Como o cálculo do valor na potência de 2 não é tão “trivial” quanto o cálculo do valor na potência de 10, uma sugestão é deixá-lo no formato de notação científica. Se, ainda assim, você quiser realizá-lo, ele será de aproximadamente 0,05166 TB.
+
+Entre dois prefixos de unidades de medida vizinhos tipicamente utilizados na computação, o expoente da base decimal varia, em geral, de 3 em 3 (ou de 10 em 10, se a base for binária).
+
+Assim, por exemplo, entre giga (G) e mega (M), o valor para a potência de 10 é 103, e para a potência de 2 é 210.
+
+Do mesmo modo, entre tera (T) e giga (G), permanecem os valores para as potências de 10 e 2: 103 e 210, respectivamente.
+
+Já entre giga (G) e quilo (K), registramos o seguinte valor: 103 × 103 = 106, ou 210 × 210 = 220.
+
+Esta imagem ilustra alguns exemplos:
+
+tabela Byte, KByte, MegaByte, GigaByte e TeraByte, byte para kbyte é 10 a terceira e 2 a decima, byte para megabyte é 10 a sexta e 2 a 20, byte para megabyte é 10 a nona e 2 a 30, nyte para terabyte é 10 a 12 e 2 a 40,
+                                kbyte para gigabyte é 10 a sexta e 2 a 20, megabyte para gigabyte é 10 a terceira e 2 a decima, gigabyte para terabyte é 10 a terceira e 2 a decima
+Suponhamos que você deseje novamente mudar o prefixo do valor a seguir:
+
+143 GB ⇒ KB ?
+
+Para isso, você deverá fazer o seguinte:
+
+tabela Byte, KByte, MegaByte, GigaByte e TeraByte, votando de 143 gigabyte para kbyte, do menos para o mais, 10 a sexta sobre 2 e 2 20
+Vejamos, por fim, os cálculos nas potências de 10 e de 2:
+
+Potência de 10
+143 × 106 = 143.000.000 KB
+
+Potência de 2
+143 × 220 = 149.946.368 KB

@@ -1,0 +1,60 @@
+Sistemas de numeração
+
+Bases de numeração
+Os fundamentos dos sistemas de numeração posicionais são indispensáveis para o entendimento da formação dos números nas chamadas bases de numeração. Daremos um enfoque às seguintes bases:
+
+Decimal
+Base numérica mais utilizada no nosso cotidiano.
+
+Binária
+Base usada pelos computadores no processamento de dados.
+
+Octal e hexadecimal
+Múltiplos da base binária.
+
+Para entendermos o funcionamento dos sistemas de numeração, precisaremos apresentá-los.
+
+Posicional
+Cada algarismo tem um valor relativo (diferente) de acordo com sua posição no número. Observe:
+
+ILUSTRAÇÃO SISTEMA DECIMAL, 444, da direita para esquerda, o primeiro 4 vale 4, o segundo vale 40 e o terceiro vale 400
+Neste exemplo, à medida que os algarismos são acrescentados à esquerda, o número cresce de valor em grupos de 10.
+
+Uma base é a quantidade de símbolos de um sistema posicional. Seu número indica o total de símbolos dela.
+
+Veja o exemplo a seguir:
+
+Base 10 (decimal): 0, 1, 2, 3, 4, 5, 6, 7, 8, 9.
+Base 2 (binária): 0, 1.
+Base 8 (octal): 0, 1, 2, 3, 4, 5, 6, 7.
+Base 16 (hexadecimal): 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.
+Cada algarismo de um número demonstra o valor de sua posição em potências da base. A unidade de uma posição de um sistema de base "Z" tem valor equivalente a "Z" unidades da posição imediata à direita.
+
+Observe:
+
+36, 3 vezes 10 a primeira, onde 10 é a base e 1 a posição, + 6 vezes 10 a 0, onde 10 é a base e 0 a posição. Todo número cresce de valor da direita para esquerda
+Em qualquer sistema posicional, o número é formado da seguinte maneira:
+
+Da direita para a esquerda
+Cresce a partir do valor 0 (seguido do 1 até o último algarismo válido).
+
+Exemplo: bases 3 (algarismos 0 a 2) e 10 (algarismos 0 a 9).
+
+Retorna a 0
+Quando a contagem chega ao último algarismo válido de uma posição, ela retorna a 0 e cresce uma unidade para a esquerda.
+
+Exemplo: base 10 — cresce de 0 a 9. Depois, 10, 11, …, 19 — Na direita, retorna a 0 e cresce 1 para a esquerda: 20.
+
+Os movimentos descritos neste exemplo se repetem infinitamente.
+
+Não posicional
+Todo algarismo tem valor fixo independentemente de sua posição no número.
+
+No sistema de numeração romano, o algarismo X vale sempre 10:
+
+
+XXX = 30
+
+XL = 40
+
+LX = 60

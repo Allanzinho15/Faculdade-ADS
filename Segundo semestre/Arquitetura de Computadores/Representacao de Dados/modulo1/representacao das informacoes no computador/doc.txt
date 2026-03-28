@@ -1,0 +1,24 @@
+Representação das informações no computador
+
+O primeiro passo indispensável para evoluir em qualquer área de atuação pretendida no ramo da computação é entender como um computador funciona, verificando como as informações são representadas dentro dele.
+
+Tudo o que é adequado para processamento com computadores digitais será representado (codificado) como uma sequência de 0s e 1s, sejam dados numéricos, texto, arquivos executáveis, sejam imagens, áudio ou vídeo.
+
+(SEDGEWICK; WAYNE, 2017, p. 874, tradução nossa)
+Por exemplo, para cada tipo de dado, serão amplamente utilizados os seguintes métodos padrão de codificação:
+
+computer
+Padrão ASCII
+O padrão ASCII pode associar um número binário de 7 bits a cada um dos 128 caracteres distintos possíveis.
+
+ilustração ASCII
+computer
+Formato de arquivo MP3
+O formato de arquivo MP3 especifica o modo de codificar um arquivo de áudio como uma sequência de 0s e 1s.
+
+ilustração formato MP3
+computer
+Formato de imagem .png
+O formato de imagem .png especifica os pixels das imagens digitais como uma sequência de 0s e 1s.
+
+ilustração formato png

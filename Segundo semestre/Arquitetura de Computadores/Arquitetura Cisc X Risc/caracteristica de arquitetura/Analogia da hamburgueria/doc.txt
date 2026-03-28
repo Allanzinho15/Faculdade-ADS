@@ -1,0 +1,154 @@
+Analogia da hamburgueria
+Arquitetura CISC – Na analogia da hamburgueria
+
+
+
+Analogia da hamburgueria
+
+Para facilitar o entendimento da abordagem CISC, usaremos uma analogia com uma hamburgueria.
+
+Na primeira loja (CISC), temos uma grande quantidade de lanches possíveis, cada um é identificado por um número.
+
+
+Originalmente, essa loja só vendia hambúrguer (1) ou cheeseburger (2) e, por simplicidade, cada pedido era processado por completo antes de o próximo ser iniciado.
+
+
+
+Hambúrguer (1)
+
+
+Cheeseburger (2)
+
+O mesmo funcionário desempenhava diferentes funções:
+
+
+Anotar o pedido
+
+
+Busca de Instrução.
+
+
+Montar os sanduíches
+
+
+1 ou 2 (Execução).
+
+
+Entregar o pedido no balcão
+
+
+WriteBack ou Escrita de Registrador.
+
+
+Com a evolução da loja, o pedido ganhou acompanhamentos (batata, refrigerante, milk-shake, tortinhas etc.) e passou a ter duas opções de entrega:
+
+
+
+No balcão
+
+
+Registrador.
+
+
+
+Em casa
+
+
+Escrita em memória.
+
+
+Por conta desse incremento, mais de cem tipos de lanches podiam ser pedidos.
+
+Agora, um passo adicional era necessário após o recebimento do pedido (BI – Buscar Instrução): descobrir a receita do sanduíche escolhido, pois ninguém conseguia decorar tantas combinações e separar os ingredientes do pedido (Decodificação de Instrução e Busca de Operandos).
+
+Com isso, dois novos problemas surgiram:
+
+
+
+Espaço
+
+As receitas e os novos ingredientes ocupavam muito espaço na loja, diminuindo a extensão do balcão (registradores).
+
+
+Tempo
+
+Por vezes, a falta de algum ingrediente fazia com que o funcionário fosse buscá-lo no mercado (acesso à memória para buscar um operando), aumentando a espera pelo pedido.
+
+Da mesma forma, a abordagem CISC necessita de um circuito complexo de Unidade de Controle para decodificar as instruções (microprograma) que ocupa parte do processador, limitando o número de registradores.
+
+Além disso, dependendo da quantidade de acessos à memória, o tempo de execução das instruções varia muito (receber o pedido, buscar ingrediente no mercado, entregar o pedido em casa).
+
+A primeira solução para agilizar a produção na hamburgueria foi contratar cinco funcionários especializados, um para cada atividade. Veja:
+
+
+
+Processar pedidos no caixa
+
+
+BI - Buscar Instrução.
+
+
+
+Separar ingredientes e receita
+
+
+DI - Decodificar Instrução.
+
+
+
+Montar os lanches
+
+
+EXE - Execução.
+
+
+
+Entregar no balcão
+
+
+WB - WriteBack.
+
+
+
+Entregar em domicílio
+
+
+AM - Acesso à Memória.
+
+
+Com cada funcionário realizando uma atividade específica, bastava passar a tarefa processada adiante para que a próxima pudesse ser realizada, como em uma linha de montagem. Muito satisfeito com o resultado, o dono da loja resolveu contratar mais funcionários especializados para a linha de montagem, que chegava a ter 31 etapas nos pedidos mais complexos.
+
+
+Comentário
+Essa implementação é feita nos processadores (pipeline) de forma similar. Uma das características dos computadores CISC é a complexidade de seus pipelines. Alguns chegaram a ter 31 estágios de pipeline.
+
+
+O pipeline do processador
+
+
+Veja exemplos de estágios de pipeline nas microarquiteturas da Intel:
+
+Microarquitetura	Estágios de Pipeline
+P5 (Pentium)	5
+P6 (Pentium 3)	14
+P6 (Pentium Pro)	14
+NetBurst (Willamette)	20
+NetBurst (Northwood)	20
+NetBurst (Prescott)	31
+NetBurst (Cedar Mill)	31
+Core	14
+Broadwell	14 a 19
+Sandy Bridge	14
+Silvermont	14 a 17
+Haswell	14 a 19
+Skylake	14 a 19
+Kabylake	14 a 19
+Tabela: Exemplos de estágios de pipeline.
+Leandro Ferreira.
+
+Diante do exemplo, podemos dizer que todos os problemas da hamburgueria acabaram?
+
+
+
+Resposta
+

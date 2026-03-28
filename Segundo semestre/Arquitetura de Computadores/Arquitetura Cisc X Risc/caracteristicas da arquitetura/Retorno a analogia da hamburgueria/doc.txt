@@ -1,0 +1,60 @@
+Retorno à analogia da hamburgueria
+
+Analisaremos agora a rede de hambúrgueres RISC.
+
+
+O dono da empresa resolveu contratar apenas cinco funcionários para sua linha de montagem:
+
+
+
+Processador de pedidos no caixa
+
+
+BI - Buscar Instrução.
+
+
+
+Preparador
+
+
+DI - Decodificar Instrução.
+
+
+
+Montador
+
+
+EXE - Execução.
+
+
+
+Entregador
+
+
+AM - Acesso à Memória.
+
+
+
+Balconista
+
+
+WB - WriteBack.
+
+
+Os funcionários dessa loja devem saber montar pequenas partes de pedidos: montar um hambúrguer, uma batata, um refrigerante etc.
+
+Os pedidos completos são feitos em uma série de pedidos menores. Por exemplo:
+
+
+
+Além disso, existe um pedido especial que tem a responsabilidade de buscar ingredientes no mercado (LOAD) e um funcionário apenas para fazer entregas em domicílio (STORE). Nesse caso, o conjunto de pedidos menores ficaria assim:
+
+
+
+Podemos perceber que, se houvesse uma série de pedidos de 1 hambúrguer apenas, teríamos uma sequência LOAD/hambúrguer/STORE. Isso seria muito ruim, pois as operações normais levam um tempo menor e fixo (um pulso de CLK), que podemos definir como 1 minuto na analogia. Já a busca de ingredientes e entrega em domicílio pode demorar vários pulsos de CLK (por exemplo, 5 minutos).
+
+Assim, o pedido de 1 hambúrguer para entrega demoraria 11 minutos, que é o tempo próximo de um pedido similar na hamburgueria CISC (10 minutos). Todavia, se for possível otimizar o conjunto de pedidos para buscar ingredientes uma única vez e fazer a entrega apenas no final, montando 10 hambúrgueres de uma vez, teremos a entrega de 10 pedidos em 20 minutos – muito melhor que os 100 minutos da CISC.
+
+
+Comentário
+Podemos perceber o fator determinante no sucesso ou no fracasso da abordagem RISC. Como vimos, o ônus de otimizar as instruções a partir do código de alto nível é do compilador, e, se for bem executado, as operações de acesso à memória serão reduzidas e as operações em registradores, priorizadas, fazendo o pipeline do processador operar bem perto do ideal (1 instrução por ciclo).

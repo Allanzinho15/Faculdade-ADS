@@ -1,0 +1,8 @@
+Lógica booleana
+Além de sabermos que um computador representa seus dados usando bits, já compreendemos como são realizadas algumas operações matemáticas, bem como a conversão de valores para outras bases numéricas responsáveis por compactar os números binários.
+
+Os valores binários seguem a lógica booleana. Nela, dois valores são referidos como verdadeiro e falso, sim e não ou 0 e 1. Não importa a escolha feita para essa referência: seu conceito é o mesmo.
+
+A conexão íntima entre a lógica booleana e os circuitos que executam tarefas computacionais é um conceito fundamental na estruturação da infraestrutura computacional da qual desfrutamos atualmente.
+
+Entender essa conexão significa compreender a pergunta de Sedgewick e Wayne (2017): "Como os circuitos calculam?". Afinal, quando você passa a saber e “sentir” como é o funcionamento dos circuitos lógicos, também consegue entender a importância da representação dos valores binários 0 e 1 em outras bases numéricas.

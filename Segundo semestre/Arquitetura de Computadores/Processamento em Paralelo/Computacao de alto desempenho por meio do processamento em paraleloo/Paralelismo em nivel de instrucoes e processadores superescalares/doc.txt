@@ -1,0 +1,99 @@
+Paralelismo em nível de instruções e processadores superescalares
+Superescalar e pipeline
+
+
+
+O termo superescalar foi criado em 1987, por Agerwala e Cocke (apud STALLINGS, 2017), em função do projeto de uma máquina, cujo foco estava ligado à melhoria no desempenho da execução das instruções escalares.
+
+
+Veja a comparação:
+
+
+Superescalar
+
+
+Nesta organização, as instruções comuns (aritméticas de inteiros e pontos flutuantes), a carga do valor da memória em um registrador, o armazenamento do valor do registrador na memória e os desvios condicionais poderão ser iniciados e executados de forma independente.
+
+
+Pipeline
+
+
+Nesta técnica, o caminho executável de uma instrução é dividido em estágios discretos, permitindo ao processador efetuar várias instruções simultaneamente, contanto que apenas uma delas ocupe cada estágio durante um ciclo de relógio.
+
+
+Pipeline
+
+
+Como exemplo, vamos representar a decomposição do processamento de instruções em um pipeline de seis estágios. Presumindo que os estágios tenham a mesma duração, um pipeline de seis estágios pode reduzir o tempo de execução de 9 instruções de 54 para 14 unidades de tempo. Veja o diagrama:
+
+
+
+Comparação da execução de instruções sem e com pipeline.
+
+
+Comparação da execução de instruções sem e com pipeline.
+
+Execução de uma instrução em pipeline
+
+
+Vejamos agora esse processo passo a passo no vídeo abaixo.
+
+
+
+A VLIW depende de um compilador para determinar quais instruções emitir a qualquer ciclo de relógio, enquanto um projeto superescalar requer que um processador tome essa de­cisão. A tecnologia Hyper-Threading (HT) da Intel introduziu paralelismo ao criar dois processadores virtuais a partir de um único processador físico, dando ao sistema operacional habilitado a multiprocessador a impressão de executar em dois processadores, cada um com pouco menos da metade da velocidade do processador físico.
+
+
+Processadores vetoriais contêm uma unidade de processamento que executa cada instrução vetorial em um conjunto de dados, processando a mesma operação em cada elemento de dados. Eles dependem de pipelines profundos e altas velocidades de clock.
+
+
+Um processador matricial, também denominado processador maciçamente paralelo, contém diversas unidades de processamento que executam a mesma instrução em paralelo sobre muitos ele­mentos de dados. Esse modelo pode conter dezenas de milhares de elementos de processamento. Portanto, esses processadores são mais eficientes quando manipulam grandes conjuntos de dados.
+
+
+Veja o esquema a seguir:
+
+
+
+Organização escalar e superescalar
+
+A essência da abordagem superescalar é a possibilidade de execução independente e concorrente em pipelines diferentes, inclusive em ordem diversa daquela definida no programa.
+
+
+Pipelines profundos
+
+
+Pipelines profundos permitem que o processador realize trabalho em diversas instruções simultaneamente, de modo que muitos elementos de dados possam ser manipulados de uma só vez.
+
+
+Atenção
+O paralelismo é obtido quando as múltiplas instruções são habilitadas para estarem em diferentes estágios do pipeline no mesmo momento, diferente da organização escalar tradicional, na qual existe uma unidade funcional em um pipeline único para as operações inteiras e outra para as operações de ponto flutuante.
+
+
+Superescalar X superpipeline
+
+
+Na abordagem conhecida como superpipeline — em que múltiplos estágios do pipeline executam tarefas que necessitam de menos da metade de um ciclo de clock — é possível dobrar a velocidade do clock interno, aumentando o desempenho, ao executar duas tarefas em um ciclo de clock externo. Veja o exemplo a seguir:
+
+
+
+MIPS R4000
+
+No esquema a seguir, podemos visualizar uma comparação entre as organizações superpipeline e superescalar, tendo um pipeline comum na parte superior do diagrama que será utilizado apenas como referência:
+
+
+
+Superescalar x superpipeline
+
+No caso apresentado, o pipeline inicia a instrução e executa um estágio, ambos por ciclo de clock. Nesse exemplo, o pipeline possui quatro estágios (busca por instrução, decodificação da operação, execução da operação-quadro com linhas cruzadas e atualização do resultado).
+
+
+Note que, mesmo que várias instruções sejam executadas simultaneamente, apenas uma está no seu estágio de execução em determinado tempo.
+
+
+Na representação do superpipeline, temos execução de dois estágios de pipeline por ciclo de clock. Repare que as funções executadas em cada estágio podem ser divididas em duas partes, que não se sobrepõem, e cada uma pode ser executada na metade do ciclo de clock.
+
+
+A parte final do diagrama ilustra a implementação superescalar, em que é possível perceber a execução de duas instâncias de cada estágio em paralelo.
+
+
+Atenção
+Nesse diagrama, tanto o superpipeline como o superescalar possuem o mesmo número de instruções executadas ao mesmo tempo em determinado estado. Assim, o processador superpipeline “perde” quando comparado ao superescalar no início do programa e a cada alvo de desvio.

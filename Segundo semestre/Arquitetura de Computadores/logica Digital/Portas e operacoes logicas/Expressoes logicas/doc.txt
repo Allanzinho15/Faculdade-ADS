@@ -1,0 +1,71 @@
+Expressões lógicas
+São a representação algébrica de circuitos digitais, permitindo descrever de forma clara e sistemática como sinais de entrada (variáveis binárias) se combinam para gerar uma saída única. Ao traduzir portas e conexões em operadores como AND, OR e NOT, facilitamos a análise, o projeto e a manutenção de sistemas digitais. Dominar essa notação é fundamental para prever o comportamento de circuitos, identificar falhas e propor modificações, além de servir de ponte entre a teoria da álgebra booleana e sua aplicação prática em hardware e software.
+
+ 
+
+Neste vídeo, você vai entender como expressões lógicas traduzem o funcionamento de circuitos digitais para uma forma algébrica.
+
+
+
+Como você descobriria a lógica de saída de um circuito que nunca viu antes?
+
+ 
+
+Imagine-se como um engenheiro de TI que encontra uma "caixa preta" de circuitos sem documentação: por quais entradas você começaria a testar para entender como cada combinação acende ou apaga a saída? 
+ 
+
+Em muitos casos, a interpretação de um circuito digital exige uma análise aprofundada e meticulosa sobre o circuito com o objetivo de conhecer o seu funcionamento, ou mesmo para analisar situações de criação, falha, expansão e alterações, entre outras possibilidades.
+
+Nesse contexto, para documentar e analisar circuitos de modo claro, representamos sua lógica por expressões algébricas — as expressões lógicas.
+
+
+Também denominadas como funções lógicas, podem ser definidas da mesma forma que uma expressão algébrica, isto é, com o uso de sinais de entrada (variáveis lógicas — binárias), ligados por conectivos lógicos (símbolos que representarão uma operação lógica, com parênteses, opcionalmente) e também com o sinal de igualdade (=), produzindo, como resultado, um único sinal de saída.
+
+
+Pense em uma expressão lógica como uma receita: cada variável é um ingrediente e cada operador, o modo de preparo.
+
+ 
+
+Desse modo, podemos afirmar que todo circuito lógico executará uma expressão booleana. Por exemplo:
+
+
+X = A + B · C
+X = A + B · C
+O exemplo X é uma expressão lógica e, como uma função lógica, somente poderá possuir como valor 0 ou 1. O seu resultado dependerá dos valores das variáveis A, B e C e das operações lógicas OR, NOT e AND, nesta expressão apresentada.
+
+
+Vamos praticar!
+
+Vamos supor que, a partir de um circuito lógico, devemos construir a sua respectiva expressão lógica. Seja o circuito:
+
+
+
+
+Circuito lógico.
+Como sugestão, utilizaremos a decomposição deste circuito em partes (blocos) a partir da sua saída (S).
+
+
+
+
+Decomposição do circuito.
+Dessa maneira, analisaremos o circuito nas duas seguintes partes:
+
+
+
+
+Decomposição do circuito.
+Agora, para obter a expressão final deste circuito, vamos substituir a expressão S1 em função de A e B. Como temos a seguinte fórmula:
+
+
+S1 = A · B
+
+S = S1 + C
+
+S1 = A · B
+
+S = S1 + C
+
+Temos, então:
+
+
+S1 = (A · B) + C

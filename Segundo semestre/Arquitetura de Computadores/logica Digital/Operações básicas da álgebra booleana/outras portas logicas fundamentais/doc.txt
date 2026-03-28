@@ -1,0 +1,168 @@
+Outras portas lógicas fundamentais
+Além das portas lógicas básicas, como AND e OR, existem outras importantes na construção de circuitos digitais: as portas NOR e NAND, que combinam funções lógicas com a negação, permitindo resultados mais complexos e versáteis. A seguir, você verá como essas portas funcionam, como são representadas nos circuitos e a lógica por trás de seu comportamento. Trouxemos alguns exemplos que ajudarão a entender seu papel no processamento de sinais binários em dispositivos eletrônicos.
+
+ 
+
+Neste vídeo, conheça as portas lógicas NAND e NOR, suas representações em circuitos, o funcionamento lógico por trás de cada uma e suas aplicações práticas em dispositivos eletrônicos.
+
+
+
+A porta NOR (Não OU)
+
+Para ampliar o nosso estudo sobre as portas lógicas, é importante perceber que o inversor, ou a função NOT (NÃO), pode ser aplicada tanto em variáveis como em portas lógicas inteiras, assim invertendo toda sua saída.
+
+Seria possível, portanto, concatenar a saída de uma porta lógica com a entrada do inversor, conforme apresentado na imagem a seguir, produzindo a inversão de todos os seus valores de saída.
+
+Porém, podemos construir a sua representação de uma forma diferente, criando a inversão em toda porta lógica de modo bastante peculiar — com a identificação de um pequeno círculo na sua saída, indicando a inversão. Veja a imagem a seguir:
+
+
+
+
+A porta NOR (Não OU).
+Você pode perceber que o símbolo da porta NOR de duas entradas representado na imagem a seguir é o mesmo símbolo utilizado para representar a porta OR, com apenas uma diferença — a inclusão de um pequeno círculo na sua saída, que representa a inversão da operação OR.
+
+A expressão que representa a porta NOR é:
+
+
+X = A + B
+X = A + B
+Note que a barra que indica a negação/inversão será estendida a todas as variáveis de entrada, neste exemplo com duas variáveis:
+
+
+
+
+A tabela-verdade a seguir mostra que a saída da porta NOR é exatamente o inverso da saída da porta OR:
+
+
+
+Ao analisar as combinações possíveis com duas entradas, levando em consideração os valores para as variáveis de entrada A e B, somente produzirá uma saída 1 (VERDADEIRO) se — e somente se — todas as entradas sejam 0 (FALSO) e, para as demais condições, produzirá como resultado na saída igual a 0 (FALSO).
+
+Utilizando uma adaptação do cenário descrito na porta OR, podemos ter o seguinte:
+
+
+Variável A, B e X
+
+Nós podemos representar a aplicação desta função como: a lâmpada poderá estar apagada em duas situações distintas, se a porta do veículo estiver aberta e o interruptor da lâmpada for acionado. Neste cenário, vamos representar cada uma dessas possibilidades: a variável A representará a abertura da porta, a variável B representará o interruptor e a variável X representará o estado da lâmpada; se está acesa ou apagada.
+
+
+Igual a 0 e igual a 1
+
+Ao analisarmos as combinações possíveis, levando em consideração os valores para a variável A, será igual a 0 se a porta estiver fechada e será igual a 1 se a porta estiver aberta. Em relação à variável B, temos o valor igual a 0 para o interruptor ativado e 1 para o interruptor desativado e, por fim, a variável X possuirá o valor 0 para a lâmpada apagada e 1 para a lâmpada acesa.
+
+
+A porta NAND (Não E)
+
+O símbolo da porta NAND de duas entradas, representado na imagem a seguir, é o mesmo símbolo utilizado para representá-la, com apenas uma diferença – a inclusão de um pequeno círculo na sua saída, que representa a inversão da operação AND.
+
+A expressão que representa a porta NAND é:
+
+
+X = A · B
+X = A · B
+Em que a barra sobre o nome da variável representa a operação de inversão e a expressão é lida como:
+
+
+X é igual a NOT A ou X é igual a A negado ou X é igual ao inverso de A ou X é igual ao complemento de A.
+
+
+Veja o símbolo e o circuito a seguir:
+
+
+
+
+A seguinte A tabela-verdade mostra que a saída da porta NAND é exatamente o inverso da saída da porta AND:
+
+
+
+Ao analisar as combinações possíveis, levando em consideração os valores para as variáveis de entrada A e B, somente produzirá uma saída 0 (FALSO) se — e somente se — todas as entradas forem 1 (VERDADEIRO) e, para as demais condições, produzirá como resultado na saída igual a 1 (VERDADEIRO).
+
+Conforme apresentado anteriormente, veja o cenário a seguir.
+
+
+
+Um semáforo para bicicletas e um sensor de movimento para a passagem de pedestres.
+
+Assim, o sinal verde (liberando a passagem para ciclistas) estará ligado (0, FALSO) se duas condições forem atendidas: um botão seja acionado (1, VERDADEIRO) e o sensor de movimento não detecte a existência de um pedestre naquele momento (1, VERDADEIRO). Para as demais possibilidades, o semáforo estará com o farol vermelho acionado (1, VERDADEIRO), bloqueando o tráfego de ciclistas.
+
+
+Vamos praticar!
+
+Seja A = 1 0 0 1 0 e B = 1 1 1 1 0, calcule X = A · B. Uma resposta interessante para este caso é a realização de duas operações lógicas em sequência. Primeiro, realiza-se a operação AND e, em seguida, obtém-se o inverso do resultado, produzindo o valor final para uma operação NAND.
+
+Pela tabela-verdade da porta AND, temos:
+
+
+
+O resultado parcial: L = 10010. Invertendo os bits de L, usando a Tabela Verdade da porta NOT:
+1 0 0 1 0 = T = A · B
+0 1 1 0 1 = T = A · B 
+
+Resultado: X = T = A · B = 0 1 1 0 1.
+
+
+Resolução da expressão booleana
+
+Para entender a lógica da situação apresentada, assista ao vídeo a seguir!
+
+
+
+A porta XOR (Ou exclusivo)
+
+A porta XOR que é uma abreviação do termo exclusive or, poderá ser considerada como um caso particular da função OR.
+
+Neste sentido, a porta XOR produzirá um resultado igual a 1 (VERDADEIRO), se pelo menos um dos valores das entradas for diferente dos demais (exclusividade de valor da variável), isto é, a porta produzirá o resultado 0 (FALSO) se — e somente se — todos os valores das entradas forem iguais, conforme é apresentado na tabela-verdade a seguir:
+
+
+
+A expressão que representa a porta XOR é:
+
+
+X = A ⊕ B
+X = A ⊕ B
+E seu símbolo fica da seguinte forma:
+
+
+
+
+Símbolo de uma Porta XOR.
+Para ilustrar a sua aplicação, vamos utilizar o seguinte cenário: ao se acionar um motor elétrico de um equipamento por dois botões distintos em dois locais diferentes. O motor somente será acionado se — e somente se — um dos botões for acionado (valor igual a 1, VERDADEIRO). Para os demais casos, o botão não fará a atuação do motor (valor igual a 0, FALSO), isto é, se ambos os botões não forem acionados ou ambos forem acionados ao mesmo instante, o equipamento não será ligado. Assim, podemos, neste exemplo, utilizar uma função XOR.
+
+
+Vamos praticar!
+
+Seja A = 1 e B = 0, calcule o valor de X, quando X = A ⊕ B. Analisando a tabela-verdade da porta XOR, temos:
+
+
+
+Podemos verificar que:
+
+
+A = 1 ⊕ B = 0 ou 0 ⊕ 1 = 1
+A = 1 ⊕ B = 0 ou 0 ⊕ 1 = 1
+O valor de X = 1, pois 0 xor 1 = 1.
+
+
+A porta XNOR (coincidência)
+
+A expressão que representa a porta XNOR é:
+
+
+X = A ⊙ B
+X = A ⊙ B
+A tabela-verdade da porta XNOR fica da seguinte forma:
+
+
+
+E o símbolo a seguir:
+
+
+
+
+Símbolo de uma Porta XNOR.
+Poderíamos citar um exemplo que negue a condição definida pela função XOR. Para ilustrar a sua aplicação, veja o seguinte cenário.
+
+
+
+Ao se acionar uma porta rotatória em um banco através de dois botões distintos, localizados nos dois lados da porta. A porta será liberada se — e somente se — um dos botões for acionado (valor igual a 1, VERDADEIRO).
+
+Para os demais casos, ele manterá a porta bloqueada (valor igual a 0, FALSO), isto é, se ambos os botões não forem acionados ou ambos forem acionados ao mesmo instante. Assim, podemos, neste exemplo, utilizar uma função XNOR.
