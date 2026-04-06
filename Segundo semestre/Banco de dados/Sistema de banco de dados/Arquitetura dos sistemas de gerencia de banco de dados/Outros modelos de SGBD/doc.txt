@@ -1,0 +1,125 @@
+Outros modelos de SGBD
+No ranking de popularidade dos SGBD, disponibilizado pelo DB-Engines em seu site, destacam-se entre os que adotam o modelo relacional: Oracle, MySQL, Microsoft SQL Server, PostgreSQL e IBM DB2.
+
+
+Cabe observar que esse ranking não se trata exclusivamente de SGBD do modelo relacional de dados. Os próprios SGBD relacionais, mencionados como líderes de mercado, são classificados no ranking como “multimodelos”, pois implementam funcionalidades que vão além do modelo relacional. Veja!
+
+
+Banco de Dados 
+ 	Relacional 
+ 	Documentos 
+ 	Grafos 
+ 	RDF 
+ 
+Oracle	X	X	X	X
+MySQL	X	X	 	 
+SQL Server	X	X	X	 
+PostgreSQL	X	X	 	 
+IBM DB2	X	X	 	X
+Ranking de multimodelos
+Tanaka, 2018, s.p.
+
+O ranking é atualizado mensalmente e você pode saber mais sobre bancos de dados acessando o site db-engines.com.
+
+
+Assista ao vídeo a seguir, que apresenta outros modelos de SGBD.
+
+
+
+Banco de dados não relacionais
+
+Não resta dúvida de que o modelo relacional se firmou no mundo corporativo, sendo utilizado na grande maioria dos sistemas de informação empresariais pela sua popularidade e pela robustez dos produtos disponíveis ao longo de décadas de desenvolvimento, bem como pela padronização e pelo uso da linguagem de consulta e manipulação de dados SQL.
+
+
+
+Representação ilustrativa de armazenamento e manipulação de dados
+
+Entretanto, existem aplicações em sistemas de informação que requerem muito mais recursos de armazenamento e manipulação de dados do que as tabelas do modelo relacional, em especial aplicações web e de cunho científico que processam grandes quantidades de dados em formatos diversos, com as atuais tendências como big data, internet of things e data science.
+
+ 
+
+Assim, vários modelos de banco de dados não relacionais vêm surgindo no mercado, sendo denominados de NoSQL, termo traduzido como “não SQL” ou “não somente SQL” (de not only SQL).
+
+
+São, de fato, bancos de dados que não adotam o modelo relacional de dados e, portanto, não usam a linguagem SQL, embora alguns possuam implementações do comando SELECT da SQL para fins de compatibilidade de linguagem de consulta com os bancos de dados relacionais.
+
+
+Comentário
+O estudo de bancos de dados NoSQL está fora do escopo deste estudo, constituindo-se em um tema à parte pela diversidade dos seus conceitos e de suas tecnologias.
+
+É interessante, porém, conhecer a importância dessa tendência dos SGBDs, como demonstra o site DB-Engines Ranking, que apresenta mais de uma dúzia de modelos de bancos de dados NoSQL com seus principais produtos, muitos deles multimodelos.
+
+
+Multimodelos de banco de dados
+
+Listamos a seguir os multimodelos, confira!
+
+
+Chave-Valor
+
+Redis, Amazon DynamoDB, Microsoft Azure CosmosDB.
+
+
+Documentos
+
+MongoDB, Amazon DynamoDB, Microsoft Azure CosmosDB.
+
+
+Séries temporais
+
+InfluxDB, KDB+, Prometheus.
+
+
+Grafos
+
+Neo4J, Microsoft Azure CosmosDB, ArangoDB.
+
+
+Orientado a objetos
+
+InterSystems Caché. Versant Object Database, ObjectStore.
+
+
+Motores de busca
+
+Elasticsearch, Splunk, Solr.
+
+
+RDF (Resource Description Framework)
+
+Marklogic, Apache Jena, Virtuoso.
+
+
+Colunar
+
+Cassandra, HBase, Microsoft Azure CosmosDB.
+
+
+Multivalores
+
+Adabas, UniData/UniVerse, jBASE.
+
+
+XML nativo
+
+Marklogic, Oracle Berkeley DB, Virtuoso.
+
+
+Eventos
+
+Event Store, IBM DB2 Event Store, NEventStore.
+
+
+Conteúdos
+
+JackRabbit, ModeShape.
+
+
+Navegacional
+
+IMS, IDMS.
+
+
+
+
+O modelo navegacional é exatamente aquele dos primórdios dos sistemas de banco de dados, da década de 1960, antes do advento do modelo relacional, cujos produtos ainda continuam sendo utilizados, principalmente em sistemas de informação

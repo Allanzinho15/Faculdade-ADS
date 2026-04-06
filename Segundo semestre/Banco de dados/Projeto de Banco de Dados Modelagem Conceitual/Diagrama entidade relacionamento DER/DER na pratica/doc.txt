@@ -1,0 +1,55 @@
+DER na prática
+Agora que vimos os fundamentos da modelagem conceitual, vamos realizar um estudo de caso para aplicar nossos conhecimentos. Vamos modelar uma empresa de limpeza. Entenda o seu minimundo!
+
+ 
+
+A firma Serviços Domésticos presta serviços de limpeza e deseja um sistema autorizado que cuide, principalmente, de alocação dos empregados aos períodos de serviço feitos pelos clientes.
+
+ 
+
+O cliente telefona para a firma e faz um pedido de serviço. Nesse momento, a atendente verifica no cadastro se ele já é um cliente da firma; caso não seja, ela o cadastra, solicitando: CNPJ, razão social, endereço e telefone, se for pessoa jurídica, ou CPF, nome, endereço e telefone, se for pessoa física. A firma atribui um código próprio para identificar qualquer um dos seus clientes.
+
+ 
+
+O cliente telefona para a firma e faz um pedido de serviço. Nesse momento, a atendente verifica no cadastro se ele já é um cliente da firma; caso não seja, ela o cadastra, solicitando: CNPJ, razão social, endereço e telefone, se for pessoa jurídica, ou CPF, nome, endereço e telefone, se for pessoa física. A firma atribui um código próprio para identificar qualquer um dos seus clientes. Estando o cliente devidamente cadastrado, a atendente abre um bloco de pedidos e preenche um pedido de serviços, anotando: o nome do cliente, a data da abertura, a data para realização dos serviços, o local onde deverá ser realizado e uma descrição dos serviços que o cliente solicitou naquele local, com a respectiva metragem quadrada de cada um. A atendente consulta uma tabela de serviços (códigos do serviço, descrição, valor por m2, duração por m2) e anota no pedido a duração e o valor unitário e total dos serviços. Após o preenchimento do pedido, a atendente informa ao cliente o número do seu pedido, o valor total a ser pago e a duração máxima para o término dos serviços.
+
+ 
+
+Todo empregado está habilitado a executar pelo menos um tipo de serviço de limpeza e somente pode ser alocado em serviços em que está habilitado, definindo, dessa forma, “qual empregado” vai executar “qual serviço do pedido”. Um empregado realiza apenas um serviço em um pedido.
+
+ 
+
+Assista ao vídeo e veja como modelar uma empresa de limpeza por meio do nosso estudo de caso.
+
+
+
+Roteiro de prática
+
+
+Para realizarmos a modelagem conceitual a partir do mundo real, devemos seguir os seguintes passos:
+
+ 
+
+Identificar as entidades existentes.
+ 
+Definir as entidades tipo e representá-las no DER.
+ 
+Identificar as associações entre as entidades, ou seja, os seus relacionamentos.
+ 
+Definir os relacionamentos tipo e representá-los no DER.
+ 
+Estabelecer as cardinalidades dos relacionamentos.
+ 
+Definir a cardinalidade entre os relacionamentos tipo e representá-las no DER.
+ 
+Verificar se existem extensões como especialização/generalização e entidade associativa e representá-las no DER.
+ 
+Identificar e representar os atributos.
+ 
+
+Confira a DER de solução!
+
+
+
+
+Resultado DER de solução.

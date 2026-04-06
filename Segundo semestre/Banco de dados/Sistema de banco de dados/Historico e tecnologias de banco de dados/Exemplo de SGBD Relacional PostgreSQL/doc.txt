@@ -1,0 +1,91 @@
+Exemplo de SGBD Relacional: PostgreSQL
+O PostgreSQL originou-se do projeto Ingres da Universidade da Califórnia, tendo sido sucessivamente renomeado de Postgres, depois Postgres 95 e, finalmente, PostgreSQL.
+
+
+O Ingres e o Postgres originalmente usavam uma linguagem diferente da SQL, adotada pela IBM, conhecida como QueL (Query Language). Por muitos anos, a QueL persistiu nesses SGBDs em concorrência direta com a SQL da IBM, até que o ANSI (American National Standard Institute) e depois a ISO (International Standard Organization) reconheceram a SQL como a linguagem padrão para o banco de dados relacional. A partir de então, a SQL foi implementada no Postgres, passando a ser chamada de PostgreSQL.
+
+
+Neste vídeo, identificaremos as principais características do SGBD Relacional: PostgreSQL.
+
+
+
+Características básicas
+
+
+Logotipo do PostgreSQL
+
+O PostgreSQL, além de ser reconhecido como the world's most advanced open source relational database, possui uma completa documentação igualmente reconhecida como referência global para os conceitos de SGBD relacional. Não é sem razão que o PostgreSQL, por ser open source e ter licença livre, é vastamente utilizado no ensino de banco de dados, além de ser adotado comercialmente em grandes organizações ao redor do mundo.
+
+ 
+
+O PostgreSQL é um típico SGBD relacional-objeto, isto é, um SGBD cuja estrutura de dados básica é a relação (tabela), porém contempla extensões de tipos de dados e características próprias da orientação a objetos. Assim, possui suporte em grande parte ao padrão SQL e implementa extensões úteis como: consultas complexas, gatilhos (triggers), visões materializadas atualizáveis, controle de concorrência multiversionado. Além disso, pode ser estendido de muitas formas, por exemplo, gerando:
+
+
+novos tipos de dados;
+funções genéricas e agregadas;
+operadores;
+métodos de indexação;
+linguagens procedurais.
+
+Em jargão de sistemas, o PostgreSQL usa um modelo de computação cliente/servidor, assim como a maioria dos SGBD relacionais empresariais. Uma sessão PostgreSQL consiste dos seguintes processos cooperativos (programas):
+
+
+Back end
+
+Um processo servidor (back end), responsável por gerenciar os arquivos do banco de dados, aceitar conexões por aplicações clientes e executar ações sobre o SBD em nome dos clientes. O programa servidor é chamado postgres.
+
+
+Front end
+
+As aplicações clientes de usuários (front end) que desejam executar operações no banco de dados. Aplicações clientes podem ser diversas em natureza, como uma ferramenta orientada a texto, uma aplicação gráfica, um servidor web que acessa o banco de dados para exibir páginas web, ou uma ferramenta especializada de manutenção. Algumas aplicações clientes são fornecidas com a distribuição PostgreSQL (psql, pgadmin).
+
+
+
+
+O PostgreSQL roda em todos os sistemas operacionais importantes, incluindo Linux, UNIX (AIX, BSD, HP-UX, SGI IRIX, Mac OS X, Solaris, Tru64) e Windows. Possui todas as propriedades ACID das transações (atomicidade, consistência, isolamento e durabilidade) e tem completo suporte para chaves estrangeiras, junções, visões, funções, triggers, e procedimentos armazenados em múltiplas linguagens de programação, incluindo Java, Perl, Python, Ruby, Tcl, C/C++, e sua própria PL/pgSQL, similar à PL/SQL do Oracle.
+
+
+Características avançadas
+
+Como banco de dados de classe empresarial, PostgreSQL possui características sofisticadas como controle de concorrência multiversão (multi version concurrency control), recuperação point in time recovery (PiTR), tablespaces, replicação assíncrona, transações aninhadas (savepoints), on-line/hot backups, um sofisticado planejador/otimizador de consultas, e write ahead logging (WAL) para tolerância a falhas.
+
+
+
+Representação ilustrativa de gerenciamento de banco de dados
+
+O PostgreSQL é altamente escalável tanto na quantidade de dados que pode gerenciar como no número de usuários concorrentes que pode acomodar. Existem sistemas PostgreSQL em ambientes de produção que gerenciam centenas de usuários simultâneos com dezenas de terabytes de dados armazenados.
+
+ 
+
+Além de possuir um catálogo de sistema totalmente relacional, capaz de suportar múltiplos schemas por database, o catálogo do PostgreSQL é também acessível através do information schema, um conjunto de visões de metadados definido no padrão SQL.
+
+
+Comentário
+PostgreSQL suporta índices compostos, parciais e funcionais que podem usar seus métodos de armazenamento B-tree, R-tree, hash ou GiST. Este último é um sofisticado framework que serve de base para muitos projetos públicos que usam PostgreSQL, como o OpenFTS (Open Source Full Text Search engine), que provê indexação online de dados e ranking de relevância para pesquisa em bancos de dados, e o PostGIS, um projeto que adiciona suporte para objetos geográficos, permitindo seu uso como banco de dados espacial para Sistemas Geográficos de Informação.
+
+
+Veja, agora, outras características avançadas do PostgreSQL!
+
+
+Herança de tabelas
+
+Coloca um "sabor" orientado a objeto na criação de tabelas, permitindo a projetistas de banco de dados derivar novas tabelas de outras tabelas, tratando-as como classe base. Esse esquema suporta tanto herança simples como múltipla.
+
+
+Sistema de regras
+
+Também chamado de sistema de reescrita de consultas, permite ao projetista de banco de dados criar regras que identificam operações específicas para uma dada tabela ou visão e dinamicamente transformá-las em operações alternativas quando são processadas (cláusula INSTEAD OF).
+
+
+Sistema de eventos
+
+Sistema de comunicação interprocessos em que mensagens e eventos podem ser transmitidos entre clientes usando os comandos LISTEN e NOTIFY, permitindo tanto comunicação simples peer to peer como avançadas coordenações entre eventos de banco de dados. Clientes PostgreSQL podem monitorar eventos de banco de dados, como atualizações, inserções e exclusões em tabelas, enquanto eles acontecem.
+
+
+
+
+O código fonte do PostgreSQL é disponível sob a licença open source BSD. Essa licença dá a liberdade de usar, modificar e distribuir o PostgreSQL da forma que se desejar, com código aberto ou fechado. Quaisquer modificações, melhoramentos ou mudanças que você faça serão seus para fazer o que quiser. Por isso, o PostgreSQL não é somente um poderoso SGBD capaz de rodar o negócio da empresa. Também é uma plataforma de desenvolvimento sobre a qual se pode desenvolver produtos de software in-house que requeiram um suporte adequado a banco de dados.
+
+
+Curiosidade
+Com a grande aceitação do PostgreSQL no mercado, desde 2004, um grupo de contribuidores do seu desenvolvimento fundou a empresa Enterprise DB, que fornece uma versão empresarial de mesmo nome, com consideráveis extensões ao PostgreSQL

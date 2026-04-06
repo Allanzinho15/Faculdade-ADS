@@ -1,0 +1,35 @@
+Modelagem entidade relacionamento na prática
+Agora que estudamos com mais detalhes a modelagem das entidades e dos relacionamentos, faremos o estudo de caso da TV a cabo. Entenda seu minimundo a seguir!
+
+ 
+
+Uma empresa de TV a cabo deseja automatizar seu serviço de cobrança. Para isso, todos os requisitos a seguir devem ser preenchidos:
+
+ 
+
+Confira, neste vídeo, o estudo de caso sobre uma TV a cabo que deseja automatizar o serviço de cobrança a partir da modelagem das entidades e dos relacionamentos.
+
+
+
+Roteiro de prática
+
+
+Para resolver um estudo de caso de modelagem a partir de modelo descritivo, no minimundo do enunciado você deve:
+
+ 
+
+Identificar no modelo descritivo as entidades tipo e representá-las no DER.
+ 
+Identificar no modelo descritivo os relacionamentos tipo e representá-los no DER.
+ 
+Estabelecer as cardinalidades dos relacionamentos tipo e representá-las no DER.
+ 
+Modelar os atributos.
+ 
+
+Observe o DER de solução.
+
+
+
+
+DER do estudo de caso.

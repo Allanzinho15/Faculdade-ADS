@@ -1,0 +1,77 @@
+Histórico
+Você certamente já leu sobre o termo banco de dados em algum contexto técnico ou geral, na mídia tradicional ou na internet. Mas o que é um banco de dados?
+
+
+O termo banco de dados, no sentido técnico, origina-se do inglês database. O livro-texto de edição norte-americana mais adotado no mundo o define de maneira simples e direta: “banco de dados é uma coleção de dados relacionados” (ELMASRI; NAVATHE, 2019), em que dados são fatos conhecidos que podem ser registrados e possuem significado implícito.
+
+
+Confira um breve histórico dessa tecnologia, em que apresentaremos a evolução dos sistemas de informação em computador.
+
+
+
+Arquitetura do computador
+
+
+Charles Babbage
+
+Historicamente, o computador, inventado na década de 1940 ao fim da Segunda Guerra Mundial, era usado primordialmente como uma máquina para cálculos matemáticos complexos, a exemplo da máquina diferencial de Charles Babbage, do século XIX.
+
+ 
+
+Charles Babbage (1791-1871) é um ícone no mundo da computação. As suas notáveis contribuições para a área fizeram dele o pioneiro dos computadores, com a Máquina Diferencial N.1, a primeira calculadora automática, reconhecida pela precisão que já apresentava na época apresentava (PPLWARE, 2017).
+
+
+
+John von Neumann
+
+Logo se percebeu que, graças à arquitetura criada pelo seu inventor, John von Neumann, baseada em uma unidade central de processamento que armazena programas e dados, o computador também serve para o processamento de dados, e não apenas para cálculos.
+
+ 
+
+John von Neumann (1903-1957) foi um matemático húngaro, naturalizado norte-americano, considerado o pai da Teoria dos Jogos. Seus interesses abrangiam lógica, assuntos militares, computação, economia, entre outros.
+
+
+
+HD (hard disk)
+
+À época, esse dispositivo – atualmente conhecido como disco rígido e pela sigla HD (hard disk) – apresentou a capacidade de leitura de dados externos à unidade central de processamento de forma direta, sem a necessidade de leitura sequencial, como em fitas magnéticas.
+
+ 
+
+Essa utilidade do computador foi impulsionada com a invenção do disco magnético pela IBM, em 1957, que o denominou de dispositivo de armazenamento de acesso direto, do inglês direct acess storage device (DASD).
+
+
+Era do processamento de dados por computador
+
+Com o advento do armazenamento externo em disco rígido, nasceu a era do processamento de dados por computador.
+
+
+Você já ouviu falar em centro de processamento de dados (CPD), denominação que ainda persiste em organizações tradicionais?
+
+
+
+Servidor de arquivos
+
+Nessa era, os programas de aplicação, desenvolvidos em uma linguagem de programação (usualmente COBOL, em aplicações empresariais, ou Fortran, em aplicações científicas), manipulavam dados armazenados em arquivos hospedados em disco magnético, utilizados pelo sistema operacional e formando o que se denomina sistema de arquivos.
+
+ 
+
+Vejamos agora a evolução obtida ao possibilitar que os programas acessassem os dados externamente em arquivos no disco (configurando um avanço em relação aos programas que continham internamente os próprios dados) para execução em lotes (batch), na fase inicial do uso do computador.
+
+
+
+Sistemas de arquivos vs. banco de dados
+
+Esse modelo de processamento de dados com sistema de arquivos foi largamente utilizado no início do emprego do computador em sistemas de informação empresariais, após o advento do disco magnético, persistindo até os dias atuais, nos chamados sistemas legados. Exemplo disso foi a maior demanda por programadores da linguagem COBOL durante a pandemia de covid-19 para realizar manutenção em sistemas da Administração Pública do governo dos EUA.
+
+
+Saiba Mais
+Para saber mais sobre o aumento da procura por programadores COBOL durante a pandemia de covid-19, não deixe de verificar a indicação feita no Explore +.
+
+
+Conceito de banco de dados
+
+O conceito de banco de dados como uma coleção de dados relacionados sempre existiu como componente central dos sistemas de informação. Estes, por sua vez, sempre existiram desde que a humanidade se organizou como sociedade. Segundo afirmam Melo, Silva e Tanaka (1998), o que tem mudado rapidamente ao longo da história é a tecnologia que permite a sua implementação e que se confunde com o próprio conceito de sistemas de informação.
+
+
+Assim, antes da existência do computador, bancos de dados existiam sob a forma de registros físicos em papel, organizados em pastas dentro de armários, que formavam os arquivos dos sistemas de informação, operados manualmente pelos seus usuários. Será que ainda existem sistemas de informação desse tipo em pleno século XXI?

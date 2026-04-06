@@ -1,0 +1,55 @@
+Projeto físico
+Assista ao vídeo e entenda a transformação da modelagem lógica em uma estrutura concreta, definindo detalhes como tipos de dados, índices e otimizações para garantir eficiência na implementação do banco de dados.
+
+
+
+Durante o projeto físico, definimos os detalhes de implementação dos objetos do banco de dados. No caso das tabelas, escolhemos os tipos de dados e tamanho das colunas, e especificamos se elas são opcionais ou obrigatórias.
+
+ 
+
+Os relacionamentos são definidos por uma restrição especial em alguma(s) coluna(s) da tabela em questão. Esse tipo de restrição é denominado chave estrangeira. Em geral, o projeto físico é realizado com o auxílio de alguma ferramenta gráfica de modelagem. Há inclusive ferramentas que funcionam on-line, muitas vezes com a política de oferecer acesso limitado a diversos recursos.
+
+
+Dica
+Para o nosso exemplo, escolhemos a ferramenta on-line denominada Vertabelo por ser bastante funcional e sem custos para fins educacionais.
+
+
+Ao iniciar o design do modelo, escolhemos o SGBD PostgreSQL como produto-alvo da modelagem. A imagem a seguir representa o modelo físico enriquecido com detalhes de implementação compatíveis com o SGBD escolhido. Confira!
+
+
+
+
+Modelo físico do estudo de caso Escola.
+Observe que, diferentemente do modelo lógico, cada coluna de tabela no modelo está especificada com detalhes relativos ao tipo de dados, além de restrições em algumas colunas indicadas pelos marcadores FK, PK e N.
+
+ 
+
+Na criação do esquema do banco de dados, nós utilizamos uma linguagem declarativa, denominada linguagem de consulta estruturada SQL. A parte da SQL que fornece essas funcionalidades é denominada Linguagem de Definição de Dados. Observe a seguir um script SQL compatível com o modelo escola!
+
+
+
+Script DDL compatível com o estudo de caso Escola.
+
+Um script DDL é um conjunto de comandos que, no contexto do nosso exemplo, servirão para criar as tabelas do banco de dados escola.
+
+ 
+
+Vamos entender o propósito desse código? Observe que:
+
+ 
+
+A declaração de cada tabela inicia com o comando CREATE TABLE nometabela, conforme linhas 1, 9 e 15.
+ 
+Todo cliente possui um identificador único (idcliente especificado na linha 8).
+ 
+Todo curso possui um identificador único (idcurso especificado na linha 14).
+ 
+Cada inscrição possui um identificador único, nesse caso composto por um par de colunas (idcurso, idcliente especificado na linha 20).
+ 
+As linhas 21 e 22 garantem que a inscrição será processada envolvendo necessariamente um cliente e um curso previamente existentes no banco de dados.
+
+Ao longo deste conteúdo, estudamos as fases de um projeto de banco de dados. Percebemos que esta é uma atividade que envolve as seguintes tarefas: levantar requisitos de dados; construir um modelo de entidade e relacionamento; construir um modelo lógico; implementar o modelo físico.
+
+ 
+
+As tarefas de um projeto de banco de dados não são estáticas, visto que os requisitos de dados podem evoluir, por exemplo, a partir da necessidade de adaptar o negócio a algum tipo de legislação, ou mesmo para tornar o trabalho do usuário mais eficiente.

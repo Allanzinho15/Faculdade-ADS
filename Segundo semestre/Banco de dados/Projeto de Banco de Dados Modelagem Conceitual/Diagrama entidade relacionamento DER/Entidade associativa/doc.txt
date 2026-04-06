@@ -1,0 +1,32 @@
+Entidade associativa
+Agora, voltamos nossa atenção para a estrutura de agregação e a entidade associativa. A entidade associativa é fundamental na captura de informações adicionais sobre essas relações, enriquecendo a compreensão do sistema.
+
+ 
+
+Aprenda, neste vídeo, a modelar relacionamentos complexos entre entidades, utilizando agregações para representar conexões mais elaboradas.
+
+
+
+É comum a necessidade de vincular entidade a algum relacionamento. Ao modelarmos a inscrição de alunos em disciplinas, criaremos turmas para serem associadas às disciplinas que serão liberadas para inscrição. Suponha que toda turma possui código, descrição e data de criação. Além disso, pode estar associada a diversas disciplinas. Uma disciplina pode ser ofertada em várias turmas. Ao ofertar uma disciplina, é necessário saber o número de vagas e quando o aluno fez inscrição.
+
+ 
+
+Haverá um relacionamento (OFERTA) entre TURMA e DISCIPLINA. OFERTA deverá estar associada a ALUNO, via relacionamento INSCRICAO. Como resolver esse impasse? O objeto entidade associativa surgiu como alternativa de modelagem em situações dessa natureza. Ela é representada por um losango desenhado dentro de um retângulo. Observe o seguinte modelo!
+
+
+
+
+DER com os novos requisitos de dados, fazendo uso de entidade associativa.
+É necessário enxergar OFERTA sob duas perspectivas. São elas!
+
+
+Relacionamento
+
+
+OFERTA possui atributo VAGAS, útil no planejamento das turmas e disciplinas que serão ofertadas para inscrição.
+
+
+Entidade
+
+
+OFERTA útil para identificar a turma e a disciplina escolhida pelo aluno quando do momento de uma inscrição.

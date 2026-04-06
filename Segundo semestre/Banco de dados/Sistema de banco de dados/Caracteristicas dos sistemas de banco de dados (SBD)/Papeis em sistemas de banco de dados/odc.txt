@@ -1,0 +1,49 @@
+Papéis em sistemas de banco de dados
+Um banco de dados, para funcionar, deve possuir um conjunto de quatro componentes básicos, são eles: dados, hardware, software e usuários. Vejamos agora o detalhamento desses componentes!
+
+
+Neste vídeo, apresentaremos um detalhamento dos papeis em sistemas de banco de dados.
+
+
+
+Camadas de um sistema de computação
+
+A seguir, observe as camadas de um sistema de computação desde o hardware, nos quais são armazenados os arquivos com programas e dados, até as aplicações disponíveis aos usuários finais, que podem ser desenvolvidas com ou sem a utilização de um SGBD. Também é possível observar os diferentes papéis de usuários ao longo das camadas de software.
+
+
+
+Papéis de usuários
+
+Papéis desempenhados
+
+Em um sistema de computação corporativo de grandes organizações, é possível separar os diferentes papéis desempenhados. Vejamos!
+
+
+Administrador de aplicações
+
+Função técnico-gerencial responsável pela manutenção dos sistemas de aplicação e pelo suporte aos seus usuários, podendo ser exercida por vários administradores. Exemplo: administrador do sistema integrado de gestão empresarial, conhecido pela sigla ERP (enterprise resource planning).
+
+
+Administrador de desenvolvimento
+
+Função técnica que pode ser desdobrada em equipes de desenvolvimento do sistema de aplicação, dependendo do porte e da complexidade do sistema, que se utilizam das ferramentas disponíveis no ambiente de desenvolvimento de sistemas.
+
+
+Administrador de dados
+
+Função gerencial responsável pelo ambiente de dados da organização, que define políticas e responsabilidades sobre os recursos de dados, assim como as regras do negócio e os padrões de dados a serem seguidos no desenvolvimento.
+
+
+Administrador do banco de dados
+
+Função técnica responsável pela criação e manutenção dos bancos de dados no SGBD, dando suporte às equipes de desenvolvimento no tocante aos objetos dos bancos de dados.
+
+
+Administrador de sistema
+
+Responsável por manter no ar o sistema de computação como um todo, com foco no hardware e no sistema operacional, bem como nas interfaces deste com os demais softwares instalados.
+
+
+
+
+Cabe observar que nem todos os papéis de administração podem ser exercidos por uma única pessoa, mas uma pessoa pode exercer mais de um papel. A distribuição desses papéis por indivíduos e equipes dependerá do porte da organização e do sistema de computação, variando desde uma única pessoa exercendo todos os papéis de administração até todo um departamento de TI encarregado da administração e do suporte aos diversos sistemas em operação.

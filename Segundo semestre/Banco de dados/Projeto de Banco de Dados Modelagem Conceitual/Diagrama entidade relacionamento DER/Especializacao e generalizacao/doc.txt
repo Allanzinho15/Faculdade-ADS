@@ -1,0 +1,75 @@
+Especialização/generalização
+Explorando a complexidade e a flexibilidade da modelagem em banco de dados, direcionamos nosso olhar para a estrutura de generalização e especialização.
+
+ 
+
+A generalização nos permite capturar a essência de semelhanças entre entidades, enquanto a especialização detalha características únicas.
+
+ 
+
+Vamos ao nosso estudo! Veja, neste vídeo, como representar hierarquias e categorias dentro do sistema, criando uma abordagem robusta para lidar com entidades relacionadas.
+
+
+
+Imagine que, além dos docentes, seja necessário gerenciar outros funcionários da instituição, como os analistas. Podemos deixar previsto que a IES pode ter funcionários que não são analistas nem docentes. Queremos, ainda, saber a formação de graduação de cada docente. Surge, então, uma hierarquia, visto que docente é um subtipo de funcionário. Funcionário é um objeto mais genérico, estando, portanto, na posição superior da hierarquia.
+
+ 
+
+O mecanismo de especialização/generalização é representado por um triângulo, com a entidade mais genérica localizada na parte superior e a(s) entidade(s) especializada(s) na parte inferior. Vamos observar o DER na imagem a seguir com os novos requisitos de dados.
+
+
+
+
+DER com mecanismo de especialização/generalização.
+Podemos perceber que todo funcionário possui um código único, além de nome e pelo menos um telefone, e que há duas entidades especializadas: DOCENTE e ANALISTA. A entidade DOCENTE possui um atributo obrigatório GRADUACAO.
+
+ 
+
+No mecanismo de especialização/generalização há o uso de herança de propriedades: cada entidade especializada herda as propriedades da entidade mais genérica. Assim, todo docente herda as propriedades de funcionário.
+
+
+Classificações para especialização / generalização
+
+
+Observe que perguntas surgem quando analisamos o DER apresentado anteriormente.
+
+ 
+
+Pode existir funcionário que não seja nem docente nem analista?
+ 
+Pode existir funcionário que seja docente e analista?
+ 
+
+A classificação total/parcial responde ao primeiro questionamento: se a resposta for não, a especialização é total; caso contrário, parcial. O segundo é respondido com auxílio da classificação exclusiva/compartilhada: se a resposta for não, a especialização é exclusiva; caso contrário, compartilhada. Veja as combinações das classes expressas:
+
+
+Exclusiva(x)
+
+Total(t): tx
+
+Parcial(p): px
+
+
+Compartilhada(c)
+
+Total(t): tc
+
+Parcial(p): pc
+
+
+Vamos convencionar respostas às perguntas realizadas:
+
+ 
+
+Pode existir funcionário que não seja nem docente nem analista? Sim
+ 
+Pode existir funcionário que seja docente e analista? Sim
+ 
+
+Agora vamos observar o DER na imagem seguinte, já com a com informação (pc) sobre a classificação do mecanismo de especialização/generalização.
+
+
+
+
+DER com mecanismo de especialização/generalização fazendo uso das classificações parcial e compartilhada.
+No exemplo, parcial significa que pode existir funcionário não especializado, ou seja, não classificado como docente ou analista. Por fim, compartilhado significa que no contexto da IES pode existir funcionário que atue como docente e na função de analista.

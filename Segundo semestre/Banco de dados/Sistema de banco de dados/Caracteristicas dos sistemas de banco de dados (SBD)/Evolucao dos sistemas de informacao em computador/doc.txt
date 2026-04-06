@@ -1,0 +1,95 @@
+Evolução dos sistemas de informação em computador
+Verificamos que uma característica primordial que distingue os sistemas de banco de dados dos sistemas baseados de arquivos é a independência dos dados em relação a programas. Essa, na verdade, é apenas uma espécie da característica dos sistemas de banco de dados denominada independência de dados.
+
+
+Neste vídeo, explicaremos a evolução dos sistemas de informação em computador.
+
+
+
+Arquitetura de três esquemas
+
+O conceito de independência de dados deriva da arquitetura de três esquemas do banco de dados que separa as aplicações dos usuários finais do banco de dados físico armazenado.
+
+
+Vejamos uma adaptação da arquitetura ANSI/SPARC, que considera três níveis de esquemas:
+
+
+
+Nível externo
+
+Contém o esquema conceitual externo, integrando as diferentes visões dos usuários das aplicações.
+
+
+
+Nível conceitual
+
+Contém o esquema conceitual lógico ou de implementação, descrevendo a estrutura lógica do banco de dados.
+
+
+
+Nível interno
+
+Contém o esquema interno ou físico do banco de dados armazenado em disco.
+
+
+
+
+Essa arquitetura define dois tipos de independência de dados, além da independência entre dados e programas:
+
+
+Independência lógica de dados
+
+
+Consiste na capacidade de se alterar o esquema conceitual lógico, por exemplo, acrescentando um item de dado, sem alterar o esquema conceitual externo, isto é, as visões externas dos usuários por meio dos programas de aplicação.
+
+
+Independência física de dados
+
+
+Consiste na capacidade de se alterar o esquema interno, por exemplo, reorganizando os arquivos físicos que armazenam os dados, sem alterar o esquema conceitual lógico e, em consequência, o esquema conceitual externo.
+
+
+Sistemas de banco de dados x Sistemas de arquivos
+
+Vejamos agora, algumas outras características importantes, entre muitas, que diferenciam os sistemas de bancos de dados dos sistemas de arquivos.
+
+
+Natureza autocontida
+
+Significa que, além dos dados, o SBD contém a descrição completa de suas estruturas e restrições. Como se verá na arquitetura do SGBD, a descrição da estrutura e das restrições de dados, conhecida como metadados, isto é, dados que descrevem dados, é armazenada no catálogo do sistema de banco de dados.
+
+
+Abstração de dados
+
+Permite a representação conceitual dos dados por meio de modelos de dados que ocultam detalhes de armazenamento e implementação, os quais não interessam aos diferentes usuários, dando suporte a múltiplas visões lógicas dos dados e à independência de dados.
+
+
+Suporte ao compartilhamento de dados e processamento de transações concorrentes
+
+
+Permite que múltiplos usuários acessem o banco de dados simultaneamente.
+
+
+
+
+Modelos de dados
+
+Suportam a abstração de dados e permitem sua independência lógica e física são classificados como:
+
+
+
+Modelos físicos
+
+Descrevem como os dados são armazenados no computador mediante informações como tipos de arquivos, formatos e ordenação de registros, caminhos de acesso. São as várias formas de estruturas de arquivos que dependem do SGBD e do sistema operacional em que estão instaladas.
+
+
+Modelos lógicos
+
+Representam, de maneira abstrata, a implementação dos bancos de dados, ocultando detalhes de como os dados são armazenados e acessados no disco. O modelo lógico mais tradicional, largamente utilizado na grande maioria dos sistemas de informação organizacionais, é o criado por Edgar Codd. A estrutura de dados do modelo relacional é a tabela (relação matemática) e deve ser conferida em profundidade em estudo específico, assim como as implementações de SGBD relacional. Como vimos, há outros modelos lógicos de implementação do banco de dados entre aqueles que atualmente se denominam de modelos não relacionais ou NoSQL.
+
+
+Modelos conceituais
+
+Representam a visão dos dados do ponto de vista do usuário final, no nível de abstração mais próximo do mundo real. Dentre esses, destaca-se o modelo de entidades e relacionamentos, criado pelo pesquisador Peter Chen (1976). O modelo ER, segundo o autor, foi criado para prover melhor entendimento do modelo relacional, de modo a servir como uma etapa inicial no processo de projeto de banco de dados, denominada de modelagem conceitual dos dados.
+
+Destacamos que a modelagem conceitual de dados realizada com o modelo ER foi incorporada na linguagem UML (Unified Modeling Language), criada no final da década de 1990 para uniformizar a modelagem orientada a objetos sob a forma do modelo de classes, em que as entidades são representadas pelas classes de objetos e os relacionamentos pelas associações entre as classes. Na prática atual do processo de desenvolvimento de sistemas de informação, é comum a utilização do modelo de classes da UML como substituto do modelo ER nas fases iniciais do projeto de banco de dados.

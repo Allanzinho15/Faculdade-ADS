@@ -1,0 +1,98 @@
+Processo de modelagem de entidades e relacionamentos
+Abordaremos agora o processo central de modelagem de entidades e relacionamentos. Os relacionamentos delineiam as conexões vitais entre essas entidades, formando a espinha dorsal do nosso design.
+
+ 
+
+Vamos à modelagem!
+
+ 
+
+Saiba, neste vídeo, a identificar entidades importantes para nosso sistema, compreendendo suas características e interações.
+
+
+
+Objetivos ao construir um DER
+
+
+Um DER deve capturar as partes mais importantes do negócio sendo modelado, pois pessoas diferentes precisam ter o mesmo entendimento do modelo. Manter um DER atualizado facilita a vida dos profissionais de TI, já que, com a documentação atualizada, a curva de aprendizado sobre a organização pode ser minimizada.
+
+ 
+
+Apesar de ser relativamente simples construir um DER, é comum identificarmos propriedades desejáveis no banco de dados que precisam ser registradas mas não podem ser expressas diretamente no modelo. Na linguagem técnica de banco de dados, regras que devem ser obedecidas pelo SGBD em relação ao banco de dados são conhecidas por restrições de integridade.
+
+ 
+
+Há restrições de integridade expressas por meio de algum elemento do próprio DER, por exemplo, ao definirmos cardinalidade para algum atributo. No entanto, há restrições que precisam ser expressas em separado, normalmente usando linguagem natural. Essas, normalmente, são conhecidas como restrições semânticas.
+
+ 
+
+Podemos estabelecer que, no relacionamento de orientação realizado por docentes aos alunos no contexto de um projeto, a data de término da orientação nunca deve ser menor que a data de início. Estamos diante de uma restrição que leva em conta dois atributos de relacionamento definidos no DER. Essa restrição é especificada no DER com o uso de linguagem natural sob a forma de um texto. Entenda como ficou o modelo!
+
+
+
+
+DER com uma restrição semântica adicionada sob o formato de um texto.
+O quanto devo modificar um DER para registrar restrições de integridade? O objetivo fundamental na construção de um DER é projetar um banco de dados e não descrever todas as restrições de integridade.
+
+
+Modelagem de entidades e relacionamentos
+
+
+A partir de agora, daremos ênfase no processo de modelagem de entidades e relacionamentos. No entanto, modelos diferentes podem obter o mesmo resultado prático?
+
+ 
+
+Quanto à equivalência entre modelos, Heuser (2009) afirma que dois modelos ER são equivalentes quando ambos geram o mesmo esquema de banco de dados.
+
+ 
+
+Considere o DER expresso na seguinte imagem!
+
+
+
+
+DER associando disciplinas a cursos, com uso de relacionamento N:N.
+Ao analisarmos o DER, percebemos que a cardinalidade máxima do relacionamento POSSUI é do tipo N:N. Sendo assim, um modelo equivalente sem uso de relacionamento N:N será criado, onde POSSUI será modelado como entidade, conforme expresso a seguir:
+
+
+
+
+DER associando disciplinas a cursos, sem relacionamento N:N.
+Generalizando, todo relacionamento N:N pode ser transformado em entidade. Para isso, basta acompanhar as etapas a seguir:
+
+ 
+
+Representar o relacionamento N:N como uma entidade: foi criada a entidade POSSUI.
+
+ 
+
+Relacionar a entidade criada na etapa 1 às entidades participantes do relacionamento original: a entidade POSSUI foi relacionada às entidades CURSO e DISCIPLINA.
+ 
+Adicionar à entidade criada na etapa 1 o(s) atributo(s) − caso exista(m) − do relacionamento original: como não havia atributos no relacionamento original, a entidade POSSUI foi criada sem atributos.
+ 
+A entidade criada na etapa 1 será identificada pelos relacionamentos com as entidades participantes do relacionamento original: esta identificação está representada no modelo com as linhas mais espessas saindo da entidade POSSUI.
+ 
+Estabelecer a cardinalidade (1,1) da entidade criada na etapa 1 para cada relacionamento vinculado a ela: as cardinalidades estão representadas ao lado da entidade POSSUI.
+
+O relacionamento POSSUI só será cadastrado no banco de dados se houver tanto uma disciplina quanto um curso. Essa observação é consequência da definição de relacionamento em modelagem de dados. Assim, quando transformamos um relacionamento em entidade, essa restrição deve ser mantida. De que maneira?
+
+ 
+
+No DER modificado, as linhas mais espessas saindo da entidade POSSUI representam a restrição de que toda ocorrência desta entidade é dependente da existência tanto de uma disciplina quanto de um curso. Alguns autores chamam entidade fraca a uma entidade que depende de outra(s) para existir.
+
+
+Modelagem de entidade isolada
+
+
+O DER que estamos modelando é referente ao funcionamento de uma única IES. Em função disso, não há necessidade de informar no banco de dados em qual instituição o aluno está cadastrado ou mesmo à qual IES os cursos estão relacionados, já que, de acordo com Heuser (2009), uma entidade isolada é uma entidade que não apresenta relacionamento com outras entidades.
+
+ 
+
+No contexto do nosso DER, uma entidade isolada pode servir para modelar características da IES, tais como código e CNPJ. Portanto, se decidirmos adicionar uma entidade INSTITUICAO ao modelo, esta deverá permanecer isolada, dado que, de acordo com os requisitos de dados, o banco de dados refere-se a uma única IES. Veja que a próxima imagem representa a entidade isolada INSTITUICAO e seus atributo.
+
+
+
+
+DER com entidade isolada IES.
+
+Observe que com a entidade INSTITUICAO criada, caso haja necessidade de acrescentar outras características simples à IES, basta adicionar atributos. Por exemplo, poderíamos adicionar informações sobre data de criação, nome da IES, telefone, entre outras.

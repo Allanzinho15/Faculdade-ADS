@@ -1,0 +1,55 @@
+Principais SGBD relacionais
+O projeto System R deu origem ao SGBD comercial da IBM, inicialmente denominado Structured Query Language/Data System (SQL/DS), depois renomeado de DB2, atualmente um dos líderes no mercado de bancos de dados corporativos, com versões em diferentes plataformas de hardware/software e na nuvem. Confira!
+
+
+
+Sistema gerenciador de banco de dados DB2
+
+A linguagem SQL, criada pela IBM como uma linguagem de consulta e manipulação de dados dos bancos de dados relacionais, passou a ser conhecida como sinônimo de SGBD relacional, chegando a ser confundida com produtos que levam a sigla em seu nome.
+
+
+O vídeo a seguir apresenta os principais SGBD relacionais e suas características.
+
+
+
+Oracle
+
+
+Logotipo Oracle
+
+No âmbito comercial, também despontou, como decorrência do sucesso do modelo relacional, o desenvolvimento de um SGBD pela empresa inicialmente denominada Software Development Laboratories (SDL), depois renomeada Relational Software Inc. (RSI) e, finalmente, Oracle Corporation, nome pelo qual é atualmente reconhecido o SGBD líder do mercado global de banco de dados.
+
+
+MySQL
+
+
+Logotipo MySQL
+
+Em 2010, com a aquisição da Sun Microsystems, uma grande empresa de hardware tradicionalmente incentivadora de projetos de software livre, a Oracle incorporou entre seus produtos o MySQL, um SGBD relacional de reconhecida liderança na comunidade de desenvolvimento de sistemas para a Web. O SGBD MySQL, associado ao sistema operacional Linux, ao servidor Web Apache e à linguagem de programação PHP, formou o quarteto de software conhecido pela sigla LAMP, de grande sucesso no desenvolvimento de aplicações web até os dias atuais.
+
+
+SQL Server
+
+
+Logotipo Microsoft SQL Server
+
+Na frente acadêmica, o projeto Ingres, da Universidade da Califórnia (UCB), deu origem a versões comunitárias mediante licença livre da própria universidade junto com seu sistema operacional Unix, denominado Berkeley Software Distribution (BSD). O projeto acadêmico originou um produto comercial de mesmo nome, Ingres DBMS, que concorreu diretamente com o Oracle e o SQL/DS nos primórdios dos SGBD relacionais.
+
+ 
+
+O esforço de desenvolvimento do Ingres envolveu muitos pesquisadores, professores e estudantes, os quais acabaram levando o seu código livre em linguagem C para implementação em outros produtos comerciais, notadamente o SGBD Sybase que, na década de 1990, associou-se a Microsoft, dando origem ao SQL Server, atualmente um dos líderes no mercado de bancos de dados relacionais.
+
+
+PostgreSQL
+
+
+Logotipo PostgreSQL
+
+A continuidade do projeto Ingres deu frutos também na área acadêmica com a evolução para um modelo de dados além do relacional, estendido com conceitos da programação orientada a objetos, denominado Postgres (de post ingres).
+
+
+Saiba Mais
+Após a incorporação da linguagem SQL na década de 1990, o Postgres foi rebatizado como PostgreSQL, atualmente reconhecido como o mais avançado SGBD open source do mundo. Para saber mais sobre o PostgreSQL, não deixe de verificar a indicação feita no Explore +.
+
+
+O PostgreSQL e o MySQL são os SGBD mais utilizados no aprendizado dos bancos de dados relacionais pela sua popularidade e pelo fato de disponibilizarem versões com licença e documentação livres.

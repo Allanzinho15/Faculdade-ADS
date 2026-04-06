@@ -1,0 +1,84 @@
+Sistema de gerência de banco de dados
+Um sistema de gerenciamento de banco de dados (SGBD) — do inglês data base management system (DBMS) — é responsável pelo gerenciamento de um ou mais bancos de dados. Seu principal objetivo é retirar da aplicação cliente a responsabilidade de gerenciar o acesso, a persistência, a manipulação e a organização dos dados.
+
+
+Neste vídeo, identificaremos um sistema de gerência de banco de dados.
+
+
+
+Módulos de um SGBD
+
+A seguir, ilustramos, em detalhes, os diversos módulos que compõem um SGBD.
+
+
+
+Módulos de um SGBD
+
+Vamos conferir a descrição desses módulos!
+
+
+
+Usuários
+
+Da esquerda para a direita, vemos os usuários, começando com os administradores de banco de dados (ABD) do inglês database administrator (DBA).
+
+
+ABD
+
+O ABD usa comandos da linguagem de definição de dados (LDD), do inglês data definition language (DDL), para criar, alterar ou remover objetos do banco de dados (comandos CREATE, ALTER, DROP no padrão SQL), os quais ficam armazenados no catálogo do sistema, que contém os metadados.
+
+ 
+
+O ABD também possui privilégio para executar comandos de controle de dados, conhecidos por alguns autores como linguagem de controle de dados (LCD), do inglês data control language (DCL), para conceder e revogar permissões de acesso aos dados (comandos GRANT e REVOKE no padrão SQL), entre outros. Note que o destino desses comandos privilegiados é um nó central do SGBD, por onde passam todos os comandos destinados ao processador de banco de dados em tempo de execução, denominado de processador de runtime ou runtime engine.
+
+
+Usuários casuais
+
+Seguindo para a direita, vemos os usuários casuais, os quais fazem consultas interativas por meio de uma interface para consultas ad hoc, ou seja, consultas não programadas previamente. As consultas são feitas tipicamente com o comando SELECT no padrão SQL do modelo relacional e provido de modo similar em outros modelos de implementação de banco de dados. Esses comandos são compilados por um compilador da linguagem de consulta e passam por um otimizador de consulta antes de chegar ao nó central do SGBD.
+
+
+Programadores de aplicações
+
+Mais à direita, aparecem os programadores de aplicações que escrevem os programas em uma linguagem de programação hospedeira, como, por exemplo, Java, PHP ou Python, nos quais estão embutidos comandos de consulta (SELECT), inserção, atualização e exclusão de dados em uma linguagem de manipulação de dados (LMD), do inglês data manipulation language (DML).
+
+ 
+
+No padrão SQL, esses comandos são, respectivamente, INSERT, UPDATE e DELETE. Note que eles manipulam dados, diferentemente dos comandos da linguagem de definição de dados (CREATE, ALTER, DROP), que manipulam metadados.
+
+
+Programas de aplicação
+
+Os programas de aplicação, portanto, possuem comandos híbridos, da linguagem hospedeira e da linguagem de consulta e manipulação de dados.
+
+
+Pré-compilador
+
+Os programas de aplicação são processados, inicialmente, por um pré-compilador, responsável por separar os comandos e os repassar para os compiladores das respectivas linguagens.
+
+
+Compiladores
+
+Cabe a esses compiladores produzir o código das aplicações sob a forma de transações executáveis, que ficam à disposição dos usuários paramétricos.
+
+
+Usuários paramétricos
+
+Os usuários paramétricos são assim chamados porque interagem com o sistema por meio de parâmetros passados em interfaces apropriadas. Por exemplo, um agente de viagens faz uma reserva de passagem aérea passando ao sistema os dados do passageiro, data e hora da viagem, número do voo, número do assento e outros parâmetros necessários para efetivar a reserva.
+
+
+Transações compiladas
+
+Uma vez executadas as transações compiladas, assim como os demais comandos provenientes de usuários ou aplicações, são passadas ao nó central do SGBD para posterior processamento do processador de runtime.
+
+Atenção! Antes de prosseguir na parte de baixo da imagem, note que alguns processos da parte de cima, como o otimizador de consulta e o compilador da LMD, estão ligados ao catálogo por linhas tracejadas, que denotam fluxos de controle, enquanto as linhas cheias representam fluxos de dados, além de controle. Isso é necessário porque as referências a objetos do banco de dados existentes no catálogo devem ser consistentes com os objetos, criados e mantidos pelo ABD mediante comandos da LDD.
+
+
+
+Processamento do acesso a dados armazenados
+
+Prosseguindo para a parte do processamento do acesso aos dados armazenados, observamos que o processador de runtime é o coração do SGBD. De fato, o diferencial dos produtos de SGBD reside na eficiência e na funcionalidade desse processador, segredo industrial em muitos dos SGBD proprietários, a ponto de exigir rigorosos termos de confidencialidade das pessoas que têm acesso ao seu código.
+
+
+Acesso à base de dados
+
+O processador de runtime também precisa acessar e, por vezes, modificar o catálogo, dependendo da natureza dos comandos, das consultas ou transações que estiver processando. Ele acessa a base de dados diretamente, sob controle de subsistemas de controle de concorrência, backup e recovery. Quando precisa realizar operações de entrada e saída (gravação e leitura) na base de dados, o processador de runtime se vale de um gerenciador de dados armazenados.

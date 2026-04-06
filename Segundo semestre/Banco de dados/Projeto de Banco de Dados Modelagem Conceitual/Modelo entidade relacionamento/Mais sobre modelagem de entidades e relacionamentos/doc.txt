@@ -1,0 +1,35 @@
+Mais sobre modelagem de entidades e relacionamentos
+Entrando em território mais detalhado da modelagem, exploraremos agora aspectos avançados do diagrama entidade-relacionamento (DER). Assim, você poderá aprimorar suas habilidades na criação de DERs mais sofisticados, proporcionando uma visão mais completa e refinada das complexas interações dentro do banco de dados. Sigamos adiante!
+
+ 
+
+Descubra, neste vídeo, aspectos avançados do diagrama entidade-relacionamento (DER), aprimorando nossa compreensão sobre como representar de maneira precisa e abrangente as relações entre entidades.
+
+
+
+Você deve ter notado que um DER não é construído em uma única etapa. Em projetos de banco de dados reais, a construção de um DER é um processo incremental, ou seja, o modelo vai sendo modificado e enriquecido de forma gradativa à medida que novos requisitos de dados sejam levantados.
+
+ 
+
+Ao longo dos exemplos que construímos, utilizamos uma estratégia que envolveu a modelagem de conceitos mais abstratos que em seguida foram sendo detalhados. Em geral, identificamos algumas entidades e depois definimos seus atributos e relacionamentos. A estratégia de modelagem escolhida é conhecida por estratégia descendente. O passo a passo a seguir resume as etapas utilizadas ao adotarmos esse tipo de estratégia para construção do diagrama de entidade e relacionamento. Acompanhe!
+
+
+Modelo inicial
+
+
+Identificar entidades, relacionamentos, especializações e cardinalidade máxima de relacionamentos, bem como mapear atributos e identificadores de entidades e relacionamentos.
+
+
+Modelo detalhado
+
+
+Definir as cardinalidades dos relacionamentos, além de identificar outras restrições de integridade.
+
+
+Validação
+
+
+Revisar e validar o modelo junto ao usuário.
+
+
+É importante observarmos que em qualquer etapa é possível retornar à etapa anterior, dado que estamos diante de uma construção que envolve um DER que ocorre de forma gradativa.

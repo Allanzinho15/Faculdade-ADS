@@ -1,0 +1,76 @@
+Atributo
+Avançando na nossa jornada sobre banco de dados, nosso foco agora será a modelagem de atributos. Aprofundaremos a compreensão dos dados, detalhando características específicas de cada entidade.
+
+ 
+
+Vamos juntos explorar as técnicas de modelagem de atributos!
+
+ 
+
+Aprenda, neste vídeo, a definição precisa de atributos, considerando tipos de dados, restrições e particularidades que enriquecem a representação dos elementos no banco de dados.
+
+
+
+Entidades e relacionamentos podem ter propriedades, que são especificadas pelos atributos. Segundo Heuser (2009), atributo corresponde a um dado que é associado a cada ocorrência de uma entidade ou de um relacionamento.
+
+ 
+
+Vamos especificar algumas propriedades para as entidades CURSO e DISCIPLINA:
+
+ 
+
+Todo curso possui um código único, nome e, opcionalmente, data de criação.
+ 
+Toda disciplina possui um código único, nome e carga horária.
+ 
+
+Observe a imagem que apresenta a parte do DER contemplando esses requisitos de dados!
+
+
+
+
+DER contemplando atributos das entidades CURSO e DISCIPLINA.
+Percebemos que os atributos CODIGOCURSO e CODIGODISCIPLINA são únicos em suas respectivas entidades. Veja o que essa unicidade significa na prática!
+
+
+CODIGOCURSO
+
+Todo curso possui valor para o atributo CODIGOCURSO diferente dos demais.
+
+CODIGODISCIPLINA
+
+Toda disciplina possui valor para o atributo CODIGODISCIPLINA diferente das demais.
+
+Esse tipo especial de atributo é conhecido por atributo identificador e sua representação gráfica é dada por um traço com uma das extremidades contendo um círculo preenchido. De acordo com os requisitos de dados, DATADECRIACAO é um atributo opcional, ou seja, não obrigatório. Sua representação gráfica é dada por um traço com uma das extremidades contendo um círculo pontilhado. Os demais atributos são obrigatórios.
+
+
+Cardinalidade em atributo
+
+
+No DER anterior, ao lado do atributo DATACRIACAO, há um par de cardinalidade com valor (0,1). A cardinalidade 0 expressa que o atributo é opcional. A cardinalidade 1 expressa que o atributo é monovalorado. Cada combinação de cardinalidade tem um significado especial. Vejamos!
+
+
+Cardinalidade Mínima	Cardinalidade Máxima	Significado
+0	1	Opcional, Monovalorado
+0	N	Opcional, Multivalorado
+1	1	Obrigatório, Monovalorado
+1	N	Obrigatório, Multivalorado
+Tabela: Propriedade de atributo de acordo com a cardinalidade. 
+Nathielly de Souza Campos
+
+Atributo obrigatório e monovalorado
+
+
+Na construção de um DER, a maioria dos atributos é monovalorado e obrigatório. Assim, adotaremos a convenção de, nesses casos, não expressar no modelo a cardinalidade (1,1) por motivos de legibilidade. Assim, de agora em diante, quando não houver cardinalidade expressa em atributos de um DER, considere que eles são monovalorados e obrigatórios.
+
+
+Atributo composto
+
+
+Em modelagem, é comum surgirem atributos mais complexos, que podem ser subdivididos em partes menores; eles são conhecidos por atributos compostos. Por exemplo, um atributo endereço pode ser subdividido em logradouro, complemento, CEP e cidade.
+
+
+Modelo de entidade e relacionamento estendido
+
+
+O modelo de entidade e relacionamento estendido traz novos componentes semânticos. Estudaremos a especialização/generalização, além da entidade associativa.

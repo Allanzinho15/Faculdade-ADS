@@ -1,0 +1,55 @@
+Quando manter histórico
+Ao adentrarmos na complexidade da gestão de dados, surge o dilema: quando manter históricos? Exploraremos agora esse tema fundamental no banco de dados. A decisão de preservar históricos é estratégica e envolve considerações sobre auditoria, análises temporais e conformidade.
+
+ 
+
+Assista ao vídeo e aprofunde seu entendimento sobre a necessidade de preservar históricos ao longo do tempo, para garantir a integridade e a precisão dos dados.
+
+
+
+No modelo acadêmico em questão, vamos considerar que surgiu a necessidade de associar docente a departamento. Esta é uma necessidade comum em praticamente toda IES: saber quais professores pertencem a qual departamento.
+
+ 
+
+Vamos supor que, após o surgimento dessa demanda, levantamos os seguintes requisitos de dados:
+
+ 
+
+Todo departamento é identificado por um código e possui um nome.
+ 
+Um docente pode estar associado a, no máximo, um departamento.
+ 
+
+Com base nos requisitos, repare no DER construído.
+
+
+
+
+DER associando docente a departamento.
+Podemos perceber que o DER construído está de acordo com os novos requisitos de dados, pois as informações dos departamentos estão expressas na entidade DEPARTAMENTO, e a restrição de que um docente está associado a, no máximo, 1 departamento está expressa na cardinalidade máxima 1 ao lado da entidade DEPARTAMENTO.
+
+ 
+
+Os requisitos de dados associados a um projeto de banco de dados podem sofrer alterações ao longo do tempo. Assim, é necessário planejarmos uma estratégia para refletir as restrições impostas pelo novo cenário. Vamos supor, então, o surgimento de novo requisito de dados. Entenda o que deve ser considerado!
+
+ 
+
+O armazenamento, no banco de dados, da movimentação de docentes entre departamentos.
+
+ 
+
+A atuação do docente em um departamento possui uma data de início e uma data de fim.
+
+ 
+
+O novo requisito de dados pode ser interpretado como uma necessidade institucional de manter histórico das movimentações de docentes entre departamentos. Veja o DER contemplando o novo requisito!
+
+
+
+
+DER associando docente a departamento, contendo histórico das movimentações.
+Podemos perceber que, no novo DER, a cardinalidade máxima N expressa ao lado da entidade DEPARTAMENTO indica que ao longo do seu ciclo profissional um docente pode ter passado por diversos departamentos da IES. Além disso, a atuação do docente em um departamento é caracterizada por uma data de início e uma data de fim.
+
+ 
+
+Perceba que o DER contemplando o novo requisito de dados é semelhante ao DER original. A diferença foi a alteração de uma cardinalidade máxima, além da adição de dois atributos no relacionamento.

@@ -1,0 +1,49 @@
+Componentes de um sistema de banco de dados
+Sistema de banco de dados é a interação entre dados, humanos, hardware e software, o que permite dar “sentido” e tornar os dados acessíveis, compreensíveis e utilizáveis.
+
+
+Neste vídeo, apresentaremos os componentes de um sistema de banco de dados.
+
+
+
+Ambiente de banco de dados
+
+
+Representação ilustrativa de armazenamento de dados
+
+Vamos mostrar uma visão simples do ambiente de banco de dados, compreendendo programas de aplicação ou consultas de usuários que acessam os dados e metadados armazenados em disco por meio do SGBD. Este, por sua vez, compõe-se, simplificadamente, de um software para processar consultas e programas e outro para acessar os dados e metadados armazenados.
+
+ 
+
+Nota-se que não se confundem o SBD e o SGBD, visto que o SGBD é um componente daquele que engloba também os programas e as consultas, bem como os dados e metadados armazenados. Confira!
+
+
+Nota-se que não se confundem o SBD e o SGBD, visto que o SGBD é um componente daquele que engloba também os programas e as consultas, bem como os dados e metadados armazenados. Confira!
+
+
+
+Sistema de banco de dados
+
+A fronteira do SBD engloba os programas que implementam as aplicações, bem como as consultas provenientes de usuários com acesso a linguagens e interfaces de consulta. O SGBD é o software intermediário. A fronteira do SBD envolve os metadados armazenados no catálogo (às vezes chamado de dicionário de dados) e o próprio conteúdo armazenado no banco de dados.
+
+
+Comentário
+Costuma-se definir metadados como o esquema do banco de dados, estruturado de acordo com o modelo lógico de implementação. Assim, modelar um banco de dados consoante ao modelo lógico de implementação equivale a esquematizar o banco de dados conforme os construtores desse modelo. Por exemplo, no modelo relacional, o esquema é composto por tabelas e suas colunas. Cada comando de definição de dados, criando, alterando ou removendo uma tabela, provoca uma mudança no esquema do banco de dados.
+
+
+Chama-se de estado ou instância o conteúdo do banco de dados armazenado em um momento. Cada manipulação no banco de dados mediante comandos de inserção, atualização ou remoção de dados provoca uma mudança de estado, gerando uma nova instância do banco de dados.
+
+
+Curiosidades sobre BD
+
+
+Representação ilustrativa de acesso ao banco de dados
+
+Como vimos, o termo banco de dados é correntemente usado com o sentido do original, em inglês, database, cuja origem, segundo o Oxford English Dictionary, remonta a 1962 em um relatório de uma empresa na Califórnia. Raras são as referências ao termo data bank como, por exemplo, no mencionado artigo de Edgar Codd sobre o modelo relacional (CODD, 1970).
+
+ 
+
+Em espanhol, usa-se base de datos, no francês base de données, enquanto em alemão se diz datenbank, e em italiano banca dati.
+
+
+Em português, existem os dois termos, sendo banco de dados usado no sentido geral do ambiente que engloba o sistema, enquanto base de dados tem o sentido mais restrito do conteúdo do banco, isto é, corresponde ao estado ou à instância do banco de dados. Por exemplo, costuma-se referir à base de dados da Receita Federal como o conjunto de dados armazenados sobre os contribuintes e não como o sistema que gerencia os dados.

@@ -1,0 +1,105 @@
+Vantagens e desvantagens da abordagem de banco de dados
+A abordagem de SBD possui funcionalidades que conferem vantagens adicionais em relação a sistemas sem banco de dados, além das características que a diferenciam da abordagem de sistemas de arquivos.
+
+
+Neste vídeo, apresentaremos as vantagens e desvantagens da abordagem de banco de dados.
+
+
+
+Funcionalidades do SBD
+
+Listamos a seguir algumas funcionalidades do SBD. Confira!
+
+
+
+Controle da redundância de dados
+
+Previne a possibilidade de inconsistência dos dados, a duplicação de esforço para manter os dados atualizados e o desperdício de espaço de armazenamento. O SGBD permite controlar o trade off entre o armazenamento em um único local no banco de dados versus a redundância forçada para melhorar o desempenho das consultas.
+
+
+Compartilhamento de dados
+
+Sendo os SBD multiusuários, realizam controle de concorrência de acesso aos dados compartilhados para garantir as propriedades de atomicidade, consistência, isolamento e durabilidade (propriedades ACID) das transações de banco de dados.
+
+
+Controle de acesso a dados
+
+Compreende mecanismos de segurança e autorização, como senhas para usuários e para grupos de usuários; restrição de acesso a partes do banco de dados; proibição de executar certas operações privilegiadas; acesso de usuário restrito apenas a transações autorizadas; proibição de uso de software privilegiado, como o software de administração do SBD.
+
+
+Múltiplas interfaces de usuários e aplicações
+
+Abrange diferentes linguagens de consulta para usuários casuais; linguagens de programação para programadores de aplicações; interfaces gráficas com formulários (telas) e menus para usuários de aplicações; interfaces para administração do banco de dados; interfaces de linguagem natural.
+
+
+Representação de relacionamento entre os dados
+
+Permite representar os relacionamentos existentes entre dados no mundo real, mediante mecanismos que dependem do modelo lógico de implementação do SBD.
+
+
+Cumprimento de restrições de integridade dos dados
+
+Previne a violação de restrições como tipo de dado ou domínio de valores admissíveis; unicidade de itens de dados por meio de chaves únicas; integridade referencial entre dados relacionados e restrições derivadas da semântica dos dados. Aqui também o SGBD permite controlar o trade off entre garantir o cumprimento automático das restrições ou deixar a sua especificação para os programas de aplicação.
+
+
+Capacidade de backup e recuperação de dados
+
+Em caso de ocorrência de falhas de hardware ou de software, os mecanismos de cópia de segurança (backup) e posterior restauração (recovery) garantem a consistência de estado do banco de dados antes e depois da falha.
+
+
+Compartilhamento de dados entre múltiplos usuários simultâneos
+
+Característica primordial do SBD que tem como resultado o controle de concorrência das transações.
+
+Propriedades das transações – ACID
+
+É responsabilidade do SGBD garantir as propriedades das transações, conhecidas pela sigla ACID. Vejamos mais a seguir!
+
+
+
+Atomicidade (atomicity)
+
+Cada transação é tratada como uma unidade composta de uma sequência de operações, de modo que deve executar completamente com sucesso ou falhar completamente.
+
+
+
+Consistência (consistency)
+
+Uma transação só pode levar o banco de dados de um estado válido para outro, de acordo com suas regras de integridade.
+
+
+
+Isolamento (isolation)
+
+Cada transação é isolada das demais, isto é, essa propriedade assegura que transações executadas concorrentemente levem o banco de dados ao mesmo estado que chegaria se as transações fossem executadas sequencialmente.
+
+
+
+Durabilidade (durability)
+
+Uma vez que a transação é aceita (committed), o que significa que seu resultado foi gravado em memória não volátil, esse resultado permanecerá válido mesmo em caso de falhas do sistema.
+
+
+
+
+Vantagens e desvantagens do SBD
+
+Veremos agora as vantagens e desvantagens do SBD!
+
+
+Vantagens
+
+
+As vantagens decorrentes dessas funcionalidades do SBD são diversas: potencial para o estabelecimento de padrões de uso dos dados na organização; redução do tempo de desenvolvimento de aplicações; flexibilidade na manutenção dos dados; disponibilidade dos dados atualizados no âmbito de toda a organização; economia de escala, entre outras.
+
+
+Desvantagens
+
+
+A presença do SGBD como um software intermediário entre as aplicações e os dados armazenados provoca uma sobrecarga no desempenho do sistema como um todo. Além disso, há de se levar em conta o custo e o esforço adicional na capacitação e no oferecimento de funcionalidades sofisticadas como as já citadas anteriormente.
+
+
+Assim, pode-se dizer que é preferível não usar a abordagem de SBD em algumas aplicações, tais como: aplicações muito simples com dados estáticos e bem definidos, aplicações de tempo real com requisitos rígidos os quais não possam ser atendidos com o overhead causado pelo SGBD, sistemas embarcados, com poucos dados e com requisitos estritos de tempo real (exemplo: piloto automático), sistemas monousuários de uso sem concorrência.
+
+
+Poderiam ser enquadradas nessa lista as aplicações que requerem dados volumosos com dinâmica não processável por SGBDs tradicionais, como a Internet das Coisas (IoT, de Internet of Things), porém o advento de bancos de dados NoSQL, com modelos de dados específicos para tratamento de big data, busca a atender a esses tipos de aplicações incompatíveis com os modelos tradicionais de SGBD.

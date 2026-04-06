@@ -1,0 +1,37 @@
+Evolução dos sistemas de informação
+Seguindo na história, o advento dos bancos de dados foi uma evolução natural dos sistemas de arquivos. Podemos observar que os programas que manipulam os arquivos de dados, além de implementarem a lógica da aplicação, têm de conter um módulo para a gerência dos arquivos de dados. Esse módulo deve ser repetido em todos os programas que precisam acessar e manipular o mesmo arquivo de dados.
+
+Neste vídeo, entenderemos a evolução dos sistemas de informação em computador.
+
+
+
+Primórdios dos sistemas de banco de dados
+
+Os sistemas de banco de dados (SBD) vieram para mitigar esse problema, a partir de 1960, tirando dos programas de aplicação a responsabilidade de gerenciar os arquivos de dados. Essa tarefa passou a ser delegada a um software intermediário, denominado de sistema de gerência de banco de dados (SGBD), como mostrado a seguir.
+
+
+
+Sistema gerenciador de banco de dados
+
+Essa propriedade dos sistemas de banco de dados é denominada de independência entre dados e programas, uma diferença primordial em relação aos sistemas de arquivos.
+
+
+Em outras palavras, ocorreu uma modularização do sistema de informação, com a distribuição de responsabilidades entre os programas de aplicação e o SGBD. Os programas de aplicação passaram a se ocupar exclusivamente das funcionalidades da aplicação propriamente dita, deixando as tarefas de acesso e manipulação dos dados armazenados em disco para o SGBD, um software tipicamente auxiliar, de bastidores ou, como se costuma dizer no jargão do mercado, um serviço de back end.
+
+
+Comentário
+Perceba a diferença entre o sistema de banco de dados (SBD) e o sistema de gerência de banco de dados (SGBD). O SBD é mais amplo, englobando o SGBD, os próprios programas de aplicação e os bancos de dados manipulados por eles.
+
+
+Estágio atual dos sistemas de informação (na Web)
+
+Antes de discorrer sobre o histórico dos SBD, vale completar a evolução dos sistemas de informação até os dias atuais, fortemente influenciada pela revolução tecnológica causada pela World Wide Web no final do século XX.
+
+
+Com a popularização da interface web no desenvolvimento das aplicações, surgiram novas linguagens de programação e novas formas de armazenamento e acesso a dados em fontes com diferentes formatos. Assim, o SGBD das aplicações tradicionais pode ser considerado atualmente como um gênero de software básico, com papel intermediário, que denominamos como middleware, em que se incluem servidores de aplicações das diferentes linguagens e ambientes de desenvolvimento web. Confira!
+
+
+
+Sistema gerenciador de banco de dados
+
+Essa imagem resume o atual estágio dos sistemas de informação na web, em que as fontes de dados não se restringem a dados estruturados, como em bancos de dados tradicionais, admitindo volumes gigantescos em diversos formatos, localizações e velocidade de produção, características marcantes do conceito de big data. Igualmente, as aplicações via web são desenvolvidas em uma diversidade de plataformas digitais, de smartphones a supercomputadores, que têm em comum a conexão com a internet e, em consequência, a computação em nuvem (cloud computing).

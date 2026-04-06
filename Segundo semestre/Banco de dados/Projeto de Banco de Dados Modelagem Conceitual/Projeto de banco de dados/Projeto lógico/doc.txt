@@ -1,0 +1,78 @@
+Projeto lógico
+Assista ao vídeo e aprenda a traduzir o projeto conceitual em estruturas de dados tangíveis, utilizando técnicas específicas para representar de maneira eficaz as relações e entidades identificadas.
+
+
+
+O projeto lógico, também conhecido por modelo de dados de baixo nível, objetiva transformar o modelo conceitual em um modelo lógico, que depende do tipo de SGBD escolhido. Existem diversos modelos lógicos, por exemplo:
+
+ 
+
+Rede
+ 
+Hierárquico
+ 
+Relacional
+ 
+Orientado a objeto
+ 
+Grafos
+ 
+Chave-valor
+ 
+XML
+ 
+
+No entanto, atualmente, o mais popular é o relacional. Como exemplos de SGBD que fazem uso do modelo relacional, podemos citar: Oracle, MySQL, PostgreSQL, SQlite e Sql Server.
+
+
+Atenção
+É importante acompanharmos as tendências de mercado sobre o uso de tecnologias de banco de dados. No Explore +, há indicação para pesquisar sobre o portal que tem um ranking com atualização mensal sobre o uso de SGBDs. Confira.
+
+
+O modelo relacional de banco de dados surgiu na década de 1970 e representa os dados em estruturas chamadas tabelas. Cada tabela possui nome e coluna(s) que compõe(m) a sua estrutura. Nossa tarefa é converter o modelo conceitual para o lógico relacional. Para isso, utilizaremos regras bem definidas, que dependem dos elementos do DER.
+
+ 
+
+No dia a dia, a conversão DER para o modelo lógico relacional é realizada com o auxílio de alguma ferramenta de modelagem. No entanto, todo profissional de tecnologia da informação precisa conhecer os princípios utilizados nessa conversão. A imagem em sequência exibe as tabelas originadas das entidades do DER do nosso exemplo, construído na etapa de projeto conceitual.
+
+
+
+
+Tabelas originadas do DER da Escola.
+No modelo relacional, as entidades de um DER são representadas sob o formato de tabelas, por isso, no exemplo, aparecem as tabelas CLIENTE e CURSO. Em especial, a mesma decisão foi tomada para representar o relacionamento INSCRICAO. Perceba que nesse ponto do projeto ainda não definiremos as características dos atributos, tais como tipos de dados e tamanho. Basta apenas que eles estejam vinculados às suas tabelas.
+
+ 
+
+Além da representação visual do projeto lógico, as tabelas podem ser expressas com o uso de representação textual.
+
+ 
+
+Veja, a seguir, a descrição que corresponde às tabelas originadas das entidades do DER!
+
+
+CLIENTE
+
+idcliente, nome, datanascimento, CPF, email, telefone
+
+CURSO
+
+idcurso, nome, cargahoraria, descricao
+
+INSCRICAO
+
+idcurso, idcliente, datainscricao, datacancelamento
+
+Observe que, com base na representação textual, podemos dizer que:
+
+ 
+
+Um cliente é caracterizado por um identificador, além de possuir as propriedades nome, data de nascimento, CPF, e-mail e telefone.
+ 
+Um curso possui um identificador, além das propriedades nome, carga horária e descrição.
+ 
+
+Uma inscrição associa um cliente a determinado curso, além de possuir as propriedades data de inscrição e data de cancelamento.
+
+ 
+
+Estamos finalizando a nossa jornada nas fases de um projeto de banco de dados. É chegada a hora de construir o projeto físico.

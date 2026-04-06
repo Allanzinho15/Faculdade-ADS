@@ -1,0 +1,118 @@
+Levantamento de requisitos e projeto conceitual
+Abordaremos duas fases cruciais do desenvolvimento de sistemas, começando pelo essencial: levantamento de requisitos. Além disso, exploraremos o projeto conceitual de bancos de dados.
+
+ 
+
+Convidamos você a participar ativamente, desvendando os intricados processos do levantamento de requisitos e do projeto conceitual, essenciais para a construção de sistemas de informação robustos.
+
+ 
+
+Vamos começar! Assista ao vídeo e compreenda o levantamento de requisitos, fundamental para a construção de sistemas eficientes, e o projeto conceitual de bancos de dados, em que traduziremos esses requisitos em estruturas conceituais sólidas.
+
+
+
+Projeto de banco de dados
+
+
+De maneira simplificada, projetar um banco de dados envolve as seguintes fases: levantamento de requisitos, projeto conceitual, projeto lógico e projeto físico.
+
+ 
+
+Ao construir um banco de dados para uma corporação, devemos ter em mente que há colaboradores desempenhando diversas tarefas associadas ao negócio em questão. Assim, temos que adquirir conhecimento sobre o funcionamento das rotinas e tarefas para capturarmos as necessidades associadas à gestão de dados. Veremos que esse conhecimento ocorre na fase de levantamento de requisitos.
+
+
+Levantamento de requisitos
+
+
+Ao longo da etapa de levantamento de requisitos, o profissional de dados entrevista usuários para entender sobre o funcionamento do negócio e documentar os requisitos de dados de maneira completa e detalhada.
+
+ 
+
+Imagine que você foi convidado a participar de um projeto que objetiva construir um banco de dados para controlar inscrições de alunos em uma escola de treinamentos na área de Tecnologia de Informação.
+
+ 
+
+Após realizar entrevistas junto aos colaboradores, você identifica os seguintes requisitos de dados da escola:
+
+ 
+
+A escola planeja diversos cursos. Cada um deles possui nome, descrição, carga horária e é identificado por um código único.
+ 
+A escola armazena o nome, a data de nascimento, o CPF, o e-mail e um telefone de cada cliente, que é identificado por um código único.
+ 
+Quando um cliente faz inscrição em determinado curso, é necessário armazenar a data. Caso seja cancelada a inscrição, é preciso saber quando ocorreu esse evento. Um cliente pode fazer diversos cursos.
+
+Projeto conceitual
+
+Com os requisitos de dados em mãos, usaremos um modelo de dados gráfico para formalizar entendimento mais preciso a respeito dos requisitos de dados. Essa atividade ocorrerá na próxima fase do projeto de banco de dados: projeto conceitual.
+
+ 
+
+O projeto ou esquema conceitual envolve construir um modelo de dados de alto nível a partir dos requisitos de dados que contêm os principais objetos e seus relacionamentos, mapeados na etapa de levantamento de requisitos. Nesta etapa, não há preocupação em saber detalhes sobre como os dados devem ser armazenados.
+
+ 
+
+O projeto conceitual usa um diagrama gráfico, conhecido por Diagrama de Entidade e Relacionamento (DER), que possui três elementos essenciais:
+
+
+Entidades
+
+É representada por um retângulo com o seu nome.
+
+Relacionamentos
+
+É representada por um losango ligado por linhas aos retângulos das entidades participantes do relacionamento.
+
+Atributos
+
+São expressos graficamente ligados à entidade ou ao relacionamento ao qual fazem parte.
+
+A seguinte imagem representa um DER construído a partir dos requisitos de dados obtidos na etapa de levantamento de requisitos. Confira!
+
+
+
+
+DER construído a partir dos requisitos de dados da Escola.
+A partir do diagrama, é possível concluir que o modelo possui duas entidades (CLIENTE e CURSO) cuja função é armazenar os dados dos clientes e dos cursos da escola. Além disso, essas entidades possuem uma relação entre si, de maneira que um cliente pode fazer inscrição em um ou mais cursos. De acordo com Elmasri e Navathe:
+
+
+O esquema conceitual de alto nível (DER) pode ser utilizado como uma referência para garantir que todos os requisitos de dados dos usuários sejam atendidos e que não estejam em conflito.
+
+(ELMASRI; NAVATHE, 2019, n. p)
+Isso acontece porque a representação dos requisitos de dados a partir do DER permite um aprendizado mais preciso a respeito do funcionamento do negócio sendo modelado, quando comparado aos requisitos de dados.
+
+
+Outra notação para DER: diagrama de classes UML
+
+Ao longo da sua atuação profissional, você perceberá que não há uma notação-padrão para representação dos conceitos do modelo de entidade e relacionamento. Normalmente, a notação depende de preferência dos profissionais ou mesmo de regras estabelecidas pela empresa de desenvolvimento. As ferramentas CASE fazem uso de várias notações. Por exemplo, a utilizada na ferramenta brModelo é muito próxima da notação original para modelos de entidade e relacionamento.
+
+Em projetos de software, é comum o uso da UML para visualização e documentação dos seus componentes. De certa forma, um diagrama de classes da UML pode ser considerado uma notação alternativa para representar os conceitos de um DER. No diagrama de classes UML, cada classe é representada por uma caixa que possui três seções:
+
+1
+Superior
+
+
+Exibe o nome da classe.
+
+
+2
+Central
+
+
+Exibe os atributos. Além disso, o desenvolvedor pode, se desejar, adicionar informações sobre o tipo de dados de algum atributo, colocando um sinal de dois pontos “:” e em seguida o nome do tipo de dados.
+
+
+3
+Inferior
+
+
+Inclui as operações associadas aos objetos da classe, a serem designadas numa etapa posterior, quando do projeto das aplicações do banco de dados.
+
+
+Na terminologia da UML, o relacionamento entre classes é chamado de associação. Assim, uma associação é representada por uma linha que conecta as classes participantes. Além disso, atributos dos relacionamentos são colocados em uma caixa conectada à associação por uma linha tracejada. A próxima imagem mostra como o DER construído a partir dos requisitos de dados da escola pode ser exibido sob a forma de diagrama de classes UML.
+
+
+
+
+Esquema conceitual Escola na notação do diagrama de classes UML.
+Após as etapas de levantamento de requisitos e criação do DER, estamos quase prontos para conhecermos a construção do banco de dados propriamente dito. Construiremos um modelo de dados de mais baixo nível, que vai depender da escolha do SGBD. Faremos isso na próxima fase: o projeto lógico.

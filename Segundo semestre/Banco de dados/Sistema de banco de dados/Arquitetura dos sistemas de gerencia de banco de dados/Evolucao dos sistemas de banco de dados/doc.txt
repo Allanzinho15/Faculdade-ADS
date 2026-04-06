@@ -1,0 +1,57 @@
+Evolução dos sistemas de banco de dados
+Podemos dizer que tudo começou com registros de bibliotecas, empresas em geral, registros policiais, fichas de pacientes em clínicas e hospitais e todas as informações armazenadas de maneira impressa para consultas posteriores.
+
+
+Na década de 1960, os computadores se tornaram parte efetiva das empresas, juntamente com o crescimento da capacidade de armazenamento. Foram desenvolvidos dois principais modelos de dados: modelo em rede (committee for data systems language - CODASYL) e o modelo hierárquico (information management system - IMS).
+
+
+Assista ao vídeo para compreender a evolução dos sistemas de banco de dados em computador.
+
+
+
+Bancos de dados navegacionais
+
+Há uma controvérsia sobre qual foi o primeiro SGBD implementado e utilizado comercialmente na década de 1960. Sabe-se que duas iniciativas independentes ocorreram paralelamente, resultando em dois produtos comerciais:
+
+
+Integrated Data Systems (IDS): Criado por Charles Bachman (1924-2017) no âmbito de um comitê que padronizou a linguagem COBOL (Committee On Data Systems Languages - CODASYL).
+ 
+
+Information Management System (IMS): Criado pela IBM na esteira do sucesso da invenção do disco magnético anos antes.
+
+O IDS e o IMS tinham em comum a característica de que os dados eram acessados por meio de programas que “navegam” de registro em registro pela estrutura dos dados armazenados em disco. Por causa dessa característica, atualmente aqueles SGBDs e outros que seguiram a mesma abordagem são denominados de navegacionais.
+
+
+Agora, observe a diferença entre eles:
+
+
+IDS
+
+
+Usava a estrutura de dados de grafos ou redes, daí a denominação de network databases.
+
+
+IMS
+
+
+Adotava a estrutura de dados de árvores, que é um tipo de grafo mais restrito do que as redes, baseado em hierarquias, originando a denominação hierarchical databases.
+
+
+Vários SGBD foram implementados com variantes desses modelos de banco de dados, como o Data Management System (DMS) e o Integrated Database Management System (IDMS). Vale relembrar que muitos sistemas de informação legados daquela época ainda utilizam esses SGBD navegacionais, a exemplo da demanda por programadores COBOL em meio à pandemia de covid-19.
+
+
+Modelo relacional de banco de dados
+
+A grande revolução na história dos bancos de dados ocorreu na virada das décadas de 1960 e 1970, com a publicação do artigo seminal do matemático pesquisador da IBM, Edgar Codd, intitulado A Relational Model of Data for Large Shared Data Banks, que introduziu o modelo relacional de banco de dados.
+
+Curiosidade
+O artigo de Codd, uma das obras mais citadas na comunidade da computação em todos os tempos, foi o marco do chamado modelo relacional de banco de dados, cuja estrutura de dados, diferentemente dos grafos dos bancos de dados navegacionais, é uma função matemática denominada relação.
+
+
+Codd criou uma álgebra relacional e um cálculo relacional, nos quais baseou toda a teoria matemática das relações em que fundamentou o modelo relacional. Apesar da base teórica do modelo, a estrutura de dados subjacente tem o mérito de ser muito simples, pois uma relação nada mais é do que uma tabela formada por colunas e linhas, em cujas células estão armazenados os dados, conceito compreensível pelo senso comum de qualquer leigo em matemática ou computação. Veja!
+
+
+
+Exemplo de tabela para armazenagem de dados
+
+A solidez da fundamentação matemática do modelo relacional disparou uma série de iniciativas de implementação em empresas, como a própria IBM, e no meio acadêmico, principalmente nas universidades do estado da Califórnia, onde se localizava o centro de pesquisas da IBM. A partir de então, a IBM patrocinou o projeto System R (de relational), enquanto a Universidade da Califórnia em Berkeley (UCB) deu início à implementação acadêmica de um SGBD relacional denominado de Interactive Graphics Retrieval System (Ingres).

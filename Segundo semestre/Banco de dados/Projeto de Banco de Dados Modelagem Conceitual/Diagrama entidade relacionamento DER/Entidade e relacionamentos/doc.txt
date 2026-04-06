@@ -1,0 +1,123 @@
+Entidades e relacionamentos
+Adentrando agora ao mundo da modelagem visual, exploraremos o diagrama entidade-relacionamento (DER). O DER é uma ferramenta fundamental na concepção e comunicação de estruturas de banco de dados, pois proporciona uma visão intuitiva das relações entre diferentes componentes.
+
+ 
+
+Convidamos você a se dedicar a esse processo de modelagem. Mãos à obra!
+
+ 
+
+Neste vídeo, compreenda o diagrama entidade-relacionamento (DER), que traduz nossas ideias em representações gráficas, destacando entidades, atributos e suas interconexões.
+
+
+
+Entidade
+
+
+De acordo com Heuser (2009), a entidade corresponde a uma representação do conjunto de objetos da realidade modelada sobre os quais se deseja manter informações no banco de dados. Em um DER, a entidade é representada por um retângulo e dentro dele definimos o nome da entidade. Considere o seguinte exemplo!
+
+
+
+
+Exemplo de representação gráfica de entidade.
+
+Relacionamento
+
+
+Veja que o retângulo representa o conjunto de todos os alunos sobre os quais há interesse em manter informações no banco de dados.
+
+
+Heuser (2009) afirma que a propriedade de entidade que especifica as associações entre objetos é o relacionamento, o qual corresponde a um conjunto de associações entre ocorrências de entidades. Em um DER, representamos o relacionamento por meio de um losango ligado por linhas conectadas às entidades envolvidas. Vamos observar o exemplo a seguir.
+
+
+
+
+Exemplo de representação gráfica de relacionamento.
+Veja que há duas entidades, além do relacionamento POSSUI. Todo relacionamento pressupõe a existência dos objetos das entidades participantes.
+
+
+Autorrelacionamento
+
+
+Há casos em que um relacionamento envolve ocorrências de uma mesma entidade (autorrelacionamento). Em especial, é importante diferenciar o papel que cada ocorrência da entidade cumpre no contexto do relacionamento em questão.
+
+
+Suponha que, para cursar a disciplina Cálculo II, seja necessário ter conhecimentos em Cálculo I. Esse tipo de situação é conhecido por pré-requisito. A imagem em sequência apresenta um autorrelacionamento envolvendo pré-requisitos a partir da entidade DISCIPLINA. Confira!
+
+
+
+
+Exemplo de representação gráfica de autorrelacionamento.
+O modelo contempla dois tipos de conjunto. São eles:
+
+
+Conjunto de objetos
+
+Classificados como disciplinas (entidade DISCIPLINA).
+
+Conjunto de associações
+
+Cada associação (relacionamento PREREQUISITO) relaciona uma disciplina liberadora (que o aluno precisa ter cumprido) e uma liberada (que o aluno poderá cursar).
+
+Em nosso exemplo, Cálculo II é a disciplina liberada e Cálculo I, a liberadora.
+
+
+Cardinalidade de relacionamentos
+
+
+Até o momento, identificamos um relacionamento (POSSUI) entre as entidades CURSO e DISCIPLINA. No entanto, surgiram quatro importantes perguntas:
+
+
+Toda disciplina, para existir no banco de dados, tem de estar associada a algum curso?
+Uma disciplina pode estar associada a, no máximo, quantos cursos?
+Todo curso, para existir no banco de dados, deve estar associado a alguma disciplina?
+Um curso pode estar associado a, no máximo, quantas disciplinas?
+
+Toda disciplina, para existir no banco de dados, tem de estar associada a algum curso?
+Uma disciplina pode estar associada a, no máximo, quantos cursos?
+Todo curso, para existir no banco de dados, deve estar associado a alguma disciplina?
+Um curso pode estar associado a, no máximo, quantas disciplinas?
+
+Expressaremos essas respostas no DER, usando o conceito de cardinalidade em relacionamentos. A cardinalidade é um par ordenado sob a forma (mínima, máxima): 0 ou 1 para a mínima e 1 ou N para a máxima, com N representando valores maiores que a unidade. Vejamos um exemplo.
+
+
+
+
+Exemplo de representação gráfica do relacionamento POSSUI, com as cardinalidades definidas.
+Podemos então responder:
+
+
+Pergunta 1
+
+Não (cardinalidade mínima 0 expressa ao lado da entidade CURSO).
+
+Pergunta 2
+
+Vários (cardinalidade máxima n expressa ao lado da entidade CURSO).
+
+Pergunta 3
+
+Não (cardinalidade mínima 0 expressa ao lado da entidade DISCIPLINA).
+
+Pergunta 4
+
+Várias (cardinalidade máxima n expressa ao lado da entidade DISCIPLINA).
+
+Por convenção, cada par ordenado da cardinalidade diz respeito à participação da entidade localizada no lado oposto do relacionamento em questão.
+
+
+Relacionamento ternário
+
+
+Vamos modelar orientações de alunos em projetos, realizadas por docentes. Há três tipos de informações: projeto, aluno e docente. Estamos, portanto, diante de um relacionamento ternário. Confira na próxima imagem a parte do DER contemplando esse requisito de dados.
+
+
+
+
+Exemplo de relacionamento ternário.
+Cada ocorrência do relacionamento ORIENTACAO vincula três ocorrências de entidade: um projeto, um aluno a ser orientado e um docente orientador. Em um relacionamento ternário, especificamos cada par de cardinalidade com base na relação existente entre o par de cardinalidade restante. Veja a seguir o que expressa cada par de cardinalidade!
+
+
+Cardinalidade máxima 1
+
+Expressa no modelo ao lado da entidade DOCENTE, diz respeito ao par (ALUNO, PROJETO). Um aluno participante de um projeto pode ser orientado por no máximo um docente.
