@@ -1,0 +1,34 @@
+Atributo multivalorado
+Outra decisão essencial na modelagem de bancos de dados é a determinação de um atributo como multivalorado ou monovalorado. Vamos analisar os cenários em que a possibilidade de múltiplos valores é vantajosa para o sistema.
+
+ 
+
+Assista ao vídeo e saiba sobre a determinação de um atributo como multivalorado ou monovalorado, que permite ou restringe a possibilidade de lidar com vários valores diferentes para um mesmo atributo de uma entidade.
+
+
+
+No DER, vamos supor que, a partir de agora, seja necessário modelar que um funcionário pode ter dependente(s). Uma primeira linha de raciocínio para realizar a modelagem desse novo requisito de dados é adicionar um atributo opcional na entidade FUNCIONARIO. Veja!
+
+
+
+
+DER com informação sobre dependente(s) modelada sob a forma de atributo multivalorado.
+Há dois motivos para evitarmos esse tipo de modelagem:
+
+ 
+
+Ao construirmos o modelo físico, vamos perceber que não existe uma implementação direta para atributos multivalorados em um SGBD relacional.
+ 
+Na maioria dos casos, atributos multivalorados escondem atributos e relacionamentos.
+ 
+É desejável que o banco de dados possa controlar, por exemplo, o nome e a data de nascimento de cada dependente. De forma semelhante, seria igualmente desejável diferenciar o tipo ou a categoria de cada telefone pertencente ao funcionário.
+
+ 
+
+O DER a seguir apresenta tanto a modelagem de dependentes quanto a de telefone sob a perspectiva de entidades relacionadas à entidade FUNCIONARIO:
+
+
+
+
+DER com informações sobre dependente(s) e telefone(s) modeladas sob o formato de entidade.
+Podemos observar que, após a decisão de modelar os objetos dependente e telefone como entidades relacionadas à entidade FUNCIONARIO, além de termos eliminado atributos opcionais, conseguimos deixar o modelo mais preciso, legível e com a possibilidade de adicionar novos atributos para as entidades de maneira mais natural.

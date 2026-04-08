@@ -1,0 +1,52 @@
+Atributos redundantes e compostos
+Agora, analisaremos os atributos redundantes e compostos. Convidamos você a participar ativamente desta reflexão, explorando os trade-offs entre a simplificação da estrutura e a preservação da eficiência. Juntos, vamos explorar essas complexidades na busca por uma modelagem de dados que atenda às demandas específicas do ambiente e proporcione um banco de dados coeso e eficaz.
+
+ 
+
+Explore, neste vídeo, os desafios de decidir quando é apropriado utilizar atributos redundantes para otimizar consultas e quando é mais eficiente empregar atributos compostos para manter a consistência e a integridade dos dados.
+
+
+
+Atributo X Redundância
+
+
+Atributos redundantes são atributos deriváveis a partir da execução de procedimentos de busca de dados e/ou cálculos sobre o banco de dados (Heuser, 2009).
+
+ 
+
+No exemplo acadêmico, vamos supor que seja necessário sabermos a quantidade de dependentes de cada funcionário. Além disso, precisamos identificar, para cada dependente, o número de matrícula do funcionário responsável.
+
+ 
+
+Confira o uso de atributos redundantes expresso na modelo a seguir, propositalmente em destaque.
+
+
+
+
+DER com atributos redundantes.
+Devemos perceber que não é necessário manter o atributo QTDEDEPENDENTES na entidade FUNCIONARIO, pois a informação sobre a quantidade de funcionários pode ser obtida a partir de um simples processo de cálculo envolvendo o relacionamento. Também não é necessário manter o atributo CODIGOFUNCIONARIO na entidade DEPENDENTE, pois seu valor pode ser obtido ao acessar a entidade FUNCIONARIO por meio do relacionamento.
+
+ 
+
+Finalmente, atributos redundantes devem ser omitidos do DER, uma vez que esse tipo de modelo não diferencia atributos redundantes dos sem redundância.
+
+
+Atributo composto
+
+
+Pode ser dividido em subpartes ou atributos básicos com significados próprios.
+
+ 
+
+No DER deste estudo, para fins ilustrativos, inicialmente modelamos o endereço do aluno por meio de um atributo composto subdividido em logradouro e complemento. Se adicionarmos mais alguns atributos básicos representativos de outras partes de um endereço, teremos um DER como a seguir.
+
+
+
+
+DER representando a entidade ALUNO com atributo composto endereço.
+Como desvantagem, o modelo ficou com um visual bastante denso. Por outro lado, é comum modelarmos o objeto alvo do atributo composto sob o formato de entidade relacionada à entidade principal. Observe essa mudança na imagem a seguir.
+
+
+
+
+DER representando endereço como entidade.

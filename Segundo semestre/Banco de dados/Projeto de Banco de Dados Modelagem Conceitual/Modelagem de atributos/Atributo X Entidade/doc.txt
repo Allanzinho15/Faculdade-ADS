@@ -1,0 +1,65 @@
+Atributo X Entidade
+Adentramos agora em uma discussão crucial na construção de bancos de dados: a escolha entre utilizar uma entidade ou um atributo para representar informações específicas. Essa decisão estratégica molda a estrutura do sistema e impacta diretamente a eficiência e flexibilidade do modelo.
+
+ 
+
+Vamos em frente!
+
+ 
+
+Entenda, neste vídeo, a escolha entre utilizar uma entidade ou um atributo para representar informações específicas, por meio da análise de circunstâncias em que é mais vantajoso utilizar entidades distintas ou consolidar informações como atributos.
+
+
+
+Em todos os exemplos desenvolvidos até o momento, caracterizamos entidades e relacionamentos com o auxílio da especificação de atributos. No entanto, em algumas situações, modelar um objeto como atributo pode não ser a melhor alternativa.
+
+ 
+
+No contexto do exemplo acadêmico, é necessário que todo docente tenha pelo menos uma graduação registrada no banco de dados. Veja esse requisito expresso no seguinte modelo.
+
+
+
+
+DER com informação sobre o docente (graduação mapeada como atributo).
+Precisamos lembrar que a graduação do docente está expressa sob o formato de atributo. A seguir, conheça as diferenças entre as cardinalidades!
+
+
+Cardinalidade mínima 1
+
+Significa que a informação é obrigatória.
+
+
+Cardinalidade máxima N
+
+Significa a informação de que é possível registrar no banco de dados diversos cursos associados ao docente.
+
+
+Se diversos docentes são formados em Ciência da Computação, não faz muito sentido entrar com essa informação no sistema diversas vezes. Mesmo porque, em se tratando de informação textual, daria possibilidade de mais de uma forma de representação para o mesmo item.
+
+ 
+
+Caso, além da informação referente ao nome da graduação, quiséssemos saber o ano em que o docente se formou, estaríamos diante de uma situação em que o mais adequado seria modelar o objeto graduação como uma entidade. Assim, diante do novo cenário, confira o seguinte modelo modificado!
+
+
+
+
+DER com informação sobre o docente (graduação mapeada como entidade).
+Percebemos que no novo DER:
+
+ 
+
+O objeto graduação foi mapeado sob o formato de entidade.
+ 
+As graduações podem ser cadastradas sem vínculo algum com qualquer docente. Essa conclusão ocorre em função da cardinalidade mínima 0 expressa ao lado da entidade DOCENTE.
+ 
+Todo docente necessariamente possui uma graduação. Essa conclusão ocorre em função da cardinalidade mínima 1 expressa ao lado da entidade GRADUACAO.
+
+Finalmente, se estivéssemos interessados em modelar um atributo ANOFIM com objetivo de saber o ano de término da graduação pelo docente, bastaria adicionarmos esse atributo ao relacionamento DOCENTEGRAD.
+
+ 
+
+Uma situação comum durante a construção de um DER é decidir entre modelar um objeto sob o formato de atributo ou especialização. O critério a ser usado na decisão é simples: caso o objeto em questão possua atributo(s) ou mesmo relacionamento(s), usa-se a especialização.
+
+ 
+
+No DER apresentado, a entidade FUNCIONARIO foi especializada. Devemos perceber que a entidade DOCENTE está relacionada com a entidade GRADUACAO. Portanto, houve escolha coerente com o critério apresentado.

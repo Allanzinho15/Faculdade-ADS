@@ -1,0 +1,47 @@
+Modelagem de atributos na prática
+Agora que já estudamos com mais profundidade os aspectos da modelagem de atributos, veremos um novo estudo de caso mais focado nesse aspecto.
+
+ 
+
+Este é o minimundo: um filme possui código, título, categoria (comédia, suspense etc.). É preciso saber os atores principais de cada filme, sendo que nem todos os filmes têm atores principais. É necessário, ainda, saber o nome real e a idade de cada ator.
+
+ 
+
+Veja, neste vídeo, um estudo de caso sobre filmes, dos quais será necessário saber os atores principais de cada filme, sendo que nem todos os filmes têm atores principais.
+
+
+
+Roteiro de prática
+
+
+Para realizarmos a modelagem conceitual a partir do mundo real, devemos seguir os seguintes passos:
+
+ 
+
+Identificar as entidades existentes.
+ 
+Definir as entidades tipo e representá-las no DER.
+ 
+Identificar as associações entre as entidades, ou seja, os seus relacionamentos.
+ 
+Definir os relacionamentos tipo e representá-los no DER.
+ 
+Estabelecer as cardinalidades dos relacionamentos.
+ 
+Identificar os atributos e suas características.
+ 
+Modelar os atributos e as características de cada um dos atributos do cenário, determinando se esse atributo é: 
+
+7.1. Único ou não único.
+ 
+7.2. Opcional ou obrigatório.
+ 
+
+7.3. Simples ou composto.
+ 
+
+7.4. Monovalorados ou multivalorado.
+
+ 
+
+Confira o DER de solução!

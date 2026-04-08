@@ -1,0 +1,34 @@
+Atributo opcional
+Entramos agora em uma esfera de decisões imprescindíveis na modelagem de bancos de dados: a determinação de um atributo como obrigatório ou opcional. Essa escolha estratégica molda a rigidez ou a flexibilidade do sistema, influenciando diretamente na integridade dos dados.
+
+ 
+
+Vamos lá!
+
+ 
+
+Compreenda, neste vídeo, a determinação de um atributo como obrigatório ou opcional, a partir da análise de cenários em que a obrigatoriedade é imperativa e aqueles em que a flexibilidade é mais vantajosa.
+
+
+
+Há situações em que surgem diversos atributos opcionais em uma entidade. Devemos, portanto, estar atentos para perceber se os atributos em questão indicam prováveis entidades especializadas.
+
+ 
+
+Suponha que, a partir de agora, tenhamos que saber se determinado funcionário tem registro na Ordem dos Advogados do Brasil (OAB) ou na Associação Brasileira de Odontologia (ABO). Assim, diante do novo cenário, considere o seguinte modelo modificado.
+
+
+
+
+DER com informação sobre OAB e ABO.
+No DER, foram adicionados os atributos OAB e ABO à entidade FUNCIONARIO. Devemos perceber que ambos são opcionais, no entanto, não sabemos quais combinações de atributos são válidas. Por exemplo, um funcionário pode ter atributos ABO e OAB?
+
+ 
+
+Se realizarmos uma análise mais criteriosa no modelo, vamos perceber que os atributos ABO e OAB parecem ocultar diferentes categorias: Advogados e odontólogos. Sendo assim, vamos modificar o modelo optando por modelar os atributos ABO e OAB como entidades especializadas de FUNCIONARIO. Logo, confira o modelo, a seguir, que representa as mudanças.
+
+
+
+
+DER com informação sobre OAB e ABO modeladas com uso do mecanismo de especialização.
+Finalmente, devemos perceber que a estratégia adotada tem a vantagem de modelar a realidade com mais fidelidade, ao mesmo tempo que evitou modelagem de atributos opcionais na entidade FUNCIONARIO.
