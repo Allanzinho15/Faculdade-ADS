@@ -1,0 +1,49 @@
+Prática de instalação de SGBD e criação de banco de dados
+Vamos criar um banco de dados de documentos!
+
+
+Neste vídeo, você vai praticar a instalação do SGBD PostgreSQL e a criar um banco de dados.
+
+
+
+Roteiro de prática
+
+
+Gere o script do banco dos documentos.
+
+
+Acesse o brmodelo3 e abra o arquivo DOCUMENTOLOGICO.brM3.
+Gere o modelo físico.
+Salve o script.
+
+O arquivo de script está disponível para download: criadoc.sql.
+
+
+Para instalar o SGBD PostgreSql, acompanhe os seguintes passos.
+
+
+Vá para o site oficial do PostgreSQL em https://www.postgresql.org/.
+Selecione a versão mais recente compatível com o seu sistema operacional (Windows) e faça o download do instalador.
+Execute o arquivo baixado para iniciar o instalador. Siga as instruções na tela para configurar o PostgreSQL.
+Durante a instalação, será solicitada a configuração de um cluster. Defina uma senha para o superusuário (postgres) e configure as opções conforme necessário.
+Escolha a porta padrão (geralmente 5432) e os diretórios para armazenamento de dados e arquivos de configuração.
+Complete o processo de instalação e, se necessário, reinicie o sistema.
+Instale a ferramenta de administração PgAdmin4.
+
+Para criar o banco de documentos:
+
+
+Abra o PGAdmin4 e faça conexão no servidor.
+Crie um banco de dados chamado documentos.
+Abra uma janela de consulta.
+Carregue o script na janela de consulta.
+Execute o script.
+Valide a criação das tabelas na aba Tabelas do banco de documentos.
+
+Observe na imagem a seguir.
+
+
+
+
+Visualização das tabelas usando o pgAdmin.
+Para inserir os dados nas tabelas, rode o script populadoc.sql.

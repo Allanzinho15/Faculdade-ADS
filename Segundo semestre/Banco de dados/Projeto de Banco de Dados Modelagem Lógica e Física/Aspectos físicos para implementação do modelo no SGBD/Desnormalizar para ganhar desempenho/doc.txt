@@ -1,0 +1,239 @@
+Indexação e consultas envolvendo mais de uma tabela
+Aqui abordaremos os pilares que sustentam a recuperação eficiente de dados em bancos de dados relacionais: indexação e consultas com múltiplas tabelas. Vamos explorar como a indexação otimiza o acesso aos dados, por meio de diferentes tipos de índices e suas aplicações. Também vamos nos aprofundar na construção de consultas complexas que combinam dados de várias tabelas, utilizando joins e outras técnicas avançadas.
+
+
+Neste vídeo, você vai conhecer os pilares que sustentam a recuperação eficiente de dados em bancos de dados relacionais, a indexação e as consultas com múltiplas tabelas.
+
+
+
+Consultas envolvendo mais de uma tabela
+
+Você perceberá que, em geral, a maior parte das consultas para recuperar informações de um banco de dados envolve diversas tabelas. Isso ocorre, principalmente, quando o projeto leva em conta as regras de normalização.
+
+
+Considere a estrutura de duas tabelas relacionadas, conforme a seguir:
+
+
+MUNICIPIO (CO_MUNICIPIO, NOME)
+ DM_DOCENTE_2 (CO_DOCENTE_IES, CO_IES, NO_IES, CO_MUNICIPIO_NASCIMENTO)
+ CO_MUNICIPIO_NASCIMENTO REFERENCIA MUNICIPIO
+
+
+A relação entre as tabelas está representada pela coluna de chave estrangeira CO_MUNICIPIO_NASCIMENTO da tabela DM_DOCENTE_2, a qual faz referência para a coluna chave primária CO_MUNICIPIO da tabela MUNICIPIO.
+
+
+Nosso objetivo é recuperar o código do docente e nome do município de nascimento dele.
+
+
+Perceba que as colunas alvo do resultado estão presentes em tabelas distintas: NOME, na tabela MUNICIPIO e CO_DOCENTE_IES, na tabela DM_DOCENTE_2.
+
+
+O código em SQL que recupera os dados de interesse está expresso a seguir:
+
+
+SELECT CODIGO_DOCENTE_IES, NOME
+ FROM DM_DOCENTE_2, MUNICIPIO
+ WHERE
+  MUNICIPIO.CO_MUNICIPIO=DM_DOCENTE_2.CO_MUNICIPIO_NASCIMENTO;
+
+
+A primeira linha do comando serve para declararmos as colunas que farão parte do resultado da consulta. Na segunda, informamos as tabelas de interesse. Finalmente, na última linha, há uma condição de filtro, envolvendo uma igualdade entre a chave primária da tabela MUNICIPIO e a chave estrangeira da tabela DM_DOCENTE_2.
+
+
+Para processar a consulta anterior, o SGBD cria uma estrutura de tabela temporária que contém a combinação de cada linha da tabela DM_DOCENTE_2 com cada linha da tabela MUNICIPIO. Se considerarmos os 367.980 registros de DM_DOCENTE_2 e os 5.570 registros da tabela MUNICIPIO, a tabela temporária teria mais de dois bilhões de linhas (367.980*5.570).
+
+
+Finalmente, a partir da tabela temporária, o SGBD executa o filtro especificado no comando WHERE para então exibir as colunas listadas no comando SELECT. O processo anterior é bastante custoso para o SGBD, ainda que cada sistema internamente use técnicas para otimizar o processamento.
+
+
+Atenção
+Note que, se esse tipo de consulta for frequente, haverá grande probabilidade de lentidão no sistema.
+
+
+Indexação em banco de dados
+
+O desempenho de consultas é um assunto vasto que faz uso de diversas estratégias de acesso a dados, semelhantes às utilizadas em nosso dia a dia.
+
+
+Por exemplo, ao buscarmos por determinada informação em algum livro, para ganharmos tempo, é comum primeiro consultar o índice remissivo do livro, que indicará a página onde se localiza o termo buscado.
+
+
+Atenção
+Em banco de dados, índices funcionam como estruturas auxiliares utilizadas para tornar mais eficiente a recuperação de registros em resposta a determinadas condições de busca.
+
+
+Normalmente, ao projetamos uma tabela com chave primária, os registros de dados são gravados em disco sem nenhum critério de ordenação das linhas da tabela. Para facilitar a consulta pelo valor da chave primária, o SGBD cria uma estrutura de índice para a chave primária de cada tabela.
+
+
+A estrutura de índice poderá ser utilizada pelo SGBD caso seja necessário realizar consulta que envolva, por exemplo, uma condição de igualdade na coluna de chave primária da tabela. Quando isso ocorre, o desempenho da consulta em geral é melhor do que caso não existisse a estrutura de índice.
+
+
+Exemplo prático envolvendo indexação
+
+Visando ressaltar a importância dos índices, realizamos um pequeno experimento, que consiste em submeter duas consultas ao SGBD, uma sem índice, e a segunda com uma coluna indexada.
+
+
+Vamos perceber que, quando o SGBD processa uma consulta com o auxílio de um índice, o tempo de resposta tende a ser mais otimizado se comparado à execução da mesma consulta sem esse recurso.
+
+
+Suponha então a existência de uma tabela DM_DOCENTE (CO_IES, NO_IES, CO_DOCENTE_IES, CO_MUNICIPIO_NASCIMENTO) - apresentada aqui com quatro colunas para fins de exemplo – originalmente, extraída do Censo da Educação Superior Brasileira de 2016.
+
+
+A tabela contém 367.980 registros. Cada registro corresponde a um docente vinculado a uma instituição de ensino superior (IES). Ainda, originalmente, os registros de DM_DOCENTE estão fisicamente ordenados pela coluna CO_IES e a tabela não possui chave primária definida.
+
+
+Nosso objetivo é recuperar todas as colunas da tabela, referentes ao docente que possui o valor 850516 para a coluna CO_DOCENTE_IES.
+
+
+O comando SQL executado na consulta I a seguir, serve para esse propósito:
+
+
+SELECT *
+ FROM DM_DOCENTE
+ WHERE CO_DOCENTE_IES=850516;
+
+
+Essa consulta demorou 2,5 segundos para ser executada.
+
+
+Agora, criaremos uma tabela chamada DM_DOCENTE_2, contendo os mesmos registros de DM_DOCENTE, no entanto com os registros ordenados pela coluna CO_DOCENTE_IES, conforme código SQL a seguir:
+
+
+/*
+ Tabela DM_DOCENTE_2 com registros ordenados por
+CO_DOCENTE_IES;
+*/
+CREATE TABLE DM_DOCENTE_2 AS
+SELECT *
+FROM DM_DOCENTE
+ORDER BY CO_DOCENTE_IES;
+
+
+Adicionaremos chave primária à tabela DM_DOCENTE_2, escolhendo a coluna CO_DOCENTE_IES, conforme código SQL a seguir:
+
+
+/*
+ Ao adicionar chave primária na tabela DM_DOCENTE_2, o SGBD
+cria um índice para a coluna CO_DOCENTE_IES.
+*/
+ALTER TABLE DM_DOCENTE_2 ADD PRIMARY KEY (CO_DOCENTE_IES);
+Finalmente, executaremos a consulta II:
+
+SELECT *
+FROM DM_DOCENTE_2
+WHERE CO_DOCENTE_IES=850516;
+
+
+Essa consulta demorou 0,06 segundos para ser executada.
+
+
+O resultado do processamento das consultas é igual, uma vez que temos os mesmos registros em ambas as tabelas. Contudo, a consulta 2 foi processada com mais eficiência.
+
+
+Após breve contextualização envolvendo consulta, transação e indexação, passaremos a estudar os fatores que influenciam no projeto de bancos de dados relacionais.
+
+
+Projeto físico em bancos de dados relacionais
+
+Projetar um banco de dados é um processo que envolve as seguintes etapas:
+
+
+Levantamento de requisitos
+Projeto conceitual
+Projeto lógico
+Projeto físico
+
+Projetar fisicamente um banco de dados é o mesmo que “colocar a mão na massa”, ou seja, acessar recursos do sistema gerenciador de banco de dados (SGBD) para atividades de criação da estrutura física do banco, que, na maioria das vezes, ocorre com o auxílio de alguma ferramenta CASE capaz de gerar códigos na linguagem SQL para criar as tabelas, relacionamentos e demais componentes do banco de dados.
+
+
+É comum que haja mais de uma alternativa para implementar um banco de dados tomando como base o esquema conceitual. Ainda, o projeto físico de banco de dados é comumente influenciado pelos seguintes fatores:
+
+
+Consultas e transações de banco de dados
+
+É necessário planejar as consultas e transações que deverão ocorrer no banco de dados. De um modo geral, para cada consulta de recuperação de dados, é necessário conhecer:
+
+
+As tabelas acessadas pela consulta.
+As colunas que serão utilizadas em condições de seleção.
+A natureza da condição de seleção: intervalo, igualdade ou desigualdade.
+Colunas utilizadas na composição de operações de junção.
+Colunas cujos valores aparecerão nos resultados da consulta.
+
+Em se tratando de tabelas de um banco de dados, é comum criarmos índices para determinadas colunas. Em especial, colunas relacionadas aos itens 2 e 4 são boas candidatas para serem indexadas.
+
+
+
+NIVEL e CURSO
+
+Observe a representação textual a seguir:
+
+
+SELECT *
+FROM CURSO
+WHERE NOME='Medicina' OR NOME='Nutrição';
+
+
+O SGBD precisa avaliar se há algum registro na tabela CURSO cujo conteúdo da coluna NOME seja “Medicina” ou “Nutrição.” Trata-se de uma consulta enquadrada no item 2: há uma condição de seleção na cláusula WHERE envolvendo a coluna NOME: uma boa candidata para criação de índice.
+
+
+Veja a consulta II a seguir, que objetiva recuperar o nome do curso e o nível ao qual ele pertence:
+
+
+SELECT NOME, DESCRICAO
+FROM CURSO JOIN NIVEL ON (CURSO.CODIGONIVEL=NIVEL.CODIGONIVEL);
+
+
+A consulta usa um comando de junção (JOIN). A condição (CURSO.CODIGONIVEL=NIVEL.CODIGONIVEL) será avaliada diversas vezes ao longo do processamento da consulta. Trata-se de uma consulta enquadrada no item 4: as colunas CODIGONIVEL presentes na tabela são boas candidatas para criação de índices.
+
+
+No caso de operações de atualização de dados, é necessário conhecer:
+
+
+As tabelas-alvo da atualização.
+A categoria da atualização em cada tabela: exclusão, atualização ou inserção.
+Colunas utilizadas em condições de seleção para exclusão ou atualização.
+Colunas-alvo das operações de atualização.
+
+Ainda no contexto de indexação, colunas relacionadas ao item 3 são boas candidatas para serem indexadas. Ao mesmo tempo, o ideal é não criar índices para as colunas relacionadas ao item 4. Vamos estudar um exemplo?
+
+
+Veja a consulta III a seguir, que objetiva excluir todos os cursos que tenham a string “Engenharia”.
+
+
+DELETE FROM CURSO
+WHERE NOME LIKE '%ENGENHARIA%';
+
+
+O SGBD precisa localizar os registros para então apagá-los do banco de dados. Para tanto, executará a condição de seleção presente no WHERE. Trata-se de uma consulta enquadrada no item 3: a coluna NOME presente na tabela é boa candidata para criação de índice.
+
+
+Frequência de chamada de consultas e transações esperada
+
+Vimos a importância de identificar detalhes sobre as consultas de recuperação e transações de atualização esperadas. No entanto, saber a respeito da frequência de uso esperada para operações de consulta e transações também é uma boa estratégia para obter desempenho.
+
+
+Atenção
+Aplicando-se a “regra do 80/20”, conhecida como Princípio de Pareto, em um sistema de banco de dados, estima-se que 80% do processamento é originado de somente 20% das consultas e transações. Por isso, é rara a necessidade de coletar informações estatísticas completas e taxas de chamada para todas as consultas e transações, bastando priorizar 20% das mais relevantes.
+
+
+Restrições de tempo de consulta e transações
+
+Dependendo da natureza da aplicação, podem existir consultas e transações com restrições de desempenho bastante rigorosas. Para exemplificar, poderia existir a restrição de que uma transação de compras tenha que terminar o seu processamento de pagamento dentro de sete segundos em 90% das vezes em que é chamada, e que ela nunca deve ultrapassar quinze segundos.
+
+
+Essas restrições referentes ao tempo têm forte impacto nas colunas candidatas a serem indexadas. Em especial, tais colunas devem ser priorizadas quando da decisão da criação de índices para as tabelas.
+
+
+Frequências esperadas de operações de atualização
+
+Se a tabela é atualizada com frequência, deve-se evitar a criação de índices nas colunas, pois a atualização de colunas indexadas, frequentemente, requer atualização na estrutura de índice.
+
+
+Exemplo
+Se uma tabela possui cinco colunas indexadas, a inserção de um novo registro requer a atualização dos índices, o que pode causar lentidão nesse tipo de operação.
+
+
+Restrições de exclusividade em colunas da tabela
+
+É útil criar índice para cada coluna com restrição de unicidade na tabela. Em uma operação típica de inserção, o SGBD pode validar essa restrição de exclusividade fazendo consulta à estrutura de índice, rejeitando a inserção caso o valor da coluna seja encontrado no índice.

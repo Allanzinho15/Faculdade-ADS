@@ -1,0 +1,39 @@
+1.
+Elementos do modelo relacional
+Esquema diagramático de banco de dados relacional
+Ao visualizarmos o esquema diagramático de um banco de dados relacional, percebemos a arquitetura visual que traduz a complexidade organizacional dos dados. Esse esquema é mais do que uma representação gráfica; é um mapa que revela interconexões entre tabelas, atributos e chaves. Vamos explorar as linhas e as formas que delineiam relacionamentos, proporcionando uma compreensão visual clara da estrutura subjacente.
+
+
+Neste vídeo, você vai compreender a importância do esquema diagramático de um banco de dados relacional, que traduz a complexidade organizacional dos dados.
+
+
+
+Diversas ferramentas de modelagem permitem o uso de alguma notação gráfica para representar um banco de dados relacional. Na imagem a seguir, temos um diagrama que foi construído a partir de uma ferramenta comercial.
+
+
+
+Esquema diagramático “pé de galinha” envolvendo as tabelas FUNCIONARIO e DEPENDENTE.Nathielly de Souza Campos
+
+A notação utilizada é conhecida por pé de galinha ( inglês Crow's Foot). Nesse esquema diagramático:
+
+
+Cada tabela é representada por um retângulo com duas divisões;
+Na primeira subdivisão, adicionamos o nome da tabela;
+Na segunda subdivisão, aparecem as colunas da tabela, com as informações sobre o nome, o tipo de dados, além de símbolos representativos de chave primária PK (do Inglês, Primary Key) e chave estrangeira FK (do Inglês, Foreign Key);
+O símbolo “colado” na tabela DEPENDENTE, semelhante a um pé de galinha, representa o lado N do relacionamento entre as tabelas.
+
+Esquema textual de banco de dados relacional
+
+
+O banco de dados mostrado no diagrama anterior, pode ser declarado sob o formato textual, conforme exemplo a seguir:
+
+
+FUNCIONARIO (CODIGOFUNCIONARIO, NOME, CPF, SEXO, DTNASCIMENTO)
+ DEPENDENTE (CODIGOFUNCIONARIO, NRDEPENDENTE, NOME, DTNASCIMENTO)
+ CODIGOFUNCIONARIO REFERENCIA FUNCIONARIO
+
+
+Observe que, no esquema textual, as tabelas são declaradas com informações sobre o nome, além de uma lista contendo as suas respectivas colunas. As chaves primárias são sublinhadas. Por fim, as chaves estrangeiras são declaradas usando o padrão nomecoluna(s) referencia nometabela(s).
+
+
+Neste módulo, estudamos os principais elementos do modelo relacional de banco de dados.

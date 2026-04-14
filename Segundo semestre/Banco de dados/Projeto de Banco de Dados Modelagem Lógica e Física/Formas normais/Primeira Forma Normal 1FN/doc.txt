@@ -1,0 +1,107 @@
+Primeira Forma Normal (1FN)
+Ao explorarmos o conteúdo da Primeira Forma Normal (1NF), vamos conhecer as bases da organização de dados. Essa etapa da normalização em bancos de dados visa eliminar repetições de dados, promovendo a uniformidade e a estruturação. Compreender os princípios da 1NF é essencial para criar sistemas robustos, garantindo que todo atributo em uma tabela contenha valores atômicos, liberando caminho para estruturas mais eficientes e facilitando operações de consulta e manipulação de dados.
+
+
+Neste vídeo, você vai compreender a importância da Primeira Forma Normal (1FN) na normalização.
+
+
+
+Uma tabela está de acordo com a 1FN quando não possui atributo(s) multivalorado(s) nem atributo(s) composto(s).
+
+
+Devemos recordar que, como resultado da etapa anterior, foi criada tabela não normalizada. Para ficar de acordo com a 1FN, nós executaremos os passos a seguir:
+
+
+
+Passo 1
+
+Passo 2
+
+Passo 3
+Criar tabela na 1FN com a mesma chave primária da tabela não normalizada, além das colunas atômicas da própria tabela não normalizada.
+
+
+
+
+
+
+Ao aplicarmos os passos à tabela PROJETO, teremos como resultado as seguintes tabelas em 1FN:
+
+
+PROJETO (CODIGOPROJETO, TIPO, DESCRICAO)
+ PROJETODOCENTE (CODIGOPROJETO, CODIGODOCENTE, NOME, CATEGORIA,
+ SALARIO, DATAINICIO, TEMPOMESES)
+
+
+Ainda, de acordo com a representação textual, devemos perceber que:
+
+
+A coluna CODIGOPROJETO da tabela PROJETO diferencia um projeto dos demais.
+As colunas CODIGOPROJETO, CODIGODOCENTE compõem a chave primária da tabela PROJETODOCENTE, visto que um mesmo docente pode atuar em diversos projetos.
+
+A seguir, veja a representação do conteúdo das tabelas, com base nos dados originalmente expressos no relatório de alocação docente a projetos:
+
+
+PROJETO
+
+CODIGOPROJETO 	TIPO 	DESCRICAO 
+PRODATA	ANÁLISE DE DADOS	DESENVOLVIMENTO DE AMBIENTE PARA ANÁLISE DE DADOS
+PROMED	ANÁLISE CLÍNICA	ATENDIMENTO COMUNITÁRIO E VACINAÇÃO
+
+Tabela: Representação dos dados do relatório em tabelas na 1FN. 
+Nathielly de Souza Campos.
+
+
+PROJETODOCENTE
+
+CODIGOPROJETO 	CODIGODOCENTE 	NOME 	CATEGORIA 	SALARIO 	DATAINICIO 	TEMPOMESES 
+PRODATA	DOC001	JOSÉ	ADJUNTO	R$ 6.000,00	01/02/2019	16
+PRODATA	DOC002	LUCIANO	TITULAR	R$ 16.000,00	01/02/2020	4
+PRODATA	DOC003	GILSON	ADJUNTO	R$ 6.000,00	01/02/2019	16
+PRODATA	DOC004	MARTA	TITULAR	R$ 16.000,00	01/02/2020	4
+PROMED	DOC001	JOSÉ	ADJUNTO	R$ 6.000,00	01/02/2019	16
+PROMED	DOC010	MARIA	ADJUNTO	R$ 6.000,00	01/06/2020	0
+PROMED	DOC004	MARTA	TITULAR	R$ 16.000,00	01/05/2020	1
+Representação dos dados do relatório em tabelas na 1FN
+Nathielly de Souza Campos
+
+Dependência funcional
+
+Se observarmos os dados da tabela PROJETODOCENTE, vamos concluir que o nome do docente é o mesmo para cada código de docente. Parece então existir uma relação de dependência entre as colunas NOME e CODIGODOCENTE.
+
+
+Assim, podemos expressar essa relação da seguinte maneira:
+
+
+CODIGODOCENTE → NOME.
+
+
+Com isso, dizemos que a coluna CODIGODOCENTE é determinante da coluna NOME.
+
+
+Podemos dizer também que NOME é dependente de CODIGODOCENTE, isto é, determinado por CODIGODOCENTE.
+
+
+Atenção
+A generalização dessa informação representa o conceito de dependência funcional. Dessa forma, seja X um conjunto de atributos e Y um atributo; X → Y significa que o conjunto de atributos X determina o atributo Y.
+
+
+Dependência funcional parcial
+
+Observe novamente a tabela PROJETODOCENTE:
+
+
+PROJETODOCENTE
+
+CODIGOPROJETO 	CODIGODOCENTE 	NOME 	CATEGORIA 	SALARIO 	DATAINICIO 	TEMPOMESES 
+PRODATA	DOC001	JOSÉ	ADJUNTO	R$ 6.000,00	01/02/2019	16
+PRODATA	DOC002	LUCIANO	TITULAR	R$ 16.000,00	01/02/2020	4
+PRODATA	DOC003	GILSON	ADJUNTO	R$ 6.000,00	01/02/2019	16
+PRODATA	DOC004	MARTA	TITULAR	R$ 16.000,00	01/02/2020	4
+PROMED	DOC001	JOSÉ	ADJUNTO	R$ 6.000,00	01/02/2019	16
+PROMED	DOC010	MARIA	ADJUNTO	R$ 6.000,00	01/06/2020	0
+PROMED	DOC004	MARTA	TITULAR	R$ 16.000,00	01/05/2020	1
+Representação dos dados da tabela PROJETODOCENTE
+Nathielly de Souza Campos
+
+Se analisarmos a relação CODIGOPROJETO, CODIGODOCENTE → NOME, iremos perceber que NOME é dependente somente de CODIGODOCENTE, ou seja, não é necessária a existência do par CODIGOPROJETO, CODIGODOCENTE para determinar o nome do docente. Estamos diante de uma dependência funcional parcial, visto que identificamos uma coluna dependente somente de parte da chave primária composta.

@@ -1,0 +1,56 @@
+Normalização na prática
+Agora, vamos realizar a normalização das tabelas de um sistema de controle de vendas que possui um arquivo de notas fiscais com a seguinte estrutura:
+
+
+Arquivo de Notas Fiscais (Num. NF, Série, Data emissão, Cod. do Cliente, Nome do cliente, Endereço do cliente, CNPJ do cliente), Relação das mercadorias vendidas (em que, para cada mercadoria, temos: Código da Mercadoria, Descrição da Mercadoria, Quantidade vendida, Preço de venda e Total da venda desta mercadoria) e Total Geral da Nota.
+
+
+Nesta apresentação, você vai praticar as formas normais 1FN, 2FN e 3FN.
+
+
+
+Roteiro de prática
+
+
+O processo de normalização ocorre, em geral, após a execução da modelagem lógica para validar a correção da modelagem.
+
+
+Processo para obtenção da Primeira Forma Normal (1FN)
+
+O processo de obtenção da Primeira Forma Normal objetiva eliminar grupos repetitivos e atributos compostos. Para isso, devemos:
+
+
+Definir chaves candidatas e escolher a chave primária da tabela.
+Transformar atributos compostos em atômicos.
+Transformar itens multivalorados em outras tabelas.
+
+Processo para obtenção da Segunda Forma Normal (2FN)
+
+O processo de obtenção da Segunda Forma Normal consiste em retirar das estruturas com chaves compostas (campo chave sendo formado por mais de um campo), os elementos funcionalmente dependentes de parte da chave. Para tal, devemos:
+
+
+Definir as colunas que não participaram da chave primária da tabela.
+ 
+
+Para cada uma das colunas identificadas, analisar se seu valor é determinado por parte ou pela totalidade da chave.
+ 
+
+Para as colunas dependentes parcialmente da chave: Criar tabelas nas quais a chave primária será a coluna da chave original que determinou o valor da coluna. Excluir da tabela original as colunas dependentes parcialmente da chave.
+Criar tabelas nas quais a chave primária será a coluna da chave original que determinou o valor da coluna.
+Excluir da tabela original as colunas dependentes parcialmente da chave.
+
+Processo para obtenção da Terceira Forma Normal (3FN)
+
+Consiste em retirar das estruturas os campos funcionalmente dependentes de outros campos que não são chaves. Para tal, devemos:
+
+
+Identificar as colunas que não participam da chave primária da tabela.
+ 
+
+Para cada uma das colunas identificadas, analisar se seu valor é determinado por alguma outra coluna não pertencente à chave.
+ 
+
+Para as colunas dependentes transitivamente da chave: Criar tabelas nas quais a chave primária será a coluna que determinou o valor da coluna analisada. Agregar a essas tabelas as colunas dependentes transitivamente. Excluir da tabela original as colunas dependentes transitivamente.
+Criar tabelas nas quais a chave primária será a coluna que determinou o valor da coluna analisada.
+Agregar a essas tabelas as colunas dependentes transitivamente.
+Excluir da tabela original as colunas dependentes transitivamente.

@@ -1,0 +1,101 @@
+Chave primária
+Vamos explorar a base da integridade e da identificação única em um banco de dados. A chave primária vai além de ser uma simples referência; é a âncora que define a singularidade de cada registro em uma tabela. Assim, vamos compreender a função da chave primária na estruturação de dados, garantindo coerência e eficiência nas operações. Prepare-se para descobrir o que fundamenta a base da identificação e da organização precisa dos dados.
+
+
+Neste vídeo, você vai compreender a chave primária como uma importante e fundamental restrição de integridade.
+
+
+
+Em uma tabela, um SGBD precisa diferenciar uma linha das demais, isso é feito a partir da definição de uma restrição de integridade. Na prática, escolheremos uma ou mais coluna(s) para que seu(s) valor(es) se torne(m) únicos no banco de dados.
+
+
+Atenção
+Quando escolhemos uma coluna para ser chave primária, dizemos que estamos diante de uma chave simples. Se escolhermos mais de uma coluna, a chave é dita composta.
+
+
+Vamos estudar um exemplo de chave primária simples?
+
+
+Para diferenciar um estudante dos demais na tabela ALUNO, podemos estabelecer a restrição de chave primária associada à coluna CODIGOALUNO. Ao fazermos isso, na prática, estamos delegando ao SGBD a responsabilidade de gerenciar essa restrição durante todo o ciclo de vida do banco de dados. Na tabela a seguir, deixamos em destaque a coluna CODIGOALUNO:
+
+
+CODIGOALUNO	NOME	NOMEMAE	CPF
+1 	Aline Gonçalves Campos	 	09320900022
+2 	Pablo Gonçalves Campos	Maria Augusta Gonçalves	08760900022
+3 	Bruno da Silva	Yvone Silva	99920900099
+4 	Viviane da Silva	Yvone Silva	00209000922
+5 	Lucas Pontes Silva	Daniele Pontes Maciel	11109000933
+ALUNO com destaque à coluna CODIGOALUNO, escolhida como chave primária simples
+Nathielly de Souza Campos
+
+Assim, podemos dizer que toda chave primária tem as seguintes propriedades:
+
+
+
+Unicidade
+
+Monovalorado
+
+Obrigatório
+O valor da chave primária não permite repetição.
+
+
+
+
+
+
+Ao longo do nosso estudo, iremos aprender que alguns SGBDs permitem associar uma propriedade especial a um campo, denominada autoincremento. Por meio dessa propriedade, o SGBD incrementa automaticamente o valor de uma coluna quando um registro é adicionado à tabela. Trata-se de um mecanismo útil para gerar um valor único para cada registro.
+
+
+Agora, vamos estudar um exemplo contendo chave primária composta.
+
+
+Considere a tabela a seguir, que representa dados de dependentes de funcionários:
+
+
+DEPENDENTE
+
+CODIGOFUNCIONARIO	NRDEPENDENTE	NOME
+1 	1 	Andrey Campos
+1 	2 	Manoel Oliveira
+2 	1 	João Silva
+2 	2 	José Maciel
+DEPENDENTE com destaque às colunas CODIGOFUNCIONARIO, NRDEPENDENTE escolhida como chave primária composta
+Nathielly de Souza Campos
+
+A tabela possui uma chave primária composta pelo par de colunas CODIGOFUNCIONARIO, NRDEPENDENTE. Devemos notar que nenhuma das colunas que compõem a chave é suficiente para, isoladamente, diferenciar uma linha das demais, visto que:
+
+
+Um CODIGOFUNCIONARIO pode aparecer em diferentes linhas da tabela;
+Um NRDEPENDENTE pode aparecer em diferentes linhas da tabela.
+
+Chave mínima
+
+
+Uma chave primária deve ser mínima. Com isso, queremos dizer que todas as colunas que a formam devem ser necessárias e suficientes para diferenciar uma linha das demais na tabela. Outro ponto importante é que uma chave mínima não diz respeito ao quantitativo de colunas que a forma.
+
+
+Chave primária simples
+
+
+A chave primária simples (coluna CODIGOALUNO) da tabela ALUNO é mínima. Cada valor de CODIGOALUNO é suficiente para diferenciar um aluno dos demais. Perceba que, se decidíssemos definir o par de colunas CODIGOALUNO, CPF como chave primária composta para a tabela ALUNO, a chave não seria mínima, visto que CODIGOALUNO por si só é suficiente para diferenciar um estudante dos outros.
+
+
+Chave primária composta
+
+
+A chave primária composta (CODIGOFUNCIONARIO, NRDEPENDENTE) da tabela DEPENDENTE é mínima. Somente a coluna CODIGOFUNCIONARIO não diferencia um dependente dos demais, pois um funcionário pode ter diversos dependentes. De modo semelhante, somente a coluna NRDEPENDENTE não diferencia um dependente dos outros, dado que o valor dela aparece em mais de uma linha da tabela DEPENDENTE.
+
+
+Chave candidata
+
+Ao projetarmos uma tabela, pode ser que mais de uma coluna sirva para diferenciar uma linha das demais. Por exemplo, na tabela ALUNO, tanto CODIGOALUNO quanto CPF poderiam ser utilizados como chave primária. Logo, podemos dizer que CODIGOALUNO e CPF são chaves candidatas.
+
+
+Chave alternativa
+
+
+A partir do momento em que escolhemos CODIGOALUNO para ser a chave primária da tabela ALUNO, passamos a considerar CPF como uma chave alternativa.
+
+
+Alguns desenvolvedores preferem escolher para chave primária uma coluna artificial, ou seja, que não tenha dependência das colunas criadas, com objetivo de manter alguma informação referente ao negócio sendo modelado.

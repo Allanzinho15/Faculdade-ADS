@@ -1,0 +1,100 @@
+Mapeamento de especialização/generalização
+O mapeamento de especialização/generalização é uma técnica avançada de modelagem de dados que permite representar hierarquias complexas entre entidades. Por meio de regras e métodos específicos, as entidades genéricas e suas subespecializações são mapeadas para estruturas de dados relacionais, evidenciando as nuances e os relacionamentos de herança entre classes de objetos.
+
+
+Neste vídeo, você vai ver como realizar o mapeamento da estrutura de especialização/generalização no modelo lógico de um banco de dados relacional a partir de um DER.
+
+
+
+O mapeamento de especialização/generalização envolve:
+
+
+
+Soluçāo I
+
+Tabela única.
+
+Criar uma tabela única que contenha todos os atributos das entidades genérica e especializadas.
+Criar uma coluna TIPO, caso não exista, para identificar a entidade especializada.
+
+Soluçāo II
+
+Uma tabela para cada entidade (genérica ou especializada) que compõe a hierarquia.
+
+Criar uma tabela para a entidade genérica, com coluna(s) referente(s) ao(s) atributo(s) da entidade genérica.
+Criar uma tabela para cada entidade especializada, com coluna(s) referentes ao(s) atributo(s) da entidade especializada.
+Cada tabela de entidade especializada possuirá chave estrangeira originada da chave primária da tabela da entidade genérica. Esta também será a sua chave primária.
+
+Soluçāo III
+
+Exemplos de mapeamento de especialização/generalização
+
+Conhecidas as regras para o mapeamento de especialização/generalização, observe no exemplo a seguir um diagrama de entidade e relacionamento (DER) com esse mecanismo:
+
+
+
+DER contendo especialização/generalização
+
+A imagem a seguir exibe o modelo lógico gerado após a aplicação da solução I expressa nas regras de mapeamento:
+
+
+FUNCIONARIO
+CODIGOFUNCIONARIO	int	PK
+NOME	char(90)	 
+TIPO	char(40)	 
+Criada com base no mapeamento conceitual-lógico envolvendo especialização/generalização – solução I
+Nathielly de Souza Campos
+
+No exemplo, foi criada tabela única (FUNCIONARIO) contendo colunas referentes à entidade genérica, além da coluna TIPO, para identificar a categoria de cada colaborador.
+
+
+Após a aplicação das regras de mapeamento, foi gerada a representação textual a seguir:
+
+
+FUNCIONARIO (CODIGOFUNCIONARIO, NOME, TIPO)
+
+
+A imagem a seguir exibe o modelo lógico gerado após a aplicação da solução II das regras de mapeamento:
+
+
+
+Criadas com base no mapeamento conceitual-lógico envolvendo especialização/generalização – solução II
+
+No exemplo, foram criadas três tabelas: uma (FUNCIONARIO) referente à entidade genérica. As restantes, DOCENTE e ANALISTA, referentes às entidades especializadas em questão. Cada CODIGOFUNCIONARIO presente nas tabelas DOCENTE e ANALISTA exerce o papel de chave estrangeira.
+
+
+Após a aplicação das regras de mapeamento, foi gerada a representação textual a seguir:
+
+
+FUNCIONARIO (CODIGOFUNCIONARIO, NOME)
+ DOCENTE (CODIGOFUNCIONARIO )
+ CODIGOFUNCIONARIO REFERENCIA FUNCIONARIO
+  ANALISTA (CODIGOFUNCIONARIO)
+   CODIGOFUNCIONARIO REFERENCIA FUNCIONARIO
+
+
+A tabela a seguir exibe o modelo lógico gerado após a aplicação da solução III das regras de mapeamento:
+
+
+
+Tabelas criadas com base no mapeamento conceitual-lógico envolvendo especialização/generalização – solução III.
+
+No exemplo, foram criadas três tabelas, sendo OUTROSFUNCIONARIOS onde devem ser mantidos funcionários que não sejam docentes nem analistas. As restantes, DOCENTE e ANALISTA, são referentes às entidades especializadas em questão.
+
+
+Após a aplicação das regras de mapeamento, foi gerada a representação textual a seguir:
+
+
+DOCENTE (CODIGOFUNCIONARIO, NOME)
+ ANALISTA (CODIGOFUNCIONARIO, NOME)
+ OUTROSFUNCIONARIOS (CODIGOFUNCIONARIO, NOME)
+
+
+Convém ressaltar que a tabela OUTROSFUNCIONARIOS seria necessária somente se o mecanismo de generalização/especialização fosse parcial, ou seja, se houvesse algum colaborador não enquadrado nas categorias docente ou analista.
+
+
+Atenção
+Como dica prática, devemos ter cuidado especial caso seja escolhida a solução III. Ao incluir um novo funcionário, será necessário verificar todas as tabelas criadas para as especializações para garantir a unicidade da chave primária. No exemplo, é preciso verificar os valores de chave primária nas tabelas DOCENTE, ANALISTA e OUTROSFUNCIONARIOS.
+
+
+Convém ressaltar que a solução II é a mais usual, por ser mais flexível, dada a facilidade existente em contemplar novas especializações. Além disso, a solução I tende a gerar diversas ocorrências de valores nulos em colunas. Ao mesmo tempo, a solução III apresenta maior possibilidade de gerar redundância de dados.

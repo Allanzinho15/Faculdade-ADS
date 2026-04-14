@@ -1,0 +1,71 @@
+Segunda Forma Normal (2FN)
+Ao tratarmos da Segunda Forma Normal (2FN), vamos explorar os alicerces da normalização em bancos de dados. Essa segunda etapa crucial da normalização visa aprimorar a estruturação dos dados, eliminando dependências parciais e garantindo eficiência. Compreender os princípios da 2FN é essencial para a construção de sistemas de banco de dados mais robustos, nos quais as tabelas refletem, com precisão, as relações entre entidades, proporcionando integridade e facilitando operações avançadas de consulta e de manipulação.
+
+
+Neste vídeo, você vai compreender a importância da Segunda Forma Normal (2FN) na normalização.
+
+
+
+Uma tabela está na 2FN, caso esteja na 1FN e não haja dependências funcionais parciais.
+
+
+Se analisarmos com um pouco mais de atenção cada coluna não chave da tabela PROJETODOCENTE, iremos perceber que, além da coluna NOME, as colunas CATEGORIA e SALARIO também só dependem da coluna CODIGODOCENTE.
+
+
+Para ficar de acordo com a 2FN, será necessário eliminarmos as dependências parciais, conforme os passos a seguir:
+
+
+Manter no modelo cada tabela que possua chave primária simples.
+Identificar cada dependência parcial.
+Criar uma tabela para cada dependência parcial identificada.
+
+A imagem a seguir identifica as colunas dependentes de parte da chave primária na tabela PROJETODOCENTE:
+
+
+
+Representação das dependências parciais na tabela PROJETODOCENTE
+
+Ao aplicarmos os passos ao modelo, teremos como resultado as seguintes tabelas na 2FN:
+
+
+PROJETO (CODIGOPROJETO, TIPO, DESCRICAO)
+ PROJETODOCENTE (CODIGOPROJETO, CODIGODOCENTE, DATAINICIO,TEMPOMESES)
+ DOCENTE (CODIGODOCENTE, NOME, CATEGORIA, SALARIO)
+
+
+A seguir, veremos a representação do conteúdo das tabelas na 2FN, com base nos dados, originalmente expressos no relatório de alocação docente a projetos:
+
+
+PROJETO
+
+
+CODIGOPROJETO 	TIPO 	DESCRICAO 
+PRODATA	ANÁLISE DE DADOS	DESENVOLVIMENTO DE AMBIENTE PARA ANÁLISE
+PROMED	ANÁLISE CLÍNICA	ATENDIMENTO COMUNITÁRIO E VACINAÇÃO
+ 
+
+PROJETODOCENTE
+
+
+CODIGOPROJETO 	CODIGODOCENTE 	DATAINICIO 
+PRODATA	DOC001	01/02/2019
+PRODATA	DOC002	01/02/2020
+PRODATA	DOC003	01/02/2019
+PRODATA	DOC004	01/02/2020
+PROMED	DOC001	01/02/2019
+PROMED	DOC010	01/06/2020
+PROMED	DOC004	01/05/2020
+ 
+
+DOCENTE
+
+CODIGODOCENTE 	NOME 	CATEGORIA 	SALARIO 
+DOC001	JOSÉ	ADJUNTO	R$ 6.000,00
+DOC002	LUCIANO	TITULAR	R$ 16.000,00
+DOC003	GILSON	ADJUNTO	R$ 6.000,00
+DOC004	MARTA	TITULAR	R$ 16.000,00
+DOC010	MARIA	ADJUNTO	R$ 6.000,00
+Representação dos dados do relatório em tabelas em 2FN
+Nathielly de Souza Campos
+
+O modelo está na 2FN, pois, além de estar na 1FN, não existem dependências parciais.

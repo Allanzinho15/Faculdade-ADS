@@ -1,0 +1,34 @@
+Desnormalizar para ganhar desempenho
+Este núcleo explora a técnica de desnormalização em bancos de dados relacionais, revelando como ela pode ser utilizada para otimizar o desempenho de consultas e aumentar a eficiência do sistema. Vamos abordar os princípios e as diferentes técnicas de desnormalização e seus impactos no desempenho, na escalabilidade e na manutenção do banco de dados.
+
+
+Com este vídeo, você verá como a desnormalização em bancos de dados relacionais pode otimizar o desempenho de consultas e aumentar a eficiência do sistema.
+
+
+
+Quando um esquema de banco de dados está normalizado até a 3FN, os problemas com redundância de dados são minimizados, pois, em geral, existe uma tabela para cada objeto modelado.
+
+
+Ao mesmo tempo, vimos que processar a consulta anterior requer acesso às duas tabelas para recuperar as informações – o que gera um custo adicional de processamento.
+
+
+Se quisermos priorizar desempenho, teremos que sacrificar as vantagens de um modelo normalizado. Esse processo é conhecido por desnormalização.
+
+
+Nossa intenção a partir de agora é gerar uma estrutura que permita obter os mesmos resultados da consulta anterior, no entanto, usando somente uma tabela. Esse tipo de situação é comum quando temos a necessidade de produzir relatórios em um sistema.
+
+
+Ao desnormalizar o modelo, ficamos com a seguinte tabela: DM_DOCENTE_2 (CO_DOCENTE_IES, CO_IES, NO_IES, CO_MUNICIPIO_NASCIMENTO, NOME). Note que a coluna NOME é dependente da coluna CO_MUNICIPIO_NASCIMENTO, ou seja, precisamos ter em mente que estamos diante de uma dependência funcional parcial, violando a 2FN.
+
+
+Diante da nova estrutura, o código a seguir recupera as informações, agora envolvendo somente uma tabela:
+
+
+SELECT CODIGO_DOCENTE_IES, NOME
+ FROM DM_DOCENTE_2;
+
+
+O processo de desnormalização deve ser planejado com critério, visto que, ao mesmo tempo em que há potencial de ganho em relação ao desempenho de determinadas consultas, a desnormalização introduz redundância nos dados e, ao mesmo tempo, é necessária atualização adicional visando manter a consistência das colunas redundantes.
+
+
+Ao longo deste módulo, percebemos que a criação do modelo físico em um SGBD está atrelada ao objetivo de criar um banco de dados de maneira que problemas de baixo desempenho sejam evitados. Para isso, é necessário mapear as principais consultas e transações a serem processadas ao longo do ciclo de vida do banco de dados.

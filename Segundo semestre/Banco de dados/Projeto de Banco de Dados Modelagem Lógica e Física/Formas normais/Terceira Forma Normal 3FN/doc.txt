@@ -1,0 +1,92 @@
+Terceira Forma Normal (3FN)
+Ao explorar o conteúdo da Terceira Forma Normal (3FN), vamos conhecer as nuances da normalização em bancos de dados. Essa etapa visa à eliminação de dependências transitivas, promovendo a integridade e a eficiência estruturais. Compreender os princípios da 3FN auxilia na construção de sistemas de bancos de dados mais refinados, em que todo atributo está diretamente relacionado à chave primária, evitando redundâncias e facilitando a manutenção e a consulta de dados.
+
+
+Neste vídeo, você vai compreender a importância da Terceira Forma Normal (3FN) no contexto da normalização.
+
+
+
+Dependência funcional transitiva
+
+
+Se observarmos os dados da tabela DOCENTE gerada na etapa anterior, podemos concluir que o valor do salário é o mesmo em cada categoria. Perceba que parece então existir uma relação de dependência entre as colunas CATEGORIA e SALARIO. Assim, podemos expressar essa relação da seguinte maneira:
+
+
+CATEGORIA → SALARIO.
+
+
+Com isso, dizemos que a coluna CATEGORIA é determinante da coluna SALARIO. Podemos dizer também que SALARIO é dependente de CATEGORIA.
+
+
+Atenção
+Estamos diante de um exemplo de dependência funcional, em que o determinante é uma coluna que não pertence à chave primária da tabela. Uma dependência funcional transitiva ocorre quando uma coluna é dependente de alguma coluna não-chave da tabela.
+
+
+Uma tabela está em 3FN caso esteja na 2FN e não possua dependências transitivas.
+
+
+A imagem a seguir identifica a dependência transitiva na tabela PROJETODOCENTE:
+
+
+
+Representação da dependência transitiva na tabela PROJETODOCENTE
+
+Para ficar de acordo com a 3FN, será necessário eliminarmos as dependências transitivas, conforme os passos a seguir:
+
+
+Manter no modelo cada tabela que tenha menos de duas colunas não chave.
+Identificar cada dependência transitiva.
+Criar uma tabela para cada dependência transitiva identificada.
+
+Ao aplicarmos os passos ao modelo, teremos como resultado as seguintes tabelas na 3FN:
+
+
+PROJETO (CODIGOPROJETO, TIPO, DESCRICAO)
+ PROJETODOCENTE (CODIGOPROJETO, CODIGODOCENTE, DATAINICIO, TEMPOMESES)
+ DOCENTE (CODIGODOCENTE, NOME, CATEGORIA)
+  CATEGORIA (CATEGORIA, SALARIO)
+
+
+A seguir veja a representação do conteúdo das tabelas na 3FN, com base nos dados originalmente expressos no relatório de alocação de docentes a projetos:
+
+
+PROJETO
+
+CODIGOPROJETO 	TIPO 	DESCRICAO 
+PRODATA	ANÁLISE DE DADOS	DESENVOLVIMENTO DE AMBIENTE PARA ANÁLISE
+PROMED	ANÁLISE CLÍNICA	ATENDIMENTO COMUNITÁRIO E VACINAÇÃO
+
+PROJETODOCENTE
+
+CODIGOPROJETO 	CODIGODOCENTE 	DATAINICIO 	TEMPOMESES 
+PRODATA	DOC001	01/02/2019	16
+PRODATA	DOC002	01/02/2020	4
+PRODATA	DOC003	01/02/2019	16
+PRODATA	DOC004	01/02/2020	4
+PROMED	DOC001	01/02/2019	16
+PROMED	DOC010	01/06/2020	0
+PROMED	DOC004	01/05/2020	1
+
+DOCENTE
+
+CODIGODOCENTE 	NOME 	CATEGORIA 
+DOC001	JOSÉ	ADJUNTO
+DOC002	LUCIANO	TITULAR
+DOC003	GILSON	ADJUNTO
+DOC004	MARTA	TITULAR
+DOC010	MARIA	ADJUNTO
+
+CATEGORIA
+
+CATEGORIA 	SALARIO 
+ADJUNTO	R$ 6.000,00
+TITULAR	R$ 16.000,00
+Representação dos dados do relatório em tabelas na 3FN
+Nathielly de Souza Campos
+
+O modelo está na 3FN, pois, além de estar na 2FN, não existem dependências transitivas.
+
+
+Neste módulo, nós aprendemos que o processo de normalização é útil para refinarmos a construção de um banco de dados relacional. Estudamos três formas normais e percebemos que, ao normalizarmos o nosso modelo, o número de tabelas tende a aumentar, minimizando a redundância nos dados.
+
+

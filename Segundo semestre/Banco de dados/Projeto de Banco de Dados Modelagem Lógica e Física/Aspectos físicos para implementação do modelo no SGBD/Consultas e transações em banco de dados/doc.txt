@@ -1,0 +1,48 @@
+Consultas e transações em banco de dados
+Este núcleo faz uma introdução abrangente aos conceitos que sustentam o funcionamento de bancos de dados: consultas e transações. Vamos abordar cada um desses pilares em detalhes, explorando definições, características, benefícios e implicações para o desempenho e a confiabilidade do sistema.
+
+
+Neste vídeo, você vai compreender os pilares do funcionamento de um banco de dados, ou seja, consultas e transações, incluindo definições, características, benefícios e implicações para o desempenho e a confiabilidade do sistema.
+
+
+
+Consultas
+
+
+
+Homem trabalhando banco de dados relacional enquanto fala ao telefone
+
+A partir de agora, conheceremos diretrizes que devem ser consideradas quando formos implementar um banco de dados relacional. As diretrizes abrangem aspectos que influenciam no desempenho do banco de dados. Assim, o projeto lógico pode sofrer ajustes para adaptar-se ao sistema gerenciador de banco de dados (SGBD) escolhido para a implementação.
+
+ 
+
+Planejar um banco de dados que tenha um bom desempenho pressupõe adquirir conhecimento sobre as consultas e transações que serão realizadas pela aplicação.
+
+
+Um SGBD tipicamente processa e devolve dados requisitados em consultas para diversas finalidades, tais como recuperação, inclusão, exclusão ou mesmo atualização de dados. As consultas são implementadas com o auxílio da linguagem SQL (do Inglês, Structured Query Language – linguagem de consulta estruturada).
+
+
+Dica
+Um código típico de consulta para recuperar dados em SQL envolve o comando SELECT com as cláusulas FROM e WHERE.
+
+
+Por exemplo, dada a tabela DOCENTE (CODIGODOCENTE, NOME, SEXO), o código a seguir recupera os registros de todas as professoras:
+
+
+SELECT CODIGODOCENTE, NOME
+ FROM DOCENTE
+ WHERE SEXO='F
+
+
+A primeira linha do comando informa ao SGBD as colunas que devem ser exibidas após o processamento da consulta. Na segunda, especificamos o nome da tabela que contém os dados. Finalmente, na terceira linha, adicionamos uma condição de filtro que será processada pelo SGBD para recuperar as linhas de interesse.
+
+
+Transações
+
+Diversos SGBDs modernos permitem a especificação de operações de transação.
+
+
+Uma transação corresponde a uma série de operações que, quando submetidas ao SGBD, devem ser consideradas como uma unidade lógica de trabalho. Isso significa que todas as operações que compõem uma transação precisam ser executadas. Caso contrário, é necessário serem canceladas e nenhuma modificação ocorrerá no banco de dados.
+
+
+Por exemplo, em um processo de inscrição em disciplinas, em geral, o aluno tem a liberdade para compor seu quadro de horário de disciplinas, para, em seguida, confirmar inscrição em diversas matérias. Assim, a inscrição em disciplinas deve ser considerada como um único processo ou transação. Trata-se de um procedimento atômico: ou todas as operações são confirmadas ou nenhuma delas é realizada.

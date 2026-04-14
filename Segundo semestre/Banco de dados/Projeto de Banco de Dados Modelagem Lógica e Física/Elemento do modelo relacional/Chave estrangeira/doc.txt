@@ -1,0 +1,58 @@
+1.
+Elementos do modelo relacional
+Chave estrangeira
+Ao falarmos de chave estrangeira, tratamos da interconexão inteligente entre tabelas em um banco de dados. A chave estrangeira estabelece relações significativas, conectando dados de maneira coesa. Assim, vamos explorar como essa chave especial transcende fronteiras de tabelas, viabilizando integridade referencial e enriquecendo a compreensão dos dados. Este é um convite para conhecer a importância da chave estrangeira na harmonização e na consistência das informações, realizando a coesão em sistemas de banco de dados.
+
+
+Neste vídeo, você vai compreender a chave estrangeira como garantidora da restrição de integridade referencial.
+
+
+
+Um banco de dados relacional é composto por um conjunto de tabelas. Na maioria dos casos, existe algum tipo de relacionamento entre elas. O relacionamento entre tabelas é um dos conceitos fundamentais em projeto de banco de dados relacionais. Entenda os seguintes conceitos:
+
+
+Modelo relacional
+
+
+Decorre do termo relação, função matemática que conhecemos popularmente como tabela.
+
+
+Relacionamento
+
+
+É o relacionamento que existe entre as tabelas.
+
+
+Em geral, uma empresa possui informações sobre funcionários e seus dependentes. Vamos observar a tabela a seguir:
+
+
+
+Relacionamento entre FUNCIONARIO e DEPENDENTE
+
+A tabela permite as seguintes interpretações:
+
+
+Todo dependente está associado a um funcionário. Por exemplo, o valor (1) de CODIGOFUNCIONARIO na tabela DEPENDENTE permite identificar o funcionário responsável, neste caso José Maciel;
+Um funcionário pode ter diversos dependentes. Por exemplo, o valor (2) de CODIGOFUNCIONARIO nas duas últimas linhas da tabela DEPENDENTE permite concluir que o funcionário Pedro Antônio possui dois dependentes;
+Um funcionário pode não ter dependentes. Por exemplo, o valor (3) de CODIGOFUNCIONARIO na tabela FUNCIONARIO não aparece na tabela DEPENDENTE.
+
+No exemplo, CODIGOFUNCIONARIO da tabela DEPENDENTE é chave estrangeira, pois todo valor dessa coluna necessariamente aparece como valor da coluna CODIGOFUNCIONARIO, chave primária de FUNCIONARIO. Como consequência, podemos concluir que todo dependente está vinculado a um funcionário.
+
+
+Uma chave estrangeira é uma coluna ou uma combinação de colunas, cujos valores aparecem necessariamente na chave primária de uma tabela.
+
+(Heuser, 2009, p. 34)
+Deve-se notar que, mesmo que a coluna CODIGOFUNCIONARIO de DEPENDENTE tenha o mesmo nome da coluna que é chave primária em FUNCIONARIO, é possível nomeá-la de forma distinta. No entanto, usar o mesmo nome facilita na identificação das colunas relacionadas.
+
+
+Restrições impostas pela chave estrangeira
+
+
+Percebemos que a chave estrangeira serve para implementar relacionamentos entre tabelas. Para que o banco de dados permaneça íntegro, algumas restrições devem ser controladas e obedecidas pelo SGBD:
+
+
+Inclusão de linha na tabela que possui chave estrangeira: o sistema deve garantir que o valor da chave estrangeira exista como valor da coluna da chave primária referenciada. Em nosso exemplo, ao incluir um dependente, a coluna CODIGOFUNCIONARIO só pode assumir um dos valores (1,2,3,4).
+Alteração de valor da chave estrangeira: o sistema deve garantir que o novo valor da chave estrangeira exista como valor de coluna da chave primária referenciada. Em nosso exemplo, ao alterar um responsável de algum dependente, a coluna CODIGOFUNCIONARIO só pode assumir um dos valores (1,2,3,4).
+Exclusão de linha em tabela que contém chave primária referenciada pela chave estrangeira: o sistema deve garantir que todo valor de chave estrangeira sempre faça referência para o valor de alguma chave primária. Em nosso exemplo, os funcionários que têm código 1 ou 2 não devem ser excluídos, pois possuem vínculo com a tabela de dependentes.
+Alteração de valor da chave primária referenciada pela chave estrangeira: o sistema deve garantir que o novo valor da chave primária da tabela principal seja replicado nas respectivas dependências. Em nosso exemplo, se alterarmos o valor de CODIGOFUNCIONARIO (tabela FUNCIONARIO) de 2 para 5, o sistema deve garantir a propagação da atualização nas duas últimas linhas de DEPENDENTE.
+Os exemplos estudados representam o que conhecemos por integridade referencial, ou seja, os valores de chave estrangeira devem aparecer na chave primária da tabela referenciada.

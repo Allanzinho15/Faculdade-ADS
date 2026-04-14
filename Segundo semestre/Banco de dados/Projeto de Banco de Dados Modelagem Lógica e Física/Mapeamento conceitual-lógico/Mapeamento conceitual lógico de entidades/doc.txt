@@ -1,0 +1,82 @@
+Mapeamento conceitual-lógico de entidades
+O mapeamento conceitual-lógico de entidades é uma etapa na modelagem de dados, servindo como ponte entre a abstração do modelo conceitual e a implementação concreta no modelo lógico. Com regras e técnicas específicas, as entidades e seus relacionamentos do modelo conceitual são transformados em estruturas de dados relacionais, viabilizando a manipulação e o armazenamento de informações de forma eficiente.
+
+
+Neste vídeo, você vai compreender como realizar o mapeamento de relacionamentos no modelo lógico de um banco de dados relacional a partir de um DER.
+
+
+
+No projeto de banco de dados, há etapas que devem ser seguidas para a construção de um modelo conceitual. Para tanto, é usual a adoção do diagrama de entidade e relacionamento (DER) - tipo de modelo conceitual em que os principais objetos do negócio modelado se tornam entidades caracterizadas por atributos e relacionamentos.
+
+
+Estudamos os principais componentes do modelo relacional, um modelo lógico que é base para a implementação de bancos de dados relacionais.
+
+
+
+Rede de banco de dados vetorial
+
+Neste módulo, construiremos a ponte entre os modelos conceitual e lógico.
+
+
+Passaremos, então, a aplicar regras formais de mapeamento do modelo conceitual, visando a construção do modelo lógico. Na prática, projetaremos um banco de dados relacional a partir de um DER.
+
+
+Regras de mapeamento
+
+Podemos dividir o mapeamento conceitual-lógico em quatro etapas:
+
+
+Entidades
+Relacionamentos
+Atributos multivalorados
+Especialização/generalização
+
+A seguir, conheceremos as regras de cada etapa do mapeamento e a sua respectiva aplicação por meio de exemplos.
+
+
+Mapeamento de entidades
+
+
+O mapeamento de entidades envolve:
+
+
+
+Entidade forte ou independente
+
+Cada entidade E vira uma tabela T;
+Cada atributo simples da entidade E vira uma coluna na tabela T;
+O atributo identificador da entidade E vira chave primária na tabela T.
+
+Entidade fraca ou dependente
+
+Cada entidade fraca F vira uma tabela T;
+Cada atributo simples da entidade F vira uma coluna na tabela T;
+A tabela T possuirá chave estrangeira originada a partir da chave primária da tabela proprietária;
+A tabela T possuirá chave primária composta pela coluna chave estrangeira criada no passo anterior e pela coluna mapeada do atributo identificador da entidade F na tabela T.
+Exemplo de mapeamento de entidades
+
+Conhecidas as regras para o mapeamento de entidades, observe no exemplo a seguir um diagrama de entidade e relacionamento (DER) contendo duas entidades:
+
+
+FUNCIONARIO (entidade forte) e FONEFUNC (entidade fraca).
+
+
+
+
+Diagrama de Entidade e Relacionamento (DER) contendo duas entidades.
+
+A tabela a seguir exibe o modelo lógico gerado:
+
+
+
+Criadas com base no mapeamento conceitual-lógico envolvendo entidade
+
+Note que a tabela FUNCIONARIO corresponde à aplicação da regra para entidade forte. De modo semelhante, a tabela FONEFUNC corresponde à aplicação da regra para entidade fraca.
+
+
+Após a aplicação das regras de mapeamento, foi gerada a representação textual a seguir:
+
+
+FUNCIONARIO (CODGOFUNCIONARIO, NOME)
+ FONEFUNC (CODIGOFUNCIONARIO, NUMERO, TIPO)
+ CODIGOFUNCIONARIO REFERENCIA FUNCIONARIO

@@ -1,0 +1,37 @@
+Prática de consultas envolvendo mais de uma tabela e indexação
+Vamos completar nosso banco de documentos com a criação de mais duas tabelas. Além disso, vamos analisar o uso de índices e como eles podem melhorar as consultas SQL.
+
+
+Neste vídeo, você vai praticar consultas envolvendo mais de uma tabela e indexação.
+
+
+
+Roteiro de prática
+
+
+Para complementar o banco de documentos:
+
+
+Abra o PGAdmin4 e faça conexão no servidor.
+Selecione o banco de dados de documentos.
+Abra uma janela de consulta.
+Carregue o script na janela de consulta.
+Execute o script.
+Valide a criação das tabelas na aba Tabelas do banco de documentos.
+
+Observe na imagem a seguir.
+
+
+
+Visualização das tabelas usando o pgAdmin
+
+Para complementar o banco de documentos, rode o script criapopdespachos.ql.
+
+
+Para ver o uso de índices:
+
+
+Realize consultas na tabela despacho, pesquisando por determinado documento.
+Faça junções entre documento de despacho.
+Crie um índice na coluna documento da tabela despacho.
+Realize novamente as consultas e analise se o tempo de resposta diminuiu.

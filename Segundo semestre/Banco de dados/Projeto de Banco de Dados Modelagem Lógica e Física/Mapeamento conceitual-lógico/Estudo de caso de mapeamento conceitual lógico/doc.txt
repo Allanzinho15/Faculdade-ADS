@@ -1,0 +1,33 @@
+Estudo de caso de mapeamento conceitual-lógico
+Agora, vamos executar a modelagem lógica da Empresa de Treinamento cuja modelagem conceitual está na imagem a seguir.
+
+
+
+Representação da modelagem lógica da Empresa de Treinamento
+
+Se desejar, você pode realizar o download do arquivo do BRMODELO3.0: EMPTREINCONCEITUAL.BRM3.
+
+
+Estudo de caso de mapeamento conceitual-lógico
+
+
+Neste vídeo, você vai praticar o mapeamento conceitual-lógico a partir de um DER.
+
+
+
+Roteiro de prática
+
+
+Para realizarmos a modelagem lógica para o modelo relacional e a modelagem conceitual representada em um DER, devemos acompanhar os seguintes passos.
+
+
+Passo 1: Para cada entidade tipo, criar uma tabela.
+Passo 2: Para cada atributo simples e monovalorado, gerar uma coluna na tabela de entidade tipo.
+Passo 3: Marcar atributos únicos e obrigatórios (identificadores) nas tabelas criadas.
+Passo 4: Marcar as chaves primárias das tabelas criadas.
+Passo 5: Tratar atributos compostos decompondo-os como colunas na tabela que se originou de sua entidade tipo.
+Passo 6: Tratar atributos multivalorados criando uma nova tabela com chave estrangeira para tabela original.
+Passo 7: Tratar relacionamentos N:N criando uma tabela que recebe as chaves das tabelas envolvidas no relacionamento.
+Passo 8: Tratar relacionamentos 1:1 e 1:N levando a chave estrangeira do lado 1 para o lado N ou para o outro lado no caso de 1:1.
+Passo 9: Definir o tipo das colunas.
+Passo 10: Tratar a generalização/especialização.

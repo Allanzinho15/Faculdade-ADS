@@ -1,0 +1,222 @@
+Mapeamento de relacionamentos
+O mapeamento conceitual-lógico de relacionamentos envolve transformar as interconexões entre entidades do modelo conceitual em estruturas de dados relacionais. Por meio de técnicas precisas, os diversos tipos de relações, como um para um, um para muitos e muitos para muitos, são mapeados para cardinalidades e chaves estrangeiras no modelo lógico, garantindo a precisão e a consistência da informação.
+
+
+Neste vídeo, você vai compreender como realizar o mapeamento de relacionamentos no modelo lógico de um banco de dados relacional a partir de um DER.
+
+
+
+O mapeamento de relacionamentos dependerá da cardinalidade máxima:
+
+
+Relacionamentos 1:1
+
+Cardinalidade (0,1):(0,1): priorizar adição de coluna(s). Alternativa: tabela própria.
+Cardinalidade (0,1):( 1,1): priorizar fusão de tabelas. Alternativa: adição de colunas.
+Cardinalidade (1,1):( 1,1): fusão de tabelas.
+
+Relacionamentos 1:n
+
+Identificar a tabela T do lado N.
+Adicionar chave estrangeira na tabela T do lado N referente à chave primária da tabela do lado 1.
+Cada atributo simples do relacionamento vira uma coluna na tabela T.
+
+Relacionamentos n:n
+
+Cada relacionamento vira uma tabela T.
+A tabela T possuirá chaves estrangeiras originadas das chaves primárias das tabelas participantes do relacionamento.
+A tabela T possuirá chave primária composta pelas chaves estrangeiras criadas no passo anterior.
+Cada atributo simples do relacionamento vira uma coluna na tabela T.
+
+Relacionamentos n-ários (análogo a relacionamentos n:n)
+
+Cada relacionamento vira uma tabela T.
+A tabela T possuirá chaves estrangeiras originadas das chaves primárias das tabelas participantes do relacionamento.
+A tabela T possuirá chave primária composta pelas chaves estrangeiras criadas no passo anterior.
+Cada atributo simples do relacionamento vira uma coluna na tabela T.
+
+
+
+Exemplos de mapeamento de relacionamento 1:1
+
+Conhecidas as regras para o mapeamento de relacionamentos 1:1, observe no exemplo a seguir um diagrama de entidade e relacionamento (DER) contendo duas entidades: FUNCIONARIO e NOTEBOOK. Há um relacionamento 1:1 no qual ambas as entidades possuem participação opcional (cardinalidades (0,1): (0,1)).
+
+
+
+DER contendo relacionamento 1:1 – ambas as entidades com participação opcional
+
+A tabela a seguir exibe o modelo lógico gerado:
+
+
+
+Criadas com base no mapeamento conceitual-lógico envolvendo relacionamento 1:1 - ambas as entidades com participação opcional
+
+Para esse tipo de relacionamento, o mais adequado é priorizar adição de coluna(s), o que ocorreu ao criarmos a coluna CODIGONOTEBOOK como chave estrangeira na tabela FUNCIONARIO. Vale lembrar que estamos diante de uma coluna opcional.
+
+
+A seguir, a representação textual do modelo:
+
+
+NOTEBOOK (CODIGONOTEBOOK, DESCRICAO)
+ FUNCIONARIO (CODIGOFUNCIONARIO, NOME, CODIGONOTEBOOK)
+ CODIGONOTEBOOK REFERENCIA NOTEBOOK
+
+
+A imagem a seguir apresenta um DER contendo um relacionamento 1:1 no qual há uma entidade com participação obrigatória e a outra opcional (cardinalidades (0,1): (1,1)).
+
+
+
+DER contendo relacionamento 1:1 – uma entidade com participação obrigatória e a outra opcional
+
+A tabela a seguir exibe o modelo lógico gerado:
+
+
+FUNCIONARIO
+CODIGOFUNCIONARIO	int	PK
+NOME	char(90)	 
+CODIGONONOTEBOOK	int	N
+DESCRICAO	char(90)	N
+Criada com base no mapeamento conceitual-lógico envolvendo relacionamento 1:1 - uma entidade com participação obrigatória e a outra opcional
+Nathielly de Souza Campos
+
+Para esse tipo de relacionamento, o mais adequado é priorizar fusão de tabelas, o que ocorreu ao criarmos as colunas CODIGONOTEBOOK e DESCRICAO na tabela FUNCIONARIO, ambas opcionais.
+
+
+Após a aplicação das regras de mapeamento, foi gerada a representação textual a seguir:
+
+
+FUNCIONARIO (CODIGOFUNCIONARIO, NOME, CODIGONOTEBOOK, DESCRICAO)
+
+
+A imagem a seguir apresenta um DER parcial contendo um relacionamento 1:1 e ambas as entidades com participação obrigatória (cardinalidades (1,1): (1,1)).
+
+
+
+DER parcial contendo relacionamento 1:1 – ambas as entidades com participação obrigatória
+
+A tabela a seguir exibe o modelo lógico gerado:
+
+
+FUNCIONARIO
+CODIGOFUNCIONARIO	int	PK
+NOME	char(90)	 
+CODIGONONOTEBOOK	int	 
+DESCRICAO	char(90)	 
+Criadas com base no mapeamento conceitual-lógico envolvendo relacionamento 1:1 – ambas as entidades com participação obrigatória
+Nathielly de Souza Campos
+
+Para esse tipo de relacionamento, o mais adequado é priorizar fusão de tabelas, o que ocorreu ao criarmos as colunas CODIGONOTEBOOK e DESCRICAO na tabela FUNCIONARIO, ambas obrigatórias.
+
+
+Após a aplicação das regras de mapeamento, foi gerada a representação textual a seguir:
+
+
+FUNCIONARIO (CODIGOFUNCIONARIO, NOME, CODIGONOTEBOOK, DESCRICAO)
+
+
+Exemplo de mapeamento de relacionamento 1:N
+
+Conhecidas as regras para o mapeamento de relacionamentos 1:N, observe no exemplo a seguir um diagrama de entidade e relacionamento (DER) contendo duas entidades: NIVEL e CURSO.
+
+
+A imagem a seguir mostra um DER parcial contendo um relacionamento 1:N.
+
+
+
+DER contendo relacionamento 1:N
+
+A imagem a seguir exibe o modelo lógico gerado:
+
+
+
+Criadas com base no mapeamento conceitual-lógico envolvendo relacionamento 1:N
+
+Para esse tipo de relacionamento, foi utilizada adição de coluna(s) na tabela do lado N, o que ocorreu ao criarmos a chave estrangeira CODIGONIVEL na tabela CURSO.
+
+
+Após a aplicação das regras de mapeamento, foi gerada a representação textual a seguir:
+
+
+NIVEL (CODGONIVEL, DESCRICAO)
+ CURSO (CODIGOCURSO, NOME, DATACRIACAO, CODIGONIVEL)
+ CODIGONIVEL REFERENCIA NIVEL
+
+
+Exemplo de mapeamento de relacionamento N:N
+
+Conhecidas as regras para o mapeamento de relacionamentos N:N, observe no exemplo a seguir um diagrama de entidade e relacionamento (DER) contendo duas entidades: CURSO e DISCIPLINA.
+
+
+A imagem a seguir mostra um DER parcial contendo um relacionamento N:N.
+
+
+
+DER parcial contendo relacionamento N:N
+
+A imagem a seguir exibe o modelo lógico gerado:
+
+
+
+Criadas com base no mapeamento conceitual-lógico envolvendo relacionamento N:N
+
+Para esse tipo de relacionamento, foi utilizada tabela própria, o que ocorreu ao criarmos CURSODISCIPLINA, contendo duas chaves estrangeiras: CODIGOCURSO e CODIGODISCIPLINA. Ao mesmo tempo, a combinação das duas colunas forma a chave primária composta da tabela.
+
+
+Após a aplicação das regras de mapeamento, foi gerada a representação textual a seguir:
+
+
+CURSO (CODIGOCURSO, NOME, DATACRIACAO, CODIGONIVEL)
+ CODIGONIVEL REFERENCIA NIVEL
+ DISCIPLINA (CODIGODISCIPLINA, NOME, CARGAGORARIA)
+  CURSODISCIPLINA (CODIGOCURSO, CODIGODISCIPLINA)
+   CODIGOCURSO REFERENCIA CURSO
+    CODIGODISCIPLINA REFERENCIA DISCIPLINA
+
+
+A observação sobre entidade associativa e autorrelacionamento no campo da modelagem de bancos de dados é fundamental para entender a complexidade dos relacionamentos entre diferentes conjuntos de dados. Vejamos cada um deles:
+
+
+Observação sobre entidade associativa
+
+
+O mapeamento de entidade associativa, isto é, relacionamento com atributos, segue as regras utilizadas no mapeamento de relacionamentos N:N.
+
+
+Observação sobre autorrelacionamento
+
+
+O mapeamento de autorrelacionamento segue as regras utilizadas no mapeamento de relacionamentos. Basta, então, você ficar atento ao tipo de cardinalidade máxima em questão.
+
+
+Exemplo de mapeamento de relacionamento ternário
+
+Conhecidas as regras para o mapeamento de relacionamentos, ao nos depararmos com relacionamentos ternários, precisaremos avaliar as cardinalidades máximas em questão. Observe no exemplo a seguir um diagrama de entidade e relacionamento (DER) contendo um relacionamento ternário entre as entidades PROJETO, DOCENTE e ALUNO.
+
+
+A imagem a seguir mostra um DER parcial contendo um relacionamento ternário.
+
+
+
+DER parcial contendo relacionamento ternário
+
+A tabela a seguir exibe o modelo lógico gerado:
+
+
+
+Tabelas criadas com base no mapeamento conceitual-lógico envolvendo relacionamento ternário
+
+Para esse tipo de relacionamento, foi utilizada tabela própria, o que ocorreu ao criarmos ORIENTACAO, contendo três chaves estrangeiras: CODIGOFUNCIONARIO, CODIGOALUNO e CODIGOPROJETO. Além disso, foram criadas as colunas DATAINICIO e DATAFIM, as quais representam informações importantes sob o contexto de um registro de orientação.
+
+
+Após a aplicação das regras de mapeamento, foi gerada a representação textual a seguir:
+
+
+PROJETO (CODIGOPROJETO, DESCRICAO)
+ DOCENTE (CODIGOFUNCIONARIO, NOME)
+ ALUNO (CODIGOALUNO, NOME, CPF)
+  ORIENTACAO (CODIGOPROJETO, CODIGOALUNO, CODIGOFUNCIONARIO, DATAINICIO, DATAFIM)
+   CODIGOPROJETO REFERENCIA PROJETO
+    CODIGOALUNO REFERENCIA ALUNO
+     CODIGOFUNCIONARIO REFERENCIA DOCENTE
+
+

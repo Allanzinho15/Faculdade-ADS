@@ -1,0 +1,80 @@
+1.
+Elementos do modelo relacional
+Modelo relacional e componentes básicos de uma tabela
+Neste conteúdo, vamos explorar os fundamentos para a organização estruturada de dados. Investigaremos os elementos-chave do modelo relacional, destacando a importância de tabelas, atributos e relacionamentos. Tal conhecimento é essencial para criar sistemas de banco de dados eficientes e compreender as bases que sustentam a gestão de informações em ambientes digitais. Prepare-se para conhecer o universo dos modelos relacionais e os componentes que moldam o armazenamento e a manipulação de dados.
+
+
+Neste vídeo, você vai compreender o modelo relacional e os componentes básicos de uma tabela.
+
+
+
+Modelo relacional
+
+Relação é um termo usado na literatura formal da área de banco de dados. No contexto comercial, usa-se informalmente o termo tabela.
+
+
+O modelo relacional representa o banco de dados como uma coleção de relações.
+
+(Elmasri; Navathe, 2019)
+Componentes de uma tabela
+
+Uma tabela corresponde a um conjunto não ordenado de linhas, que, na terminologia acadêmica, são conhecidas por tuplas.
+
+
+As linhas de uma tabela são divididas em campos ou colunas, que, na academia, são chamados de atributos. Os campos são nomeados com objetivo de facilitar a interpretação dos dados armazenados.
+
+
+Observe a tabela ALUNO a seguir:
+
+
+
+Componentes de uma tabela de banco de dados
+
+Nome de tabelas
+
+Em um banco de dados relacional, toda tabela deve possuir um nome único. Além disso, ao longo do nosso estudo, vamos perceber que a maioria das tabelas de um banco de dados representa entidades de um diagrama de entidade e relacionamento (DER).
+
+
+Atenção
+É importante que, na medida do possível, o nome da tabela represente com clareza o objeto modelado. Por exemplo, ao lermos o nome ALUNO, criamos a expectativa natural de que a tabela em questão armazene informações sobre alunos.
+
+
+Colunas de tabelas
+
+A primeira linha da tabela de exemplo contém os seguintes campos ou cabeçalhos de coluna:
+
+
+CODIGOALUNO
+NOME
+NOMEMAE
+CPF
+DTNASCIMENTO
+
+Além disso, o nome de coluna deve ser único em cada tabela. Com isso, percebe-se que o nome de coluna ajuda a entender o papel ou a finalidade dela.
+
+
+Exemplo
+Podemos concluir que DTNASCIMENTO identifica a data de nascimento do aluno.
+
+
+Outro ponto é que as colunas de uma tabela são monovaloradas, ou seja, é permitido manter no máximo um item de informação por vez. Por exemplo, é possível existir até uma ocorrência de data de nascimento na coluna DTNASCIMENTO.
+
+
+As colunas de uma tabela possuem valores atômicos, ou seja, não admitem colunas compostas de outras. Por exemplo, não é possível subdividir CODIGODOALUNO em outros campos.
+
+
+Ao implementar uma tabela em um banco de dados, é necessário definir um tipo de dado para cada coluna. Os mais comuns são: caractere, numérico, data e booleano.
+
+
+Alguns SGBDs (sistemas de gerência de banco de dados) permitem a definição do tipo de dados feita pelo usuário. Em uma linguagem mais técnica, o conjunto de valores que uma coluna pode assumir é denominado domínio da coluna ou domínio do campo.
+
+
+Quando criarmos uma tabela, devemos definir se o valor da coluna é opcional ou obrigatório, em que especificar que uma coluna é opcional significa que os valores admitem vazio (NULL) ou nulo. Na tabela ALUNO, a coluna NOMEMAE da linha correspondente à aluna de código 1 está vazia.
+
+
+Linhas de tabelas
+
+As linhas da tabela, da segunda em diante, representam um item de informação cadastrado no banco de dados. Dizemos então que um item de informação corresponde a uma unidade básica que servirá para armazenamento e recuperação de dados. Isto é, se uma tabela de cadastro de alunos contém 10.000 linhas ou registros, podemos dizer que ela armazena dados de 10.000 alunos.
+
+
+As linhas de uma tabela permitem o armazenamento de dados sempre de acordo com a semântica ou o significado do objeto. No caso em tela, a tabela armazena informações de ALUNOS. Portanto, queremos dizer que essa mesma tabela não deve ser utilizada para armazenar outros tipos de objetos, como disciplinas ou docentes.

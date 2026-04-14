@@ -1,0 +1,100 @@
+Normalização
+Neste estudo, vamos organizar informações de maneira eficiente. Tal processo, fundamental em bancos de dados, visa reduzir redundâncias e anomalias, proporcionando consistência e integridade. Ao compreender os princípios da normalização, desvendamos a chave para estruturas de dados mais flexíveis e otimizadas, capacitando sistemas a lidar com informações de maneira eficaz e escalável. Prepare-se para descobrir a essência da normalização e os segredos da organização inteligente de dados.
+
+
+Neste vídeo, você vai compreender a importância da normalização na melhoria da consistência e da integridade dos dados em um banco de dados relacional, reduzindo redundâncias e anomalias.
+
+
+
+Ao longo da nossa jornada, conhecemos os principais elementos do modelo relacional. Quando trabalhamos com modelagem das tabelas de um banco de dados, ao criarmos as tabelas, é natural definirmos colunas que têm relação com as características do objeto sendo modelado.
+
+
+No entanto, modelar um banco de dados relacional não se resume simplesmente a usar uma ferramenta CASE e adicionar tabelas e relacionamentos sem que haja algum critério para essa construção.
+
+Ao longo deste módulo, estudaremos o assunto normalização, que ajudará a responder se um banco de dados foi bem projetado. Além disso, é possível executar o processo de normalização a partir de qualquer representação de dados. Isso significa que podemos iniciar o processo a partir de uma tela de sistema, ou mesmo um relatório.
+
+
+A normalização é um processo baseado no conceito de forma normal (FN), que pode ser vista como uma regra, a qual deve ser observada na semântica de uma tabela, para que a considerem bem projetada.
+
+
+Atenção
+Na literatura de banco de dados, há diversas formas normais: 1FN, 2FN, 3FN, FNBC, 4FN e 5FN. No entanto, para fins práticos, no contexto da maior parte dos projetos de banco de dados relacionais, costumamos executar o processo de normalização até a 3FN.
+
+
+Dividiremos o processo de normalização até a 3FN de acordo com o seguinte roteiro:
+
+
+Identificar a origem dos dados.
+Construir tabela não normalizada a partir dos dados.
+Aplicar as regras da primeira forma normal (1FN).
+Aplicar as regras da segunda forma normal (2FN).
+Aplicar as regras da terceira forma normal (3FN).
+
+Considere o relatório expresso na tabela, que informa os docentes participantes em projetos de pesquisa de uma instituição de ensino superior (IES):
+
+
+ 
+
+RELATÓRIOS DE ALOCAÇÃO DOCENTE A PROJETOS DE PESQUISA
+CÓDIGO DO PROJETO: PRODATA	TIPO: ANÁLISE DE DADOS
+DESCRIÇÃO: DESENVOLVIMENTO DE AMBIENTE PARA ANÁLISE DE DADOS
+CÓDIGO DO DOCENTE	NOME	CATEGORIA	SALÁRIO	DATA DE INÍCIO	TEMPO ALOCADO
+DOC001	JOSÉ	ADJUNTO	R$ 6.000,00	01/02/2019	16
+DOC002	LUCIANO	TITULAR	R$ 16.000,00	01/02/2020	4
+DOC003	GILSON	ADJUNTO	R$ 6.000,00	01/02/2019	16
+DOC004	MARTA	TITULAR	R$ 16.000,00	01/02/2020	4
+ 
+CÓDIGO DO PROJETO: PROMED	TIPO: ANÁLISE CLÍNICA
+DESCRIÇÃO: ATENDIMENTO COMUNITÁRIO E VACINAÇÃO
+CÓDIGO DO DOCENTE	NOME	CATEGORIA	SALÁRIO	DATA DE INÍCIO	TEMPO ALOCADO
+DOC001	JOSÉ	ADJUNTO	R$ 6.000,00	01/02/2019	16
+DOC010	MARIA	ADJUNTO	R$ 6.000,00	01/06/2020	0
+DOC004	MARTA	TITULAR	R$ 16.000,00	01/05/2020	1
+Alocação de docentes a projetos de pesquisa em uma IES
+Nathielly de Souza Campos
+ 
+
+
+De acordo com o relatório, nós podemos perceber que:
+
+
+Os projetos são caracterizados por código, descrição e categoria (tipo).
+Para cada docente alocado em projeto, aparecem os seguintes campos: código e nome do docente, sua categoria e salário, além da data de início de atuação no projeto, bem como o tempo alocado.
+
+Agora nós executaremos o segundo passo do roteiro, que corresponde a criar tabela não normalizada a partir do relatório.
+
+
+Tabela não normalizada
+
+A tabela a seguir representa uma tabela não normalizada, denominada PROJETO, criada a partir do relatório:
+
+
+CODIGOPROJETO	TIPO	DESCRICAO	DOCENTE
+CODIGODOCENTE	NOME	CATEGORIA	SALARIO	DATAINICIO	TEMPOMESES
+PRODATA	ANÁLISE DE DADOS	DESENVOLVIMENTO DE AMBIENTE PARA ANÁLISE DE DADOS	DOC001	JOSÉ	ADJUNTO	R$ 6.000,00	01/02/2019	16
+DOC002	LUCIANO	TITULAR	R$ 16.000,00	01/02/2020	4
+DOC003	GILSON	ADJUNTO	R$ 6.000,00	01/02/2019	16
+DOC004	MARTA	TITULAR	R$ 16.000,00	01/02/2020	4
+PROMED	ANÁLISE CLÍNICA	ATENDIMENTO COMUNITÁRIO E VACINAÇÃO	DOC001	JOSÉ	ADJUNTO	R$ 6.000,00	01/02/2019	16
+DOC010	MARIA	ADJUNTO	R$ 6.000,00	01/06/2020	0
+DOC004	MARTA	TITULAR	R$ 16.000,00	01/05/2020	1
+Representação dos dados do relatório em tabela não normalizada
+Nathielly de Souza Campos
+
+A representação textual da tabela está expressa a seguir:
+
+
+PROJETO (CODIGOPROJETO, TIPO, DESCRICAO, (CODIGODOCENTE, NOME, CATEGORIA, SALARIO, DATAINICIO, TEMPOMESES))
+
+
+Nessa representação, a coluna CODIGOPROJETO diferencia cada projeto dos demais. A coluna CODIGODOCENTE diferencia os docentes alocados no contexto de um projeto.
+
+
+Agora, observe com atenção a lista representativa da tabela não normalizada:
+
+
+Cada linha da tabela não normalizada representa a informação de alocação de um docente a um projeto de pesquisa.
+Note que a coluna DOCENTE é composta por um conjunto de colunas:CODIGODOCENTE, NOME, CATEGORIA, SALARIO, DATAINICIO e TEMPOMESES. Estamos diante de uma coluna composta.
+Perceba, também, que se olharmos isoladamente para os valores das colunas que compõem a coluna DOCENTE, vamos perceber repetição. Isso acontece no caso dos funcionários José e Marta. A mesma informação está representada mais de uma vez, o que representa redundância.
+
+Agora que construímos a tabela não normalizada, vamos à próxima etapa, que terá como saída um conjunto de tabelas na 1FN.

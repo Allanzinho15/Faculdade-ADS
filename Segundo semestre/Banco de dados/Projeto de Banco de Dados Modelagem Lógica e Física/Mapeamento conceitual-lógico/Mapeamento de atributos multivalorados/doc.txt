@@ -1,0 +1,37 @@
+Mapeamento de atributos multivalorados
+O mapeamento de atributos multivalorados é uma técnica para lidar com dados complexos em bancos de dados relacionais. Com métodos específicos, os atributos que podem assumir múltiplos valores para uma mesma entidade são mapeados para estruturas de dados eficientes, como tabelas relacionadas ou arrays, garantindo a flexibilidade e a eficiência na manipulação da informação.
+
+
+Neste vídeo, você vai compreender como realizar o mapeamento de atributos multivalorados no modelo lógico de um banco de dados relacional a partir de um DER.
+
+
+
+O mapeamento de atributos multivalorados envolve:
+
+
+Criar uma tabela T para cada atributo multivalorado.
+Criar coluna(s) para o(s) atributo(s) multivalorado(s).
+A tabela T possuirá chave estrangeira originada da chave primária da tabela original.
+A tabela T possuirá chave primária composta pela chave estrangeira criada no passo anterior e pela(s) coluna(s) referente(s) ao(s) atributo multivalorado(s).
+
+A imagem a seguir mostra um DER parcial contendo atributo multivalorado.
+
+
+
+DER parcial contendo atributo multivalorado
+
+A tabela a seguir exibe o modelo lógico gerado:
+
+
+
+Criadas com base no mapeamento conceitual-lógico envolvendo atributo multivalorado
+
+Note que para mapear o atributo multivalorado TELEFONE, foi criada tabela própria denominada FONEALUNO. A coluna CODIGOALUNO de FONEALUNO é chave estrangeira. Além disso, as colunas CODIGOALUNO, NUMERO, TIPO representam uma chave primária composta. A coluna TIPO, criada na tabela FONEALUNO, representa a categoria do telefone, por exemplo, residencial, comercial ou móvel.
+
+
+Após a aplicação das regras de mapeamento, foi gerada a representação textual a seguir:
+
+
+ALUNO (CODIGOALUNO, NOME, CPF)
+ FONEALUNO (CODIGOALUNO, NUMETO, TIPO)
+ CODIGOALUNO REFERENCIA ALUNO
