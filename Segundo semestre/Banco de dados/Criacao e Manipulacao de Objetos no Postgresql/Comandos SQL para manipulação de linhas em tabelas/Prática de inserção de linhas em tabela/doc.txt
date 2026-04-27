@@ -1,0 +1,75 @@
+Prática de inserção de linhas em tabela
+Vamos explorar agora várias técnicas de inserção de dados no PostgreSQL, incluindo inserções simples, múltiplas, com retorno de valores, condicionais e a partir de outra tabela. Dominar essas técnicas é fundamental para a manipulação eficiente de dados em aplicações reais.
+
+ 
+
+No vídeo, a seguir, aprenda e pratique a inserção de linhas em tabelas utilizando a linguagem SQL. Assista!
+
+
+
+Para executar a prática, vamos considerar o modelo lógico apresentado a seguir.
+
+
+
+Modelo lógico do banco de dados. 
+
+Siga os passos apresentados a seguir.
+
+
+1. Abra o pgadmin.
+
+ 
+
+2. Abra o query tools no banco tabelas_lab.
+
+ 
+
+3. Realize a inserção Simples de uma linha na tabela clientes.
+
+ 
+
+4. Verifique a linha inserida.
+
+ 
+
+5. Realize a inserção Simples de uma linha na tabela clientes.
+
+ 
+
+6. Realize a inserção múltipla de duas linhas na tabela clientes.
+
+ 
+
+7. Verifique as inserções.
+
+ 
+
+8. Realize a inserção de uma linha com retorno de valores na tabela clientes.
+
+ 
+
+9. Realize a inserção condicional com INSERT ... ON CONFLICT para gerenciar conflitos de chave única (como o email) e tente inserir uma linha com e-mail repetido.
+
+ 
+
+10. Verifique as inserções.
+
+ 
+
+11. Realize a inserção condicional com INSERT ... ON CONFLICT para gerenciar conflitos de chave única (como o email) e tente inserir uma linha com e-mail repetido e, se houver, atualize a idade.
+
+ 
+
+12. Verifique a atualização.
+
+ 
+
+13. Crie uma tabela cópia de clientes chamada clientes_backup sem dados.
+
+ 
+
+14. Insira na tabela clientes_backup os dados dos clientes com mais de 30 anos.
+
+ 
+
+15. Verifique as inserções.

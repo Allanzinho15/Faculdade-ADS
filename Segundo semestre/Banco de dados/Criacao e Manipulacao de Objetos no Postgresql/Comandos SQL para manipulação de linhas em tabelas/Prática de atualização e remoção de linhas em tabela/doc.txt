@@ -1,0 +1,103 @@
+Prática de atualização e remoção de linhas em tabela
+Vamos explorar agora várias técnicas de atualização e exclusão de dados no PostgreSQL, incluindo atualizações simples, condicionais, exclusões simples e múltiplas. Dominar essas técnicas é essencial para a manutenção e a manipulação eficiente de dados em aplicações reais.
+
+ 
+
+No vídeo, a seguir, você poderá aprender e praticar os comandos SQL de atualização e remoção de linhas em tabela. Assista!
+
+
+
+Para executar o laboratório, vamos considerar o modelo lógico apresentado a seguir.
+
+
+
+Modelo lógico do banco de dados.
+
+Para realizar a prática, siga os passos apresentados a seguir.
+
+
+1. Abra o pgadmin.
+
+ 
+
+2. Abra o query tools no banco tabelas_lab.
+
+ 
+
+3. Atualize a idade do cliente ‘João Silva‘ para 35 anos.
+
+ 
+
+4. Verifique a atualização.
+
+ 
+
+5. Atualize a idade de todos os clientes com idade menor que 30.
+
+ 
+
+6. Verifique as atualizações.
+
+ 
+
+7. Atualize a idade de ‘Ana Lima‘ para 26 anos e retorne a linha atualizada.
+
+ 
+
+8. Atualize id_reg dos clientes 1 e 2 para apontar para a região 1.
+
+
+Não conseguiu? Vamos lá! 
+
+
+9. Insira na tabela região uma linha com os valores 1 e ‘Regiao 1’.
+
+ 
+
+10. Repita o update do idreg. 
+
+ 
+
+11. Valide a atualização.
+
+ 
+
+12. Exclua o cliente  'Carlos Pereira'.
+
+ 
+
+13. Confirme a exclusão.
+
+ 
+
+14. Exclua todos os clientes com idade maior que 30.
+
+ 
+
+15. Confirme a exclusão.
+
+ 
+
+16. Exclua as linhas da tabela região.
+
+
+Ainda não conseguiu?
+
+
+17. Exclua todas as linhas tabela clientes.
+
+ 
+
+18. Confirme a exclusão.
+
+ 
+
+19. Repita a exclusão das linhas de região. 
+
+ 
+
+Agora sim! Pois não existem mais linhas em departamento apontando para a linha de região.
+
+ 
+
+20. Confirme a exclusão.

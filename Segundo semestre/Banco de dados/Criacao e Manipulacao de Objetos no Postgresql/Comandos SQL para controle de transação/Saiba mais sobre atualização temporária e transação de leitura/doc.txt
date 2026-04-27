@@ -1,0 +1,49 @@
+Os conceitos de atualização temporária e de transação de leitura são importantes em bancos de dados relacionais, especialmente no contexto de operações complexas e simultâneas.
+
+ 
+
+A atualização temporária refere-se à capacidade de modificar dados de forma transitória, sem persistência imediata no banco de dados principal, enquanto as transações de leitura permitem consultar informações consistentes, mesmo em ambientes de escrita intensiva.
+
+ 
+
+Esses mecanismos são essenciais para garantir a integridade e a precisão dos dados, ao mesmo tempo que permitem flexibilidade na manipulação e consulta das informações armazenadas.
+
+
+No vídeo, a seguir, você poderá aprofundar seu entendimento sobre a atualização temporária e a transação de leitura. Assista!
+
+
+
+Atualização temporária 
+
+
+Sabemos que uma transação não deve atrapalhar o andamento de outra. Pense na execução da nossa última transação, que envolveu dois comandos de atualização na tabela DISCIPLINA.
+
+ 
+
+Vimos que, logo após a execução da linha 3, a única disciplina que não sofreu alteração foi a de Computação Gráfica. Perceba que o SELECT da linha 3 está sendo executado no contexto da transação.
+
+
+
+O que aconteceria se tivéssemos, em paralelo, outra aplicação que submetesse consulta para acessar os registros da tabela DISCIPLINA no mesmo momento da execução da linha 3 da transação?
+
+ 
+
+Resposta: A consulta em questão enxergaria os dados “originais”, sem quaisquer alterações. Por qual razão? Para não haver o problema da atualização temporária. Queremos dizer que, se a transação fosse desfeita por qualquer motivo, o UPDATE da linha 2 seria também desfeito.
+
+
+Transação de leitura
+
+
+Sabemos que uma transação que não modifica dados é denominada transação somente de leitura (READ ONLY). Caso contrário, é denominada leitura-gravação (READ WRITE).
+
+ 
+
+Para especificar o tipo de transação, usaremos o comando SET TRANSACTION <TIPOTRANSAÇÃO>. No PostgreSQL, quando iniciamos uma transação, o padrão é READ WRITE.
+
+ 
+
+Vamos analisar um exemplo envolvendo uma transação READ ONLY:
+
+
+
+Na transação, propositalmente, inserimos um comando de atualização em uma transação que não permite essa categoria de comando. Logo, após a execução da linha 3, o SGBD retornará uma mensagem informando ao usuário que não é possível executar comando de atualização em uma transação do tipo somente leitura.

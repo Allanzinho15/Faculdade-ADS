@@ -1,0 +1,47 @@
+Criação de banco de dados e tabelas na prática
+Vamos criar, alterar e eliminar tabelas no PostgreSQL, incluindo o trabalho com tabelas relacionadas. Essas operações são essenciais para o gerenciamento eficiente do esquema de banco de dados em aplicações reais.
+
+ 
+
+Vamos então implementar um banco de dados a partir do modelo lógico a seguir.
+
+
+
+Modelo lógico do banco de dados para o estudo de caso. 
+
+No vídeo, a seguir, você poderá acompanhar e praticar a criação de banco de dados e tabelas utilizando o pgAdmin. Assista!
+
+
+
+Vamos à prática sobre criação, alteração e eliminação de tabelas no PostgreSQL, incluindo o trabalho com tabelas relacionadas.
+
+ 
+
+Para realizar o laboratório, siga os passos apresentados a seguir.
+
+
+1. Faça conexão ao SGBD utilizando o pgAdmin4.
+
+ 
+
+2. Crie um banco de dados chamado tabelas_lab.
+
+ 
+
+3. Crie a tabela cliente seguindo o modelo lógico.
+
+ 
+
+4. Crie a tabela pedido seguindo o modelo lógico.
+
+ 
+
+5. Crie a tabela regiao.
+
+ 
+
+6. Insira dados nas tabelas clientes, pedido e região.
+
+ 
+
+7. Consulte os dados das tabelas.

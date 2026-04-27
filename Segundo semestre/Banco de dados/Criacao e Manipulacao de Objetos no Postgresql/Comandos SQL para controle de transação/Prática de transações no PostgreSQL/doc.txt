@@ -1,0 +1,98 @@
+O controle de transação é um dos principais recursos de um banco de dados relacional como o PostgreSQL, mantendo a integridade dos dados e a consistência do banco de dados mesmo em caso de falhas. Este laboratório prático abordará o uso de transações no PostgreSQL. Vamos lá!
+
+ 
+
+No vídeo, a seguir, você poderá aprender e praticar os comandos SQL para a implementação de transações no PostgreSQL.
+
+
+
+Para realizar a atividade, siga os passos apresentados a seguir.
+
+
+1. Abra o pgAdmin.
+
+ 
+
+2. Acesse o banco tabelas_lab.
+
+ 
+
+3. Crie uma tabela chamada tabtrans com duas colunas, uma inteira e outra varchar(10).
+
+ 
+
+4. Abra uma transação.
+
+ 
+
+5. Insira duas linhas na tabela.
+
+ 
+
+6. Consulte a tabela.
+
+ 
+
+7. Crie um ponto de salvamento A.
+
+ 
+
+8. Insira mais 2 linhas.
+
+ 
+
+9. Consulte a tabela.
+
+ 
+
+10. Crie um  ponto de salvamento B.
+
+ 
+
+11. Altere duas linhas da tabela.
+
+ 
+
+12. Consulte a tabela.
+
+ 
+
+13. Crie novo ponto de salvamento C.
+
+ 
+
+14. Elimine uma linha.
+
+ 
+
+15. Consulte a tabela.
+
+ 
+
+16. Retorne ao ponto de salvamento B.
+
+ 
+
+17. Consulte a tabela.
+
+ 
+
+18. Retorne ao ponto de salvamento C.
+
+
+Conseguiu? Não?
+
+
+19. Retorne ao ponto de salvamento A.
+
+ 
+
+20. Consulte a tabela.
+
+ 
+
+21. Confirme a transação.
+
+ 
+
+22. Consulte a tabela.

@@ -1,0 +1,90 @@
+pgAdmin 4 e PSQL
+São duas ferramentas essenciais para a administração e a interação com o PostgreSQL. Enquanto o pgAdmin oferece uma interface gráfica amigável para a gestão e a visualização dos dados, o PSQL proporciona uma potente interface de linha de comando para a execução de comandos SQL e scripts.
+
+ 
+
+Ambas as ferramentas complementam-se, atendendo às necessidades tanto de administradores de bancos de dados quanto de desenvolvedores, além de ser essenciais para o trabalho eficiente com PostgreSQL.
+
+ 
+
+Você vai conhecer, no vídeo a seguir, as duas principais interfaces para interagir com o PostgreSQL: PGADMIN 4 e PSQL. Não perca!
+
+
+
+Interfaces para interagir com o PostgreSQL
+
+
+A partir daqui, é importante que você saiba que será necessário o uso de algum tipo de interface que permita conexão ao servidor e, em seguida, o acesso aos objetos de interesse.
+
+
+
+Além do pgAdmin 4, a interface gráfica própria que provê acesso aos recursos do SGBD via navegador, o PostgreSQL disponibiliza o PSQL, uma interface de linha de comando sobre a qual o usuário submete interativamente comandos ao SGBD, via terminal. Além disso, o PostgreSQL possui uma excelente documentação disponível on-line, aplicável tanto para a instalação em Linux quanto para Windows, considerada uma verdadeira enciclopédia de bancos de dados relacionais.
+
+ 
+
+A documentação é válida para o uso dos recursos do PostgreSQL com quaisquer interfaces. Alternativamente, você pode optar por baixar e usar interfaces projetadas por outros desenvolvedores.
+
+
+Exemplo
+O aplicativo DBeaver possui uma versão livre com excelentes funcionalidades. Trata-se de um aplicativo útil no desenvolvimento de atividades de administração de banco de dados.
+
+
+Criando database com o pgAdmin 4 e o PSQL
+
+
+Tendo instalado o PostgreSQL, para nos certificarmos de que o SGBD está funcionando de maneira adequada, realizaremos um teste envolvendo a criação de databases, conforme mostrado a seguir.
+
+ 
+
+Database BDTESTEPGADMIN, a ser criado usando o pgAdmin 4.
+ 
+
+Database BDTESTEPSQL, a ser criado usando o PSQL.
+
+No Windows, selecione o botão Iniciar, digite “pgAdmin 4” e tecle <enter>. Em seguida, o navegador será aberto, e você terá acesso a um ambiente no qual aparece um único database denominado postgres, criado pelo instalador. Veja!
+
+
+
+Tela do pgAdmin 4 com o database postgres criado pelo instalador.
+
+Com o foco no database postgres, clique em Tools e em Query Tool para abrir um editor (Query Editor) no qual você codificará e submeterá (utilizando a tecla F5 ou o botão correspondente com uma seta) comandos SQL ao servidor.
+
+ 
+
+Vamos criar o database BDTESTEPGADMIN a partir do ambiente do pgAdmin 4. Digite o código a seguir no Query Editor e, após, pressione a tecla F5 para executar o comando a seguir.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+Alternativamente, o database poderia ser criado usando a interface do pgAdmin 4, pressionado o botão direito do mouse sobre a pasta Databases e clicando em Create.
+
+ 
+
+Agora, vamos criar um database usando a interface de terminal PSQL. No Windows, a partir do botão Iniciar, digite “psql” e tecle <enter>. Logo um terminal será aberto e você executará o comando a seguir (teclando <enter> após o comando).
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+Após o SGBD executar o comando, a tela do PSQL ficará conforme vemos a seguir.
+
+
+
+Tela do PSQL após a criação do database BDTESTEPSQL.
+
+Ao final do processo, podemos verificar, no pgAdmin 4, a criação dos dois databases, conforme mostrado na imagem a seguir.
+
+
+
+Tela do pgAdmin 4 mostrando os databases recém-criados.
+
+Detalhes sobre a utilização do pgAdmin 4 e do PSQL podem ser pesquisados nas respectivas documentações que acompanham os softwares.

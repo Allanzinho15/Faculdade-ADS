@@ -1,0 +1,147 @@
+Instalação do PostgreSQL no Windows
+É um processo simples que pode ser realizado em poucos passos. Vamos lá!
+
+
+No vídeo, a seguir, você poderá acompanhar e praticar a instalação do postgreSQL no Windows. Não perca!
+
+
+
+Siga os passos apresentados a seguir para instalar e configurar o PostgreSQL no seu sistema Windows.
+
+
+Fazer o download do instalador
+
+ 
+
+1. Acesse o site oficial do PostgreSQL.
+
+ 
+
+Vá para PostgreSQL Downloads.
+ 
+
+2. Baixe o instalador. 
+
+ 
+
+Clique no link para baixar o instalador do PostgreSQL apropriado para a sua versão do Windows. Você será redirecionado para a página do EDB (EnterpriseDB). Escolha a versão desejada e clique em Download.
+
+Executar o instalador
+
+ 
+
+1. Inicie o instalador: localize o arquivo baixado (postgresql-xx.x.x-windows-x64.exe) e execute-o.
+
+ 
+
+Assistente de instalação: 
+
+ 
+
+Siga as instruções do assistente de instalação.
+ 
+
+Clique em Next na tela de boas-vindas.
+
+Configurar a instalação
+
+ 
+
+1. Escolha do diretório de instalação.
+
+ 
+
+Selecione o diretório onde o PostgreSQL será instalado (o padrão geralmente é C:\Program Files\PostgreSQL\xx).
+ 
+
+Clique em Next.
+ 
+
+2. Seleção de componentes.
+
+ 
+
+Certifique-se de que as opções desejadas estejam selecionadas (normalmente, todas as opções padrão são adequadas).
+ 
+
+Clique em Next.
+ 
+
+3. Escolha do diretório de dados.
+
+ 
+
+Selecione o diretório onde os dados do PostgreSQL serão armazenados (o padrão geralmente é C:\Program Files\PostgreSQL\xx\data).
+ 
+
+Clique em Next.
+ 
+
+4. Configuração do usuário e senha.
+
+ 
+
+Defina uma senha para o usuário postgres (administrador do banco de dados).
+ 
+
+Memorize essa senha, pois será necessária para acessar o PostgreSQL.
+ 
+
+Clique em Next.
+ 
+
+5. Definição da porta de conexão.
+
+ 
+
+Especifique a porta de conexão (o padrão é 5432).
+ 
+
+Clique em Next.
+ 
+
+6. Configuração da localização.
+
+ 
+
+Selecione a localização (locale) para o banco de dados.
+ 
+
+Clique em Next.
+ 
+
+7. Pronto para instalar.
+
+ 
+
+Revise as configurações e clique em Next para iniciar a instalação.
+
+Concluir a instalação
+
+ 
+
+1. Finalizar a instalação: após a instalação ser concluída, clique em Finish.
+
+
+Verificar a instalação
+
+ 
+
+1. Acessar o pgAdmin.
+
+ 
+
+O pgAdmin, uma ferramenta gráfica para gerenciar o PostgreSQL, é instalado junto com o PostgreSQL. Abra o pgAdmin (disponível no menu Iniciar).
+ 
+
+2. Conectar ao Servidor PostgreSQL.
+
+ 
+
+No pgAdmin, crie uma nova conexão ao servidor PostgreSQL usando o usuário postgres e a senha definida durante a instalação.
+
+Testar a conexão
+
+ 
+
+ Verifique se a conexão foi bem-sucedida e explore a interface do pgAdmin para garantir que o PostgreSQL está funcionando corretamente.

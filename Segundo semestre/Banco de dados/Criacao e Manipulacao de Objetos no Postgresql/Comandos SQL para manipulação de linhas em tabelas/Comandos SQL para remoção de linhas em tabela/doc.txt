@@ -1,0 +1,115 @@
+A operação de exclusão (DELETE) de registros em tabelas do PostgreSQL permite a gestão eficiente dos dados em um banco de dados relacional. Utilizando comandos SQL, é possível remover registros específicos de forma seletiva, assegurando que apenas os dados desejados sejam eliminados.
+
+ 
+
+O PostgreSQL oferece uma variedade de opções para a execução de exclusões, incluindo o uso de condições complexas para especificar os registros a serem removidos, garantindo assim a manutenção da integridade e da precisão dos dados armazenados.
+
+
+Assista ao vídeo, a seguir, para compreender os comandos SQL para a remoção de linhas em tabela. 
+
+
+
+Remoção de linhas em tabela
+
+
+A remoção de linhas em tabela é realizada com o auxílio do comando DELETE da SQL. Sua sintaxe básica está expressa a seguir.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+Na sintaxe, <NOMETABELA> representa a tabela alvo da operação de deleção de linha(s). Por último, há uma condição lógica, caso seja necessário. Isso ocorre porque, em geral, estamos interessados em remover somente um subconjunto de linhas que é obtido a partir do processamento da cláusula WHERE.
+
+ 
+
+A sintaxe completa a respeito do comando DELETE pode ser encontrada no site oficial do PostgreSQL.
+
+ 
+
+Agora, vamos estudar alguns exemplos!
+
+ 
+
+Suponha que temos interesse em apagar do banco de dados a disciplina de Anatomia. Podemos, então, submeter o código a seguir.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+O SGBD localiza, na tabela DISCIPLINA, a linha com o conteúdo da coluna CODIGODISCIPLINA igual a 1. Em seguida, remove do banco de dados a linha em questão.
+
+ 
+
+Agora vamos imaginar que tenha surgido a necessidade de remover do banco de dados a disciplina de Leitura e Produção de Textos. Podemos, então, submeter o código a seguir.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+O SGBD não realizará a remoção e retornará uma mensagem de erro indicando que o valor 1 está registrado na tabela CURSODISCIPLINA, coluna CODIGODISCIPLINA. Se o SGBD aceitasse a remoção, a tabela CURSODISCIPLINA ficaria com dados inconsistentes, o que não deve ser permitido.
+
+ 
+
+Assim, de modo semelhante ao que aprendemos em Mecanismo de chave primária em ação, deixaremos o SGBD realizar as alterações necessárias para manter a integridade dos dados. Vamos, então, submeter o comando a seguir.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+O que fizemos?
+
+ 
+
+Usamos o comando ALTER TABLE para alterar a estrutura da tabela CURSODISCIPLINA:, removemos a chave estrangeira (comando DROP CONSTRAINT) e, por último, recriamos a chave (ADD CONSTRAINT), especificando operação de remoção (DELETE) em cascata.
+
+ 
+
+Assim, após o processamento da alteração anterior, podemos submeter o comando conforme a seguir.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+Ao processar o comando, o SGBD verifica se existe alguma linha da tabela CURSODISCIPLINA com valor 1 para a coluna CODIGODISCIPLINA. Caso encontre, cada ocorrência é então removida do banco de dados.
+
+
+E se quiséssemos eliminar todos os registros de todas as tabelas do banco de dados?
+
+ 
+
+Resposta: Para realizarmos essa operação, precisaremos identificar quais tabelas são mais independentes e quais são as que possuem vínculos de chave estrangeira.
+
+
+No caso do nosso exemplo, CURSODISCIPLINA possui duas chaves estrangeiras, portanto, é a tabela mais dependente. As demais não possuem chave estrangeira. De posse dessa informação, podemos submeter os comandos a seguir para completar a tarefa.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+Perceba que a primeira tabela usada no processo de remoção de linhas foi a CURSODISCIPLINA, pois essa é a responsável por manter as informações sobre o relacionamento entre as tabelas CURSO e DISCIPLINA. Após eliminar os registros de CURSODISCIPLINA, o SGBD removerá com sucesso os registros das tabelas CURSO e DISCIPLINA.
+
+

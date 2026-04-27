@@ -1,0 +1,120 @@
+Veja agora como utilizar o controle de transação no PostgreSQL, incluindo como iniciar, confirmar, reverter transações e lidar com concorrência. O entendimento e o uso correto das transações são fundamentais para manter a integridade e consistência dos dados em aplicações reais.
+
+ 
+
+No vídeo, a seguir, você poderá aprender e praticar a atualização temporária e a transação de leitura.
+
+
+
+Para realizar a atividade, siga os passos apresentados a seguir.
+
+ 
+
+1. Abra o pgAdmin.
+
+ 
+
+2. Acesse o banco tabelas_lab com o query tools.
+
+ 
+
+3. Abra o PSQL.
+
+ 
+
+4. Faça conexão ao banco tabelas_lab.
+
+
+No pgAdmim:
+
+
+5. Inicie uma transação.
+
+ 
+
+6. Consulte a tabela tabtrans.
+
+ 
+
+7. Insira mais 2 linhas.
+
+ 
+
+8. Consulte a tabela.
+
+
+No PSQL:
+
+
+9. Inicie uma transação.
+
+ 
+
+10. Consulte a tabela tabtrans.
+
+ 
+
+11. Insira mais 2 linhas.
+
+ 
+
+12. Consulte a tabela.
+
+
+No pgAdmim:
+
+
+13. Confirme a transação.
+
+ 
+
+14. Consulte a tabela tabtrans.
+
+
+No PSQL:
+
+
+15. Consulte a tabela tabtrans.
+
+ 
+
+16. Desfaça a transação.
+
+ 
+
+17. Consulte a tabela.
+
+
+No pgAdmim:
+
+
+18. Inicie uma transação.
+
+ 
+
+19. Consulte a tabela tabtrans.
+
+ 
+
+20. Comande update em todas as linhas da tabela tabtrans.
+
+ 
+
+21. Consulte a tabela tabtrans.
+
+
+No PSQL:
+
+
+22. Inicie uma transação.
+
+ 
+
+23. Consulte a tabela tabtrans.
+
+ 
+
+24. Comande update em todas as linhas da tabela tabtrans.
+
+
+Observe o deadlock.

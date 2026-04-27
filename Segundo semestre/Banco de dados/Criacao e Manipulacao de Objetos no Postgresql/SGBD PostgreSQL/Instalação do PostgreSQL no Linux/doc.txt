@@ -1,0 +1,74 @@
+Instalação do PostgreSQL no Linux
+Agora que já estudamos a arquitetura básica do PostgreSQL, vamos fazer a instalação do SGBD em um sistema Linux, utilizando os pacotes.
+
+ 
+
+Para isso, você deve seguir os seguintes pré-requisitos:
+
+ 
+
+Acesso root ou permissões sudo na máquina Linux.
+ 
+
+Conexão com a internet.
+
+No vídeo, a seguir, você poderá acompanhar e praticar a instalação do PostgreSQL no Linux. Assista!
+
+
+
+Para instalar, configurar e testar a instalação do PostgreSQL no sistema Linux, siga os passos apresentados a seguir.
+
+
+Instalar e configurar
+
+ 
+
+1. Atualize os pacotes do sistema.
+
+ 
+
+2. Instale os pacotes necessários.
+
+ 
+
+3. Adicione o repositório do PostgreSQL.
+
+ 
+
+4. Adicione o repositório à lista de fontes.
+
+ 
+
+5. Atualize novamente os pacotes do sistema.
+
+ 
+
+6. Instale o PostgreSQL.
+
+ 
+
+7. Verifique a instalação.
+
+ 
+
+8. Se o serviço não estiver ativo, inicie-o.
+
+ 
+
+9. Configure para iniciar automaticamente com o sistema.
+
+ 
+
+10. Configure o PostgreSQL.
+
+ 
+
+11. No prompt do PostgreSQL, crie uma senha para o usuário postgres.
+
+ 
+
+12. Saia do prompt do PostgreSQL.
+
+ 
+
+13. Saia do usuário postgres.

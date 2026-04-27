@@ -1,0 +1,140 @@
+Prática de criação de banco de dados com PSQL e pgAdmin
+Aqui você aprenderá a criar e manipular um banco de dados no PostgreSQL usando tanto o terminal PSQL quanto a interface gráfica pgAdmin.
+
+ 
+
+Praticar com essas ferramentas aumentará sua eficiência na administração e no desenvolvimento de bancos de dados PostgreSQL.
+
+ 
+
+Confira, no vídeo a seguir, a criação de banco de dados com o PGADMIN e pratique o uso dessa ferramenta. Não perca!
+
+
+
+Agora vamos criar e manipular um banco de dados no PostgreSQL usando o terminal PSQL e a interface gráfica pgAdmin. Acompanhe o passo a passo a seguir.
+
+ 
+
+Criando banco de dados utilizando o PSQL
+
+ 
+
+1. Conecte-se ao PostgreSQL com o PSQL.
+
+
+2. Crie um banco de dados chamado lab_db.
+
+
+3. Confirme a criação do banco acessando o catálogo do sistema.
+
+
+4. Conecte-se ao banco de dados recém-criado.
+
+
+5. Crie uma tabela chamada clientes com os seguintes campos: id, nome, email e idade:
+
+ 
+
+Comando de criação.
+
+SQL (SQLite 3.27.2)
+
+CREATE TABLE clientes (
+
+Light Mode
+
+Copiar
+
+6. Insira dados na tabela:
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+7. Consulte os dados inseridos na tabela clientes:
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+8. Desconecte do banco de dados.
+
+ 
+
+9. Elimine o banco de dados lab_db.
+
+ 
+
+10. Confirme a eliminação.
+
+
+Criando banco de dados utilizando o pgAdmin
+
+
+1. Abra o pgAdmin e conecte-se ao servidor PostgreSQL.
+
+ 
+
+2. Crie um banco de dados chamado lab_db_pgadmin.
+
+ 
+
+3. Expanda o banco de dados lab_db_pgAdmin: clique com o botão direito em Schemas -> public -> Tables e selecione Create -> Table.
+
+ 
+
+4. Na aba General, dê o nome clientes.
+
+ 
+
+5. Na aba Columns, adicione as colunas id e nome:
+
+ 
+
+id: Tipo SERIAL, marque como Primary Key.
+nome: Tipo VARCHAR(100).
+
+
+6. Clique em Save.
+
+ 
+
+7. Insira dados na tabela.
+
+ 
+
+8. Para inserir dados na tabela, clique com o botão direito na tabela clientes e selecione View/Edit Data -> All Rows.
+
+ 
+
+9. Insira dois registros diretamente na interface.
+
+ 
+
+10. Para consultar dados na tabela no painel de navegação à esquerda, clique com o botão direito na tabela clientes e selecione Query Tool.
+
+ 
+
+11. Execute a consulta:
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+12. Para eliminar o banco de dados no painel de navegação à esquerda, clique com o botão direito no banco de dados lab_db_pgAdmin e selecione Delete/Drop.
+
+ 
+
+13. Confirme a exclusão.

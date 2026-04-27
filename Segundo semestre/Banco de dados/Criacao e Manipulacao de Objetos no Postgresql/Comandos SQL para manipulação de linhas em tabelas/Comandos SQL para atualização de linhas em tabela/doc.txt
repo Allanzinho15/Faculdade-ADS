@@ -1,0 +1,141 @@
+Comandos SQL para atualização de linhas em tabela
+A operação de atualização (UPDATE) em tabelas do PostgreSQL permite a manutenção e a modificação dos dados existentes no banco de dados. Utilizando comandos SQL, é possível alterar valores de registros de forma seletiva e precisa, garantindo que as informações reflitam as mudanças necessárias nos dados armazenados.
+
+ 
+
+O PostgreSQL oferece funcionalidades avançadas para a execução de atualizações, incluindo a possibilidade de combinar condições complexas e retornar valores modificados, assegurando a eficiência e a integridade dos dados durante o processo.
+
+ 
+
+No vídeo, a seguir, você vai compreender os comandos SQL para a atualização de linhas em tabela. Assista!
+
+
+
+
+Atualização de linhas em tabela
+
+
+A atualização de linhas em tabela é realizada com o auxílio do comando UPDATE da SQL. Sua sintaxe básica está expressa a seguir.
+
+
+SQL (SQLite 3.27.2)
+UPDATE <NOMETABELA>
+SET COLUNA1=VALOR1, COLUNA2=VALOR2,…,COLUNAn=VALORn
+WHERE <CONDIÇÃO>;
+
+Light Mode
+
+Copiar
+
+Na sintaxe, <NOMETABELA> representa a tabela alvo da atualização. Em seguida, é declarada uma lista contendo a coluna e o seu respectivo valor novo. Por último, uma condição lógica, caso seja necessário. Isso ocorre porque, em geral, estamos interessados em alterar somente um subconjunto de linhas que é obtido a partir do processamento da cláusula WHERE. 
+
+ 
+
+A sintaxe completa a respeito do comando UPDATE pode ser encontrada no site oficial do PostgreSQL.
+
+ 
+
+A seguir, vamos estudar alguns exemplos!
+
+ 
+
+Alteraremos para 70 a carga horária da disciplina Redes de Computadores. Para isso, basta executar o comando a seguir.
+
+
+SQL (SQLite 3.27.2)
+UPDATE DISCIPLINA SET CARGAHORARIA=70 WHERE CODIGODISCIPLINA=2;
+
+Light Mode
+
+Copiar
+
+No comando, o SGBD busca, na tabela, a disciplina com o valor da coluna CODIGODISCIPLINA igual a 2. Em seguida, atualiza o valor da coluna CARGAHORARIA para 70. 
+
+ 
+
+Note também que poderíamos ter executado o comando a seguir.
+
+
+SQL (SQLite 3.27.2)
+UPDATE DISCIPLINA SET CARGAHORARIA=70 WHERE NOME='Redes de Computadores';
+
+Light Mode
+
+Copiar
+
+Suponha agora que houve a necessidade de alterar em 20% a carga horária de todas as disciplinas cadastradas no banco de dados. Podemos executar o comando a seguir.
+
+
+SQL (SQLite 3.27.2)
+UPDATE DISCIPLINA SET CARGAHORARIA=CARGAHORARIA*1.2;
+
+Light Mode
+
+Copiar
+
+No último comando, note que não foi necessária a cláusula WHERE, visto que o nosso interesse era o de atualizar todas as linhas da tabela DISCIPLINA. Ainda, para obter o novo valor, nós utilizamos a expressão CARGAHORARIA*1.2.
+
+
+Atualização de coluna chave primária
+
+
+Devemos ter especial cuidado ao planejarmos alterar o valor de coluna com o papel de chave primária em uma tabela.
+
+ 
+
+Vamos supor que seja necessário alterar para 6 o valor de CODIGOCURSO referente ao curso de Pedagogia. Podemos, então, executar o comando a seguir.
+
+
+SQL (SQLite 3.27.2)
+UPDATE CURSO SET CODIGOCURSO=6 WHERE CODIGOCURSO=4;
+
+Light Mode
+
+Copiar
+
+Perceba que o SGBD processará a alteração, visto que não há vínculo na tabela CURSODISCIPLINA envolvendo esse curso.
+
+ 
+
+No entanto, o que aconteceria se tentássemos alterar para 10 o valor de CODIGOCURSO referente ao curso de Sistemas de Informação?
+
+ 
+
+Seguindo a mesma linha de raciocínio da última alteração, vamos submeter o comando a seguir.
+
+
+SQL (SQLite 3.27.2)
+UPDATE CURSO SET CODIGOCURSO=10 WHERE CODIGOCURSO=1;
+
+Light Mode
+
+Copiar
+
+O SGBD não realizará a alteração e retornará uma mensagem de erro indicando que o valor 1 está registrado na tabela CURSODISCIPLINA, coluna CODIGOCURSO. Isso significa que, se o SGBD aceitasse a alteração, a tabela CURSODISCIPLINA ficaria com dados inconsistentes, o que não deve ser permitido.
+
+ 
+
+Assim, de modo semelhante ao que aprendemos em Mecanismo de chave primária em ação, deixaremos o SGBD realizar as alterações necessárias para manter a integridade dos dados. Vamos, então, submeter o comando a seguir.
+
+
+SQL (SQLite 3.27.2)
+ALTER TABLE CURSODISCIPLINA
+DROP CONSTRAINTCURSODISCIPLINA_CURSO,
+ADD CONSTRAINT CURSODISCIPLINA_CURSO
+FOREIGN KEY (CODIGOCURSO) REFERENCES CURSO (CODIGOCURSO)
+ON UPDATE CASCADE ;
+
+Light Mode
+
+Copiar
+
+O que fizemos? 
+
+ 
+
+Usamos o comando ALTER TABLE para alterar a estrutura da tabela CURSODISCIPLINA:, removemos a chave estrangeira (comando DROP CONSTRAINT) e, por último, recriamos a chave (ADD CONSTRAINT), especificando a operação de atualização (UPDATE) em cascata.
+
+ 
+
+Assim, após o processamento da alteração anterior, podemos então submeter o comando, conforme a seguir.
+UPDATE CURSO SET CODIGOCURSO=10 WHERE CODIGOCURSO=1;

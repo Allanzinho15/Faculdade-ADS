@@ -1,0 +1,66 @@
+Criação, alteração e remoção de tabelas relacionadas na prática
+Vamos à prática de alteração e eliminação de tabelas relacionadas entre si. Veremos, ainda, como executar scripts no PostgreSQL.
+
+ 
+
+No vídeo, a seguir, você poderá acompanhar e praticar a criação, a alteração e a remoção de tabelas relacionadas. Não perca!
+
+
+
+Para executar o laboratório, vamos considerar o  modelo lógico apresentado a seguir.
+
+
+
+Modelo lógico do banco de dados. 
+
+Para realizar o laboratório, siga os passos apresentados a seguir.
+
+
+1. Faça conexão ao SGBD utilizando o pgAdmin4.
+
+ 
+
+2. Acesse o  banco tabelas_lab e abra o query tool.
+
+ 
+
+3. Altere a tabela cliente acrescentando a coluna endereço de 200 caracteres.
+
+ 
+
+4. Altere a tabela cliente tornando a coluna idade de preenchimento obrigatório.
+
+ 
+
+5. Altere o nome da coluna endereço de clientes para endereco_residencial.
+
+ 
+
+6. Elimine a coluna endereco_residencial da tabela cliente.
+
+ 
+
+7. Altere a tabela cliente acrescentando uma coluna chamada idreg como chave estrangeira para a tabela região.
+
+ 
+
+8. Associar clientes a uma região.
+
+ 
+
+9. Elimine a tabela pedido.
+
+ 
+
+10. Elimine a tabela região.
+
+ 
+
+11. Elimine a tabela cliente.
+
+ 
+
+12. Rode o script tabelaslab para recriar as tabelas com todas as restrições.
+
+
+Clique para conferir o scrip tabelaslab.

@@ -1,0 +1,132 @@
+Transações em banco de dados no PostgreSQL garantem a consistência e a integridade dos dados durante operações complexas e críticas. Uma transação é um conjunto de operações SQL que são tratadas como uma unidade indivisível, em que todas as operações são executadas com sucesso ou nenhuma delas é aplicada.
+
+ 
+
+Utilizando comandos SQL como BEGIN, COMMIT e ROLLBACK, o PostgreSQL permite iniciar, confirmar ou desfazer transações para que o banco de dados permaneça em um estado consistente mesmo em caso de erros ou falhas durante o processamento.
+
+ 
+
+No vídeo, a seguir, você vai compreender os comandos relacionados com transações no PostgreSQL. Não perca!
+
+
+
+De maneira geral, uma transação no PostgreSQL possui a estrutura apresentada a seguir.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+Nos SGBDs, no entanto, a inicialização de uma transação ocorre implicitamente quando executamos alguns comandos.
+
+ 
+
+Vamos estudar um exemplo?
+
+ 
+
+Seja a tabela CURSO, conforme a seguir.
+
+
+
+Tabela CURSO.
+
+A execução de um INSERT na tabela ocorre no contexto implícito de uma transação.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+Estudamos que, quando uma transação é desfeita, qualquer operação que faz parte dessa transação deve ser cancelada. Vamos, então, ver como podemos fazer isso no PostgreSQL.
+
+ 
+
+Veja o exemplo a seguir, construído com o objetivo de inserir um registro na tabela CURSO e, em seguida, indicar que a operação de inserção deve ser desfeita pelo SGBD.
+
+
+
+Após o processamento do comando da linha 1, visualizaremos o conteúdo da tabela CURSO da seguinte maneira.
+
+
+
+Tabela CURSO após a execução do comando da linha 1.
+
+Após o processamento dos comandos da linha 2 à linha 4, que já representam a inserção de um registro na tabela CURSO sob o contexto de uma transação explícita, teremos o resultado a seguir.
+
+
+
+Tabela CURSO após a execução do comando da linha 4.
+
+Finalmente, após o processamento dos comandos da linha 5 à linha 7, em que a transação é desfeita, teremos o resultado conforme a tabela a seguir.
+
+
+
+Tabela CURSO após a execução do comando da linha 7.
+
+Perceba que o comando da linha 2 (BEGIN) iniciou explicitamente uma transação, a qual foi abortada quando da execução do comando da linha 5 (ROLLBACK).
+
+ 
+
+No exemplo anterior, programamos uma transação que envolveu somente uma operação, a saber, inserção de uma linha na tabela CURSO. No entanto, uma transação pode envolver diversas linhas de uma tabela do banco de dados.
+
+ 
+
+Vamos, então, programar uma transação que consistirá em duas operações de atualização envolvendo a tabela que contém as disciplinas, apresentada conforme a seguir.
+
+
+
+Tabela DISCIPLINA.
+
+Inicialmente, vamos listar o conteúdo da tabela DISCIPLINA. Podemos, então, usar o comando a seguir.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+Após o processamento do comando, teremos o resultado a seguir.
+
+
+
+Conteúdo da tabela DISCIPLINA com os dados originais.
+
+Agora, nossa intenção é alterar a carga horária das disciplinas conforme os critérios a seguir.
+
+ 
+
+Disciplinas que possuem 60 horas: aumento em 20%.
+ 
+
+Disciplinas que possuam 40 horas: aumento em 10%.
+
+O código a seguir expressa uma transação envolvendo operações de atualização de dados na tabela DISCIPLINA.
+
+
+
+Após a execução do trecho entre as linhas 1 e 3, o conteúdo da tabela disciplina estará conforme a seguir.
+
+
+
+Conteúdo da tabela DISCIPLINA após a execução da linha 3.
+
+Após a execução da transação, o conteúdo da tabela disciplina estará conforme a seguir.
+
+
+
+Conteúdo da tabela DISCIPLINA após o término da transação.
+
+Outro ponto interessante no projeto de transações é a utilização de ponto de salvamento (SAVEPOINT). Observe o exemplo a seguir.
+
+
+
+Na linha 4, adicionamos um SAVEPOINT denominado CARGA60. Quando a linha 6 for executada, o SGBD vai desfazer a operação de UPDATE da linha 5.

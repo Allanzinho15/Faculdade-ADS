@@ -1,0 +1,83 @@
+Tratativas para tabelas relacionadas
+No PostgreSQL, tratar tabelas relacionadas por chave estrangeira garante a integridade referencial e mantém os dados organizados em um banco de dados relacional. As chaves estrangeiras estabelecem vínculos entre tabelas, permitindo que os dados em uma tabela sejam referenciados por outra. Saber criar, modificar e eliminar essas relações ajuda a consistência dos dados e facilita operações complexas envolvendo múltiplas tabelas.
+
+ 
+
+No vídeo, a seguir, você vai compreender os cuidados que devemos tomar ao manipular tabelas relacionadas. Assista!
+
+
+
+Criação e alteração de tabelas relacionadas
+
+
+No exemplo envolvendo criação de tabelas, o relacionamento entre as tabelas NIVEL e CURSO foi declarado no bloco CREATE TABLE da tabela CURSO (linha 14). No entanto, poderíamos ter optado por criar as tabelas NIVEL e CURSO sem relacionamento, para, em seguida, alterar a tabela CURSO, adicionando a restrição de chave estrangeira.
+
+ 
+
+Na hipótese dessa estratégia, o script SQL ficaria do seguinte modo:
+
+
+
+Note que, no script anterior, as tabelas foram criadas sem chave estrangeira (linhas 1 a 12). Na linha 14, o comando ALTER TABLE modifica a estrutura da tabela CURSO, implementando a restrição de chave estrangeira que representa o relacionamento entre CURSO e NIVEL.
+
+
+Cuidados ao manipular tabelas relacionadas
+
+Aprendemos que um banco de dados relacional é composto por diversas tabelas, e cada tabela, em geral, possui várias colunas. Vimos também que o relacionamento entre tabelas é implementado com o uso do mecanismo de chave estrangeira.
+
+ 
+
+Quando definimos que alguma coluna é uma chave estrangeira, na prática, estamos criando uma dependência entre as tabelas envolvidas, pois toda chave estrangeira aponta para o valor de alguma chave primária.
+
+ 
+
+Ao mesmo tempo, todo SGBD precisa manter a integridade dos dados durante todo o ciclo de vida do banco de dados. Com isso, não basta somente conhecermos a estrutura dos comandos para a alteração de tabelas.
+
+
+Resumindo
+Em algumas situações, mesmo que o comando para a alteração ou a exclusão esteja correto do ponto de vista sintático, o SGBD sempre prioriza a integridade dos dados e pode inibir sua execução caso o resultado tenha potencial para gerar inconsistência nos dados.
+
+
+Vamos estudar um exemplo?
+
+ 
+
+Suponha que temos interesse em remover a tabela NIVEL. Para isso, executaremos o comando SQL a seguir.
+
+
+SQL (SQLite 3.27.2)
+-- Comando para remover a tabela NIVEL
+DROP TABLE NIVEL;
+
+Light Mode
+
+Copiar
+
+O SGBD não removerá a tabela NIVEL e retornará uma mensagem de erro, informando que há um objeto (tabela CURSO) que depende da tabela NIVEL.
+
+ 
+
+Se o SGBD removesse a tabela NIVEL, a tabela CURSO ficaria inconsistente, visto que sua chave estrangeira (CODIGONIVEL) faz referência à chave primária da tabela NIVEL. Assim, antes de remover uma tabela do banco de dados, é necessário avaliar todos os seus relacionamentos.
+
+ 
+
+E se, ainda assim, quiséssemos remover a tabela NIVEL?
+
+ 
+
+Resposta: Antes, precisaríamos remover as dependências, para, em seguida, excluí-la do banco de dados. No entanto, como, no banco de dados, pode haver várias dependências envolvendo a tabela NIVEL — o que tornaria o processo mais demorado — o SGBD dispõe de um recurso que realiza essa tarefa automaticamente. Trata-se de remoção em cascata.
+
+ 
+
+Nesse caso, poderíamos usar o comando SQL a seguir.
+
+
+SQL (SQLite 3.27.2)
+-- Comando para remover a tabela NIVEL - remoção em cascata
+DROP TABLE NIVEL CASCADE;
+
+Light Mode
+
+Copiar
+
+Internamente, o comando altera a estrutura da tabela CURSO, removendo a restrição de chave estrangeira da coluna CODIGONIVEL. Em seguida, a tabela NIVEL é removida do banco de dados.

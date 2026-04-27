@@ -1,0 +1,190 @@
+Transações em bancos de dados garantem a consistência, a integridade e a atomicidade das operações realizadas. Uma transação é uma sequência de operações SQL que são tratadas como uma unidade indivisível: ou todas as operações são executadas com sucesso e confirmadas (commit), ou todas são desfeitas (rollback) em caso de erro. Esse mecanismo assegura que o banco de dados permaneça em um estado consistente, mesmo diante de interrupções ou falhas durante o processamento das operações.
+
+ 
+
+No vídeo, a seguir, você vai compreender os principais conceitos relacionados com as transações em banco de dados. Assista!
+
+
+
+Transações em banco de dados
+
+
+
+Ao longo do nosso estudo, aprendemos uma série de comandos SQL envolvendo desde a criação de tabelas até operações de manipulação de dados, tais como inserções, atualizações e exclusões. Basicamente, um comando era codificado e submetido ao SGBD PostgreSQL, que, em seguida, executava-o e devolvia algum resultado.
+
+ 
+
+Perceba que, sob o contexto dos exemplos que estudamos, poderíamos concluir que, de certa maneira, havia somente um usuário acessando a totalidade dos recursos do SGBD.
+
+
+No entanto, em um ambiente de produção, o SGBD gerencia centenas de requisições das aplicações. Com isso, concluímos que há acesso simultâneo a vários recursos que são gerenciados pelo SGBD.
+
+ 
+
+Ao mesmo tempo, o usuário de uma aplicação que faz uso de recursos de um banco de dados, normalmente, está preocupado com o resultado dos processos de negócio que estão automatizados.
+
+
+Exemplo
+Digamos que um sistema acadêmico disponibiliza a inscrição em diversas disciplinas. Determinado estudante, após consultar a oferta e escolher um conjunto de matérias para inscrição, tem expectativa de conseguir inscrever-se em todas as disciplinas alvo da escolha.
+
+ 
+
+No entanto, sob o ponto de vista do SGBD, prover a inscrição em todas as disciplinas escolhidas pelo estudante requer a execução, na totalidade, de diversas instruções de inserção de dados em alguma tabela. Além disso, deve existir cuidado especial para, por exemplo, inibir inscrição em disciplina caso não haja mais disponibilidade de vagas.
+
+ 
+
+Essa é uma situação típica sobre a qual o SGBD precisa prover uma forma de realizar diversas operações como uma unidade lógica de processamento.
+
+
+Vamos aprender que a forma de realizar diversas operações como uma unidade lógica de processamento é denominada transação. Em sistemas de banco de dados, uma transação corresponde a um programa em execução que forma uma unidade de trabalho.
+
+ 
+
+Os limites de uma transação são especificados por meio dos comandos begin transaction (que indica o início de uma transação) e end transaction (que indica o término de uma transação) em um programa de aplicação.
+
+ 
+
+Confira, a seguir, um pouco mais sobre a transação.
+
+
+Leitura
+
+
+É a transação que não atualiza o banco de dados.
+
+
+Leitura-gravação
+
+
+É a transação que atualiza o banco de dados.
+
+
+Para fins didáticos, um modelo simplificado do banco de dados — coleção de itens nomeados — é usado para estudo dos conceitos de processamento de transações. Cada item de dados pode representar um registro, bloco ou valor de coluna.
+
+ 
+
+Em se tratando de SGBDs multiusuários, várias transações podem ser executadas simultaneamente. No entanto, caso essa execução ocorra de maneira descontrolada, poderão surgir problemas de inconsistências. Observe!
+
+
+Atualização perdida
+
+
+Quando duas transações que acessam os mesmos itens de dados têm operações intercaladas de modo a tornar incorretos alguns itens do banco de dados.
+
+
+Atualização temporária
+
+
+Quando uma transação atualiza um item do banco de dados e, depois, falha por algum motivo, enquanto, nesse meio tempo, o item é lido por outra transação antes de ser alterado de volta para seu valor original.
+
+
+Resumo incorreto
+
+
+Quando uma transação calcula uma função de resumo de agregação em uma série de itens enquanto outras transações atualizam alguns desses itens.
+
+
+Leitura não repetitiva
+
+
+Quando uma transação lê o mesmo item duas vezes, e o item é alterado por outra transação entre as duas leituras.
+
+
+É importante sabermos que, quando o SGBD processa uma transação, todas as operações que a formam devem ser completadas com sucesso para, somente depois, haver a gravação permanente das alterações no banco de dados. 
+
+ 
+
+Além disso, caso haja falha em uma ou mais operações de uma transação, as demais operações não devem ser executadas, e a transação deve ser cancelada. Veja o que deve ser feito nesses casos.
+
+
+Se uma transação for
+
+cancelada
+
+
+Deve ser executado um processo denominado rollback (rolar para trás), o qual força o SGBD a trazer de volta os valores antigos dos registros antes da transação ter iniciado.
+
+
+Se uma transação for
+
+executada com sucesso
+
+
+As atualizações devem ser confirmadas por meio do comando commit (confirmação).
+
+
+Veja, a seguir, quais são as falhas que podem ocorrer durante o processamento de uma transação.
+
+ 
+
+Falha do computador.
+ 
+
+Erro de transação ou sistema.
+ 
+
+Condições de exceção detectadas pela transação.
+ 
+
+Falha de disco, problemas físicos e catástrofes.
+
+A seguir, conheceremos as propriedades das transações.
+
+
+Propriedades de uma transação
+
+Com o objetivo de garantir a integridade dos dados contidos no banco de dados, o SGBD mantém um conjunto de propriedades das transações, denominado ACID (do inglês, Atomicity, Consistency, Isolation and Durability), que representam as características de atomicidade, consistência, isolamento e durabilidade, respectivamente. Observe!
+
+
+Atomicidade: a transação precisa ser realizada completamente ou não realizada.
+ 
+
+Consistência: a transação deve levar o banco de dados de um estado consistente para outro.
+ 
+
+Isolamento: a execução de uma transação não deve ser interferida por quaisquer outras transações.
+ 
+
+Durabilidade: as mudanças no banco de dados em função da confirmação da transação devem persistir.
+
+Estados de uma transação
+
+
+Uma transação pode passar pelos seguintes estados ao longo do seu processamento. Veja!
+
+
+Ativo
+
+
+Ocorre imediatamente após o início da transação, podendo executar operações de leitura e gravação.
+
+
+Parcialmente confirmado
+
+
+Ocorre quando a transação termina.
+
+
+Confirmado
+
+
+Ocorre quando, após a verificação bem-sucedida, as mudanças são gravadas permanentemente no banco de dados.
+
+
+Falha
+
+
+Ocorre se uma das verificações falhar ou se a transação for abortada durante seu estado ativo.
+
+
+Confirmado
+
+
+Ocorre quando a transação sai do sistema.
+
+
+Para poder recuperar-se de falhas que afetam transações, normalmente, o SGBD mantém um log para registrar todas as operações de transação que afetam os vários itens do banco de dados.
+
+ 
+
+As entradas em um registro de log de uma determinada transação possuem informações de valores antigos e novos do item de dados do banco de dados bem como se a transação foi concluída com sucesso ou se foi abortada.

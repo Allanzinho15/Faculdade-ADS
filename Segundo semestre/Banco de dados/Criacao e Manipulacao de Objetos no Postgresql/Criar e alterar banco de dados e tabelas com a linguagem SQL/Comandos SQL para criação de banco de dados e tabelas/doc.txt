@@ -1,0 +1,325 @@
+Comandos SQL para criação de banco de dados e tabelas
+A criação de bancos de dados e tabelas no PostgreSQL organiza e facilita a manipulação eficiente dos dados. Utilizando uma sintaxe SQL intuitiva, o PostgreSQL permite definir esquemas, criar tabelas e estabelecer relações entre elas com facilidade. 
+
+ 
+
+Suportando tipos de dados avançados e extensões, o PostgreSQL oferece excelentes ferramentas para garantir a integridade, a segurança e a eficiência no gerenciamento dos dados, sendo uma solução versátil para diversas aplicações.
+
+ 
+
+No vídeo, a seguir, você vai entender os comandos SQL para a criação de um banco de dados e de tabelas.
+
+
+
+Breve histórico da SQL
+
+
+A SQL foi criada na IBM, na década de 1970, sendo originalmente chamada de SEQUEL (Strucutured English Query Language), inspirada, principalmente, na aparente facilidade de uso do comando SELECT para consulta a tabelas dos bancos de dados relacionais.
+
+
+Comentário
+Com a evolução dos sistemas gerenciadores de banco de dados (SGBDs), diversas empresas lançaram produtos incorporando funcionalidades à SQL, o que ocasionou problemas de compatibilidade. Buscando uma solução, o ANSI (American National Standards Institute) definiu padrões para a linguagem SQL, a qual passou a ser referenciada ANSI-SQL.
+
+ 
+
+O ANSI é uma organização particular norte-americana sem fins lucrativos com o objetivo de facilitar a padronização dos trabalhos de seus membros.
+
+
+Atualmente, há diversos SGBDs compatíveis com o padrão ANSI SQL, que vai muito além de consultas com o comando SELECT, englobando sublinguagens para a definição de dados (CREATE, ALTER, DROP) e para manipulação de dados (INSERT, UPDATE, DELETE), além de comandos de controle típicos para a administração do banco de dados. 
+
+ 
+
+Ao mesmo tempo, vários produtos de SGBDs relacionais apresentam extensões à linguagem, como modo de facilitar o dia a dia dos desenvolvedores.
+
+
+Acesso ao PostgreSQL
+
+
+Para criar tabelas em um SGBD PostgreSQL, você deverá seguir os seguintes passos.
+
+
+Passo 1
+
+
+Executando o pgAdmin 4, o navegador será aberto, e você terá acesso ao ambiente que permite manipular os objetos do PostgreSQL.
+
+
+Passo 2
+
+
+Depois, escolha um database na hierarquia e dê um clique com o botão inverso do mouse. Em seguida, escolha a opção Query Tool.
+
+
+O pgAdmin é a interface Web padrão do PostgreSQL, mas você pode escolher o utilitário de sua preferência para praticar os comandos que aprenderemos ao longo deste conteúdo.
+
+
+Criando um banco de dados
+
+Após escolher um utilitário para acessar o servidor PostgreSQL, será necessário criar um database para, em seguida, manipular tabelas. Por exemplo, para criarmos um database denominado bdestudo, é necessário executar o comando a seguir.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+No comando, a linha com “--” corresponde a comentário e seu conteúdo não é processado pelo SGBD. Caso haja necessidade de remover o database bdestudo, basta executar o comando a seguir.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+Antes de prosseguirmos com a criação de tabelas, é preciso compreender que todo database criado no PostgreSQL possui um schema padrão denominado public, no qual as tabelas a serem criadas no database serão armazenadas.
+
+ 
+
+Assim, se não especificarmos a qual schema do database pertence uma tabela que estamos criando, esta será armazenada no schema public.
+
+ 
+
+Para especificarmos um schema diferente do public, antes de criar uma tabela, devemos criar o respectivo schema, com o comando CREATE SCHEMA.
+
+
+Exemplo
+CREATE SCHEMA esquema;
+
+
+
+Qualquer tabela pertencente ao schema esquema, a partir de então, deverá ser especificada pelo seu nome completo: esquema.tabela
+
+
+Criando tabelas
+
+Já sabemos que um banco de dados, em geral, possui diversas tabelas. As tabelas são criadas com o auxílio do comando CREATE TABLE. Usaremos esse comando para implementar o modelo expresso na imagem a seguir, dentro do database bdestudo anteriormente criado.
+
+
+
+Modelo relacional com as tabelas CURSO e NIVEL.
+
+Veja, a seguir, a sintaxe básica do comando CREATE TABLE:
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+Vamos agora analisar o significado de cada item na sintaxe apresentada anteriormente. Veja!
+
+
+NOMETABELA
+
+
+Representa o nome da tabela que será criada.
+
+
+COLUNA1 e COLUNAN
+
+
+Representam a(s) coluna(s) da tabela.
+
+
+TIPODEDADOS
+
+
+Indica tipos de dados ou domínio da coluna.
+
+
+RESTRIÇÃO
+
+
+Aponta alguma propriedade associada à coluna em questão. Por exemplo, podemos definir se a coluna é obrigatória ou opcional.
+
+
+PRIMARY KEY
+
+
+Indica a coluna, ou conjunto de colunas, representativa da chave primária.
+
+
+FOREIGN KEY
+
+
+Sinaliza a coluna, ou conjunto de colunas, com restrição de chave estrangeira.
+
+
+CONSTRAINT RESTRIÇÃO
+
+
+Indica alguma restrição que poderá ser declarada.
+
+
+A sintaxe completa a respeito do comando CREATE TABLE no PostgreSQL pode ser encontrada no site oficial do PostgreSQL. Ao final da sintaxe, são descritas as características compatíveis com o padrão SQL.
+
+
+Tipos de dados
+
+Cada coluna de tabela deve pertencer a um tipo de dado. Veja, a seguir, os tipos mais comuns no PostgreSQL.
+
+
+bigint
+
+
+Valores inteiros compreendidos entre −9.223.372.036.854.775.808 e 9.223.372.036.854.775.807.
+
+
+char (comprimento)
+
+
+Útil para sequências de caracteres de tamanho fixo. O parâmetro comprimento determina o valor da sequência. Esse tipo de dado preenche a coluna com espaços em branco até completar o total de caracteres definidos, caso a totalidade do tamanho do campo não esteja preenchida.
+
+
+date
+
+
+Data de calendário no formato AAAA-MM-DD.
+
+
+decimal
+
+
+Determina a precisão do valor de casas decimais.
+
+
+double
+
+
+Precisão do valor de até 15 casas decimais.
+
+
+int ou integer
+
+
+Valores inteiros compreendidos entre −2.147.483.648 e 2.147.483.647.
+
+
+money
+
+
+Valores monetários compreendidos entre −92.233.720.368.547.758.08 e 92.233.720.368.547.758.07.
+
+
+numeric
+
+
+Precisão do valor de casas decimais.
+
+
+real
+
+
+Precisão do valor de até seis casas decimais.
+
+
+serial
+
+
+Gera valor único inteiro sequencial para um novo registro entre 1 e 2.147.483.647.
+
+
+smallint
+
+
+Representa valores compreendidos entre 32.768 e 32.767.
+
+
+time
+
+
+Representa horário no intervalo de tempo entre 00:00:00 e 24:00:00.
+
+
+varchar (comprimento)
+
+
+Útil para sequência de dados de caracteres com comprimento variável. Não armazena espaços em branco não utilizados para compor string (em branco) em seu lado direito.
+
+
+Para detalhes sobre os tipos de dados, sugerimos que você acesse a documentação do PostgreSQL, disponível no site oficial do produto.
+
+
+Exemplo envolvendo criação de tabelas
+
+
+Veja a seguir o código SQL que permite a criação das tabelas NIVEL e CURSO, respectivamente.
+
+
+
+A tabela NIVEL está especificada no bloco de comandos entre as linhas 2 e 6. As duas colunas da tabela são obrigatórias.
+
+ 
+
+A tabela CURSO está especificada no bloco de comandos entre as linhas 8 e 15. As colunas DATACRIACAO e CODIGONIVEL são opcionais. Em especial, CODIGONIVEL significa que um curso pode ser criado e, em outro momento, ser associado à informação que caracteriza o nível dele.
+
+
+Comentário
+Note que, como não foi especificado um schema para armazenar essas tabelas, elas pertencerão ao schema padrão public do database bdestudo.
+
+
+Observe que, na linha 5, a coluna NOME foi declarada com o qualificador UNIQUE. Na prática, o SGBD controlará a propriedade de unicidade na referida coluna, proibindo que haja mais de uma ocorrência da mesma ao longo de todo o ciclo de vida do banco de dados.
+
+
+Gerenciamento de scripts na prática
+
+
+Note que o script SQL da imagem possui 15 linhas. Esse é um exemplo didático que possui somente duas tabelas. No entanto, você vai perceber que, no dia a dia, os projetos reais possuem quantidades de tabelas que facilmente podem ultrapassar dois dígitos.
+
+ 
+
+É importante que você conheça comandos DDL, mas o uso prático ocorrerá com o auxílio de ferramentas que automatizam o processo de gestão e administração de dados. Tais ferramentas permitem — manipulando elementos visuais — criar tabelas, relacionamentos e restrições, além de executar outras atividades. As ferramentas permitem gerar código DDL referente ao projeto como um todo, ou parte dele.
+
+
+Exemplo
+Ferramentas DBeaver, Vertabelo, SQL Power Architect, Toad for SQL e Erwin, entre outras.
+
+
+SGBD PostgreSQL nos bastidores
+
+Aprendemos a criar um database com o uso do comando CREATE DATABASE. No entanto, a submissão de um simples CREATE DATABASE ao PostgreSQL gera uma série de etapas gerenciadas pelo servidor.
+
+ 
+
+Se considerarmos a instalação padrão no Windows, ao criar um data-base, o servidor cria uma pasta identificada por um número (OID), dentro do diretório C:\Program Files\PostgreSQL\12\data\base. Veja!
+
+
+
+Pastas representativas de databases, antes da criação do database TESTEBANCO.
+
+Após a execução do comando CREATE DATABASE TESTEBANCO, foi criada a pasta 41017, conforme a imagem a seguir.
+
+
+
+Pastas representativas de databases, após da criação de TESTEBANCO.
+
+O PostgreSQL mantém informações sobre todos os databases em um database especial denominado catálogo, cujas tabelas possuem nomes iniciados com o prefixo PG_.
+
+
+Exemplo
+Informações sobre os databases existentes em um servidor são armazenadas na tabela PG_DATABASE.
+
+
+Caso você queira identificar o nome correspondente ao OID do PostgreSQL, basta executar o comando a seguir. 
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+O resultado desse comando pode ser visualizado na seguinte tabela.
+
+
+
+Resultado de consulta à tabela PG_DATABASE.
+
+Em seu computador, o resultado poderá ser diferente do apresentado, tendo em vista as operações que você tenha realizado no

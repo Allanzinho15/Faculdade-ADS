@@ -1,0 +1,95 @@
+Histórico e arquitetura básica
+O PostgreSQL, lançado inicialmente em 1989 como Postgres, é um sistema de gerenciamento de banco de dados relacional de código aberto conhecido por sua robustez e conformidade com os padrões SQL. 
+
+ 
+
+Desenvolvido na Universidade da Califórnia, em Berkeley, evoluiu significativamente ao longo das décadas. Sua arquitetura modular e extensível permite uma alta personalização e desempenho, tornando-o uma escolha popular para aplicações empresariais e acadêmicas que demandam confiabilidade e escalabilidade.
+
+
+No vídeo, a seguir, você vai compreender a arquitetura do sistema gerenciador de banco de dados postgreSQL. Assista!
+
+
+
+Breve histórico
+
+
+O PostgreSQL surgiu a partir do projeto POSTGRES, assim denominado por ser originário do projeto INGRES (Post INGRES), de responsabilidade da Universidade da Califórnia, em Berkeley.
+
+ 
+
+Acompanhe o histórico desse sistema a seguir.
+
+
+1986
+
+Implementação
+
+A implementação do POSTGRES foi iniciada, tornando-o operacional em 1987.
+
+
+1989
+
+Lançamento ao público externo
+
+A primeira versão foi lançada ao público externo. Nos dois anos seguintes, foram lançadas a segunda e terceira versões.
+
+
+1995
+
+Postgres95
+
+Foi disponibilizado o Postgres95, com revisão no código do projeto e adoção da linguagem SQL (Structured Query Language ou Linguagem de Consulta Estruturada) como interface padrão.
+
+
+1996
+
+PostreSQL
+
+O produto foi renomeado para PostgreSQL, começando pela versão 6, considerado continuidade do Postgres95, a versão 5.
+
+
+Atualmente
+
+PostgreSQL como um dos principais SGBDs de código aberto
+
+O projeto ganhou visibilidade e, atualmente, o PostgreSQL é conhecido como um dos principais SGBDs de código aberto, com versões para Windows, Mac OS e Linux.
+
+
+Arquitetura do PostgreSQL
+
+Antes de instalarmos o PostgreSQL, é importante entendermos sua arquitetura básica. Ele utiliza o modelo cliente-servidor. Sob esse contexto, confira os seguintes processos que cooperam entre si. 
+
+
+Processo servidor, responsável por funções, como:
+
+
+Gerenciar os arquivos do banco de dados.
+ 
+
+Gerenciar as conexões entre os aplicativos e o SGBD.
+ 
+
+Avaliar e executar, no banco de dados, os comandos submetidos pelos clientes.
+
+Aplicativo cliente do usuário, responsável por funções, como:
+
+
+Solicitar acesso ao SGBD.
+ 
+
+Enviar comandos para a manipulação de linhas em tabelas. A manipulação pode envolver, por exemplo, inserção, alteração ou mesmo remoção de dados.
+ 
+
+Enviar comandos para consulta em uma ou diversas tabelas, com objetivo de recuperar informações do banco de dados.
+
+Em um ambiente cliente-servidor, tanto o cliente quanto o servidor podem estar localizados em máquinas diferentes, em uma rede local ou mesmo geograficamente distantes.
+
+ 
+
+Em geral, a comunicação entre cliente e servidor ocorre por meio de uma conexão de rede utilizando o protocolo TCP/IP. O TCP/IP é um conjunto de protocolos de comunicação entre computadores em rede. Seu nome faz referência a dois protocolos: Transmission Control Protocol / Internet Protocol. Esse protocolo tem por objetivo a padronização das comunicações em rede, em especial as comunicações na Web.
+
+
+O PostgreSQL suporta várias conexões simultâneas de clientes. Para isso, um processo para cada conexão é iniciado. Em seguida, o cliente e o novo processo realizam comunicação.
+
+
+Adiante, veremos como instalar o PostgreSQL em seu computador, mas já recomendamos que você acompanhe as versões do PostgreSQL na página oficial do produto para escolher uma versão que lhe interesse, de acordo com seu sistema operacional.

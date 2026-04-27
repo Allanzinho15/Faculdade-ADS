@@ -1,0 +1,115 @@
+Comandos SQL para alteração e remoção de tabela
+A alteração e a eliminação de tabelas no PostgreSQL são operações que impactam diretamente a manutenção e a evolução de um banco de dados.
+
+ 
+
+Utilizando comandos SQL, é possível modificar a estrutura das tabelas, adicionar ou remover colunas e índices, além de redefinir restrições e relacionamentos. Da mesma forma, a eliminação de tabelas permite a remoção de dados obsoletos ou desnecessários. 
+
+ 
+
+Essas operações garantem a flexibilidade e a eficiência do gerenciamento de dados, adaptando o banco de dados às mudanças nas necessidades das aplicações.
+
+ 
+
+No vídeo, a seguir, você vai compreender os comandos SQL para a alteração e a remoção de tabelas. Não perca!
+
+
+
+Alteração de tabela
+
+
+Você vai se deparar com situações em que será necessário alterar a estrutura de uma tabela já existente.
+
+ 
+
+Vamos levar em consideração a seguinte situação: suponha que surgiu a necessidade de modelar a informação sobre a data de primeiro reconhecimento do curso. Podemos, então, alterar a estrutura da tabela CURSO, adicionando uma coluna opcional denominada DTRECONH. O comando ALTER TABLE é útil no contexto dessa tarefa.
+
+ 
+
+A seguir, veja a sintaxe básica do comando ALTER TABLE.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+Em que, na sintaxe apresentada:
+
+ 
+
+<NOMETABELA>
+Representa o nome da tabela na qual haverá a modificação.
+ 
+
+<COLUNA>
+Representa o nome da coluna.
+ 
+
+<TIPODEDADOS>
+Representa o domínio da coluna.
+
+A sintaxe completa a respeito do comando ALTER TABLE pode ser encontrada no site oficial do PostgreSQL.
+
+ 
+
+A seguir, veja o código SQL que permite a alteração da tabela CURSO.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+Por padrão, o SGBD cria a coluna como opcional. É como se o comando estivesse com o qualificador NULL declarado imediatamente antes do “;”.
+
+ 
+
+E se desejarmos remover uma coluna da tabela? Podemos usar a sintaxe a seguir.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+Vamos agora remover a coluna DTRECONH da tabela CURSO. A seguir, veja o código SQL que permite a alteração.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+Remoção de tabela
+
+
+Você vai se deparar com situações em que será necessário remover uma tabela do banco de dados. Essa ação é realizada com o auxílio do comando DROP TABLE. A sintaxe desse comando está expressa a seguir.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+Vamos agora remover a tabela CURSO com o devido código SQL.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+Mais adiante, vamos conhecer alguns cuidados que devem ser tomados quando formos manipular a estrutura de tabelas relacionadas.
