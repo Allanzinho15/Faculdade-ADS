@@ -1,0 +1,36 @@
+Consultas com o comando SELECT e a cláusula WHERE utilizando PGADMIN
+Vamos agora ver exemplos de uso dos comandos vistos até aqui. Para isso, iremos utilizar o banco de dados da empresa cujo modelo lógico pode ser vista na imagem a seguir.
+
+ 
+
+
+
+Modelo lógico de banco de dados do minimundo EMPRESA.
+
+ 
+
+ 
+
+Neste vídeo, vamos colocar em prática coonsultas com o comando SELECT e cláusula WHERE utilizando PGADMIN. Não perca!
+
+
+
+ 
+
+Roteiro de prática
+
+
+Execute comandos seguindo as estas diretrizes:
+
+
+Retornando empregado com ID > 3.
+Retornando ID do cliente Ponto Quente.
+Filtrando por data.
+Filtrando com várias condições.
+Uso do IN.
+Uso do BETWEEN.
+Uso de LIKE.
+Uso de IS NULL.
+Ordenando a consulta.
+
+Você pode acessar os comandos que resolvem as consultas no arquivo sqlmod2.5.txt

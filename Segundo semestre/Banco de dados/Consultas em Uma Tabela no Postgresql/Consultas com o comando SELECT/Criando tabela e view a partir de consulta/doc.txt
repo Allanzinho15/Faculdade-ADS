@@ -1,0 +1,51 @@
+Criando tabela e view a partir de consulta
+No núcleo de criação de tabelas e visões a partir de comandos SELECT, exploraremos como projetar estruturas de dados eficientes e criar visualizações personalizadas em bancos de dados.
+
+
+Aprenderemos a utilizar comandos SELECT para criar tabelas e visões que atendam às necessidades específicas do nosso projeto. Esse conhecimento é essencial para construir bases sólidas de dados e facilitar análises avançadas. Então, mãos à obra!
+
+
+Neste vídeo, vamos explorar o processo de criação de uma tabela e de view a partir de uma consulta SQL. Veremos como definir estruturas de dados, organizar informações e utilizar consultas para criar visualizações úteis e acessíveis no contexto de bancos de dados.
+
+
+
+ 
+
+Criando tabela a partir de consulta
+
+
+Em alguns momentos, você terá interesse em salvar os resultados de uma consulta em uma nova tabela.
+
+
+Para isso, basta usar o comando CREATE TABLE < CONSULTA >.
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+No exemplo apresentado, o SGBD criará uma tabela denominada TTESTE e armazenará os dados resultantes da consulta (linhas 2 a 11) em questão.
+
+
+Criando view a partir de consulta
+
+Outro recurso interessante, diretamente relacionado ao processo de construção de consultas, é o objeto view (visão). Uma view encapsula a complexidade da consulta SQL, que a forma. Para criar esse objeto, usa-se o comando CREATE VIEW < CONSULTA >. Veja com mais detalhes!
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+No exemplo, o SGBD criará uma view denominada VTESTE. Na prática, quando usuário submeter, por exemplo, a consulta SELECT * FROM VTESTE, o SGBD executará o código associado à view em questão.

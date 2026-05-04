@@ -39,7 +39,7 @@ Comando de criação.
 
 SQL (SQLite 3.27.2)
 
-CREATE TABLE clientes (
+CREATE TABLE clientes 
 
 Light Mode
 
@@ -130,7 +130,9 @@ SQL (SQLite 3.27.2)
 
 
 Light Mode
-
+SELECT NOME, DTNASCIMENTO
+FROM ALUNO
+WHERE SEXO='F' AND EXTRACT (MONTH FROM DTNASCIMENTO)=11;
 Copiar
 
 12. Para eliminar o banco de dados no painel de navegação à esquerda, clique com o botão direito no banco de dados lab_db_pgAdmin e selecione Delete/Drop.

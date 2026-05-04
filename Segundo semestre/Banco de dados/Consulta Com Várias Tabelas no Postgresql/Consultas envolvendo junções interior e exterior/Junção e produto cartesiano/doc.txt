@@ -1,0 +1,118 @@
+Você saberia como atuar quando é preciso retornar dados de uma tabela, por exemplo, o nome do departamento armazenado na tabela Departamento e o nome da região armazenado na tabela Região? Pois é, neste caso, temos que realizar uma junção. Vamos esclarecer esses pontos!
+
+
+Acompanhe neste vídeo as operações de junção e o produto cartesiano do modelo relacional de banco de dados. Você vai entender como essas operações permitem combinar dados de diferentes tabelas de maneira eficiente e estruturada.
+
+
+
+Operação de junção de tabelas
+
+
+A junção de tabelas é uma das operações mais importantes criadas pelo modelo relacional de banco dados.
+
+
+Na definição matemática, o resultado da junção de duas tabelas é um subconjunto do produto cartesiano entre essas tabelas. A especificação desse subconjunto é feita por uma condição de junção entre colunas das duas tabelas.
+
+
+Existem dois tipos de junção:
+
+
+Interna, denominada INNER JOIN.
+Externa, denominada OUTER JOIN, que pode ser LEFT, FULL ou RIGHT OUTER JOIN.
+
+Construiremos algumas consultas com base nas tabelas NIVEL e CURSO, conforme a imagem a seguir. Vamos lá!
+
+
+
+Tabelas NIVEL e CURSO.
+
+Recomendamos que você crie as tabelas e insira algumas linhas, o que pode ser feito usando o script a seguir, a partir da ferramenta de sua preferência. Para isso, tenha em mente que é necessário estar conectado ao PostgreSQL e acessando algum database criado por você.
+
+
+SQL (SQLite 3.27.2)
+    CREATE TABLE NIVEL (
+        CODIGONIVEL int NOT NULL,
+        DESCRICAO varchar(90) NOT NULL,
+        CONSTRAINT CHAVEPNIVEL PRIMARY KEY (CODIGONIVEL));
+CREATE TABLE CURSO (
+        CODIGOCURSO int NOT NULL,
+        NOME varchar(90) NOT NULL UNIQUE,
+        DATACRIACAO date NULL,
+        CODIGONIVEL int NULL,
+        CONSTRAINT CHAVEPCURSO PRIMARY KEY (CODIGOCURSO));
+ALTER TABLE CURSO ADD FOREIGN KEY (CODIGONIVEL) REFERENCES NIVEL;
+INSERT INTO NIVEL (CODIGONIVEL, DESCRICAO) VALUES (1,'Graduação');
+INSERT INTO NIVEL (CODIGONIVEL, DESCRICAO) VALUES (2,'Especialização');
+INSERT INTO NIVEL (CODIGONIVEL, DESCRICAO) VALUES (3,'Mestrado');
+INSERT INTO NIVEL (CODIGONIVEL, DESCRICAO) VALUES (4,'Doutorado');
+INSERT INTO CURSO (CODIGOCURSO,NOME,DATACRIACAO, CODIGONIVEL) VALUES (1, 'Sistemas de Informação', '19/06/1999',1);
+INSERT INTO CURSO (CODIGOCURSO,NOME,DATACRIACAO, CODIGONIVEL) VALUES (2, 'Medicina', '10/05/1990',1);
+INSERT INTO CURSO (CODIGOCURSO,NOME,DATACRIACAO, CODIGONIVEL) VALUES (3, 'Nutrição', '19/02/2012',NULL);
+INSERT INTO CURSO (CODIGOCURSO,NOME,DATACRIACAO, CODIGONIVEL) VALUES (4, 'Pedagogia','19/06/1999',1);
+INSERT INTO CURSO (CODIGOCURSO,NOME,DATACRIACAO, CODIGONIVEL) VALUES (5, 'Saúde da Família','10/09/1999',3);
+INSERT INTO CURSO (CODIGOCURSO,NOME,DATACRIACAO, CODIGONIVEL) VALUES (6, 'Computacão Aplicada','10/09/1999', NULL);
+
+
+Light Mode
+
+Copiar
+
+No script, foram usados três comandos: CREATE, ALTER e INSERT. A sintaxe completa desses comandos no PostgreSQL pode ser encontrada com a indicação disponibilizada no Explore + ao final do conteúdo, tudo bem?
+
+
+A imagem a seguir apresenta o conteúdo da tabela NIVEL após a execução do comando SELECT * FROM NIVEL;
+
+
+
+Conteúdo da tabela NIVEL.
+
+A imagem a seguir apresenta o conteúdo da tabela CURSO após a execução do comando TABLE CURSO;
+
+
+
+Conteúdo da tabela CURSO.
+
+Observe que as tabelas NIVEL e CURSO estão relacionadas. A tabela NIVEL é a mais independente, visto que não possui chave estrangeira. Consequência disso é a possibilidade de um usuário cadastrar diversos níveis na tabela sem a preocupação com qualquer outra tabela do banco de dados. O relacionamento entre NIVEL e CURSO está implementado na tabela CURSO, por meio da coluna CODIGONIVEL, que exerce o papel de chave estrangeira.
+
+
+Por fim, note também que o fato da coluna CODIGONIVEL ser opcional na tabela CURSO representa a possibilidade de cadastrar um curso sem, em um primeiro momento, relacioná-lo a determinado nível existente. Isso é justamente o que ocorreu após a execução dos comandos das linhas 20 e 23, nos quais o valor inserido para a coluna CODIGONIVEL é NULL.
+
+
+Na sequência, acompanhe algumas observações sobre o que acontece quando declaramos mais de uma tabela em uma consulta SQL.
+
+
+Operação de produto cartesiano
+
+Em termos estruturais, a tabela NIVEL possui duas colunas e quatro registros. De forma semelhante, a tabela CURSO possui quatro colunas e seis registros. Você pode chegar a essa conclusão ao analisar o script anterior.
+
+
+Agora, vamos executar a seguinte consulta SQL: SELECT * FROM CURSO, NIVEL; em que o resultado está expresso na imagem a seguir. Observe!
+
+
+
+Resultado da consulta SELECT * FROM CURSO, NIVEL.
+
+O resultado da consulta anterior é uma tabela (em memória principal) originada da operação de produto cartesiano. Nessa operação, o sistema gerenciador de banco de dados (SGBD) combinou cada linha da tabela CURSO com cada registro da tabela NIVEL.
+
+
+Note que a quantidade de (seis) colunas na tabela resultante é a soma das colunas das tabelas envolvidas. De forma semelhante, a quantidade (vinte e quatro) de registros da tabela é igual ao produto entre o número de linhas de CURSO e NIVEL.
+
+
+Perceba que, ao longo do nosso estudo, temos interpretado cada linha de uma tabela como sendo um fato registrado no banco de dados, correspondendo a uma realidade do contexto do negócio sendo modelado.
+
+
+Exemplo
+Ao visualizarmos o conteúdo da tabela NIVEL, afirmamos que há quatro registros ou ocorrências de nível no banco de dados. De forma semelhante, há seis cursos cadastrados na tabela CURSO.
+
+
+No entanto, o mesmo raciocínio não pode ser aplicado à tabela resultante da consulta, já que temos todas as combinações possíveis entre as linhas, além de envolver todas as colunas das tabelas CURSO e NIVEL.
+
+
+Comentário
+Cabe aqui um alerta sobre o cuidado que se deve ter ao usar esse tipo de consulta, que resulta em produto cartesiano. Suponha uma tabela CLIENTES com 1.000.000 de linhas e uma tabela PEDIDOS com 10.000.000 de linhas. O comando SELECT * FROM CLIENTES, PEDIDOS retornaria 10.000.000.000.000 de linhas e, provavelmente, ocuparia longas horas de processamento no servidor, além de retornar um resultado inútil!
+
+
+Há outra maneira de obtermos os mesmos resultados de SELECT * FROM CURSO, NIVEL;. Basta executar o código equivalente: SELECT * FROM CURSO CROSS JOIN NIVEL;
+
+
+A seguir, vamos estudar uma forma de extrair informações úteis a partir do resultado dessa consulta.

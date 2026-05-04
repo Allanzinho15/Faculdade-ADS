@@ -1,0 +1,134 @@
+Funções de resumo ou de agregação
+Vamos nos aprofundar nas técnicas essenciais para resumir e analisar grandes conjuntos de dados em bancos de dados. Abordaremos funções como SUM, AVG, COUNT, entre outras, para calcular estatísticas importantes e extrair insights valiosos.
+
+
+Esse conhecimento é fundamental para profissionais que buscam criar relatórios e análises robustas em sistemas de gerenciamento de banco de dados.
+
+
+Neste vídeo, vamos compreender a utilidade da aplicação das funções de resumo ou de agregação na obtenção de resumos de dados de alguma tabela.
+
+
+
+ 
+
+As funções a seguir são úteis para obtermos resumo dos dados de alguma tabela.
+
+ 
+
+ 
+
+
+Função	O que retorna?
+COUNT(*)	número de linhas da consulta
+MIN(COLUNA/EXPRESSÃO)	menor valor de uma coluna ou expressão
+AVG(COLUNA/EXPRESSÃO)	valor médio da coluna ou expressão
+MAX(COLUNA/EXPRESSÃO)	maior valor de uma coluna ou expressão
+SUM(COLUNA/EXPRESSÃO)	soma dos valores de uma coluna ou expressão
+STDDEV(COLUNA/EXPRESSÃO)	desvio-padrão dos valores de uma coluna ou expressão
+VARIANCE(COLUNA/EXPRESSÃO)	variância dos valores de uma coluna ou expressão
+Tabela: Funções para resumo de dados. 
+Sidney Venturi.
+
+
+Vamos estudar um exemplo?
+
+
+Observe o código a seguir.
+
+
+SQL (SQLite 3.27.2)
+SELECT
+    COUNT(*) AS "Número de alunos",
+    MIN(EXTRACT(YEAR FROM AGE(DTNASCIMENTO))) AS "Menor Idade",
+    AVG(EXTRACT(YEAR FROM AGE(DTNASCIMENTO))) AS "Idade Média",
+    MAX(EXTRACT(YEAR FROM AGE(DTNASCIMENTO))) AS "Maior Idade",
+    SUM(EXTRACT(YEAR FROM AGE(DTNASCIMENTO)))/COUNT(*) AS "Idade Média"
+FROM ALUNO;
+SELECT
+
+Light Mode
+
+Copiar
+
+Perceba que, como estamos usando somente o comando SELECT/FROM, cada função é calculada levando em consideração todos os registros da tabela.
+
+
+Veja na imagem a seguir o resultado da consulta.
+
+ 
+
+ 
+
+
+
+Resultado da consulta envolvendo funções para extrair resumo a partir da tabela aluno.
+
+ 
+
+Perceba, também, que o código da linha 6 é equivalente ao da linha 4: ambos calculam a idade média dos alunos.
+
+
+ 
+
+Listando resumos em uma linha
+
+
+Suponha que haja interesse em conhecer os quantitativos de cursos, disciplinas e alunos do nosso banco de dados. Poderíamos submeter ao SGBD as consultas a seguir.
+
+ 
+
+ 
+
+
+Curso
+
+
+SELECT COUNT(*) NCURSOS FROM CURSO;
+
+
+Disciplina
+
+
+SELECT COUNT(*) NDISCIPINAS FROM DISCIPLINA;
+
+
+Aluno
+
+
+SELECT COUNT(*) NALUNOS FROM ALUNO;
+
+
+ 
+
+ 
+
+Estamos diante de três consultas. No entanto, pode ser mais interessante mostrarmos os resultados em apenas uma linha. Podemos, então, submeter o seguinte código:
+
+ 
+
+
+SQL (SQLite 3.27.2)
+SELECT
+    (SELECT COUNT(*) NCURSOS FROM CURSO),
+    (SELECT COUNT(*) NALUNOS FROM ALUNO),
+    (SELECT COUNT(*) NDISCIPINAS FROM DISCIPLINA);
+
+Light Mode
+
+Copiar
+
+O que fizemos?
+
+
+Como cada consulta (linhas 2 a 4) retorna somente um valor, utilizamos um SELECT externo (linha 1) para exibir cada coluna resultante.
+
+
+Observe o resultado!
+
+
+
+Resultado da consulta envolvendo quantitativos de cursos, alunos e disciplinas.
+
+ 
+
+Convém ressaltar que o comando é válido, visto que, no PostgreSQL, a cláusula FROM não é obrigatória.

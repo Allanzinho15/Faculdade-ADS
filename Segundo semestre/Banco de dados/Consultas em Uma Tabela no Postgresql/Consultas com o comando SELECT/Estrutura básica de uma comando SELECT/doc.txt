@@ -1,0 +1,159 @@
+Estrutura básica de uma comando SELECT
+O comando SELECT básico foca habilidades fundamentais para manipular dados em bancos de dados. Aprenderemos a criar consultas SQL com a cláusula SELECT para selecionar informações específicas. Vamos lá!
+
+
+Neste vídeo, vamos explorar o modelo relacional, que é a base estrutural de bancos de dados relacionais, e discutir os componentes essenciais de uma tabela, incluindo campos, chaves primárias e estrangeiras, além de exemplos práticos de como esses elementos são utilizados na modelagem de dados.
+
+
+
+ 
+
+ 
+
+O comando SELECT é usado para exibir dados resultantes de uma consulta. Os dados podem ser colunas físicas de uma tabela, colunas calculadas ou mesmo resultado do uso de expressões e funções. Uma sintaxe básica para o comando SELECT está expressa a seguir. Veja com mais detalhes!
+
+ 
+
+
+SQL (SQLite 3.27.2)
+SELECT COLUNA1 [[AS] APELIDOCOLUNA1],
+  COLUNA2 [[AS] APELIDOCOLUNA2],
+  …
+  COLUNAN [[AS] APELIDOCOLUNAN]
+FROM TABELA;
+
+Light Mode
+
+Copiar
+
+ 
+
+Estamos diante de uma sintaxe simplificada o suficiente para entendimento dos exemplos que iremos explorar. A sintaxe completa abrange todos os recursos do PostgreSQL.
+
+ 
+
+
+Uma sintaxe complexa envolve uma série de cláusulas e recursos bastante úteis para consultas de maior complexidade.
+
+
+ 
+
+Na prática, o comando SELECT, dependendo da consulta desejada, pode ser usado de diferentes formas para obter o mesmo resultado. É importante frisar que a cláusula SELECT realiza a operação de projeção da álgebra relacional.
+
+
+Caso haja interesse em exibir todas as colunas especificadas em uma consulta, basta adicionar um “*”, da seguinte forma: SELECT * FROM TABELA;
+
+
+Saiba Mais
+Alguns SGBDs, como o PostgreSQL, implementam uma forma simplificada do comando SELECT * FROM TABELA, que é simplesmente TABLE tabela (você pode testar isso no PostgreSQL).
+
+
+Vamos estudar alguns exemplos?
+
+
+Construiremos as consultas com base na tabela ALUNO, conforme imagem a seguir.
+
+ 
+
+ 
+
+
+
+
+Tabela ALUNO.
+ 
+
+ 
+
+Recomendamos que você crie a tabela e insira algumas linhas, o que pode ser feito usando o script a seguir, a partir da ferramenta de sua preferência. Para isso, tenha em mente que é necessário estar conectado ao PostgreSQL e acessando algum database criado por você. Veja com mais detalhes!
+
+
+SQL (SQLite 3.27.2)
+
+CREATE TABLE ALUNO (
+    CODIGOALUNO int NOT NULL,
+    NOME varchar(90) NOT NULL,
+    SEXO char(1) NOT NULL,
+    DTNASCIMENTO date NOT NULL,
+    EMAIL varchar(30) NULL,
+    CONSTRAINT ALUNO_pk PRIMARY KEY (CODIGOALUNO));
+INSERT INTO ALUNO (CODIGOALUNO, NOME, SEXO, DTNASCIMENTO, EMAIL) VALUES (1,'JOSÉ FRANCISCO TERRA', 'M', '28/10/1989', 'JFT@GMAIL.COM');
+INSERT INTO ALUNO (CODIGOALUNO, NOME, SEXO, DTNASCIMENTO,EMAIL) VALUES (2, 'ANDREY COSTA FILHO', 'M', '20/10/1999', 'ANDREYCF@HOTMAIL. COM');
+INSERT INTO ALUNO (CODIGOALUNO, NOME, SEXO, DTNASCIMENTO, EMAIL) VALUES (3, 'PATRICIA TORRES LOUREIRO', 'F', '20/10/1980', 'PTORRES@GMAIL.COM');
+INSERT INTO ALUNO (CODIGOALUNO, NOME, SEXO, DTNASCIMENTO, EMAIL) VALUES (4, 'CARLA MARIA MACIEL', 'F','20/11/1996', NULL);
+INSERT INTO ALUNO (CODIGOALUNO, NOME, SEXO, DTNASCIMENTO,EMAIL) VALUES (5, 'LEILA SANTANA COSTA', 'F','20/11/2001',NULL);
+CREATE TABLE ALUNO (
+
+Light Mode
+
+Copiar
+
+Vamos ver alguns exemplos de consultas?
+
+
+
+Consulta 01
+
+Exibir todas as informações dos alunos.
+SELECT * FROM ALUNO;
+A tabela a seguir apresenta os resultados da consulta.
+
+Resultados da consulta 01.
+
+ 
+
+Ao executar a consulta, o SGBD percorre todos os registros da tabela ALUNO e exibe as colunas dessa tabela.
+
+
+
+Consulta 02
+
+Retornar o código, o nome e a data de nascimento de todos os alunos.
+
+SELECT CODIGOALUNO, NOME, DTNASCIMENTO FROM ALUNO;
+
+Resultados da consulta 02.
+
+ 
+
+Na consulta 02, foram especificadas três colunas da tabela ALUNO para serem exibidas ao usuário.
+
+
+ 
+
+Em especial, pode ser interessante renomear as colunas resultantes da consulta, visando tornar os resultados mais apresentáveis ao usuário da aplicação. Por exemplo, a consulta 02 pode ser reescrita da seguinte forma:
+
+ 
+
+ 
+
+
+SQL (SQLite 3.27.2)
+SELECT CODIGOALUNO AS "Matrícula", NOME AS "Nome do discente",
+
+DTNASCIMENTO AS "Data de nascimento"
+
+FROM ALUNO;
+
+Light Mode
+
+Copiar
+
+ 
+
+ 
+
+O resultado dessa consulta seria este:
+
+ 
+
+ 
+
+
+
+Resultados da segunda versão da consulta 02.
+
+Na tabela anterior, o nome apresentado para cada coluna não existe fisicamente no banco de dados.
+
+
+Vamos aprender que nem toda coluna resultante de uma consulta representa necessariamente uma coluna de alguma tabela.

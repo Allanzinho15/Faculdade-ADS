@@ -1,0 +1,29 @@
+Vamos analisar exemplos de uso dos comandos vistos até aqui. Para isso, iremos utilizar o banco de dados do museu. Seu modelo lógico é o seguinte:
+
+
+
+Modelo lógico de banco de dados do minimundo MUSEU.
+
+Praticando as subconsultas correlatas
+
+Neste vídeo, você vai explorar as chamadas subconsultas correlatas, e entender como essas consultas avançadas são utilizadas para resolver problemas complexos que envolvem relações entre tabelas.
+
+
+
+Roteiro de prática
+
+Para executar a atividade, faça conexão no banco do museu e escreva os seguintes comandos utilizando subconsulta:
+
+
+Listar todos os dados dos salões cuja área seja maior que a área média dos salões do mesmo andar.
+ 
+
+Listar todos os dados dos autores que possuem obras utilizando teste de existência.
+ 
+
+Listar todos os dados dos autores que não possuem obras utilizando teste de existência.
+ 
+
+Listar todos os dados dos autores que possuem mais pinturas que esculturas.
+
+Você pode baixar os comandos que resolvem as consultas no arquivo sqlmod2.5.

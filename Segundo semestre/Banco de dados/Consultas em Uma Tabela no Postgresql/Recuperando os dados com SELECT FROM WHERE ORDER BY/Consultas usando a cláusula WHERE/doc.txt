@@ -1,0 +1,160 @@
+Consultas usando a cláusula WHERE
+Aprofunde seu conhecimento a partir das chamadas técnicas de filtragem. Veremos como usar o WHERE para selecionar registros com base em condições específicas.
+
+
+Neste vídeo, vamos aprender a implementar consultas SQL utilizando a cláusula WHERE. Você entenderá como filtrar dados de maneira precisa e eficiente, utilizando condições específicas para obter resultados relevantes em bancos de dados.
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+Em nossas consultas, usaremos como base a tabela ALUNO, conforme imagem a seguir.
+
+ 
+
+ 
+
+
+
+Tabela ALUNO.
+
+ 
+
+Recomendamos que você crie a tabela e insira algumas linhas, o que pode ser feito usando o script a seguir, a partir da ferramenta de sua preferência. Para isso, tenha em mente que é necessário estar conectado ao PostgreSQL e acessando algum database criado por você.
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+CREATE TABLE ALUNO (
+
+Light Mode
+
+Copiar
+
+ 
+
+Recuperando dados com select/from/where/order by
+
+
+Uma sintaxe básica para o comando SELECT, com o uso das cláusulas WHERE e ORDER BY, está expressa a seguir. Veja!
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+ 
+
+O propósito do SELECT é declararmos as colunas da consulta. No FROM, informamos a tabela que foi alvo da consulta. No WHERE, especificamos alguma condição, simples ou composta, para filtrar registros que serão recuperados pelo SGBD. No ORDER BY, declaramos uma ou mais colunas como critério de ordenação, com possibilidade de especificarmos se valores NULL aparecem no início ou no final do resultado.
+
+
+A cláusula WHERE realiza a operação de restrição da álgebra relacional, também conhecida como seleção – não confundir com o comando SELECT.
+
+
+Ainda, a construção de uma condição na cláusula WHERE envolve operadores relacionais, conforme tabela a seguir.
+
+ 
+
+ 
+
+
+Operador	Significado
+<	menor
+<=	menor ou igual a
+>	maior
+>=	maior ou igual a
+=	igual
+<> ou !=	diferente
+Tabela: Operadores relacionais. 
+Sidney Venturi.
+
+
+ 
+
+Além dos operadores relacionais, a construção de uma condição na cláusula WHERE pode fazer uso dos seguintes operadores lógicos:
+
+
+Operador	Significado
+AND	conjunção
+OR	disjunção
+NOT	negação
+Tabela: Operadores lógicos. 
+Sidney Venturi.
+
+
+Vamos estudar alguns exemplos de consultas com o uso da cláusula WHERE!
+
+
+ 
+
+Consulta 01 + resultado
+
+
+Para mostrar o nome e a data de nascimento das professoras, observe o exemplo da consulta no código:
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+Agora, veja o resultado!
+
+ 
+
+
+
+Resultado consulta 01.
+
+ 
+
+Perceba que foi criada uma condição simples de igualdade envolvendo a coluna SEXO da tabela ALUNO. O SGBD percorre cada registro da tabela ALUNO, avalia a condição (linha 3) e exibe as colunas NOME e DTNASCIMENTO para cada registro cuja avaliação da condição retorne verdadeiro.
+
+
+ 
+
+Consulta 02 + resultado
+
+ 
+
+
+Para mostrar o nome e a data de nascimento das professoras que fazem aniversário em novembro, observe o exemplo:
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+O resultado da consulta 02 está expresso na imagem a seguir.
+
+
+
+Resultado consulta 02.
+
+Perceba que foi criada uma condição composta envolvendo uma conjunção. O SGBD retornará os registros que possuem o valor “F” para a coluna SEXO e o inteiro 11 como valor do mês referente à data de nascimento.

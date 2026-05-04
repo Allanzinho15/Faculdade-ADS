@@ -1,0 +1,23 @@
+Vamos analisar exemplos de uso dos comandos vistos até aqui. Para isso, iremos utilizar o banco de dados do museu. Seu modelo lógico é o seguinte:
+
+
+
+Modelo lógico de banco de dados do minimundo MUSEU.
+
+Praticando as junções externas
+
+Neste vídeo, vamos praticar as junções externas utilizando a linguagem SQL.
+
+
+
+Roteiro de prática
+
+Para executar a atividade, escreva os seguintes comandos:
+
+
+Listar o nome e a nacionalidade dos autores que não possuem obras expostas. Resolver por junção.
+Listar todos os dados dos salões que não possuem obras expostas.
+Listar o código e o título das obras impressionistas ou cujo material de fabricação é argila. Resolver por junção.
+Listar os dados dos funcionário que estão alocados com os dados da alocação e os dados não alocados.
+
+Você pode baixar os comandos que resolvem as consultas no arquivo sqlmod1.5.

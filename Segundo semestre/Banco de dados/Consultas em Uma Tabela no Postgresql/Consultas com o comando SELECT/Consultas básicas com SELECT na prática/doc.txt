@@ -1,0 +1,64 @@
+Consultas básicas com SELECT na prática
+Vamos agora criar o banco de dados da empresa que utilizaremos como exemplo nas nossas demonstrações e, em seguida, iremos executar alguns comandos básicos de SELECT.
+
+
+Você pode baixar o script da criação das tabelas e inserção das linhas do banco de dados da empresa.
+
+
+Link para download do arquivo empresa.sql
+
+
+O modelo de dados da empresa é apresentado a seguir.
+
+ 
+
+
+
+Modelo de dados de uma empresa.
+
+ 
+
+Neste vídeo, vamos demonstrar por meio de um passo a passo como fazer consultas básicas em SQL com a cláusula SELECT.
+
+ 
+
+
+
+ 
+
+Roteiro de prática
+
+
+Para criar o banco de dados da empresa, siga estes passos:
+
+
+Abra o PGAdmin4 e faça conexão no servidor.
+Crie um banco de dados chamado EMPRESA.
+Abra uma janela de consulta.
+Carregue o script da empresa na janela de consulta.
+Execute o script.
+Valide a criação das tabelas na aba tabelas do banco da empresa.
+
+Veja um exemplo!
+
+ 
+
+ 
+
+
+
+Tables (6).
+
+Execute agora os seguintes comandos:
+
+
+Retorne todo o conteúdo da tabela EMPREGADO.
+Retorne apenas as colunas id, prim_nome e ult_nome da tabela EMPREGADO.
+Retorne o salário anual do empregado.
+Retorne o nome completo do empregado.
+Retorne o nome completo do empregado com o alias NOME COMPLETO.
+Retorne o resultado da soma de 9 com 5 a data e hora do servidor.
+Retorne a média salarial, a soma dos salários, o maior e o menor salário dos empregados.
+Retorne os maiores e menores ID, ult_nome e data de admissão dos empregados.
+
+Você pode acessar os comandos que resolvem as consultas no arquivo sqlmod1.5.txt

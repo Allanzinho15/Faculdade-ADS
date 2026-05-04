@@ -1,0 +1,57 @@
+Vamos criar o banco de dados do museu que utilizaremos nas nossas demonstrações e, em seguida, iremos executar alguns comandos com junção interna.
+
+
+Você pode baixar o script da criação das tabelas e inserção das linhas do banco de dados do museu.
+
+
+Vejamos o modelo lógico de banco de dados do minimundo MUSEU!
+
+
+
+Modelo lógico de banco de dados do minimundo MUSEU.
+
+Praticando as junções internas
+
+Neste vídeo, vamos praticar as junções internas utilizando a linguagem SQL.
+
+
+
+Roteiro de prática
+
+Crie o banco do museu:
+
+
+Abra o PGAdmin4 e faça conexão no servidor.
+Crie um banco de dados chamado MUSEU.
+Abra uma janela de consulta.
+Carregue o script do museu na janela de consulta.
+Execute o script.
+Valide a criação das tabelas na aba tabelas do banco do museu.
+
+
+Tabelas do banco de dados Museu
+
+Escreva os seguintes comandos de consulta:
+
+
+Listar todos os dados dos autores e de suas obras.
+ 
+
+Listar o código, o título e o nome do autor das obras de 1965 a 1975 que estão no salão 36.
+ 
+
+Listar o nome e a nacionalidade dos autores que possuem obras expostas. Resolver por junção.
+ 
+
+Listar o código e o título das obras do autor Pablo Picasso que se encontram no terceiro andar do museu.
+ 
+
+Listar o nome e a nacionalidade dos autores, o título da obra e o estilo de pintura.
+ 
+
+Listar o título da obra e o estilo da pintura utilizando junção USING.
+ 
+
+Listar o título da obra e o estilo da pintura utilizando junção tradicional.
+
+Se desejar, você pode encontrar no arquivo sqlmod1.3 os comandos utilizados no vídeo.

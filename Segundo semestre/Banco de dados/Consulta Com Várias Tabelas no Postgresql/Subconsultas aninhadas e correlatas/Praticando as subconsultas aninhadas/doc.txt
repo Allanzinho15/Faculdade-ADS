@@ -1,0 +1,35 @@
+Vamos analisar exemplos de uso dos comandos vistos até aqui. Para isso, iremos utilizar o banco de dados do museu. Seu modelo lógico é o seguinte:
+
+
+
+Modelo lógico de banco de dados do minimundo MUSEU.
+
+Praticando as subconsultas aninhadas
+
+Neste vídeo, utilizando a linguagem SQL, pratique as subconsultas aninhadas. Mãos à obra!
+
+
+
+Roteiro de prática
+
+Para executar a atividade, faça conexão no banco do museu e escreva os seguintes comandos utilizando subconsulta:
+
+
+Listar todos os dados de funcionários cujo salário seja maior que o salário médio de todos os funcionários.
+ 
+
+Listar todos os dados dos salões que possuem obras expostas.
+ 
+
+Listar todos os dados dos salões que não possuem obras expostas.
+ 
+
+Listar todos os dados dos autores que não possuem obras expostas no museu.
+ 
+
+Listar todos os dados dos funcionários que possuem alguma alocação.
+ 
+
+Listar todos os dados dos funcionários que não possuem alguma alocação.
+
+Você pode baixar os comandos que resolvem as consultas no arquivo sqlmod2.2.

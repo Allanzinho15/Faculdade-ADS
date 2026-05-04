@@ -1,0 +1,35 @@
+Consultas com GROUP BY e HAVING
+Vamos ver exemplos de uso dos comandos vistos até aqui. Para isso, iremos utilizar o banco de dados da empresa cujo modelo lógico é:
+
+ 
+
+ 
+
+
+
+Modelo de banco de dados de uma empresa.
+
+ 
+
+Assista ao vídeo e coloque em prática como realizar as consultas em SQL com as cláusulas GROUP BY e HAVING. Não perca!
+
+ 
+
+
+
+ 
+
+Roteiro de prática
+
+
+Execute comandos seguindo as seguintes diretrizes:
+
+
+Retornando cargos de emprego.
+Uso de DISTINCT.
+Uso de GROUP BY.
+Filtrar grupo com WHERE.
+Filtrar grupo com HAVING.
+Ordenando a consulta.
+
+Você pode acessar os comandos que resolvem as consultas no arquivo sqlmod3.3.txt.

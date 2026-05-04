@@ -1,0 +1,106 @@
+Vamos agora entender as junções externas no SQL, revelando como ampliar a análise de dados além dos limites convencionais. Aprenderemos a incorporar dados de várias tabelas e a lidar com informações ausentes com confiança e precisão.
+
+
+Neste vídeo, vamos compreender a junção externa em bancos de dados, operação que combina registros de duas tabelas, retornando não apenas os registros que têm correspondência, mas os registros que não têm correspondência em uma ou ambas as tabelas.
+
+
+
+A imagem do resultado da consulta envolvendo as tabelas CURSO e NIVEL na junção interna exibe somente os cursos para os quais há registro de informação sobre o nível associado a eles.
+
+
+E se quiséssemos incluir na listagem todos os registros da tabela CURSO?
+
+Para incluir no resultado da consulta todas as ocorrências da tabela CURSO, podemos usar a cláusula LEFT JOIN (junção à esquerda). Nesse tipo de junção, o resultado contém todos os registros da tabela declarada à esquerda da cláusula JOIN, mesmo que não haja registros correspondentes na tabela da direita. Em especial, quando não há correspondência, os resultados são retornados com o valor NULL.
+
+
+Veja a seguir exemplo de uso de junção à esquerda.
+
+
+SQL (SQLite 3.27.2)
+1 SELECT C.CODIGOCURSO, C.NOME,
+2 N.CODIGONIVEL, N.DESCRICAO
+3 FROM CURSO C LEFT JOIN NIVEL N ON (N.CODIGONIVEL=C.CODIGONIVEL) ;
+Light Mode
+
+Copiar
+
+A imagem a seguir apresenta o resultado da consulta anterior. Confira!
+
+
+
+Cursos e níveis, exibindo todos os registros da tabela CURSO.
+
+Observe que o número de linhas do resultado da consulta coincide com o número de linhas da tabela CURSO, visto que todos os registros dessa tabela fazem parte do resultado e a chave estrangeira que implementa o relacionamento está localizada na tabela CURSO. Em especial, as linhas 3 e 6 correspondem a cursos em que não há informação sobre o nível associado a eles.
+
+
+Perceba também que, de forma semelhante, poderíamos ter interesse em exibir todos os registros da tabela à direita da cláusula JOIN. Em nosso exemplo, a tabela NIVEL. A cláusula RIGHT JOIN (junção à direita) é usada para essa finalidade. Nesse tipo de junção, o resultado contém todos os registros da tabela declarada à direita da cláusula JOIN, mesmo que não haja registros correspondentes na tabela da esquerda. Em especial, quando não há correspondência, os resultados são retornados com o valor NULL.
+
+
+Veja a seguir exemplo de uso de junção à direita.
+
+
+SQL (SQLite 3.27.2)
+1 SELECT C.CODIGOCURSO, C.NOME,
+2 N.CODIGONIVEL, N.DESCRICAO
+3 FROM CURSO C RIGHT JOIN NIVEL N ON
+4 (N.CODIGONIVEL=C.CODIGONIVEL);
+Light Mode
+Copiar
+
+A imagem a seguir apresenta o resultado da consulta anterior. Veja!
+
+
+
+Cursos e níveis, exibindo todos os registros da tabela NIVEL.
+
+Note que todos os registros da tabela NIVEL aparecem no resultado. As quatro primeiras linhas do resultado da consulta correspondem aos registros que efetivamente estão relacionados à tabela CURSO. As duas últimas linhas são registros que não estão relacionados a qualquer curso existente no banco de dados.
+
+
+Perceba que o mesmo resultado pode ser obtido se usarmos junção à esquerda e junção à direita, alternando a posição das tabelas envolvidas. Com isso, queremos dizer que TABELA1 LEFT JOIN TABELA2 é equivalente a TABELA2 RIGHT JOIN TABELA1.
+
+
+Veja o exemplo a seguir!
+
+
+SQL (SQLite 3.27.2)
+1 SELECT C.CODIGOCURSO, C.NOME,
+2 N.CODIGONIVEL, N.DESCRICAO
+3 FROM CURSO C LEFT JOIN NIVEL N ON (N.CODIGONIVEL=C.CODIGONIVEL);
+
+Light Mode
+
+Copiar
+
+Vejamos a mesma consulta, mas agora utilizando a cláusula RIGHT JOIN.
+
+
+SQL (SQLite 3.27.2)
+SELECT C.CODIGOCURSO, C.NOME,
+    N.CODIGONIVEL, N.DESCRICAO
+FROM NIVEL N RIGHT JOIN CURSO C ON (N.CODIGONIVEL=C.CODIGONIVEL);
+
+Light Mode
+
+Copiar
+
+Outro tipo de junção externa, denominada FULL OUTER JOIN (junção completa), apresenta todos os registros das tabelas à esquerda e à direita, mesmo os registros não relacionados. Em outras palavras, a tabela resultante exibirá todos os registros de ambas as tabelas, além de valores NULL no caso dos registros sem correspondência. Veja o exemplo!
+
+
+SQL (SQLite 3.27.2)
+1 SELECT C.CODIGOCURSO, C.NOME,
+2 N.CODIGONIVEL, N.DESCRICAO
+3 FROM CURSO C FULL OUTER JOIN NIVEL N ON
+4 (N.CODIGONIVEL=C.CODIGONIVEL);
+
+
+Light Mode
+
+Copiar
+
+A imagem a seguir apresenta o resultado da consulta anterior. Confira!
+
+
+Note que, no resultado, aparecem os registros de cada tabela. Além disso, valores NULL são exibidos nos casos em que não há correspondência entre as tabelas (linhas 3, 6, 7 e 8).
+
+
+Vimos que, quando há necessidade de extrair informações de mais de uma tabela, utilizamos a cláusula de junção. Os diversos tipos de junção são utilizados de acordo com a necessidade do usuário, visto que cada um possui uma especificidade.

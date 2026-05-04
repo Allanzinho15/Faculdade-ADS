@@ -1,0 +1,145 @@
+Recuperando dados com o uso do operador LIKE
+Exploraremos agora uma poderosa ferramenta para filtrar padrões de texto em bancos de dados. Aprenderemos a utilizar o operador LIKE para encontrar registros que correspondam a padrões específicos de caracteres, permitindo buscas flexíveis e eficazes.
+
+
+Neste vídeo, vamos entender como funciona a recuperação de dados com o uso do operador LIKE da linguagem SQL.
+
+ 
+
+
+
+ 
+
+O uso do [NOT] LIKE permite realizar buscas em uma cadeia de caracteres.
+
+
+Trata-se de um recurso bastante utilizado em buscas textuais. Você pode utilizar os símbolos especiais a seguir:
+
+
+_ para ignorar qualquer caractere específico.
+% para ignorar qualquer padrão.
+
+Vamos estudar alguns exemplos?
+
+
+ 
+
+Consulta 05 + resultado
+
+
+Para listar o nome dos alunos que possuem a string COSTA em qualquer parte do nome, veja o código:
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+O resultado da consulta 05 está expresso na imagem a seguir.
+
+
+
+Resultado consulta 05.
+
+O uso do padrão ‘%COSTA%’ significa que não importa o conteúdo localizado antes e depois da string “COSTA”.
+
+
+ 
+
+Consulta 06 + resultado
+
+
+Para listar o nome dos alunos que possuem a letra “A” na segunda posição do nome, veja o exemplo de consulta:
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+O resultado da consulta 06 está expresso na imagem a seguir.
+
+ 
+
+
+
+Resultado consulta 06.
+
+ 
+
+Note que, para especificar o “A” na segunda posição, o SGBD desprezará qualquer valor na primeira posição da string, não importando o que estiver localizado à direita do “A”.
+
+
+ 
+
+Consulta 07 + resultado
+
+
+Para listar o nome e a data de nascimento dos alunos que não possuem a string “MARIA” fazendo parte do nome, veja o exemplo de consulta a seguir:
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+O resultado da consulta 07 está expresso na imagem a seguir.
+
+ 
+
+
+
+Resultado consulta 07.
+
+Estamos diante de um caso semelhante ao da consulta 05.
+
+
+No entanto, utilizamos o operador de negação para retornar os registros de interesse.
+
+
+ 
+
+Consulta 08 + resultado
+
+
+Quantos alunos possuem conta de e-mail no Gmail? Veja o exemplo de consulta na imagem a seguir.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+SELECT COUNT(*) AS QUANTIDADE
+FROM ALUNO
+WHERE EMAIL LIKE '%@GMAIL.%';
+Copiar
+
+ 
+
+O resultado da consulta 08 está expresso na imagem a seguir.
+
+ 
+
+
+
+Resultado consulta 08.
+
+ 
+
+Note que, mais uma vez, estamos diante de um caso semelhante ao da consulta 05. Buscamos pela string “@GMAIL. ” em qualquer posição da coluna EMAIL.

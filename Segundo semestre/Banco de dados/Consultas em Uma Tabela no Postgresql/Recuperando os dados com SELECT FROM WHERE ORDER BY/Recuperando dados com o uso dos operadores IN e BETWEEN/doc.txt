@@ -1,0 +1,91 @@
+Recuperando dados com o uso dos operadores IN e BETWEEN
+Vejamos agora a utilização do IN e do BETWEEN, explorando técnicas avançadas de filtragem de dados em bancos de dados. Aprenderemos a utilizar o operador IN para filtrar resultados com base em uma lista de valores e o operador BETWEEN para selecionar registros dentro de um intervalo específico.
+
+
+Neste vídeo, vamos apresentar como fazer a recuperação de dados com o uso dos operadores IN e BETWEEN da linguagem SQL. Acompanhe!
+
+ 
+
+ 
+
+
+
+ 
+
+Recuperando dados com o uso do operador in
+
+
+O operador [NOT] IN pode ser utilizado em consultas que envolvam comparações usando uma lista de valores.
+
+
+Consulta 03 + resultado
+
+Para listar o nome dos alunos que fazem aniversário no segundo semestre, observe o código:
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+O resultado da consulta 03 está expresso na imagem a seguir.
+
+ 
+
+
+
+Resultado consulta 03.
+
+ 
+
+Note que a expressão na cláusula WHERE compara o mês de nascimento de cada aluno com os valores da lista contendo os inteiros correspondentes aos meses do segundo semestre.
+
+ 
+
+
+Recuperando dados com o uso do operador BETWEEN
+
+O operador [NOT] BETWEEN verifica se determinado valor encontra-se no intervalo entre dois valores.
+
+
+Exemplo
+X BETWEEN Y AND Z é equivalente a X>=Y AND X<=Z. De modo semelhante, X NOT BETWEEN Y AND Z é equivalente a XZ.
+
+
+Consulta 04 + resultado
+
+Para listar o nome dos alunos nascidos entre 1985 e 2005, observe o exemplo:
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+O resultado da consulta 04 está expresso na imagem a seguir.
+
+ 
+
+
+
+Resultado consulta 04.
+
+ 
+
+Note que a expressão na cláusula WHERE compara o ano de nascimento de cada aluno junto com o intervalo especificado pelo operador BETWEEN. Caso quiséssemos extrair o mesmo resultado sem o uso do BETWEEN, poderíamos programar um comando equivalente, conforme a seguir.
+
+SELECT NOME
+FROM ALUNO
+WHERE EXTRACT (YEAR FROM DTNASCIMENTO) >= 1985 AND EXTRACT (YEAR FROM DTNASCIMENTO) <= 2005;

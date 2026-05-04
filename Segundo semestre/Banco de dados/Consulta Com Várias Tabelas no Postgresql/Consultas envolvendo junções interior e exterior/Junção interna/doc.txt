@@ -1,0 +1,110 @@
+Vamos explorar, de forma abrangente, as junções internas no SQL, destacando sua importância na manipulação eficaz de bancos de dados relacionais. Veremos técnicas avançadas de junção para extrair informações importantes e otimizar consultas complexas. Vamos lá!
+
+
+Acompanhe neste vídeo a operação de junção interna em bancos de dados, que permite combinar registros de duas tabelas com base em uma condição de correspondência específica, retornando apenas os registros que têm correspondência em ambas as tabelas.
+
+
+
+Nosso interesse agora é obter informações úteis para o nosso usuário, certo? Então, perceba que, por exemplo, o curso sistemas de informação está classificado como um curso pertencente ao nível de graduação. Chegamos a essa conclusão avaliando o conteúdo das linhas 14 e 18 do script que insere informações nas tabelas NIVEL e CURSO.
+
+
+Agora, examine as quatro primeiras linhas da tabela resultante da consulta anterior, expressa na imagem a seguir.
+
+
+
+Subconjunto da tabela resultante do produto cartesiano entre CURSO e NIVEL.
+
+Note que, se examinarmos cada linha como um fato, vamos perceber que somente a primeira corresponde à realidade cadastrada no banco de dados. Não por coincidência, perceba que os valores das colunas CODIGONIVEL são os mesmos. Nas três últimas, diferentes.
+
+
+Assim, podemos eliminar as linhas falsas se programarmos uma condição de igualdade envolvendo as colunas em questão. Devemos lembrar que as quatro primeiras colunas vêm da tabela CURSO. As duas últimas são originadas na tabela NIVEL.
+
+
+Para recuperar as linhas que correspondem à realidade cadastrada no banco de dados, você pode executar o comando a seguir.
+
+
+SQL (SQLite 3.27.2)
+1 SELECT *
+2 FROM CURSO INNER JOIN NIVEL ON(NIVEL.CODIGONIVEL=CURSO.CODIGONIVEL);
+
+Light Mode
+
+Copiar
+
+O resultado dessa consulta está expresso na imagem. Veja!
+
+
+
+Resultado da consulta envolvendo as tabelas CURSO e NIVEL.
+
+Perceba que foram recuperadas as linhas que de fato relacionam cursos aos seus respectivos níveis. No entanto, a forma mais usada para retornar os mesmos resultados é com o auxílio da cláusula de junção interna, a qual possui sintaxe básica. Vejamos!
+
+
+SELECT * 
+
+FROM TABELA1 [INNER] JOIN TABELA2 ON (CONDIÇÃOJUNÇÃO) [USING (COLUNA_DE_JUNÇÃO)]
+
+
+Na sintaxe apresentada, declaramos a cláusula de junção entre as tabelas. Em seguida, a preposição ON e a condição da junção. Na maioria das vezes, essa condição corresponderá a uma igualdade envolvendo a chave primária de uma tabela e a chave estrangeira correspondente. A sintaxe completa do comando SELECT no PostgreSQL pode ser encontrada com a indicação disponibilizada no Explore +, ao final do material.
+
+
+Veja a seguir o código SQL correspondente ao nosso exemplo.
+
+
+SQL (SQLite 3.27.2)
+1 SELECT *
+2 FROM CURSO INNER JOIN NIVEL ON(NIVEL.CODIGONIVEL=CURSO.CODIGONIVEL);
+
+Light Mode
+
+Copiar
+
+Note também que é possível declarar a cláusula USING especificando a coluna-alvo da junção. Em nosso exemplo, a coluna CODIGONIVEL. A consulta pode ser reescrita da seguinte forma:
+
+
+SQL (SQLite 3.27.2)
+1 SELECT *
+2 FROM CURSO INNER JOIN NIVEL USING(CODIGONIVEL);
+
+Light Mode
+
+Copiar
+
+Se desejarmos exibir o código e o nome do curso, além do código e o nome do nível, podemos, então, executar o código a seguir:
+
+
+SQL (SQLite 3.27.2)
+1 SELECT CURSO.CODIGOCURSO, CURSO.NOME,
+2 FROM CURSO INNER JOIN NIVEL USING(CODIGONIVEL);
+
+Light Mode
+
+Copiar
+
+Perceba que, no comando SELECT, usamos uma referência mais completa: NOMETABELA.NOMECOLUNA.
+
+
+Essa referência só é obrigatória para a coluna CODIGONIVEL, uma vez que é necessário especificar de qual tabela o SGBD irá buscar os valores. No entanto, em termos de organização de código, é interessante usar esse tipo de referência para cada coluna.
+
+
+Finalmente, observe que poderíamos também, no contexto da consulta, renomear as tabelas envolvidas, deixando o código mais elegante e legível, conforme a seguir.
+
+
+SQL (SQLite 3.27.2)
+1 SELECT C.CODIGOCURSO, C.NOME,
+2 N.CODIGONIVEL, N.DESCRICAO
+3 FROM CURSO C INNER JOIN NIVEL N ON
+4 (N.CODIGONIVEL=C.CODIGONIVEL) ;
+
+
+Light Mode
+
+Copiar
+
+O resultado da consulta está expresso na imagem. Veja!
+
+
+
+Resultado da consulta envolvendo as tabelas CURSO e NIVEL.
+
+O resultado de uma junção interna corresponde somente aos registros que atendem à condição da junção, ou seja, os registros que de fato estão relacionados no contexto das tabelas envolvidas.

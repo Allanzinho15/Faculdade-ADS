@@ -1,0 +1,299 @@
+Agrupamento de dados
+Vamos explorar como organizar e resumir grandes conjuntos de dados em bancos de dados. Aprenderemos a utilizar a cláusula GROUP BY para agrupar registros com base em valores comuns e a aplicar funções de agregação para calcular estatísticas sobre esses grupos.
+
+
+Neste vídeo, vamos entender como a cláusula GROUP BY agrupa registros com base em valores comuns, aplicando as funções de agregação para calcular estatísticas sobre esses grupos.
+
+ 
+
+ 
+
+
+
+ 
+
+Consultas com GROUP BY e HAVING
+
+
+Em nossas consultas, usaremos como base a tabela FUNCIONARIO, conforme imagem a seguir.
+
+ 
+
+
+
+Tabela FUNCIONÁRIO.
+
+ 
+
+Recomendamos que você crie a tabela e insira algumas linhas, o que pode ser feito usando o script a seguir, a partir da ferramenta de sua preferência. Para isso, tenha em mente que é necessário estar conectado ao PostgreSQL e acessando algum database criado por você.
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+CREATE TABLE FUNCIONARIO 
+
+Light Mode
+
+Copiar
+
+ 
+
+Após a criação da tabela e a inserção dos registros, podemos utilizar o código a seguir para exibir todo o seu conteúdo. Veja com mais detalhes!
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+O resultado da consulta será semelhante à tabela a seguir.
+
+ 
+
+
+
+Registros da tabela FUNCIONARIO.
+
+ 
+
+Grupo de dados
+
+
+Vamos aprender a projetar consultas com o uso de agrupamento de dados, com auxílio dos comandos GROUP BY e HAVING.
+
+
+Perceba que a maior parte dessas consultas está atrelada ao uso de alguma função de resumo, por exemplo, SUM, AVG, MIN e MAX, as quais representam, respectivamente, soma, média, mínimo e máximo. Logo, essas consultas são úteis para quem tem interesse em construir relatórios e aplicações de natureza mais gerencial e analítica. Os valores de determinada coluna podem formar grupos sobre os quais podemos ter interesse em recuperar dados.
+
+
+Por exemplo, se avaliarmos o resultado da consulta anterior, podemos naturalmente dividir os registros de acordo com o valor da coluna sexo. Teríamos, então, a seguinte estrutura:
+
+ 
+
+
+M {4,5} {MARCOS PEREIRA BRASIL, HEMERSON SILVA BRASIL} {…}
+F {1,2,3} {ROBERTA SILVA BRASIL, MARIA SILVA BRASIL, GABRIELLA PEREIRA LIMA} {…}
+Tabela: Representação da coluna sexo. 
+Sidney Venturi.
+
+
+Todas as linhas com o mesmo valor para a coluna sexo formam um grupo. Representamos as linhas com mais de um valor com o uso de chaves para fins ilustrativos, dado que estamos diante de linhas dentro de colunas, uma representação que não existe no modelo relacional.
+
+
+A estrutura anterior possui somente um grupo, o qual é formado pela coluna SEXO da tabela FUNCIONARIO. Como exibir esse grupo em SQL?
+
+
+Uma solução é adicionar a cláusula DISTINCT ao comando SELECT.
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+O resultado da consulta anterior pode ser visualizado na imagem a seguir.
+
+ 
+
+
+
+Grupo de dados baseado na coluna SEXO da tabela FUNCIONARIO.
+
+ 
+
+Vamos perceber que em SQL a cláusula mais adequada para trabalhar com agrupamento de dados é o GROUP BY.
+
+
+Grupo de dados com GROUP BY
+
+A cláusula GROUP BY serve para exibir resultados de consulta de acordo com um grupo especificado. Ela é declarada após a cláusula FROM, ou após a cláusula WHERE, caso exista na consulta. Por exemplo, para obter o mesmo resultado do comando anterior, podemos usar o seguinte código:
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+No entanto, vamos perceber que o uso mais conhecido da cláusula GROUP BY ocorre quando associada a funções de agregação, tais como COUNT, MIN, MAX e AVG. Vamos estudar alguns exemplos!
+
+
+Consulta 01 + resultado
+
+Para retornar o número de funcionários por sexo, temos o seguinte código:
+
+ 
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+1 SELECT SEXO
+2 FROM FUNCIONARIO
+3 GROUP BY SEXO;
+Light Mode
+
+Copiar
+
+ 
+
+O resultado da consulta 01 está expresso na imagem a seguir.
+
+ 
+
+
+
+Resultado consulta 01.
+
+ 
+
+O SGBD realiza o agrupamento de dados de acordo com os valores da coluna SEXO. Em seguida, para cada grupo encontrado, a função COUNT(*) é executada e o resultado exibido.
+
+
+E se tivéssemos interesse em exibir os resultados da consulta anterior em uma única linha? Poderíamos usar o código a seguir.
+
+ 
+
+
+SQL (SQLite 3.27.2)
+1 SELECT SEXO, COUNT(*) AS QUANTIDADE
+2 FROM FUNCIONARIO
+3 GROUP BY SEXO;
+
+Light Mode
+
+Copiar
+
+ 
+
+Veja o seu resultado!
+
+
+ 
+
+Consulta 02 + resultado
+
+
+ 
+
+Para retornar a média salarial por sexo, temos o seguinte código:
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+SELECT SEXO,
+SELECT
+     (SELECT COUNT(*) AS "M" FROM FUNCIONARIO WHERE SEXO='M' ),
+     (SELECT COUNT (*) AS "F" FROM FUNCIONARIO WHERE SEXO='F' );
+Light Mode
+
+Copiar
+
+ 
+
+O resultado da consulta 02 está expresso na imagem a seguir.
+
+ 
+
+
+
+Resultado consulta 02.
+
+O SGBD realiza o agrupamento de dados de acordo com os valores da coluna SEXO. Em seguida, para cada grupo encontrado, a função AVG (SALARIO) é executada; e o resultado, exibido.
+
+
+ 
+
+Consulta 03 + resultado
+
+
+Para retornar, por mês de aniversário, a quantidade de colaboradores, o menor salário, o maior salário e o salário médio, ordene os resultados por mês de aniversário, conforme o código.
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+SELECT SEXO,
+    AVG(SALARIO) AS MEDIASALARIAL
+FROM FUNCIONARIO
+GROUP BY SEXO;
+Copiar
+
+ 
+
+O resultado da consulta 03 está expresso na imagem a seguir.
+
+ 
+
+
+
+Resultado consulta 03.
+
+ 
+
+O SGBD realiza o agrupamento de dados de acordo com o mês de nascimento dos funcionários. Depois, para cada grupo encontrado, as funções de agregação são executadas e, em seguida, exibidos os resultados. Perceba também que, na linha 4, utilizamos a função ROUND com objetivo de mostrar ao usuário final somente a parte inteira dos valores resultantes da média salarial.
+
+
+ 
+
+Consulta 04 + resultado
+
+
+ 
+
+Para retornar, por mês de aniversário, o mês, o sexo e a quantidade de colaboradores, veja o código a seguir. Os resultados ordenados são apresentados pelo mês.
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+SELECT EXTRACT(MONTH FROM DTNASCIMENTO) AS MES,
+    COUNT(*) AS QUANTIDADE,
+    MIN(SALARIO) AS MENORSALARIO,
+    ROUND(AVG(SALARIO)::NUMERIC,0) AS SALARIOMEDIO,
+    MAX(SALARIO) AS MAIORSALARIO
+FROM FUNCIONARIO
+GROUP BY EXTRACT(MONTH FROM DTNASCIMENTO)
+ORDER BY EXTRACT(MONTH FROM DTNASCIMENTO);
+Copiar
+
+ 
+
+O resultado da consulta 04 está expresso na imagem a seguir.
+
+ 
+
+
+
+Resultado consulta 04.
+
+ 
+
+O SGBD realiza o agrupamento de dados de acordo com os valores do mês de aniversário. Em seguida, no contexto de cada mês encontrado, mais um grupo é construído por sexo. Finalmente, para cada ocorrência mês/sexo, o número de colaboradores é calculado.

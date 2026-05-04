@@ -1,0 +1,154 @@
+Recuperando dados com o uso do operador NULL e usando ordenação
+Vamos explorar agora técnicas importantes para lidar com valores nulos em bancos de dados e para classificar resultados de consulta. Aprenderemos a usar o operador IS NULL para identificar registros sem valores e a ordenar dados usando a cláusula ORDER BY.
+
+
+Neste vídeo, vamos compreender como ocorre a recuperação de dados com o uso do operador NULL, bem como a aplicação da ordenação na linguagem SQL.
+
+ 
+
+
+
+ 
+
+Recuperando dados com o uso do operador NULL
+
+ 
+
+
+Quando uma coluna é opcional, significa que existe possibilidade de que algum registro não possua valor cadastrado para a coluna em questão. Nessa hipótese, há entendimento de que o valor da coluna é “desconhecido” ou “não aplicável”.
+
+
+Para testar se uma coluna possui valor cadastrado, usa-se a expressão COLUNA IS NOT NULL.
+
+
+Vamos estudar alguns exemplos!
+
+
+ 
+
+Consulta 09 + resultado
+
+
+Para listar o nome, a data de nascimento e o e-mail dos alunos que têm endereço eletrônico cadastrado, veja o exemplo de consulta a seguir.
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+Observe na imagem a seguir os resultados da consulta.
+
+ 
+
+
+
+Resultado consulta 09.
+
+ 
+
+O SGBD retorna os registros onde há algum conteúdo cadastrado na coluna EMAIL.
+
+
+Consulta 10 + resultado
+
+
+Para retornar o nome dos alunos sem e-mail cadastrado no banco de dados, veja o exemplo:
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+Observe na imagem a seguir os resultados da consulta.
+
+ 
+
+
+
+Resultado consulta 10.
+
+ 
+
+O SGBD retorna os registros sobre os quais não há valor cadastrado na coluna EMAIL.
+
+
+ 
+
+Recuperando dados usando ordenação dos resultados
+
+
+Para melhor organizar os resultados de uma consulta, podemos especificar critérios de ordenação. Vejamos alguns exemplos
+
+
+ 
+
+Consulta 11 + resultado
+
+
+Para retornar o nome e a data de nascimento dos alunos, ordenando os resultados por nome, de maneira ascendente, veja o exemplo:
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+Observe na imagem a seguir os resultados da consulta.
+
+ 
+
+
+
+Resultado consulta 11.
+
+ 
+
+O SGBD retorna os registros da tabela ALUNO, obedecendo ao critério de ordenação especificado na linha 3 da consulta. O padrão ascendente (ASC) é opcional.
+
+
+ 
+
+Consulta 12 + resultado
+
+
+Para retornar o nome e a data de nascimento dos alunos, ordenando os resultados de modo ascendente pelo mês de nascimento e, em seguida, pelo nome, também de modo ascendente.,veja o exemplo:
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+ 
+
+Observe na imagem a seguir os resultados da consulta.
+
+ 
+
+
+
+Resultado consulta 12.
+
+ 
+
+O SGBD retorna os registros da tabela ALUNO, levando em conta o critério de ordenação especificado na linha 3 da consulta. Foi realizada ordenação pelo mês de nascimento; em seguida, pelo nome.

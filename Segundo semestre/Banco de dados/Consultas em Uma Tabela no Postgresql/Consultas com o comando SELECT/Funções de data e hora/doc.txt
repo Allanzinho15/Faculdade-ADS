@@ -1,0 +1,188 @@
+Funções de data e hora
+Vamos agora estudar as funções de data e hora, explorando como trabalhar esses conceitos de forma eficiente em bancos de dados. Aprenderemos a usar funções SQL para realizar diversos cálculos entre datas, extrair partes específicas de uma data e realizar manipulações avançadas.
+
+
+Essas habilidades são importantes para quem busca realizar análises temporais e gerenciar dados sensíveis ao tempo em sistemas de banco de dados.
+
+
+Neste vídeo, vamos apresentar funções que envolvem dados representativos de datas.
+
+ 
+
+ 
+
+
+
+ 
+
+ 
+
+Quando desenvolvemos consultas, é comum manipularmos colunas e funções que envolvem dados representativos de datas.
+
+
+Para entender melhor, observe a tabela!
+
+ 
+
+ 
+
+
+Função	O que retorna?
+current_date	data de hoje
+current_time	hora do dia
+current_timestamp	data e a hora
+extract (campo from fonte)	subcampos de data e hora: século, ano, dia, mês
+Tabela: Funções de data do PostgreSQL. 
+Sidney Venturi.
+
+
+ 
+
+Um quadro completo contendo informações sobre funções de data e hora pode ser encontrado na documentação oficial do PostgreSQL.
+
+
+Vamos estudar alguns exemplos? Observe com atenção o código.
+
+ 
+
+ 
+
+
+SQL (SQLite 3.27.2)
+SELECT CURRENT_DATE AS "Data Atual",
+    CURRENT_TIME AS "Hora Atual",
+    CURRENT_TIMESTAMP "Data e Hora atuais",
+    EXTRACT( DOY FROM CURRENT_DATE) AS "Dia do ano",
+-- DOW 0 - domingo, 1 - segunda, ..., 6 - sábado
+    EXTRACT( DOW FROM CURRENT_DATE) AS "Dia da semana",
+    EXTRACT( DAY FROM CURRENT_DATE) AS "Dia Atual",
+    EXTRACT( MONTH FROM CURRENT_DATE) AS "Mês Atual",
+    EXTRACT( YEAR FROM CURRENT_DATE) AS "Ano Atual",
+    EXTRACT( CENTURY FROM CURRENT_DATE) AS "Século Atual";
+
+Light Mode
+
+Copiar
+
+ 
+
+Agora veja na tabela os resultados da consulta!
+
+ 
+
+
+
+Resultados da consulta envolvendo funções de data e hora.
+
+ 
+
+Observe que utilizamos o qualificador AS “Apelido” para facilitar o entendimento do retorno de cada função. Note também que não há cláusula FROM na consulta, visto que todas as colunas retornadas representam o resultado de funções do PostgreSQL sem envolver qualquer tabela do domínio da aplicação.
+
+ 
+
+ 
+
+
+Atenção
+No padrão SQL, a cláusula FROM é obrigatória. No entanto, o PostgreSQL permite executar um comando SELECT sem a cláusula FROM. Experimente executar SELECT 5+5;
+
+
+ 
+
+Exibindo o nome do dia da semana
+
+
+Perceba que a linha 6 do código acima retorna um inteiro representativo do dia da semana. No entanto, se houver necessidade de exibir o dia da semana, você pode usar o código a seguir.
+
+ 
+
+ 
+
+
+SQL (SQLite 3.27.2)
+
+SELECT CASE WHEN extract(dow from current_date) = 0 THEN 'domingo'
+    WHEN extract(dow from current_date) = 1 THEN 'segunda-feira'
+    WHEN extract(dow from current_date) = 2 THEN 'terça-feira'
+    WHEN extract(dow from current_date) = 3 THEN 'quarta-feira'
+    WHEN extract(dow from current_date) = 4 THEN 'quinta-feira'
+    WHEN extract(dow from current_date) = 5 THEN 'sexta-feira'
+    WHEN extract(dow from current_date)=6 THEN 'sábado'
+END AS "Nome do dia da semana";
+
+Light Mode
+
+Copiar
+
+ 
+
+ 
+
+Observe que construímos uma lógica utilizando o comando CASE, que é equivalente ao comando IF:, cada linha com a cláusula WHEN avalia expressão que retorna um inteiro representativo do dia da semana, caso a expressão tenha valor lógico verdadeiro.
+
+ 
+
+
+Calculando idade e faixa etária
+
+Em geral, quando estamos diante de alguma coluna representativa da data de nascimento de uma pessoa, é comum extrair informações derivadas, tais como idade e faixa etária. Por exemplo, o código a seguir retorna o nome, a data de nascimento e a idade dos alunos. Veja!
+
+ 
+
+ 
+
+
+SQL (SQLite 3.27.2)
+SELECT NOME,
+    DTNASCIMENTO,
+    AGE(DTNASCIMENTO) AS "Idade [ano/mês/dia]",
+    EXTRACT(YEAR FROM AGE(DTNASCIMENTO)) AS "Idade do Aluno"
+FROM ALUNO;
+
+Light Mode
+
+Copiar
+
+
+Exibindo a idade dos alunos.
+
+ 
+
+Muito bem, agora, vamos exibir o nome, a idade e a faixa etária dos alunos.
+
+
+Observe o código SQL a seguir.
+
+ 
+
+ 
+
+
+SQL (SQLite 3.27.2)
+SELECT NOME,
+    EXTRACT(YEAR FROM AGE(DTNASCIMENTO)) AS "Idade do Aluno",
+    CASE WHEN EXTRACT(YEAR FROM AGE(DTNASCIMENTO)) <=20 THEN '1. até 20 anos'
+        WHEN EXTRACT(YEAR FROM AGE(DTNASCIMENTO)) BETWEEN 21 AND 30 THEN '2. 21 a 30 anos'
+        WHEN EXTRACT(YEAR FROM AGE(DTNASCIMENTO)) BETWEEN 31 AND 40 THEN '3. 31 a 40 anos'
+        WHEN EXTRACT(YEAR FROM AGE(DTNASCIMENTO)) BETWEEN 41 AND 50 THEN '4. 41 a 50 anos'
+        WHEN EXTRACT(YEAR FROM AGE(DTNASCIMENTO)) BETWEEN 51 AND 60 THEN '5. 51 a 60 anos'
+        WHEN EXTRACT(YEAR FROM AGE(DTNASCIMENTO)) > 60 THEN '6. mais de 60 anos'
+    END AS "Faixa Etária"
+FROM ALUNO;
+
+Light Mode
+
+Copiar
+
+ 
+
+ 
+
+Perceba que cada linha com a cláusula WHEN avalia a expressão que retorna uma faixa etária de acordo com a idade do aluno.
+
+
+A seguir, o resultado da consulta. Confira!
+
+
+
+Resultados da consulta envolvendo idade e faixa etária dos alunos.

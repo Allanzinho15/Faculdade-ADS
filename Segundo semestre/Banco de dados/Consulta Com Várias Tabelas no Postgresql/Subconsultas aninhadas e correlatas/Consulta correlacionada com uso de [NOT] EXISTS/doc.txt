@@ -1,0 +1,56 @@
+Vamos compreender o teste de existência no SQL, destacando como verificar a presença de registros em consultas complexas. Você vai aprender a utilizar operadores de teste para garantir resultados precisos em suas análises de dados.
+
+
+Acompanhe neste vídeo a aplicação da consulta correlacionada com uso do operador [NOT] EXISTS, e aprenda como escrever consultas correlacionadas eficientes, utilizando exemplos práticos em cenários reais.
+
+
+
+Podemos utilizar o operador EXISTS em uma consulta correlacionada. Tal operador testa a existência de linha(s) retornada(s) por alguma subconsulta. Veja um exemplo!
+
+
+Consulta 07: exibir o código e o nome do departamento em que há pelo menos um funcionário alocado.
+
+
+SQL (SQLite 3.27.2)
+SELECT D.CODIGODEPARTAMENTO, D.NOME
+FROM DEPARTAMENTO D
+WHERE EXISTS
+    (SELECT F.CODIGODEPARTAMENTO
+    FROM FUNCIONARIO F
+    WHERE D.CODIGODEPARTAMENTO=F.CODIGODEPARTAMENTO);
+
+
+Light Mode
+
+Copiar
+
+Observe na imagem a seguir os resultados da consulta.
+
+
+
+Departamentos em que há pelo menos um funcionário alocado.
+
+A subconsulta correlacionada (linhas 4 a 6) é executada. Caso haja pelo menos uma linha em seu retorno, a avaliação da cláusula WHERE retorna verdadeiro e as colunas especificadas na linha 1 são exibidas.
+
+
+Finalmente, se estivéssemos interessados em saber se há departamento sem ocorrência de colaborador alocado, bastaria usar a negação (NOT), conforme a seguir.
+
+
+SQL (SQLite 3.27.2)
+SELECT D.CODIGODEPARTAMENTO, D.NOME
+FROM DEPARTAMENTO D
+WHERE NOT EXISTS
+        (SELECT F.CODIGODEPARTAMENTO
+        FROM FUNCIONARIO F
+        WHERE D.CODIGODEPARTAMENTO=F.CODIGODEPARTAMENTO);
+
+
+Light Mode
+
+Copiar
+
+Observe na imagem seguinte os resultados da consulta.
+
+
+
+Departamento em que não há funcionário alocado.

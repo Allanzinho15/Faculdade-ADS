@@ -1,0 +1,97 @@
+Agora, vamos explorar as subconsultas correlatas, revelando como relacionar dados entre consultas para informações mais precisas e explorar técnicas avançadas para vincular informações de forma dinâmica. Você vai aprender a resolver problemas complexos de análise de dados com eficiência e clareza. Vamos lá!
+
+
+Conheça neste vídeo o processo de aplicação das subconsultas correlatas. Descubra como essas consultas internas podem ser utilizadas para realizar operações complexas dentro do modelo relacional.
+
+
+
+Uma subconsulta correlata – ou correlacionada – é um tipo especial de consulta aninhada.
+
+
+A consulta correlata ocorre quando é necessário obter dados que dependem do resultado de uma (ou mais) consulta(s) mais interna(s). Para isso, cria-se uma condição na cláusula WHERE, de forma a envolver o resultado da subconsulta em algum tipo de teste.
+
+
+Vejamos alguns exemplos!
+
+
+Consulta 05: Retornar o código, o nome e o salário do(s) funcionário(s) que ganha(m) mais que a média salarial dos colaboradores do departamento ao qual pertencem.
+
+
+SQL (SQLite 3.27.2)
+SELECT CODIGOFUNCIONARIO, NOME, SALARIO
+FROM FUNCIONARIO F
+WHERE SALARIO>
+    (SELECT AVG(SALARIO)
+    FROM FUNCIONARIO
+    WHERE CODIGODEPARTAMENTO=F.CODIGODEPARTAMENTO);
+
+
+Light Mode
+
+Copiar
+
+O resultado da consulta 05 está expresso na imagem a seguir.
+
+
+
+Resultado da consulta 05.
+
+Trata-se de uma consulta com lógica de construção semelhante ao que foi desenvolvido na consulta 02. No entanto, a média salarial é calculada levando em consideração somente os funcionários de cada departamento. Isso ocorre em função da condição WHERE declarada na linha 6.
+
+
+Há outra maneira de resolver a consulta 05, pois você pode trocar uma subconsulta por uma junção. O código a seguir produz os mesmos resultados. Veja!
+
+
+SQL (SQLite 3.27.2)
+SELECT CODIGOFUNCIONARIO, NOME, SALARIO
+FROM FUNCIONARIO F
+    JOIN
+        (SELECT CODIGODEPARTAMENTO,AVG(SALARIO) AS MEDIA
+        FROM FUNCIONARIO
+        GROUP BY CODIGODEPARTAMENTO) TESTE
+    ON F.CODIGODEPARTAMENTO=TESTE.CODIGODEPARTAMENTO
+WHERE SALARIO>MEDIA;
+
+
+Light Mode
+
+Copiar
+
+O exemplo a seguir mostra o uso de uma consulta correlacionada em uma operação de atualização (UPDATE) nos dados.
+
+
+Consulta 06: suponha que surgiu a necessidade de equiparar os salários dos funcionários que atuam no mesmo departamento. Os funcionários de cada departamento terão salário atualizado em função do maior salário dos seus setores.
+
+
+Observe na imagem a seguir os salários “antes” da atualização.
+
+
+
+Tabela FUNCIONARIO antes da atualização dos salários.
+
+Perceba que a listagem está ordenada pela coluna CODIGODEPARTAMENTO. O maior salário de funcionário pertencente ao departamento 1 é R$ 7.000; em relação ao departamento 2, R$ 9.500. Note também que há um funcionário sem a informação sobre departamento.
+
+
+SQL (SQLite 3.27.2)
+UPDATE FUNCIONARIO F
+SET SALARIO=
+    (SELECT MAX(SALARIO)
+    FROM FUNCIONARIO
+    WHERE CODIGODEPARTAMENTO=F.CODIGODEPARTAMENTO)
+WHERE F.CODIGODEPARTAMENTO IS NOT NULL;
+
+
+Light Mode
+
+Copiar
+
+Observe na imagem a seguir os salários após a atualização salarial.
+
+
+
+Tabela FUNCIONARIO depois da atualização dos salários.
+
+Trata-se de uma consulta com objetivo de recuperar o maior salário dentro do contexto de cada departamento e, em seguida, usar esse valor para atualização salarial na tabela FUNCIONARIO, de acordo com o departamento de cada colaborador. Perceba também que a atualização ocorre somente para os funcionários para os quais existe alocação a departamento, ou seja, a cláusula WHERE da linha 6 inibe atualização de salário caso não haja departamento associado a algum colaborador.
+
+
+A sintaxe completa do comando UPDATE no PostgreSQL pode ser encontrada com a indicação disponibilizada no Explore + ao final do material.

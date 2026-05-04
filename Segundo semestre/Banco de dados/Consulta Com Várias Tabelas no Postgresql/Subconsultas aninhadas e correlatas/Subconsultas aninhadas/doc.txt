@@ -1,0 +1,211 @@
+Veremos as subconsultas aninhadas, explorando como estruturar consultas complexas para obter informações detalhadas dos dados. Você vai aprender a aplicar consultas eficientes e de várias camadas para realizar análises profundas e resolver problemas sofisticados de manipulação de dados. Vamos lá!
+
+
+Conheça neste vídeo o processo de aplicação das subconsultas aninhadas. Descubra como essas consultas internas podem ser utilizadas para realizar operações complexas dentro do modelo relacional.
+
+
+
+Subconsultas
+
+O resultado de uma consulta SQL corresponde a uma tabela, mesmo que esteja temporariamente armazenada na memória principal do computador, tudo bem?
+
+
+Vamos construir consultas que dependem (ou usam) dos resultados de outras consultas para recuperar informações de interesse. Essa categoria é conhecida por subconsulta, uma consulta sobre o resultado de outra consulta.
+
+
+Ao longo de nosso estudo, vamos explorar dois tipos de subconsultas:
+
+
+Subconsultas aninhadas
+
+A consulta mais externa realizará algum tipo de teste junto aos dados originados da consulta mais interna.
+
+Subconsultas correlatas
+
+A subconsulta utiliza valores da consulta externa. Nesse tipo de consulta, a subconsulta é executada para cada linha da consulta externa.
+
+Construiremos as consultas com base nas tabelas FUNCIONARIO E DEPARTAMENTO, conforme imagem a seguir.
+
+
+Recomendamos que você crie as tabelas e insira algumas linhas, o que pode ser feito usando o script a seguir, a partir da ferramenta de sua preferência. Para isso, tenha em mente que é necessário estar conectado ao PostgreSQL e acessar algum database criado por você.
+
+
+
+Tabelas FUNCIONARIO e DEPARTAMENTO.
+
+A partir das tabelas FUNCIONARIO e DEPARTAMENTO, segue o script:
+
+
+SQL (SQLite 3.27.2)
+CREATE TABLE DEPARTAMENTO (
+    CODIGODEPARTAMENTO int NOT NULL,
+    NOME varchar(90) NOT NULL,
+    CONSTRAINT DEPARTAMENTO_pk PRIMARY KEY (CODIGODEPARTAMENTO));
+CREATE TABLE FUNCIONARIO (
+    CODIGOFUNCIONARIO int NOT NULL,
+    NOME varchar(90) NOT NULL,
+    CPF char(15) NULL,
+    SEXO char(1) NOT NULL,
+    DTNASCIMENTO date NOT NULL,
+    SALARIO real NULL,
+    CODIGODEPARTAMENTO int NULL,
+    CONSTRAINT FUNCIONARIO_pk PRIMARY KEY (CODIGOFUNCIONARIO));
+ALTER TABLE FUNCIONARIO ADD CONSTRAINT FUNCIONARIO_DEPARTAMENTO
+    FOREIGN KEY (CODIGODEPARTAMENTO) REFERENCES DEPARTAMENTO (CODIGODEPARTAMENTO);
+INSERT INTO DEPARTAMENTO(CODIGODEPARTAMENTO,NOME) VALUES (1,'Tecnologia da Informação');
+INSERT INTO DEPARTAMENTO(CODIGODEPARTAMENTO,NOME) VALUES (2,'Contabilidade');
+INSERT INTO DEPARTAMENTO(CODIGODEPARTAMENTO,NOME) VALUES (3,'Marketing');
+INSERT INTO FUNCIONARIO (CODIGOFUNCIONARIO, NOME, CPF, SEXO, DTNASCIMENTO, SALARIO, CODIGODEPARTAMENTO)
+VALUES (1, 'ROBERTA SILVA BRASIL',NULL, 'F','20/02/1980',7000,1);
+INSERT INTO FUNCIONARIO (CODIGOFUNCIONARIO, NOME, CPF, SEXO, DTNASCIMENTO, SALARIO, CODIGODEPARTAMENTO)
+VALUES (2, 'MARIA SILVA BRASIL',NULL, 'F', '20/09/1988',9500,2);
+INSERT INTO FUNCIONARIO (CODIGOFUNCIONARIO, NOME, CPF, SEXO, DTNASCIMENTO, SALARIO, CODIGODEPARTAMENTO)
+VALUES (3,'GABRIELLA PEREIRA LIMA',NULL, 'F','20/02/1990',6000,1);
+INSERT INTO FUNCIONARIO (CODIGOFUNCIONARIO, NOME, CPF, SEXO, DTNASCIMENTO, SALARIO, CODIGODEPARTAMENTO)
+VALUES (4, 'MARCOS PEREIRA BRASIL',NULL, 'M','20/02/1999',6000,2);
+INSERT INTO FUNCIONARIO (CODIGOFUNCIONARIO, NOME, CPF, SEXO, DTNASCIMENTO, SALARIO, CODIGODEPARTAMENTO)
+VALUES (5, 'HEMERSON SILVA BRASIL', NULL, 'M', '20/12/1992',4000,NULL);
+
+
+Light Mode
+
+Copiar
+
+A imagem a seguir apresenta o conteúdo da tabela DEPARTAMENTO após a execução do comando: SELECT * FROM DEPARTAMENTO;
+
+
+
+Conteúdo da tabela DEPARTAMENTO.
+
+A próxima imagem apresenta o conteúdo da tabela FUNCIONARIO após a execução do comando:
+
+
+TABLE FUNCIONARIO; (equivalente a SELECT * FROM FUNCIONARIO;)
+
+
+
+Conteúdo da tabela FUNCIONARIO.
+
+Perceba que, originalmente, existe um relacionamento do tipo 1:N entre DEPARTAMENTO e FUNCIONARIO. A implementação desse relacionamento ocorre por meio da chave estrangeira CODIGODEPARTAMENTO da tabela FUNCIONARIO.
+
+
+Subconsultas aninhadas
+
+Uma subconsulta aninhada ocorre quando é necessário obter dados que dependem do resultado de uma - ou mais - consulta(s) mais interna(s). Para isso, cria-se uma condição na cláusula WHERE de forma a envolver o resultado da subconsulta em algum tipo de teste. Vejamos alguns exemplos a seguir:
+
+
+Consulta 01: Retornar o código e o nome do(s) funcionário(s) que ganha(m) o maior salário.
+
+
+SQL (SQLite 3.27.2)
+SELECT CODIGOFUNCIONARIO, NOME
+FROM FUNCIONARIO
+WHERE SALARIO=
+    (SELECT MAX(SALARIO)
+    FROM FUNCIONARIO);
+
+
+Light Mode
+
+Copiar
+
+O resultado da consulta 01 está expresso na imagem a seguir:
+
+
+
+Resultado da consulta 01.
+
+Inicialmente, o SGBD processa a subconsulta, a qual retorna o valor do maior salário registrado na tabela FUNCIONARIO. Em seguida, esse resultado é utilizado na avaliação da cláusula WHERE. Finalmente, são exibidos os registros dos funcionários cujo valor de SALARIO satisfaz à condição da cláusula WHERE.
+
+
+Consulta 02: retornar o código, o nome e o salário do(s) funcionário(s) que ganha(m) mais que a média salarial dos colaboradores.
+
+
+SQL (SQLite 3.27.2)
+SELECT CODIGOFUNCIONARIO, NOME, SALARIO
+FROM FUNCIONARIO
+WHERE SALARIO>
+    (SELECT AVG(SALARIO)
+    FROM FUNCIONARIO);
+
+
+Light Mode
+
+Copiar
+
+O resultado da consulta 02 está expresso na imagem a seguir.
+
+
+
+Resultado da consulta 02.
+
+Inicialmente, o SGBD processa a subconsulta, a qual retorna a média salarial a partir da tabela FUNCIONARIO. Em seguida, esse resultado é utilizado na avaliação da cláusula WHERE. Finalmente, são exibidas as linhas da tabela FUNCIONARIO com as colunas CODIGOFUNCIONARIO, NOME e SALARIO, cujo valor de SALARIO satisfaz à condição da cláusula WHERE.
+
+
+Consulta 03: Retornar o código, o nome e o salário do(s) funcionário(s) que ganha(m) menos que a média salarial dos colaboradores do departamento de tecnologia da informação (TI).
+
+
+SQL (SQLite 3.27.2)
+SELECT CODIGOFUNCIONARIO, NOME, SALARIO
+FROM FUNCIONARIO
+WHERE SALARIO<
+    (SELECT AVG(SALARIO)
+    FROM FUNCIONARIO
+    WHERE CODIGODEPARTAMENTO IN (SELECT CODIGODEPARTAMENTO
+        FROM DEPARTAMENTO
+        WHERE NOME='Tecnologia da Informação'));
+
+
+Light Mode
+
+Copiar
+
+O resultado da consulta 03 está expresso na imagem a seguir.
+
+
+
+Resultado da consulta 03.
+
+Perceba que, para retornar os resultados de interesse, o SGBD precisa calcular a média salarial dos funcionários do departamento de TI. Para isso, a subconsulta da linha 4 – que calcula essa média – utiliza o resultado da subconsulta da linha 6, a qual recupera o código do departamento.
+
+
+Há outra maneira de resolver a consulta 03, pois você pode trocar uma subconsulta por uma junção. O código a seguir produz os mesmos resultados.
+
+
+SQL (SQLite 3.27.2)
+SELECT CODIGOFUNCIONARIO, NOME, SALARIO
+FROM FUNCIONARIO
+WHERE SALARIO<
+    (SELECT AVG(SALARIO)
+    FROM FUNCIONARIO F JOIN DEPARTAMENTO D ON
+        (F.CODIGODEPARTAMENTO=D.CODIGODEPARTAMENTO)
+    WHERE D.NOME='Tecnologia da Informação');
+
+
+Light Mode
+
+Copiar
+
+Consulta 04: quantos funcionários recebem menos que a funcionária que possui o maior salário entre as colaboradoras de sexo feminino?
+
+
+SQL (SQLite 3.27.2)
+SELECT COUNT(*) AS QUANTIDADE
+FROM FUNCIONARIO
+WHERE SALARIO<
+    (SELECT MAX(SALARIO)
+    FROM FUNCIONARIO
+    WHERE SEXO='F');
+
+
+Light Mode
+
+Copiar
+
+O resultado da consulta 04 está expresso na imagem a seguir.
+
+
+
+Resultado da consulta 04.
+
+No exemplo, o SGBD recupera o maior salário entre as funcionárias. Em seguida, conta os registros cujo valor da coluna SALARIO é menor que o valor do salário em questão.
