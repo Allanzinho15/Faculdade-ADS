@@ -1,0 +1,98 @@
+Vamos explorar os operadores de conjunto no SQL, apresentando como combinar, interseccionar e diferenciar conjuntos de dados de maneira eficaz.
+
+
+Acompanhe neste vídeo a aplicação dos operadores de conjunto e aprenda como utilizá-los para realizar uniões de conjuntos, encontrar interseções e realizar diferenças entre conjuntos de dados.
+
+
+
+Vamos aprender que os resultados de diversas consultas podem ser combinados em um único conjunto de dados, caso sigam regras específicas dos operadores utilizados para essa finalidade. Estamos falando dos operadores de conjunto, que incluem UNION, INTERSECT e EXCEPT.
+
+
+Construiremos as consultas com base nas tabelas FUNCIONARIO, ALUNO e CLIENTE, conforme imagem a seguir. Acompanhe!
+
+
+
+Tabelas FUNCIONARIO, ALUNO e CLIENTE.
+
+Recomendamos que você crie as tabelas e insira algumas linhas, o que pode ser feito usando o script a seguir, a partir da ferramenta de sua preferência. Para isso, tenha em mente que é necessário estar conectado ao PostgreSQL e acessar algum database criado por você.
+
+
+SQL (SQLite 3.27.2)
+
+CREATE TABLE FUNCIONARIO (
+    CODIGOFUNCIONARIO int NOT NULL,
+    NOME varchar(90) NOT NULL,
+    CPF char(15) NULL,
+    SEXO char(1) NOT NULL,
+    DTNASCIMENTO date NOT NULL,
+    SALARIO real NULL,
+    CONSTRAINT FUNCIONARIO_pk PRIMARY KEY (CODIGOFUNCIONARIO));
+CREATE TABLE ALUNO (
+    CODIGOALUNO int NOT NULL,
+    NOME varchar(90) NOT NULL,
+    CPF char(15) NOT NULL,
+    SEXO char(1) NOT NULL,
+    DTNASCIMENTO date NOT NULL,
+    CONSTRAINT ALUNO_pk PRIMARY KEY (CODIGOALUNO));
+CREATE TABLE CLIENTE (
+    CODIGOCLIENTE int NOT NULL,
+    NOME varchar(90) NOT NULL,
+    CPF char(15) NOT NULL,
+    SEXO char(1) NOT NULL,
+    CONSTRAINT CLIENTE_pk PRIMARY KEY (CODIGOCLIENTE));
+
+
+Light Mode
+
+Copiar
+
+O script a seguir pode ser utilizado para inserção de registros nas tabelas.
+
+
+SQL (SQLite 3.27.2)
+INSERT INTO FUNCIOILARIO (COOIGOFUNCIONARIO, NOME, CPF, SEXO, DTMASCIMENTO, SALARIO)
+VALUES (1, 'ROBERTA SILVA BRASIL', '82998', 'F','20/02/1980',70e0);
+INSERT INTO FUNCIOILARIO (COOIGOFUNCIONARIO, NOME, CPF, SEXO, DTMASCIMENTO, SALARIO)
+VALUES (2, 'MARIA SILVA BRASIL', '9876', 'F', '20/09/1988',9500);
+INSERT INTO FUNCIOIARIO (COOIGOFUNCIONARIO, NOME, CPF, SEXO, DTNASCIMENTO, SALARIO)
+VALUES (3, 'GABRIELLA PEREIRA LIMA', '32998', 'F', '20/02/1990',6000);
+INSERT INTO FUNCIOHLARIO (COOIGOFUNCIONARIO, NOME, CPF, SEXO, DTMASCIMEMTO, SALARIO)
+VALUES (4, 'MARCOS PEREIRA BRASIL','9999', 'M','20/02/1999',60e0);
+INSERT INTO FUNCIOHLARIO (COOIGOFUNCIONARIO, NOME, CPF, SEXO, DTMASCIMENTO, SALARIO)
+VALUES (5, 'HEMERSCUI SILVA BRASIL','9111', 'H', '20/12/1992',40e0);
+INSERT INTO ALUNO (CODIGOALUNO, NOME, CPF, SEXO, DTNASCIMENTO) VALUES (1, 'J0SÉ FRANCISCO TERRA', '82988', 'M', '28/10/1989');
+INSERT INTO ALUNO (CODIGOALUNO, NOME, CPF, SEXO, DTNASCIMENTO) VALUES (2,''ANDREY COSTA FILHO', '0024', ''M', '20/10/1999');
+INSERT INTO ALUNO (CODIGOALUNO, NONE, CPF, SEXO, DTNASCIMENTO) VALUES (3, 'ROBERTA SILVA BRASIL', '82998', 'F', '20/02/1980');
+INSERT INTO ALUNO (CODIGOALUNO, NOME, CPF, SEXO, DTNASCIMENTO) VALUES (4, 'CARLA MARIA MACIEL', 'OO44', 'F', '20/11/1996');
+INSERT INTO ALUNO (CODIGOALUNO, NOME, CPF, SEXO, DTNASCIMENTO) VALUES (5,'MARCOS PEREIRA BRASIL', '9999', 'M', '20/E2/1999');
+INSERT INTO CLIENTE (COOIGOCLIEMTE, NONE, CPF, SEXO) VALUES (1, 'ROBERTA SILVA BRASIL', '82998', 'F');
+INSERT INTO CLIENTE (COOIGOCLIENTE, NOHE, CPF, SEXO) VALUES (2,'MARCOS PEREIRA BRASIL', "9999', 'M');
+20 INSERT INTO CLIENTE (COOIGOCLIENTE, NOHE, CPF, SEXO) VALUES (3,'HEMERSON SILVA BRASIL', '9111', 'M');
+
+
+Light Mode
+
+Copiar
+
+A imagem a seguir apresenta o conteúdo da tabela FUNCIONARIO após a execução do comando: SELECT * FROM FUNCIONARIO;
+
+
+
+Conteúdo da tabela FUNCIONARIO.
+
+A imagem a seguir apresenta o conteúdo da tabela ALUNO após a execução do comando: TABLE ALUNO;
+
+
+
+Conteúdo da tabela ALUNO.
+
+A imagem a seguir apresenta o conteúdo da tabela CLIENTE após a execução do comando: TABLE CLIENTE;
+
+
+
+Conteúdo da tabela CLIENTE.
+
+Convém esclarecer que, em todos os registros, os dados são puramente fictícios. Além disso, os dados da coluna CPF estão com somente quatro caracteres e não representam um CPF válido.
+
+
+No entanto, vamos considerar, para efeitos de nosso estudo, que registros com mesmo valor de CPF representam a informação de um mesmo cidadão. De forma complementar, estamos considerando que cada tabela pertence a um banco de dados – e um domínio de aplicação – diferente.

@@ -1,0 +1,129 @@
+Vamos explorar agora os operadores INTERSECT e EXCEPT, revelando os dados em comum, ou os diferentes, em um conjunto originário de diferentes fontes em uma única consulta.
+
+
+Neste vídeo, vamos explorar a utilização dos operadores de conjunto INTERSECT e EXCEPT em SQL, que são fundamentais para comparar e manipular conjuntos de resultados de consultas de maneira precisa e eficiente.
+
+
+
+Consultas com o operador INTERSECT
+
+O operador de interseção serve para exibir linhas que aparecem em ambos os resultados das consultas envolvidas. Para isso, todas as consultas devem possuir a mesma quantidade de colunas e deve haver compatibilidade de tipos de dados. Além disso, linhas repetidas são eliminadas do resultado. O operador de interseção possui a seguinte forma geral:
+
+
+CONSULTASQL INTERSECT [ALL|DISTINCT] CONSULTASQL
+
+
+A seguir, veremos alguns exemplos. Vamos lá!
+
+
+Consulta 02: retornar o nome e o CPF de todos os cidadãos que são funcionários e clientes.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+O resultado da consulta 02 está expresso na imagem a seguir.
+
+
+
+Resultado da consulta 02.
+
+A consulta retorna três linhas que são fruto da interseção entre as tabelas FUNCIONARIO e CLIENTE. Como visto, todos os clientes são funcionários.
+
+
+Consulta 03: retornar o nome e o CPF de todos os cidadãos que são funcionários, clientes e alunos.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+O resultado da consulta 03 está expresso na próxima imagem.
+
+
+
+Resultado da consulta 03.
+
+A consulta retorna duas linhas que são fruto da interseção entre as tabelas FUNCIONARIO, CLIENTE e ALUNO.
+
+
+Um aspecto importante é que uma consulta sob o formato X UNION Y INTERSECT Z é interpretada sendo X UNION (Y INTERSECT Z). Veja o exemplo!
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+O resultado da consulta envolvendo as três tabelas está expresso na imagem a seguir.
+
+
+
+Resultado da consulta envolvendo três tabelas.
+
+Consultas com o operador EXCEPT
+
+O operador EXCEPT implementa a operação de subtração da teoria dos conjuntos e serve para exibir linhas que aparecem em uma consulta e não aparecem na outra. Para isso, todas as consultas devem possuir a mesma quantidade de colunas e deve haver compatibilidade de tipos de dados. Além disso, linhas repetidas são eliminadas do resultado. O operador de subtração possui a seguinte forma geral:
+
+
+CONSULTASQL EXCEPT [ALL|DISTINCT] CONSULTASQL
+
+
+Alguns SGBDs implementam a mesmo operador, usando um nome diferente. O Oracle, por exemplo, utiliza o operador MINUS, significando subtração ou diferença. Vejamos alguns exemplos!
+
+
+Consulta 04: retornar o nome e o CPF dos funcionários que não são clientes.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+O resultado da consulta 04 está expresso na imagem a seguir.
+
+
+
+Resultado da consulta 04.
+
+A consulta retorna duas linhas que são fruto da subtração entre as tabelas FUNCIONARIO e CLIENTE.
+
+
+Perceba que uma operação X EXCEPT Y é diferente de Y EXCEPT X. Veja o código!
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+A consulta retorna vazio, pois todos os clientes são funcionários.
+
+
+Consulta 05: retornar o nome e o CPF dos cidadãos que são somente funcionários.
+
+
+SQL (SQLite 3.27.2)
+
+
+Light Mode
+
+Copiar
+
+O resultado da consulta 05 está expresso na próxima imagem.
+
+
+Inicialmente, o SGBD processa a operação de subtração da linha 3. Em seguida, o resultado da operação é usado na subtração da linha 6.

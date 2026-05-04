@@ -1,0 +1,32 @@
+Vamos agora analisar exemplos de uso dos comandos vistos até aqui. Para isso, iremos utilizar o banco de dados do museu. Seu modelo lógico é o seguinte:
+
+
+
+Modelo lógico de banco de dados do minimundo MUSEU.
+
+Praticando consultas com o operador UNION
+
+Neste vídeo, vamos explorar consultas utilizando o operador UNION. Aprenda passo a passo como escrever consultas eficientes utilizando UNION para integrar e consolidar informações de diferentes origens. Prepare-se para aprimorar suas habilidades em SQL e explorar as capacidades versáteis desse operador!
+
+
+
+Roteiro de prática
+
+Para executar a atividade, faça conexão no banco do museu e escreva os seguintes comandos utilizando UNION:
+
+
+Listar o número dos salões que possuem obras ou que possuem funcionários alocados.
+ 
+
+Listar o número dos salões que possuem obras ou que possuem funcionários alocados, listando os duplicados.
+ 
+
+Listar o código das obras do estilo impressionista ou feitas de argila.
+ 
+
+Listar o código das obras do estilo impressionista ou feitas de argila, repetindo os duplicados.
+ 
+
+Listar o título e o nome do autor cujas obras são do estilo impressionista ou feitas de argila.
+
+Você pode baixar os comandos que resolvem as consultas no arquivo sqlmod3.3.

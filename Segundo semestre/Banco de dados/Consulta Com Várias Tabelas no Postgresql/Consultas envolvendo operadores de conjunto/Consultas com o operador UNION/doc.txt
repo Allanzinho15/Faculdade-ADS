@@ -1,0 +1,81 @@
+Vamos explorar agora o operador UNION, revelando como combinar e consolidar conjuntos de dados de diferentes fontes em uma única consulta. Você vai aprender a utilizar o UNION a partir de diversos exemplos. Vamos lá!
+
+
+Confira neste vídeo a importância da aplicação de consultas com o operador UNION, que é essencial para combinar resultados de consultas de maneira eficiente e flexível, permitindo a criação de conjuntos de dados completos a partir de múltiplas fontes.
+
+
+
+O operador de união serve para consolidar linhas resultantes de consultas. Para isso, todas as consultas envolvidas devem possuir a mesma quantidade de colunas e deve haver compatibilidade de tipo de dados. Além disso, linhas repetidas são eliminadas do resultado, uma vez que o resultado é uma tabela que não permite duplicata de linhas. O operador de união possui a seguinte forma geral:
+
+
+CONSULTASQL UNION [ALL|DISTINCT] CONSULTASQL
+
+
+A sintaxe completa do comando SELECT no PostgreSQL pode ser encontrada com a indicação disponibilizada no Explore + ao final do material.
+
+
+Consulta 01: retornar o nome e o CPF de todos os funcionários e clientes.
+
+
+SQL (SQLite 3.27.2)
+1 SELECT NOME, CPF
+2 FROM FUNCIONARIO
+3 UNION
+4 SELECT NOME, CPF
+5 FROM CLIENTE;
+
+
+Light Mode
+
+Copiar
+
+O resultado da consulta 01 está expresso na imagem a seguir.
+
+
+
+Resultado da consulta 01.
+
+Perceba que há cinco funcionários cadastrados (linhas 1 a 10 do script de inserção) e, de forma semelhante, três clientes (linhas 18 a 20 do script de inserção). Note também que todos os clientes cadastrados também são funcionários. Após o processamento da operação de união, somente cinco registros foram exibidos, uma vez que as repetições por padrão são eliminadas.
+
+
+E se quiséssemos que todos os registros aparecessem no resultado? Bastaria usar o UNION ALL, conforme a seguir.
+
+
+SQL (SQLite 3.27.2)
+SELECT NOME, CPF
+FROM FUNCIONARIO
+UNION ALL
+SELECT NOME, CPF
+FROM CLIENTE;
+
+
+Light Mode
+
+Copiar
+
+O resultado da consulta 01 modificada está expresso na imagem a seguir.
+
+
+
+Resultado da consulta 01 modificada para contemplar todos os registros das tabelas.
+
+Finalmente, se quiséssemos especificar a “origem” de cada registro, poderíamos alterar o nosso código conforme a seguir.
+
+
+SQL (SQLite 3.27.2)
+SELECT NOME, CPF, 'Dados da tabela FUNCIONARIO' AS ORIGEM
+FROM FUNCIONARIO
+UNION ALL
+SELECT NOME, CPF, 'Dados da tabela CLIENTE' AS ORIGEM
+FROM CLIENTE;
+
+
+Light Mode
+
+Copiar
+
+O resultado da consulta 01 modificada está expresso na imagem a seguir.
+
+
+
+Resultado da consulta 01 modificada para contemplar todos os registros das tabelas.

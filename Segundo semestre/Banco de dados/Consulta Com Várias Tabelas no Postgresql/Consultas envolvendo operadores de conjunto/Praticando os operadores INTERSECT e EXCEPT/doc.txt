@@ -1,0 +1,32 @@
+Vamos agora analisar exemplos de uso dos comandos vistos até aqui. Para isso, iremos utilizar o banco de dados do museu. Seu modelo lógico é o seguinte:
+
+
+
+Modelo lógico de banco de dados do minimundo MUSEU.
+
+Praticando os operadores INTERSECT e EXCEPT
+
+Neste vídeo, vamos aprofundar nossos conhecimentos praticando consultas com os operadores INTERSECT e EXCEPT. Prepare-se para aprimorar suas habilidades em SQL e explorar o potencial desses importantes operadore.
+
+
+
+Roteiro de prática
+
+Para executar a atividade, faça conexão no banco do museu e escreva os seguintes comandos utilizando EXCEPT e INTERSECT:
+
+
+Listar código dos autores que não possuem obras expostas no museu, utilizando operadores de conjunto.
+ 
+
+Listar código dos autores que possuem obras expostas no museu, utilizando operadores de conjunto.
+ 
+
+Listar o código dos autores que possuem apenas pinturas no museu, utilizando operadores de conjunto.
+ 
+
+Listar o código dos autores que possuem apenas esculturas no museu, utilizando operadores de conjunto.
+ 
+
+Listar o código dos artistas que possuem ou apenas esculturas ou apenas pinturas, utilizando operadores de conjunto.
+
+Você pode baixar os comandos que resolvem as consultas no arquivo sqlmod3.5.
