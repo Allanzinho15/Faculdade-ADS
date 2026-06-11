@@ -1,0 +1,30 @@
+Conversões de tipos de dados
+Compreender as conversões implícitas e explícitas de tipos em Python é essencial para qualquer programador, especialmente para aqueles que estão iniciando sua jornada na linguagem. Ao escrever código Python, é comum lidar com diferentes tipos de dados em expressões matemáticas e lógicas. Assim, entender como o Python converte automaticamente os tipos para realizar operações é fundamental para evitar resultados inesperados e garantir a correta manipulação dos dados. Além disso, conhecer a possibilidade de realizar conversões explícitas oferece ao programador maior controle sobre o tipo de dados que está sendo utilizado em suas operações.
+
+No vídeo a seguir, falaremos sobre as conversões de tipos de dados em Python que permitem alterar o tipo de uma variável para outro, facilitando a manipulação e o processamento de informações de acordo com as necessidades do programa. Confira!
+
+
+Quando temos tipos diferentes envolvidos na mesma expressão, o Python converte implicitamente cada operando para o tipo mais abrangente envolvido na expressão. Estamos usando a palavra abrangente, mas poderíamos falar que existem tipos que englobam (ou contêm) outros.
+
+extension
+Exemplo
+Um número do tipo int pode ser visto como um float com a parte decimal nula. Porém, o inverso não é verdade. Ou seja, o conjunto dos inteiros (int) é um subconjunto do conjunto dos reais (float). Assim, a expressão 5 + 0.68 – que envolve um int e um float – tem como resultado 5.68. O inteiro 5 é convertido pelo Python para o número de ponto flutuante 5.0 antes que a soma (de dois valores float) seja realmente efetuada.
+
+Uma conversão implícita não intuitiva é a dos valores booleanos True e False em inteiros, respectivamente, 1 e 0. Veja o exemplo a seguir.
+
+Prompt
+content_copy
+
+Com isso, podemos perceber a seguinte relação entre os tipos bool, int e float na imagem.
+
+
+Relação entre os tipos bool, int e float.
+
+Além das conversões implícitas, o programador também pode usar as conversões explícitas, quando ele força que o valor seja tratado como de determinado tipo. Para isso, é necessário usar o construtor do tipo desejado, com o valor passado como parâmetro (entre parênteses). Veja o exemplo!
+
+Prompt
+content_copy
+
+O int 2 pode ser tratado naturalmente como o float 2.0, basta acrescentar a parte decimal nula. Porém, ao tentar tratar um float como int, ocorre a remoção da parte decimal.
+
+Fique atento, pois não é uma aproximação para o inteiro mais próximo, e sim o truncamento.

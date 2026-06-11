@@ -1,0 +1,53 @@
+Conceito de amarração (Binding)
+A amarração, ou binding, é fundamental na estrutura e no funcionamento das linguagens de programação, como Python. Trata-se da associação entre entidades de programação, como variáveis e funções, a valores ou identificadores específicos em tempo de execução ou compilação. Essa associação é muito importante para garantir que o código funcione corretamente, permitindo que as operações sejam realizadas de maneira consistente e previsível. Em Python, entender a amarração é essencial para compreender como as variáveis são atribuídas, os objetos são referenciados e os valores são vinculados. Isso contribui para a escrita de um código mais claro, eficiente e livre de erros.
+
+Neste vídeo, falaremos sobre o conceito de amarração (binding), que se refere à associação dinâmica entre um nome e um objeto, permitindo que variáveis sejam vinculadas a valores durante a execução do programa. Confira!
+
+
+Amarrações
+Chamamos de amarração (binding) a associação entre entidades de programação. Veja alguns exemplos!
+
+Variável amarrada a um valor.
+Operador amarrado a um símbolo.
+Identificador amarrado a um tipo.
+O tempo em que a amarração ocorre é chamado de tempo de amarração. Veja a seguir os tempos de amarração que cada linguagem pode ter.
+
+Os símbolos são amarrados ao operador, como * (multiplicação), ou à definição das palavras reservadas.
+
+Ocorre, em geral, nos compiladores, como a definição de faixa de valores para determinado tipo.
+
+Corresponde à associação da variável ao seu tipo. Lembre-se de que Python associa a variável ao tipo.
+
+A ligação de vários módulos compilados previamente, como a chamada a uma função de um módulo importado. Em C, utilizamos a diretiva #include para termos permissão de utilizar as funções de determinada biblioteca. Em Python, utilizamos o import para isto.
+
+Quando o programa é carregado, por exemplo, endereços de memória relativos são substituídos por endereços absolutos.
+
+Corresponde à associação de valores a variáveis que dependam de entradas do usuário, por exemplo. A variável é vinculada ao valor apenas durante a execução do programa.
+
+O momento em que ocorre a ligação pode ser classificado como cedo (early binding) ou tardio (late binding). Quanto mais cedo ocorre a ligação, maior a eficiência de execução do programa, porém menor a flexibilidade das estruturas disponibilizadas.
+
+Amarrações de tipo
+As amarrações de tipo vinculam a variável ao tipo do dado. Elas podem ser estáticas ou dinâmicas. Observe a diferença.
+
+Estáticas
+Ocorrem antes da execução e permanecem inalteradas. Em C, declaramos int a.
+
+close
+Dinâmicas
+Ocorrem durante a execução e podem ser alteradas. É o caso do Python.
+
+Veja o código a seguir.
+
+python
+>>> valor = 10
+>>> type(valor)
+<class 'int'>
+>>> valor = 'a'
+>>> type(valor)
+<class 'str'>
+content_copy
+
+Perceba que:
+
+A chamada type (parâmetro) retorna o tipo do parâmetro informado entre parênteses.
+A variável valor recebeu 10 e, com isso, ficou vinculada ao tipo int. Porém, ao receber o valor ‘a’, passou a estar vinculada ao tipo str (string).

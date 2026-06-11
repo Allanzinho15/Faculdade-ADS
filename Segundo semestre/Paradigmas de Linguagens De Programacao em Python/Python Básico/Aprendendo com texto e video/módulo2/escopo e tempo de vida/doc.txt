@@ -1,0 +1,124 @@
+Escopo e tempo de vida
+Entender o escopo das variáveis é essencial para qualquer programador, especialmente para iniciantes em Python. O escopo determina onde uma variável pode ser acessada e modificada dentro de um programa. Em Python, existem diferentes níveis de escopo, como o escopo local, global e de função, que refletem diretamente no tempo de vida das variáveis. Compreender essas diferenças permite que os programadores escrevam código mais organizado, evitando conflitos e garantindo que as variáveis sejam utilizadas de maneira adequada em diferentes partes do programa. Dominar o escopo das variáveis é essencial para desenvolver aplicativos Python eficientes e livres de erros.
+
+Neste vídeo, falaremos sobre o conceito de escopo, que se refere à visibilidade de variáveis em diferentes partes do código. Abordaremos também o tempo de vida, que indica a duração em que as variáveis permanecem na memória durante a execução do programa. Acompanhe!
+
+
+Escopo de visibilidade
+O escopo define em quais partes do programa uma variável é visível. Cada nome de variável em Python tem seu escopo e, fora desse escopo, o nome não existe, gerando um erro quando se tenta referenciar esse nome. Quanto ao escopo, chamamos as variáveis de globais ou locais. A seguir, detalharemos cada tipo de variável. Acompanhe!
+
+
+Código Python em tela de computador.
+
+Variáveis globais
+Todos os nomes atribuídos no prompt interativo do Python (prompt do emulador, Python Console do PyCharm etc.) ou em um módulo fora de qualquer função são considerados como de escopo global. Por exemplo, ao executar a instrução da caixa de código a seguir, a variável x é uma variável global. Veja!
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+x = 10
+print(x)
+Input
+Console
+Variáveis locais
+Para exemplificar o uso de variáveis com escopo local, vamos utilizar uma função definida pelo desenvolvedor. Não se preocupe com esse tipo de função por enquanto, você aprenderá mais detalhes posteriormente. Por enquanto, observe o emulador a seguir.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+def multiplicador(numero):
+        a = 2 # esta variável tem escopo local
+        print(f"Dentro da função, a variável vale: {a}")
+        return a * numero
+
+a = 3 # esta variável tem escopo global
+b = multiplicador(5)
+print(f"Fora da função, a variável a vale: {a}")
+Input
+Console
+Perceba que:
+
+As linhas 2, 3 e 4 compõem o bloco interno à função chamada multiplicador().
+Embora as variáveis das linhas 2 e 6 tenham o mesmo nome, elas são abstrações a endereços de memória diferentes.
+Dentro da função multiplicador(), a chamada ao nome a recupera o valor 2.
+Fora da função multiplicador(), a chamada ao nome a recupera o valor 3.
+Execute o código no emulador e veja a saída que será produzida.
+
+Agora, observe a função multiplicador() com uma pequena alteração, em que retiramos a inicialização da variável a dentro da função.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+def multiplicador(numero):
+        return a * numero
+
+a = 3 # esta variável tem escopo global
+b = multiplicador(5)
+print(f"A variável b vale: {b}")
+Input
+Console
+Perceba que, na linha 5, ao se chamar a função do multiplicador(), a variável a será procurada. Como não existe uma variável a no bloco interno da função, ela é procurada como variável global. Uma vez encontrada, o valor recuperado é 3. Ao executar esse código, a saída obtida será A variável b vale 15.
+
+Agora, confira por si mesmo, clique em Executar no emulador anterior.
+
+Usamos o exemplo para mostrar que o interpretador Python pode procurar o mesmo nome de variável em diferentes escopos. A ordem utilizada para a procura é:
+
+A chamada da função delimitadora.
+As variáveis globais.
+O módulo builtins.
+Perceba que, se a variável a é inicializada na função multiplicador(), qualquer chamada a esse nome dentro da função resultará na referência a essa variável local. Mas seria possível alterar a variável a global com uma instrução dentro da função multiplicador()? Sim, utilizando-se a palavra reservada global.
+
+Agora é a sua vez! Veja no emulador como isso poderia ser feito. Clique em Executar e obtenha o resultado do código.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+def multiplicador(numero):
+        global a # todas as referências à variável a são para a global
+        a = 2      # a global será alterado
+        print(f"Dentro da função,  variável  vale: {a}")
+        return a * numero
+
+
+a = 3  # esta variável tem escopo global
+b = multiplicador(5)
+print(f"A variável b vale: {b}")
+print(f"Fora da função, a variável a vale: {a}")
+Input
+Console
+Escopos
+Os escopos podem ser estáticos ou dinâmicos. Observe a diferença entre os dois tipos.
+
+Estático
+O escopo é baseado na descrição textual do programa e as amarrações são feitas em tempo de compilação. É o caso de C, C++ e Java, por exemplo.
+
+close
+Dinâmico
+O escopo é baseado na sequência de chamada dos módulos (ou funções). Por isso, as amarrações são feitas em tempo de execução. É o caso do Python.
+
+O fato de Python ser de escopo dinâmico traz alguns problemas, como a perda de eficiência – uma vez que os tipos precisam ser verificados em tempo de execução – e a redução na legibilidade – porque é difícil determinar a sequência exata de todas as chamadas de função.
+
+Tempo de vida
+Embora escopo e tempo de vida tenham uma relação próxima, eles são conceitos diferentes. Observe!
+
+text_snippet
+Escopo
+É um conceito textual.
+
+hourglass_top
+Tempo de vida
+É um conceito temporal.
+
+As variáveis globais têm o tempo de vida que é o de execução do programa, ao passo que as variáveis locais somente existem no intervalo de duração da função ou do bloco a que se limitam.

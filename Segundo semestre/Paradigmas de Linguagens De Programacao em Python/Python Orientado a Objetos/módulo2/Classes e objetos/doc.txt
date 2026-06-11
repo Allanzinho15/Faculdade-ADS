@@ -1,0 +1,301 @@
+Classes e objetos 
+Em Python, classes e objetos são fundamentais para a programação orientada a objetos. Classes definem a estrutura e o comportamento dos objetos, enquanto objetos são instâncias dessas classes. Este conteúdo abordará como criar e utilizar classes e objetos em Python, proporcionando uma base sólida para desenvolver aplicações robustas e eficientes. Prepare-se para explorar esses conceitos essenciais!
+
+Neste vídeo, apresentaremos os conceitos de classes e objetos, abordando construtores e self, métodos, métodos com retorno e referências entre objetos na memória. Confira!
+
+
+Definição de classe
+Uma classe é uma declaração de tipo que encapsula constantes, variáveis e métodos que realizam a manipulação dos valores dessas variáveis.
+
+report_problem
+Atenção!
+Cada classe deve ser única em um sistema orientado a objetos.
+
+Como boa prática, cada classe deve fazer parte de um único arquivo.py para ajudar na estruturação do sistema orientado a objetos em Python. Outra boa prática consiste no nome da classe semelhante ao do arquivo, como, por exemplo, definir no ambiente de desenvolvimento Python a classe Conta. O nome final do arquivo tem de ser Conta.py.
+
+Devemos ressaltar que todos esses exemplos podem ser executados no terminal do Python.
+
+Veja o arquivo Conta.py.
+
+python
+content_copy
+
+Exemplo de criação de classe.
+
+Uma classe é definida mediante a utilização da instrução class e de : para indicar o início do bloco de declaração da classe. A palavra reservada pass, por sua vez, indica que a classe será definida posteriormente, servindo apenas para permitir que o interpretador a execute até o final sem erros.
+
+Você deve reproduzir e executar todos os exemplos que serão apresentados a seguir.
+
+Construtores e self
+A classe Conta foi criada, porém não foram definidos atributos e instanciados objetos para ela. Ambos são uma característica básica dos programas orientados a objetos.
+
+Nas linguagens orientadas a objetos, para se instanciar objetos, é preciso criar os construtores da classe. Em Python, a palavra reservada __init__() serve para a inicialização de classes, como é possível verificar a seguir:
+
+python
+content_copy
+
+Classe Conta
+
+Diferentemente de outras linguagens de programação orientadas a objetos, o Pyhton constrói os objetos em duas etapas. A primeira etapa é utilizada com a palavra reservada __new__, a qual, em seguida, executa o método __init__.
+
+O __new__ cria a instância e é utilizado para alterar as classes dinamicamente nos casos de sistemas que envolvam metaclasses e frameworks. Após __new__ ser executado, esse método chama o __init__ para a inicialização da classe como seus valores iniciais (Menezes, 2019).
+
+assignment_ind
+Comentário
+Para efeitos de comparação com outras linguagens de programação (e por questões de simplificação), consideraremos o __init__ como o construtor da classe. Portanto, toda vez que instanciarmos objetos da classe conta, o método __init__ será chamado.
+
+Analisando o exemplo, vimos a utilização da palavra self como parâmetro no construtor. Como o objeto já foi instanciado implicitamente pelo __new__, o método __init__ recebe uma referência do objeto instanciado como self.
+
+Analisando o restante do construtor da figura Classe Conta, notamos que o código possui diversos comandos self, o que indica uma referência ao próprio objeto. Por exemplo, o comando self.numero é uma indicação de que o número é um atributo do objeto, ao qual, por sua vez, é atribuído um valor. O restante dos comandos self indica a criação dos atributos cpf, nomeTitular e saldo referentes à classe Conta.
+
+Agora, vamos instanciar o nosso objeto com o método __init__ no emulador (clique em Executar e verifique a saída do código no console do emulador).
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+
+Input
+Digite cada input em uma linha.
+Console
+É importante ressaltar que, em Python, não é obrigatório ter um método construtor na classe. Isso ocorrerá apenas se for necessária alguma ação na construção do objeto, como a inicialização e/ou a atribuição de valores.
+
+Veja a seguir um exemplo de uma classe sem um método construtor.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+class Conta:
+    def __init__(self, numero, cpf, nomeTitular, saldo):
+        self.numero = numero
+        self.cpf = cpf
+        self.nomeTitular = nomeTitular
+        self.saldo = saldo
+
+def main():
+    c1 = Conta(1,1,"Joao",1000) # Objeto sendo instanciado
+    print (f"Nome do titular da conta: {c1.nomeTitular}")
+    print (f"Número da conta: {c1.numero}")
+    print (f"CPF do titular da conta: {c1.cpf}")
+    print (f"Saldo da conta: {c1.saldo}")
+    
+
+# Quando um script python é executado, a variável reservada
+# NAME referente a ele tem valor igual a "__main__".
+# Nesse caso, a condição do IF a seguir será TRUE.
+# Então o que está no corpo do IF será executado. No caso,
+# é um chamado ao método main do script
+
+if __name__ == "__main__": 
+    main()
+Input
+Digite cada input em uma linha.
+Console
+Métodos
+Toda classe precisa possuir um conjunto de métodos para manipular os atributos e, por consequência, o estado do objeto. Por exemplo, precisamos depositar dinheiro na conta para aumentar o valor da conta corrente. Veja!
+
+python
+content_copy
+class A():
+    def f(self):
+        print("foo")
+
+
+def main():
+    obj_A = A() # Objeto sendo instanciado
+    obj_A.f()
+
+if __name__ == "__main__": 
+    main()
+Método depositar.
+
+No código, foi definido um método depositar, que recebe a própria instância do objeto por meio do self e de um parâmetro valor. O número passado por intermédio do parâmetro será adicionado ao saldo da conta do cliente.
+
+Vamos supor que o estado anterior do objeto representasse o saldo com o valor zero da conta. Após a chamada desse método, passando como parâmetro o valor 300, o estado da conta foi alterado com o novo saldo de 300 reais graças à referência self.
+
+A seguir, observe o novo código.
+
+python
+content_copy
+def depositar (self, valor):
+     self.saldo += valor
+Classe Conta com métodos depositar e sacar.
+
+No exemplo, adicionamos mais um método sacar(self, valor), do qual subtraímos o valor, passado como parâmetro, do saldo do cliente. Pode ser adicionado um método extrato para avaliar os valores atuais da conta corrente, ou seja, o estado atual do objeto.
+
+A conta tinha, por exemplo, um saldo de 300 reais após o primeiro depósito. Após a chamada de sacar (100), o saldo da conta será de 200 reais. Desse modo, se o método gerar_extrato() for executado, o valor impresso será 200.
+
+Clique em Executar no emulador e verifique este resultado.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+class Conta:
+    def __init__(self, numero, cpf, nomeTitular, saldo):
+        self.numero = numero
+        self.cpf = cpf
+        self.nomeTitular = nomeTitular
+        self.saldo = saldo
+        
+    def depositar(self, valor):
+        self.saldo += valor
+        
+    def sacar(self, valor):
+        self.saldo -= valor
+        
+    def gerar_extrato(self):
+        print(f"numero: {self.numero} \n cpf: {self.cpf}\nsaldo: {self.saldo}")     
+
+def main():
+    c1 = Conta(1,1,"Joao",0)
+    c1.depositar(300)
+    c1.sacar(100)
+    c1.gerar_extrato()
+
+if __name__ == "__main__": 
+    main()
+Input
+Digite cada input em uma linha.
+Console
+Métodos com retorno
+Em Python, não é obrigatório haver um comando para indicar quando o método deve ser finalizado. Porém, na orientação a objetos, é bastante comum, como é o caso da programação procedural, retornar um valor a partir da análise do estado do objeto.
+
+Conforme exemplificaremos a seguir, o saque de um valor maior do que o saldo atual do cliente não é permitido; portanto, retorna a resposta “False” para o objeto que está executando o saque.
+
+No código a seguir, apresentaremos como ficará o método e um exemplo de uso. Acompanhe!
+
+python
+content_copy
+class Conta():
+    def __init__(self, numero, cpf, nomeTitular, saldo):
+        self.numero = numero
+        self.cpf = cpf
+        self.nomeTitular = nomeTitular
+        self.saldo = saldo
+        
+    def depositar(self, valor):
+        self.saldo += valor
+        
+    def sacar(self,valor):
+        if self.saldo < valor:
+            return False
+        else:
+            self.saldo -= valor
+            return True
+            
+    def gerar_extrato(self):
+        print(f"numero: {self.numero}\n cpf: {self.cpf}\nsaldo: {self.saldo}")     
+        
+def main():
+    c1 = Conta(1,1,"Joao",0)
+    c1.depositar(300)
+    saque = c1.sacar(400)
+    c1.gerar_extrato()
+    print(f"O saque foi realizado? {saque}")
+    
+
+if __name__ == "__main__": 
+    main()
+Método sacar com retorno.
+
+Agora questione-se: ao executar o comando c1.sacar(400), qual será o retorno?
+
+O retorno do comando c1.sacar(400), seria
+ads_clickﾠClique em um dos botões para responder.
+
+
+
+Referências entre objetos na memória
+Uma classe pode ter mais de uma ou várias instâncias de objetos na memória, como demonstra o código a seguir.
+
+python
+content_copy
+from Conta import Conta
+conta1 = Conta(1, 123, “Joao”,0)
+conta2 = Conta(3, 456, “Maria”,0)
+Criação de dois objetos.
+
+O resultado na memória após a execução é apresentado na imagem.
+
+
+Estado da memória conta1 e conta2.
+
+Na memória, foram criados dois objetos diferentes referenciados pelas variáveis conta1 e conta2 do tipo conta. Os operadores “==” e “!=” comparam se as duas variáveis de referência apontam para o mesmo endereço de memória (Caelum, 2020).
+
+>>>if (conta1 != conta2):
+... print("Endereços diferentes de memória")
+
+Pelo esquema da memória apresentado na imagem, realmente conta1 e conta2 apontam para endereços diferentes de memória. O comando “=” realiza o trabalho de igualar a posição de duas referências na memória.
+
+Fazendo conta1 = conta2, podemos ver este resultado:
+
+conta1 = conta2
+if (conta1 == conta2):
+... print("enderecos iguais de memoria")
+
+Observe na imagem.
+
+
+Estado da memória conta1 e conta2 no mesmo endereço.
+
+Se executarmos os comandos referenciando o CPF da conta, verificaremos que eles possuem os mesmos valores.
+
+>>>conta1.cpf
+456
+>>> conta2.cpf
+456
+
+Esse exemplo pode ser estendido para realizar uma transferência de valores de uma conta para outra. A segunda conta precisa ser passada como parâmetro do método para a transferência ser executada.
+
+O método deve ser apresentado como mostraremos a seguir.
+
+python
+content_copy
+class Conta:
+   def __init__(self, numero, cpf, nomeTitular, saldo):
+      self.numero = numero
+      self.cpf = cpf
+      self.nomeTitular = nomeTitular
+      self.saldo = saldo
+   def depositar(self, valor):
+      self.saldo += valor
+   def sacar(self, valor):
+      if self.saldo < valor:
+         return False
+      else:
+         self.saldo -= valor
+         return True
+   def gerar_extrato(self):
+        print(f"numero:{self.numero}\n     cpf:{self.cpf}\nsaldo:{selfsaldo}")
+   def transfereValor(self, contaDestino, valor):
+        if self.saldo < valor:
+           return ("Não existe saldo suficiente")
+        else:
+           contaDestino.depositar(valor)
+           self.saldo -= valor
+           return("Transferencia Realizada")
+Classe Conta com transferência.
+
+Observe!
+
+>>>from Conta import Conta
+... conta1 = Conta(1, 123,'Joao',0)
+... conta2 = Conta(3, 456,'Maria',0)
+... conta1.depositar(1000)
+... conta1.transfereValor(conta2,500)
+... print(conta1.saldo)
+... print(conta2.saldo)
+500
+500
+
+Em resumo, 1.000 reais foram depositados na conta1, enquanto foi realizada uma transferência no valor de 500 reais para a conta2. No final, o saldo ficou 500 para conta1 e 500 para conta2.
+
+Devemos ressaltar que, no comando conta1.transfereValor(conta2,500), é passada uma referência da conta2 para o objeto contaDestino por meio de um operador “=”. O comando contaDestino = conta2 é executado internamente no Python.

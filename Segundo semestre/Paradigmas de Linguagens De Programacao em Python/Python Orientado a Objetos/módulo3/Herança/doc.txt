@@ -1,0 +1,231 @@
+Herança
+Herança em Python permite que uma classe derive características e comportamentos de outra, promovendo reutilização e organização de código. Neste conteúdo, exploraremos como implementar herança, criando hierarquias de classes que facilitam a manutenção e a extensão de aplicações. Descubra como herança pode tornar seu código mais modular e eficiente.
+
+Neste vídeo, falaremos sobre a implementação da herança na orientação a objetos, que envolve criar uma classe derivada que herda atributos e métodos de uma classe base, permitindo reutilização de código e extensão de funcionalidades existentes. Confira!
+
+
+Implementando herança
+É um dos princípios mais importantes da programação orientada a objetos, pois permite a reutilização de código com a possiblidade de extensão para se ajustar às regras de negócio dos sistemas.
+
+Imagine que a área de produtos de um banco define quais clientes podem ter acesso a um produto chamado Conta especial, que visa atender quem possui conta na instituição há mais de um ano. Na visão de negócios, a conta especial possui a funcionalidade de permitir o saque até um certo limite, que é determinado na criação da conta. Nesse ponto, há um dos grandes ganhos da orientação a objetos.
+
+
+Pessoa utilizando caixa eletrônico.
+
+O objeto do mundo real conta especial será mapeado para uma classe ContaEspecial, a qual, por sua vez, herdará todo código de conta, conforme mostra a imagem.
+
+
+Herança Conta -> ContaEspecial.
+
+Agora, veja o código da implementação da nova classe Conta Especial.
+
+python
+content_copy
+
+Classe ContaEspecial.
+
+Analisando o código ContaEspecial acima, observam-se as seguintes modificações.
+
+looks_one
+Método construtor __init__-
+A classe tem de ser instanciada com a passagem do limite como um parâmetro da construção do objeto. O método __Init__ foi sobrescrito da superclasse Conta. Já o método super(), que foi utilizado para chamar um método da superclasse, pode ser usado em qualquer método da subclasse (Real Phyton, 2020). A orientação a objetos permite inclusive a reutilização do construtor da classe pai (linha 6).
+
+looks_two
+Atributo limite
+Adicionado apenas na subclasse ContaEspecial, em que ele será utilizado para implementar a regra de saques além do valor do saldo (linha 7).
+
+looks_3
+Método sacar()
+O método precisa verificar se o valor a ser sacado, passado como parâmetro, é menor que a soma do saldo atual mais o limite da conta especial. Nesse caso, a classe Conta Especial reescreveu o método sacar da superclasse Conta. Essa característica é conhecida como sobrescrita (override) dos métodos (linha 9).
+
+Vamos analisar o seguinte trecho de código que instancia as classes Conta e ContaEspecial.
+
+python
+content_copy
+from Conta import Conta
+import datetime
+
+class ContaEspecial(Conta):
+    def __init__(self, clientes, numero, saldo, limite):
+        super().__init__(clientes, numero, saldo)
+        self.limite = limite
+
+    def sacar(self, valor):
+        if (self.saldo + self.limite) < valor:
+            print(f"Não existe saldo suficiente conta numero {self.numero} cliente {self.clientes.cpf}")
+            return False
+        else:
+            self.saldo -= valor
+            if (self.saldo < 0):
+                self.limite += self.saldo
+            self.extrato.transacoes.append(["SAQUE", valor, datetime.datetime.today()])
+            return True
+A saída do programa será:
+
+python
+content_copy
+from Cliente import Cliente
+from Conta import Conta
+from ContaEspecial import ContaEspecial
+
+cliente1 = Cliente("123", "Joao", "Rua X")
+cliente2 = Cliente("456", "Maria", "Rua W")
+cliente3 = Cliente("789", "Joana", "Rua H")
+
+#As três contas foram iniciadas, as contas comuns com saldo 2000 e a contaEspecial 1000
+conta1 = Conta(cliente2, 1, 2000)
+conta2 = Conta(cliente2, 2, 2000)
+conta3 = ContaEspecial(cliente3, 3, 1000, 2000)
+
+#impresso o saldo das três contas
+print(f"Cliente: {cliente1.cpf} da conta comum {conta1.numero} possui saldo R$ {conta1.saldo}")
+print(f"Cliente: {cliente2.cpf} da conta comum {conta2.numero} possui saldo R$ {conta2.saldo}")
+print(f"Cliente: {cliente3.cpf} da conta especial {conta3.numero} possui saldo R$ {conta3.saldo} e limite R$ {conta3.limite}\n")
+
+#depositou 500 e tentou sacar 3000 da conta comum que não terá saldo
+conta2.depositar(500)
+#mensagem indicando saldo após depósito
+print(f"Cliente: {cliente2.cpf} da conta comum {conta2.numero} possui saldo R$ {conta2.saldo} \n")
+
+conta2.sacar(3000)
+#mensagem indicando que não foi possível sacar e o saldo atual
+print(f"Cliente: {cliente2.cpf} da conta comum {conta2.numero} possui saldo R$ {conta2.saldo} \n")
+
+#depositou 100 e tentou sacar 2000 da conta especial que tem limite
+conta3.depositar(100)
+#mensagem indicando saldo após depósito
+print(f"Cliente: {cliente3.cpf} da conta especal {conta3.numero} possui saldo R$ {conta3.saldo} e limite {conta3.limite}\n")
+
+conta3.sacar(2000)
+#mensagem indicando que foi possível sacar e saldo negativo
+print(f"Cliente: {cliente3.cpf} da conta especal {conta3.numero} possui saldo R$ {conta3.saldo} e limite {conta3.limite}\n")
+
+#tentativa de saque acima do limite
+conta3.sacar(2000)
+print(f"Cliente: {cliente3.cpf} da conta comum {conta3.numero} possui saldo R$ {conta3.saldo} e limite R$ {conta3.limite}\n") 
+
+Vamos entender a execução do programa.
+
+O programa começa com a criação de três clientes: João (cliente1), Maria(cliente2) e Joana(cliente3). Cada cliente é identificado por seu CPF, nome e endereço.
+
+Em seguida, o programa cria três contas bancárias:
+
+Conta1: Uma conta comum para João, com um saldo inicial de R$ 2000.
+Conta2: Outra conta comum, desta vez para Maria, também com um saldo inicial de R$ 2000.
+Conta3: Uma conta especial para Joana, que tem um saldo inicial de R$ 1000 e um limite de crédito adicional de R$ 2000.
+Exibição dos Saldos Iniciais
+Antes de realizar qualquer transação, o programa imprime os saldos iniciais das três contas. Essa ação permite que o usuário visualize o estado inicial de cada conta. Em particular, a conta especial de Joana é destacada por seu limite de crédito, além do saldo inicial.
+
+Operações Bancárias
+A primeira operação realizada no programa é um depósito de R$ 500 na conta de Maria. Este depósito é simples e direto, aumentando o saldo de Maria para R$ 2500. Logo após, o programa tenta realizar um saque de R$ 3000 da mesma conta.
+
+No entanto, como o saldo de Maria não é suficiente para cobrir esse saque, a operação falha. O saldo permanece inalterado em R$ 2500, e o programa informa ao usuário que o saque não foi possível devido ao saldo insuficiente.
+
+Na sequência, o programa foca na conta especial de Joana. Primeiro, R$ 100 são depositados, elevando o saldo de Joana para R$ 1100. Em seguida, o programa realiza um saque de R$ 2000. Como esse valor excede o saldo disponível, a conta entra no limite de crédito, resultando em um saldo negativo de R$ -900 e reduzindo o limite de crédito de Joana para R$ 1100. O sistema permite essa transação e atualiza os valores adequadamente, refletindo o uso do limite de crédito.
+
+Finalmente, o programa tenta realizar um segundo saque de R$ 2000 na conta de Joana, que já está utilizando parte de seu limite. Desta vez, o saque falha, pois o valor solicitado ultrapassa o limite de crédito restante. O programa então exibe uma mensagem informando que a operação não pode ser concluída e mantém os valores do saldo e do limite inalterados.
+
+
+Herança Conta -> ContaEspecial.
+
+A ContaEspecial é uma classe comum e pode ser instanciada como todas as outras classes independentes da instanciação de objetos da classe Conta.
+
+assignment_ind
+Comentário
+Uma análise comparativa com a programação procedural indica que, mesmo em casos com código parecido, o reuso era bastante baixo. O programador tinha de criar um programa Conta Corrente Especial repetindo todo o código já definido no programa Conta Corrente. Com a duplicação do código, era necessário realizar a manutenção de dois códigos parecidos em dois programas diferentes.
+
+Herança múltipla
+É um mecanismo que possibilita a uma classe herdar o código de duas ou mais superclasses.
+
+A herança múltipla é implementada por poucas linguagens orientadas a objetos e insere uma complexidade adicional na arquitetura das linguagens.
+
+Para nosso sistema, vamos considerar a necessidade de um novo produto, que consiste em uma conta corrente similar àquela definida anteriormente no sistema, com as seguintes características.
+
+looks_one
+Deverá ter um rendimento diário com base no rendimento da conta-poupança.
+
+looks_two
+Terá de ser cobrada uma taxa de manutenção mensal, mesmo se o rendimento for de apenas um dia.
+
+A Classe Poupança também será criada para armazenar a taxa de renumeração e o cálculo do rendimento mensal da poupança.
+
+Este será o diagrama com as novas classes criadas no sistema de conta corrente, observe!
+
+
+Herança múltipla.
+
+A implementação da classe ContaPoupanca está detalhada a seguir.
+
+python
+content_copy
+import datetime
+
+
+class Poupanca:
+    def __init__(self, taxa_remuneracao):
+        self.taxaremuneracaoMes = taxa_remuneracao
+        self.data_abertura = datetime.datetime.today()
+
+    def remuneraConta(self):
+        self.saldo += self.saldo * self.taxaremuneracaoMes
+Conta-poupança.
+
+Veja agora a implementação da classe ContaRemuneradaPoupanca.
+
+python
+content_copy
+from Conta import Conta
+from Poupanca import Poupanca
+
+class ContaRemuneradaPoupanca(Conta, Poupanca):
+    def __init__(self, taxa_remuneracao, clientes, numero, saldo):
+        Conta.__init__(self, clientes, numero, saldo)
+        Poupanca.__init__(self, taxa_remuneracao)
+
+    def remuneraConta(self):
+        self.saldo += self.saldo * (self.taxaremuneracaoMes / 30)
+Conta remunerada.
+
+Observe alguns pontos importantes sobre a implementação.
+
+
+
+Vamos analisar o programa abaixo.
+
+python
+content_copy
+from Cliente import Cliente
+from Conta import Conta
+from Poupanca import Poupanca
+from ContaRemuneradaPoupanca import ContaRemuneradaPoupanca
+
+cliente1 = Cliente("123", "Joao", "Rua X")
+cliente2 = Cliente("456", "Maria", "Rua W")
+
+conta1 = Conta([cliente1, cliente2], 1, 2000)
+contapoupanca1 = Poupanca(0.1)
+contaremunerada1 = ContaRemuneradaPoupanca(0.1, [cliente1], 5, 1000)
+
+contaremunerada1.remuneraConta()
+contaremunerada1.gerar_saldo()
+A saída do programa será:
+
+python
+content_copy
+numero: 5
+saldo: 1003.3333333333334
+O programa cria dois clientes, João(cliente1) e Maria(cliente2), que são representados por objetos da classe Cliente.
+
+A seguir, o programa cria três tipos distintos de contas bancárias. A primeira conta, associada a João e Maria, é uma conta bancária tradicional (conta1) com um saldo inicial de R$ 2000. Essa conta é criada utilizando a classe Conta.
+
+Paralelamente, uma segunda conta é criada usando a classe Poupanca (contapoupanca1). Esta conta é especial, pois é definida com uma taxa de remuneração mensal de 10%. Embora não seja diretamente associada a um cliente ou saldo inicial neste cenário, a criação da conta poupança serve para ilustrar como a remuneração pode ser aplicada a um saldo ao longo do tempo.
+
+A terceira conta, no entanto, é a mais interessante. Criada para João (contaremunerada1), a ContaRemuneradaPoupanca combina as características de uma conta tradicional com os benefícios de uma conta poupança.
+
+Com um saldo inicial de R$ 1000 e uma taxa de remuneração de 10% ao mês, essa conta não só permite operações bancárias comuns, como também aplica uma remuneração diária ao saldo, destacando a flexibilidade e o poder da herança múltipla utilizada na definição da classe ContaRemuneradaPoupanca.
+
+Após a criação das contas, o programa aplica a remuneração à conta remunerada de poupança de João. O método remuneraConta é chamado, e o saldo de R$ 1000 é ajustado com a remuneração diária baseada na taxa mensal.
+
+Especificamente, a remuneração é calculada dividindo a taxa mensal por 30 dias, resultando em um acréscimo de aproximadamente R$ 3,33 ao saldo original.
+
+Finalmente, o programa exibe o saldo atualizado da conta remunerada de João. Após a aplicação da remuneração, o saldo da conta é apresentado como R$ 1003,33, confirmando que a remuneração foi corretamente aplicada.

@@ -1,0 +1,15 @@
+Erros e exceções na prática
+A interpretação e execução de programas podem gerar erros em tempo de execução ou de sintaxe em tempo de interpretação. Vejamos agora alguns exemplos de erros e como podemos fazer a correção.
+
+Assista ao vídeo e pratique a implementação do controle de erros e exceções utilizando a linguagem de programação Python.
+
+Você pode obter aqui os arquivos-fonte do Python com os erros a serem vistos no vídeo.
+
+
+Roteiro de prática
+Para realizar o exercício, siga o passo a passo.
+
+Abra os arquivos chamados erro1, erro2, erro3, erro4 e erro5.
+Tente executar e veja os erros que eles contêm.
+Realize as correções nos arquivos e execute o exercício.
+Você pode obter aqui os arquivos-fonte do Python gerado no vídeo com as correções.

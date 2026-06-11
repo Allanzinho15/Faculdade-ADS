@@ -1,0 +1,35 @@
+Constantes
+Em Python, não existe um tipo de dado específico para constantes como em algumas outras linguagens de programação. No entanto, é comum utilizar variáveis com nomes em letras maiúsculas para representar valores que não devem ser alterados ao longo do programa, seguindo uma convenção de nomenclatura para indicar que são constantes. Embora essas variáveis ainda possam ser reatribuídas, a prática de nomeá-las em letras maiúsculas ajuda a indicar sua intenção de serem tratadas como constantes. Apesar de Python não impor a imutabilidade das constantes, essa convenção contribui para tornar o código mais claro e legível, facilitando a manutenção e compreensão do programa.
+
+No vídeo a seguir, falaremos sobre constantes em Python. Nessa linguagem, não existem constantes no sentido estrito, mas convenções de nomenclatura que são frequentemente utilizadas para indicar que um valor deve ser tratado como constante, embora ainda seja possível modificá-lo. Acompanhe!
+
+
+Definição
+Em Python, não existe o conceito de constante. Se você precisar de uma constante ao longo de sua jornada como programador, atribua o valor a uma variável e tome cuidado para não mudar esse valor.
+
+Inicie o nome dessa variável com c_ ou utilize todas as letras maiúsculas, o que vai diferenciar essa variável das outras.
+
+extension
+Exemplo
+É possível utilizar a expressão c_PI = 3.141592 para armazenar o valor de PI e agilizar o cálculo de área e perímetro de um círculo, ou utilizar a expressão PRECISION = 0.001 para armazenar a precisão a ser utilizada em qualquer cálculo matemático no seu programa.
+
+Veja outro exemplo no código a seguir.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+# Definição de uma constante numérica
+CONSTANTE_NUMERICA = 10
+
+# Utilizando a constante
+resultado = CONSTANTE_NUMERICA * 5
+print(resultado)
+python3
+
+Input
+Console
+Aqui, CONSTANTE_NUMERICA é definida com o valor 10 e é utilizada na multiplicação. Note que, apesar de ser uma constante, seu valor não é imutável. Se desejar criar uma constante verdadeiramente imutável, você pode usar a biblioteca constant ou o decorador @final do módulo typing (disponível a partir do Python 3.8).
+
+Fique atento ao uso correto das variáveis, especialmente observando as questões de escopo e visibilidade, para evitar que algum cálculo seja realizado corretamente, mas com resultado diferente do esperado por você ao programar.

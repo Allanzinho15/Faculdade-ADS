@@ -1,0 +1,78 @@
+Importação de funções e módulos
+Vamos explorar a importação de funções e módulos em Python! Você aprenderá a importar bibliotecas nativas da linguagem e a utilizar funções importadas em seu programa. Isso ampliará sua capacidade de desenvolvimento e facilitará a reutilização de código.
+
+Neste vídeo, falaremos sobre a importação de funções e módulos na linguagem de programação Python, biblioteca padrão Python e de como usar uma função de módulo importado. Confira!
+
+
+Biblioteca padrão Python
+Python oferece, em seu núcleo, algumas funções que já utilizamos, como print() e input(), além de classes, como int, float e str. Logicamente, o núcleo da linguagem Python disponibiliza muitas outras funções (ou métodos) e classes além das citadas. Mas, ainda assim, ele é pequeno, tendo o objetivo de simplificar o uso e ganhar eficiência.
+
+Para aumentar a disponibilidade de funções, métodos e classes, o desenvolvedor pode usar a biblioteca padrão Python. Neste material, apresentaremos alguns dos principais recursos dessa biblioteca e a forma de utilizá-los.
+
+
+Logomarca Python em tela de computador.
+
+A biblioteca padrão Python (Python Standard Library) consiste em milhares de funções, métodos e classes relacionados a determinada finalidade e organizados em componentes chamados de módulos. Há mais de 200 módulos que dão suporte, entre outras coisas, a:
+
+Operações matemáticas.
+Interface gráfica com o usuário (GUI).
+Funções matemáticas e geração de números pseudoaleatórios.
+Lembre-se dos conceitos de classes e objetos, pois eles são os principais conceitos do paradigma de programação orientada a objeto.
+
+As classes são fábricas, que podem gerar instâncias chamadas objetos.
+
+Uma classe Pessoa, por exemplo, pode ter como atributos nome e CPF. Ao gerar uma instância de Pessoa com nome João da Silva e CPF 000.000.000-00, há um objeto.
+
+wb_incandescent
+Dica
+Para compreender mais os conceitos de classe e objeto, pesquise sobre o paradigma orientado a objeto.
+
+Como usar uma função de módulo importado
+Para usar as funções e os métodos de um módulo, são necessários dois passos. Acompanhe!
+
+looks_one
+Fazer a importação do módulo desejado com a instrução:
+
+import nome_modulo
+
+looks_two
+Chamar a função desejada, precedida do nome do módulo, com a instrução:
+
+nome_modulo.nome_funcao(paramêtros)
+
+Como exemplo, vamos importar o módulo math (dedicado a operações matemáticas) e calcular a raiz quadrada de 5 por meio da função sqrt(). Clique em Executar e observe o uso do math no próximo código (trata-se do código 22 no arquivo disponibilizado).
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+import math
+
+x = math.sqrt(5)
+print(x)
+Input
+Digite cada input em uma linha.
+Console
+A partir desse ponto, serão apresentados os principais aspectos dos módulos a seguir.
+
+calculate
+math
+Usado para operações matemáticas.
+
+shuffle
+random
+Usado para gerar números pseudoaleatórios.
+
+mail
+smtplib
+Usado para permitir envio de e-mails.
+
+timer
+time
+Usado para implementar contadores temporais.
+
+image
+tkinter
+Usado para desenvolver interfaces gráficas.

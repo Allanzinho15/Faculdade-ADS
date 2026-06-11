@@ -1,0 +1,200 @@
+Classe abstrata e classe para tratamento de exceções
+Classes abstratas em Python fornecem uma estrutura para outras classes, definindo métodos que devem ser implementados pelas subclasses. Já as classes para tratamento de exceções facilitam a criação de exceções personalizadas, melhorando o manejo de erros. Neste conteúdo, abordaremos como usar classes abstratas e criar classes de exceção, fortalecendo a robustez e a clareza do seu código.
+
+No vídeo a seguir, falaremos sobre a implementação de classes abstratas e tratamento de exceções na linguagem de programação Python. Acompanhe!
+
+
+Classes abstratas
+Definir uma classe abstrata é uma característica bastante utilizada pela programação orientada a objetos. Falaremos sobre esse tipo de classe a seguir.
+
+Uma classe abstrata não pode ser instanciado durante a execução do programa orientado a objetos, ou seja, não pode haver objetos dessa classe executados na memória.
+
+O termo “abstrato” remete a um conceito do mundo real, considerando a necessidade apenas de objetos concretos no programa. A classe abstrata se encaixa perfeitamente no problema do sistema de conta corrente do banco. Nesse sistema, o banco não quer tratar de clientes do tipo ContaCliente, e sim apenas dos objetos do tipo ContaComum e Conta VIP.
+
+Observe a imagem.
+
+
+Diagrama de classes abstratas.
+
+Houve apenas a adição de esteréotipo <> para indicar que Conta Cliente é uma classe abstrata. O Python utiliza um módulo chamado abc para definir uma classe como abstrata, a qual será herdeira da superclasse ABC (Abstract Base Classes).
+
+Toda classe abstrata é uma subclasse da classe ABC (Caelum, 2020). Para tornar a classe Conta Cliente abstrata, muda-se sua definição. Observe no código a seguir.
+
+python
+content_copy
+
+Definição de classe abstrata.
+
+Para uma classe ser considerada abstrata, ela precisa ter pelo menos um método abstrato. Esse método pode ter implementação, embora isso não faça sentido, pois ele deverá obrigatoriamente ser implementado pelas subclasses. Em nosso exemplo, como não teremos o ContaCliente, tal conta não terá Calculo do rendimento.
+
+O decorator @abstractmethod indica para a linguagem que o método é abstrato (Standard Library, 2020), o que ocorre no código a seguir.
+
+python
+content_copy
+from abc import ABC
+class ContaCliente(ABC):
+
+class ContaCliente(ABC):
+    def __init__(self, numero, IOF, IR, valor_investido, taxa_rendimento):
+        self.numero = numero
+        self.IOF = IOF
+        self.IR = IR
+        self.valor_investido = valor_investido
+        self.taxa_rendimento = taxa_rendimento
+
+    @abstractmethod
+    def calculo_rendimento(self):
+        pass
+Definição de método abstrato.
+
+Quando se tentar instanciar um objeto da classe, será obtido um erro indicando que essa classe não pode ser instanciada.
+
+Faça o teste! No emulador, insira a linha de código abaixo e clique em Executar.
+
+cc1 = ContaCliente(1, 0.1, 0.25, 1000, 0.1)
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+from abc import ABC, abstractmethod
+
+class ContaCliente(ABC):
+    def __init__(self, numero, IOF, IR, valor_investido, taxa_rendimento):
+        self.numero = numero
+        self.IOF = IOF
+        self.IR = IR
+        self.valor_investido = valor_investido
+        self.taxa_rendimento = taxa_rendimento
+
+    @abstractmethod
+    def calculo_rendimento(self):
+        pass
+Input
+Digite cada input em uma linha.
+Console
+Ao tentar criar uma instância de ContaCliente com cc1 = ContaCliente(1, 0.1, 0.25, 1000, 0.1), o Python irá lançar um erro do tipo TypeError. Esse erro ocorre porque ContaCliente é uma classe abstrata e possui métodos abstratos que não foram implementados.
+
+Para que o código funcione, você deve criar uma subclasse concreta de ContaCliente que implemente o método calculo_rendimento. Somente depois disso, você poderá instanciar essa subclasse.
+
+Considerando a modelagem que estamos utilizando, apenas as subclasses ContaComum e ContaVIP podem ser instanciadas.
+
+As classes mencionadas devem obrigatoriamente implementar os métodos. Caso contrário, elas serão classes abstratas e delegarão para as suas subclasses a implementação concreta do método abstrato.
+
+Uma solução seria:
+
+python
+content_copy
+class ContaComum(ContaCliente):
+    def calculo_rendimento(self):
+        # Implementação fictícia para cálculo de rendimento
+        return self.valor_investido * self.taxa_rendimento - (self.IOF + self.IR)
+
+# Instanciando a subclasse concreta
+cc1 = ContaComum(1, 0.1, 0.25, 1000, 0.1)
+print(cc1.calculo_rendimento()) 
+
+verified
+Recomendação
+Como exercício, crie as classes concretas ContaComum e ContaVIP sem implementar o método abstrato do superclasse ContaCliente.
+
+Tratamento de Exceções em Python: Conceitos e Práticas
+No desenvolvimento de software, lidar com situações imprevistas é uma necessidade constante. Em Python, essas situações são tratadas por meio de exceções, que representam eventos inesperados capazes de interromper o fluxo normal de um programa.
+
+O que São Exceções?
+Exceções são eventos que ocorrem durante a execução de um programa, interrompendo seu fluxo normal. Em Python, quando uma exceção é lançada e não é tratada, o programa encerra sua execução abruptamente, exibindo uma mensagem de erro. Para evitar esse comportamento indesejado, é fundamental entender como capturar e tratar exceções, garantindo que o programa continue funcionando de forma controlada.
+
+Além disso, Python permite a criação de exceções personalizadas, o que possibilita a diferenciação entre os erros inerentes à linguagem e aqueles específicos da lógica da aplicação. Isso contribui para um código mais claro e fácil de manter.
+
+Tratamento de Exceções: Divisão por Zero
+Um exemplo clássico de exceção ocorre ao tentar realizar uma divisão por zero, o que em Python resulta na exceção ZeroDivisionError. Para ilustrar o tratamento desse tipo de erro, considere o seguinte exemplo:
+
+python
+content_copy
+def divide(a, b):
+    return a / b
+
+try:
+    resultado = divide(10, 0)
+except ZeroDivisionError as ex:
+    print(f"Erro: {ex}") 
+Neste código, ao tentar dividir 10 por 0, Python lança uma exceção ZeroDivisionError. O bloco try...except captura essa exceção, permitindo que o programa lide com o erro de forma controlada, imprimindo uma mensagem de erro personalizada em vez de interromper a execução do programa.
+
+Criando Exceções Personalizadas
+Python também permite a criação de exceções personalizadas, que são úteis quando se deseja capturar e tratar erros específicos de um determinado contexto da aplicação. Para criar uma exceção personalizada, utilizamos a herança da classe Exception, conforme o exemplo a seguir:
+
+python
+content_copy
+class ExcecaoCustomizada(Exception):
+    pass 
+A classe ExcecaoCustomizada define uma nova exceção que pode ser lançada e tratada separadamente das exceções padrão de Python. O uso do comando pass indica que não há necessidade de adicionar comportamento específico à exceção; a distinção pelo nome é o suficiente.
+
+Lançando Exceções
+Uma vez que uma exceção personalizada tenha sido criada, ela pode ser lançada em situações específicas, usando a instrução raise. Considere o exemplo abaixo, onde um método lança a exceção ExcecaoCustomizada caso o valor passado seja negativo:
+
+python
+content_copy
+def checa_valor(valor):
+    if valor < 0:
+        raise ExcecaoCustomizada("Valor não pode ser negativo!")
+Neste exemplo, ao detectar um valor negativo, a função checa_valor interrompe sua execução normal e lança a exceção ExcecaoCustomizada, transmitindo uma mensagem explicativa. Esse mecanismo é essencial para garantir que condições indesejadas sejam tratadas adequadamente.
+
+Tratando Exceções com try...except
+Uma vez que uma exceção tenha sido lançada, é importante saber como tratá-la. O bloco try...except é a ferramenta adequada para esse propósito:
+
+python
+content_copy
+try:
+    checa_valor(-10)
+except ExcecaoCustomizada as ex:
+    print(f"Exceção lançada: {ex}") 
+
+Neste código, a função checa_valor é chamada com um valor negativo, o que resulta na exceção ExcecaoCustomizada sendo lançada. O bloco try...except captura essa exceção, e o programa trata o erro de forma controlada, exibindo a mensagem associada à exceção.
+
+Vamos a um exemplo!
+
+Neste exemplo, definimos uma exceção personalizada chamada ExcecaoCustomizada, criamos funções que podem lançar essa exceção e outras exceções comuns, e, em seguida, tratamos essas exceções usando blocos try...except.
+
+Execute o código a seguir e veja o resultado!
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+class ExcecaoCustomizada(Exception):
+    pass
+
+def checa_valor(valor):
+    if valor < 0:
+        raise ExcecaoCustomizada("Valor não pode ser negativo!")
+
+def divide(a, b):
+    return a / b
+
+
+try:
+    resultado = divide(10, 0)
+except ZeroDivisionError as ex:
+    print(f"Erro de divisão por zero: {ex}")
+
+try:
+    checa_valor(-10)
+except ExcecaoCustomizada as ex:
+    print(f"Exceção personalizada lançada: {ex}")
+Input
+Console
+Neste código, temos três componentes principais:
+
+Definição da Exceção Personalizada:
+A classe ExcecaoCustomizada é criada para representar uma exceção específica que pode ser lançada em nosso código. Ela herda de Exception, a classe base para todas as exceções em Python. Isso permite que ExcecaoCustomizada seja usada e tratada como qualquer outra exceção no Python.
+Funções que Podem Lançar Exceções:
+A função checa_valor(valor) verifica se um valor é negativo. Se for, ela lança uma ExcecaoCustomizada com uma mensagem explicativa.
+A função divide(a, b) realiza a divisão de dois números. Se b for zero, o Python automaticamente lança uma ZeroDivisionError.
+Tratamento de Exceções:
+O bloco try...except é utilizado para tentar executar as funções e capturar qualquer exceção que seja lançada. No primeiro bloco, tentamos dividir 10 por 0, o que gera uma ZeroDivisionError. Essa exceção é capturada e uma mensagem de erro é exibida.
+No segundo bloco try...except, chamamos checa_valor(-10), o que resulta na exceção personalizada ExcecaoCustomizada sendo lançada. O bloco except captura essa exceção e exibe a mensagem associada.
+O tratamento de exceções é uma prática fundamental na programação em Python, permitindo que os programas sejam mais robustos e resilientes a erros. Esse exemplo destaca a flexibilidade de Python em permitir a criação de exceções personalizadas, que podem ser utilizadas para capturar e tratar condições específicas da lógica do seu programa. Isso é especialmente útil em projetos maiores, onde a clareza e a especificidade dos erros são cruciais para a manutenção e depuração do código.

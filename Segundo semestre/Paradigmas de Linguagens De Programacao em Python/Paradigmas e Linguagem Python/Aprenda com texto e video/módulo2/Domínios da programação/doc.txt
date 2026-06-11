@@ -1,0 +1,47 @@
+Domínios da programação
+Vamos explorar agora os diversos domínios da programação, desde o desenvolvimento web e móvel até a inteligência artificial. Compreender esses domínios permite identificar as linguagens e tecnologias mais adequadas a cada área, facilitando a criação de soluções eficientes e inovadoras. Vamos conferir como diferentes linguagens de programação são aplicadas em contextos específicos, permitindo uma escolha informada da ferramenta certa para resolver problemas complexos em variados setores da indústria.
+
+Neste vídeo, falaremos sobre os principais domínios da programação atualmente. Acompanhe!
+
+
+O computador tem sido usado para diversos fins, na ciência, nas forças armadas, nas empresas públicas e privadas, pelos profissionais liberais, pelas pessoas em seus lazeres e onde mais possa ser aplicado. Seu uso vai desde o controle de robôs que fazem a montagem de automóveis em suas linhas de montagem até jogos digitais. Em função desse uso adverso, surgiram linguagens de programação com diferentes objetivos.
+
+A seguir, discutiremos as principais áreas e as respectivas linguagens de programação em destaque.
+
+Aplicações científicas (máquinas de calcular com alta precisão)
+O primeiro computador, o ENIAC, foi desenvolvido por três anos e ficou pronto em 1946. Sua principal finalidade eram cálculos balísticos. Os computadores seguintes, nas décadas de 1940 e 1950, também focaram em cálculos científicos complexos.
+
+As linguagens de programação nessa época eram a linguagem de máquina e Assembly.
+
+
+Computador ENIAC.
+
+Na década de 1960 surgem as primeiras linguagens de programação de alto nível, com destaque para Fortran (iniciais de FORmula TRANslator) e posteriormente para ALGOL60. As principais características dessas linguagens eram:
+
+Estruturas de dados simples.
+Alto volume de cálculos com aritmética de ponto flutuante (precisão).
+Preocupação com a eficiência, pois sucederam a linguagem Assembly.
+Aplicações comerciais
+A segunda onda de aplicativos foi para suprir as demandas das empresas a partir de meados da década de 1950.
+
+Em 1960, surge a linguagem que seria o ícone das aplicações comerciais de computadores de grande porte, naquele momento, o COBOL.
+
+As linguagens de programação que apoiaram o crescimento das aplicações comerciais têm como características:
+
+Facilidade para produzir relatórios, fundamentais nos controles das operações contábeis, bancárias, estoque e financeiras (primeiros focos da época).
+Precisão com números decimais e ponto flutuante, para representar as altas cifras das grandes empresas, as primeiras a investirem nessas aplicações.
+Capacidade de especificar operações aritméticas comerciais.
+Cabe destacar que as linguagens destinadas a aplicações comerciais ganham força com a microcomputação a partir dos anos 1980, levando as aplicações comerciais aos médios e pequenos empresários.
+
+Aplicações com inteligência artificial
+As linguagens que sustentam o desenvolvimento de aplicações apoiadas na inteligência artificial (IA) ganham força nos dias de hoje.
+
+A grande ruptura no pensamento computacional acontece quando surgem as linguagens que apoiam a IA usando computação simbólica e não numérica, como a maioria das linguagens da época. Conheça dois marcos importantes do surgimento dessas linguagens.
+
+computer
+1959
+Surge a Lisp, primeira linguagem projetada para apoio à computação simbólica, primeira referência da computação funcional.
+
+psychology
+1977
+Surge a Prolog, primeira linguagem de apoio da computação lógica, essência dos sistemas especialistas.

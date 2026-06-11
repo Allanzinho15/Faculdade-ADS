@@ -1,0 +1,31 @@
+
+Tipos de dados e expressões na prática
+Explorar as conversões de tipos em Python é essencial para aprimorar suas habilidades de programação. Ao compreender como o Python manipula diferentes tipos de dados e realiza conversões automáticas entre eles, você estará mais preparado para desenvolver programas eficientes e precisos. Com exemplos práticos e exercícios simples, você poderá consolidar seu entendimento sobre como converter entre tipos numéricos, strings e outros tipos de dados, preparando-se para enfrentar desafios mais complexos na programação. Coloque em prática seus conhecimentos e descubra o poder das conversões de tipos em Python.
+
+No vídeo a seguir, praticaremos a implementação de tipos de dados e expressões utilizando a linguagem de programação Python. Acompanhe!
+
+
+Roteiro de prática
+Vimos a importância da conversão de tipos em dados em Python. Esse tipo de situação é bastante comum na prática. Agora, vamos criar um exemplo simples que envolva conversões de tipos de dados e expressões em Python.
+
+Passo 1
+Vamos criar um programa que calcule a média de três notas fornecidas pelo usuário, mostrando o resultado final com duas casas decimais. Veja o código com o qual vamos trabalhar!
+
+python
+content_copy
+
+Veja as ações realizadas no exemplo.
+
+Solicitamos ao usuário que insira as três notas, utilizando a função input.
+Convertemos esses valores para o tipo float, pois a entrada padrão do input é uma string.
+Calculamos a média das notas utilizando a fórmula (nota1 + nota2 + nota3)/3.
+Exibimos o resultado da média ao usuário com duas casas decimais utilizando a formatação de string :.2f.
+Passo 2
+Confira a execução do código no Python Console e o respectivo resultado.
+
+
+Resultado da execução do programa.
+
+Esse exemplo é uma introdução prática às conversões de tipos de dados e expressões em Python, mostrando como podemos manipular diferentes tipos de dados e realizar cálculos simples de forma eficaz.
+
+Agora é a sua vez de praticar. Reveja o que estudou até aqui e pratique o que aprendeu!

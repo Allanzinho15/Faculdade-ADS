@@ -1,0 +1,85 @@
+Interpretação e sistemas híbridos
+A interpretação e os sistemas híbridos são métodos distintos de implementação das linguagens de programação. A interpretação envolve a execução direta do código-fonte por um interpretador, que traduz e executa cada instrução uma de cada vez. Esse método facilita a depuração e a execução em tempo real, mas pode ser menos eficiente. 
+
+Por outro lado, os sistemas híbridos combinam tradução e interpretação. O código é inicialmente compilado para um bytecode intermediário, que é posteriormente interpretado ou compilado para execução. Essa abordagem equilibra a eficiência da tradução com a flexibilidade da interpretação, oferecendo um desempenho otimizado e facilidades de depuração.
+
+Neste vídeo, falaremos sobre o processo de interpretação, no qual cada comando do programa-fonte é traduzido e executado imediatamente, e dos sistemas híbridos, que combina a execução rápida dos tradutores com a portabilidade dos interpretadores. Acompanhe!
+
+
+Interpretação
+A imagem a seguir ilustra o simples processo de Interpretação. Observe!
+
+
+Visão geral da interpretação.
+
+Na conversão por interpretação, cada comando do programa-fonte é traduzido e executado (um a um) imediatamente. O interpretador traduz um comando de cada vez e chama uma rotina para completar a sua execução.
+
+O interpretador é um programa que executa repetidamente a sequência que apresentaremos a seguir.
+
+looks_one
+Obter a próxima instrução do código-fonte.
+
+looks_two
+Interpretar a instrução (conversão para comandos em linguagem de máquina).
+
+looks_3
+Executar a instrução.
+
+Perceba que o procedimento é bastante similar àquele executado por computadores que implementam a máquina de Von Neumann, na execução de uma instrução. Confira a seguir.
+
+Obter a próxima instrução.
+CI → endereço da próxima instrução. CI = contador de instruções.
+RI → instrução a ser executada. RI = registrador de instruções.
+Decodificar a instrução.
+Executar a instrução.
+Conheça agora as características dos interpretadores.
+
+Atua a cada vez que o programa precisa ser executado.
+Não produz programa-objeto persistente.
+Não traduz instruções que nunca são executadas.
+Apresenta resultado da conversão instantaneamente: resultado da execução do comando ou exibição de erro – interpretador puro.
+É útil ao processo de depuração de código devido a mensagens de erros em tempo de execução (tanto análise sintática como semântica).
+Apresenta execução mais lenta do que outros processos de tradução (compilação), pois toda vez que o mesmo programa é executado, os mesmos passos de interpretação são executados.
+Consome menos memória.
+Apresenta código-fonte portátil.
+Não é gerado um código de máquina.
+Pode executar o comando em alto nível diretamente ou gerar um código intermediário, que é interpretado por uma máquina virtual (VM). – Interpretador híbrido.
+Se a máquina virtual foi desenvolvida para diferentes plataformas, temos a portabilidade do código-fonte. Este é o caso da linguagem Java.
+Tradução (Compilação) x Interpretação
+Na tabela a seguir, apresentaremos um comparativo entre tradutores (compiladores) e interpretadores. Confira!
+
+Vantagens	Desvantagens
+Tradutores (Compiladores)	
+Execução mais rápida
+Permite estruturas de programas mais complexas.
+Permite a otimização de código.
+Várias etapas de conversão.
+Programação final é maior, necessitando de mais memória para sua execução.
+Processo de correção de erros e depuração é mais demorado.
+Interpretadores	
+Depuração mais simples.
+Consome menos memória.
+Resultado imediato do programa (ou parte dele).
+Execução do programa é mais lenta.
+Estruturas de dados demasiado simples.
+Necessário fornecer o código fonte ao utilizador.
+Tabela: Comparação entre tradutores e interpretadores.
+Adaptado de codemastersufs.blogspot.com.
+
+Sistemas híbridos
+O processo híbrido de implementação de uma linguagem de programação combina a execução rápida dos tradutores (compiladores) com a portabilidade dos interpretadores. O segredo é a geração de um código intermediário mais facilmente interpretável, porém não preso a uma plataforma (SO/Hardware).
+
+Esse código intermediário não é específico para uma plataforma, possibilitando aos programas já compilados para esse código serem portados em diferentes plataformas, sem alterar e nem fazer nada. Para cada plataforma desejada devemos ter um interpretador desse código.
+
+Python e Java, duas importantes linguagens, implementaram o código intermediário, com diferentes formas usando máquinas virtuais.
+
+Sistema de implementação de Python
+Python usa um sistema híbrido, uma combinação de interpretador e tradutor (compilador). O compilador converte o código-fonte Python em um código intermediário, que roda em uma máquina virtual, a PVM (Python Virtual Machine).
+
+sms_failed
+Curiosidade
+Um código Python pode ser traduzido em Bytecode Java usando a implementação Jython.
+
+O interpretador converte para código de máquina, em tempo de execução. O compilador traduz o programa inteiro em código de máquina e o executa, gerando um arquivo que pode ser executado. O compilador gera um relatório de erros e o interpretador interrompe o processo quando localiza um erro.
+
+CPython é uma implementação da linguagem Python, um pacote com um compilador e um interpretador Python (Máquina Virtual Python), além de outras ferramentas para programar em Python.

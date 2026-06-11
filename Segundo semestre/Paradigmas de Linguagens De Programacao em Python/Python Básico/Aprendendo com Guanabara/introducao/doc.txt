@@ -1,0 +1,6 @@
+Introdução
+Neste conteúdo, você vai começar a sua jornada com Python. Serão os primeiros passos e as primeiras práticas que vão te introduzir ao universo da programação. Por que Python é tão popular? O que faz dela uma escolha tão comum entre os desenvolvedores? Vamos descobrir!
+
+play_circle
+Python básico
+No vídeo a seguir, apresentaremos o tema Python básico, ajudaremos a preparar seu ambiente de trabalho e abordaremos as formas de estudo. Confira!

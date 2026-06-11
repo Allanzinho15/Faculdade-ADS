@@ -1,0 +1,43 @@
+Erros em um programa Python
+Vamos agora identificar, compreender e lidar com diferentes tipos de erros: erros de sintaxe, exceções e falhas de lógica.
+
+Neste vídeo falaremos sobre como identificar, compreender e lidar com diferentes tipos de erros na linguagem de programação Python. Acompanhe!
+
+
+Erros e exceções
+Até agora consideramos que nossos programas tiveram seu fluxo de execução normal. Neste conteúdo, vamos analisar o que acontece quando o fluxo de execução é interrompido por uma exceção, além de controlar esse fluxo excepcional.
+
+Dois tipos básicos de erros podem acontecer em um programa em Python. Os erros de sintaxe são aqueles que ocorrem devido ao formato incorreto de uma instrução. Esses erros são descobertos pelo componente do interpretador Python, que é chamado analisador ou parser.
+
+Veja exemplos nas duas imagens a seguir.
+
+chevron_left
+chevron_right
+chevron_left
+1 de 2
+chevron_right
+Além deles, existem os erros que ocorrem em tempo de execução do programa, que não se devem a uma instrução escrita errada, e sim ao fato de que o programa entrou em um estado indevido.
+
+Elencamos os seguintes exemplos, observe!
+
+A divisão por 0.
+A tentativa de acessar um índice indevido em uma lista.
+Um nome de variável não atribuído.
+Um erro causado por tipos incorretos de operando.
+Em cada caso, quando o programa atinge um estado inválido, é dito que o interpretador Python levanta uma exceção. Isso significa que é criado um objeto que contém as informações relevantes sobre o erro.
+
+A tabela a seguir traz alguns tipos comuns de exceção. Conheça!
+
+Exceção	Explicação
+KeyboardInterrupt	Levantado quando o usuário pressiona CTRL+C, a combinação de interrupção.
+OverflowError	Levantado quando uma expressão de ponto flutuante é avaliada como um valor muito grande.
+ZeroDivisionError	Levantado quando se tenta dividir por 0.
+IOError	Levantado quando uma operação de entrada/saída falha por um motivo relacionado a isso.
+IndexError	Levantado quando um índice sequencial está fora do intervalo de índices válidos.
+NameError	Levantado quando se tenta avaliar um identificador (nome) não atribuído.
+TypeError	Levantado quando uma operação da função é aplicada a um objeto do tipo errado.
+ValueError	Levantado quando a operação ou função tem um argumento com o tipo correto, mas valor incorreto.
+Tipos comuns de exceção.
+Humberto Henriques de Arruda.
+
+Em Python, as exceções são objetos. A classe Exception é derivada de BaseException, classe base de todas as classes de exceção. BaseException fornece alguns serviços úteis para todas as classes de exceção, mas normalmente não se torna uma subclasse diretamente.

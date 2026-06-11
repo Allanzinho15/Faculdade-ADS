@@ -1,0 +1,70 @@
+Classificação das linguagens de programação por nível
+Ao longo do tempo, diferentes autores propuseram várias formas de classificar as linguagens de programação, usando critérios diversos. Aqui, você vai entender as características, classificações e implementações das várias linguagens de programação, com base em seus níveis. Compreender esses aspectos permitirá criar soluções inovadoras, entender melhor os sistemas e colaborar eficazmente em equipes de desenvolvimento.
+
+Neste vídeo, falaremos sobre a classificação das linguagens de programação, abordando as linguagens de alto e baixo nível. Confira!
+
+
+Linguagem de baixo nível
+São linguagens que se aproximam da linguagem de máquina, além da própria, que se comunicam diretamente com os componentes de hardware, como processador, memória e registradores.
+
+As linguagens de baixo nível estão relacionadas à arquitetura de um computador.
+
+São escritas usando o conjunto de instruções do respectivo processador. Ou seja, cada processador diferente (ou família de processador, como os I3, I5 e I7 da Intel) tem um conjunto de instruções específicos (instructions set).
+
+A imagem a seguir ilustra a representação de uma instrução em linguagem de máquina ou binária de um processador específico. A instrução tem palavras (unidade executada pelo processador) de 16 bits, sendo 4 bits para representar a instrução (código da instrução), 6 bits para representar cada operando.
+
+
+Instrução em linguagem de máquina.
+
+Imagine, agora, uma sequência de 0 e 1 para que possamos dizer ao processador cada ação que deve ser realizada conforme apresentado a seguir.
+
+Terminal
+content_copy
+
+A programação em linguagem de máquina, a linguagem nativa dos processadores, era realmente muito complexa.
+
+Essa complexidade motivou o desenvolvimento da linguagem Assembly, que deixava de ser a linguagem nativa dos processadores, mas usava das instruções reais dos processadores. Assim, a instrução na linguagem Assembly precisa ser convertida para o código equivalente em linguagem de máquina.
+
+Por exemplo, as três linhas de código na linguagem Assembly, move o numeral 2 para o registrador AX (linha 1), move o numeral 1 para o registrador BX (linha 2) e soma o conteúdo dos 2 registradores (linha 3). Veja!
+
+Assembly
+content_copy
+
+A Assembly não chega a ser o ideal em termos de uma linguagem, por ser ainda próxima da máquina, mas já foi um grande avanço em relação à memorização da sequência de 0 e 1 de uma instrução de máquina.
+
+Agora responda:
+
+As linguagens de baixo nível estão próximas ou distantes da língua humana (escrita)?
+ads_clickﾠClique em um dos botões para responder.
+
+
+
+Linguagem de alto nível
+No outro extremo das linguagens de baixo nível, estão as linguagens de alto nível, na medida em que se afastam da linguagem das máquinas e se aproximam da linguagem humana (no caso, a linguagem escrita e a grande maioria em inglês).
+
+assignment_ind
+Comentário
+Quem programa em uma linguagem de alto nível não precisa conhecer características dos componentes do hardware (processador, instruções e registradores). Isso é abstraído no pensamento computacional.
+
+As instruções das linguagens de alto nível são bastante abstratas e não estão relacionadas à arquitetura do computador diretamente.
+
+As principais linguagens são ASP, C, C++, C#, Pascal, Delphi, Java, Javascript, Lua, MATLAB, PHP e Ruby, dentre outras.
+
+Voltemos ao exemplo da linguagem Assembly. A seguir, veja o mesmo código usando variáveis, como abstração do armazenamento e codificado na linguagem Python.
+
+python
+content_copy
+
+Veja, agora, o mesmo código na linguagem C.
+
+c
+content_copy
+
+Cada comando de uma linguagem de alto nível precisa ser convertido e equivalerá a mais de uma instrução primária do hardware. Isso significa que, numa linguagem de alto nível, o programador precisa escrever menos código para realizar as mesmas ações, além de outras vantagens, aumentando consideravelmente a sua eficiência ao programar.
+
+C e C++ são classificados por alguns autores como linguagem de médio nível, pois estão próximas da linguagem humana (linguagem de alto nível), mas também estão próximas da máquina (linguagem de baixo nível), pois possuem instruções que acessam diretamente memória e registradores. Inicialmente, a linguagem C foi criada para desenvolver o sistema operacional UNIX, que até então era escrito em Assembly.
+
+
+Linguagem C e C++.
+
+Algumas pessoas consideram a existência de linguagens de altíssimo nível, como Python, Ruby e Elixir, por serem linguagens com uma enorme biblioteca de funções e que permitem a programação para iniciantes sem muito esforço de aprendizado.

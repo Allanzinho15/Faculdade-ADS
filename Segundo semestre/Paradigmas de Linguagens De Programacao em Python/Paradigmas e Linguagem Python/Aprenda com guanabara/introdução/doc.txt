@@ -1,0 +1,3 @@
+Você sabia que conhecer os diferentes paradigmas de linguagens de programação é essencial para o seu desenvolvimento como profissional? Cada paradigma oferece uma forma distinta de pensar e resolver problemas. Entender esses paradigmas vai ampliar sua visão e te tornar um programador muito mais versátil e eficiente.
+
+Python é uma das linguagens mais populares e demandadas no mercado de trabalho. Ela é conhecida pela sua simplicidade e poder, sendo usada em áreas como desenvolvimento web, ciência de dados, inteligência artificial e muito mais. Dominar Python abre muitas portas para você! Então, pronto para essa jornada?

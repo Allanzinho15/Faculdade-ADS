@@ -1,0 +1,74 @@
+Tratamento de eventos na prática
+A captura de eventos é fundamental para a programação de interfaces gráficas. Com esse tipo de captura, podemos mapear o movimento do mouse, os cliques, as teclas pressionadas no teclado etc.
+
+Neste vídeo, praticaremos a implementação do tratamento de eventos, a partir de exercícios de captura e utilizando a linguagem de programação Python. Confira!
+
+
+Roteiro de prática
+Para realizar a captura e o tratamento de eventos, siga as orientações.
+
+Capturando os movimentos do mouse
+Inicie realizando as etapas a seguir.
+
+Crie um arquivo do Python chamado eventomouse.
+Importe o tkinter.
+Crie uma função para mapear as coordenadas do mouse.
+Crie uma janela.
+Crie um rótulo pedindo para movimentar o mouse.
+Faça a ligação da captura do movimento com a função de mapeamento das coordenadas.
+Rode a janela principal.
+Confira, agora, o código fonte gerado no vídeo.
+
+import tkinter as tk
+
+def atualizar_coordenadas(event):
+    x = event.x
+    y = event.y
+    label_coordenadas["text"] = f"Coordenadas do mouse: X={x}, Y={y}"
+
+# Criando a janela
+janela = tk.Tk()
+janela.title("Tratamento de Eventos - Coordenadas do Mouse")
+
+# Criando o widget de rótulo
+label_coordenadas = tk.Label(janela, text="Mova o mouse sobre a janela para ver as coordenadas")
+label_coordenadas.pack(padx=200, pady=100)
+
+# Ligando o evento de movimento do mouse à função
+janela.bind("<Motion>", atualizar_coordenadas)
+
+# Rodando o loop principal
+janela.mainloop()
+
+Capturando o clique do botão esquerdo do mouse
+Agora, siga o passo a passo.
+
+Crie um arquivo do Python chamado eventomouse2.
+Importe o tkinter.
+Crie uma função para capturar o clique.
+Crie uma janela.
+Crie um rótulo pedindo para movimentar o mouse.
+Faça a ligação do clique do mouse à função de captura.
+Rode a janela principal.
+Confira, agora, o código fonte gerado no vídeo.
+
+import tkinter as tk
+
+def capturar_clic(event):
+    x = event.x
+    y = event.y
+    label_coordenadas["text"] = f"Último clique: X={x}, Y={y}"
+
+# Criando a janela
+janela = tk.Tk()
+janela.title("Tratamento de Eventos - Captura de Clique Esquerdo")
+
+# Criando o widget de rótulo
+label_coordenadas = tk.Label(janela, text="Clique em qualquer lugar da janela")
+label_coordenadas.pack(padx=200, pady=100)
+
+# Ligando o evento de clique do mouse à função
+janela.bind("<Button-1>", capturar_clic)
+
+# Rodando o loop principal
+janela.mainloop()

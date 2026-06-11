@@ -1,0 +1,106 @@
+Tipos de estruturas de dados – lineares
+Neste vídeo, aprenda o que são estruturas de dados lineares, como elas funcionam e onde são aplicadas. Com analogias do cotidiano, confira os principais tipos de estruturas lineares e como elas organizam os dados em sequência e facilitam o armazenamento, a busca e o processamento de informações em sistemas reais.
+
+
+
+As estruturas de dados lineares organizam os elementos de forma sequencial, isto é, um após o outro em uma única linha lógica. Cada elemento (exceto o primeiro e o último) possui exatamente um antecessor e um sucessor. Isso significa que o acesso aos dados segue uma ordem bem definida. 
+
+
+Atenção
+Estrutura de dados lineares são ideais para representar listas, pilhas, filas e outras coleções em que a ordem de entrada, leitura ou remoção dos elementos é importante.
+
+
+Vamos entender melhor imaginando uma fila no caixa do supermercado. As pessoas entram por um lado e saem pelo outro, respeitando a ordem de chegada. 
+
+
+
+Fila no caixa do supermercado.
+
+Pense agora em uma pilha de pratos limpos: o colocado no alto será o primeiro a ser retirado, certo? Ambas as situações representam duas estruturas de dados lineares muito conhecidas: pilha (stack) e fila (queue), conforme as imagens a seguir.
+
+
+Curadoria de TI
+Pilha
+
+
+Último que entra, primeiro que sai.
+
+
+Curadoria de TI
+Fila
+
+
+Primeiro que entra, primeiro que sai.
+
+
+Trata-se de estruturas fáceis de implementar e entender. Elas aparecem em diversas tarefas, como armazenar nomes em uma lista, processar tarefas em sequência ou empilhar operações a serem desfeitas.
+
+
+Principais tipos de estruturas de dados lineares
+
+
+São divididos em:
+
+
+
+Vetores (arrays) 
+
+Armazenam dados em posições consecutivas de memória. São como caixas numeradas, em que cada uma guarda um valor. 
+
+ 
+
+Exemplo: tabela de notas de alunos em um sistema acadêmico. A posição de cada vetor representa a nota de um aluno específico.
+
+ 
+
+Confira a imagem!
+
+
+Representação de um vetor.
+
+
+Listas lineares (listas ligadas)
+
+São semelhantes a vetores, mas cada elemento aponta para o próximo, como um colar de contas. 
+
+ 
+
+Exemplo: sistema de histórico de navegação em um navegador de internet, em que cada página visitada é ligada à próxima.
+
+
+Representação de uma Lista.
+
+
+Pilhas (stacks)
+
+
+Filas (Queues)
+
+LIFO X FIFO
+
+
+O conceito de LIFO (Last In First Out) é usado em estruturas de dados chamadas pilhas (stacks). Nessa lógica, o último elemento que foi inserido é o primeiro a ser removido. 
+
+ 
+
+As estruturas de pilhas (stacks) são ideais para situações em que precisamos voltar ou retomar ações recentes, como no sistema de desfazer/refazer de editores de texto, ou para controle de chamadas de funções em programas, em que a execução da função mais recente deve ser finalizada antes de retornar à anterior.
+
+ 
+
+Já o conceito de FIFO (First In First Out) é aplicado em estruturas chamadas filas (queues). Nesse modelo, o primeiro elemento a entrar é o primeiro a sair.
+
+
+Exemplo
+Visualize o que ocorre em uma fila de banco ou de ônibus: quem chega primeiro é logo atendido.
+
+
+Filas são muito utilizadas em sistemas que exigem ordem de processamento, como impressão de documentos (spooler), filas de atendimento ao cliente ou gerenciamento de tarefas em servidores e sistemas operacionais.
+
+ 
+
+A imagem a seguir ilustra muito bem a diferença entre os dois conceitos que acabamos de estudar. Confira!
+
+
+Curadoria de TI
+
+FIFO X LIFO.

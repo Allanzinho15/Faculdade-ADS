@@ -1,0 +1,37 @@
+Instalando o Python
+A IDE PyCharm oferece um ambiente robusto e intuitivo para desenvolver aplicações em Python. Com recursos como autocompletar inteligente, depuração poderosa e integração com controle de versão, ela simplifica o processo de codificação, permitindo que os desenvolvedores foquem a criação de soluções inovadoras. Além disso, sua interface amigável e personalizável proporciona uma experiência de programação fluida e eficiente. Seja você um iniciante ou um profissional experiente, o PyCharm é uma ferramenta indispensável que eleva a produtividade e a qualidade do desenvolvimento de software em Python.
+
+Neste vídeo, guiaremos você pela instalação do Python, um processo simples que pode ser feito baixando e executando o instalador disponível no site oficial ou utilizando gerenciadores de pacotes como o Anaconda. Acompanhe!
+
+
+Instalação do PyCharm
+Existem várias formas de utilizarmos a linguagem de programação Python; uma delas é através do ambiente de desenvolvimento Pycharm. Para isso, acesse o site do Jet Brains para fazer o download do software PyCharm.
+
+Em seguida, clique na opção Download da versão Community, conforme a imagem.
+
+
+PyCharm Community.
+
+Depois de fazer o download no seu computador, basta dar dois cliques sobre o arquivo e seguir o padrão de instalação Next-Next do Windows.
+
+wb_incandescent
+Dica
+Selecione o inglês como idioma durante a instalação, pois é mais fácil obter informações posteriormente nas diversas comunidades na Internet.
+
+Teste do PyCharm
+Depois de instalar o PyCharm, vamos testá-lo: abra a IDE, você verá uma imagem semelhante a esta.
+
+
+IDE PYCharm.
+
+Agora, selecione a opção Python Console e escreva x=5 e pressione a tecla Enter, conforme a imagem.
+
+
+Uso do Python Console.
+
+Por fim, digite o comando print(x), para verificar o conteúdo da variável x. Veja!
+
+
+Uso do Python Console.
+
+Excelente! Agora você já consegue utilizar o PyCharm para realizar alguns comandos do Python. Neste momento, vamos realizar uma atividade para consolidar nossos conhecimentos.

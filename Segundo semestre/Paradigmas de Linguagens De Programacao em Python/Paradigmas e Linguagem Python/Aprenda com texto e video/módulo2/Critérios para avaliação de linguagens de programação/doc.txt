@@ -1,0 +1,194 @@
+Critérios para avaliação de linguagens de programação
+Vamos abordar a avaliação de linguagens de programação, destacando critérios como legibilidade, facilidade de escrita, confiabilidade e custo. Compreender esses aspectos permite selecionar a linguagem mais adequada para cada projeto, garantindo eficiência e eficácia no desenvolvimento de software. Exploraremos exemplos práticos e comparações entre linguagens populares para proporcionar uma visão ampla e fundamentada, facilitando decisões informadas na escolha de ferramentas de programação.
+
+Neste vídeo, abordaremos os quatro grandes critérios para avaliação das linguagens de programação, dentro de um mesmo domínio de programação, sendo cada critério influenciado por algumas características da linguagem. Confira!
+
+
+Avaliação de linguagens de programação
+Segundo Sebesta (2018) são quatro grandes critérios para avaliação das linguagens de programação, dentro de um mesmo domínio de programação. Cada critério é influenciado por algumas características da linguagem. Observe!
+
+remove_red_eye
+Legibilidade
+Um dos critérios mais relevantes é a “facilidade com que os programas podem ser lidos e entendidos” pelas pessoas que não necessariamente participaram do desenvolvimento.
+
+keyboard
+Facilidade de escrita
+O quão facilmente uma linguagem pode ser usada para desenvolver programas para o domínio do problema escolhido.
+
+check_circle_outline
+Confiabilidade
+Um programa é dito confiável se ele se comporta conforme a sua especificação, repetidas vezes.
+
+attach_money
+Custo
+O custo final de uma linguagem de programação é em função de muitas de suas propriedades e características.
+
+A tabela a seguir exibe as características da linguagem que influenciam cada um dos três principais fatores de avaliação de linguagens.
+
+Critérios
+Características	Legibilidade	Facilidade escrita	Confiabilidade
+Simplicidade			
+Ortogonalidade			
+Estruturas de controle			
+Tipos de dados			
+Projeto de sintaxe			
+Suporte para abstração			
+Expressividade			
+Verificação de tipos			
+Tratamento de exceções			
+Aliasing			
+Tabela: Características x Critérios de Avaliação de LPs.
+Marcelo Vasques de Oliveira.
+
+Conheça agora cada um dos critérios.
+
+Legibilidade
+Um dos critérios mais relevantes para avaliar uma linguagem de programação diz respeito à capacidade com que os programas podem ser lidos e entendidos pela sintaxe e construção da linguagem, sem considerar as possíveis influências da má programação.
+
+A seguir, detalharemos as características que influenciam a legibilidade de uma linguagem de programação.
+
+Simplicidade
+Quanto mais simples for uma linguagem, melhor será a legibilidade do código por ela produzido. Entenda agora o que pode afetar negativamente a legibilidade de um código.
+
+Uma linguagem com número elevado de construções básicas é mais difícil de ser aprendida e tende a ser subutilizada.
+
+Uma segunda característica que afeta negativamente a legibilidade é a multiplicidade de recursos.
+
+extension
+Exemplo
+Em Python, o programador pode incrementar uma variável, de duas formas distintas: cont= cont + 1 e cont +=1. Nas linguagens C e Java, ainda podemos usar para incrementar variáveis as seguintes estruturas: ++cont e cont++.
+
+Muita simplicidade pode tornar menos legíveis os códigos escritos. Na linguagem Assembly, a maioria das sentenças são simples, porém não são altamente legíveis devido à ausência de estruturas de controle.
+
+Uma terceira característica que afeta negativamente a legibilidade é a sobrecarga de operadores, como por exemplo o “+”, usado para somar inteiros, reais, concatenar cadeias de caracteres (strings), somar vetores, dentre outras construções permitidas pela linguagem.
+
+Ortogonalidade
+A ortogonalidade de uma linguagem refere-se a um conjunto relativamente pequeno de construções primitivas que pode ser combinado em um número, também, pequeno de maneiras para construir as estruturas de controle e de dados de uma linguagem de programação. Em outras palavras, é a possibilidade de combinar, entre si, sem restrições, as construções básicas da linguagem para construir estruturas de dados e de controle.
+
+Veja agora a diferença entre a boa e má ortogonalidade de uma linguagem.
+
+thumb_up
+Boa ortogonalidade
+Permitir, por exemplo, que haja um vetor, cujos elementos sejam do tipo registro (estrutura heterogênea).
+
+close
+thumb_down
+Má ortogonalidade
+Não permitir que um vetor seja passado como argumento para uma rotina (procedimento ou função). Ou que uma função não possa retornar um vetor.
+
+Uma linguagem ortogonal tende a ser mais fácil de aprender e tem menos exceções.
+
+A falta de ortogonalidade leva a muitas exceções às regras da linguagem e ao excesso, o contrário (menos exceções às regras). Menos exceções implicam um maior grau de regularidade no projeto da linguagem, tornando-a mais fácil de ler, entender e aprender.
+
+Instruções de controle
+Instruções como Goto (desvio incondicional) limitam a legibilidade dos programas, pois essa instrução pode levar o controle do código a qualquer ponto do programa, limitando o entendimento e, consequentemente, a legibilidade do código escrito na linguagem.
+
+assignment_ind
+Comentário
+As linguagens modernas não implementam desvio incondicional, assim sendo, o projeto de estruturas de controle é menos relevante na legibilidade do que anos atrás, quando surgiram as primeiras linguagens de alto nível.
+
+Tipos e estruturas de dados
+A facilidade oferecida pela linguagem para definir tipos e estruturas de dados é outra propriedade que aumenta a legibilidade do código escrito. Por exemplo, uma linguagem que permita definir registros e vetores, mas não permite que um vetor tenha registros como seus elementos, terá a legibilidade afetada.
+
+A linguagem C não possui o tipo de dado lógico ou booleano. Muitas vezes, usa-se variáveis inteiras, permitindo apenas que receba os valores 0 e 1 para conteúdo, simulando o tipo booleano.
+
+extension
+Exemplo
+Para localizar um elemento em uma das posições de um vetor, usa-se uma variável lógica se a linguagem permitir e, assim, teríamos a instrução “achou=false” em determinado trecho de código. Em outra linguagem que não permita o tipo de dado lógico, a instrução poderia ser “achou=0”, em que achou seria uma variável inteira. Qual das duas sentenças é mais clara a quem lê o código? A primeira, não é? “achou=false”.
+
+Sintaxe
+A sintaxe tem efeito sobre a legibilidade. Um exemplo é a restrição do tamanho (quantidade de caracteres) para um identificador (tipo, variável, constante, rotina – procedimento e função), impedindo que recebam nomes significativos sobre sua utilidade. Na linguagem Fortran, o nome do identificador pode ser até seis caracteres.
+
+Outra propriedade de sintaxe que afeta a legibilidade é o uso de palavras reservadas da linguagem. Conheça agora alguns casos.
+
+Na linguagem Pascal, os blocos de instrução são iniciados e encerrados com BEGIN-END, respectivamente.
+Na linguagem C, usamos chaves para iniciar e encerrar blocos de instruções.
+Na linguagem Python, usamos a endentação obrigatória para marcar blocos de comandos, aumentando a legibilidade, naturalmente.
+Facilidade de escrita (redigibilidade)
+A facilidade de escrita é a medida do quão fácil a linguagem permite criar programas para um domínio da aplicação.
+
+A maioria das características que afeta a legibilidade também afeta a facilidade de escrita, pois haverá dificuldade para quem for ler o código se sua escrita não fluir.
+
+Conheça agora as características que influenciam na facilidade de escrita.
+
+Simplicidade e ortogonalidade
+Quanto mais simples e ortogonal for a linguagem, mais fácil será para escrever programas. O ideal são linguagens com poucas construções primitivas.
+
+Imagine que uma linguagem de programação possui grande número de construções. Alguns programadores podem não usar todas, deixando de lado, eventualmente, as mais eficientes e elegantes.
+
+Expressividade
+Uma linguagem de programação com boa expressividade contribui para o aumento da facilidade de escrita dos códigos.
+
+Por exemplo, a linguagem Assembly apresenta baixa expressividade. Já Pascal e C apresentam boa expressividade, com ricas estruturas de controle.
+
+extension
+Exemplo
+O comando FOR é mais adequado que WHILE e REPEAT para representar lações com número fixo de vezes. Da mesma forma que o C, em que o FOR é mais indicado que o WHILE e DO-WHILE. Na linguagem Python, ocorre o mesmo entre os comandos FOR e WHILE. Na linguagem C, temos construções diversas para incremento de variável: i++ é mais simples e conveniente de usar do que i=i+1, sendo i, uma variável inteira.
+
+Uma linguagem expressiva possibilita escrever linhas de código de uma forma mais conveniente ao invés de deselegante.
+
+Suporte para a abstração
+O grau de abstração em uma linguagem é uma propriedade fundamental para aumentar a facilidade de escrita. A abstração pode ser de dois tipos. Veja!
+
+account_tree
+Processos
+Como o conceito de subprograma.
+
+list_alt
+Dados
+Como uma árvore ou lista simplesmente encadeada.
+
+Confiabilidade
+Dizemos que um programa é confiável se ele se comportar conforme sua especificação, sob todas as condições, todas as vezes em que for executado.
+
+A seguir, conheça alguns recursos das linguagens que exercem efeito sobre a confiabilidade de programas.
+
+Significa verificar, em tempo de compilação ou execução, se existem erros de tipo. Por exemplo, atribuir um valor booleano a uma variável do tipo inteira, vai resultar em erro. As linguagens fortemente tipadas, em tempo de compilação, como Python e Java, tendem a ser mais confiáveis, pois apenas valores restritos aos tipos de dados declarados poderão ser atribuídos e diminuem os erros em tempo de execução. Linguagens, como C, em que não é verificado se o tipo de dado do argumento é compatível com o parâmetro, em tempo de compilação, podem gerar erros durante a execução, afetando a confiabilidade. A verificação de tipos em tempo de compilação é desejável, já em tempo de execução é dispendiosa (mais lenta e requer mais memória), e mais flexível (menos tipada).
+
+Garante a correta execução, aumentando a confiabilidade. As linguagens Python, C++ e Java possuem boa capacidade de tratar exceções, ao contrário da linguagem C. A linguagem deve permitir a identificação de eventos indesejáveis (estouro de memória, busca de elemento inexistente, overflow etc.) e especificar respostas adequadas a cada evento. O comportamento do programa torna-se previsível com a possibilidade de tratamento das exceções, o que tende a aumentar a confiabilidade do código escrito na linguagem de programação.
+
+É o fato de ter dois ou mais nomes, referenciando a mesma célula de memória, o que é um recurso perigoso e afeta a confiabilidade. Restringir aliasing é prover confiabilidade aos programas.
+
+Ambos influenciam a confiabilidade. A legibilidade afeta tanto na fase de codificação como na fase de manutenção. Programas de difícil leitura são difíceis de serem escritos também.
+
+Uma linguagem com boa legibilidade e facilidade de escrita gera códigos claros, que tendem a aumentar a confiabilidade.
+
+Custo
+O custo de uma linguagem de programação varia em função das seguintes despesas: de treinamento, de escrita do programa, do compilador, de execução do programa, de implementação da linguagem e o de manutenção do código. Observe a seguir as características de cada custo.
+
+person
+Treinamento
+Varia em função da expertise do programador, simplicidade e ortogonalidade da linguagem;
+F (simplicidade de escrita, ortogonalidade, experiência do programador).
+keyboard
+Escrita do programa
+Varia em função da facilidade de escrita;
+F (Facilidade de escrita).
+join
+Compilação do programa
+Varia em função do custo de aquisição do compilador, hoje minimizado, em linguagens open source, como é o caso do Python;
+F (custo de aquisição do compilador).
+terminal
+Execução do programa
+Varia em função do projeto da linguagem;
+F (Projeto da linguagem).
+language
+Implementação da linguagem
+A popularidade da LP depende de um econômico sistema de implementação;
+Por exemplo, Python e Java possuem compiladores e interpretadores gratuitos.
+security
+Confiabilidade
+O custo da má confiabilidade será elevado. Se um sistema crítico falhar, o custo aumenta;
+Exemplos: sistema de controle de consumo de água e sistemas de usina nuclear.
+settings
+Manutenção
+Depende de vários fatores, mas principalmente da legibilidade, já que a tendência é que a manutenção seja dada por pessoas que não participaram do desenvolvimento do software.
+Os custos em treinamento e de escrever o programa podem ser minimizados se a linguagem oferecer bom ambiente de programação.
+
+Python é uma linguagem com alta legibilidade, facilidade de escrita, além de ser confiável. Seu custo não é elevado, pois, além de ser open source, é fácil de aprender.
+
+Existem outros critérios que influenciam os custos de uma linguagem de programação, como, por exemplo, a portabilidade ou a capacidade que os programas têm de rodarem em ambientes diferentes (sistema operacional e hardware), o que é altamente desejável.
+
+assignment_ind
+Comentário
+A reusabilidade, ou seja, o quanto um código pode ser reutilizado em outros programas ou sistemas aumenta o nível de produtividade da linguagem, além da facilidade de aprendizado, que é fortemente afetada pela legibilidade e facilidade de escrita.

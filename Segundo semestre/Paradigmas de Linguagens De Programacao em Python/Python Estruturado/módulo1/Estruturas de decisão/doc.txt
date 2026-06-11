@@ -1,0 +1,129 @@
+Estruturas de decisão
+Você irá descobrir o poder do condicional if em Python, compreendendo a estrutura de controle de fluxo mais fundamental da linguagem. Aprenderá a criar condições, tomar decisões e controlar o fluxo do seu código de maneira eficiente e clara.
+
+Assista ao vídeo e entenda como as estruturas de decisão permitem selecionar partes do código que serão executadas, repetindo blocos de instruções com base em algum critério. Confira!
+
+
+Tratamento das condições
+As estruturas de controle permitem selecionar quais partes do código (chamadas de estruturas de decisão) serão executadas e repetir blocos de instruções com base em algum critério, como uma variável de controle ou a validade de alguma condição (denominadas estruturas de repetição).
+
+As estruturas de decisão e de repetição possuem sintaxes bastante semelhantes em C e em Python. Mesmo com essa grande semelhança, existe uma diferença crítica no tratamento das condições.
+
+Diferentemente da linguagem C, Python oferece o tipo bool. Por isso, cabe ressaltar a diferença de comportamento das duas linguagens nesse tratamento. Veja!
+
+Python	C
+Existe o tipo bool	Não existe o tipo bool
+True	Qualquer valor diferente de 0 (zero)
+False	0 (zero) ou vazio
+Tabela: Tratamento das condições.
+Humberto Henriques de Arruda.
+
+Observe que o fato de haver o tipo bool em Python permite que as condições sejam tratadas como verdadeiras ou falsas, o que não é exatamente igual em C.
+
+Estruturas de decisão
+if
+Em Python, usamos o if para executar um bloco de código se uma condição for verdadeira. A sintaxe básica é a que mostraremos a seguir.
+
+python
+content_copy
+if condição:
+   bloco_de_codigo
+Se a condição for verdadeira, o bloco_de_codigo será executado.
+
+Em seguida observe um exemplo do uso da condição if.
+
+Exemplo com if
+Imagine criar um sistema simples para orientar sobre a vacinação de crianças com base na idade informada pelo usuário. Veja como isso pode ser implementado.
+
+python
+content_copy
+idade = eval(input('Informe a idade da criança: \n'))
+if idade < 5:
+    print('A criança deve ser vacinada contra a gripe.')
+    print('Procure o posto de saúde mais próximo.')
+Se a condição idade < 5 for verdadeira, as instruções dentro do bloco if serão executadas.
+
+Agora, vamos adicionar uma instrução fora do bloco if, veja!
+
+python
+content_copy
+idade = eval(input('Informe a idade da criança: \n'))
+if idade < 5:
+    print('A criança deve ser vacinada contra a gripe.')
+    print('Procure o posto de saúde mais próximo.')
+print('Cuide da saúde sempre. Até a próxima.')
+No exemplo, se a condição idade < 5 for verdadeira, as instruções dentro do bloco if serão executadas.
+
+O que acontece com a instrução print('Cuide da saúde sempre. Até a próxima.') se a condição idade < 5 for falsa?
+ads_clickﾠClique em um dos botões para responder.
+
+Independentemente da condição, a instrução print('Cuide da saúde sempre. Até a próxima.') será sempre executada porque está fora do bloco if.
+
+if-else
+Podemos adicionar uma condição alternativa usando else. Isso nos permite definir o que fazer se a condição do if for falsa. A sintaxe é a que mostraremos a seguir.
+
+python
+content_copy
+if condição:
+    bloco_de_codigo_if
+else:
+    bloco_de_codigo_else
+Em seguida apresentaremos um exemplo com if-else.
+
+wb_incandescent
+Dica
+Lembre-se de que em Python a indentação é fundamental. Todas as instruções dentro de um bloco de decisão devem ser indentadas com quatro espaços. Isso torna o código mais legível e organizado.
+
+Exemplo com if-else
+Vamos expandir o exemplo com if para incluir uma condição alternativa. Veja!
+
+python
+content_copy
+idade = eval(input('Informe a idade da criança: \n'))
+if idade < 5:
+    print('A criança deve ser vacinada contra a gripe.')
+    print('Procure o posto de saúde mais próximo.')
+else:
+    print('A vacinação só ocorrerá daqui a 3 meses.')
+    print('Informe-se novamente neste prazo.')
+No exemplo, se idade for menor que 5, o primeiro bloco de código será executado. Caso contrário, o bloco dentro do else será executado.
+
+Agora, vamos adicionar uma instrução fora do bloco if-else. Acompanhe!
+
+python
+content_copy
+
+No exemplo, se idade for menor que 5, o primeiro bloco de código será executado. Caso contrário, o bloco dentro do else será executado. Independentemente da condição, a instrução print('Cuide da saúde sempre. Até a próxima.') será sempre executada porque está fora do bloco if-else.
+
+elif
+Além do if e else, Python nos oferece o elif, que é uma combinação de else if. O elif nos permite testar várias condições de forma sequencial. Confira a sintaxe no código.
+
+python
+content_copy
+idade = eval(input('Informe a idade da criança: \n'))
+if idade < 5:
+    print('A criança deve ser vacinada contra a gripe.')
+    print('Procure o posto de saúde mais próximo.')
+else:
+    print('A vacinação só ocorrerá daqui a 3 meses.')
+    print('Informe-se novamente neste prazo.')
+print('Cuide da saúde sempre. Até a próxima.')
+Agora, veja um exemplo com elif.
+
+Exemplo com elif
+Vamos adicionar mais uma condição ao nosso exemplo. Acompanhe!
+
+python
+content_copy
+if condição_1:
+    bloco_de_codigo_if
+elif condição_2:
+    bloco_de_codigo_elif
+else:
+    bloco_de_codigo_else
+No exemplo, o Python verifica a primeira condição idade < 5. E a partir de então segue os seguintes passos.
+
+Se a condição idade < 5 for verdadeira, executa o bloco de código correspondente.
+Se a condição idade < 5 não for verdadeira, verifica a próxima condição idade== 5.
+Se essa condição idade== 5 for verdadeira, executa o bloco de código do elif.
+Se nenhuma das condições anteriores for verdadeira, executa o bloco de código do else.

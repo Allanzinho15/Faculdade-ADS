@@ -1,0 +1,53 @@
+Paradigma declarativo
+Diferentemente do paradigma imperativo, no declarativo o programador diz o que o programa deve fazer (qual a tarefa) ao invés de descrever como o programa deve fazer. O programador declara, de forma abstrata, a solução do problema. Essas linguagens não são dependentes de determinada arquitetura de computador. As variáveis são incógnitas, tal qual na matemática, e não células de memória. O paradigma declarativo agrega os paradigmas funcional e lógico. Vamos explicar as características de cada um.
+
+Neste vídeo, falaremos sobre o paradigma declarativo para as linguagens de programação, abordando paradigmas funcional e lógico. Acompanhe!
+
+
+Paradigma funcional
+Abrange linguagens que operam tão somente funções que recebem um conjunto de valores e retornam um valor. O resultado que a função retorna é a solução do problema (foca o processo de resolução de problemas).
+
+Um programa resume-se em chamadas de funções, que por sua vez podem usar outras funções. Uma função pode invocar outra, ou o resultado de uma função pode ser argumento para outra função. Usa-se também chamadas recursivas de funções.
+
+Naturalmente, o paradigma funcional gera programas menores (pouco código).
+
+São linguagens típicas de paradigma funcional: LISP, HASKELL e ML.
+
+LISP é a LP funcional mais usada, especialmente em programas que usem os conceitos de Inteligência Artificial (sistemas especialistas, processamento de linguagem natural e representação do conhecimento), devido à facilidade de interpretação recursiva.
+
+Por exemplo, o código a seguir implementa em Python uma função que calcula quantos números pares existem de 0 a n. Observe!
+
+python
+content_copy
+
+def conta_numeros_pares(n):
+  p = 0
+  for num in range(n+1):
+    if num%2 == 0:
+      p += 1
+  return p
+
+Agora, veja o mesmo código usando o conceito de função recursiva. Repare que a função de nome conta_numeros chama ela mesma em seu código (isso é a recursão).
+
+def conta_numeros_pares(n):
+  if n == 0: return 1 # 0 é par
+  elif n%2 == 0: return 1 + conta_numeros(n-1)
+  else: return conta_numeros(n-1)
+
+python
+content_copy
+
+Python não é uma linguagem funcional nativa, então seria exagerado afirmar isso. No entanto, ela foi influenciada pelo paradigma funcional ao permitir a recursividade, o uso de funções anônimas com lambda, entre outros recursos. Além disso, Python possui uma vasta biblioteca de funções.
+
+Paradigma lógico
+Um programa lógico expressa a solução da maneira como o ser humano raciocina sobre o problema, baseado em fatos, derivam-se conclusões e novos fatos.
+
+Quando um novo questionamento é feito, através de um mecanismo inteligente de inferência, deduz novos fatos a partir dos existentes.
+
+A execução dos programas escritos em linguagens de programação lógica segue, portanto, um mecanismo de dedução automática (máquina de inferência), sendo Prolog a linguagem do paradigma lógico mais conhecida.
+
+O paradigma lógico é usado no desenvolvimento de linguagens de acesso a banco de dados, sistemas especialistas (IA), tutores inteligentes etc.
+
+assignment_ind
+Comentário
+Python não tem características para implementar programas que atendam ao paradigma lógico.

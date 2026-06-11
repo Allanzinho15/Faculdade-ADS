@@ -1,0 +1,29 @@
+O conceito de encapsulamento
+O encapsulamento refere-se à ideia de ocultar a implementação interna de uma classe ou objeto e fornecer apenas uma interface externa para interagir com ele. Em Python, o encapsulamento é alcançado por meio do uso de modificadores de acesso, como public, protected e private. Compreender esse conceito é crucial para desenvolver sistemas robustos e escaláveis, além de facilitar a manutenção e a reutilização de código.
+
+Neste vídeo, apresentaremos o conceito de encapsulamento, que consiste na separação dos aspectos externos de um objeto acessíveis a outros objetos, além de seus detalhes internos de implementação, que ficam ocultos dos demais objetos. Acompanhe!
+
+
+O conceito de encapsulamento consiste na separação dos aspectos externos (operações) de um objeto acessíveis a outros objetos, além de seus detalhes internos de implementação, que ficam ocultos dos demais objetos (Rumbaugh, 1994).
+
+Algumas vezes, o encapsulamento é conhecido como o princípio do ocultamento de informação, pois permite que uma classe encapsule atributos e comportamentos, ocultando os detalhes da implementação. Partindo desse princípio, a interface de comunicação de um objeto deve ser definida a fim de revelar o menos possível sobre o seu funcionamento interno.
+
+Observe o exemplo a seguir.
+
+Imagine que foi desenvolvido um objeto ApresentaçãoMapa pertencente a um aplicativo de entrega móvel, que possui a responsabilidade de apresentar um mapa com o menor caminho entre dois pontos. Porém, o objeto não “sabe” como calcular essa distância. Para resolver o problema, ele precisa colaborar com um objeto Mapa que “saiba” calcular e, portanto, possua essa responsabilidade.
+
+
+Pessoa acessando aplicativo de entrega pelo celular.
+
+O objeto Mapa implementa essa responsabilidade por meio da operação CalculaMelhorCaminho, cujo resultado é a menor rota entre duas coordenadas geográficas. Utilizando o encapsulamento, o objeto Mapa calcula e retorna o melhor caminho para o objeto ApresentaçãoMapa de maneira transparente, escondendo a complexidade da execução dessa tarefa.
+
+A imagem a seguir ilustra o encapsulamento da classe Mapa.
+
+
+Encapsulamento da classe Mapa.
+
+Uma característica importante do encapsulamento é que pode surgir um modo diferente de se calcular o melhor caminho entre dois pontos. Por conta disso, o objeto Mapa deverá mudar o seu comportamento interno para implementar esse novo cálculo. Contudo, essa mudança não afetará o objeto ApresentaçãoMapa, pois a implementação foi realizada isoladamente (encapsulamento) no objeto Mapa sem causar impacto em outros objetos no sistema.
+
+text_snippet
+Resumindo
+Os objetos clientes têm conhecimento apenas das operações que podem ser requisitadas e precisam estar cientes somente do que elas realizam, e não de como estão implementadas.

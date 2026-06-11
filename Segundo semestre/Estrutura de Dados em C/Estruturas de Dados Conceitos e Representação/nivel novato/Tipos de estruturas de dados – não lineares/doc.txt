@@ -1,0 +1,85 @@
+Tipos de estruturas de dados – não lineares
+Neste vídeo, explore as estruturas de dados não lineares, que organizam os elementos de forma hierárquica ou em rede, permitindo conexões múltiplas. Confira também os conceitos de árvores e grafos e as aplicações reais dessas estruturas, destacando sua importância em situações que exigem acesso flexível e dinâmico às informações. 
+
+
+
+Nas estruturas de dados não lineares, os elementos não estão organizados de maneira sequencial. Mas como assim? Em outras palavras, nelas, cada elemento pode estar relacionado a vários outros, formando conexões que se assemelham a ramos de uma árvore ou a nós interligados em uma rede. 
+
+
+Atenção
+A estrutura de dados não linear é ideal quando os dados precisam representar relações hierárquicas ou com múltiplas conexões, permitindo maior flexibilidade e complexidade nas operações.
+
+
+Diferentemente de uma lista ou fila, em que os elementos seguem uma ordem definida de início, meio e fim, as estruturas não-lineares permitem caminhos múltiplos e acessos em diferentes direções e ramificações. Isso as torna muito úteis em situações como:
+
+
+Hierarquia organizacional
+
+
+Representar a hierarquia de uma organização (presidente → diretores → gerentes).
+
+
+Conexões em redes
+
+
+Modelar as conexões entre páginas da web ou estações de transporte.
+
+
+Jogos com decisões
+
+
+Criar jogos com múltiplos caminhos ou tomadas de decisão.
+
+
+Busca e navegação
+
+
+Desenvolver mecanismos de busca e algoritmos de navegação.
+
+
+Para entender melhor, imagine o mapa do metrô. Cada estação está conectada a várias outras. Você pode ir da estação A para B, depois para C, ou direto de A para D. Observe adiante!
+
+
+
+Mapa de metrô de Paris.
+
+O tipo de estrutura de conexões múltiplas não pode ser representado de forma sequencial. É aí que entram as estruturas de dados não lineares.
+
+
+Principais tipos de estruturas de dados não lineares
+
+
+Os mais usados são:
+
+
+Árvores
+
+
+Um bom jeito de explicar esse tipo é pensando que cada elemento (nó) pode ter vários “filhos”, mas apenas um “pai”. Um exemplo clássico é a estrutura de pastas do seu computador: existe uma principal e várias outras dentro dela.
+
+ 
+
+Outro exemplo é a organização da empresa, em que o presidente comanda diretores, que comandam gerentes.
+
+ 
+
+A imagem a seguir nos ajuda a entender por que esse tipo é chamado de árvore: é só pensar em uma árvore genealógica. Veja!
+
+
+Curadoria de TI
+
+Árvore.
+
+Grafos
+
+
+São estruturas em que cada nó pode se conectar a vários outros, formando redes — como estradas, redes sociais ou roteadores de internet. 
+
+ 
+
+Exemplo: mapa com cidades e estradas conectando-as.
+
+
+Curadoria de TI
+
+Grafo.

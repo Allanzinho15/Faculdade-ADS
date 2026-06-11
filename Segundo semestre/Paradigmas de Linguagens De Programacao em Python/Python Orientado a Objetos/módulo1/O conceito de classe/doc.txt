@@ -1,0 +1,24 @@
+O conceito de classe
+A classe é o alicerce da programação orientada a objetos, funcionando como um molde para criar objetos. Ela define atributos (dados) e métodos (comportamentos) que os objetos derivados dela possuirão. Compreender o conceito de classe é essencial para aproveitar todo o potencial da orientação a objetos em seus projetos de software.
+
+Neste vídeo, falaremos sobre o conceito de classe, que descreve as características e os comportamentos de um conjunto de objetos. Confira!
+
+
+A classe descreve as características e os comportamentos de um conjunto de objetos. De acordo com a estratégia de classificação, cada objeto pertence a uma única classe e possui os atributos e as operações definidos na classe.
+
+Durante a execução de um programa orientado a objetos, são instanciados os objetos a partir da classe. Assim, um objeto é chamado de instância de sua classe.
+
+A classe é o bloco básico para a construção de programas orientados a objetos (OO), aponta Costa (2015).
+
+assignment_ind
+Comentário
+Cada nome de atributo é único dentro de uma classe; no entanto, essa premissa não é verdadeira quando se consideram todas as classes. Por exemplo, as classes Pessoa e Empresa podem ter um atributo comum chamado de Endereço.
+
+Com base nas informações da imagem Atributos de objetos da pessoa 1, uma classe Pessoa deve ser definida com os atributos Nome, Idade, Peso e Altura. A partir da classe Pessoa, pode-se instanciar uma quantidade ilimitada de objetos contendo os mesmos atributos. Os objetos de uma classe sempre compartilham o conjunto de operações que atuam sobre seus dados, alterando o estado do objeto. Observe na imagem a comunicação entre objetos diferentes.
+
+
+Colaboração entre motorista e carro.
+
+Um programa orientado a objetos consiste basicamente em um conjunto de objetos que colaboram entre si por meio de uma troca de mensagens para a solução de um problema computacional. Cada troca significa a chamada de uma operação feita pelo objeto receptor da mensagem (Costa, 2015).
+
+De acordo com a imagem, um objeto motorista 1, instanciado a partir da classe Motorista, envia a mensagem “Freia” para um objeto carro 1, instanciado a partir da classe Carro. O objeto carro 1, ao receber a mensagem, executa uma operação para acionar os freios do automóvel. Essa operação também diminuirá o valor do atributo velocidade do objeto carro 1.

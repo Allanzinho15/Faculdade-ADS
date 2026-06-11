@@ -1,0 +1,106 @@
+Programação em Python
+Aprender programação é essencial nos dias de hoje, e Python se destaca como uma escolha popular para iniciantes devido à sua sintaxe clara e legível, semelhante ao inglês. Python é versátil, usado em diversas áreas como desenvolvimento web, científico, automação e inteligência artificial. Suas bibliotecas prontas para uso facilitam a criação de projetos funcionais desde o início. Além disso, a comunidade oferece amplo suporte e recursos de aprendizado, tornando o processo de aprendizado mais acessível e estimulante para os novos programadores.
+
+Neste vídeo, abordaremos a versatilidade da linguagem de programação de alto nível Python, que é fácil de aprender e amplamente utilizada em diversas áreas devido à sua sintaxe simples e vasta biblioteca padrão. Confira!
+
+
+O primeiro programa em Python
+Para escrever um programa em Python, será essencial utilizar as formas de saída de dados para exibir ao usuário mensagens e resultados de operações. Caso você deseje que o usuário informe algum dado para que seu programa processe, será necessário utilizar as formas de entrada de dados.
+
+Para criar seu primeiro programa, utilize o PyCharm. Nele, clique com o botão direito do mouse no nome do projeto, na guia de navegação do lado esquerdo. Em seguida, escolha a opção New > File, como na imagem a seguir.
+
+
+Novo arquivo no PyCharm.
+
+Agora, atribua um nome a seu arquivo. Neste primeiro exemplo, vamos chamar de primeiro_programa.py. Veja!
+
+
+Primeiro_programa.py.
+
+Ao nomear o arquivo, será aberta uma nova aba do lado direito, com o espaço para que você efetivamente digite as instruções.
+
+
+Aba de codificação.
+
+Saída de dados com a função print()
+A função print() em Python atua de forma semelhante à printf() em C. Confira agora as maiores diferenças entre elas para um programador iniciante.
+
+Duas chamadas da print() em Python
+São impressas na tela em linhas diferentes, sem a necessidade do uso do caractere ‘\n’ para pular a linha, como ocorre na printf() em C.
+
+close
+Uma chamada da print() em Python
+Permite a impressão de valores de variáveis sem a indicação do formato, como ocorre na printf() em C, quando precisamos escrever %c, %d ou %f, por exemplo.
+
+Para escrever seu Hello World em Python, digite a seguinte linha, exatamente como está escrita.
+
+
+Execução do Hello World em Python.
+
+Em seguida, clique com o botão direito do mouse sobre o nome do programa e escolha a opção Run ‘primeiro_programa’. Também é possível executar com a combinação de teclas CTRL+Shift+ F10. Após executar, observe o console na imagem.
+
+
+Execução do Hello World em Python.
+
+Veja que foi impresso no console exatamente o que colocamos entre aspas, ao chamar a função print(). Essa é a primeira forma de saída de dados, usar a função print() com uma string sendo passada como parâmetro (entre os parênteses).
+
+A função print(), além de imprimir a string, também salta o cursor para a próxima linha.
+
+Como você deve ter percebido, o que a função print() recebeu entre parênteses foi uma string. Ou seja, poderíamos ter passado para ela uma string já definida. Veja no exemplo!
+
+
+Hello World com string.
+
+Também poderíamos ter passado como parâmetro uma variável já definida. A função print() vai trabalhar com o valor dessa variável. Observe as imagens.
+
+
+Print de variável.
+
+
+Execução do print com variável.
+
+Entrada de dados com a função Input()
+Quando o programador quiser que o usuário entre com algum valor, ele deverá exibir na tela o seu pedido. Em C, é necessário utilizar a função printf() para escrever a solicitação ao usuário e a função scanf() para receber a entrada e armazenar em uma variável. Em Python, é possível utilizar a função input(). Ela tanto exibe na tela o pedido, como permite que o valor informado pelo usuário seja armazenado em uma variável do seu programa. Analise a imagem.
+
+
+A função input().
+
+A linha 1 fará com que a frase Entre com seu nome: seja exibida no console, mas a execução do programa fica travada até que o usuário aperte [ENTER] no teclado. Tudo o que foi digitado até o [ENTER] vai ser armazenado na variável nome. A linha 2 fará a exibição do conteúdo da variável nome.
+
+Veja o resultado no console, com o usuário tendo digitado Carlos Silva.
+
+
+Execução da entrada de dados.
+
+Perceba que a função input() trata tudo o que for digitado pelo usuário como uma string, armazenando na variável designada pelo programador para isso. Mesmo que o usuário entre com apenas uma letra ou um número, isso será armazenado como uma string na variável.
+
+Vamos, então, a mais um exemplo. Observe!
+
+
+A função input() e operação numérica.
+
+Veja o console quando o programa é executado.
+
+
+Erro com a função input().
+
+O usuário digitou 3 e [ENTER]. Mesmo sendo um valor, a variável numero trata como a string ‘3’. Isso impede que seja realizada a operação de soma com o inteiro 2, por exemplo. Poderíamos também usar a instrução print(type(numero)) na linha 2 para confirmar. Veja!
+
+
+Função print() com função type().
+
+
+Resultado de print() com type().
+
+A função eval()
+A função eval() recebe uma string, mas trata como um valor numérico. Veja o exemplo a seguir.
+
+
+Função eval().
+
+Mesmo tendo recebido a string ‘1+2’ como parâmetro, a função eval() efetuou a soma de 1 com 2. Observe que confirmamos que s é uma string com a instrução type(s).
+
+Para tratar a entrada do usuário como um número e, com isso, realizar operações algébricas, por exemplo, é necessário utilizar a função eval() em conjunto com a input(). Veja!
+
+
+Função eval() com função input() e resultado do uso de eval() e input().

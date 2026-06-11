@@ -1,0 +1,2 @@
+As linguagens de programação são classificadas por nível, geração e paradigmas, destacando Python pela sua versatilidade. Critérios de avaliação incluem domínios de aplicação e implementação. Entender essas características e identificar os paradigmas de cada linguagem é essencial para escolher a mais adequada conforme o tipo de problema e a solução necessária no mercado de trabalho. Neste vídeo, apresentaremos o conteúdo, incluindo a classificação, os critérios de avaliação, os paradigmas e os métodos de implementação de linguagens de programação. Acompanhe!
+

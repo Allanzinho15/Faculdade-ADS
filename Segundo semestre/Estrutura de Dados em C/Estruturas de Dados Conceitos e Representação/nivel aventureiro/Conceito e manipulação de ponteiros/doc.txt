@@ -1,0 +1,138 @@
+Conceito e manipulação de ponteiros
+Neste vídeo, aprenda o conceito de ponteiros na linguagem C, entendendo como eles armazenam o endereço de memória e permitem acessar ou modificar os dados diretamente. Veja também por que e quando utilizar ponteiros em situações como passagem por referência, manipulação de arrays e controle de memória.
+
+
+
+Na linguagem C, um ponteiro é uma variável especial que armazena o endereço de memória de outra variável. No entanto, em vez de guardar um valor, como o número 10 ou a letra A, o ponteiro guarda onde esse valor está localizado na memória do computador. Com isso, ele permite que você acesse, modifique e gerencie dados de maneira muito mais flexível e poderosa.
+
+
+Curadoria de TI
+
+Ponteiro.
+
+Como representar? 
+
+
+Em C, usamos o símbolo ∗ para declarar um ponteiro, e o símbolo & para obter o endereço de uma variável.
+
+ 
+
+Por exemplo:
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+int a;
+int *p;
+p = &a;  // 'p' agora guarda o endereço de 'x' 
+Copiar
+
+Observe na imagem a seguir a representação do que consta no código visto:
+
+
+Curadoria de TI
+
+O código também poderia ter sido inicializado assim:  
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+int *p = &a; 
+Copiar
+
+p é um ponteiro para inteiro que aponta para a variável x.
+
+ 
+
+Vamos entender melhor usando alguns exemplos!
+
+
+
+Endereço de uma casa 
+
+
+Endereço da casa.
+
+Não é a casa em si, mas indica onde ela está. Logo, com o endereço, você pode ir à casa, ver o que tem dentro ou até fazer reformas. Um ponteiro funciona assim: ele não é o valor, mas sabe onde ele está e pode acessá-lo ou modificá-lo.
+
+Imagine que você quer visitar um amigo. Você não precisa levar a casa do seu amigo até você; basta que ele lhe envie o endereço. Assim, você pode ir lá, bater na porta e entregar algo ou fazer uma visita (e quem sabe, toma até um café). O ponteiro faz exatamente isso com as variáveis: ele não é o valor, mas leva você até onde o valor está guardado.
+
+
+
+Cartão de endereço
+
+
+Cartão de endereço.
+
+Pense em um cartão com o número de uma caixa de correio, conforme a imagem. 
+
+ 
+
+O cartão não tem a encomenda, mas indica onde ela está. Com esse número (o endereço), você vai direto ao local certo e pega o pacote. Da mesma forma, o ponteiro aponta onde o dado está.
+
+
+Exemplo prático em C
+
+
+p é um ponteiro para x. O operador & obtém o endereço da variável, e o operador ∗ acessa o conteúdo armazenado no endereço.
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+#include <stdio.h>
+
+int main() {
+    int x = 10;
+    int* p = &x; // ponteiro para x
+
+    printf("Valor de x: %d\n", x);
+    printf("Endereço de x: %p\n", &x);
+    printf("Conteúdo de p: %p\n", p);
+    printf("Valor apontado por p: %d\n", *p);
+
+    return 0;
+} 
+Copiar
+
+Vamos entender melhor o código!
+
+
+Inicialmente, declara-se uma variável inteira x com o valor 10. Em seguida, cria-se um ponteiro p que armazena o endereço de memória da variável x. O programa imprime o valor de x, o endereço de memória onde ele está armazenado (&x), o conteúdo do ponteiro p (que é esse mesmo endereço) e, por fim, o valor apontado por p, usando o operador *, que acessa o conteúdo do endereço.
+
+
+Manipulando valores com ponteiros
+
+
+Podemos modificar o valor da variável original usando o ponteiro:
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+*p = 20; 
+Copiar
+
+Tal linha modifica diretamente o valor de x, porque p aponta para ele. Pensando no exemplo da caixa do correio, é como se você atualizasse o conteúdo da caixa através do número dela.
+
+
+Quando e por que usar ponteiros?
+
+
+O uso de ponteiros em C é adequado nas seguintes situações:
+
+ 
+
+Modificar variáveis dentro de funções sem retornar valores (passagem por referência).
+ 
+Manipular arrays e strings de forma eficiente.
+ 
+Construir estruturas complexas, como listas, árvores e grafos.
+ 
+Gerenciar a memória de modo dinâmico.

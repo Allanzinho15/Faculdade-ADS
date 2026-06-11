@@ -1,0 +1,75 @@
+Principais características
+Em Python, a simplicidade é essencial para a eficácia. Com comandos de controle de fluxo intuitivos, estruturas de repetição flexíveis e a capacidade de adicionar comentários que melhoram a compreensão do código, a linguagem se destaca pela acessibilidade e clareza. Programadores de todos os níveis podem criar e manter programas eficientes, aproveitando essas características fundamentais. No complexo mundo da programação, Python oferece uma base sólida e acolhedora para expressar ideias e resolver problemas de forma eficaz.
+
+No vídeo a seguir, falaremos sobre as principais características do Python, incluindo sua sintaxe simples e legível, tipagem dinâmica, vasta biblioteca padrão e capacidade de suportar múltiplos paradigmas de programação, tornando-o uma escolha popular para uma gama de aplicações. Confira!
+
+
+Blocos
+Em Python, os blocos são definidos pela indentação. Diferente de C e Java, que usam as chaves { e } para delimitar os blocos, em Python, todos os blocos são iniciados com o símbolo : (dois pontos) na linha superior e representados pelo acréscimo de 4 (quatro) espaços à esquerda.
+
+Sem se preocupar por enquanto com o significado das expressões for, if, else ou range, observe o código a seguir.
+
+python
+a = 0
+for i in range(30):
+    if a % 2 == 0:
+        a += 1
+        continue
+    else:
+        if a % 5 == 0:
+            break
+        else:
+            a += 3
+print (a)
+content_copy
+
+A partir disso, podemos destacar alguns pontos. Acompanhe!
+
+looks_one
+Linha 1
+Está mais à esquerda, assim como as linhas 2 e 11.
+
+looks_two
+Linha 2
+Todas as linhas de 3 a 10 estão dentro do bloco do for da linha 2.
+
+looks_3
+Linha 3
+Observe que a linha 3 tem um if abrindo um bloco, dentro do qual estão as linhas 4 e 5.
+
+looks_4
+Linha 6
+Por sua vez, a linha 6 tem um else abrindo outro bloco, composto pelas linhas de 7 a 10. Os blocos do if (linha 3) e do else (linha 6) estão no mesmo nível.
+
+looks_5
+Linha 7
+Mostra outro if abrindo outro bloco – composto apenas pela linha 8 – que está no mesmo nível do bloco do else da linha 9 – composto apenas pela linha 10.
+
+looks_6
+Linha 11
+Como a linha 11 está no mesmo nível da linha 2, ela não faz parte do bloco do for.
+
+Comentários
+Em Python, os comentários podem ser de uma linha ou de várias linhas. A tabela a seguir mostra as formas de limitar um comentário, além de comparar essas formas em Python e C. Observe!
+
+Python	C
+Comentários com uma linha	Iniciados com #	Iniciados com //
+Comentários com várias linhas	Limitados por """ (três aspas duplas) no início e no fim	Iniciados com /* e encerrados com */
+Tabela: Formas de limitar comentários.
+Humberto Henriques de Arruda.
+
+Os comentários não são instruções a serem executadas. Então, você pode escrever de forma simples e objetiva, sem obedecer às regras de sintaxe da linguagem.
+
+Boas práticas de programação
+Ao começar sua jornada como programador, é importante perceber que existem algumas práticas que não são obrigatórias, mas podem ajudar muito no seu aprendizado. Além disso, podem permitir que você corrija mais rapidamente erros que podem surgir no futuro e tornam seu código mais fácil de ser compreendido por outro programador, favorecendo o trabalho em equipe.
+
+
+Pessoa programando em computador.
+
+Vamos conhecer algumas dessas boas práticas. Confira!
+
+Inclusão de comentários
+Uma prática muito importante é utilizar comentários no seu programa, explicando o que aquele trecho resolve.
+
+PEP
+Uma característica marcante da comunidade de desenvolvedores Python é manter uma lista de propostas de melhorias, chamadas PEP.

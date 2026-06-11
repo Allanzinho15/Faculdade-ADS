@@ -1,0 +1,56 @@
+Visão geral
+Python é uma linguagem de programação de alto nível que permite ao programador utilizar instruções de forma intuitiva, tornando seu aprendizado mais simples do que o aprendizado de uma linguagem de baixo nível.
+
+Nas linguagens de baixo nível, o programador precisa se expressar de forma muito mais próxima do que o dispositivo “entende”, levando naturalmente a um distanciamento da linguagem utilizada para comunicação entre duas pessoas.
+
+Neste vídeo, apresentaremos a linguagem de programação de alto nível Python, conhecida por sua sintaxe simples e versatilidade, amplamente utilizada em diversos domínios, incluindo desenvolvimento web, análise de dados e automação. Confira!
+
+
+Histórico
+A linguagem Python, lançada pelo holandês Guido van Rossum em 1990, tem aumentado sua atuação na programação. Permite uma programação fácil e clara para escalas pequenas e grandes, além de enfatizar a legibilidade eficiente do código, notadamente usando espaços em branco significativos.
+
+
+Guido van Rossum ao lado de logo Python.
+
+Características da linguagem Python
+A linguagem Python possui características específicas. Veja!
+
+apps
+Ser multiparadigma
+Apesar de suportar perfeitamente o paradigma de programação estruturada, também suporta programação orientada a objetos, tem características do paradigma funcional, com o amplo uso de bibliotecas, assim como permite recursividade e uso de funções anônimas.
+
+interactive_space
+Ser interativa
+Permite que os usuários interajam com o interpretador Python diretamente para escrever os programas, utilizando o prompt interativo. Esse prompt fornece mensagens detalhadas para qualquer tipo de erro ou para qualquer comando específico em execução, suporta testes interativos e depuração de trechos de código.
+
+multiple_stop
+Ser híbrida quanto ao método de implementação
+Usa uma abordagem mista para explorar as vantagens do interpretador e do compilador. Assim como Java, utiliza o conceito de máquina virtual, permitindo a geração de um código intermediário, mais fácil de ser interpretado, mas que não é vinculado definitivamente a nenhum sistema operacional.
+
+computer
+Ser portável
+Tem a capacidade de rodar em uma grande variedade de plataformas de hardware com a mesma interface. Ele roda perfeitamente em quase todos os sistemas operacionais, como Windows, Linux, UNIX, e Mac OS, sem nenhuma alteração.
+
+view_module
+Ser extensível
+Permite que os programadores adicionem ou criem módulos e pacotes de baixo nível/ alto nível ao interpretador Python. Esses módulos e pacotes de ferramentas permitem que os desenvolvedores tenham possibilidades amplas de colaboração, contribuindo para a popularidade da linguagem.
+
+database
+Suportar bancos de dados
+Por ser uma linguagem de programação de uso geral, suporta os principais sistemas de bancos de dados. Permite escrever código com integração com MySQL, PostgreSQL, SQLite, ElephantSQL, MongoDB, entre outros.
+
+person_add
+Suportar interface com usuário
+Permite escrever código de tal maneira que uma interface do usuário para um aplicativo possa ser facilmente criada, importando bibliotecas como Tkinter, Flexx, CEF Python, Dabo, Pyforms ou PyGUI wxPython.
+
+code
+Possibilidade de ser usada como linguagem de script
+Permite fácil acesso a outros programas, podendo ser compilado para bytecode a fim de criar aplicativos grandes.
+
+language
+Permitir o desenvolvimento de aplicações Web
+Devido à escalabilidade já citada, oferece uma variedade de opções para o desenvolvimento de aplicativos Web. A biblioteca padrão do Python incorpora muitos protocolos para o desenvolvimento da web, como HTML, XML, JSON, processamento de e-mail, além de fornecer base para FTP, IMAP e outros protocolos da Internet.
+
+attach_money
+Permitir a criação de aplicações comerciais
+É desenvolvido sob uma licença de código aberto aprovada pela OSI, tornando-o livremente utilizável e distribuível, mesmo para uso comercial.

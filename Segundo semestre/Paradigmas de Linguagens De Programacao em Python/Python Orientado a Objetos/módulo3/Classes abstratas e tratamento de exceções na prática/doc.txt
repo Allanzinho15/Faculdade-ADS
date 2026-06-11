@@ -1,0 +1,113 @@
+Classes abstratas e tratamento de exceções na prática
+Vamos praticar conceitos de programação orientada a objetos em Python, com foco na utilização de classes abstratas e no tratamento de exceções; para isso, abordaremos dois cenários. Veja!
+
+Cenário 1
+Acompanhe o passo a passo.
+
+Criar um sistema de classes para modelar diferentes tipos de veículos, utilizando uma classe abstrata como base para definir a interface comum.
+Chamar os métodos mover() e ligar() em cada instância.
+Cenário 2
+Acompanhe o passo a passo.
+
+Criar uma classe chamada Calculadora que tenha métodos para realizar operações matemáticas básicas: adição, subtração, multiplicação e divisão.
+Implementar tratamento de exceções para evitar tipos de dados incorretos.
+Neste vídeo, apresentaremos dois exercícios práticos ilustrando o uso de classes abstratas e o tratamento de exceções em Python. Confira!
+
+
+Roteiro de prática
+Roteiro para o cenário 1
+Acompanhe o passo a passo.
+
+Importe abc para o projeto (abstract base classes).
+Defina a classe abstrata Veiculo:
+Crie uma classe abstrata chamada Veiculo com os métodos abstratos mover() e ligar().
+Crie subclasses de Veículo:
+Implemente duas subclasses de Veículo: Carro e Bicicleta;
+Cada subclasse deve fornecer implementações concretas para os métodos abstratos de acordo com o comportamento de cada veículo.
+Teste as implementações:
+Crie instâncias de Carro e Bicicleta;
+Chame os métodos mover() e ligar() em cada instância e verifique as saídas para garantir que funcionem conforme o esperado.
+Confira, agora, o código fonte gerado.
+from abc import ABC, abstractmethod
+
+# Classe abstrata Veiculo
+class Veiculo(ABC):
+    @abstractmethod
+    def mover(self):
+        pass
+
+    @abstractmethod
+    def ligar(self):
+        pass
+
+# Subclasse Carro
+class Carro(Veiculo):
+    def mover(self):
+        return "O carro está se movendo."
+
+    def ligar(self):
+        return "O carro está ligado."
+
+# Subclasse Bicicleta
+class Bicicleta(Veiculo):
+    def mover(self):
+        return "A bicicleta está se movendo."
+
+    def ligar(self):
+        return "Não é possível ligar uma bicicleta."
+
+# Testando as implementações
+carro = Carro()
+bicicleta = Bicicleta()
+
+print(carro.mover())    # Saída: O carro está se movendo.
+print(carro.ligar())    # Saída: O carro está ligado.
+
+print(bicicleta.mover()) # Saída: A bicicleta está se movendo.
+print(bicicleta.ligar()) # Saída: Não é possível ligar uma bicicleta.
+
+
+Roteiro para o cenário 2
+Acompanhe o passo a passo.
+
+Defina a classe Calculadora:
+Crie métodos para  adição, subtração, multiplicação e divisão;
+Tratamento a exceções de tipos de dados incorretos.
+Teste as implementações:
+Crie instâncias da Classe;
+Chame os métodos e realizar operações aritméticas;
+Passe valores inválidos para os métodos.
+Confira, agora, o código fonte gerado.
+# Classe Calculadora com tratamento de exceções
+class Calculadora:
+    def adicao(self, x, y):
+        try:
+            return x + y
+        except TypeError:
+            return "Erro: Tipos de dados inválidos para adição."
+
+    def subtracao(self, x, y):
+        try:
+            return x - y
+        except TypeError:
+            return "Erro: Tipos de dados inválidos para subtração."
+
+    def multiplicacao(self, x, y):
+        try:
+            return x * y
+        except TypeError:
+            return "Erro: Tipos de dados inválidos para multiplicação."
+
+    def divisao(self, x, y):
+        try:
+            return x / y
+        except TypeError:
+            return "Erro: Tipos de dados inválidos para divisão."
+
+# Testando as implementações
+calculadora = Calculadora()
+
+print(calculadora.adicao(5, 3))       # Saída: 8
+print(calculadora.subtracao(5, 3))    # Saída: 2
+print(calculadora.multiplicacao(5, 3))# Saída: 15
+print(calculadora.divisao(5, 'a'))    # Saída: Erro: Tipos de dados inválidos para divisão.

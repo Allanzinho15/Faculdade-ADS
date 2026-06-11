@@ -1,0 +1,323 @@
+Integridade dos objetos: encapsulamento
+Encapsulamento é uma prática fundamental na programação orientada a objetos, que visa proteger os dados internos de uma classe e expor apenas o necessário. Este conteúdo abordará como implementar encapsulamento usando modificadores de acesso, como públicos, protegidos e privados, ajudando a criar código mais seguro e modular. Explore as técnicas para manter seus dados seguros e bem organizados.
+
+Neste vídeo, detalharemos a implementação do encapsulamento, que protege a integridade dos objetos ocultando seus dados internos e permitindo acesso controlado através de métodos públicos. Acompanhe!
+
+
+Encapsulamento
+Conforme aprendemos, o encapsulamento é fundamental para a manutenção da integridade dos objetos e a proibição de qualquer alteração indevida nos valores dos atributos (estado) do objeto (Caelum, 2020).
+
+Esse ponto foi fundamental para a popularização da orientação aos objetos: reunir dados e funções em uma única entidade e proibir a alteração indevida dos atributos.
+
+Seguindo em nosso exemplo, no caso da classe Conta, imagine que algum programa tente realizar a seguinte alteração direta no valor do saldo:
+
+conta1.saldo = -200
+
+Esse comando viola a regra de negócio do método sacar(), que indica a fim de não haver saque maior que o valor e de deixar a conta no negativo (estado inválido para o sistema).
+
+Como proibir alterações indevidas dos atributos em Python? É o que veremos a seguir.
+
+Atributos públicos e privados
+Para seguir o encapsulamento e proibir alterações indevidas dos atributos, deve-se definir atributos privados para a classe.
+
+assignment_ind
+Comentário
+Por default, em Python, os atributos são definidos como público, ou seja, podem ser acessados diretamente sem respeitar o encapsulamento – acesso feito apenas por meio de métodos do objeto.
+
+Para tornar um atributo privado, é preciso iniciá-lo com dois underscores (‘__’). E qual seria o retorno do interpretador ao se acessar um atributo privado para classe Conta? Um erro seria gerado.
+
+Clique em Executar no emulador, no qual existe uma classe chamada Conta com todos os atributos privados, e verifique.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+class Conta:
+    def __init__(self, numero):
+        self.numero = numero
+        self._saldo = 0
+        
+    @property
+    def saldo(self):
+        return self._saldo
+    
+    @saldo.setter
+    def saldo(self, saldo):
+        if saldo < 0:
+            print ("saldo inválido")
+        else:
+            self._saldo = saldo
+            
+def main():
+    conta = Conta(1)
+    conta.saldo = 1000 # usando o @saldo.setter
+    print(f'saldo da conta = {conta.saldo}') # usando o @property
+    
+if __name__ == "__main__":
+    main()
+Input
+Digite cada input em uma linha.
+Console
+O erro gerado indica que não existe o atributo saldo. Mas como não existe se ele está na definição da classe? Ele realmente existe, mas não está visível para o programa porque o atributo é privado.
+
+É importante ressaltar que, em Python, não há realmente atributos privados. O interpretador renomeia o atributo privado para _nomedaClasse__nomedoatributo.
+
+O atributo, portanto, ainda pode ser acessado. Embora ele funcione, isso é considerado uma prática que viola o princípio de encapsulamento da orientação a objetos. Veja.
+
+>>> conta._Conta__saldo
+1000
+
+Na prática, deve haver uma disciplina para que os atributos como __ ou _ definido nas classes não sejam acessados diretamente.
+
+Decorator @property
+As properties são uma estratégia importante disponibilizada pelo Python para acessar e modificar atributos de forma controlada. Ao usar o decorador @property em métodos, você mantém os atributos como protegidos, permitindo que sejam acessados apenas por meio desses métodos decorados. Isso garante que os atributos sejam manipulados de maneira segura e conforme as regras definidas na classe.
+
+Por exemplo, na classe Conta, o atributo privado saldo não pode ser acessado diretamente para leitura. Em vez disso, ele é acessado por meio de um método decorado com @property, veja!
+
+python
+content_copy
+class Circulo():
+  def __init__(self, pontox, pontoy, raio):
+    self.pontox = pontox
+    self.pontoy = pontoy
+    self.raio = raio
+Definição de uma propriedade.
+
+Esse método permite acessar o valor do atributo saldo de forma controlada. Quando você deseja permitir que o atributo saldo seja modificado, pode utilizar o decorador @<nomedometodo>.setter.
+
+Isso força que qualquer alteração no valor do atributo privado passe por esse método, onde é possível incluir validações ou outras regras de negócios.
+
+python
+content_copy
+class Circulo():
+
+    total_circulos = 0
+
+    def __init__(self, pontox, pontoy, raio):
+        self.pontox = pontox
+        self.pontoy = pontoy
+        self.raio = raio
+        Circulo.total_circulos += 1
+Definição de um método setter.
+
+Os properties ajudam a garantir o encapsulamento no Python.
+
+Uma boa prática implementada em todas as linguagens orientadas a objetos será a de definir esses métodos apenas se realmente houver regra de negócios diretamente associada ao atributo. Caso não haja, deve-se deixar o acesso aos atributos conforme definido na classe.
+
+Nesse caso, ao tentar modificar o saldo, o método verifica se o valor é negativo e, se for, impede a alteração e exibe uma mensagem de erro. Caso contrário, o saldo é atualizado.
+
+O uso de properties ajuda a garantir o encapsulamento em Python, permitindo que você controle como os atributos são acessados e modificados. No entanto, é uma boa prática definir esses métodos somente se houver uma regra de negócios específica associada ao atributo. Se não houver, o acesso aos atributos pode ser feito diretamente, conforme definido na classe.
+
+No código a seguir, demonstraremos como acessar e modificar os atributos usando os métodos decorados com @property e @<nomedometodo>.setter. Clique em Executar para ver como funciona na prática. Depois, altere o valor do saldo para um valor negativo e veja o que acontece.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+
+Input
+Digite cada input em uma linha.
+Console
+Atributos de classe
+Existem algumas situações em que os sistemas precisam controlar valores associados à classe, e não aos objetos (instâncias) das classes. É o caso, por exemplo, ao se desenvolver um aplicativo de desenho, como o Paint, que precisa contar o número de círculos criados na tela.
+
+Inicialmente, a classe Círculo vai ser criada como mostra o código a seguir.
+
+python
+content_copy
+class Circulo():
+
+    total_circulos = 0  # Atributo de classe
+
+    def __init__(self, pontox, pontoy, raio):
+        self.pontox = pontox
+        self.pontoy = pontoy
+        self.raio = raio
+        Circulo.total_circulos += 1  # Incrementando o atributo de classe
+
+circ1 = Circulo(1, 1, 10)
+print(circ1.total_circulos)  # Isso agora imprimirá 1
+
+circ2 = Circulo(2, 2, 20)
+print(circ1.total_circulos)  # Isso agora imprimirá 2
+print(circ2.total_circulos)  # Isso também imprimirá 2
+
+print(Circulo.total_circulos)  # Isso imprimirá 2, já que é o valor compartilhado por todas as instâncias
+Classe Círculo.
+
+No entanto, conforme mencionamos, é necessário controlar a quantidade de círculos criados. Veja!
+
+python
+content_copy
+
+Classe Círculo com atributo de classe.
+
+Na linha 2, indicamos para o interpretador que seja criada uma variável total_circulos. Como a declaração está localizada antes do init, o interpretador “entende” que se trata de uma variável de classe, ou seja, que terá um valor único para todos objetos da classe.
+
+Na linha 8, o valor da variável de classe a cada instanciação de um objeto da classe Círculo é atualizado.
+
+Veja o programa abaixo que irá criar dois círculos. Execute e analise o resultado.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+class Circulo():
+
+    _total_circulos = 0
+
+    def __init__(self, pontox, pontoy, raio):
+        self.pontox = pontox
+        self.pontoy = pontoy
+        self.raio = raio
+        Circulo._total_circulos += 1
+
+circ1 = Circulo(1, 1, 10)
+print(circ1._total_circulos)
+
+circ2 = Circulo(2, 2, 20)
+print(circ2._total_circulos)
+
+print(Circulo.total_circulos)
+Input
+Console
+Cada vez que uma nova instância de Circulo é criada, o método __init__ é chamado. Dentro deste método, Circulo.total_circulos += 1 é utilizado para incrementar o valor de total_circulos diretamente na classe Circulo. Esse incremento é feito de forma que cada nova instância da classe contribui para aumentar o contador, refletindo o número total de círculos criados.
+
+Quando acessamos circ1.total_circulos ou circ2.total_circulos, estamos na verdade acessando o valor de Circulo.total_circulos, porque total_circulos é um atributo de classe, e todas as instâncias compartilham o mesmo valor. Isso significa que, independentemente de qual instância é usada para acessar o atributo, o valor será o mesmo, representando o total acumulado de instâncias criadas.
+
+No final do programa, ao acessar Circulo.total_circulos diretamente, o valor mostrado também será 2, confirmando que o atributo de classe é compartilhado e reflete o número total de instâncias criadas até o momento. O uso de total_circulos como um atributo de classe permite que o programa mantenha um registro centralizado e atualizado do número de objetos Circulo em qualquer ponto da execução.
+
+No entanto, o acesso direto ao valor da variável de classe não é ideal em boas práticas de programação. Para seguir as convenções de encapsulamento, a variável de classe deveria ser marcada como privada, usando um underscore (_) antes do seu nome, tornando-se _total_circulos. Isso protege o atributo de acessos não intencionais ou modificações diretas, encorajando o uso de métodos controlados para acessar ou modificar seu valor.
+
+Como isso fica agora? O resultado será apresentado a seguir.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+class Circulo():
+
+    _total_circulos = 0
+
+    def __init__(self, pontox, pontoy, raio):
+        self.pontox = pontox
+        self.pontoy = pontoy
+        self.raio = raio
+        type(self)._total_circulos +=1
+
+
+    @classmethod
+    def get_total_circulos(cls):
+        return cls._total_circulos
+
+circ1 = Circulo(1, 1, 10)
+circ2 = Circulo(2, 2, 20)
+
+print(Circulo.get_total_circulos())
+Input
+Console
+O comando print(Circulo.total_circulos) tenta acessar diretamente o atributo total_circulos da classe Circulo. No entanto, como o atributo foi definido como _total_circulos (com underscore), tornou um atributo privado e não visível fora da classe. não existe um atributo total_circulos na classe.
+
+Isso resultará em um erro de atributo (AttributeError), pois o Python não encontrará Circulo.total_circulos.
+
+Métodos de classe
+Os métodos de classe são a maneira indicada para se acessar os atributos de classe. Eles têm acesso diretamente à área de memória que contém os atributos de classe.
+
+O esquema é apresentado na imagem.
+
+
+Memória estática.
+
+Para definir um método como estático, deve-se usar o decorator @classmethod. Observe agora a classe Círculo alterada.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+class Circulo():
+
+    _total_circulos = 0
+
+    def __init__(self, pontox, pontoy, raio):
+        self.pontox = pontox
+        self.pontoy = pontoy
+        self.raio = raio
+        type(self)._total_circulos +=1
+
+
+    @classmethod
+    def get_total_circulos(cls):
+        return cls._total_circulos
+
+circ1 = Circulo(1, 1, 10)
+circ2 = Circulo(2, 2, 20)
+
+print(Circulo.get_total_circulos())
+Input
+Console
+No código, o método type(self)._total_circulos += 1 é utilizado para incrementar _total_circulos a cada vez que uma nova instância é criada.
+
+Usar type(self)._total_circulos é equivalente a usar Circulo._total_circulos, mas permite que o código funcione corretamente mesmo se for usado em subclasses, garantindo que o incremento seja realizado na classe apropriada.
+
+O método get_total_circulos é marcado com o decorador @classmethod, o que significa que ele pode ser chamado diretamente na classe Circulo ou em qualquer uma de suas instâncias.
+
+Esse método retorna o valor atual do atributo _total_circulos, permitindo acessar quantas instâncias de Circulo foram criadas.
+
+No exemplo de uso, duas instâncias de Circulo (circ1 e circ2) são criadas, cada uma chamando o método __init__, que incrementa _total_circulos.
+
+Após a criação de circ1, _total_circulos é 1.
+Após a criação de circ2, _total_circulos é 2.
+O método Circulo.get_total_circulos() retorna 2, que é o número total de instâncias criadas até o momento.
+Métodos públicos e privados
+As mesmas regras definidas para atributos são válidas para os métodos das classes. Desse modo, o método pode ser declarado como privado, mesmo que ainda possa ser chamado diretamente como se fosse um método público.
+
+Os dois underscores antes do método indicam que ele é privado. Veja!
+
+python
+content_copy
+class Circulo:
+
+  def __init__(self,clientes,numero,saldo):
+    self.clientes = clientes
+    self.numero = numero
+    self.saldo = saldo
+      
+  def __gerarsaldo(self):
+    print(f"numero: {self.numero}\n saldo:{self.saldo}")
+Método privado.
+
+No código, foi definido o método __gerarsaldo como privado. Portanto, ele pode ser acessado apenas internamente pela classe Conta.
+
+Um dos principais padrões da orientação a objetos consiste nos métodos públicos e nos atributos privados. Desse modo, respeita-se o encapsulamento.
+
+Métodos estáticos
+São métodos que podem ser chamados sem haver uma referência para um objeto da classe, ou seja, não existe a obrigatoriedade da instanciação de um objeto da classe. O método pode ser chamado diretamente. Observe!
+
+python
+content_copy
+import math
+class Math:
+
+    @staticmethod
+    def sqrt(x):
+        return math.sqrt(x)
+Método estático.
+
+>>> Math.sqrt(20)
+4.47213595499958
+
+Aqui, o método sqrt da classe Math foi chamado sem que um objeto da classe Math fosse instanciado.
+
+report_problem
+Atenção!
+Os métodos estáticos não são uma boa prática na programação orientada a objetos. Eles devem ser utilizados apenas em casos especiais, como o de classes de log em sistemas.

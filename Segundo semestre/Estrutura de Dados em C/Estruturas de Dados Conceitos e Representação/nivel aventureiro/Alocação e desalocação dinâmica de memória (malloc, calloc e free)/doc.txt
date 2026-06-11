@@ -1,0 +1,170 @@
+Alocação e desalocação dinâmica de memória (malloc, calloc e free)
+Neste vídeo, confira a alocação dinâmica de memória na linguagem C, entendendo quando e por que usar malloc, calloc e free. Veja ainda exemplos práticos de alocação e liberação de memória com ponteiros, além de erros comuns e como evitá-los.
+
+
+
+A memória de um computador é o local onde os dados e as instruções de um programa são armazenados por um tempo durante sua execução. Ao programar em C, precisamos entender como a memória é utilizada, alocada e liberada para que o uso dos recursos do sistema seja eficiente.
+
+Podemos considerar dois tipos de alocação de memória:
+
+
+Alocação estática ou automática
+
+
+É o tipo que ocorre quando criamos uma variável comum, como int x=10. Nesse caso, o compilador reserva de maneira automática um espaço fixo na memória. Essa alocação acontece durante a compilação ou no início da execução do programa, e a quantidade de memória é previamente conhecida.
+
+
+Alocação dinâmica de memória
+
+
+É necessária quando não sabemos com antecedência quanto espaço será preciso. Por exemplo, ao criar um sistema que leia uma quantidade de dados definida pelo usuário em tempo de execução. Nesse caso, o programa solicita memória ao sistema operacional durante a execução e é responsável por liberá-la quando não for mais necessária.
+
+
+Em C, esse controle é feito de forma manual com três funções principais: malloc(), calloc() e free().
+
+ 
+
+Vamos entender melhor! Imagine que você vai a um restaurante self-service. Em vez de receber um prato padrão, você escolhe o tamanho e os itens conforme a sua fome. A alocação dinâmica é assim: o programa “pede” para o sistema exatamente a quantidade de memória que precisa usar.
+
+
+Alocação e desalocação dinâmica: principais funções
+
+
+Iremos conhecer agora as principais funções usadas em alocação e desalocação dinâmica na linguagem C!
+
+
+malloc() – memory allocation
+
+
+Aloca uma quantidade de memória em bytes, mas não inicializa.
+
+ 
+
+A função malloc aloca um bloco de memória de tamanho específico (em bytes) e retorna um ponteiro para o início desse bloco. Os valores dentro desse espaço não são inicializados.
+
+ 
+
+Suponha que você alugue um armário no shopping sem saber se ele está limpo ou bagunçado. Você só recebe o espaço e depois decide como usá-lo.
+
+ 
+
+Exemplo:
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+int* vetor = (int*)malloc(5 * sizeof(int));
+Copiar
+
+Estamos alocando espaço para um vetor de 5 inteiros. A função retorna um ponteiro para a primeira posição da memória reservada.
+
+
+calloc() – clear allocation
+
+
+Aloca e inicializa todos os bytes com zero.
+
+ 
+
+A função calloc também aloca memória, mas inicializa todos os bytes com zero. Ela recebe dois parâmetros: a quantidade de elementos e o tamanho de cada um.
+
+ 
+
+Para entendermos melhor, podemos pensar em alugar um armário e já o receber limpo e vazio. Ou seja, você não precisa se preocupar com sujeira ou bagunça anterior.
+
+Exemplo:
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+int* vetor = (int*)calloc(5, sizeof(int));
+Copiar
+
+No caso do calloc, os 5 inteiros do vetor já começam com valor zero.
+
+
+free() 
+
+
+Libera a memória alocada para evitar desperdício.
+
+ 
+
+Após utilizar a memória alocada dinamicamente, é preciso liberá-la com a função free para evitar desperdício de recursos.
+
+ 
+
+Pensando ainda no exemplo do armário no shopping, podemos comparar essa função a devolver a chave do armário alugado. Se você não devolver, ele continua ocupado — mesmo que você não use mais.
+
+
+Exemplo:
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+free(vetor);
+Copiar
+
+Free libera o espaço ocupado por vetor, permitindo que o sistema reutilize essa memória.
+
+ 
+
+Vamos ao exemplo prático em C!
+
+ 
+
+Veja o uso de alocação dinâmica de memória com malloc e o acesso à memória usando ponteiros.
+
+ 
+
+No código, visualizamos o uso das funções malloc e free, além do uso de ponteiros.
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+int  *a, b;
+:
+:
+b = 10;
+a = (int*) malloc(sizeof(int));
+*a = 20;
+a = &b;
+free(a); 
+Copiar
+
+Ao executar a linha 1, "a" e "b" estarão em um espaço de endereçamento estático, e seu valor será aquele anteriormente armazenando na memória, conforme imagem a seguir.
+
+
+Curadoria de TI
+
+Variáveis a e b na memória após a execução da linha de código 1.
+
+Ao executar as linhas 4 e 5 , o conteúdo de “b” passa a ser 10 e apontará para um endereço do espaço dinâmico, que conterá o valor armazenado anteriormente na memória, conforme imagem adiante.
+
+
+Curadoria de TI
+
+Variáveis a e b na memória após a execução das linhas de código 4 e 5 .
+
+Ao executar a linha 6, o endereço que "a" aponta passa a armazenar o valor 20. Na linha 7, "a" passa a apontar para "b", mas agora ninguém referencia mais o endereço apontado antes por "a". A utilização da função free na linha 8 está incorreta. O objetivo seria liberar a memória que foi, a princípio, para "a". No entanto, "a" não aponta mais para esse endereço de memória, conforme a próxima imagem.
+
+
+Curadoria de TI
+
+Variáveis a e b na memória após a execução das linhas de código 6.
+
+Para corrigir esse problema, as linhas 7 e 8 deveriam ser invertidas. Primeiro, a memória alocada dinamicamente é desalocada, e depois "a" passa a apontar para "b".
+
+
+Quando usar free?
+
+
+Quando a quantidade de dados não é conhecida antes da execução e em estruturas como listas encadeadas, filas, árvores e vetores redimensionáveis. O uso consciente de malloc, calloc e free ajuda a evitar vazamentos de memória que podem deixar o sistema mais lento ou instável.

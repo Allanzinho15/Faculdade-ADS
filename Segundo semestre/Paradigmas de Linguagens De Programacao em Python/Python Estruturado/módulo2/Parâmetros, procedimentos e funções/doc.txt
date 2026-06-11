@@ -1,0 +1,209 @@
+Parâmetros, procedimentos e funções
+Você aprenderá a definir, chamar e organizar subprogramas, bem como definir e utilizar parâmetros em funções, criar procedimentos para executar tarefas específicas e modularizar seu código de forma eficiente.
+
+Assista ao vídeo e acompanhe a utilização de parâmetros, procedimentos e funções na linguagem de programação Python.
+
+
+Parâmetros em Python
+Vamos falar sobre parâmetros! Quando você cria uma função em Python, ela geralmente precisa de alguns dados para trabalhar. Existem duas maneiras principais para uma função obter esses dados, observe!
+
+looks_one
+Acessar variáveis globais
+Variáveis que estão fora da função, mas que a função consegue ver e usar.
+
+looks_two
+Passagem de parâmetros
+Passar variáveis diretamente para a função quando ela é chamada.
+
+Usar parâmetros é uma maneira mais segura e flexível de passar dados para a função, pois evita que você altere acidentalmente variáveis globais importantes.
+
+O que são parâmetros?
+São os valores que você passa para a função quando a chama. Vamos ver um exemplo!
+
+python
+content_copy
+
+Aqui, peso e altura são parâmetros da função calculaIMC. Você chama essa função passando valores específicos para esses parâmetros. Veja!
+
+python
+content_copy
+meu_IMC = calculaIMC(70, 1.75)
+print(meu_IMC)
+
+Quando chamamos a função com calculaIMC(70, 1.75), estamos passando "70 e 1.75" como argumentos para os parâmetros peso e altura, respectivamente.
+
+Parâmetros formais e reais
+Observe agora a diferença entre os parâmetros!
+
+Formais
+São aqueles que você define no cabeçalho da função. No exemplo, peso e altura são parâmetros formais.
+
+close
+Reais (argumentos)
+São os valores que você passa para a função quando a chama. No exemplo, "70, 1.75" são argumentos.
+
+Valores padrão para parâmetros
+Em Python, você pode definir valores padrão para os parâmetros. Isso é útil quando você quer que um parâmetro tenha um valor padrão se não for fornecido.
+
+Veja o exemplo de definição e chamada da função taxímetro no próximo código (no arquivo disponibilizado, trata-se do código 12).
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+def taximetro(distancia, multiplicador=1):
+    largada = 3
+    km_rodado = 2
+    valor = (largada + distancia * 
+    km_rodado) * multiplicador
+    return valor
+
+
+pagamento = taximetro(3.5)
+print(pagamento)
+Input
+Digite cada input em uma linha.
+Console
+No exemplo, o parâmetro multiplicador tem um valor padrão de 1. Isso significa que, se não passarmos um valor para multiplicador ao chamar a função, ele usará 1 como padrão. Quando chamamos taximetro(3.5), a função usa multiplicador=1 por padrão.
+
+A palavra reservada return indica que a função retorna algum valor. Isso implica que o valor retornado seja armazenado em uma variável do programa chamador (como ocorre na linha 8) ou utilizado como parâmetro para outra função.
+
+assignment_ind
+Comentário
+Retornar um valor é diferente de imprimir na tela. Ao utilizar a função print(), ocorre apenas a impressão de algo nela, o que não significa o retorno de qualquer função definida pelo usuário.
+
+Procedimentos e funções
+Os subprogramas podem ser procedimentos e funções. Veja a diferença entre eles de acordo com Sebesta (2018).
+
+Procedimentos
+São aqueles que não retornam valores.
+
+close
+Funções
+São aquelas que retornam valores.
+
+Na maioria das linguagens que não explicita a diferença entre ambos, as funções podem ser definidas sem retornar qualquer valor, tendo um comportamento de procedimento. Esse é o caso de Python.
+
+Veja o código a seguir (código 13 no arquivo disponibilizado na introdução deste texto).
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+def func1(x):
+    x = 10
+    print(f'Função func1 - x = {x}')
+
+
+def func2(x):
+    x = 20
+    print(f'Função func2 - x = {x}')
+
+
+x = 0
+func1(x)
+func2(x)
+print(f'Programa principal - x = {x}')
+Input
+Digite cada input em uma linha.
+Console
+As funções func1(x) e func2(x) não possuem qualquer retorno. Ou seja, elas são funções com comportamento de procedimentos.
+
+Ambientes de referenciamento local
+Variáveis locais
+Quando um subprograma define as próprias variáveis, ele estabelece ambientes de referenciamento local. Essas variáveis são chamadas de variáveis locais, nas quais seu escopo usualmente é o corpo do subprograma.
+
+As variáveis locais podem ser as que veremos a seguir.
+
+São vinculadas ao armazenamento no início da execução do subprograma e desvinculadas quando essa execução termina. As variáveis locais dinâmicas da pilha têm diversas vantagens, e a principal delas é a flexibilidade. Suas principais desvantagens são o custo do tempo – para alocar, inicializar (quando necessário) e liberar tais variáveis para cada chamada ao subprograma – e o fato de que os acessos a essas variáveis locais devem ser indiretos, enquanto os acessos às variáveis estáticas podem ser diretos.
+
+São vinculadas a células de memória antes do início da execução de um programa e permanecem vinculadas a essas mesmas células até que a execução do programa termine. Elas são um pouco mais eficientes que as variáveis locais dinâmicas da pilha, já que não é necessário tempo para alocar ou liberar essas variáveis. Sua maior desvantagem é a incapacidade de suportar recursão.
+
+Todas as variáveis locais em Python são dinâmicas da pilha. As variáveis globais são declaradas em definições de método; além disso, qualquer variável declarada global em um método precisa ser definida fora dele. Caso haja uma atribuição à variável local com o mesmo nome de uma variável global, a global é implicitamente declarada como local.
+
+Voltemos agora ao exemplo do tópico Procedimentos e funções. Vamos detalhar as funções func1(x) e func2(x). Acompanhe!
+
+As linhas 1, 2 e 3 definem a função func1(x), que recebe o parâmetro x, mas tem uma variável local de nome x, cujo valor atribuído é 10.
+Analogamente, a função func2(x) – definida nas linhas 6, 7 e 8 – recebe o parâmetro x e tem uma variável de mesmo nome, mas com valor atribuído 20.
+O programa principal tem uma variável global de mesmo nome x, cujo valor atribuído é 0, na linha 11.
+Veja que as chamadas às funções func1(x) e func2(x) ocorrem nas linhas 12 e 13, quando a variável x global já recebeu o valor 0. Porém, ao ser executada, cada uma dessas funções tem a própria variável local a quem todas as referências internas são feitas.
+Mesmo com a variável global tendo valor nulo, cada variável local das funções func1(x) e func2(x) tem o próprio valor. Não há alterações na variável global mesmo com as atribuições das linhas 2 e 7.
+Para alterar a variável global x, seria necessário explicitar, dentro de cada função, que o nome x é referente a ela. Isso pode ser feito com a palavra reservada global. Além de explicitar a referência à variável global, as funções func1(x) e func2(x) não recebem mais os parâmetros de mesmo nome, já que fazem referência à variável global.
+
+Veja como ficaria o nosso exemplo com essa pequena alteração no código anterior (trata-se do código 14 no arquivo disponibilizado).
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+def func1():
+    global x
+    x = 10
+    print(f'Função func1 - x = {x}')
+
+
+def func2():
+    global x
+    x = 20
+    print(f'Função func2 - x = {x}')
+
+
+x = 0
+func1()
+func2()
+print(f'Programa principal - x = {x}')
+Input
+Digite cada input em uma linha.
+Console
+Observando a execução do código anterior, percebe-se que o print() do programa principal está na linha 16, depois da chamada à função func2(x). Dessa forma, a variável global x, alterada na execução da func2(x), fica com o valor 20 quando a execução volta ao programa principal.
+
+Subprogramas aninhados
+Em Python (e na maioria das linguagens funcionais), é permitido aninhar subprogramas.
+
+Veja o exemplo a seguir (código 15 no arquivo disponibilizado neste conteúdo). No campo Input do emulador, digite o valor que será atribuído à variável dist e clique em Executar.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+def taximetro(distancia):
+    def calculaMult():
+        if distancia < 5:
+            return 1.2
+        else:
+            return 1
+
+    multiplicador = calculaMult()
+    largada = 3
+    km_rodado = 2
+    valor = (largada + distancia * km_rodado) * multiplicador
+    return valor
+
+dist = eval(input("Entre com a distancia a ser percorrida em km: \n"))
+pagamento = taximetro(dist)
+print(f'O valor a pagar é R$ {pagamento}')
+Input
+Digite cada input em uma linha.
+Console
+A função taximetro() tem, dentro de sua definição, a definição de outra função denominada calculaMult(). Na linha 7, a função calculaMult() é chamada, e o seu retorno é armazenado na variável multiplicador.
+
+Métodos de passagens de parâmetros
+São as maneiras existentes para transmiti-los ou recebê-los dos subprogramas chamados. Os parâmetros podem ser passados principalmente pelos seguintes métodos:
+
+O parâmetro formal funciona como uma variável local do subprograma, sendo inicializado com o valor do parâmetro real. Dessa maneira, não ocorre uma alteração na variável externa ao subprograma caso ela seja passada como parâmetro.
+
+Em vez de passar o valor do parâmetro real, é transmitido um caminho de acesso (normalmente, um endereço) para o subprograma chamado. Isso fornece o caminho de acesso para a célula que armazena o parâmetro real. Assim, o subprograma chamado pode acessar esse parâmetro na unidade de programa chamadora.
+
+O método de passagem de parâmetros de Python é chamado de passagem por atribuição. Como todos os valores de dados são objetos, toda variável é uma referência para um objeto.
+
+text_snippet
+Resumindo
+Ao se estudar a orientação a objetos, fica mais clara a diferença entre a passagem por atribuição e a passagem por referência. Por enquanto, podemos entender que a passagem por atribuição é uma passagem por referência, pois os valores de todos os parâmetros reais são referências.

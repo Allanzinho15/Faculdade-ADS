@@ -1,0 +1,93 @@
+Subprogramas
+Vamos explorar agora a arte da modularidade com subprogramas em Python. Destacaremos a importância de dividir seu código em funções reutilizáveis, facilitando a manutenção e a compreensão.
+
+Assista ao vídeo e acompanhe as características gerais dos subprogramas e suas definições básicas na linguagem de programação Python.
+
+
+O que são subprogramas?
+São blocos de código que realizam tarefas específicas dentro de um programa maior. Eles são fundamentais para a organização e reutilização de código em linguagens de programação.
+
+Em Python, chamamos subprogramas de funções.
+
+Características gerais dos subprogramas
+Vamos explorar algumas características importantes dos subprogramas. Confira!
+
+Cada subprograma tem um único ponto de entrada, que é onde sua execução começa.
+
+Quando um subprograma é chamado, o programa chamador é suspenso até que o subprograma termine sua execução.
+
+Após a execução do subprograma, o controle sempre retorna ao ponto de chamada no programa chamador.
+
+Definições básicas de subprogramas
+Agora, vamos entender alguns conceitos básicos sobre subprogramas em Python.
+
+list_alt
+Definição de subprograma
+Um subprograma, ou função, é definido quando o desenvolvedor especifica nome, parâmetros (se houver) e o conjunto de ações que ele executará. Isso cria uma "interface" que descreve como a função deve ser chamada e o que ela faz.
+
+code
+Chamada de subprograma
+Uma função é chamada quando o programa executa uma instrução que solicita explicitamente a execução dessa função. Essa chamada ativa a função, fazendo com que o Python execute o bloco de código associado a ela.
+
+play_arrow
+Ativação do subprograma
+Uma vez chamada, a função se torna ativa. Ela continua em execução até que todas as instruções dentro dela sejam executadas. Quando a função termina, o controle retorna ao ponto de onde a função foi chamada.
+
+subheader
+Cabeçalho do subprograma
+O cabeçalho de uma função é a primeira parte da definição da função. Ele inclui o nome da função e, opcionalmente, uma lista de parâmetros.
+
+Vejamos agora um exemplo. Em Python, você define uma função com a palavra-chave def, seguida pelo nome da função e parênteses contendo os parâmetros, se houver. Observe!
+
+python
+content_copy
+def minha_funcao(parametro1, parametro2):
+    # Corpo da função
+    pass
+No exemplo, minha_funcao é o nome da função e parametro1 e parametro2 são os parâmetros que a função aceita.
+
+Definindo e chamando subprogramas
+Em Python, as funções definidas pelo desenvolvedor devem ser precedidas pela palavra reservada def. Não são especificados o tipo de retorno e os tipos dos parâmetros.
+
+Vamos criar uma primeira função para imprimir o clássico “Olá Mundo!” em Python. Como ficaria?
+
+python
+content_copy
+def diz_ola():
+    print("Olá, Mundo!")
+Aqui, definimos uma função chamada diz_ola que imprime "Olá, Mundo!". Para chamar essa função e executar o código dentro dela, basta usar o nome da função seguido de parênteses: diz_ola()
+
+assignment_ind
+Comentário
+Em Python, as sentenças de função def são executáveis. Isso implica que a função só pode ser chamada após a execução da sentença def.
+
+Exemplo de função
+Vejamos um exemplo no qual o usuário pode escolher qual função chamar (código 11 do arquivo disponibilizado). Digite 1 ou 2 no campo Input do emulador e, depois, em Executar. Acompanhe!
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+escolha = input("Escolha uma opção de função: 1 ou 2\n")
+if escolha == "1":
+    def func1(x):
+        return x + 1
+    s = func1(10)
+ 
+else:
+    def func2(x):
+        return x + 2
+    s = func2(10)
+ 
+print(s)
+Input
+Digite cada input em uma linha.
+Console
+Vamos analisar linha a linha, acompanhe!
+
+A linha 1 solicita ao usuário que escolha entre duas opções de função.
+Se o usuário escolher "1", a função func1 é definida e chamada com o argumento 10, retornando 11.
+Se o usuário escolher outra opção, a função func2 é definida e chamada com o argumento 10, retornando 12.
+A linha final imprime o resultado da função escolhida.

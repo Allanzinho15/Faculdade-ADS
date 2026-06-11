@@ -1,0 +1,126 @@
+Polimorfismo
+Polimorfismo em Python permite que objetos de diferentes classes sejam tratados através de uma interface comum, adaptando comportamentos conforme necessário. Este conteúdo explicará como implementar polimorfismo, utilizando métodos e interfaces para criar código flexível e dinâmico. Aprenda a aproveitar este poderoso conceito para escrever programas mais adaptáveis e elegantes.
+
+Neste vídeo, falaremos sobre a utilização e implementação do polimorfismo na linguagem de programação Python. Confira!
+
+
+Implementando polimorfismo
+Polimorfismo é o mecanismo que permite a um método com o mesmo nome ser executado de modo diferente a depender do objeto que está chamando o método. A linguagem define em tempo de execução (late binding) qual método deve ser chamado. Essa característica é bastante comum em herança de classes devido à redefinição da implementação dos métodos nas subclasses.
+
+
+Pessoa programando em computador.
+
+Vamos imaginar que agora tenhamos uma entidade Banco que controla todas as contas criadas no sistema de conta corrente. As contas podem ser do tipo conta, contacomum ou contarenumerada. O cálculo do rendimento da conta Cliente desconta IOF e IR; a conta Renumerada, apenas o IOF. Já a conta Cliente não tem desconto nenhum.
+
+Todos os descontos são realizados em cima do valor bruto após o rendimento mensal. Uma vez por mês, o banco executa o cálculo do rendimento de todos os tipos de contas.
+
+O diagrama será apresentado na imagem.
+
+
+Diagrama Banco.
+
+Vamos analisar agora a implementação da classe ContaCliente. Acompanhe!
+
+python
+content_copy
+class ContaCliente:
+    def __init__(self, numero, IOF, IR, valor_investido, taxa_rendimento):
+        self.numero = numero
+        self.IOF = IOF
+        self.IR = IR
+        self.valor_investido = valor_investido
+        self.taxa_rendimento = taxa_rendimento
+
+    def calculoRendimento(self):
+        remuneracao = self.valor_investido * self.taxa_rendimento
+        valorIOF = remuneracao * self.IOF
+        ValorIR = remuneracao * self.IR
+        self.valor_investido += remuneracao - valorIOF - ValorIR
+
+    def extrato(self): #(1)
+        print(f"O saldo atual da conta {self.numero} é {self.valor_investido:10.2f}") 
+        
+Classe ContaCliente.
+
+Agora, vamos analisar agora a implementação da classe ContaComum.
+
+python
+content_copy
+from ContaCliente import ContaCliente
+
+
+class ContaComum(ContaCliente):
+    def __init__(self, numero, IOF, IR, valor_investido, taxa_rendimento):
+        super().__init__(numero, IOF, IR, valor_investido, taxa_rendimento)
+
+    def calculoRendimento(self):  # (2)
+        remuneracao = self.valor_investido * self.taxa_rendimento
+        valorIOF = remuneracao * self.IOF
+        self.valor_investido += remuneracao – valorIOF
+Classe ContaComum.
+
+E, por fim, veja agora a criação da classe ContaRemunerada.
+
+python
+content_copy
+from ContaCliente import ContaCliente
+
+
+class ContaRemunerada(ContaCliente):
+    def __init__(self, numero, IOF, IR, valor_investido, taxa_rendimento):
+        super().__init__(numero, IOF, IR, valor_investido, taxa_rendimento)
+
+    def calculoRendimento(self): #(3)
+        self.valor_investido += self.valor_investido * self.taxa_rendimento
+Classe ContaCliente.
+
+Veja algumas observações.
+
+Em (1), foi definido um método Extrato, que é igual para as três classes, ou seja, as subclasses herdarão o código completo desse método.
+Em (2) e (3), as subclasses possuem regras de negócios diferentes; portanto, elas sobrescrevem o método CalculoRendimento para atender às suas necessidades.
+Vamos analisar a implementação da classe Banco e do programa que a utiliza.
+
+python
+content_copy
+class Banco:
+    def __init__(self, codigo, nome):
+        self.codigo = codigo
+        self.nome = nome
+        self.contas = []
+
+    def adiciona_conta(self, conta_cliente):
+        self.contas.append(conta_cliente)
+
+    def calcular_rendimento_mensal(self):
+        for c in self.contas:
+            c.calculoRendimento()
+
+    def imprime_saldo_contas(self):
+        for c in self.contas:
+            c.extrato()
+Classe Banco.
+
+Vamos analisar o programa que utiliza as classes.
+
+python
+content_copy
+banco1 = Banco(999,"teste")
+contacliente1 = ContaCliente (1,0.01,0.1,1000,0.05)
+contacomum1 = ContaComum(2,0.01,0.1,2000,0.05)
+contaremunerada1 = ContaRemunerada(3,0.01,0.1,2000,0.05)
+
+banco1.adicionaconta(contacliente1) #(4)
+banco1.adicionaconta(contacomum1) #(5)
+banco1.adicionaconta(contaremunerada1) #(6)
+banco1.calcularendimentomensal#(7)
+banco1.imprimesaldocontas() #(8)
+Programa que utiliza as classes.
+
+Observe os itens a seguir.
+
+Em (4), (5) e (6), o banco adiciona todas as contas da hierarquia em um único método devido ao teste “É-UM” das linguagens orientadas a objetos. No método, isso é definido para receber um objeto do tipo ContaCliente. Toda vez que o método é chamado, a linguagem testa se o objeto passado “É-UM” objeto do tipo ContaCliente.
+Em (4), o objeto é da própria classe ContaCliente. Em (5), o objeto contacomoum1 passado é uma ContaComum, que passa no teste “É-UM”, pois uma ContaComum também é uma ContaCliente.
+Em (6), o objeto contarenumerada1 “É-UM” objeto ContaComum. Essas ações são feitas de forma transparente para o programador.
+Em (7), acontece a “mágica” do polimorfismo, pois, em (4), (5) e (6), são adicionadas contas de diferentes tipos para o array conta da classe Banco. Assim, no momento da execução do método c.calculorendimentomensal(), o valor de c recebe, em cada loop, um tipo de objeto diferente da hierarquia da classe ContaCliente. Portanto, na instrução c.CalculoRendimento(), o interpretador tem de identificar dinamicamente de qual objeto da hierarquia ContaCliente deve ser chamado o método CalculoRendimento.
+Em (8), acontece uma característica que vale ser ressaltada. Pelo polimorfismo, o interpretador verificará o teste “É-UM”, porém esse método não foi sobrescrito pelas subclasses da hierarquia ContaCliente. Portanto, será chamado o método Extrato da superclasse.
+O polimorfismo é bastante interessante em sistemas com dezenas de subclasses herdeiras de uma única classe; assim, todas as subclasses redefinem esse método. Sem o polimorfismo, haveria a necessidade de “perguntar” para a linguagem qual é a instância do objeto em execução para chamar o método correto. Com base nele, essa checagem é feita internamente pela linguagem de maneira transparente.

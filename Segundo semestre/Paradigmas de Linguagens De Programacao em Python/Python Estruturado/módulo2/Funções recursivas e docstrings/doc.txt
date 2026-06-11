@@ -1,0 +1,120 @@
+Funções recursivas e docstrings
+Vamos explorar as funções recursivas e aprender a criar funções que chamam a si mesmas para resolver problemas de maneira eficiente. Descubra como aplicar esse conceito em algoritmos complexos e desbloqueie novas possibilidades na programação.
+
+Assista ao vídeo e acompanhe a utilização de funções recursivas na linguagem de programação Python, abordando temas como função recursiva fatorial, sequência de Fibonacci e documentação de funções (docstrings).
+
+
+Recursividade
+Uma função recursiva é aquela que chama a si mesma. A seguir, veja um exemplo de função regressiva() (código 16 do arquivo disponibilizado).
+
+python
+content_copy
+def regressiva(x):
+   print(x)
+   regressiva(x - 1)
+Na implementação da função regressiva(), tendo x como parâmetro, ela mesma é chamada com o parâmetro x – 1.
+
+Vamos analisar a chamada regressiva(2)!
+
+filter_1
+Ao chamar a regressiva(2)
+O valor 2 é exibido na tela pela linha 2 e ocorre uma nova chamada da função regressiva() na linha 3 com o parâmetro 1. Vamos continuar com esse caminho de execução da regressiva(1).
+
+filter_2
+Ao chamar a regressiva(1)
+O valor 1 é exibido na tela pela linha 2 e ocorre uma nova chamada da função regressiva() na linha 3 com o parâmetro 0.
+
+filter_3
+Ao chamar a regressiva(0)
+O valor 0 é exibido na tela e ocorre uma nova chamada da função regressiva com o parâmetro -1 e assim sucessivamente.
+
+Conceitualmente, a execução será repetida indefinidamente até que haja algum erro por falta de memória. Perceba que não definimos adequadamente uma condição de parada para a função regressiva(), o que leva a esse comportamento ruim.
+
+Em Python, o interpretador pode interromper a execução indefinida, mas essa não é uma boa prática. Uma forma de contornar esse problema é definir adequadamente uma condição de parada como a do exemplo a seguir (código 17 do arquivo disponibilizado neste texto). Observe!
+
+python
+content_copy
+def regressiva(x):
+   if x <= 0:
+        print("Acabou")
+    else:
+        print(x)
+        regressiva(x-1)
+Uma função recursiva que termina tem:
+
+Um ou mais casos básicos que funcionam como condição de parada da recursão.
+Uma ou mais chamadas recursivas que têm como parâmetros valores mais próximos do(s) caso(s) básico(s) que o ponto de entrada da função.
+Alguns exemplos clássicos de funções que podem ser implementadas de forma recursiva são o cálculo do fatorial de um inteiro não negativo e a sequência de Fibonacci, que serão explorados a seguir.
+
+A função recursiva fatorial
+A função matemática fatorial de um inteiro não negativo n é calculada pela seguinte fórmula:
+
+ 
+
+Além disso, ela pode ser definida recursivamente pela fórmula a seguir.
+
+ 
+
+Observe agora uma implementação recursiva da função fatorial em Python (trata-se do código 18 no arquivo disponibilizado).
+
+python
+content_copy
+def fatorial(n):
+    if n == 0 or n == 1:
+         return 1
+    else:
+         return n*fatorial(n-1)
+Vale ressaltar que a função fatorial também poderia ter sido implementada de forma não recursiva, como é mostrado a seguir (código 19 no arquivo disponibilizado).
+
+python
+content_copy
+def fatorial(n):
+    fat = 1
+    if n == 0 or n == 1:
+        return fat
+    else:
+        for x in range(2, n + 1):
+           fat = fat*x
+        return fat
+Porém, neste tópico, o intuito principal é explorar a recursividade.
+
+A sequência de Fibonacci
+Observe a sequência de Fibonacci: 1, 1, 2, 3, 5, 8, 13, 21... Os dois primeiros termos são 1; a partir do 3º termo, cada termo é a soma dos dois anteriores.
+
+Veja uma possível implementação recursiva de função que determina o n-ésimo termo da sequência de Fibonacci (no arquivo disponibilizado, trata-se do código 20).
+
+python
+content_copy
+def fibo(n):
+    if n == 1 or n == 2:
+        return 1
+    else:
+        return fibo(n - 1) + fibo(n - 2)
+Analisaremos o código a seguir.
+
+A linha 2 traz as condições de parada.
+A linha 5 traz as chamadas recursivas para calcular os dois termos anteriores da sequência.
+Documentação de funções – Docstrings
+Em Python, é possível definir uma string que serve como documentação de funções definidas pelo desenvolvedor. Ao chamar o utilitário help() passando como parâmetro a função desejada, essa string é exibida.
+
+Verifique o código (no arquivo disponibilizado, trata-se do código 21) e a sua saída.
+
+python
+content_copy
+def fibo(n):
+   'Determina o n-ésimo termo da sequência de Fibonacci'
+   if n == 1 or n == 2:
+      return 1
+   else:
+      return fibo(n - 1) + fibo(n = 2)
+print(help(fibo))
+Veja agora a exibição da docstring da função fibo().
+
+python
+content_copy
+fibo(n)
+2 Determina o n-ésimo termo da sequência de Fibonacci
+Analisaremos o código a seguir.
+
+No código “Docstring da função fibo()”, a linha 2 mostra a declaração da docstring.
+A linha 8 exibe a impressão na tela da chamada help(fibo). No código “Exibição da docstring da função fibo()”, está o resultado da execução desse programa.

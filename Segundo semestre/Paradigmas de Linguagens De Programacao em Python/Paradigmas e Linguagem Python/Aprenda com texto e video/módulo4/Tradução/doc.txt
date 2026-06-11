@@ -1,0 +1,91 @@
+Tradução
+Todo programa, a menos que seja escrito em linguagem de máquina, o que hoje em dia está totalmente fora dos propósitos, precisará ser convertido para linguagem de máquina antes de ser executado. Essa conversão precisa de um programa que receba o código-fonte escrito na linguagem e gere o respectivo código em linguagem de máquina.
+
+Esse programa, que fará a tradução do código-fonte em linguagem de máquina, é que vai determinar como os programas são implementados e como vão executar. Existem duas formas de realizar essa conversão: tradução e interpretação. É importante conhecer e compreender qual processo de conversão é utilizado pela respectiva linguagem de programação.
+
+Veremos agora a tradução!
+
+Neste vídeo, falaremos sobre o processo de conversão por tradução, no qual o programa escrito em uma linguagem de alto nível é traduzido para uma versão equivalente em linguagem de máquina, antes de ser executado. Acompanhe!
+
+
+No processo de conversão por tradução, o programa escrito em uma linguagem de alto nível é traduzido para uma versão equivalente em linguagens de máquina, antes de ser executado. Esse processo pode ser executado em várias fases, que podem ser combinadas e executadas em simultaneidade.
+
+O processo de tradução é erroneamente chamado de compilação, que, na verdade, é uma de suas fases.
+
+As fases que compõem o tradutor, ou seja, iniciando na leitura do programa-fonte (linguagem de alto nível) e terminando com a geração do código executável (entendido pela máquina), são a compilação, montagem, carga e ligação.
+
+A imagem a seguir ilustra o processo de tradução.
+
+ads_clickﾠClique nos pontos em destaque.
+
+
+add
+add
+add
+add
+Fases de tradução de um programa em linguagem de alto nível.
+
+
+
+
+
+Compilador
+É o elemento central do processo de tradução, responsável pelo custo de compilação. Em função dessa relevância, muitas vezes, o processo como um todo é erroneamente chamado de compilação, uma vez que o ambiente integrado das linguagens atuais já integra todos os componentes (montador, compilador, carregador e ligador) quando necessário.
+
+O projeto da linguagem tem no compilador a sua figura central.
+
+A imagem a seguir ilustra os componentes envolvidos na compilação de um programa fonte. Observe!
+
+
+Visão geral de um compilador.
+
+Agora, exploraremos cada fase da compilação. Acompanhe!
+
+Análise léxica
+Observe o que acontece na fase da análise léxica da compilação.
+
+Identificação dos tokens (elementos da linguagem).
+Desconsideração de partes do código-fonte, como espaços em branco e comentários.
+Geração da tabela de símbolos, com todos esses tokens, que são identificadores de variáveis, de procedimentos, de funções, comandos, expressões etc.
+Análise sintática
+Verifica se os tokens são estruturas sintáticas válidas, aplicando as regras gramaticais definidas no projeto da linguagem.
+
+São exemplos de estruturas sintáticas as expressões e comandos.
+
+Análise semântica
+Verifica se as estruturas sintáticas possuem sentido.
+
+extension
+Exemplo
+A análise sintática verifica se um identificador de variável ou constante é usado adequadamente, se operandos e operadores são compatíveis.
+
+A análise monta a árvore de derivação conforme ilustrado a seguir para formação das expressões.
+
+
+Árvore de derivação de uma expressão.
+
+Gerador de código intermediário, otimizador de código e gerador de código
+Em distintas fases geram o programa-alvo ou programa-objeto.
+
+Gerador de código intermediário, que contém toda a informação para gerar o código-objeto.
+Na imagem a seguir, o código intermediário está representado no último quadro - código em Assembly:
+
+
+Código intermediário.
+
+O otimizador tem por objetivo eliminar redundâncias do código intermediário e tornar o objeto mais enxuto e eficiente.
+
+Tratador de erros
+Em todas as fases da compilação podem existir erros léxicos, sintáticos e semânticos. Um bom compilador apresenta uma boa tratativa de erros.
+
+Gerenciador da tabela de símbolos
+Responsável por manter a tabela de símbolos atualizada a cada passo do compilador.
+
+Conheça agora as características dos compiladores.
+
+Gera código-objeto mais otimizado.
+Executa mais rápido que o processo de interpretação.
+Traduz um mesmo comando apenas uma vez, mesmo que usado em várias partes do programa – tanto iterações como repetição de código.
+Apresenta processo de correção de erros e depuração é mais demorado.
+Possui programação final (código-objeto) maior.
+Gera um programa-objeto dependente de plataforma — processador + SO (sistema operacional) — necessitando de um compilador diferente para cada família de processadores/sistema operacional.

@@ -1,0 +1,78 @@
+Pacotes externos
+Agora, vamos explorar os pacotes externos do Python! Utilizaremos o pip, a ferramenta padrão de gerenciamento de pacotes do Python, para instalar e gerenciar pacotes externos, desde bibliotecas científicas até ferramentas de desenvolvimento web. Você aprenderá a acessar e utilizar diversos recursos para aprimorar seus projetos e ampliar suas habilidades de programação, além de criar seus próprios módulos.
+
+Neste vídeo, falaremos sobre a utilização de pacotes externos na linguagem de programação Python. Confira!
+
+
+Usando pacotes externos
+Além dos módulos fornecidos de forma integrada pela biblioteca padrão do Python, a linguagem possui uma grande vantagem: sua característica open-source permite que qualquer desenvolvedor, com o conhecimento adequado, desenvolva a própria biblioteca e os próprios módulos, os quais chamaremos, a partir de agora, de pacotes. Veremos como criar módulos mais adiante neste conteúdo.
+
+
+Pessoa programadora em computador.
+
+Com um pacote pronto, o desenvolvedor pode disponibilizar esse material na internet de forma que qualquer pessoa possa aproveitar o código implementado. Isso foi um dos fatores que fez com que o Python se tornasse uma das linguagens mais utilizadas no mundo atualmente.
+
+assignment_ind
+Comentário
+Como forma de facilitar a distribuição dos pacotes entre os usuários, existe um grupo dentro da comunidade Python que mantém o chamado Python package index, ou PyPI, um grande servidor no qual os desenvolvedores podem hospedar os seus pacotes, contendo bibliotecas e/ou módulos, para que sejam baixados e instalados por outras pessoas.
+
+É possível acessar o PyPI por meio do pip, um programa que pode ser instalado com a distribuição do Python. Para isso, certifique-se de que a caixa “pip” está marcada durante a instalação, conforme ilustrado a seguir.
+
+Veja a seguir a captura de tela da instalação do pip.
+
+
+Instalação do pip.
+
+Para verificar se a sua instalação Python incluiu o pip, procure pela pasta Scripts dentro do diretório de instalação que você escolheu para o Python. Dentro dessa pasta, localize o arquivo pip.exe.
+
+verified
+Recomendação
+Se o arquivo pip não foi incluído na instalação do Python, pesquise sobre como instalá-lo. Ou tente reinstalar o Python sem esquecer de marcar a opção de incluir o pip durante o processo de instalação.
+
+Além do pip, é necessário ter em mãos o endereço para acessar o pip dentro da variável de ambiente PATH. O processo de instalação do Python também permite incluir automaticamente o Python no seu PATH, porém, caso não tenha feito isso, siga os passos a seguir.
+
+Clique na tecla do Windows e escreva “Editar as variáveis de ambiente para a sua conta”.
+Na janela que abrir, procure pela variável Path, selecione-a e clique no botão “Editar”.
+Clique no botão “Novo” e digite o endereço da sua instalação do Python (por exemplo, D:\Python).
+Clique no botão “Novo” uma segunda vez e digite o endereço da pasta Scripts dentro da sua instalação do Python (por exemplo, D:\Python\Scripts).
+Aperte Ok até fechar todas as janelas.
+É importante que você se certifique de que a opção Add Python to PATH está marcada durante a instalação, como apontado na imagem a seguir.
+
+
+Adicionando o Python ao PATH.
+
+Com essas etapas concluídas, já conseguimos instalar nossos pacotes externos!
+
+Quando estiver trabalhando com pacotes externos, é extremamente recomendado o uso de ambientes virtuais (em inglês, virtual environments ou simplesmente virtualenvs). Esses ambientes isolam o projeto em que você está trabalhando.
+
+Uma das vantagens do uso de ambientes virtuais é que você consegue saber exatamente quais pacotes externos estão sendo usados no projeto. É possível usar esses pacotes sem o uso de ambientes virtuais, porém isso pode causar uma confusão caso você tenha vários projetos Python no seu computador.
+
+wb_incandescent
+Dica
+Pesquise mais sobre ambientes virtuais e configure um em cada projeto. Não é muito difícil e vai ajudá-lo a deixar o seu código mais profissional!
+
+Para instalar um pacote externo disponível no PyPI, basta abrir o seu terminal (clique no botão do Windows e digite “cmd” ou “prompt de comando”), ativar o seu ambiente virtual (se você estiver usando um) e digitar o seguinte comando:
+
+
+Instalando um pacote usando pip.
+
+Substitua <nome_do_pacote> pelo pacote que você deseja usar. Temos inúmeros pacotes prontos à nossa disposição. Cada pacote normalmente possui um site que apresenta a sua documentação de forma similar à da documentação oficial do Python.
+
+A seguir você encontra uma lista com alguns dos pacotes externos mais comuns e utilizados no mercado. Conheça!
+
+Nome do módulo	Pra que serve?
+numpy	Cálculos, operações matemáticas e simulações
+pandas	Manipulaçao de dados
+scikit-learn	Modelos de aprendizado de máquina
+matplotlib	Visualização de dados
+requests	Biblioteca de comandos de comunicação pelo protocolo HTTP
+flask	Construção de aplicações web
+Pacotes externos mais comuns e utilizados no mercado.
+Humberto Henriques de Arruda.
+
+Antes de começar o próprio módulo, é sempre recomendado pesquisar se o que você quer fazer já existe em algum pacote popular. Se existir, procure pela documentação e instale esse pacote.
+
+O uso de módulos oriundos de pacotes externos é idêntico à utilização daqueles da biblioteca padrão. Basta, para isso, utilizar o import nome_do_modulo no seu código.
+
+Criação do próprio módulo
+Os desenvolvedores podem criar os próprios módulos de forma a reutilizar as funções que já escreveram e organizar melhor seu trabalho. Para isso, basta criar um arquivo .py e escrever nele suas funções. O arquivo do módulo precisa estar na mesma pasta do arquivo para onde ele será importado.

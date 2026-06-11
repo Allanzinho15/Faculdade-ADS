@@ -1,0 +1,10 @@
+Hora de codar: sistema de biblioteca
+Nesta prática, você aplicará os conhecimentos adquiridos no nível aventureiro de estrutura de dados para implementar a evolução do sistema de uma biblioteca para incluir uma nova funcionalidade: o empréstimo de livros.
+
+ 
+
+Além de registrar informações básicas de cada livro (nome, autor, editora e edição), o sistema também permitirá que usuários realizem e consultem empréstimos. Para isso, você utilizará ponteiros, alocação dinâmica de memória com malloc e calloc e gerenciará a memória com free.
+
+ 
+
+Confira este vídeo, no qual você dará continuidade ao desenvolvimento do sistema da biblioteca, adicionando a funcionalidade de empréstimo de livros. Serão utilizados ponteiros e alocação dinâmica de memória com malloc e calloc, além de free para liberar recursos. O sistema permitirá o cadastro de livros e a realização e consulta de empréstimos feitos por usuários. imperdível!

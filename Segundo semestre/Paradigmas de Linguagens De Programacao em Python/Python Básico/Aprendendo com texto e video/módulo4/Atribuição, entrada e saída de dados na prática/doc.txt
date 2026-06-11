@@ -1,0 +1,62 @@
+Atribuição, entrada e saída de dados na prática
+Para desenvolver habilidades sólidas em Python, é importante praticar conceitos fundamentais como atribuição, entrada e saída de dados. Atribuição permite que os programadores armazenem e manipulem valores em variáveis, enquanto entrada e saída de dados são essenciais para interação com o usuário e processamento de informações.
+
+
+Logo Python em tela de computador.
+
+Praticar esses conceitos fortalece a compreensão da linguagem e desenvolve habilidades práticas para resolver problemas do mundo real. Ao escrever e executar programas que envolvem atribuição de variáveis, solicitação de entrada do usuário e exibição de resultados, você ganha confiança em sua capacidade de criar soluções funcionais e eficientes em Python. Essa prática é essencial para construir uma base sólida e se preparar para desafios mais avançados na programação.
+
+Neste vídeo, praticaremos a implementação de atribuição, entrada e saída de dados utilizando a linguagem de programação Python. Vamos lá!
+
+
+Roteiro de prática
+Vamos criar agora um programa simples em Python que utiliza os conceitos de atribuição, entrada e saída de dados. O programa calculará o preço total de um pedido em um restaurante, considerando o valor dos itens escolhidos pelo usuário.
+
+Passo 1
+Atribuição de variáveis
+Defina as variáveis para representar o preço de cada item do menu do restaurante. Veja no código.
+
+python
+content_copy
+hamburguer = 10.50
+batata_frita = 4.00
+refrigerante = 3.00
+Passo 2
+Entrada de dados do usuário
+Solicite ao usuário que insira a quantidade de cada item que deseja pedir.
+
+python
+content_copy
+quantidade_hamburguer = int(input("Digite a quantidade de hambúrgueres desejados: "))
+quantidade_batata = int(input("Digite a quantidade de batatas fritas desejadas: "))
+quantidade_refrigerante = int(input("Digite a quantidade de refrigerantes desejados: "))
+Passo 3
+Cálculo do preço total
+Calcule o preço total do pedido, multiplicando o preço de cada item pela quantidade escolhida pelo usuário. Veja!
+
+python
+content_copy
+preco_total = (hamburguer * quantidade_hamburguer) + (batata_frita * quantidade_batata) + (refrigerante * quantidade_refrigerante)
+
+Passo 4
+Saída de dados
+Exiba o preço total do pedido para o usuário.
+
+python
+content_copy
+print("O preço total do seu pedido é: R$", preco_total)
+
+Passo 5
+Execução do programa
+Execute o programa e teste com diferentes quantidades de itens para verificar se o cálculo está correto. Veja um exemplo de saída.
+
+python
+content_copy
+Digite a quantidade de hambúrgueres desejados: 2
+Digite a quantidade de batatas fritas desejadas: 1
+Digite a quantidade de refrigerantes desejados: 3
+O preço total do seu pedido é: R$ 40.50
+
+Este roteiro fornece um exemplo simples e prático de como utilizar os conceitos de atribuição, entrada e saída de dados em Python para resolver um problema do mundo real.
+
+Agora, é a sua vez de praticar. Reveja o que estudou até aqui e pratique o que aprendeu.

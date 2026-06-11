@@ -1,0 +1,6 @@
+struct | encapsulamento
+
+struct é como uma "caixa" que nos permite agrupar diferentes tipos de variáveis sob um mesmo nome
+
+encapsulamento é o ato de agrupar e "empacotar" dados relacionados
+

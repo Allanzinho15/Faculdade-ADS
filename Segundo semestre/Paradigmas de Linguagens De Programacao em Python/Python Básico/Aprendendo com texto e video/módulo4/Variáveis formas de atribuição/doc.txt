@@ -1,0 +1,93 @@
+Variáveis: formas de atribuição
+Entender os conceitos de atribuição, entrada e saída de dados em Python é fundamental para qualquer programador, independentemente do nível de experiência. Atribuição é o processo de associar um valor a uma variável, permitindo que os dados sejam armazenados e manipulados durante a execução do programa. Por outro lado, a entrada de dados refere-se à capacidade de receber informações do usuário, seja por meio do teclado, de arquivos ou de outros dispositivos externos. Já a saída de dados envolve a exibição de resultados ou mensagens ao usuário, seja no console, em interfaces gráficas ou em arquivos.
+
+Dominar esses conceitos é essencial para criar programas funcionais e interativos em Python, pois permite que os desenvolvedores criem aplicações que recebam, processem e exibam informações de forma eficiente e intuitiva. Já vimos, basicamente, como podemos atribuir valor a uma variável. Vamos agora conhecer outras formas de atribuição.
+
+Neste vídeo, falaremos sobre as variáveis em Python, que podem ser atribuídas de várias maneiras, oferecendo flexibilidade na manipulação de dados. Confira!
+
+
+Sentenças de atribuição
+Atribuição simples
+Chamamos de atribuição simples a forma que já utilizamos neste conteúdo, com uma expressão parecida com x = 10. Nessa atribuição, a variável x recebe o valor 10.
+
+Atribuição múltipla
+Python também permite a atribuição múltipla, ou seja, mais de uma variável receber atribuição na mesma linha. A título de exemplo, clique em Executar no emulador.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+x, y = 2, 5
+print(x)
+print(y)
+
+Input
+Console
+Observe que as variáveis x e y receberam atribuição na mesma instrução, com a variável x armazenando o valor 2, e a variável y armazenando o valor 5.
+
+Vamos avançar!
+
+Operadores de atribuição compostos
+Os operadores de atribuição compostos executam operações matemáticas e atualizam o valor da variável utilizada. Clique em Executar o código a seguir e observe!
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+x = 10
+x = x + 1
+print(x)
+
+Input
+Console
+A variável x, inicialmente, recebeu o valor 10. Em seguida, a instrução x = x + 1, que causa estranheza quando lembramos da matemática aprendida ao longo da vida, é muito comum quando estamos programando. Essa instrução significa “acrescente uma unidade ao valor de x e guarde este resultado na própria variável x”. Como x valia 10, o resultado do lado direito do operador (=) é 11. Esse resultado é, então, armazenado na própria variável x.
+
+wb_incandescent
+Dica
+A operação de acrescentar determinado valor a uma variável e armazenar o resultado na própria variável poderia ser feita com o operador += (mais igual). Altere a 2ª linha no código do emulador anterior para x += 1, clique em Executar e veja o resultado.
+
+Na tabela a seguir, estão os operadores compostos disponíveis em Python. Considere a variável x, com o valor inicial 10, para verificar os resultados.
+
+Nome	Símbolo usado	Exemplo
+Instrução	Resultado
+Mais igual	+=	x += 2	x passa a valer 12
+Menos igual	-=	x -= 2	x passa a valer 8
+Vezes igual	*=	x *= 2	x passa a valer 20
+Dividido igual	/=	x /= 2	x passa a valer 5
+Módulo igual	%=	x %= 3	x passa a valer 1
+Tabela: Operadores compostos.
+Humberto Henriques de Arruda.
+
+Diferentemente de C, em Python não é possível incrementar ou decrementar uma variável com um operador unário, como o ++ ou --.
+
+Troca de variáveis
+Um dos problemas iniciais que envolvem atribuição de valores a variáveis é a troca entre duas delas. Suponha que as variáveis a e b armazenem, respectivamente, os valores 1 e 2. Caso quiséssemos inverter os valores em linguagens como C ou Java, seria necessário usar uma variável auxiliar. Em Python, é possível fazer essa troca de uma maneira muito mais fácil, com o uso da atribuição múltipla.
+
+
+Código em tela de computador.
+
+Veja no código a seguir (clique em Executar) as duas maneiras de se trocar valores entre 2 variáveis, através do uso de variável auxiliar e através de atribuição múltipla. Veja!
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+a = 1
+b = 2
+# troca de variáveis usando variável auxiliar ‘temp’
+temp = a
+a = b
+b = temp
+print(f"O valor da variável a é: {a}")
+print(f"O valor da variável b é: {b}")
+
+# troca de variáveis através de atribuição múltipla
+a, b = b, a
+print(f"O valor da variável a é: {a}")
+print(f"O valor da variável b é: {b}")

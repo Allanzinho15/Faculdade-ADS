@@ -1,0 +1,70 @@
+Variáveis
+Variáveis são os blocos fundamentais da programação em Python, desempenhando um papel crucial na criação de código dinâmico e flexível. Elas permitem armazenar e manipular dados, tornando possível a criação de programas que respondem a diferentes entradas e condições. O uso correto de variáveis não apenas organiza o código de forma eficiente, mas também facilita a compreensão e manutenção dele. Ao entender e dominar o uso de variáveis, os programadores ganham a capacidade de criar soluções complexas de forma mais clara, impulsionando o desenvolvimento de aplicações mais robustas e eficazes em Python.
+
+Neste vídeo, abordaremos os conceitos e usos de variáveis, responsáveis por armazenar dados temporários durante a execução de um programa e permitir a manipulação e a reutilização de valores ao longo do código. Acompanhe!
+
+
+Conceitos
+As variáveis são abstrações para endereços de memória que permitem que os programas fiquem mais fáceis de codificar, entender e depurar. Ao nomear uma variável com o identificador x, determinado espaço em memória passará a ter esse apelido. Em outras palavras, será possível acessar esse espaço de memória sabendo o seu apelido e, consequentemente, recuperar o valor guardado nele, que no nosso exemplo é 10.
+
+
+Pessoa digitando em teclado de computador.
+
+Uma analogia possível com o mundo real é com aquelas caixas de correio que ficam em frente às casas.
+
+Em Python, o operador de atribuição é o = (símbolo de igual). A instrução x = 10 atribui o valor 10 à variável x.
+
+Digite x = 10 e na linha seguinte digite print(x) no emulador. Em seguida, clique em Executar (no Python Console do PyCharm, digite x = 10 e pressione a tecla [ENTER] ou [RETURN] e depois digite print(x) e pressione [ENTER] ou [RETURN]). Veja:
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+
+Input
+Console
+Observe que o retorno no console foi 10.
+
+Se, posteriormente, você digitar x = 20 no emulador anterior e pressionar Executar (ou pressionar [ENTER] no Python Console do PyCharm), você alterará o valor da variável x. Ou seja, você mudará o valor armazenado naquele espaço de memória, mas sem alterar seu apelido. Faça esse teste!
+
+assignment_ind
+Comentário
+Diferentemente de outras linguagens, como C ou Java, não é necessário declarar uma variável antes de utilizá-la em Python. Basta atribuir um valor inicial à variável e utilizá-la dali em diante. Embora não seja necessário declarar uma variável para utilizá-la, não é possível utilizar uma variável que não tenha recebido alguma atribuição de valor.
+
+No emulador a seguir, digite b e pressione Executar (no Python Console do PyCharm, pressione a tecla [ENTER] ou [RETURN]). Confira!
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+
+Input
+Console
+Veja no emulador que a mensagem de erro informa que o nome b não foi definido. Ou seja, não é possível determinar o valor atribuído a esse nome.
+
+Identificadores de variáveis
+Os identificadores das variáveis podem ser compostos por letras, o underline (_) e, com exceção do primeiro caractere, números de 0 a 9. Veja os exemplos.
+
+looks_one
+MinhaVariavel, _variavel, salario1 e salario1_2
+São válidos.
+
+looks_two
+1variavel e salario-1
+Não são válidos.
+
+looks_3
+MinhaVariavel e minhavariavel
+São identificadores de duas variáveis distintas.
+
+Mesmo que seja um identificador permitido, nem sempre um identificador é bom para uma variável. Tente utilizar nomes que ajudem a entender o significado da variável para ganhar tempo quando for entender o código posteriormente.
+
+extension
+Exemplo
+salario é um nome de variável melhor que s.
+
+Algumas palavras são consideradas reservadas e não podem ser usadas como identificadores de variáveis em Python. São elas: and, as, assert, break, class, continue, def, del, elif, else, except, exec, finally, for, from, global, if, import, in, is, lambda, not, or, pass, print, raise, return, try, while, with e yield.

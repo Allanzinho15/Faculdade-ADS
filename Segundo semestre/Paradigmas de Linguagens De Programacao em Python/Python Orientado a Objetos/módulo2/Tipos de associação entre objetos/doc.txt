@@ -1,0 +1,101 @@
+Tipos de associação entre objetos
+A associação entre objetos em Python permite que instâncias de diferentes classes colaborem entre si. Esse conceito é essencial para modelar relações complexas no mundo real, como um aluno e suas disciplinas. Neste conteúdo, vamos explorar como implementar associações, tornando seu código mais modular e interconectado, refletindo de maneira precisa as interações entre diversos objetos.
+
+Neste vídeo, falaremos sobre agregação e composição. Primeiramente, explicaremos a agregação, uma relação em que uma classe contém outra sem posse total, permitindo independência. Em seguida, abordaremos a composição, uma relação mais forte em que uma classe possui outra, havendo uma classe contenedora. Acompanhe!
+
+
+Agregação
+Para atender a novas necessidades do sistema de conta corrente do banco, agora é necessário adicionar uma funcionalidade para o gerenciamento de conta conjunta, ou seja, uma conta corrente pode ter um conjunto de clientes associados. Isso pode ser representado como uma agregação, conforme aponta o esquema a seguir.
+
+Observe que o losango vazado na imagem tem a semântica da agregação.
+
+
+Classe agrega 1 ou vários clientes.
+
+Observe o código da classe Cliente.
+
+python
+content_copy
+
+Classe cliente.
+
+Observe o código da classe Conta.
+
+python
+content_copy
+
+Classe cliente.py.
+
+Um programa testecontas.py deve ser criado para ser usado na instanciação dos objetos das duas classes e gerar as transações realizadas nas contas dos clientes.
+
+python
+content_copy
+
+Programa testecontas.py.
+
+Na linha número 7, é instanciado um objeto conta1 com dois clientes agregados: cliente1 e cliente2. Esses dois objetos são passados como parâmetros.
+
+Qual é o resultado dessa execução? Qual será o valor final na conta?
+
+Altere o programa do código a fim de criar mais uma conta para dois clientes diferentes. Como desafio, tente, por meio do objeto conta, imprimir o nome e o endereço dos clientes associados às contas.
+
+Composição
+A classe Conta ainda não está completa de acordo com as necessidades do sistema de conta corrente do banco. Isso ocorre porque o banco precisa gerar extratos contendo o histórico de todas as operações realizadas para conta corrente.
+
+Para isso, o sistema precisa ser atualizado para adicionar uma composição de cada conta com o histórico de operações realizadas. O diagrama a seguir representa a composição entre as classes Conta e Extrato. Essa composição representa que uma conta pode ser composta por vários extratos.
+
+Observe que o losango preenchido tem a semântica da composição.
+
+
+Classe Conta composta de 1 ou mais extratos.
+
+A classe Extrato tem as responsabilidades de armazenar todas as transações realizadas na conta e de conseguir imprimir um extrato com a lista dessas transações.
+
+python
+content_copy
+
+Classe extrato.
+
+A classe Conta possui todas as transações, como sacar, depositar e transfereValor. Cada transação realizada deve adicionar uma linha ao extrato da conta.
+
+A composição Conta->Extrato inclusive precisa ser inicializada no construtor da classe Conta, conforme exemplificou a imagem. No construtor de Extrato, foi adicionado um atributo transações, o qual foi inicializado para receber um array de valores – transações da conta.
+
+A classe Conta alterada deve ficar da maneira apresentada a seguir.
+
+python
+content_copy
+
+Classe Conta.
+
+Observe o que foi realizado.
+
+Adição da linha nº 10
+Criação de um atributo extrato, fazendo referência a um objeto Extrato.
+
+Adição das linhas nºs 14, 21 e 30
+Adição de linhas ao array de transações do objeto Extrato por meio do atributo extrato.
+
+Vamos criar um outro programa testecontas2.py e colocar os seguintes comandos.
+
+Python
+content_copy
+
+Observação: você também pode executar esses comandos no terminal.
+
+As duas primeiras linhas importam as definições das classes necessárias para criar clientes e contas.
+
+As próximas duas linhas criam instâncias da classe Cliente, cada uma com um CPF, nome e endereço específicos. Dois clientes são criados: o cliente1 Joao com CPF "123" e o cliente2 Maria com CPF "456".
+
+A linha seguinte cria uma instância da classe Conta, que associa os clientes criados anteriormente a uma conta bancária específica com um saldo inicial. Uma conta (conta1) é criada com o número 1, associada aos clientes Joao e Maria, com um saldo inicial de 2000.
+
+As linhas seguintes realizam um depósito e um saque na conta criada, atualizando o saldo e registrando as transações no extrato. Um depósito de 1000 é realizado na conta, aumentando o saldo para 3000. A transação de depósito é registrada no extrato.
+
+Depois, um saque de 1500 é realizado na conta, diminuindo o saldo para 1500. A transação de saque é registrada no extrato.
+
+A última linha chama o método para exibir o extrato da conta, mostrando todas as transações realizadas até o momento.
+
+O programa terá a seguinte saída
+
+DEPOSITO 1000.00 Data 08/Aug/24
+
+SAQUE 1500.00 Data 08/Aug/24

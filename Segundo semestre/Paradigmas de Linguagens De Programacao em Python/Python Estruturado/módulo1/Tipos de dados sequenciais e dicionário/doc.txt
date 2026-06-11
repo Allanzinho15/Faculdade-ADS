@@ -1,0 +1,167 @@
+Tipos de dados sequenciais e dicionário
+Em Python, os tipos sequenciais, como listas, tuplas e conjuntos, têm um papel essencial na organização e manipulação de dados, permitindo armazenar coleções ordenadas e únicas de elementos. Operadores comuns, como indexação, fatiamento e concatenação, são utilizados para acessar e manipular essas sequências de forma eficiente.
+
+Além disso, os dicionários de estruturas de dados chave-valor oferecem uma maneira eficaz de associar informações, sendo úteis para armazenamento e recuperação de dados de forma rápida e eficiente em aplicações Python.
+
+Assista ao vídeo e acompanhe os tipos de dados sequenciais e os dicionários em Python.
+
+
+Tipos sequenciais
+Existem três tipos sequenciais básicos em Python, veja!
+
+looks_one
+Listas
+looks_two
+Tuplas
+looks_3
+Objetos range
+Além desses, existe um tipo especial criado para tratamento de dados textuais: o tipo str (string).
+
+Assim como em C ou Java, a indexação dos itens é iniciada com 0 e cada item tem o seu índice incrementado a uma unidade em relação ao item anterior. No entanto, Python também permite a indexação com valores negativos. O valor -1 é o índice do último item, e cada item anterior é decrementado de uma unidade em relação ao sucessor. Observe a tabela!
+
+índice	0	1	2	3	4
+s	t	e	s	t	e
+índice negativo	-5	-4	-3	-2	-1
+Índices em tipos sequenciais.
+Humberto Henriques de Arruda.
+
+Strings
+Em uma variável do tipo str, é possível armazenar letras, números, espaços, pontuação e diversos símbolos. Diferentemente da linguagem C, não existe o tipo char. Cada caractere em Python é uma string. Veja o que podemos utilizar para delimitar uma string.
+
+Aspas simples	‘uma string'
+Aspas duplas	“uma string”
+Aspas simples triplas	‘’’uma string’’’
+Aspas duplas triplas	“””uma string”””
+Tabela: Tratamento das condições.
+Humberto Henriques de Arruda.
+
+O código a seguir ilustra um exemplo de delimitadores de strings, veja!
+
+python
+content_copy
+>>> “”“uma string”””
+'uma string'
+>>> 'uma string'
+'uma string'
+>>> “uma string”
+'uma string'
+>>> '''uma string'''
+'uma string'
+>>> “””uma string”””
+'uma string'
+Existem alguns métodos interessantes para tratar strings em Python. Entre eles, ressaltamos os seguintes:
+
+uppercase
+Upper
+Transforma todas as letras em maiúsculas.
+
+lowercase
+Lower
+Transforma todas as letras em minúsculas.
+
+dataset
+Split
+Quebra a string em substrings.
+
+Veja o exemplo!
+
+python
+content_copy
+>>> curso = 'Ensino a Distância'
+>>> curso
+'Ensino a Distância'
+>>> curso.upper()
+'ENSINO A DISTÂNCIA'
+>>> curso.lower()
+'ensino a distância'
+>>> curso.split()
+['Ensino', 'a', 'Distância']
+A lista gerada com o método split() tem três elementos, porque a string original tinha três palavras.
+
+Listas
+São sequências mutáveis, normalmente usadas para armazenar coleções de itens homogêneos. Uma lista pode ser criada de algumas maneiras, confira!
+
+[]
+Usando um par de colchetes para denotar uma lista vazia.
+
+[a], [a, b, c]
+Usando colchetes, separando os itens por vírgulas.
+
+[x for x in iterable]
+Usando a compreensão de lista.
+
+list() ou list(iterable)
+Usando o construtor do tipo list.
+
+Iterable pode ser uma sequência, um container que suporte iteração ou um objeto iterador.
+
+Por exemplo, list('abc') retorna ['a', 'b', 'c'] e list( (1, 2, 3) ) retorna [1, 2, 3]. Se nenhum argumento for passado, o construtor cria uma lista vazia: [ ].
+
+
+Tuplas
+São sequências imutáveis, tipicamente usadas para armazenar coleções de itens heterogêneos. Elas são aplicadas também quando é necessário utilizar uma sequência imutável de dados homogêneos. Uma tupla pode ser criada de algumas maneiras:
+
+()
+Usando um par de parênteses para denotar uma tupla vazia.
+
+a, b, c ou (a, b, c)
+Separando os itens por vírgulas.
+
+tuple() ou tuple(iterable)
+Usando o construtor do tipo tuple.
+
+Novamente, iterable pode ser uma sequência, um container que suporte iteração ou um objeto iterador.
+
+Por exemplo, tuple('abc') retorna ('a', 'b', 'c') e tuple( [1, 2, 3] ) retorna (1, 2, 3). Se nenhum argumento for passado, o construtor cria uma tupla vazia: ().
+
+assignment_ind
+Comentário
+O uso das vírgulas é o que gera a tupla, e não o uso de parênteses. Os parênteses são opcionais, exceto no caso em que queremos gerar uma tupla vazia.
+
+Range
+Representa uma sequência imutável de números e frequentemente é usado em loops de um número específico de vezes, como o for.
+
+O range pode ser chamado de maneira simples, apenas com um argumento. Nesse caso, a sequência começará em 0 e será incrementada de uma unidade até o limite do parâmetro passado (exclusive). Por exemplo, range(3) cria a sequência (0, 1, 2).
+
+Para que a sequência não comece em 0, podemos informar o início e o fim como parâmetros, lembrando que o parâmetro fim não entra na lista (exclusive o fim). O padrão é incrementar cada termo em uma unidade. Ou seja, a chamada range(2, 7) cria a sequência (2, 3, 4, 5, 6).
+
+assignment_ind
+Comentário
+Em Python, é possível criar sequências mais complexas, indicando os parâmetros de início, fim e passo, nessa ordem. O passo é o valor que será incrementado de um termo para o próximo. Por exemplo, range(2, 9, 3) cria a sequência (2, 5, 8).
+
+Operadores sequenciais comuns
+Permitem a manipulação dos tipos sequenciais, inclusive as strings. Vale ressaltar a sobrecarga dos operadores + e *, que realizam operações diferentes quando os operandos são numéricos ou sequenciais.
+
+extension
+Exemplo
+O operador == verifica se as strings dos dois lados são iguais. Já os operadores < e> comparam as strings usando a ordem do dicionário.
+
+A tabela a seguir traz um pequeno conjunto dos operadores disponíveis em Python para manipulação de sequências. Lembre-se de que você pode utilizar o utilitário help no Python Console para verificar a lista completa. Para isso, basta digitar help(str) e pressionar [ENTER] no teclado.
+
+Uso	Resultado
+x in s	True se x for um subconjunto de s
+x not in s	False se x for um subconjunto de s
+s + t	Concatenação de s e t
+n*s	Concatenação de n cópias de s
+s[i]	Caractere de índice i em s
+len(s)	Comprimento de s
+min(s)	Menor item de s
+max(s)	Maior item de s
+Operadores sequenciais.
+Humberto Henriques de Arruda.
+
+Dicionários
+Permitem que itens de uma sequência recebam índices definidos pelo usuário. Um dicionário contém pares de (chave, valor). A seguir, observe o formato geral de um objeto dicionário.
+
+python
+content_copy
+{<chave 1>:<valor 1>, <chave 2>:<valor 2>, ..., <chave i>:<valor i>}
+Poderíamos criar um dicionário em que cada pessoa fosse representada pelo seu CPF, com nome e sobrenome. Para isso, teríamos o seguinte código:
+
+python
+content_copy
+>>> pessoas = {'111222335-44':['Jod0','Silva'], '222333444-55':['Maria', 'Santos'], '353444555-66':
+['Jorge', 'Silva']} 
+>>> pessoas ['111222353-44'] 
+['João', 'Silva']
+No código, o dicionário tem 3 entradas. Observe como foi possível recuperar nome e sobrenome de uma entrada, baseado na chave informada ‘111222333-44’.

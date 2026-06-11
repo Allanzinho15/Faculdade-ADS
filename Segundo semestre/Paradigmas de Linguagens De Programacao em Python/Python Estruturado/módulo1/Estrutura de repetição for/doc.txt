@@ -1,0 +1,204 @@
+Estrutura de repetição for
+Aqui você vai compreender o universo do loop for e da função range em Python. Veja de forma clara e prática como usar essas ferramentas para iterar sobre sequências e executar tarefas repetitivas.
+
+Assista ao vídeo e observe a estrutura de repetição For na linguagem de programação Python. Confira as listas do tipo range(), a sintaxe da estrutura for, o laço for com uma string e o uso do laço for com qualquer sequência.
+
+
+As estruturas de repetição for permitem repetir um bloco de código para cada item de uma sequência.
+
+Antes de detalharmos o for, vamos conhecer uma função de Python que gera uma lista de valores numéricos. Essa lista nos ajudará a entender a repetição e deixará mais claro o funcionamento do laço.
+
+As listas do tipo range()
+Ao chamar o método range(), Python cria uma sequência de números inteiros, desde uma maneira simples até a mais complexa. Observe!
+
+looks_one
+Simples
+Envolve apenas um argumento. Nesse caso, a sequência começará em 0 e será incrementada de uma unidade até o limite do parâmetro passado (exclusive).
+
+Exemplo: range(3) # Cria a sequência (0, 1, 2)
+
+looks_two
+Não iniciadas em 0
+Para que a sequência não comece em 0, pode-se informar o início e o fim como parâmetros. Lembre-se de que o parâmetro fim não entra na lista (exclusive o fim). O padrão é incrementar cada termo em uma unidade.
+
+Exemplo: range(2, 7) # Cria a sequência (2, 3, 4, 5, 6)
+
+looks_3
+Indicando início, fim e passo
+É possível criar sequências mais complexas indicando, na ordem, os parâmetros de início, fim e passo. O passo é o valor que será incrementado de um termo para o próximo.
+
+Exemplo: range(2, 9, 3) # Cria a sequência (2, 5, 8)
+
+A sintaxe da estrutura for
+A estrutura for tem a seguinte sintaxe em Python:
+
+python
+content_copy
+for <variável> in <sequência>:
+     Bloco que será repetido para todos os itens da sequência
+ Instrução fora do for
+Exemplos com for
+
+Vamos analisar um exemplo simples em Python: imprimir todos os elementos de uma sequência criada com a chamada range(). Observe a seguir uma possível implementação desse exemplo (código 2 no arquivo disponibilizado na introdução deste conteúdo). Clique em Executar no emulador.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+for item in range(2, 9, 3):
+    print(item)
+Input
+Digite cada input em uma linha.
+Console
+Observe a análise a seguir.
+
+A linha 1 mostra a criação do laço com a variável item percorrendo a sequência (2, 5, 8), que é criada pela chamada range(2, 9, 3).
+A linha 2 indica a instrução que será executada para cada repetição desse laço. O laço for executa a instrução da linha 2 três vezes, uma para cada elemento da sequência (2, 5, 8).
+Agora vamos criar um exemplo em que contamos de 0 a 10, imprimindo cada um dos números. Acompanhe!
+
+python
+content_copy
+for numero in range(11):
+    print(numero)
+Analisaremos o código a seguir.
+
+A linha 1 mostra a criação do laço com a variável numero percorrendo a sequência de 0 a 10, que é criada pela chamada range(11).
+A linha 2 indica a instrução que será executada para cada repetição desse laço. O laço for executa a instrução da linha 2 onze vezes, uma para cada elemento da sequência (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10).
+Vamos explorar mais um exemplo do uso da estrutura for em Python. Neste caso, vamos calcular e imprimir a tabuada do número 5. O código a seguir realiza essa tarefa de forma simples e eficiente. Confira!
+
+python
+content_copy
+numero = 5
+for i in range(1, 11):
+    resultado = numero * i
+    print(f'{numero} x {i} = {resultado}')
+
+No exemplo, a variável numero é definida com o valor 5, que é o número para o qual queremos calcular a tabuada.
+
+Utilizamos um laço for para iterar sobre uma sequência de números de 1 a 10, gerada pela função range(1, 11). Para cada valor de i nessa sequência, calculamos o resultado da multiplicação de numero por i e armazenamos esse valor na variável resultado. Em seguida, imprimimos o resultado no formato numero x i = resultado, utilizando uma f-string para formatar a saída.
+
+O laço for com uma string
+Python também permite que a repetição aconteça ao longo de uma string.
+
+refresh
+Relembrando
+A string é uma sequência de caracteres individuais.
+
+Exemplo com string
+Suponha que você queira soletrar o nome informado pelo usuário. Uma possível implementação está demonstrada a seguir (no arquivo disponibilizado na introdução, trata-se do código 3).
+
+Informe um nome (string) no campo Input do emulador e clique em Executar.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+nome = input("Entre com seu nome: \n")
+for letra in nome:
+    print(letra)
+Input
+Digite cada input em uma linha.
+Console
+Observe a análise a seguir.
+
+A linha 1 faz com que a palavra inserida pelo usuário seja armazenada na variável nome.
+A linha 2 mostra a criação do laço, com a variável letra percorrendo a sequência de caracteres armazenada na variável nome.
+A linha 3 indica a instrução que será executada para cada repetição desse laço. O laço for executará a instrução da linha 3 tantas vezes quantos forem os elementos da sequência que está na variável nome.
+Vamos explorar mais um exemplo do uso da estrutura for em Python para trabalhar com strings. Neste exemplo, iremos contar quantas vezes uma letra específica aparece em determinada palavra. Veja o código a seguir.
+
+python
+content_copy
+texto = "programação"
+letra_para_contar = "a"
+contador = 0
+
+for letra in texto:
+    if letra == letra_para_contar:
+        contador += 1
+
+print(f"A letra '{letra_para_contar}' aparece {contador} vezes na palavra '{texto}'.")
+Agora, vamos analisar cada uma das linhas.
+
+A variável texto contém a string na qual queremos contar as ocorrências de uma letra específica.
+A variável letra_para_contar armazena a letra que queremos contar.
+A variável contador é inicializada com o valor 0 e será usada para contar as ocorrências da letra.
+O laço for itera sobre cada letra da string texto.
+Dentro do laço, uma estrutura if verifica se a letra atual é igual à letra_para_contar. Se for, o contador é incrementado em 1.
+Após o laço, o resultado é impresso, mostrando quantas vezes a letra especificada aparece na string.
+Uso do laço for com qualquer sequência
+Até agora estudamos o uso do laço for com iterações sobre strings e sequências numéricas, mas Python permite ainda mais do que isso!
+
+Podemos utilizar o laço for com iterações sobre qualquer sequência, e não somente as numéricas e as strings.
+
+O for pode ser empregado para percorrer uma lista. Em Python, uma lista é uma coleção de elementos que pode conter itens de diferentes tipos, embora geralmente seja usada para armazenar itens do mesmo tipo.
+
+Listas são mutáveis, o que significa que seus elementos podem ser alterados após a criação. Elas são definidas usando colchetes [ ] e os elementos são separados por vírgulas.
+
+Observe este exemplo (código 4 do arquivo disponibilizado) que utiliza listas.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+nomes = ['Laura', 'Lis', 'Guilherme', 'Enzo', 'Arthur']
+for nome in nomes:
+    print(nome)
+Input
+Digite cada input em uma linha.
+Console
+Clique em Executar no emulador anterior e veja o resultado da execução do código.
+
+Agora analisaremos o código.
+
+A variável nomes é uma lista que contém cinco elementos, cada um representando um nome: 'Laura', 'Lis', 'Guilherme', 'Enzo', e 'Arthur'.
+Utilizamos um laço for para iterar sobre cada elemento da lista nomes.
+Para cada iteração, a variável nome assume o valor do próximo elemento da lista, e o print(nome) imprime esse valor.
+Como resultado, o código imprime cada nome da lista em uma nova linha. Veja! 
+
+Laura
+Lis
+Guilherme
+Enzo
+Arthur
+
+Vamos ver outro exemplo em que somamos todos os números em uma lista. Acompanhe!
+
+python
+content_copy
+numeros = [1, 2, 3, 4, 5]
+soma = 0
+for numero in numeros:
+    soma += numero
+print(f'A soma de todos os números é {soma}')
+No exemplo podemos observar que:
+
+A linha 1 define uma lista de números chamada numeros.
+A linha 2 inicializa a variável soma com 0.
+A linha 3 mostra a criação do laço, com a variável numero percorrendo cada elemento na lista numeros.
+A linha 4 adiciona o número atual à variável soma.
+A linha 5 imprime a soma de todos os números.
+Vamos agora ver outro exemplo em que calculamos o quadrado de cada número em uma lista de números. Acompanhe!
+
+python
+content_copy
+numeros = [1, 2, 3, 4, 5]
+for numero in numeros:
+    quadrado = numero ** 2
+    print(f'O quadrado de {numero} é {quadrado}')
+Agora, analise o exemplo e preencha as lacunas com as palavras apresentadas. No final, verifique o resultado.
+
+1. A linha 1 define uma lista de números chamada  .
+
+2. A linha 2 mostra a criação do laço, com a variável  percorrendo cada elemento na lista  .
+
+3. A linha 3  o quadrado do número atual.
+
+4. A linha 4  o número e seu quadrado.
+
+    

@@ -1,0 +1,85 @@
+Classificação das linguagens de programação por gerações
+Vamos explorar a classificação das linguagens de programação através de suas gerações, desde as linguagens de primeira geração, próximas ao código de máquina, até as modernas, de quarta geração, focadas em produtividade e facilidade de uso, e as de quinta geração, voltadas para a inteligência artificial. Compreender essa evolução ajuda a apreciar como as linguagens se adaptaram às crescentes necessidades de desenvolvimento de software, influenciando a eficiência e a abordagem dos programadores na resolução de problemas complexos.
+
+Neste vídeo, falaremos sobre a classificação das linguagens de programação por gerações, em que, a cada geração, novos recursos facilitadores são embutidos nas respectivas linguagens. Confira!
+
+
+Classificação por gerações
+Outra forma de classificar as linguagens, amplamente difundida, é por gerações. Não há um consenso sobre as gerações, alguns consideram 5, outros 6. A cada geração, novos recursos facilitadores são embutidos nas respectivas linguagens. Observe a imagem.
+
+Classificação das linguagens quanto à sua geração.
+
+A seguir, detalharemos cada geração.
+
+Linguagens de 1a geração (linguagem de máquina)
+São os primeiros tipos de linguagens de programação, compostas por códigos binários (0s e 1s) diretamente compreendidos pelo hardware do computador. Elas são altamente específicas ao tipo de processador e operam em um nível de abstração muito baixo, exigindo um conhecimento detalhado da arquitetura do computador. Embora proporcionem programas extremamente rápidos e eficientes, são difíceis de programar e propensas a erros.
+
+
+Processador.
+
+Linguagens de 2a geração (linguagem de montagem - Assembly)
+As linguagens de segunda geração são denominadas Assembly e são traduzidas para a linguagem de máquina por um programa especial (montador), chamado Assembler. A partir dessa geração, toda linguagem vai precisar de um processo de conversão do código nela escrito, para o código em linguagem de máquina.
+
+Acompanhe o exemplo para uma CPU abstrata. Considere a seguinte sequência de três instruções em linguagem Assembly. Observe!
+
+Código em Assembly	O que faz cada linha de código
+Mov #8, A	Lê um valor da posição de memória 8 para o registrador A
+Mov #9, B	Lê um valor da posição de memória 9 para o registrador B
+ADD A,B	Soma os valores armazenados nos registradores A e B
+Tabela: Exemplo de uma CPU abstrata.
+Marcelo Vasques de Oliveira.
+
+Em linguagem de máquina, depois de traduzidas pelo assembler, as instruções poderiam ser representadas pelas seguintes sequências de palavras binárias.
+
+Código em Assembly	Código em linguagem de máquina
+Mov #8, A	01000011 11001000 01100001
+Mov #9, B	01000011 11001001 01100010
+ADD A,B	01010100 01100001 01100010
+Tabela: Sequências de palavras binárias.
+Marcelo Vasques de Oliveira.
+
+Houve um aumento significativo no nível de abstração, mas parte da dificuldade permanece, pois o programador, além de necessitar memorizar os mneumônicos, precisa conhecer a arquitetura do computador como forma de endereçamento dos registradores e memória, além de outros aspectos.
+
+Linguagens de 3a geração (linguagens procedurais)
+São as linguagens de alto nível, de aplicação geral, em que uma única instrução em uma linguagem próxima a do homem pode corresponder a mais de uma instrução em linguagem de máquina.
+
+Caracterizam-se pelo suporte a variáveis do tipo simples (caractere, inteiro, real e lógico) e estruturados (matrizes, vetores, registros), comandos condicionais, comando de iteração e programação modular (funções e procedimentos), estando alinhadas à programação estruturada.
+
+assignment_ind
+Comentário
+O processo de conversão para a linguagem de máquina ficou mais complexo e ficaram a cargo dos interpretadores e tradutores. As primeiras linguagens de 3ª geração que foram apresentadas ao mercado são Fortran, BASIC, COBOL, C, PASCAL, C, dentre outras.
+
+A 3ª geração de linguagens apresenta as seguintes propriedades em comum:
+
+Armazenamento de tipos de dados estaticamente simples, estruturados e enumerados.
+Alocação de memória dinamicamente, através de ponteiros, que são posições de memória cujo conteúdo é outra posição de memória.
+Disponibilidade de estruturas de controle sequencial, condicional, repetição e desvio incondicional.
+Permissão à programação modular, com uso de parâmetros.
+Existência de operadores relacionais, lógicos e aritméticos.
+Ênfase em simplicidade e eficiência.
+Linguagens de 4a geração (linguagens aplicativas)
+São, também, linguagens de alto nível, com aplicação e objetivos bem específicos.
+
+Veja agora um comparativo entre as linguagens de 3ª e 4ª gerações.
+
+3ª geração
+São procedurais, ou seja, especifica-se passo a passo a solução do problema.
+
+close
+4ª geração
+São não procedurais. O programador especifica o que deseja fazer e não como deve ser feito.
+
+O melhor exemplo de linguagens de 4ª geração é a SQL (Structured Query Language), utilizada para consulta à manipulação de banco de dados. PostScript e MATLAB são outros dois exemplos de linguagens de 4ª geração.
+
+Linguagens de 5a geração (linguagens declarativas)
+São linguagens declarativas e não algorítmicas. Por exemplo, Lisp e Prolog.
+
+As linguagens de 5ª geração são usadas para desenvolvimento de sistemas especialistas (área da IA), de sistemas de reconhecimento de voz e machine learning.
+
+
+Reconhecimento de voz.
+
+A imagem a seguir ilustra as características de cada geração.
+
+Alguns autores classificam a 6ª geração, como uma evolução da 5ª, em que prevalecem as aplicações de redes neurais, uma outra vertente da inteligência artificial. Observe a imagem.
+

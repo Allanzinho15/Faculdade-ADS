@@ -1,0 +1,67 @@
+Paradigma imperativo
+O agrupamento por paradigmas é outra forma de classificar as linguagens de programação. Um paradigma agrupa linguagens com características semelhantes que surgiram em uma mesma época. A imagem a seguir ilustra os cinco paradigmas nos quais as linguagens de programação são classificadas. Esses paradigmas são agrupados em imperativos e declarativos, de acordo com a forma com que os programas são estruturados e descritos.
+
+Classificação dos paradigmas das linguagens de programação.
+
+O paradigma imperativo agrega três paradigmas: estruturado, orientado a objeto e concorrente, os quais possuem em comum o fato de especificarem passo a passo o que deve ser feito para a solução do problema. As linguagens do paradigma imperativo são dependentes da arquitetura do computador, pois especificam em seus programas como a computação é realizada. Vamos explicar as características de cada um dos paradigmas do subgrupo imperativo.
+
+Neste vídeo, falaremos sobre o paradigma imperativo para as linguagem de programação, abordando os paradigmas estruturado, orientado a objetos e concorrente. Acompanhe!
+
+
+Paradigma estruturado
+Caracteriza as principais linguagens de programação que seguiram os princípios da programação estruturada nas décadas de 1970 e 1980. Conheça!
+
+counter_1
+Princípio 1
+Não usar desvios incondicionais (Goto, característico de linguagens como BASIC e versões iniciais do COBOL).
+
+counter_2
+Princípio 2
+Desenvolver programas por refinamentos sucessivos (metodologia top down), motivando o desenvolvimento de rotinas (procedimentos e funções) e a visão do programa partindo do geral para o particular, ou seja, o programa vai sendo refinado à medida que se conhece melhor o problema e seus detalhes.
+
+counter_3
+Princípio 3
+Desenvolver programas usando três tipos de estruturas (sequenciais, condicionais e repetição).
+
+counter_4
+Princípio 4
+Utilizar, para ser eficiente, o paradigma estruturado baseado nos princípios da arquitetura de Von Neumann, onde programas e dados residem na memória (durante a execução), instruções e dados trafegam da memória para CPU e vice-versa e resultados das operações trafegam da CPU para a memória.
+
+As linguagens Pascal e C caracterizam bem o paradigma estruturado. A linguagem Python, multiparadigma, tem o estilo básico do paradigma estruturado.
+
+Paradigma orientado a objetos
+Com o crescimento do tamanho do código e complexidade dos programas, o paradigma estruturado começou a apresentar limitações nos sistemas que passaram a ter dificuldade de manutenção e reuso de programas e rotinas padronizadas.
+
+A orientação a objetos surge como solução a esses problemas, permitindo, através de propriedades como abstração, encapsulamento, herança e polimorfismo, maior organização, reaproveitamento e extensibilidade de código e, consequentemente, programas mais fáceis de serem escritos e mantidos.
+
+O principal foco do paradigma orientado a objetos foi possibilitar o desenvolvimento mais rápido e confiável.
+
+As classes são abstrações que definem uma estrutura que encapsula dados (chamados de atributos) e um conjunto de operações possíveis de serem usados, chamados métodos. Os objetos são instâncias das classes.
+
+extension
+Exemplo
+Uma classe ALUNO pode encapsular um conjunto de dados que os identifiquem: matrícula, nome, endereço (rua, número, complemento, bairro, estado e CEP) e um conjunto de métodos: Incluir Aluno, Matricular Aluno, Cancelar Matrícula, dentre outros.
+
+O paradigma orientado a objetos, por sua vez, usa os conceitos do paradigma estruturado na especificação dos comandos de métodos. Por isso, é considerado uma evolução do paradigma estruturado.
+
+Python, Smalltalk, C++, Java e Delphi (oriundo do Object Pascal) são linguagens que caracterizam o paradigma orientado a objetos.
+
+Python é orientado a objeto, pois tudo na linguagem Python é objeto, permitindo a declaração de classes encapsuladas, além de possibilitar herança e polimorfismo.
+
+
+Logo Python em tela de celular.
+
+Paradigma concorrente
+Caracterizado quando processos executam simultaneamente e concorrem aos recursos de hardware (processadores, discos e outros periféricos), características cada vez mais usuais em sistemas de informação.
+
+O paradigma concorrente pode valer-se de apenas um processador ou vários. Entenda!
+
+Os processos competem pelo uso do processador e outros recursos.
+
+Tarefas são executadas paralelamente em diferentes processadores simultaneamente. Esses processadores podem estar na mesma máquina ou distribuídos em múltiplos computadores.
+
+Ada e Java são as linguagens que melhor caracterizam o paradigma concorrente, possibilitando suporte à concorrência.
+
+assignment_ind
+Comentário
+Ao contrário de Go, Python não foi originalmente projetada com foco em programação concorrente, muito menos paralela. O modo tradicional de programar concorrência em Python -- threads -- é limitado no interpretador padrão (CPython) por uma trava global (a GIL), que impede a execução paralela de threads escritas em Python. Isso significa que threads em Python são úteis apenas em aplicações I/O bound – em que o gargalo está no I/O (entrada e saída), como é o caso de aplicações na Internet.

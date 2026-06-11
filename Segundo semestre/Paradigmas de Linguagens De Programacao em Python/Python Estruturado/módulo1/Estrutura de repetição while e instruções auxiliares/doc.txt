@@ -1,0 +1,236 @@
+Estrutura de repetição while e instruções auxiliares
+Agora você vai descobrir os segredos do loop while e das declarações break, continue e pass em Python. Confira a lógica por trás dessas estruturas de controle de fluxo e aprenda a criar loops eficientes, interromper iterações indesejadas, continuar para a próxima iteração ou simplesmente passar adiante.
+
+Para entender melhor, assista ao vídeo!
+
+
+Estrutura de repetição while
+Permite executar repetidamente um bloco de código enquanto uma condição for verdadeira. Vamos aprender como utilizá-la e ver alguns exemplos para entender melhor.
+
+A sintaxe do while é a apresentada a seguir.
+
+python
+content_copy
+while condição:
+    bloco_de_codigo
+    
+O bloco_de_codigo será repetido enquanto a condição for verdadeira. Assim que a condição se tornar falsa, a execução sai do laço while.
+
+A seguir veremos um exemplo.
+
+Exemplo com while
+Vamos analisar um programa em que o usuário precisa digitar a palavra "sair" para que o laço while seja encerrado.
+
+Para que o exemplo proposto seja executado corretamente, deve-se inserir, no campo Input do emulador, uma sequência de palavras, uma por linha, sendo que a última tem de ser a palavra “sair”.
+
+Observe o código!
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+
+palavra = input('Entre com uma palavra: \n')
+while palavra != 'sair':
+    palavra = input('Digite sair para encerrar o laço: \n')
+print('Você digitou sair e agora está fora do laço')
+
+Input
+Digite cada input em uma linha.
+Console
+No exemplo, podemos observar o seguinte:
+
+A linha 1 solicita ao usuário que insira uma palavra, que é armazenada na variável palavra.
+A linha 2 cria o laço while, que depende da condição .
+A linha 3 será repetida enquanto a condição for verdadeira, ou seja, enquanto o valor da variável palavra for diferente de 'sair'. Quando os valores forem iguais, a condição do laço while será falsa e o laço será encerrado.
+A linha 4 imprime a mensagem fora do laço while.
+Agora, analise o código e responda.
+
+Se você digitar “sair” logo na primeira solicitação, o que acontecerá com a linha 3 do nosso programa?
+ads_clickﾠClique em um dos botões para responder.
+
+
+O laço while infinito
+Laços infinitos são úteis quando queremos executar um bloco de instruções indefinidamente. O laço while infinito tem o formato que mostraremos a seguir.
+
+python
+content_copy
+
+while True:
+    bloco_de_codigo
+Veremos agora um exemplo!
+
+
+Exemplo de laço infinito
+Vamos criar uma aplicação que permanece por meses ou anos sendo executada, registrando a temperatura ou a umidade de um ambiente. Logicamente, você possui essa informação disponível a partir da leitura de algum sensor. Você, portanto, precisa tomar cuidado e ter a certeza de que seu uso é realmente necessário para evitar problemas de consumo excessivo de memória.
+
+Observe o código!
+
+python
+content_copy
+while True:
+    temperatura = ler_sensor_temperatura()  # Supomos que esta função leia a temperatura do sensor
+    registrar_temperatura(temperatura)     # Supomos que esta função registre a temperatura lida
+    time.sleep(60)  # Aguarda 60 segundos antes de ler novamente
+
+No exemplo, o laço while é infinito e continuará lendo e registrando a temperatura a cada 60 segundos.
+
+As instruções break, continue e pass
+A instrução break
+É utilizada para interromper as repetições dos laços for e while. Quando o programa encontra uma instrução break, a repetição é encerrada e o fluxo do programa continua a partir da primeira instrução após o laço. Vamos entender como a instrução break funciona!
+
+Exemplo com break no laço while
+Vamos voltar ao exemplo do laço while infinito. O laço será encerrado quando o usuário inserir a palavra "sair".
+
+Para que o exemplo proposto seja executado corretamente, deve-se inserir, no campo Input do emulador, uma sequência de palavras, uma por linha, sendo que a última tem de ser a palavra “sair”.
+
+No emulador, clique em Executar (trata-se do código 6 do arquivo disponibilizado): while true:
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+while True:
+   print('loop')
+   palavra = input('Entre com uma palavra:')
+   if palavra == 'sair':
+      break
+print('Você digitou sair e agora está fora do laço')
+
+Input
+Digite cada input em uma linha.
+Console
+Vamos entender linha a linha o que o código faz, confira!
+
+A linha 1 cria um laço while infinito.
+A linha 2 solicita ao usuário que insira uma palavra.
+A linha 3 verifica se a palavra inserida é "sair". Se for, a instrução break é executada, encerrando o laço while.
+A linha 4 imprime uma mensagem fora do laço while.
+Exemplo com break em laços aninhados
+Vejamos um exemplo com laços while aninhados.
+
+python
+content_copy
+while true:
+    print('Você está no primeiro laço.')
+    opcao1 = input('Deseja sair dele? Digite SIM para isso. \n')
+    if opcao1 == 'SIM':
+        break  # este break é do primeiro laço
+    else:
+        while true:
+            print('Você está no segundo laço.')
+            opcao2 = input('Deseja sair dele? Digite SIM para isso. \n')
+            if opcao2 == 'SIM':
+               break  # este break é do segundo laço
+        print('Você saiu do segundo laço.')
+print('Você saiu do primeiro laço')
+
+Vamos analisar, novamente, linha a linha o que esse código realiza. Confira!
+
+A linha 1 cria o primeiro laço while infinito.
+A linha 2 imprime uma mensagem indicando que o usuário está no primeiro laço.
+A linha 3 solicita ao usuário que insira uma opção.
+A linha 4 verifica se a opção inserida é SIM. Se for, a instrução break é executada, encerrando o primeiro laço while.
+Caso contrário, a linha 6 cria um segundo laço while infinito.
+A linha 7 imprime uma mensagem indicando que o usuário está no segundo laço.
+A linha 8 solicita ao usuário que insira uma opção.
+A linha 9 verifica se a opção inserida é SIM. Se for, a instrução break é executada, encerrando o segundo laço while.
+A linha 11 imprime uma mensagem indicando que o usuário saiu do segundo laço.
+A linha 12 imprime uma mensagem indicando que o usuário saiu do primeiro laço.
+A instrução break é muito útil quando precisamos sair de um laço antes que ele termine normalmente. Ela pode ser usada tanto em laços while quanto em laços for.
+
+A instrução continue
+É usada para pular a iteração atual de um laço e passar para a próxima iteração. Diferente da instrução break, que encerra completamente o laço, a instrução continue apenas interrompe a iteração corrente e continua o laço desde o início.
+
+assignment_ind
+Comentário
+Quando o Python encontra a instrução continue, ele ignora todas as instruções restantes no laço para aquela iteração e vai direto para a próxima iteração. Isso é útil quando você deseja pular certos valores ou condições dentro de um laço.
+
+Exemplo com continue
+Vejamos um exemplo no qual imprimimos todos os números inteiros de 1 a 10, pulando apenas o número 5. Veja sua implementação (código 8 do arquivo disponibilizado) no emulador.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+for num in range(1, 11):
+    if num == 5:
+        continue
+    else:
+        print(num)
+print('Laço encerrado')
+Input
+Digite cada input em uma linha.
+Console
+Analisando linha a linha do código, observamos que:
+
+A linha 1 cria um laço for que itera sobre a sequência de números de 1 a 10.
+A linha 2 verifica se o número atual é 5.
+Se o número atual for 5, a instrução continue é executada, pulando o restante do bloco do laço e iniciando a próxima iteração.
+Caso contrário, a linha 5 imprime o número atual.
+Após o laço terminar, a linha 7 imprime a mensagem "Laço encerrado".
+Para entender a diferença entre break e continue, vamos modificar o exemplo anterior substituindo continue por break e ver o que acontece. Essa alteração está no arquivo disponibilizado (código 9).
+
+python
+content_copy
+for num in range(1, 11):
+    if num == 5:
+        break
+    else:
+        print(num)
+print('Laço encerrado')
+
+Agora, analise o exemplo e preencha as lacunas com as palavras apresentadas. No final, verifique o resultado.
+
+1. Quando o número atual é 5, a instrução  é executada, encerrando o laço  imediatamente.
+
+2. Isso significa que os números após 5  impressos.
+
+    
+ 
+Com os exemplos, podemos ver claramente como continue permite pular uma iteração específica sem interromper todo o laço, enquanto break encerra o laço por completo.
+
+A instrução pass
+É usada como um marcador de posição. Ela é útil quando você precisa de uma sintaxe que exige um bloco de código, mas você ainda não decidiu o que escrever nesse bloco. Em outras palavras, pass permite que você escreva uma estrutura que não faz nada, mas mantém a sintaxe correta.
+
+assignment_ind
+Comentário
+Quando o Python encontra a instrução pass, ele simplesmente continua a execução sem fazer nada. Isso pode ser útil em várias situações, como durante o desenvolvimento de código, em que você deseja planejar a estrutura do seu programa antes de preencher os detalhes.
+
+Exemplo com pass
+Vejamos um exemplo no qual imprimimos somente os números ímpares entre 1 e 10. Usaremos pass para os números pares.
+
+Uma implementação possível está no emulador a seguir (código 10 do arquivo disponibilizado).
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+for num in range(1, 11):
+    if num % 2 == 0:
+        pass
+    else:
+        print(num)
+print('Laço encerrado')
+
+Input
+Digite cada input em uma linha.
+Console
+Vamos verificar o que esse código faz!
+
+A linha 1 cria um laço for que itera sobre a sequência de números de 1 a 10.
+A linha 2 verifica se o número atual é par (ou seja, divisível por 2 sem resto).
+Se o número for par, a instrução pass é executada, o que significa que nada acontece e o laço continua para a próxima iteração.
+Se o número for ímpar, a linha 6 imprime o número atual.
+Após o laço terminar, a linha 8 imprime a mensagem "Laço encerrado".
+Nesse exemplo, a instrução pass é usada para indicar que nada deve ser feito quando o número é par. Isso ajuda a manter a estrutura do código clara e correta.
+
+Claramente, seria possível reescrever a condição do if-else para que pudéssemos transformá-lo em um if simples, sem else. Entretanto, o objetivo aqui é mostrar o uso da instrução pass.

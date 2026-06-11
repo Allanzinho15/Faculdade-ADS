@@ -1,0 +1,149 @@
+Uso de structs e encapsulamento de dados
+Neste vídeo, veja o que é uma struct na linguagem C e como ela permite organizar diferentes tipos de dados relacionados em um único bloco, facilitando o armazenamento e a manipulação de informações. Acompanhe ainda como structs ajudam a criar programas mais organizados, reutilizáveis e escaláveis.
+
+
+
+Na programação, lidar com muitos dados separados pode se tornar confuso e propenso a erros. Para resolver esse problema, usamos uma estrutura chamada struct em C. 
+
+ 
+
+Uma struct permite agrupar diferentes informações (de tipos variados) sobre um mesmo objeto. Mas o que é exatamente uma struct? Também chamada de estrutura, é um tipo de dado composto que permite agrupar diferentes variáveis sob um mesmo nome, facilitando a organização de informações relacionadas. Cada variável em uma struct é chamada de membro ou campo, e pode ter um tipo diferente.
+
+ 
+
+Por exemplo, uma estrutura que representa um aluno pode agrupar seu nome, idade e media em um único bloco de dados. Veja!
+ 
+
+O campo nome é do tipo char.
+ 
+O campo idade é do tipo int.
+ 
+O campo media é do tipo float.
+ 
+
+Desta forma, podemos implementar essa ideia na prática com a seguinte declaração:
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+struct Aluno {
+    char nome[50];
+    int idade;
+    float media;
+}; 
+Copiar
+
+Com a estrutura definida, podemos declarar um aluno com:
+
+
+C (GCC 9.2.0)
+struct Aluno a1; 
+
+Light Mode
+
+Copiar
+
+E também acessar seus campos da seguinte forma:
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+a1.idade = 20; 
+Copiar
+
+Esse agrupamento é chamado de encapsulamento de dados. 
+
+ 
+
+Encapsular significa esconder ou proteger detalhes internos, expondo apenas o necessário. Com isso, o código se torna mais organizado, legível e reutilizável. Esse conceito é bastante usado em linguagens orientadas a objetos, mas em C ele já pode ser praticado com o uso de structs e boas práticas de modularização.
+
+ 
+
+Para entendermos melhor, usaremos alguns exemplos. Vamos lá!
+
+
+
+Prontuário médico
+
+Um médio anota em seu prontuário todas as informações do mesmo paciente, como nome, idade, tipo sanguíneo, alergias e histórico de doenças, entre outros. Mas imagine ter essas informações espalhadas em folhas soltas: seria difícil controlar, correlacionar e manter consistência, certo?
+
+ 
+
+Portanto, esse cenário nos leva a concluir que o prontuário é a struct que encapsula os dados.
+
+
+
+Caixa de ferramentas
+
+Você poderia guardar o martelo em um armário, os pregos em uma gaveta e a chave inglesa em outro canto. Mas é mais prático guardar tudo em um único lugar, como uma caixa de ferramentas.
+ 
+
+Assim, a caixa é a struct, e as ferramentas são os atributos encapsulados nela.
+
+
+Benefícios do encapsulamento com structs
+
+
+ Existem alguns benefícios no conceito de encapsulamento aplicado à structs. São eles:
+
+
+Menos repetições
+
+
+Reduz repetições no código.
+
+
+Dados organizados
+
+
+Organiza a lógica dos dados.
+
+
+Reutilização facilitada
+
+
+Facilidade para reutilizar estruturas em outras partes do programa.
+
+
+Listas de estruturas
+
+
+Permite criar vetores ou listas de objetos estruturados.
+
+
+Exemplo prático em C
+
+
+Vamos usar typedef para facilitar o uso da struct e criar um aluno com seus dados. 
+
+ 
+
+Usamos typedef na criação de uma struct em C para simplificar a sua utilização, tornando o código mais limpo e legível. Sem typedef, toda vez que quisermos declarar uma variável do tipo struct, precisaremos repetir a palavra-chave struct antes do nome da estrutura. Contudo, com typedef, podemos criar um apelido (alias) para o tipo, eliminando essa necessidade, como podemos ver no código a seguir.
+
+
+C (GCC 9.2.0)
+
+#include <stdio.h>
+
+// Definindo a estrutura do tipo Aluno
+typedef struct {
+    char nome[50];
+    int idade;
+    float media;
+} Aluno;
+
+int main() {
+    // Criando uma variável do tipo Aluno
+    Aluno aluno1 = {"João", 20, 8.5};
+
+    // Exibindo os dados do aluno
+    printf("Aluno: %s
+Idade: %d
+Média: %.2f
+", aluno1.nome, aluno1.idade, aluno1.media);
+    return 0;
+} 

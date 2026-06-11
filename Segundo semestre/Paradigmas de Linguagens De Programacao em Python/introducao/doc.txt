@@ -1,0 +1,15 @@
+Apresentação da disciplina
+Veja o vídeo a seguir e descubra como os paradigmas de programação e Python podem transformar problemas complexos em soluções práticas e eficientes para sua carreira no mercado tecnológico.
+
+
+
+O que você irá estudar nesta disciplina 
+
+
+Paradigmas e linguagem Python: compreender as características, classificações e paradigmas das linguagens de programação para identificar a linguagem mais adequada a diferentes problemas, promovendo escolhas estratégicas e fundamentadas para soluções eficientes no mercado de trabalho e projetos tecnológicos.
+ 
+Python básico: explorar os fundamentos de Python, como variáveis, tipos de dados e lógica de programação, para entender sua simplicidade e eficiência, possibilitando o desenvolvimento de soluções iniciais e avançando no uso dessa linguagem essencial no mercado tecnológico.
+ 
+Python estruturado: aprender a usar estruturas de controle, subprogramas, bibliotecas e tratamento de exceções em Python para desenvolver programas mais complexos e eficientes, otimizando tarefas repetitivas e aprimorando habilidades para criar soluções profissionais e robustas.
+ 
+Python orientado a objetos: explorar os conceitos de orientação a objetos, como herança e polimorfismo, para compreender e implementar esse paradigma em Python, facilitando o desenvolvimento e a manutenção de sistemas que refletem estruturas do mundo real.

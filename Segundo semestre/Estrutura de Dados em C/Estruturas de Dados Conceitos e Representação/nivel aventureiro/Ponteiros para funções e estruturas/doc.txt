@@ -1,0 +1,160 @@
+Ponteiros para funções e estruturas
+Neste vídeo, explore como utilizar ponteiros para acessar funções e estruturas na linguagem C. Veja como eles permitem chamadas indiretas e como ponteiros para structs facilitam o uso de dados alocados dinamicamente. Com exemplos práticos, entenda como esses conceitos ampliam a flexibilidade e reutilização do código.
+
+
+
+Antes de explorarmos os ponteiros aplicados a funções e estruturas, é importante compreendermos o que são esses dois elementos fundamentais em C.
+
+
+Função
+
+
+É um bloco de código nomeado que realiza uma tarefa específica e pode ser reutilizado ao longo do programa.
+
+
+Estrutura (ou struct) 
+
+
+É uma forma de agrupar variáveis de diferentes tipos sob um mesmo nome, representando um único conceito — como um aluno, um livro ou um funcionário.
+
+
+Ponteiros podem ser usados para referenciar tanto funções quanto estruturas, permitindo acesso indireto, flexível e eficiente.
+
+
+Ponteiros para funções
+
+
+Armazenam o endereço de uma função, possibilitando chamá-la de forma indireta. Isso é útil quando queremos criar programas mais genéricos, que mudam de comportamento dependendo da função associada a determinado momento, como em menus ou filtros.
+
+ 
+
+Vamos entender melhor comparando com a ação de salvar o número de um contato no celular. Você não precisa discar o número toda vez — basta clicar no nome do contato e a chamada será feita. Portanto, o ponteiro armazena o caminho até a ação (função), e executá-la fica simples.
+
+ 
+
+Os ponteiros para funções podem ser passados para funções, retornados de funções, armazenados em vetores (arrays) e atribuídos a outros ponteiros para funções.
+
+
+Como representar um ponteiro para função em C?
+
+
+Utilizamos uma sintaxe específica que indica que o ponteiro armazena o endereço de uma função, permitindo chamá-la indiretamente. 
+ 
+
+Agora, confira a forma geral da declaração em duas situações.
+
+Funções sem parâmetros:
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+tipo_de_retorno (*nome_do_ponteiro)();
+Copiar
+
+Funções que recebem argumentos (com parâmetros):
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+(*nome_do_ponteiro)(declaração_de_parâmetro);
+Copiar
+
+Por exemplo, se você quiser declarar um ponteiro para uma função que recebe dois int e retorna um float, deverá usar: 
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+float (*func_ptr)(int, int);
+Copiar
+
+Trata-se de um tipo de construção útil quando se deseja passar funções como argumentos para outras funções, criar vetores de funções ou implementar callbacks, proporcionando maior flexibilidade e modularidade ao código.
+
+ 
+
+Vamos ao exemplo prático em C
+
+A variável ptr armazena o endereço da função saudacao, e a chamada ptr(); executa a função por meio do ponteiro. Acompanhe!
+
+C (GCC 9.2.0)
+
+
+Light Mode
+#include <stdio.h>
+
+void saudacao() {
+    printf("Olá, mundo!
+");
+}
+
+int main() {
+    void (*ptr)() = saudacao; // ponteiro para função
+    ptr(); // chamada indireta
+    return 0;
+} 
+Copiar
+
+Ponteiros para estruturas
+
+
+Permitem acessar os campos de uma struct de forma indireta, o que é bastante útil em alocações dinâmicas com malloc, quando não sabemos quantos registros teremos de antemão.
+
+
+Exemplo
+Imagine uma ficha de cadastro guardada em uma pasta. Em vez de carregar a ficha inteira, você anota o número da gaveta em que ela está guardada. Assim, sempre que precisar, você pode consultar o conteúdo acessando aquele local.
+
+
+Exemplo prático em C
+
+
+Usamos “->” para acessar os campos da estrutura Pessoa por meio do ponteiro “p”, que direciona para um espaço de memória alocado de modo dinâmico. Confira!
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+
+Copiar
+#include <stdio.h>
+#include <stdlib.h>
+
+typedef struct {
+    char nome[50];
+    int idade;
+} Pessoa;
+
+int main() {
+    Pessoa* p = (Pessoa*)malloc(sizeof(Pessoa));
+    if (p == NULL) return 1;
+
+    printf("Digite o nome: ");
+    scanf("%s", p->nome);
+    printf("Digite a idade: ");
+    scanf("%d", &p->idade);
+
+    printf("%s tem %d anos.
+", p->nome, p->idade);
+    free(p);
+    return 0;
+} 
+Quando usar?
+
+
+Ponteiro é um tipo especial de variável da linguagem C, sendo muito útil nas seguintes situações:
+
+ 
+
+Quando funções precisam ser passadas como argumentos para outras funções (como callbacks).
+ 
+Para trabalhar com dados alocados dinamicamente (listas e árvores).
+ 
+Para construir programas adaptáveis, modulares e reutilizáveis.
+ 
+
+Ponteiros para funções e estruturas tornam o código mais poderoso e flexível, de modo que as ações e os dados sejam manipulados de forma indireta, promovendo modularidade e reutilização em aplicações mais complexas. Em C, além de apontar para variáveis comuns, ponteiros também podem direcionar para funções e estruturas. Isso aumenta a flexibilidade do programa, permitindo comportamentos mais genéricos e reutilizáveis.

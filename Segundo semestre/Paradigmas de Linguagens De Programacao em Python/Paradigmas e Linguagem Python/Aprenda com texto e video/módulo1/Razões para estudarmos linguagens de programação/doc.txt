@@ -1,0 +1,123 @@
+Razões para estudarmos linguagens de programação
+Estudar linguagens de programação é fundamental para entender a base do desenvolvimento de software, que é imprescindível em diversas áreas da ciência e tecnologia. Conhecer diferentes linguagens e paradigmas permite selecionar a ferramenta adequada para resolver problemas específicos, aumentando a eficiência e eficácia do trabalho.
+
+Neste vídeo, falaremos sobre linguagem de programação e produtividade do programador. Abordaremos também o papel da abstração nas linguagens de programação. Confira!
+
+
+Linguagem de programação e produtividade do programador
+Um programa de computador, ou software, é um conjunto de instruções que orientam o hardware do computador para o que deve ser feito. O software pode ser classificado em aplicativo ou básico. Veja a diferença entre eles.
+
+
+Aplicativo
+Visa oferecer ao usuário facilidades para realizar uma tarefa laboral ou de lazer.
+
+close
+
+Básico
+Compreende programas essenciais ao funcionamento do computador. O sistema operacional é o principal exemplo.
+
+Uma linguagem de programação é um software básico, que permite ao programador escrever outros programas de computador, seja ela um software aplicativo ou básico.
+
+A codificação de um programa em uma linguagem de programação, chama-se programa-fonte, que ainda não pode ser entendido e executado pelo hardware do computador, pois este apenas entende a linguagem de máquina ou linguagem binária, na qual cada instrução é uma sequência de bits (0 ou 1).
+
+Uma linguagem de programação é um formalismo com um conjunto de símbolos, palavras reservadas, comandos, regras sintáticas e semânticas e outros recursos, que permitem especificar instruções de um programa.
+
+As linguagens de programação surgiram da necessidade de liberar o programador dos detalhes mais íntimos das máquinas em que a programação é feita, permitindo a programação em termos mais próximos ao problema, ou em nível mais alto.
+
+A produtividade de um programador ao escrever o código em uma linguagem de programação está intimamente relacionada à facilidade de aprendizado, à leitura e à escrita de programas naquela linguagem, somada à expertise do programador no contato com ela. Isto é, quanto mais o programador conhecer as propriedades superlativas daquela linguagem, melhores e mais eficientes serão os códigos escritos.
+
+
+Pessoa escrevendo código em computador.
+
+Segundo o cientista da computação holandês, Edsger Dijkstra:
+
+O aspecto mais importante, mas também o mais elusivo de qualquer ferramenta, é sua influência nos hábitos daqueles que se treinam no seu uso. Se a ferramenta é uma linguagem de programação, essa influência é, gostemos ou não, uma influência em nosso hábito de pensar.
+
+(Edsger Dijkstra)
+O papel da abstração nas linguagens de programação
+Abstração é o processo de identificação das qualidades e/ou propriedades relevantes para o contexto que está sendo analisado e desprezando o que seja irrelevante.
+
+Um modelo é uma abstração da realidade.
+
+Um programa de computador é um modelo, pois representa a solução de um problema em termos algorítmicos. Assim sendo, a abstração permeia toda a atividade de programação de computadores.
+
+A linguagem de máquina foi a primeira a ser criada para a prática de programação. Trata-se da linguagem nativa do computador, escrita no sistema binário, a única que ele, de fato, compreende. Essa linguagem, muito complicada para ser entendida pelas pessoas - em que um comando que soma 2 números é formado por uma sequência de 1 e 0 -, é muito difícil de ser memorizada, usada e, mais ainda, de ser entendida por terceiros.
+
+
+Sistema binário.
+
+As primeiras linguagens de programação, porém, não reconheciam o papel crucial que a abstração desempenha na programação.
+
+assignment_ind
+Comentário
+No início da década de 1950, o único mecanismo de abstração fornecido pela linguagem de montagem, ou Assembly, em relação às linguagens de máquina eram os nomes simbólicos. O programador podia empregar termos relativamente autoexplicativos (nomes simbólicos) para nomear códigos de operação (ADD = soma, SUB = subtração, M = multiplicação e DIV = divisão) e posições de memória. A linguagem de montagem (Assembly) melhorou a vida do programador, porém obrigava-o a escrever 1 linha de código para cada instrução que a máquina deve executar, forçando-o a pensar como se fosse uma máquina.
+
+Um pouco mais adiante, visando a aumentar o poder de abstração das linguagens de forma a permitir uma melhor performance dos programadores, surgem as linguagens de alto nível, próximas à linguagem humana e mais distantes das linguagens Assembly e de máquina.
+
+A tabela a seguir exibe, na primeira coluna, um programa-fonte, escrito numa linguagem de alto nível, a linguagem Python. Na segunda coluna, temos o código equivalente na linguagem Assembly para o sistema operacional Linux e, na terceira coluna, o respectivo código na linguagem de máquina, de um determinado processador. Observe!
+
+Linguagem Python	Assembly	Linguagem de máquina
+def swap (self, v, k):
+   temp = self.v[k]
+   self.v[k] = self.v[k+1]
+   self.v[k+1] = temp	swap:
+Muli $2,$5,4
+Add $2,$4,$2
+Lw $15,0($2)
+Lw $16,4($2)
+Sw $16,0($2)
+Sw $15,4($2)
+Jr $31
+00000000001111111111100000000001
+00011111111000000111000011111101
+11111000001100000111111110000000
+10000000100000001000000010000000
+00000000010000000001000000000010
+00000000000000001111000010010101
+00000000111000111111001111111111
+Tabela: Comparativo entre linguagem Python, assembly e linguagem de máquina.
+Marcelo Vasques de Oliveira.
+
+Agora, observe alguns detalhes sobre a tabela apresentada.
+
+O programa na linguagem Python tem, na verdade, 3 comandos, que estão nas linhas 2, 3 e 4. → Linha 1 é a declaração da função Swap.
+O programa em linguagem Assembly tem 7 comandos (na linha 1, SWAP não é um comando, mas um rótulo, nome dado a um trecho de código).
+O programa em linguagem de máquina tem 7 comandos, a mesma quantidade de comandos do mesmo programa em Assembly → paridade de 1 para 1 → comandos em Assembly → comandos em linguagem de máquina.
+A imagem a seguir ilustra o conceito de abstração, em que a partir da linguagem de máquina, cria-se camadas (de abstração) para facilitar a vida do programador. Confira!
+
+
+Crescimento do nível de abstração.
+
+A seguir, detalharemos cada nível. Acompanhe!
+
+counter_1
+Nível 1
+É representado pelo hardware, conjunto de circuitos eletrônicos.
+
+counter_2
+Nível 2
+É representado pela linguagem de máquina (1 e 0), única que o hardware entende.
+
+counter_3
+Nível 3
+É representado pela linguagem Assembly (mneumônicos).
+
+counter_4
+Nível 4
+É representado pelas linguagens de alto nível, próximas à língua do usuário e distantes da linguagem computacional. Python e Java são linguagens de programação representativas da classe LP de alto nível (LP = linguagem de programação).
+
+Por que estudar linguagens de programação?
+O estudante e/ou programador que se dispuser a gastar seu tempo aprendendo linguagens de programação terá as seguintes vantagens:
+
+Maior capacidade de desenvolver soluções em termos de programas — compreender bem os conceitos de uma LP pode aumentar a habilidade dos programadores para pensar e estruturar a solução de um problema.
+Maior habilidade em programar em uma linguagem, conhecendo melhor suas funcionalidades e implementações, ajuda o programador a construir programas melhores e mais eficientes. Por exemplo, conhecendo como as LPs são implementadas, podemos entender melhor o contexto e decidir entre usar ou não a recursividade, que se mostra menos eficiente que soluções iterativas.
+Maiores chances de acerto na escolha da linguagem mais adequada ao tipo de problema em questão, quando se conhece os recursos e como a linguagem os implementa. Por exemplo, saber que a linguagem C não verifica, dinamicamente, os índices de acesso a posições de vetores pode ser decisivo para sua escolha em soluções que usem frequentemente acessos a vetores.
+Maior habilidade para aprender novas linguagens. Quem domina os conceitos da orientação a objeto tem mais aptidão para aprender Python, C++, C# e Java.
+Amplo conhecimento dos recursos da LP reduz as limitações na programação.
+Maior probabilidade para projetar novas LP, aos que se interessarem por esse caminho profissional: participar de projetos de criação de linguagens de programação.
+Aumento da capacidade dos programadores em expressar ideias.
+Em geral, um programador tem expertise em poucas variedades de linguagens de programação, dependendo do seu nicho de trabalho. Isso, de certa forma, limita sua capacidade de pensar, pois ele fica restrito pelas estruturas de dados e controle que a(s) linguagem(ns) de seu dia a dia permitem. Conhecer uma variedade maior de recursos das linguagens de programação pode reduzir tais limitações, levando, ainda, os programadores a aumentar a diversidade de seus processos mentais.
+
+text_snippet
+Resumindo
+Quanto maior for o leque de linguagens que um programador dominar e praticar, maiores serão as chances de conhecer e fazer uso das propriedades superlativas da(s) linguagem(ns) em questão.

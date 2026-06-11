@@ -1,0 +1,38 @@
+Variáveis na prática
+Não há dúvidas de que a prática é essencial para solidificar os conceitos aprendidos e desenvolver habilidades eficazes na programação. Nesta fase, vamos criar um exemplo simples para demonstrar o conceito de binding em Python, envolvendo tanto tipos numéricos quanto strings.
+
+Ao criar uma função que recebe dois argumentos – um número e uma string – e imprimir esses valores, os programadores podem visualizar na prática como os valores são vinculados aos parâmetros durante a chamada da função. Isso não apenas ajuda a compreender melhor o conceito de binding, mas também a aplicá-lo de forma eficiente em situações reais de desenvolvimento de software.
+
+Neste vídeo, praticaremos a implementação de variáveis utilizando a linguagem de programação Python. Acompanhe!
+
+
+Roteiro de prática
+Nesta etapa, vamos criar um exemplo simples para demonstrar o conceito de binding em Python, envolvendo tipos numéricos e strings. Vamos criar uma função que recebe dois argumentos: um número e uma string. Em seguida, a função irá imprimir o número e a string fornecidos como argumentos.
+
+Siga o passo a passo:
+
+Defina uma função chamada imprimir_dados que aceita dois parâmetros: um número e uma string.
+Dentro da função, imprima o número e a string usando a função print().
+Forneça dois valores para a função imprimir_dados: um número e uma string.
+Chame a função imprimir_dados com os valores fornecidos.
+Confira a seguir o código Python correspondente ao passo a passo. Depois, observe o resultado da execução do exemplo de binding do código no Python Console do PyCharm.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+# Passo 1: Definir a função imprimir_dados
+def imprimir_dados(numero, texto):
+    print("Número:", numero)                                                  
+    print("Texto:", texto)
+ 
+# Passo 2: Chamar a função imprimir_dados com dois argumentos
+imprimir_dados(10, "Ola, mundo!") 
+python3
+
+Input
+Console
+O exemplo demonstrou como os argumentos (um número e uma string) são vinculados aos parâmetros (número e texto) da função imprimir_dados. Quando a função é chamada com os valores 10 e "Olá, mundo!", esses valores são vinculados aos parâmetros dentro da função, resultando na impressão do número e da string fornecidos. Isso exemplifica o conceito de binding em Python.
+
+Agora é a sua vez! Reveja o que estudou até aqui e pratique o que aprendeu!

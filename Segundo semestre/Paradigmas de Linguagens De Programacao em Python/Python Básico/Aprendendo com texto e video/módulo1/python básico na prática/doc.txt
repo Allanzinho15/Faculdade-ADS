@@ -1,0 +1,20 @@
+Python básico na prática
+Aprender a programar em Python através de prática é essencial para iniciantes. A prática constante não só fortalece o entendimento dos conceitos fundamentais, como também desenvolve habilidades de resolução de problemas. Programar envolve mais do que apenas entender a teoria; é sobre aplicar esse conhecimento para criar soluções tangíveis. Fazendo projetos práticos, como criar pequenos programas ou automatizar tarefas simples, os iniciantes podem ganhar confiança, consolidar seu aprendizado e descobrir o poder transformador da programação. A prática contínua é a chave para se tornar um programador habilidoso e criativo em Python.
+
+No vídeo a seguir, praticaremos a implementação de elementos básicos de Python, incluindo variáveis, estruturas de controle de fluxo (como loops e condicionais), funções e manipulação de dados, proporcionando uma base sólida para o desenvolvimento de programas funcionais e eficientes.
+
+
+Roteiro de prática
+Nesta etapa, vamos criar um programa para calcular a média de duas notas. Você precisa seguir os seguintes passos:
+
+Abra o Pycharm.
+Pressione a opção Python Console.
+Agora, digite o código a seguir.
+python
+content_copy
+
+O seu programa deve ficar conforme a imagem.
+
+Programa para calcular a média de dois números.
+
+Agora, é a sua vez! Reveja o que estudou até aqui e pratique o que aprendeu!

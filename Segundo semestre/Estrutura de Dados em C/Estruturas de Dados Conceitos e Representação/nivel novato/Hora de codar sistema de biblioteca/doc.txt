@@ -1,0 +1,12 @@
+Hora de codar: sistema de biblioteca
+Nesta prática, você aplicará os conhecimentos adquiridos no nível novato de estrutura de dados para implementar um sistema de cadastro de livros da biblioteca em linguagem C.
+
+ 
+
+O objetivo é criar uma estrutura (struct) que armazene informações como nome, autor, editora e edição de cada livro. Cada campo da struct deve ter um tipo de dados definido. O sistema solicitará ao usuário que cadastre os dados de vários livros por meio do terminal e, em seguida, exibirá as informações registradas.
+
+ 
+
+No vídeo a seguir, acompanhe a implementação de um sistema de cadastro de livros em linguagem C, utilizando structs para organizar os dados de cada obra — como nome, autor, editora e edição. A prática reforça o uso de estruturas de dados compostas, entrada de dados via terminal e exibição organizada das informações, aplicando na prática os conceitos estudados no nível novato.
+
+

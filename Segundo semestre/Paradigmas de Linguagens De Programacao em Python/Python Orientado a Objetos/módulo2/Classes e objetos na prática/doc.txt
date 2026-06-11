@@ -1,0 +1,50 @@
+Classes e objetos na prática
+Agora que vimos como funciona a criação de classe e a instanciação de objeto em Python, vamos fazer um exercício.
+
+Crie uma classe chamada televisão que siga os requisitos a seguir.
+
+Receba como parâmetros em seu construtor o canal inicial, o maior canal e o menor canal.
+Possua como atributos o canal sintonizado, o número do maior canal e o número do menor canal.
+Possua dois métodos, um para diminuir o canal atual e outro para aumentar o canal sintonizado.
+Instancie uma tv e teste as trocas de canal.
+O vídeo a seguir apresenta um exercício prático de criação de classes e instanciação de objetos em Python. Acompanhe!
+
+
+Roteiro de prática
+Execute as seguintes etapas para resolução do pedido.
+
+Crie a classe Televisão.
+Crie o método construtor.
+Estabeleça os parâmetros do método construtor.
+Crie os atributos canal, canal mínimo e canal máximo.
+Defina os métodos para ir para o canal superior e para o canal inferior.
+Crie dois objetos de televisão e teste a subida e a descida dos canais.
+Confira, agora, o código fonte gerado.
+
+class Televisao:
+    def __init__(self, pcanal, min, max):
+        self.canal = pcanal
+        self.cmin = min
+        self.cmax = max
+
+    def muda_canal_para_baixo(self):
+        self.canal -= 1
+
+
+    def muda_canal_para_cima(self):
+        self.canal += 1
+
+tv1 = Televisao(2 , 2,  10 )
+print(f"Canal Sintonizado: ",tv1.canal)
+
+print(f"Mudando canal para cima")
+for x in  range (1,20):
+    tv1.muda_canal_para_cima()
+    print(f"Canal Sintonizado: ",tv1.canal)
+
+tv2 = Televisao(10, 2, 10)
+print(f"Canal Sintonizado: ",tv2.canal)
+print(f"Mudando canal para baixo")
+for x in  range (1,20):
+    tv2.muda_canal_para_baixo()
+    print(f"Canal Sintonizado: ",tv2.canal)

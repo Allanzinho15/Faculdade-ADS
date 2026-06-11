@@ -1,0 +1,142 @@
+Tratamento de exceções e eventos
+Vamos agora dominar o tratamento de exceções e eventos em Python! Você aprenderá a utilizar blocos try-except para lidar com exceções de forma eficaz. Além disso, vai descobrir como capturar e responder a eventos em seus programas, como cliques de mouse de tecla.
+
+Neste vídeo, falaremos sobre como implementar o tratamento de exceções e eventos na linguagem de programação Python. Acompanhe!
+
+
+Captura e manipulação de exceções
+Para evitar que os programas sejam interrompidos quando uma exceção é levantada, é possível planejar um comportamento alternativo. Assim, o programa não será interrompido e a exceção poderá ser tratada. Chamamos esse processo de captura da exceção.
+
+Vamos considerar um exemplo de programa que solicita ao usuário, com a função input(), um número inteiro. Embora essa função trate a entrada do usuário como string, é possível utilizá-la em conjunto com a função eval() para que os dados inseridos sejam avaliados como números.
+
+O próximo emulador mostra uma implementação simples desse exemplo.
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+num = eval(input("Entre com um número inteiro: "))
+print(num)
+Input
+Digite cada input em uma linha.
+Console
+Mas o que aconteceria se o usuário digitasse uma palavra em vez de números? Faça essa experiência e digite uma palavra, como, por exemplo, dois, no emulador anterior e clique em Executar.
+
+Veja que o programa foi encerrado com uma exceção sendo levantada. Uma forma de fazer a captura e a manipulação de exceções é usar o par de instruções try/except. Conheça!
+
+Bloco try
+É executado primeiramente. Devem ser inseridas nele as instruções do fluxo normal do programa.
+
+Bloco except
+Só será executado se houver o levantamento de alguma exceção.
+
+Isso permite que o fluxo de execução continue de maneira alternativa. O emulador seguinte mostra uma implementação possível desse exemplo (código 25 no arquivo disponibilizado).
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+try:
+    num = eval(input("Entre com um número inteiro: \n"))
+    print(num)
+except:
+    print("Entre com o valor numérico e não letras")
+Input
+Digite cada input em uma linha.
+Console
+O formato padrão de uso do par try/except é:
+
+python
+content_copy
+try:
+   Bloco 1
+except:
+   Bloco 2
+Instrução fora do try/except
+O bloco 1 representa o fluxo normal do programa. Caso uma exceção seja levantada, o bloco 2 será executado, permitindo o tratamento adequado dela. Esse bloco 2 é chamado de manipulador de exceção.
+
+assignment_ind
+Comentário
+Em Python, o manipulador de exceção padrão é que executa o trabalho de captura da exceção caso não haja um tratamento explícito feito pelo desenvolvedor. É esse manipulador o responsável pela exibição das mensagens de erro no console.
+
+Captura de exceções de determinado tipo
+Python permite que o bloco relativo ao except só seja executado caso a exceção levantada seja de determinado tipo. Para isso, o except precisa trazer o tipo de exceção que se deseja capturar.
+
+O emulador a seguir traz uma possível variação do exemplo anterior com a captura apenas das exceções do tipo NameError (código 26 do arquivo disponibilizado). Observe!
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+try:
+    num = eval(input("Entre com um número inteiro: \n"))
+    print(num)
+except NameError:
+    print("Entre com o valor numérico e não letras")
+Input
+Digite cada input em uma linha.
+Console
+Captura de exceções de múltiplos tipos
+Python permite que haja diversos tratamentos para diferentes tipos possíveis de exceção. Isso pode ser feito com mais de uma cláusula except vinculada à mesma cláusula try.
+
+O emulador seguinte mostra um exemplo de implementação da captura de exceções de múltiplos tipos (no arquivo disponibilizado, trata-se do código 27).
+
+Exercício
+info_outlined
+Tutorial
+content_copy
+Copiar
+python3
+try:
+    num = eval(input("Entre com um número inteiro: \n"))
+    print(num)
+except ValueError:
+    print("Mensagem 1")
+except IndexError:
+    print("Mensagem 2")
+except:
+    print("Mensagem 3")
+Input
+Digite cada input em uma linha.
+Console
+Vamos analisar o exemplo!
+
+A instrução da linha 5 somente será executada se a exceção levantada no bloco try for do tipo ValueError e se, na instrução da linha 7, a exceção for do tipo IndexError.
+
+Agora responda:
+
+Caso a exceção seja de outro tipo, a linha 9 será ou não executada?
+ads_clickﾠClique em um dos botões para responder.
+
+
+O tratamento completo das exceções
+Confira no código a seguir a forma geral completa para lidar com as exceções em Python.
+
+python
+content_copy
+try:
+  Bloco 1
+except Exception1:
+  Bloco tratador para Exception1
+except Exception2:
+  Bloco tratador para Exception1
+...
+else:
+  Bloco 2 – executado caso nenhuma exceção seja levantada
+finally:
+  Bloco 3 – executado independente do que ocorrer
+Instrução fora do try/except
+As cláusulas else e finally são opcionais, como foi possível perceber nos exemplos iniciais.
+
+Tratamento de eventos
+É similar ao tratamento de exceções. Assim como no caso das exceções ocorridas em tempo de execução, podemos tratar os eventos criados por ações externas, como as interações de usuário realizadas por meio de uma interface gráfica de usuário (GUI).
+
+assignment_ind
+Comentário
+Um evento é a notificação de que alguma coisa aconteceu, como um clique de mouse sobre um elemento botão. O tratador do evento é o segmento de código que será executado em resposta à ocorrência do evento.

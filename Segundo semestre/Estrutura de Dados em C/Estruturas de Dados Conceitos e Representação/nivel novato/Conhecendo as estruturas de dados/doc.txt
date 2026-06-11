@@ -1,0 +1,61 @@
+Conhecendo as estruturas de dados
+Veja, neste vídeo, o que são estruturas de dados, sua importância na programação e como aplicá-las no desenvolvimento de sistemas mais eficientes. Com analogias interessantes, acompanhe os tipos de estruturas de dados e como elas são usadas em aplicativos reais e em diferentes contextos computacionais.
+
+
+
+Uma estrutura de dados é um modelo utilizado para organizar, armazenar e manipular informações em um programa de forma eficiente. Ela define o formato e a maneira como os dados são organizados na memória, permitindo acesso rápido e uso otimizado dos recursos computacionais. Lembre-se: o uso correto de estruturas de dados é o que permite que programas resolvam problemas complexos com rapidez e clareza.
+
+ 
+
+Vamos entender melhor! Imagine que você está organizando sua despensa de casa. Você tem pacotes de arroz, feijão, macarrão, além de enlatados e temperos. Se você só colocar tudo em qualquer lugar, vai demorar mais para encontrar quando precisar. Mas se você organizar por categoria, tamanho ou data de validade, tudo fica mais fácil e rápido de encontrar.
+
+
+Comparativo de imagens
+Despensa de casa: organizada x desorganizada.
+
+A lógica da organização vale também para a programação. Quando criamos um programa, precisamos armazenar, organizar e acessar dados com eficiência — e, para isso, usamos estruturas de dados. 
+
+
+Atenção
+Estrutura de dados é uma forma de organizar os dados na memória do computador para que possam ser utilizados de maneira eficiente. Ela define como os dados são armazenados, acessados e manipulados. Em outras palavras: em vez de pensar em dados soltos, como números ou palavras espalhadas, você começa a agrupá-los e estruturá-los, como gavetas em um armário.
+
+
+A importância das estruturas de dados está em quase tudo que usamos no mundo digital. Aplicativos de redes sociais, sistemas bancários, jogos, sites de compras usam alguma forma de estrutura de dados para funcionar corretamente. Confira na imagem! 
+
+
+Curadoria de TI
+
+Aplicativos de redes sociais, sistemas bancários, jogos e sites de compras vistos a partir das estruturas de dados.
+
+Imagine um aplicativo que mostra os contatos do seu telefone. Eles estão organizados em uma lista com nome, número e, às vezes, até foto. Essa lista é uma estrutura de dados.
+
+ 
+
+Vamos ao exemplo! 
+
+
+Um exemplo comum é a lista de compras, como apresentado na próxima imagem. Ela pode ser feita em papel ou no celular, mas, em ambos os casos, você está organizando itens que deseja adquirir. Você pode usar essa lista para incluir novos itens, retirar outros e até reorganizar a ordem. Isso é exatamente o que estruturas de dados permitem: inserir, remover, buscar e reorganizar informações.
+
+
+Curadoria de TI
+
+Aplicativo de lista de compras.
+
+Tipos de estruturas de dados
+
+
+São lineares ou não lineares, e isso dependendo do tipo do dado. Veja a seguir cada um dos tipos em detalhes.
+
+
+Estruturas de 
+dados lineares
+
+
+Organizam os elementos em sequência, formando uma linha lógica contínua. Cada elemento (com exceção do primeiro e do último) possui exatamente um antecessor e um sucessor, facilitando o acesso sequencial. Vetores (arrays), listas ligadas, pilhas (stacks) e filas (queues) são exemplos clássicos de estruturas lineares. Estruturas lineares são muito utilizadas em tarefas que exigem ordenação ou processamento em série, como manipulação de listas de usuários, execução de tarefas em ordem cronológica ou controle de operações empilhadas em programas.
+
+
+Estruturas de 
+dados não lineares 
+
+
+Organizam os elementos de forma hierárquica (como organogramas ou sistemas de arquivos) ou em rede complexas (como mapas, redes sociais ou sistemas de transporte), permitindo múltiplas conexões entre os dados. Ao contrário das estruturas lineares, nas não lineares não há uma sequência única de acesso: os elementos podem ter mais de um relacionamento, como ocorre em árvores e grafos. Elas oferecem maior flexibilidade e são fundamentais para resolver problemas mais sofisticados envolvendo caminhos, decisões e conexões.
