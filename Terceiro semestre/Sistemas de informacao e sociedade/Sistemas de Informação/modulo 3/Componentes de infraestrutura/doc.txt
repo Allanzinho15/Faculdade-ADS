@@ -1,0 +1,49 @@
+Controles de sistemas de informação
+Os controles e a infraestrutura dos sistemas de informação são elementos que garantem a integridade, disponibilidade e confidencialidade dos dados. Dominar esses conceitos permite que as empresas implementem sistemas eficazes e seguros.
+
+Neste vídeo, veremos os principais controles de sistemas de informação, como controle de acesso, gerenciamento de mudanças, backup e recuperação, conformidade e auditoria, e monitoramento contínuo. Além disso, discutiremos a estrutura física dos sistemas, incluindo dispositivos de entrada, processamento, armazenamento e comunicação. Acompanhe!
+
+
+Um sistema de informação bem projetado repousa sobre uma base coerente que oferece suporte a mudanças — e, portanto, à agilidade da organização — à medida que surgem novos negócios ou iniciativas administrativas. A infraestrutura do sistema de informação consiste em redes de telecomunicações, bancos de dados e data warehouse, software, hardware e procedimentos gerenciados por vários especialistas.
+
+Com a globalização dos negócios, a infraestrutura de uma organização frequentemente cruza muitas fronteiras nacionais. Estabelecer e manter uma infraestrutura tão complexa requer planejamento extensivo e implementação consistente para lidar com iniciativas corporativas estratégicas, transformações, fusões e aquisições.
+
+A infraestrutura do sistema de informação deve ser estabelecida para criar oportunidades significativas para o futuro desenvolvimento corporativo. Quando organizados em um todo coerente, os sistemas de informação que suportam operações, gerenciamento e trabalho do conhecimento constituem a arquitetura do sistema de uma organização.
+
+Claramente, os planos estratégicos gerais de longo prazo de uma organização devem ser considerados ao projetar uma infraestrutura de sistema de informação.
+
+Os serviços de informação de uma organização podem ser fornecidos por uma empresa externa, por uma unidade interna ou por uma combinação dos dois:
+
+A terceirização de serviços de informação contribui com economia de custos, acesso a pessoal qualificado e foco em competências essenciais. Uma unidade de serviços de informação normalmente é responsável pelos sistemas de uma organização. Quando os sistemas são em grande parte terceirizados, essa unidade é de tamanho limitado e se concentra no alinhamento dos sistemas com a estratégia competitiva da organização e na supervisão dos serviços da empresa externa.
+
+close
+Quando os serviços de informação são prestados internamente e de forma centralizada, essa unidade é responsável pelo planejamento, aquisição, operação e manutenção dos sistemas de informação para toda a organização. Nas estruturas descentralizadas, no entanto, a unidade central é responsável apenas pelo planejamento e manutenção da infraestrutura, enquanto especialistas de negócios e administrativos supervisionam os sistemas e serviços de suas próprias unidades.
+
+Uma variedade de formas organizacionais intermediárias é possível.
+
+Em muitas organizações, os sistemas de informação são dirigidos por um chief information officer (CIO) ou um chief technology officer (CTO). As atividades dos serviços de informação são geralmente supervisionadas por um comitê gestor composto pelos executivos que representam várias unidades funcionais da organização. Os comitês diretores definem as prioridades para o desenvolvimento de sistemas futuros. Nas organizações onde os sistemas de informação desempenham um papel estratégico, os conselhos de administração precisam estar envolvidos em sua governança.
+
+report_problem
+Atenção!
+Uma responsabilidade vital de uma unidade de serviços de informação é garantir o serviço ininterrupto e a integridade dos sistemas e informações diante de muitas ameaças à segurança.
+
+Para garantir a operação segura e eficiente dos sistemas de informação, uma organização institui um conjunto de procedimentos e medidas tecnológicas chamados de controles. Os sistemas de informação são protegidos por meio de uma combinação de controles gerais e de aplicativos. Os controles gerais se aplicam às atividades do sistema de informação em toda a organização. Os controles gerais mais importantes são as medidas que controlam o acesso a sistemas de computador e as informações neles armazenadas ou transmitidas por redes de telecomunicações.
+
+Os controles gerais incluem medidas administrativas que restringem o acesso dos funcionários apenas aos processos diretamente relevantes para suas funções. Como resultado, esses controles limitam o dano que qualquer funcionário individual ou imitador de funcionário pode causar. Sistemas de computador tolerantes a falhas instalados em ambientes críticos, como em sistemas de informações hospitalares ou mercados de valores mobiliários, são projetados para controlar e isolar problemas para que o sistema possa continuar funcionando. Sistemas de backup, muitas vezes em locais remotos, podem ser acionados em caso de falha do sistema primário de informação.
+
+Os controles de aplicativos são específicos para um determinado aplicativo e incluem medidas como validação de dados de entrada, registro de acessos ao sistema, arquivamento regular de cópias de vários bancos de dados e garantia de que as informações sejam divulgadas apenas para usuários autorizados.
+
+Tipos de infraestrutura
+Os dois principais tipos de infraestrutura de sistemas de informação são:
+
+memory
+Infraestrutura tradicional
+É composta pelos componentes usuais de hardware e software: instalações, centros de dados, servidores, hardware de rede, computadores desktop e soluções de software de aplicativos corporativos. Normalmente, essa configuração de infraestrutura requer mais energia, espaço físico e dinheiro do que outros tipos de infraestrutura. Uma infraestrutura tradicional é normalmente instalada dentro do espaço físico da empresa.
+
+cloud
+Infraestrutura em nuvem
+É semelhante à infraestrutura tradicional, no entanto, os usuários finais podem acessar a infraestrutura via internet, podendo usar os recursos de computação sem precisar instalar no local por meio da virtualização. A virtualização conecta servidores físicos mantidos por um provedor de serviços em um ou vários locais geográficos. Em seguida, ele divide e abstrai recursos, como armazenamento, para torná-los acessíveis aos usuários em qualquer lugar onde uma conexão com a internet possa ser feita.
+
+video_library
+Característica da infraestrutura para SI
+Um conhecimento sólido sobre infraestrutura contribui para o planejamento, a implementação e a gestão de sistemas eficazes e seguros. Assista a este vídeo para conhecer as características e os tipos de infraestrutura de sistemas de informação.

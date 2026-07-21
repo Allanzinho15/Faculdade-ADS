@@ -1,0 +1,47 @@
+Forças competitivas, tomada de decisão e sistemas de informação
+Os sistemas de informação podem melhorar a eficiência, produtividade e tomada de decisão das empresas, além de facilitar a comunicação e colaboração. Eles podem fornecer:
+
+Acesso a dados em tempo real.
+Automatização de processos de atendimento ao cliente.
+Permissão a novos modelos de negócios.
+Acesso a ferramentas analíticas que ajudam a obter vantagem competitiva.
+Neste vídeo, apresentamos um caso prático de implantação de um sistema de gestão do relacionamento com o cliente que permitiu personalizar a experiência de compra do cliente e automatizar processos de vendas e marketing, dando à empresa uma vantagem competitiva sobre os rivais.
+
+
+Forças competitivas
+O modelo das cinco forças competitivas de Porter oferece uma análise detalhada do ambiente competitivo de uma indústria, auxiliando as empresas a identificar suas forças e fraquezas. Isso é essencial para desenvolver estratégias eficazes de diferenciação e alcançar uma vantagem competitiva.
+
+O Walmart é o maior varejista do mundo, faturando 572,8 bilhões de dólares em 2021. Atualmente, o Walmart opera aproximadamente 10.500 lojas e clubes sob 46 bandeiras em 24 países e sites de comércio eletrônico. Emprega 2,3 milhões de associados em todo o mundo. Foi considerada, pela revista Fortune, a empresa número um em receita anual por seis anos consecutivos, com mais de $ 500 bilhões em vendas anuais. A ascensão do Walmart se deve em grande parte ao fato de tornar os sistemas de informação uma alta prioridade, especialmente seu sistema de gerenciamento da cadeia de suprimentos (SCM) conhecido como Retail Link.
+
+Esse sistema, único quando implementado inicialmente em meados da década de 1980, permitiu que os fornecedores do Walmart acessassem diretamente os níveis de estoque e as informações de vendas de seus produtos em qualquer uma das mais de dez mil lojas do Walmart. Usando o Retail Link, os fornecedores podem analisar como seus produtos estão sendo vendidos em uma ou mais lojas do Walmart com uma variedade de opções de relatórios.
+
+
+Retail Link da Walmart.
+
+Além disso, o Walmart exige que os fornecedores usem o Retail Link para gerenciar seus próprios níveis de estoque. Se um fornecedor sentir que seus produtos estão se esgotando muito rapidamente, ele pode usar o Retail Link para solicitar ao Walmart que aumente os níveis de estoque de seus produtos. Isso permitiu que o Walmart possuísse a seu dispor milhares de gerentes de produto, todos com interesse nos produtos que estão gerenciando, sem precisar contratá-los.
+
+Hoje, o Walmart continua inovando com tecnologia da informação. Usando sua enorme presença no mercado, qualquer tecnologia que o Walmart exija que seus fornecedores implementem torna-se imediatamente um padrão de negócios.
+
+extension
+Exemplo
+O Walmart, em 1983, tornou-se o primeiro grande varejista a exigir que os fornecedores usassem rótulos de código de produto uniforme (UPC) em todos os produtos. Claramente, o Walmart aprendeu a usar os sistemas de informação para obter uma vantagem competitiva.
+
+Os sistemas de informação mudaram a maneira como as empresas operam, afetando todo o processo pelo qual as empresas criam seus produtos. Além disso, reformulou o próprio produto: todo o pacote de bens físicos, serviços e informações que as empresas fornecem para criar valor para seus compradores.
+
+Os sistemas de informação devem ser usados ​​para vantagem competitiva, mas devem ser usados ​​estrategicamente. As organizações devem entender como querem se diferenciar e então usar todos os elementos dos sistemas de informação para realizar essa diferenciação.
+
+O uso de sistemas de informação para obter vantagem competitiva pode ser descrito pelo modelo de forças competitivas de Porter. Esse modelo fornece uma visão geral do negócio e pode ser usado para ajudar a entender o grau de competição em uma indústria (setor) e analisar seus pontos fortes e fracos.
+
+O modelo consiste em cinco elementos, cada um dos quais desempenha um papel na determinação da lucratividade média de uma indústria. Em 2001, Porter escreveu um artigo intitulado Estratégia e a internet, no qual ele usa esse modelo e analisa como a internet afeta a lucratividade de uma indústria.
+
+Veja um rápido resumo de cada uma das cinco forças e o impacto da internet:
+
+A primeira força desafia o usuário a considerar a probabilidade de outro produto ou serviço substituir o produto ou serviço que você oferece. Quanto mais tipos de produtos ou serviços houver que possam atender a uma necessidade específica, menor será a lucratividade de uma indústria. Na indústria de comunicações, o smartphone substituiu amplamente o pager. Em alguns projetos de construção, os pinos de metal substituíram os pinos de madeira para molduras. A internet tornou as pessoas mais conscientes dos produtos substitutos, reduzindo os lucros da indústria nas indústrias onde ocorre a substituição. Observe que a substituição se refere a um produto sendo substituído por um produto similar com a finalidade de realizar a mesma tarefa. Não significa produtos ou serviços diferentes, como voar para um destino em vez de viajar de trem.
+
+O poder de barganha de um fornecedor é forte quando há poucos fornecedores dos quais sua empresa pode obter um produto ou serviço necessário. Por outro lado, quando eles são muitos, o poder de barganha deles é menor, pois sua empresa teria muitas fontes para obter um produto. Quando sua empresa tem vários fornecedores para escolher, você pode negociar um preço menor. Quando existe um único fornecedor, sua empresa fica à mercê do fornecedor. Por exemplo, se apenas uma empresa fabrica o chip controlador para um motor de carro, essa empresa pode controlar o preço, pelo menos até certo ponto. A internet deu às empresas acesso a mais fornecedores, reduzindo os preços.
+
+O poder de barganha de um cliente é forte quando sua empresa, juntamente com seus concorrentes, está tentando fornecer o mesmo produto a esse cliente. Nesse caso, o cliente tem muitas fontes de onde obter um produto para que possa abordar sua empresa e buscar uma redução de preço. Se houver poucos fornecedores em seu setor, o poder de barganha do cliente é considerado baixo.
+
+Quanto mais fácil for entrar em um setor, mais desafiador será obter lucro nesse setor. Imagine que você está pensando em iniciar um negócio de montar móveis. A barreira de entrada é muito baixa, pois tudo o que você precisa é de uma chave de fenda. Não são necessárias habilidades ou licenças especiais. No entanto, isso significa que seu vizinho ao lado pode decidir começar a montar móveis também, resultando em maior concorrência. Em contraste, uma indústria altamente técnica, como a fabricação de dispositivos médicos, tem inúmeras barreiras à entrada. Você precisaria encontrar vários fornecedores para vários componentes, contratar uma variedade de engenheiros altamente qualificados e trabalhar em estreita colaboração com a Anvisa (Agência Nacional de Vigilância Sanitária) para garantir a aprovação para a venda de seus produtos. Nesse exemplo, as barreiras à entrada são muito altas, então você deve esperar poucos concorrentes.
+
+Esta força refere-se à intensidade da disputa direta entre as empresas que já operam no mesmo mercado. Ela se manifesta por meio de táticas como guerras de preços, campanhas publicitárias agressivas e lançamentos frequentes de novos produtos ou serviços. Nos sistemas de informação, a rivalidade é o ponto central no qual a tecnologia atua como diferencial estratégico: empresas que utilizam ferramentas avançadas de business intelligence (BI), análise de dados em tempo real e automação de processos conseguem monitorar os movimentos dos rivais e reagir com mais agilidade. Assim, a TI deixa de ser apenas suporte e passa a ser a principal arma para obter vantagem competitiva, permitindo que a organização se destaque em mercados saturados e com alta competitividade.

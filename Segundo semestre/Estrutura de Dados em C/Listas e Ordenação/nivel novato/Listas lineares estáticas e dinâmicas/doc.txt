@@ -1,0 +1,212 @@
+Listas lineares: estáticas e dinâmicas
+Assista, no vídeo a seguir, às listas lineares estáticas e dinâmicas em C, explorando suas diferenças, seus usos e suas vantagens e como alocar, acessar e redimensionar elementos em memória utilizando vetores e ponteiros.
+
+
+
+De forma bastante simples, podemos dizer que uma lista linear é uma coleção de elementos armazenados de forma sequencial. 
+
+ 
+
+Na programação, uma das tarefas mais comuns é organizar dados de forma sequencial, ou seja, um elemento após o outro. Para isso, utilizamos listas lineares que armazenam, acessam e manipulam dados com facilidade. 
+
+ 
+
+Elas podem ser estáticas ou dinâmicas, dependendo da forma como utilizam a memória.
+
+
+Lista linear estática
+
+
+É uma estrutura de dados em que os elementos são armazenados de forma sequencial em posições contíguas da memória (isto é, ocupando lugares “vizinhos” na memória), com tamanho fixo determinado no momento da sua declaração. 
+
+ 
+
+Em linguagens como a C, listas linaeres estáticas são implementadas por meio de vetores (arrays), e seu principal benefício é o acesso direto e rápido aos elementos por índice. Confira o exemplo a seguir.
+
+
+Curadoria de TI
+
+Lista linear estática.
+
+Na imagem, se cada nó ocupa C posições de memória e se o primeiro nó está alocado na posição L, então os demais nós são alocados em sequência, e cada um deles começa exatamente C posições depois do anterior: L, L+C, L+2C e assim por diante.
+
+ 
+
+No entanto, como não é possível aumentar ou diminuir o tamanho durante a execução do programa, seu uso é mais indicado em situações em que a quantidade de dados a ser armazenada já é conhecida.
+
+ 
+
+Vamos pensar neste exemplo: imagine um armário com várias prateleiras fixas. Cada alimento ocupa uma posição específica, conforme a imagem a seguir. Você pode colocar um item em cada espaço: o arroz na primeira, o feijão na segunda, o macarrão na terceira e assim por diante. Depois que todas as posições estiverem ocupadas, você não conseguirá adicionar mais nada sem tirar algo antes.
+
+
+Curadoria de TI
+
+Armários com prateleiras fixas e mantimentos. 
+
+Nosso exemplo nos traz a ideia de uma lista linear estática, também chamada de vetor (ou array) em C. Ela é chamada de estática porque o tamanho é fixado no momento da declaração, e não pode ser mudado durante a execução do programa.
+
+
+Exemplo prático em C
+
+
+Vamos declarar um vetor de inteiros com 5 posições. Cada elemento pode ser acessado por seu índice, que começa em zero. Veja!
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+
+Copiar
+int numeros[5] = {10, 20, 30, 40, 50};  
+Na linha, será impresso o número 30, que corresponde à terceira posição da lista, mas com o índice 2, pois o índice inicia em 0.
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+
+Copiar
+printf("%d", numeros[2]);  // Imprime 30
+Lista linear dinâmica
+
+
+É a estrutura de dados que armazena elementos de forma sequencial, mas com capacidade de ajustar seu tamanho durante a execução do programa, alocando e desalocando memória conforme necessário. 
+
+ 
+
+Diferentemente das listas estáticas, ela oferece maior flexibilidade, sendo ideal para situações em que a quantidade de dados varia. 
+
+ 
+
+Em C, ela é implementada usando ponteiros e funções, como:
+
+
+Malloc
+
+
+Função usada para alocar dinamicamente um bloco de memória de tamanho especificado. Retorna um ponteiro para seu início.
+
+
+Realloc
+
+
+Função usada para redimensionar um bloco de memória já alocado, preservando seu conteúdo até o menor dos tamanhos, podendo ser antigo e novo.
+
+
+Free
+
+
+Função usada para liberar um bloco de memória já alocado, tornando-o disponível para uso futuro.
+
+
+Malloc, Realloc e Free permitem ao programador criar estruturas que crescem ou diminuem conforme os dados são inseridos ou removidos. Veja, agora, um exemplo de lista dinâmica.
+
+
+Curadoria de TI
+
+Lista linear dinâmica. 
+
+Agora, acompanhe este exemplo: imagine que você tem uma caixa dobrável que pode expandir à medida que você adiciona mais itens. A caixa começa pequena, mas vai se aumentando de acordo com a demanda. 
+
+
+Curadoria de TI.
+
+Caixas dobráveis.
+
+O exemplo aborda uma lista linear dinâmica, que aloca espaço na memória conforme necessário durante a execução do programa.
+
+
+Exemplo prático em C
+
+
+O objetivo é criar uma lista linear dinâmica de inteiros, que começa com 3 posições e, em seguida, é expandida para 5 posições com o uso de alocação dinâmica de memória. 
+
+ 
+
+Esse código constrói uma lista de inteiros de forma dinâmica e flexível. Primeiro, ele cria uma lista com 3 elementos e os preenche com os valores 10, 20 e 30. Depois, ela aumenta a lista para comportar 5 elementos e adiciona os valores 40 e 50. Vamos lá!
+
+ 
+
+1. Criar a lista com 3 posições:
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+
+Copiar
+int* numeros = (int*) malloc(3 * sizeof(int));
+Vamos entender, passo a passo, o que está acontecendo nessa linha de código com a função malloc.
+ 
+
+A função malloc (memory allocation) está alocando, de maneira dinâmica, espaço para 3 inteiros na memória. 
+ 
+sizeof(int) retorna o tamanho (em bytes) de um inteiro no sistema (em geral, 4 bytes). 
+ 
+A multiplicação 3 * sizeof(int) garante espaço suficiente para 3 elementos. 
+ 
+(int*) é um type cast que converte o ponteiro genérico retornado por malloc em um ponteiro para inteiro.
+ 
+
+2. Atribuir os valores iniciais:
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+
+Copiar
+numeros[0] = 10;
+numeros[1] = 20;
+numeros[2] = 30; 
+Os comandos vistos armazenam os valores 10, 20 e 30 nas 3 posições alocadas.
+
+ 
+
+3. Expandir a lista para 5 posições:
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+
+Copiar
+numeros = (int*) realloc(numeros, 5 * sizeof(int)); 
+Veja agora como a função realloc atua ao redimensionar dinamicamente um bloco de memória.
+
+ 
+
+Mas antes, vamos entender que realloc (realocação) é usada para redimensionar o bloco de memória apontado por números. Para isso, 
+ 
+
+Solicitamos espaço para 5 inteiros.
+ 
+O conteúdo anterior (10, 20, 30) é preservado de modo automático (se houver memória suficiente), e duas novas posições são adicionadas.
+ 
+O novo endereço retornado (que pode ser diferente do original) é, mais uma vez, armazenado em números.
+ 
+
+4. Atribuir novos valores:
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+
+Copiar
+numeros[3] = 40;
+numeros[4] = 50; 
+Por fim, os novos espaços da lista são preenchidos com os valores 40 e 50.
+
+ 
+
+Ao final, o vetor dinâmico números contém:
+
+
+[10, 20, 30, 40, 50]

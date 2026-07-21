@@ -1,0 +1,45 @@
+Tomada de decisão e sistemas de informação
+Os sistemas de informação são ferramentas fundamentais para a gestão em todos os níveis de uma empresa. Compreender como usá-las auxilia as organizações na tomada de decisões informadas e estratégicas, melhorando sua competitividade.
+
+Neste vídeo, serão apresentados exemplos de como os sistemas de informação afetam a tomada de decisão nas empresas, desde decisões operacionais rotineiras até decisões estratégicas complexas. Discutiremos a diferença entre decisões estruturadas e não estruturadas e como a tecnologia da informação pode automatizar processos e melhorar a competitividade empresarial.
+
+
+A tomada de decisão nas empresas é frequentemente associada à gestão de topo. Hoje os colaboradores do nível operacional também são responsáveis ​​pelas decisões individuais, pois os sistemas de informação disponibilizam informações em todos os níveis da empresa. Assim, as decisões são tomadas em todos os níveis da empresa.
+
+Embora algumas dessas decisões sejam comuns, rotineiras e frequentes, o valor de melhorar qualquer decisão pode ser pequeno, mas melhorar centenas ou mesmo milhares de “pequenas” decisões proporciona maior competitividade.
+
+Nem todas as situações que requerem decisões são iguais. Enquanto algumas decisões resultam em ações que impactam significativamente a organização e seu futuro, outras são muito menos importantes e desempenham um papel relativamente menor.
+
+O impacto de uma decisão é um critério que pode diferenciar entre situações de decisão e o grau de estruturação da decisão.
+
+Muitas situações são bem estruturadas, com entradas e saídas bem definidas. Por exemplo, é relativamente fácil determinar o valor do salário de um funcionário se tivermos os dados de entrada apropriados (por exemplo, o número de horas trabalhadas e seu salário por hora) e todas as regras de decisão relevantes (por exemplo, se as horas trabalhadas durante uma semana são superiores a 40, então as horas extras devem ser calculadas) e assim por diante.
+
+Em contraste, algumas situações de decisão são muito complexas e não estruturadas, nas quais nenhuma regra de decisão específica pode ser facilmente identificada. Como exemplo, considere a seguinte tarefa: “Projetar um novo veículo que seja conversível – com capota retrátil –, tenha uma alta classificação de segurança e seja esteticamente agradável para um público razoavelmente amplo.”. Não existe solução predefinida para essa tarefa, consequentemente, esse projeto envolverá reuniões e exigirá conhecimento e experiência consideráveis.
+
+text_snippet
+Resumindo
+Decisões estruturadas são mais comuns em níveis mais baixos da organização, enquanto problemas não estruturados são mais comuns em níveis de negócios mais altos. Quanto mais estruturada for a decisão, mais fácil será automatizar.
+
+Vamos ver alguns exemplos de decisões por nível gerencial:
+
+Características das decisões: Dados não estruturadosExemplos de decisões:
+
+Decidir se quer ou não entrar no mercado.
+Aprovar o orçamento destinado ao capital.
+Decidir sobre metas de longo prazo.
+Características das decisões: Dados semiestruturadosExemplos de decisões:
+
+Desenhar um plano de marketing.
+Desenvolver um orçamento departamental.
+Criar um site para a empresa.
+Características das decisões: Dados estruturadosExemplos de decisões:
+
+Determinar as horas extras.
+Determinar as regras para reposição de estoque.
+Conceder crédito aos clientes.
+Oferecer ofertas especiais aos clientes.
+Os sistemas de informação podem auxiliar no processo de implementação da estratégia, além de acompanhar o progresso em direção a marcos e fatores de sucesso. Ao utilizar sistemas de informação, as empresas podem medir suas atividades com mais precisão e ajudar a motivar os gerentes a implementar estratégias com sucesso.
+
+A importância dos sistemas de informação não está em discussão. A questão não é se os sistemas de informação terão impacto significativo na posição competitiva de uma empresa; em vez disso, a questão é quando e como esse impacto ocorrerá.
+
+As empresas que antecipam o poder da tecnologia da informação estarão no controle dos eventos. As empresas que não responderem serão forçadas a aceitar as mudanças iniciadas por outros e se encontrarão em desvantagem competitiva.

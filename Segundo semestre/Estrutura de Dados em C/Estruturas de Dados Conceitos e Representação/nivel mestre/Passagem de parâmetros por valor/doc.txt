@@ -1,0 +1,89 @@
+Passagem de parâmetros por valor
+Neste vídeo, aprenda sobre a passagem de parâmetros por valor na linguagem C e como funções recebem cópias das variáveis originais, sem alterar seus valores. Entenda também quando e por que utilizar esse tipo de passagem para manter o programa seguro e previsível.
+
+
+
+Quando criamos funções em programação, é comum precisarmos enviar dados para essas funções realizarem alguma tarefa. Esse envio de dados é chamado de passagem de parâmetros. Em outras palavras: passar um parâmetro é como dar uma informação para a função trabalhar. 
+
+ 
+
+Existem diferentes formas de passar parâmetros, e uma das mais comuns é a passagem por valor.
+
+
+Atenção
+Na passagem por valor, a função recebe uma cópia da variável original. Isso significa que a função pode modificar essa cópia à vontade, mas a variável original — aquela que está no main() ou em outro lugar do programa — não será alterada. A ideia é simples: você entrega uma cópia para a função usar, como um documento escaneado. Ela pode riscar, dobrar ou jogar fora a cópia, mas sua versão original continua segura e intacta.
+
+
+Vamos entender melhor. Imagine que você tem uma receita de brigadeiro escrita em um caderno. Você tira uma cópia para dar ao seu amigo. Mas ele resolve adicionar canela na receita, riscar alguns ingredientes e escrever observações. Apesar disso, a sua receita original no caderno continua do jeitinho que você escreveu. Isso é o que acontece na passagem de parâmetros por valor.
+
+
+Mas quando usar? 
+
+
+Esse tipo de passagem é ideal quando você quer apenas usar os dados para um cálculo ou exibição, mas não precisa alterá-los para sempre. Isso dá segurança ao programa e evita efeitos colaterais, ou seja, mudanças inesperadas em outras partes do código.
+
+ 
+
+Na linguagem C, quando passamos um parâmetro por valor, estamos dizendo: “toma essa informação, mas não mude a original”. A função recebe uma cópia e trabalha com ela.
+
+
+Vamos ao exemplo!
+
+ 
+
+Agora, vamos dobrar o número informado por meio de uma chamada à função e verificar se o valor armazenado na memória será alterado.
+ 
+
+O objetivo do código é demonstrar o funcionamento da passagem de parâmetros por valor em funções na linguagem C. Ao chamar a função dobrar, uma cópia do valor da variável numero é enviada, o que significa que qualquer modificação realizada dentro da função não vai alterar o valor original da variável. Isso é comprovado ao observarmos que, mesmo após o valor ser dobrado dentro da função, o valor impresso fora dela permanece inalterado. Esse comportamento ajuda a entender a diferença entre modificar uma cópia e acessar diretamente o dado original, o que só seria possível com a utilização de ponteiros.
+
+ 
+
+A função dobrar(int x) recebe um número e dobra seu valor, mas a modificação acontece apenas dentro da função.
+ 
+No main(), a variável numero é inicializada com o valor 5 e passada para a função dobrar(numero).
+ 
+Dentro da função, x recebe uma cópia do valor de numero. Quando x é dobrado, a alteração não afeta a variável original numero.
+ 
+Ao imprimir dentro da função, vemos o valor dobrado (10), mas fora da função, numero continua com o valor original (5).
+ 
+
+Confira o código a seguir.
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+#include <stdio.h>
+
+void dobrar(int x) {
+    x = x * 2;
+    printf("Dentro da função: %d
+", x);
+}
+
+int main() {
+    int numero = 5;
+    dobrar(numero);
+    printf("Fora da função: %d
+", numero );
+    return 0;
+}
+Copiar
+
+Visualize o que será retornado pelo código ao final:
+
+
+Terminal
+
+Saída esperada:
+Dentro da função: 10
+Fora da função: 5
+Saída esperada:
+Dentro da função: 10
+Fora da função: 5
+Tal comportamento ajuda a manter o programa previsível e confiável, em especial, em aplicações maiores. É comum que funções que consultam dados, fazem verificações e exibem resultados ou calculam valores utilizem passagem por valor. Afinal, elas não precisam modificar os dados originais, apenas trabalhar com uma versão temporária.
+
+ 
+
+Passar por valor é a forma padrão de enviar dados para funções em C. Lembre-se: quando não há necessidade de alterar os dados na função, essa é a forma mais clara, segura e direta de programar. 

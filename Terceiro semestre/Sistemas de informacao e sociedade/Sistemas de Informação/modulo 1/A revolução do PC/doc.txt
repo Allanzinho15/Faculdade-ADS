@@ -1,0 +1,12 @@
+A revolução do PC
+Entender como os sistemas de informação se transformaram ao longo das décadas ajuda a reconhecer as inovações que moldaram a tecnologia atual. Vamos analisar a revolução do PC e seu impacto.
+
+Neste vídeo, serão apresentados os marcos da revolução do PC, iniciando com o Altair 8800 em 1975 e destacando a ascensão da Apple com o Apple II. Discutiremos a entrada da IBM com seu PC e a colaboração com a Microsoft, além do impacto dos clones de PC e o sucesso do Windows 3.1.
+
+
+Em 1975, o primeiro microcomputador foi anunciado na capa da Popular Mechanics: o Altair 8800. Sua popularidade imediata despertou a imaginação de empresários em todos os lugares, e logo havia dezenas de empresas fabricando esses “computadores pessoais”. Embora a princípio apenas um produto de nicho para entusiastas de computador, as melhorias na usabilidade e a disponibilidade de software prático levaram a vendas crescentes.
+
+O mais proeminente desses primeiros fabricantes de computadores pessoais era uma pequena empresa conhecida como Apple Computer, dirigida por Steve Jobs e Steve Wozniak, com o enorme sucesso “Apple II”. Não querendo ficar de fora da revolução, em 1981 a IBM se uniu à Microsoft, então apenas uma empresa iniciante, para seu software de sistema operacional e lançou às pressas sua própria versão do computador pessoal simplesmente chamado de “PC”. As pequenas empresas finalmente tinham computação acessível que poderia fornecer a eles os sistemas de informação necessários. O computador pessoal foi escolhido como o “Homem do Ano” pela revista Time, em 1982.
+
+
+Devido à arquitetura aberta do IBM PC, era fácil para outras empresas copiá-lo ou “cloná-lo”. Durante a década de 1980, muitas novas empresas de computadores surgiram, oferecendo versões mais baratas do PC. Isso reduziu os preços e estimulou a inovação. A Microsoft desenvolveu o sistema operacional Windows, com a versão 3.1 em 1992 tornando-se o primeiro lançamento comercialmente bem-sucedido. Os usos típicos do PC durante esse período incluíam processamento de texto, planilhas e bancos de dados. Esses primeiros PCs eram máquinas autônomas, não conectadas a uma rede.

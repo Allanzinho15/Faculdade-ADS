@@ -1,0 +1,89 @@
+nternet, world wide web e comércio eletrônico
+A internet e a World Wide Web mudaram a maneira como interagimos, trabalhamos e fazemos negócios. Compreender as fases da Web 1.0, Web 2.0 e a nova Web 3.0 nos permite observar a evolução do comércio eletrônico e suas futuras implicações. Vamos explorar a história da internet e da Web e como elas influenciaram o comércio eletrônico.
+
+Neste vídeo, vamos explorar a história da internet e da World Wide Web, e como essas tecnologias revolucionaram o mundo do comércio eletrônico. Aprenderemos sobre a evolução da internet, desde sua concepção até sua disseminação global. Discutiremos também o surgimento da World Wide Web e como ela tornou possível a interconexão de informações em escala mundial.
+
+
+A primeira transmissão de longa distância entre dois computadores ocorreu em 29 de outubro de 1969, quando desenvolvedores sob a direção do Dr. Leonard Kleinrock enviaram a palavra “login” do campus da UCLA para o Stanford Research Institute, em Menlo Park, Califórnia, a uma distância de mais de 560 km. O Departamento de Defesa dos Estados Unidos criou e financiou a Arpanet (Advanced Research Projects Administration), uma rede experimental que acabou se tornando conhecida como internet. A Arpanet começou com apenas quatro nós ou sites, um começo muito humilde para a internet de hoje.
+
+
+Arpanet, 1969.
+
+Inicialmente, a internet estava restrita ao uso de universidades, agências governamentais e pesquisadores. Os usuários eram obrigados a digitar comandos para se comunicar e transferir arquivos. As primeiras mensagens de e-mail na internet foram enviadas no início dos anos 1970, quando algumas empresas expandiram suas redes locais para a internet.
+
+
+O computador agora estava evoluindo de um dispositivo puramente organizacional para o mundo das comunicações digitais.
+
+Em 1989, Tim Berners-Lee desenvolveu uma maneira mais simples de os pesquisadores compartilharem informações pela internet, um conceito que ele chamou de World Wide Web. Essa invenção se tornou o catalisador para o crescimento da internet como uma forma de as empresas compartilharem informações sobre si mesmas. À medida que os navegadores da web e as conexões com a internet se tornaram a norma, as empresas correram para obter nomes de domínio e criar sites.
+
+Em 1991, a National Science Foundation, que definia como a internet era usada, suspendeu as restrições ao seu uso comercial. As corporações logo perceberam o enorme potencial de um mercado digital na internet e, em 1994, o eBay e a Amazon foram fundados. Uma corrida louca de investimentos em negócios baseados na internet levou ao boom das pontocom no final dos anos 1990 e, em seguida, ao estouro das pontocom em 2000. O estouro ocorreu quando os investidores, cansados ​​de ver centenas de empresas relatando perdas, abandonaram seus investimentos.
+
+Um resultado importante para as empresas foi que milhares de quilômetros de conexões de internet, na forma de cabo de fibra ótica, foram implantados em todo o mundo durante esse período. O mundo tornou-se verdadeiramente “conectado” rumo ao novo milênio, acelerando a globalização.
+
+O mundo digital também se tornou um lugar mais perigoso, pois como praticamente todas as empresas estavam conectadas à internet, vírus e worms de computador, antes propagados lentamente por meio do compartilhamento de discos de computador, agora cresciam com uma velocidade vertiginosa pela internet. Software e sistemas operacionais escritos para um mundo autônomo acharam muito difícil se defender contra esses tipos de ameaças. Surgiu toda uma nova indústria de segurança de computadores e da internet.
+
+Da web 2.0 até a web 3.0
+À medida que o mundo se recuperava do colapso das pontocom, o uso da tecnologia nos negócios continuou a evoluir em um ritmo frenético. Os sites tornaram-se interativos. Em vez de apenas visitar um site para saber mais sobre uma empresa e depois comprar seus produtos, os clientes queriam poder personalizar sua experiência e interagir on-line com a empresa. Esse novo tipo de site interativo, onde não era preciso saber criar uma página web ou fazer qualquer programação para colocar informações on-line, ficou conhecido como Web 2.0.
+
+Esse novo estágio da web foi impelido pelos blogs, redes sociais e comentários interativos disponíveis em muitos sites. O novo mundo da Web 2.0, no qual a interação on-line passou a ser esperada, teve um grande impacto em muitos negócios e até em setores inteiros. Muitas livrarias viram-se relegadas a um status de nicho. As cadeias de aluguel de vídeo e as agências de viagens simplesmente começaram a fechar à medida que foram substituídas por tecnologias on-line. A indústria jornalística teve uma grande queda na circulação, com algumas cidades não sendo mais capazes de manter um jornal diário.
+
+
+A Blockbuster, que era considerada a maior no seu mercado, foi derrubada principalmente pelas inovações tecnológicas on-line.
+
+Desintermediação é o processo de tecnologia substituindo um intermediário em uma transação. A Web 2.0 permitiu aos usuários obter informações e notícias on-line, reduzindo a dependência de livros e jornais físicos. À medida que o mundo se tornava mais conectado, novas questões surgiam. O acesso à internet deve ser considerado um direito? É legal copiar uma música baixada da internet? As informações inseridas em um site podem ser mantidas em sigilo? Que informação é aceitável coletar de crianças? A tecnologia mudou tão rápido que os formuladores de políticas não tiveram tempo suficiente para promulgar leis apropriadas.
+
+O mundo pós-PC, mais ou menos
+Ray Ozzie, um visionário de tecnologia da Microsoft, afirmou em 2012 que a computação estava entrando em uma fase que ele chamou de mundo pós-PC. Mas essa previsão não resistiu muito bem à realidade. As vendas de PCs caíram nos últimos anos.
+
+As vendas de smartphones aceleraram, em grande parte devido à sua mobilidade e facilidade de operação. Assim como o mainframe antes dele, o PC continuará a desempenhar um papel fundamental nos negócios, mas seu papel diminuirá um pouco à medida que as pessoas enfatizarem a mobilidade como um recurso central da tecnologia.
+
+A computação em nuvem fornece aos usuários acesso móvel a dados e aplicativos, tornando o PC mais uma parte do canal de comunicação do que um repositório de programas e informações. Espera-se que a inovação no desenvolvimento da tecnologia e das comunicações continue impulsionando os negócios.
+
+Confira o passo a passo da evolução dos sistemas de informação:
+
+timeline
+Era Mainframe
+Década de 1970
+Hardware: Terminais conectados ao computador mainframe.
+Sistema operacional: Compartilhamento de tempo (TSO) em armazenamento virtual múltiplo (MVS).
+Formulários: Software de MRP personalizado.
+
+timeline
+Era PC
+Meados dos anos 1980
+Hardware: IBM PC ou compatível. Às vezes, conectado ao computador mainframe via placa de interface de rede.
+Sistema operacional: MS-DOS.
+Formulários: WordPerfect, Lotus 1-2-3.
+
+timeline
+Era cliente-servidor
+Final dos anos 1980 e início dos anos 1990
+Hardware: PCs em rede (LAN).
+Sistema operacional: Windows para grupos de trabalho.
+Formulários: Microsoft Word, Microsoft Excel.
+
+timeline
+Era World Wide Web
+Meados dos anos 1990 ao início dos anos 2000
+Hardware: IBM PC conectado à intranet da empresa.
+Sistema operacional: Windows XP.
+Formulários: Microsoft Office, Internet Explorer.
+
+timeline
+Era Web 2.0
+Meados dos anos 2000 – presente
+Hardware: Laptop conectado ao Wi-Fi da empresa.
+Sistema operacional: Windows 10.
+Formulários: Microsoft Office.
+
+timeline
+Pós-PC
+Hoje
+Hardware: Smartphones.
+Sistema operacional: Android, iOS.
+Formulários: Sites compatíveis com dispositivos móveis, aplicativos móveis.
+
+video_library
+Web 3.0
+A Web 3.0 está transformando a maneira como interagimos com dados e serviços on-line. A busca por competitividade está impulsionando a criação de sistemas de informação mais avançados e seguros. Assista a este vídeo para entender como a Web 3.0 está revolucionando o cenário digital.
+

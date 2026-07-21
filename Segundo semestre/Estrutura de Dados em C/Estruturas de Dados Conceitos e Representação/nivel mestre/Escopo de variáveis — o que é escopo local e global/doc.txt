@@ -1,0 +1,88 @@
+Escopo de variáveis — o que é escopo local e global
+Neste vídeo, acompanhe o conceito de escopo em C, que define onde e como variáveis podem ser acessadas no programa. Com analogias práticas, como o funcionamento de um hotel, diferencie escopo local e global, sabendo como cada tipo influencia na organização e segurança do código. 
+
+
+
+Em um hotel, cada hóspede tem uma chave que abre apenas a porta do seu quarto. Isso é um acesso local. Já o gerente tem um cartão que abre todos os quartos; isso é um acesso global.
+
+
+Atenção
+Em programação, chamamos isto de escopo: o local do programa onde uma variável pode ser acessada. Em linguagem C, escopo refere-se à região do programa onde uma variável é declarada e pode ser acessada. Ele determina a visibilidade e o tempo de vida de variáveis e funções dentro do código. Entender o escopo evita conflitos de nomes, controla o uso da memória e garante que as variáveis sejam manipuladas apenas onde for apropriado.
+
+
+Tipos de escopo
+
+
+Vamos conhecer melhor os dois tipos que começamos a estudar!
+
+
+Local
+
+
+Uma variável tem escopo local quando é declarada dentro de uma função. Ela só existe ali. É como um copo d’água servido durante uma refeição: serve apenas para aquela ocasião.
+
+
+Global
+
+
+Uma variável tem escopo global quando é declarada fora de qualquer função. Ela pode ser usada por qualquer parte do programa. Mas atenção! Se cair em mãos erradas, pode causar problemas. 
+
+
+Vamos ao exemplo!
+
+Se você escreve sua lista de compras em um papel guardado no seu bolso, só você pode acessá-la: isso é escopo local. Mas se escreve em um quadro na cozinha, todos da casa podem ver e alterar: isso é escopo global.
+ 
+
+O escopo local favorece o encapsulamento, pois impede que outras partes do programa alterem informações de modo indevido. Já o escopo global deve ser usado com cuidado, apenas para dados que, de fato, precisam estar visíveis para todos os módulos.
+
+ 
+
+Vamos ao código!
+ 
+
+Na linguagem C, variáveis declaradas dentro de funções são locais. Por exemplo:
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+void exemplo() {
+    int x = 5; // local
+} 
+Copiar
+
+E variáveis globais são declaradas fora de qualquer função:
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+int contador = 0; // global 
+Copiar
+
+Agora vamos ao exemplo na prática em C:
+
+
+C (GCC 9.2.0)
+
+
+Light Mode
+#include <stdio.h>
+
+int global = 10; // escopo global
+
+void mostrarGlobal() {
+    printf("Global: %d\n", global);
+}
+
+int main() {
+    int local = 5; // escopo local
+    printf("Local: %d\n", local);
+    mostrarGlobal();
+    return 0;
+} 
+Copiar
+
+No exemplo, a variável global pode ser usada em qualquer função. Já a local só pode ser usada dentro da função main().

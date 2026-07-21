@@ -1,0 +1,61 @@
+Componentes de infraestrutura
+Entender os componentes da infraestrutura de sistemas de informação é importante para construir e gerenciar sistemas eficazes e seguros. Esse conhecimento é necessário para planejar e implementar infraestruturas que apoiam as operações e o crescimento organizacional.
+
+A infraestrutura para sistemas de informação geralmente inclui acesso à energia elétrica, refrigeração e construções necessárias para acomodar o hardware. A infraestrutura de hardware para sistemas de informação geralmente envolve um datacenter com servidores; subsistemas de armazenamento; dispositivos de rede, como switches, roteadores e cabeamento físico; e dispositivos de rede dedicados, como firewalls de rede.
+
+
+Datacenter.
+
+Fora do datacenter há uma infraestrutura de internet, que inclui meios de transmissão, como cabos de fibra ótica, satélites, antenas, roteadores, agregadores, repetidores, balanceadores de carga e outros componentes de rede que controlam os caminhos de transmissão. As infraestruturas de internet são projetadas, construídas e operadas por provedores de serviços de internet (ISP). Quando uma empresa contrata um ISP para acesso à internet, o ISP normalmente se conecta à infraestrutura do datacenter em um espaço de construção dedicado e seguro.
+
+O papel da computação em nuvem está mudando a forma como as infraestruturas são projetadas e implementadas. Os datacenters tradicionais de propriedade da empresa são recursos privados de alto capital, a computação em nuvem permite que as organizações acessem a infraestrutura e os serviços do datacenter de um provedor de nuvem por uma taxa de uso. Esse modelo de infraestrutura como serviço (IaaS) permite computação flexível sob demanda. Os usuários podem acessar a computação, o armazenamento e os serviços de um provedor de nuvem sem a necessidade de implantar esses recursos localmente e ajustar o uso da infraestrutura de nuvem à medida que a carga de trabalho precisa mudar.
+
+O modelo de software como serviço (SaaS) oferece benefícios semelhantes para cargas de trabalho específicas. Um provedor terceirizado hospeda hardware, software, servidores, armazenamento e outros componentes de infraestrutura e permite que os usuários acessem as cargas de trabalho hospedadas do provedor em vez de implantar e manter essas cargas de trabalho localmente. Por exemplo, os usuários podem empregar cargas de trabalho SaaS para bancos de dados, aplicativos de RH, aplicativos analíticos, suítes de produtividade de escritório e muitos outros.
+
+Como as infraestruturas são criadas
+Para criar uma infraestrutura tradicional, as organizações geralmente seguem um processo formalizado que começa analisando e acessando as metas de negócios, tomando decisões arquitetônicas e de design, construindo e implementando o projeto de infraestrutura, em seguida, otimizando e mantendo a infraestrutura. O processo geralmente envolve conhecimento detalhado e específico, incluindo projeto de construção de centro de dados, seleção de subsistemas e componentes e técnicas de construção.
+
+No entanto, a forma como as infraestruturas para sistemas de informação é criada está mudando continuamente. O desenvolvimento tradicional de infraestrutura é um processo altamente manual que requer enormes esforços de integração, otimização e gerenciamento de sistemas – especialmente ao integrar servidores, armazenamento, rede e outros componentes de diversos fornecedores.
+
+Hoje, alguns fornecedores fornecem coleções pré-integradas e pré-otimizadas de equipamentos de computação, armazenamento e rede que otimizam o hardware e a plataforma de virtualização em um único sistema que pode ser implantado, expandido e gerenciado facilmente. Essa abordagem modular é chamada de infraestrutura convergente (CI). Essa abordagem avançou para sistemas que oferecem integração e gerenciamento ainda mais rígidos em computação, armazenamento, rede e virtualização. Essa abordagem avançada é chamada de infraestrutura hiperconvergente (HCI).
+
+Gerenciamento da infraestrutura
+Neste vídeo, serão apresentados os componentes essenciais da infraestrutura de sistemas de informação, incluindo datacenters, dispositivos de rede, e a importância da computação em nuvem. Discutiremos também os modelos de infraestrutura convergente e hiperconvergente, além das melhores práticas para gerenciamento eficiente e seguro.
+
+
+Independentemente de como é criada, uma infraestrutura para sistemas de informação deve fornecer uma plataforma adequada para todos os aplicativos e funções que uma organização ou indivíduo requer. Isso significa que o projeto e a implementação de qualquer infraestrutura para sistemas de informação também devem oferecer suporte ao gerenciamento eficiente da infraestrutura.
+
+As ferramentas de software devem permitir que os administradores de TI visualizem a infraestrutura como uma única entidade, bem como acessem e configurem detalhes operacionais de qualquer dispositivo na infraestrutura, resultando em um gerenciamento de infraestrutura mais efetivo. O gerenciamento permite que os administradores otimizem recursos para diferentes cargas de trabalho e lidem com o impacto de quaisquer alterações na infraestrutura.
+
+O gerenciamento de infraestrutura geralmente é dividido em várias categorias. Por exemplo, um sistema de gerenciamento predial (BMS) fornece as ferramentas que relatam os parâmetros das instalações do datacenter, incluindo uso e eficiência de energia, temperatura e operação de resfriamento e atividades de segurança física. O gerenciamento de sistemas inclui uma ampla variedade de conjuntos de ferramentas que uma equipe de TI usa para configurar e gerenciar servidores, armazenamento e dispositivos de rede.
+
+Cada vez mais, as ferramentas de gerenciamento de sistemas estão se estendendo para oferecer suporte a datacenters remotos, juntamente com recursos em nuvem.
+
+As ferramentas de gerenciamento também estão fazendo uso extensivo de automação e orquestração para melhorar a eficiência, reduzir erros, cumprir as melhores práticas e contribuir no alcance dos objetivos de negócios.
+
+Uma infraestrutura para sistemas de informação
+As configurações de infraestrutura para sistemas de informação variam de acordo com as necessidades e metas de negócios, mas algumas metas são universais para todas as empresas. A infraestrutura ideal fornecerá:
+
+trending_up
+Sistemas de armazenamento de alto desempenho
+Armazenam e fazem backup de dados e incluem um sistema de recuperação de dados em caso de desastres.
+
+trending_up
+Redes de baixa latência
+Usam componentes de infraestrutura de nível empresarial para reduzir o atraso do fluxo de dados.
+
+trending_up
+Infraestruturas seguras
+Incluem sistemas que controlam o acesso à informação e a disponibilidade de dados. Também pode proteger uma empresa contra violações e ataques cibernéticos onde quer que os dados residam, mantendo a confiança dos clientes.
+
+trending_up
+Rede de longa distância (WAN) otimizada
+As WANs gerenciam a rede priorizando o tráfego e fornecendo a determinados aplicativos mais ou menos largura de banda conforme necessário.
+
+trending_up
+Virtualização
+Fornece provisionamento de servidor mais rápido, aumenta o tempo de atividade, melhora a recuperação de desastres e economiza energia.
+
+trending_up
+Tempo de inatividade zero
+Visa reduzir as interrupções nas operações de negócios e eliminar o tempo de inatividade do sistema para manter os custos baixos e os lucros altos.

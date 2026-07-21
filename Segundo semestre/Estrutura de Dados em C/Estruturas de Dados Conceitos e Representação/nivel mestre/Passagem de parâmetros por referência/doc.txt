@@ -1,0 +1,108 @@
+Passagem de parâmetros por referência
+Neste vídeo, veja a passagem de parâmetros por referência na linguagem C, o conceito com analogias e a sintaxe correta com * e &. Por fim, aplique o que você aprendeu em um exemplo prático usando a função dobrar().
+
+
+
+Na programação, quando queremos que uma função modifique diretamente o valor de uma variável, usamos a técnica chamada passagem de parâmetros por referência. Isso significa que, em vez de enviar uma cópia da variável para a função (como na passagem por valor), enviamos o endereço de memória no qual a variável está armazenada. Com esse endereço, a função pode acessar e alterar o conteúdo original.
+
+ 
+
+Relembrando o caso do seu amigo e a receita de brigadeiro, pense que, em vez de entregar a cópia da receita, você entrega o original. Seu amigo adiciona canela, risca ingredientes e escreve observações diretamente na folha. Quando você pega o caderno de volta, percebe que a receita foi alterada, de modo que as mudanças feitas agora estão no original. Isso é o que acontece na passagem de parâmetros por referência: a função recebe acesso direto à variável original, podendo modificá-la para sempre.
+
+
+Mas o que é esse tal de endereço de memória? 
+
+
+Toda variável em C ocupa um espaço na memória do computador. Cada espaço tem um “número”, como se fosse o número de uma casa. Trata-se do endereço, e podemos acessá-lo usando um ponteiro. Observe a imagem a seguir.
+
+
+
+Acesso à memória com ponteiros.
+
+ 
+
+A imagem representa o conceito de ponteiros em programação, utilizando uma analogia visual com uma tabela de memória. Cada célula da tabela contém um valor, simbolizando uma posição de memória. Um retângulo vermelho rotulado como PONTEIRO está ligado por uma seta a uma das células da tabela que contém o valor 9, destacada também em vermelho. 
+
+ 
+
+Vemos, então, que um ponteiro não guarda diretamente um valor, mas o endereço (ou a posição) na memória em que esse valor está armazenado. Assim, o ponteiro aponta para uma célula específica da memória, permitindo acessar ou manipular o valor nela contido de forma indireta.
+
+
+Mas o que são ponteiros? 
+
+
+São variáveis especiais que armazenam endereços de memória. Ou seja, enquanto uma variável comum armazena um valor (como um número ou uma letra), o ponteiro armazena o local onde esse valor está guardado. 
+
+
+Em C, usamos o símbolo * para declarar um ponteiro e & para acessar o endereço de uma variável. 
+
+
+Imagine agora a seguinte situação: você quer entregar um presente para um amigo. Você pode fazer isso de duas formas: dando o presente em mãos ou entregando o endereço da casa dele e pedindo para alguém levá-lo até lá.
+
+ 
+
+Na programação, um ponteiro funciona como esse endereço. Ou seja, em vez de trabalhar com o valor da variável (como o presente em mãos), você trabalha com o endereço de memória no qual esse valor está guardado, isto é, você aponta para o local onde o valor está.
+
+ 
+
+Ainda com dúvida?
+ 
+
+Pense em uma carta com instruções (a variável) guardada em uma gaveta (o endereço). Você pode ler a carta (usar a variável) ou entregar para alguém o endereço da gaveta. Assim, essa pessoa pode abrir a gaveta e alterar o conteúdo original da carta. Esse é o poder dos ponteiros: permitir o acesso direto à fonte da informação.
+ 
+
+Vamos ao exemplo!
+
+ 
+
+O objetivo da implementação é demonstrar o uso da passagem de parâmetros por referência na linguagem C, utilizando ponteiros. Diferentemente da passagem por valor, aqui a função dobrar recebe o endereço de memória da variável numero, permitindo que a modificação feita dentro da função afete o valor original. Ao acessar e alterar o conteúdo da variável por meio do ponteiro (*x), o valor de numero, de fato, dobra, e essa mudança é refletida ao final da execução do programa. 
+
+ 
+
+int* x declara que a função dobrar recebe um ponteiro para inteiro.
+ 
+&numero passa o endereço da variável numero.
+ 
+*x acessa o conteúdo no endereço e o modifica.
+
+Veja o código adiante.
+
+C (GCC 9.2.0)
+
+
+Light Mode
+#include <stdio.h>
+
+void dobrar(int* x) {
+    *x = (*x) * 2;
+}
+
+int main() {
+    int numero = 5;
+    dobrar(&numero);
+    printf("Número dobrado: %d
+", numero);
+    return 0;
+} 
+Copiar
+
+Veja o que será exibido ao final do código:
+
+
+Terminal
+
+Saída esperada:
+Número dobrado: 10
+Saída esperada:
+Número dobrado: 10
+A variável original foi alterada porque a função operou sobre o seu endereço de memória. Isso mostra como a passagem por referência permite que mudanças dentro da função se reflitam fora dela.
+
+
+Quando usar? 
+
+
+Utilizamos essa abordagem quando queremos que a função modifique os dados originais. Por exemplo, para atualizar saldos bancários, alterar valores em um vetor ou matriz, preencher dados em uma struct e trocar valores entre duas variáveis.
+
+
+Atenção
+Cuidados ao usar ponteiros! Como eles lidam com endereços, é preciso muito cuidado para não acessar áreas inválidas da memória. Um erro comum é esquecer de inicializar o ponteiro antes de usá-lo, o que pode causar falhas no programa.

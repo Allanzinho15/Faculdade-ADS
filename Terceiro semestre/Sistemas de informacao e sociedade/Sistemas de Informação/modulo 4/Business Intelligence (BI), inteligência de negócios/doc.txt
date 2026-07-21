@@ -1,0 +1,29 @@
+Business Intelligence (BI), inteligência de negócios
+Compreender os sistemas de inteligência de negócios (BI) ajuda a integrar análise de dados, visualização e boas práticas para apoiar a tomada de decisões. Isso permite que as empresas reduzam ineficiências e se adaptem rapidamente às mudanças do mercado. Vamos explorar como os sistemas de BI transformam dados em informações valiosas.
+
+Neste vídeo, serão apresentados os principais componentes e benefícios de BI, incluindo coleta, análise e visualização de dados. Discutiremos como esses sistemas ajudam a descobrir tendências, identificar inconsistências e tomar decisões informadas com base em insights em tempo real.
+
+
+A inteligência de negócios combina análise de negócios, mineração de dados, visualização de dados, ferramentas e infraestrutura de dados e práticas recomendadas para ajudar as organizações a tomar decisões baseadas em dados. Na prática, você sabe que tem inteligência de negócios moderna quando tem uma visão abrangente dos dados de sua organização e usa esses dados para conduzir mudanças, eliminar ineficiências e se adaptar rapidamente às mudanças de mercado.
+
+Embora a inteligência de negócios não diga aos usuários de negócios o que fazer, o BI também não se limita apenas à geração de relatórios. Em vez disso, o BI oferece uma maneira de as pessoas examinarem os dados para entender as tendências e obter insights, simplificando o esforço necessário para pesquisar, mesclar e consultar os dados necessários para tomar decisões de negócios sólidas.
+
+Antes de usar o BI, as empresas tinham que fazer grande parte de suas análises manualmente, mas os sistemas de BI automatizam muitos dos processos e economizam tempo e esforço das empresas.
+
+Existem quatro etapas principais que a inteligência de negócios segue para transformar dados brutos em insights fáceis de compreender para todos na organização usarem. As três primeiras ‒ coleta, análise e visualização de dados ‒ preparam o terreno para a etapa final da tomada de decisão.
+
+looks_one
+Etapa 1 – Coletar e transformar dados de várias fontes
+Os sistemas de inteligência de negócios normalmente usam o método extrair, transformar e carregar (ETL) para agregar dados estruturados e não estruturados de várias fontes. Esses dados são então transformados e remodelados antes de serem armazenados em um local central, para que os aplicativos possam analisá-los e consultá-los facilmente como um conjunto de dados abrangente.
+
+looks_two
+Etapa 2 – Descobrir tendências e inconsistências
+A mineração de dados, ou descoberta de dados, normalmente usa automação para analisar dados rapidamente para encontrar padrões e valores discrepantes que fornecem informações sobre o estado atual dos negócios. Os sistemas de BI geralmente apresentam vários tipos de modelagem e análise de dados que exploram ainda mais os dados, preveem tendências e fazem recomendações.
+
+looks_3
+Etapa 3 – Visualizar para apresentar descobertas
+Os relatórios de inteligência de negócios usam visualizações de dados para tornar as descobertas mais fáceis de entender e compartilhar. Os métodos de geração de relatórios incluem painéis de dados interativos, tabelas, gráficos e mapas que ajudam os usuários a verem o que está acontecendo na empresa no momento.
+
+looks_4
+Etapa 4 – Agir com base nos insights em tempo real
+A visualização de dados atuais e históricos no contexto das atividades de negócios dá às empresas a capacidade de passar rapidamente de insights para ação. A inteligência de negócios permite ajustes em tempo real e mudanças estratégicas de longo prazo que eliminam ineficiências, adaptam-se às mudanças do mercado, corrigem problemas de abastecimento e resolvem problemas de clientes.

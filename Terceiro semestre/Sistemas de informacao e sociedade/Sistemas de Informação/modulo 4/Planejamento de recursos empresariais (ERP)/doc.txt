@@ -1,0 +1,31 @@
+Planejamento de recursos empresariais (ERP)
+Os sistemas de ERP auxiliam a gestão de operações complexas e o crescimento das organizações. Eles permitem integrar processos e melhorar a tomada de decisões.
+
+Neste vídeo, serão apresentados os principais componentes e benefícios dos sistemas ERP, incluindo como eles integram funções como finanças, manufatura, cadeia de suprimentos, comércio e recursos humanos. Discutiremos a evolução dos ERPs para soluções baseadas na nuvem e o impacto da IA e do aprendizado de máquina na automação e eficiência empresarial. Confira!
+
+
+Imagine a infinidade de informações em torno de seu negócio, a maioria das quais se enquadra nas amplas categorias de tecnologia da informação, pessoas e processos de negócios. Para lidar adequadamente com essas informações, empresas e organizações precisam de um sistema capaz de armazenar, indexar e processar dados. No campo da computação, esse sistema é chamado de sistema de informação.
+
+As organizações requerem vários tipos de sistemas de informação para estabelecer canais de comunicação interna, bem como lidar com clientes e fornecedores. Esses sistemas de informação também ajudam a gerenciar o funcionamento geral de uma organização, auxiliando nas operações comerciais e na elaboração de estratégias de marketing.
+
+Além disso, existem diferentes tipos de sistemas de informações de gerenciamento e subconjuntos de sistemas de informações que as empresas empregam visualização de informações, coordenação interna e análise detalhada dos dados de negócios para obter uma tomada de decisão acurada. A formulação de estratégias de mídia social e o planejamento de benefícios aos funcionários também são algumas áreas críticas que os sistemas de informações gerenciais facilitam.
+
+As empresas em crescimento eventualmente chegam a um ponto em que as planilhas não funcionam mais. É aí que entra o software de planejamento de recursos empresariais (ERP), que coleta e organiza as principais informações de negócios e ajuda as organizações a executar operações enxutas e eficientes, mesmo quando se expandem.
+
+A maneira mais simples de definir o ERP é pensar em todos os principais processos de negócios necessários para administrar uma empresa: finanças, RH, manufatura, cadeia de suprimentos, serviços, compras e outros. Em seu nível mais básico, o ERP ajuda a gerenciar com eficiência todos esses processos em um sistema integrado.
+
+text_snippet
+Resumindo
+Os ERPs permitem que os processos de negócios relacionados à produção, finanças e contabilidade, vendas e marketing e recursos humanos sejam integrados em um único sistema de software. As informações que antes eram fragmentadas em vários sistemas diferentes são integradas em um único sistema com um banco de dados único e abrangente que pode ser usado por várias partes interessadas nos negócios.
+
+Historicamente, os sistemas ERP eram suítes que funcionavam separadamente — em módulos — e não se comunicavam com outros sistemas. Cada módulo exigia uma programação cara, complexa e personalizada para atender a requisitos de negócios exclusivos que retardavam — ou até mesmo impediam — a adoção de novas tecnologias ou otimização de processos.
+
+No entanto, os sistemas ERP de hoje são tudo menos básicos e têm pouca semelhança com o ERP de décadas atrás. Eles agora são fornecidos por meio da nuvem e usam as tecnologias mais recentes – como Inteligência Artificial (IA) e aprendizado de máquina – para fornecer automação inteligente, maior eficiência e percepção instantânea em toda a empresa. O software moderno de ERP em nuvem também conecta operações internas com parceiros de negócios e redes em todo o mundo, oferecendo às empresas a colaboração, agilidade e velocidade de que precisam para serem competitivas hoje.
+
+Com um sistema ERP abrangendo funções essenciais em sua organização e ajudando a quebrar as barreiras entre departamentos, a organização terá capacidade de se adaptar às mudanças e novas prioridades de negócios. Algumas das principais funções de um sistema ERP incluem:
+
+Comércio: Os varejistas de hoje enfrentam muitos desafios, e um sistema ERP pode oferecer uma solução de comércio omnicanal completa que unifica as experiências digital e na loja. Os clientes obtêm uma experiência de compra mais personalizada e perfeita por meio de recomendações de IA, enquanto os varejistas aumentam a produtividade dos funcionários, ajudam a reduzir fraudes e expandem seus negócios.
+Finanças: O ERP pode aumentar a lucratividade enquanto impulsiona a conformidade. Ele oferece painéis e insights orientados por IA que fornecem uma visão geral de suas finanças para ajudá-lo a obter informações em tempo real a qualquer hora e em qualquer lugar. Ele também deve reduzir a inserção manual de informações, automatizando tarefas diárias e incluindo recursos de rastreamento que ajudam na conformidade regulamentar da empresa.
+Manufatura: O ERP melhora a comunicação comercial, automatiza os processos diários por meio da automação robótica de processos e oferece aos fabricantes a capacidade de atender às necessidades dos clientes e gerenciar recursos acessando dados em tempo real. Ele também otimiza o gerenciamento de projetos, o gerenciamento de custos e o planejamento da produção.
+Cadeia de suplementos: Se a sua empresa ainda está inserindo informações manualmente e tentando rastrear o estoque em seu depósito, você pode economizar tempo e dinheiro automatizando esses processos com o ERP. As soluções modernas de cadeia de suprimentos também oferecem painéis, inteligência de negócios e até mesmo tecnologia de Internet das Coisas (IoT) para ajudá-lo a controlar o gerenciamento de estoque.
+Recursos humanos: As soluções modernas oferecem maneiras de gerenciar os dados da empresa e simplificar as tarefas de gerenciamento de funcionários, como folha de pagamento, contratação e outras funções. Você estará em uma posição melhor para ajudar a reter, recrutar e capacitar funcionários, além de acompanhar o desempenho dos funcionários e ajudá-los a identificar problemas de RH antes que eles aconteçam.

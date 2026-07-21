@@ -1,0 +1,56 @@
+Sistema de informação no mundo real
+Trata os dados fundamentais para a tomada de decisões em negócios e gestão, permitindo que estes sejam:
+
+Coletados
+Armazenados
+Protegidos
+Recuperados
+Compartilhados
+Analisados
+Apresentados
+Desde suas origens até as inovações atuais, esses sistemas evoluíram significativamente, impactando diversas áreas, como serviços bancários, viagens e assistência médica.
+
+Os sistemas de informação são fundamentais para o funcionamento eficiente das organizações modernas, integrando software, hardware e redes de telecomunicações para coletar, manipular e armazenar dados, além de disseminar informações úteis. Originalmente estruturados em torno do diamante de Leavitt, composto por tarefa, pessoa, estrutura e tecnologia, esses sistemas evoluíram e se tornaram a base de empresas como eBay, Amazon, Alibaba e Google.
+
+Neste vídeo, exploraremos a importância e a evolução dos sistemas de informação, detalhando seus componentes essenciais e como eles transformam operações empresariais para aumentar receitas, reduzir custos e melhorar a competitividade. Confira!
+
+
+Um sistema de informação (SI) é um conjunto de componentes inter-relacionados – software, hardware e redes de telecomunicações – que coletam, manipulam e armazenam dados; e disseminam informações úteis, especialmente em uma organização para aumentar receitas, reduzir custos, gerenciar suas operações, interagir com seus consumidores e ficar à frente da concorrência.
+
+Na década de 1960, os sistemas de informação nas organizações foram estruturados em torno de quatro elementos essenciais: tarefa, pessoa, estrutura e tecnologia. O padrão é conhecido como Diamante de Leavitt (1965, p. 1145):
+
+
+Diamante de Leavitt.
+
+playlist_add_check
+Tarefa
+Atividades necessárias para a produção de um bem ou serviço. Essas atividades são apoiadas pelo fluxo de material, informação e conhecimento entre os diferentes participantes.
+
+playlist_add_check
+Pessoa
+O componente pessoa de um sistema de informação engloba todas as pessoas diretamente envolvidas no sistema. Essas pessoas incluem os gerentes que definem os objetivos do sistema, os usuários e os desenvolvedores.
+
+playlist_add_check
+Estrutura
+O componente de estrutura organizacional e sistemas de informação refere-se ao relacionamento entre componentes de indivíduos e pessoas. Assim, abrange estruturas hierárquicas, relacionamentos e sistemas de avaliação de pessoas.
+
+playlist_add_check
+Tecnologia
+A TI (Tecnologia da Informação) de um SI compreende o hardware, software e equipamentos de telecomunicações utilizados para capturar, processar, armazenar e disseminar informações. Atualmente, a maioria dos SI é baseada em TI porque a TI moderna permite a execução eficiente de operações e o gerenciamento eficaz em todos os tamanhos.
+
+Hoje, algumas empresas são totalmente estruturadas a partir de sistemas de informação, como eBay, Amazon, Alibaba e Google, sendo seus quatro componentes principais definidos como:
+
+Pode ser pensada como a aplicação do conhecimento científico para fins práticos. Desde a invenção da roda até o aproveitamento da eletricidade para iluminação artificial, a tecnologia tornou-se onipresente na vida cotidiana, a ponto de estar sempre disponível para uso. O componente tecnologia possui três subcomponentes:
+
+Hardware é a parte física tangível de um sistema de informação – a parte que você pode tocar. Computadores, teclados, unidades de disco e unidades flash são exemplos de hardware de sistemas de informação.
+Software compreende o conjunto de instruções que dizem ao hardware o que fazer. O software não é tangível – não pode ser tocado. Os programadores criam software digitando uma série de instruções dizendo ao hardware o que fazer. Duas categorias principais de software são: sistemas operacionais e software aplicativo. O software de sistemas operacionais fornece a interface entre o hardware e o software aplicativo. Exemplos de sistemas operacionais incluem Microsoft Windows e Ubuntu Linux. O mercado de sistemas operacionais de telefonia móvel é dominado pelo Google Android e Apple iOS. O software aplicativo permite que o usuário execute tarefas como criar documentos, registrar dados em uma planilha ou enviar mensagens.
+Dados pode ser pensado como uma coleção de fatos. Por exemplo, seu endereço (rua, bairro, cidade), seu número de telefone e sua conta de rede social são dados. Como o software, os dados também são intangíveis, incapazes de serem vistos em seu estado nativo. Pedaços de dados não relacionados não são muito úteis. Mas agregados, indexados e organizados em um banco de dados, os dados podem se tornar uma ferramenta poderosa para as empresas. As organizações coletam todos os tipos de dados e os usam para tomar decisões que podem ser analisadas quanto à sua eficácia.
+Ao pensar em sistemas de informação, é fácil se concentrar nos componentes de tecnologia e esquecer de olhar além dessas ferramentas para entender completamente sua integração em uma organização. Um foco nas pessoas envolvidas em sistemas de informação é o próximo passo. Da equipe de suporte ao usuário da linha de frente, aos analistas de sistemas, aos desenvolvedores, até o diretor de informações (CIO), as pessoas envolvidas com os sistemas de informações são um elemento essencial.
+
+Um sistema de informação pode existir sem a capacidade de se comunicar – os primeiros computadores pessoais eram máquinas autônomas que não acessavam a Internet. No entanto, no mundo hiper conectado de hoje, é extremamente raro um computador não se conectar a outro dispositivo ou a uma rede. Tecnicamente, o componente de comunicação é composto de hardware e software, mas é um recurso tão central atualmente que se tornou uma categoria própria dos sistemas de informação.
+
+É uma série de etapas empreendidas para alcançar um resultado ou objetivo desejado. Os sistemas de informação estão cada vez mais integrados aos processos organizacionais, trazendo maior produtividade e melhor controle a esses processos. Mas simplesmente automatizar atividades usando tecnologia não é suficiente – as empresas que procuram utilizar sistemas de informação devem fazer mais. O objetivo final é melhorar os processos internos e externos, aprimorando as interfaces com fornecedores e clientes. O gerenciamento de processos de negócios tem a ver com a melhoria contínua desses procedimentos de negócios e a integração da tecnologia. As empresas que desejam obter uma vantagem competitiva sobre seus concorrentes estão altamente concentradas nesse componente dos sistemas de informação.
+
+video_library
+Importância dos sistemas de informação nas empresas
+Neste vídeo, vamos explorar a evolução dos sistemas de informação, destacando seus conceitos fundamentais e demonstrando como são aplicados no mundo real para melhorar a eficiência e a eficácia das operações empresariais.

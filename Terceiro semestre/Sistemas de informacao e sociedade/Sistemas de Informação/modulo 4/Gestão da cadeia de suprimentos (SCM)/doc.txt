@@ -1,0 +1,28 @@
+Gestão da cadeia de suprimentos (SCM)
+O SCM envolve desde a extração de matérias-primas até a entrega do produto final ao consumidor. A gestão eficiente da cadeia de suprimentos ajuda a obter uma vantagem competitiva. Vamos explorar como o SCM transforma as operações de negócios.
+
+Neste vídeo, veremos os conceitos da gestão da cadeia de suprimentos, incluindo planejamento, previsão, compras, montagem de produtos, movimentação, armazenamento, distribuição, vendas e atendimento ao cliente. Também discutiremos a evolução das cadeias de modelos lineares para redes complexas e a importância da resiliência e sustentabilidade no SCM moderno. Acompanhe!
+
+
+O gerenciamento da cadeia de suprimentos é o gerenciamento de todo o fluxo de produção de um bem ou serviço ‒ desde os componentes brutos, matérias-primas, até a entrega do produto acabado, final, ao consumidor. Uma empresa cria uma rede de fornecedores, “elos” na cadeia, que levam o produto desde os fornecedores de matérias-primas até as organizações que lidam diretamente com os usuários.
+
+Ou seja, o SCM inclui todas as atividades que devem ocorrer para colocar o produto certo nas mãos do consumidor certo, na quantidade certa e no momento certo – desde a extração de matérias-primas até a compra do consumidor.
+
+O SCM se concentra em planejamento e previsão, compras, montagem de produtos, movimentação, armazenamento, distribuição, vendas e atendimento ao cliente. O SCM está envolvido em todas as facetas do processo de negócios, à medida que se esforçam para alcançar uma vantagem competitiva sustentável, construindo e entregando produtos melhores, mais rápidos e mais baratos.
+
+Gerenciamento da cadeia de suprimentos: do linear para a rede
+Para entender a importância do gerenciamento da cadeia de suprimentos, vale a pena primeiro pensar na importância de uma cadeia de suprimentos em seu nível mais básico. As cadeias de abastecimento tradicionais seguem uma progressão linear. A saída de uma etapa é tipicamente a entrada da próxima etapa.
+
+extension
+Exemplo
+Os fornecedores devem enviar matérias-primas ao fabricante antes que os produtos possam ser fabricados. Se houver um problema em qualquer etapa, toda a cadeia linear é interrompida.
+
+As cadeias de suprimentos atuais, no entanto, são mais complexas do que os modelos lineares — são redes de suprimentos sofisticadas, mais flexíveis e eficientes. Não são mais apenas um fabricante eficiente e movimentador de mercadorias; agora é necessário ser o principal impulsionador do crescimento dos negócios.
+
+A resiliência também é crítica, pois as atuais cadeias de suprimentos devem gerenciar as interrupções contínuas. A sustentabilidade também é vital, para que as cadeias de suprimentos não apenas atendam às preocupações dos investidores, membros do conselho e governos, mas também façam uma contribuição positiva para a sociedade ao atingir o desperdício zero, construindo processos circulares e construindo confiança.
+
+Ser mais eficiente em toda a cadeia de suprimentos e entregar produtos para os clientes não precisa prejudicar o planeta ou atrapalhar a boa governança. Pelo contrário, na verdade. O gerenciamento eficaz da cadeia de suprimentos pode e deve colocar a sustentabilidade em seu centro. Não é apenas a coisa mais responsável a fazer; é o que os clientes querem.
+
+As empresas não podem mais recorrer à defesa do "não sabíamos" e, em vez disso, devem concentrar sua atenção na criação de um modelo de negócios que não apenas forneça os produtos de que os clientes precisam, mas os produza da maneira que os clientes esperam. Isso ajuda a atender às expectativas dos clientes por uma ampla seleção de produtos personalizados e sustentáveis ​​e entregas rápidas que atendem às necessidades específicas de cada pessoa.
+
+Os sistemas de gerenciamento da cadeia de suprimentos são parcerias integradas entre todos os elos no fluxo de bens e serviços para o cliente. Eles são criados com o objetivo de melhorar a qualidade, reduzir custos e obter vantagem competitiva em um mundo onde a manufatura enxuta e a especialização obrigam as empresas a confiar umas nas outras para atividades produtivas valiosas.

@@ -1,0 +1,29 @@
+Gestão de relacionamento com o cliente (CRM)
+Contribui para fortalecer conexões e otimizar vendas e marketing, melhorando a experiência do cliente e aumentando as receitas. Vamos explorar como os sistemas de CRM podem transformar o relacionamento com os clientes.
+
+Neste vídeo, serão apresentados os principais benefícios e as funcionalidades dos sistemas de CRM, incluindo geração e gerenciamento de leads, automação de vendas e marketing, e integração com outros sistemas empresariais. Discutiremos como o CRM centraliza informações de clientes e otimiza a comunicação e o atendimento, proporcionando uma visão unificada do cliente.
+
+
+O gerenciamento de relacionamento com o cliente, ou CRM, é um sistema para gerenciar todos os relacionamentos comerciais e interações com clientes existentes e potenciais dentro de uma empresa. Seu objetivo é simples: melhorar as relações comerciais. Esse sistema ajuda a organização a ficar conectada aos clientes, simplificar os processos de trabalho e aumentar as receitas.
+
+Um sistema de CRM pode fornecer uma visão geral clara de seus clientes. Você pode ver tudo em um só lugar ‒ um painel simples e personalizável que pode informar o histórico anterior de um cliente com você, o status de seus pedidos e problemas pendentes de atendimento.
+
+Os profissionais de marketing podem usar uma solução de CRM para gerenciar e otimizar campanhas e liderar jornadas com uma abordagem orientada por dados e entender melhor o funil de vendas ou clientes em potencial, tornando a previsão mais simples e precisa.
+
+A empresa terá visibilidade clara de cada oportunidade ou lead, mostrando um caminho claro desde as consultas até as vendas. Alguns dos maiores ganhos em produtividade de toda a empresa podem vir da incorporação do CRM (vendas e marketing) ao ERP (finanças, comércio e estoque) da empresa. Isso ajuda a garantir que as necessidades do cliente estejam no foco dos processos de negócios da empresa.
+
+Embora os sistemas de CRM tenham sido tradicionalmente usados ​​como ferramentas de vendas e marketing, o atendimento e o suporte ao cliente são um segmento crescente no CRM e uma peça crítica no gerenciamento de um relacionamento com o cliente. O cliente de hoje pode levantar um problema em um canal – no perfil da rede social da empresa, por exemplo – e depois mudar para e-mail ou telefone para resolvê-lo em particular.
+
+Uma plataforma de CRM permite que você gerencie a consulta em todos os canais sem perder o controle e oferece às vendas, serviços e marketing uma visão única do cliente para acompanhar suas atividades. A capacidade de conectar essas funções em uma plataforma com uma visão concentrada no cliente é inestimável para fornecer experiências conectadas relevantes.
+
+Principais contribuições de um CRM:
+
+Geração de leads: Ele extrai todos os dados disponíveis da web para ajudá-lo a encontrar leads de qualidade, aqueles que provavelmente se transformarão em clientes pagantes. Com um CRM você pode obter informações de contato do cliente em potencial, localização, empresa para a qual trabalha e outros dados importantes que poderá usar para personalizar o atendimento.
+Gerenciamento de leads: O CRM ajuda você a analisar e rastrear informações obtidas sobre seus leads, qualificá-los e engajá-los por meio de vários canais até a compra.
+Gestão de contatos: Permite manter todos os contatos comerciais em um só lugar e ver o histórico de todas as interações.
+Gerenciamento de negócios: Com o CRM, você tem o histórico de todos os seus negócios, o que permite analisar eventuais gargalos e propor as melhorias necessárias. Além disso, esse recurso ajuda a prever o sucesso de negócios futuros.
+Gerenciamento da comunicação: O CRM permite que você crie, agende e acompanhe mecanismos de comunicação consistentes com seus clientes existentes e potenciais. Além disso, ele avisa quando alguém interage com seus e-mails e redes sociais, e fornece análises para melhorar o desempenho de suas campanhas de marketing.
+Automação de vendas e marketing: O CRM com marketing integrado e/ou automação de vendas fornece ferramentas que substituem o trabalho manual por encontrar e atribuir leads aos vendedores certos, entrar em contato com clientes em potencial e muitas outras atividades.
+Análise: O CRM engloba as ferramentas necessárias para analisar os processos de campanha do seu negócio. Ele oferece relatórios multidimensionais regulares que você geralmente pode exportar ou compartilhar com outros membros da equipe.
+Integração: Muitos CRMs oferecem opções de integração que permitem a sincronização com os outros sistemas da empresa. Assim, você tem todas as ferramentas necessárias para agilizar seus processos de negócios.
+Customização: Você pode adaptar seu CRM à forma como sua equipe opera. Ele fornece módulos, campos e botões personalizados que ajudam você a ajustar sua funcionalidade de acordo com suas necessidades.

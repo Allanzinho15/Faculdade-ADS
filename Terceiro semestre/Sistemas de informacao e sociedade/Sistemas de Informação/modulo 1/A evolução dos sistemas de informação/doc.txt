@@ -1,0 +1,21 @@
+A evolução dos sistemas de informação
+A era dos mainframes dominou as décadas de 1950 e 1960, possibilitando cálculos eficientes e processamento de grandes volumes de dados. Discutiremos como a introdução do compartilhamento de tempo e dos sistemas de planejamento de recursos de manufatura (MRP) transformou a gestão empresarial.
+
+Neste vídeo, aprenderemos sobre a revolução do PC e seu impacto na democratização do acesso à informação. Em seguida, discutiremos a arquitetura cliente-servidor e sua transformação na forma como os sistemas são projetados e utilizados.
+
+
+Com o desenvolvimento da tecnologia, os sistemas de informação tornaram-se a espinha dorsal da organização. Essa integração progrediu ao longo das décadas.
+
+A era do mainframe
+Do final da década de 1950 até a década de 1960, os computadores eram vistos como uma forma de fazer cálculos com mais eficiência. Esses primeiros computadores comerciais eram monstros do tamanho de uma sala, com várias máquinas interligadas. O trabalho principal era organizar e armazenar grandes volumes de informações que eram tediosos de gerenciar manualmente. Somente grandes empresas, universidades e agências governamentais podiam pagar por eles, com uma equipe especializada e instalações dedicadas para fornecer informações às organizações.
+
+O compartilhamento de tempo permitia que dezenas ou mesmo centenas de usuários acessassem simultaneamente computadores mainframe a partir de locais no mesmo prédio ou a quilômetros de distância. As funções típicas incluíam cálculos científicos e contabilidade, tudo sob o guarda-chuva mais amplo de “processamento de dados”.
+
+
+IBM 704 Mainframe, 1958.
+
+No final dos anos 1960, os sistemas de planejamento de recursos de manufatura (MRP) foram introduzidos. Esse software, executado em um computador mainframe, deu às empresas a capacidade de gerenciar o processo de fabricação, tornando-o mais eficiente. Do rastreamento de estoque à criação de listas de materiais e programação da produção, os sistemas MRP deram a mais empresas um motivo para integrar a computação em seus processos. A IBM tornou-se a empresa de mainframe dominante. A melhoria contínua do software e a disponibilidade de hardware mais barato acabaram levando os computadores mainframe (e seu irmão mais novo, o microcomputador) para a maioria das grandes empresas.
+
+assignment_ind
+Comentário
+Hoje você provavelmente pensa no Vale do Silício, norte da Califórnia, como o centro de computação e tecnologia. Mas na época do domínio do mainframe, as corporações nas cidades de Minneapolis e St. Paul produziam a maioria dos computadores. O advento do computador pessoal resultou na mudança do “centro de tecnologia” para o Vale do Silício.

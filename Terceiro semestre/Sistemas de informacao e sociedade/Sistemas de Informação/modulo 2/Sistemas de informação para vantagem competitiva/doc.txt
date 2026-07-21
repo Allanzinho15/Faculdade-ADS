@@ -1,0 +1,46 @@
+Sistemas de informação para vantagem competitiva
+São fundamentais para alcançar e manter uma vantagem competitiva. Eles mostram como a tecnologia da informação pode ser integrada na estratégia empresarial para fornecer insights valiosos, melhorar processos e impulsionar a inovação.
+
+Vamos explorar neste vídeo como os sistemas de informação podem transformar a vantagem competitiva nos negócios.
+
+
+Uma empresa possui sistemas de informação para dar suporte aos diferentes níveis gerenciais. Esses sistemas de informação incluem sistemas de processamento de transações, sistemas de informações gerenciais, sistemas de suporte à decisão e sistemas dedicados de inteligência de negócios, que são utilizados pelas empresas para que informações precisas e atualizadas estejam disponíveis quando necessário.
+
+Dentro da mesma organização, executivos em diferentes níveis hierárquicos têm requisitos de informação muito diferentes, e diferentes tipos de sistemas de informação evoluíram para atender às suas necessidades.
+
+Uma abordagem comum para examinar os tipos de sistemas de informação usados ​​dentro das organizações é classificá-los de acordo com suas funções em diferentes níveis da estrutura organizacional. Essa abordagem é chamada de abordagem vertical e considera a organização como uma pirâmide de gestão em quatro níveis:
+
+
+Sistemas de informação de acordo com o nível gerencial.
+
+Agora vamos entender melhor como esses diferentes tipos de sistemas de informação são utilizados em diferentes níveis gerenciais. Vamos lá!
+
+looks_one
+Sistema de apoio executivo (ESS)
+O ESS ajuda a alta administração a tomar decisões. Eles abordam decisões excepcionais que exigem julgamento, avaliação e visão holística da situação do negócio, porque não há um procedimento a ser seguido para resolver determinado problema nesse nível.
+
+O ESS usa gráficos e dados de várias fontes por meio de uma interface que os gerentes seniores entendem facilmente. O ESS foi projetado para integrar dados do ambiente externo, como novos impostos ou dados de concorrentes, e integrar dados agregados dos sistemas de informação gerencial (MIS) e sistemas de apoio à decisão (DSS). Os ESSs filtram, sintetizam e rastreiam dados críticos. Atenção especial é dada à exibição desses dados, pois contribui para a rápida assimilação pela alta administração. Cada vez mais, esses sistemas incluem ferramentas de análise de inteligência de negócios para identificar as principais tendências e previsões.
+
+looks_two
+Sistemas de apoio à decisão (DSS)
+O DSS oferece suporte à tomada de decisões para questões incomuns e de evolução rápida, para as quais não há procedimentos totalmente predefinidos. Esse tipo de sistema tenta responder a perguntas como:
+
+O que afetaria os cronogramas de produção se dobrássemos as vendas de dezembro?
+Qual seria o nível de retorno sobre o investimento se o cronograma da fábrica fosse adiado por mais de seis meses?
+Embora os DSSs usem informações internas dos sistemas de processamento de transações (TPS) e sistemas de informação gerencial (MIS), eles também utilizam fontes externas, como cotações de ações ou preços de produtos concorrentes. Esses sistemas usam uma variedade de modelos para analisar os dados. O sistema pode responder a perguntas como:
+
+Considerando o cronograma de entrega do cliente e a taxa de frete oferecida, qual embarcação e taxa devem ser designadas para maximizar os lucros?
+Qual é a velocidade ideal na qual um navio pode maximizar o lucro enquanto cumpre seu cronograma de entrega?
+looks_3
+Sistemas de informação gerencial (MIS)
+Os gerentes intermediários precisam de sistemas para ajudar na supervisão, controle, tomada de decisão e atividades administrativas. A principal pergunta que esse tipo de sistema deve responder é: tudo está funcionando corretamente?
+
+Sua função é resumir e relatar operações comerciais essenciais usando dados fornecidos por sistemas de processamento de transações. Os dados primários da transação são sintetizados e agregados, e geralmente são apresentados em relatórios produzidos regularmente.
+
+looks_4
+Sistema de processamento de transações (TPS)
+No nível operacional, os gerentes precisam de sistemas que acompanhem a organização para as atividades e operações necessárias, como vendas e fluxo de materiais em uma fábrica. Um sistema de processamento de transações é um sistema de computador que executa e registra as operações de rotina (diárias) necessárias para gerenciar negócios, como manter registros de funcionários, folha de pagamento, remessa de mercadorias, manutenção de registros, contabilidade e tesouraria.
+
+Nesse nível, o objetivo principal dos sistemas é responder a perguntas rotineiras e monitorar o fluxo de transações na organização.
+
+No nível operacional, tarefas, recursos e objetivos são predefinidos e altamente estruturados. A decisão de conceder crédito a um cliente, por exemplo, é feita por um supervisor principal de acordo com critérios predefinidos. Tudo o que precisa ser determinado é se o cliente atende aos critérios.

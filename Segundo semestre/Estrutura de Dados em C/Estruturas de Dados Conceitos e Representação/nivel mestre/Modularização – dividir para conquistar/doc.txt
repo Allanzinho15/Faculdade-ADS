@@ -1,0 +1,137 @@
+Modularização – dividir para conquistar
+Neste vídeo, aprenda o conceito de modularização na linguagem C, compreendendo como dividir um programa em funções e arquivos com responsabilidades específicas. Veja ainda os conceitos de funções, arquivos .h e abstração de dados.
+
+
+
+Em uma grande empresa, há diferentes setores, certo? Acompanhe alguns exemplos! 
+
+
+Shutterstock.com
+Gerência
+
+
+Shutterstock.com
+Marketing
+
+
+Shutterstock.com
+Recursos humanos
+
+
+Shutterstock.com
+Finanças
+
+
+Cada setor tem uma função específica, mas todos colaboram para o funcionamento da organização.
+
+ 
+
+Assim como em um restaurante bem organizado. Na cozinha, o chef não faz tudo sozinho: há uma cozinheira só para os grelhados, outro para os molhos e outro para as sobremesas. Cada um cuida de uma parte, mas, juntos, produzem um prato perfeito (não estranhe se, aparentemente do nada, sentir fome ou vontade de comer!).
+
+
+
+Restaurante bem-organizado.
+
+Podemos chamar a divisão de tarefas de modularização: quebrar um sistema grande em partes menores e especializadas, chamadas de módulos. Vamos conferir mais detalhes!
+
+
+Conceito de modularização
+
+
+Podemos entender a modularização como o processo de dividir um programa em partes menores e independentes, chamadas módulos. Cada uma é responsável por uma função ou tarefa específica, conforme imagem adiante. 
+
+ 
+
+Essa técnica permite organizar, fazer a manutenção e reutilizar o código, de modo que desenvolvedores trabalhem em partes isoladas do sistema sem afetar o restante. Ela também facilita o entendimento do programa na totalidade, pois cada módulo pode ser testado, desenvolvido e atualizado de forma separada, promovendo uma abordagem mais limpa e escalável na construção de softwares.
+
+
+Curadoria de TI
+
+Modularização.
+
+Em programação, usamos a modularização para que o programador faça a divisão do programa em módulos. Cada um dos módulos tem uma responsabilidade bem definida, sem precisar escrever um código gigantesco e difícil de entender.
+
+ 
+
+Modularizar um programa significa organizar o código em funções e arquivos com responsabilidades bem definidas. Isso torna o código mais fácil de corrigir, entender e expandir. Além disso, ainda permite o reaproveitamento de código, já que uma função pode ser usada em diferentes contextos.
+
+
+Exemplo
+Modularizar é como preparar uma receita complexa em etapas: primeiro você pica os ingredientes, depois refoga, cozinha, e, por fim, tempera. Se fosse tudo misturado de uma vez, o prato não teria qualidade. O mesmo acontece com o código: módulos claros tornam o programa mais organizado, reutilizável e fácil de manter.
+
+
+Na prática, modularizar significa separar o código em funções e arquivos diferentes. Cada função executa uma tarefa específica e pode ser usada por outras partes do programa, como um bloco de Lego que se encaixa em vários contextos. A imagem a seguir nos ajuda a entender melhor esse conceito!
+
+
+Curadoria de TI
+
+Modularização em blocos de Lego.
+
+Conceito de função e arquivos em C
+
+
+Em programação na linguagem C, uma função é um bloco de código que realiza uma tarefa específica e pode ser chamada a partir de diferentes pontos do programa, promovendo reutilização e organização. Funções, por sua vez, permitem dividir o programa em partes lógicas, facilitando o desenvolvimento, a leitura e a manutenção. 
+
+ 
+
+Já um arquivo em C refere-se a uma unidade de código-fonte, em geral, com extensão .h, que armazena funções, declarações, definições e variáveis. 
+
+ 
+
+Os arquivos em C com extensão .h são também chamados de arquivos de cabeçalho (.h). Existem dois tipos principais de arquivos .h. Veja!
+
+
+Arquivos de cabeçalho da biblioteca padrão
+
+
+São fornecidos pela linguagem C. São eles:
+
+
+Arquivo .h	Finalidade
+<stdio.h>	Entrada e saída padrão (ex: printf, scanf)
+<stdlib.h>	Funções utilitárias (ex: malloc, free, exit)
+<string.h>	Manipulação de strings (ex: strlen, strcpy, strcmp)
+<math.h>	Funções matemáticas (ex: sqrt, pow, sin)
+<time.h>	Controle de tempo e data (ex: time, clock, difftime)
+<ctype.h>	Testes de caracteres (ex: isalpha, isdigit, toupper)
+<stdbool.h>	Permite usar o tipo bool com true e false
+<limits.h>	Define limites de tipos primitivos (INT_MAX, CHAR_MIN, etc.)
+<float.h>	Define limites para tipos de ponto flutuante (FLT_MAX, etc.)
+Tabela: Exemplo de arquivos de cabeçalho da biblioteca padrão.
+Daisy Cristine Albuquerque da Silva.
+
+Arquivos de cabeçalho personalizados
+
+
+São criados pelo próprio programador para organizar o código em módulos. Veja alguns casos:
+
+
+Arquivo .h	Finalidade
+"funcoes.h"	Declara funções utilitárias do projeto
+"aluno.h"	Define a estrutura Aluno e funções relacionadas
+"jogo.h"	Define estruturas e funções do jogo (como WAR, batalha, ranking etc.)
+"menu.h"	Contém a interface dos menus do sistema
+"usuario.h"	Gerencia estruturas e operações com usuários
+Tabela: Exemplos de arquivos de cabeçalho personalizado.
+Daisy Cristine Albuquerque da Silva. 
+
+Conceito de abstração de dados
+
+
+Significa esconder os detalhes de implementação e mostrar apenas o necessário. Voltando ao exemplo do restaurante: o cliente só vê o prato servido, não precisa saber como o molho foi feito ou como o bife foi grelhado, certo? 
+
+ 
+
+Logo, em programação, o usuário de uma função deve saber apenas como a usar, sem se preocupar com o que acontece por dentro.
+
+ 
+
+Vamos ao exemplo!
+
+
+
+Aplicativo de delivery.
+
+Pense em um aplicativo de delivery. A função calcular frete está separada da função mostrar os restaurantes. Isso é modularização. Se você mudar a regra do frete, não precisa reescrever o código do menu!
+
+Por último, modularizar ajuda a manter o foco em resolver partes menores do problema, o que facilita testar e encontrar erros. Além disso, também permite que equipes trabalhem em paralelo: enquanto uma pessoa cuida do módulo de pagamentos, outra cuida do cadastro de usuários.

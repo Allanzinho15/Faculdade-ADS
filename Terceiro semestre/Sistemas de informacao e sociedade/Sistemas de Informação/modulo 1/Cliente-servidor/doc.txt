@@ -1,0 +1,13 @@
+Cliente-servidor
+A arquitetura cliente-servidor fornece uma compreensão detalhada das bases sobre as quais as redes modernas foram construídas.
+
+Neste vídeo, você verá como os sistemas evoluíram para permitir a colaboração e o compartilhamento de recurso e sua relevância para profissionais de TI. Será apresentada uma análise detalhada sobre a arquitetura cliente-servidor e seu impacto. Acompanhe!
+
+
+Em meados da década de 1980, as empresas começaram a ver a necessidade de conectar seus computadores como forma de colaborar e compartilhar recursos. Conhecida como “cliente-servidor”, essa arquitetura de rede permitia aos usuários fazer login na rede local (LAN) a partir de seu PC (o “cliente”) conectando-se a um computador central chamado “servidor”. O servidor procuraria permissões para cada usuário para determinar quem tinha acesso a vários recursos, como impressoras e arquivos.
+
+As empresas de software começaram a desenvolver aplicativos que permitiam vários usuários acessarem os mesmos dados ao mesmo tempo. Isso evoluiu para aplicativos de software para comunicação, com o primeiro uso popular de correio eletrônico aparecendo nessa época.
+
+Essa rede e compartilhamento de dados ficavam principalmente dentro dos limites de cada empresa. O compartilhamento de dados eletrônicos entre empresas ainda era uma função muito especializada. Os computadores agora eram vistos como ferramentas para colaborar internamente dentro de uma organização.
+
+Essas redes de computadores estavam se tornando tão poderosas que estavam substituindo muitas das funções anteriormente desempenhadas pelos computadores mainframe por uma fração do custo. Foi nessa época que os primeiros sistemas Enterprise Resource Planning (ERP) foram desenvolvidos e executados na arquitetura cliente-servidor. Um sistema ERP é um aplicativo com um banco de dados centralizado que pode ser usado para executar todo o negócio de uma empresa. Com módulos separados para contabilidade, finanças, estoque, recursos humanos e muito mais, os sistemas ERP representavam o estado da arte em integração de sistemas de informação.

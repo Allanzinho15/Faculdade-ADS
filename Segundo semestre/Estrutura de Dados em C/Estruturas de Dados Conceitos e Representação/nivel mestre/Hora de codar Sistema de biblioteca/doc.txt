@@ -1,0 +1,11 @@
+Hora de codar: Sistema de biblioteca
+Nesta prática, você aplicará os conhecimentos adquiridos no nível mestre de estrutura de dados para implementar a evolução do sistema da biblioteca já desenvolvido.
+ 
+
+Para isso, você vai modularizar o sistema separando o código em funções específicas com responsabilidades bem definidas. Assim, você aplicará os conceitos de passagem por valor para exibir dados e passagem por referência para atualizar os registros de empréstimos. A prática também reforça o uso de ponteiros e alocação dinâmica de memória com malloc, calloc e free.
+
+ 
+
+Neste vídeo, você dará continuidade ao sistema da biblioteca, mas agora no nível mestre, aplicando modularização do código com funções especializadas. Serão utilizados ponteiros, alocação dinâmica com malloc, calloc e free, além da passagem por valor para exibição de dados e por referência para atualizar empréstimos, consolidando boas práticas de estruturação e manipulação de memória em C.
+
+
