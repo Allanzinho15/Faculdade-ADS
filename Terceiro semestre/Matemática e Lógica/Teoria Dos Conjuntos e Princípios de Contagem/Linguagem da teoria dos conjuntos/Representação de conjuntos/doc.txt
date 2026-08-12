@@ -1,0 +1,265 @@
+Representação de conjuntos
+Neste vídeo, você entenderá as representações e operações entre conjuntos e os intervalos na reta numérica e valor absoluto.
+
+
+
+O conceito intuitivo de conjunto é estabelecido desde que somos ainda muito crianças: o conjunto dos meus brinquedos, o conjunto das pessoas de minha família, o conjunto de meus amigos de turma etc.
+
+
+Naturalmente, conforme vamos amadurecendo, temos contato com conjuntos mais abstratos, como os conjuntos numéricos e, além disso, conjuntos finitos e infinitos.
+
+
+Assim, temos:
+
+
+O conjunto dos números pares positivos.
+O conjunto de todos os pontos de uma circunferência.
+O conjunto dos pontos do gráfico de uma reta cuja equação é y=x+1.
+
+O importante, de fato, é estabelecermos uma escrita mais formal e adequada para descrever conjuntos, sejam finitos ou infinitos.
+
+
+Representação explícita de conjuntos
+
+Uma das formas usuais de descrever um conjunto é, simplesmente, enumerando seus objetos entre um par de chaves, separando-os por vírgulas ou, preferencialmente, por ponto e vírgula – para evitar que nosso separador decimal, a vírgula, cause ambiguidades.
+
+
+Exemplo 1
+
+Confira alguns exemplos.
+
+
+
+A = { 1,2 , 1,3 }
+Observe que, usando o separador vírgula, não podemos distinguir se os objetos do conjunto são os inteiros de 1 a 4 ou os dois números decimais 1,2 e 1,3, por exemplo. Por isso, em português, sempre que houver possibilidade de dúvida, preferimos utilizar o separador ponto e vírgula.
+
+
+B = { 1; 3; 9; 7; 5 }
+Conjunto cujos elementos (objetos) que o compõem são os números ímpares entre 0 e 10.
+
+Note que em um conjunto não existe o conceito de ordem. Fazendo uma analogia: tudo se passa como se tivéssemos os objetos de um conjunto em uma caixa e os listássemos em qualquer ordem, entre o par de chaves. No entanto, é claro, sempre que fizer sentido, listá-los em ordem crescente ou decrescente (quando seus objetos são números, por exemplo). Isso facilitará a percepção de seus elementos, caso haja alguma lei de formação (equação que representa a variação de uma ou mais variáveis).
+
+
+C = { 1,7; 1,3; 1,5; 1,1; 1,9 }
+Os valores dos 5 primeiros termos de uma progressão aritmética de razão 0,2 e menor termo igual a 1,1.
+
+
+D= { 1 ;  4;  9;  16;  25; 36; ... }
+Observe que a descrição deste conjunto sugere que desejamos descrever uma infini­dade de elementos: os tais três pontinhos, ao final, sugerem que estamos interessados nos quadrados de todos os números inteiros.
+
+Esta forma de representar conjuntos infinitos só é indicada quando a lei de formação de seus elementos é natural, simples e não uma charada, como o exemplo a seguir.
+
+
+E = { 4 ;  13;  34;  73;  136; .... }
+Neste caso, há infinitas leis de formação possíveis, uma das quais é n3 + 2n + 1, com n percorrendo os inteiros 1, 2, 3, ... Nestes casos, esta notação não é adequada. A seguir, analisaremos a chamada notação implícita para conjuntos, mais adequada para situações dessa natureza.
+
+Símbolo de pertinência
+
+Quando um objeto x é um dos elementos de um conjunto P, dizemos que x pertence a P e usamos o símbolo de pertinência, representado pela letra grega épsilon, estilizada: " ϵ ". Assim: x∈P
+
+
+Caso x não seja um dos objetos do conjunto P, dizemos que x não pertence a P e escrevemos: x∈
+/
+P.
+
+
+Exemplo 2
+
+Perceba, em cada item, que cada pertinência indicada é, como assinalado, uma assertiva verdadeira (V) ou falsa (F).
+
+
+12∈{4;5;10;12;18} V
+5∈
+/
+{4;5;10;12;18} F
+7∈
+/
+{4;5;10;12;18} V
+16
+​
+ ∈
+/
+{4;5;10;12;18} F
+
+Exemplo 3
+
+Conjuntos podem, por sua vez, serem também objetos de conjuntos. Uma analogia curiosa, mas extremamente útil, é imaginar uma sacola de compras. O objeto colocado nela diretamente é entendido como um de seus elementos.
+
+
+Assim, se colocarmos uma caixa de ovos (contendo dez ovos) na sacola de compras, é a caixa de ovos que pertence à sacola, pois, na verdade, cada ovo é um objeto da caixa de ovos, e não da sacola.
+
+
+Por exemplo, se A é o conjunto { 1; 2; {3, 4}; 5; 6 },perceba que todas as relações de pertinência indicadas a seguir são assertivas verdadeiras.
+
+
+1∈{1;2;{3,4};5;6}
+3∈
+/
+{1;2;{3,4};5;6}
+{3;4}∈{1;2;{3,4};5;6}
+7∈
+/
+{1;2;{3,4};5;6}
+{1;2}∈
+/
+{1;2;{3,4};5;6}
+{1}∈
+/
+{1;2;{3,4};5;6}
+{1;3}∈
+/
+{1;2;{3,4};5;6}
+
+Representação implícita de conjuntos
+
+A chamada notação implícita de conjuntos utiliza outra estratégia para se referir a seus elementos. Exige que seja explicitada uma propriedade (chamada, na lógica, de sentença aberta) que descreva os objetos nos quais temos interesse.
+
+
+A seguir, temos a forma usual, embora sejam utilizadas algumas variantes semelhantes.
+
+
+A={x∣p(x)}
+A={x∣p(x)}
+Lemos assim: o conjunto dos objetos x tais que p(x) se torna uma proposição verdadeira.
+
+
+Ou seja, serão objetos do conjunto exatamente e apenas os objetos que tornarem a expressão p(x) uma proposição verdadeira.
+
+
+Exemplo 4
+
+
+
+F = { x  |  x2 = 9 }
+
+
+G = { x  |  x é inteiro  e  x2 < 9 }
+
+Relação de inclusão entre conjuntos
+
+A representação pictórica (geométrica) de um conjunto, através de alguma figura simples, é extremamente útil. Veja: se X = { 1; 2; 3; 4; 5 }, a imagem a seguir sugere que seu contorno delimita a representação de seus elementos, exibidos, por sua vez, como pontos.
+
+
+
+Imagem 1: Representação de um conjunto.
+
+A imagem a seguir, com o diagrama de Y contido no diagrama de X, sugere que todo elemento de Y é, também, um elemento de X.
+
+
+
+Imagem 2: Representação de um conjunto em que todo elemento Y é também um elemento X.
+
+Essa situação é matematicamente representada pela relação de inclusão entre dois conjuntos, na qual dizemos que “Y está contido em X” ou que “X contém Y”.
+
+
+Representamos situações de inclusão com os sinais usuais ⊂e⊃. Assim:
+
+
+Y⊂ X ou X⊃Y
+Y⊂ X ou X⊃Y
+Lemos: “X contém Y” ou “Y é parte de X”, no primeiro caso e, “Y está contido em X”, no segundo caso.
+
+
+A afirmação "todo elemento de Y é, também, um elemento de X" é válida quando Y está contido em X. Caso X e Y sejam iguais, a inclusão também ocorre, mas esse é apenas um caso particular.
+
+
+Naturalmente, como usual na matemática, uma barra “/” em um sinal que relaciona objetos nega o referido relacionamento.
+
+
+Vejamos alguns sinais e suas negações.
+
+
+Igualdade e de desigualdade
+
+
+​
+  
+a=b
+a
+
+=b
+​
+ 
+
+
+Paralelismo e não paralelismo
+
+
+​
+  
+r∥s
+r∤s
+​
+ 
+
+
+Pertinência e não pertinência
+
+
+​
+  
+x∈X
+x∈
+/
+X
+​
+ 
+
+
+Inclusão e não inclusão
+
+
+​
+  
+X⊂Y
+X
+
+⊂Y
+​
+ 
+
+
+Continência (do verbo conter) e não continência
+
+
+​
+  
+Y⊃X
+Y
+
+⊃X
+​
+ 
+
+
+Exemplo 5
+
+Analisando as relações apresentadas, verdadeiras, verifique cuidadosamente a justi­ficativa.
+
+
+
+{1;5}⊂{1;2;5;6}
+Porque todo elemento do conjunto { 1; 5 }, os números 1 e 5 são, também, elementos do conjunto { 1 ; 2; 5; 6 }.
+
+
+{1}⊂{0;1;6}
+Porque o único elemento do conjunto { 1 }, que é o número 1, é também um elemento do conjunto { 0; 1; 6 }.
+
+
+{1;3}
+
+{1;2;{3,4};5;6}
+Embora o número 1, elemento do conjunto { 1; 3 }, seja também objeto do conjunto { 1 ; 2; {3, 4}; 5; 6 }, o número 3, o outro elemento do conjunto { 1; 3 } não é elemento do conjunto { 1 ; 2; {3, 4}; 5; 6 }.
+
+O conjunto vazio
+
+É extremamente útil para a teoria dos conjuntos imaginar um conjunto sem elementos: o conjunto vazio! Designamos esse conjunto pela letra "O" cortada: ∅. Ou, alternativamente, \{\} .
+
+
+Seguindo a mesma analogia entre um conjunto e uma sacola de compras do supermercado, a sacola, sem nenhuma compra, representaria o conjunto vazio.
+
+
+Além disso, o conjunto vazio ∅ é subconjunto de qualquer conjunto X, ou seja, ∅⊂X !
+
+
+Embora a justificativa formal para essa relação seja pouco natural, podemos argumentar, intuitivamente, o seguinte: como não há elementos no conjunto ∅, a afirmativa "todo elemento de ∅ é também um elemento de X" não é contrariada. Portanto, podemos admitir que, para qualquer conjunto X,∅⊂X.

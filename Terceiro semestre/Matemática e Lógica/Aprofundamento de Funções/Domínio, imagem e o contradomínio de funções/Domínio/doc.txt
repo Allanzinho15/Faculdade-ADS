@@ -1,0 +1,70 @@
+Domínio
+Confira a definição do domínio da função neste vídeo.
+
+
+
+Exemplo 1
+
+Dado o gráfico de uma função, uma forma de encontrar o domínio da função é projetar o gráfico no eixo O 
+x
+​
+ .
+
+ 
+
+Observe o gráfico da função f :
+
+
+
+Gráfico: Função f
+
+O que acontece se projetarmos o gráfico da função no eixo O 
+x
+​
+  ? Confira no gráfico a seguir.
+
+
+
+Gráfico: A função no eixo O 
+x
+​
+ 
+
+Vemos que o domínio da função f é o intervalo no eixo das abscissas indicado em vermelho. Seu domínio é o intervalo fechado: D(f)=[−1,4]
+
+
+Exemplo 2
+
+Observe o gráfico da função g:
+
+
+
+Gráfico: Função g
+
+O que acontece se projetarmos o gráfico da função no eixo O 
+x
+​
+ ? Confira a seguir.
+
+
+
+Gráfico: A função g projetada no eixo Ox
+
+Vemos que o domínio da função g é o conjunto no eixo das abscissas indicado em vermelho. Seu domínio é a união de intervalos disjuntos (intervalos cuja interseção é vazia):
+
+
+D(g)=[− 
+2
+7
+​
+ ,1)∪(1,5)
+D(g)=[− 
+2
+7
+​
+ ,1)∪(1,5)
+Domínio da função
+
+Assista ao vídeo e veja mais um exemplo de domínio da função.
+
+

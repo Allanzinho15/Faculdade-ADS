@@ -1,0 +1,195 @@
+Intervalos na reta numérica e valor absoluto
+Conjuntos numéricos usuais
+
+No estudo de conjuntos, dedicamos importância especial aos conjuntos numéricos, entre os quais os conjuntos básicos a seguir:
+
+
+
+Conjunto dos números naturais
+
+Tipicamente, os números naturais, representados por N, são os números utilizados na contagem. Ou seja, N={1;2;3;…}
+
+ 
+
+Alguns autores incluem o zero como número natural, mas outros preferem omiti-lo.
+
+
+Conjunto dos números inteiros
+
+Designado tipicamente pela letra Z, inclui os números naturais, o zero e o simétrico dos números naturais. Ou seja, Z={0;−1;1;−2;2;−3;3;…}.
+
+
+Conjunto dos números racionais
+
+Designado pela letra Q (que lembra a palavra quociente), se refere aos números obtidos pelo quociente de números inteiros. Incluem, naturalmente, os números inteiros, os números decimais exatos, como 0,37 e -3,78, por exemplo; e, também, os números cuja parte decimal forma dízimas periódicas. Ou seja, Q={…−0,8;−0,3;0;0,3;0,5…}
+
+
+Conjunto dos números reais
+
+Além desses, há uma família de conjuntos extremamente úteis, chamados de intervalos, designados por R= {…−3,−2,−1,− 
+2
+1
+​
+ ,0,1, 
+2
+1
+​
+ ,2,3…}
+
+
+A reta real e os intervalos
+
+Representamos os números reais em uma reta-eixo. Está implícito, nesta representação, o seguinte:
+
+
+Cada ponto da reta-eixo está associado a um único número real e vice-versa, a cada número real está associado um único ponto da reta-eixo. Confira.
+
+
+
+Imagem 3: Representação de uma reta-eixo.
+
+Como decorrência da continuidade dos números na reta-eixo, é interessante imaginar um conjunto de números cuja representação geométrica seja um segmento de reta ou uma semirreta, com os valores das extremidades sendo ou não incluídos no conjunto desejado.
+
+
+Tais conjuntos são chamados intervalos, cujas convenções utilizadas nas repre­sen­tações gráficas e textuais relativas à inclusão ou não das extremidades estão descritas a seguir.
+
+
+Inclui extremidade
+
+
+Nomenclatura: intervalo fechado nesta extremidade.
+
+Representação no gráfico: círculo cheio.
+
+Na notação escrita: colchetes.
+
+
+Não inclui extremidade
+
+
+Nomenclatura: intervalo aberto nesta extremidade.
+
+Representação no gráfico: círculo vazado ou seta.
+
+Na notação escrita: parênteses ou colchetes invertidos.
+
+
+Acompanhe agora diversas situações de representação de intervalos matemáticos.
+
+
+
+Situação 1
+
+Situação 2
+
+Situação 3
+
+Situação 4
+Representação implicita: {x∈R∣a<x<b}
+
+Representação como intervalo: (a; b) ou ]a;b[
+ 
+
+A representação gráfica pode ser vista na imagem a seguir.
+
+
+
+Imagem 4: Representação gráfica da situação 1.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Valor absoluto
+
+A criação do conceito de reta-eixo permite que associemos representações algébricas a representações geométricas, de maneira imediata.
+
+
+Analisando a imagem a seguir, percebemos que a distância entre os pontos associados a dois números na reta real pode ser calculada subtraindo-se o menor do maior.
+
+
+
+Imagem 8: Reta-eixo.
+
+Ou seja, a distância entre os pontos A e B vale b – a. De forma análoga, podemos calcular as distâncias entre:
+
+
+A e O: a – o = 1 – 0 = 1
+C e D: c – d = (-1) – (-2) = 1
+C e A: a – c = 1 – (-1) = 2
+
+Entretanto, como calcular, algebricamente, a distância de um número real (na verdade, o ponto associado) e a origem?
+
+
+Essa distância é chamada de módulo do número x , e é representado por ∣x∣. Claro que ∣x∣ tem que ser um valor positivo, por ser uma distância. Então, para evitar a situação de número negativo nas diferenças x−0 ou 0−x, podemos usar duas possíveis expressões algébricas que tornam as diferenças (seja x ou -x) sempre positivas:
+
+
+∣x∣= 
+x 
+2
+ 
+​
+  ou ∣x∣={ 
+x, se x≥0
+−x, se x<0
+​
+  
+​
+ 
+∣x∣= 
+x 
+2
+ 
+​
+  ou ∣x∣={ 
+x, se x≥0
+−x, se x<0
+​
+  
+​
+ 
+Experimente atribuir valores positivos e negativos a x e calcule o resultado obtido pelas expressões indicadas.
+
+
+Exemplo 6
+
+Determine o conjunto-solução das expressões indicadas.
+
+
+
+∣x−1∣=3
+
+A expressão modular ∣x−1∣ corresponde à distância, na reta real, entre x e 1. Então, a nova pergunta é: quais dos pontos do eixo distam 3 unidades de 1? À direita de 1 é o valor 1+3=4; e à esquerda de 1 é o valor 1-3=-2. Então, o conjunto-solução dessa desigualdade é S={4;−2}. Desenhe a reta real (imagem 3) para visualizar esta discussão.
+
+
+∣2x−4∣<3
+
+Inicialmente, convém dividir toda expressão por 2. Obtemos: ∣x−2∣<3/2
+
+ 
+
+Agora, a pergunta geométrica é: quais xis distam de 2 menos do que 3/2 ? Naturalmente, os xis de interesse estão 3/2 à direita e à esquerda de 2 , no máximo! Ou seja, entre 2=3/2 e 2+3/2, isto é, valores de x tais que 0,5<x<3,5. Analise a discussão na reta real (imagem 3). Neste caso, a resposta pode ser fornecida sob a forma de intervalo: S=]0,5;1,5[.; 1,5[\).
+
+Exemplo 7
+
+Determine o conjunto-solução da equação
+
+
+∣x+1∣+∣x−5∣=a
+∣x+1∣+∣x−5∣=a
+Para:
+
+
+a=2
+a=3
+a=1

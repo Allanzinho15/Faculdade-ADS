@@ -1,0 +1,136 @@
+Encapsulamento: protegendo e organizando os dados das suas classes
+Descubra neste vídeo como o encapsulamento em Java protege os dados das suas classes, evitando alterações indesejadas e garantindo segurança. Aprenda também a usar modificadores de acesso, getters e setters corretamente.
+
+
+
+Conceito de encapsulamento
+
+
+
+Você já deve ter ouvido que “não se deve deixar as portas abertas”. Essa metáfora se aplica ao código orientado a objetos. Quando criamos classes com atributos visíveis e modificáveis por qualquer parte do sistema, abrimos portas para problemas difíceis de rastrear, como alterações indesejadas de valores ou comportamentos incoerentes.
+
+ 
+
+O encapsulamento é uma prática que consiste em proteger os atributos internos de uma classe, controlando seu acesso por meio de métodos próprios. É uma das bases da orientação a objetos e uma exigência constante em projetos reais.
+
+
+Modificadores de acesso: controlando quem vê o quê
+
+
+Em Java, podemos definir o nível de acesso de uma classe, atributo ou método usando determinados modificadores. A seguir, veja como o acesso é permitido de acordo com o modificador:
+
+
+public
+
+
+Acesso permitido por qualquer classe de qualquer pacote.
+
+
+private
+
+
+Acesso permitido só dentro da própria classe.
+
+
+protected
+
+
+Acesso permitido dentro da mesma classe, subclasses ou mesmo pacote.
+
+
+(sem nada)
+
+
+Acesso permitido apenas dentro do mesmo pacote.
+
+
+Ao tornar um atributo private, você impede que outras classes o modifiquem diretamente. Assim, qualquer mudança precisa passar por métodos específicos (getters e setters), que você controla.
+
+ 
+
+Exemplo com encapsulamento:
+
+
+Java (OpenJDK 13.0.1)
+public class ContaBancaria {
+    private double saldo;
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void depositar(double valor) {
+        if (valor > 0) {
+            saldo += valor;
+        }
+    }
+
+    public void sacar(double valor) {
+        if (valor > 0 && valor <= saldo) {
+            saldo -= valor;
+        }
+    }
+}
+
+Light Mode
+
+Copiar
+
+Perceba que saldo é um dado sensível. Ele não deve ser acessado de maneira direta. Por isso:
+
+ 
+
+getSaldo() permite consultar o valor.
+ 
+depositar() e sacar() impõem regras para alterar o saldo, garantindo segurança e integridade.
+
+Em sistemas reais, dados mal protegidos podem gerar falhas de negócio, inconsistências em banco de dados e brechas de segurança. Assim, ao encapsular de maneira correta, você define as fronteiras de cada classe e evita efeitos colaterais indesejados.
+
+
+Boas práticas de encapsulamento
+
+
+Para aplicar o encapsulamento de forma eficaz e tornar seu código seguro e organizado, siga estas diretrizes fundamentais:
+
+ 
+
+Declare atributos como private sempre que possível.
+ 
+Exponha apenas os métodos, de fato, necessários (ou seja, use o modificador public com parcimônia).
+ 
+Use getters e setters apenas quando fizer sentido para o domínio da aplicação.
+ 
+Valide os dados dentro dos métodos de modificação (ex: evitar valores negativos).
+
+Quando usar getter e setter
+
+
+Nem sempre você precisa expor um atributo com get e set. Em alguns casos, pode ser mais adequado disponibilizar apenas métodos de ação. Compare a seguir!
+
+ 
+
+a) Exemplo de um caso em que seria adequado:
+
+
+Java (OpenJDK 13.0.1)
+public void ativarConta() {
+    this.ativa = true;
+}
+
+Light Mode
+
+Copiar
+
+b) Exemplo de um caso em que seria desnecessário:
+
+
+Java (OpenJDK 13.0.1)
+public void setAtiva(boolean ativa) {
+    this.ativa = ativa;
+}
+
+Light Mode
+
+Copiar
+
+No último exemplo, qualquer parte do código poderia ativar ou desativar a conta sem nenhum controle. Isso pode ser perigoso em sistemas de negócio.

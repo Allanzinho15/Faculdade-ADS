@@ -1,0 +1,185 @@
+Intervalos
+Intervalos reais
+
+Este módulo ficará mais fácil e interessante se você começar assistindo a este vídeo. Vamos lá?
+
+
+
+No decorrer deste tema, os intervalos merecem destaque. Será necessário que você analise situações gráficas e localize os melhores momentos – os intervalos – para possíveis intervenções.
+
+
+A palavra intervalo nos remete a uma forma de medir.
+
+
+Quando consideramos o intervalo das 9 às 11 horas, temos todos os minutos, segundos e qualquer subdivisão de tempo compreendida nesse período.
+
+
+No contexto matemático, os intervalos são subconjuntos do conjunto dos números reais R.
+
+
+Exemplo
+Todos os valores entre 3 e 5.
+
+ 
+
+Isso significa, por exemplo, que o número irracional π(pi), que é aproximadamente 3,14, pertence a esse intervalo, bem como o número 4, pois eles são maiores que 3 e menores que 5.
+
+
+É claro que você pode usar a língua portuguesa para descrever tais conjuntos, mas a Matemática também é uma linguagem com características próprias, que serão abordadas ao longo deste tema.
+
+
+Conceitos
+
+Classificando intervalos na reta numéricas
+
+
+
+Intuitivamente, ao pensar em números reais, você deve imaginar uma reta infinita, onde cada ponto dela é um número real. Esse objeto será chamado de Reta Real e admite o símbolo R. Essa reta é organizada de forma crescente do menos infinito (−∞) ao mais infinito (+∞).
+
+
+
+Reta real
+
+Dessa forma, é importante destacar que:
+
+ 
+
+
+Um intervalo é um subconjunto dos números reais.
+
+
+Para uma representação gráfica desse conceito, adotaremos a seguinte notação:
+
+
+Bola fechada
+
+Indica que o extremo do intervalo está contido no conjunto.
+
+
+Bola aberta
+
+Indica, em nossa representação, que o extremo do intervalo não está contido no conjunto.
+
+
+Dessa forma, o intervalo, que pode ser visto na imagem a seguir, compreende todos os números reais de 1 até 6, excluindo o 1 e incluindo o 6.
+
+
+
+Transferindo a linguagem
+
+Quando tratarmos do conjunto dos números reais, os símbolos:
+
+
+
+Bola fechada
+
+É representada por:
+
+≥ (maior ou igual) e ≤ (menor ou igual) ou [ ] (colchetes)
+
+Se x ∈ R e −4 ≤ x ≤ 2 , isso significa que x pode ser maior que −4 ou igual a −4 e menor que 2 ou igual a 2; portanto, dentro do intervalo.
+
+ 
+
+Sobre a notação de conjuntos, podemos representar tal intervalo da seguinte forma: [−4,2] = {x ∈ R; −4 ≤ x ≤ 2} Ou seja, todos os números reais a partir do número −4 até o número 2. Um intervalo que possui as extremidades é chamado de intervalo fechado.
+
+
+
+Bola aberta
+
+É representada por:
+
+> (maior) e < (menor) ou ( ) (parênteses) ou ] colchetes [
+
+Se x ∈ R e −4 < x < 2 , x pode ser maior que −4 e menor que 2. Portanto, os extremos não fazem parte do conjunto.
+
+ 
+
+Sobre a notação de conjuntos, podemos representar tal intervalo da seguinte forma: [−4,2] = {x ∈ R; −4 < x < 2} Ou seja, todos os números reais depois do número −4 anteriores ao número 2. Um intervalo que não possui as extremidades é chamado de intervalo aberto.
+
+
+A amplitude de um intervalo é sempre definida por:
+
+
+Amplitude = LS − LI
+Onde:
+
+LS = Limite superior do Intervalo
+
+LI = Limite inferior do intervalo
+Amplitude = LS − LI
+Onde:
+
+LS = Limite superior do Intervalo
+
+LI = Limite inferior do intervalo
+Portanto, nos casos anteriores, podemos calcular a amplitude do intervalo subtraindo a extremidade mais à direita da extremidade mais à esquerda:
+
+
+2 − (−4) = 6
+2 − (−4) = 6
+Isto é, nos dois casos, o intervalo possui a amplitude de 6 unidades.
+
+
+Você deve estar se perguntando:
+
+
+Mesmo com os intervalos abertos, onde as extremidades não estão incluídas, a amplitude é a mesma dos intervalos fechados?
+
+
+A resposta é sim!
+
+
+Isso acontece porque, mesmo nos intervalos abertos, é possível pensar que podemos ficar bem perto do limite aberto. Na verdade, podemos ficar “infinitamente” perto de um limite aberto. Logo, a amplitude (também traduzida na figura como o comprimento do trecho da reta) será igual se o limite for fechado ou aberto.
+
+
+Agora, vamos entender as semirretas.
+
+
+Exemplo
+x ∈ R e x ≥ 6
+
+ 
+
+x pode ser maior que 6 ou igual a 6 e, portanto, estará dentro do intervalo.
+
+
+
+Intervalo
+
+Sobre a notação de conjuntos, podemos representar tal intervalo da seguinte forma:`
+
+
+(−∞, 6) = {x ∈ R; x < 6}
+(−∞, 6) = {x ∈ R; x < 6}
+Ou seja, todos os números reais a partir do número 6. Note que uma semirreta pode possuir, no máximo, uma extremidade e, neste caso, diremos que a semirreta é fechada.
+
+
+Exemplo
+x ∈ R e x < 6
+
+ 
+
+isso significa que x pode ser apenas menor que 6, e nunca igual a 6; portanto, 6 não está dentro do intervalo.
+
+
+
+6 não está dentro do intervalo.
+
+Ou seja, todos os números reais antes do número 6. A semirreta que não possui a sua extremidade é denominada semirreta aberta.
+
+
+Note que uma semirreta tem a amplitude infinita.
+
+
+Vamos aplicar o que estudamos até agora?
+
+Exemplos onde podemos perceber intervalos à nossa volta
+
+
+
+Designaremos os valores de 1 até 12 como os meses do ano, 1 para janeiro, 2 para fevereiro, e assim por diante, até chegarmos a 12 para dezembro.
+
+
+
+A partir das informações apresentadas até aqui, tente responder a questão a seguir.

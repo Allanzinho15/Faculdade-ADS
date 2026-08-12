@@ -1,0 +1,54 @@
+Raízes ou zeros
+As raízes ou zeros de uma função f serão os valores no eixo OX, que também fazem parte da sua função/tabela ( x , y ), onde y = f(x). Isto é, correspondem aos valores x que são associados ao valor zero, ( x , 0 ).
+
+
+Você, provavelmente, encontrará a seguinte representação nos livros de cálculo:são os valores de x tais que f(x) = 0.
+
+
+Graficamente, são os valores da função que se encontram sobre a reta horizontal (eixo OX).
+
+
+Vejamos alguns exemplos a seguir:
+
+
+
+Exemplo 1
+
+Descreveremos o conjunto das raízes apresentadas no gráfico das funções a seguir.
+
+ 
+
+O gráfico das funções a serem consideradas está em roxo.
+
+ 
+
+Exemplo 1.
+
+ 
+
+Neste gráfico, podemos perceber que o gráfico da função nunca toca o eixo OX.
+
+ 
+
+Esse tipo de gráfico é comumente conhecido como gráfico de uma função constante.
+
+ 
+
+Sendo assim, o conjunto de todas as suas raízes é vazio.
+
+
+
+Exemplo 2
+
+As raízes de uma função são os valores da primeira coordenada, cujo gráfico da função f está sobre o eixo OX.
+
+ 
+
+Exemplo 2.
+
+ 
+
+Neste caso, temos uma única raiz, x = 1.
+
+
+Agora que você já compreendeu os exemplos, analise os gráficos a seguir e responda.

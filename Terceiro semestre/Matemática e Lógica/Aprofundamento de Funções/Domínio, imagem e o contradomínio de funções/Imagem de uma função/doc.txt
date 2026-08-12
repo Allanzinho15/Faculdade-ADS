@@ -1,0 +1,232 @@
+Imagem de uma função
+Descubra neste vídeo como podemos encontrar o conjunto imagem de uma função por meio da inversa da função.
+
+
+
+Imagine uma função como uma máquina que transforma números. Você insere um valor (a entrada, pertencente ao domínio) e a máquina o processa, produzindo um novo valor (a saída, que faz parte da imagem). A imagem de uma função é o conjunto de todos os possíveis valores de saída que a função pode gerar. Em outras palavras, é o conjunto de todos os valores que a função "atinge".
+
+ 
+
+Para entender melhor, vamos explorar o conceito de intervalo de existência da imagem, que descreve os valores mínimos e máximos que a imagem pode assumir. Uma forma poderosa de determinar a imagem é através da função inversa. A ideia é simples: se a função original leva o domínio à imagem, a inversa faz o caminho contrário, levando a imagem de volta ao domínio. Vamos aprender isso por meio de exemplos:
+
+
+Exemplo 1 - Função afim
+
+
+Considere a função afim f(x) = 2x + 1. Para encontrar sua inversa, vamos primeiro escrever a função na forma de equação, trocando f(x) por y:
+
+
+y=2x+1
+y=2x+1
+Agora, vamos trocar x por y:
+
+
+x=2y+1
+x=2y+1
+Por fim, vamos isolar y:
+
+
+2y=x−1
+y= 
+2
+x−1
+​
+ 
+​
+ 
+2y=x−1
+y= 
+2
+x−1
+​
+ 
+​
+ 
+Y é a função inversa f 
+−1
+ (x)= 
+2
+x−1
+​
+ , ou seja: a inversa de f(x) é f 
+−1
+ (x)= 
+2
+x−1
+​
+ .
+
+
+Agora que conhecemos a inversa da função, vamos encontrar o domínio da função inversa. Perceba que não temos nenhuma restrição em f 
+−1
+ (x)= 
+2
+x−1
+​
+ . Podemos usar todos os números positivos, todos os negativos, e o zero também pode fazer parte. Então, uma vez que não há restrição, podemos definir o domínio de f 
+−1
+ (x), como todos os reais. Logo, nesse caso, a imagem de f(x) são todos os números reais, ou seja:
+
+ 
+
+
+Im={f(x)∈R}
+Im={f(x)∈R}
+Isso significa dizer que o conjunto de números que pertencem à imagem estão no intervalo de: ]−∞,+∞[.
+
+
+ Exemplo 2 - Funç 
+a
+˜
+ o  
+x
+1
+​
+  : lidando com restriç 
+o
+˜
+ es 
+
+
+Agora, vamos explorar a função f(x)= 
+x
+1
+​
+ . Seguindo o mesmo processo para encontrar a inversa, vamos escrever a função na forma de equação:
+
+
+y= 
+x
+1
+​
+ 
+y= 
+x
+1
+​
+ 
+Agora, vamos trocar a posição de x e y:
+
+
+x= 
+y
+1
+​
+ 
+x= 
+y
+1
+​
+ 
+Por fim, vamos isolar y:
+
+
+y= 
+x
+1
+​
+ 
+y= 
+x
+1
+​
+ 
+A inversa é f 
+−1
+ (x)= 
+x
+1
+​
+ . Aqui, o domínio da inversa é todos os números reais exceto o zero (não podemos dividir por zero). Consequentemente, a imagem de f(x)= 
+x
+1
+​
+  também são todos os reais, exceto o zero, representado por ]−∞,0[U]0,+∞[.
+
+
+Exemplo 3 - Função módulo 25
+
+
+Finalmente, vamos analisar a imagem da função módulo: f(x)=∣x∣. Para encontrar a inversa, precisamos considerar que calcular o módulo de x é fazer o seguinte:
+
+
+f(x)= 
+(x) 
+2
+ 
+​
+ 
+f(x)= 
+(x) 
+2
+ 
+​
+ 
+Perceba que calcular o módulo de -5 é elevar -5 ao quadrado e depois tirar sua raiz quadrada, ou seja:
+
+
+(−5) 
+2
+ 
+​
+ = 
+25
+​
+ =5
+(−5) 
+2
+ 
+​
+ = 
+25
+​
+ =5
+Perceba, que para realizar a análise, existe uma pegadinha nessa função. Isso porque o domínio dessa função permite todos os reais, todavia, a imagem não é de todos os reais. Como assim? Perceba que, se entrarmos com um número negativo no lugar de x, o resultado será positivo, por exemplo:
+
+
+f 
+−1
+ (−3)= 
+(−3) 
+2
+ 
+​
+ = 
+9
+​
+ =3
+f 
+−1
+ (−3)= 
+(−3) 
+2
+ 
+​
+ = 
+9
+​
+ =3
+Então, como na aplicação do número negativo, isso nos remete a um valor positivo, a imagem estará definida somente para os reais positivos, ou seja:
+
+
+Im={f(x)∈R/f(x)≥0}
+Im={f(x)∈R/f(x)≥0}
+Vamos olhar para o gráfico para entender melhor:
+
+
+
+Gráfico: Funç 
+a
+˜
+ o f(x)=∣x∣. 
+
+Perceba que, para valores negativos de x, temos valores de y positivos, e para valores de x positivos, temos valores de y positivos, e o zero também participa da função.
+
+
+ Imagem da funç 
+a
+˜
+ o f(x)=∣x∣. 
+
+
+Agora que você já leu o exemplo e a solução, vamos concretizar esse aprendizado neste vídeo. Confira!

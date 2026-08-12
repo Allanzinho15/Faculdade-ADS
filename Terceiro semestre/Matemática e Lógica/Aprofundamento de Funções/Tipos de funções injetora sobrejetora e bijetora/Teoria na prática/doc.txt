@@ -1,0 +1,25 @@
+Teoria na prática
+Imagine que sua agência de marketing foi contratada para uma campanha publicitária inovadora voltada para o público de meia-idade (45 a 65 anos). O objetivo ambicioso é alcançar 5 milhões de pessoas desse grupo demográfico em apenas 3 dias utilizando anúncios on-line. A equipe de analistas de dados desenvolveu um modelo matemático para prever o alcance da campanha ao longo do tempo, baseado em uma função que leva em conta a viralização do conteúdo e o investimento em impulsionamento.
+
+ 
+
+A função que modela o alcance de pessoas da campanha em função do tempo x (em dias) é dada por:
+
+
+f(x)=2×10 
+2x
+ 
+f(x)=2×10 
+2x
+ 
+Considerando o contexto do problema, defina o domínio, o contradomínio e a imagem, e indique se a função f(x) é injetora sobrejetora ou bijetora. Por fim, diga se a campanha de marketing teve sua meta alcançada.
+
+ 
+
+Após finalizar o caso, acompanhe a resolução no vídeo a seguir!
+
+
+Analisando uma função exponencial
+
+
+Veja, neste vídeo, a aplicação de uma função exponencial em uma situação real.

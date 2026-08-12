@@ -1,0 +1,18 @@
+Função bijetora
+É uma função que é injetora e sobrejetora ao mesmo tempo. Ou seja, para cada elemento da imagem, pode haver somente um elemento do domínio, e o conjunto imagem precisa ser igual ao conjunto contradomínio. Demonstrando no diagrama de balõezinhos, temos:
+
+
+
+Representação de uma função bijetora.
+
+Confira mais exemplos!
+
+ 
+
+Exemplo 1: Vamos considerar a função afim f(x)=4x. Perceba que essa é uma função afim do tipo f(x)=ax+b, em que b=0. O gráfico dessa função nos mostra o seguinte:
+
+
+
+Função afim f(x)=4x.
+
+Perceba que o domínio pertence a todos os reais, e a imagem também, uma vez que se trata de uma função afim. Para cada ponto do domínio, temos um ponto de imagem diferente, o que nos faz ver que a função é injetora. Além disso, o conjunto imagem é igual ao conjunto contradomínio, que é o conjunto dos números reais, logo, ela também é sobrejetora. Isso faz dessa função uma função bijetora.

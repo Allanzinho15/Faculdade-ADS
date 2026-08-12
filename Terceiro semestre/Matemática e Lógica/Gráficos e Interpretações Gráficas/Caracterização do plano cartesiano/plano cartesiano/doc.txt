@@ -1,0 +1,87 @@
+Plano cartesiano
+Como posicionar pontos no plano cartesiano
+
+Este módulo ficará mais fácil e interessante se você começar assistindo ao presente vídeo.
+
+
+
+Na vida cotidiana, muitas quantidades mensuráveis dependem de uma ou mais variáveis. Por exemplo: o crescimento das plantas depende da luz solar e das chuvas; a velocidade depende da distância percorrida e do tempo gasto; a tensão elétrica depende da corrente e resistência.
+
+
+O plano cartesiano é uma das formas mais eficientes para representar o relacionamento entre duas ou mais variáveis.
+
+
+Saiba Mais
+O plano cartesiano foi criado com o objetivo inicial de marcar pontos no plano pelo matemático e filósofo René Descartes (1596-1650).
+
+
+Neste módulo, apresentaremos algumas ideias de como podemos fazer uso dessa ferramenta.
+
+
+Conceitos do plano cartesiano
+
+Entendendo o plano cartesiano, marcando pontos com GeoGebra
+
+
+O plano cartesiano apresenta duas linhas numéricas: uma horizontal, da esquerda para a direita, e outra vertical, de baixo para cima.
+
+
+
+Exemplo de plano cartesiano
+
+Utiliza-se a letra x para simbolizar os valores sobre a reta horizontal e a letra y para simbolizar os valores sobre a reta vertical.
+
+
+ 
+
+Observe que:
+
+
+ 
+
+À medida que x aumenta, o ponto se move mais para a direita. Quando x diminui, o ponto se move mais para a esquerda.
+
+
+ 
+
+À medida que y aumenta, o ponto se move mais para cima. Quando y diminui, o ponto se move mais para baixo.
+
+
+É importante ressaltar que as retas horizontal e vertical também são chamadas, respectivamente, de "abscissa" e "ordenada”. O ponto ( 0,0 ) é chamado de “origem”.
+
+
+As coordenadas são sempre escritas em determinada ordem. A coordenada horizontal vem primeiro. Então, em seguida, vem a coordenada vertical. Isso é chamado de par ordenado.
+
+Atenção
+Os números são separados por vírgula e, em torno deles, ficam os parênteses.
+
+
+Como exemplo vamos marcar os pontos no plano cartesiano: (1, −2); (2, 4); (−3, 0); (−1, −2); (0, 5). Em primeiro lugar, precisamos montar uma tabela com os pontos dados:
+
+
+x 	y 
+1 	−2 
+2 	4 
+−3 	0 
+−1 	−2 
+0 	5 
+Pares ordenados para pontos no plano cartesiano.
+Marcelo Leonardo dos Santos Rainha
+
+
+É importante perceber que a notação se parece com a de intervalo aberto que aprendemos no Módulo 1. Portanto, você deve se manter atento ao que é pedido no enunciado de cada questão.
+
+
+Agora, marcaremos as coordenadas no plano cartesiano. Sendo a primeira na reta horizontal, abscissa, e a segunda na vertical, ordenada.
+
+
+
+Pontos no plano cartesiano
+
+Vejamos agora um vídeo sobre a aplicação do conceito de plano cartesiano em robótica.
+
+
+Aplicação do plano cartesiano na robótica
+
+
+Agora, vamos verificar se você entendeu por meio de uma atividade?

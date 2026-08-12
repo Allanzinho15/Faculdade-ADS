@@ -1,0 +1,55 @@
+Agrupamento especial sem ordem
+Combinação com repetição
+
+O agrupamento combinações simples são caracterizados por serem formados com p objetos, a partir de n objetos disponíveis, em que a ordem não é relevante e não há repetição de nenhum objeto no mesmo agrupamento.
+
+
+Quando permitimos que objetos em um mesmo agrupamento possam ser repetidos, temos as chamadas combinações com repetição de n objetos tomados p a p.
+
+
+Exemplo 3
+
+Suponha que uma loja possua tabletes (barras) de chocolate de três marcas diferentes e você deseja comprar oito tabletes. De quantas formas diferentes podem ser escolhidos os tabletes em sua compra?
+
+
+A combinação com objetos repetidos!
+
+Neste vídeo, você verá a solução e explicação do exemplo anterior.
+
+
+
+O exemplo anterior mostra que a invenção dos diversos tipos de agrupamentos e as expressões para o cálculo do quantitativo de cada um deles é, na prática, decorrente diretamente de estratégias e do princípio da multiplicação. Portanto, é perfeitamente possível (e diríamos, desejável) resolvermos problemas de contagem sem sabermos o que são arranjos, permutações e combinações!
+
+
+Síntese dos tipos de agrupamento
+
+Explicitamos, a seguir, as principais categorias de agrupamentos abordados, bem como as notações de seus quantitativos e as fórmulas associadas.
+
+
+É importante perceber que, dentre todos esses agrupamentos estudados, apenas a permutação simples e a combinação simples são, de fato, relevantes para a solução de problemas de contagem. Isso porque os princípios da adição e da multiplicação resolvem, por si só, praticamente qualquer problema de contagem.
+
+
+
+Arranjos
+
+Permutações
+
+Combinações
+Esse tipo de agrupamento possui os seguintes subtipos:
+
+Simples: A 
+p
+n
+​
+ =n(n−1)…(n−p+1)= 
+(n−p)!
+n!
+​
+ 
+
+Com repetição: AR 
+p
+n
+​
+ =n 
+p

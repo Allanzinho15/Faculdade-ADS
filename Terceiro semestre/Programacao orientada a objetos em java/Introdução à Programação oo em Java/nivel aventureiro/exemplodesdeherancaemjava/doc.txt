@@ -1,0 +1,361 @@
+Exemplos de herança em Java
+Compreenda neste vídeo como a herança em Java ajuda a criar sistemas organizados e reutilizáveis. A partir de cenários reais, como locadoras de veículos e lojas virtuais, aprenda a estruturar superclasses e especializar comportamentos, promovendo clareza, escalabilidade e manutenção eficiente no desenvolvimento orientado a objetos.
+
+
+
+Vamos agora exercitar os conceitos de herança! Cada cenário foi escolhido para refletir problemas comuns no desenvolvimento de sistemas, em que a herança pode trazer clareza, reutilização de código e estrutura mais coesa. 
+
+
+Veículos em uma locadora
+
+
+
+Imagine que você está desenvolvendo um sistema para uma locadora de veículos. Eles possuem dados em comum (como marca, modelo e placa), mas também características específicas conforme o tipo (carro, moto ou caminhão).
+
+ 
+
+A classe base Veiculo armazena os dados que todos os veículos compartilham. Note que o atributo placa é privado, e os demais são protegidos para permitir acesso controlado pelas subclasses. Além disso, o método getDescricao() pode ser reaproveitado por todas as subclasses. Confira!
+
+ 
+
+Classe Base:
+
+
+Java (OpenJDK 13.0.1)
+
+public class Carro extends Veiculo {
+    private int numeroPortas;
+
+    public Carro(String marca, String modelo, String placa, int numeroPortas) {
+        super(marca, modelo, placa);
+        this.numeroPortas = numeroPortas;
+    }
+
+    public int getNumeroPortas() {
+        return numeroPortas;
+    }
+}
+
+Light Mode
+
+Copiar
+
+A subclasse Carro herda os atributos da classe Veiculo e adiciona novo atributo numeroPortas. A palavra-chave super é usada para chamar o construtor da superclasse.
+
+ 
+
+Subclasse Carro:
+
+
+Java (OpenJDK 13.0.1)
+
+public class Moto extends Veiculo {
+    private boolean possuiBaú;
+
+    public Moto(String marca, String modelo, String placa, boolean possuiBaú) {
+        super(marca, modelo, placa);
+        this.possuiBaú = possuiBaú;
+    }
+
+    public boolean isPossuiBaú() {
+        return possuiBaú;
+    }
+}
+
+Light Mode
+
+Copiar
+
+De forma semelhante, a subclasse Moto adiciona um atributo booleano indicando se possui baú e aproveita o construtor da superclasse.
+
+ 
+
+Subclasse Moto:
+
+
+Java (OpenJDK 13.0.1)
+public class TesteLocadora {
+    public static void main(String[] args) {
+        
+        Carro carro = new Carro("Fiat", "Argo", "ABC-1234", 4);
+        Moto moto = new Moto("Honda", "CG 160", "XYZ-5678", true);
+
+        System.out.println(carro.getDescricao());
+        System.out.println("Portas: " + carro.getNumeroPortas());
+        
+        System.out.println(moto.getDescricao());
+        System.out.println("Possui baú: " + moto.isPossuiBaú());
+    }
+}
+
+Light Mode
+
+Copiar
+
+Uso: classe de execução com o método main:
+
+
+Java (OpenJDK 13.0.1)
+public class Produto {
+    protected String nome;
+    protected double preco;
+
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+
+    public String getInfo() {
+        return nome + " - R$" + preco;
+    }
+}
+
+Light Mode
+
+Copiar
+
+Esse exemplo ilustra como um sistema pode ser construído com classes reutilizáveis e especializadas, o que facilita a manutenção e a leitura do código.
+
+
+Produtos em um e-commerce
+
+
+Vamos modelar um sistema para um e-commerce com produtos variados. A classe base Produto contém os atributos nome e preço, que são comuns a todos os produtos.
+
+ 
+
+Classe Produto:
+
+
+Java (OpenJDK 13.0.1)
+
+public class Livro extends Produto {
+    private String autor;
+    private String isbn;
+
+    public Livro(String nome, double preco, String autor, String isbn) {
+        super(nome, preco);
+        this.autor = autor;
+        this.isbn = isbn;
+    }
+
+    public String getDetalhes() {
+        return getInfo() + " | Autor: " + autor + " | ISBN: " + isbn;
+    }
+}
+
+Light Mode
+
+Copiar
+
+A subclasse Livro herda de Produto e acrescenta autor e ISBN. O método getDetalhes() reaproveita o método da superclasse e adiciona as novas informações.
+
+ 
+
+Subclasse Livro:
+
+
+Java (OpenJDK 13.0.1)
+public class Eletronico extends Produto {
+    private String fabricante;
+    private int garantiaMeses;
+
+    public Eletronico(String nome, double preco, String fabricante, int garantiaMeses) {
+        super(nome, preco);
+        this.fabricante = fabricante;
+        this.garantiaMeses = garantiaMeses;
+    }
+
+    public String getDetalhes() {
+        return getInfo() + " | Fabricante: " + fabricante + " | Garantia: " + garantiaMeses + " meses";
+    }
+}
+
+Light Mode
+
+Copiar
+
+A subclasse Eletronico adiciona o fabricante e o tempo de garantia. Note o uso da herança e o reaproveitamento do método da superclasse!
+
+ 
+
+Subclasse Eletronico:
+
+
+Java (OpenJDK 13.0.1)
+
+
+Light Mode
+
+Copiar
+
+Uso: classe de execução com o método main:
+
+
+Java (OpenJDK 13.0.1)
+public class TesteEcommerce {
+    public static void main(String[] args) {
+        
+        Livro livro = new Livro("Clean Code", 89.90, "Robert C. Martin", "9780132350884");
+        Eletronico celular = new Eletronico("Smartphone X", 1999.00, "TechCorp", 12);
+
+        System.out.println(livro.getDetalhes());
+        System.out.println(celular.getDetalhes());
+    }
+}
+
+Light Mode
+
+Copiar
+
+O exemplo evidencia o uso de herança para especializar objetos conforme o domínio do problema, mantendo uma estrutura comum que permite reaproveitamento e extensibilidade.
+
+ 
+
+A saída esperada é:
+
+
+Clean Code - R$89.9 | Autor: Robert C. Martin | ISBN: 9780132350884
+
+ 
+
+Smartphone X - R$1999.0 | Fabricante: TechCorp | Garantia: 12 meses
+
+
+Heróis de Eldoria: estruturando os tipos de personagens
+
+
+Vamos modelar a estrutura básica dos heróis do nosso jogo. Todos os personagens possuem características em comum, como nome e nível. A partir dessa base, criaremos classes mais específicas, como Guerreiros e Magos, que adicionam seus próprios atributos.
+
+
+Classe Personagem
+
+
+A classe base Personagem armazena os dados que todos os heróis compartilham. Ela também possui um método para retornar uma descrição básica, que será reutilizado pelas subclasses.
+
+
+Java (OpenJDK 13.0.1)
+
+public class Personagem {
+    protected String nome;
+    protected int nivel;
+
+    public Personagem(String nome, int nivel) {
+        this.nome = nome;
+        this.nivel = nivel;
+    }
+    //Método base que retorna a informação comum a todos os personagens
+    public String getDescricaoBase() {
+        return "Nome: " + nome + " | Nível: " + nivel;
+    }
+}
+
+Light Mode
+
+Copiar
+
+Subclasse Guerreiro
+
+
+Herda as características da classe Personagem e adiciona um novo atributo específico: forca. Ela também possui um método que reutiliza a descrição da classe pai e adiciona sua própria informação.
+
+
+Java (OpenJDK 13.0.1)
+public class Guerreiro extends Personagem {
+
+    private int forca;
+
+    public Guerreiro(String nome, int nivel, int forca) {
+        super(nome, nivel);    // Chama o construtor da classe Personagem
+        this.forca = forca;
+
+    }
+    // Este método utiliza o método da classe pai para construir sua descrição
+    public String exibirDescricaoCompleta() {
+        // Reutiliza getDescricaoBase() e adiciona a informação específica
+        return getDescricaoBase() + " | Força: " + forca;
+    }
+}
+
+Light Mode
+
+Copiar
+
+Subclasse Mago
+
+
+Herda de Personagem e adiciona o atributo inteligencia, criando um método de descrição que também aproveita a estrutura da classe pai. Veja!
+
+
+Java (OpenJDK 13.0.1)
+public class Mago extends Personagem {
+    private int inteligencia;
+    public Mago(String nome, int nivel, int inteligencia) {
+        super(nome, nivel); // Chama o construtor da classe Personagem
+        this.inteligencia = inteligencia;
+    }
+    // Este método também reutiliza o método da classe pai
+    public String exibirDescricaoCompleta() {
+        return getDescricaoBase() + " | Inteligência: " + inteligencia;
+    }
+}
+public class Arena {
+    public static void main(String[] args) {
+        Guerreiro guerreiro = new Guerreiro("Arthus", 10, 85);
+        Mago mago = new Mago("Elenara", 12, 95);
+
+        // Exibe as informações completas de cada herói
+        System.out.println(guerreiro.exibirDescricaoCompleta());
+        System.out.println(mago.exibirDescricaoCompleta());
+    }
+}
+
+Light Mode
+
+Copiar
+
+Saída esperada pare este exemplo:
+
+
+Nome: Arthus | Nível: 10 | Força: 85
+
+Nome: Elenara | Nível: 12 | Inteligência: 95
+
+
+Passos para execução e teste dos exemplos
+
+
+Para organizar projetos em Java em ambientes de desenvolvimento (IDEs), como Eclipse, IntelliJ ou VS Code, confira o passo a passo:
+
+ 
+
+1. Crie um arquivo para cada classe de modelo:
+
+ 
+
+[NomeDaClasseBase].java
+
+[NomeDaSubclasse1].java
+
+[NomeDaSubclasse2].java
+
+ 
+
+2. Crie um arquivo final para a execução, por exemplo, Teste.java.
+ 
+
+3. Crie o método main e cole o código do bloco "Uso:" dentro de Teste.java.
+
+ 
+
+4. Compile e execute o arquivo Teste.java.
+
+ 
+
+A aplicação prática da herança permite que sistemas sejam construídos com maior organização e reaproveitamento de código. A definição clara de superclasses e subclasses evita redundância e facilita futuras manutenções. Assim, ao estruturar seu código com hierarquias bem definidas, você se aproxima das boas práticas da orientação a objetos, um diferencial importante para atuação em projetos reais de software. Ao compreender e exercitar esses exemplos, você está mais preparado para modelar soluções robustas e alinhadas às necessidades do mercado.
+
+
+O que você achou do conteúdo?
+
+Relatar problema
+

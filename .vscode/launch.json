@@ -1,7 +1,20 @@
 {
     "version": "0.2.0",
     "configurations": [
-    
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "nivelnovato.Main",
+            "projectName": "Faculdade-ADS_28a2d6b5"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "horadecodar.Main",
+            "projectName": "Faculdade-ADS_28a2d6b5"
+        },
         {
             "name": "(gdb) Launch",
             "type": "cppdbg",

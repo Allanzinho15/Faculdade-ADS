@@ -1,0 +1,69 @@
+Funções sobrejetoras
+Função sobrejetora
+
+
+Assista ao vídeo para entender o que é uma função sobrejetora e conferir exemplos práticos que ajudam a identificar se uma função possui ou não essa característica.
+
+
+
+
+Imagine lançar uma campanha de marketing e descobrir que ela só alcançou uma parte do mercado (público-alvo). Frustrante, não? No universo matemático, as funções também lidam com essa questão de "alcance": como garantir que todos os elementos de um conjunto sejam "atingidos" por uma regra específica? É aqui que entra o conceito de função sobrejetora.
+
+ 
+
+Afinal, o que é uma função sobrejetora?
+
+ 
+
+Imagine ter um conjunto de “clientes em potencial” (domínio) e um conjunto de "benefícios do seu produto" (contradomínio). Uma função sobrejetora garante que cada benefício seja relevante para pelo menos um cliente em potencial. Em outras palavras, ninguém fica de fora! A imagem da função (os benefícios realmente relevantes) coincide perfeitamente com o contradomínio (todos os benefícios do produto). Formalmente, uma função f:A→B é sobrejetora se, para cada elemento b em B (contradomínio), existe pelo menos um aemA (domínio), tal que f(a)=b.
+
+ 
+
+Em outras palavras, quando o conjunto imagem é igual ao conjunto contradomínio, temos uma função sobrejetora. Vamos ver o diagrama com os balõezinhos para entender melhor:
+
+
+
+Representação de uma função sobrejetora.
+
+Nenhum elemento do conjunto B ficou sem ligação, logo, o conjunto imagem é igual ao conjunto contradomínio e ambos são iguais ao conjunto B.
+
+ 
+
+Agora, vamos explorar alguns exemplos para consolidar esse conceito.
+
+
+Exemplo 1
+
+
+Para entender o comportamento de uma função sobrejetora, vamos analisar o comportamento de uma função afim do tipo f(x)=ax+b. . A função a ser analisada é: f(x)=3x−5.
+
+ 
+
+Para analisar se o seu contradomínio é igual à sua imagem, observe o gráfico.
+
+
+
+
+Gráfico: Função afim f(x)=3x−5.
+
+Perceba que os domínios da função são todos os reais e, como já vimos, as imagens de qualquer função afim, também são todos os reais. Logo, nesse caso, o conjunto contradomínio é igual ao conjunto imagem, o que faz essa função ser sobrejetora.
+
+
+Agora, vamos falar de uma função que não apresenta o comportamento sobrejetor: a função quadrática.
+ 
+
+
+Exemplo 2
+
+
+Vamos analisar a função quadrática f(x)=x 
+2
+ . Observe o gráfico!
+
+
+
+Gráfico: Função quadrática f(x)=x 
+2
+ .
+
+Perceba que a imagem da função está totalmente acima do eixo x, ou seja, a imagem pertence somente aos reais positivos. Por conta disso, essa função não é sobrejetora, pois os valores negativos do contradomínio não interagem com os elementos do

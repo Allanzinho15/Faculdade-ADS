@@ -1,0 +1,180 @@
+Herança – aspectos elementares de herança e visibilidade
+Neste vídeo, explicamos como a herança em Java permite reutilizar atributos e métodos entre classes, tornando seu código mais limpo e escalável. Você vai aprender a construir hierarquias, aplicar visibilidade adequada e usar o construtor super para promover organização e evitar redundâncias em sistemas orientados a objetos. Não perca!
+
+
+
+Conceito de herança
+
+
+Um dos principais fundamentos da programação orientada a objetos (POO) é a herança, que atua na construção de sistemas mais organizados, reutilizáveis e de fácil manutenção. Em Java, a herança é implementada por meio da palavra-chave extends e permite que uma classe herde atributos e métodos de outra. Essa capacidade de especializar ou reaproveitar comportamentos permite a escalabilidade de sistemas complexos.
+
+
+
+Imagine um cenário em que você esteja desenvolvendo um sistema de gerenciamento de pessoas dentro de uma organização. Muitas entidades que você irá modelar compartilham características em comum, como nome, CPF ou data de nascimento. Assim, em vez de duplicar esses atributos em cada classe, você pode criar uma classe mais genérica, chamada Pessoa, e fazer com que outras classes herdem suas propriedades. Isso evita redundância e fortalece a coesão entre os elementos do sistema.
+
+ 
+
+Considere o seguinte exemplo:
+
+
+Java (OpenJDK 13.0.1)
+
+public class Pessoa {
+    private String nome;
+    private String cpf;
+
+    public Pessoa(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getCpf() {
+        return cpf;
+    }
+}
+
+Light Mode
+
+Copiar
+
+Essa é a classe base. A seguir, criaremos uma subclasse Aluno, que herda os atributos nome e CPF e adiciona um novo atributo específico: matrícula. Veja!
+
+
+Java (OpenJDK 13.0.1)
+
+public class Aluno extends Pessoa {
+    private String matricula;
+
+    public Aluno(String nome, String cpf, String matricula) {
+        super(nome, cpf);
+        this.matricula = matricula;
+    }
+
+    public String getMatricula() {
+        return matricula;
+    }
+}
+
+Light Mode
+
+Copiar
+
+A palavra-chave super é utilizada para chamar o construtor da superclasse (Pessoa). Isso permite que os atributos herdados sejam, de fato, inicializados.
+
+ 
+
+Ao utilizar esse modelo, você pode, por exemplo, instanciar objetos do tipo Aluno e acessar seus dados de forma organizada:
+
+
+Aluno aluno = new Aluno("João Silva", "123.456.789-00", "2021001");
+
+System.out.println("Nome: " + aluno.getNome());
+
+System.out.println("CPF: " + aluno.getCpf());
+
+System.out.println("Matrícula: " + aluno.getMatricula());
+
+
+Esse modelo de reutilização de código é um exemplo claro de como a herança contribui para o desenvolvimento de sistemas mais limpos, nos quais o foco é na manutenção e evolução do código.
+
+
+Herança e visibilidade
+
+
+Os modificadores de acesso ajudam a entender a herança em Java. Eles determinam o nível de visibilidade dos atributos e métodos de uma classe e influenciam o que é ou não herdado pelas subclasses.
+
+ 
+
+Os três principais modificadores são:
+
+
+public
+
+
+O membro é acessível de qualquer parte do código, inclusive por outras classes em outros pacotes.
+
+
+protected
+
+
+O membro é acessível pelas subclasses, mesmo que estejam em pacotes diferentes.
+
+
+private
+
+
+O membro é acessível apenas dentro da própria classe em que foi declarado. Ou seja, não é herdado pelas subclasses.
+
+
+Considere este exemplo:
+
+
+Java (OpenJDK 13.0.1)
+public class Pessoa {
+    protected String nome;
+    private String cpf;
+
+    public Pessoa(String nome, String cpf) {
+        this.nome = nome;
+        this.cpf = cpf;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+}
+
+public class Funcionario extends Pessoa {
+    private double salario;
+
+    public Funcionario(String nome, String cpf, double salario) {
+        super(nome, cpf);
+        this.salario = salario;
+    }
+
+    public void mostrarDados() {
+        System.out.println("Nome: " + nome); // Acesso permitido (protected)
+        // System.out.println("CPF: " + cpf); // Erro: cpf é private em Pessoa
+    }
+}
+
+Light Mode
+
+Copiar
+
+No caso visto, a variável nome é acessada dentro da subclasse Funcionario, porque foi declarada como protected. Já o CPF, mesmo sendo parte da superclasse, não pode ser acessado, pois está como private. Isso demonstra a importância de compreender a visibilidade ao projetar hierarquias.
+
+ 
+
+Recomendações práticas:
+
+ 
+
+Sempre que possível, mantenha os atributos como private e ofereça acesso por meio de getters e setters. Isso promove encapsulamento, outro pilar da POO.
+ 
+Use protected com cautela, sobretudo, em projetos maiores, pois pode dificultar o rastreamento de dependências entre classes.
+ 
+Use public apenas quando a visibilidade ampla for, de fato, necessária.
+
+Hierarquia de herança
+
+
+Em Java, uma classe pode estender apenas outra classe (herança simples). Isso evita ambiguidade e torna o modelo de herança mais previsível. Ainda assim, você pode criar estruturas hierárquicas complexas com vários níveis. Veja!
+
+
+public class Pessoa {}
+
+public class Funcionario extends Pessoa {}
+
+public class Gerente extends Funcionario {}
+
+
+Com a cadeia vista, Gerente herda tanto os atributos e métodos de Funcionario quanto os de Pessoa, promovendo reutilização e especialização.
+
+ 
+
+Por fim, entender de modo correto herança em Java contribui para o desenvolvimento de sistemas modulares, reutilizáveis e escaláveis. Mais do que um recurso de linguagem, trata-se de uma estratégia de projeto que aproxima o código da realidade, promovendo legibilidade, manutenção e expansão futuras. 

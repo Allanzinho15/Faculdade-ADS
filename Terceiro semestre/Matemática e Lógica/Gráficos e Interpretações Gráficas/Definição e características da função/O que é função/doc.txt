@@ -1,0 +1,262 @@
+O que é função?
+Evolução do conceito histórico de funções
+
+
+A palavra função apareceu pela primeira vez em um artigo de Gottfried Leibniz, em 1692. Ele chamou de função as quantidades geométricas variáveis relacionadas a uma curva.
+
+No entanto, foi Daniel Bernoulli, em 1718, que definiu o conceito de função de maneira formal pela primeira vez, e se tratava de algo bem diferente do que conhecemos hoje em dia.
+
+Saiba Mais
+Para conhecer mais sobre a história e a formalização do conceito de função, leia o livro História da Matemática: uma visão crítica, desfazendo mitos e lendas.
+
+
+Podemos perceber o conceito de função quando temos duas quantidades ("variáveis") e observamos que há uma relação entre elas. Se acharmos que, para cada valor da primeira variável, existe apenas um valor da segunda variável, dizemos que:
+
+
+A segunda variável é uma função da primeira variável.
+
+
+Uma função é, a rigor, uma tabela organizada
+
+
+No módulo anterior, vimos que podemos representar tabelas utilizando o plano cartesiano, no qual uma função não é nada além de uma tabela em que todos os valores da primeira coluna estão relacionados aos valores da segunda coluna, sem ambiguidades entre os valores da primeira coluna e os da segunda. É claro que esta não é a definição formal de função, mas, na prática, é o que se deseja.Veremos a seguir alguns exemplos de função.
+
+
+Exemplos de função
+
+Exemplo 1
+
+Vamos fazer uma tabela com a seguinte relação: a cada número real x, associamos o seu valor ao quadrado x × x = x² A seguir, podemos acompanhar o que ocorre com essa tabela de forma associada ao plano cartesiano.
+
+
+Valor de x 	Valor de y = x² 
+−2 	4 
+−1 	1 
+0 	0 
+1 	1 
+2 	4 
+Pares ordenados de X e Y.
+Marcelo Leonardo dos Santos Rainha
+
+
+
+Plano cartesiano
+
+Os valores da primeira coluna da tabela dependem explicitamente dos valores da segunda.
+
+
+Devido à nossa experiência com o Ensino Médio, é possível ligar os pontos azuis, tendo, assim, melhor compreensão do todo que a tabela poderia nos dar.
+
+
+Exemplo 2
+
+Desta vez, faremos uma tabela com a seguinte relação: a cada número real x, associamos sua raiz quadrada √x.
+
+
+Valor de x 	Valor de y = √x 
+−1 	i ∉ R 
+0 	0 
+1 	1 
+2 	√2 
+3 	√3 
+3 	2 
+Pares ordenados de X e Y
+Marcelo Leonardo dos Santos Rainha
+
+
+
+Plano cartesiano
+
+Percebemos que −1, em particular, não gera valores em nossa tabela, pois estamos trabalhando apenas com números reais.
+
+
+Note que todo valor maior ou igual a zero possui um lugar em nossa tabela. O caso é que os valores menores que zero não fazem parte dela.
+
+
+O maior conjunto de valores admissíveis de uma função, em analogia à primeira coluna de nossas tabelas, é conhecido como domínio da função.
+
+
+Vejamos a seguir o ultimo exemplo desse grupo.
+
+
+Exemplo 3
+
+Qual é o custo de azulejar qualquer parede quadrada, com azulejos quadrados de 10cm (0,1m) de lado, sabendo que cada 1m² dos azulejos é vendido a R$32 nas Casas Pitágoras?
+
+
+Para solucionar essa questão, temos de analisar o problema e entender as suas variáveis. Primeiramente, devemos perceber que o metro quadrado depende do comprimento do lado do quadrado. Assim, podemos fazer uma primeira tabela:
+
+
+Lado da parede quadrada 	Parede em m² 	Quantidade de azulejos 
+1 	1 	100 
+2 	4 	400 
+3 	9 	900 
+x 	x² 	100 × x² 
+Informações do exemplo
+Marcelo Leonardo dos Santos Rainha
+
+
+Para preencher a última coluna, basta entendermos quantos azulejos de 0,1m de lado são necessários para preenchermos um metro quadrado. A figura exemplo ilustra a ideia de um metro quadrado dividido em azulejos de 10cm de lado e, como podemos ver, são necessários 100 azulejos.
+
+Podemos perceber que a quantidade 100 representa o número necessário de azulejos para preencher um metro quadrado de azulejos, que custa R$32 nas Casas Pitágoras. Sendo assim, existe uma relação de 100 → R$32. Concluímos, então, que a tabela final relaciona a metragem da parede com o custo em azulejos.
+
+
+Lado da parede quadrada 	Custo em azulejos $ 
+1 	32 
+2 	32 × 4 
+3 	32 × 9 
+x 	32 × x² 
+Parede x custo em azulejos
+Marcelo Leonardo dos Santos Rainha
+
+
+
+Custo x lado
+
+Daí, a relação que expressa o custo e a metragem da parede é Cx = 32 × x² reais.
+
+
+Ambiguidade
+
+
+Um conceito importante sobre a construção da relação entre uma tabela e a sua representação gráfica é que ela não pode ser ambígua, isto é, os valores do que estamos caracterizando por variável dependente não devem gerar duas possibilidades.
+
+
+Vamos entender melhor a questão da ambiguidade e por que ela não é uma função:
+
+
+Veja como exemplo uma tabela com as soluções da equação y² = x, onde x ∈ [0,∞).
+
+
+Valores de x	Solução de
+0	0
+1	1 ou −1
+2	√2 ou −√2
+3	√3 ou −√3
+4	2 ou −2
+Valores de X.
+Marcelo Leonardo dos Santos Rainha
+
+
+
+Ambiguidade
+
+Neste exemplo, fica clara a ambiguidade pela não unicidade das soluções do problema, deixando-nos o dilema em cada ponto, se estamos considerando a parte positiva ou negativa.
+
+
+Quando esse tipo de fenômeno ocorrer, diremos que a relação estabelecida não é uma função.
+
+
+Portanto, uma função f é uma tabela de pares ordenados com a seguinte propriedade:Se (x,y) e (x,b) estiverem na mesma tabela, então b = y.
+
+
+Resumindo
+Uma tabela não pode conter pares ordenados distintos que possuam o mesmo primeiro elemento.
+
+
+Sendo f uma função, o domínio de f é: o conjunto de todos os x, para o qual exista um y, tal que o par (x,y) esteja na tabela f.
+
+
+Dessa forma, ao observarmos um gráfico no plano cartesiano, o que devemos perceber, a fim de entender se ele representa uma função, é se as retas verticais o tocam em um único ponto.
+
+
+Veja os exemplos:
+
+
+
+ 
+
+ 
+
+ 
+
+Não é função
+
+
+
+ 
+
+ 
+
+Não é função
+
+
+
+ 
+
+ 
+
+É função
+
+
+Você já deve ter notado que sempre associamos as tabelas a uma figura no plano cartesiano, que representa todos os pontos possíveis das tabelas em questão.
+
+
+Essas figuras são chamadas de gráficos. Quando as tabelas representarem, de fato, uma função, a imagem será chamada de gráfico de função.
+
+
+Reconhecimento e contexto
+
+Agora, apresentaremos uma série de exemplos a fim de que você possa entender que nem sempre podemos, de forma explícita, construir a tabela, embora a relação com o gráfico ainda se faça presente.
+
+
+Primeiro exemplo
+
+A ilustração a seguir mostra um homem andando por um brinquedo em um parque:
+
+
+
+A partir da imagem acima, pense na seguinte questão:
+
+
+
+Quais diferentes medidas podemos ver em função do tempo associadas à ilustração?
+
+A altura do homem em relação ao solo e sua velocidade variam em função do tempo.
+
+Agora, ainda em relação à imagem apresentada no primeiro exemplo, tente responder a atividade proposta.
+
+
+Segundo exemplo
+
+A ilustração a seguir apresenta um recipiente sendo cheio por água.
+
+
+
+A partir da imagem acima, pensa na seguinte questão:
+
+
+
+Quais diferentes variáveis podemos ver em função do tempo associadas à ilustração?
+
+Agora, ainda em relação à imagem apresentada no segundo exemplo, tente responder a atividade proposta.
+
+
+Os gráficos dos exemplos que acabamos de ver representam uma tabela em que a quantidade de água no recipiente ou a altura da cabeça do homem variam sem ambiguidade em função do tempo, apresentando, assim, o conceito de função.
+
+
+Geralmente, na escola, estudamos funções como fórmulas preestabelecidas. No entanto, como vimos nos exemplos anteriores, essa ideia não é completa. Devemos ser capazes de enxergar o conceito de função na diversidade à nossa volta, conforme os exemplos a seguir:
+
+
+
+Exemplo A
+
+A imagem mostra um gráfico do desempenho do corredor Usain Bolt ao conquistar o recorde mundial dos 100 metros rasos, no campeonato mundial de atletismo.
+
+ 
+
+A reta vertical apresenta a velocidade do corredor em metros por segundo (m/s), e a reta horizontal mostra a distância percorrida em metros.
+
+O gráfico é uma função que mede a velocidade do corredor em cada momento da trajetória.
+
+
+
+Exemplo B
+
+Já esta imagem mostra o crescimento do PIB argentino, do início dos anos 1960 até a década de 2010.
+
+ 
+
+O gráfico apresenta o histórico do desenvolvimento econômico argentino. A partir dele, podemos apresentar uma tendência, auxiliando um futuro investidor.
+
+

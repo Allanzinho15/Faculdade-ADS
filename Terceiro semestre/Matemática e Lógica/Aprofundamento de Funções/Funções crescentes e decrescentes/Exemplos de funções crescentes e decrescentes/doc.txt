@@ -1,0 +1,104 @@
+Exemplos de funções crescentes e decrescentes
+Vamos ver neste vídeo quatro exemplos que ilustram as funções crescentes e decrescentes.
+
+
+
+Vejamos alguns exemplos que nos ajudam a elucidar as funções crescentes e decrescentes de forma prática!
+
+
+Exemplo 1 - Função crescente: curva de aprendizagem
+
+
+ funç 
+a
+˜
+ o: P(t)=100−80e 
+−0,2t
+ 
+ funç 
+a
+˜
+ o: P(t)=100−80e 
+−0,2t
+ 
+Uma empresa de desenvolvimento de software contratou um novo programador. O gerente de projetos usa esta função para prever a produtividade do funcionário ao longo do tempo.
+ 
+
+No início (t = 0), P(0) = 20%, indicando que o novo funcionário começa com 20% da produtividade máxima.
+ 
+Após 3 meses (t = 3), P(3) ≈ 60%, mostrando um aumento significativo.
+ 
+Após 12 meses (t = 12), P(12) ≈ 91%, indicando que o funcionário está próximo da produtividade máxima.
+ 
+O gerente pode usar essas informações para planejar alocações de projetos, definir expectativas realistas e programar treinamentos adicionais se necessário.
+
+
+Exemplo 2 - Função decrescente: depreciação de equipamentos 
+
+
+ funç 
+a
+˜
+ o: V(t)=50000⋅0,85 
+t
+ 
+ funç 
+a
+˜
+ o: V(t)=50000⋅0,85 
+t
+ 
+Uma empresa de manufatura comprou uma máquina de corte a laser por $50.000. O contador usa essa função para calcular o valor contábil da máquina ao longo do tempo.
+
+ 
+
+No momento da compra, (t = 0), V(0) = $50.000.
+ 
+Após 1 ano, (t = 1), V(1) = $42.500.
+ 
+Após 5 anos, (t = 5), V(5) ≈ $21.300.
+
+O CFO pode usar essas informações para decidir quando é mais vantajoso para substituir o equipamento, considerando o custo de manutenção versus o valor residual.
+
+Exemplo 3 - Função crescente: crescimento de receita com marketing digital 
+
+
+ funç 
+a
+˜
+ o: R(x)=10000∗(1+0,05x) 
+2
+ 
+ funç 
+a
+˜
+ o: R(x)=10000∗(1+0,05x) 
+2
+ 
+Uma startup de e-commerce está considerando aumentar seu investimento em marketing digital. O CMO usa essa função para projetar o impacto na receita mensal.
+ 
+
+Com o investimento atual (x = 0), R(0) = $10.000 de receita mensal.
+ 
+Com $5.000 adicionais, (x = 5), R(5) ≈ $16.900.
+ 
+Com $10.000 adicionais, (x = 10), R(10) ≈ $25.000.
+ 
+O CMO pode usar esses dados para justificar o aumento no orçamento de marketing, mostrando o potencial retorno sobre o investimento.
+
+
+Exemplo 4 - Função decrescente: custo unitário com economia de escala 
+
+
+função: C(q) = 50 + 1000/q
+função: C(q) = 50 + 1000/q
+Uma fábrica de eletrônicos está analisando como o aumento na produção afeta o custo unitário. O gerente de operações usa essa função para otimizar a produção:
+ 
+
+Produzindo 1.000 unidades (q = 1), C(1) = $1.050 por unidade.
+ 
+Produzindo 5.000 unidades (q = 5), C(5) = $250 por unidade.
+ 
+Produzindo 10.000 unidades (q = 10), C(10) = $150 por unidade.
+ 
+O gerente pode usar essas informações para determinar o nível ideal de produção, equilibrando custos unitários mais baixos com a demanda do mercado e a capacidade de armazenamento.

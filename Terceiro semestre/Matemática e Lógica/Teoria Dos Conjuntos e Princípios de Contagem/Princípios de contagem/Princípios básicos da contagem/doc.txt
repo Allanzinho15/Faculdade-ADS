@@ -1,0 +1,245 @@
+Princípios básicos da contagem
+Neste vídeo, você entenderá os princípios básicos da contagem, da casa dos pombos, da adição e da multiplicação.
+
+
+
+Princípio da casa dos pombos
+
+É, sem dúvida, um dos enunciados mais poderosos e interessantes da matemática da contagem. Surpreendentemente simples, possibilita a solução de problemas muitas vezes difíceis de abordar, de uma forma elegante e simples. Veja!
+
+
+Se n pombos devem ser colocados em m casas, com n>m, então, pelo menos uma casa deverá conter mais do que um pombo.
+
+
+A seguir, apresentamos uma ilustração desse princípio, para n = 10 e m = 9.
+
+
+
+Imagem 12: Ilustração do princípio da casa dos pombos, para n = 10 e m = 9.
+
+Exemplo 1
+
+A seguir, mostramos um exemplo clássico e divertido da aplicação do princípio da casa dos pombos.
+
+
+Mostre que, em uma cidade de um milhão de habitantes (por exemplo), pelo menos dois habitantes possuem o mesmo número de fios de cabelo.
+
+
+
+Solução
+
+Exemplo 2
+
+Dados doze números inteiros, mostre que, necessariamente, a diferença entre dois deles tem que ser divisível por onze.
+
+
+
+Solução
+
+Exemplo 3
+
+Mostre que, se em quadrado de lado igual a 2 cm há 5 pontos em seu interior, dois deles, necessariamente, distam menos do que  
+2
+​
+ .
+
+
+
+Solução
+
+Princípio da adição
+
+O chamado princípio da adição, na sua forma mais simples, relaciona os quantitativos de elementos de dois conjuntos finitos com o quantitativo de elementos da sua união e de sua interseção.
+
+
+Se indicarmos por n(X) o número de elementos do conjunto X, a imagem 14 sugere que
+
+
+n(A∪B)+n(A∩B)=n(A)+n(B), ou n(A∪B)=n(A)+n(B)−n(A∩B)
+n(A∪B)+n(A∩B)=n(A)+n(B), ou n(A∪B)=n(A)+n(B)−n(A∩B)
+Veja na próxima imagem:
+
+
+
+Imagem 14: Representação do princípio da adição.
+
+Se A∩B=∅, então obtemos a versão mais comum do princípio da adição, que diz que, se dois conjuntos não possuem elementos em comum, vale a igualdade.
+
+
+n(A∪B)=n(A)+n(B)
+n(A∪B)=n(A)+n(B)
+Exemplo 4
+
+No caso de três conjuntos, a análise do diagrama de Venn a seguir auxilia as situações de contagem, bastando observar que os três conjuntos definem uma partição de no máximo 7 regiões disjuntas cuja união reproduz a união dos três conjuntos. Veja!
+
+
+
+Imagem 15: Representação dos três conjuntos.
+
+Na tabela a seguir, encontramos a explicação.
+
+
+Subconjunto	Elementos que estão
+(1)	A−(B∪C)	exclusivamente em A
+(2)	B−(A∪C)	exclusivamente em B
+(3)	C−(A∪C)	exclusivamente em C
+(4)	(A∩C)−B	em A e em C, mas não em B
+(5)	(B∩C)−A	em B e em C, mas não em A
+(6)	(A∩B)−C	em A e em B, mas não em C
+Tabela: Solução do exemplo. Carlos Eddy Esaguy Nehab
+
+
+Exemplo 5
+
+Em uma escola de idiomas, 200 alunos estão matriculados em algum dos idiomas (inglês, alemão e mandarim). Desses, 50 estudam inglês e alemão; 60 estudam inglês e mandarim; 70 estudam alemão e mandarim e 20 estudam os três idiomas. Qual é a quantidade de alunos que estudam apenas um dentre os três idiomas?
+
+
+
+Solução
+
+Chamando as quantidades de alunos de cada parte do diagrama de m, n, o, p, q, r e s, note que o enunciado informa diretamente a quantidade de elementos na interseção dos três conjuntos, ou seja, s = 20. Analisando as diversas regiões do diagrama, podemos concluir, sucessivamente que
+
+ 
+
+s=20
+
+q+s=50⇒ q=30
+
+p+s=60⇒ p=40
+
+r+s=70⇒ r=50
+
+ 
+
+Mas a soma de todas as partes do diagrama (união dos três conjuntos) vale 200.
+
+ 
+
+Como desejamos calcular m + n + o, o resultado é imediato:
+
+ 
+
+m + n + o = 200 – (p + q + r + s)
+= 200 – ( 40 + 30 + 50 + 20)
+= 60
+
+ 
+
+Veja na imagem
+
+
+Imagem 16: Representação da solução do exemplo.
+Princípio da multiplicação
+
+O princípio das multiplicação permite que analisemos um problema de contagem dividindo a análise em etapas, facilitando sua abordagem.
+
+
+Vejamos seu enunciado.
+
+
+Se para realizar um processo de contagem precisamos tomar duas decisões sucessivas, tais que:
+
+
+Há p maneiras de tomar a 1a decisão.
+Para qualquer uma dessas p maneiras de tomar a 1a decisão, há sempre q maneiras de tomar a 2a decisão.
+
+Então, o número de formas de tomar as duas condições, sucessivamente, é igual a pq.
+
+
+Atenção
+O princípio da multiplicação não exige que a 2ª decisão seja independente da 1ª, mas que a quantidade de formas de tomar a 2ª decisão, ela, sim, seja independente da forma como foi tomada a 1ª.
+
+
+Analisemos o exemplo a seguir.
+
+
+Exemplo 6
+
+Determine quantos são os números de 2 dígitos distintos formados com os algarismos 1, 2, 3 e 4.
+
+
+
+Solução
+
+Fatorial e sua notação
+
+É muito comum em problemas de contagem ocorrerem produtos de inteiros consecutivos como o produto dos inteiros de 1 a 5, ou de 9 a 15, ou de 100 a 1000. Um conceito simples e muito útil para representar resultados com produtos dessa natureza o fatorial.
+
+
+Se n é um número inteiro positivo, representamos por n! (com ponto de exclamação) o produto de 1 a n, ou seja: n! = 1.2.3...n. Por exemplo, 3! = 1 x 2 x 3 = 6 e 6! = 1 x 2 x ... x 6 = 720.
+
+
+Note que produtos de inteiros consecutivos, como 10 x 11 x 12 x 13 x 14, podem ser facilmente expressos com o uso de fatoriais. Veja um exemplo.
+
+
+10×11×12×13×14= 
+1.2.3.4.5⋅6.7.8.9
+1.2.3.4.5⋅6⋅7.8.9
+​
+ ×10.11.12.13.14= 
+9!
+14!
+​
+ 
+10×11×12×13×14= 
+1.2.3.4.5⋅6.7.8.9
+1.2.3.4.5⋅6⋅7.8.9
+​
+ ×10.11.12.13.14= 
+9!
+14!
+​
+ 
+Por conveniência, convencionamos definir zero fatorial como igual a 1, ou seja: 0! = 1.
+
+
+Exemplo 7
+
+Determine quantas senhas de 6 algarismos podemos formar utilizando os algarismos de 0 a 9, nas seguintes hipóteses:
+
+
+Podendo repetir algarismos.
+Usando algarismos todos diferentes.
+
+
+Solução
+
+Nossa senha possui 6 algarismos:  ­1º 2º 3º 4º 5º 6º. A escolha de qualquer um desses algarismos pode ser, sem restrição, qualquer um dos 10 algarismos (de 0 a 9). Portanto, pelo princípio da multiplicação, a quantidade de senhas é simplesmente o produto das escolhas de cada um dos dígitos da senha: 10 x 10 x 10 x 10 x 10 x 10 = um milhão.
+
+ 
+
+Uma outra forma de pensar a solução desse problema, direta, é: as possíveis senhas são, na verdade, todos os números que se podem escrever de 000000 até 999999. Ou seja, um milhão de senhas.
+
+Exemplo 8
+
+Determine quantos são os números de 4 algarismos diferentes que podemos formar utilizando apenas os algarismos 0, 4, 5, 6, 7 e 8?
+
+
+
+Solução
+
+Nosso número possui 4 algarismos: MCDU. Então, devemos tomar 4 decisões: escolher um algarismo para milhar (M), um para a centena (C), um para a dezena (D) e um para unidade (U). Façamos as escolhas na ordem M, C, D e U.
+
+ 
+
+Escolha de M: Como M é o algarismo de milhar, ele não pode ser 0. Portanto, há 5 possibilidades de escolha: 4, 5, 6, 7, e 8.
+
+ 
+
+Escolha de C: Como já escolhemos um algarismo para M, e os algarismos devem ser diferentes, sobram 5 algarismos para utilizar como algarismo das centenas, C (incluso o 0, que não foi usado para M).
+
+ 
+
+Escolha de D: Como já usamos dois algarismos, podemos escolher para D apenas 4 dos algarismos restantes ainda não usados.
+
+ 
+
+Escolha de U: Restam apenas 3 dos seis algarismos. Portanto, há 3 possibilidades de escolha de U, algarismo das unidades.
+
+ 
+
+Como as quantidades sucessivas de algarismos possíveis não depende de qual escolha fizemos na etapa anterior, o total desejado é, pelo princípio da multiplicação, igual ao produto das quantidades das escolhas sucessivas, ou seja, 5 x 5 x 4 x 3 = 300 números diferentes.
+
+Exemplo 9
+
+Determine quantos são os números de 3 algarismos distintos que podem ser formados com os algarismos de 0 a 6.

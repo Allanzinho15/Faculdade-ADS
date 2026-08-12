@@ -1,0 +1,180 @@
+Criando e usando classes e objetos em Java
+Aprenda neste vídeo a transformar teoria em prática com a criação de classes e objetos em Java. Veja como declarar atributos, métodos, construtores e utilizar o operador ponto para acessar comportamentos, com exemplos práticos.
+
+
+
+Conceitos iniciais de construção de classes e objetos
+
+
+Chegou o momento de transformar teoria em código! Em Java, a construção de classes é o alicerce de toda a estrutura de um sistema orientado a objetos. Afinal, é a partir delas que os objetos ganham forma, dados e comportamento — e é por isso que a clareza na definição dessas estruturas é fundamental.
+
+
+Sintaxe de declaração de classes
+
+
+Em Java, uma classe é declarada com a palavra-chave class, seguida do nome da classe. Os nomes devem começar com letra maiúscula e seguir a convenção PascalCase.
+
+Exemplo: Classe Produto
+
+
+Java (OpenJDK 13.0.1)
+public class Produto {
+    String nome;
+    double preco;
+
+    public void exibirInformacoes() {
+        System.out.println("Produto: " + nome + " | Preço: R$" + preco);
+    }
+}
+
+
+Light Mode
+
+Copiar
+
+Note que essa classe possui dois atributos (nome, preco) e um método (exibirInformacoes), responsável por mostrar os dados no console.
+
+
+Atributos e seus tipos
+
+
+Vamos entender que atributos são variáveis internas da classe. Eles podem ser de dois tipos principais:
+
+
+Primitivo
+
+
+int, double, float, boolean, char
+
+ 
+
+Exemplo: int quantidade;
+
+
+De referência
+
+
+String, arrays, outras classes
+
+ 
+
+Exemplo: String nomeProduto;
+
+
+Métodos: ações dos objetos
+
+
+Representam o comportamento dos objetos. Sua sintaxe inclui um tipo de retorno, nome e lista de parâmetros (se houver).
+
+ 
+
+Exemplo:
+
+
+Java (OpenJDK 13.0.1)
+
+public void aumentarPreco(double percentual) {
+    preco = preco + (preco * percentual / 100);
+}
+Light Mode
+
+Copiar
+
+No exemplo, vimos que o método aumenta o preço do produto com base em um percentual informado.
+
+
+Construtores: o nascimento do objeto
+
+
+Se formos definir um construtor, diremos que ele é um método especial utilizado no momento da criação do objeto. Em Java, ele tem o mesmo nome da classe e não possui tipo de retorno.
+
+ 
+
+Exemplo:
+
+
+Java (OpenJDK 13.0.1)
+
+public class Produto {
+    String nome;
+    double preco;
+
+    public Produto(String nome, double preco) {
+        this.nome = nome;
+        this.preco = preco;
+    }
+}
+
+Light Mode
+
+Copiar
+
+Agora podemos criar objetos com dados definidos. Veja:
+
+
+Produto p1 = new Produto("Notebook", 3500.00);
+
+
+Dica: Quando usamos this.nome, estamos nos referindo ao atributo da classe, diferenciando-o do parâmetro do método.
+
+
+Sobrecarga de construtores
+
+
+Java permite criar múltiplos construtores com diferentes assinaturas. Isso é útil para dar flexibilidade à criação dos objetos.
+
+ 
+
+Exemplo:
+
+
+Java (OpenJDK 13.0.1)
+public Produto(String nome) {
+    this.nome = nome;
+    this.preco = 0.0;
+}
+
+Light Mode
+
+Copiar
+
+Agora é possível instanciar um Produto apenas com o nome, utilizando o construtor correspondente com o operador new que iremos detalhar a seguir. 
+
+
+Produto p2 = new Produto("Monitor");
+
+
+Instanciando objetos com new
+
+
+A criação de um objeto em Java é feita com o operador new, que aloca memória e chama o construtor da classe.
+
+ 
+
+Exemplo:
+
+
+Produto p = new Produto("Mouse", 99.90);
+
+
+Esse comando cria um objeto do tipo Produto com nome e preço definidos.
+
+
+Acesso via operador ponto (.)
+
+
+Depois de instanciar o objeto, basta usar a variável p com o operador ponto (.) para acessar seus atributos ou chamar métodos.
+
+ 
+
+Exemplo:
+
+
+p.nome = "Teclado";
+
+p.aumentarPreco(10);
+
+p.exibirInformacoes();
+
+
+Aqui, estamos modificando o nome do produto, aplicando aumento de 10% e exibindo as informações.

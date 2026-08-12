@@ -1,0 +1,266 @@
+Agrupamento simples
+Neste vídeo, você entenderá a análise sistemática de problemas de contagem, bem como duas situações específicas desse tipo de agrupamento.
+
+
+
+A análise sistemática de problemas de contagem permite identificar duas situações básicas que ocorrem quando formamos agrupamentos com p elementos a partir de n objetos dados. Veja!
+
+
+Situação 1
+
+Quando a ordem dos p objetos escolhidos para constituir um particular agrupamento gera agrupamentos diferentes entre si. Por exemplo:
+
+
+A definição de senhas ou códigos na qual a ordem em que os algarismos ou letras são escolhidos gera uma senha ou código diferente.
+A determinação de anagramas de uma palavra.
+A criação de filas a partir de um certo conjunto de pessoas.
+E assim por diante.
+
+Situação 2
+
+Quando a ordem de escolha dos p objetos para a formação de um agrupamento é irrelevante na geração do agrupamento. Por exemplo:
+
+
+A criação de comissões com p pessoas a partir de um conjunto de n pessoas disponíveis.
+A escolha de uma sobremesa quando temos direito a duas sobremesas dentre as 7 disponíveis.
+E assim por diante.
+
+O primeiro caso remete a uma situação bastante banal, imediatamente contável a partir do princípio da multiplicação. É o caso dos agrupamentos chamados de arranjos simples e permutações simples.
+
+
+O segundo caso (quando a ordem dos objetos escolhidos é irrelevante na formação dos agrupamentos) é uma situação mais elaborada e se constitui nos agrupamentos chamados de combinações ou de números binomiais.
+
+
+Analisemos, a seguir, exemplos dessas situações.
+
+
+Exemplos
+
+Exemplo 10
+
+Agrupamento arranjo simples
+
+
+De quantas maneiras podemos fazer filas com 5 alunos, se dispomos de 12 alunos?
+
+
+
+Solução
+
+Neste caso, temos 5 lugares a preencher: 1º lugar ao 5º lugar da fila. Para escolher o 1º da fila, dispomos dos 12 alunos; logo há 12 escolhas possíveis; para o 2º lugar da fila só há, agora, 12 – 1 = 11 alunos. Continuando o raciocínio, é fácil perceber que o número total de filas será, pelo princípio da multiplicação, o produto das quantidades de escolhas para cada um dos 5 lugares na fila, ou seja:
+
+ 
+
+12 x 11 x 10 x 9 x 8 (total de 5 parcelas multiplicadas, do 12 ao 8).
+
+ 
+
+Vejamos como expressar esse resultado na forma de fatorial:
+
+ 
+
+​
+  
+12×11×10×9×8=12×11×10×9×8× 
+7×6×5×4×3×2×1
+7×6×5×4×3×2×1
+​
+ 
+= 
+7!
+12!
+​
+ = 
+(12−5)!
+12!
+​
+ 
+​
+ 
+
+ 
+
+Esse tipo de situação, na qual dispomos de n objetos e queremos criar filas (ordenações), usando apenas p dos n objetos disponíveis, é um dos agrupamentos usuais da análise combinatória: são os chamados arranjos de n objetos tomados p a p que, usualmente, representamos por A 
+p
+n
+​
+  ou A 
+n,p
+​
+ .
+
+ 
+
+Nessas situações, a quantidade de situações a ser calculada pode ser expressa de duas maneiras. Veja!
+
+Produto de p números consecutivos, a partir de n, inclusive, e de forma decrescente.
+Quociente dos fatoriais de n e de n−p, ou seja,  
+(n−p)!
+n ! 
+​
+ .
+ 
+
+Experimente agora refazer esse exemplo para os seguintes casos:
+
+ 
+
+20 alunos com filas com 2 alunos.
+10 alunos com filas de 3 alunos e, finalmente; caso de 8 alunos com todos na fila.
+8 alunos com todos na fila.
+ 
+
+Se você encontrou os valores a seguir, parabéns!
+
+ 
+
+20 x 19 = 20!/(20 – 2)! = 20!/18! = 380 filas.
+10 x 9 x 8 = 10!/(10 – 3)!  = 10!/7! = 10.9.8 = 720 filas.
+8 x 7 x 6 x 5 x 4 x 3 x 2 x 1 = 8!/(8 – 8)! = 8!/0! = 8! = 40.320 filas.
+Exemplo 11
+
+Agrupamento permutação simples
+
+
+Calcule o número de anagramas das palavras “trapo” e da palavra “publicar”.
+
+
+
+Solução
+
+Antes de resolvermos o exercício proposto, observe o seguinte:
+
+ 
+
+Se dispusermos de n objetos e colocarmos todos na fila, o número total de possíveis filas é o produto n x (n – 1) x ... x 2 x 1, porque podemos escolher um dos n objetos como 1º da fila, um dos n – 1 restantes como 2º da fila e assim sucessivamente, até atingirmos o último lugar da fila onde só teremos um objeto para escolher.
+
+ 
+
+Essa situação, na qual n=p, ou seja, dispomos de n objetos para ordenar todos os n objetos, é um caso particular de arranjo (onde p=n ) e preferimos chamá-lo de permutação simples de n objetos (porque pressupõe-se que desejamos ordenar todos eles)!
+
+ 
+
+A notação utilizada é P 
+n
+​
+ =n!=1×2×…×n e, é claro, A 
+n
+n
+​
+ =P 
+n
+​
+ =n!
+
+ 
+
+Retomando o exemplo:
+
+ 
+
+O anagrama de uma palavra é uma combinação das mesmas letras da palavra original, na mesma quantidade que cada letra ocorre, formando outra (e que possua ou não significado). Por exemplo, “porta”, “prato” e “optar” são anagramas da palavra “trapo”.
+
+ 
+
+Então, desejamos, simplesmente, calcular de quantas maneiras podemos embaralhar as letras da palavra trapo (todas diferentes). Isso é equivalente a ordenar de todas as maneiras possíveis as 5 letras (diferentes) da palavra indicada. Naturalmente, a resposta é imediata: A 
+5
+5
+​
+ =P 
+5
+​
+ =5!=1⋅2⋅3⋅4⋅5=120 anagramas.
+
+ 
+
+No segundo caso, a palavra "publicar" também possui letras diferentes e um total de 8 letras.
+Então, o número de anagramas é
+
+A 
+8
+8
+​
+ =P 
+8
+​
+ =8!=8×7×6×5×4×3×2×1=40320 anagramas 
+
+Portanto, o agrupamento permutação nada mais é que um caso particular do agrupamento arranjo, quando desejamos ordenar (embaralhar todos os n objetos, ou seja, o tamanho p das filas é igual ao próprio n.
+
+
+As situações em que há letras repetidas na palavra original serão tratadas mais a frente.
+
+
+Exemplo 12
+
+Agrupamento combinação
+
+
+Dispomos de 8 funcionários de uma empresa para formar uma comissão de três participantes, na qual um dos participantes será o presidente, um o secretário e outro, o tradicional puxa-saco.
+
+
+Quantas são as comissões possíveis? E se na comissão não houver os cargos descritos, ou seja, forem apenas comissões com 3 participantes dentre os 8 disponíveis?
+
+
+O agrupamento combinação simples
+
+Neste vídeo, você verá a solução e explicação do exemplo anterior.
+
+
+
+Exemplo 13
+
+Determine quantos subconjuntos de 3 elementos podemos construir a partir de um conjunto com 7 elementos.
+
+
+
+Solução
+
+Os últimos exemplos abordados tratam, basicamente, de ordenar objetos. Mas há situações em que a ordem dos objetos não é relevante. Este exemplo é uma dessas situações, pois os conjuntos a seguir são o mesmo conjunto, cujos elementos são a, b e c.
+
+ 
+
+{a,b,c}e{a,c,b},{b,c,a},{b,a,c},{c,a,b}e{c,b,a}
+
+
+Então, como seria possível realizarmos o cálculo solicitado, ajustando o raciocínio utilizado na ordenação de objetos para este caso? É simples! Se desejamos saber quantas filas de 3 objetos podemos fazer com os 7 elementos de um conjunto, basta perceber que "arranjo de 7 objetos tomados três a três" responde parcialmente ao problema, pois estamos contando mais de uma vez um mesmo conjunto. Por exemplo, se a, b e c são 3 dos 7 objetos do conjunto, então estamos contando as 6 filas diferentes, mas como subconjuntos diferentes, que são, na verdade, iguais. Então, ordenando 7 objetos 3 a 3 , obtemos A 
+3
+7
+​
+ = 
+(7−3)!
+7!
+​
+ =7.6.5=210. Mas, de cada três objetos escolhidos, estamos contando 3!=6 vezes o mesmo conjunto! Então, para ajustar nosso resultado, devemos dividir o resultado anterior por 3!=6. Logo, podemos formar 210/3!=35 subconjuntos de 3 elementos a partir de um conjunto com 7 elementos.
+
+Então, no caso geral, devemos dividir o número de filas por p! para contarmos uma única vez cada uma das p! filas que compõem o mesmo conjunto.
+
+
+Representando o número de combinações de n,p a p por C 
+p
+n
+​
+  ou ( 
+p
+n
+​
+ ), temos:
+
+
+C 
+p
+n
+​
+ = 
+p!
+A 
+p
+n
+​
+ 
+​
+ = 
+(n−p)!p!
+n!
+​
+

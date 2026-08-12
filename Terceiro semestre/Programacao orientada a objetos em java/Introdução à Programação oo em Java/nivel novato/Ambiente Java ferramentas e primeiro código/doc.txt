@@ -1,0 +1,162 @@
+Ambiente Java: ferramentas e primeiro código
+Descubra neste vídeo o que são JDK, JRE e JVM e aprenda a instalar e configurar o ambiente de desenvolvimento. Explore também IDEs como Eclipse e IntelliJ, ajuste variáveis de ambiente e comece a escrever seu primeiro programa Java!
+
+
+
+Conceito da linguagem Java
+
+
+Criada em 1995 pela Sun Microsystems, Java é uma linguagem de programação bastante utilizada no desenvolvimento de sistemas desktop, web e mobile. Hoje é mantida pela Oracle Corporation. Um de seus principais diferenciais é a portabilidade, graças à Java Virtual Machine (JVM), que permite executar o mesmo programa em diferentes sistemas operacionais. Para iniciarmos na linguagem, precisaremos compreender a estrutura do ambiente Java e configurar com exatidão as ferramentas de desenvolvimento.
+
+
+O que é Java (JDK, JRE)
+
+
+O ecossistema Java é composto por dois elementos fundamentais:
+
+
+JDK (Java Development Kit)
+
+
+Reúne as ferramentas necessárias para o desenvolvimento de programas Java, incluindo compilador (javac), bibliotecas padrão e utilitários.
+
+ 
+
+Resumo: cria, compila e executa aplicações Java (inclui o JRE).
+
+
+JRE (Java Runtime Environment)
+
+
+É destinado à execução de programas já compilados, oferecendo apenas a JVM e bibliotecas de tempo de execução. 
+
+ 
+
+ 
+
+Resumo: executa aplicações Java.
+
+
+Lembre-se que, para o desenvolvimento, o JDK é indispensável!
+
+
+Instalação do JDK (Windows e Linux)
+
+
+No Windows, a instalação envolve o download do JDK do site da Oracle. Após aceitar os termos de licença, basta escolher a versão apropriada e seguir o instalador.
+
+ 
+
+No Linux, é possível instalar o OpenJDK via terminal. Para distribuições Debian/Ubuntu:
+
+ 
+
+sudo apt update
+
+sudo apt install openjdk-17-jdk
+
+ 
+
+Após a instalação, o comando java -version deve exibir a versão instalada.
+
+
+Instalação e configuração do IDE (Eclipse, VS Code ou IntelliJ)
+
+
+Vamos entender primeiro que IDEs (ambientes de desenvolvimento integrado) facilitam a escrita, compilação e execução de programas Java. Os mais comuns são:
+
+
+A
+Eclipse
+
+
+É robusto, gratuito e bastante utilizado.
+
+
+B
+IntelliJ IDEA
+
+
+Oferece versões Community (gratuita) e Ultimate (comercial).
+
+
+C
+Visual Studio Code
+
+
+É um editor leve, com suporte a Java via extensões.
+
+
+Para instalar o Eclipse, acesse a seção de downloads no site da Eclipse e selecione a opção Eclipse IDE for Java Developers. No caso do IntelliJ ou VS Code, a instalação também é simples e intuitiva. Após instalar o IDE escolhido, certifique-se de que ele reconheceu, de maneira certa, o JDK, configurando o caminho nas preferências, se necessário.
+
+
+Configuração de variáveis de ambiente
+
+
+Em sistemas Windows, a configuração das variáveis de ambiente permite a execução dos comandos java e javac via terminal.
+
+ 
+
+Confira a seguir o passo a passo:
+
+ 
+
+Vá em: Painel de Controle > Sistema > Configurações Avançadas do Sistema > Variáveis de Ambiente.
+ 
+Crie a variável JAVA_HOME apontando para o diretório de instalação do JDK. Por exemplo: C:\Program Files\Java\jdk-17
+ 
+Adicione no campo Path: %JAVA_HOME%\bin
+ 
+
+No Linux, adicione no arquivo ~/.bashrc ou ~/.zshrc:
+
+ 
+
+export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+
+export PATH=$JAVA_HOME/bin:$PATH
+
+ 
+
+Após salvar, execute source ~/.bashrc para aplicar.
+
+
+Primeiro programa Java: estrutura básica (HelloWorld.java)
+
+
+Com o ambiente pronto, é hora de escrever seu primeiro programa. Vamos criar o famoso Hello, World! para verificar se tudo está funcionando como o esperado.
+
+ 
+
+Exemplo:
+
+
+Java (OpenJDK 13.0.1)
+
+
+Light Mode
+
+Copiar
+
+O programa define uma classe chamada HelloWorld, que contém o método main. Esse método é o ponto de entrada do programa Java, ou seja, é onde a execução começa. O comando System.out.println é usado para imprimir a mensagem 'Hello, World!' no console.
+
+
+Compilação e execução via terminal e via IDE
+
+
+Se você estiver utilizando o terminal, siga estes passos:
+
+ 
+
+Compile o programa: javac HelloWorld.java
+ 
+Execute: java HelloWorld
+ 
+
+Você verá no console:
+
+Hello, World!
+
+ 
+
+Porém, se estiver utilizando uma IDE, basta clicar com o botão direito sobre o arquivo HelloWorld.java e escolher “Run” (Executar). A IDE cuidará, de modo automático, da compilação e execução.

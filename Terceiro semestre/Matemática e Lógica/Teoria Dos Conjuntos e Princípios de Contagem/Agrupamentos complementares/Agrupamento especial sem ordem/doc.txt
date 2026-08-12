@@ -1,0 +1,89 @@
+Agrupamentos especiais
+Neste vídeo, você entenderá mais sobre alguns pontos importantes, como arranjo com repetição e permutação com repetição.
+
+
+
+A análise dos diversos tipos de problemas de contagem sugere que há padrões úteis e que é possível, em casos mais simples, usar uma tipologia de agrupamentos para tipificar inúmeros problemas. Destacamos a família dos arranjos, das permutações e a das combinações.
+
+
+Você já conhece algumas dessas situações utilizando os chamados arranjos, permu­tações e combinações simples. Destacamos as seguintes características:
+
+
+Se, ao criar um agrupamento com os objetos disponíveis, a mudança da ordem dos objetos gera um agrupamento diferente, ou seja, a ordem em que os objetos formam o particular agrupamento é relevante, temos o caso clássico de filas, senhas etc., e os agrupamentos utilizados são os arranjos e as permutações.
+Se, ao criar um agrupamento com os objetos disponíveis, a mudança da ordem dos objetos não gera um agrupamento diferente, ou seja, a ordem em que os objetos formam o agrupamento é irrelevante, temos o caso clássico de formar subconjuntos ou comissões de pessoas. São as chamadas combinações.
+
+Mas há situações adicionais, quando podemos repetir objetos nos agrupamentos, como determinar o número de anagramas de uma palavra, em que haja letras repetidas; ou, por exemplo, escolher um sorvete “casquinha” quando podemos escolher dentre 3 dos 5 sabores disponíveis, sendo permitido repetir um sabor.
+
+
+Neste módulo, trataremos de algumas dessas situações, em especial as de agrupamentos com repetição.
+
+
+Arranjo com repetição
+
+Arranjos com repetição de n objetos tomados p a p, cuja quantidade é representada por AR 
+p
+n
+​
+ , são agrupamentos da seguinte natureza:
+
+
+Dispomos de n objetos e queremos saber de quantas maneiras podemos escolher p desses elementos de tal forma que possa haver repetição dos objetos no agrupamento formado.
+
+
+Para escolher o primeiro dos objetos, dispomos dos n objetos originais. Mas, na escolha dos demais objetos, como pode haver repetição, há sempre n objetos disponíveis. Ou seja:
+
+
+AR 
+p
+n
+​
+ =n×n×…×n=n 
+p
+ 
+AR 
+p
+n
+​
+ =n×n×…×n=n 
+p
+ 
+Uma situação clássica é a formação de senhas de 6 caracteres, por exemplo, dispondo-se das letras (maiúsculas são contadas como diferentes das minúsculas) e dos 10 algarismos, não sendo permitidos caracteres especiais. Naturalmente, como o total de caracteres disponíveis é 26 + 26 + 10 = 62, o número de senhas possíveis com 6 caracteres é 626, que é superior a 60 bilhões! Quase 10 vezes a quantidade de habitantes do planeta!
+
+
+Permutação com repetição
+
+Uma situação típica que este agrupamento descreve são anagramas de uma palavra quando a original possui letras repetidas.
+
+
+Exemplo 1
+
+Calcule o número de anagramas das palavras “Araraquara” e da palavra “matemática”.
+
+
+Permutando objetos repetidos
+
+Neste vídeo, você verá a solução e explicação do exemplo anterior.
+
+
+
+Permutação circular
+
+Normalmente, os agrupamentos são sequências de objetos dispostos em linha. Entretanto, um tipo especial de agrupamento ocorre quando desejamos dispor n objetos ou pessoas em volta de uma mesa ou de um círculo. Veja!
+
+
+Exemplo 2
+
+Desejamos dispor quatro amigos (Antônio, Bernardo, Carlos e Daniel) em volta de uma mesa. De quantas maneiras podemos realizar essa tarefa?
+
+
+
+Solução
+De uma maneira geral,representando por PC 
+n
+​
+  o número de permutações circulares de n objetos, é imediato perceber que a solução desejada é
+
+PC 
+4
+​
+ =(4−1)!=6

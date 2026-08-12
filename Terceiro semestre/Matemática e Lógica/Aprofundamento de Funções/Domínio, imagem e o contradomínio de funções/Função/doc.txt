@@ -1,0 +1,246 @@
+Função
+Definindo funções e seus domínios
+
+
+As funções são relações matemáticas que seguem algumas regrinhas, e seus domínios precisam de uma análise detalhada. Vamos aprendê-las neste vídeo. Confira!
+
+
+
+As funções estão presentes em várias áreas da nossa vida, desde o cálculo de custos e lucro até a otimização de processos contábeis e econômicos. Você já parou para pensar o que define funções? Sabe o que é um domínio da função e como analisá-lo? Vamos explorar juntos como essas ferramentas matemáticas são fundamentais na resolução de problemas práticos e no avanço das tecnologias!
+
+
+Conceito de função e notação funcional
+
+
+Uma função pode ser entendida como uma relação matemática entre dois conjuntos, em que cada valor do primeiro conjunto (domínio) corresponde exatamente a um valor no segundo conjunto (imagem). Formalmente, escrevemos uma função como f(x), em que f é o nome da função e x é a variável independente. Vamos entender melhor analisando a imagem a seguir.
+
+
+
+Representação de função e não função entre as relações dos conjuntos A e B.
+
+Aparecem dois conjuntos na imagem: A e B. Primeiro, observe que cada elemento de A tem um único correspondente em B, ou seja, para cada elemento do conjunto do domínio, temos um único elemento correspondente na imagem. Dizemos, então, que a relação entre A e B é uma função. 
+
+ 
+
+Já no segundo caso, vemos que entre o conjunto A e B, o elemento b tem dois correspondentes no conjunto B, o que significa que ele tem dois elementos de imagem, e isso caracteriza que essa relação não é uma função. Sendo assim, podemos definir a função como sendo uma relação entre dois conjuntos, em que cada elemento do domínio tem somente um elemento de imagem. 
+
+ 
+
+Agora, como definir domínio e imagem? Na verdade, se pegarmos a imagem, que representa uma função, temos, nos conjuntos A e B, três conjuntos distintos: o conjunto domínio (D), o conjunto contradomínio (CD) e o conjunto imagem (Im). O conjunto do domínio é de onde saem as setinhas do conjunto A. Por isso o conjunto A é chamado de domínio. O conjunto contradomínio é o conjunto B, pelo simples fato de ele estar recebendo as setinhas. Já o conjunto imagem é formado pelos elementos de B que recebem as setinhas. 
+
+ 
+
+Na imagem, de fato, todos os elementos do conjunto B recebem a setinha, mas vamos analisar agora o conjunto a seguir.
+
+
+
+
+Função de x em y.
+
+Perceba que todos os elementos do conjunto x tem um único elemento de correspondência no conjunto y, o que caracteriza uma função, porém sobra um elemento de y sem ligação. Isso nos diz que os conjuntos: domínio, contradomínio e imagem são:
+
+
+CD=
+Im
+​
+  
+D={1,2,3,4,5,6}
+{10,11,12,13,14,15,16}
+={10,11,12,13,14,15}
+​
+ 
+CD=
+Im
+​
+  
+D={1,2,3,4,5,6}
+{10,11,12,13,14,15,16}
+={10,11,12,13,14,15}
+​
+ 
+Perceba que existe uma diferença entre o contradomínio e a imagem, sendo a imagem formada pelos elementos que receberam a ligação dos elementos do conjunto x.
+
+ 
+
+Existem diversos tipos de funções e, em geral, na matemática, elas são representadas com o auxílio de polinômios, mas existem outros tipos de funções, como a trigonométrica, mas aqui vamos focar as funções polinomiais. A função é normalmente representada por: f(x), em que f representa a função, e o x dentro do parêntese representa a variável dessa função, que chamamos de variável independente. 
+
+ 
+
+Por que isso? 
+
+ 
+
+O x é o elemento do domínio, que vai levar ao contradomínio da função f(x), um valor. Ao fazer isso, a função f(x) vai processar esse valor e, após processar, vai nos retornar um segundo valor, que é o resultado de f(x). Esse resultando chamamos de imagem. Sendo assim, podemos dizer que x é a variável independente da função e f(x) a variável dependente da função. Isso porque seu valor depende do processamento do contradomínio, que terá valores diferentes para cada valor de entrada de x. Por exemplo, considere a função: 
+
+
+f(x)=x+10
+f(x)=x+10
+Perceba que x é a nossa variável independente. Por quê? Porque x é o número que vamos escolher para entrar na função. O cálculo: x + 10 é o contradomínio. Por quê? Porque quando inserirmos o valor de x, vamos realizar um cálculo, que nada mais é do que o processamento do valor de x, e o resultado encontrado será a imagem, que nada mais é do que o valor de f(x). Vamos exemplificar!
+
+
+f(x)=x+10
+f(x)=x+10
+Vamos atribuir para essa função os mesmos valores do domínio da última imagem, ou seja:
+
+
+D={1,2,3,4,5,6}
+D={1,2,3,4,5,6}
+Perceba, então, que x tem que assumir os valores: 1,2,3,4,5,6. Vamos então realizar essa substituição!
+
+
+Domínio	Contradomínio	Imagem
+x	x + 10	f (x)
+1	1+10	11
+2	2+10	12
+3	3+10	13
+4	4+10	14
+5	5+10	15
+6	6+10	16
+Tabela: Exemplo de domínio e imagem de uma função.
+Loisi Carla Monteiro Pereira.
+
+
+Viu? Os elementos do domínio ( x) foram processados no contradomínio (x+10), o que resultou na imagem (f(x)).
+
+ 
+
+A função que calculamos anteriormente é conhecida como função afim. Essa função é representada por um polinômio de grau 1, e tem como o domínio, todo o conjunto dos números reais, ou seja: D={R}. Isso significa que ela é capaz de aceitar qualquer número, no lugar de x.
+
+ 
+
+Mas o domínio sempre será de todos os números reais? A resposta é não! E, para isso, vamos ver dois exemplos:
+
+
+1º exemplo
+
+f(x)= 
+x
+1
+​
+ 
+f(x)= 
+x
+1
+​
+ 
+Perceba agora que a função mudou, e ela tem um x na parte de baixo da fração. Será que aqui podemos colocar todos os números reais no lugar do x ? A resposta é não! E sabe por quê? Simples, não existe número nenhum que possa ser dividido por zero, ou seja, não existe:  
+0
+1
+​
+ . Pense! Quanto seria a divisão de 8 pedaços de pizza para zero pessoas? Isso não faz sentido, correto? É o mesmo caso dessa fração  
+0
+1
+​
+ . Não faz sentido. Nesse caso, como não pode ter zero embaixo (no denomiador da fração), o domínio são todos os números reais, exceto o zero, ou seja:
+
+ 
+
+Para f(x)= 
+x 
+′
+ 
+1
+​
+  o domínio é dado por: D={x∈R 
+∗
+ }.
+
+ 
+
+Lemos esse conjunto domínio da seguinte maneira: x pertence aos reais, exceto o zero. Esse asterístico significa que o zero não faz parte do conjunto domínio.
+
+ 
+
+Podemos ver que o zero não faz parte do domínio, vendo o gráfico a seguir.
+
+
+
+Gráfico:  funç 
+a
+˜
+ o f(x)= 
+x
+1
+​
+ . 
+
+O gráfico aparece no lado positivo do plano cartesiano e também no lado negativo, mas ele salta o zero, ou seja, não passa por x=0.
+
+
+2° exemplo
+
+f(x)= 
+x
+​
+ 
+f(x)= 
+x
+​
+ 
+Perceba que, agora, a função envolve uma raiz quadrada, e dentro de uma raiz quadrada não pode haver número negativo, afinal, não existe raiz quadrada de número negativo. Isso significa que a função pode ter valores positivos ou zero, pois raiz quadrada de zero é zero. Logo, o domínio é:
+
+
+D={x∈R 
++
+ }
+ou 
+D={x∈R/x≥0}
+​
+ 
+D={x∈R 
++
+ }
+ou 
+D={x∈R/x≥0}
+​
+ 
+Lemos da seguinte forma: x pertence aos reais, tal que x tem que ser maior ou igual a zero.
+
+ 
+
+Vejamos no gráfico!
+
+
+
+Gráfico: funç 
+a
+˜
+ o f(x)= 
+x
+​
+ . 
+
+Viu? O gráfico dessa função começa no zero e se desenvolve para todos os valores de x positivos. Por isso seu domínio é definido em x≥0.
+
+ 
+
+Entendeu agora como analisamos domínio de uma função? Nós olhamos para a função e vemos se tem alguma restrição, daí explicitamos qual é essa restrição, como fizemos nos dois exemplos anteriores. 
+
+ 
+
+
+3º exemplo
+
+f(x)={ 
+∣x∣, se x<1
+ln(x), se x≥1
+​
+ 
+f(x)={ 
+∣x∣, se x<1
+ln(x), se x≥1
+​
+ 
+Vamos descrever o domínio da função do terceiro exemplo em vídeo. Não deixe de conferir!
+
+
+Domínio de uma função não contínua
+
+
+As funções podem ser contínuas, como as funções f(x)=x, ou f(x)=x 
+2
+ , mas existem funções que são descontínuas, como a função f(x)={ 
+∣x∣, se x<1
+ln(x), se x≥1
+​
+ . Neste vídeo, veremos como analisar seu domínio. Vamos lá!

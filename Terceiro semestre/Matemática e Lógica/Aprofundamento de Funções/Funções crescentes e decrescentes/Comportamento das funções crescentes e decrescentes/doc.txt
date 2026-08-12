@@ -1,0 +1,68 @@
+Comportamento das funções crescentes e decrescentes
+Vamos analisar neste vídeo como o domínio e a imagem das funções se comportam, e como elas podem ser classificadas em crescente e decrescente.
+
+
+
+As funções crescentes e decrescentes são conceitos fundamentais na análise do comportamento de funções. Elas descrevem como os valores da função mudam em relação às mudanças na variável independente.
+
+ 
+
+Uma função f(x) é dita crescente em um intervalo se, para quaisquer dois pontos x 
+1
+​
+  e x 
+2
+​
+  nesse intervalo, com x 
+1
+​
+ <x 
+2
+​
+ , temos f(x 
+1
+​
+ )<f(x 
+2
+​
+ ).
+
+ 
+
+Em termos mais simples, uma função crescente é aquela em que o valor da função aumenta à medida que o valor de x aumenta. Ou seja, ela cresce, da esquerda para a direita. Já a função decrescente, decresce da esquerda para a direita, como podemos ver nos exemplos a seguir.
+
+
+Funções crescentes:
+
+
+
+Gráfico: f(x)=e 
+4x
+ 
+
+
+Gráfico: f(x)=x
+
+
+Gráfico: f(x)=x 
+3
+ 
+
+Funções decrescentes:
+
+
+
+Gráfico: f(x)=2−e 
+x
+ 
+
+
+Gráfico: f(x)=−x
+
+
+Gráfico: f(x)=− 
+x
+​
+ 
+
+A identificação de funções crescentes e decrescentes é importante para entender o comportamento geral de uma função, o que é particularmente útil em várias aplicações, como análise de tendências em economia, taxas de crescimento em biologia e otimização em engenharia.

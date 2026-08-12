@@ -1,0 +1,147 @@
+Imagem
+Exemplo 1
+
+Dado o gráfico de uma função, uma forma de encontrar a imagem da função é projetar o seu gráfico no eixo O 
+y
+​
+ .
+ 
+
+Observe o gráfico da função f:
+
+
+
+Gráfico: Função f
+
+O que acontece se projetarmos o gráfico da função no eixo Oy? Veja!
+
+
+
+Gráfico: A função no eixo Oy
+
+A imagem da função f é o intervalo fechado indicado em vermelho no eixo O 
+y
+​
+ . Sua imagem é o intervalo fechado.
+
+
+[− 
+4
+9
+​
+ ; 
+12
+37
+​
+ ],Im(f)=[− 
+4
+9
+​
+ ; 
+12
+37
+​
+ ]
+[− 
+4
+9
+​
+ ; 
+12
+37
+​
+ ],Im(f)=[− 
+4
+9
+​
+ ; 
+12
+37
+​
+ ]
+Exemplo 2
+
+Observe o gráfico da função g:
+
+
+
+Gráfico: A função g
+
+O que acontece se projetarmos o gráfico da função no eixo Oy? Confira!
+
+
+
+Gráfico: A função g projetada no eixo Oy
+
+Vemos que a imagem da função g é o intervalo indicado em vermelho no eixo O 
+y
+​
+ . Sua imagem é o intervalo ( −2;5,25].
+
+ 
+
+Im(g)=(−2;5,25]
+
+
+Exemplo 3
+
+Considere agora o gráfico da função h:
+
+
+
+Gráfico: Função h
+
+Se projetarmos o gráfico da função no eixo Oy, vemos que a imagem da função h é o intervalo indicado em vermelho no eixo Oy, conforme mostrado a seguir.
+
+
+
+Gráfico: A função no eixo Oy
+
+Sua imagem é o intervalo (−2;5,25).
+
+ 
+
+Im(h)=(−2;5,25]
+
+ 
+
+Em resumo, é possível determinar a imagem de um conjunto de pontos:
+
+
+
+Gráfico: Imagem de um conjunto de pontos
+
+Se D é um subconjunto do domínio da função f (pintado de azul no gráfico), então, a imagem deste subconjunto é dada por f(D)={f(x)∣x∈D}.
+
+
+Exemplo 4
+
+Assista ao vídeo e confira mais um exemplo de imagem da função.
+
+
+
+Exemplo 5
+
+Observe o gráfico da função f e o intervalo [− 2/3; 5/12] destacado em verde no eixo Oy, que é um subconjunto da imagem de f.
+
+
+
+Gráfico: Função f
+
+Ao traçar as retas y = 5/12 e y = − 2/3 de forma horizontal, partindo no eixo Oy , temos:
+
+
+
+Gráfico: As retas y=5/12 e y=−2/3
+
+Se pegarmos a parte do gráfico restrita à região entre as retas y = − 2/3 e y = 5/12 , temos:
+
+
+
+Gráfico: A região entre as retas y = − 2 / 3 e y = 5 / 12
+
+Agora, para descobrirmos a parte do domínio correspondente ao intervalo [−2/3; 5/12] da imagem, basta projetarmos no eixo Ox. A parte do eixo Ox que nos interessa está destacada em vermelho: [−0,4 ; 2] ∪ [3,6 ; 3,8]:
+
+
+
+Gráfico: Parte do domínio correspondente ao intervalo [− 2 / 3 ; 5 / 12 ]

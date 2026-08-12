@@ -1,0 +1,39 @@
+Teoria na prática
+A startup InovaTech desenvolveu um aplicativo inovador. O lucro da empresa, em milhares de reais, em função do tempo t (em meses) desde o lançamento do aplicativo, é modelado pela seguinte função:
+
+
+L(t)= 
+t 
+2
+ −t−12
+t 
+2
+ +t−12
+​
+ 
+L(t)= 
+t 
+2
+ −t−12
+t 
+2
+ +t−12
+​
+ 
+L(t) representa o lucro da InovaTech no mês t. Diante disso, determine:
+
+ 
+
+a) O domínio da função L(t), considerando as restrições do problema. Expresse o domínio como uma união de intervalos.
+
+b) A imagem da função L(t). Expresse a imagem como uma união de intervalos.
+
+ 
+
+Acompanhe a resolução no vídeo a seguir!
+
+
+O caso InovaTech
+
+
+Vamos utilizar as análises matemáticas aprendidas, para encontrar neste vídeo, o domínio e a imagem da função que descreve o lucro em função do tempo. Assista!

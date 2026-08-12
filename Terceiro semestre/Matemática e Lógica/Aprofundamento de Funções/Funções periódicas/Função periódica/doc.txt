@@ -1,0 +1,110 @@
+Função periódica
+Definição
+
+
+Uma função é considerada periódica quando existe um número real T > 0, tal que f(x + T), para todo x no domínio da função.
+
+
+O menor dos valores de T > 0, para os quais a propriedade é verificada, é chamado de período da f.
+
+ 
+
+Se uma função f é periódica de período T, então, f também é periódica de período nT, em que n ∈ N, já que:
+
+
+f(x)=f(x+T)=f(x+2T)=f(x+3T)=…=f(x+nT)
+f(x)=f(x+T)=f(x+2T)=f(x+3T)=…=f(x+nT)
+Exemplo 1
+
+Considere a função f do gráfico a seguir, que corresponde ao eletrocardiograma de uma pessoa saudável:
+
+
+Gráfico: Função f
+Observe que o padrão de repetição ocorre em intervalos de comprimento T, e não em intervalos de comprimento menor. Assim, a função f é uma função periódica de período T.
+
+
+Exemplo 2
+
+Considere a função:
+
+
+f: N → Z, tal que f(x) = (−1)x
+f: N → Z, tal que f(x) = (−1)x
+A tabela a seguir mostra o valor da função f para os valores de x de 0 a 5.
+
+
+x	0	1	2	3	4	5
+f(x)	(−1)0 = 1	(−1)1 = −1	(−1)2 = 1	(−1)3 = −1	(−1)4 = 1	(−1)5 = −1
+Tabela: Valor da função f para os valores de x de 0 a 5
+Adaptado de Loisi Carla Monteiro Pereira
+
+Se x é um número par, f(x) = 1. Se x é um número ímpar, f(x) = −1.
+
+
+Essa é uma função periódica de período 2. Por quê?
+
+
+Ora, quando x varia duas unidades, o valor da função se repete, ou seja:
+
+
+f(x) = f(x + 2) = f(x + 4) = f( x + 6) = . . .
+f(x) = f(x + 2) = f(x + 4) = f( x + 6) = . . .
+Dessa forma, podemos afirmar que o período dessa função é 2.
+
+
+Exemplo 3
+
+
+Acompanhe neste vídeo as funções seno, cosseno e tangente.
+
+
+
+Considere a função f(t) = sen(t) e P um ponto no ciclo trigonométrico.
+
+
+Imagine que o ponto P se movimenta no ciclo no sentido anti-horário, a partir da posição (1, 0) e dá uma volta completa, ângulo t varia de 0 até 2π(pi).
+
+
+Pensando no ciclo, é possível percebe que:
+
+
+Quando o ângulo t cresce de	O valor f(t) = sen(t)
+0 a π(pi) ÷ 2	Cresce de 0 a 1
+π(pi) ÷ 2 a π(pi)	Descresce de 1 a 0
+π(pi) a 3π(pi) ÷ 2	Descresce de 0 a −1
+3π(pi) ÷ 2 a 2π(pi)	Cresce de −1 a 0
+Tabela: A função f(t) = sen(t) e o ângulo t
+Adaptado de Loisi Carla Monteiro Pereira
+
+Representação gráfica do exemplo 3
+
+
+Confira no vídeo a representação.
+
+
+
+Exemplo 4
+
+
+
+O fluxo de ar através da traqueia é uma função periódica do tempo x e ocorre em ambos os sentidos dos pulmões (inspiração e expiração).
+
+
+O fluxo pode ser representado pela função:
+
+
+f(x) = A sen(z x)
+
+
+Na qual constatamos que:
+
+
+A = fluxo máximo durante a expiração e inspiração.
+z = período respiratório.
+z = 2π(pi) ÷ T → T = o tempo que o indivíduo leva para fazer um ciclo completo.
+
+A função f é, certamente, uma aproximação, pois T varia de indivíduo para indivíduo. Mas estudos experimentais mostram que é uma boa aproximação da realidade. Observe o seguinte gráfico:
+
+
+
+Gráfico: A = 1 , T = 1 / 4 , A = 2 , T = 1 / 3

@@ -1,0 +1,131 @@
+Paradigma orientado a objetos em Java
+Assista ao vídeo para saber como transformar problemas reais em soluções de software com a programação orientada a objetos em Java. Conheça os pilares do paradigma orientados a objetos, como classes, objetos, atributos e métodos. Veja também exemplos práticos que mostram como encapsular dados e comportamentos de forma clara, reutilizável e escalável. Não perca!
+
+
+
+Conceito de paradigmas orientados a objetos
+
+
+
+Você já se perguntou por que pessoas programadoras experientes conseguem transformar problemas do mundo real em soluções robustas, escaláveis e reutilizáveis? O segredo está no modo como organizam o código, o qual chamamos: paradigma orientado a objetos.
+
+ 
+
+Ele vai muito além da codificação, pois é uma forma de pensar, projetar e construir software inspirada no mundo real, em que os elementos do sistema são representados por objetos que interagem entre si. Portanto, ao dominar esses conceitos, você se posiciona como alguém que escreve código e modela soluções.
+
+
+De procedural para orientado a objetos
+
+
+Antes de entrar na orientação a objetos (OO), é importante entender de onde ela veio. Na programação procedural, o foco está em funções e procedimentos: o código é escrito em sequência, e os dados são processados como entradas e saídas dessas funções. Para pequenos scripts, essa abordagem funciona bem, mas falha à medida que o sistema cresce.
+
+ 
+
+Na OO, o foco está nos objetos que são pequenas unidades que encapsulam dados (atributos) e comportamentos (métodos). Em vez de processar os dados separadamente, os próprios objetos sabem como agir.
+
+ 
+
+Veja agora o quadro com as abordagens estudadas:
+
+
+Aspecto	Programação procedural	Programação orientada a objetos
+Organização	Funções e variáveis soltas	Classes e objetos interconectados
+Reutilização	Baixa	Alta (herança, composição)
+Manutenção	Mais difícil em sistemas grandes	Mais fácil com separação de responsabilidades
+Escalabilidade	Limitada	Alta, com encapsulamento e modularização
+Exemplos	C, Pascal	Java, Python (com OO), C#
+Tabela: Comparação entre programação procedural e programação orientada a objetos.
+Curadoria de TI.
+
+Elementos fundamentais da orientação a objetos
+
+
+Dominar OO em Java significa entender com clareza os seguintes conceitos:
+
+
+
+Classe
+
+Objeto
+
+Atributo
+
+Método
+
+Instância
+É como um molde ou projeto. Define o que os objetos daquele tipo sabem (atributos) e o que sabem fazer (métodos).
+
+
+
+
+
+
+
+
+
+
+Vamos pensar em uma classe que representa um usuário de sistema com nome, e-mail e senha. Ele também pode fazer login.
+
+ 
+
+Arquivo: Usuario.java
+
+
+Java (OpenJDK 13.0.1)
+
+public class Usuario {
+    String nome;
+    String email;
+    String senha;
+
+    public void fazerLogin() {
+        System.out.println(nome + " está tentando fazer login.");
+    }
+}
+
+Light Mode
+
+Copiar
+
+Agora instanciamos um objeto do tipo Usuario.
+
+ 
+
+Arquivo: Main.java
+
+
+Java (OpenJDK 13.0.1)
+public class Main {
+    public static void main(String[] args) {
+        Usuario u1 = new Usuario();
+        u1.nome = "Fulano";
+        u1.email = "fulano@email.com";
+        u1.senha = "123456";
+
+        u1.fazerLogin();  // Saída: Fernanda está tentando fazer login.
+    }
+}
+
+Light Mode
+
+Copiar
+
+Perceba como o objeto u1 tem seus próprios dados e sabe executar o método fazerLogin(). Esse encapsulamento de dados + comportamento é a base da orientação a objetos.
+
+
+O ciclo de vida de um objeto em Java
+
+
+Entender como um objeto “nasce”, “vive” e “morre” no programa possibilita trabalhar com eficiência. Veja!
+
+ 
+
+A classe é definida com atributos e métodos.
+ 
+O objeto é instanciado com new.
+ 
+Os atributos são definidos.
+ 
+Os métodos são chamados.
+ 
+Ao final da execução, o objeto é descartado da memória pela JVM.

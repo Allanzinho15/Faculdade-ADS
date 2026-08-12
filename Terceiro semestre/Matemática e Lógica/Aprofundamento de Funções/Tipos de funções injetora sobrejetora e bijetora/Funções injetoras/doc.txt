@@ -1,0 +1,149 @@
+Funções injetoras
+Conhecendo funções injetoras
+
+
+Descubra o que é uma função injetora neste vídeo e entenda a importância de conhecer o seu comportamento.
+
+
+
+Funções injetoras parece um nome complicado, mas a ideia é bem simples e útil, principalmente quando pensamos em organização e processos em uma empresa.
+
+ 
+
+Imagine que você esteja organizando os funcionários em diferentes equipes para um projeto. Uma função injetora no mundo da matemática é como garantir que cada funcionário (que seria o nosso x) tenha uma única função ou tarefa atribuída (que seria o nosso f(x)), e que funções ou tarefas diferentes sejam sempre atribuídas a funcionários diferentes. Não pode haver dois funcionários fazendo a mesma função se eles são pessoas diferentes.
+
+ 
+
+Formalizando um pouco, mas sem complicação: uma função f é dita injetora (ou injetiva) se, para quaisquer dois números, a 
+1
+​
+ ∈a 
+2
+​
+ , que fazem parte do domínio da função f, e que são diferentes um do outro a 
+1
+​
+ 
+
+=a 
+2
+​
+ , os resultados da função para esses números — ou seja, f(a 
+1
+​
+ ) e f(a 
+2
+​
+ ) — também são sempre diferentes na imagem de f.
+
+ 
+
+Em termos mais práticos ainda, pense assim: se você tem dois inputs diferentes ( a 
+−
+​
+ 1 e a 
+2
+​
+  ), você sempre vai ter outputs diferentes, como: ( f(a 
+1
+​
+ ) e f(a 
+2
+​
+ ). É como um sistema de senhas único para cada usuário, cada pessoa (input) tem uma senha diferente (output).
+
+ 
+
+Vamos entender com o auxílio de diagramas. Para isso, vamos repetir: uma função é injetora quando só existe uma única ligação entre domínio e imagem. Nenhum elemento de imagem pode receber mais do que um elemento de domínio, veja!
+
+
+
+ Funç 
+a
+˜
+ o injetora de A→B. 
+
+Perceba que todos os elementos do domínio (conjunto A) têm um único correspondente na imagem (conjunto B) e que nenhum elemento da imagem tem mais de um elemento do domínio. É, literalmente, "um para cada um".
+
+ 
+
+Vamos explorar três exemplos de funções injetoras, também conhecidas como funções um-para-um. 
+
+
+Atenção
+Lembre-se que uma função é injetora se cada elemento da imagem está associado a um único elemento do domínio. Em outras palavras, se f(x 
+1
+​
+ )=f(x 
+2
+​
+ ), então x 
+1
+​
+ =x 
+2
+​
+ .
+
+
+Exemplo 1 - Função fim
+
+
+Vamos verificar neste exemplo como a função afim f(x)=3x+2 é injetora.
+
+ 
+
+Para analisar se uma função é injetora, observamos este gráfico:
+
+
+
+
+Gráfico: função f(x)=3x+2 
+
+Perceba que temos uma reta crescente (que cresce da esquerda para a direita). E que cada elemento de x tem um único correspondente em y, e que cada elemento em y recebe somente um elemento em x. Por isso, essa função afim é injetora.
+
+ 
+
+Observação: funções afins do tipo f(x)=ax+b, em que a é diferente de zero, são sempre injetoras. O coeficiente angular a diferente de zero garante que a reta seja inclinada e, portanto, cada valor de y na imagem corresponde a um único valor de x no domínio.
+
+
+Exemplo 2 - Função exponencial
+
+
+É uma função do tipo f(x)=a 
+x
+ , em que a é a base e x é o expoente. Para poder verificar que esse tipo de função é injetora, vamos analisar a função: f(x)=2 
+x
+ . Faremos da mesma forma que fizemos anteriormente. Vamos analisar o gráfico!
+
+
+
+
+Gráfico: função f(x)=2 
+x
+ .
+
+Perceba que, assim como na função afim, temos somente um para um de x e y. E por isso, a função exponencial é uma função injetora.
+
+
+Exemplo 3 - Função quadrada
+
+
+Vejamos agora um exemplo de uma função que não é injetora, uma função quadrada do tipo f(x)=ax 
+2
+ +bx+c. Para isso, vamos analisar o gráfico de f(x)=ax 
+2
+ −x−12. 
+
+
+
+
+Gráfico: função f(x)=ax 
+2
+ −x−12. 
+
+Repare no gráfico que temos alguns exemplos de valores distintos do domínio com a mesma imagem, perceba quando x=−3,y=0 e quando x=4,y=0 também. Outro exemplo: quando x=−1,y=−10 e quando x=2,y=−10.
+
+ 
+
+O fato de existirem elementos distintos do domínio com a mesma imagem faz com que a função não seja injetora.
