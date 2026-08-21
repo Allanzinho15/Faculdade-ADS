@@ -1,0 +1,344 @@
+Regras de inferência
+O conhecimento teórico sobre as regras de inferência ajuda a validar argumentos de maneira eficiente. Essas regras simplificam a verificação de proposições complexas, sendo fundamentais tanto na matemática quanto na computação. Assista a este vídeo para aprender, a partir de exemplos práticos, como aplicar regras de inferência como modus ponens, modus tollens, silogismo hipotético e outras para verificar a validade de argumentos.
+
+
+Neste vídeo, você vai aprender sobre as principais regras de inferência utilizadas para validar argumentos lógicos. Você também vai ver exemplos práticos de como aplicar regras como modus ponens, modus tollens, silogismo hipotético e outras para simplificar e verificar a veracidade de proposições complexas.
+
+
+
+Agora, vamos conhecer as regras de inferência. Através delas, podemos verificar a validade de argumentos. Considere a seguinte situação:
+
+
+Se Carlos estuda, então é aprovado em lógica.
+ 
+
+Se Carlos não estuda bem, então o professor é culpado. 
+
+ 
+
+Se Carlos é aprovado em lógica, então seus pais ficam felizes. 
+
+ 
+
+Os pais de Carlos não estão felizes. Logo, o professor é culpado.
+
+ 
+
+Se Carlos é aprovado em lógica, então seus pais ficam felizes.
+
+ 
+
+Os pais de Carlos não estão felizes.
+ 
+
+Logo, o professor é culpado.
+
+
+Esse argumento é válido?
+
+
+Não sabemos. Podemos verificar a validade de um argumento através da construção da tabela-verdade, mas nem sempre esse trabalho é tão simples, pois o número de linhas da tabela-verdade aumenta de acordo com a quantidade de proposições presentes na formulação dos argumentos.
+
+
+Diante de situações como essa, podemos usar as regras de inferência, que são argumentos válidos e/ou regras lógicas usados na validação de outros argumentos. Com as regras de inferência, podemos realizar as demonstrações de maneira mais simples.
+
+
+
+Homem concentrado sentado em frente ao computador.
+
+As regras de inferência são importantes para os estudantes de computação no desenvolvimento de algoritmos, e para os estudantes de matemática que precisam conhecer as regras lógicas de demonstrações. Neste módulo, apenas conheceremos essas regras, pois elas são detalhadas em temas que tratam de métodos de demonstração.
+
+
+Regra da adição (AD)
+
+As premissas são colocadas sobre o traço horizontal. Abaixo dele temos a conclusão.
+
+
+p∨q( conclus 
+a
+˜
+ o) 
+p( premissa )
+​
+ 
+p∨q( conclus 
+a
+˜
+ o) 
+p( premissa )
+​
+ 
+Exemplo
+
+(Fundação Carlos Chagas - Adaptado) Consideraremos as seguintes proposições:
+
+
+p: A temperatura está baixa.
+q: Há nevoeiro.
+p: A temperatura está baixa.
+q: Há nevoeiro.
+Conclusão:
+
+
+p ∨ q: A temperatura está baixa ou há nevoeiro.
+p ∨ q: A temperatura está baixa ou há nevoeiro.
+Regra da simplificação (SIMP)
+
+Observe a proposição seguir.
+
+
+p
+p∧q
+​
+ 
+p
+p∧q
+​
+ 
+Exemplo
+
+(Fundação Carlos Chagas - Adaptado) Consideraremos as seguintes proposições:
+
+
+p: A temperatura está baixa.
+q: Há nevoeiro.
+p∧q: A temperatura está baixa e há nevoeiro.
+p: A temperatura está baixa.
+q: Há nevoeiro.
+p∧q: A temperatura está baixa e há nevoeiro.
+Conclusão:
+
+
+p: A temperatura está baixa.
+p: A temperatura está baixa.
+Também podemos considerar:
+
+
+q: Há nevoeiro.
+q: Há nevoeiro.
+Modus ponens (MP)
+
+Observe a proposição seguir.
+
+
+p→q
+q
+p
+​
+ 
+​
+ 
+p→q
+q
+p
+​
+ 
+​
+ 
+Exemplo
+
+(Fundação Carlos Chagas - Adaptado) Consideraremos as seguintes proposições:
+
+
+p: A temperatura está baixa.
+q: Há nevoeiro.
+p→q: Se a temperatura está baixa então há nevoeiro.
+p: A temperatura está baixa.
+p: A temperatura está baixa.
+q: Há nevoeiro.
+p→q: Se a temperatura está baixa então há nevoeiro.
+p: A temperatura está baixa.
+Conclusão:
+
+
+q: Há nervoeiro.
+q: Há nervoeiro.
+Modus tollens (MT)
+
+
+Observe a proposição seguir.
+
+
+​
+  
+p→q
+∼p
+∼q
+​
+ 
+​
+ 
+​
+  
+p→q
+∼p
+∼q
+​
+ 
+​
+ 
+Exemplo
+
+(Fundação Carlos Chagas - Adaptado) Consideraremos as seguintes proposições:
+
+
+p : A temperatura está baixa.
+q : Há nevoeiro.
+p→q : Se a temperatura está baixa então há nevoeiro.
+∼q : Não há nevoeiro.
+p : A temperatura está baixa.
+q : Há nevoeiro.
+p→q : Se a temperatura está baixa então há nevoeiro.
+∼q : Não há nevoeiro.
+Conclusão:
+
+
+∼p: A temperatura não está baixa.
+∼p: A temperatura não está baixa.
+Silogismo hipotético (SH)
+
+Observe a proposição seguir.
+
+
+​
+  
+p→q
+p→r
+q→r
+​
+ 
+​
+ 
+​
+  
+p→q
+p→r
+q→r
+​
+ 
+​
+ 
+Exemplo
+
+(Fundação Carlos Chagas - Adaptado) Consideraremos as seguintes proposições:
+
+
+p: A temperatura está baixa.
+q: Há nevoeiro.
+r: Os aviões não decolam.
+p → q: Se a temperatura está baixa então há nevoeiro.
+q → r: Se há nevoeiro então os aviões não decolam.
+p: A temperatura está baixa.
+q: Há nevoeiro.
+r: Os aviões não decolam.
+p → q: Se a temperatura está baixa então há nevoeiro.
+q → r: Se há nevoeiro então os aviões não decolam.
+Conclusão:
+
+
+p → r: Se a temperatura está baixa então os aviões não decolam.
+p → r: Se a temperatura está baixa então os aviões não decolam.
+Silogismo disjuntivo (SD)
+
+ p ∨ q 
+  
+q
+∼ p
+​
+  
+​
+ 
+ p ∨ q 
+  
+p
+∼ q
+​
+  
+​
+ 
+​
+ 
+ p ∨ q 
+  
+q
+∼ p
+​
+  
+​
+ 
+ p ∨ q 
+  
+p
+∼ q
+​
+  
+​
+ 
+​
+ 
+Exemplo
+
+(Fundação Carlos Chagas - Adaptado) Consideraremos as seguintes proposições:
+
+
+p: A temperatura está baixa.
+q: Há nevoeiro.
+p ∨ q: A temperatura está baixa ou há nevoeiro.
+∼p: A temperatura não está baixa.
+p: A temperatura está baixa.
+q: Há nevoeiro.
+p ∨ q: A temperatura está baixa ou há nevoeiro.
+∼p: A temperatura não está baixa.
+Conclusão:
+
+
+q: Há nevoeiro.
+q: Há nevoeiro.
+Também podemos considerar:
+
+
+p ∨ q: A temperatura está baixa ou há nevoeiro.
+∼q: Não há nevoeiro.
+p ∨ q: A temperatura está baixa ou há nevoeiro.
+∼q: Não há nevoeiro.
+Conclusão
+
+
+q: Há nevoeiro.
+p: A temperatura está baixa.
+q: Há nevoeiro.
+p: A temperatura está baixa.
+Regra da conjunção (CONJ)
+
+Observe a proposição seguir.
+
+
+p
+q
+p∧q
+​
+ 
+p
+q
+p∧q
+​
+ 
+Exemplo
+
+(Fundação Carlos Chagas - Adaptado) Consideraremos as seguintes proposições:
+
+
+p: A temperatura está baixa.
+q: Há nevoeiro.
+p: A temperatura está baixa.
+q: Há nevoeiro.
+Conclusão:
+
+
+p∧q: A temperatura est 
+a
+ˊ
+  baixa e h 
+a
+ˊ
+  nevoeiro. 

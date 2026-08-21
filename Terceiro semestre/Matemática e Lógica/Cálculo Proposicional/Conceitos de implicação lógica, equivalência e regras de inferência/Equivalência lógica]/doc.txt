@@ -1,0 +1,231 @@
+Equivalência lógica
+O conhecimento teórico sobre equivalências lógicas garante a precisão em argumentos e raciocínios matemáticos e computacionais para a análise e simplificação de proposições lógicas. Entender como diferentes proposições podem ser equivalentes ajuda a resolver problemas complexos de forma mais eficiente. Assista a este vídeo para aprender, com exemplos práticos, como verificar equivalências lógicas utilizando tabelas-verdade e leis de equivalência.
+
+
+Neste vídeo, você vai aprender sobre equivalências lógicas, um conceito central na lógica proposicional que permite verificar quando duas proposições são logicamente equivalentes. Você também vai ver as tabelas-verdade e as leis de equivalência, bem como exemplos práticos que ilustram como identificar e aplicar equivalências lógicas em diferentes contextos.
+
+
+
+Sejam p e q duas proposições compostas. Dizemos que uma proposição p é equivalente a uma proposição q se as tabelas-verdade dessas proposições forem iguais. Usamos a seguinte notação:
+
+
+P↔q (L 
+e
+ˆ
+ -se: p equivalente Q.) 
+P↔q (L 
+e
+ˆ
+ -se: p equivalente Q.) 
+Podemos relacionar as equivalências e as tautologias. Dessa forma, dizemos que as proposições p e q são equivalentes se e somente se p ↔ q é uma tautologia. Além disso, elas também são equivalentes se forem uma tautologia ou uma contradição.
+
+
+Tabela de equivalências
+
+Observe a tabela a seguir.
+
+
+Comutativas	 
+​
+  
+p∧q↔q∧p
+p∨q↔q∨p
+​
+ 
+Associativas	 
+​
+  
+(p∧q)∧p↔p∧(q∧p)
+(p∨q)∨p↔p∨(q∨r)
+​
+ 
+Idempotentes	 
+​
+  
+p∧p↔p
+p∨p↔p
+​
+ 
+Absorções	 
+​
+  
+p∧(p∨q)↔p
+p∨(p∧q)↔p
+​
+ 
+Distributivas	 
+​
+  
+p∧(q∨r)↔(p∧q)∨(p∧r)
+p∨(q∧r)↔(p∨q)∧(p∨r)
+​
+ 
+Leis de Morgan	 
+​
+  
+∼(p∧q)↔∼p∨∼q
+∼(p∨q)↔∼p∧∼q
+​
+ 
+Definições de implicação	 
+p→q↔∼p∨q
+p→q↔∼(p∧∼q)
+​
+ 
+Definições de bicondicional	 
+​
+  
+p↔q↔(p→q)∧(q→p)
+p↔q↔(p∧q)∨(∼p∧∼q)
+​
+ 
+Negação da bicondicional	∼(p↔q)↔(p∧∼q)∨(∼p∧q)
+Negação	∼(∼p)↔p
+Contrapositiva	p→q↔∼q→∼p
+Tabela: Tabela de equivalências.
+Ana Lucia de Sousa.
+
+
+As equivalências que aparecem com frequências são:
+
+
+Leis de Morgan	
+Negação do "e":
+
+∼(p∧q)↔∼p∨∼q
+
+Negação do "ou":
+
+∼(p∨q)↔∼p∧∼q
+
+Definições de implicação	 
+p→q↔∼p∨q
+p→q↔∼(p∧∼q)
+​
+ 
+Negação da condicional	∼(p→q)↔p∧∼q
+Negação	∼(∼p)↔p
+Contrapositiva	p→q↔∼q→∼p
+Tabela: Tabela de frequentes equivalências.
+Ana Lucia de Sousa.
+
+
+Veja alguns exemplos.
+
+
+
+1 - (CESGRANRIO/2009) Se Marcos levanta cedo, então Júlia não perde a hora. É possível sempre garantir que:
+
+
+ 
+
+Se Marcos não levanta cedo, então Júlia perde a hora.
+ 
+Se Marcos não levanta cedo, então Júlia não perde a hora.
+ 
+Se Júlia perde a hora, então Marcos levantou cedo.
+ 
+Se Júlia perde a hora, então Marcos não levantou cedo.
+ 
+Se Júlia não perde a hora, então Marcos levantou cedo.
+ 
+
+Solução:
+ 
+
+Nessa questão, devemos buscar uma proposição equivalente a:
+ 
+
+Se Marcos levanta cedo, então Júlia não perde a hora.
+ 
+
+Considerando:
+ 
+
+p: Marcos levanta cedo.
+ 
+q: Júlia não perde a hora.
+ 
+Na linguagem simbólica podemos escrever: p → q.
+ 
+
+Veja que temos uma condicional. Então, vamos verificar na tabela a equivalência onde aparece a condicional.
+ 
+
+Contrapositiva: p → q ↔ ∼~q → ~p.
+ 
+
+Vamos negar as proposições p e q.
+
+ 
+
+p: Marcos levanta cedo.
+ 
+~p: Marcos não levanta cedo.
+ 
+q: Júlia não perde a hora.
+ 
+~q: Júlia perde a hora.
+ 
+~q → ~p: Se Júlia perde a hora, então Marcos não levanta cedo.
+ 
+Alternativa correta: D
+
+2 - (CBMERJ/2014 - Adaptado) Dizer que “não é verdade que 'Marcela não é bonita ou Maria não é organizada' ” é logicamente equivalente a dizer que é verdade que:
+
+
+ 
+
+Se Marcela não é bonita, então Maria é organizada.
+ 
+Marcela é bonita e Maria é organizada.
+ 
+Marcela é bonita ou Maria não é organizada.
+ 
+Marcela é bonita ou Maria é organizada.
+ 
+Marcela não é bonita e Maria não é organizada.
+ 
+
+Solução:
+ 
+
+“Não é verdade que Marcela não é bonita ou Maria não é organizada.”
+ 
+
+Na linguagem simbólica, temos:
+ 
+
+~p: Marcela não é bonita.
+ 
+~q: Maria não é organizada.
+ 
+Não é verdade é uma negação (~).
+ 
+
+Temos, então: ~(~p ∨ ~q)
+ 
+
+Aplicando as Leis de De Morgan:
+ 
+
+Negação do "ou": ∼(p∨q)↔∼p∧∼q
+
+Assim, ∼(∼p∨∼q)↔∼(∼p)∧∼(∼q)=p∧q
+
+Logo, Marcela é bonita e Maria é organizada.
+Alternativa correta: B
+
+Outras proposições associadas a uma condicional
+
+Com relação à condicional p → q, temos as seguintes proposições associadas:
+
+
+Proposição recíproca
+
+q → p
+Proposição contrária
+
+~p → ~q
+
+A proposição contrapositiva também é uma proposição associada à condicional e é a única equivalente à condicional.

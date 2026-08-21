@@ -1,0 +1,292 @@
+Conectivos ou juntores
+É preciso ter conhecimento teórico sobre conectivos lógicos para se aprofundar em lógica matemática e programação. Os conectivos permitem transformar a linguagem natural em simbólica, facilitando a construção e análise de proposições complexas. Assista a este vídeo para entender como utilizar conectivos lógicos para formar novas proposições e realizar operações lógicas fundamentais.
+
+
+Neste vídeo, você vai conhecer os conectivos lógicos ― conjunção, disjunção (inclusiva e exclusiva), condicional, bicondicional e negação. Você também vai ver exemplos da transformação de proposições da linguagem natural para a simbólica, bem como suas aplicações e sua importância na lógica matemática.
+
+
+
+Podemos realizar operações sobre as proposições utilizando elementos conhecidos na lógica como conectivos ou juntores.
+
+
+Os conectivos são símbolos lógicos com os quais efetuamos as operações lógicas obedecendo regras do cálculo proposicional.
+ 
+Eles são importantes, pois novas proposições podem ser formadas a partir de outras proposições com sua utilização.
+ 
+Com os conectivos, passamos uma proposição da linguagem natural para a linguagem simbólica.
+
+Na linguagem natural ou corrente, os conectivos são palavras. Veja alguns exemplos:
+
+
+Vamos considerar duas proposições simples p e q.
+
+
+p: Maria é alta
+q: Maria é elegante
+p: Maria é alta
+q: Maria é elegante
+Usando os conectivos, podemos formar outras proposições a partir das proposições p e q.
+
+
+P. Maria é alta e elegante.
+Q: Maria é alta ou elegante.
+R Se Maria é alta, então é elegante.
+T: Maria é alta se, e somente se é elegante.
+P. Maria é alta e elegante.
+Q: Maria é alta ou elegante.
+R Se Maria é alta, então é elegante.
+T: Maria é alta se, e somente se é elegante.
+Veja que, na linguagem natural, as palavras utilizadas são, por exemplo: e, ou, se, então, se e somente se.
+
+
+Representamos essas palavras através de símbolos lógicos com os quais efetuamos as chamadas operações lógicas. Agora, vamos conhecer os conectivos lógicos e as operações realizadas sobre as proposições.
+
+
+Conjunção
+
+
+Linguagem corrente: “e”, “mas”, “além disso”, “também”.
+
+
+Notação: ∧
+Notação: ∧
+Essa notação é usada entre duas proposições: p∧q
+
+
+Como se ler: p e q
+Como se ler: p e q
+Exemplo
+
+
+Sejam as proposições:
+
+
+p: Paulo é trabalhador.
+q: Paulo é estudioso.
+p: Paulo é trabalhador.
+q: Paulo é estudioso.
+Usando o conectivo “e”, podemos formar outra proposição:
+
+
+p∧q: Paulo é trabalhador e Paulo é estudioso.
+p∧q: Paulo é trabalhador e Paulo é estudioso.
+Podemos dizer simplesmente: Paulo é trabalhador e estudioso.
+
+
+A conjunção p∧q pode ser representada por diagramas, na teoria dos conjuntos. Nesse caso, ela representa a interseção dos conjuntos p e q.
+
+
+Disjunção
+
+Linguagem corrente: "ou".
+
+
+Notação: V
+
+
+Essa notação é usada entre duas proposições: p∨q.
+
+
+Como se lê: p ou q
+
+
+Exemplo
+
+Sejam as proposições:
+
+
+p: Paulo ganhou um carro.
+q: Paulo ganhou um apartamento.
+p: Paulo ganhou um carro.
+q: Paulo ganhou um apartamento.
+Usando o conectivo “ou”, podemos formar outra proposição:
+
+
+p∨q: Paulo ganhou um carro ou Paulo ganhou um apartamento.
+p∨q: Paulo ganhou um carro ou Paulo ganhou um apartamento.
+Podemos dizer simplesmente: Paulo ganhou um carro ou ganhou um apartamento.
+
+
+Com relação à disjunção, ela pode ser:
+
+
+Disjunção inclusiva, cujo símbolo é V.
+ 
+Disjunção exclusiva, cujo símbolo é  
+V
+​
+ .
+
+Veja, a seguir, exemplos desses tipos de disjunção:
+
+
+Disjunção inclusiva
+
+
+P: Ana é professora ou médica.
+
+
+Disjunção exclusiva
+
+
+P: Ou Ana é paulista, ou é gaúcha.
+
+Nesse caso, Ana não pode ser paulista e gaúcha ao mesmo tempo. Ou seja, se Ana é paulista, excluímos a possibilidade de Ana ser gaúcha e vice-versa.
+
+
+A disjunção p∨q, na teoria dos conjuntos, representa a união dos conjuntos p e q.
+
+
+Condicional
+
+
+Linguagem corrente: “Se... então”
+
+
+Notação: →
+Notação: →
+Essa notação é usada da seguinte forma: Se p então q.
+
+
+Exemplo
+
+
+Observe a proposição:
+
+
+p: Paulo é aprovado em cálculo.
+q: Paulo ganha um prêmio.
+p: Paulo é aprovado em cálculo.
+q: Paulo ganha um prêmio.
+Usando o conectivo “se... então”, podemos formar outra proposição:
+
+
+p→q: Se Paulo é aprovado em cálculo, então ganha um prềmio.
+p→q: Se Paulo é aprovado em cálculo, então ganha um prềmio.
+Podemos dizer simplesmente: Se Paulo é aprovado em cálculo, então ganha um prêmio.
+
+
+Veja a relação entre p e q na proposição condicional a seguir:
+
+
+p→q
+p→q
+Sendo:
+
+
+A proposição p é chamada de antecedente.
+ 
+A proposição q é chamada de consequente.
+ 
+p é condição suficiente para q.
+ 
+q é condição necessária para p.
+
+A condicional p→q pode ser representada através de diagramas. Nesse caso, ela representa a inclusão do conjunto p no conjunto q,(p⊂q).
+
+
+Bicondicional
+
+Linguagem corrente: “... Se e somente se...”.
+
+
+Notação: ↔
+Notação: ↔
+Essa notação é usada da seguinte forma: p se e somente se q.
+
+
+Exemplo
+
+Observe a seguinte proposição:
+
+
+p: Carlos é trabalhador.
+q: Carlos é estudioso.
+p: Carlos é trabalhador.
+q: Carlos é estudioso.
+Usando o conectivo “se e somente se”, podemos formar outra proposição:
+
+
+p↔q: Carlos é trabalhador se, e somente se, Carlos é estudioso.
+p↔q: Carlos é trabalhador se, e somente se, Carlos é estudioso.
+Observe sobre a bicondicional:
+
+
+p é condição necessária e suficiente para q.
+ 
+q é condição necessária e suficiente para p.
+
+A bicondicional p↔q pode ser representada através de diagramas. Nesse caso, ela representa a igualdade dos conjuntos p e q,(p=q).
+
+
+Negação
+
+Linguagem corrente: "não", "é falso que", "não é o caso que", "não é verdade que".
+
+
+Notação: ∼ (til) ou ¬ (chamada de cantoneira).
+
+
+A notação mais utilizada: ~
+
+
+Essa notação é usada na frente da letra que usamos para designar a proposição, para negá-la:
+
+
+~p
+
+
+Como se ler: não p.
+
+
+Exemplo
+
+Observe as proposições:
+
+
+p: Maria é uma aluna inteligente.
+~p: Maria não é uma aluna inteligente.
+q: Marcos é engenheiro.
+~q: Não é verdade que Marcos é engenheiro.
+~q: É falso que Marcos é engenheiro.
+p: Maria é uma aluna inteligente.
+~p: Maria não é uma aluna inteligente.
+q: Marcos é engenheiro.
+~q: Não é verdade que Marcos é engenheiro.
+~q: É falso que Marcos é engenheiro.
+Quando negamos a negação da proposição p, obtemos a própria proposição p, isto é: ~~p ou p é o mesmo que escrever ~(~p).
+
+
+Temos mais dois conectivos não muito usuais:
+
+
+NAND ( ↑ )
+
+
+Ele é a combinação de dois conectivos: “não” e “e”.
+
+
+Exemplo
+
+Sejam as proposições p e q:
+
+
+p: Maria vai ao clube.
+q: Maria vai estudar lógica.
+p↑q: Não é verdade que (Maria vai ao clube e vai estudar lógica).
+p: Maria vai ao clube.
+q: Maria vai estudar lógica.
+p↑q: Não é verdade que (Maria vai ao clube e vai estudar lógica).
+NOR ( ↓ )
+
+NOR é a combinação de dois conectivos: "não" e "ou".
+
+
+Exemplo
+
+Sejam as proposições p e p:
+
+
+p: Maria vai ao clube.
+q: Maria vai estudar lógica.
+p↓q: Não é verdade que (Maria vai ao clube ou vai estudar lógica).

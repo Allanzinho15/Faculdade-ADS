@@ -1,0 +1,114 @@
+Análise dos argumentos
+As regras de inferência são fundamentais para a matemática, a lógica e a computação. Assista a este vídeo para aprender, a partir de exemplos práticos, como utilizar as regras de inferência para analisar a validade de argumentos e entender a estrutura lógica por trás deles.
+
+
+Neste vídeo, você vai aprender a utilizar as regras de inferência para validar argumentos lógicos. Você também vai ver exemplos práticos de como identificar e aplicar premissas e conclusões para determinar a validade de um argumento, um processo de dedução lógica explicado passo a passo.
+
+
+
+Conhecendo as regras de inferência, sabemos que elas são importantes na validação de argumentos e para, a partir de proposições conhecidas, deduzirmos outras proposições.
+
+
+No estudo de argumentos, consideraremos exemplos mais simples, nos quais poderemos fazer uso do valor lógico dos conectivos para analisarmos sua validade.
+
+
+Um argumento é formado por um conjunto de proposições simples ou compostas, em que uma dessas proposições é a conclusão, que vamos chamar de Q.
+
+
+O restante das proposições são as premissas ou hipóteses do argumento. Um argumento apresenta uma sequência de premissas:
+
+
+Premissa 1
+Premissa 2
+Premissa 3
+Premissa n,n≥1.
+Premissa 1
+Premissa 2
+Premissa 3
+Premissa n,n≥1.
+Logo, podemos indicar um argumento por:
+
+
+P 
+1
+​
+ ,P 
+2
+​
+ ,P 
+3
+​
+ ,⋯,P 
+n
+​
+ ↦Q.
+P 
+1
+​
+ ,P 
+2
+​
+ ,P 
+3
+​
+ ,⋯,P 
+n
+​
+ ↦Q.
+Dessa forma, podemos dizer que a conclusão q se deduz das premissas, ou que a conclusão q decorre das premissas.
+
+
+Se as premissas e a conclusão têm valor lógico V (verdadeiro), dizemos que o argumento é válido. Na análise da validade de um argumento, consideramos que todas as premissas são verdadeiras. Se o argumento for inválido, chamamos de sofisma ou falácia.
+
+
+Veja um exemplo de argumento:
+
+
+Exemplo
+
+(CEBRASPE/ABIN/2018 - Adaptado) As seguintes proposições lógicas formam um conjunto de premissas de um argumento:
+
+
+Se Pedro não é músico, então André é servidor da ABIN.
+Se André é servidor da ABIN, então Carlos não é espião.
+Carlos é um espião.
+Se Pedro não é músico, então André é servidor da ABIN.
+Se André é servidor da ABIN, então Carlos não é espião.
+Carlos é um espião.
+A partir dessas premissas, julgue o item a seguir, acerca de lógica de argumentação. Analise que, se a proposição lógica “Pedro é músico” for a conclusão desse argumento, então, as premissas, juntamente com essa conclusão, constituem um argumento válido.
+
+
+Solução: Premissas:
+
+
+Se Pedro não é músico, então André é servidor da ABIN.
+ 
+Se André é servidor da ABIN, então Carlos não é espião.
+ 
+Carlos é um espião.
+
+Conclusão: Pedro é músico.
+
+
+Consideramos todas as premissas e a conclusão verdadeiras.
+
+
+Se Pedro não é músico, então André é servidor da ABIN. (V)
+ 
+Se André é servidor da ABIN, então Carlos não é espião. (V)
+ 
+Carlos é um espião. (V)
+
+Conclusão: Pedro é músico (V)
+
+
+Agora, começaremos a analisar a partir da proposição simples “Carlos é um espião”.
+
+
+Se Pedro não é músico (F), então André é servidor da ABIN (F). V
+Se André é servidor da ABIN (F), então Carlos não é espião (F)⋅(V).
+Carlos é um espião. (V)
+Se Pedro não é músico (F), então André é servidor da ABIN (F). V
+Se André é servidor da ABIN (F), então Carlos não é espião (F)⋅(V).
+Carlos é um espião. (V)
+Logo, concluímos que Pedro é músico. O argumento é válido.

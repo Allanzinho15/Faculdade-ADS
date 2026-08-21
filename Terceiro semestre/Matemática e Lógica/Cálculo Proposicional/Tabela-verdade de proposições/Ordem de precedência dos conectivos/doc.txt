@@ -1,0 +1,178 @@
+Ordem de precedência dos conectivos
+Você já deve ter observado que devemos obedecer à ordem de precedência dos conectivos, assim como fazemos na matemática ao resolver uma expressão. A ordem de precedência é: primeiro a negação ( ); seguida pela conjunção ou disjunção ( ∧ ) e (V), na ordem em que aparecem; depois a condicional (→); e, por último, a bicondicional (↔). Assista ao vídeo para ver esses conceitos em ação e entender melhor como aplicálos na prática.
+
+
+Neste vídeo, você vai acompanhar os passos detalhados para construir tabelas-verdade de proposições compostas. Utilizando o exemplo, você vai ver como preencher todas as combinações possíveis de valores lógicos e analisar a aplicação da ordem de precedência dos conectivos lógicos.
+
+
+
+Agora que conhecemos a tabela-verdade de cada conectivo, podemos construir a tabela-verdade de qualquer proposição composta. Devemos ficar atentos, porém, à ordem das proposições nas colunas da tabela.
+
+
+Atenção
+É importante obedecer a ordem de procedência dos conectivos da mesma forma que fazemos na matemática quando resolvemos uma expressão.
+
+
+Se, na proposição composta, temos a presença de parênteses, então, devemos começar por eles e, depois, verificar o que está fora deles.
+
+
+Ordem de precedência para os conectivos
+
+Essa ordem deve ser a seguinte:
+
+
+Negação (~).
+ 
+Conjunção ou disjunção (∧) e (∨), na ordem em que aparecem.
+ 
+Condicional (→).
+ 
+Bicondicional (↔).
+
+Exemplo
+
+Construa a tabela-verdade da seguinte proposição: (p ∨ ~q) → (~p ∧ q).
+
+
+Acompanhe a solução a seguir.
+
+
+Passo 1
+
+Verificar a quantidade de proposições simples existentes.
+
+
+Neste exemplo, temos duas proposições: p e q.
+
+
+Vamos, então, construir uma tabela-verdade com 4 linhas. Inicialmente, colocaremos nas duas primeiras colunas as proposições p e q. Em seguida, colocaremos nas linhas, conforme estudamos anteriormente, todas as combinações possíveis de V e F.
+
+
+p	q
+V	V
+V	F
+F	V
+F	F
+Tabela: Tabela-verdade do passo 1.
+Ana Lúcia de Sousa.
+
+
+Passo 2
+
+Na proposição dada, temos dois parênteses. Comece pelo primeiro parêntese da esquerda para a direita.
+
+
+(p ∨ ~q) → (~p ∧ q)
+(p ∨ ~q) → (~p ∧ q)
+Abriremos uma coluna para colocarmos a negação ~q. Veja que ~q é a negação de q. Complete a coluna ~q com V e F.
+
+
+p	q	~q
+V	V	F
+V	F	V
+F	V	F
+F	F	V
+Tabela: Tabela-verdade do passo 2.
+Ana Lúcia de Sousa.
+
+
+Passo 3
+
+Abriremos uma coluna para colocarmos a proposição p ∨ ~q. Em seguida, completaremos a coluna com Ve F de acordo com a análise da coluna p com a coluna q e o conectivo "ou" ( V ).
+
+
+p	q	~q	p ∨ ~q
+V	V	F	V
+V	F	V	V
+F	V	F	F
+F	F	V	V
+Tabela: Tabela-verdade do passo 3.
+Ana Lúcia de Sousa.
+
+
+Lembre-se de que, de acordo com a tabela-verdade da disjunção (V), ela é falsa quando as duas proposições são falsas. Nos demais casos, a disjunção é verdadeira.
+
+
+Passo 4
+
+Verificar o outro parêntese.
+
+
+(p ∨ ~q) → (~p ∧ q)
+(p ∨ ~q) → (~p ∧ q)
+Abriremos uma coluna para colocarmos a negação ~p. Veja que ~p é a negação de p. Complete a coluna ~p com V e F.
+
+
+p	q	~p	p ∨ ~q	~q
+V	V	F	V	F
+V	F	V	V	F
+F	V	F	F	V
+F	F	V	V	V
+Tabela: Tabela-verdade do passo 4.
+Ana Lúcia de Sousa.
+
+
+Passo 5
+
+Abriremos uma coluna para colocarmos a proposição ~p∧q. Em seguida, completaremos a coluna com V e F de acordo com a análise da coluna ~p com a coluna q e o conectivo "e" (∧).
+
+
+p	q	~q	p ∨ ~q	~p	~p∧q
+V	V	F	V	F	F
+V	F	V	V	F	F
+F	V	F	F	V	V
+F	F	V	V	V	F
+Tabela: Tabela-verdade do passo 5.
+Ana Lúcia de Sousa.
+
+
+Lembre-se de que, de acordo com a tabela-verdade da conjunção (∧), ela é verdadeira quando as duas proposições são verdadeiras. Nos demais casos, a conjunção é falsa.
+
+
+Passo 6
+
+Agora que já analisamos os dois parênteses, vamos verificar a condicional que une os parênteses.
+
+
+(p ∨ ~q) → (~p ∧ q)
+(p ∨ ~q) → (~p ∧ q)
+Abra uma coluna e coloque a proposição (p ∨ ~q) → (~p ∧ q). Em seguida, complete a coluna com V e F de acordo com a análise da coluna (p ∨ ~q) com a coluna (~p ∧ q) e o conectivo "se... então" (→).
+
+
+p	q	~q	p ∨ ~q	~p	~p ∧ q	(p ∨ ~q) → (~p ∧ q)
+V	V	F	v	F	F	F
+V	F	V	V	F	F	F
+F	V	F	F	V	V	V
+F	F	V	V	V	F	F
+Tabela: Tabela-verdade do passo 6.
+Ana Lúcia de Sousa.
+
+
+Lembre-se de que, de acordo com a tabela-verdade da condicional (→), ela é falsa quando o antecedente é verdadeiro e o consequente é falso. Nos demais casos, a condicional é verdadeira.
+
+
+antecedente 
+(p∨∼q)
+​
+ 
+​
+ → 
+consequente 
+(∼p∧q)
+​
+ 
+​
+ 
+antecedente 
+(p∨∼q)
+​
+ 
+​
+ → 
+consequente 
+(∼p∧q)
+​
+ 
+​
+ 
+Agora, você pode construir a tabela-verdade de qualquer proposição composta.

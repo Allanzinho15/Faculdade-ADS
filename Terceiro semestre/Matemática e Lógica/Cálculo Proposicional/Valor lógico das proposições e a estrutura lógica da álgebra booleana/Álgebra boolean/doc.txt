@@ -1,0 +1,301 @@
+Álgebra booleana
+O conhecimento teórico sobre a álgebra booleana nos permite entender o funcionamento dos sistemas digitais e da computação. Essa álgebra, que trabalha com valores binários, é a base da lógica dos circuitos eletrônicos e dos computadores. Assista a este vídeo para aprender sobre os operadores booleanos AND, OR e NOT, e como construir tabelas-verdade a partir de expressões booleanas.
+
+
+Neste vídeo, você vai conhecer os conceitos fundamentais da álgebra booleana, incluindo operadores AND, OR e NOT. Você também vai ver as tabelas-verdade para cada operador, bem como exemplos práticos de como construir essas tabelas a partir de expressões booleanas.
+
+
+
+A álgebra booleana, também conhecida como álgebra de Boole, surgiu a partir da publicação de um trabalho de George Boole, matemático inglês, em 1854.
+
+
+Essa álgebra considera apenas dois valores: 1 (um) e 0 (zero).
+
+
+Esses valores também são chamados de constantes booleanas e podem ser representados pelos valores lógicos verdadeiro e falso. Normalmente, consideramos:
+
+
+1 (um) - verdadeiro
+ 
+0 (zero) - falso
+
+A álgebra booleana tem um papel importante no surgimento da computação. Vale sinalizar que ela está presente nos computadores, sob a forma de bit (do inglês Binary Digit), que até os dias atuais utilizam essa aritmética binária.
+
+
+Considera-se, na álgebra booleana:
+
+
+Variáveis booleanas (A, B, C, ...) que assumem os valores 1 ou 0, ou seja, verdadeiro ou falso, respectivamente.
+ 
+A partir das variáveis booleanas podemos construir uma expressão matemática que é chamada de expressão booleana. Essa expressão também assume apenas dois valores: 1 ou 0 (verdadeiro ou falso).
+
+São tipos de expressões booleanas:
+
+
+ a. S=(AB)×(B+C)
+ b. S=A+BA
+ a. S=(AB)×(B+C)
+ b. S=A+BA
+Operações na álgebra booleana
+
+Operação de adição
+
+Operador: OR (ou).
+
+
+Essa operação equivale à operação p∨q.
+
+
+Notação: A+B ou A OR B.
+
+
+Operação de multiplicação
+
+Operador: AND (e).
+
+
+Essa operação equivale à operação p∧q.
+
+
+Notação: A⋅B ou A AND B.
+
+
+Operação de complementação
+
+Ela também pode ser chamada de inversão ou negação, pois trocará o valor lógico da variável booleana.
+
+
+Operador: NOT (não).
+ 
+Notação: Ā ou A'.
+ 
+Essa operação equivale à operação de negação ~p.
+ 
+NOT também é chamado de operador unário.
+
+Observe o exemplo:
+
+
+Se A = 0 então Ā = 1
+ 
+Se A = 1 então Ā = 0
+
+Agora, conheceremos a tabela-verdade dos operadores AND, OR e NOT e a construção de algumas tabelas a partir das expressões booleanas.
+
+
+Tabela-verdade: NOT
+
+Seja a expressão S = Ā em que A é uma variável booleana.
+
+
+A	
+Ad
+ˉ
+ 
+1	0
+0	1
+Tabela: Tabela-verdade de NOT.
+Ana Lúcia de Sousa.
+
+
+Veja que:
+
+
+Se a entrada for 1, a saída é 0
+ 
+Se a entrada for 0, a saída é 1
+
+Tabela-verdade: AND
+
+Seja a expressão S = A ∙ B, em que A e B são variáveis boolenas.
+
+
+A	B	A⋅B
+1	1	1
+1	0	0
+0	1	0
+0	0	0
+Tabela: Tabela-verdade de AND.
+Ana Lúcia de Sousa.
+
+
+Observe que o resultado será 1 (verdadeiro) somente se as duas variáveis booleanas forem iguais a 1. Isso só ocorre na primeira linha da tabela-verdade. Nos demais casos, o resultado é 0 (falso).
+
+
+Tabela-verdade: OR
+
+Seja a expressão S = A + B, onde A e B são variáveis booleanas.
+
+
+A	B	A+B
+1	1	1
+1	0	1
+0	1	1
+0	0	0
+Tabela: Tabela-verdade de OR.
+Ana Lúcia de Sousa.
+
+
+Usando OR, o resultado será 0 (falso) somente se as duas variáveis booleanas forem iguais a 0 (zero). Isso só ocorre na quarta linha da tabela-verdade. Nos demais casos, o resultado é 1 (verdadeiro).
+
+
+Agora, podemos construir tabelas-verdade de outras expressões booleanas. Veja alguns exemplos.
+
+
+Exemplo 1
+
+
+Construa a tabela-verdade da expressão booleana S = (A ∙ B) ∙ (B + C).
+
+
+Solução:
+
+
+Vamos identificar inicialmente as variáveis booleanas.
+
+
+S=(A⋅B)⋅(B+C)
+S=(A⋅B)⋅(B+C)
+Variáveis booleanas: A,B e C.
+
+
+Lembre-se de que essa tabela possui 2 
+3
+ =8 linhas, pois possui 3 variáveis. Nas primeiras colunas, devemos colocar as variáveis A,B e C, com seus respectivos valores 1 ou O. Em seguida, devemos seguir o mesmo procedimento realizado no módulo 2, para V ou F.
+
+
+A	B	C
+1	1	1
+1	1	0
+1	0	1
+1	0	0
+0	1	1
+0	1	0
+0	0	1
+0	0	0
+Tabela: Primeira tabela-verdade do exemplo 1.
+Ana Lúcia de Sousa.
+
+
+Agora, vamos abrir uma coluna para a operação que está dentro do primeiro parêntese (A ∙ B).
+
+
+A	B	C	
+(A⋅B)
+1	1	1	1
+1	1	0	1
+1	0	1	0
+1	0	0	0
+0	1	1	0
+0	1	0	0
+0	0	1	0
+0	0	0	0
+Tabela: Segunda tabela-verdade do exemplo 1.
+Ana Lúcia de Sousa.
+
+
+A operação utilizada é AND. Nessa operação, o resultado será 1 (verdadeiro) somente se as duas variáveis booleanas forem iguais a 1, ou seja, A = 1 e B = 1. Nos demais casos, o resultado é 0 (falso).
+
+
+Agora, vamos abrir a próxima coluna para a operação (B + C).
+
+
+A	B	C	
+(A⋅B)
+(B+C)
+1	1	1	1	1
+1	1	0	1	1
+1	0	1	0	1
+1	0	0	0	0
+0	1	1	0	1
+0	1	0	0	1
+0	0	1	0	1
+0	0	0	0	0
+Tabela: Terceira tabela-verdade do exemplo 1.
+Ana Lúcia de Sousa.
+
+
+A operação utilizada é OR. Nessa operação, o resultado será 0 (falso) somente se as duas variáveis booleanas forem iguais a 0 (zero), ou seja, A = 0 e B = 0. Nos demais casos, o resultado é 1 (verdadeiro).
+
+
+Por último, abrimos a última coluna para a expressão completa S = (A ∙ B) ∙ (B + C).
+
+
+A	B	C	
+(A⋅B)
+(B+C)
+S=(A⋅B)⋅(B+C)
+1	1	1	1	1	1
+1	1	0	1	1	1
+1	0	1	0	1	0
+1	0	0	0	0	0
+0	1	1	0	1	0
+0	1	0	0	1	0
+0	0	1	0	1	0
+0	0	0	0	0	0
+Tabela: Quarta tabela-verdade do exemplo 1.
+Ana Lúcia de Sousa.
+
+
+A operação utilizada é AND. Nessa operação, o resultado será 1 (verdadeiro) somente se as duas variáveis booleanas forem iguais a 1, ou seja, A = 1 e B = 1. Nos demais casos, o resultado é 0 (falso).
+
+
+Exemplo 2
+
+Construa a tabela-verdade da expressão booleana S = Ā + B.
+
+
+Solução:
+
+
+Vamos identificar, inicialmente, as variáveis booleanas.
+
+
+S= 
+Ad
+ˉ
+ +B
+S= 
+Ad
+ˉ
+ +B
+Variáveis booleanas: A e B.
+
+
+Lembre-se de que essa tabela apresenta 2 
+2
+ =4 linhas, pois possui 2 variáveis. Nas primeiras colunas, devemos colocar as variáveis A e B, com seus respectivos valores 1 ou 0 .
+
+
+A	B	
+Ad
+ˉ
+ 
+S= 
+Ad
+ˉ
+ +B
+1	1	0	1
+1	0	0	0
+0	1	1	1
+0	0	1	1
+Tabela: Tabela-verdade do exemplo 2.
+Ana Lúcia de Sousa.
+
+
+Ā representa a negação de A. Logo, se A = 1, então Ā = 0. Se A = 0 então Ā = 1.
+
+
+Em S = Ā + B a operação utilizada é OR. Nessa operação, o resultado será 0 (falso) somente se as duas variáveis booleanas forem iguais a 0 (zero), ou seja, A = 0 e B = 0. Nos demais casos, o resultado é 1 (verdadeiro).
+
+
+Na álgebra booleana, também devemos ficar atentos aos parênteses e à ordem de precedência dos operadores.
+
+
+Parênteses
+ 
+Negação ou complementação
+ 
+Multiplicação lógica (A ∙ B)
+ 
+Soma lógica (A + B)

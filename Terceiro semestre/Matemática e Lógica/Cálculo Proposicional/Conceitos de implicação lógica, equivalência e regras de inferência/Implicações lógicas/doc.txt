@@ -1,0 +1,80 @@
+Implicações lógicas
+O conhecimento teórico sobre implicações lógicas nos ajuda a compreender a relação entre proposições e construir argumentos válidos. É uma habilidade muito útil em áreas como matemática, lógica e computação, nas quais é preciso verificar as proposições. Assista a este vídeo para aprender, com exemplos práticos, como apurar se uma proposição implica logicamente outra a partir da construção de tabelas-verdade.
+
+
+Neste vídeo, você vai conhecer as implicações lógicas, um conceito central na lógica proposicional que estabelece a relação de dependência entre duas proposições. Você também vai aprender como uma proposição p implica logicamente uma proposição q usando a notação p→q. Você vai, por fim, entender, com exemplos práticos, como (p∧q)→(p∨q) e (p→p∧q)→(p∧q), o processo de verificação, utilizando tabelas-verdade.
+
+
+
+Vamos considerar duas proposições compostas p e Q.
+
+
+Podemos dizer que a proposição p implica logicamente a proposição Q, se a proposição q tem o valor lógico verdadeiro sempre que a proposição p for verdadeira.
+
+
+Para indicar essa implicação, usamos a seguinte notação:
+
+
+P→q (l 
+e
+ˆ
+ -se: p implica Q.) 
+P→q (l 
+e
+ˆ
+ -se: p implica Q.) 
+Exemplo 1
+
+Vamos verificar se a proposição composta (p∧q) implica logicamente a proposição composta (p∨q), através da tabela-verdade.
+
+
+Simbolicamente: (p∧q)→(p∨q)
+
+
+p	q	
+p∧q
+p∨q
+V	V	V	V
+V	F	F	V
+F	V	F	V
+F	F	F	F
+Tabela: Tabela-verdade do exemplo 1.
+Ana Lúcia de Sousa.
+
+
+Veja que, na primeira linha da tabela-verdade, a proposição p∧q tem o valor lógico verdadeiro, e o mesmo ocorre com a proposição p∨q. Portanto, podemos dizer que p∧q implica logicamente p∨q, ou, ainda, p∧q→p∨q.
+
+
+Atenção
+Na tabela, só nos interessa analisar as linhas em que há V (verdadeiro).
+
+
+Exemplo 2
+
+Considere as proposições compostas: (p→p∧q) e (p∧q).
+
+
+Podemos afirmar que: (p→p∧q)→(p∧q)?
+
+
+Solução
+
+
+Vamos construir a tabela-verdade.
+
+
+p	q	
+p→p∧q
+p∧q
+V	V	V	V
+V	F	F	F
+F	V	V	F
+F	F	V	F
+Tabela: Tabela-verdade do exemplo 2.
+Ana Lúcia de Sousa.
+
+
+Veja que, nas duas últimas linhas, temos que a proposição (p→p∧q) é verdadeira e a proposição (p∧q) é falsa. Logo, é falso que:
+
+
+(p→p∧q)→(p∧q)

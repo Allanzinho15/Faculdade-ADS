@@ -1,0 +1,38 @@
+Aristóteles
+O conhecimento teórico da lógica permite a organização e análise precisa de ideias para a resolução de problemas complexos e a construção de argumentos sólidos. Aristóteles, conhecido como pai do pensamento lógico, estabeleceu as bases dessa disciplina. Assistir ao vídeo sobre esse tema ajudará a compreender a evolução da lógica e sua aplicação prática.
+
+
+Nesse vídeo, você vai aprender os fundamentos da lógica aristotélica, incluindo a teoria do silogismo, a importância histórica de Aristóteles e as contribuições de matemáticos como Boole, De Morgan, Peano, Russell, Frege e Leibniz na evolução da lógica matemática.
+
+
+
+Quando falamos de lógica, não podemos deixar de falar sobre Aristóteles (século IV AEC. 384 − 322 AEC.): filósofo grego e grande pensador, conhecido como o pai do pensamento lógico e o criador da lógica.
+
+
+
+Busto de Aristóteles feito de mármore.
+
+Para Aristóteles, a lógica era uma importante ferramenta presente em todas as ciências. Além disso, ele defendia a ideia de que, partindo de conhecimentos considerados verdadeiros, era possível obter novos conhecimentos. Ele formulou regras de encadeamento de raciocínios que, a partir de premissas verdadeiras, levavam a conclusões verdadeiras.Suas obras sobre lógica foram reunidas e publicadas no século II. Uma obra muito importante em que Aristóteles estruturou todo o seu trabalho, chamada de Organon ("ferramenta para o correto pensar"), apresenta princípios importantes que são válidos até os dias atuais. A lógica de Aristóteles era baseada em argumentações válidas (teoria do silogismo).
+
+
+Veja um exemplo clássico de silogismo muito conhecido:
+
+
+Todo homem é mortal. Sócrates é homem. Logo, Sócrates é mortal.
+
+
+Ao longo da história, a lógica de Aristóteles evoluiu graças às inúmeras contribuições dos matemáticos que notaram que a lógica apresentada por ele não era suficiente para se trabalhar com o rigor matemático. Ela poderia ser imprecisa, pois fazia uso basicamente da linguagem natural.
+
+
+As contribuições dos matemáticos, portanto, foram muito importantes.
+
+
+George Boole (1815-1864), matemático inglês, é considerado um dos responsáveis pelo surgimento da lógica matemática a partir da introdução de uma notação matemática mais precisa.
+ 
+Augustus De Morgan (1806-1871), em conjunto com George Boole, ajudou a tornar a lógica matemática uma forte ferramenta para a programação de computadores.
+ 
+Giuseppe Peano (1858-1932), por sua vez, elaborou uma notação matemática mais simples, que usamos até os dias atuais.
+ 
+Outro nome importante é Bertrand Russell (1872-1920), um dos fundadores da "filosofia analítica", que, além de usar a lógica para esclarecer questões relacionadas aos fundamentos da matemática, também a utilizava para esclarecer questões filosóficas.
+ 
+Podemos citar, também, as contribuições de Friedrich Ludwig G. Frege (1848-1925) e de Gottfried Wilhelm Von Leibniz (1646-1716).

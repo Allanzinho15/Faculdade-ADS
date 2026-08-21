@@ -1,0 +1,234 @@
+Conversão de linguagem
+O domínio dos conectivos lógicos possibilita a transformação de proposições da linguagem natural para a simbólica, uma habilidade útil em matemática e computação. Essa compreensão permite a precisão na comunicação e a análise de ideias complexas. Assista a este vídeo e descubra, com exemplos práticos, como aplicar conectivos lógicos a fim de criar proposições compostas a partir de proposições simples.
+
+
+Neste vídeo, você vai ver exemplos de transformação de proposições da linguagem natural para a linguagem simbólica. Você vai ver, ainda, casos de conjunção, disjunção, condicional, bicondicional e negação, além da interpretação de proposições compostas utilizando símbolos lógicos.
+
+
+
+Agora que conhecemos os conectivos e as operações sobre as proposições, podemos escrever uma proposição composta da linguagem natural para a linguagem simbólica.
+
+
+Vamos considerar a seguinte proposição composta:
+
+
+“O aluno aprende rápido e o professor possui muito conhecimento.”
+
+
+Escrever essa proposição composta na linguagem simbólica é muito simples. Veja o procedimento:
+
+
+O aluno aprende rápido (p) e (conjunção A) o professor possui muito conhecimento (q)
+O aluno aprende rápido (p) e (conjunção A) o professor possui muito conhecimento (q)
+Para isso, é preciso:
+
+
+
+Passo 1
+
+Identifique na proposição a palavra que representa o conectivo: e.
+
+
+Passo 2
+
+Identifique antes e depois do "e" as proposições simples e atribua uma letra para cada proposição.
+ 
+
+p: aluno aprende rápido.
+ 
+q: O professor possui muito conhecimento.
+Portanto, a linguagem simbólica é p∧q.
+
+
+Veja exemplos de algumas situações.
+
+
+Exemplo 1
+
+O aluno não aprende rápido ou o professor possui muito conhecimento.
+
+
+~p: O aluno não aprende rápido.
+q: O professor possui muito conhecimento.
+~p: O aluno não aprende rápido.
+q: O professor possui muito conhecimento.
+Solução:
+
+
+A linguagem simbólica é ~p∨q.
+A linguagem simbólica é ~p∨q.
+Exemplo 2
+
+(MPU - ESAF - Adaptado) Considere as seguintes proposições:
+
+
+p: Não vejo Paulo.
+q: Não vou ao cinema.
+r: Fico triste.
+p: Não vejo Paulo.
+q: Não vou ao cinema.
+r: Fico triste.
+Passe para a linguagem simbólica a seguinte proposição:
+
+
+Quando não vejo Paulo, não vou ao cinema ou fico triste.
+
+
+Solução:
+
+
+Quando não vejo paulo, não vou ao cinema ou fico triste.
+ 
+Atenção: Nessa proposição, temos uma condicional.
+ 
+Se não vejo Paulo, então não vou ao cinema ou fico triste.
+ 
+Linguagem simbólica: p→(q∨r)
+
+Exemplo 3
+
+
+Dadas as proposições simples:
+
+
+p: Carla comprou um carro.
+q: Carla comprou um apartamento.
+p: Carla comprou um carro.
+q: Carla comprou um apartamento.
+Passe para a linguagem simbólica as seguintes proposições:
+
+
+1. Carla comprou um carro, mas não comprou um apartamento.
+ 
+2. Não é verdade que Carla comprou um carro ou comprou um apartamento.
+ 
+3. Carla nem comprou um carro e nem comprou um apartamento.
+ 
+4. É falso que Carla não comprou o carro ou não comprou o apartamento.
+
+Solução:
+
+
+1. Carla comprou um carro, mas não comprou um apartamento. 
+ 
+
+p: Carla comprou um carro.
+ 
+q : Carla comprou um apartamento.
+ 
+∼q : Não comprou um apartamento.
+ 
+Linguagem simbólica: p∧∼q
+ 
+2. Não é verdade que Carla comprou um carro ou comprou um apartamento.
+
+ 
+
+p : Carla comprou um carro.
+ 
+q : Carla comprou um apartamento.
+ 
+"Não é verdade que" é uma negação (~).
+ 
+Linguagem simbólica: ∼(p∨q)
+
+3. Carla nem comprou um carro e nem comprou um apartamento.
+
+ 
+
+p: Carla comprou um carro.
+ 
+∼p : Carla não comprou um carro.
+ 
+q : Carla comprou um apartamento.
+ 
+∼q : Nem comprou um apartamento.
+ 
+Linguagem simbólica: ∼p∧∼q
+ 
+
+4. É falso que Carla não comprou o carro ou não comprou o apartamento
+
+ 
+
+p : Carla comprou um carro.
+ 
+∼p : Carla não comprou um carro.
+ 
+q : Carla comprou um apartamento.
+ 
+∼q : não comprou um apartamento.
+ 
+"É falso que" é uma negação (~).
+ 
+Linguagem simbólica: ∼(∼p∨∼q)
+
+Exemplo 4
+
+Dadas as proposições p: “O estudante aprende rápido” e q: “O professor possui muito conhecimento”, passe para a linguagem corrente as proposições:
+
+
+~p∧q
+ 
+p  ∨ ~q
+ 
+~p→q
+ 
+~~p
+ 
+~p ↔ ~q
+
+Solução:
+
+
+1.  ∼p∧q
+ 
+
+p:0 estudante aprende rápido.
+ 
+∼p : 0 estudante não aprende rápido.
+ 
+q : 0 professor possui muito conhecimento.
+ 
+Conectivo: ∧(e).
+ 
+∼p∧q:0 estudante não aprende rápido e o professor possui muito conhecimento.
+
+2.  p∨∼q
+ 
+
+p:0 estudante aprende rápido.
+ 
+q:0 professor possui muito conhecimento.
+ 
+∼q : O professor não possui muito conhecimento.
+ 
+Conectivo: V (ou).
+ 
+p∨∼q : 0 estudante aprende rápido ou o professor não possui muito conhecimento.
+
+4. ∼∼p
+ 
+
+p:0 estudante aprende rápido.
+ 
+∼p : 0 estudante não aprende rápido.
+ 
+∼∼p : Não é verdade que o estudante não aprende rápido.
+ 
+Quando negamos a negação da proposição p, obtemos a própria proposição p, isto é: ∼∼p é o próprio p.
+
+5. ∼p↔∼q
+ 
+
+p:0 estudante aprende rápido.
+ 
+∼p : 0 estudante não aprende rápido.
+ 
+q:0 professor possui muito conhecimento.
+ 
+∼q : O professor não possui muito conhecimento.
+ 
+Conectivo: ↔ (se e somente se).
+ 
+∼p↔∼q:0 estudante não aprende rápido se, e somente se, o professor não possui muito conhecimento.

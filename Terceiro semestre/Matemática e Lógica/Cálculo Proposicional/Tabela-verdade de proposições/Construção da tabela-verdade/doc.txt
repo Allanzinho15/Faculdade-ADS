@@ -1,0 +1,210 @@
+Construção da tabela-verdade
+O domínio da lógica proposicional depende do entendimento da construção da tabela-verdade. Esse conhecimento é aplicado em diversas áreas, como a matemática e a computação, permitindo a análise precisa de proposições e suas combinações. Assista a este vídeo para aprender como criar tabelas-verdade de maneira clara e prática, utilizando exemplos com diferentes números de proposições.
+
+
+Neste vídeo, você vai ver como construir tabelas-verdade de proposições simples e compostas utilizando exemplos práticos com uma, duas e três proposições. Você vai aprender como preencher todas as combinações possíveis de valores lógicos (V e F) para analisar a veracidade das proposições.
+
+
+
+Como vimos, toda proposição composta tem um valor lógico verdadeiro ou falso. Esse valor lógico pode ser determinado facilmente através da chamada tabela-verdade. Nela, representamos todos os possíveis valores lógicos das proposições simples que formam as proposições compostas e suas combinações.
+
+
+A tabela-verdade possui colunas e linhas, como toda tabela.
+
+
+Nas primeiras colunas, colocamos as proposições simples.
+ 
+O número de linhas depende da quantidade de proposições simples.
+
+O cálculo para determinarmos o número de linhas é simples:
+
+
+Número de linhas = 2n linhas, onde n é o número de proposições simples.
+
+
+Exemplo
+- Se a proposição composta possui duas proposições simples p e q, a tabela-verdade terá 2 
+2
+ =4 linhas. Em cada linha, colocamos todas as combinações possíveis de V e F.
+ 
+
+- Se a proposição composta possui três proposições simples p,q e r, a tabela-verdade terá 2 
+3
+ =8 linhas. Em cada linha, colocamos todas as combinações possíveis de V e F.
+
+
+Agora, entenderemos melhor a construção da tabela-verdade de uma proposição composta considerando 1, 2 e 3 proposições simples.
+
+
+Proposição simples
+
+Seja p uma proposição simples. Para construir a tabela-verdade dessa proposição, temos apenas duas possibilidades: a proposição p pode ser verdadeira ou falsa.
+
+
+P
+V
+F
+​
+ 
+​
+ 
+P
+V
+F
+​
+ 
+​
+ 
+Proposição composta com duas proposições simples
+
+
+Sejam duas proposições simples p e q. A tabela-verdade possui 2 
+2
+ =4 linhas. Agora, vamos considerar todas as possibilidades de combinar V e F.
+
+
+Note que podemos ter:
+
+
+As duas proposições p e q verdadeiras.
+ 
+A primeira proposição p verdadeira e a segunda proposição q falsa.
+ 
+A primeira proposição p falsa e a segunda proposição q verdadeira.
+ 
+As duas proposições p e q falsas.
+
+Observe:
+
+
+p
+V
+V
+F
+F
+​
+  
+q
+V
+F
+V
+F
+​
+ 
+​
+ 
+p
+V
+V
+F
+F
+​
+  
+q
+V
+F
+V
+F
+​
+ 
+​
+ 
+Podemos construir a tabela-verdade colocando V e F em qualquer ordem, desde que as linhas referentes às proposições simples tenham todas as combinações possíveis. Uma maneira mais prática é colocar na coluna da primeira proposição simples dois (V) seguidos de dois (F) . Em seguida, na coluna da próxima proposição simples, alterna-se V e F, começando com V.
+
+
+Proposições compostas com três proposições simples
+
+Sejam três proposições simples p, q e r. A tabela-verdade possui 8 linhas. Agora, vamos considerar todas as possibilidades de combinar V e F.
+
+
+Note que podemos ter:
+
+
+Todas as 3 proposições simples verdadeiras.
+ 
+Duas proposições simples verdadeiras e uma proposição simples falsa.
+ 
+Uma proposição simples verdadeira e duas proposições simples falsas.
+ 
+Todas as proposições simples falsas.
+
+Observe:
+
+
+p
+V
+V
+V
+F
+V
+F
+F
+F
+​
+  
+q
+V
+V
+F
+V
+F
+V
+F
+F
+​
+  
+r
+V
+F
+V
+V
+F
+F
+V
+F
+​
+ 
+​
+ 
+p
+V
+V
+V
+F
+V
+F
+F
+F
+​
+  
+q
+V
+V
+F
+V
+F
+V
+F
+F
+​
+  
+r
+V
+F
+V
+V
+F
+F
+V
+F
+​
+ 
+​
+ 
+Uma maneira prática de construir a tabela-verdade com 8 linhas é colocar na coluna da primeira proposição simples quatro (V) seguidos de quatro (F).
+
+
+Na coluna da segunda proposição simples, alterna-se dois (V) e dois (F) , começando com dois (V).
+
+
+Por último, na coluna da terceira proposição simples, alterna-se V e F, começando por V. Assim, todas as combinações são verificadas.

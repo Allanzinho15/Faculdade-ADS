@@ -1,0 +1,518 @@
+Análise do valor lógico de uma proposição composta sem a construção da tabela-verdade
+Você já deve ter percebido queo conhecimento teórico sobre conectivos lógicos e tabelas-verdade é necessário para entender e resolver problemas lógicos complexos. Dessa forma, aprimorando seus conhecimentos, você pode avaliar a validade de um argumento sem a necessidade de construir a tabela-verdade. Assista a este vídeo para aprender, a partir de um exemplo prático, a verificar o valor lógico de proposições.
+
+
+
+Considere a proposição (q∧p)→(∼q→p) e a informação V(p∧q)=V.
+
+
+A partir dessa informação, é possível verificar se a proposição dada é verdadeira ou falsa.
+
+
+Solução:
+
+
+Devemos determinar se o valor lógico do enunciado é falso ou verdadeiro. De acordo com a informação dada V(p∧q)=V, podemos determinar o valor lógico de p e q.
+
+
+V(p∧q)=V, onde o conectivo é a conjunção.
+
+
+De acordo com a tabela-verdade da conjunção, ela só é verdadeira quando as duas proposições são verdadeiras. Logo, podemos concluir que V(p)=V e V(q)=V.
+
+
+Temos:
+
+
+​
+  
+V
+q∧p
+​
+ 
+​
+ ) 
+​
+ → 
+​
+  
+F
+∼q
+​
+ 
+​
+ → 
+V
+p
+​
+ 
+​
+  
+​
+ 
+​
+  
+V
+q∧p
+​
+ 
+​
+ ) 
+​
+ → 
+​
+  
+F
+∼q
+​
+ 
+​
+ → 
+V
+p
+​
+ 
+​
+  
+​
+ 
+Nesse enunciado, temos dois parênteses. Não esqueça que começamos sempre com os parênteses.
+
+
+O valor lógico de V(q∧p)=V no primeiro parêntese.
+
+
+No segundo parêntese, temos uma condicional
+
+
+F
+∼q
+​
+ 
+​
+ → 
+V
+p
+​
+ 
+​
+ 
+F
+∼q
+​
+ 
+​
+ → 
+V
+p
+​
+ 
+​
+ 
+De acordo com a tabela-verdade da condicional, quando o antecedente é verdadeiro e o consequente é falso, o valor lógico da proposição é falso. Nos demais casos, a condicional é verdadeira. Logo,
+
+
+V 
+​
+  
+F
+∼q
+​
+ 
+​
+ → 
+V
+p
+​
+ 
+​
+  
+​
+ =V.
+V 
+​
+  
+F
+∼q
+​
+ 
+​
+ → 
+V
+p
+​
+ 
+​
+  
+​
+ =V.
+Temos, então:
+
+
+V
+(q∧p)
+​
+ 
+​
+ → 
+​
+  
+V
+V
+∼q
+​
+ 
+​
+ → 
+V
+p
+​
+ 
+​
+ 
+​
+ 
+​
+  
+​
+ 
+V
+(q∧p)
+​
+ 
+​
+ → 
+​
+  
+V
+V
+∼q
+​
+ 
+​
+ → 
+V
+p
+​
+ 
+​
+ 
+​
+ 
+​
+  
+​
+ 
+Por último, vamos analisar outra condicional que une (q∧p)e(∼q→p).
+
+
+Considerando o mesmo raciocínio, podemos concluir que o valor lógico da proposição é verdadeiro.
+
+
+V
+V
+(q∧p)
+​
+ 
+​
+ → 
+​
+  
+V
+V
+∼q
+​
+ 
+​
+ → 
+V
+p
+​
+ 
+​
+ 
+​
+ 
+​
+  
+​
+ 
+​
+ 
+​
+ 
+V
+V
+(q∧p)
+​
+ 
+​
+ → 
+​
+  
+V
+V
+∼q
+​
+ 
+​
+ → 
+V
+p
+​
+ 
+​
+ 
+​
+ 
+​
+  
+​
+ 
+​
+ 
+​
+ 
+Conclusão: o valor lógico do enunciado é verdadeiro.
+
+
+Após o estudo desse primeiro exemplo, que tal ampliar seus conhecimentos com mais exemplos práticos a fim de determinar o valor lógico de proposições? Assista a este vídeo para aprender a verificar o valor lógico de proposições utilizando tabelas-verdade.
+
+
+Aplicação da tabela-verdade
+
+Neste vídeo, você vai ver alguns exemplos práticos para determinar o valor lógico de proposições utilizando conectivos lógicos como conjunção, condicional, bicondicional e disjunção. Você vai aprender em detalhes como construir e analisar tabelas-verdade para resolver problemas lógicos.
+
+
+
+Exemplo
+
+Determine o valor lógico das seguintes proposições:
+
+
+a. 2+6=5 e 4+4=8
+b. Se 1+3=5 então 6+6=12
+c. 2+4=7 se e somente se 4 
+2
+ =16
+d. 2+6=8 ou 4+4=7
+a. 2+6=5 e 4+4=8
+b. Se 1+3=5 então 6+6=12
+c. 2+4=7 se e somente se 4 
+2
+ =16
+d. 2+6=8 ou 4+4=7
+Solução: Nesse exemplo, vamos trabalhar com a tabela-verdade dos conectivos lógicos.
+
+
+a) 2 + 6 = 5 e 4 + 4 = 8
+
+
+Conectivo: Conjunção.
+
+
+A conjunção é verdadeira sempre que as duas proposições envolvidas são verdadeiras. Nos demais casos, ela é falsa.
+
+
+F
+F
+2+6=5
+​
+ 
+​
+    e    
+V
+4+4=8
+​
+ 
+​
+ 
+​
+ 
+​
+ 
+F
+F
+2+6=5
+​
+ 
+​
+    e    
+V
+4+4=8
+​
+ 
+​
+ 
+​
+ 
+​
+ 
+Logo, o valor lógico da proposição é falso.
+
+
+b) Se 1 + 3 = 5 então 6 + 6 = 12
+
+
+Conectivo: Condicional.
+
+
+A condicional é falsa sempre que o antecedente for verdadeiro e o consequente for falso. Nos demais casos, ela é verdadeira.
+
+
+V
+ Se  
+F
+1+3=5
+​
+ 
+​
+  ent 
+a
+˜
+ o  
+V
+6+6=12
+​
+ 
+​
+ 
+​
+ 
+​
+ 
+V
+ Se  
+F
+1+3=5
+​
+ 
+​
+  ent 
+a
+˜
+ o  
+V
+6+6=12
+​
+ 
+​
+ 
+​
+ 
+​
+ 
+Logo, o valor lógico da proposição é verdadeiro.
+
+
+c) 2 + 4 = 7 se e somente se 4² = 16
+
+
+Conectivo: Bicondicional.
+
+
+A bicondicional é verdadeira sempre que as duas proposições envolvidas são ambas verdadeiras ou ambas falsas. Nos demais casos, ela é falsa.
+
+
+F
+F
+2+4=7
+​
+ 
+​
+  Se e somente se  
+V
+4 
+2
+ =16
+​
+ 
+​
+ 
+​
+ 
+​
+ 
+F
+F
+2+4=7
+​
+ 
+​
+  Se e somente se  
+V
+4 
+2
+ =16
+​
+ 
+​
+ 
+​
+ 
+​
+ 
+Logo, o valor lógico da proposição é falso.
+
+
+d) 2 + 6 = 8 ou 4 + 4 = 7
+
+
+Conectivo: Disjunção.
+
+
+A disjunção é falsa apenas se as duas proposições envolvidas são falsas. Nos demais casos, ela é verdadeira.
+
+
+V
+2+6=8
+​
+ 
+​
+  ou  
+F
+4+4=7
+​
+ 
+​
+ 
+V
+2+6=8
+​
+ 
+​
+  ou  
+F
+4+4=7
+​
+ 
+​
+ 
+Logo, o valor lógico da proposição é verdadeiro.
+
+
+Observação sobre a ordem de precedência dos conectivos:
+
+Quando nos deparamos com uma proposição composta sem parênteses, fica muito complicado saber que termos da expressão devemos considerar primeiro.
+
+
+Para colocarmos os parênteses, devemos seguir a ordem de precedência dada neste módulo, seguindo o critério do conectivo mais forte para o mais fraco. Veja como é simples:
+
+
+Seja a proposição composta:
+
+
+s∧q↔r→q
+s∧q↔r→q
+Veja que o conectivo mais forte nessa proposição é a bicondicional. Com os parênteses ela fica do seguinte modo:
+
+
+(s∧q)↔(r→q)
+(s∧q)↔(r→q)
+Agora, considere a proposição r→p∧q.
+
+
+Nessa proposição, o conectivo mais forte é a condicional. Colocando o parêntese, temos:
+
+
+r→(p∧q)

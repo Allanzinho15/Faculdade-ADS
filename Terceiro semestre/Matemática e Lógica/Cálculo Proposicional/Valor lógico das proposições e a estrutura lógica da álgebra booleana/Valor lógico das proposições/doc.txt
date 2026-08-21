@@ -1,0 +1,98 @@
+Valor lógico das proposições
+Determinar o valor lógico da proposição composta através da tabela-verdade nos levará ao conhecimento de conceitos novos. Ou seja, pelo resultado da última coluna da tabela identificaremos se a proposição composta é uma tautologia, uma contradição, ou uma contingência. Assista a este vídeo para aprender, de maneira clara e prática, esses conceitos.
+
+
+Neste vídeo, você vai aprender a determinar o valor lógico da proposição composta através da tabela-verdade e conhecer conceitos novos. Você vai, ainda, aprender a identificar, por meio do resultado da última coluna da tabela, se a proposição composta é uma tautologia, uma contradição ou uma contingência.
+
+
+
+Nas proposições compostas, não é simples verificar o seu valor lógico apenas olhando para elas. No entanto, através da construção da tabela-verdade isso é mais intuitivo, apesar do trabalho, que pode ser maior ou menor, dependendo do tamanho da proposição.
+
+
+Determinar o valor lógico da proposição composta através da tabela-verdade nos fará conhecer conceitos novos. Ou seja, vamos identificar através do resultado da última coluna da tabela se a proposição composta é uma tautologia, uma contradição ou uma contingência.
+
+
+Tautologia
+
+Para compreender esse conceito, vamos considerar a seguinte proposição:
+
+
+(~p ∧ q) ↔ (~p ∨ ~q)
+(~p ∧ q) ↔ (~p ∨ ~q)
+Vamos construir sua tabela-verdade. Veja que não é simples analisar o valor lógico dessa proposição (5ª coluna da tabela):
+
+
+p	q	~p	~q	~(p ∧ q)	~p ∨ ~q	~(p ∧ q) ↔ ~p ∨ ~q
+V	V	F	F	F	F	V
+V	F	F	V	V	V	V
+F	V	V	F	V	V	V
+F	F	V	V	V	V	V
+Tabela: Tabela verdade de tautologia.
+Ana Lúcia de Sousa.
+
+
+Note que a última coluna da tabela-verdade tem, em todas as linhas, o valor lógico V (verdadeiro). Ou seja, não há nenhum valor lógico F (falso). Quando isso ocorre, estamos diante de uma tautologia.
+
+
+Dizemos que uma proposição (simples ou composta) é uma tautologia se seu valor lógico é V, independentemente dos valores lógicos das proposições que a compõem.
+
+
+Contradição
+
+
+Para compreender esse conceito, vamos considerar a seguinte proposição:
+
+
+(p ∧ q) ↔ (~p ∨ ~q)
+(p ∧ q) ↔ (~p ∨ ~q)
+Vamos construir sua tabela-verdade e analisar o resultado da última coluna da tabela.
+
+
+1ª	2ª	3ª	4ª	5ª	6ª	7ª
+p	q	
+p∧q
+~p	~q	~p ∨ ~q	(p ∧ q) ↔ (~p ∨ ~q)
+V	V	V	F	F	F	F
+V	F	F	F	V	V	F
+F	V	F	V	F	V	F
+F	F	F	V	V	V	F
+Tabela: Tabela verdade de contradição.
+Ana Lúcia de Sousa.
+
+
+O preenchimento da 7ª coluna é o resultado da seguinte análise: 3ª coluna ↔ 6ª coluna.
+
+
+Lembre-se de que a bicondicional tem o valor lógico V (verdadeiro) sempre que as duas proposições são verdadeiras ou falsas. Nos demais casos, o valor lógico é F (falso).
+
+
+Veja que a última coluna da tabela-verdade tem em todas as linhas o valor lógico F (falso). Ou seja, não há nenhum valor lógico V (verdadeiro). Quando isso ocorre, dizemos que estamos diante de uma contradição.
+
+
+Dizemos que uma proposição é uma contradição se seu valor lógico é F (falso), independentemente dos valores lógicos das proposições que a compõem.
+
+
+Contingência
+
+Para compreender esse conceito, vamos considerar a seguinte proposição:
+
+
+(p ∨ ~q) ↔ (~p ∧ q)
+(p ∨ ~q) ↔ (~p ∧ q)
+Vamos construir sua tabela-verdade e analisar o resultado da última coluna da tabela
+
+
+1ª	2ª	3ª	4ª	5ª	6ª	7ª
+p	q	~p	~q	p ∨ ~q	~p ∧ q	(p ∨ ~q) → (~p ∧ q)
+V	V	F	F	V	F	F
+V	F	F	V	V	F	F
+F	V	V	F	F	V	V
+F	F	V	V	V	F	F
+Tabela: Tabela verdade de contingência.
+Ana Lúcia de Sousa.
+
+
+O preenchimento da 7ª coluna é o resultado da seguinte análise: 5ª coluna → 6ª coluna.
+
+
+Veja que a última coluna da tabela-verdade não apresenta em todas as linhas somente resultados V (verdadeiro) e nem apresenta somente resultados F (falso). Ou seja, quando, na última coluna da tabela, encontramos os valores lógicos V e F, cada um pelo menos uma vez, isso significa que temos uma contingência ou indeterminação. Em outras palavras, a contingência é toda proposição composta que não é tautologia nem contradição.

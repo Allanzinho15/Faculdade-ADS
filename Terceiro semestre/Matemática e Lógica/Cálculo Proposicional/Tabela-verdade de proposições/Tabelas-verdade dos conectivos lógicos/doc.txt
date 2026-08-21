@@ -1,0 +1,435 @@
+Tabelas-verdade dos conectivos lógicos
+O conhecimento teórico sobre as tabelas-verdade dos conectivos lógicos permite compreender a lógica proposicional e sua aplicação prática. Tal entendimento viabiliza uma comunicação clara e precisa para a construção e análise de proposições complexas. Assista a este vídeo para aprender a determinar o valor lógico de conectivos como negação, conjunção, disjunção, condicional, bicondicional, NAND e NOR, e como construir suas tabelas-verdade.
+
+
+Neste vídeo, você vai conhecer os valores lógicos dos principais conectivos lógicos ― negação, conjunção, disjunção (inclusiva e exclusiva), condicional, bicondicional, NAND e NOR. Além disso, você vai entender como construir tabelas-verdade para cada conectivo a partir de aplicações com exemplos práticos.
+
+
+
+Agora vamos verificar o valor lógico dos seguintes conectivos: negação, conjunção, disjunção inclusiva, disjunção exclusiva, condicional, bicondicional, NAND e NOR, e suas tabelas-verdade.
+
+
+Negação (Não)
+
+A negação da proposição p é a proposição representada por ~p. Ou seja:
+
+
+O valor lógico da proposição ~p é oposto ao da proposição p.
+
+
+Quando o valor lógico da proposição p for verdadeiro, o valor lógico da proposição ~p será falso, e vice-versa.
+
+
+Exemplo
+p: Os juros bancários são altos.
+ 
+
+~p: Os juros bancários não são altos.
+ 
+
+Tabela-verdade da negação
+ 
+
+p
+V
+F
+​
+  
+∼p
+F
+V
+​
+ 
+​
+ 
+
+
+Conjunção (E)
+
+O valor lógico da conjunção ficará mais fácil de ser compreendido através da seguinte declaração:
+
+
+“Carlos levará Paula ao cinema e comprará um presente para ela.”
+
+
+Note que Carlos prometeu a Paula que a levará ao cinema e comprará um presente para ela. Ou seja, os dois eventos devem ocorrer simultaneamente. Dessa forma, o valor lógico da conjunção só será verdadeiro quando as duas proposições forem verdadeiras. Nos demais casos, a conjunção é falsa.
+
+
+Temos uma proposição composta, em que:
+
+
+p: Carlos levará Paula ao cinema.
+ 
+q: Comprará um presente para ela.
+ 
+p∧q: Carlos levará Paula ao cinema e comprará um presente para ela.
+
+Agora, vamos analisar declaração através da tabela-verdade:
+
+
+ 
+
+p	q	p∧q
+V 
+Carlos levou Paula ao cinema.	V 
+Comprou um presente para ela.	V
+V 
+Carlos levou Paula ao cinema.	F 
+Não comprou um presente para ela.	F
+F 
+Carlos não levou Paula ao cinema.	F 
+Comprou um presente para ela.	F
+F 
+Carlos não levou Paula ao cinema.	F 
+Não comprou um presente para ela.	F
+Tabela: Tabela-verdade proposição composta.
+Ana Lúcia de Sousa.
+
+
+Tabela-verdade da conjunção
+
+Observe a tabela a seguir.
+
+
+p	q	p∧q
+V	V	V
+V	F	F
+F	V	F
+F	F	F
+Tabela: Tabela-verdade da conjunção.
+Ana Lúcia de Sousa.
+
+
+Disjunção inclusiva (OU inclusivo)
+
+Considere a seguinte declaração:
+
+
+“Carlos levará Paula ao cinema ou comprará um presente para ela.”
+
+
+Nessa declaração, Carlos prometeu a Paula que a levará ao cinema ou comprará um presente para ela. Assim, basta ele realizar os dois eventos ou apenas um dos eventos para a declaração ser verdadeira.
+
+
+Temos uma proposição composta, em que:
+
+
+p: Carlos levará Paula ao cinema.
+ 
+q: Comprará um presente para ela.
+ 
+p ∨ q: Carlos levará Paula ao cinema ou comprará um presente para ela.
+
+Agora, vamos analisar declaração através da tabela-verdade:
+
+
+p	q	p∨q
+V 
+Carlos levou Paula ao cinema.	V 
+Comprou um presente para ela.	V
+V 
+Carlos levou Paula ao cinema.	F 
+Não comprou um presente para ela.	F
+F 
+Carlos não levou Paula ao cinema.	V 
+Comprou um presente para ela.	V
+F 
+Carlos não levou Paula ao cinema.	F 
+Não comprou um presente para ela.	F
+Tabela: Tabela-verdade de disjunção inclusiva.
+
+Ana Lúcia de Sousa.
+
+
+Tabela-verdade da disjunção (inclusiva)
+
+Observe a tabela.
+
+
+p	q	p∨q
+V	V	V
+V	F	V
+F	V	V
+F	F	F
+Tabela: Tabela-verdade de disjunção (inclusiva).
+Ana Lúcia de Sousa.
+
+
+Dessa forma, a disjunção inclusiva será falsa somente quando as duas proposições forem falsas. Nos demais casos, a disjunção é verdadeira.
+
+
+Disjunção exclusiva (OU exclusivo)
+
+Considere a seguinte declaração:
+
+
+“Paulo é carioca ou paulista.”
+
+
+Nessa declaração, Paulo não pode ser simultaneamente carioca e paulista. Temos uma proposição composta, em que:
+
+
+p: Paulo é carioca.
+ 
+q: Paulo é paulista.
+ 
+p∨q : Paulo é carioca ou paulista.
+
+Agora, vamos analisar declaração através da tabela-verdade.
+
+
+p	q	
+p 
+∨
+​
+ q
+V 
+Paulo é carioca.	V 
+Paulo é paulista.	F
+V 
+Paulo é carioca.	F 
+Paulo não é paulista.	V
+F 
+Paulo não é carioca.	V 
+Paulo é paulista.	V
+F 
+Paulo não é carioca.	F 
+Paulo não é paulista.	F
+Tabela: Tabela-verdade de disjunção exclusiva (OU exclusivo).
+
+Ana Lúcia de Sousa.
+
+
+Tabela-verdade da disjunção (exclusiva)
+
+Observe a tabela a seguir.
+
+
+p	q	
+p 
+∨
+​
+ q
+V	V	F
+V	F	V
+F	V	V
+F	F	F
+Tabela: Tabela-verdade de disjunção (exclusiva).
+Ana Lúcia de Sousa.
+
+
+Veja que a disjunção exclusiva será falsa somente quando as duas proposições forem falsas ou quando as duas proposições forem verdadeiras. Nos demais casos, a disjunção é verdadeira.
+
+
+Condicional (Se... então)
+
+Considere a seguinte declaração:
+
+
+“Se Paula passar em cálculo, então Carlos comprará um presente para ela.”
+
+
+Temos uma proposição composta, em que:
+
+
+p: Paula passar em cálculo.
+ 
+q: Carlos comprará um presente para ela.
+ 
+p → q: Se Paula passar em cálculo, então Carlos comprará um presente pra ela.
+
+Não se esqueça que, na condicional:
+
+
+Se ocorre um determinado evento, um fato acontecerá.
+
+
+Na declaração dada, temos
+
+
+Evento: Paula passar em cálculo.
+ 
+Fato: Carlos comprará um presente para a Paula.
+
+Agora, vamos analisar declaração através da tabela-verdade.
+
+
+p	q	
+p→q
+V 
+Paula passou em cálculo.	V 
+Carlos comprou um presente para ela.	V
+V 
+Paula passou em cálculo.	F 
+Carlos não comprou um presente para ela.	V
+F 
+Paula não passou em cálculo.	V 
+Carlos comprou um presente para ela.	V
+F 
+Paula não passou em cálculo.	F 
+Carlos não comprou um presente para ela.	V
+Tabela: Tabela-verdade de condicional (Se... então).
+Ana Lúcia de Sousa.
+
+
+Tabela-verdade da condicional
+
+Observe a tabela a seguir.
+
+
+p	q	
+p→q
+V	V	V
+V	F	F
+F	V	V
+F	F	V
+Tabela: Tabela-verdade de condicional.
+Ana Lúcia de Sousa.
+
+
+Conclusão: a condicional será falsa somente quando o antecedente é verdadeiro e o consequente é falso. Nos demais casos, a condicional é verdadeira.
+
+
+Bicondicional (Se e somente se)
+
+Considere a seguinte declaração:
+
+
+“Carlos comprará um presente para Paula se e somente se Paula passar em cálculo.”
+
+
+Temos uma proposição composta, em que:
+
+
+p: Carlos comprará um presente para Paula.
+ 
+q: Paula passar em cálculo.
+ 
+p ↔ q: Carlos comprará um presente para Paula se e somente se Paula passar em cálculo.
+
+Na bicondicional p ↔ q, temos duas condicionais que ocorrem simultaneamente, na ida e na volta: p → q e q → p.
+
+
+p → q: Se Carlos comprar um presente para Paula, então Paula passará em cálculo.
+ 
+q → p: Se Paula passar em cálculo, então Carlos comprará um presente para ela.
+
+Dessa forma, a bicondicional também pode ser escrita da seguinte forma:
+
+
+(p→q)∧(q→p)
+(p→q)∧(q→p)
+Agora, vamos analisar declaração através da tabela-verdade.
+
+
+p	q	
+p↔q
+V 
+Carlos comprou um presente para Paula.	V 
+Paula passou em cálculo.	V
+V 
+Carlos comprou um presente para Paula.	F 
+Paula passou em cálculo.	F
+F 
+Carlos não comprou um presente para Paula.	V 
+Paula passou em cálculo.	F
+F 
+Carlos não comprou um presente para Paula.	F 
+Paula não passou em cálculo.	V
+Tabela: Tabela-verdade.
+Ana Lúcia de Sousa.
+
+
+Tabela-verdade da bicondicional
+
+Observe a tabela a seguir.
+
+
+p	q	
+p↔q
+V	V	V
+V	F	F
+F	V	F
+F	F	v
+Tabela: Tabela-verdade.
+Ana Lúcia de Sousa.
+
+
+Veja que a bicondicional será verdadeira somente quando as proposições p e q forem ambas verdadeiras ou falsas. Nos demais casos, a bicondicional é falsa.
+
+
+NAND (↑)
+
+Como vimos, o conectivo NAND surge a partir da combinação do conectivo “não” com o conectivo “e”.
+
+
+Vamos considerar duas proposições simples:
+
+
+p: Carlos vai ao cinema.
+ 
+q: Carlos vai assistir à televisão.
+ 
+p ↑ q: Não é verdade que Carlos vai ao cinema e vai assistir à televisão.
+
+Veja que podemos escrever:
+
+
+Não é verdade que (Carlos vai ao cinema e vai assistir à televisão).
+
+
+Linguagem simbólica: ~(p ∧ q)
+
+
+Tabela-verdade do conectivo NAND
+
+Observe a tabela a seguir.
+
+
+p	q	
+p∧q
+∼(p∧q)	
+p↑q
+V	V	V	F	F
+V	F	F	V	V
+F	V	F	V	V
+F	F	F	V	V
+Tabela: Tabela-verdade do conectivo NAND.
+Ana Lúcia de Sousa.
+
+
+NOR (↓)
+
+Como vimos, o conectivo NOR surge a partir da combinação do conectivo “não” com o conectivo “ou”.
+
+
+Vamos considerar duas proposições simples:
+
+
+p: Carlos vai ao cinema.
+ 
+q: Carlos vai assistir à televisão.
+ 
+p ↓ q: Não é verdade que Carlos vai ao cinema ou vai assistir à televisão.
+
+Veja que podemos escrever: Não é verdade que (Carlos vai ao cinema ou vai assistir à televisão)
+
+
+Linguagem simbólica: ∼(p ∨ q)
+
+
+Tabela-verdade do conectivo NOR
+
+Observe a tabela a seguir.
+
+
+p	q	
+p∨q
+∼(p∨q)	
+p↓q
+V	V	V	F	F
+V	F	V	F	F
+F	V	V	F	F
+F	F	F	V	V
+Tabela: Tabela-verdade do conectivo NOR.
+Ana Lúcia de Sousa.

@@ -1,0 +1,116 @@
+Linguagem natural e linguagem simbólica
+O conhecimento teórico sobre as linguagens natural e simbólica é essencial, pois facilita a compreensão e a comunicação de conceitos complexos de maneira precisa. Esse conhecimento é particularmente útil em áreas como matemática e computação, que lidam com a clareza e a exatidão. Assista a este vídeo para entender como transformar a linguagem natural em simbólica a partir do uso de proposições.
+
+
+Neste vídeo, você vai aprender conceitos das linguagens natural e simbólica, definição e exemplos de proposições, classificação das proposições em simples e compostas, e a atribuição de valores lógicos. Você também vai entender como transformar enunciados naturais em simbólicos utilizando símbolos lógicos.
+
+
+
+A linguagem, segundo o dicionário Aurélio, pode ser compreendida como um sistema de símbolos ou sinais que permite a transmissão da informação. Dessa forma, temos a linguagem escrita formada por um conjunto de símbolos, que são as letras do alfabeto, os sinais de pontuação, acentos etc. Ela é dotada de regras para juntar esses símbolos e formar palavras e frases, sentenças ou enunciados.
+
+
+É comum chamar a linguagem escrita de linguagem natural já que esta faz parte do nosso cotidiano. Aprenderemos, porém, a transformar essa linguagem natural ou corrente em uma linguagem simbólica. Isso ocorre quando conhecemos os símbolos lógicos.
+
+
+Proposições
+
+
+Definição
+
+Proposições são sentenças ou enunciados declarativos que exprimem um pensamento de sentido completo. Logo, não consideramos como proposição as sentenças exclamativas (Feliz Natal!), interrogativas (Qual é o seu nome?) ou imperativas (Estude, agora!).
+
+
+Atenção
+Carlos é estudioso.
+ 
+O número 49 é um quadrado perfeito
+ 
+Fomos ao teatro ontem.
+ 
+2 < 5.
+ 
+Note que, nesses exemplos, estamos declarando algo que pode ser considerado verdadeiro ou falso.
+
+
+Classificação das proposições
+
+
+As proposições podem ser classificadas em simples ou compostas.
+
+
+
+Proposiçöes simples (ou atômicas)
+
+As proposições simples são formadas apenas por sujeito e predicado. Em geral, usamos as letras minúsculas do alfabeto latino p,q,r,s etc. para designá-las.
+ 
+
+Exemplos:
+ 
+
+p: João é inteligente.
+ 
+
+q: Fomos ao teatro ontem.
+ 
+
+r: O quadrado é um polígono regular.
+
+
+Proposiçōes compostas (ou moleculares)
+
+As proposições compostas são formadas por duas ou mais proposições simples. Em geral, são designadas por letras maiúsculas do alfabeto latino P,Q,R,S etc.
+ 
+
+Exemplos:
+ 
+
+P: Maria é bonita e Pedro é estudioso.
+ 
+
+Q: Maria é professora ou médica.
+ 
+
+R: 0 número 5 é ímpar e o número 25 é um quadrado perfeito.
+
+Valor lógico de uma proposição
+
+Uma proposição pode ser verdadeira ou falsa. Usamos (F) quando a proposição é falsa ou (V) quando ela é verdadeira.
+
+
+Exemplo
+Sejam p e q duas proposições.
+ 
+
+p: 0 número 5 é ímpar.
+ 
+q : 0 número 15 é um quadrado perfeito
+ 
+Com relação ao valor lógico dessas proposições, podemos usar a seguinte notação:
+ 
+
+V(p)=V significa que o valor lógico da proposição p é verdadeiro.
+ 
+V(q)=F significa que o valor lógico da proposição q é falso.
+
+Princípios importantes da lógica matemática
+
+
+A lógica matemática é regida por três princípios:
+
+
+Princípio do 3° excluído
+
+
+Uma proposição pode ser caracterizada em lógica como "verdadeira" ou "falsa". Ou seja, não é possível uma terceira caracterização lógica.
+
+
+Princípio da não contradição
+
+
+Uma proposição não pode ser simultaneamente verdadeira e falsa.
+
+
+Princípio da identidade
+
+
+Esse princípio diz que uma proposição ou enunciado é igual a si mesmo.
