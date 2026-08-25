@@ -1,0 +1,73 @@
+Sentença aberta com uma ou duas variáveis
+O conceito de conjunto verdade é fundamental para entender sentenças abertas. Para uma sentença aberta com uma variável p(x) em um conjunto universo A, o conjunto verdade V 
+p
+​
+  inclui todos os elementos a∈A que tornam p(x) verdadeira. Quando a sentença possui duas variáveis, consideramos dois conjuntos A e B e avaliamos p(x,y) em pares ordenados (a,b)∈ A×B, formando o conjunto verdade com os pares que satisfazem a sentença, permitindo uma análise mais detalhada das relações entre os elementos.
+
+
+No vídeo a seguir, veja como exploramos o conceito de conjunto verdade no contexto de sentenças abertas. Iniciamos com uma definição clara, mostrando que o conjunto verdade de uma sentença aberta é o conjunto de todos os elementos do conjunto universo que tornam a sentença verdadeira. Também abordamos sentenças abertas com duas variáveis, explicando como determinar o conjunto verdade em produtos cartesianos de conjuntos.
+
+
+
+Em uma sentença aberta com duas variáveis, consideramos dois conjuntos, A e B.
+
+
+Seja "a" um elemento do conjunto A, ( a∈A) e "b" um elemento do conjunto B,(b∈B), chamamos de sentença aberta em A×B, uma expressão p(x,y) em que p(a,b) pode assumir o valor lógico falso (F) ou verdadeiro (V) para todo par ordenado (a,b)∈A×B.
+
+
+Atenção
+Sejam dois conjuntos A e B, dizemos que o produto cartesiano de A por B é o conjunto de todos os pares ordenados (a,b), em que a∈A e b∈B. O produto cartesiano de A por B é indicado por A×B (lê: A cartesiano B), assim: A×B={(a,b)∣a∈A∧b∈B}.
+
+
+O conjunto verdade de uma sentença aberta com duas variáveis é o conjunto de todos os elementos (a,b)∈A×B, tais que p(a,b) é uma proposição verdadeira. Entenda melhor!
+
+
+V 
+p
+​
+ ={(x,y)∣x∈A∧y∈B∧p(x,y)  
+e
+ˊ
+  V}
+V 
+p
+​
+ ={(x,y)∣x∈A∧y∈B∧p(x,y)  
+e
+ˊ
+  V}
+Também podemos usar:
+
+
+V 
+p
+​
+ ={(x,y)∈A×B∣p(x,y)}
+V 
+p
+​
+ ={(x,y)∈A×B∣p(x,y)}
+Observação: V 
+p
+​
+ ⊂A×B (o conjunto verdade de p(x,y) em A×B é um subconjunto do conjunto A×B ).
+
+
+Considere a sentença aberta x+y=6 em N×N, em que N é o conjunto dos números naturais. O conjunto verdade é:
+
+
+V 
+p
+​
+ ={(x,y)∈N×N∧x+y=6}={(1,5),(3,3),(2,4)}
+V 
+p
+​
+ ={(x,y)∈N×N∧x+y=6}={(1,5),(3,3),(2,4)}
+Considere a sentença aberta x+2>y em A×B, em que A={1,2,3} e B={4,5}. O conjunto verdade é:
+
+
+V 
+p
+​
+ ={(x,y)∈A×B∧x+2>y}={(3,4)}

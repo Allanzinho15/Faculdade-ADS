@@ -1,0 +1,86 @@
+Negação de sentenças abertas com o quantificador universal
+Entender a negação de sentenças abertas com quantificadores universais é uma habilidade fundamental em lógica matemática. Essa compreensão ajuda a manipular proposições complexas e a formular argumentos precisos. Saber como negar corretamente uma expressão com quantificador universal é fundamental tanto para a matemática quanto para a linguística formal, facilitando a análise e a construção de declarações lógicas.
+
+
+Assista a este vídeo para aprofundar seu entendimento sobre a negação de sentenças abertas com quantificadores universais e veja como aplicar esses conceitos em diferentes contextos práticos.
+
+
+
+Considere a expressão a seguir e o conjunto universo H de todos os homens.
+
+
+ ( ∀x∈H)(x  
+e
+ˊ
+  bom motorista) 
+ ( ∀x∈H)(x  
+e
+ˊ
+  bom motorista) 
+Nessa expressão, temos que: para todos as pessoas de H, tais pessoas, os homens, são bons motoristas. Para negar essa expressão com a presença do quantificador universal, basta colocar a negação antes do quantificador. Veja!
+
+
+¬(∀x∈H)(x  
+e
+ˊ
+  bom motorista) 
+¬(∀x∈H)(x  
+e
+ˊ
+  bom motorista) 
+Quando colocamos a negação na frente do quantificador universal, dizemos que: não é verdade que todos os homens são bons motoristas. Portanto, a negação de proposição com quantificador universal é equivalente a:
+
+
+∼(∀x,p(x))⇔∃(∼p(x))
+∼(∀x,p(x))⇔∃(∼p(x))
+Alternativamente, podemos escrever:
+
+
+(∃x)(x n 
+a
+˜
+ o  
+e
+ˊ
+  bom motorista) 
+(∃x)(x n 
+a
+˜
+ o  
+e
+ˊ
+  bom motorista) 
+Na linguagem corrente, temos que: existe pelo menos um homem que não é bom motorista.
+
+
+Atenção
+Na linguagem corrente, temos algumas expressões que podemos usar para negar o quantificador universal: “Pelo menos um”, “ao menos um”, “existe um”, “algum” ou “existe pelo menos um”. Todos seguidos do “não”.
+
+
+Na linguagem corrente, temos algumas expressões que podemos usar para negar o quantificador existencial. Veja algumas dessas expressões!
+
+
+Negação do "Algum"
+
+
+Podemos usar: nenhum, todo, seguido de não.Exemplo: alguns homens são bons motoristas.Negação: nenhum homem é bom motorista.Todo homem não é bom motorista.
+
+
+Negação do "Nenhum"
+
+
+Podemos usar: algum, pelo menos um.Exemplo: nenhum homem é elegante.Negação: algum homem é elegante.Pelo menos um homem é elegante.
+
+
+Exemplos
+
+Observe alguns exemplos!
+
+
+Dê a negação da sentença: (∀x)(x−3≥4)
+
+A negação é equivalente a ∼(∀x,p(x))⇔∃(∼p(x)) 
+
+ 
+
+∼(∀x)(x−3≥4)⇔∃x(x−3<4)

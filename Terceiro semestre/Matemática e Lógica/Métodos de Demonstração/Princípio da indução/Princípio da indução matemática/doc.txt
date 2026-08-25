@@ -1,0 +1,362 @@
+Princípio da indução matemática
+É uma técnica significativa usada para provar proposições sobre números inteiros, garantindo que uma propriedade se mantenha verdadeira para todos os elementos de um domínio. Vamos explorar o princípio da indução matemática, ilustrando com exemplos práticos como ele pode ser utilizado para demonstrar teoremas.
+
+
+Assista ao vídeo e aprofunde seu conhecimento sobre esse importante método!
+
+
+
+Para cada inteiro positivo n, seja P(n) uma declaração. Se (1) P(1) é verdadeiro e (2) ∀k∈N,P(k)⇒P(k+1), é verdade, então ∀n∈N,P(n) também é verdade.
+
+
+Como consequência do princípio da indução matemática, a declaração quantificada ∀n∈N,P(n) pode ser demonstrada como verdade se (1) mostrarmos que a declaração P (1) é verdadeira e (2) estabelecermos a verdade da implicação se P(k), então P(k+1) para cada inteiro positivo k.
+
+
+Uma demonstração usando o princípio da indução matemática é chamada de demonstração de indução ou de demonstração por indução. A verificação da validade de P(1) em uma demonstração de indução é chama-se etapa-base ou âncora da indução. Na implicação Se P(k), então P(k + 1) para um inteiro positivo arbitrário k, a instrução P(k) é chamada de hipótese indutiva (ou indução). Muitas vezes usamos uma demonstração direta para verificar embora qualquer técnica de demonstração seja aceitável.Veja!
+
+
+∀k∈N,P(k)⇒P(k+1)(4.1)
+∀k∈N,P(k)⇒P(k+1)(4.1)
+Ou seja, normalmente assumimos que a hipótese indutiva P(k) é verdadeira para um inteiro positivo arbitrário k e para tentar mostrar que P(k+1) é verdade. Estabelecer a validade de (4.1) é chamado de passo indutivo na demonstração por indução.
+
+
+Ilustramos essa técnica de demonstração mostrando que a soma dos n primeiros inteiros positivos é dada pela expressão n× 
+2
+(n+1)
+​
+  para qualquer inteiro positivo n, ou seja, 1+2+3+…+n=n× 
+2
+(n+1)
+​
+ .
+
+
+Resultado 4.3
+
+Faça o seguinte:
+
+
+P(n):1+2+3+…+n=n× 
+2
+(n+1)
+​
+ 
+P(n):1+2+3+…+n=n× 
+2
+(n+1)
+​
+ 
+Em que n∈N. Então, P(n) é verdadeiro para cada inteiro positivo n.
+
+
+Demonstração:
+Empregamos indução. Faça 1= 
+2
+(1×2)
+​
+ , logo a declaração P(1) é verdadeira.
+
+
+Assuma que P(k) é verdadeira para um inteiro positivo arbitrário k, ou seja, que:
+
+
+1+2+3+…+k=k× 
+2
+(k+1)
+​
+ 
+1+2+3+…+k=k× 
+2
+(k+1)
+​
+ 
+Mostramos que P(k + 1) é verdadeira, ou seja, mostramos o seguinte:
+
+
+1+2+3+…+k= 
+2
+(k+1)×(k+2)
+​
+ 
+1+2+3+…+k= 
+2
+(k+1)×(k+2)
+​
+ 
+Como desejado, temos:
+
+
+ 
+​
+  
+1+2+3+…+(k+1)=(1+2+3+…+k)+(k+1) 
+2
+(k+1)×(k+2)
+​
+ 
+=k× 
+2
+(k+1)
+​
+ +(k+1)= 
+2
+[k×(k+1)+2×(k+1)]
+​
+ = 
+2
+(k+1)×(k+2)
+​
+ 
+​
+ 
+ 
+​
+  
+1+2+3+…+(k+1)=(1+2+3+…+k)+(k+1) 
+2
+(k+1)×(k+2)
+​
+ 
+=k× 
+2
+(k+1)
+​
+ +(k+1)= 
+2
+[k×(k+1)+2×(k+1)]
+​
+ = 
+2
+(k+1)×(k+2)
+​
+ 
+​
+ 
+Pelo princípio da indução matemática, P(n) é verdadeiro para cada inteiro positivo n.
+
+
+Análise da demonstração
+
+Na demonstração do resultado 4.3, começamos afirmando que a indução foi usada. Isso alerta o leitor sobre o que esperar na demonstração.
+
+
+Além disso, na demonstração do passo indutivo, presume-se que, para um inteiro positivo k, isto é, para um inteiro positivo arbitrário k, 1+2+3+…+k=k× 
+2
+(k+1)
+​
+ .
+
+
+Observação: não assumimos que 1+2+3+…+k=k× 
+2
+(k+1)
+​
+  para cada inteiro positivo k, assumindo o que estamos tentando demonstrar no resultado 4.3.
+
+
+Resultado 4.4
+
+Para cada inteiro positivo n,1 
+2
+ +2 
+2
+ +…+k 
+2
+ = 
+6
+n×(n+1)×(2n+1)
+​
+ .
+
+
+Demonstração:
+
+
+Vamos proceder por indução!
+
+
+Fazendo n=1, obtemos 1 
+2
+ = 
+6
+(1×2×3)
+​
+  =1, que é uma afirmação claramente verdadeira.
+
+
+Vamos assumir que, para algum k inteiro positivo, temos:
+
+
+1 
+2
+ +2 
+2
+ +…+k 
+2
+ = 
+6
+k×(k+1)×(2k+1)
+​
+ ( 
+∗
+ )
+1 
+2
+ +2 
+2
+ +…+k 
+2
+ = 
+6
+k×(k+1)×(2k+1)
+​
+ ( 
+∗
+ )
+Devemos mostrar que P(k + 1) é também verdadeiro. Como desejado, temos o seguinte:
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+​
+  
+1 
+2
+ +2 
+2
+ +…+(k+1) 
+2
+ = 
+6
+k×(k+1)×(2k+1)
+​
+ 
+=[1 
+2
+ +2 
+2
+ +…+k 
+2
+ ]+(k+1) 
+2
+ 
+= 
+6
+k×(k+1)×(2k+1)
+​
+ +(k+1) 
+2
+ 
+= 
+6
+k×(k+1)×(2k+1)
+​
+ + 
+6
+6(k+1) 
+2
+ 
+​
+ 
+=(k+1)× 
+6
+[k×(2k+1)+6(k+1)]
+​
+ 
+= 
+6
+(k+1)×(2k 
+2
+ +7k+6)
+​
+ [de(∗)e da linha anterior] 
+= 
+6
+(k+1)×(k+2)×(2k+3)
+​
+ 
+​
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+​
+  
+1 
+2
+ +2 
+2
+ +…+(k+1) 
+2
+ = 
+6
+k×(k+1)×(2k+1)
+​
+ 
+=[1 
+2
+ +2 
+2
+ +…+k 
+2
+ ]+(k+1) 
+2
+ 
+= 
+6
+k×(k+1)×(2k+1)
+​
+ +(k+1) 
+2
+ 
+= 
+6
+k×(k+1)×(2k+1)
+​
+ + 
+6
+6(k+1) 
+2
+ 
+​
+ 
+=(k+1)× 
+6
+[k×(2k+1)+6(k+1)]
+​
+ 
+= 
+6
+(k+1)×(2k 
+2
+ +7k+6)
+​
+ [de(∗)e da linha anterior] 
+= 
+6
+(k+1)×(k+2)×(2k+3)
+​
+ 
+​
+ 
+Pelo princípio da indução matemática, 1 
+2
+ +2 
+2
+ +…+n 
+2
+ = 
+6
+n×(n+1)×(2n+1)
+​
+  para qualquer inteiro positivo n.
+
+
+Estritamente falando, a última frase na demonstração do resultado 4.4 é típica da última sentença de cada demonstração, usando indução matemática, em que a ideia é mostrar que a hipótese do princípio da indução matemática está satisfeita e assim a conclusão segue. Alguns, portanto, omitem essa frase final, uma vez que se entende que as propriedades (1) e (2) do teorema 4.2 estão satisfeitas, tem-se uma demonstração.

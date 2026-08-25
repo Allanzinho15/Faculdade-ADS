@@ -1,0 +1,92 @@
+Princípio da indução
+É um princípio muito eficaz para provar proposições sobre conjuntos numéricos. Vamos explorar esse princípio e suas aplicações, ajudando você a entender como ele pode ser usado para validar teoremas de forma rigorosa.
+
+
+Assista ao vídeo sobre o princípio da indução e acompanhe alguns exemplos que ilustram essa técnica.
+
+
+
+Considere A um conjunto de números reais.
+
+
+Um número m∈A é chamado de elemento mínimo (ou menor) de A se x≥m para cada x∈A.
+
+
+Atenção: alguns conjuntos não vazios de números reais têm um elemento menor, outros não.
+
+
+O conjunto N tem um menor elemento, ou seja, 1, enquanto Z não tem menor elemento. O intervalo fechado [2,5] tem o mínimo elemento 2, mas o intervalo aberto (2,5) não tem elemento mínimo. o conjunto A={1/n:n∈N} também não tem menor elemento.
+
+
+Comentário
+Se um conjunto não vazio A de números reais tem um elemento menor, então esse elemento é necessariamente único. Lembre-se: ao tentar demonstrar que um elemento possuidor de determinada propriedade é único, é costume assumir que há dois elementos com essa propriedade. Vamos demonstrar que esses elementos são iguais, implicando que há exatamente um desses elementos.
+
+
+Teorema 4.1
+
+Se um conjunto A de números reais tem um elemento menor, então A tem um elemento menor que é único.
+
+
+Demonstração
+
+Considere m e n os menores elementos de A. Uma vez que m é um elemento menor, n≥m. Além disso, desde que n é um elemento menor, m≥n. Portanto, m=n.
+
+
+Atenção: a demonstração que demos do Teorema 4.1 é uma demonstração direta.
+
+
+Há uma propriedade de grande interesse para conjuntos numéricos, em geral. Vejamos!
+
+
+Um conjunto não vazio S de números reais é bem ordenado se cada subconjunto de S tem um elemento menor. Seja S= {−7,−1,2}, os subconjuntos não vazios de S são {−7,−1,2},{−7,−1},{−7,2},{−1,2},{−7},{−1}∈{2}.
+
+
+Comentário
+Embora pareça evidente que o conjunto N de inteiros positivos é bem ordenado, essa afirmação não pode ser demonstrada a partir das propriedades de inteiros positivos que usamos intuitivamente. Consequentemente, essa afirmação é aceita como um axioma adicional, como indicado a seguir.
+
+
+Axioma: princípio da boa ordenação
+
+O conjunto N de inteiros positivos é bem ordenado.
+
+
+Uma consequência do princípio da boa ordenação é outro princípio, que serve como base para outra e importante técnica de demonstração.
+
+
+Teorema 4.2 - princípio da indução matemática
+
+Para cada inteiro positivo n, seja P(n) ser uma declaração. Se (1) P (1) é verdadeiro e (2) a implicação
+
+
+Se P(k), então P(k+1) é verdade para cada inteiro positivo k, então P(n) é verdadeiro para cada inteiro positivo n.
+
+
+Demonstração
+
+Suponha, pelo contrário, que o teorema é falso. Em seguida, as condições (1) e (2) são satisfeitas, mas existem alguns inteiros positivos n para os quais P(n) é uma afırmação falsa. Observe!
+
+
+S={n∈N:P(n)  
+e
+ˊ
+  falso }
+S={n∈N:P(n)  
+e
+ˊ
+  falso }
+Uma vez que S é um subconjunto não vazio de N, ele segue pelo princípio de boa ordenação, e entende-se que N contém um elemento mínimo S.
+
+
+Uma vez que P(1) é verdadeiro, 1∈
+/
+S. Assim, s≥2 e s−1∈N.
+
+
+Portanto, s−1∈
+/
+S e assim P(s−1) é uma declaração verdadeira.
+
+
+Por condição (2), P (2) também é verdadeiro e assim s∈
+/
+S. Isso, no entanto, contradiz nossa suposição de que s∈S.

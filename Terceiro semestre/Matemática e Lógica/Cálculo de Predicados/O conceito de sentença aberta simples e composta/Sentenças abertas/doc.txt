@@ -1,0 +1,126 @@
+Sentenças abertas
+O estudo de sentenças abertas é fundamental no cálculo dos predicados, pois permite a compreensão e a formalização de expressões lógicas que contêm variáveis. Essas sentenças se tornam proposições verdadeiras ou falsas quando suas variáveis são substituídas por elementos específicos de um conjunto universo.
+
+
+Compreender sentenças abertas e sua avaliação é o primeiro passo para dominar conceitos mais avançados, como quantificadores, predicados e a manipulação de expressões lógicas complexas, que são essenciais para a resolução de problemas e o desenvolvimento de soluções eficientes em diversas áreas do conhecimento.
+
+
+Para conferir alguns exemplos práticos de sentenças abertas, assista ao vídeo!
+
+
+
+
+Diego Armando Maradona em um campo de futebol
+
+Considere a seguinte oração: “Alguém foi um craque do futebol na Argentina”. Você consegue dizer se essa oração é verdadeira ou falsa? A resposta é “certamente, não”. Veja que não é possível afirmar se essa oração é verdadeira ou falsa, pois o sujeito não está muito claro, uma vez que “Alguém” é um pronome indefinido. Portanto, não consideramos esse tipo de oração uma sentença ou proposição.
+
+ 
+
+Agora suponhamos que o pronome “Alguém” seja substituído pelo nome do jogador Maradona: “Maradona foi um craque do futebol na Argentina”.
+
+
+Veja que a sentença é verdadeira.
+
+
+
+Pelé segurando o troféu da Copa do Mundo posando para a imprensa
+
+Suponhamos que o pronome “Alguém” seja substituído pelo nome do jogador Pelé: “Pelé foi um craque do futebol na Argentina”. Essa sentença, então, nesse caso, torna-se uma proposição falsa.
+
+
+Ou seja, nessa oração, o pronome “Alguém” é variável, isto é, pode ser substituído por um nome que fará com que essa sentença tenha um valor verdadeiro ou falso. A partir disso, podemos dizer que temos uma sentença aberta ou uma proposição aberta.
+
+ 
+
+Agora vamos considerar a sentença 2x−3=5. Quando substituímos a variável x, por exemplo, pelo valor 4 , temos:
+
+
+2x−3=5
+2×(4)−3=5
+8−3=5
+5=5
+​
+ 
+2x−3=5
+2×(4)−3=5
+8−3=5
+5=5
+​
+ 
+Veja que essa sentença se torna uma proposição verdadeira.
+
+
+Agora vamos substituir a variável x pelo valor 2.
+
+
+2x−3=5
+2×(2)−3=5
+4−3=5
+1
+
+=5
+​
+ 
+2x−3=5
+2×(2)−3=5
+4−3=5
+1
+
+=5
+​
+ 
+Essa sentença, para x=2, é falsa.
+
+
+Comentário
+A sentença 2x−3=5 é uma sentença aberta na variável x. Podemos atribuir qualquer valor numérico para a variável x e avaliar se o resultado se torna uma proposição verdadeira ou falsa.
+
+
+Agora podemos definir uma sentença aberta do seguinte modo, de forma mais precisa:
+
+
+Vamos considerar um conjunto A (não vazio) e " a " um elemento desse conjunto. Ou seja, a∈A.
+
+
+Definimos uma sentença aberta no conjunto A ou uma sentença aberta com uma variável no conjunto A como sendo uma expressão que chamamos de p(x), tal que para todo elemento " a " do conjunto A,p(a) pode assumir o valor lógico V (verdadeiro) ou F (falso).
+
+
+Em outras palavras, dizemos que p(x) é uma sentença aberta no conjunto A se, e somente se, p(x) assumir o valor verdadeiro ou falso sempre que substituirmos a variável x por qualquer elemento arbitrário do conjunto A.
+
+
+Também podemos chamar a sentença aberta em A de função proposicional em A ou condição em A.
+
+
+Observação: lembre-se de que sentença ou proposição é uma oração declarativa verdadeira ou falsa.
+
+
+Considerando o conjunto dos números naturais N = {1, 2, 3, . . . }, temos os seguintes exemplos de sentenças abertas:
+
+
+
+x+2>10
+
+x+2>10
+
+ 
+
+Para x=1, por exemplo, temos que 1+2>10 (falso).
+
+
+x2-5x+6=0
+
+x 
+2
+ −5x+6=0
+
+ 
+
+Para x=2, temos que:
+
+2 
+2
+ −5×(2)+6=0
+4−10+6=0 (verdadeiro) 
+​
+ 
+

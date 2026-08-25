@@ -1,0 +1,63 @@
+Quantificador universal
+Representado pelo símbolo ∀, o quantificador universal é fundamental para expressar que uma proposição é verdadeira para todos os elementos de um domínio específico.
+
+
+Neste vídeo, exploraremos o uso do quantificador universal em sentenças abertas e como ele pode ser usado para criar declarações quantificadas. Assista e aprofunde seu entendimento sobre esse importante conceito!
+
+
+
+Há um símbolo na lógica de predicados que é usado para representar a expressão "para todos", "para cada", ou "para qualquer um".
+
+
+Esse símbolo é ∀, que parece um A maiúsculo de cabeça para baixo. Ele é chamado de quantificador universal, pois indica que algo é universalmente verdadeiro sobre uma variável. A variável à qual o quantificador se aplica é escrita logo após o símbolo.
+
+
+Mencionamos que, se P(x) for uma sentença aberta sobre um domínio S, então P(x) é uma declaração para cada x∈S. Vamos ilustrar!
+
+
+Exemplo
+Considere S = {1, 2, ..., 7}. Então:
+ 
+
+P(n):[2n 
+2
+ +5+(−1) 
+n
+ ]÷2 é primo.
+ 
+
+é uma declaração para cada n∈S.
+ 
+
+Portanto, são declarações verdadeiras as seguintes:
+ 
+
+P(1): 3 é primo
+P(2): 7 é primo
+P(3): 11 é primo
+P(4): 19 é primo
+ 
+
+Enquanto são declarações falsas as declarações a seguir.
+ 
+
+P(5): 27 é primo
+P(6): 39 é primo
+P(7): 51 é primo
+
+
+Há outra maneira de uma sentença aberta ser convertida em uma declaração, por exemplo, pela quantificação. Considere P(x) uma frase aberta sobre um domínio S.
+
+
+Adicionar a frase "para cada x∈S" à frase P(x) produz a chamada declaração quantificada.
+
+
+A frase "para cada" é referida como o quantificador universal e é denotada pelo símbolo ∀. Outras formas de expressar o quantificador universal são "para cada um" e "para todos". Essa afirmação quantificada é expressa em símbolos por:
+
+
+∀x∈S,P(x)(3.1)
+∀x∈S,P(x)(3.1)
+Em palavras, ela é expressa por: para cada x∈S,P(x). (3.2)
+
+
+A instrução quantificada (3.1) (ou (3.2)) é verdadeira se P(x) for verdadeira para cada x∈S; enquanto ela é falsa se P(x) for falsa para pelo menos um elemento x∈S.

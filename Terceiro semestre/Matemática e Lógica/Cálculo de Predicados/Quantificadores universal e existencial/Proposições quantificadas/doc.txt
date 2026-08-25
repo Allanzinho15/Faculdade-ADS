@@ -1,0 +1,34 @@
+Proposições quantificadas
+Vamos estudar o quantificador universal e as sentenças abertas. Você vai entender como esse quantificador transforma sentenças abertas em proposições verdadeiras ou falsas, e vai acompanhar a notação simbólica e a aplicação desses conceitos em diferentes conjuntos universo.
+
+
+Assista ao vídeo e confira exemplos práticos.
+
+
+
+Vamos começar pensando nas seguintes expressões:
+
+
+“para todo”
+“qualquer que seja”
+“existe pelo menos um”
+
+Essas expressões, entre outras, são usadas em frases muito comuns no nosso cotidiano. Por exemplo, quando falamos “Todos os homens são elegantes”. Veja que temos um conjunto formado por homens elegantes. Ser elegante é a propriedade desse conjunto. Assim, todos os homens estão atendendo a essa propriedade, que é ser elegante.
+
+
+Alternativamente, podemos dizer que: “Existe pelo menos um homem que não é elegante”. Ou seja, no conjunto formado por homens elegantes, existe um desses homens que não é elegante.
+
+
+Agora considere a seguinte sentença matemática:
+
+
+ "Para todo x,x<2 " 
+ "Para todo x,x<2 " 
+Veja que essa sentença tem o predicado “x < 2”, que apresenta a propriedade da variável x que é “ser menor do que 2”. Acompanhando esse predicado, temos a expressão “para todo”.
+
+
+Atenção
+A palavra “todos” e as expressões “existe pelo menos um” e “para todos” são chamadas de quantificadores.
+
+
+Utilizamos, então, dois quantificadores que serão objeto do nosso estudo: o quantificador universal e o quantificador existencial. Veremos que também podem ser utilizados quantificadores para transformar sentenças abertas em sentenças fechadas.

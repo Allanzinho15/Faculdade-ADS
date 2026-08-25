@@ -1,0 +1,188 @@
+Demonstração por redução ao absurdo
+É uma técnica poderosa que permite provar a veracidade de uma proposição ao mostrar que a negação dessa proposição leva a uma contradição. Exploraremos como essa técnica pode ser aplicada para provar que 0 é o único elemento neutro da adição no conjunto dos números naturais. Ao supor a existência de outro elemento neutro e chegar a uma contradição, a veracidade da proposição original é validada.
+
+
+Assista ao vídeo e entenda melhor a técnica de demonstração por redução ao absurdo (ou por contradição).
+
+
+
+Preliminares
+
+Se você é curioso dê uma paquerada no método socrático, genial estratégia do mestre grego usada com seus pupilos, nas suas aulas.
+
+
+Quando um pupilo enunciava alguma afirmação (proposição) na qual acreditava ser verdadeira, Sócrates, como quem não quer nada, sugeria uma ou mais afirmativas (proposições) com a qual o pupilo concordava, ingenuamente e que, pasme, acarretava exatamente o oposto da proposição do interlocutor.
+
+
+E essa era a demolidora estratégia para mostrar a seus pupilos que eventualmente uma proposição na qual acreditavam estava furada! Ou seja, levava o infeliz a concluir que o que era verdadeiro era a negativa do que julgava ser verdadeiro!
+
+
+Mas lembre-se de Aristóteles, que foi pupilo de Platão, que, por sua vez, foi discípulo de Sócrates! Aristóteles enunciou, com toda pompa do mundo, o princípio da não contradição: “Uma proposição não pode ser, ao mesmo tempo, verdadeira e falsa!”.
+
+
+De certa forma, a técnica da demonstração por contradição (ou pela redução ao absurdo) consiste, basicamente, na estratégia utilizada por Sócrates e no princípio da não contradição.
+
+
+Vejamos como funciona essa técnica!
+
+
+A técnica
+
+Inicialmente, lembre-se que o que chamamos de contradição é nada mais nada menos que uma proposição cuja tabelaverdade resulta em F (falso), independentemente do valor-verdade das proposições que a compõem. Por exemplo, ' Q e ∼Q 
+′
+ , é uma contradição, pois independente de Q ser uma proposição verdadeira ou falsa, a proposição composta ' Q e ∼Q 
+′
+  é uma proposição falsa!
+
+
+A estratégia para a demonstração por contradição está, então, em assumir que a proposição P - que devemos demonstrar, não é verdadeira, ou seja, é falsa! A partir dessa premissa, perceber que isso acarretaria que alguma proposição Q é verdadeira e ao mesmo tempo falsa, o que conduziria a uma contradição.
+
+
+Dessa forma, concluíriamos que não é verdade que a proposição original P é falsa, ou seja, tem que ser verdadeira.
+
+
+Exemplos
+
+Exemplo 1
+
+A soma de um número racional com um número irracional é um número irracional.
+
+
+Demonstração
+
+Se estamos no contexto dos números racionais, convém ter presente a definição de número racional:
+
+
+Um número é racional se e somente se há inteiros p e q(q
+
+=0), tais que r=p/q.
+
+Vamos admitir que a proposição é falsa, ou seja, que há um racional r e um irracional i com a soma s sendo um número racional.
+ 
+Se r e s são racionais, há p e q inteiros (q
+
+=0) tais que r=p/q e também existem p 
+′
+  e q 
+′
+ , também inteiros, com q 
+′
+ 
+
+=0 tais que s=p 
+′
+ /q 
+′
+ .
+ 
+Mas r+i=s; daí, i=s−r
+Logo, i=p/q−p 
+′
+ /q 
+′
+ , ou seja, i= 
+qq 
+′
+ 
+pq 
+′
+ −p 
+′
+ q
+​
+ 
+ 
+Mas então há P=pq 
+′
+ −p 
+′
+ q e Q=qq 
+′
+ , inteiros, tais que i=P/Q.
+ 
+Então, de (4), i é um número racional, e não irracional!
+ 
+Logo, obtemos uma contradição, pois de (1) e (5), concluímos que a proposição ' i é irracional' é uma proposição verdadeira e uma proposição falsa.
+ 
+Portanto, a premissa s é irracional.
+
+Exemplo 2
+
+Sejam a > b > c números inteiros positivos que representam as medidas dos lados de um triângulo retângulo, mostre que um dos lados é múltiplo de 3.
+
+
+Demonstração
+
+No contexto da geometria plana, é bom lembrar do Teorema de Pitágoras:
+
+
+Se a,b e c são as medidas dos lados de um triângulo retângulo e a se refere à hipotenusa, então a 
+2
+ =b 
+2
+ +c 
+2
+ .
+
+Também é interessante perceber que:
+
+
+se N é inteiro e não é múltiplo de 3 , então N é da forma 3k+1 ou 3k−1, para algum inteiro k.
+
+Vamos, então, à demonstração propriamente dita
+
+
+    1    Vamos admitir que a proposição é falsa, ou seja, que a, b e c são inteiros positivos, medidas dos lados de um triângulo retângulo e nenhuma dessas medidas é múltipla de 3.  
+
+    2    Então, podemos afirmar que:   
+
+    ◦    a 
+2
+ =b 
+2
+ +c 
+2
+   
+
+    ◦    Há inteiros m,n e p tais que a=3m±1,b=3n±1 e c=3p±1.  
+
+    3    Substituindo a, b e c no teorema de Pitágoras, obtemos, sucessivamente:   
+
+    ◦    (3m±1) 
+2
+ =(3n±1) 
+2
+ +(3p±1) 
+2
+ 
+ 
+    ◦    9m 
+2
+ ±6m+1=9n 
+2
+ ±6n+1+9p 
+2
+ ±6p+1  
+
+    ◦    9(m 
+2
+ −n 
+2
+ −p 
+2
+ )±6(m−n−p)=1  
+
+    4    Fazendo K=3(m 
+2
+ −n 
+2
+ −p 
+2
+ )±2(m−n−p), de (3) obtemos 3K=1  
+
+    5    Mas, se 3K=1, então K não é inteiro.
+  
+    6    De (4) e (5), obtivemos uma contradição ( K é inteiro e K não é inteiro). 
+
+
+Logo, não é verdade que nenhuma das medidas seja múltipla de 3. Isto é, alguma medida (a ou b ou c) é múltipla de 3.

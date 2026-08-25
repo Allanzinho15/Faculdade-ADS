@@ -1,0 +1,299 @@
+Quantificador existencial
+É um conceito imprescindível na lógica matemática, utilizado para afirmar que existe pelo menos um elemento em um conjunto que satisfaz determinada condição. Representado pelo símbolo ∃, o quantificador existencial transforma sentenças abertas em proposições verdadeiras ou falsas, dependendo se ao menos um valor da variável cumpre a condição especificada.
+
+
+Assista ao vídeo e entenda melhor o quantificador existencial.
+
+
+
+Observe o seguinte:
+
+
+ (I) A sentença aberta 
+p
+(
+x
+)
+ dada por " 
+x
+>
+4
+ " 
+ (I) A sentença aberta 
+p
+(
+x
+)
+ dada por " 
+x
+>
+4
+ " 
+Vamos analisar, inicialmente, duas sentenças:
+
+
+Essa sentença é aberta no conjunto dos números reais (R).
+
+
+Veja que, para todos os números reais, essa sentença não é verificada; ela é falsa. Veja!
+
+
+Para x = 1, temos “1 > 4” falsa.
+Para x = 5, temos “5 > 4” verdadeira.
+
+Note que, no conjunto dos números reais, existe pelo menos um elemento x que satisfaz a propriedade p(x).
+
+
+Portanto, P(x)= " x>4 " é verdadeira e o conjunto verdade é V 
+p
+​
+ 
+
+=∅. Entenda melhor!
+
+
+ (II) a sentença aberta 
+p
+(
+x
+)
+ dada por " 
+x
+=
+x
++
+2
+ " 
+ (II) a sentença aberta 
+p
+(
+x
+)
+ dada por " 
+x
+=
+x
++
+2
+ " 
+Agora vamos considerar a sentença aberta p(x) dada por " x=x+2 " no conjunto dos números reais ( R ), ou seja, o conjunto universo é R.
+
+
+Observe que essa sentença é falsa para todos os números reais x. Veja!
+
+
+Para x = 1, temos “1 = 1 + 2” falsa.
+Para x = −1, temos “−1 = −1 + 2” falsa.
+Para x = 2, temos “2 = 2 + 2” falsa.
+Logo, p(x) é falsa e o conjunto verdade é V 
+p
+​
+ =∅.
+
+Agora podemos definir o quantificador existencial.
+
+
+Dada uma proposição ou sentença aberta p(x) em A, em que A é o conjunto universo ou domínio (A
+
+=∅) e o conjunto verdade V 
+p
+​
+  ={x∣x∈A∧p(x)}. Quando existe pelo menos um elemento do conjunto universo A que satisfaz p(x), podemos dizer que p(x) torna-se verdadeira. Ou seja, o conjunto verdade é não vazio: V 
+p
+​
+ 
+
+=∅.
+
+
+Comentário
+Com relação ao quantificador existencial temos, por exemplo, as expressões: “existe pelo menos um”, “existe algum”, “algum” e “existe”.
+
+
+O quantificador existencial é representado pelo símbolo ∃.
+
+
+Como escrever "Existe x em A,p(x)", "Para algum x∈A,p(x)" ou "Existe pelo menos um x em A, tal que p(x)" com a simbologia da lógica matemática?
+
+
+Para representarmos as expressões "Para algum", "Existe" e "Existe pelo menos um", usaremos o símbolo ∃ seguido do x antes de p(x). Veja!
+
+
+(∃x)(p(x))
+(∃x)(p(x))
+∃x (Lê-se: Existe x ou existe pelo menos um x ou existe algum x )
+
+
+O quantificador existencial também é um operador lógico que tem por finalidade transformar uma sentença aberta p(x) em A, que não tem nenhum valor lógico, em uma sentença verdadeira ou falsa. A operação é denominada quantificação existencial.
+
+
+Comentário
+Podemos usar também as seguintes notações: (∃x∈A)(p(x)) ou ∃x∈A : p(x) ou ∃x∈ A,p(x).
+
+
+Exemplo
+
+Veja como fica a sentença aberta dada em (I):
+
+
+Com relação à sentença aberta p(x) dada por "x>4" no conjunto dos números reais (R), podemos escrever:
+
+
+(∃x∈R)(x>4)
+(∃x∈R)(x>4)
+É uma sentença ou proposição verdadeira. Nesse caso, temos:
+
+
+V 
+p
+​
+ ={x∣x∈R∧ 
+′′
+ x>4 
+′′
+ }
+
+=∅ Verdadeira 
+V 
+p
+​
+ ={x∣x∈R∧ 
+′′
+ x>4 
+′′
+ }
+
+=∅ Verdadeira 
+Veja como fica a sentença aberta dada em (II):
+
+
+Com relação à sentença aberta p(x) dada por "x=x+2" no conjunto dos números reais (R), podemos escrever:
+
+
+(∃x∈R)(x=x+2)
+(∃x∈R)(x=x+2)
+É uma sentença ou proposição falsa. Nesse caso, temos:
+
+
+V 
+p
+​
+ ={x∣x∈R∧ 
+′′
+ x=x+2 
+′′
+ }=∅ Falsa 
+V 
+p
+​
+ ={x∣x∈R∧ 
+′′
+ x=x+2 
+′′
+ }=∅ Falsa 
+Quando o conjunto universo é finito, dizemos que a proposição (∃x∈A)(p(x)) é equivalente à disjunção.
+
+
+Por exemplo: vamos considerar a sentença aberta p(x)= "x é ímpar" em A={1,2,3,4,5,6,7}. Então, temos que:
+
+
+(∃x∈A)(x  
+e
+ˊ
+   
+ı
+ˊ
+ mpar )⇔1  
+e
+ˊ
+   
+ı
+ˊ
+ mpar ∧3  
+e
+ˊ
+   
+ı
+ˊ
+ mpar ∧5  
+e
+ˊ
+   
+ı
+ˊ
+ mpar ∧7  
+e
+ˊ
+   
+ı
+ˊ
+ mpar 
+(∃x∈A)(x  
+e
+ˊ
+   
+ı
+ˊ
+ mpar )⇔1  
+e
+ˊ
+   
+ı
+ˊ
+ mpar ∧3  
+e
+ˊ
+   
+ı
+ˊ
+ mpar ∧5  
+e
+ˊ
+   
+ı
+ˊ
+ mpar ∧7  
+e
+ˊ
+   
+ı
+ˊ
+ mpar 
+Considerando a expressão do tipo: (∃x) ( x é elegante) "Existe pelo menos um x ou existe algum x, tal que x é elegante", ela é falsa se considerarmos o conjunto universo A das pessoas que não são elegantes.
+
+
+Você deve ter observado que para alguns problemas a existência da solução ocorre, mas é única, ou seja, para algumas sentenças abertas a solução existe e é única.
+
+
+Vamos considerar uma sentença aberta p(x):x 
+2
+ =25 em N (conjunto dos números naturais).
+
+
+Ao resolvermos essa equação, encontramos duas raízes: 5 e -5 .
+
+
+Atenção
+Como o conjunto universo que estamos considerando é N, não consideramos o valor negativo -5. Dessa forma, temos apenas um único valor (x=5), no conjunto dos números naturais, que confirma a existência da sentença aberta e faz com que seu valor lógico seja verdadeiro.
+
+
+Quando temos situações como essa em que existe "um e um só x∈A tal que p(x)" ou "existe um único x∈A" que satisfaz a sentença aberta p(x) em A, então estamos falando do quantificador de existência e unicidade.
+
+
+Notação: (∃!x∈A)(p(x))
+
+
+Chamamos o símbolo ∃ ! de quantificador existencial de unicidade.
+
+
+Lê-se: "Existe um e apenas um".
+
+
+Exemplo
+Considere o conjunto universo A={1,3,4,5} e a sentença aberta em A dada por p(x) : "x é par".
+
+Veja que existe apenas um elemento de A que satisfaz a propriedade de ser par, que é 4 .
+
+Portanto, x=4 é o único valor que torna essa sentença aberta em fechada.
+
+(∃!x∈A)x é par.

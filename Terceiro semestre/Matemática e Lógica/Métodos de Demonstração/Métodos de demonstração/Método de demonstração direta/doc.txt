@@ -1,0 +1,329 @@
+Método de demonstração direta
+A demonstração direta é uma técnica essencial que permite provar a veracidade de proposições, assumindo que uma condição inicial é verdadeira e mostrando que a conclusão também é verdadeira.
+
+
+Assista ao vídeo para entender como a demonstração direta funciona e veja exemplos práticos dessa técnica.
+
+
+
+Intuitivamente, a demonstração direta de uma proposição do tipo P→Q sugere que assumamos que P como uma proposição verdadeira e, através de uma linha de argumentação bem estruturada, conseguirmos concluir que a proposição Q seja, também, verdadeira.
+
+
+Na prática, o que tentamos desenvolver é um encadeamento de proposições condicionais, a partir da premissa P até que possamos garantir a veracidade da proposição Q.
+
+
+Para justificarmos essa técnica, vamos abordar, as seguir, dois conceitos simples: a chamada regra de inferência modus ponens e a veracidade usual da condicional (ou fechamento da prova direta).
+
+
+Vejamos!
+
+
+A regra de inferência modus ponens
+
+A chamada regra de inferência modus ponens nos permite afirmar que, se duas proposições são verdadeiras, como:
+
+
+P e P→Q
+P e P→Q
+Então, podemos concluir que a proposição Q é verdadeira.
+
+
+Parece natural, não é mesmo, porque a tabela-verdade da condicional nos garante, de fato, que essa “argumentação” parece razoável. Veja!
+
+
+Basta observar que a única linha da tabela-verdade da condicional, em que P e P→Q são proposições verdadeiras, ocorre exatamente quando Q é verdadeira!
+
+
+
+Suponha, então, que desejamos provar diretamente que uma proposição P→Q é verdadeira. Assumimos, inicialmente, que P seja uma proposição verdadeira (porque, se for falsa, não há o que provar, pois, nesse caso, a condicional P→Q é obviamente verdadeira (veja a tabela-verdade!).
+
+
+Imagine que sabemos que as três proposições encadeadas, como P→P 
+1
+​
+ ,P 
+1
+​
+ →P 
+2
+​
+  e P 
+2
+​
+ →Q, também sejam verdadeiras. O que podemos concluir a partir da regra modus ponens?
+
+
+Ora, se P é uma proposição verdadeira e P→P 
+1
+​
+  também é uma proposição verdadeira, podemos concluir (pela regra modus ponens) que P 
+1
+​
+  é verdadeira.
+ 
+Se P 
+1
+​
+  é verdadeira e P 
+1
+​
+ →P 
+2
+​
+  é verdadeira, analogamente, podemos também concluir que P 
+2
+​
+  é verdadeira.
+ 
+Finalmente, se P 
+2
+​
+  e P 
+2
+​
+ →Q são verdadeiras, a proposição Q também é verdadeira.
+
+Agora, para concluirmos que a demonstração direta é uma técnica consistente, basta perceber o que faltaria argumentar para fechar essa estratégia de demonstração.
+
+
+Fechamento da demonstração direta
+
+Bem, havíamos suposto que P era verdadeira e, a partir daí, concluímos que Q é verdadeira. Ora, se P é verdadeira e Q é verdadeira, a simples tabela-verdade da condicional justifica a veracidade de P→Q. Observe!
+
+
+
+O contexto
+
+Em qualquer área de conhecimento, seja aritmética, mecânica, química, genética etc., somos sempre demandados a provar afirmativas a respeito do nosso objeto de estudo.
+
+
+Naturalmente, as técnicas de demonstração, que são universais, são essenciais. Mas é preciso deixar claro qual o contexto em discussão e quais axiomas, definições e eventuais propriedades já são estabelecidas no contexto em estudo!
+
+
+Em vários exemplos a seguir, usaremos os números inteiros para praticar o uso da demonstração direta.
+
+
+Para isso, vamos supor as seguintes propriedades e definições:
+
+
+Fechamento do conjunto dos inteiros com respeito à adição e à multiplicação:
+
+ 
+
+Se m e n são inteiros, então m+n é inteiro.
+ 
+Se m e n são inteiros, então m×n é inteiro.
+
+Definição de inteiro par e inteiro ímpar: 
+
+ 
+
+m é um inteiro par se e somente se há um inteiro k para o qual n=2k (ou seja, a divisão de m por 2 deixa resto zero).
+ 
+m é um inteiro ímpar se e somente se há um inteiro k para o qual n=2k+1 (ou seja, a divisão de m por 2 deixa resto 1).
+
+Definição de quadrado perfeito 
+ 
+
+m é um inteiro quadrado perfeito se e somente se há um inteiro k, tal que n=k 
+2
+ (=k×k).
+
+Note que definições, por serem proposições ida e volta (ou seja, de mão dupla) são sempre bicondicionais (ida e volta). Veja a reescrita da definição de inteiro par :
+
+
+Se m é um inteiro par, então há um inteiro k para o qual m=2k. Se há um inteiro k para o qual n=2k, então n é um inteiro par.
+
+Exemplo
+
+Se n é um inteiro ímpar, então 5n+3 é um inteiro par.
+
+
+Demonstração
+
+Suponha que n é um inteiro ímpar. Então, há k inteiro, tal que:
+
+
+n=2k+1
+n=2k+1
+Assim:
+
+
+5n+3=5×(2k+1)+3=10k+8=2×(5k+4)
+5n+3=5×(2k+1)+3=10k+8=2×(5k+4)
+Como 5k+4 é um inteiro, segue-se que 5n+3 é par.
+
+
+Exemplo
+
+Resultado
+
+Se n é um inteiro ímpar, então 4n 
+3
+ +2n−1 é ímpar.
+
+
+Demonstração
+
+Suponha que n é ímpar. Assim, para algum inteiro k:
+
+
+n=2k+1
+n=2k+1
+Logo:
+
+
+4n 
+3
+ +2n−1=4×(2k+1) 
+3
+ +2×(2k+1)−1
+=4×(4k 
+3
+ +12k 
+2
+ +6k+1)+4k+2−1
+=16k 
+3
+ +48k 
+2
+ +28k+5=2×(8k 
+3
+ +24k 
+2
+ +14k+2)+1
+=2k 
+′
+ +1
+​
+ 
+4n 
+3
+ +2n−1=4×(2k+1) 
+3
+ +2×(2k+1)−1
+=4×(4k 
+3
+ +12k 
+2
+ +6k+1)+4k+2−1
+=16k 
+3
+ +48k 
+2
+ +28k+5=2×(8k 
+3
+ +24k 
+2
+ +14k+2)+1
+=2k 
+′
+ +1
+​
+ 
+Uma vez que k 
+′
+ =8k 
+3
+ +24k 
+2
+ +14k+2 é um inteiro (como k∈Z ), segue que 4n 
+3
+ +2n− 1 é ímpar.
+
+
+Dica
+1. Escreva uma demonstração para que outra pessoa possa ler.
+
+2. Escreva frases completas, começando com "Demonstração" e terminando com " ".
+
+3. Ao introduzir uma nova variável/símbolo, explique o que é o símbolo e a que conjunto a variável pertence.
+
+
+Contrapositiva de uma implicação P⇒Q
+
+Trata-se de uma implicação ¬Q⇒¬P.
+
+
+Exemplo
+
+Observe a expressão!
+
+
+P(x):x=2 e Q(x):x 
+2
+ =4
+P(x):x=2 e Q(x):x 
+2
+ =4
+Logo:
+
+
+P⇒Q: Se x=2, ent 
+a
+˜
+ o x 
+2
+ =4
+¬Q⇒¬P: Se x 
+2
+ 
+
+=4, ent 
+a
+˜
+ o x
+
+=2
+P⇒Q: Se x=2, ent 
+a
+˜
+ o x 
+2
+ =4
+¬Q⇒¬P: Se x 
+2
+ 
+
+=4, ent 
+a
+˜
+ o x
+
+=2
+As implicações P⇒Q e ¬Q⇒¬P são logicamente equivalentes, como mostra a tabela-verdade a seguir.
+
+
+P	Q	P⇒Q	−Q	−P	−Q⇒−P
+V	V	V	F	F	V
+V	F	F	V	F	F
+F	V	V	F	V	V
+F	F	V	V	V	V
+Tabela-verdade. 
+Manuel Ramos de Freitas.
+
+
+Uma demonstraçã̃o por contraposição ou contrapositiva de P⇒Q é uma demonstração direta de ¬Q⇒¬P.
+
+
+Exemplo
+
+Resultado
+
+Seja x∈Z. Se 3x−15 é par, então x é ímpar.
+
+
+Demonstração
+
+Suponha que x é par. Em seguida, x=2a, para algum inteiro a, então:
+
+
+3x−15=3×(2a)−15=6a−15
+=2×(?)+1=2×(3a−8)+1
+​
+ 
+3x−15=3×(2a)−15=6a−15
+=2×(?)+1=2×(3a−8)+1
+​
+ 
+Uma vez que 3a−8∈Z,3x−15 é par.

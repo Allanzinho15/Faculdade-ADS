@@ -1,0 +1,40 @@
+Predicados
+São expressões lógicas que atribuem propriedades ou características a variáveis, formando sentenças abertas que se tornam proposições verdadeiras ou falsas quando as variáveis são substituídas por elementos específicos. Na lógica dos predicados, essas expressões são representadas por símbolos predicativos, como p,q,r, e variáveis, como x,y,z.
+
+
+Assista ao vídeo e explore as características fundamentais do cálculo de predicados.
+
+
+
+Vamos considerar inicialmente a seguinte expressão: “Paulo é inteligente”.
+
+
+Nessa expressão, temos: Sujeito: Paulo. Predicado: inteligente. Note que inteligente é uma propriedade ou característica de Paulo.
+
+
+Observe as seguintes expressões: “x é alto e elegante” e “x é professor de y”.
+
+
+Nessas expressões, agora temos a presença de variáveis.
+
+
+Atenção
+Na afirmação “x é alto e elegante”, por exemplo, x é o sujeito e alto e elegante é o predicado. Veja que o predicado é utilizado para representar a propriedade de ser alto e elegante. Portanto, fica fácil compreender que o predicado atribui ao sujeito uma propriedade ou uma característica.
+
+
+Podemos representar um predicado por: p(x) ou p(x, y).
+
+
+Por exemplo:
+
+
+p(x) denota a afirmação "x é alto e elegante".
+q(x,y) denota a afirmação "x é professor de y".
+
+Na lógica dos predicados, eles são representados por meio dos símbolos predicativos: p, q, r etc. e variáveis: x, y, z etc.
+
+
+Exemplo
+a) p(x)= " 2x=8 "
+b) p(x)= " 5x−10=0 "
+c) p(x)= " x+y>2 "

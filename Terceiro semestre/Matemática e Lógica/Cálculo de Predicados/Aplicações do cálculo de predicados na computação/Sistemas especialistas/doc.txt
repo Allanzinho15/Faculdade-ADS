@@ -1,0 +1,55 @@
+Sistemas especialistas
+São uma aplicação importante do cálculo dos predicados, tendo sido criados por pesquisadores da área de IA, com o objetivo de simular o raciocínio de um profissional especialista em alguma área de conhecimento para uma tomada de decisão específica.
+
+
+Assista ao vídeo e entenda a importância dos sistemas especialistas.
+
+
+
+A base de dados do sistema especialista é formada por fatos e regras capazes de ajudar de forma eficiente o usuário na tomada de decisão e dar sugestões aos usuários. Isso ocorre por meio de regras que analisam informações e simulações do raciocínio do homem em determinada área de estudo. Com as simulações, surgem questionamentos com relação à tomada de decisão.
+
+
+Esse tipo de sistema foi desenvolvido, por exemplo, com a finalidade de:
+
+
+Simular diagnósticos na área médica, uma vez que se tem as informações fornecidas pelos pacientes.
+Tomada de decisões gerenciais em fábricas.
+Decisões baseadas em pesquisa de mercado.
+Declaração de imposto de renda.
+
+Note que, nesse sistema, as informações não são quantitativas, e sim qualitativas. É importante extrair o máximo de informações possíveis do especialista humano. Assim, temos tomadas de decisão mais eficientes.
+
+
+Com relação a regras, elas podem ser simples ou complexas, em que o número de operadores lógicos é maior. Por exemplo:
+
+
+Regra: " Se Carla não estudar, então ela não será aprovada na disciplina"
+Regra: " Se Carla não estudar, então ela não será aprovada na disciplina"
+O sistema especialista possui fatos referentes ao problema estudado. Os usuários fornecem as informações e, a partir disso, o sistema procura por regras para unir as premissas às informações dadas.
+
+
+Segundo Hayes-Roth (1983), os sistemas especialistas podem ser classificados nas seguintes categorias:
+
+
+
+Interpretação
+
+Predição
+
+Diagnóstico
+
+Projeto
+
+Planejamento
+
+Monitoramento
+
+Depuração
+
+Conserto
+
+Instrução
+
+Controle
+
+Inferem descrições de situações a partir da observação de fatos.

@@ -1,0 +1,39 @@
+Variáveis livres e variáveis ligadas
+Compreender a diferença entre variáveis livres e variáveis ligadas no cálculo de predicados é essencial para a análise lógica de sentenças abertas. Esse conhecimento permite que os estudantes identifiquem corretamente o escopo dos quantificadores e a forma como as variáveis interagem dentro de uma proposição.
+
+
+Assista a este vídeo para aprofundar seu entendimento sobre essas variáveis e entenda como aplicar esses conceitos em diferentes contextos práticos.
+
+
+
+Consideremos a expressão do tipo: (∃x)(x+y<4), em que A é o conjunto universo definido por A={1,2,3,4}. Note que não conhecemos o valor lógico dessa expressão, pois temos duas variáveis: x e y. A variável x está definida no conjunto A e podemos dizer que é uma variável ligada ao quantificador existencial, pois os seus valores estão definidos em A.
+
+
+Atenção
+Não conhecemos a variável y, então dizemos que y é uma variável livre. Ela não possui nenhum valor fixo ou particular. Na verdade, a expressão dada é uma sentença aberta, e não uma proposição!
+
+
+Vamos aprofundar o conceito de variáveis livres e ligadas com outro exemplo.
+
+
+Considere a expressão:
+
+
+(∀x)(∃y)(x+y=5)
+(∀x)(∃y)(x+y=5)
+A é o conjunto universo definido por A = {1, 2, 3, 4, 5}.
+
+
+Aqui, x é uma variável ligada ao quantificador universal (∀x), significando que, para cada valor de x em A, a sentença deve ser avaliada. A variável y, por sua vez, está ligada ao quantificador existencial ( ∃y ), significando que, para cada valor de x, existe pelo menos um valor de y que torna a expressão verdadeira. Vamos analisar!
+
+
+Se x = 1, então procuramos um y em A tal que 1 + y = 5. Aqui, y = 4.
+Se x = 2, então procuramos um y em A tal que 2 + y = 5. Aqui, y = 3.
+Se x = 3, então procuramos um y em A tal que 3 + y = 5. Aqui, y = 2.
+Se x = 4, então procuramos um y em A tal que 4 + y = 5. Aqui, y = 1.
+Se x = 5, então procuramos um y em A tal que 5 + y = 5. Aqui, y = 0 (mas 0 não está em A).
+
+Nesse exemplo, para x=5, não existe um y em A que satisfaça a expressão x+y=5, então a sentença não é verdadeira para todos os x em A. Portanto, a expressão (∀x)(∃y)(x+y=5) é falsa quando o conjunto A é {1,2,3,4,5}.
+
+
+Esse exemplo ilustra como variáveis livres e ligadas funcionam dentro de sentenças abertas, destacando a importância de entender seu escopo para a avaliação lógica correta.

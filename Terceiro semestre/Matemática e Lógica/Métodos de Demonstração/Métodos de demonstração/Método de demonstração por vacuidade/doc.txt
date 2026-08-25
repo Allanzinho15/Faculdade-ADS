@@ -1,0 +1,114 @@
+Método de demonstração por vacuidade
+Compreender os diferentes tipos de demonstrações matemáticas, como a demonstração por vacuidade, é essencial para aplicar conceitos teóricos em diversas situações práticas.
+
+
+Neste vídeo, exploraremos a demonstração por vacuidade, em que P(x) é falso para todo x∈S, tornando P(x)⇒Q(x) verdadeira. Exemplos práticos, como "Se x 
+2
+ −2x+2≤0, então x 
+3
+ ≥8", ilustram como a falsidade de P(x) valida a implicação, independentemente de Q(x). Assista!
+
+
+
+Considere P(x) e Q(x) frases abertas sobre um domínio S.
+Assim, ∀x∈S,P(x)⇒Q(x),P(x)⇒Q(x) é uma afirmação verdadeira, se puder ser mostrado que P(x) é falso para todo x∈S (independentemente do valor da verdade de Q(x) ), de acordo com a tabela-verdade para implicação. Tal demonstração chama-se demonstração por vacuidade.
+
+
+Exemplo
+Na frase aberta n∈Z, se n for par, então n 
+3
+ >0 é uma afirmação verdadeira.
+
+
+Vamos a um exemplo de uma demonstração por vacuidade.
+
+
+Exemplo
+
+Resultado 2
+
+Observe os aspectos a seguir.
+
+
+Seja x∈R. Se x 
+2
+ −2x+2≤0, então:
+
+
+x 
+3
+ ≥8
+x 
+3
+ ≥8
+Demonstração
+
+Primeiro, observe que:
+
+
+x 
+2
+ −2x+1=(x−1) 
+2
+ ≥0
+x 
+2
+ −2x+1=(x−1) 
+2
+ ≥0
+Portanto:
+
+
+x 
+2
+ −2x+2=(x−1) 
+2
+ +1≥1>0
+x 
+2
+ −2x+2=(x−1) 
+2
+ +1≥1>0
+Assim, temos o seguinte:
+
+
+x 
+2
+ −x 
+2
+ −2x+2≤0
+x 
+2
+ −x 
+2
+ −2x+2≤0
+Dada a expressão anterior, temos que é falsa para todo x∈R, e a implicação é verdadeira.
+
+
+Para:
+
+
+P(x):x 
+2
+ −2x+2≥0 e Q(x):x 
+3
+ ≥8
+P(x):x 
+2
+ −2x+2≥0 e Q(x):x 
+3
+ ≥8
+O resultado 2 afirma a verdade de:
+
+
+∀x∈R,P(x)⇒Q(x)
+∀x∈R,P(x)⇒Q(x)
+Desde que verifiquemos que P(x) é falso para cada x∈R, P(x)⇒Q(x) é verdadeiro para cada x∈R.
+
+
+Nesse caso, P(x) é uma declaração falsa para cada x∈R. Isso é o que nos permitiu dar uma demonstração de vacuidade do resultado 2.
+
+
+Na demonstração do resultado 2, a verdade ou a falsidade de x 
+3
+ ≥8 não desempenham nenhum papel.

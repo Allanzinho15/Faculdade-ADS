@@ -1,0 +1,186 @@
+Quantificador universal
+O quantificador universal é uma ferramenta fundamental na lógica matemática, usada para expressar que determinada propriedade ou condição é verdadeira para todos os elementos de um conjunto. Representado pelo símbolo ∀, o quantificador universal transforma uma sentença aberta, como "x+2>x", em uma proposição verdadeira ou falsa ao considerar todos os valores de x em um conjunto universo definido.
+
+
+Assista ao vídeo e entenda melhor o conceito de quantificador universal.
+
+
+
+Vamos analisar, inicialmente, duas sentenças abertas:
+
+
+ (I) a senten๺ aberta p(x) dada por " x+2>2 " 
+ (I) a senten๺ aberta p(x) dada por " x+2>2 " 
+Essa sentença é aberta no conjunto dos números naturais (N), ou seja, o conjunto universo ou o domínio é N, em que: N={1,2,3,…}.
+
+
+Comentário
+Lembre-se sempre de definir o conjunto universo, pois é nesse conjunto que analisaremos os valores para atribuirmos à variável x.
+
+
+Agora devemos verificar se o valor atribuído a x torna a sentença aberta p(x) uma proposição verdadeira. No conjunto dos números naturais, vamos considerar x=1,x=2 e x=3.
+
+
+Para x = 1, temos “1 + 2 > 1” verdadeira.
+Para x = 2, temos “2 + 2 > 2” verdadeira.
+Para x = 3, temos “3 + 2 > 3” verdadeira.
+
+Podemos observar que P(x) = "x + 2 > x" é, na verdade, uma proposição verdadeira para todos os valores de x no conjunto dos números naturais.
+
+
+Com relação ao conjunto verdade, dizemos que ele é o próprio conjunto dos números naturais. Entenda melhor!
+
+
+V 
+p
+​
+ =N
+V 
+p
+​
+ =N
+Lembrando que estamos usando Vp como notação para o conjunto verdade, temos o seguinte:
+
+
+ (II) a senten๺ aberta P(x)= 
+′′
+ x 
+2
+ =x 
+′′
+ 
+ (II) a senten๺ aberta P(x)= 
+′′
+ x 
+2
+ =x 
+′′
+ 
+Agora vamos considerar a sentença aberta P(x)= " x 
+2
+ =x " no conjunto dos números reais (R), ou seja, o conjunto universo é R.
+
+
+Observe que essa sentença não é verdadeira para todos os números reais x.
+
+
+Para x = 1, temos "(1)² = 1" verdadeira.
+Para x = −1, temos "(−1)² = −1" falsa, pois (−1)² = 1 e 1 ≠ −1.
+Logo, P(−1) é falsa.
+
+Nesse caso, dizemos que encontramos um contraexemplo.
+
+
+Agora podemos compreender o quantificador universal a partir da análise dos exemplos anteriores.
+
+
+Dada uma proposição ou sentença aberta p(x) em A, em que A é o conjunto universo ou domínio (A
+
+=0) e o conjunto verdade V 
+p
+​
+  ={x∣x∈A∧p(x)}. Veja que, quando todos os elementos do conjunto universo A satisfazem p(x), podemos dizer que p(x) torna-se uma proposição verdadeira para todos os valores de x em A. O conjunto verdade é V 
+p
+​
+ =A.
+
+
+O quantificador universal é representado pelo símbolo ∀.
+
+
+Usaremos o quantificador universal quando nos referirmos a todos os elementos do conjunto universo, tudo bem?
+
+
+Agora, você sabe como escrever "Para todo x em A,p(x)" com a simbologia da lógica matemática?
+
+
+É simples, veja:
+
+
+Para representarmos as expressões "para todos" e "qualquer que seja", devemos colocar o símbolo ∀ seguido do x antes de p(x). Podemos dizer que ∀x representa uma operação lógica que tem por finalidade transformar uma sentença aberta p(x) em A, que não tem nenhum valor lógico, em uma sentença verdadeira ou falsa. Essa operação é denominada quantificação universal. Observe!
+
+
+(∀x∈A)(p(x)) (para todo x,p(x)  
+e
+ˊ
+  verdadeira) 
+(∀x∈A)(p(x)) (para todo x,p(x)  
+e
+ˊ
+  verdadeira) 
+∀x (Lê-se: para todo x ou qualquer que seja x ). Também podemos escrever:
+
+
+∀x∈A,p(x) ou ∀x∈A:p(x)
+∀x∈A,p(x) ou ∀x∈A:p(x)
+Exemplos
+
+Veja como fica a sentença aberta dada em (I):
+
+
+Com relação à sentença aberta p(x), dada por “x + 2 > x” em N, podemos escrever:
+
+
+(∀x∈N)(x+2>x)
+(∀x∈N)(x+2>x)
+É uma sentença ou proposição verdadeira. Nesse caso, temos:
+
+
+V 
+p
+​
+ ={x∣x∈N∧(x+2>x)}=N Verdadeira 
+V 
+p
+​
+ ={x∣x∈N∧(x+2>x)}=N Verdadeira 
+Veja como fica a sentença aberta dada em (II):
+
+
+Com relação à sentença aberta p(x) representada por “x² = x” no conjunto dos números reais (R), podemos escrever:
+
+
+(∀x∈R)(x 
+2
+ =x)
+(∀x∈R)(x 
+2
+ =x)
+É uma sentença ou proposição falsa. Nesse caso, temos:
+
+
+V 
+p
+​
+ ={x∣x∈R∧(x 
+2
+ =x)}
+
+=R Falsa 
+V 
+p
+​
+ ={x∣x∈R∧(x 
+2
+ =x)}
+
+=R Falsa 
+Quando o conjunto universo é finito, dizemos que a proposição (∀x∈A)(p(x)) é equivalente à conjunção.
+
+
+Por exemplo: vamos considerar a sentença aberta p(x)= "x é par" em A={1,2,3,4}.
+
+
+Então, temos que:
+
+
+((∀x∈A)(x  
+e
+ˊ
+  par ))⇔(2  
+e
+ˊ
+  par 14  
+e
+ˊ
+  par) 

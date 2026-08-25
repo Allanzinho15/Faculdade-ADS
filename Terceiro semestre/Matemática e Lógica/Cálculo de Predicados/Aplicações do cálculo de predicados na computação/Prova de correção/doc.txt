@@ -1,0 +1,22 @@
+Prova de correção
+Outra utilização do cálculo de predicados diz respeito à correção de programas desenvolvidos com linguagens de programação tradicionais. A verificação do programa tem por finalidade garantir que o programa está correto, atendendo às especificações dadas pelo usuário.
+
+
+Assista ao vídeo e entenda a importância da prova de correção.
+
+
+
+A verificação é diferente da validação, que busca garantir que os requisitos do cliente sejam atendidos e, portanto, vai além da correção de programas.
+
+
+A verificação é realizada por meio da prova de correção, em que se usa a lógica formal com o intuito de provar que quaisquer variáveis de entrada que atendem às especificações de predicados e as variáveis de saída produzidas pela execução do programa satisfazem outras propriedades específicas.
+
+
+Tal prova é baseada na verificação da correção de trechos de programa que incluam comandos presentes em toda linguagem de programação, tais como:
+
+
+Comandos de atribuição de valores a variáveis.
+Comandos condicionais (IF THEN ELSE).
+Comandos com laços de repetição (LOOP, FOR, REPEAT UNTLL, WHILE etc.).
+
+Além da prova de correção, os testes de programas envolvem conjuntos de dados para testes. Eles mostram que os valores de saída são bons à medida que os valores de entrada são aceitáveis.

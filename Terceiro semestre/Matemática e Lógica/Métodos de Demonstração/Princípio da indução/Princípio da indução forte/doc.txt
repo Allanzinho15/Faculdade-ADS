@@ -1,0 +1,449 @@
+Princípio da indução forte
+É uma ferramenta poderosa que nos permite provar proposições complexas ao considerar múltiplos casos simultaneamente. Vamos explorar esse princípio e ver como ele pode ser utilizado para demonstrar teoremas e resolver problemas.
+
+
+Amplie seu entendimento sobre esse importante método com o vídeo a seguir.
+
+
+
+Há uma outra forma de indução matemática. Esse princípio atende por muitos nomes: princípio da indução forte, forte princípio da indução matemática; forma forte de indução; forma suplente de indução matemática e segundo princípio da indução matemática.
+
+
+Teorema 4.5 - princípio forte da indução matemática
+
+Em cada inteiro positivo n, temos: P(n) seja uma declaração. Se P(1) é verdadeira e a implicação: Se P(i) para cada inteiro i com 1≤i≤k, então P(k+1) é verdadeira para cada inteiro positivo k, então P(n) é verdadeiro para cada inteiro positivo n.
+
+
+Como o princípio da indução matemática (teorema 4.2), o princípio forte da indução matemática também é uma consequência do princípio de boa ordenação.
+
+
+O Princípio Forte da Indução Matemática é agora declarado mais simbolicamente a seguir:
+
+
+Para cada inteiro positivo n, seja P(n) uma declaração, se (1) P(1) é verdadeiro e (2) ∀k∈N,P(1)∧P(2)∧…∧P(k)⇒P(k+1) é verdade, então ∀n∈N,P(n) é também verdade.
+
+
+A diferença nas declarações do princípio da indução matemática e do princípio forte da indução matemática está na etapa indutiva (condição 2).
+
+
+Para demonstrar que ∀n∈N,P(n) é verdade pelo princípio da indução matemática, é necessário mostrar que P(l) é verdadeiro e verificar a seguinte implicação:
+
+
+P(k), ent 
+a
+˜
+ o P(k+1) (4.2) 
+P(k), ent 
+a
+˜
+ o P(k+1) (4.2) 
+É verdade para cada inteiro positivo k. Por outro lado, para demonstrar que ∀n∈N,P(n) é verdade pelo princípio forte da indução matemática, somos obrigados a mostrar que P(l) é verdadeiro. Verifique a implicação!
+
+
+SeP(i) para cada i com 1≤i≤k, ent 
+a
+ˉ
+ o P(k+1). (4.3) 
+SeP(i) para cada i com 1≤i≤k, ent 
+a
+ˉ
+ o P(k+1). (4.3) 
+É verdadeiro para cada inteiro positivo k.
+
+
+Se fôssemos apresentar demonstrações diretas das implicações (4.2) e (4.3), então seria permitido assumir mais na etapa indutiva (4.3) do princípio forte da indução matemática do que na etapa de indução (4.2) do princípio de indução matemática e ainda obter a mesma conclusão.
+
+
+Se a suposição de que P(k) é verdadeiro, é insuficiente para verificar a verdade de P(k+1) para um inteiro positivo arbitrário k, mas a suposição de que todas as declarações P(1),P(2), para verificar a verdade de P(k+1) é suficiente, então isso sugere que devemos usar o princípio forte de indução matemática.
+
+
+Qualquer resultado que possa ser demonstrado pelo princípio da indução matemática também pode ser demonstrado pelo princípio forte da indução matemática.
+
+
+Assim como há uma versão mais geral do princípio da indução matemática (ou seja, teorema 4.2), há também uma versão mais geral do princípio forte. Também nos referiremos a isso como o Forte Princípio da Indução Matemática.
+
+
+Teorema 4.6 - forte princípio da indução matemática
+
+Para um inteiro fixo m, seja S={i∈Z:i≥m}. Para cada n∈S, que P(n) seja uma declaração. Se (1) P(m) é verdadeiro e (2), temos a implicação:
+
+
+Se P(i) para cada inteiro i com m≤e≤k, então P(k+1) é verdadeiro para cada inteiro k∈S, então P(n) é verdadeiro para cada inteiro n∈S.
+
+
+Agora consideremos uma classe de declarações matemáticas, em que o princípio forte de indução matemática é comumente a técnica de demonstração apropriada.
+
+
+Suponha que estamos considerando uma sequência a 
+1
+​
+ ,a 
+2
+​
+ ,a 
+3
+​
+ ,… de números, também expressa como {a 
+n
+​
+ }. Uma maneira de definir uma sequência {a 
+n
+​
+ } é especificar explicitamente o primeiro termo a 
+n
+​
+  (em função de n ). Por exemplo, podemos ter um:
+
+
+a 
+n
+​
+ =1/n, um a 
+n
+​
+ =(−1) 
+n
+ /n 
+2
+  ou a 
+n
+​
+ =n 
+3
+ +n
+ para cada n∈N
+​
+ 
+a 
+n
+​
+ =1/n, um a 
+n
+​
+ =(−1) 
+n
+ /n 
+2
+  ou a 
+n
+​
+ =n 
+3
+ +n
+ para cada n∈N
+​
+ 
+Uma sequência também pode ser definida recursivamente. Em uma sequência recursivamente definida {a 
+n
+​
+ }, apenas o primeiro termo ou talvez os primeiros termos são definidos especificamente, dizer a 
+1
+​
+ ,a 
+2
+​
+ ,…,a 
+k
+​
+  para alguns k fixo ∈N. Esses são chamados de valores iniciais.
+
+
+Em seguida, a 
+k
+​
+ +1 é expresso em termos de a 
+1
+​
+ ,a 
+2
+​
+ ,…,a 
+k
+​
+  e, mais geralmente, para n>k,1 é expresso em termos de a 
+1
+​
+ ,a 
+2
+​
+ ,…,a 
+n−1
+​
+ . Isso é chamado de relação de recorrência.
+
+
+Um exemplo específico disso é a sequência {an} definida por:
+
+
+a 
+1
+​
+ =1,a 
+2
+​
+ =3 e a 
+n
+​
+ =2a 
+n−1
+​
+ −a 
+n−2
+​
+  para n≥3
+a 
+1
+​
+ =1,a 
+2
+​
+ =3 e a 
+n
+​
+ =2a 
+n−1
+​
+ −a 
+n−2
+​
+  para n≥3
+Nesse caso, existem dois valores iniciais, ou seja, a 
+1
+​
+ =1 e a 
+2
+​
+ =3.
+
+
+A relação de recorrência aqui é a 
+n
+​
+ =2a 
+n−1
+​
+ −a 
+n−2
+​
+  para n≥3.
+
+
+Fazendo n=3, descobrimos que a 
+3
+​
+ =2a 
+2
+​
+ −a 
+1
+​
+ =5. Ao fazer n=4, temos a 
+4
+​
+ =2a 
+3
+​
+ −a 
+2
+​
+ =7. Da mesma forma, a 
+5
+​
+ =9 e a 
+6
+​
+ =11.
+
+
+A partir dessas informações, temos como palpite que a 
+n
+​
+ =2n−1 para cada n∈N.
+
+
+Usando o forte princípio da indução, podemos, de fato, demonstrar que essa conjectura é verdadeira!
+
+
+Resultado 4.7
+
+Uma sequência {a 
+n
+​
+ } é definida recursivamente por:
+
+
+a 
+1
+​
+ =1,a 
+2
+​
+ =3 e a 
+n
+​
+ =2a 
+n−1
+​
+ −a 
+n−2
+​
+  para n≥3
+a 
+1
+​
+ =1,a 
+2
+​
+ =3 e a 
+n
+​
+ =2a 
+n−1
+​
+ −a 
+n−2
+​
+  para n≥3
+Em seguida,
+
+
+a 
+n
+​
+ =2n−1 para todos os n∈N
+a 
+n
+​
+ =2n−1 para todos os n∈N
+Demonstração
+
+Nós procedemos por indução.
+
+
+Desde a 
+1
+​
+ =2×1−1=1, a fórmula mantém para n=1.
+
+
+Assuma por um inteiro positivo arbitrário k que a 
+i
+​
+ =2i−1 para todos os inteiros i com 1 ≤ i ≤ k.
+
+
+Mostramos que a 
+k+1
+​
+ =2×(k+1)−1=2k+1. Se k=1, então a 
+k+1
+​
+ =a 
+2
+​
+ =2×1+1=3.
+
+
+Desde a 
+2
+​
+ =3, segue-se que a 
+k+1
+​
+ =2k+1 quando k=1.
+
+
+Portanto, podemos assumir que k≥2.
+
+
+Desde k+1≥3, segue-se que
+
+
+a 
+k+1
+​
+ =2a 
+k
+​
+ −a 
+k−1
+​
+ =2×(2k−1)−(2k−3)=2k=1
+a 
+k+1
+​
+ =2a 
+k
+​
+ −a 
+k−1
+​
+ =2×(2k−1)−(2k−3)=2k=1
+que é o resultado desejado.
+
+
+Pelo Princípio Forte da Indução Matemática,
+
+
+a 
+n
+​
+ =2n−1 para todos os n∈N.C.Q.D. 
+a 
+n
+​
+ =2n−1 para todos os n∈N.C.Q.D. 
+Análise da Indução
+
+Alguns comentários sobre a demonstração do Resultado 4.7 estão em ordem. Em um ponto, nós assumimos para um inteiro positivo arbitrário k que a 
+i
+​
+ =2i−1 para todos os inteiros i com 1≤i≤k. Nosso objetivo era mostrar que a 
+k+1
+​
+ =2k+1.
+
+
+Uma vez que k é um inteiro positivo, pode ocorrer que k=1 ou k≥2. Se k=1, então precisamos mostrar que a 
+k+1=a 
+2
+​
+ =2×1+1=3
+​
+ . Que a 
+2
+​
+ =3 é conhecido porque esse é um dos valores iniciais.
+
+
+Se k≥2, então k+1≥3 e a 
+k+1
+​
+  pode ser expresso como 2a 
+k
+​
+ −a 
+k−1
+​
+  pela relação de recorrência. Para mostrar que a 
+k+1
+​
+ =2k+1 quando k≥2, era necessário saber que  a 
+k
+​
+ =2k−1 e que  a 
+k−1
+​
+ =2⋅(k−1)−1=2k−3.
+
+
+Porque estávamos usando o Princípio Forte da Indução Matemática, sabíamos ambas as informações. Se tivéssemos usado o Princípio da Indução Matemática, então teríamos assumido (e, portanto, sabíamos) que a 
+k
+​
+ =2k−1, mas não teríamos sabido que a 
+k−1
+​
+ =2k−3, e assim teríamos sido incapazes de estabelecer a desejada expressão para a 
+k+1
+​
+ .

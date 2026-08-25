@@ -1,0 +1,41 @@
+Negação de proposições quantificadas
+É um aspecto essencial no estudo da lógica matemática e do cálculo de predicados. Quando lidamos com proposições envolvendo quantificadores universais (∀) e existenciais (∃), entender como negar essas proposições corretamente é fundamental para a análise lógica.
+
+
+Assista ao vídeo e entenda melhor o conceito de negação de proposições quantificadas.
+
+
+
+Vamos acompanhar agora alguns exemplos de negação quantificadas que estão em nosso cotidiano.
+
+
+Observe a seguinte proposição:
+
+
+p: Todo flamenquista é boa gente.
+p: Todo flamenquista é boa gente.
+A negação dessa proposição é:
+
+
+¬p: Existe algum flamenguista que não é boa gente.
+¬p: Existe algum flamenguista que não é boa gente.
+Em matemática, considere a proposição:
+
+
+p(x):(∀x∈R)(x 
+2
+ ≥0)
+p(x):(∀x∈R)(x 
+2
+ ≥0)
+A proposição p(x ) afirma que para todo x no conjunto dos números reais ( R ), o quadrado de x é maior ou igual a zero. Isso é verdadeiro para todos os números reais, pois o quadrado de qualquer número real nunca é negativo.
+
+
+A negação dessa proposição é:
+
+
+¬p(x):I(∀x∈R)(x 
+2
+ ≥0)]⇔(∃x∈R)(x 
+2
+ <0)

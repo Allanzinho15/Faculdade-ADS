@@ -1,0 +1,93 @@
+Quantificação sobre sentenças abertas com mais de uma variável
+É muito comum nos depararmos com sentenças abertas que apresentam mais de uma variável. Usamos os quantificadores (universal e existencial) sobre elas e elas se transformam em outra sentença aberta com menos variáveis livres.
+
+
+Assista ao vídeo para entender como as sentenças abertas funcionam e como as variáveis livres influenciam a determinação do valor lógico das expressões.
+
+
+
+Vamos iniciar com o seguinte exemplo:
+
+
+Considere uma expressão do tipo: (∃x∈A)(x+y<8), em que A é o conjunto universo definido por A={1,2,3,4}.
+
+
+Note que não conhecemos o valor lógico dessa expressão – que é uma sentença aberta na variável y ) –, pois temos duas variáveis: x e y.
+
+
+Comentário
+A variável x está definida no conjunto A, mas desconhecemos os valores de y. Isso faz com que y assuma qualquer valor, e por esse motivo, chamamos y de variável livre.
+
+
+Também podemos ter expressões do tipo: (∀y∈A)(x+y<8), em que A é o conjunto universo definido por A={1,2,3,4}. Veja que nessa expressão a variável y está definida no conjunto A, mas nada sabemos sobre a variável x.
+
+
+Para determinarmos o valor lógico da expressão dada, dependemos da variável x. Como x pode assumir qualquer valor do conjunto universo escolhido, dizemos que é uma variável livre.
+
+
+Exemplos
+
+
+Vejamos alguns exemplos!
+
+
+Determine o conjunto verdade das sentenças abertas, em que o conjunto universo das variáveis x e y é A={1,2,3,4,5,6}.
+
+
+(∀x∈A)(2x+y<11)
+(∀x∈A)(2x+y<11)
+Resolução: veja que o conjunto verdade é vazio, pois considerando x = 6, a propriedade não é verificada.
+
+
+2 × (6) + y < 11 é falso para qualquer valor y de A.
+
+
+Acompanhe mais uma vez:
+
+
+(∃x∈A)(2x+y<11)
+(∃x∈A)(2x+y<11)
+O conjunto verdade é {1,2,3}. A propriedade é verificada, pois, para qualquer y em A, a sentença aberta 2x+y torna-se uma proposição verdadeira.
+
+
+Atenção
+Sentenças abertas podem conter quantificadores diferentes para cada variável.
+
+
+Veja o exemplo:
+
+
+Considerando os conjuntos A, B e C, temos:
+
+
+(∀x∈A)(∀y∈B)(p(x,y))
+(∀x∈A)(∀y∈B)(p(x,y))
+Lê-se: para todo x em A e todo y em B, tem-se que:
+
+ 
+
+p(x,y). 
+.
+
+
+(∀x∈A)(∃y∈B)(p(x,y))
+(∀x∈A)(∃y∈B)(p(x,y))
+Lê-se: para todo x em A existe um y em B, tal que:
+
+ 
+p(x,y). 
+.
+
+
+(∃x∈A)(∀y∈B)(∀z∈C)(p(x,y,z))
+(∃x∈A)(∀y∈B)(∀z∈C)(p(x,y,z))
+Lê-se: existe x em A tal que para todo y em B e z em C, tem-se que: p(x,y,z).
+
+
+Verifique o valor lógico das sentenças abertas indicadas. Considere o conjunto universo Z (conjunto dos números inteiros) e a proposição (∀x)(∃y)(x<y).
+
+
+Observe que, para cada inteiro x, existe um inteiro y ainda maior. Logo, o valor lógico dessa proposição é verdadeiro.
+
+
+Trocando a ordem dos quantificadores (∃y)(∀x)(x<y), obtemos uma sentença diferente. Nesse caso, o valor lógico da proposição é falso.

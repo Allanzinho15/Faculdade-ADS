@@ -1,0 +1,147 @@
+Método de demonstração trivial
+O conhecimento teórico em matemática é essencial para desenvolver habilidades de raciocínio lógico e resolver problemas complexos. Compreender como as demonstrações funcionam permite que você aplique conceitos fundamentais em diversas situações. Vamos explorar como as implicações e demonstrações matemáticas são estruturadas e aplicadas, proporcionando uma base sólida para avançar em estudos mais aprofundados.
+
+
+Assista ao vídeo e entenda como as implicações matemáticas, representadas por P(x)⇒Q(x), são usadas para construir demonstrações. Confira exemplos sobre como verificar a validade dessas implicações para diferentes valores dentro de um conjunto.
+
+
+
+Em quase todas as implicações P⇒Q que encontraremos, P e Q são frases abertas, ou seja, vamos realmente considerar P(x)⇒Q(x) ou P(n)⇒Q(n), ou alguma implicação relacionada, dependendo de que variável será usada.
+
+
+As variáveis x ou n (ou alguns outros símbolos) são usadas para representar elementos de algum conjunto S, que contextualiza as discussões, o domínio da variável.
+ 
+Para cada valor de uma variável de seu domínio, teremos resultados de uma declaração.
+
+Exemplo
+
+Vamos acompanhar um exemplo!
+
+
+ Seja P(n):3n 
+2
+ −4n+1  
+e
+ˊ
+  par, onde n∈Z; 
+ Seja P(n):3n 
+2
+ −4n+1  
+e
+ˊ
+  par, onde n∈Z; 
+P(1) é uma afirmação verdadeira, enquanto P(2) é uma afirmação falsa.
+
+
+Da mesma forma, raramente é o caso de Q(x) ser verdadeiro para todo x∈S ou que Q(x) ser falso para todo x∈S.
+
+
+Quando a instrução quantificada ∀x∈S,P(x)⇒Q(x) for expressa como resultado ou teorema, muitas vezes escrevemos uma declaração da seguinte forma:
+
+
+ Para x∈S, se P(x) ent 
+a
+˜
+ o Q(x). 
+ Para x∈S, se P(x) ent 
+a
+˜
+ o Q(x). 
+Ou desta forma:
+
+
+ Seja x∈S.SeP(x), ent 
+a
+˜
+ o Q(x). (1) 
+ Seja x∈S.SeP(x), ent 
+a
+˜
+ o Q(x). (1) 
+Assim, (1) é verdade se P(x)⇒Q(x) for uma afirmação verdadeira para cada x∈S; enquanto (1) é falso se P(x)⇒Q(x) for falso para pelo menos um elemento x∈S.
+
+
+Para cada elemento x∈S, vamos verificar as condições sob as quais "P(x)⇒Q(x)" tem um valor-verdade V.
+
+
+Observe a tabela!
+
+
+P(x)	Q(x)	P(x)⇒Q(x)
+V	V	V
+V	F	F
+F	V	V
+F	F	V
+Tabela: Representação valor-verdade V. 
+Manuel Ramos de Freitas.
+
+
+Assim, se Q(x) for verdadeiro para todo x∈S ou P(x) for falso para todo x∈S, então, determinando a verdade ou falsidade de (1), torna-se consideravelmente mais fácil. De fato, se pode ser mostrado que Q(x) é verdadeiro para todo x∈S, independentemente do valor da verdade de P(x), então, de acordo com a tabela da verdade para a implicação, (1) é verdadeira. Isso constitui uma demonstração de (1) e é chamada de demonstração trivial.
+
+
+A declaração a seguir é verdadeira, e uma demonstração (trivial) consiste apenas em observar que 3 é um inteiro ímpar.
+
+
+Considere n∈Z. Se 3n>0, então, 3 é ímpar.
+
+
+A respeito da declaração, acompanhe!
+
+
+Resultado 1
+
+
+Seja x∈R. Se x<0, então:
+
+ 
+
+x 
+2
+ +1>0
+
+
+Demonstração
+
+
+Sendo x 
+2
+ ≥0 para cada número real x, segue-se que:
+
+ 
+
+ x 
+2
+ +1>0
+
+
+Assim
+
+
+ x 
+2
+ +1>0
+
+
+Agora, considere o seguinte:
+
+
+P(x):x<0eQ(x):x 
+2
+ +1>
+P(x):x<0eQ(x):x 
+2
+ +1>
+Em que x∈R.
+
+
+Então, o resultado 1 afirma a verdade: para todo x∈R,P(x)⇒Q(x).
+
+
+Desde que verificamos que Q(x) é verdadeiro para cada x∈R, segue que P(x)⇒Q(x) é verdadeiro para todo x∈Re, assim, o resultado 1 é verdadeiro.
+
+
+Nesse caso, quando considerado sobre o domínio R,Q(x) é, na verdade, uma afirmação verdadeira. Foi esse fato que nos permitiu dar uma demonstração trivial do Resultado 1. A demonstração do Resultado 1 não depende de x<0.
+
+
+Comentário
+Desde que x∈R, nós poderíamos ter substituído "x<0" por qualquer hipótese (incluindo o mais satisfatório "x∈R" ), e o resultado ainda seria verdadeiro. Na verdade, esse novo resultado tem a mesma demonstração. Para ter certeza, é raro, de fato, quando uma demonstração trivial é usada para verificar uma implicação; no entanto, isso é um lembrete importante da tabela-verdade mostrada.

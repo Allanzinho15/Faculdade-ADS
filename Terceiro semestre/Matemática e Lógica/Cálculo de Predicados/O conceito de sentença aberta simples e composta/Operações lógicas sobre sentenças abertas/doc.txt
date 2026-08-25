@@ -1,0 +1,993 @@
+Operações lógicas sobre sentenças abertas
+O conhecimento teórico sobre operações lógicas em sentenças abertas é importante para a manipulação de proposições complexas. Essas operações são fundamentais tanto na matemática quanto na computação, pois permitem a construção de argumentos rigorosos e a formulação de algoritmos eficientes. Entender como usar conectivos lógicos, como negação, conjunção, disjunção, condicional e bicondicional, é essencial para resolver problemas e criar soluções robustas.
+
+
+Assista a este vídeo para aprofundar seu entendimento sobre operações lógicas em sentenças abertas e veja como aplicar esses conceitos em diferentes contextos práticos.
+
+
+
+As operações de sentenças abertas ocorrem por meio da utilização dos conectivos lógicos do cálculo proposicional. A partir da combinação de sentenças por meio dos conectivos, formamos novas sentenças abertas ou proposições.
+
+
+Veja alguns exemplos de conectivos lógicos!
+
+
+Negação
+
+¬
+(
+não
+)
+
+ 
+
+
+Conjunção
+
+Λ
+(
+e
+)
+
+
+Disjunção
+
+V
+(
+ou
+)
+
+
+Condicional
+
+→
+(
+Se. . . então
+)
+
+
+Bicondicional
+
+↔
+(
+Se
+,
+e
+somente se
+)
+
+
+
+
+Com essas operações, obteremos um conjunto verdade para cada operação, como veremos a seguir.
+
+
+Agora vamos analisar cada operação sobre as sentenças abertas p(x) e q(x) em A, e um elemento a∈A seguida de um exemplo. Cada sentença aberta possui um conjunto verdade dado por V 
+p
+​
+  e V 
+q
+​
+ , respectivamente.
+
+
+Negação
+
+A operação de negação da sentença aberta p(x) é a sentença ¬p(x) em A.
+
+
+Exemplo: considerando o conjunto universo N={1,2,3,…} (conjunto dos números naturais).
+
+
+Seja a sentença aberta p(x):x+2<6, temos:
+
+
+V 
+p
+​
+ ={1,2,3}
+V 
+p
+​
+ ={1,2,3}
+O conjunto verdade é:
+
+
+V 
+¬p
+​
+ =C 
+N
+​
+ V 
+p
+​
+ =N−V 
+p
+​
+ =N−{1,2,3}={4,5,6,…}.
+V 
+¬p
+​
+ =C 
+N
+​
+ V 
+p
+​
+ =N−V 
+p
+​
+ =N−{1,2,3}={4,5,6,…}.
+Observação: C 
+N
+​
+ V 
+p
+​
+  é o complementar em relação a N.
+
+
+Conjunção
+
+A operação de conjunção é a sentença aberta p(x)∧q(x) em A, satisfeita por um elemento a∈A. Essa operação tem o valor lógico verdadeiro quando a∈A satisfaz p(x) e q(x).
+
+
+Exemplo: considerando o conjunto universo Z (conjunto dos números inteiros).
+
+
+Sejam as sentenças p(x):x 
+2
+ +6x+5=0 e q(x):x 
+2
+ +5x=0, temos: p(x)∧q(x).
+
+
+A sentença aberta p(x) tem conjunto verdade V 
+p
+​
+ ={−1,−5}.
+
+
+A sentença aberta q(x) tem conjunto verdade V 
+p
+​
+ ={0,−5}.
+
+
+Observe o conjunto verdade de p(x)∧q(x)!
+
+
+V 
+p∧q
+​
+ =V 
+p
+​
+ ∩V 
+q
+​
+ ={−1,−5}∩{0,−5}={−5}.
+V 
+p∧q
+​
+ =V 
+p
+​
+ ∩V 
+q
+​
+ ={−1,−5}∩{0,−5}={−5}.
+Disjunção
+
+A operação de disjunção é a sentença p(x)Vq(x) em A, satisfeita por um elemento a∈A. Essa operação tem o valor lógico verdadeiro quando a∈A satisfaz p(x) ou q(x).
+
+
+Exemplo: considerando o conjunto universo Z (conjunto dos números inteiros).
+
+
+Sejam as sentenças p(x):x 
+2
+ +6x+5=0 e q(x):x 
+2
+ +5x=0, temos: p(x)∨q(x).
+
+
+A sentença aberta p(x) tem conjunto verdade V 
+p
+​
+ ={−1,−5}.
+
+
+A sentença aberta q(x) tem conjunto verdade V 
+p
+​
+ ={0,−5}.
+
+
+Observe o conjunto verdade de p(x)vq(x)!
+
+
+V 
+p∨q
+​
+ =V 
+p
+​
+ ∪V 
+q
+​
+ ={−1,−5}∪{0,−5}={0,−1,−5}.
+V 
+p∨q
+​
+ =V 
+p
+​
+ ∪V 
+q
+​
+ ={−1,−5}∪{0,−5}={0,−1,−5}.
+Condicional
+
+A operação condicional é a sentença aberta p(x)→q(x) em A. A condicional tem o valor falso quando todo elemento a∈A satisfaz a sentença aberta p(x) e não satisfaz a sentença q(x).
+
+
+Exemplo: considerando o conjunto universo N (conjunto dos números naturais).
+
+
+Sejam as sentenças p(x):x+1<6 e q(x):x é divisor de 10, temos: p(x)→q(x). A sentença aberta p(x) tem conjunto verdade V 
+p
+​
+ ={1,2,3,4}.
+
+
+A sentença aberta q(x) tem conjunto verdade V 
+p
+​
+ ={1,2,5,10}.
+
+
+Observação: usando equivalência estudada no cálculo proposicional, temos que:
+
+
+p(x)→q(x)⇔¬p(x)∨q(x)
+p(x)→q(x)⇔¬p(x)∨q(x)
+Com essa equivalência, garantimos que os conjuntos verdade coincidem.
+
+
+Logo, o conjunto verdade de p(x)→q(x) é:
+
+
+
+V
+p
+→
+q
+
+=
+
+V
+¬
+p
+v
+q
+
+=
+
+V
+¬
+p
+
+∪
+
+V
+q
+
+=
+
+C
+N
+
+V
+p
+
+∪
+
+V
+q
+
+
+V
+p
+
+=
+
+{
+
+1
+
+,
+
+2
+
+,
+
+3
+
+,
+
+4
+
+}
+
+
+V
+¬
+p
+
+=
+
+C
+n
+
+V
+p
+
+=
+
+N
+
+−
+
+V
+p
+
+=
+
+N
+
+−
+
+{
+
+1
+
+,
+
+2
+
+,
+
+3
+
+,
+
+4
+
+}
+
+=
+
+{
+
+5
+
+,
+
+6
+
+,
+
+7
+
+,
+
+…
+
+}
+
+
+V
+q
+
+=
+
+{
+
+1
+
+,
+
+2
+
+,
+
+5
+
+,
+
+10
+
+}
+
+
+V
+p
+→
+q
+
+=
+
+V
+¬
+p
+
+∪
+
+V
+q
+
+=
+
+{
+
+5
+
+,
+
+6
+
+,
+
+7
+
+,
+
+…
+
+}
+
+∪
+
+{
+
+1
+
+,
+
+2
+
+,
+
+5
+
+,
+
+10
+
+}
+
+=
+
+N
+
+−
+
+{
+
+3
+
+,
+
+4
+
+}
+
+
+V
+p
+→
+q
+
+=
+
+V
+¬
+p
+v
+q
+
+=
+
+V
+¬
+p
+
+∪
+
+V
+q
+
+=
+
+C
+N
+
+V
+p
+
+∪
+
+V
+q
+
+
+V
+p
+
+=
+
+{
+
+1
+
+,
+
+2
+
+,
+
+3
+
+,
+
+4
+
+}
+
+
+V
+¬
+p
+
+=
+
+C
+n
+
+V
+p
+
+=
+
+N
+
+−
+
+V
+p
+
+=
+
+N
+
+−
+
+{
+
+1
+
+,
+
+2
+
+,
+
+3
+
+,
+
+4
+
+}
+
+=
+
+{
+
+5
+
+,
+
+6
+
+,
+
+7
+
+,
+
+…
+
+}
+
+
+V
+q
+
+=
+
+{
+
+1
+
+,
+
+2
+
+,
+
+5
+
+,
+
+10
+
+}
+
+
+V
+p
+→
+q
+
+=
+
+V
+¬
+p
+
+∪
+
+V
+q
+
+=
+
+{
+
+5
+
+,
+
+6
+
+,
+
+7
+
+,
+
+…
+
+}
+
+∪
+
+{
+
+1
+
+,
+
+2
+
+,
+
+5
+
+,
+
+10
+
+}
+
+=
+
+N
+
+−
+
+{
+
+3
+
+,
+
+4
+
+}
+
+Bicondicional
+
+A operação bicondicional é a sentença aberta p(x)↔q(x) em A. A bicondicional tem o valor lógico verdadeiro quando os valores do elemento a∈A satisfazem p(x) e q(x) ou quando satisfazem ¬p(x) e ¬q(x).
+
+
+Exemplo: considerando o conjunto universo N (conjunto dos números naturais).
+
+
+Sejam as sentenças p(x):x+1<6 e q(x):x é divisor de 10, temos: p(x)→q(x).
+
+
+A sentença aberta p(x) tem conjunto verdade V 
+p
+​
+ ={1,2,3,4}.
+
+
+A sentença aberta q(x) tem conjunto verdade V 
+p
+​
+ ={1,2,5,10}.
+
+
+Conjunto verdade da bicondicional: V 
+p↔q
+​
+ =V 
+p→q
+​
+ ∩V 
+q→p
+​
+ .
+
+
+Vamos determinar!
+
+
+​
+  
+V 
+p→q
+​
+ =V 
+¬p∨q
+​
+ =V 
+¬p
+​
+ ∪V 
+q
+​
+ =C 
+N
+​
+ V 
+p
+​
+ ∪V 
+q
+​
+ 
+V 
+p
+​
+ ={1,2,3,4}
+V 
+¬p
+​
+ =C 
+n
+​
+ V 
+p
+​
+ =N−V 
+p
+​
+ =N−{1,2,3,4}={5,6,7,…}
+V 
+q
+​
+ ={1,2,5,10}
+V 
+p→q
+​
+ =V 
+¬p
+​
+ ∪V 
+q
+​
+ ={5,6,7,…}∪{1,2,5,10}=N−{3,4}
+V 
+q→p
+​
+ =V 
+¬pvq
+​
+ =V 
+¬q
+​
+ ∪V 
+p
+​
+ =C 
+N
+​
+ V 
+q
+​
+ ∪V 
+p
+​
+ 
+V 
+q
+​
+ ={1,2,5,10}
+V 
+¬q
+​
+ =C 
+n
+​
+ V 
+q
+​
+ =N−V 
+q
+​
+ =N−{1,2,5,10}={3,4,6,7,8,9,11,…}
+V 
+p
+​
+ ={1,2,3,4}
+V 
+q→p
+​
+ =V 
+¬q
+​
+ ∪V 
+p
+​
+ ={3,4,6,7,8,9,11,…}∪{1,2,3,4}=N−{5,10}
+​
+ 
+​
+  
+V 
+p→q
+​
+ =V 
+¬p∨q
+​
+ =V 
+¬p
+​
+ ∪V 
+q
+​
+ =C 
+N
+​
+ V 
+p
+​
+ ∪V 
+q
+​
+ 
+V 
+p
+​
+ ={1,2,3,4}
+V 
+¬p
+​
+ =C 
+n
+​
+ V 
+p
+​
+ =N−V 
+p
+​
+ =N−{1,2,3,4}={5,6,7,…}
+V 
+q
+​
+ ={1,2,5,10}
+V 
+p→q
+​
+ =V 
+¬p
+​
+ ∪V 
+q
+​
+ ={5,6,7,…}∪{1,2,5,10}=N−{3,4}
+V 
+q→p
+​
+ =V 
+¬pvq
+​
+ =V 
+¬q
+​
+ ∪V 
+p
+​
+ =C 
+N
+​
+ V 
+q
+​
+ ∪V 
+p
+​
+ 
+V 
+q
+​
+ ={1,2,5,10}
+V 
+¬q
+​
+ =C 
+n
+​
+ V 
+q
+​
+ =N−V 
+q
+​
+ =N−{1,2,5,10}={3,4,6,7,8,9,11,…}
+V 
+p
+​
+ ={1,2,3,4}
+V 
+q→p
+​
+ =V 
+¬q
+​
+ ∪V 
+p
+​
+ ={3,4,6,7,8,9,11,…}∪{1,2,3,4}=N−{5,10}
+​
+ 
+Confira o conjunto verdade da bicondicional!
+
+
+V 
+p↔q
+​
+ =V 
+p→q
+​
+ ∩V 
+q→p
+​
+ =[N−{3,4}]∩[N−{5,10}]=N−{3,4,5,10}
+V 
+p↔q
+​
+ =V 
+p→q
+​
+ ∩V 
+q→p
+​
+ =[N−{3,4}]∩[N−{5,10}]=N−{3,4,5,10}
+Os exemplos anteriores sugerem que podemos gerar novas sentenças abertas compostas, que obtemos por meio dos conectivos lógicos. Entendido?

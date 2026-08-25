@@ -1,0 +1,189 @@
+Quantificador existencial
+Os quantificadores universal e existencial nos permitem expressar proposições sobre todos ou alguns elementos de um domínio específico. Exploraremos como usar o quantificador existencial para transformar sentenças abertas em declarações quantificadas e verificar sua veracidade.
+
+
+Para entender melhor, assista ao vídeo!
+
+
+
+Outra maneira de converter uma frase aberta P(x) sobre um domínio S em uma declaração por meio da quantificação é pela introdução de um quantificador chamado quantificador existencial.
+
+
+Cada uma das frases "existe", "para alguns" e "para pelo menos uma" é referida como um quantificador existencial e é denotada pelo símbolo ∃.
+
+
+A declaração quantificada é a seguinte:
+
+
+∃x∈S,P(x)(3.3)
+∃x∈S,P(x)(3.3)
+Ela pode ser expressa em palavras por: existe x∈S tal que P(x). (3.4)
+
+
+A instrução quantificada (3.3) (ou (3.4)) é verdadeira se P(x) for verdadeira para pelo menos um elemento x∈S; enquanto ela é falsa se P(x) for falsa para todo x∈S.
+
+
+Agora, vamos considerar duas declarações quantificadas construídas a partir da sentença aberta vista no exemplo anterior.
+
+
+Exemplo
+
+Para a sentença em aberto, temos:
+
+
+​
+  
+P(n):[2n 
+2
+ +5+(−1) 
+n
+ ]÷2  
+e
+ˊ
+  primo sobre o dom 
+ı
+ˊ
+ nio 
+S={1,2,…,7}
+​
+ 
+​
+  
+P(n):[2n 
+2
+ +5+(−1) 
+n
+ ]÷2  
+e
+ˊ
+  primo sobre o dom 
+ı
+ˊ
+ nio 
+S={1,2,…,7}
+​
+ 
+A instrução quantificada é a seguinte:
+
+
+∀n∈S,P(n)
+∀n∈S,P(n)
+Ou seja, para cada n∈S,P(n):[2n 
+2
+ +5+(−1) 
+n
+ ]÷2 é primo, sendo uma declaração falsa, uma vez que, por exemplo, P(5) é também falso.
+
+
+No entanto, a declaração quantificada a seguir é verdadeira.
+
+
+∃∈S,P(n)
+∃∈S,P(n)
+ou seja, existe n∈S tal que P(n):[2n 
+2
+ +5+(−1) 
+n
+ ]÷2 é primo é verdadeira já que P(1) é verdadeiro, por exemplo.
+
+
+A declaração quantificada ∀x∈S,P(x) também pode ser expressa como: se x∈S, então P(x).
+
+
+Exemplo
+
+Considere a frase em aberto P(x):x 
+2
+ ≥0 sobre o conjunto R de números reais.
+
+
+Então:
+
+
+∀x∈R,P(x)
+∀x∈R,P(x)
+Ou, equivalentemente, temos:
+
+
+∀x∈R,x 
+2
+ ≥0
+∀x∈R,x 
+2
+ ≥0
+Em palavras, pode ser expressa da seguinte forma: como para cada número real x,x 
+2
+ ≥0, ou seja, se x é um número real, então x 
+2
+ ≥0, ou ainda "o quadrado de cada número real é não negativo".
+
+
+Em geral, o quantificador universal é usado para alegar que a declaração resultante de uma determinada sentença aberta é verdadeira para cada valor do domínio da variável atribuído à variável. Consequentemente, a declaração ∀x∈R,x 
+2
+ ≥0 é verdadeira, já que x 
+2
+ ≥0 é verdadeira para cada número real x.
+
+
+Suponha agora que devemos considerar a frase aberta Q(x):x 
+2
+ ≤0. A declaração ∀x∈R, Q(x) (para cada número real x, temos x 
+2
+ ≤0 ) é falsa, já que, por exemplo, Q(1) é falso. Claro, isso significa que sua negação é verdadeira. Se não fosse o caso de que, para cada número real x, temos x 
+2
+ ≤0, então deveria existir algum número real x, tal que x 
+2
+ >0.
+
+
+A negação existe um número real x tal que x² > 0 pode ser escrito em símbolos como:
+
+
+∃x∈R,x 
+2
+ >0
+∃x∈R,x 
+2
+ >0
+Ou:
+
+
+∃x∈R,¬Q(x)
+∃x∈R,¬Q(x)
+Geralmente, se estamos considerando uma frase aberta P(x) sobre um domínio S, então: ¬ (∀x∈S,P(x))≡∃x∈S,¬P(x)
+
+
+Exemplo
+
+A seguinte declaração contém o quantificador existencial.
+
+
+Existe um número real x tal que x 
+2
+ =3. (3.5).
+
+
+Se deixarmos P(x):x 
+2
+ =3, então (3.5) pode ser reescrito como ∃x∈R,P(x).
+
+
+A declaração (3.5) é verdadeira, uma vez que P(x) é verdadeiro quando x= 
+3
+​
+  (ou quando x =− 
+​
+ 3).
+
+
+Daí, a negação de (3.5) é:
+
+
+Para cada número real x,x 
+2
+ 
+
+=3(3.6).
+
+
+Portanto, a declaração (3.6) é falsa.
