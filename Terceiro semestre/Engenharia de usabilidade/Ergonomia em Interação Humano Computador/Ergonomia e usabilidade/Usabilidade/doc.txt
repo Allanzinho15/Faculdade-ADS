@@ -1,0 +1,158 @@
+Usabilidade
+Compreender os conceitos teóricos de usabilidade ajuda a desenvolver interfaces de software eficientes, intuitivas e agradáveis aos usuários e a criar produtos que, além de funcionarem bem, também proporcionam uma experiência satisfatória, aumentando a produtividade e a satisfação do usuário. 
+
+ 
+
+Assista ao vídeo a seguir para explorar detalhadamente os conceitos da usabilidade e aplicá-los a seus projetos.
+
+
+
+Usabilidade é a facilidade de manusear algum objeto de modo eficiente, intuitivo e satisfatório e sem provocar erros operacionais. Assim, se um produto é fácil de usar, a pessoa aprende mais rápido, memoriza o passo a passo das operações e erra menos. Segundo Jordan (1998), a usabilidade pode ser avaliada de acordo com alguns princípios:
+
+
+I
+Evidência
+
+
+O modo de operação e a função do produto devem estar evidentes.
+
+
+II
+Consistência
+
+
+Operações parecidas devem ser resolvidas de formas semelhantes.
+
+
+III
+Capacidade
+
+
+As habilidades do usuário para cada função não devem ser ultrapassadas.
+
+
+IV
+Compatibilidade
+
+
+A experiência de uso deve ser compatível com as experiências socioculturais dos usuários. Por exemplo, para desenroscar uma tampa, é preciso girá-la no sentido anti-horário, seguindo um conhecimento prévio da maioria.
+
+
+V
+Prevenção de erros
+
+
+Os produtos devem evitar ao máximo procedimentos errados.
+
+
+VI
+Realimentação
+
+
+O sistema deve dar um retorno ao usuário sobre o sucesso de sua tarefa, para que ações repetitivas sejam evitadas.
+
+
+Existem duas normas ISO que abordam o conceito de usabilidade de software; uma é elaborada segundo a perspectiva de qualidade e a outra trata a interação humano-computador. Veja quais são a seguir!
+
+
+ISO 9126
+
+
+Norma de qualidade de produto de software.
+
+
+ISO 9241-11
+
+
+Ergonomia e interação humano-computador.
+
+
+A ISO 9126 define usabilidade como “A capacidade de uma aplicação ser compreendida, aprendida e utilizada, sendo atraente para o usuário, em condições específicas de utilização”. Acompanhe agora quais características os softwares devem ter segunda essa norma:
+
+
+
+Aprendizagem
+
+O quanto os usuários precisam treinar para realizarem tarefas básicas no primeiro contato com a interface do sistema? O quão fácil ela é para eles?
+
+
+Eficiência
+
+Os usuários conseguem realizar as tarefas exigidas pelo sistema de forma eficiente depois de quanto tempo de uso?
+
+
+Memorização
+
+O usuário consegue lembrar como usar o sistema depois de um longo período sem utilizá-lo?
+
+
+Robustez
+
+A interface deve avisar ao usuário caso erros aconteçam e permitir a correção de modo fácil, sem gerar frustrações.
+
+
+Satisfação
+
+Quão agradável, confiável e satisfatória é a utilização do sistema?
+
+A ISO 9241-11 define usabilidade como medida pela qual um produto pode ser utilizado por usuários específicos para alcançar determinados objetivos com efetividade, eficiência e satisfação em um contexto de uso específico.
+
+ 
+
+Vamos entender melhor o que significam alguns termos da definição de usabilidade segundo a ISO 9241-11. Medida deve ser entendida como os valores resultantes de uma medição e os processos utilizados para alcançar os valores. A efetividade permite que o usuário alcance os objetivos iniciais de interação, e tanto é avaliada em termos de finalização de uma tarefa quanto em termos de qualidade do resultado obtido. Eficiência se refere à quantidade de esforço e recursos necessários para se chegar a um determinado objetivo. 
+
+ 
+
+Os desvios que o usuário faz durante a interação e a quantidade de erros cometidos podem servir para avaliar o nível de eficiência do website da aplicação. Isso significa que os softwares devem ter as seguintes características:
+
+
+
+Eficácia
+
+Refere-se à precisão e completeza com que os usuários atingem objetivos específicos, acessando a informação correta ou gerando os resultados esperados.
+
+
+Eficiência
+
+Relaciona-se à precisão e completeza com que os usuários atingem seus objetivos em relação à quantidade de recursos gastos.
+
+
+Satisfação
+
+Diz respeito ao conforto e à aceitabilidade do produto, que o usuário sente ao utilizar a interface para alcançar seus objetivos. A satisfação é a mais difícil de medir e quantificar, pois está relacionada a fatores subjetivos e/ou objetivos.
+
+A interação é um conceito que evoluiu muito ao longo do tempo. No início, ela se referia apenas a cuidar de uma sequência de estímulos e respostas, mas atualmente aborda em detalhes a comunicação entre usuário e máquina, sendo considerada tudo o que acontece quando uma pessoa busca realizar tarefas usando algum tipo de artefato.
+
+ 
+
+Kammersgaard (1988) identificou quatro perspectivas de interação usuário–sistema: Perspectiva de sistema, de parceiro de discurso, de ferramenta e de mídia. Cada uma atribui ao usuário e ao sistema determinado papel e caracteriza a interação sob um ponto de vista diferente, como ilustrado na imagem.
+
+
+
+Perspectivas de interação humano-computador.
+
+Barbosa e Silva (2010) dão mais detalhes sobre as perspectivas da interação humano-computador. Confira a seguir:
+
+
+Perspectiva de sistema
+
+
+O usuário é considerado um sistema computacional, e a interação humano-computador se aproxima da interação entre sistemas computacionais.
+
+
+Perspectiva de parceiro do discurso
+
+
+O sistema deve participar da interação assumindo papel semelhante ao do ser humano, sendo capaz de raciocinar, fazer inferências, tomar decisões ou adquirir informação. Ou seja, o sistema deve ser capaz de se comportar de forma parecida aos seus usuários.
+
+
+Perspectiva de ferramenta
+
+
+O sistema interativo é considerado um instrumento que auxilia o usuário a realizar suas tarefas. O processo de interação é descrito principalmente pelo encadeamento de ações e reações do indivíduo diante ao sistema.
+
+
+Perspectiva de mídia
+
+
+O sistema interativo é visto, nessa perspectiva, como uma mídia através da qual as pessoas se comunicam umas com as outras. A perspectiva de mídia é a que está mais presente em sistemas que conectam pessoas por meio da internet. 

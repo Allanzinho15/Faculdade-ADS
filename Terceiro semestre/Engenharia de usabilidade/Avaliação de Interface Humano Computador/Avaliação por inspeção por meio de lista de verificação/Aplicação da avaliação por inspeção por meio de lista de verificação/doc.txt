@@ -1,0 +1,84 @@
+Aplicação da avaliação por inspeção por meio de lista de verificação
+A avaliação de interfaces humano-computador garante que os sistemas sejam consistentes e padronizados, proporcionando uma experiência de usuário positiva. Para isso, podemos utilizar checklists para inspeção, pois facilitam a identificação de problemas de usabilidade.
+
+
+Assista ao vídeo para aprender como aplicar a técnica de inspeção por meio de lista de verificação em avaliações de IHC.
+
+
+
+Veja, a seguir, as 6 etapas fundamentais da avaliação de interfaces: do planejamento à análise final.
+
+
+
+Objetivos da avaliação
+
+A avaliação de interface humano-computador sempre começa com o estabelecimento dos seus objetivos.
+
+
+Técnica e planejamento
+
+Feito isso, decidimos a técnica e iniciamos o planejamento para sua execução.
+
+
+Critérios de avaliação
+
+O primeiro passo para aplicação da inspeção por meio de lista de verificação é escolher os critérios a serem avaliados.
+
+
+Elaboração da checklist
+
+Após a escolha, podemos elaborar a lista de verificação (checklist) ou utilizar uma lista existente, tal como aquelas disponíveis pelo ErgoList (2020).
+
+
+Marcação das respostas
+
+Cada um dos avaliadores marca as respostas para as questões da lista, que na sua opinião sejam as adequadas àquela situação.
+
+
+Laudo final
+
+No final, as respostas são organizadas e comparadas, e um laudo final deve ser gerado sobre as questões que apresentaram conformidade, as que não são aplicáveis e as que não apresentam conformidade.
+
+Agora que você já conhece as 6 etapas da avaliação de interfaces, vamos avaliar o nosso sistema do restaurante Comida Saudável, apresentado anteriormente, para exemplificar a aplicação da técnica de inspeção por meio de lista de verificação. O objetivo desta avaliação é responder a seguinte questão: O sistema tem interface consistente e padronizada?
+
+
+Para responder a essa questão, selecionamos o critério consistência, conforme proposto por Bastien e Scapin (1993): Forma na qual as escolhas de concepção de interface são conservadas idênticas, em contextos iguais e/ou diferentes. Ou seja, desejamos analisar se os elementos de interface seguem padrões percorrendo as telas do sistema.
+
+
+Adotamos a lista de verificação criada em ErgoList (2020), cujas perguntas estão ilustradas na imagem Parte de uma lista de verificação. Cinco avaliadores participaram dessa avaliação:
+
+
+Dois clientes potenciais do restaurante
+O dono do restaurante
+Um funcionário da empresa
+Um programador do sistema
+
+Os avaliadores responderam às seguintes perguntas. Veja!
+
+
+01
+
+A identificação das caixas, telas ou janelas são únicas?
+
+02
+
+A organização em termos da localização das várias características das janelas é mantida consistente de uma tela para outra?
+
+03
+
+A posição inicial do cursor é mantida consistente ao longo de todas as apresentações de formulários?
+
+Acompanhe as respostas obtidas por cada avaliador na tabela a seguir.
+
+
+Questão	A1	A2	A3	A4	A5
+Q1	S	S	S	S	S
+Q2	N	N	N	N	N
+N	N	N	N	N	N
+Tabela: Respostas dos avaliadores.
+Flavia Maria Santoro.
+
+Observamos que houve apenas uma discordância em um dos itens por parte de um avaliador, mas os avaliadores, de maneira geral, concordam que esta interface está em conformidade com o critério de consistência, no que diz respeito à identificação das janelas e localização dos elementos de interface.
+
+
+Porém, está não conforme com este critério na perspectiva de posicionamento do cursor. Com base nesta análise, os avaliadores podem elaborar um laudo final.

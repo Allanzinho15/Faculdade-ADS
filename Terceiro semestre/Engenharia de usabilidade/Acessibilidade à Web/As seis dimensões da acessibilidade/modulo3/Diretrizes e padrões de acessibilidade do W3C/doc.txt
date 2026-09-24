@@ -1,0 +1,132 @@
+Diretrizes e padrões de acessibilidade do W3C
+Neste vídeo, vamos explorar as diretrizes WCAG para acessibilidade na web e como elas podem ser aplicadas, bem como conhecer outros padrões e diretrizes do W3C.
+
+
+O grupo de trabalho WAI (Web Accessibility Initiative) do W3C é responsável pelo desenvolvimento dos padrões de acessibilidade na web para os diferentes componentes, conforme destacado a seguir:
+
+Componente	Diretriz
+Ferramentas de autoria	Diretrizes de acessibilidade para ferramentas de autoria (Authoring Tool Accessibility Guidelines ‒ ATAG).
+Conteúdos, desenvolvedores, ferramentas de autoria e ferramentas de avaliação	Diretrizes de acessibilidade para conteúdo na Web (Web Content Accessibility Guidelines ‒ WCAG).
+Agentes de usuário: Navegadores Web, players de mídia e alguns aspectos de tecnologias assistivas	Diretrizes de acessibilidade para agente de usuário (User Agent Accessibility Guidelines ‒ UAAG).
+Tabela: Os padrões de acessibilidade na Web para os diferentes componentes e suas diretrizes.
+W3C.
+
+Visão geral das diretrizes de acessibilidade
+As diretrizes de acessibilidade para ferramentas de autoria (ATAG), como o próprio nome já diz, são voltadas para ajudar no desenvolvimento de softwares e/ou serviços que os usuários conteudistas (desenvolvedores web, designers, criadores de conteúdo etc.) utilizam para criar conteúdo na web. As diretrizes ATAG possuem dois principais objetivos: apoiar o desenvolvimento de ferramentas de autoria acessíveis, possibilitando que pessoas com deficiência criem conteúdo na web e apoiar os usuários conteudistas na criação de um conteúdo web mais acessível, em conformidade com as Diretrizes de Acessibilidade para Conteúdo da Web (WCAG).
+
+As diretrizes de acessibilidade para agente de usuário (UAAG) foram apresentadas para orientar seu desenvolvimento de forma mais acessível para pessoas com deficiências. A UAAG é voltada para desenvolvedores de navegadores da web, extensões de navegador e outros aplicativos que processem o conteúdo web.
+
+Por fim, as diretrizes de acessibilidade para conteúdo na web (WCAG) têm como objetivo orientar o desenvolvimento de conteúdo web mais acessível em desktops, laptops, tablets e dispositivos móveis. Assim, para o desenvolvimento de um website acessível, devemos nos aprofundar nas diretrizes de acessibilidade para conteúdo na web (WCAG).
+
+Um mergulho nas diretrizes de acessibilidade para conteúdo web (wcag)
+No ano de 1999, o W3C criou o WAI, com objetivo de desenvolver um conjunto internacional de recomendações para orientar o desenvolvimento de conteúdo web acessível. Esse conjunto de recomendações foi denominado Diretrizes de Acessibilidade para Conteúdo Web (WCAG 1.0), sendo válida por nove anos, até dezembro de 2008. O rápido avanço tecnológico fez com que as recomendações fossem atualizadas.
+
+Assim, uma segunda versão foi lançada em maio de 2008 e denominada WCAG 2.0. Dez anos depois, em junho de 2018, as recomendações foram novamente atualizadas (WCAG 2.1) e encontram-se em vigor até a presente data. Em comparação com a versão anterior (2.0), a versão atual (2.1) apresenta melhorias nas orientações de acessibilidade para três grupos principais: usuários com deficiências cognitivas ou de aprendizagem, usuários com baixa visão e usuários com deficiências em dispositivos móveis.
+
+post_add
+Saiba mais
+As WCAG 2.1 são estruturadas em quatro camadas:
+
+Quatro princípios servem como base para que qualquer pessoa possa acessar e usar o conteúdo da web: perceptível, operável, compreensível e robusto.
+Treze diretrizes ajudam os autores a compreender os critérios de sucesso e a melhor implementar as técnicas.
+78 critérios de sucesso testáveis.
+Variedade de técnicas com orientações para atingir os critérios de sucesso.
+WCAG 2.1 - Os quatro princípios
+Os quatro princípios guiam o desenvolvimento de interfaces Web acessíveis, possuindo cada um deles uma lista de determinações, que apresentam os objetivos básicos necessários para satisfazer o referido princípio.
+
+filter_1
+Perceptível
+As informações e os componentes da interface do usuário devem ser apresentados em formas que possam ser percebidas pelo usuário.
+
+Em outras palavras
+O conteúdo da web deve ser apresentado de forma que o usuário possa percebê-lo e entendê-lo, seja através da audição, visão ou tato.
+
+filter_2
+Operável
+Os componentes de interface de usuário e a navegação devem ser operáveis.
+
+Em outras palavras
+Todos os usuários devem acessar a todas as funcionalidades da página de forma simples, independentemente dos dispositivos utilizados e do tempo de resposta necessário para a realização das tarefas.
+
+filter_3
+Compreensível
+A informação e a operação da interface de usuário devem ser compreensíveis.
+
+Em outras palavras
+A informação e a interação da página devem ser facilmente entendidas, consistentes e previsíveis, fazendo sentido para o usuário.
+
+filter_4
+Robusto
+O conteúdo deve ser robusto o suficiente para poder ser interpretado de forma confiável por uma ampla variedade de agentes de usuário, incluindo tecnologias assistivas.
+
+Em outras palavras
+Deve-se utilizar a semântica correta das linguagens de marcação, visando garantir a compatibilidade entre as atuais e novas versões de agentes de usuário (navegadores, players de mídia etc.) e as tecnologias assistivas.
+
+As treze diretrizes apresentam os objetivos básicos para tornar o conteúdo mais acessível aos usuários. Veja quais são as diretrizes referentes a cada um dos quatro princípios.
+
+1° Princípio: Perceptível
+Fornecer alternativas textuais para qualquer conteúdo não textual, para que possa ser transformado de acordo com as necessidades dos usuários, tais como impressão com tamanho de fontes maiores, braille, fala, símbolos ou linguagem mais simples.
+
+Fornecer alternativas para mídias baseadas no tempo.
+
+Criar conteúdo que possa ser apresentado de diferentes maneiras sem perder informação ou estrutura.
+
+Tornar mais fácil aos usuários a visualização e audição de conteúdos incluindo as separações das camadas da frente e de fundo.
+
+2° Princípio: Operável
+Toda funcionalidade deve estar disponível a partir de um teclado.
+
+Fornecer aos usuários tempo suficiente para ler e utilizar o conteúdo.
+
+Não criar conteúdo de forma a causar convulsões e reações físicas.
+
+Fornecer maneiras de ajudar os usuários a navegar, localizar conteúdos e determinar onde se encontram.
+
+Tornar mais fácil aos usuários a operação de funcionalidades por meio de várias entradas além do teclado.
+
+3° Princípio: Compreensível
+Tornar o conteúdo de texto legível e compreensível.
+
+Fazer com que as páginas da web apareçam e funcionem de modo previsível.
+
+Ajudar os usuários a evitar e corrigir erros.
+
+4° Princípio: Robusto
+Maximizar a compatibilidade entre os atuais e futuros agentes do usuário, incluindo os recursos de tecnologia assistiva.
+
+WCAG 2.1 ‒ Os 78 Critérios de Sucesso (CS)
+A base para se determinar se o conteúdo atende às diretrizes das WCAG 2.1 são os 78 critérios de sucesso.
+
+Para cada uma das diretrizes, existe um número variado de critérios de sucesso. Cada critério de sucesso é apresentado como uma declaração, que pode ser verdadeira ou falsa quando é testada em determinado conteúdo da web.
+
+Exemplos de critérios de sucesso, para cada um dos princípios das WCAG 2.1
+
+Diretriz 1.3: Adaptável
+Critério de Sucesso 1.3.1. Informações e relações (Nível A): "as informações, a estrutura, e os relacionamentos transmitidos através de apresentação podem ser determinados por meio de código de programação ou estarem disponíveis no texto".
+
+Diretriz 2.4. Navegável
+Critério de Sucesso 2.4.5. Várias formas (Nível AA): "está disponível mais de uma forma para localizar uma página web em um conjunto de páginas web, exceto quando a página web for o resultado, ou uma etapa, de um processo".
+
+Diretriz 3.1. Legível
+Critério de Sucesso 3.1.3. Palavras incomuns (Nível AAA): "um mecanismo para identificar definições específicas de palavras ou expressões utilizadas de uma forma restrita e incomum está disponível, incluindo expressões idiomáticas e jargões".
+
+Diretriz 4.1. Compatível
+Critério de sucesso 4.1.1. Análise (Nível A): "no conteúdo implementado utilizando linguagens de marcação, os elementos dispõem de “tags” completas de início e de fim, os elementos são aninhados de acordo com as respectivas especificações, os elementos não contêm atributos duplicados, e quaisquer IDs são exclusivos, exceto quando as especificações permitem estas características".
+
+Importante destacar que:
+
+Testar os critérios de sucesso envolve uma combinação de testes automatizados e avaliação humana por especialistas em acessibilidade.
+Embora o conteúdo deva satisfazer a todos os critérios de sucesso, nem sempre estão acessíveis a uma grande variedade de deficiências.
+Testes funcionais devem ser realizados com objetivo de verificar se o conteúdo funciona como esperado ou se satisfaz o critério de sucesso. Portanto, testes de acessibilidade são recomendáveis com testes funcionais.
+Testes de usabilidade definem a facilidade de uso na execução de certa tarefa.
+WCAG 2.1 ‒ Os três níveis de conformidade (A, AA, AAA)
+Cada um dos 78 critérios de sucesso possui um nível de conformidade que varia de A (mínimo) a AAA (máximo). Para que uma página da web esteja em conformidade com as WCAG 2.1, os seguintes requisitos de conformidade devem ser atendidos:
+
+Nível A
+Nível AA
+Nível AAA
+É o nível mínimo de acessibilidade. Para atingir o nível "A", o conteúdo web deve satisfazer 30 critérios de sucesso, ou fornecer conteúdo alternativo em conformidade com o respectivo nível.
+
+Não é recomendável que o nível “AAA” seja considerado como meta, devido à impossibilidade de satisfazê-lo em sua totalidade para alguns tipos de conteúdo.
+
+Agora que conhecemos os principais componentes, aspectos e as diretrizes para a promoção da acessibilidade web, conheceremos, no próximo módulo, quais as etapas necessárias para o projeto e desenvolvimento de um site acessível.

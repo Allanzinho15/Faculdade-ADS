@@ -1,0 +1,79 @@
+Desenvolvendo para todos
+Uma vez que já definimos o conceito de acessibilidade, vamos aprender sobre desenho universal. Como o próprio nome já diz, universal é algo que foi desenvolvido para todas as pessoas. Mas será possível desenvolver alguma coisa que atenda a todas as pessoas? Apesar de o desenho universal buscar atender a toda diversidade humana, é pouco provável que qualquer produto ou ambiente possa ser usado por todas as pessoas em igualdade de condições. Dessa forma, deve-se considerar o desenho universal como um processo, e não como uma meta a ser alcançada.
+
+Descubra, neste vídeo, o que é o desenho universal e como ele pode tornar o mundo mais acessível para todas as pessoas.
+
+
+Define-se desenho universal como o desenvolvimento de produtos ou ambientes que possam ser utilizados, sempre que possível, por todas as pessoas, sem necessidade de adaptação ou projeto específico.
+
+O design universal respeita a diversidade humana e promove a inclusão de todas as pessoas em todas as atividades da vida.
+
+(STORY; MUELLER; MACE, 1998)
+Pense no desafio que deva ser desenvolver produtos ou ambientes para o maior número de pessoas; que atenda às necessidades de todos de forma eficiente. Não deve ser uma tarefa fácil, correto? Para nos ajudar nessa tarefa, segundo o Universal Design Institute (1997), foram desenvolvidos os princípios e as diretrizes do desenho universal, que podem ser utilizados tanto para avaliar produtos ou ambientes já desenvolvidos, como para orientar o processo de desenvolvimento de produtos e ambientes mais universais. Somam um total de sete princípios e trinta diretrizes, conforme descritos a seguir.
+
+1º princípio - Uso equitativo
+O design é útil para pessoas com diferentes habilidades.
+
+Forneça o mesmo meio de uso para todos os usuários: idêntico sempre que possível; equivalente quando não.
+Evite segregar ou estigmatizar qualquer usuário.
+As provisões para privacidade, segurança e proteção devem estar igualmente disponíveis para todos os usuários.
+Faça o design atraente para todos os usuários.
+Portas com sensores que se abrem automaticamente.
+
+2º princípio - Uso flexível
+O design atende a diferentes preferências e habilidades individuais.
+
+Forneça opções de métodos de uso.
+Acomode o acesso e uso de destros ou canhotos.
+Facilite a exatidão e precisão do usuário.
+Forneça adaptabilidade ao ritmo do usuário.
+Tesouras que podem ser usadas em ambas as mãos.
+
+3º princípio - Uso simples e intuitivo
+O uso do produto é fácil de entender, independentemente de experiência, conhecimento, habilidades de linguagem ou nível de concentração do usuário.
+
+Elimine a complexidade desnecessária.
+Seja consistente com as expectativas e intuições do usuário.
+Acomode uma ampla variedade de habilidades de alfabetização e linguagem.
+Organize informações consistentes com sua importância.
+Forneça sugestões e “feedbacks” eficazes durante e após a conclusão da tarefa.
+Uma esteira rolante em um espaço público.
+
+4º princípio - Informação de fácil percepção
+O produto comunica informações necessárias ao usuário, independentemente das condições do ambiente ou das habilidades sensoriais do usuário.
+
+Use diferentes modos (textual, imagético, verbal, tátil) para a apresentação redundante de informações essenciais.
+Forneça contraste adequado entre as informações essenciais e seus arredores.
+Maximize a "legibilidade" das informações essenciais.
+Diferencie os elementos de maneira que possam ser descritos (ou seja, torne mais fácil dar instruções ou orientações).
+Forneça compatibilidade com uma variedade de técnicas ou dispositivos usados por pessoas com limitações sensoriais.
+Placa indicativa de banheiro Feminino/Masculino com Braille.
+
+5º princípio - Tolerância ao erro
+O produto minimiza os riscos e as consequências geradas por ações acidentais e não intencionais.
+
+Organize elementos para minimizar riscos e erros: elementos mais usados, mais acessíveis; elementos perigosos eliminados, isolados ou protegidos.
+Forneça avisos de perigos e erros.
+Forneça recursos à prova de falhas.
+Desencoraje a ação inconsciente em tarefas que requerem vigilância.
+Recurso “desfazer” em softwares que permite que o usuário volte e corrija um erro.
+
+6º princípio - Baixo esforço físico
+O produto pode ser usado de forma eficiente, confortável e com um mínimo de fadiga.
+
+Permita que o usuário mantenha uma posição corporal neutra.
+Use forças operacionais razoáveis.
+Minimize ações repetitivas.
+Minimize o esforço físico sustentado.
+Maçanetas do tipo alavanca.
+
+7º princípio - Dimensão e espaço para aproximação e uso
+Tamanho e espaço apropriados são fornecidos para abordagem, alcance, manipulação e uso, independentemente do tamanho do corpo, da postura ou da mobilidade do usuário.
+
+Forneça uma linha de visão clara para elementos importantes a qualquer usuário sentado ou em pé.
+Torne o alcance de todos os componentes confortável para qualquer usuário sentado ou em pé.
+Acomode variações no tamanho da mão e do punho.
+Forneça espaço adequado para o uso de dispositivos de assistência ou assessoramento pessoal.
+Caixas de autoatendimento em bancos que podem ser utilizados por cadeirantes.
+
+Segundo a Lei nº 13.146/2015, quando produtos e ambientes são desenvolvidos alinhados com os conceitos de acessibilidade e desenho universal, podemos promover, em condições de igualdade, o exercício dos direitos às pessoas com deficiência, visando à sua inclusão social e cidadania.

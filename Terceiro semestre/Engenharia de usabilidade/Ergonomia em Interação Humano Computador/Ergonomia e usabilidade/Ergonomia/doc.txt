@@ -1,0 +1,62 @@
+Ergonomia
+Quem desenvolve ou é design de software e busca criar interfaces eficientes e agradáveis ao usuário precisa compreender os conceitos teóricos da ergonomia, pois conseguir adaptar o ambiente de trabalho e as ferramentas ao ser humano, considerando suas capacidades físicas e cognitivas, promove o bem-estar e aumenta a produtividade. 
+
+ 
+
+Assista, no vídeo a seguir, à importância das características ergonômicas no design de software, explorando técnicas para reduzir a carga cognitiva e apresentar informações de forma clara e intuitiva.
+
+
+
+
+O termo ergonomia se originou a partir das palavras gregas ergon, que significa “trabalho”, e nomos, que quer dizer “leis ou normas”. Portanto, ergonomia é o conjunto de disciplinas que estudam a organização do trabalho e que inclui as interações entre seres humanos e máquinas. O objetivo primordial é desenvolver e aplicar técnicas de adaptação de elementos do ambiente de trabalho ao ser humano, com o objetivo de promover o bem-estar do usuário e aumentar sua produtividade.
+
+ 
+
+As lesões por esforço repetitivo (LER) são um dos problemas físicos mais comuns que podem causar a incapacidade de trabalhar. Assim, o conceito de ergonomia também se aplica à adaptação de uma máquina ao seu operador, criando uma forma mais eficaz de uso e evitando o esforço extremo das pessoas na execução do trabalho. 
+
+ 
+
+A Associação Brasileira de Ergonomia utiliza a seguinte definição:
+
+
+[...] A Ergonomia é uma disciplina científica relacionada ao entendimento das interações entre os seres humanos e outros elementos ou sistemas e à aplicação de teorias, princípios, dados e métodos a projetos a fim de otimizar o bem-estar humano e o desempenho global do sistema.
+Abergo, 2020
+Acompanhe, a seguir, os domínios de especialização mais citados da ergonomia.
+
+
+
+Ergonomia física
+
+Ergonomia cognitiva
+
+Ergonomia organizacional
+Aborda as características da anatomia humana, antropometria, fisiologia e biomecânica. Isso inclui o estudo da postura no trabalho, manuseio de materiais, movimentos repetitivos, distúrbios musculares e do esqueleto, segurança e saúde.
+
+
+
+
+
+
+A Abergo define ainda que os ergonomistas devem contribuir para o planejamento, o projeto e a avaliação de tarefas, postos de trabalho, produtos, ambientes e sistemas para torná-los compatíveis com as necessidades, habilidades e limitações das pessoas. Para isso, eles devem ter uma abordagem holística de todo o campo de ação da disciplina, tanto em seus aspectos físicos e cognitivos, como sociais, organizacionais, ambientais etc. 
+
+ 
+
+Devido às características que os ergonomistas devem possuir, a associação estabelece que a ergonomia é uma área multidisciplinar que envolve desde profissionais da engenharia e física até da medicina, além de fisioterapeutas e pessoas psicólogas, a fim de solucionar a necessidade do ser humano em aplicar menos esforço mental e físico em suas tarefas.
+
+
+Premissas para a criação de um sistema ergonômico
+
+
+
+Capa do livro Engenharia de usabilidade, de Santos.
+
+Segundo Fabiano Gonçalves dos Santos, autor do livro Engenharia de usabilidade (2016), o grande desafio no desenvolvimento de sistemas é criar softwares ergonômicos, ou seja, que exijam o menor esforço físico e cognitivo do usuário, evitando frustrações e grande uso de raciocínio e memória individual. Para isso, de acordo com o autor, algumas premissas devem ser atendidas na criação de um sistema ergonômico:
+
+ 
+
+O usuário deve desempenhar somente as funções absolutamente essenciais e que não possam ser realizadas pelo sistema, transferindo para ele a função que o indivíduo até poderia executar.
+A memorização do usuário deve ser a mínima possível.
+O usuário só deve ter que aprender o essencial para sua tarefa.
+A terminologia e os passos não relacionados à tarefa do usuário não devem ter que aprendidos por ele. Instruções ou comunicações do sistema devem ser feitas ao longo da tarefa.
+Os comandos do usuário devem ter execução natural e simples, não devendo ser complexos e compostos.
+O usuário deve experimentar frustração mínima.

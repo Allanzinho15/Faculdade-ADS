@@ -1,0 +1,43 @@
+Comunicabilidade
+A comunicabilidade é a propriedade de uma interface que permite transmitir, de forma eficaz e eficiente, as finalidades e a lógica do design do sistema ao usuário. Proposto pela engenharia semiótica, esse conceito é essencial para remover barreiras de interação e facilitar o uso intuitivo e produtivo do sistema interativo.
+
+
+Neste vídeo serão apresentados e exemplificados o conceito e as intenções de comunicabilidade.
+
+
+
+É a propriedade de transmitir ao usuário, de forma eficaz e eficiente, as finalidades da interação com a interface.
+
+
+Os sistemas que têm essa característica expressam bem a intenção e a lógica do design do sistema, permitem aos usuários expressar sua intenção de uso e respondem com modelos de comunicação adequados ao contexto de uso. A intenção do designer deve ser sempre remover as barreiras da interface que impedem o usuário de interagir, tornando o uso fácil e comunicando ao usuário as suas concepções e intenções ao conceber o sistema interativo.
+
+
+O conceito de comunicabilidade foi proposto pela engenharia semiótica (elemento que também é objeto da área de ergonomia em IHC).
+
+A comunicabilidade diz respeito à capacidade da interface de comunicar ao usuário a lógica do design, as intenções do designer e os princípios de interação resultantes das decisões tomadas durante todo o processo de design.
+
+
+Se um usuário é capaz de compreender a lógica utilizada na concepção do sistema interativo, terá maiores chances de fazer um uso criativo, eficiente e produtivo dele.
+
+
+(PRATES; BARBOSA, 2007)
+O entendimento dessa lógica de design permite que os usuários usem melhor o sistema.
+
+
+Exemplo
+Não precisamos saber como funcionam os recursos de estilos de formatação ou numeração automática de um editor de texto para utilizá-lo, mas se sabemos isso certamente podemos usar esse software de forma mais eficiente e obter menos erros.
+
+
+Segundo Prates et al. (2000), a intenção é que o usuário saiba:
+
+
+Para que serve o sistema.
+
+
+Qual a vantagem de utilizá-lo.
+
+
+Como ele funciona.
+
+
+Quais são os princípios gerais de interação com o sistema.

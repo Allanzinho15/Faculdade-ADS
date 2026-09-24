@@ -1,0 +1,20 @@
+Interface humano-computador (IHC)
+Quem deseja criar interfaces eficientes e intuitivas precisa compreender a interação entre humanos e computadores. Esse conhecimento abrange diversas áreas, como computação, artes, design, psicologia e sociologia, proporcionando uma visão holística da interação usuário-sistema.
+
+ 
+
+Acompanhe, neste vídeo, a importância das interfaces e como elas mediam a comunicação entre usuários e máquinas.
+
+
+
+IHC é o estudo da interação entre pessoas e computadores, o qual se relaciona com a computação, artes, design, psicologia, sociologia, semiótica, linguística e várias outras áreas afins. A interação entre humanos e máquinas se dá através da interface do utilizador, formada por software e hardware.
+
+
+A interação entre humanos e computadores é feita através de um meio de comunicação chamado interface. 
+
+
+É por meio da interface que o usuário entra em contato com a máquina de forma física, perceptiva e cognitiva. Portanto, toda forma de interação na qual uma ação do usuário (entrada) leva a uma resposta do sistema (saída) é intermediada por uma interface. 
+
+
+Exemplo
+Computadores, maçanetas, televisores, receptores de rádio, fornos de micro-ondas e aparelhos de telefone, entre outros, são tipos de interface. O usuário pode manipular a interface do computador por meio de dispositivos, obtendo as respostas desejadas aos seus estímulos. Para cada ação uma reação é esperada.

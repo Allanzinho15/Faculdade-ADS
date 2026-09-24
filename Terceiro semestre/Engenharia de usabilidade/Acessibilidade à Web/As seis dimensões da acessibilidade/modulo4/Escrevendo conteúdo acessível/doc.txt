@@ -1,0 +1,34 @@
+Escrevendo conteúdo acessível
+Neste vídeo, vamos mostrar como desenvolver conteúdo para um ambiente web acessível.
+
+
+O segundo conjunto de sete recomendações tem como objetivo apresentar algumas recomendações básicas para ajudá-lo a escrever o conteúdo web que seja mais acessível para pessoas com deficiência, sendo voltado para o perfil profissional conteudista, responsável por criar a estrutura e garantir a legibilidade do conteúdo web.
+
+1. Forneça títulos de página informativos e exclusivos
+Em outras palavras, cada página da web criada deve possuir um título único e curto que descreva o conteúdo da página.
+
+WCAG 2.1 – Critério de sucesso: 2.4.2. Página com título.
+2. Use títulos para transmitir significado e estrutura
+Utilize títulos para agrupar parágrafos relacionados e descreva as seções de forma clara e objetiva.
+
+WCAG 2.1 ‒ Critérios de sucesso: 2.4.6. Cabeçalhos e rótulos, 2.4.10. Cabeçalhos da seção e 1.3.1. Informações e relações.
+3. Torne o texto do link significativo
+Pessoas cegas que utilizam leitor de tela têm a opção de navegar somente pelos links de uma página. Nesses casos, o leitor lê em voz alta apenas a informação do texto do link, sem considerar outras informações da página. Por esse motivo, utilize informações relevantes sobre o destino do link, em vez de utilizar informações como 'clique aqui' ou 'leia mais'.
+
+WCAG 2.1 ‒ Critérios de sucesso: 2.4.4. Finalidade do link em contexto e 2.4.9. Finalidade do link (apenas o link).
+4. Escreva alternativas de texto significativas para imagens
+Pessoas cegas que utilizam leitor de tela só terão acesso à informação transmitida por uma imagem, caso tenha sido fornecida uma alternativa textual significativa (texto alternativo).
+
+WCAG 2.1 ‒ Critério de sucesso: 1.1.1. Conteúdo não textual.
+5. Crie transcrições e legendas para multimídia
+Quando se tratar de conteúdo no formato de áudio, como um “podcast”, deve-se fornecer uma transcrição. Quando se tratar de um conteúdo de audiovisual, como filmes de entretenimento, forneça também a legenda.
+
+WCAG 2.1 ‒ Critérios de sucesso: 1.2.2. Legendas (pré-gravadas) e 1.2.3. Audiodescrição ou mídia alternativa (pré-gravada).
+6. Forneça instruções claras
+Todas as instruções e mensagens de erro devem ser fáceis de serem entendidas. Como exemplo, informe o formato de data a ser preenchido (XX/XX/XXXX).
+
+WCAG 2.1 ‒ Critério de sucesso: 3.3.2. Rótulos ou instruções.
+7. Mantenha o conteúdo claro e conciso
+Escreva frases e parágrafos curtos e claros; evite usar palavras e frases complexas; forneça um glossário de termos que os leitores talvez não conheçam; disponibilize uma explicação para siglas; utilize imagens, ilustrações, vídeos, áudios e símbolos para ajudar a esclarecer o significado de determinada informação.
+
+WCAG 2.1 ‒ Critérios de sucesso: 3.1.5. Nível de leitura, 3.1.3. Palavras incomuns e 3.1.4. Abreviaturas.

@@ -1,0 +1,36 @@
+As seis dimensões da acessibilidade
+A acessibilidade deve ser integrada em todas as seis dimensões de acessibilidade. Todas as dimensões são consideradas igualmente importantes e complementares entre si. Portanto, a ausência de uma dimensão compromete negativamente as demais.
+
+Descubra quais são as seis dimensões da acessibilidade e veja exemplos sobre o assunto.
+
+
+Apresentamos, a seguir, a lista das seis dimensões de acessibilidade com exemplos práticos:
+
+accessible
+Acessibilidade arquitetônica
+Está relacionada com a ausência de barreiras ambientais físicas nas casas, nos edifícios, espaços ou equipamentos urbanos, bem como nos meios de transporte individuais ou coletivos.
+
+
+sign_language
+Acessibilidade metodológica
+Ausência de barreiras nos métodos e nas técnicas em ambientes escolares, profissionais, sociais, culturais, artísticos etc. Como exemplo, uma aula de educação física inclusiva com intérprete de Libras.
+
+
+view_in_ar
+Acessibilidade instrumental
+Definida como a ausência de barreiras nos instrumentos, utensílios e nas ferramentas disponíveis em ambientes escolares, profissionais, sociais, de lazer e recreação (comunitária, turística, esportiva etc.). Como exemplo, o uso de aplicativo com recursos de realidade aumentada em museus para visitantes surdos que se comunicam em Libras.
+
+
+blind
+Acessibilidade programática
+Caracteriza-se como a ausência de barreiras presentes em políticas públicas (leis, decretos, portarias etc.), normas e regulamentos. Como exemplo, garantir o direito da pessoa com deficiência visual de ingressar e permanecer em ambientes de uso coletivo acompanhada de cão-guia.
+
+
+diversity_1
+Acessibilidade atitudinal
+Refere-se à ausência de preconceitos, estereótipos e discriminações em relação às pessoas.
+
+
+connect_without_contact
+Acessibilidade comunicacional
+Caracteriza-se pela ausência de barreiras na comunicação entre as pessoas e visa garantir um direito humano universal, uma vez que "todo ser humano tem direito à liberdade de opinião e expressão", tendo liberdade para receber e transmitir informações e ideias por quaisquer meios.

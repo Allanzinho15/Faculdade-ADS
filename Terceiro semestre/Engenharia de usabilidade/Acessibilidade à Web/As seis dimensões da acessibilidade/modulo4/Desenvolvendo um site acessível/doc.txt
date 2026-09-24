@@ -1,0 +1,87 @@
+Desenvolvendo um site acessível
+De modo geral, o desenvolvimento de websites, aplicativos e outros produtos digitais envolve a participação de diferentes perfis de profissionais. Assim, para integrar a acessibilidade no projeto, desenvolvimento e na manutenção desses produtos digitais, devemos reconhecer as responsabilidades de cada perfil durante as diferentes etapas do ciclo de desenvolvimento de produtos digitais, além da importância de incluir pessoas com deficiência em todas as etapas do projeto. Dessa forma, neste vídeo, você vai aprender sobre como desenvolver o projeto de um site acessível.
+
+
+Atualmente, o desenvolvimento de websites, aplicativos e outros produtos digitais envolve a participação de uma equipe multidisciplinar, na qual cada perfil profissional possui responsabilidades específicas para integrar a acessibilidade durante o desenvolvimento de suas funções. Planejar o conteúdo web de forma acessível desde o início do projeto minimiza a possibilidade de retrabalho e correções posteriores.
+
+Caso você se depare com um projeto existente que não foi desenvolvido de forma acessível, você precisará conhecer as formas de identificar seus problemas visando realizar as correções necessárias. Outro fator relevante é envolver usuários com deficiência tanto nas diferentes etapas do projeto de desenvolvimento, como no processo de avaliação da acessibilidade web após o projeto ter sido finalizado. A seguir, estudaremos algumas recomendações que podem ajudá-lo a criar um site mais acessível para pessoas com deficiência.
+
+As recomendações estão voltadas para três diferentes funções de desenvolvimento de produtos digitais web:
+
+design_services
+(A)
+Projetando para acessibilidade na web.
+
+edit_note
+(B)
+Escrevendo para acessibilidade na web.
+
+settings_ethernet
+(C)
+Desenvolvendo (código) para acessibilidade na web.
+
+Todas essas recomendações estão relacionadas às diretrizes de acessibilidade para conteúdo web (WCAG) e podem ser utilizadas tanto em projetos individuais como organizacionais.
+
+Projetando para acessibilidade na web
+O primeiro conjunto de dez recomendações tem como objetivo apoiar o desenvolvimento de interfaces mais acessíveis para pessoas com deficiência, sendo voltado para o perfil profissional de designer de interação, responsável por considerar as diferentes formas pelas quais as pessoas acessam a web:
+
+1. Forneça contraste suficiente entre o primeiro e o segundo plano
+Textos, texto em imagens, botões e outros elementos em primeiro plano precisam ter contraste suficiente com as cores utilizadas em segundo plano. Algumas pessoas têm dificuldade ou até mesmo não conseguem ler um texto se não houver contraste suficiente entre o texto e o segundo plano.
+
+WCAG 2.1 ‒ Critério de Sucesso: 1.4.3. Contraste mínimo.
+Ferramentas para analisar o contraste:
+Colour Contrast Analyser (CCA), disponível no site do The Paciello Group.
+Extensão do Firefox do Color Contrast Analyser.
+2. Não utilize somente cores para transmitir informações
+Ao utilizar cores para destacar informações, adicione outra identificação que não esteja vinculada à percepção de cores. Pessoas daltônicas não distinguem as cores vermelha e verde. Como exemplo, utilize um asterisco além da cor para indicar os campos obrigatórios de um formulário.
+
+WCAG 2.1 ‒ Critério de Sucesso: 1.4.1 Uso da cor
+
+Exemplo do uso de cores para transmitir informações.
+
+
+Exemplo do uso de cores e símbolos para transmitir informações.
+
+3. Certifique-se de que os elementos interativos são fáceis de serem identificados
+Algumas pessoas acessam o conteúdo das páginas web somente pelo teclado, assim, durante a interação, é importante que eles percebam facilmente qual elemento está em foco.
+
+WCAG 2.1 ‒ Critério de Sucesso: 2.4.7 Foco visível
+
+Exemplo de foco na navegação via teclado.
+
+
+Exemplo de foco ao passar o mouse.
+
+4. Forneça opções de navegação claras e consistentes
+Ajude os usuários a entender onde estão em um site ou página, fornecendo títulos de páginas claros e informativos e mais de uma forma de navegação como a opção de realizar buscas ou disponibilizar um mapa do site.
+
+WCAG 2.1 ‒ Critérios de sucesso: 3.2.3 Navegação consistente e 2.4.5. Várias formas.
+5. Certifique-se de que os elementos do formulário incluem rótulos claramente associados.
+Utilize um rótulo (label) bem definido para cada campo de entrada de informação (input) do seu formulário.
+
+WCAG 2.1 ‒ Critérios de sucesso: 3.3.2. Rótulos ou instruções e 2.4.6. Cabeçalhos e rótulos.
+6. Forneça “feedback” facilmente identificável aos usuários
+Como exemplos: exibir uma mensagem confirmando o envio de um formulário ou informar um endereço de e-mail digitado sem o @.
+
+WCAG 2.1 ‒Critérios de sucesso: 3.3.1. Identificação do erro, 3.3.2. Rótulos ou instruções e 3.3.3. Sugestão de erro.
+7. Use títulos e espaçamento para agrupar o conteúdo relacionado
+Organize visualmente as informações da página utilizando corretamente os títulos e os espaçamentos entre os conteúdos.
+
+WCAG 2.1 ‒ Critérios de sucesso: 2.4.6. Cabeçalhos e rótulos e 2.4.10. Cabeçalhos da seção.
+8. Crie “designs” para diferentes tamanhos de janela de visualização
+A posição e apresentação dos principais elementos de uma página, como cabeçalho e forma de navegação, podem ser alteradas quando utilizadas em telas de tamanhos diferentes, como em um aparelho celular.
+
+WCAG 2.1 ‒ Critério de sucesso: 5.2.2. Páginas inteiras.
+9. Inclua alternativas de imagem e mídia
+Indique um local na página para disponibilizar alternativas textuais para imagens e vídeos. Exemplo: link para acessar a legenda de um vídeo.
+
+WCAG 2.1 ‒ Critério de sucesso: 1.1.1 Conteúdo não textual
+
+Exemplo de alternativa textual para fazer o download do vídeo.
+
+10. Forneça controles para conteúdos que comecem automaticamente
+O usuário deve ter condição de alterar o volúme, pausar, parar e caso necessário ocultar, toda mídia de reprodução automática do site.
+
+WCAG 2.1 ‒ Critérios de sucesso: 1.4.2. Controle de áudio e 2.2.2. Colocar em pausa, parar, ocultar.
+
+Exemplo de controles de conteúdo.

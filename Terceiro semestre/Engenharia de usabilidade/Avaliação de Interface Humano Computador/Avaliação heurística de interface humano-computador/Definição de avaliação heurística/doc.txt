@@ -1,0 +1,28 @@
+Definição de avaliação heurística
+A partir da avaliação heurística (técnica para identificar problemas de usabilidade em interfaces humano-computador), os desenvolvedores podem melhorar a experiência do usuário. Dessa forma, compreender as heurísticas de Nielsen ajuda a prever e a resolver problemas de usabilidade de forma rápida e econômica.
+
+
+Assista ao vídeo para aprender mais sobre as diretrizes de usabilidade conhecidas como heurísticas de Nielsen.
+
+
+
+A avaliação heurística é uma técnica de avaliação de interface humano-computador de inspeção que tem como objetivo encontrar problemas de usabilidade durante o projeto de interface de um sistema interativo. Conforme estudamos, técnicas de inspeção são focadas na predição de problemas que podem vir a ocorrer com a interface.
+
+
+Curiosidade
+Heurística é um termo que remete à resolução de problemas. É um tipo de investigação baseada na aproximação progressiva de um dado problema, e tem a mesma origem da famosa exclamação “heureca!”, atribuída ao matemático grego Arquimedes (287 a.C.– 212 a.C.).
+
+
+Essa técnica orienta os avaliadores a inspecionarem sistematicamente a interface em busca de problemas que possam vir a prejudicar a usabilidade, e consequentemente a experiência do usuário com o sistema.
+
+
+Por ser uma técnica de inspeção, a avaliação heurística foi proposta como uma alternativa de avaliação rápida e de baixo custo, quando comparada a outras técnicas que envolvem o usuário diretamente.
+
+
+
+Representação de avaliador de usabilidade.
+
+A avaliação heurística foi proposta por Jakob Nielsen (1994), com o objetivo de encontrar problemas de utilização na concepção da interface, facilitando a sua resolução como parte de um processo iterativo de design. As heurísticas de Nielsen são diretrizes de usabilidade, ou, em outras palavras, são características desejáveis da interação e da interface humano-computador. 
+
+
+Essas heurísticas foram definidas a partir da análise de problemas de usabilidade realizada ao longo de vários anos por especialistas em IHC. Porém, se os avaliadores julgarem necessário, podem e devem incluir novas heurísticas.

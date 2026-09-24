@@ -1,0 +1,112 @@
+Princípios e diretrizes de design IHC: parte II
+Os princípios e diretrizes de design de interface humano-computador (como o equilíbrio entre controle e liberdade do usuário, promoção da eficiência, antecipação das necessidades, visibilidade e reconhecimento, e conteúdo relevante e expressão adequada) são essenciais para a criação de interfaces intuitivas e eficazes.
+
+
+Eles ajudam a garantir que as interfaces sejam fáceis de usar, atendam às expectativas dos usuários, promovam a eficiência e ofereçam uma experiência agradável e produtiva, adaptando-se às necessidades e habilidades dos usuários de forma eficiente e elegante.
+
+
+Assista a este vídeo e saiba mais sobre os seguintes princípios e diretrizes de design de interface humano-computador: equilíbrio entre controle e liberdade do usuário, promoção da eficiência do usuário, antecipação das necessidades do usuário, visibilidade, reconhecimento, conteúdo relevante e expressão adequada.
+
+
+
+Equilíbrio entre controle e liberdade do usuário
+
+O usuário deve estar no controle. Para isso, é necessário tentar reduzir o número de opções ou decisões que ele precisa tomar a cada instante.
+
+
+Os usuários não devem ficar presos em um caminho de interação único para realizar uma atividade. Sempre deve ser fornecido a eles um caminho alternativo.
+
+
+Mas é importante ressaltar que o usuário pode ter mais ou menos liberdade de acordo com seu perfil. Usuários sem muita experiência podem precisar de mais assistência e menos alternativas, enquanto os mais experientes podem ter mais alternativas.
+
+
+Shneiderman (1998) recomenda permitir que o usuário tenha controle total da interação. Também é importante que eles possam cancelar ou desfazer suas ações, pois isso reduz o medo de errar e evita a necessidade de apresentar diversos diálogos pedindo confirmação das ações dos usuários.
+
+
+Atenção
+Usar diálogos de confirmação em excesso e de forma indiscriminada não apenas aumenta o tempo de realização das tarefas, mas também pode tornar a comunicação ineficiente, pois muitos usuários acabam prosseguindo a interação sem mesmo ler o conteúdo desses diálogos.
+
+
+Para aumentar o controle do usuário, o sistema também deve permitir que trabalhem de modo flexível, podendo o usuário configurar o sistema.
+
+
+Promoção da eficiência do usuário
+
+Uma diretriz importante e bastante recomendada é considerar a eficiência do usuário antes da eficiência do sistema.
+
+
+Nessa diretriz, recomenda-se manter o usuário ocupado, porque sempre há perda de produtividade quando ele precisa esperar.
+
+
+Sendo assim, é primordial que o projeto de software entenda que o sistema deve ser sensível às ações do usuário e deve interrompê-lo o mínimo possível. Um bom exemplo disso é que precisamos prever mecanismos para que o usuário nunca perca seu trabalho em caso de erro, seja este por uma falha na transmissão de rede, por um problema no fornecimento de energia para o computador ou por qualquer outra razão.
+
+
+Devemos ter também mecanismos que permitam ao sistema “lembrar-se” de todas as ações do usuário antes do problema ocorrer. O sistema deve ser capaz de saber: se esse é o primeiro acesso; onde o usuário está no sistema; para onde ele está indo; o que o usuário tem feito durante a sessão de uso atual; onde ele estava quando deixou o sistema na última sessão; e outras informações semelhantes que permitam diminuir o trabalho do usuário e melhorar sua experiência de uso do sistema.
+
+
+Comentário
+A ideia principal é fornecer atalhos e aceleradores. Teclas de atalho e comandos ocultos são úteis a usuários experientes e não prejudicam a interação dos usuários novatos.
+
+
+Antecipação das necessidades do usuário
+
+A intenção desta diretriz é fazer com que o designer pense em como prever o que os usuários querem e precisam, em vez de esperar que estes busquem ou coletem informações.
+
+
+Para isso, o sistema deve fornecer ao usuário todas as informações e ferramentas necessárias para cada passo do processo.
+
+
+O software deve, portanto, tomar iniciativa e fornecer informações adicionais úteis — que tiverem relação com a pergunta —, em vez de apenas responder precisamente a uma pergunta do usuário.
+
+
+Além disso, o software deve ser observador e se lembrar de quais ações o usuário realiza em sequência, para tentar antever o próximo passo a cada momento.
+
+
+Comentário
+A antecipação das necessidades do usuário também trata, por exemplo, do preenchimento de campos automaticamente. É uma boa prática de design para campos que tenham valores default (padrão) que estes já venham preenchidos.
+
+
+Visibilidade e reconhecimento
+
+Nesta diretriz, são tratadas as ações que devem estar explícitas para o usuário. Antes de executar uma ação, é necessário tornar visível para os usuários o que é possível realizar e como as ações devem ser feitas.
+
+
+Nesse sentido, a interface não deve oferecer opções que não estejam disponíveis ou não façam sentido em um determinado momento da interação.
+
+
+Outro ponto importante é que, depois de uma ação realizada, o sistema deve mostrar ao usuário o novo estado, reconhecendo que a ação foi realizada e que a situação mudou.
+
+
+O sistema não deve exigir que o usuário memorize muitas informações ou comandos durante a interação, devido à limitação humana do processamento de informação na memória de curto prazo.
+
+
+Recomendação
+Muitas vezes, o usuário pode não perceber a resposta do sistema, tamanha sua sutileza. Recomenda-se que comandos mais incisivos sejam aplicados. É necessário, ainda, que o sistema mantenha claro para o usuário o caminho que ele percorreu. Mapas mentais de caminhos não devem ser de responsabilidade do usuário.
+
+
+Conteúdo relevante e expressão adequada
+
+Esta diretriz segue a ideia de que “menos é mais”. Isso está fortemente relacionado à simplicidade da interface.
+
+
+A máxima da relação ou relevância afirma que tudo o que for dito deve ter relação clara com os tópicos da conversa.
+
+
+A intenção é evitar a prolixidade e ambiguidade, buscar a concisão e ordenar adequadamente a conversa. Por isso, todos os diálogos devem ter somente as informações necessárias.
+
+
+Recomendação
+As mensagens de instrução devem ser concisas e informativas, assim como os rótulos e menus devem ser claros e livres de ambiguidade.
+
+ 
+
+Além do conteúdo, o designer deve se certificar de que o texto também seja legível.
+
+
+Os designers gráficos são os principais responsáveis pela identidade visual do sistema, incluindo o layout — que define a disposição espacial dos elementos de interface — e a escolha de fontes, formas, cores, texturas, imagens e outros símbolos.
+
+
+Alguns pontos importantes apontados por essa diretriz são: elegância e simplicidade; escala, contraste e proporção; organização e visual; imagens.
+
+
+O que você achou do conteúdo?

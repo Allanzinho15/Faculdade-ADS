@@ -1,0 +1,55 @@
+Normas de recomendações ergonômicas
+As normas ISO 9241, ISO 13407 e ISO PAS 18152:2010 fornecem diretrizes essenciais para criar sistemas que atendam às necessidades dos usuários, pois, por serem eficientes e centradas no usuário, melhoram a usabilidade e a satisfação. 
+
+ 
+
+Confira, neste vídeo, as normas e recomendações ergonômicas detalhadamente e como aplicá-las em seus projetos.
+
+
+
+Recomendações ergonômicas para IHC são um conjunto de boas práticas a serem utilizadas no design de interfaces. Muitas orientações e recomendações ergonômicas para a área de IHC são desenvolvidas pelos órgãos de normalização: ISO e IEC. 
+
+ 
+
+Vamos abordar agora as normas de maior destaque. Vamos lá!
+
+
+ISO 9241
+
+Trata de requisitos ergonômicos para o trabalho com dispositivos de interação visual. Na parte 11, mais especificamente, ela aborda orientações sobre usabilidade. Seu objetivo é definir o conceito de usabilidade e explicar como identificar a informação necessária a ser considerada na especificação ou avaliação de usabilidade de um dispositivo em termos de medidas de desempenho e satisfação do usuário. Por fim, ela orienta, na forma de princípios e técnicas gerais, medidas de usabilidade e como usar métodos específicos.
+
+
+Comentário
+A parte 11 da ISO 9241 ― Orientações sobre usabilidade ― define usabilidade como: “Medida na qual um produto pode ser usado por usuários específicos para alcançar objetivos específicos com eficácia, eficiência e satisfação em um contexto específico de uso”.
+
+
+ISO 13407
+
+Define o “Processo de projeto centrado no usuário para sistemas interativos” e dá orientações para garantir a qualidade de um projeto centrado no usuário. Essa norma define um ciclo de desenvolvimento iterativo, de forma que os requisitos reflitam corretamente as necessidades do usuário e da organização. Além disso, ela também específica todo o contexto em que o software será utilizado.
+
+ 
+
+A ISO 13407 apresenta o conceito de projeto centrado no usuário, que tem como princípio focalizar as tarefas que cada um desenvolverá na utilização do software, medir a utilização do produto de acordo com a interação do usuário e usar um processo de design iterativo, podendo ser modificado após as fases de prototipação ou testes.
+
+ 
+
+Confira alguns princípios que incorporam a visão do usuário no processo de desenvolvimento de software:
+
+ 
+
+Definir quais aspectos do uso do sistema devem ser controlados por software e hardware.
+Aproveitar os usuários com maior conhecimento no contexto em que a aplicação será usada para fazer as definições.
+Realizar avaliação contínua usando técnicas de prototipação.
+Usar grupos multidisciplinares para contemplar várias áreas de conhecimento.
+ 
+
+Utilizar os princípios estudados pode trazer benefícios, como aumento da produtividade, da qualidade de trabalho e da satisfação do usuário, além de redução de custos em treinamento.
+
+
+ISO PAS 18152:2010
+
+Determina o “processo de avaliação de problemas em interfaces humano-computador” e apresenta um modelo de sistemas humanos (HS - human systems) para uso na avaliação em conformidade com a ISO/IEC 15504, que mede a maturidade de uma organização na execução dos processos que tornam um sistema utilizável, saudável e seguro. 
+
+ 
+
+Além disso, ela descreve os processos que tratam de problemas do sistema humano e os resultados desses processos. Por último, ela detalha as práticas e os produtos de trabalho associados à obtenção dos resultados de cada processo.

@@ -1,0 +1,48 @@
+Tipos de objetos de interação
+Para desenvolver sistemas que atendam às necessidades dos usuários, é necessário compreender os objetos de interação e como eles influenciam a usabilidade de uma interface. Esses objetos facilitam a execução de tarefas e a manipulação de informações, melhorando a eficiência e a experiência do usuário. 
+
+ 
+
+Confira, no vídeo a seguir, os diferentes tipos de objetos de interação e como utilizá-los efetivamente em suas interfaces.
+
+
+
+Uma interface adequada deve se antecipar e reagir às ações dos usuários. Por isso, devemos implementar elementos de diálogo que cumpram os objetivos de convite à interação, apoio às ações necessárias para o usuário e respostas/retorno sobre as ações realizadas. Os objetos de interação são elementos nas interfaces digitais que permitem aos usuários acessar e manipular o conteúdo necessário à execução de suas tarefas, sendo próprios para isso. 
+
+ 
+
+Podemos dizer que objetos de interação são objetos de software com recursos para gerar imagens e reagir conforme as ações dos usuários sobre as imagens. Veja agora os quatro principais grandes grupos em que os objetos são classificados:
+
+
+1
+Apresentação
+
+
+Identificar tipos de elementos que apresentam informação ao usuário, como listas, tabelas, textos e gráficos, entre outros.
+
+
+2
+Edição
+
+
+ 
+
+Reconhecer os tipos de elementos que permitem a edição de conteúdo, por exemplo, principalmente campos para inserção de dados e opções de escolha.
+
+
+3
+Manipulação
+
+
+ 
+
+Identificar tipos de elementos que permitem a manipulação da interface, como cursores de mouse e comandos táteis.
+
+
+4
+Seleção
+
+
+ 
+
+Localizar tipos de elementos que permitem escolhas de elementos na interface, por exemplo, menus, listas de seleção e barras de ferramentas.

@@ -1,0 +1,30 @@
+Fases de um projeto de interface humano-computador
+Segundo Rogers, Sharp e Preece (2013), as fases de um projeto de IHC são fundamentais para garantir que o sistema atenda às necessidades reais dos usuários e suporte todos os requisitos de negócio. O processo começa com a compreensão dos processos de trabalho dos usuários e suas necessidades.
+
+
+Neste vídeo serão apresentadas as fases de um projeto de interface humano-computador.
+
+
+
+Segundo Rogers, Sharp e Preece (2013), as fases de um projeto de IHC são principalmente:
+
+
+
+Identificar as necessidades e definir os requisitos
+
+Nesta atividade, deverão ser entendidos os processos de trabalho dos usuários, verificadas as suas reais necessidades perante o uso do sistema para apoio aos seus processos de trabalho e listados todos os requisitos de negócio que esse sistema deverá suportar.
+
+
+Desenvolver designs alternativos
+
+Nesta atividade, devem ser explorados vários aspectos com relação ao visual e à usabilidade do software. Cenários de interação devem ser criados para serem avaliados e escolhidos pelos usuários.
+
+
+Construir versões interativas dos designs
+
+Nesta atividade, são desenvolvidos protótipos que permitem ao usuário vivenciar a visão da interface em um software próprio para prototipação. Isso ajuda muito a esclarecer os requisitos da interface.
+
+
+Avaliar o design
+
+Nesta atividade, as alternativas de design apresentadas nos protótipos são avaliadas e ranqueadas mediante critérios definidos previamente, como: aparência, quantidade de requisitos satisfeitos, usabilidade, entre outros.

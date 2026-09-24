@@ -1,0 +1,80 @@
+Contextos de avaliação de interface humano-computador
+Para realizar a avaliação de interfaces humano-computador, precisamos entender os diferentes momentos e contextos. Assim, para garantirmos a qualidade de uso de sistemas interativos, precisamos entender qual a técnica adequada para cada etapa do desenvolvimento e quais dados são relevantes para aprimorar a experiência do usuário.
+
+
+Assista ao vídeo para compreender como e quando realizar avaliações de IHC.
+
+
+
+A avaliação de interface humano-computador pode ser realizada em diferentes momentos do processo de desenvolvimento. Em relação ao “quando avaliar”, classificamos as avaliações em dois tipos: Formativa e somativa. Conheça mais sobre as duas avaliações a seguir.
+
+
+
+Avaliação formativa
+
+É conduzida ao longo de todo o processo de desenvolvimento com objetivo de garantir o entendimento sobre o que os usuários querem e precisam. Este tipo de avaliação inclui a análise e comparação das ideias e alternativas de design, durante a elaboração da solução.
+
+ 
+
+A avaliação formativa permite identificar o mais cedo possível problemas na interação e na interface, que possam prejudicar a qualidade de uso. Diversos artefatos são construídos para representar uma solução de interface, ou suas partes, ao longo do processo de desenvolvimento. A avaliação formativa pode usá-los como entrada.
+
+ 
+
+Por exemplo: cenários de uso, wireframes, storyboards, modelos de interação e protótipos em diferentes níveis de detalhe e fidelidade. Veja dicas de como aprender mais sobre alguns desses artefatos em Explore+.
+
+
+Avaliação somativa
+
+É realizada sobre a solução, completa ou parcial, de acordo com o escopo do projeto, mas apenas no final do processo de desenvolvimento. A solução de interface pode ser representada por um protótipo de média ou alta fidelidade, ou até mesmo pelo sistema interativo implementado.
+
+ 
+
+A avaliação somativa julga a qualidade de uso de uma interface, buscando evidências que indiquem que os objetivos foram atingidos. Em outras palavras, a avaliação somativa atesta que o produto possui os níveis de qualidade de uso desejados.
+
+Outra questão relacionada ao contexto de uma avaliação de interface humano-computador é o ambiente (local) de avaliação. Nesse sentido, as avaliações, que envolvem diretamente a participação dos usuários, podem ser realizadas em contexto real de uso ou em laboratório. Saiba mais sobre cada avaliação a seguir.
+
+
+
+Representação de teste de usabildiade em ambiente real.
+Contexto real de uso
+
+A avaliação no ambiente real do usuário permite ampliar a observação de casos típicos de uso, que não seriam percebidos em uma avaliação em laboratório. Porém, ainda assim, não é possível garantir que todos os aspectos do sistema sejam analisados, uma vez que o observador não pode controlar o uso do sistema interativo nessas situações.
+
+
+
+Teste de usabilidade em ambiente controlado.
+Laboratório
+
+A avaliação em laboratório, por outro lado, oferece um controle maior, e permite que o avaliador defina e interfira no ambiente como um todo e na forma de interação do usuário com o sistema. O laboratório é um ambiente configurado previamente para proporcionar experiências de uso planejadas. Assim, o avaliador garante que não ocorrerão interrupções ou problemas que possam tirar o foco do usuário das tarefas a serem executadas com apoio do sistema. Uma avaliação em laboratório também permite comparar sistematicamente as experiências que diferentes usuários tiveram com o sistema.
+
+
+
+
+Um ambiente de observação de uso costuma possuir duas salas: uma sala onde o usuário vai utilizar o sistema (sala de uso) e outra onde o avaliador vai observá-lo através de um vidro espelhado (sala de observação). Outro avaliador pode ficar atrás do participante como apoio, mas buscando não expressar opiniões ou fornecer instruções que prejudiquem ou invalidem a avaliação.
+
+
+Em geral, apresentamos ao participante a sala de observação para que ele conheça o que fica do outro lado do vidro espelhado. O registro dos dados observados pode ser feito de várias formas, de acordo com a técnica de avaliação que está sendo usada.
+
+
+
+Representação de coleta de dados.
+
+Dependendo do tipo de avaliação, o avaliador pode coletar dados sobre os aspectos positivos e negativos identificados durante o uso do sistema e as necessidades e oportunidades de intervenção.
+
+ 
+
+A abrangência e o foco da coleta de dados devem ser definidos de acordo com os objetivos da avaliação.
+
+
+Os dados coletados são interpretados e analisados de acordo com a técnica de avaliação escolhida para produzirem resultados que atendam aos objetivos da avaliação, ou seja, que busquem responder às perguntas específicas elaboradas na definição da avaliação.
+
+
+Cada técnica de avaliação foca em dados e resultados de diferentes tipos. Veja!
+
+
+
+Dados qualitativos
+Representam conceitos que não são representados numericamente. Além dos dados nominais, também são dados qualitativos as respostas livres coletadas em questionários e entrevistas, tais como expectativas, explicações, críticas, sugestões, e outros tipos de comentários.
+
+Dados quantitativos
+Representam numericamente uma quantidade, ou seja, uma grandeza resultante de uma contagem ou medição, tais como: o tempo e número de passos necessários para alcançar determinado objetivo; o número de erros cometidos durante uma sessão de uso; quantas vezes a ajuda on-line e o manual de uso foram consultados; e quantos usuários conseguiram alcançar o objetivo.

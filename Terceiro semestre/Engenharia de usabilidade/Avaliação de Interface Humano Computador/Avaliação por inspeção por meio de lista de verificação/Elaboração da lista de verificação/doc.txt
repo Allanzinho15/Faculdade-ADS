@@ -1,0 +1,51 @@
+Elaboração da lista de verificação
+Para garantir que critérios de usabilidade sejam adequadamente considerados, é recomendado elaborar listas de verificação para avaliação de interfaces humano-computador. Portanto, ter como base critérios ergonômicos bem definidos, propostos por Bastien e Scapin (1993), ajuda a reduzir a subjetividade e aumentar a eficácia da avaliação.
+
+
+Assista ao vídeo para entender como construir listas de verificação eficazes e aplicá-las na avaliação de IHC.
+
+
+
+A elaboração das listas deve ser feita de forma a reduzir ao máximo o número de questões subjetivas que possam colocar o avaliador em dúvida, ou exigir dele conhecimento sobre usabilidade que ele não possui. Além disso, os itens não devem ser muito extensos ou, pelo contrário, estar incompletos ou mal organizados. Mas qual é o conteúdo em si que essa lista deve apresentar?
+
+
+A questão mais importante a ser considerada é que a usabilidade de uma interface humano-computador depende da utilização de critérios bem definidos.
+
+
+
+Representação do conceito de listas.
+
+Esta técnica tem origem nos estudos da área chamada ergonomia cognitiva, que visa a adaptação do trabalho ao homem, especialmente a adaptação dos sistemas automatizados à inteligência humana e às exigências das tarefas, adequando às condições particulares da situação do trabalho.
+
+
+Os autores Bastien e Scapin (1993) definiram um conjunto de critérios ergonômicos para a avaliação de um sistema. Podemos tomar como base estes critérios para ajudar na construção das listas de verificação para avaliação de IHC.
+
+Segundo Bastien e Scapin (1993), a definição de critérios de usabilidade é parte de um projeto mais amplo, que aponta para o desenvolvimento de técnicas que podem incorporar considerações de ergonomia dentro do processo de design e avaliação da interface humano-computador. Dimensões normativas podem ser baseadas em diferentes estratégias de projeto de interfaces.
+
+
+A imagem a seguir apresenta uma visão consolidada dos critérios ergonômicos.
+
+
+
+Critérios ergonômicos integrados.
+
+A elaboração das questões da lista de verificação deve ser fundamentada na aplicação dos critérios ergonômicos, e pode ser também apoiada por um glossário e informações detalhadas sobre o critério que está sendo avaliado. Um formulário pode apresentar as questões e as possíveis respostas com espaço para o avaliador fazer suas marcações.
+
+
+A imagem a seguir apresenta um exemplo de questões de uma lista de verificação, relacionada com o critério de visibilidade do estado do sistema.
+
+
+
+Parte de uma lista de verificação.
+
+O projeto ErgoList (2020) é resultado da colaboração entre o SoftPólis (núcleo Softex-2000 de Florianópolis) e o LabIUtil, (Laboratório de Utilizabilidade UFSC/SENAI-SC/CTAI). Em ErgoList (2020), podemos encontrar diversos modelos de checklist com base nos diferentes critérios apresentados aqui.
+
+
+Por exemplo, na imagem Questões sobre presteza extraídas do checklist do ErgoList, 2020, mostramos algumas questões para o critério presteza, e na imagem Questões sobre consistência extraídas do checklist do ErgoList, 2020, mostramos algumas questões sugeridas nesse modelo para a questão consistência. Acompanhe!
+
+
+
+Questões sobre presteza extraídas do checklist do ErgoList, 2020.
+
+
+Questões sobre consistência extraídas do checklist do ErgoList, 2020.

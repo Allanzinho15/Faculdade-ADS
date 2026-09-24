@@ -1,0 +1,64 @@
+Usabilidade: critérios e requisitos
+Os critérios de usabilidade garantem que a interface seja eficiente, fácil de memorizar e ofereça uma experiência satisfatória às necessidades dos usuários. 
+
+ 
+
+Acompanhe o vídeo a seguir para explorar detalhadamente esses aspectos e aprender como aplicá-los em seus projetos.
+
+
+
+Critérios da usabilidade
+
+
+Além de todos os critérios ergonômicos, alguns aspectos de usabilidade também devem ser observados na construção de uma interface de fácil uso. São eles:
+
+
+
+Facilidade de uso
+
+Permitir que o usuário realize suas tarefas já no primeiro contato com a interface do sistema.
+
+
+Eficiência
+
+Possibilitar que o usuário realize suas tarefas com o melhor rendimento e com o mínimo de erros possíveis.
+
+
+Facilidade de memorização
+
+Viabilizar que, mesmo depois de um período sem usar o sistema, o usuário consiga utilizá-lo com a mesma facilidade e rapidez.
+
+
+Taxa de erros
+
+Permitir que os próprios usuários resolvam, de maneira rápida e fácil, os erros. Além disso, devem existir formas de verificar a quantidade de erros que os usuários estão cometendo e se eles são graves ou não.
+
+
+Satisfação
+
+Ser agradável e atender às necessidades de interação com o usuário.
+
+Requisitos da usabilidade
+
+
+Segundo Norman (1986), um sistema orientado à usabilidade possui uma interface que executa uma tarefa sem chamar nenhuma atenção para si, permitindo que os usuários não precisem focalizar a sua energia na interface em si, mas apenas no trabalho que desejam executar.
+
+ 
+
+Os sistemas devem ser projetados visando atender as necessidades e expectativas dos usuários. Para tal, o processo de desenvolvimento deve ser centrado no usuário, embora isso não seja um processo fácil. Uma das razões é a pouca atenção que se dá aos requisitos de usabilidade desde o início do projeto.
+
+ 
+
+De acordo com Pressman (1992), em uma boa interface, os requisitos desejáveis podem ser agrupados em duas categorias. Veja!
+
+
+Exibição da informação
+
+
+Consistência, feedback, níveis de habilidade e conhecimento humano, percepção humana, metáforas, minimização de carga de memória, classificação funcional dos comandos e projeto independente da resposta do monitor. 
+
+
+Entrada de dados
+
+
+Mecanismos de ajuda, prevenção e tratamento de erros.

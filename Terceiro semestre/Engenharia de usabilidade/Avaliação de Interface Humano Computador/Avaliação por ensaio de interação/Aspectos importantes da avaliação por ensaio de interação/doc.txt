@@ -1,0 +1,85 @@
+Aspectos importantes da avaliação por ensaio de interação
+Esta técnica poderosa permite entender como os usuários interagem com um sistema em situações reais ou simuladas. Além disso, coleta métricas quantitativas e qualitativas, fundamentais para melhorar a usabilidade do sistema.
+
+
+Assista ao vídeo para aprender mais sobre a aplicação prática da avaliação por ensaio de interação e como ela pode beneficiar seu projeto de IHC.
+
+
+
+A técnica de avaliação por ensaio de interação abrange diversos aspectos que devem ser observados em todas as fases desde o planejamento até a execução e análise dos dados. Os processos de mensuração e estimação constituem a base dessa técnica.
+
+
+Exemplo
+O desempenho e as preferências do usuário são estimados e mensurados a partir da observação dos usuários realizando as tarefas predefinidas no script em ambiente controlado ou desenvolvendo as suas atividades cotidianas similares a tarefas de teste pré-especificadas em ambiente não controlado, e da coleta de dados objetivos (contagens de ações) e subjetivos (comportamentos e preferências dos usuários a respeito do sistema).
+
+
+Os dados coletados nesses contextos devem estar fundamentados em planejamentos prévios do que é significativo medir, conforme os objetivos do ensaio e o tipo de problema a ser avaliado. Esses dados constituem os indicadores ou métricas de desempenho e preferência.
+
+
+A seguir, observe alguns exemplos de métricas quantitativas e qualitativas de desempenho.
+
+
+
+Métricas quantitativas de desempenho
+
+Veja exemplos:
+ 
+
+Tempo de execução de tarefa.
+Número e porcentagem de tarefas completadas corretamente com ou sem assistência.
+Número e porcentagem de tarefas completadas incorretamente.
+Razão entre acertos e erros.
+Tempo de recuperação de erros.
+Tempo de acesso à informação no manual.
+Tempo de acesso à informação na ajuda ou documentação.
+Número de comandos ou de passos para conclusão de uma tarefa.
+Frequência de uso de mecanismos de ajuda e tempo gasto para consultá-los.
+Número de acessos aos mecanismos de ajuda que solucionaram problemas do usuário.
+Número de vezes nas quais o usuário expressa frustração (ou satisfação).
+Proporção de usuários favoráveis ao uso do sistema teste em comparação com competidores.
+
+Métricas qualitativas de desempenho
+
+Alguns exemplos de indicadores subjetivos são:
+
+ 
+
+Adequação das funcionalidades do produto às tarefas do usuário.
+Atendimento das expectativas do usuário pelo produto.
+Facilidade de instalação e customização do produto.
+Facilidade de aprendizado do produto.
+Facilidade de uso do produto.
+Facilidade de realização de tarefas específicas.
+Utilidade da documentação online e offline.
+Facilidade de localização da informação de interesse.
+Facilidade de compreensão da informação de interesse.
+Utilidade dos exemplos contidos nos mecanismos de ajuda.
+Preferência por um sistema em comparação com sistemas concorrentes ou versões diferentes do mesmo sistema.
+Os mecanismos de avaliação mais frequentemente empregados em ensaios de interação são observações, questionários, entrevistas, verbalização de procedimentos, interação construtiva, ensaio retrospectivo, captura automática diretamente da aplicação, discussões em grupo focal, e retorno imediato de opiniões do usuário.
+
+
+É importante ainda destacar os aspectos confiabilidade e validade dos ensaios realizados. Veja!
+
+
+Confiabilidade
+
+Diz respeito à obtenção de resultados similares após a repetição dos ensaios sob condições similares.
+
+Validade
+
+Está relacionada com a relevância dos testes realizados e dos resultados obtidos para a usabilidade do sistema quando utilizado em condições reais, ou seja, fora do laboratório.
+
+A veracidade dos resultados obtidos deve ser, sempre que possível, confrontada com os aspectos de usabilidade desejados para o sistema em avaliação.
+
+
+Benyon (2011) ressalta que ainda se deve levar em consideração os aspectos éticos em qualquer processo de teste feito com participação de usuários.
+
+
+Algumas das exigências éticas a serem atendidas são:
+
+
+Explicar aos participantes os objetivos e todos os detalhes sobre o estudo.
+Deixar claro as expectativas de anonimato e privacidade.
+Garantir que os usuários entendam que podem interromper o teste em qualquer momento.
+Adotar um documento de consentimento de participação por escrito e assinado pelo usuário.
+

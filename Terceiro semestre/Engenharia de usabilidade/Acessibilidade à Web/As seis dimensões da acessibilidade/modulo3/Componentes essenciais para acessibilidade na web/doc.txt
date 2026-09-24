@@ -1,0 +1,22 @@
+Componentes essenciais para acessibilidade na web
+Quando falamos sobre o conceito de acessibilidade web, é comum pensarmos em como tornar acessíveis as informações disponíveis em uma página da web, tais como textos, imagens, áudios e vídeos. No entanto, o conteúdo é apenas um dos sete componentes essenciais para garantia de uma web acessível. Conhecer esses componentes, como eles se relacionam e identificar os padrões de acessibilidade web desenvolvidos para cada um dos diferentes componentes torna-se fundamental para o projeto e desenvolvimento de uma web acessível.
+
+Neste vídeo, você vai aprender sobre os componentes essenciais para garantir a acessibilidade na web.
+
+
+Para o projeto e desenvolvimento de uma web acessível, que possibilite seu acesso a todas as pessoas, devemos conhecer todos os componentes do ambiente web. São, no total, sete componentes: conteúdo, agentes do usuário, tecnologia assistiva, usuários, desenvolvedores, ferramentas de autoria e ferramentas de avaliação. Todos esses componentes possuem um papel importante na promoção da acessibilidade web. A seguir, vamos detalhar cada um deles, demostrar como eles se relacionam e indicar os diferentes padrões de acessibilidade desenvolvidos pelo W3C para cada componente.
+
+Componente conteúdo
+Comecemos por um dos componentes mais próximos de nosso conhecimento, “conteúdo”. O W3C define como conteúdo todas as informações presentes em uma página web ou aplicação web, estejam elas disponíveis em formato de texto, imagem, áudio ou codificadas em uma linguagem web, como HTML e CSS.
+
+Componente agente de usuário
+Para acessar o conteúdo disponível na internet (componente conteúdo), os usuários precisam do componente “agente de usuário”. Um agente de usuário é qualquer software que apresente o conteúdo web para os usuários. Os navegadores web como Google Chrome e Mozilla Firefox são agentes de usuários, uma vez que eles interpretam informações codificadas em uma linguagem web e as apresentam em uma interface de usuário.
+
+Componente tecnologia assistiva
+Nem todos os usuários conseguem acessar o conteúdo Web somente a partir do componente “agentes de usuário” e precisam do apoio do componente “tecnologia assistiva” para ter acesso ao conteúdo web. Fazendo um paralelo com o mundo físico, assim como algumas pessoas precisam de uma cadeira de rodas (tecnologia assistiva) para explorar a cidade, no ambiente virtual, algumas pessoas precisam de leitores de tela (tecnologia assistiva) para navegar na web. Os recursos de tecnologias assistivas podem se apresentar na forma de hardware, como teclados modificados, e na forma de software, como leitores de tela.
+
+Componente usuário
+Como não poderia deixar de ser, os “usuários” também são um dos componentes essenciais para acessibilidade web. Reconhecer os diferentes grupos de usuários, seu nível de conhecimento, habilidade e experiência no ambiente web impacta no desenvolvimento de uma web mais acessível. Por outro lado, para que os “usuários” acessem os “conteúdos”, precisamos dos “desenvolvedores”, componente que compreende os seguintes tipos de perfis: designers, codificadores, autores, usuários que produzem conteúdo etc.
+
+Componentes ferramentas de autoria e ferramenta de avaliação
+Temos outros dois componentes identificados como “ferramentas de autoria”, que são os softwares utilizados para desenvolvimento de websites ou conteúdos, como Drupal e WordPress, e o componente “ferramentas de avaliação”, que são ferramentas que avaliam se a página Web está acessível, segundo critérios, diretrizes e padrões de acessibilidade, como validadores HTML, validadores CSS etc. Ambos esses componentes devem ser desenvolvidos de forma acessível para que pessoas com deficiência possam criar e validar conteúdo web.

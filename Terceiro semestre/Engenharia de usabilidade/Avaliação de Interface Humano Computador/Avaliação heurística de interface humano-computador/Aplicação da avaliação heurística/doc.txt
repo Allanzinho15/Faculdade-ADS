@@ -1,0 +1,211 @@
+Aplicação da avaliação heurística
+Precisamos compreender e aplicar a técnica de avaliação heurística para garantir a usabilidade e a qualidade das interfaces dos sistemas interativos. Dessa forma, podemos identificar e corrigir problemas de usabilidade, proporcionando uma melhor experiência ao usuário.
+
+
+Assista ao vídeo para aprender como realizar uma avaliação heurística de forma prática e eficaz.
+
+
+
+Vamos aplicar a técnica de avaliação heurística em um exemplo. O restaurante Comida Saudável está oferecendo a compra de pratos para entrega em domicílio através de seu novo site na internet. Mas, antes de colocar o site em operação, é preciso avaliar se sua interface atende aos requisitos de usabilidade. Escolhemos a técnica de avaliação heurística como ponto de partida. O que devemos fazer?
+
+
+Vamos seguir o passo a passo explicado!
+
+
+1. Preparação
+
+Para simplificar, teremos dois avaliadores e escolhemos apenas 2 telas do sistema, como mostrado nas imagens a seguir.
+
+
+
+Tela de login do sistema.
+
+
+Tela de confirmação de item de pedido.
+
+Decidimos basear nossa avaliação em 3 heurísticas:
+
+
+Consistência e padronização
+Prevenção de erros
+Controle/liberdade do usuário
+
+2. Coleta dos dados
+
+O avaliador 1 percebeu as seguintes violações nas diretrizes.
+
+
+
+Tela 1
+
+A1V1:– prevenção de erros:
+
+ 
+
+O elemento secundário Quero me cadastrar tem menos destaque do que o elemento Entrar. Isso pode levar o usuário a acionar o botão errado ou se perguntar se entrou corretamente na tela de login, e até mesmo voltar para a página anterior e repetir a operação de acesso a essa página.
+
+
+Tela 2
+
+A1V2 – consistência e padronização:
+
+ 
+
+A descrição do item de pedido e observação estão usando a mesma cor dos botões.
+
+O avaliador 2 percebeu as seguintes violações nas diretrizes.
+
+
+
+Tela 1
+
+A2V1 – controle/liberdade do usuário:
+
+ 
+
+O usuário não tem a opção de pedir para o sistema se lembrar do seu e-mail ou mesmo manter seu login ativo, como ocorre em boa parte dos sites de comércio eletrônico.
+
+
+Tela 2
+
+A2V2 – consistência e padronização:
+
+ 
+
+A descrição do item de pedido está com a mesma cor dos botões.
+
+ 
+
+A2V3 – prevenção de erros:
+
+ 
+
+O usuário tem duas opções de ação, incluir observações e adicionar ao carrinho/cancelar o pedido. Dessa forma, o usuário poderia se confundir e não fazer uma das duas ações que realmente deseja.
+
+3. Interpretação dos dados
+
+O avaliador 1 atribuiu os seguintes graus de severidade e sugestões de correção para as violações encontradas.
+
+
+
+A1V1
+
+A1V2
+Problema grande
+
+ 
+
+Sugestão: dar mais ênfase ao botão secundário Quero me cadastrar.
+
+
+
+
+
+
+O avaliador 2 atribuiu os seguintes graus de severidade para as violações encontradas.
+
+
+
+A2V1
+
+A2V2
+
+A2V3
+Problema grande
+
+ 
+
+Sugestão: incluir a opção de lembrar do e-mail.
+
+
+
+
+
+
+
+
+4. Consolidação dos resultados
+
+Após compartilharem as listas de problemas e anotações, os avaliadores fizeram uma breve discussão sobre cada um dos itens. O avaliador 2 concordou que o A2V2 é um problema pequeno, e não cosmético, como tinha destacado anteriormente. Assim, chegaram a um consenso sobre 4 itens a serem incluídos em seu relatório.
+
+
+5. Relato dos resultados
+
+O relatório final foi escrito com o conteúdo apresentado a seguir.
+
+
+
+Objetivos da avaliação
+
+As seguintes questões devem ser respondidas:
+
+ 
+
+O sistema tem interface consistente e padronizada?
+O sistema previne erros da parte do usuário?
+O sistema dá liberdade de escolhas para o usuário?
+
+Escopo da avaliação
+
+A avaliação foi feita através da técnica de avaliação heurística, concentrando-se em duas telas do sistema (tela de login e tela de confirmação de item de pedido).
+
+
+Descrição da técnica de avaliação heurística
+
+A avaliação heurística é uma técnica de inspeção que guiou os avaliadores a observarem as telas da interface em busca de problemas que poderiam vir a prejudicar a usabilidade do sistema.
+
+
+Conjunto de diretrizes utilizado
+
+As heurísticas utilizadas foram: consistência e padronização, prevenção de erros e controle/liberdade do usuário.
+
+
+Número e o perfil dos avaliadores
+
+Dois avaliadores, especialistas em IHC, com 10 anos de experiência, foram responsáveis pela execução da avaliação.
+
+
+Lista de problemas encontrados
+
+Violação 1
+
+ 
+
+Local: tela 1.
+Descrição do problema: o elemento secundário Quero me cadastrar tem menos destaque do que o elemento Entrar.
+Diretriz violada: prevenção de erros.
+Severidade do problema: problema grande.
+Sugestões de solução: dar mais ênfase ao botão secundário (Quero me cadastrar).
+ 
+
+Violação 2
+
+ 
+
+Local: tela 2.
+Descrição do problema: a descrição do item de pedido e observação estão com a mesma cor dos botões.
+Diretriz violada: consistência e padronização.
+Severidade do problema: problema pequeno.
+Sugestões de solução: alterar a cor dos textos para preto.
+ 
+
+Violação 3
+
+ 
+
+Local: tela 1.
+Descrição do problema: o usuário não tem a opção de pedir para o sistema se lembrar do seu e-mail ou mesmo manter seu login ativo, como ocorre em boa parte dos sites de comércio eletrônico.
+Diretriz violada: controle/liberdade do usuário.
+Severidade do problema: problema grande.
+Sugestões de solução: incluir a opção de lembrar do e-mail.
+ 
+
+Violação 4
+
+ 
+
+Local: tela 1.
+Descrição do problema: o usuário tem duas ações, incluir observações e adicionar ao carrinho/cancelar o pedido.
+Diretriz violada: prevenção de erros.
+Severidade do problema: problema catastrófico.
+Sugestões de solução: separar as duas ações de forma clara.

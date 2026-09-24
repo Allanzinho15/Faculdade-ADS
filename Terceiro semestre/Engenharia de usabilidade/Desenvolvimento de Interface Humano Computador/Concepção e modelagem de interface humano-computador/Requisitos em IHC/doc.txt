@@ -1,0 +1,19 @@
+Requisitos em IHC
+No processo de desenvolvimento de software, o levantamento de requisitos é uma fase crucial em que se compreendem os processos de trabalho dos usuários e suas necessidades. Durante essa fase, analistas se reúnem com clientes e stakeholders para coletar informações detalhadas sobre as funcionalidades desejadas para o sistema. O objetivo é alinhar expectativas e assegurar um entendimento claro entre usuários e desenvolvedores, formalizando esses requisitos em um documento acordado.
+
+
+Confira neste vídeo, por meio de exemplos, o que é o levantamento de requisitos e entenda sua importância.
+
+
+
+No processo de desenvolvimento de software, existe uma fase inicial chamada de levantamento de requisitos. É nessa fase que entendemos o funcionamento dos processos de trabalho dos usuários e suas necessidades para o sistema.
+
+
+Nessa fase, o analista se reúne com os clientes e outros stakeholders com o objetivo de coletar informações sobre o que desejam para o sistema. O levantamento de requisitos é a fase em que se definem todas as funcionalidades que o sistema vai ter e, como é muito importante, costuma-se assinar um documento contendo todos os requisitos do software, como um acordo entre o usuário e o desenvolvedor.
+
+
+Atenção
+O objetivo é alinhar as expectativas do cliente e de quem está desenvolvendo o software. Outro benefício de termos esse documento é o controle do projeto. Caso tenhamos alguma alteração, ele deve ser ajustado e acordado novamente.
+
+
+Existem diversas técnicas para o levantamento de requisitos e, nestas, algumas práticas são bem interessantes para IHC.

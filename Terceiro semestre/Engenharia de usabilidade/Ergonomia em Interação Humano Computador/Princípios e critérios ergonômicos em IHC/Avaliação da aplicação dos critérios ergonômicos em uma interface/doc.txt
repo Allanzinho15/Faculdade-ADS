@@ -1,0 +1,50 @@
+Avaliação da aplicação dos critérios ergonômicos em uma interface
+A verificação e validação ergonômica são muito importantes em todas as etapas do ciclo de vida do desenvolvimento de software, pois ajudam a identificar e solucionar problemas de IHC antes que o usuário final os encontre. 
+
+ 
+
+Assista a este vídeo para aprender sobre as técnicas de avaliação heurística e inspeção ergonômica, essenciais para criar interfaces eficientes e agradáveis.
+
+
+
+Existem algumas técnicas para realizar a verificação e validação ergonômica. Além disso, há também duas formas de avaliação: heurística ou por inspeção. A intenção é descobrir possíveis problemas na interação homem-computador. Utilizando ferramentas como listas de verificação ou checklists de ergonomia, o objetivo é produzir um diagnóstico que antecipe os problemas que o usuário poderia encontrar durante a interação. 
+
+ 
+
+Observe a diferença entre elas!
+
+
+Avaliação heurística
+
+
+Produz um julgamento sobre as qualidades ergonômicas das interfaces. Deve ser feita por um grupo de especialistas, pois, por ser uma avaliação subjetiva, existem diferenças entre as opiniões de especialistas.
+
+
+Inspeções ergonômicas
+
+
+São vistorias baseadas em listas de verificação (checklists) com diferentes níveis de detalhe. Elas sistematizam o diagnóstico. 
+
+
+Para uso das técnicas de inspeções ergonômicas, é importante definir os principais aspectos de inspeção, a saber:
+
+
+Abordagem
+
+
+Estabelecer a dimensão da inspeção.
+
+
+Modelo subjacente
+
+
+Determinar os elementos e a organização da dimensão do problema.
+
+
+Dinâmica
+
+
+Indicar a ordem de exame dos elementos do modelo.
+
+
+Os resultados das inspeções ergonômicas tendem a ser uniformes, pois existem questões a responder sobre a ergonomia do projeto. O objetivo da técnica é validar, com o usuário, as funcionalidades do software e suas formas de utilização.

@@ -1,0 +1,187 @@
+Definindo as representações do projeto
+No processo de levantamento de requisitos para o design de interfaces humano-computador (IHC), é essencial utilizar representações claras e estruturadas para registrar, organizar, refinar e analisar os dados coletados. Entre as principais representações estão os perfis de usuário, personas, cenários de uso e modelos de tarefas.
+
+
+Confira este vídeo no qual serão apresentados os conceitos básicos, o perfil de usuário, as personas, os cenários de análise e os modelos de tarefas.
+
+
+
+Para registro das informações coletadas no processo de levantamento de requisitos precisamos de representações.
+
+
+Aqui falaremos sobre diversas representações e modelos utilizados para registrar, organizar, refinar e analisar os dados coletados, entre eles: perfil de usuário, personas, cenários de análise ou de problema e modelos de tarefas.
+
+
+Perfil do usuário
+
+Consiste em uma representação detalhada das características e necessidades de um usuário típico de um sistema ou produto, visando conhecer o grau de domínio desse usuário em relação à área de atuação do sistema e em relação às tarefas que ele deverá realizar ao utilizar o sistema.
+
+A intenção desse levantamento de informações sobre cada usuário é poder categorizar os mesmos grupos de usuários, com base em semelhanças, verificando principalmente quais usuários poderão realizar determinadas tarefas no sistema.
+
+A definição do perfil do usuário é importante, pois é para ele que o sistema será construído.
+
+
+Personas
+
+É um termo que representa um grupo hipotético de usuários.
+
+
+Personas são definidas, principalmente, por seus objetivos de atividade no sistema em geral.
+
+
+Uma boa prática citada por muitos autores é termos poucas personas para um sistema. Muitas delas em paralelo geram muitos conjuntos e isso pode complicar muito as funcionalidades do sistema, pois vamos ter que “agradar” muitos pontos de vista diferentes.
+
+
+Confira a seguir os elementos que uma persona deve ter.
+
+
+Identidade
+
+
+Nome, idade, avatar (foto) e dados demográficos.
+
+
+Status
+
+
+Categoria como stakeholder, usuário primário, administrador ou outras.
+
+
+Objetivos
+
+
+Objetivos definidos com relação ao sistema.
+
+
+Habilidades
+
+
+Competências e habilidades especificadas.
+
+
+Tarefas
+
+
+Tarefas que realiza normalmente e a frequência de realização.
+
+
+Relacionamentos
+
+
+Indicação das outras personas com quem se relaciona.
+
+
+O importante é que todos na equipe tenham a mesma visão sobre quais são os tipos de usuários do sistema e que possam entender como irão atuar nele. Cada projeto deve possuir seu próprio elenco de personas.
+
+
+Cada elenco de personas possui ao menos uma persona primária que é foco principal do design.
+
+
+
+Exemplo de cartões de personas.
+
+Cenários
+
+Trata-se de uma história sobre pessoas executando atividades a fim de realizar algo ou atingir um objetivo. É uma narrativa que inclui contexto sobre uma situação de uso de um sistema.
+
+
+Os cenários podem ser utilizados para descrever como algo acontece, com bastante riqueza de detalhes, de modo que promova o melhor entendimento sobre a situação. Entretanto, o mais importante é que os cenários descrevam o comportamento dos atores (personas).
+
+
+Em geral, um cenário possui um enredo que inclui sequências de ações e eventos: o que os usuários fazem, o que acontece com eles, que mudanças ocorrem no ambiente, entre outras coisas. Tem sempre um ator principal e um objetivo principal. Tem também um título que descreve brevemente a situação.
+
+
+Vejamos os elementos característicos de um cenário!
+
+
+Ambiente
+
+
+Detalhes da situação.
+
+
+Atores
+
+
+Pessoas que interagem no cenário.
+
+
+Objetivos
+
+
+O que motiva as ações dos atores.
+
+
+Planejamento
+
+
+Atividades que transformam o objetivo em comportamento.
+
+
+Ações
+
+
+Comportamentos.
+
+
+Eventos
+
+
+Ações externas ou reações internas.
+
+
+Avaliação
+
+
+Interpretação da situação.
+
+
+Os cenários podem incluir exceções, ou seja, eventos que acontecem raramente.
+
+
+Exemplo
+Sérgio, professor de computação de uma universidade, precisa utilizar o sistema dessa universidade para cadastrar as notas dos alunos no final do semestre.
+
+ 
+
+Como ele é novo na universidade, está fazendo isso pela primeira vez. Antes de iniciar, ele precisa corrigir as provas e ter uma nota única por aluno. No sistema só é permitido um lançamento por bimestre. Ele precisa também descrever se o aluno está tendo algum problema de aprendizagem ou não.
+
+ 
+
+Ele recebeu um treinamento nesse sistema assim que foi admitido na universidade. Ele teve que fazer todas as configurações para seu perfil, que é sem privilégios de administração no sistema. Sua disciplina e os alunos já estavam cadastrados no sistema pelo administrador da secretaria.
+
+ 
+
+No entanto, durante as aulas do primeiro semestre, teve a notícia da suspensão das aulas presenciais por uma semana por causa de uma olimpíada de matemática que iria acontecer na universidade e muitos dos alunos de computação estavam inscritos.
+
+ 
+
+Com isso, teve que adiar as provas e o calendário de suas aulas. Como o calendário era diferente para cada disciplina, afetada ou não pela olimpíada, cada professor ficou responsável por essa alteração.
+
+ 
+
+Para realizar essa ação, ele vai na função de calendário, vai até o mês atual e atualiza datas e horários das suas aulas em função das datas que recebeu das olimpíadas.
+
+ 
+
+Os alunos de computação podem estar participando e, portanto, com essa alteração passam a ter a visão das mudanças de suas aulas presenciais.
+
+
+Análise de tarefas
+
+Esta análise é utilizada para se ter um entendimento melhor sobre qual é o trabalho dos usuários. Nesse tipo de análise, o trabalho não é apenas elencar tarefas, mas entender como o sistema irá afetar esse trabalho realizado.
+
+
+Passo 1
+
+
+Um dos primeiros passos numa análise de tarefas é coletarmos o conjunto de objetivos das pessoas.
+
+
+Passo 2
+
+
+Num segundo passo, para cada objetivo, devemos elaborar uma lista das ações realizadas para alcançar esse objetivo.
+
+
+Existem alguns métodos para realizar análise de tarefas utilizados em IHC, como a Análise Hierárquica de Tarefas (HTA – Hierarchical Task Analysis), o GOMS (Goals, Operators, Methods, and Selection) e o ConcurTaskTrees (CTT).

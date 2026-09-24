@@ -1,0 +1,47 @@
+Técnicas de modelagem de interface
+As técnicas de bridge e design centrado no usuário são fundamentais para definir elementos concretos a partir de conceitos abstratos no design de IHC.
+
+
+A técnica de bridge transforma fluxos de trabalho dos usuários em objetos de tarefas, testados para garantir correspondência com as atividades reais.
+
+
+Já o design centrado no usuário é uma abordagem iterativa que especifica o contexto de uso, requisitos, cria a solução de design e realiza testes de usabilidade para garantir qualidade.
+
+
+Confira neste vídeo o que são as técnicas de bridge e de design centrado no usuário, com exemplos de cada uma.
+
+
+
+Essas técnicas são um conjunto de etapas e atividades para a definição de elementos concretos, partindo de elementos abstratos.
+
+
+As principais são: bridge e design centrado no usuário.
+
+
+A técnica de bridge trata da criação de tarefas de modelos de interação. É baseada numa sequência de sessões com várias pessoas envolvidas no projeto, com a intenção de criar “pontes” entre os requisitos dos usuários e da organização. Em geral, os usuários apresentam seu fluxo de trabalho, que são transformados em objetos de tarefas (caixas de diálogo e caixas de mensagens). Esses objetos, por sua vez, são testados pelos usuários participantes para verificar se atendem e correspondem às atividades que fazem atualmente e que serão transferidas para o sistema.
+
+
+Já a técnica de design centrado no usuário é uma abordagem iterativa que foca especificamente no uso do sistema. Essa técnica pressupõe que os designers irão prever como será o uso do sistema e com isso farão testes de validade desse uso.
+
+Em geral, cada iteração nessa abordagem segue basicamente quatro etapas:
+
+
+
+Etapa 1
+
+Especificação do contexto de uso onde são definidas as personas, os seus objetivos com o uso do produto e em que condições vão utilizá-lo.
+
+
+Etapa 2
+
+Especificação dos requisitos que deverão ser atendidos pelo sistema.
+
+
+Etapa 3
+
+Criação da solução de design da interface.
+
+
+Etapa 4
+
+Avaliação quanto à qualidade por meio de testes de usabilidade.

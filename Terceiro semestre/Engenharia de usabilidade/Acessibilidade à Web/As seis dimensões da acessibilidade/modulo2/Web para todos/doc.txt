@@ -1,0 +1,25 @@
+Web para todos
+Neste vídeo, você vai conhecer o conceito de acessibilidade web para todos, veremos como pessoas com deficiência podem usufruir de forma plena do ambiente web.
+
+
+Segundo o World Wide Web Consortium (W3C), acessibilidade na web significa que pessoas com deficiência podem usar a web. Sendo mais específico, a acessibilidade na web significa que pessoas com deficiência podem perceber, entender, navegar, interagir e contribuir para a web. A acessibilidade na web beneficia outras pessoas, incluindo pessoas idosas com capacidades em mutação devido ao envelhecimento.
+
+A acessibilidade na web beneficia pessoas com deficiência auditiva, cognitiva, neurológica, física, na fala ou visual. Ela beneficia também pessoas sem deficiência, em diferentes situações, como alguém que não encontra seus óculos de grau e precisa acessar um conteúdo na web, ou uma pessoa que se encontra em um local onde não é permitido ouvir áudio e precisa acessar informações passadas em um vídeo ou outras que acessam a internet a partir de uma conexão lenta ou largura de banda limitada.
+
+Conhecer e aplicar os conceitos, as recomendações e diretrizes sobre acessibilidade web é fundamental para que os responsáveis por disponibilizar conteúdo web possam disponibilizar informações na Web sem barreiras.
+
+Segundo Tim Berners-Lee, o criador da World Wide Web em 1989 e atual diretor do W3C:
+
+O poder da web está em sua universalidade. O acesso de todos, independentemente da deficiência, é um aspecto essencial.
+
+(Tim Berners-Lee, s. d.)
+Uma web acessível possibilita uma real inclusão de pessoas com deficiência, permitindo que elas realizem diferentes atividades de forma autônoma, além de beneficiar pessoas sem deficiência que utilizam a web em diferentes contextos, como nos exemplos a seguir:
+
+Uma mulher cega acessa sua conta-corrente e paga suas contas on-line.
+Um jovem cego e sem braços inclui seu curriculum em um site de vagas de empregos.
+Uma mulher com paralisia cerebral e grande comprometimento motor acessa a web utilizando somente um dedo para teclar e atualiza seu perfil em uma rede social.
+Um jovem surdo participa de uma live sobre informação em saúde.
+Uma criança de 4 anos acessa a internet por voz e localiza o vídeo do seu desenho preferido.
+Uma mãe, sem experiência no uso de computadores e internet, precisa realizar a matrícula escolar de seu filho.
+Um brasileiro, sem fluência em espanhol, busca informações sobre Buenos Aires em um site de língua espanhola acessando as galerias de fotos.
+Jovem faz check-in aéreo pelo seu smartphone a caminho do aeroporto.

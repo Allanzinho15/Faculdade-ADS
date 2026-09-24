@@ -1,0 +1,36 @@
+Affordance
+O conceito de affordance, introduzido por Norman (1998), refere-se às características perceptíveis de um software que indicam aos usuários as operações possíveis e como realizá-las.
+
+
+Essencial para o design de interfaces humano-computador (IHC), affordance facilita o reconhecimento e o uso intuitivo de um objeto sem explicações prévias, baseando-se frequentemente em padrões para reduzir a carga cognitiva.
+
+
+Neste vídeo serão apresentadas e exemplificadas as características perceptíveis para o usuário e os tipos de affordance.
+
+
+
+O affordance é um termo em inglês sem tradução no português, significando o conjunto de características do software perceptíveis pelo usuário, as quais indicam que tipos de operações podem ser realizadas com o sistema interativo, bem como as formas de realizá-las manipulando a interface.
+
+
+
+O affordance é um termo em inglês sem tradução no português, significando o conjunto de características do software perceptíveis pelo usuário, as quais indicam que tipos de operações podem ser realizadas com o sistema interativo, bem como as formas de realizá-las manipulando a interface.
+
+
+Na área de IHC, segundo Norman (1998), a affordance de um objeto é exatamente o conjunto das características capazes de mostrar aos usuários as operações que eles podem fazer com ele.
+
+
+Affordance é a capacidade que um objeto tem de ser reconhecido e utilizado exatamente para o que foi projetado, mas sem a necessidade de uma explicação prévia.
+
+
+Em geral, todo esse conhecimento é baseado em padrões. Padrões são úteis, pois somos capazes de reduzir a carga cognitiva dos usuários quando interagem com um determinado elemento.
+
+
+Para entender um pouco melhor, vejamos os quatro tipos existentes de affordance com exemplos a seguir!
+
+
+
+Explícito
+
+Objeto acompanhado de um texto indicando exatamente o que o usuário deve fazer.
+
+Exemplo: um botão de “Compre com 1 clique”.

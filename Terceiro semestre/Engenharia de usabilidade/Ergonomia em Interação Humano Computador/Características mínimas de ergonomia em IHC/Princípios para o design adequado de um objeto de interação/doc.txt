@@ -1,0 +1,25 @@
+Princípios para o design adequado de um objeto de interação
+Simplicidade visual, consistência na ortografia e nos termos utilizados e organização das informações são importantes para garantir uma boa experiência do usuário.
+
+ 
+
+Assista ao vídeo a seguir para aprender como aplicar esses princípios em seus projetos.
+
+
+
+O primeiro princípio que deve pautar a construção de um objeto de interação é aquele que o usuário consiga entender o significado das telas e seu conteúdo. A informação deve ser legível, e o uso de abreviaturas desconhecidas deve ser evitado, bem como mensagens não diretas e entradas com muita informação. 
+
+ 
+
+Lembre-se: quanto menos elementos por tela, melhor, pois a simplicidade visual deve ser sempre priorizada.
+
+
+Atenção
+A ortografia e os termos utilizados devem ser consistentes, pois assim o usuário aprenderá mais rapidamente. Além disso, quanto menos termos, melhor. Uma prática interessante é o alinhamento da informação em colunas (quando possível). Colunas organizam a informação automaticamente em nossas mentes.
+
+
+Podemos pensar também em simetria. Sempre que possível, devemos colocar a mesma quantidade de texto em cada metade da tela (superior e inferior, direita e esquerda). Para isso, podemos dividir a tela em quatro quadrantes, e cada um quarto deve conter, mais ou menos, a mesma quantidade de informação. 
+
+ 
+
+Também podemos olhar as informações quanto à sua sequência. O ideal é que elas estejam, sempre que possível, na sequência de execução do trabalho. Além disso, as informações mais importantes devem vir primeiro, sendo apresentado o que é mais usado pelo usuário.

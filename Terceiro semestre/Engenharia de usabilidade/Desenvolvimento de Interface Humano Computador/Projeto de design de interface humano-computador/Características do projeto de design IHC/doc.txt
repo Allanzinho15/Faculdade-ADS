@@ -1,0 +1,30 @@
+Características do projeto de design IHC
+O design de interfaces humano-computador (IHC) visa criar sistemas interativos que atendam às necessidades dos usuários através de um modelo conceitual detalhado. Isso inclui estruturar tarefas, projetar interações e considerar elementos essenciais como a parte visual, usabilidade, arquitetura da informação, navegação e transição de telas. Com o usuário como foco central, conceitos de ergonomia, usabilidade e engenharia semiótica são fundamentais para garantir uma experiência satisfatória.
+
+
+Neste vídeo serão apresentadas as características do projeto de design de interfaces humano-computador.
+
+
+
+O projeto de design da interface humano-computador (IHC) visa elaborar um modelo conceitual de entidades e atributos do domínio e do sistema, estruturar as tarefas e projetar as interações e a interface de um sistema interativo que apoie os objetivos do usuário. Tem como objetivo especificar como será a interação entre o usuário e o sistema. Para isso, precisamos não só entender o problema do usuário, mas também como este executa suas atividades e quais são suas necessidades que devem ser atendidas com o uso do sistema.
+
+
+O projeto de design de interface se preocupa com muitos elementos, entre eles:
+
+
+Parte visual
+Usabilidade
+Arquitetura da informação
+Navegação
+Transição de telas
+
+Tudo deve ser pensado e planejado para que a experiência dos usuários seja de satisfação durante o uso do sistema. Vem daí a ideia de experiência do usuário ou UX.
+
+
+No projeto de design da interface, o usuário é o centro das atenções no desenvolvimento do sistema.
+
+
+Para desenvolvermos bem um projeto de design de uma interface, alguns conceitos precisam estar bem sólidos.
+
+
+Alguns desses, como os conceitos de usabilidade, engenharia semiótica, interação e de interface, são objeto de estudo da ergonomia em IHC.

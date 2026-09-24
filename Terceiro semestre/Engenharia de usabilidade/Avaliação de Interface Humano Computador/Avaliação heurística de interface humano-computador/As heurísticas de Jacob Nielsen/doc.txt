@@ -1,0 +1,102 @@
+As heurísticas de Jacob Nielsen
+As heurísticas de Nielsen ajudam a garantir a usabilidade e a qualidade das interfaces, prevenindo problemas que poderiam afetar negativamente a experiência do usuário. Portanto, entendê-las é um passo primordial para qualquer profissional que trabalhe com desenvolvimento de sistemas interativos.
+
+
+Assista ao vídeo para conhecer detalhadamente cada uma das heurísticas de Nielsen e como aplicá-las em seus projetos.
+
+
+
+Veja, a seguir, o conjunto inicial apresentado por Nielsen (1993), que é composto das seguintes heurísticas.
+
+
+Garantir a visibilidade do estado do sistema
+
+O sistema deve sempre manter os usuários informados sobre o que está acontecendo através de feedback (resposta às ações do usuário) adequado e no tempo certo.
+
+
+Manter a correspondência entre o sistema e o mundo real
+
+O sistema deve utilizar palavras, expressões e conceitos que são familiares aos usuários, em vez de utilizar termos orientados ao sistema ou jargão dos desenvolvedores.
+
+
+Permitir controle e liberdade do usuário
+
+Os usuários frequentemente realizam ações equivocadas no sistema e precisam de uma “saída de emergência” claramente marcada para sair do estado indesejado sem ter de percorrer um diálogo extenso.
+
+
+Garantir consistência e padronização
+
+Os usuários não devem ter de se perguntar se termos, situações ou ações diferentes significam a mesma coisa.
+
+
+Permitir o reconhecimento em vez de memorização
+
+O projetista deve tornar os objetos, as ações e opções visíveis ao usuário.
+
+
+Garantir a flexibilidade e eficiência de uso
+
+Elementos aceleradores melhoram a interação do usuário, atendendo tanto os experientes quanto os inexperientes de forma eficiente.
+
+
+Estabelecer um projeto estético e minimalista
+
+A interface não deve conter informação que seja irrelevante ou raramente necessária.
+
+
+Previnir erros
+
+Melhor do que uma boa mensagem de erro é um projeto cuidadoso que evite que um problema ocorra, caso isso seja possível.
+
+
+Ajudar os usuários a reconhecerem, diagnosticarem e se recuperarem de erros
+
+As mensagens de erro devem ser expressas em linguagem simples, indicar precisamente o problema, e sugerir uma solução de forma construtiva.
+
+
+Fornecer ajuda e documentação
+
+Embora seja melhor que um sistema possa ser utilizado sem documentação, é necessário oferecer ajuda e documentação de alta qualidade.
+
+
+
+
+As heurísticas de Nielsen são genéricas e válidas para qualquer sistema, porém, para cada produto, podem ser definidas heurísticas ou diretrizes específicas ao tipo de projeto. Uma forma de definir heurísticas é separar diferentes aspectos e buscar diretrizes particulares para cada um deles.
+
+
+Nascimento (2017) exemplifica alguns desses aspectos a serem considerados:
+
+
+Objetivos dos usuários
+Estrutura da interface
+Níveis de abstração
+Objetos das interfaces
+Qualidades das interfaces
+
+Para facilitar a compreensão e comparação dos problemas encontrados, Nielsen (1994) sugere que seja usada uma escala de severidade, onde um dos valores deve ser atribuído a cada um dos quesitos que estão sendo avaliados. A seguinte escala é recomendada.
+
+
+
+Problema cosmético
+
+Não é necessário consertá-lo, a menos que se tenha tempo extra no projeto.
+
+
+Problema pequeno
+
+Deverá ser dada baixa prioridade ao reparo desse tipo de problema, ou seja, não é tão importante consertá-lo.
+
+
+Problema grande
+
+Deverá ser dada alta prioridade ao conserto desse problema, é importante consertá-lo.
+
+
+Problema catastrófico
+
+É obrigatório consertá-lo antes de o produto ser colocado em operação.
+
+Você, como avaliador, reconhece que a interface do sistema que está avaliando viola a heurística “garantir consistência e padronização”, pois você encontrou dois termos diferentes usados com o mesmo sentido.
+
+
+Em uma das telas, aparece a palavra “cliente”, mas, em outra tela, a palavra “comprador” é usada para se referir ao mesmo usuário. Você percebe que isso pode causar uma grande confusão para o usuário. Nesse caso, identificaria esse problema e o classificaria como “problema grande”. O sistema pode funcionar dessa forma, mas é importante consertá-lo.

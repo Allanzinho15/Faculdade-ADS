@@ -1,0 +1,54 @@
+Avaliação por inspeção por meio de lista de verificação
+Para prever problemas de usabilidade em sistemas interativos, usamos a técnica da avaliação por inspeção por lista de verificação. Ela permite que profissionais, mesmo sem especialização em IHC, identifiquem problemas de maneira sistemática. Por isso, precisamos entendê-la, para garantir que a avaliação seja eficaz e os problemas de usabilidade sejam minimizados.
+
+
+Assista ao vídeo para aprender mais sobre como aplicar a técnica de inspeção por lista de verificação.
+
+
+
+Definição de avaliação por inspeção por meio de lista de verificação
+
+Vimos anteriormente que as técnicas de inspeção de interface humano-computador permitem ao avaliador prever problemas que os usuários podem vir a ter quando interagirem com um sistema. A avaliação por inspeção por lista de verificação é uma dessas técnicas.
+
+
+A avaliação por inspeção por lista de verificação é baseada na verificação da usabilidade do sistema com base em uma lista predefinida (checklist), a qual deverá ser percorrida por todos os avaliadores. Dessa forma, o resultado da avaliação é mais relacionado com a qualidade da lista elaborada, e menos com a experiência do avaliador em IHC.
+
+
+Santos (2016) afirma que checklists bem elaborados devem produzir resultados mais uniformes e abrangentes, em termos de identificação de problemas de usabilidade, pois os avaliadores são conduzidos no exame de interface por meio de uma mesma lista de questões a serem respondidas sobre a usabilidade do sistema.
+
+
+Veja, a seguir, as vantagens deste tipo de avaliação.
+
+
+
+Incorporação do conhecimento
+
+O conhecimento em IHC é embutido na lista de verificação, portanto, não são necessários profissionais especializados em IHC para realizar a avaliação.
+
+
+Estabilidade dos resultados
+
+Os resultados são geralmente mais estáveis porque os itens da lista são inspecionados por todos os avaliadores da mesma forma.
+
+
+Especificidade na detecção
+
+As especificidades dos itens da lista fazem com que problemas de usabilidade sejam mais facilmente encontrados.
+
+
+Redução da subjetividade
+
+A subjetividade dos processos de avaliação tende a ser reduzida.
+
+
+Custos reduzidos
+
+Os custos da avaliação são menores do que de outras técnicas.
+
+A lista de verificação (checklist) é um conjunto de itens a serem vistoriados por profissionais, que não são necessariamente especialistas em IHC ou usabilidade, por exemplo, programadores e analistas.
+
+
+As listas devem permitir que estes profissionais sejam capazes de observar problemas gerais e repetitivos nas interfaces, de forma rápida.
+
+
+Mas é preciso ficar atento! O sucesso da aplicação desta técnica depende totalmente da qualidade da lista de verificação. A lista precisa ser elaborada de acordo com certos critérios.

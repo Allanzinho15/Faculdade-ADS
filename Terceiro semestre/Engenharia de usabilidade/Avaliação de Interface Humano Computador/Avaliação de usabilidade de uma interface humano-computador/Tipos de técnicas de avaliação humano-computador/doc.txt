@@ -1,0 +1,91 @@
+Tipos de técnicas de avaliação humano-computador
+Para garantir a qualidade e a usabilidade de sistemas interativos, precisamos compreender as técnicas e as etapas envolvidas na avaliação de interfaces humano-computador. Dessa forma, desenvolvedores e avaliadores podem identificar e corrigir problemas de usabilidade, proporcionando uma experiência melhor para os usuários.
+
+
+Assista ao vídeo para aprender sobre as técnicas de avaliação de IHC e suas aplicações práticas.
+
+
+
+Existem várias técnicas para avaliar a qualidade de uso de uma interface. Cada técnica atende melhor a certos objetivos de avaliação, orienta quando e onde os dados devem ser coletados, como eles devem ser analisados, e quais critérios de qualidade de uso se deseja avaliar. As técnicas de avaliação de IHC são classificadas por Barbosa e Silva (2010). Veja a seguir!
+
+
+
+Investigação
+
+As técnicas de investigação envolvem o uso de questionários, a realização de entrevistas, grupo focal, estudos de campo, entre outros. Essas técnicas permitem ao avaliador ter acesso, interpretar e analisar concepções, opiniões, expectativas e comportamentos do usuário relacionados com sistemas interativos.
+
+ 
+
+Em particular, permitem investigar alternativas de design, problemas que os usuários costumam enfrentar, como eles se apropriaram do sistema atual, e quais são suas expectativas para futuras interações com o sistema atual, novos sistemas, ou mesmo, com novas versões do sistema atual.
+
+ 
+
+São frequentemente utilizados em etapas iniciais do processo de design, para conformar ou modificar o entendimento da situação atual, assim como explorar formas alternativas de intervenção.
+
+
+Inspeção
+
+As técnicas de inspeção permitem ao avaliador examinar uma solução de IHC para tentar antever as possíveis consequências de certas decisões de design sobre as experiências de uso. Elas tentam identificar problemas que os usuários podem vir a ter quando interagirem com o sistema. Essas técnicas geralmente não envolvem diretamente usuários e, portanto, tratam de experiências de uso potenciais, e não reais.
+
+ 
+
+Ao inspecionar uma interface, os avaliadores tentam se colocar no lugar de um usuário com determinado perfil, com um certo conhecimento e experiência em algumas atividades.
+
+
+Observação de uso
+
+Para decidir qual técnica (ou quais técnicas) adotar, o avaliador deve levar em consideração vários aspectos, tais como:
+
+
+limite de prazo
+orçamento previsto
+equipamentos necessários
+número de usuários disponíveis para participar
+número de avaliadores capacitados em cada técnica
+outros recursos que sejam necessários em cada caso
+
+É fundamental, no planejamento da avaliação, observar se você poderá contar com a participação dos usuários para coletar e registrar dados sobre experiências de uso, ou se deverá inspecionar a interface. No caso de avaliações que envolvam participantes, é preciso cuidar das questões éticas, por exemplo, será necessário formular um termo de consentimento.
+
+
+As técnicas de avaliação de interface seguem, em geral, os seguintes passos: preparação, execução ou coleta de dados, análise e interpretação dos dados, consolidação e relato dos resultados. Veja um pouco mais sobre cada um deles.
+
+
+
+Preparação
+
+Como primeiro passo para preparar uma avaliação, o avaliador deve entender a situação atual, que inclui o domínio do problema, os papéis e perfis dos usuários, seus objetivos e atividades, e o contexto em que o sistema é ou será utilizado.
+
+ 
+
+Os objetivos devem ser detalhados através das questões específicas que a avaliação pretende responder. O avaliador escolhe uma ou mais técnicas de acordo com os objetivos da avaliação.
+
+ 
+
+Caso seja escolhida uma técnica de avaliação que envolva usuários, o avaliador deve também escolher o perfil e o número de participantes, além de preparar todo ambiente, hardware e software necessário para o uso do sistema e a captura de dados.
+
+
+Execução ou coleta de dados
+
+A coleta de dados deve ocorrer conforme o planejamento realizado e a técnica de avaliação selecionada. No caso da aplicação de técnicas de observação, é recomendável que pelo menos dois avaliadores trabalhem na coleta de dados: um para acompanhar o participante mais de perto na sala de uso do sistema e outro na sala de observação.
+
+
+Análise e interpretação dos dados
+
+Na atividade de interpretação de dados, o avaliador analisa o material coletado de acordo com o que foi definido durante a atividade de preparação da avaliação. Cada técnica de avaliação costuma apontar os focos de análise (por exemplo, quais dados devem ser analisados sob quais perspectivas de análise) e os tipos de interpretações mais frequentes.
+
+ 
+
+A interpretação ou análise dos dados coletados pode ser feita de forma automática ou manual, dependendo do tipo de cada dado. A análise realizada por um avaliador humano ainda é fundamental para verificar a qualidade de uso, pois é difícil codificar em um programa toda a visão que o avaliador pode adquirir sobre domínio, usuário, atividades e contexto, bem como sua capacidade de análise, principalmente diante de situações imprevistas.
+
+
+Consolidação e relato dos resultados
+
+Uma vez concluída a interpretação individual dos dados coletados, seja das previsões dos avaliadores ou das observações das experiências de uso dos participantes, os resultados são consolidados e analisados em conjunto, para os avaliadores tentarem identificar repetições nos resultados, de acordo com a técnica selecionada.
+
+ 
+
+As repetições de alguma ocorrência são importantes porque, ao expressarem padrões existentes nas interações realizadas por vários participantes de um grupo, permitem distinguir características representativas do grupo e as peculiaridades de participantes individuais.
+
+ 
+
+Na consolidação dos resultados, os avaliadores devem novamente retomar as questões que nortearam a avaliação (objetivos), buscando respondê-las ou justificar por que alguma resposta não foi encontrada.

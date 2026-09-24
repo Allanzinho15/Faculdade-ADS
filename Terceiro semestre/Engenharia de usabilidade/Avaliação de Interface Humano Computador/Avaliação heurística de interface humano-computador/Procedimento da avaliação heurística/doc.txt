@@ -1,0 +1,98 @@
+Procedimento da avaliação heurística
+Para que possamos identificar e corrigir problemas de usabilidade em sistemas interativos, é preciso compreender as etapas e a aplicação da avaliação heurística. Dessa forma, poderemos desenvolver interfaces mais eficientes e intuitivas, garantindo uma experiência positiva para os usuários.
+
+
+Assista ao vídeo para conhecer as fases da avaliação heurística e sua importância no design de IHC.
+
+
+
+Santos (2016) explica que somente uma pessoa não é capaz de encontrar todas as possíveis falhas do sistema; por isso, para a avaliação heurística, deve ser selecionado um pequeno grupo de avaliadores (em geral, de 3 a 5) para aplicar as heurísticas.
+
+
+Os avaliadores trabalham de forma independente para examinar a interface em busca de elementos que violem as diretrizes estabelecidas pelas heurísticas. No final, eles combinam os seus resultados.
+
+
+A imagem a seguir ilustra as etapas da avaliação heurística. Veja!
+
+
+
+Fases da avaliação heurística.
+
+É importante lembrar que a avaliação pode ser feita sobre o produto final, sobre protótipos ou mesmo partes do sistema, ou seja, durante todo o processo de design de IHC, desde que alguma representação da interface já tenha sido criada.
+
+
+A seguir, conheça um pouco mais sobre cada uma das fases da avaliação heurística.
+
+
+
+Preparação
+
+Na preparação, os avaliadores, em conjunto, organizam as telas, conforme o objetivo definido para a avaliação. Eles também definem a lista de heurísticas ou diretrizes que devem ser consideradas. Podem tomar como base a proposta de Nielsen, e especificar outras heurísticas específicas para o sistema em questão.
+
+ 
+
+Para Santos (2016), essa técnica pode ser aplicada de diferentes formas, e a escolha vai depender em grande parte do tempo disponível para teste e dos avaliadores. Por exemplo:
+
+ 
+
+Criar um conjunto de tarefas para ser aplicado pelos avaliadores.
+Fornecer aos avaliadores os objetivos da aplicação e deixar que eles criem suas próprias tarefas.
+Pedir para os avaliadores testarem os elementos de diálogo.
+
+Coleta de dados
+
+Na fase de coleta dos dados, cada avaliador vai inspecionar individualmente cada uma das telas organizadas na fase anterior, bem como os seus elementos. Eles vão observar se as diretrizes foram respeitadas ou violadas.
+
+ 
+
+Barbosa e Silva (2010) sugerem que cada avaliador navegue pela interface pelo menos duas vezes: Uma para ganhar uma visão de conjunto e outra para examinar cuidadosamente cada elemento de cada tela, podendo adotar uma estratégia de avaliação por diretriz ou por tela.
+
+ 
+
+Por exemplo, o avaliador pode escolher uma diretriz e navegar por toda a interface observando se em alguma tela, esta diretriz está sendo violada. Caso contrário, ele pode escolher uma determinada tela e avaliar se está cumprindo todas as diretrizes especificadas.
+
+
+Interpretação
+
+Na interpretação dos dados, para cada violação identificada, o avaliador registra qual diretriz foi violada, em que tela e quais elementos de interface, atribui a severidade do problema de acordo com a escala adotada e escreve uma justificativa explicando por que considerou aquilo como uma violação.
+
+ 
+
+Ele pode também anotar sugestões de soluções para resolver os problemas encontrados ou comentários gerais. Por exemplo, ele pode indicar que o problema encontrado pode estar relacionado com a falta de algum elemento na interface, e sugerir o que deveria ser incluído.
+
+ 
+
+O julgamento da severidade de um problema de usabilidade, segundo Barbosa e Silva (2010), envolve três fatores:
+
+ 
+
+A frequência com que o problema ocorre (é um problema comum ou raro?).
+O impacto do problema (se o problema ocorrer: Será fácil ou difícil para os usuários superarem o problema?).
+A persistência do problema (o problema ocorre apenas uma vez e será superado pelos usuários, ou atrapalhará os usuários repetidas vezes?).
+
+Consolidação dos resultados
+
+Nessa fase, os avaliadores se reúnem e compartilham suas anotações. O objetivo é chegar a um consenso sobre os problemas e gerar uma lista única. Eles podem discutir os achados, realizar novos julgamentos, e finalmente entrar em acordo sobre o grau de severidade final a ser atribuído a cada problema, além de definir quais problemas e sugestões de solução devem fazer parte do relatório consolidado.
+
+ 
+
+Em resumo, os avaliadores devem discutir seus resultados de avaliação individuais e principalmente as discordâncias entre eles. O resultado final deve ser uma lista consensual das violações das heurísticas, cada qual com o respectivo grau de severidade. Com base nas severidades, eles devem atribuir prioridades de correção para cada uma das violações e gerar um relatório com as sugestões e comentários.
+
+
+Relato dos resultados
+
+Por último, os avaliadores escrevem o relatório final. É importante definir uma estrutura para apresentar os resultados de uma avaliação de interface humano-computador. Barbosa e Silva (2010) sugerem que as seguintes informações devem ser incluídas no relato dos resultados de uma avaliação heurística:
+ 
+
+Objetivos da avaliação
+Escopo da avaliação
+Descrição da técnica de avaliação heurística
+Conjunto de diretrizes utilizado
+Número e o perfil dos avaliadores
+Lista de problemas encontrados, indicando, para cada um: Local onde ocorre Descrição do problema Diretriz(es) violada(s) Severidade do problema Sugestões de solução.
+ 
+Local onde ocorre
+Descrição do problema
+Diretriz(es) violada(s)
+Severidade do problema
+Sugestões de solução

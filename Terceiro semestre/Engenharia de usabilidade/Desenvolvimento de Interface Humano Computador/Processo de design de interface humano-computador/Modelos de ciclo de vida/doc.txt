@@ -1,0 +1,46 @@
+Modelos de ciclo de vida
+O modelo de ciclo de vida simplificado, proposto por Preece, Sharp e Rogers (2013), e o ciclo de vida estrela, de Hix e Hartson, são abordagens essenciais no design centrado no usuário.
+
+
+O ciclo simplificado foca a iteração constante entre design e avaliação, criando versões interativas que simulam a interface. Já o ciclo estrela organiza o processo em seis atividades interligadas pela avaliação contínua, permitindo ao designer começar por qualquer atividade e garantindo que a solução final atenda às necessidades dos usuários.
+
+
+Neste vídeo será apresentado o conceito do modelo do ciclo de vida e o ciclo de vida estrela.
+
+
+
+Ciclo de vida simplificado
+
+Preece, Sharp e Rogers (2002, 2007) organizaram um processo simples, que mostra a importância do design centrado no usuário. Nesse modelo, durante o (re)design da interação e da interface, o designer explora diferentes ideias para elaborar uma solução para as necessidades e os requisitos definidos na atividade de análise.
+
+
+O resultado dessa atividade de design pode ser registrado em descrições textuais da interação (cenários), esboços de interface (desenhos de tela) ou em qualquer modelo ou representação da interface e da interação usuário-sistema. O designer constrói versões interativas das propostas de solução que simulem o funcionamento da interface. A iteração entre as atividades ocorre quantas vezes for necessária, limitada apenas pelo orçamento, tempo e recursos disponíveis.
+
+
+Idealmente, o processo de design é concluído com uma avaliação de que a solução de IHC atende às necessidades e aos requisitos identificados. O produto é uma especificação da interação e da interface. Veja na imagem a seguir um fluxo do funcionamento desse processo.
+
+
+
+Modelo simples de processo de design de IHC.
+
+Ciclo de vida estrela
+
+É um processo composto por seis atividades, segundo Hix e Hartson (1993):
+
+ 
+
+Análise de tarefas, usuários e funções: fazemos o levantamento das necessidades dos usuários.
+Especificação de requisitos: entendemos os problemas que precisamos resolver.
+Projeto conceitual e especificação do design: concebemos a solução.
+Prototipação: elaboramos as versões de interações possíveis.
+Implementação: desenvolvemos a solução escolhida.
+Avaliação: verificamos se os dados coletados na atividade de análise e os requisitos especificados estão de acordo com as necessidades dos usuários e se não existem erros de usabilidade no sistema.
+
+Nesse tipo de processo, o designer pode iniciar o trabalho pela atividade que preferir, dependendo da necessidade do projeto. A única exigência é que, após concluir cada uma delas, ele deve avaliar os resultados obtidos para verificar se está no caminho correto.
+
+
+Como mostra a imagem a seguir, todas as atividades estão interligadas pela atividade de avaliação, ou seja, o que quer que se faça, ao concluir uma atividade e antes de iniciar outra, sempre é necessária uma avaliação.
+
+
+
+Ciclo de vida em estrela.

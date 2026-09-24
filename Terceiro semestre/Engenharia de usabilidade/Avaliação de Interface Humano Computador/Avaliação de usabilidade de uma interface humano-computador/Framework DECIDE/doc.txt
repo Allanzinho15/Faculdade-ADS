@@ -1,0 +1,105 @@
+Framework DECIDE
+Para planejar e executar avaliações eficazes de interfaces humano-computador, precisamos entender como funciona o framework DECIDE. Ele ajuda a determinar objetivos claros, explorar questões relevantes, escolher métodos apropriados, identificar questões práticas, decidir sobre aspectos éticos e avaliar resultados de forma precisa.
+
+
+Assista ao vídeo para entender detalhadamente o framework DECIDE e suas aplicações.
+
+
+
+Preece, Sharp e Rogers (2013) apresentaram um framework chamado DECIDE com objetivo de orientar o planejamento, a execução e a análise de uma avaliação de IHC. O framework DECIDE é composto por seis etapas onde as iniciais compõem o nome (em inglês):
+
+
+
+D
+
+Determinar (Determine):
+
+ 
+
+Determinar as metas e os objetivos da avaliação. A determinação dos objetivos auxilia na definição do escopo, uma vez que certas perguntas precisam ser respondidas: “Quais são os objetivos da avaliação?”, “Quem deseja o sistema e por quê?”.
+
+ 
+
+Por exemplo:
+
+ 
+
+Considere um sistema de comércio eletrônico de roupas: “Verificar se o sistema apoia as práticas do usuário”.
+
+ 
+
+O restante do planejamento da avaliação, bem como a sua execução e a apresentação dos resultados serão direcionados de acordo com os objetivos estabelecidos.
+
+
+E
+
+Explorar (Explore):
+
+ 
+
+Explorar as questões cuja avaliação pretende responder para transformar os objetivos iniciais em operacionais.
+
+ 
+
+Por exemplo:
+
+ 
+
+“O sistema permite que o usuário selecione uma peça de roupa?”.
+
+ 
+
+Para cada objetivo definido, o avaliador deve elaborar perguntas específicas a serem respondidas durante a avaliação.
+
+
+C
+
+Escolher (Choose):
+
+ 
+
+Escolher os métodos e as técnicas que responderão às questões da avaliação - O avaliador deve escolher as técnicas mais adequados para responder às perguntas e atingir os objetivos esperados, considerando também o prazo, o orçamento, os equipamentos disponíveis e o grau de conhecimento e experiência dos avaliadores. É possível definir uma combinação de técnicas.
+
+ 
+
+Por exemplo:
+
+ 
+
+“Avaliação heurística”.
+
+
+I
+
+Identificar (Identify):
+
+ 
+
+Identificar questões práticas a serem abordadas pela avaliação.
+
+ 
+
+Por exemplo:
+
+ 
+
+Convite aos usuários que participarão da avaliação, a preparação do ambiente e equipamentos necessários, os prazos e o orçamento disponíveis etc.
+
+
+D
+
+Decidir (Decide):
+
+ 
+
+Decidir como lidar com as questões éticas envolvidas. Sempre que usuários são envolvidos numa avaliação, o avaliador deve tomar os cuidados éticos necessários.
+
+
+E
+
+Avaliar (Evaluate):
+
+ 
+
+Avaliar, interpretar e apresentar os dados. O avaliador deve ter atenção com a confiabilidade dos dados, repetibilidade do experimento de avaliação, validade da técnica, e evitar possíveis distorções e vieses.
+

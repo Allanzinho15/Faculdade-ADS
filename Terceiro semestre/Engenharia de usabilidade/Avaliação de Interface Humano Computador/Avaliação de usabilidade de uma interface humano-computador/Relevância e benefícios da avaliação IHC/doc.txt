@@ -1,0 +1,49 @@
+Relevância e benefícios da avaliação IHC
+No desenvolvimento de sistemas interativos, a avaliação de interfaces humano-computador (IHC) permite identificar e corrigir problemas de usabilidade, garantindo que os sistemas sejam eficientes, intuitivos e proporcionem uma experiência positiva aos usuários. Além de melhorar a qualidade do software, ela acelera o processo de desenvolvimento, corrigindo problemas antes do produto entrar em operação.
+
+
+Assista ao vídeo a seguir para entender os benefícios e as técnicas de avaliação de interfaces humano-computador.
+
+
+
+O desenvolvimento de sistemas interativos envolve diversas atividades, e é comum ouvirmos que podem ocorrer problemas na coleta, interpretação, processamento e compartilhamento de informações entre os clientes e demais interessados (comumente chamados de stakeholders) e os desenvolvedores.
+
+
+Comentário
+Barbosa e Silva (2010), afirmam que, até mesmo na fase de implementação (quando o sistema é codificado em uma linguagem de programação), esses problemas de comunicação podem acontecer. Por exemplo, um programador pode codificar uma informação errada sobre o assunto do qual o software deve tratar (o seu domínio).
+
+
+A imagem a seguir ilustra como problemas de comunicação podem afetar um projeto de desenvolvimento.
+
+
+
+Problemas de comunicação em projetos.
+
+Devido a esse tipo de problema, a avaliação de interfaces é uma atividade fundamental em qualquer processo de desenvolvimento de software que tenha como meta produzir um sistema interativo com alta qualidade de uso.
+
+
+
+Representação de avaliação de interfaces.
+
+O avaliador deve aprender a identificar problemas na interação entre o sistema e o usuário, que possam contribuir negativamente com a experiência deste usuário durante o uso do sistema, e deve ser capaz de atribuir um valor sobre a qualidade de uso da interface.
+
+
+Seja para um sistema novo ou uma nova versão de um sistema existente, o resultado de uma atividade de avaliação ajuda a corrigir os problemas relacionados à qualidade de uso antes do sistema interativo ser colocado em operação. Afinal, sempre queremos que o usuário tenha uma experiência positiva ao usar o sistema!
+
+
+Barbosa e Silva (2010) apontam os benefícios da avaliação da interface humano-computador:
+
+
+Os problemas podem ser corrigidos antes do produto entrar em operação.
+A equipe de desenvolvimento pode se concentrar na solução de problemas reais.
+Os engenheiros sabem construir um sistema interativo, mas geralmente não sabem discutir a qualidade de uso do sistema.
+O tempo para colocar o produto no mercado diminui, pois os problemas são corrigidos logo no início do processo de desenvolvimento.
+Identificar e corrigir os problemas na interface humano-computador permitem entregar um produto mais robusto.
+
+No entanto, é difícil garantir a qualidade total de um produto de software. Isso porque, na prática, seria necessário avaliá-lo em todas as situações de uso possíveis. Além de ser inviável prever todas essas situações, o custo seria alto demais, pois exigiria muito tempo e esforço para sua realização.
+
+
+Existem várias técnicas que podem ser usadas na avaliação de interfaces, cobrindo aspectos e formas diferentes de avaliar. Devemos então escolher a mais adequada para o contexto do sistema que estamos querendo avaliar.
+
+
+Ao planejar uma avaliação de interface, o avaliador deve decidir o que, quando, onde e como avaliar, bem como quais são os dados que devem ser coletados e produzidos, e, principalmente, o tipo de técnica a ser utilizado.

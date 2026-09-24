@@ -1,0 +1,26 @@
+Engenharia semiótica
+Para  melhorar a comunicação entre sistemas e usuários, é necessário compreender os princípios da engenharia semiótica. Essa área aborda a interação humano-computador como uma forma de metacomunicação, na qual o sistema atua em nome dos designers para facilitar a interação. 
+
+ 
+
+Assista, neste vídeo, aos métodos de avaliação da qualidade da comunicação entre humanos e computadores.
+
+
+
+A engenharia semiótica trabalha a IHC como uma comunicação entre designers e usuários em tempo de interação, a qual é mediada pelo computador. É como se o sistema falasse em nome de seus designers. Essas conversas indicam quem são os usuários, o que eles querem fazer no sistema, quais as suas formas preferidas e por quê. Ou seja, a engenharia semiótica é um processo de comunicação sobre a comunicação (ou metacomunicação).
+
+ 
+
+Além disso, a engenharia semiótica tem dois métodos para avaliar a qualidade da metacomunicação no IHC:
+
+
+Método de inspeção semiótica
+
+
+SIM (semiotic inspection method).
+
+
+Método de avaliação de comunicabilidade
+
+
+CEM (communicability evaluation method).

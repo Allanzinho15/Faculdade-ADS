@@ -1,0 +1,142 @@
+Procedimento da avaliação por ensaio de interação
+Esta metodologia robusta para avaliar a usabilidade de sistemas interativos envolve a observação direta de usuários reais enquanto realizam tarefas específicas, permitindo a identificação de problemas reais de uso. Portanto, compreendê-la se torna fundamental para desenvolver interfaces intuitivas e eficientes.
+
+
+Assista ao vídeo para aprender mais sobre as fases da avaliação por ensaio de interação e como aplicá-las efetivamente.
+
+
+
+Um ensaio de interação começa com uma avaliação heurística preliminar, que funciona como um pré-diagnóstico dos problemas de sua interface. Em seguida, é feita a preparação dos cenários para as simulações incluindo local e equipamentos para registro.
+
+
+Depois de definidos os cenários, iniciam-se os ensaios com a participação de uma equipe com um ou dois observadores e um assistente técnico, responsável pelo funcionamento dos equipamentos. Após os ensaios, a equipe analisa os dados coletados e os resultados são descritos em um relatório. A imagem a seguir ilustra as fases da técnica. Acompanhe!
+
+
+
+Fases da avaliação por ensaio de interação.
+
+Conheça um pouco mais sobre cada uma dessas fases a seguir.
+
+
+Análise preliminar
+
+
+Tem como objetivo a preparação do ensaio. É importante estabelecer claramente o escopo, ou seja, o que se quer descobrir ao observar os usuários.
+
+
+Os avaliadores precisam entender sobre o sistema interativo, e, para isso, fazem um pré-diagnóstico dos problemas de ergonomia de sua interface humano-computador.
+
+
+É útil realizar entrevistas com os profissionais responsáveis pelo projeto e desenvolvimento do sistema e executar uma inspeção para identificar previamente alguns problemas.
+
+
+As informações solicitadas à equipe de projeto do software podem ser diversas. Por exemplo:
+
+
+População alvo pretendida do sistema
+Tipos de tarefas que o software visa a atender
+Funcionalidades que têm maior impacto nas tarefas
+Versão atual do produto
+Tipo de suporte técnico dado aos usuários
+
+O pré-diagnóstico pode ser feito por meio de uma avaliação heurística ou de uma lista de verificação. Como resultado, os avaliadores vão formular um conjunto de hipóteses sobre problemas de usabilidade do sistema para serem testadas durante os ensaios de interação.
+
+
+Definição dos cenários e da amostra
+
+Essa fase tem foco na elaboração dos cenários para cada um dos perfis de usuários usando as informações obtidas na fase anterior. De acordo com Santos (2016), a primeira tarefa dessa fase é definir quem serão os usuários participantes do ensaio, e eventualmente, entrar em contato com eles para confirmar se eles têm o perfil estipulado pelos projetistas do sistema.
+
+
+É preciso também conhecer os detalhes sobre as tarefas que os usuários desempenham, tais como:
+
+
+Recursos necessários para realização das tarefas
+Contexto
+Nível de conhecimento dos usuários
+
+Isso pode ser feito com apoio de questionários ou entrevistas. Um script ou roteiro descreve as tarefas que uma amostra de usuários deverá realizar durante as sessões no ensaio. O cenário inclui a descrição do ambiente físico de execução do ensaio e questões operacionais, tais como equipamentos e outras facilidades.
+
+
+O avaliador deve selecionar as tarefas que serão incluídas nos scripts com base em alguns critérios:
+
+
+Tarefas relacionadas com os objetivos principais do software.
+Hipóteses dos avaliadores sobre os problemas encontrados no pré-diagnóstico.
+Amostras de tarefas dos usuários que foram obtidas com os questionários.
+Funcionalidades do sistema consideradas mais e menos importantes pelo usuário.
+Funcionalidades mais acionadas pelos usuários no uso do software.
+
+Os ensaios podem ocorrer em ambiente natural, tendo como vantagem ser o ambiente real de utilização do software pelo usuário, mas com algumas desvantagens: possível descontrole sob as condições do teste; problemas técnicos; e interferências durante o teste.
+
+
+
+Representação de pessoa utilizando software em ambiente de trabalho.
+
+Outra opção é serem realizados em laboratórios, que dão condições melhores aos avaliadores, mas podem gerar certos desconfortos aos usuários: condições artificiais; fora de contexto; inibição. Os scripts, com a descrição das tarefas a serem solicitadas ao usuário devem trazer termos e objetivos que lhe sejam familiares.
+
+
+Os cenários podem reproduzir, em laboratório, a familiaridade do ambiente doméstico ou profissional de determinado usuário.
+
+
+Realização dos ensaios
+
+Essa fase começa com a obtenção da amostra dos usuários participantes. Normalmente, são selecionados voluntários, com as seguintes características: Pessoas experientes na tarefa; pessoas que realmente exerçam suas atividades com o auxílio do software; metade das pessoas inexperientes e metade experientes com uso do sistema.
+
+
+
+Representação de usuários realizando testes de usabilidade.
+
+O tamanho da amostra deve cobrir os diferentes tipos de usuários que possam utilizar o sistema, mas deve permitir diferenciar as observações generalizáveis das que possam ser específicas de uma determinada pessoa.
+ 
+
+A literatura sugere uma margem de 6 a 12 pessoas para atuarem nos ensaios de interação.
+
+
+Em seguida, pode ser necessário realizar ajustes nos cenários definidos na fase anterior para adaptá-los aos usuários participantes da amostra, pois é preciso verificar quem, da amostra de usuários, realiza efetivamente as tarefas que compõem os scripts para a avaliação. Neste caso, pode ser necessário realizar novas entrevistas para confirmar estas informações.
+
+
+A preparação dos ensaios envolve a tomada de decisão e a adoção de providências relativas a:
+
+
+Local dos ensaios.
+Equipamento para registro dos acontecimentos.
+Escolha das técnicas de verbalização (consecutiva/simultânea).
+Definição das estratégias de intervenção em caso de impasse.
+Preservação do anonimato dos usuários
+
+Para obter uma informação correta, o analista precisa saber o que os usuários estão pensando e não somente o que eles estão fazendo.
+
+
+Para tanto, é necessário solicitar a eles que verbalizem o que estão fazendo, durante ou após a interação com o software. Isso pode ser feito de forma simultânea ou consecutiva às observações. Na verbalização simultânea, solicita-se aos usuários que além de executarem a tarefa, também comentem o que estão pensando enquanto a executam.
+
+
+Comentário
+No decorrer da interação, o analista responsável pelo ensaio, pode também perguntar ao usuário questões como: Conte o que você está pensando? O que você está tentando fazer? O que você está lendo?
+
+
+Na verbalização consecutiva, é realizada uma entrevista com o usuário no final do ensaio de interação, em que ele comenta sobre as tarefas que acabou de executar. Esta técnica pode ainda ser conduzida de forma a pedir ao usuário que comente certas características específicas da interface.
+
+
+Dica
+As situações de impasse representam um constrangimento para o usuário. Para lidar com essas situações, sugere-se deixar o usuário tentar resolver sozinho qualquer tarefa; nunca tomar atitudes grosseiras que possam inibir o usuário; e, depois de algum tempo, persistindo a situação de impasse, propor ao usuário a realização de uma tarefa alternativa previamente.
+
+
+Os ensaios de interação podem ser realizados no local de trabalho de cada usuário ou em laboratório, devem durar entre 1 e 2 horas. Os ensaios são controlados e orientados pelos avaliadores que planejam como proceder nos casos de interrupções, retomadas e encerramento precoce do teste.
+
+
+Além disso, eles devem realizar anotações sobre o desempenho do usuário e dos erros e incidentes verificados. Dessas anotações, devem constar indicações sobre o instante dos eventos perturbadores.
+
+
+Uma boa prática consiste na realização de um ensaio piloto para certificar-se de que tudo foi previsto.
+
+
+Depois da realização dos ensaios, a equipe de analistas deve rever as gravações das sessões, procurando dados relevantes que comprovem ou não as hipóteses anteriormente estabelecidas no pré-diagnóstico.
+
+
+Além disso, muitas situações inesperadas de erros podem aparecer. Isso ressalta o benefício dos ensaios, pois esses tipos de erros só se tornam evidentes em situação realista de uso.
+
+
+Atenção
+Os resultados dos ensaios de interação são relatados e comentados em um relatório onde são descritos: Incidentes e erros produzidos durante a interação, relacionando-o com um aspecto do sistema; e comentários sobre a prioridade para resolução dos problemas.
+
+

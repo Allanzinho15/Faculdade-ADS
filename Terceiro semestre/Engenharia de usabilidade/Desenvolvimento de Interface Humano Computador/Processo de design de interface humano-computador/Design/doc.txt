@@ -1,0 +1,73 @@
+Design
+O design de interface humano-computador (IHC) inclui a criação de sistemas interativos que ajudem os usuários a alcançarem seus objetivos de maneira eficiente. Esse processo é iterativo, permitindo refinamentos constantes baseados na análise da situação atual, na concepção de intervenções e na avaliação de suas melhorias.
+
+
+É preciso envolver os usuários desde o início para entender suas necessidades e desenvolver soluções eficazes. Diferentes modelos de design, como o ciclo de vida simplificado e o design contextual, guiam essas atividades para garantir uma experiência de usuário satisfatória.
+
+
+Neste vídeo serão apresentados o conceito de design de interface e os processos de design de interface humano-computador.
+
+
+
+Um sistema interativo tem o propósito de apoiar os usuários a alcançarem seus objetivos. Para isso, são desenvolvidos projetos de interface.
+
+
+Agora entenderemos quais são os processos que podem ser utilizados para o desenvolvimento desses projetos, mas antes aprenderemos um pouco mais sobre design de interface.
+
+
+Toda vez que inserimos um novo artefato em um contexto, estamos fazendo uma intervenção nesse contexto. Isso pode ter influências positivas ou negativas.
+
+
+Exemplo
+Sair de um apartamento alugado para um próprio tem muitos aspectos positivos − mais conforto, satisfação e facilidades −, mas também tem outras interferências não tão satisfatórias, como custos de impostos e taxas de condomínio, seguros, entre outros. Portanto, para qualquer interferência que venhamos a fazer, devemos analisar prós e contras. Assim é também o processo de design.
+
+
+Quando analisamos um cenário, podemos encontrar problemas, características desagradáveis ou algo que podemos melhorar.
+
+
+Confira a seguir os pontos de atuação da atividade de design!
+
+
+Análise 
+
+
+Na análise, de forma abrangente, da situação atual.
+
+
+Síntese
+
+
+Na síntese de uma intervenção para melhoria.
+
+
+Avaliação 
+
+
+Na avaliação da nova situação para identificar as melhorias com a intervenção.
+
+
+A análise da situação atual depende de diversos fatores, por exemplo, o domínio, os objetivos dos usuários, o tempo, os recursos, entre outros. Ela aponta as necessidades e as oportunidades de melhoria para as quais será projetada uma intervenção.
+
+
+A diferença entre a situação atual e a situação desejada é a motivação principal para projetarmos uma intervenção. Por fim, esta deve ser analisada para verificar se surtiu os efeitos esperados.
+
+
+Os processos de design
+
+Cada processo de design tem atividades diferentes, mas, em geral, todos definem: como executar cada atividade; a sequência em que elas devem ser executadas; quais podem se repetir, e por quais motivos; e os artefatos usados e produzidos em cada uma delas.
+
+
+Segundo Barbosa et al. (2010), uma característica básica dos processos de design de IHC é a execução das atividades de forma iterativa, permitindo refinamentos sucessivos da situação atual e da proposta de intervenção. Dessa forma, o designer pode aprender mais sobre o problema a ser resolvido e sobre a solução que irá definir.
+
+
+Os processos de design de IHC começam analisando a situação atual. Quando se tem conhecimento suficiente sobre isso, ele vai para a fase seguinte, concebendo, modelando e construindo a intervenção. Enquanto projeta uma intervenção, pode precisar revisitar a situação atual. Assim, ele volta à atividade anterior para ampliar, refinar ou reformular sua interpretação, numa nova iteração.
+
+
+Tendo uma proposta de intervenção em mãos, o designer passa para o processo de avaliá-la. Durante essa avaliação, ele pode perceber que ainda precisa rever sua análise ou sua proposta de intervenção. Esse processo iterativo se repete quantas vezes forem necessárias, até o designer obter uma intervenção satisfatória.
+
+
+Atenção
+É muito importante envolver os usuários durante todas essas atividades para que participem das decisões. Quanto mais cedo os usuários forem envolvidos no processo de design, mais cedo será possível aprender sobre suas necessidades e, assim, gerar a solução, bem como identificar e corrigir problemas.
+
+
+Os processos de design de IHC propostos na literatura são: modelo de ciclo de vida simplificado, ciclo de vida estrela, engenharia de usabilidade de Nielsen, engenharia de usabilidade de Mayhew, design contextual, design baseado em cenários, design dirigido por objetivos, design centrado na comunicação.

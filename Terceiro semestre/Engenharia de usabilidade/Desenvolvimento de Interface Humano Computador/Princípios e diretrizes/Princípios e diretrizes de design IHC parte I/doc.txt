@@ -1,0 +1,75 @@
+Princípios e diretrizes de design IHC: parte I
+Os princípios e diretrizes de design de interface humano-computador, como os propostos por Norman (1998), Nielsen (1993) e Shneiderman (1998), são fundamentais para criar sistemas eficazes e centrados no usuário.
+
+
+Diretrizes como correspondência com as expectativas dos usuários e simplicidade nas estruturas das tarefas garantem que as interfaces sejam intuitivas e fáceis de usar. Essas diretrizes ajudam a alinhar as ações do usuário com os resultados esperados, utilizando linguagem familiar e metáforas, além de simplificar e automatizar tarefas para promover uma experiência eficiente e satisfatória.
+
+
+Confira neste vídeo os princípios e diretrizes de design de interface humano-computador, com ênfase nas seguintes diretrizes: correspondência com as expectativas dos usuários e simplicidade nas estruturas das tarefas.
+
+
+
+Existem diversos princípios, diretrizes e heurísticas na área de IHC. Os mais conhecidos são os de Norman (1988) e de Nielsen (1993) e as regras de ouro de Shneiderman (1998). A existência deles não substitui os processos de análise, design e avaliação. De toda forma, esses princípios e diretrizes podem ser usados como apoio aos processos de design.
+
+
+Algumas das diretrizes são desenvolvidas especificamente para determinados ambientes ou dispositivos. Alguns servem muitas vezes para definir padrões ou assegurar um determinado comportamento, mesmo sendo genéricas e não contextualizadas. Cabe ao designer considerar se e quais diretrizes são adequadas à sua situação de design, e como elas devem se manifestar na solução.
+
+
+Os princípios e as diretrizes mais utilizados falam dos seguintes temas:
+
+ 
+
+Correspondência com as expectativas dos usuários.
+Simplicidade nas estruturas das tarefas.
+Equilíbrio entre controle e liberdade do usuário.
+Consistência e padronização.
+Promoção da eficiência do usuário.
+Antecipação das necessidades do usuário.
+Visibilidade e reconhecimento.
+Conteúdo relevante e expressão adequada.
+Projeto para erros.
+
+Sendo assim, abordaremos em seguida alguns dos principais pontos de extrema importância no tocante à qualidade de interface.
+
+
+Correspondência com as expectativas dos usuários
+
+Esta diretriz trata de verificar se os usuários conseguem estabelecer relações principalmente entre ações e seus efeitos no sistema. Por exemplo, ao projetar um sistema de comércio eletrônico, devemos examinar como as pessoas fazem suas compras em lojas físicas. Precisamos fazer com o que o sistema permita ao usuário executar todas as ações que executa na loja.
+
+
+Exemplo
+Em uma loja física, não nos identificamos ao entrar na loja e olhar os produtos, somente fazemos isso quando decidimos comprar e precisamos pagar. Então, um sistema que implementa um processo de comprar não deveria exigir que o usuário se identificasse para entrar.
+
+
+O designer também deve projetar a interface utilizando o idioma do usuário, com palavras, expressões e conceitos que lhe são familiares. Também é recomendado o uso de metáforas, que criam imagens na mente.
+
+
+Simplicidade nas estruturas das tarefas
+
+Outra recomendação muito interessante é simplificar a estrutura das tarefas.
+
+
+Para isso, os designers devem seguir quatro abordagens:
+
+
+
+Abordagem 1
+
+Manter a tarefa, mas fornecendo diversas formas de apoio para que os usuários consigam aprender e realizá-la.
+
+
+Abordagem 2
+
+Usar tecnologia para tornar visível o que seria invisível, melhorando o feedback e a capacidade de o usuário se manter no controle da tarefa.
+
+
+Abordagem 3
+
+Automatizar a tarefa ou parte dela, mantendo-a igual.
+
+
+Abordagem 4
+
+Modificar a natureza da tarefa.
+
+O que você achou do conteúdo?

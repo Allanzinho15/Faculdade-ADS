@@ -1,0 +1,95 @@
+Objeto da avaliação de interface humano-computador
+Para sermos capazes de desenvolver sistemas interativos de alta qualidade, é necessário conhecer as diversas técnicas de testes e a avaliação da perspectiva dos usuários. Assim, garantimos que o sistema funcione corretamente, seja intuitivo e eficaz.
+
+
+Assista ao vídeo para aprofundar seu entendimento sobre os critérios de qualidade e métodos de avaliação em IHC.
+
+
+
+De acordo com Barbosa e Silva (2010), um sistema interativo deve ser avaliado sob as perspectivas de todos os envolvidos: Quem o concebe (projetista), quem o constrói (desenvolvedores), e quem o utiliza (usuários).
+
+
+O desenvolvedor utiliza várias técnicas de avaliação, que compõem a chamada etapa de testes do processo de desenvolvimento de software.
+
+
+Vários tipos de testes podem ser realizados ao longo de todo o processo de desenvolvimento. Veja alguns a seguir.
+
+
+Testes de unidade
+
+Checar o funcionamento de cada item do programa.
+
+Testes de integração
+
+Verificar se todos os itens do programa se comunicam corretamente.
+
+Testes de sistema
+
+Verificar o funcionamento do sistema como um todo.
+
+Testes de operação
+
+Testar o sistema com usuários.
+
+Também é comum classificarmos os testes como testes de caixa-branca (o código é testado) e caixa-preta (o sistema é testado).
+
+
+Todos esses testes têm o objetivo principal de verificar e validar se o software cumpre com o que foi especificado para ele. Em outras palavras, eles identificam se todos os requisitos declarados foram implementados de forma correta.
+
+
+
+Desenvolvimento de um sistema interativo.
+
+Depois de verificar se um sistema interativo funciona conforme sua especificação, através dos diversos testes, ainda assim ele pode apresentar problemas relacionados ao uso. 
+
+ 
+
+É preciso fazer a avaliação na perspectiva do usuário! 
+
+
+Isso porque diversos problemas relacionados diretamente com a interface humano-computador podem existir, mesmo que todas as funcionalidades estejam operando corretamente.
+
+
+Portanto, nas perspectivas do projetista e do próprio usuário, a avaliação tem por objetivo principal verificar se o sistema apoia adequadamente os usuários a atingirem seus objetivos em um contexto de uso. O foco está no que o usuário realiza ou deseja realizar de fato a partir da interface.
+
+
+Segundo Barbosa e Silva (2010), os critérios de qualidade avaliados nessa perspectiva são relacionados ao uso: usabilidade, experiência do usuário, acessibilidade e comunicabilidade.
+
+
+Atenção
+Barbosa e Silva explicam que o processo de interação entre o usuário e o sistema segue uma lógica definida pelo projetista. Mas os usuários podem ou não compreender e concordar com essa lógica; podem ou não julgar essa proposta apropriada; e ainda, quando tiverem escolha, podem, ou não, incorporá-la no seu dia a dia. A avaliação da interface humano-computador deixa explícitas as diferenças entre quem concebe e quem utiliza o sistema.
+
+
+Os objetivos de uma avaliação determinam quais aspectos relacionados ao uso do sistema devem ser investigados, sendo que cada aspecto pode dizer respeito a diferentes grupos de interessados.
+
+
+Alguns dos aspectos normalmente avaliados são a apropriação de tecnologia pelos usuários, as ideias e alternativas de design adotadas, a conformidade com padrões, além dos vários tipos de problemas que podem ocorrer na interação e com a interface em si.
+
+
+Seja qual for o aspecto avaliado, os objetivos devem ser estabelecidos de forma clara, e enfatizando o ponto de vista desejado.
+
+
+Barbosa e Silva (2010) sugerem a formulação de perguntas para apoiar na tarefa de definição dos objetivos.
+
+
+Por exemplo, ao avaliar a apropriação de tecnologia, você poderia questionar:
+
+
+De que maneira os usuários utilizam o sistema?
+Quanto os usuários consideram que esse sistema apoia na realização de suas tarefas?
+
+Ao avaliar as ideias de design, você poderia indagar:
+
+
+Qual alternativa de design os usuários preferem?
+Qual alternativa pode ser construída em menos tempo?
+
+Complementando, Santos (2016) explica que devemos avaliar os aspectos cognitivos e funcionais relacionados à realização das tarefas que são apoiadas pelo sistema. Por exemplo:
+
+
+O sistema é rápido?
+É de fácil aprendizado?
+É confiável?
+Permite reverter erros realizados com facilidade?
+Considera aspectos socioculturais em seu uso?
+É agradável para o usuário?

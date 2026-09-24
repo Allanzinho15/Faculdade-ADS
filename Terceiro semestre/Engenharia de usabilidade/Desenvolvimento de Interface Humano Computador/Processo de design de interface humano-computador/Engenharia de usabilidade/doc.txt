@@ -1,0 +1,94 @@
+Engenharia de usabilidade
+A engenharia de usabilidade de Nielsen (1993) inclui um conjunto abrangente de atividades ao longo do ciclo de vida do produto, desde a compreensão das necessidades dos usuários até a produção de protótipos e avaliação iterativa.
+
+
+Já a engenharia de usabilidade de Mayhew (1999) organiza atividades em três fases principais: análise de requisitos, design e desenvolvimento, e instalação.
+
+
+Ambas as abordagens visam garantir que o produto final seja usável e atenda às necessidades dos usuários, embora com estruturas de processo distintas.
+
+
+Neste vídeo serão apresentados dois tipos de engenharia de usabilidade: a de Nielsen e a de Mayhey.
+
+
+
+Engenharia de usabilidade de Nielsen
+
+Segundo Nielsen (1993), é um conjunto de atividades que ocorrem durante todo o ciclo de vida do produto. Vejamos o conjunto de atividades proposto nesse processo!
+
+
+
+Conhecer seu usuário
+
+Compreender suas necessidades e suas tarefas, assim como entender porque cada uma existe e se de fato fazem sentido.
+
+
+Realizar uma análise competitiva
+
+Examinar produtos prontos com funcionalidades semelhantes ou complementares à intenção. Além da comparação, identifica o que funciona e o que não funciona no ambiente.
+
+
+Definir as metas de usabilidade
+
+Definir e avaliar os fatores de qualidade de uso priorizados no projeto, além de estabelecer a faixa de valor aceitável para cada um.
+
+
+Fazer designs paralelos
+
+Elaborar diferentes alternativas de design para o projeto. Ao final dessa etapa, as soluções alternativas são analisadas e um design consolidado é elaborado.
+
+
+Adotar o design participativo
+
+Fazer discussões com os usuários envolvidos. Nessa fase está previsto que a equipe de design terá acesso permanente a um conjunto de usuários representativos.
+
+
+Fazer o design coordenado da interface
+
+Produzir os elementos de interface propriamente ditos, mas também toda a documentação, o sistema de ajuda e os tutoriais produzidos sobre o sistema.
+
+
+Aplicar diretrizes e análise heurística
+
+Seguir as diretrizes para o design das interfaces e, a cada interface projetada, fazer uma avaliação heurística para verificar se as diretrizes estão sendo seguidas.
+
+
+Fazer protótipos
+
+Produzir protótipos dos sistemas finais antes de iniciar a implementação da interface com o usuário, para que sejam avaliados com usuários e modificados caso haja problemas.
+
+
+Realizar testes empíricos
+
+Prioritariamente, observar os usuários ao utilizarem os protótipos para realizar certas tarefas.
+
+
+Praticar o design iterativo
+
+Corrigir os problemas e repetir o processo a cada iteração de design e avaliação, até o alcance das metas.
+
+Engenharia de usabilidade de Mayhew
+
+Outro ciclo de vida para a engenharia de usabilidade foi proposto por Deborah Mayhew (1999). Esse ciclo reúne e organiza diferentes atividades em IHC.
+
+
+
+Análise de requisitos
+
+São definidas as metas de usabilidade dos usuários.
+
+
+Design, avaliação e desenvolvimento
+
+É concebida a solução de IHC que atenda às metas de usabilidade estabelecidas na fase anterior.
+
+
+Instalação
+
+São coletadas opiniões dos usuários depois de algum tempo de uso. A intenção é melhorar o sistema em versões futuras.
+
+Veja como fica o esquema do ciclo de vida para a engenharia de usabilidade.
+
+
+
+Ciclo de vida para a engenharia de usabilidade.

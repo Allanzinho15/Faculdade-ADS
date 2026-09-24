@@ -1,0 +1,77 @@
+Definição de avaliação por ensaio de interação
+Esta técnica é fundamental para observar diretamente como os usuários interagem com um sistema, identificando problemas reais de usabilidade. Desse modo, ela permite avaliar o desempenho dos usuários em tarefas diárias e coletar suas impressões, o que resulta em uma visão aprofundada da experiência de uso.
+
+
+Assista ao vídeo para aprender como conduzir ensaios de interação eficazes na avaliação de IHC.
+
+
+
+Você aprendeu que, além das técnicas de inspeção, existem técnicas de avaliação de IHC que partem da observação de usuários interagindo diretamente com o sistema. Nesse caso, o avaliador coleta dados sobre essas situações para identificar problemas reais de uso, e não apenas predizê-los, como fazem a partir das técnicas de inspeção.
+
+
+Atenção
+A avaliação de interface humano-computador por ensaio de interação é uma técnica de observação, que propõe o uso simulado de um sistema em sessões planejadas, quando os potenciais usuários tentam realizar suas tarefas diárias, utilizando uma versão do sistema.
+
+
+Da mesma forma como em qualquer outra técnica, os objetivos da avaliação determinam quais critérios de usabilidade devem ser medidos. Portanto, para realizar as medições desejadas, um grupo de usuários é convidado a realizar um conjunto de tarefas usando o sistema em um ambiente controlado, como um laboratório ou em ambiente real de trabalho.
+
+
+
+Grupo de usuário em ensaio de interação.
+
+Durante as experiências de uso observadas, são coletados dados sobre o desempenho dos participantes na realização das tarefas, assim como suas opiniões e sentimentos decorrentes de suas experiências de uso. Os participantes de um ensaio de interação são representantes do público-alvo do sistema, ou seja, seus possíveis usuários.
+
+
+Uma vez que esta técnica depende do usuário e suas intenções de uso, a preparação para o ensaio de interação requer o entendimento detalhado do usuário final do sistema, bem como das atividades ou tarefas típicas que esse usuário realiza no seu trabalho diário.
+
+
+O sistema pode ter tipos diferentes de usuários, com tarefas e formas de pensar diversas. Idealmente, todos devem ser contemplados na avaliação, sendo possível inclusive comparar a forma de interação destes diferentes usuários com o sistema. A partir dessa visão sobre os usuários, serão elaborados os cenários e procedimentos para serem aplicados durante a realização das sessões de ensaio.
+
+
+Durante as sessões, é feita a coleta de dados, tanto do desempenho dos usuários (resultado da realização das tarefas definidas nos cenários de uso), quanto de suas impressões. Esses dados podem ser quantitativos ou qualitativos. Veja, a seguir, um exemplo referente a cada dado.
+
+
+Quantitativos
+
+Exemplo: o tempo para uma determinada tarefa, ou número de erros
+
+Qualitativos
+
+Exemplo: opiniões dos usuários sobre um determinado elemento da interface e percepção sobre a facilidade de uso.
+
+A realização das tarefas durante o ensaio pode ser observada pelos avaliadores com auxílio de dispositivos de áudio e vídeo, marcação de tempo, espelhos falsos, e o ensaio também pode ser gravado para avaliação posterior em mais detalhes.
+
+
+Essa técnica apresenta um custo alto por conta do número de participantes e tempo consumido, não só durante as sessões, mas também na análise dos dados coletados. No entanto, possui diversos benefícios. Veja a seguir!
+
+
+
+Representação de interação do usuário com interface.
+Observação de usuários
+
+Permite observar atitudes e reações dos usuários reais em relação à interface.
+
+
+
+Representação de testes de usabilidade com grupo de usuários.
+Testes sem especialistas
+
+Não necessita de especialistas em IHC para os ensaios. 
+
+
+
+Representação de identificação de problema em interface.
+Identificação de problemas
+
+Pode ajudar a identificar problemas sérios, que não seriam percebidos apenas com inspeções. 
+
+
+
+Representação de validação de predições.
+Confirmação de predições
+
+Possibilita a confirmação de determinadas predições feitas previamente com a aplicação de técnicas de inspeção. 
+
+
+
+

@@ -1,0 +1,38 @@
+Acessibilidade na Web
+Neste vídeo, veja como as pessoas com deficiência podem ser auxiliadas com o uso da web e qual é a importância de desenvolver produtos digitais pensados para promover a acessibilidade.
+
+
+Quando falamos em pessoas com deficiência, estamos tratando de uma população estimada em mais de um bilhão de pessoas no mundo. Segundo o último censo realizado no Brasil (World Report on Disability, 2011), um a cada quatro brasileiros (aproximadamente 24% da população) possui algum tipo de deficiência (visual, auditiva, motora ou intelectual). Por esse motivo, torna-se fundamental compreender os conceitos sobre acessibilidade no ambiente web. Desenvolver sites, aplicativos e outros produtos digitais acessíveis é uma atividade que impacta positivamente a interação de todos os usuários, principalmente aqueles com alguma deficiência. Assim, apresentaremos um breve histórico sobre as principais normas de acessibilidade na web e forneceremos exemplos de como as pessoas com deficiência navegam em uma página web usando tecnologias assistivas, como um leitor de tela para computadores e celulares.
+
+Pessoas com deficiência
+Segundo o censo brasileiro de 2010, a população brasileira era composta por 190.732.694 pessoas. Desse total, identificou-se aproximadamente 45,6 milhões, correspondente a aproximadamente 24% da população, com algum tipo de deficiência, seja ela visual, auditiva, motora ou intelectual. Porém, não é correto pensarmos que o fato de a pessoa possuir algum tipo de limitação a caracteriza como uma pessoa com deficiência.
+
+report_problem
+Atenção!
+Quando os recenseadores questionam a população sobre os tipos de deficiência, eles buscam identificar também o grau de dificuldade das pessoas em ouvir, enxergar e caminhar ou subir escadas, classificados em quatro categorias:
+
+Possui dificuldade.
+Possui alguma dificuldade.
+Possui grande dificuldade.
+Não consegue de modo algum.
+Seguindo orientações internacionais, o IBGE considera “pessoa com deficiência” os indivíduos que responderam ter “grande dificuldade” e/ou “não consegue de modo algum” em uma ou mais questões, o que representa cerca de 12,5 milhões de brasileiros com deficiência, ou seja, 6,7% da população.
+
+Com o resultado, o censo de 2010 identificou 3,4% da população brasileira com deficiência visual, 2,3% com deficiência motora, 1,4% com deficiência mental/intelectual e 1,1% com deficiência auditiva. Destaca-se que uma pessoa pode informar a presença de mais de uma deficiência.
+
+De acordo com o Artigo 2º da Lei Brasileira de Inclusão da Pessoa com Deficiência nº 13.146 de 2015, considera-se pessoa com deficiência aquela que tem impedimento de longo prazo de natureza física, mental, intelectual ou sensorial, o qual, em interação com uma ou mais barreiras, pode obstruir sua participação plena e efetiva na sociedade em igualdade de condições com as demais pessoas.
+
+Pessoas com deficiência e o ambiente web
+A internet mudou a forma como as pessoas vivem, divertem-se, fazem compras e se relacionam, principalmente, para pessoas com deficiência. Antes da internet, pessoas cegas dependiam da ajuda de terceiros para ter acesso a notícias de jornais ou a outras informações em português escrito. Com o desenvolvimento da web e com apoio de tecnologias assistivas, como softwares leitores de tela, as pessoas cegas ganharam autonomia para acessar conteúdos disponíveis em português escrito sem a dependência de terceiros. No entanto, assim como no ambiente físico, se o ambiente web for mal projetado, todas as pessoas podem encontrar barreiras de acesso ao conteúdo digital.
+
+Segundo essa perspectiva, a acessibilidade na web está intrinsicamente relacionada ao conceito de inclusão social, facilitando a realização de atividades em nosso dia a dia e cada vez mais presente em toda a sociedade. Atualmente, cada vez mais tarefas que, há cerca de dez anos, só eram realizadas com o deslocamento físico das pessoas, são integralmente realizadas on-line, remotamente, sem a necessidade de movimentação. Esse fato foi evidenciado pela pandemia de covid-19.
+
+No ambiente físico, a acessibilidade refere-se à construção de espaços que atendam a todos, por exemplo, a presença de rampas de acesso para cadeirante, ou piso tátil, que tem como objetivo auxiliar a locomoção de pessoas cegas e com baixa visão.
+
+No ambiente web, acessibilidade refere-se à construção de sites que possibilitem o acesso a todos, como, por exemplo, usar alternativas textuais para imagens, possibilitando o acesso ao conteúdo web para pessoas cegas que utilizam leitor de tela.
+
+
+Exemplo de imagem e texto alternativo.
+
+Garantir o acesso às tecnologias de informação e comunicação, incluindo a Web, é considerado um direito humano básico na Convenção das Nações Unidas sobre os Direitos das Pessoas com Deficiência. A Lei Brasileira de Inclusão define que o poder público deve adotar normas que visem a ampliar a acessibilidade da pessoa com deficiência ao conteúdo disponível na Web, principalmente aos serviços de governo eletrônico.
+
+No entanto, no Brasil, dos 14 milhões de sites analisados em abril de 2020, 99,26% possuem pelo menos um problema de acessibilidade, impactando negativamente no acesso à informação de pessoas com deficiência.

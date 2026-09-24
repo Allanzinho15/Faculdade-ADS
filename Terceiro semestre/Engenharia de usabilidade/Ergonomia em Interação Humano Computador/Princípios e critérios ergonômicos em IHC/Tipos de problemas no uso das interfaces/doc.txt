@@ -1,0 +1,26 @@
+Tipos de problemas no uso das interfaces
+Estudar os tipos de problemas que usuários podem enfrentar ao utilizarem um software é fundamental para desenvolver interfaces que minimizem frustrações e melhoram a experiência do usuário. Além disso, conhecer barreiras, obstáculos e ruídos possibilita que os desenvolvedores criem soluções que sejam intuitivas e eficientes.
+
+ 
+
+Assista, neste vídeo, a como identificar e tratar esses problemas em seus projetos.
+
+
+
+Confira, a seguir, os três tipos de problemas que podem ser encontrados pelos usuários durante o uso do software.
+
+
+
+Barreiras
+
+Obstáculos
+
+Ruídos
+Os usuários não conseguem superar sem ajuda externa. Isso impossibilita a execução do trabalho.
+
+
+
+
+
+
+Os tipos de problemas devem ser verificados à luz dos tipos de erro que podem ocorrer e tratados de forma adequada para impactar o mínimo possível o usuário durante a execução de seu trabalho.

@@ -1,0 +1,179 @@
+Técnicas de levantamento de requisitos em IHC
+O levantamento de requisitos é uma etapa fundamental para o desenvolvimento de software, na qual analistas coletam informações dos usuários e stakeholders sobre as funcionalidades desejadas. Isso alinha expectativas e formaliza um acordo por meio de um documento, facilitando o controle do projeto e ajustes futuros. Algumas técnicas específicas de IHC são usadas para garantir a eficiência desse processo.
+
+
+Assista a este vídeo e conheça as diversas técnicas de levantamento de requisitos: entrevistas; grupos de foco; questionários; brainstorming; classificação de cartões; estudos de campo; investigação conceitual; storyboard; protótipo/maquete.
+
+
+
+Agora falaremos sobre algumas técnicas usadas para identificação das necessidades do usuário dentro da concepção de IHC. A intenção dessas técnicas é tornar o projeto de interface humano-computador mais eficiente.
+
+Na fase de levantamento de requisitos, é importante usarmos técnicas adequadas. Essas técnicas podem ser caracterizadas quanto ao seu objetivo, suas vantagens e o nível de esforço necessário para sua aplicação.
+
+
+Confira a seguir as técnicas mais utilizadas para levantar os requisitos dos usuários!
+
+
+Entrevistas
+
+É uma conversa guiada por um roteiro de perguntas, na qual um entrevistador busca obter informação de um entrevistado.
+
+
+Sobre as perguntas
+
+
+As perguntas podem ser abertas (exploratórias) ou fechadas (já se conhece as respostas prováveis).
+
+
+Sobre as entrevistas
+
+
+As entrevistas podem ser estruturadas (roteiro seguido fielmente) ou não estruturadas (perguntas flexíveis).
+
+
+Deve ser elaborado um roteiro previamente, que pode ser em formato de perguntas ou tópicos para lembrar os assuntos a serem vistos. Uma entrevista costuma seguir o seguinte roteiro:
+
+
+Grupos de foco
+
+É um grupo com diversas pessoas reunidas numa espécie de entrevista coletiva, guiada por um moderador.
+
+ 
+
+Apresentação.
+Perguntas de fácil resposta.
+Perguntas mais extensas e complexas (parte principal).
+Conclusão.
+
+Costuma ser uma boa prática, pois fornece muitas informações em pouco tempo e envolve múltiplos pontos de vista. O moderador é muito importante para garantir que todos participem e para evitar conflitos.
+
+
+Questionários
+
+É um formulário com perguntas que os usuários e demais participantes devem responder para fornecer os dados necessários em uma pesquisa.
+
+
+Os questionários permitem coletar dados de muitas pessoas, até mesmo geograficamente dispersas. Podem conter perguntas abertas e fechadas, mas as perguntas fechadas são mais comuns, pois são de preenchimento rápido e de fácil análise.
+
+
+As pessoas podem responder questionários a seu tempo e do seu local. Um dos inconvenientes é que o entrevistador não terá como tirar dúvidas sobre as perguntas. Além disso, devem conter instruções muito claras, dado que não haverá a presença do entrevistador para tirar dúvidas.
+
+
+Brainstorming
+
+
+É utilizado para coletar informações sobre as características que os usuários querem em um produto. Serve para qualquer produto. Seu resultado é uma lista priorizada de necessidades dos usuários.
+
+
+
+Diferente de um grupo de foco, uma sessão de brainstorming busca levantar de forma bastante livre um conjunto grande e abrangente de opiniões dos participantes em torno de um tema. A sessão começa com uma pergunta resumo do objetivo e segue detalhando características do produto, de necessidades e desejos dos usuários, e também pode ser dividida em duas etapas.
+
+
+Deve haver um moderador responsável por fazer perguntas e para esclarecer o que ficou definido no final. Para organizar as informações de um brainstorm, é recomendado o uso da técnica de diagrama de afinidade. Essa técnica organiza ideias de acordo com seus relacionamentos naturais.
+
+
+Seus passos são:
+
+
+Liste os dados coletados no brainstorm.
+Coloque todos os dados em uma área que seja visível a todos.
+Agrupe os dados, contendo características em comum.
+Dê um nome para cada grupo.
+Se precisar, agrupe os grupos em grupos maiores.
+
+
+Exemplo de diagrama de afinidade.
+
+Classificação de cartões (card sorting)
+
+
+É utilizada para guiar o projeto da arquitetura de informação de um produto. Essa técnica pode ser utilizada para:
+
+ 
+
+Explorar como as pessoas pensam sobre alguns pontos.
+Descobrir categorias de informação para saber o que pode ser agrupado.
+Coletar listas de palavras utilizadas no contexto.
+
+É uma técnica que não depende de tecnologia. Consiste em escrever as categorias em papel e espalhá-las em uma área para visualmente fazer a classificação.
+
+
+
+Exemplo de card sorting.
+
+Estudos de campo
+
+Inclui um conjunto de atividades relacionadas com usabilidade (investigação contextual, entrevistas no ambiente do usuário e observações simples).
+
+
+Durante um estudo de campo, são visitados os ambientes onde ocorrem os processos em que o usuário participa. Trata-se de uma investigação da realidade dos usuários, e não de suposições. O objetivo é tornar explícitos os processos do ambiente do usuário.
+
+
+Investigação contextual
+
+Tem como objetivo explicitar todos os aspectos da prática do trabalho do usuário.
+
+
+A investigação contextual ocorre no local onde o usuário trabalha, de forma que se possa observar o usuário enquanto ele trabalha e conversar com ele sobre o seu trabalho.
+
+
+Storyboard
+
+Técnica que detalha cenários do sistema por meio de uma sequência de desenhos. Os desenhos também podem ser feitos em papel e colocados em uma área visível aos outros membros das sessões de discussão.
+
+
+Por meio dessa exposição, os desenhos podem ser avaliados e discutidos entre os usuários e designers e devem estar baseados em princípios de usabilidade.
+
+
+
+Exemplo de storyboard.
+
+Protótipo/maquete
+
+É uma concretização do projeto de interface que permite aos usuários e envolvidos interagirem com ele e explorarem sua aderência às suas necessidades. É um modelo, uma representação do que pode ser o produto.
+
+
+São usados para simular e testar interações e para demonstrar requisitos de layout das interfaces.
+
+
+Para sua elaboração podemos seguir os seguintes passos:
+
+
+
+Passo 1
+
+Elaboração das estruturas gráficas das telas.
+
+
+Passo 2
+
+Definição das navegações entre as telas.
+
+
+Passo 3
+
+Alocação dos componentes nas telas.
+
+
+Passo 4
+
+Verificação de combinação de cores e outros elementos gráficos.
+
+
+Passo 5
+
+Esse tipo de técnica pode ser usada em papel ou em softwares que são próprios para isso. Os protótipos podem ter baixa e alta fidelidade.
+
+
+
+Protótipo de baixa fidelidade
+
+
+É aquele que não se parece muito com o produto, mesmo assim é útil porque é simples, de rápida produção, barato e fácil de ser modificado para novos testes. Em geral, são os mais utilizados porque são descartáveis e servem para acelerar o processo de levantamento de requisitos.
+
+
+
+Protótipo de alta fidelidade
+
+
+É aquele que utiliza ferramentas com linguagens mais rápidas de desenvolvimento, e com isso já mostra ao usuário como vai ficar o produto mais próximo da realidade. Este é útil e mais utilizado quando queremos vender ideias ou testar questões mais técnicas.

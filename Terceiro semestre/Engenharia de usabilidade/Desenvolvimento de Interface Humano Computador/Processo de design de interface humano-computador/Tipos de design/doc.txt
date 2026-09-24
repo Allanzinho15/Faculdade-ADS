@@ -1,0 +1,122 @@
+Tipos de design
+Cada um dos processos de design de IHC (como design contextual, design baseado em cenários, design dirigido por objetivos e design centrado na comunicação) aborda a criação de interfaces de maneira única.
+
+
+O design contextual foca a compreensão do contexto de uso, enquanto o design baseado em cenários utiliza narrativas para explorar soluções.
+
+
+O design dirigido por objetivos incentiva a criatividade tecnológica, e o design centrado na comunicação se baseia na engenharia semiótica para facilitar a interação entre usuário e sistema.
+
+
+Todos visam criar soluções eficazes e centradas no usuário.
+
+
+Neste vídeo serão apresentados os diferentes tipos de design.
+
+
+
+Design contextual
+
+O objetivo desse processo é compreender as necessidades dos usuários por meio de uma investigação detalhada do contexto de uso. Isso é fundamental para o designer elaborar uma solução adequada.
+
+
+Veja a seguir as principais atividades do design contextual.
+
+
+
+Investigação contextual
+
+Busca-se conhecer os usuários e sua forma de trabalho.
+
+
+Modelagem do trabalho
+
+É registrado e compartilhado com a equipe o que se aprendeu na investigação contextual.
+
+
+Consolidação
+
+São organizados os perfis, o reprojeto do trabalho caso necessário, o projeto do ambiente do usuário onde se tem as informações de contexto, a prototipação e o teste com usuários.
+
+Design baseado em cenários
+
+Este processo utiliza diferentes tipos de cenários durante todas as atividades envolvidas na criação da solução.
+
+
+Um cenário, como já vimos anteriormente, é uma história sobre pessoas executando uma atividade. Ao escrever, ler e revisar cenários, a equipe de design e os usuários têm a oportunidade de discutir e analisar como as atividades dos usuários são afetadas pelo sistema que será desenvolvido. Assim, podemos dizer que os cenários são uma ferramenta útil e barata para gerar e avaliar diversas ideias durante as atividades de design.
+
+
+Nesse tipo de processo de desenvolvimento de um projeto de IHC, a equipe de design explora ideias para a solução elaborando três tipos de cenários:
+
+
+De atividade
+
+
+De informação
+
+
+De interação
+
+
+Um cenário de atividade é uma narrativa sobre as tarefas típicas e críticas que os usuários vão executar com ajuda do sistema.
+
+
+Um cenário de informação é uma elaboração de um cenário de atividade que descreve as informações fornecidas pelo sistema ao usuário durante a interação.
+
+
+Um cenário de interação especifica em detalhes as ações do usuário e as respectivas respostas (feedback) do sistema necessárias para executar as tarefas apoiadas pelo sistema.
+
+
+
+Atividades do design baseado em cenários.
+
+Design dirigido por objetivos
+
+É um processo que incentiva o designer a explorar as tecnologias para oferecer aos usuários soluções mais criativas, inovadoras e eficientes a fim de alcançarem seus objetivos.
+
+
+É dividido em seis fases, que veremos com detalhes a seguir.
+
+
+
+Pesquisa
+
+O designer, em geral, está interessado em conhecer o usuário, o domínio do sistema e o contexto de uso.
+
+
+Modelagem
+
+O designer organiza e registra o conhecimento adquirido na fase de pesquisa mediante a elaboração de modelos do usuário, domínio e contexto de uso.
+
+
+Definição de requisitos
+
+O designer interpreta as informações coletadas e estruturadas nos modelos para definir os requisitos do usuário, do negócio e técnicos.
+
+
+Projeto conceitual
+
+O designer concebe uma solução de interação e um esboço de interface pouco detalhado; sua preocupação está na concepção da estrutura e no comportamento da interface.
+
+
+Refinamento
+
+O foco é detalhar a solução de interface, definindo todas as características dos elementos dela, tais como tamanho, cores e ícones.
+
+
+Coerência
+
+O designer busca manter a coerência da solução proposta enquanto acomoda as limitações técnicas imprevistas.
+
+Design centrado na comunicação
+
+Segundo Barbosa et al. (2010), é baseado na engenharia semiótica. Entende a interação humano-computador como um processo de comunicação entre o usuário e o designer do sistema, através da sua interface.
+
+
+Quando o usuário tem acesso a essa metacomunicação, acredita-se que ele tenha melhores condições de aprender e usar o sistema de forma produtiva, eficiente e criativa.
+
+
+Seu principal objetivo é elaborar uma solução de IHC que transmita a metacomunicação do designer para se construir um sistema com alta comunicabilidade. Para isso, o designer é orientado a se posicionar como um dos interlocutores das conversas que ocorrem durante a interação.
+
+
+O que você achou do conteúdo?

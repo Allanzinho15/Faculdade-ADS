@@ -1,0 +1,62 @@
+Integração entre IHC e engenharia de software
+A integração entre interface humano-computador (IHC) e engenharia de software (ES) é fundamental para desenvolver sistemas interativos eficientes. IHC foca a usabilidade e a interação, enquanto ES se concentra no funcionamento interno.
+
+
+Métodos ágeis, como eXtreme Programming e Scrum, podem incorporar IHC para melhorar a experiência do usuário. Isso inclui envolver designers de IHC nas decisões, equilibrar cronogramas para garantir qualidade de uso, e realizar avaliações contínuas da interface e do contexto de uso.
+
+
+Essa integração garante que tanto a funcionalidade quanto a usabilidade sejam otimizadas.
+
+
+Assista a este vídeo e saiba mais sobre a integração entre interface humano-computador e engenharia de software.
+
+
+
+As áreas de IHC e ES possuem, em alguns pontos, diferentes perspectivas sobre o que é importante em um sistema interativo ou sobre como desenvolvê-lo.
+
+
+Engenharia de software
+
+Sistema interativo é um artefato que tem uma interface que recebe dados, processa e retorna dados de saída. O que mais importa é o que ocorre dentro do sistema. Tudo que ocorre na fronteira ou fora dele, inclusive a própria interface, acaba recebendo pouca atenção.
+
+
+IHC
+
+Na perspectiva do desenvolvimento de interface humano-computador, o objetivo principal é construir um sistema fidedigno que tenha a capacidade de processar adequadamente os dados de entrada e os dados de saída transmitidos por meio de uma interface bem definida.
+
+
+As diferentes perspectivas de IHC e ES sobre o desenvolvimento de sistemas interativos deram origem a métodos, técnicas e processos próprios de cada área.
+
+
+Atualmente, pesquisadores têm investigado a integração de métodos e técnicas entre IHC e ES. As principais abordagens de integração são:
+
+ 
+
+Definição de características de um processo de desenvolvimento que se preocupa com a qualidade de uso.
+Definição de processos de IHC paralelos que devem ser incorporados aos processos propostos pela ES.
+Indicação de pontos em processos propostos pela ES nos quais atividades e métodos de IHC podem ser inseridos.
+
+Métodos ágeis em IHC
+
+Métodos ágeis de desenvolvimento, como eXtreme programming e Scrum, podem ser interessantes em IHC, porque buscam colaborar com o cliente mediante pequenos ciclos de desenvolvimento de forma iterativa e incremental, para corrigir o rumo do processo. Porém, raramente as comunidades de métodos ágeis mencionam os usuários ou interface com usuário como um todo, muitas vezes negligenciando a experiência de uso.
+
+Saiba Mais
+O Scrum (pron. [skrʌm]) é um framework de gerenciamento de projetos, da organização ao desenvolvimento ágil de produtos complexos e adaptativos com o mais alto valor possível, por meio de várias técnicas. É usado desde o início de 1990 e atualmente é utilizado em mais de 60% dos projetos ágeis em todo o mundo.
+
+ 
+
+Este framework não é um processo linear, em vez disso, é um conjunto de conceitos e técnicas dentro do qual você pode empregar vários outros processos ou técnicas.
+
+
+Algumas sugestões que podem integrar IHC em métodos ágeis:
+
+ 
+
+Responsabilizar o designer de IHC pelas decisões relacionadas à qualidade de uso.
+Deve-se equilibrar no cronograma do projeto o tempo para entregar um sistema e o tempo gasto para se ter qualidade de uso dele.
+Buscar informações sobre o contexto de uso, e não apenas consultar os usuários e clientes sobre seus requisitos.
+Realizar uma análise da situação atual do contexto de uso e não só dos casos de uso (use cases) amplamente utilizados em métodos ágeis.
+Consultar o designer de IHC na priorização das funcionalidades que serão desenvolvidas.
+Realizar avaliações de IHC durante diferentes estágios do ciclo de desenvolvimento.
+
+O que você achou do conteúdo? 

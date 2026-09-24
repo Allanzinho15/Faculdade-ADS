@@ -1,0 +1,198 @@
+Principais tipos de objetos de interação
+Compreender os principais objetos de interação em interfaces digitais é fundamental para desenvolver sistemas intuitivos e eficientes. 
+
+ 
+
+Confira o vídeo a seguir e os diferentes tipos de objetos de interação, as suas funcionalidades e as melhores práticas para seu uso em projetos de software.
+
+
+
+A seguir, detalharemos um pouco mais alguns dos principais e mais utilizados objetos de interação. Vamos lá!
+
+
+Janela
+
+
+É um elemento do software que, em determinado momento, pode ser acionado para apresentar um certo conjunto de informações. Em geral, as janelas possuem um título em sua parte superior indicando seu objetivo. Além disso, várias janelas podem ser apresentadas simultaneamente, mas apenas uma é usada por vez, e a janela ativa fica sempre em destaque.
+
+ 
+
+Lembre-se: definir um padrão de layout de janelas para toda a aplicação é uma boa prática. 
+
+ 
+
+Confira o exemplo a seguir. 
+
+
+
+Exemplo de janelas do Windows.
+
+As janelas, em geral, possuem alguns elementos:
+
+ 
+
+Barra de título: indica o nome do documento, do programa ou da pasta em que você está trabalhando.
+Botões minimizar, maximizar e fechar: permitem ocultar, alargar e fechar a janela.
+Barra de menus: apresenta os itens nos quais você pode clicar para fazer escolhas.
+Barra de rolagem: permite rolar o conteúdo da janela para ver informações que estão fora de visão no momento.
+Bordas e cantos: podem ser usados para alterar o tamanho da janela. Isso é possível arrastando o ponteiro do mouse.
+
+Caixa de diálogo
+
+
+Pode ser utilizada para exigir do usuário uma resposta. Ela também possui títulos e apresenta, em geral, botões que requerem uma ação do usuário. 
+
+ 
+
+Observe o exemplo a seguir. 
+
+
+
+Exemplo de caixa de diálogo.
+
+As caixas de diálogo podem ser modais e não modais. Veja! 
+
+
+Modais
+
+
+Exige que o usuário faça algo antes de voltar para o programa ou recurso de origem, que fica bloqueado até que o usuário responda à pergunta da caixa de diálogo.
+
+
+Não modais
+
+
+Não impede o usuário de usar o recurso ou programa de origem. Assim, ele pode alternar entre a caixa de diálogo e o recurso ou programa em que estava executando suas tarefas.
+
+
+Em geral, uma caixa de diálogo possui os seguintes elementos:
+
+ 
+
+Barra de título: está localizada na parte superior da caixa de diálogo e identifica a partir de qual recurso ou programa ela provém.
+Instrução principal: fornece informações sobre o que o usuário está realizando ou pode fazer.
+Área de comando: contém os botões de comando, como OK ou cancelar, que o usuário clica para completar a ação solicitada pela caixa de diálogo.
+Área de rodapé (opcional): fornece informações adicionais e ajuda o usuário.
+
+Formulário
+
+
+É um elemento do software destinado à entrada de dados, pois agrupa de forma lógica e intuitiva os diferentes tipos de dados. Esses agrupamentos podem ser evidenciados por meio do uso de elementos que coloque os campos dentro de uma delimitação. 
+
+ 
+
+Campos de preenchimento obrigatório devem ser evidenciados. O formulário pode ser composto por entradas de dados simples, nas quais o usuário digita o conteúdo, mas também por caixas de escolhas entre opções preexistentes. Por último, ele ainda pode permitir anexar itens como documentos.
+
+ 
+
+A imagem a seguir mostra um exemplo.
+
+
+
+Exemplo de caixa de mensagem.
+
+Caixa de mensagem
+
+
+Destina-se a informar o usuário sobre etapas da sua interação com o software. Confira alguns exemplos das informações que ela dá: 
+
+ 
+
+Dados diversos
+O estado em que o sistema se encontra 
+A resposta a uma ação do usuário 
+Situação de risco no sistema
+Erro ocorrido na interação
+Forma de recuperação para algum problema
+ 
+
+As mensagens, em geral, são do tipo modal, em que o usuário precisa entender o ocorrido e tomar uma ação indicando sua concordância ou não e interagindo por meio de botões de resposta para que o sistema possa entender o que o usuário quer fazer. Muitas vezes, quando se trata de uma ação perigosa, irreversível e que pode causar algum dano, pois não teria recuperação, como a limpeza de um diretório, costuma-se usar duplo pedido de confirmação e uso de cores (como o vermelho) na caixa de mensagem para enfatizar o risco da ação.
+
+ 
+
+Veja a seguir o exemplo.
+
+
+
+Exemplo de caixa de mensagem.
+
+Painel de menu
+
+
+É um tipo de objeto que permite a seleção de opções de comando e de outros menus. Algumas recomendações importantes na construção de menus são: 
+
+ 
+
+Utilize nomes simples e significativos nos itens do menu.
+Reduza ao máximo o número de opções e submenus.
+Identifique mecanismos simples para deslocamento dentro do menu (tanto para os itens seguintes como para os anteriores), se o menu tiver uma estrutura hierárquica. A relação hierárquica deve ser clara para o usuário.
+ 
+
+A imagem mostra um exemplo. Veja!
+
+
+
+Exemplo de painel de menu.
+
+Barra de menu
+
+
+É um tipo de menu horizontal apresentado abaixo da barra de título. O principal propósito do uso de barras de menu é ordenar comandos prioritários nas aplicações. Para isso, eles devem estar posicionados no alto da caixa ou da janela de aplicação, apresentar as opções com maior probabilidade de uso na aplicação e as opções contidas nela devem ter os títulos mais claros possíveis, fazendo uso de, no máximo, uma palavra para cada item da barra.
+
+ 
+
+Acompanhe o exemplo a seguir.
+
+
+
+Exemplo de barra de menu.
+
+Barra de ferramentas
+
+
+É um painel que contém conjuntos de controles que servem para dar acesso rápido a comandos específicos. O ideal é que elas possam ser configuradas pelo próprio usuário.
+
+ 
+
+A imagem mostra um exemplo.
+
+
+
+Exemplo de barra de ferramentas.
+
+Lista de seleção
+
+
+Apresenta um conjunto de valores que permite ao usuário fazer uma escolha entre eles. Pode ser utilizada para facilitar a entrada de dados quando os valores possíveis são todos conhecidos. Devemos atentar para que a largura da lista tenha a largura média dos valores de entrada, quando possível, e ter a mesma largura do maior valor. Além disso, deve-se utilizar barra de rolagem, e, de preferência, ela deve ser alinhada pela esquerda. Por fim, ela pode ser numerada ou não, dependendo se isso vai facilitar a escolha do usuário.
+
+ 
+
+Observe a imagem adiante.
+
+
+
+Exemplo de lista de seleção.
+
+Caixa de combinação ou combo box
+
+
+Permite a entrada de dados combinando seleção e edição. Deve ter sempre um rótulo na caixa e segue, em geral, as mesmas diretrizes das listas de seleção elencadas anteriormente.
+
+ 
+
+Veja, a seguir, o exemplo.
+
+
+
+Exemplo de Combo box.
+
+Botões de rádio
+
+
+Permitem ao usuário escolher dentro de um grupo de opções, pois, em geral, as opções são mutuamente exclusivas. Esses botões devem ser utilizado quando as opções são conhecidas e não mutáveis.
+
+ 
+
+Acompanhe o exemplo a seguir.
+
+

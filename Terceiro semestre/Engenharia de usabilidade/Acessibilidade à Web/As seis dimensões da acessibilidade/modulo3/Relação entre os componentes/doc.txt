@@ -1,0 +1,58 @@
+Relação entre os componentes
+Neste vídeo, descubra como os componentes essenciais para acessibilidade na web se relacionam na prática.
+
+
+Mas como esses componentes se relacionam?
+Todos esses componentes se relacionam entre si. De modo geral, os “desenvolvedores” utilizam “ferramentas de autoria” e “ferramentas de avaliação” para criar “conteúdo” na web. Os “usuários” utilizam navegadores web ou outros “agentes de usuário” ou “tecnologias assistivas” para acessar e interagir com o conteúdo.
+
+manage_accounts
+Desenvolvedores
+Ferramentas de aperfeiçoamento
+Ferramentas de criação
+
+close
+people
+Usuários
+Navegadores e players de mídia
+Tecnologias assistivas
+
+Como isso funciona na prática?
+Para implementar, como exemplo, um texto alternativo com imagens visando promover a acessibilidade para usuários que acessam a web por meio de leitores de tela, todos os sete componentes devem trabalhar em conjunto. Confira!
+
+settings_ethernet
+Especificações Técnicas
+Definem como especificar o atributo (exemplo em HTML atributo alt no elemento <img>).
+
+settings_ethernet
+Diretrizes WAI (WCAG, ATAG, UAAG)
+Definem como implementar o atributo.
+
+settings_ethernet
+Desenvolvedores
+Fornecem o texto alternativo apropriado.
+
+settings_ethernet
+Ferramentas de Autoria
+Facilitam e promovem o fornecimento de texto alternativo.
+
+settings_ethernet
+Ferramentas de Avaliação
+Ajudam a verificar se existe texto alternativo.
+
+settings_ethernet
+Agentes de Usuário
+Fornecem uma interface humana e de máquina para o texto alternativo.
+
+settings_ethernet
+Tecnologia Assistiva
+Fornecem uma interface humana e de máquina para o texto alternativo em diferentes formas.
+
+settings_ethernet
+Usuários
+Acessam o texto alternativo.
+
+Quando os recursos de acessibilidade são aplicados em um componente, torna-se mais fácil sua aplicação nos demais. Um exemplo prático dessa relação pode ser vista quando uma ferramenta de criação de conteúdo web, como o WordPress, disponibiliza em sua interface, de modo prático e fácil, a possibilidade de inserir o texto alternativo de uma imagem. Veja na imagem!
+
+Exemplo de uma página do WordPress com a opção para inserir texto alternativo.
+
+Caso o WordPress (ferramenta de autoria) não fornecesse uma opção simples e fácil para inserir o texto alternativo, o criador do conteúdo teria que inserir o código em HTML diretamente na página, "à mão".

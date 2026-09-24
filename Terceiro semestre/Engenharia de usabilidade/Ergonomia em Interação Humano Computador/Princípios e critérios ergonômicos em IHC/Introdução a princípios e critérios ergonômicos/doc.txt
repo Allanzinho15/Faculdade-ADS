@@ -1,0 +1,165 @@
+Introdução a princípios e critérios ergonômicos
+Princípios e critérios ergonômicos são elementos que desenvolvedores devem seguir para garantir uma experiência mais agradável e interessante para o usuário no seu contato com a interface de qualquer sistema. 
+
+ 
+
+Assista, neste vídeo, cada um desses critérios e como aplicá-los em seus projetos. 
+
+
+
+Os critérios são um conjunto de qualidades que deve ser seguido sempre que construímos interfaces. Diversos autores já propuseram vários critérios para reduzir ao máximo os problemas de interação entre homem e máquina. Assim, durante a construção de interfaces, é importante torná-las mais agradáveis, confortáveis e fáceis de usar e entender, de modo que elas possam ser utilizadas sem muitas dificuldades e sem que o usuário cometa erros. 
+
+ 
+
+Confira agora os oito critérios que devem ser vistos e verificados.
+
+
+Condução
+
+
+Seu objetivo é guiar os usuários ainda sem experiência no uso do sistema, a fim de que realizem suas tarefas. Alguns exemplos de condução para facilitação seriam: 
+
+ 
+
+Fornecer um título para cada campo de entrada de dados.
+Dar um título a cada nova janela que se abra na aplicação. 
+Criar mecanismo de ajuda on-line para cada campo de informação e para a interface como um todo.
+Indicar formato nas entradas de dados. 
+Definir um agrupamento adequado dos itens na interface.
+ 
+
+A condução ainda deve levar em consideração alguns subcritérios, como:
+
+
+1
+Convite
+
+
+Uma interface deve ser convidativa e apresentar informações claras.
+
+
+2
+Agrupamento e distinção por local e formato
+
+
+Uma interface deve orientar o usuário por meio da boa organização espacial e gráfica das informações.
+
+
+3
+Legibilidade
+
+
+Uma interface deve utilizar recursos que ajudem na leitura da tela. Por exemplo, contraste letra/fundo; tamanho da fonte;, espaçamento entre palavras, entrelinhas e entre parágrafos; comprimento das linhas; tamanho dos parágrafos etc.
+
+
+4
+Feedback imediato
+
+
+Uma interface deve implementar mecanismos de respostas rápidas ao usuário em forma de diálogo.
+
+
+Carga de trabalho
+
+
+Seu propósito é diminuir ao máximo a carga cognitiva que o usuário precisa para realizar seu trabalho. Por isso, sempre que possível, deve-se reduzir a quantidade de informações exibidas. Para a otimização da carga de trabalho, alguns itens devem ser observados, como:
+
+
+1
+Brevidade
+
+
+Reduzir ao máximo o tempo de leitura dos itens expostos e digitação de informação na interface. Deve-se sempre colocar o mínimo de informação possível na tela.
+
+
+2
+Concisão
+
+
+Diminuir o trabalho em relação às entradas e saídas do sistema. Por exemplo, deve-se apresentar títulos curtos.
+
+
+3
+Ações mínimas
+
+
+Simplificar os passos para execução de uma tarefa. Sempre que possível, deve-se indicar atalhos para preenchimento de informações ou acesso a itens da interface.
+
+
+Controle explícito
+
+
+Seu objetivo é permitir que o usuário tenha controle sobre a interface do sistema. É subdividido em:
+
+
+Ações explícitas
+
+
+Deve ficar claro que o sistema somente irá executar as ações explicitamente solicitadas pelo usuário.
+
+
+Controle do usuário
+
+
+Devem ser implementadas funcionalidades que deixem o usuário no controle, podendo interromper, cancelar, pausar e continuar suas ações no sistema, quando achar necessário.
+
+
+Adaptabilidade
+
+
+Sua meta é garantir a capacidade de o sistema se adaptar ao contexto e às preferências do usuário. Ela se divide em: 
+
+
+Flexibilidade
+
+Tarefas podem ser realizadas de diversas formas, pois o usuário pode decidir como melhor executar determinada tarefa. A flexibilidade também implementa a customização das preferências do usuário.
+
+
+Experiência do usuário (ou UX – user experience)
+
+O sistema deve prever o atendimento a diferentes necessidades de distintos usuários. A linguagem utilizada para diferentes públicos-alvo e os tipos de informação apresentados para cada tipo de usuário podem ser previstos.
+
+
+Gestão de erros
+
+
+Seu propósito é prevenir ou reduzir a ocorrência de erros, entendendo como e quando ocorrem. Ele é subdividido em:
+
+
+1
+Proteção contra erros
+
+
+O sistema deve prover mecanismos para detectar e prevenir erros.
+
+
+2
+Qualidade das mensagens de erros
+
+
+As mensagens de erros devem ser claras e legíveis, o que deve ser feito para evitar o erro e como corrigi-lo.
+
+
+3
+Correção de erros
+
+
+As ações que o usuário pode realizar para solucionar os erros.
+
+
+Consistência/homogeneidade
+
+
+Seu objetivo é padronizar as interfaces de modo que os elementos sejam facilmente reconhecidos, localizados e, principalmente, lembrados.
+
+
+Significados de códigos
+
+
+Sua meta é garantir que o vocabulário utilizado em rótulos, títulos, cabeçalhos, mensagens e opções de menus esteja compatível com as figuras e os ícones utilizados.
+
+
+Compatibilidade
+
+
+Sua finalidade é fazer com que a organização das saídas e entradas de uma aplicação se adequem às características do usuário, como hábitos, idade, competências, expectativas etc.
