@@ -1,0 +1,90 @@
+Software
+
+Seria possível a sua vida hoje sem o smartphone?
+
+ 
+
+Acredito que a maioria em uma pesquisa iria responder um enfático “não”!
+
+ 
+
+O que você acha que torna o telefone móvel tão atrativo? O software?
+
+ 
+
+É provável, pois, não descartando a importância do hardware, o software permite uma relação de usabilidade interativa e intuitiva, gerando um uso intensivo. Essa competência é resultado de trabalho multidisciplinar árduo de engenheiros de softwares, administradores de banco de dados, web designers, entre outros profissionais.
+ 
+
+Neste contexto, vamos iniciar nosso estudo sobre a extraordinária área de conhecimento Engenharia de Software, que tem como principal produto o software.
+
+
+Atenção
+Destacamos que a bibliografia Pressman (2016) é uma referência mundial nessa área.
+
+
+O conceito de software a seguir define esse importante produto.
+
+
+Software consiste em:
+(1) instruções (programa de computador) que, quando executadas, fornecem características, funções e desempenho desejados; (2) estruturas de dados que possibilitam aos programas manipular informações adequadamente; e (3) informação descritiva, tanto na forma impressa quanto na virtual, descrevendo a operação e o uso dos programas.
+(PRESSMAN, 2016).
+Implicitamente, o software relaciona-se com o hardware. Essa relação gerou a denominada “Crise do Software”, sintetizada pela afirmativa a seguir de Edsger.
+
+
+A maior causa da Crise do Software é que as máquinas se tornaram várias ordens de magnitude mais potentes! Em termos diretos, enquanto não havia máquinas, programar não era um problema; quando tivemos computadores fracos, isso se tornou um problema pequeno; e agora que temos computadores gigantescos, programar tornou-se um problema gigantesco.
+(DIJKSTRA, 1972).
+É importante destacar que o desenvolvimento tecnológico do hardware nos últimos anos permitiu o desenvolvimento de softwares cada vez mais complexos, tendo um forte impacto na indústria de software. Como exemplo, podemos apresentar a substituição do paradigma estruturado pelo paradigma orientado a objetos, baseado na programação orientada a objetos que permite o reuso intensivo de especificação, bem como uma melhor manutenibilidade e, como consequência, o desenvolvimento de softwares mais complexos.
+
+
+
+Figura 1 – Sistema de Informação x Software.
+
+Vamos enfatizar uma das principais finalidades do software: a geração de informação. A figura 1 ilustra de forma implícita os principais componentes tecnológicos de um Sistema de Informação, i.e., hardware, software, sistema gerenciador de banco de dados, redes de comunicação e serviços, sendo os referidos componentes interdependentes. O ambiente empresarial está representado pela respectiva pirâmide funcional, cabendo ao componente software, o importante papel de agregar valor aos dados quando da geração de informações aos diferentes níveis de gestão – operacional, gerencial e estratégico, pois essa pode ser utilizada em um processo de tomada de decisão ou no controle de funções empresariais, tais como financeiro, recursos humanos e outras.
+
+ 
+
+Um segundo exemplo, vamos considerar a complexidade do desenvolvimento de um software embarcado em uma aeronave com 500 pessoas e que realiza o seu controle total, em que um defeito pode ter um impacto altamente negativo.
+
+ 
+
+Vamos imaginar o que seria do piloto sem as informações do voo no painel de controle.
+
+
+Em ambos exemplos, observamos que o software apresenta dois papéis distintos, o primeiro como um produto a ser utilizado pelos usuários, o segundo como veículo que distribui o produto, pois a comunicação entre os diversos componentes de um sistema de informação ocorre por meio de sistemas operacionais, software de comunicação entre outros. O software distribui o produto mais importante da nossa era – a Informação (PRESSMAN, 2016).
+
+
+Você consegue imaginar quais os desafios atuais de um engenheiro de software?
+
+ 
+
+Destacamos que os desafios incluem sete grandes categorias:
+
+
+
+Software de sistema
+Camadas de software que atendem a outros softwares, tais como, sistemas operacionais, drivers e outros.
+
+
+Software de aplicação
+Inclui software com escopo específico, tais como, sistemas de gestão empresarial (ERP).
+
+
+Software de engenharia/científico
+Inclui software aplicado às áreas de engenharia e científica, tal como, software para cálculo estrutural na área de engenharia civil ou processamento de imagem.
+
+
+Software embarcado
+Instalado em produtos com funções específicas, tal como, o controle de um veículo com informações disponíveis no painel digital.
+
+
+Software para linha de produtos
+Projetado com determinado conjunto de funcionalidades e utilizado por diferentes clientes, por exemplo, sistema emissor de nota fiscal.
+
+
+Aplicações web/aplicativos móveis
+Software específico para dispositivo móvel.
+
+
+Software de inteligência artificial
+Utilizam técnicas de inteligência artificial, tais como, sistema especialistas, redes neurais, aprendizado de máquinas e outros.
+

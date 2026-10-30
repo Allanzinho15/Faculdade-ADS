@@ -1,0 +1,44 @@
+Implantação
+Considerando as etapas do processo de desenvolvimento de software apresentadas, o que temos até o momento?
+
+ 
+
+O produto software testado em condições de migrar para o ambiente denominado “produção”, ou seja, mundo real, onde os usuários irão utilizá-lo nas suas rotinas diárias, seja na realização de um controle administrativo, seja no contexto de um processo de tomada de decisão.
+
+ 
+
+A implantação é a etapa do processo de desenvolvimento de software relacionada à transferência do sistema da comunidade de desenvolvimento para a comunidade de usuários, ou seja, o sistema entra em produção no ambiente real.
+
+ 
+
+O objetivo da implantação é produzir com sucesso a entrega do software para seus usuários finais, podendo cobrir vasta gama de atividades, como descritas a seguir:
+
+
+A produção de releases externos do software
+
+
+Inclui o lançamento de uma nova versão do software, ou resultado de uma manutenção no mesmo, sendo exigidas decisões, por parte de desenvolvedores e usuários, sobre como realizar a distribuição do produto.
+
+
+A embalagem do software
+
+
+Quando o software será comercializado por meio de determinada mídia, como, por exemplo, DVD.
+
+
+Distribuição do software
+
+
+É o processo de entrega de software para o usuário final, podendo ocorrer de forma manual, sem auxílio de ferramentas, ou automática, com auxílio de ferramentas.
+
+
+Instalação do software
+
+
+É um processo que inclui a instalação de todos os arquivos necessários à execução do software projetado.
+
+
+Prestação de ajuda e assistência aos usuários
+
+
+Quando a complexidade do software exige um serviço de atendimento aos clientes que procuram esclarecimentos sobre dúvidas relacionadas às funcionalidades ou sobre problemas técnicos relacionados ao software, e.g., serviço de help desk.

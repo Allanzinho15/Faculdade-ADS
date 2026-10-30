@@ -1,0 +1,15 @@
+Artefatos Scrum
+Os Artefatos Scrum são concebidos com a finalidade de garantir que as equipes Scrum sejam bem-sucedidas na geração de um incremento.
+
+ 
+
+Vejamos os principais artefatos:
+
+
+
+Product Backlog
+Lista incluindo todos os requisitos ou funcionalidades levantados para o produto, estando sob responsabilidade do product owner; no início do desenvolvimento, são estabelecidos os requisitos inicialmente conhecidos e mais bem compreendidos, evoluindo à medida que o produto e o ambiente em que ele será utilizado também evoluem, ou seja, o product backlog é dinâmico.
+
+
+Sprint Backlog
+Subconjunto de requisitos do product backlog selecionados para determinada iteração, denominada de Sprint; inclui, também, o plano para entregar um incremento do produto e atingir a meta da Sprint, isto é, estabelece quais funcionalidades estarão na próxima versão e o trabalho necessário para a referida entrega, também denominada de “Done”. A equipe de desenvolvimento é a responsável, quando necessário, pelas modificações no sprint backlog.

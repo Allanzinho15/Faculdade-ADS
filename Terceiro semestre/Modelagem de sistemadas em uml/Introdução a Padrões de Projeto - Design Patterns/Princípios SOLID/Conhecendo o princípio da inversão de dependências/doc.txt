@@ -1,0 +1,108 @@
+Conhecendo o princípio da inversão de dependências
+Também denominado de DIP (do inglês dependency inversion principle), estabelece que as entidades concretas devem depender de abstrações, e não de outras entidades concretas. Isso é especialmente importante quando estabelecemos dependências entre entidades de camadas diferentes do sistema.
+
+
+Neste vídeo, explicamos um dos pilares do design de software orientado a objetos. Veja como o DIP promove a criação de sistemas flexíveis e robustos ao inverter a dependência tradicional entre módulos de alto e baixo nível.
+
+
+
+Apresentação
+
+Segundo o princípio DIP, um módulo de alto nível não deve depender de um de baixo nível. Entenda:
+
+
+Módulos de alto nível
+
+São aqueles ligados estritamente ao domínio da aplicação (ex.: loja, produto, ServiçoVenda etc.).
+
+
+Módulos de baixo nível
+
+São ligados a alguma tecnologia específica (ex.: acesso a banco de dados, interface com o usuário etc.). Por isso são mais voláteis.
+
+
+Violação do princípio da inversão de dependências
+
+O próximo exemplo apresenta um caso de dependência de um módulo de alto nível em relação a outro de baixo nível. A classe ServicoConsultaProduto depende diretamente da implementação de um repositório de produtos que acessa um banco de dados relacional Oracle.
+
+
+Essa dependência é estabelecida na operação obterPrecoProduto da classe ServicoConsultaProduto pelo comando new ProdutoRepositoryOracle(). Acompanhe no exemplo a seguir.
+
+
+Java (OpenJDK 13.0.1)
+
+ public class ProdutoRepositoryOracle {
+    public Produto obterProduto(String codigo) {
+        Produto p = new Produto();
+        // implementacao SQL de recuperação do produto
+        return p;
+    }
+    
+    public void  salvarProduto(Produto produto) {
+        // implementacao SQL de insert ou update do produto
+    }
+}
+
+public class ServicoConsultaProduto {
+    public double obterPrecoProduto(String codigo) {
+        ProdutoRepositoryOracle repositório
+           = new ProdutoRepositoryOracle();
+        Produto produto = repositorio.obterProduto(codigo);
+        return produto.getPreco();
+    }
+}
+
+Copiar
+
+A imagem a seguir apresenta, em um diagrama UML, a relação de dependência existente entre a classe concreta ServicoConsultaProduto e a ProdutoRepositoryOracle.
+
+
+
+Violação do DIP (Diagrama UML).
+
+Por que essa dependência é inadequada?
+
+Como aspectos tecnológicos são voláteis, devemos isolar a lógica de negócio, permitindo que a implementação concreta desses aspectos possa variar sem afetar as classes que implementam a lógica de negócio.
+
+
+O exemplo a seguir apresenta a solução resultante da aplicação do princípio estudado. A interface abstrata (ProdutoRepository) define um contrato abstrato entre cliente (ServicoConsultaProduto) e fornecedor (ProdutoRepositoryOracle). Em vez de o cliente depender de um fornecedor específico, ambos passam a depender da interface abstrata.
+
+
+Assim, a classe ServicoConsultaProduto pode trabalhar com qualquer implementação concreta da interface ProdutoRepository, sem que seu código precise ser alterado. Veja o exemplo:
+
+
+Java (OpenJDK 13.0.1)
+
+public interface ProdutoRepository {
+    Produto obterProduto(String codigo);
+    void  salvarProduto(Produto produto);
+}
+public class ProdutoRepositoryOracle implements ProdutoRepository {
+    public Produto obterProduto(String codigo) {
+        Produto p = new Produto();
+        // implementacao SQL de recuperação do produto
+        return p;
+    }
+    
+    public void  salvarProduto(Produto produto) {
+        // implementacao SQL de insert ou update do produto
+    }
+}
+
+public class ServicoConsultaProduto {
+    ProdutoRepository repositorio;
+
+    public ServicoConsultaProduto(ProdutoRepository repositorio) {
+	   this.repositorio = repositorio;
+    }
+    public double obterPrecoProduto(String codigo) {
+        Produto produto = repositorio.obterProduto(codigo);
+        return produto.getPreco();
+    }
+}
+
+Copiar
+
+A imagem a seguir apresenta o diagrama UML correspondente à nova estrutura da solução após a aplicação do princípio. A classe ServicoConsultaProduto depende apenas da interface ProdutoRepository, enquanto a classe ProdutoRepositoryOracle é uma das possíveis implementações concretas dessa interface.
+
+

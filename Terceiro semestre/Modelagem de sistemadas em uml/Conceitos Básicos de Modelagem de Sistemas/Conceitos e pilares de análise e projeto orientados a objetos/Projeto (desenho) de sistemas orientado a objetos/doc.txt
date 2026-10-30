@@ -1,0 +1,24 @@
+Projeto (desenho) de sistemas orientado a objetos
+É essencial no desenvolvimento de software, pois estabelece a estrutura sobre a qual os sistemas são construídos. Com um sólido conhecimento teórico nessa área, é possível projetar sistemas mais eficientes, mantendo a coesão e minimizando o acoplamento entre os objetos. Isso não apenas facilita a implementação, como também a manutenção e a expansão futuras do sistema. Dominar os princípios do design orientado a objetos promove a criação de software de alta qualidade, otimizando recursos e maximizando a adaptabilidade às mudanças de requisitos, fundamentais em um ambiente tecnológico que evolui rapidamente.
+
+
+Entenda neste vídeo a etapa de projeto (desenho) de sistemas orientado a objetos.
+
+
+
+A atividade de projeto denota uma solução, voltada a atender aos requisitos identificados na fase de análise, considerando os recursos tecnológicos necessários para implementar os objetos do domínio e os objetos da aplicação.
+
+
+O objetivo é decidir como o sistema funcionará para atender aos requisitos. Em geral, o projeto enfoca a definição da arquitetura do sistema, determinando suas partes e a relação entre elas, o padrão de interface gráfica, o ambiente computacional (sistema operacional e computacional), a linguagem de programação o gerenciamento do banco de dados.
+
+
+O projeto, consequentemente, é uma extensão da análise e resulta em uma descrição dos recursos computacionais e de como o sistema deve operar no cotidiano. Em algumas situações, podem existir restrições tecnológicas, como a necessidade de desenvolver na linguagem X devido à predominância dos sistemas da organização nessa linguagem (se ainda estiver em uso no mercado), ou usar o sistema gerenciador de banco de dados Y, devido à base corporativa da organização estar nele. Veja como a fase de projeto pode ser dividida!
+
+
+
+Projeto da arquitetura
+Ato de distribuir as classes de análise em subsistemas com seus componentes, bem como distribuir os componentes pelos recursos de hardware disponíveis. Entre os diagramas da UML, usamos aqui os diagramas de pacotes, componentes e implantação.
+
+
+Projeto detalhado
+Envolve atividades como modelagem das interações entre objetos, design da interface e do banco de dados, e considerações sobre aspectos computacionais avançados, como concorrência e distribuição de processamento e dados. Também inclui o design de algoritmos, se necessário, e a criação de diversos diagramas UML, como diagramas de interação, atividades e detalhamento dos diagramas de classes e de estados.

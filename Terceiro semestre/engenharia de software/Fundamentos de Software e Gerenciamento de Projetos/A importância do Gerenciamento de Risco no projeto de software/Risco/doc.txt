@@ -1,0 +1,118 @@
+Risco
+As melhores práticas desenvolvidas neste módulo têm por fundamento o PMBOK, cujos processos estão definidos na figura 15, vista no módulo 3.
+
+
+Imagine você realizando um planejamento de uma viagem ao exterior nas próximas férias. Considerando que o roteiro está definido, bem como as reservas dos hotéis realizadas, as passagens reservadas e uma quantidade de dólares adquiridos, podemos, intuitivamente, aplicar uma abstração denominada risco, ou seja, o que pode ocorrer de errado na minha viagem?
+
+
+Vamos, então, gerar uma pequena lista de possíveis eventos negativos para entendermos os conceitos:
+
+ 
+
+Ocorrência de um problema de saúde, por causa de um acidente ou ter contraído alguma doença.
+Cancelamento da passagem pela companhia aérea.
+A quantidade de dólar adquirida não ser suficiente.
+
+Observe que a avaliação de risco gera uma preocupação que o conduz ao futuro, inserindo um grau de incerteza – ele pode ou não ocorrer. Ao mesmo tempo, espera-se que fique clara a importância de sua avaliação, pois, caso ocorra algum dos eventos listados durante a sua viagem, essa pode estar seriamente comprometida.
+
+
+Um risco é um evento ou condição incerta que, se ocorrer, provocará um efeito positivo ou negativo em um ou mais objetivos do projeto.
+
+(PMI, 2017)
+Você pode agora questionar: efeito positivo?
+
+ 
+
+O risco não trata de efeitos negativos ou coisas que podem dar errado? Realmente, o mais comum é associar risco a algo negativo, mas, conceitualmente, pode ser algo positivo. Vamos exemplificar.
+
+ 
+
+Imagine uma empresa exportadora de minério que elabora o seu plano de investimento para o próximo ano e que identificou o seguinte risco: variação cambial do dólar, sendo essa a moeda padrão da comercialização de commodities. O planejamento inclui aplicar os recursos de investimentos em novos projetos de prospecção de minas.
+
+ 
+
+Neste momento, faz-se necessário realizar uma projeção do valor do câmbio para o próximo ano, pois, como apresentado, o faturamento da empresa está atrelado à referida moeda – vamos imaginar que o valor projetado para o dólar foi de R$ 5,50 (reais). Temos então dois cenários possíveis:
+
+
+
+Cenário negativo
+
+Cenário positivo
+Atenção
+Lembrando que nosso contexto é a Engenharia de Software, a melhor prática é focar nos cenários negativos.
+
+
+Como citado anteriormente, o risco permite planejar o futuro e evitar que empresas tenham “sustos” nos seus projetos em função de eventos inesperados e, a partir destes, iniciar as devidas tratativas. Em síntese, a área de Gerenciamento de Risco permite a sistematização dessas tratativas em forma de plano.
+
+ 
+
+Veja, na figura 15, os processos que fazem parte da área de conhecimento Gerenciamento de Riscos. Os referidos processos permitem a sistematização da identificação, da análise e das respostas aos riscos de um projeto.
+
+
+Figura 15 – Áreas de conhecimento x Grupos de processos.
+
+Identificação de riscos
+
+
+Figura 19 - Extrato de um exemplo de EAR.
+
+Alinhado às descrições apresentadas, podemos determinar que um risco possui três componentes: um evento; a probabilidade de ocorrência do evento, associada ao grau de incerteza; e o impacto decorrente do evento, caso aconteça, associado ao grau de perda.
+
+ 
+
+Como parte do Plano de Gerenciamento de Riscos, a elaboração de uma Estrutura Analítica do Risco (EAR) auxilia na definição de potenciais fontes de riscos para o projeto, permitindo a identificação de riscos de forma categorizada, exemplificada na figura 19.
+
+ 
+
+O processo de Identificação de Riscos requer uma clara compreensão da missão, escopo e objetivos do projeto.
+
+
+Segundo Pressman (2016), uma proposta para identificação de categorias genéricas de risco relacionadas com o software inclui:
+
+
+
+Tamanho do produto
+
+Impacto no negócio
+
+Características do envolvido
+
+Definição do processo
+
+Ambiente de desenvolvimento
+
+Tecnologia a ser criada
+
+Quantidade de pessoas e experiência
+
+O processo de identificação de riscos é iterativo, pois novos riscos podem aparecer durante o projeto. Uma técnica muito comum a ser utilizada na identificação de riscos é a técnica denominada de Brainstorming. Esta inclui uma reunião com um conjunto multidisciplinar de especialistas com a finalidade de obter uma lista abrangente de cada risco de projeto e as fontes do risco geral do projeto, sendo as ideias geradas sob a orientação de um facilitador.
+
+
+
+Uma segunda técnica é conhecida como Lista de Verificação ou Check List, ou seja, uma lista de riscos baseada em informações históricas e conhecimentos acumulados de projetos semelhantes e outras fontes de informações. Essas listas ajudam a identificar pontos fracos no projeto atual a partir de experiências passadas.
+
+
+
+Uma terceira técnica proposta pelo PMBOK é a entrevista.
+
+A seguir, vamos explorar um exemplo da aplicação dessa técnica com experientes gerentes de projeto de software, que levantaram as seguintes questões e foram apresentadas por Pressman (2016).
+
+
+Exemplo da Técnica de Entrevista
+
+ 
+
+A alta gerência e o cliente estão formalmente comprometidos em apoiar o projeto?
+Os usuários estão bastante comprometidos com o projeto e o sistema/produto a ser criado?
+Os requisitos são amplamente entendidos pela equipe de engenharia de software e clientes?
+Os clientes foram totalmente envolvidos na definição dos requisitos?
+Os usuários têm expectativas realistas?
+O escopo do projeto é estável?
+A equipe de Engenharia de Software tem a combinação de aptidões adequadas?
+Os requisitos de projetos são estáveis?
+A equipe de projeto tem experiência com a tecnologia a ser implementada?
+O número de pessoas na equipe de projeto é adequado para o trabalho?
+Todos os clientes e usuários concordam com a importância do projeto e com os requisitos do sistema/produto a ser criado?
+ 
+
+Caso alguma questão seja respondida negativamente, insira o risco, ou riscos, na sua lista de riscos.

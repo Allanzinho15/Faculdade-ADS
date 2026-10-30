@@ -1,0 +1,56 @@
+Conhecendo o padrão controlador
+Em muitas situações, é essencial ter um líder coordenando a equipe, como o técnico em um time esportivo ou o maestro de uma orquestra. Da mesma forma, em um sistema, o padrão controlador visa definir uma classe que inicia operações específicas quando ocorrem determinados eventos.
+
+
+Um exemplo prático disso é a arquitetura MVC, que é amplamente utilizada em sistemas de cadastro. O controlador recebe as solicitações da interface do usuário e executa as operações necessárias na camada de persistência. A arquitetura MVC é implementada em vários frameworks, como o Spring, que faz uso da anotação @Controller.
+
+
+Veja, neste vídeo, que o padrão GRASP controlador é responsável por atribuir a responsabilidade de receber um evento do sistema e coordenar a produção de sua resposta a uma classe.
+
+
+
+Problema
+
+Um sistema interage com elementos externos (também conhecidos como atores). Muitos deles geram eventos que devem ser capturados pelo sistema, processados e produzir alguma resposta, interna ou externa.
+
+
+Exemplo
+Quando o cliente solicita o fechamento de um pedido na loja on-line, isso precisa ser capturado e processado pelo sistema.
+
+
+A quem devemos atribuir a responsabilidade de tratar os eventos que correspondem às requisições de operações para o sistema?
+
+
+Solução
+
+Deve-se atribuir a responsabilidade de receber um evento do sistema e coordenar a produção da sua resposta a uma classe que represente uma das seguintes opções:
+
+
+Opção 1
+
+Uma classe corresponde ao sistema ou a um subsistema específico, e essa solução é conhecida como controlador fachada. Ela é utilizada em sistemas com poucos eventos.
+
+
+Opção 2
+
+Uma classe corresponde ao caso de uso em que o evento ocorre. Normalmente, o nome dessa classe é formado pelo nome do caso de uso com o sufixo processador, controlador, sessao ou algo similar.
+
+
+A classe controlador deve reunir o tratamento de todos os eventos que o sistema recebe no contexto do caso de uso. Essa solução evita que as responsabilidades de tratamento de eventos de diferentes funcionalidades se concentrem em um único controlador fachada, evitando a criação de um módulo com baixa coesão.
+
+
+Note que a classe estudada não cumpre as responsabilidades de interface com o usuário. Em um sistema de home banking, por exemplo, o usuário informa todos os dados de uma transferência em um componente de interface com o usuário e, ao clicar no botão transferir, esse componente delega a requisição para o controlador realizar o processamento lógico da transferência. Assim, o mesmo controlador pode atender às solicitações realizadas por diferentes interfaces com o usuário (web, dispositivo móvel e totem 24 horas, por exemplo).
+
+
+Consequências
+
+Normalmente, ao receber uma requisição, um módulo controlador coordena e controla os elementos responsáveis pela produção da resposta.
+
+
+
+Maestro e orquestra.
+
+Em uma orquestra, o maestro comanda o momento em que cada músico deve entrar em ação, mas ele mesmo não toca nenhum instrumento. Da mesma forma, o módulo Controlador é o grande orquestrador de um conjunto de objetos, em que cada um tem sua responsabilidade específica na produção da resposta ao evento.
+
+
+Um problema que pode ocorrer é atribuir ao controlador responsabilidades além da orquestração, como se o maestro, além de comandar os músicos, também ficasse responsável por tocar piano, flauta e outros instrumentos. Essa concentração de responsabilidades no Controlador gera um módulo grande, complexo e que ninguém se sente confortável de evoluir.

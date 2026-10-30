@@ -1,0 +1,303 @@
+Descrição
+A modelagem de um projeto de software de acordo com o paradigma orientado a objetos, usando a linguagem UML (Unified Modeling Language).
+
+PROPÓSITO
+Aplicar os conceitos relacionados com a modelagem de um projeto de software, empregando os modelos da UML em um estudo de caso, é importante para a formação do profissional de Computação.
+
+Preparação
+Antes de iniciar o conteúdo deste tema, instale em seu computador um programa que lhe permita elaborar modelos, sob a forma de diagramas da UML (Linguagem Unificada de Modelagem). Nossa sugestão inicial é o Astah Free Student License, e será necessário usar seu e-mail institucional para ativar a licença. Preencha os dados do formulário, envie e aguarde a liberação de sua licença em seu e-mail institucional. Ao receber a licença, siga as instruções do e-mail e instale o produto em seu computador. Após a instalação, utilize o Astah para acessar os arquivos utilizados neste tema: estudoCasoPousada_analise e estudoCasoPousada_projeto.
+
+Sugestões de links adicionais de programas livres para modelagem de sistemas em UML (UML tools) podem ser encontradas em buscas na Internet.
+
+OBJETIVOS
+Módulo 1
+Produzir o documento de requisitos para um estudo de caso de modelagem de sistemas
+
+Módulo 2
+Construir o modelo de casos de uso para um estudo de caso de modelagem de sistemas em UML
+
+Módulo 3
+Construir os modelos de análise para um estudo de caso de modelagem de sistemas em UML
+
+Módulo 4
+Produzir o modelo de projeto para um estudo de caso de modelagem de sistemas em UML
+
+Introdução
+O presente tema trata do desenvolvimento de um estudo de caso que inclui as principais atividades de modelagem exigidas durante um processo de desenvolvimento de software.
+
+Na etapa de levantamento de requisitos, são identificados os serviços a serem fornecidos pelo sistema, bem como as restrições operacionais, ou seja, os requisitos funcionais e não funcionais, respectivamente.
+
+A etapa de análise inclui a geração do modelo de casos de uso a partir dos requisitos funcionais, sendo esse modelo composto de diagramas de casos de uso, artefatos gráficos, complementados por descrições de casos de uso, artefatos textuais. Ainda na etapa de análise, são gerados: o modelo de classes, composto de diagramas de classes, que representam as estruturas estáticas dos objetos; o modelo de atividades, composto de diagramas de atividades, que descrevem os aspectos dinâmicos do sistema exibindo passos de uma computação, sendo esses orientados a fluxos de controle; e o modelo de estados, composto de diagramas de estados, que também descrevem os aspectos dinâmicos do sistema, modelando o comportamento de objetos de uma classe na forma de uma máquina de estados, sendo esses orientados a eventos.
+
+Na etapa de projeto, podemos destacar: a geração do modelo de interação, que inclui os diagramas de sequência e/ou diagramas de comunicação, usados para modelar a interação entre os objetos das diversas classes identificadas nas fases de análise e projeto; o refinamento do modelo de classes, com os aspectos estáticos e estruturais do sistema, ou seja, os diagramas de classes de análise; a montagem do modelo de implementação, composto de diagramas de componentes; e a elaboração do modelo de implantação, composto de diagramas de implantação.
+
+MÓDULO 1
+Produzir o documento de requisitos para um estudo de caso de modelagem de sistemas
+
+As atividades típicas que compõem o processo de desenvolvimento de software estão ilustradas a seguir, que mostra as atividades mais comuns dos processos de desenvolvimento de software, ou seja, qualquer processo deverá possuir as referidas atividades.
+
+
+Atividades típicas de um processo de desenvolvimento de software.
+UML (Unified Modeling Language)
+Considerando que o padrão atual da indústria de software é o paradigma orientado a objetos, a UML, ou seja, Linguagem de Modelagem Unificada, permite a geração de diversos documentos, de acordo com o referido paradigma, durante o processo de desenvolvimento de software, sendo esses documentos denominados artefatos de software, que podem ser textuais ou gráficos.
+
+Os artefatos gráficos produzidos em um sistema orientado a objetos são definidos através dos diagramas da UML. Como mostra a imagem a seguir, os diagramas da UML são classificados em diagramas de estruturas e de comportamentos, também conhecidos como diagramas estáticos e dinâmicos, respectivamente.
+
+
+Diagramas da UML.
+Segue, no quadro abaixo, breve descrição dos diagramas:
+
+Diagrama	Especificação
+Diagrama de perfil
+
+Permite a definição de tipos padronizados, como estereótipos, restrições e valores rotulados. O foco é a adequação aos modelos UML para diferentes plataformas, por exemplo.
+
+Diagrama de classes
+
+Descreve para cada classe suas propriedades (atributos e métodos) e seus relacionamentos com as demais classes. Classe é a base estrutural dos sistemas orientados a objetos.
+
+Diagrama de estruturas compostas
+
+Possibilita a descrição de colaborações internas de classes, interfaces ou componentes visando a especificação de uma funcionalidade.
+
+Diagrama de componentes
+
+Apresenta a estrutura e conexões entre os componentes de um sistema.
+
+Diagrama de implantação
+
+Especifica o ambiente computacional sobre o qual o sistema vai operar, além de distribuir os artefatos (pacotes, classes e componentes) nos nós (elementos computacionais).
+
+Diagrama de objetos
+
+É um diagrama de classes instanciado, ou seja, mostra exemplos de instâncias.
+
+Diagrama de pacotes
+
+Descreve estruturas hierárquicas que englobam outros elementos, como outros pacotes, casos de uso, classes. Usado para modularizar logicamente um sistema em suas partes relevantes (subsistemas).
+
+Diagrama de atividades
+
+Descreve o comportamento de procedimentos, processos de negócios e fluxos de trabalho, suportando processamento sequencial e paralelo.
+
+Diagrama de casos de uso
+
+Mostra como os usuários (atores) interagem com o sistema, do ponto de vista externo, evidenciando as funcionalidades com as quais interagem.
+
+Diagrama de estados
+
+Mostra como os eventos que afetam o sistema alteram o estado dos objetos ao longo de seus ciclos de vida.
+
+Diagrama de sequência
+
+Mostra como os objetos interagem, evidenciando o tempo (a sequência das interações).
+
+Diagrama de comunicação
+
+Mostra como os objetos interagem, evidenciando o tempo das conexões entre eles.
+
+Diagrama de visão geral de interação
+
+Um mix de diagrama de sequência e de atividades. Uma especialização do diagrama de atividades para interações.
+
+Diagrama de tempo
+
+Diagrama de interação, com foco nas restrições de temporização, por exemplo, evidenciar as mudanças no estado de um objeto ao longo do tempo.
+
+Tabela: Alberto Tavares da Silva.
+
+Dica
+Nem todos os 14 diagramas serão utilizados no estudo de caso. Na verdade, alguns raramente são usados na prática.
+
+Levantamento de requisitos
+Considerando as atividades genéricas que compõem o processo de desenvolvimento de software, a atividade de levantamento de requisitos, também denominada elicitação de requisitos, corresponde à etapa de compreensão do problema por parte do engenheiro de software ou equipe.
+
+O principal objetivo do levantamento de requisitos é que usuários e equipe de desenvolvimento tenham a mesma visão do problema a ser resolvido.
+
+Nessa etapa, os desenvolvedores, juntamente com os clientes, tentam levantar e definir as necessidades dos futuros usuários do sistema a ser desenvolvido, sendo essas necessidades denominadas requisitos. Um requisito corresponde a uma descrição de um serviço a ser fornecido pelo sistema ou uma restrição operacional.
+
+Como podemos elicitar os requisitos?
+
+O engenheiro de software poderá utilizar determinadas técnicas:
+
+Leitura de obras de referência e livros-texto
+
+Observação do ambiente do usuário
+
+Realização de entrevistas com os usuários
+
+Entrevistas com especialistas do domínio
+
+Reutilização de análises anteriores
+
+Comparação com sistemas preexistentes do mesmo domínio do negócio
+
+
+ARTEFATOS DO LEVANTAMENTO DE REQUISITOS]
+O especialista Alberto Tavares da Silva demonstra as atividades e os artefatos da fase de levantamento de requisitos do processo de desenvolvimento de software.
+
+
+Minimundo do estudo de caso
+Para fins didáticos, escolhemos um estudo de caso simples o suficiente para entendimento do problema, porém, necessariamente completo para ilustrar todas as atividades do processo de análise e projeto do sistema, empregando os diagramas da UML mais frequentemente usados na prática.
+
+Aplicadas as técnicas de elicitação de requisitos, a equipe de engenheiros de software definiu a descrição do minimundo do estudo de caso a ser desenvolvido conforme a seguir.
+
+Descrição do Minimundo
+A empresa fictícia Pousadas Férias no Nordeste possui uma rede de pousadas e pretende contratar um sistema de software para a gestão de reservas de quartos online, incluindo a precificação das diárias e produtos disponíveis para consumo, bem como o pagamento dessas diárias e produtos consumidos pelos respectivos clientes.
+
+Uma reserva pode ser realizada de forma online ou por meio de contato telefônico com um funcionário da recepção da pousada. O cadastro do cliente é obrigatório para confirmação da reserva. O cancelamento da reserva pode ser realizado online ou por telefone.
+
+Os produtos disponíveis incluem bebidas, lanches e refeições diversas, sendo os consumos realizados pelos clientes registrados por funcionários atendentes de bar ou de cozinha da pousada.
+
+Os funcionários do setor administrativo da empresa mantêm atualizados os registros necessários à realização de reservas, tais como funcionários, pousadas, quartos e outros, bem como a precificação de diárias e produtos.
+
+A seguir, veremos os requisitos estabelecidos pela equipe de engenheiros de software.
+
+Requisitos funcionais (RF)
+A tabela a seguir lista os requisitos funcionais estabelecidos pela equipe de engenheiros de software.
+
+RF 1
+
+O sistema deve permitir que os clientes realizem reservas de quartos online ou por contato telefônico com a recepção da pousada.
+
+RF 2
+
+O sistema deve permitir que um cliente realize uma reserva somente se estiver cadastrado, podendo o referido cadastro ocorrer de forma online ou por contato telefônico.
+
+RF 3
+
+Quando o cliente realiza uma reserva online, o sistema realiza a cobrança de uma diária no cartão de crédito para confirmação da reserva.
+
+RF 4
+
+Quando o cliente realiza uma reserva por meio telefônico, o sistema exige uma pré-reserva para confirmação da reserva. Nesse caso, a recepção realiza a validação (inclui o registro do valor depositado) ou cancelamento da pré-reserva.
+
+RF 5
+
+O cliente pode cancelar uma reserva.
+
+RF 6
+
+O sistema deve permitir a precificação das diárias dos quartos das pousadas pelo setor administrativo da empresa.
+
+RF 7
+
+O sistema deve permitir a precificação dos produtos disponíveis para consumo pelos clientes pelo setor administrativo da empresa.
+
+RF 8
+
+O sistema deve interagir com um sistema terceirizado (operadora de cartão crédito) para pagamentos com cartão de crédito.
+
+RF 9
+
+Os consumos de produtos por parte dos clientes devem ser registrados pelos atendentes de bares e cozinha das pousadas.
+
+RF 10
+
+Os funcionários do setor administrativo da empresa mantêm atualizados os registros necessários à realização de reservas, ou seja, funcionários, pousadas, quartos.
+
+RF 11
+
+A quitação da reserva, realizada pela recepção da pousada e somente com cartão de crédito, deve ocorrer no check-out.
+
+RF 12
+
+O setor administrativo gera relatórios periódicos das ocupações dos quartos das pousadas.
+
+RF 13
+
+O gerente da pousada gera relatórios periódicos de ocupação dos quartos da pousada.
+
+Requisitos funcionais do estudo de caso. Tabela: Alberto Tavares da Silva.
+
+Requisitos não funcionais (RNF)
+Os requisitos não funcionais estão associados às restrições impostas ao sistema que podem ser categorizados como de produto, organizacionais e externos. A tabela a seguir lista os requisitos não funcionais definidos pela equipe de engenheiros de software.
+
+RNF 1
+
+O sistema deve utilizar tecnologia WEB.
+
+RNF 2
+
+O SGBD adotado é o MySQL.
+
+RNF 3
+
+A linguagem de programação para desenvolvimento adotada é Java, sendo a IDE Eclipse..
+
+RNF 4
+
+O framework para o mapeamento objeto-relacional é o Hibernate.
+
+RNF 5
+
+O padrão de arquitetura adotado é o MVC (model-view-controller).
+
+RNF 6
+
+O processo de desenvolvimento de software adotado é o Scrum.
+
+RNF 7
+
+O prazo estimado do projeto de software é de 04 (quatro) meses.
+
+RNF 8
+
+Atributo de qualidade crítico a ser considerado na seleção de um provedor de serviço na nuvem e de internet: confiabilidade.
+
+Requisitos não funcionais do estudo de caso. Tabela: Alberto Tavares da Silva.
+
+Requisitos de domínio
+Os requisitos de domínio, também conhecidos por regras de negócio (RN), originam-se do domínio de aplicação do sistema, em vez das necessidades específicas dos usuários do sistema.
+
+A tabela a seguir lista as regras de negócio definidas pela equipe de engenheiros de software.
+
+RN 1
+
+Uma reserva é realizada por um único cliente.
+
+RN 2
+
+Uma reserva pode incluir no mínimo 01 (um) quarto e no máximo 03 (três) quartos disponíveis no momento da reserva.
+
+RN 3
+
+A pré-reserva exigida na reserva por meio telefônico impõe um depósito bancário, por parte do cliente, correspondente a 40% do total da reserva na conta da respectiva Pousada. Nesse caso, a validade ou cancelamento da reserva é realizada pela recepção. O cliente tem o prazo de 24h para envio do recibo de depósito via WhatsApp ou SMS.
+
+RN 4
+
+O cancelamento de uma reserva pode ser realizado até 24h antes da data de check-in estabelecida na reserva.
+
+RN 5
+
+No caso de cancelamento da reserva realizada por telefone, o valor da pré-reserva é estornado ao cliente.
+
+RN 6
+
+No caso de cancelamento por período menor que 24h, ou não comparecimento, será cobrada uma diária.
+
+RN 7
+
+Uma reserva realizada online somente é confirmada após a autorização da operadora de cartão (sistema terceirizado).
+
+RN 8
+
+Os consumos de produtos por parte dos clientes são pagos no momento do check-out, com o valor restante das diárias.
+
+RN 9
+
+O check-in é realizado a partir de 15h e o check-out, até 12h.
+
+RN 10
+
+O sistema deve permitir o pagamento da reserva online e no check-out somente com cartão de crédito.
+
+Regras de negócio do estudo de caso. Tabela: Alberto Tavares da Silva.
+
+Vimos neste módulo que a etapa de levantamento de requisitos, ou elicitação de requisitos, permite o entendimento do problema por parte da equipe de engenheiros de software.
+
+Na etapa de levantamento de requisitos, é gerado o documento de requisitos categorizado em requisitos funcionais, não funcionais e de domínio, as denominadas regras de negócio.
+
+A identificação dos requisitos é realizada por meio de técnicas, tais como leitura de obras de referência e livros-texto, observação do ambiente do usuário, realização de entrevistas com os usuários, entrevistas com especialistas do domínio e outras.
+
+O documento de requisitos inclui os requisitos funcionais que correspondem aos serviços a serem fornecidos pelo sistema, os requisitos não funcionais, às restrições operacionais e os requisitos de domínio, que se originam do domínio de aplicação do sistema.

@@ -1,0 +1,77 @@
+Princípio da Substituição de Liskov (LSP)
+Foi definido em 1988 por Barbara Liskov, a primeira doutora em ciências da computador dos Estados Unidos. Ele estabelece que um tipo deve poder ser substituído por qualquer um de seus subtipos sem alterar o funcionamento correto do sistema.
+
+
+Veja, neste vídeo, um dos pilares da programação orientada a objetos. Entenda como garantir que subclasses possam substituir suas classes base sem comprometer a funcionalidade do sistema. Aprenda com exemplos práticos e confira por que o LSP é crucial para criar código flexível e robusto.
+
+
+
+Princípio LSP (quadrado)
+
+O próximo exemplo apresenta um caso clássico de violação do princípio de Liskov. Na geometria, um quadrado pode ser visto como um caso particular de um retângulo. Se levarmos essa propriedade para a implementação em software, poderemos definir uma classe quadrado como uma extensão da classe retangulo.
+
+
+Note que, como a largura do quadrado é igual ao comprimento, a implementação dos métodos de acesso (setLargura e setComprimento) do quadrado deve se preocupar em preservar essa propriedade. Acompanhe:
+
+
+Java (OpenJDK 13.0.1)
+public class Retangulo {
+    private double largura;
+    private double comprimento;
+
+    public double area() {
+        return largura * comprimento;
+    }
+    
+    public double getLargura() {
+        return largura;
+    }
+    public void setLargura(double largura) {
+        this.largura = largura;
+    }
+    public double getComprimento() {
+        return comprimento;
+    }
+    public void setComprimento(double comprimento) {
+        this.comprimento = comprimento;
+    }
+}
+
+public class Quadrado extends Retangulo {
+    public void setLargura(double largura) {
+        super.setLargura(largura);
+        super.setComprimento(largura);
+    }
+    public void setComprimento(double largura) {
+        super.setLargura(largura);
+        super.setComprimento(largura);
+    }
+}
+Copiar
+
+O próximo exemplo mostra como a solução vista viola o princípio da substituição de Liskov. O método verificarArea da classe ClienteRetangulo recebe um objeto r do tipo retangulo. Vamos lá!
+
+
+Violação do princípio LSP
+
+De acordo com esse princípio, o código desse método deveria funcionar com qualquer objeto de um tipo derivado de retangulo. Entretanto, no caso de um objeto do tipo quadrado, a execução da chamada setComprimento fará com que os dois atributos do quadrado passem a ter o valor 10. Em seguida, a execução da denominada setLargura fará com que os dois atributos do quadrado passem a ter o valor 8, e o valor retornado pelo método área definido na classe retangulo será 64, e não 80, violando o comportamento esperado para um retângulo, como pode ser visto a seguir.
+
+
+Java (OpenJDK 13.0.1)
+
+public class ClienteRetangulo {
+    public void verificarArea(Retangulo r) throws Exception {
+        r.setComprimento(10);
+        r.setLargura(8);
+        if (r.area() != 80) {
+            throw new Exception("area incorreta");
+        }
+    }
+}
+
+Copiar
+
+Embora um quadrado possa ser classificado como um caso particular de um retângulo, o princípio de Liskov estabelece que um subtipo não pode estabelecer restrições adicionais que violem o comportamento genérico do supertipo. Nesse caso, o fato de o quadrado exigir que comprimento e largura sejam iguais o torna mais restrito que o retângulo.
+
+
+Portanto, do ponto de vista da orientação a objetos, definir a classe quadrado como um subtipo de retângulo é uma solução inapropriada para o problema por violar o princípio de Liskov.

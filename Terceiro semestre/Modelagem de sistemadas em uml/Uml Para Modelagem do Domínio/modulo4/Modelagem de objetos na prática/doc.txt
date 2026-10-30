@@ -1,0 +1,20 @@
+Modelagem de objetos na prática
+A geração de um diagrama de objetos dá a profissionais de desenvolvimento a possibilidade de validarem se o diagrama de classes criado realmente representa as situações encontradas no mundo real. Como exemplo para o exercício prático, será utilizado o mesmo caso de uso alugar veículo com o respectivo diagrama de classes.
+
+A definição de um diagrama de objetos parte de um cenário que representa uma situação particular do minimundo. No exemplo, é apresentado o cenário no qual dois clientes alugam veículos de dois tipos diferentes com o mesmo funcionário. Vamos lá!
+
+Você vai conferir, neste vídeo, a prática da modelagem de objetos, que permite representar entidades do mundo real como objetos no software, definindo suas propriedades e seus comportamentos a partir de um determinado minimundo, utilizando a UML.
+
+
+Roteiro de prática
+Imagine a situação em que dois clientes alugam dois veículos de dois tipos diferentes, mas com o mesmo funcionário.
+
+A primeira coisa a se fazer é identificar os objetos envolvidos. Nesse caso, temos os dois clientes (João e Maria), os dois veículos (V1 e V2) de um mesmo tipo (SUV média), o funcionário envolvido na operação (Paulo) e os dois aluguéis (A1 e A2). Tudo isso caracteriza oito objetos. Os passos para a criação do diagrama de objetos são os seguintes:
+
+Criar a representação de um objeto para cada um dos objetos do mundo real.
+Conectar as representações de objetos criadas seguindo o definido no diagrama de classes original.
+Verificar a exatidão (se todas as conexões e objetos estão de acordo com diagrama de classes original) e a completude (se falta alguma conexão ou objeto, quer no diagrama de objetos ou no diagrama de classes), após fazer as conexões.
+Averiguar as duas qualidades (completude e exatidão) permite que o diagrama de classes original seja ratificado e retificado, se for o caso.
+O exemplo apresentado tem como consequência o diagrama de objetos da imagem. Verifique que todos os objetos foram representados e que as conexões (associações) apresentam as duas qualidades supracitadas.
+
+Imagem 3: Diagrama de objetos.

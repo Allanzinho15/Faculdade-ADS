@@ -1,0 +1,39 @@
+Visões da UML
+A UML oferece uma variedade de diagramas que representam perspectivas específicas de um sistema, como estrutura, comportamento e interação. Compreender essas visões permite que você analise e comunique efetivamente os requisitos, a arquitetura e o design de um sistema, promovendo uma modelagem mais precisa e ampla. Além disso, o conhecimento teórico sobre as visões da UML permite a colaboração de forma mais eficiente em equipes de desenvolvimento e a tomada de decisões fundamentadas durante todo o ciclo de vida do software.
+
+
+Assista ao vídeo e entenda as visões da UML, um sistema visto sob diferentes perspectivas.
+
+
+
+Assim como vimos nos exemplos do empreendimento imobiliário, as plantas das unidades, a planta elétrica, a planta hidráulica, entre outras, cada modelo tinha uma perspectiva de compreensão da mesma realidade (unidades residenciais em um empreendimento). No mundo de sistemas computacionais, o mesmo acontece em relação à modelagem de sistemas com UML. Os autores da UML entendem que um sistema deve ser visto sob cinco diferentes perspectivas ou visões, descritas a seguir.
+
+
+
+Visão de casos de uso
+Oferece uma visão externa do sistema, do ponto de vista do usuário, descrevendo seu comportamento por meio de interações entre usuário e sistema. É uma perspectiva inicial em um projeto; a visão de caso de uso é estabelecida no estágio inicial do desenvolvimento e orienta todas as outras visões, ao capturar os requisitos funcionais que definem o sistema.
+
+
+Visão de projeto (ou lógica)
+Permite visualizar o sistema sob o ponto de vista de sua estrutura interna e seu comportamento, em resposta às funcionalidades externamente percebidas por seus usuários. Enfatiza os pacotes, as classes, as interfaces, os subsistemas (pacotes) e as colaborações.
+
+
+Visão de implementação (ou de desenvolvimento)
+Envolve o gerenciamento das versões do sistema, ou seja, suas implementações utilizáveis pelos usuários. Abrange os componentes, subsistemas e arquivos que compõem fisicamente o sistema.
+
+
+Visão de implantação (ou física)
+Enfatiza a distribuição física do sistema em suas partes (subsistemas e componentes) e as respectivas conexões entre elas. Enfatiza também a organização física dos computadores e as conexões entre eles (a rede de computadores).
+
+
+Visão de processo
+Enfatiza aspectos físicos mais peculiares, como concorrência, sincronismo entre sistemas e desempenho (performance, confiabilidade, tolerância a falhas e outros aspectos) do sistema, considerando os processos e os processadores.
+
+A UML implementa diagramas que atuam nas cinco visões descritas, permitindo ampla modelagem sobre todos os aspectos (visões) relevantes do sistema.
+
+
+Nem todas as perspectivas ou visões são úteis em todo desenvolvimento, pois dependem das características, tipo e complexidade do sistema. A imagem a seguir mostra a ideia central da visão de casos de uso, influenciando todas as demais.
+
+
+
+Visões da UML.

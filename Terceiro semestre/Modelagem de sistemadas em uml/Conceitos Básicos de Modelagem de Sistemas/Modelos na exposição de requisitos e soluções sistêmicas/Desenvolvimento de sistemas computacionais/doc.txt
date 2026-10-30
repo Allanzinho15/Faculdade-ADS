@@ -1,0 +1,64 @@
+Desenvolvimento de sistemas computacionais
+Conhecer a teoria do desenvolvimento de sistemas computacionais é fundamental para a revolução digital contemporânea. Ao entender os princípios fundamentais da criação de software, os profissionais são capacitados a projetar, implementar e otimizar sistemas computacionais complexos e eficientes.
+
+
+Nesse contexto, o processo de desenvolvimento de sistemas em fases é uma abordagem estruturada para criar software. Começa com a análise dos requisitos do sistema, na qual as necessidades dos usuários são identificadas e documentadas. Em seguida, vem a fase de projeto, em que a arquitetura do sistema é planejada e as especificações técnicas são elaboradas. Após o projeto, entra-se na fase de implementação, quando o código é escrito e o sistema começa a ganhar vida. Finalmente, ocorre a fase de teste, na qual o software é submetido a uma série de testes para garantir sua funcionalidade e qualidade antes da implantação.
+
+
+Compreenderemos neste vídeo as fases comuns e mais relevantes do processo de desenvolvimento de sistemas computacionais. Acompanhe!
+
+
+
+O processo de desenvolvimento de sistemas em fases
+
+O desenvolvimento de sistemas computacionais é um processo que envolve pessoas e a necessidade de compreensão de uma realidade muitas vezes complexa e obscura, principalmente no início do desenvolvimento, quando o nível de abstração é alto e pouco se conhece da realidade. Podemos visualizar isso na imagem a seguir.
+
+
+
+Realidade X Sistema.
+
+Conforme as fases em que o processo de desenvolvimento é particionado se sucedem, o conhecimento sobre o sistema aumenta, diminuindo, consequentemente, o nível de abstração da realidade. Essa complexidade aumenta à medida que o tamanho do sistema cresce, requerendo um maior planejamento dos recursos a serem usados. O principal recurso no desenvolvimento de um sistema são pessoas, profissionais capacitados.
+
+
+Primeiramente, precisamos entender as necessidades das pessoas que utilizarão o sistema e o que elas precisam que o sistema faça para desempenharem suas funções. Esse entendimento também requer que os profissionais responsáveis pela construção do sistema confirmem essa compreensão.
+
+
+Mas como entender e confirmar a compreensão em uma linguagem ambígua como a nossa, tanto a falada como a escrita?
+
+
+Se criarmos o sistema diretamente na linguagem de programação com base em uma compreensão suposta da realidade, certamente enfrentaremos problemas de interpretação inadequada. O sistema provavelmente não atenderá às necessidades dos usuários e acabará sendo abandonado. Para representar a realidade de maneira adequada e entender o contexto do sistema a ser desenvolvido, precisamos traduzir a realidade em modelos.
+
+
+Com base no que estudamos até agora, vamos aprofundar nosso entendimento sobre as fases mais importantes.
+
+
+Fases comuns e mais relevantes do processo de desenvolvimento
+
+Os modelos nos ajudam a entender a realidade e discutir essa compreensão, reduzindo a complexidade e o nível de abstração.
+
+
+Atenção
+Os modelos são representações simplificadas da realidade, focando os elementos de interesse em um dado momento. Eles permitem abstrair o que não é relevante e concentrar naquilo que é essencial para o desenvolvimento do sistema.
+
+
+Desde a década de 1960, muitos processos, métodos e diversas técnicas de desenvolvimento de sistemas foram criados e postos em prática, visando à construção de sistemas computacionais robustos, eficientes e de fácil manutenção.
+
+
+Para gerenciar melhor a complexidade, os processos e metodologias de desenvolvimento de sistemas geralmente são divididos em fases. Embora cada processo ou metodologia possa ter sua própria divisão, de maneira geral, podemos identificar as seguintes fases (com algumas exceções). Confira!
+
+
+
+Identificação dos requisitos
+São as necessidades que os usuários têm e que devem estar contidos nas funcionalidades e propriedades do sistema a ser construído.
+
+
+Análise
+Envolve compreender o que o sistema deve fazer para atender às necessidades de seus usuários.
+
+
+Projeto
+Envolve a adequação dos requisitos à forma como serão implementados, utilizando a tecnologia adequada. Define-se a arquitetura e os componentes do sistema, bem como toda a infraestrutura do ambiente computacional necessária para sua construção, incluindo redes de computadores, banco de dados, linguagem de programação e outros elementos.
+
+
+Implementação
+Refere-se à identificação dos programas necessários e sua codificação na linguagem de programação selecionada na fase de projeto, bem como o banco de dados que será usado.

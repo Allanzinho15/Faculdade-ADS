@@ -1,0 +1,37 @@
+Principais padrões em linhas gerais
+Embora existam diversas famílias de padrões de projeto, o conjunto de padrões GoF assume um papel extremamente importante na área de desenvolvimento. Conhecê-los é essencial para criar sistemas consistentes e adequados ao uso de diversos frameworks. Com uma divisão entre padrões de criação, estruturais e comportamentais, eles conseguem absorver a complexidade de diversas tarefas de desenvolvimento, como a combinação e o reuso das etapas de construção de objetos complexos por meio de builder, uso de composite para a definição de estruturas hierárquicas ou implementação de comportamento assíncrono via observer.
+
+
+Neste vídeo você compreenderá, de forma resumida, as três grandes categorias dos padrões de projeto GoF: criação, estrutura e comportamento.
+
+
+
+Os 23 padrões de projeto GoF são classificados em três grandes categorias. Confira a seguir!
+
+
+
+Criação
+
+Estrutura
+
+Comportamento
+Têm como objetivo tornar a implementação independente da forma com que os objetos são criados, compostos ou representados.
+
+ 
+
+Essa categoria possui cinco padrões GoF: Abstract Factory, Builder, Factory Method, Prototype e Singleton.
+
+
+
+
+
+
+
+
+
+
+Existem inúmeros padrões publicados para diferentes problemas: arquitetura e projeto detalhado de software, padrões específicos para uma linguagem de programação, testes, gerência de projeto e de configuração, entre outros. Você não precisa estudar todos os padrões disponíveis, mas é importante saber que eles existem, onde estão descritos e os problemas que eles resolvem. Assim, no dia em que tiver que resolver um problema similar, você poderá aproveitar uma solução utilizada com sucesso por outras pessoas.
+
+
+Saiba Mais
+Experimente fazer uma busca na internet com termos gerais, tais como pattern books, patterns catalog, e mais específicos, como java design patterns, cloud architecture patterns e node js patterns.

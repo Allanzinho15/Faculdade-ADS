@@ -1,0 +1,10 @@
+Resumindo
+Neste módulo, podemos avaliar a importância do relacionamento entre o fluxo de processo de software com o ciclo de vida de Gerenciamento do Projeto.
+
+ 
+
+Ambos os ciclos têm como base o conceito processo, pois, como vimos, processo é a principal camada da Engenharia de Software e o gerenciamento de projeto é orientado a projeto em função dos grupos de processos. Importante destacar que um processo no Gerenciamento de Projetos tem duas dimensões: a primeira, como parte de um grupo de processos; e a segunda, como parte de uma das 10 (dez) áreas de conhecimento.
+
+ 
+
+As áreas de conhecimento permitem a tratativa da complexidade de projetos multidisciplinares, pois a equipe de gerenciamento de projetos deverá ser composta por especialistas nas diversas áreas de conhecimento.

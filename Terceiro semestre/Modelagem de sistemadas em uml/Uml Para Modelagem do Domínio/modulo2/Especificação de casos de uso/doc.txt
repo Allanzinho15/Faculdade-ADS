@@ -1,0 +1,39 @@
+Especificação de casos de uso
+Embora a UML não defina um padrão específico para a especificação de casos de uso, diversas abordagens práticas podem ser adotadas. Assim, empresas e equipes frequentemente estabelecem seus próprios padrões, mantendo a qualidade dos documentos de requisitos. Além disso, a UML não define uma forma padrão para casos de uso de inclusão ou extensão, mas é comum fazermos referência ao caso incluído/estendido na descrição do caso que o inclui/estende.
+
+Você verá, neste vídeo, como é estruturada a especificação de casos de uso, e qual a sua finalidade com inclusão e extensão.
+
+
+Estrutura de especificação de casos de uso
+Como a UML não define um padrão para especificação de casos de uso, você já observou que existem algumas formas práticas de apresentar a narrativa ou o passo a passo de execução do caso de uso.
+
+No entanto, é comum as empresas ou as equipes de desenvolvimento definirem seus próprios padrões de estrutura e os tipos de informação a serem apresentados, de modo a manter a qualidade dos documentos de requisitos de software. Nesse sentido, você encontrará diversas sugestões de modelos em livros ou sites na internet.
+
+
+Um exemplo bastante útil é a estrutura descrita por Bezerra (2015). Veja, a seguir, uma adaptação dessa estrutura, que destaca os campos que poderiam compor a descrição de um caso de uso. Você pode tomar como base essa proposta e criar um padrão para seus projetos.
+
+Identificador: código único para cada caso de uso que permite fazer a rastreabilidade com outros elementos e modelos. Por exemplo, com casos de teste e regras de negócio, UC01.
+Nome: cada caso de uso tem um nome único que o identifica; é o nome que aparece no diagrama de casos de usos. O nome do caso de uso é uma frase verbal iniciada por verbo no infinitivo. É importante ter cuidado com coerência e clareza ao nomear um caso de uso. Por exemplo, o nome do caso de uso UC01 é “Criar conta corrente”.
+Objetivo: declaração sucinta do objetivo do ator no caso de uso. Para o caso de uso Criar conta corrente, o objetivo seria: “O objetivo deste caso de uso é permitir que o Cliente do banco crie uma nova conta corrente”.
+Ator primário: nome do ator que inicia o caso de uso ou ator que recebe o resultado do caso de uso; um caso de uso possui apenas um ator primário. Para o caso de uso Criar conta corrente, o ator primário seria: “Cliente”.
+Atores secundários: nomes dos demais atores que atuam no caso de uso. Para o caso de uso Criar conta corrente, um ator secundário seria: “Gerente da agência”.
+Pré-condições: condições assumidas como verdadeiras para que o caso de uso tenha início; um caso de uso pode conter zero ou mais pré-condições. Por exemplo, em um caso de uso Criar conta corrente, uma pré-condição poderia ser “Cliente cadastrado com CPF válido”.
+Cenário (ou fluxo) principal: sequência de passos que normalmente acontece quando o caso de uso é utilizado com sucesso; toda descrição de caso de uso deve ter um fluxo principal.
+Cenários (ou fluxos) alternativos e de exceção: sequência de passos que apresentam formas de execução diferentes da descrita no fluxo principal ou situações de exceções e erros que devem ser tratadas pelo sistema. Não há obrigatoriedade de existirem fluxos alternativos ou de exceção em um caso de uso.
+Pós-condições: estado do sistema após o caso de uso ter sido executado; tipicamente, uma pós-condição descreve que uma informação foi alterada, excluída ou inserida no sistema. Uma boa prática é usar verbo no particípio passado para descrever pós-condições. Por exemplo, em um caso de uso Criar conta corrente, uma pós-condição seria “conta corrente criada”.
+Regras de negócio: a descrição de um caso de uso pode fazer referência a uma ou mais regras de negócio. Aprenda mais sobre Regras de Negócio em Explore +.
+Especificação de casos de uso com inclusão e extensão
+A UML também não define uma forma padrão para a escrita de casos de uso de inclusão ou extensão. No entanto, geralmente fazemos referência ao caso de uso incluído/estendido na descrição do caso de uso que o inclui/estende. Veja como pode ser a escrita desses casos:
+
+chevron_left
+
+
+chevron_right
+chevron_left
+1 de 2
+chevron_right
+A especificação dos pontos de extensão em um caso de uso é feita normalmente dentro da descrição textual do caso de uso extensor. A descrição de um ponto de extensão deve indicar em que ponto (ou pontos) do caso de uso estendido pode-se inserir o comportamento do extensor, e podem existir vários pontos no estendido em que o extensor pode ser ativado.
+
+report_problem
+Atenção!
+Além da inclusão e extensão, um relacionamento de generalização requer uma forma de especificação, na descrição do caso de uso herdeiro, de quais passos do caso de uso pai estão sendo redefinidos. O analista pode criar marcadores no caso de uso pai. Esses marcadores podem, então, ser referenciados na descrição do caso de uso filho para especificar que passos estão sendo redefinidos ou onde está sendo definida uma extensão do comportamento do pai.

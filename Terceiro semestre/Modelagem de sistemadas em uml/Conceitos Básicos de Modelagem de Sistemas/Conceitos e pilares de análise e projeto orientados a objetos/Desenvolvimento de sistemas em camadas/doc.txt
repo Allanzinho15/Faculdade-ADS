@@ -1,0 +1,80 @@
+Desenvolvimento de sistemas em camadas
+Compreender o desenvolvimento em camadas é essencial para estudantes de engenharia de software, fornecendo uma compreensão sobre a organização modular dos sistemas de software. Isso facilita a manutenção, escalabilidade e colaboração entre equipes. Além disso, ajuda na compreensão de padrões de projeto e arquiteturas modernas, preparando você para desafios no desenvolvimento de sistemas robustos.
+
+
+Compreenda neste vídeo o desenvolvimento em camadas, que ajuda a separar o código em partes menores, tornando-o mais simples de gerenciar e manter.
+
+
+
+Vamos começar discutindo a arquitetura de projeto de software em camadas de maneira geral, sem nos prender a um modelo específico. O objetivo principal é dividir o código em camadas para simplificar sua manutenção, reduzindo sua complexidade. As camadas ajudam a separar responsabilidades e gerenciar dependências.
+
+
+
+Programador analisando dados.
+
+No início da computação, os sistemas eram monolíticos, ou seja, todo o código ficava confinado em uma única camada, onde misturavam-se comandos de processamento, de construção e manipulação de interface, bem como de acesso e persistência de dados em SGBD (Sistemas de Gestão de Base de Dados). Tudo junto e misturado!
+
+
+Quando era preciso fazer manutenção no código, havia dificuldade no entendimento e na separação do que de fato precisava ser alterado, sem contar a interferência em uma parte do código quando se alterava outra, em princípio sem relação entre si.
+
+
+À medida que os sistemas cresceram e se tornaram complexos, a manutenção ficou mais difícil e a divisão em camadas foi uma das soluções encontradas para o projeto de arquitetura de um software.
+
+
+Inicialmente, a rede cliente-servidor dividiu o software em duas camadas: a camada de código que roda no cliente (camada de interface com usuário) e a camada servidor (camadas de lógica do negócio e persistência dos dados). Posteriormente, com o advento da web, separou-se em três e depois em quatro camadas. Atualmente, pode-se criar tantas camadas quantas sejam necessárias, em função do tipo de aplicação.
+
+
+Com base no que acabamos de estudar, podemos concluir que as camadas em geral:
+
+
+Possuem alta coesão e baixo acoplamento, ou seja, concentram atividades afins (coesão) e são independentes umas das outras.
+ 
+
+Possuem propósito bem definido.
+ 
+
+A camada superior tem conhecimento apenas da imediatamente inferior, que fornece os serviços, por uma interface.
+
+No caso da orientação a objetos, as classes são organizadas em módulos maiores, as chamadas camadas. Uma camada somente pode usar serviço (de outras classes) da camada imediatamente inferior.
+
+
+Aqui estão as vantagens e desvantagens do desenvolvimento de software em camadas. Confira!
+
+
+
+Vantagens
+
+Confira!
+
+ 
+
+Torna o código mais organizado e legível.
+Permite o desenvolvimento, o teste e a manutenção das camadas isoladamente.
+Permite melhor reúso do código ou dos objetos.
+Pode substituir uma tecnologia que implemente uma camada, de forma simples, sem interferir nas demais. Por exemplo, para trocar o SGBD de SQL Server para PostgreSQL, basta alterar a camada de persistência. As demais permanecem como estavam.
+Disciplina as dependências entre as camadas.
+Mais adaptável a uma quantidade maior de usuários.
+
+Desvantagens
+
+Confira!
+
+ 
+
+Aumenta o número de classes do sistema.
+A adição de camadas torna o sistema mais complexo.
+Potencialmente, reduz o desempenho do software.
+Um modelo comumente utilizado nos últimos anos é o de três camadas, veja!
+
+
+Apresentação
+
+Compreende as classes do sistema que permitem a interação com o usuário, as chamadas classes de fronteira.
+
+Negócio
+
+Compreende as classes responsáveis pelos serviços e pelas regras do negócio, ou seja, reúne as classes de controle e negócio.
+
+Dados
+
+Responsável pelo armazenamento e pela recuperação dos dados persistentes do sistema, ou seja, as classes de persistência de dados.

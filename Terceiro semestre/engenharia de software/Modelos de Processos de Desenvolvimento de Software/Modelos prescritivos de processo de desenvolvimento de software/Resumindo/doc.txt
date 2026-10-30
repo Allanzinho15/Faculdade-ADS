@@ -1,0 +1,14 @@
+Resumindo
+Neste módulo, pudemos destacar a importância dos modelos dos processos prescritivos para a Engenharia de Software. Vale lembrar que a camada base dessa engenharia é a referente a processos. Os modelos de processos permitem definir as atividades que serão executadas durante o projeto de software, bem como o fluxo de processos que define o encadeamento relativo a essas mesmas atividades.
+
+ 
+
+Os modelos de processos prescritivos incluem a definição de metodologias, tarefas, artefatos, garantia da qualidade e mecanismos de controle de mudanças, isto é, um conjunto de elementos de processo.
+
+ 
+
+O modelo em cascata determina a realização das tarefas de forma sequencial. Já os modelos de processo incremental e os modelos de processo evolucionário permitem um versionamento do software de forma iterativa e incremental.
+
+ 
+
+O paradigma da prototipação é aplicado primariamente na validação de requisitos. O modelo espiral permite um desenvolvimento evolucionário do software.

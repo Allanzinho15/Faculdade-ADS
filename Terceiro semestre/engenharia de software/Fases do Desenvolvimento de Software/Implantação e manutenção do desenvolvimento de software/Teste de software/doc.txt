@@ -1,0 +1,93 @@
+Teste de software
+A qualidade do produto software pode ser garantida através de sistemáticas aplicações de testes nos vários estágios do desenvolvimento da aplicação. Esses testes permitem a validação da estrutura interna do software e sua aderência aos respectivos requisitos. A integração dos subsistemas também é avaliada, com destaque para as interfaces de comunicação existentes entre os referidos componentes de software.
+
+ 
+
+Podemos, então, definir teste como um processo sistemático e planejado que tem por finalidade única a identificação de erros. No caso de softwares complexos, sabe-se que o teste será capaz de descobrir a presença de erros, mas não a sua ausência!
+
+ 
+
+Softwares mal testados podem gerar prejuízos às empresas. Um defeito de projeto poderá encadear requisições de compras inadequadas, gerar resultados financeiros incorretos, entre outros. Até mesmo as tomadas de decisões gerenciais da empresa podem ser negativamente impactadas, pois muitos profissionais se apoiam nas informações com o objetivo de tornar a empresa mais eficiente. A qualidade das decisões está intimamente ligada à qualidade das informações disponibilizadas aos diversos níveis gerenciais.
+
+ 
+
+Os procedimentos de testes aplicados diretamente em softwares são também conhecidos como testes de software ou testes dinâmicos, podendo, em sua maioria, sofrer alto nível de automação, o que possibilita a criação de complexos ambientes de testes que simulam diversos cenários de utilização.
+
+
+Atenção
+Lembre-se: quanto mais cenários simulados, maior o nível de validação que obtemos do produto, caracterizando maior nível de qualidade do software desenvolvido.
+
+
+Os testes de software têm por objetivo avaliar a qualidade desse produto nas mais variadas dimensões possíveis, ou seja, em relação à sua estrutura interna, na aderência às regras de negócios estabelecidas, nos parâmetros de performance esperados pelo produto etc.
+
+ 
+
+ 
+
+Durante a codificação do software, podemos adotar a estratégia representada na Figura 14. Essa espiral é percorrida a partir do interior, aumentando o nível de abstração a cada volta. Vamos descrever como cada etapa dessa estratégia funciona.
+
+
+
+Figura 14 – Estratégia de Teste.
+
+Tipos de teste de software
+
+
+Neste vídeo, você conhecerá um pouco sobre os tipos de teste de software.
+
+
+
+
+Teste de unidade
+A validação da unidade de software é a primeira etapa da estratégia, tendo por objetivo testar componentes individuais de uma aplicação.
+
+ 
+
+Nesta estratégia de testes, o objetivo é executar o software a fim de exercitar adequadamente toda a estrutura interna de um componente, como os desvios condicionais, os laços de processamento etc.
+
+
+Teste de integração
+Objetiva a manutenção de compatibilidade das novas unidades construídas, ou modificadas, com os componentes previamente existentes.
+
+ 
+
+A compatibilidade de um componente é quebrada sempre que existe alteração ou exclusão de uma rotina ou propriedade pública de um componente. Quando isso ocorre, todos os outros componentes que empregam essas rotinas ou propriedades estão automaticamente incompatíveis com o componente modificado, gerando erros durante a execução do software. São exatamente esses erros que devem ser identificados nesse estágio dos testes de software.
+
+
+Teste de validação
+Quando atingimos esse estágio dos testes, a maior parte das falhas de funcionalidade deve ter sido detectada nos testes unitários e nos testes de integração, sendo o objetivo desta etapa realizar a validação da solução como um todo. Os testes de validação contam com uma infraestrutura mais complexa de hardware, visando estar o mais próximo do ambiente real de produção.
+
+ 
+
+Nesta etapa, são realizados os testes funcionais, que visam verificar se a versão corrente do sistema permite executar processos ou casos de uso completos do ponto de vista do usuário, de modo a obter os resultados esperados; e os testes não funcionais, que visam testar o software em relação às características não funcionais, como desempenho, segurança, confidencialidade, recuperação a falhas etc.
+
+
+Devemos planejar os testes de software a partir dos cenários contidos nas descrições de casos de uso e identificados na etapa de análise do processo de software; normalmente, o engenheiro de software define os cenários com alto nível de abstração lógica, denominados também de casos de teste. Neste caso, o analista de teste da equipe de qualidade deverá diminuir o nível de abstração dos referidos cenários, detalhando os mesmos por meio dos casos de testes. Como exemplo, um caso de uso “Realizar saque de conta”, onde podemos imaginar um cenário em que o saldo supera o valor do saque e a transação ocorre sem problema, ou cenários alternativos ou de exceção, tais como bloqueio do saque por saldo insuficiente; liberação do saque utilizando o limite disponível pelo banco com cobrança de juros; liberação do saque com retirada de fundo de aplicação, entre outros.
+
+ 
+
+Nesta etapa, ocorrem os procedimentos de aceite, que deverão ser realizados a cada ciclo de implementação da solução, permitindo correções antecipadas de determinados pontos que não foram adequadamente atendidos pelo software.
+
+ 
+
+Como essa é a última oportunidade efetiva de detectar falhas no software, poderemos empregar o aceite como uma estratégia para reduzir riscos de uma implantação onde um erro vital não detectado pode comprometer a imagem da solução como um todo. Dessa forma, podemos dividir o aceite em três momentos distintos: o Teste Alpha, o Teste Beta e o Aceite Formal.
+
+
+Aceite Teste Alpha
+
+
+Os usuários finais são convidados a operar o software dentro de um ambiente controlado, sendo realizado na instalação do desenvolvedor.
+
+
+Aceite Teste Beta
+
+
+Os usuários finais são convidados a operar o produto utilizando suas próprias instalações físicas, ou seja, o software é testado em um ambiente não controlado pelo desenvolvedor.
+
+
+Aceite Formal
+
+
+Trata-se de uma variação do Teste Beta, cabendo aos próprios clientes e usuários determinarem o que deverá ser testado e validar se os requisitos foram adequadamente implementados.
+
+A validação tem sucesso quando o software atende os requisitos, ou seja, funciona da forma esperada pelo usuário.

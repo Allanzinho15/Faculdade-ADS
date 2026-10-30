@@ -1,0 +1,89 @@
+Conhecendo o padrão de projeto
+Vamos iniciar definindo o que é o padrão de projeto. Trata-se de uma solução nomeada para determinado problema, com uma estrutura básica e observações acerca de sua utilização. Embora estruturado em termos de UML, o padrão de projeto não se restringe ao paradigma orientado a objetos, podendo ser aplicado em praticamente todas as plataformas. O uso de padrões permite adotar uma base de conhecimento amplamente testada e aceita no mercado de desenvolvimento, porém, existem diversas famílias de padrões e, muitas vezes, o que um padrão indica, outro desqualifica, o que exige do desenvolvedor a capacidade de analisar cada cenário, escolhendo o padrão mais adequado em cada situação.
+
+
+Neste vídeo, você compreenderá o que é o padrão de projeto e as respectivas vantagens e desvantagens em sua aplicação.
+
+
+
+O que é um padrão de projeto?
+
+Também conhecido como design pattern, ele descreve um problema recorrente e a estrutura fundamental da sua solução definida por módulos e comunicações entre eles.
+
+
+Em uma estrutura de solução orientada a objetos, a solução é descrita por classes, interfaces e mecanismos de colaboração entre objetos.
+
+
+O conceito de padrões de projeto é mais abrangente, uma vez que existem padrões voltados para outros paradigmas de programação, como programação funcional e reativa.
+
+
+Um padrão de projeto apresenta quatro elementos fundamentais:
+
+
+
+Nome
+
+Possibilita a comunicação entre os desenvolvedores em um nível mais abstrato. Em uma discussão de projeto, em vez de descrevermos todos os elementos da solução para um problema, bem como a forma de comunicação entre eles e as consequências do seu uso, basta mencionarmos o nome do padrão apropriado.
+
+ 
+
+Um desenvolvedor experiente pode recomendar algo como: “use o Observer para resolver esse problema!”, e isso será suficiente, pois conhecendo esse padrão, você já saberá como estruturar a solução. Portanto, os nomes dos padrões foram um vocabulário compartilhado pelos desenvolvedores para agilizar a discussão de soluções de projeto.
+
+
+Problema
+
+Podem ser específicos, por exemplo: “como podemos representar diferentes algoritmos com o mesmo propósito na forma de classes?” ou “como podemos instanciar uma classe específica, entre várias similares, sem criar dependência rígida da implementação escolhida?”. Um padrão deve descrever as situações nas quais a sua utilização é apropriada, explicando o problema e o contexto.
+
+ 
+
+Esse elemento também pode descrever e discutir soluções inadequadas ou pouco flexíveis para o contexto apresentado. Se você estiver pensando em uma solução similar às descritas, o seu problema passará a ser: “ok, estou vendo que a estrutura em que estava pensando aplicar não é adequada. Como devo estruturar a solução?”.
+
+
+Solução
+
+É uma descrição abstrata que pode ser replicada em diferentes situações e sistemas. O desenvolvedor deve traduzir a descrição abstrata em uma implementação específica no problema particular que estiver resolvendo. Note que a solução é uma ideia que precisa ser construída e implementada pelo desenvolvedor. Um catálogo de padrões de projeto é bem diferente de uma biblioteca de código, pois um padrão de projeto não tem o propósito de promover reutilização de código, mas, sim, de conhecimento.
+
+ 
+
+O padrão deve descrever os elementos recomendados para a implementação, bem como as suas responsabilidades, os seus relacionamentos e as suas colaborações.
+
+
+Consequências
+
+Um padrão precisa discutir os custos e benefícios da solução proposta. Uma solução pode dar maior flexibilidade ao projeto, ao mesmo tempo em que pode trazer maior complexidade ou até mesmo resultar em problemas de performance. Antes de utilizarmos um padrão, devemos sempre avaliar os custos e benefícios em relação ao problema particular que estamos querendo resolver.
+
+Vantagens e desvantagens do uso de padrões de projeto
+
+Por que você deve conhecer padrões de projeto? Podemos enumerar alguns motivos:
+
+
+Produtividade
+
+Possibilitam maior produtividade ao desenvolvimento, uma vez que não desperdiçamos tempo pensando, fazendo e refinando soluções até encontrarmos a mais adequada. Padrões nos fornecem um atalho para a boa solução.
+
+
+Reutilização
+
+Reforçam práticas de reutilização de código com estruturas que acomodam mudanças por meio do uso de mecanismos, como delegação, composição e outras técnicas que não sejam baseadas em estruturas de herança.
+
+
+Troca
+
+Fornecem uma linguagem comum para os desenvolvedores, agilizando a troca de ideias e experiências.
+
+
+Facilitação
+
+Facilitam o desenvolvimento, pois permitem a reutilização de soluções bem-sucedidas em problemas similares. Um padrão não pode ser simplesmente uma ideia, pois só pode ser considerado como tal se passar pela regra dos três, isto é, ele deve ter sido utilizado em, pelo menos, três diferentes situações ou aplicações.
+
+
+
+
+E quais são as desvantagens ou os pontos de atenção na utilização de padrões de projeto?
+
+
+Desde que o conceito foi apresentado, na década de 1990, uma grande quantidade de padrões surgiu. Portanto, a curva de aprendizado pode ser grande.
+Decidir se um padrão pode ser empregado em um problema específico nem sempre é uma tarefa fácil, exigindo alguma experiência.
+É necessário, às vezes, adaptar ou mudar alguma característica da solução proposta para um padrão para tornar sua utilização adequada a um problema especifico, o que também requer experiência.
+É comum um iniciante achar que os padrões devem estar por toda a implementação e fazer uso inadequado deles.
+Não existe consenso sobre a qualidade de todos os padrões. Por exemplo, singleton é um padrão GoF que gera grande controvérsia, sendo considerado um antipadrão por muitos.

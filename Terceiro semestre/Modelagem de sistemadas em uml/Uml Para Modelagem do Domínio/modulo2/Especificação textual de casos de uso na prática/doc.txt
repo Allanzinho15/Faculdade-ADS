@@ -1,0 +1,36 @@
+Especificação textual de casos de uso na prática
+Praticar a descrição textual dos casos de uso dá a capacidade de capturar os passos que representam a interação entre o ator e o caso de uso. Na descrição, os passos indicam as ações dos dois agentes envolvidos: ator e sistema. A descrição também enfatiza as informações tratadas, o que vai proporcionar a identificação das classes candidatas e de seus atributos.
+
+Você acompanhará, neste vídeo, a prática da especificação textual de casos de uso, que permite detalhar as interações entre os usuários e o sistema de maneira escrita, incluindo os passos necessários para alcançar um objetivo específico a partir de um determinado minimundo e utilizando a UML.
+
+
+Roteiro de prática
+A seguir será apresentada a descrição do caso de uso alugar veículo. Ator funcionário executa caso de uso alugar veículo, de acordo com os seguintes passos:
+
+Funcionário inicia caso de uso.
+Sistema solicita código do funcionário.
+Funcionário fornece seu código.
+Sistema valida e solicita dados do cliente.
+Funcionário fornece a carteira nacional de habilitação (CNH) do cliente.
+Sistema verifica CNH.
+Se CNH já for cadastrada, o sistema disponibiliza demais dados (a saber: nome, telefone e endereço) e vai para o passo 7.
+Se não for, o funcionário fornece demais dados (por exemplo: nome, telefone e endereço).
+Sistema armazena informações.
+Sistema disponibiliza tipos de veículo com automóveis à disposição para aluguel.
+Funcionário seleciona tipo de veículo.
+Sistema disponibiliza veículos daquele tipo.
+Funcionário seleciona veículo, informando data de início e de fim de aluguel.
+Sistema armazena dados do aluguel.
+Caso de uso é encerrado.
+Cenário de exceção 1
+
+No passo 4, o código fornecido pelo funcionário no passo 3 não é validado pelo sistema:
+
+4a. Sistema não valida código do funcionário.
+4b. Se for não for a terceira tentativa, o sistema retorna ao passo 3.
+4c. Se for a terceira tentativa, é executado o passo 12.
+Cenário de exceção 2
+
+No passo 7 não há veículos disponíveis para aluguel:
+
+7a. Passo 12 é executado.

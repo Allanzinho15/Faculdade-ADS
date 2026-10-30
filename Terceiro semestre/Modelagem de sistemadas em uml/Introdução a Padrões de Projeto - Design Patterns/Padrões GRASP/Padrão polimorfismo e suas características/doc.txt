@@ -1,0 +1,69 @@
+Padrão polimorfismo e suas características
+Um elemento que oferece grande poder ao paradigma orientado a objetos é o polimorfismo, pois permite que um método herdado seja modificado, adaptando a funcionalidade original às necessidades do descendente. O padrão polimorfismo se baseia nesse princípio e visa substituir a tradicional execução condicional da programação estruturada por métodos polimórficos definidos em diversas classes descendentes.
+
+
+Você, como pessoa desenvolvedora, deverá ser capaz de identificar processos genéricos que possam ser especializados para contextos distintos e implementá-los por meio de famílias de classes. Nesse contexto, o polimorfismo permite que os métodos sejam modificados nas classes descendentes, proporcionando utilização transparente pelo sistema.
+
+
+Confira, neste vídeo, que o padrão GRASP polimorfismo estabelece como escrever uma solução genérica para alternativas baseadas no tipo de um elemento, criando módulos plugáveis.
+
+
+
+Problema
+
+Como evitar construções condicionais complexas no código?
+
+
+Suponha que você esteja implementando a parte de pagamentos de uma loja virtual via cartão. Para realizar um pagamento interagindo diretamente com a administradora de cartão, temos que passar por um processo longo e complexo de homologação com ela. Imagine realizar esse processo com cada administradora!
+
+ 
+
+Para simplificar o problema, existem diferentes brokers (software intermediário que permite que programadores façam chamadas a programas de um computador para outro) de pagamento, que já estão homologados com as diversas administradoras e fornecem uma API (do inglês application programming interface ou interface de programação de aplicação) para integração com a nossa aplicação. Cada broker tem uma política de preços e volume de transações. Eventualmente, podem surgir novos com políticas mais atrativas no mercado.
+
+
+Imagine que fornecemos uma solução de software de loja virtual para diferentes estabelecimentos, que podem demandar diferentes brokers de pagamento em função das suas exigências de segurança, preço e volume de transações. Isso significa que o nosso software tem que ser capaz de funcionar com diferentes brokers, cada um com a sua API.
+
+
+Sem polimorfismo, esse problema poderia ser resolvido com uma solução baseada em if-then-else ou switch-case, sendo cada alternativa de brokers mapeada para um comando case no switch ou em uma condição no if-then-else (imagem a seguir).
+
+
+Pense como ficaria esse código se houvesse 20 brokers diferentes. Veja:
+
+
+
+Solução sem polimorfismo.
+
+O problema que o padrão polimorfismo resolve é o seguinte:
+
+
+Como escrever uma solução genérica para alternativas que se baseiam no tipo de um elemento, criando módulos plugáveis?
+
+
+No nosso exemplo, as alternativas são todos os diferentes tipos de brokers com as suas respectivas APIs.
+
+
+Solução
+
+Percebeu como a solução baseada em estruturas condicionais do tipo if-then-else ou switch-case, além de serem mais complexas, criam um acoplamento do módulo chamador com cada implementação específica? Note como a classe Fechamento pedido depende diretamente de todas as implementações de broker de pagamento.
+
+
+A solução via polimorfismo consiste em criar uma interface genérica para a qual podem existir diversas implementações específicas (veja na próxima imagem).
+
+
+A estrutura condicional é substituída por uma única chamada, utilizando a interface genérica. O chamador, portanto, não precisa saber quem está do outro lado da interface concretamente provendo a implementação. A capacidade de um elemento (a interface genérica) poder assumir diferentes formas concretas (broker1, broker2 ou broker3, no nosso exemplo) é conhecida como polimorfismo. Veja:
+
+
+
+
+Solução com polimorfismo.
+
+Consequências
+
+Polimorfismo é um princípio fundamental em projetos de software orientados a objetos, porque nos ajuda a resolver, de forma sintética, elegante e flexível, o problema de lidar com variantes de implementação de uma mesma operação conceitual.
+
+
+Dica
+O princípio geral do polimorfismo é utilizado para definir diversos padrões GoF, como: Adapter, Command, Composite, Proxy, State e Strategy.
+
+
+Lembre-se: é preciso ter cuidado para não implementar estruturas genéricas em situações em que não haja possibilidade de variação. Uma solução genérica é mais flexível, mas é preciso estar atento para não investir esforço na produção de soluções genéricas para problemas que sejam específicos por natureza, isto é, que não apresentem variantes de implementação.

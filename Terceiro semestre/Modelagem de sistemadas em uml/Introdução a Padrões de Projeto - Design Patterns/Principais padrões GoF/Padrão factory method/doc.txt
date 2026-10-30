@@ -1,0 +1,79 @@
+Padrão factory method
+Define uma estrutura simples para que diferentes tipos de objetos possam ser criados, dependendo da classe que os instancia.
+
+
+Suponha que você esteja criando um sistema na área de big data para a recuperação dos dados contidos em arquivos de diferentes formatos, que exigem leitores específicos para cada tipo de arquivo. Nessa situação, o factory method pode retornar um objeto do tipo leitor, no qual os descendentes podem definir como retorno objetos de classes descendentes, como LeitorJSON, LeitorXML e LeitorPDF.
+
+
+Acompanhe, neste vídeo, o padrão de design factory method, uma poderosa técnica de programação orientada a objetos, e como ele permite criar objetos de maneira flexível e extensível, delegando a responsabilidade da instância para subclasses especializadas.
+
+
+
+Problema
+
+O padrão estudado define uma interface genérica de criação de um objeto, deixando a decisão da classe específica a ser instanciada para as implementações concretas da interface. O padrão factory method é muito utilizado no desenvolvimento de frameworks.
+
+
+Frameworks definem pontos de extensão (hot spots) nos quais adaptações do código para um sistema específico devem ser feitas.
+
+
+Tipicamente, frameworks definem classes e interfaces abstratas, que devem ser implementadas nas aplicações que os utilizem. Um exemplo de framework muito usado em Java é o Spring.
+
+
+Por que esse padrão é importante?
+
+
+Em aplicações desenvolvidas em Java, por exemplo, podemos criar um objeto de uma classe simplesmente utilizando o operador new.
+
+
+Embora seja uma solução aceitável para pequenos programas, à medida que o sistema cresce, a quantidade de códigos para criar objetos também cresce, espalhando-se por todo o sistema.
+
+
+Como a criação de um objeto determina a dependência entre a classe em que a instanciação é feita e a classe instanciada, é preciso muito cuidado para não criar dependências que dificultem futuras evoluções do sistema.
+
+
+Solução
+
+A imagem a seguir apresenta a estrutura de solução proposta pelo padrão factory method.
+
+
+Os participantes são:
+
+
+Produto: define o tipo abstrato dos objetos criados pelo padrão. Todos os objetos concretamente instanciados serão derivados desse tipo.
+ 
+
+ProdutoConcreto: corresponde a qualquer classe concreta que implementa a definição abstrata do tipo produto. Representa as classes específicas em uma aplicação desenvolvida com um framework.
+ 
+
+Criador: declara um factory method que define uma interface abstrata, que retorna um objeto genérico do tipo produto.
+ 
+
+CriadorConcreto: corresponde a qualquer classe concreta que implemente o factory method definido abstratamente no criador.
+
+A imagem seguinte apresenta um exemplo de aplicação do padrão.
+
+
+
+
+Estrutura do padrão factory method.
+
+Na parte superior, estão as classes que pertencem a um framework genérico de geração de relatório.
+
+
+Na parte inferior, estão as classes concretas de uma aplicação que utiliza o framework para gerar um relatório de vendas.
+
+
+As operações criarCabecalho, criarCorpo e criarRodape, definidas na classe genérica, são implementadas concretamente na classe RelatorioVendas. Cada método dessa subclasse cria um objeto específico que implementa os tipos abstratos (Cabecalho, corpo e rodape) definidos no framework.
+
+
+A classe relatorio desempenha o papel de criador, a classe RelatorioVendas corresponde ao participante CriadorConcreto, enquanto as classes cabecalho, corpo e rodape desempenham o papel de produto. Finalmente, as classes CabecalhoVendas, CorpoVendas e RodapeVendas correspondem ao participante ProdutoConcreto. Veja a imagem a seguir.
+
+
+
+
+Exemplo do padrão factory method.
+
+Consequências
+
+O padrão factory method permite criar estruturas arquiteturais genéricas (frameworks), provendo pontos de extensão por meio de operações que instanciam os objetos específicos da aplicação. Dessa forma, todo código genérico pode ser escrito no framework e reutilizado em diferentes aplicações, evitando soluções baseadas em clonagem ou em estruturas condicionais complexas.

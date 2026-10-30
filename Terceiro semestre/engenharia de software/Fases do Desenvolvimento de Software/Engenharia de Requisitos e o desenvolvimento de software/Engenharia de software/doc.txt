@@ -1,0 +1,24 @@
+Engenharia de software
+
+Vamos iniciar nosso estudo sobre o processo de desenvolvimento de software, no contexto da Engenharia de Software, que tem como principal produto o software. Aproveito para destacar que a bibliografia Pressman (2016) é uma referência mundial nesta área.
+
+ 
+
+Imaginando um software embarcado em uma aeronave com centenas de pessoas ou controlando o tráfego aéreo de uma grande cidade, podemos destacar uma característica comum: a complexidade. A melhor tratativa para a complexidade é a aplicação de metodologia que permita a decomposição do problema em problemas menores de forma sistemática, cabendo à Engenharia de Software essa sistematização.
+
+ 
+
+Entretanto, diferentemente de produtos de outras engenharias em produção, o software possui alta volatilidade, em função de constantes evoluções na tecnologia e nos requisitos, agregando a ele uma complexidade adicional.
+
+ 
+
+A Engenharia de Software é uma tecnologia em camadas. Vejamos as descrições das referidas camadas na tabela a seguir:
+
+
+ Camada	  Descrição
+Camada qualidade	Garante que os requisitos atendam às expectativas dos usuários.
+Camada de processo	Define as etapas de desenvolvimento do software.
+Camada de métodos	Determina as técnicas e os artefatos de software.
+Camada ferramentas	Estimula a utilização de ferramentas CASE.
+
+Importante destacar que a base da Engenharia de Software é a camada de processo que trata das etapas de desenvolvimento.

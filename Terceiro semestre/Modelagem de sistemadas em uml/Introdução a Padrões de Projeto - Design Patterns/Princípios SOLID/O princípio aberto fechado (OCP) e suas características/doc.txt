@@ -1,0 +1,224 @@
+O princípio aberto fechado (OCP) e suas características
+OCP é uma sigla que representa, em inglês open closed principle. Ela estabelece que um módulo deve estar aberto para extensões, mas fechado para modificações. Ou seja, seu comportamento deve ser extensível sem que seja necessário alterá-lo para acomodar as novas extensões.
+
+
+Neste vídeo, exploramos um dos princípios fundamentais da programação orientada a objetos. Confira como o OCP permite que o software seja aberto para extensão, mas fechado para modificação, garantindo que novos comportamentos possam ser adicionados sem alterar o código existente. Acompanhe exemplos práticos e veja como aplicar esse princípio para criar sistemas mais robustos, flexíveis e fáceis de manter.
+
+
+
+Quando uma mudança em um módulo causa verdadeira cascata de modificações em módulos dependentes, isso é sinal de que a estrutura do software não acomoda mudanças adequadamente. Se for aplicado de forma adequada, esse princípio permitirá que futuras alterações desse tipo sejam feitas pela adição de novos módulos, e não pela modificação dos já existentes.
+
+
+Você deve estar pensando como é possível fazer um módulo estender seu comportamento sem que seja necessário mudar uma linha do seu código. A chave para esse enigma se chama abstração.
+
+
+Em uma linguagem orientada a objetos, é possível criar uma interface abstrata que apresente diferentes implementações concretas. Um novo comportamento, em conformidade com essa abstração, pode ser adicionado simplesmente quando um módulo é criado.
+
+
+Violação do princípio OCP (clonagem)
+
+O exemplo a seguir apresenta um código que não segue o princípio open closed. A classe CalculadoraGeometrica contém operações para calcular a área de triângulos e quadrados.
+
+
+Java (OpenJDK 13.0.1)
+
+
+public class Triangulo {
+	private double base;
+	private double altura;
+
+	public double getBase() {
+		return base;
+	}
+
+	public void setBase(double base) {
+		this.base = base;
+	}
+
+	public double getAltura() {
+		return altura;
+	}
+
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
+}
+
+public class Quadrado {
+	double lado;
+
+	public double getLado() {
+		return lado;
+	}
+
+	public void setLado(double lado) {
+		this.lado = lado;
+	}
+}  
+
+public class CalculadoraGeometrica {
+	public double obterArea(Quadrado quadrado) {
+		return quadrado.getLado() * quadrado.getLado();
+	}
+	
+	public double obterArea(Triangulo triangulo) {
+		return triangulo.getBase() * triangulo.getAltura() / 2;
+	}
+}
+
+Copiar
+
+Imagine que o programa tenha que calcular a área de um círculo, por exemplo.
+
+
+O módulo CalculadoraGeometrica poderá calcular a área de um círculo sem que o seu código seja alterado?
+
+
+Não, pois teremos que adicionar uma nova operação, obterArea, à CalculadoraGeometrica. Essa é uma forma comum de violação, em que uma classe concentra diversas operações da mesma natureza, que operam sobre tipos diferentes.
+
+
+O exemplo a seguir ilustra outra forma comum de violação do princípio OCP. Acompanhe!
+
+
+Java (OpenJDK 13.0.1)
+
+
+public class FiguraGeometrica { 
+}
+
+public class Triangulo extends FiguraGeometrica {
+    private double base;
+    private double altura;
+
+    public double getBase() {
+        return base;
+    }
+
+    public void setBase(double base) {
+        this.base = base;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+}
+
+public class Quadrado extends FiguraGeometrica {
+    double lado;
+
+    public double getLado() {
+        return lado;
+    }
+
+    public void setLado(double lado) {
+        this.lado = lado;
+    }
+}  
+
+public class CalculadoraGeometrica {
+    public double obterArea(FiguraGeometrica figura) {
+        if (figura instanceof Quadrado) {
+            return obterAreaQuadrado((Quadrado) figura);
+        } else if (figura instanceof Triangulo) {
+            return obterAreaTriangulo((Triangulo) figura);
+        } else {
+            return 0.0;
+        }
+    }
+    
+    private double obterAreaQuadrado(Quadrado quadrado) {
+        return  quadrado.getLado() * quadrado.getLado();
+    }
+    
+    private double obterAreaTriangulo(Triangulo triangulo) {
+        return  triangulo.getBase() * triangulo.getAltura() / 2;
+    }
+}
+
+Light Mode
+
+Copiar
+
+No exemplo, a classe CalculadoraGeometrica possui uma operação obterArea, que recebe um tipo genérico FiguraGeometrica, mas continua concentrando a lógica de cálculo para todos os tipos de figuras. Para incluir um círculo, precisaríamos adicionar a operação obterAreaCirculo e modificar a implementação da operação obterArea, inserindo nova condição. Imagine como ficaria o código dessa operação se ela tivesse que calcular a área de 50 tipos diferentes de figuras geométricas!
+
+
+O que devemos fazer para que o módulo CalculadoraGeometrica possa estar aberto para trabalhar com novos tipos de figuras sem precisarmos alterar o seu código?
+
+
+A resposta está no emprego da abstração e, nesse caso, dos princípios do especialista e do polimorfismo. Veja:
+
+
+Figura geométrica
+
+
+Definimos que toda figura geométrica é capaz de calcular sua área, sendo que a fórmula de cálculo de cada figura específica deve ser implementada nas realizações concretas de FiguraGeometrica.
+
+
+Nova figura
+
+
+Dessa forma, para adicionarmos uma nova figura geométrica, basta adicionarmos novo módulo com uma implementação específica para essa operação.
+
+
+O próximo exemplo ilustra a nova estrutura do projeto.
+
+
+Reestruturação adequada ao princípio OCP
+
+A classe FiguraGeometrica define uma operação abstrata obterArea.
+
+
+Aplicando o princípio do especialista, cada subclasse fica responsável pelo cálculo da sua área. Já com o princípio do polimorfismo, o módulo CalculadoraGeometrica passa a depender apenas da abstração FiguraGeometrica, que define que todo elemento desse tipo é capaz de calcular a sua área. Dessa forma, a calculadora geométrica pode funcionar com novos tipos de figuras sem ser necessário alterar o seu código, uma vez que ela deixou de depender da forma específica da figura. Veja:
+
+
+Python (3.8.1)
+
+public abstract class FiguraGeometrica {
+    public abstract double obterArea();
+}
+
+public class Triangulo extends FiguraGeometrica {
+    private double base;
+    private double altura;
+    
+    public double obterArea() {
+        return  this.getBase() * this.getAltura() / 2;
+    }
+    
+    public double getBase() {
+        return base;
+    }
+    public void setBase(double base) {
+        this.base = base;
+    }
+    public double getAltura() {
+        return altura;
+    }
+    public void setAltura(double altura) {
+        this.altura = altura;
+    }
+}
+
+public class Quadrado extends FiguraGeometrica {
+    double lado;
+
+    public double obterArea() {
+        return  this.getLado() * this.getLado();
+    }
+    public double getLado() {
+        return lado;
+    }
+    public void setLado(double lado) {
+        this.lado = lado;
+    }
+}  
+
+public class CalculadoraGeometrica {
+    public double obterArea(FiguraGeometrica figura) {
+        return figura.obterArea();
+
+Copiar

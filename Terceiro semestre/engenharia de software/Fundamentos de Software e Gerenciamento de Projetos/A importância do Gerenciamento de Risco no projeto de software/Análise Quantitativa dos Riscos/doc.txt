@@ -1,0 +1,17 @@
+Análise Quantitativa dos Riscos
+A Análise Quantitativa dos Riscos é um processo de analisar numericamente os efeitos dos riscos priorizados pela Análise Qualitativa de Riscos, pois estes podem gerar impacto potencial e substancial nos resultados do projeto.
+
+ 
+
+As técnicas aplicadas incluem simulações, árvore de decisão entre outras. No contexto da Engenharia de Software, podemos aplicar a árvore de decisão, a fim de avaliar (1) a contratação de uma fábrica de software para desenvolvimento de um determinado software ou (2) realizar o desenvolvimento na empresa.
+
+
+Vamos agora dar continuidade ao nosso pequeno exemplo. A tabela a seguir, considerando a simplicidade do cenário adotado, ilustra o resultado da análise quantitativa:
+
+
+Prioridade	Evento	Custo (R$)
+1	Ocorrência de um problema de saúde, por causa de um acidente ou ter contraído alguma doença	10.000,00
+2	A quantidade de dólar adquirida não ser suficiente	1.000,00
+3	Cancelamento da passagem pela companhia aérea	3.000,00
+ 
+ 

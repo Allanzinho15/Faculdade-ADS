@@ -1,0 +1,167 @@
+MÓDULO 2
+Explicar o processo da garantia de qualidade de software
+
+Processo de garantia da qualidade
+Um sistema de garantia da qualidade de software, também denominado SQA (Software Quality Assurance), pode ser definido como a estrutura organizacional com responsabilidades, procedimentos, processos e recursos para implementação da gestão da qualidade, garantindo que os produtos e serviços de uma determinada organização satisfaçam às expectativas do cliente por meio do atendimento às suas especificações.
+
+O processo de garantia de qualidade de software, parte do referido sistema, inclui a definição e seleção de padrões que devem ser aplicados ao processo de desenvolvimento de software ou ao produto de software, podendo ocorrer a seleção de ferramentas e métodos, como apoio a esses padrões.
+
+
+Atenção
+A equipe de qualidade deve examinar o software sob o ponto de vista do cliente, assertiva alinhada com a máxima de que “A qualidade é conformidade aos requisitos”, ou seja, o software deve atender às necessidades do cliente.
+
+A garantia da qualidade de software é composta pelas atividades que se concentram na gestão da qualidade de software. Vejamos algumas:
+
+Clique nas barras para ver as informações.
+Padrões
+Os padrões, tal como os estabelecidos pela ISO, podem ser adotados pela equipe de Engenharia de Software ou determinados pelo cliente, cabendo à equipe de qualidade garantir que esses padrões sejam aplicados e que todas as entregas estejam em conformidade aos mesmos.
+
+Revisões e auditorias
+As revisões técnicas permitem a identificação de erros nos diversos artefatos gerados, sendo as auditorias usualmente aplicadas na verificação da conformidade de processos com os respectivos procedimentos, tal como a verificação do processo de revisão, a fim de garantir que as revisões estejam sendo eficazes na descoberta de erros.
+
+Testes
+Os testes de software têm como finalidade a descoberta de erros, cabendo à equipe de qualidade garantir que os planos de testes sejam implementados e executados na consecução do citado objetivo básico.
+
+Coleta e análise de erros/defeitos
+Considerando a máxima de que “Não se controla o que não se mede”, a equipe de qualidade deverá realizar a análise de erros e defeitos, propondo melhorias de procedimentos.
+
+Gerenciamento de mudanças
+Considerando a alta volatilidade de requisitos e as evoluções tecnológicas constantes, cabe à equipe de qualidade o estabelecimento de procedimentos relacionados com a gestão de mudanças.
+
+Educação
+A equipe de qualidade deverá realizar a gestão de programas educacionais a fim de permitir o aperfeiçoamento da equipe de desenvolvimento.
+
+Gerência dos fornecedores
+Cabe à equipe de qualidade, no caso de aquisição de software, incorporar exigências de qualidade como parte de qualquer contrato com um fornecedor externo.
+
+Administração da segurança
+Inclui, entre outros, a proteção de dados em todos os níveis, a implantação de firewalls e a garantia de que o software não tenha sido alterado internamente, sem autorização, cabendo à equipe de qualidade o emprego de processos e tecnologias apropriadas.
+
+Proteção
+O impacto de defeitos ocultos pode ser catastrófico, tal como no nosso exemplo da aeronave com 500 pessoas, cabendo à equipe de qualidade avaliar o impacto de falhas de software e as respectivas tratativas em relação à redução de riscos.
+
+Administração de riscos
+A gestão de riscos é responsabilidade da equipe de desenvolvimento, cabendo à equipe de qualidade garantir que essa gestão seja conduzida de forma apropriada e que planos de contingência estejam estabelecidos.
+
+Padrões de software
+Vamos entender os tipos de padrões de software que podem ser estabelecidos pela equipe de qualidade:
+
+
+Inclui padrões de documentação, tal como um cabeçalho de comentário padronizado para uma definição de uma classe que permitirá instanciar objetos, e padrões de codificação, que definem como uma linguagem de programação deve ser usada.
+
+
+Definem os processos que devem ser seguidos durante o desenvolvimento de software, tal como o processo da engenharia de requisitos, e uma descrição dos documentos que devem ser escritos ao longo desses processos.
+
+Você se lembra da Figura 3, apresentada no módulo 1? Reveja:
+
+
+Figura 3 novamente – Gerenciamento de qualidade versus processo de desenvolvimento.
+Fonte: O Autor.
+Ela ilustra o relacionamento entre os padrões de produto e de processo. Os padrões de produto aplicam-se à saída do processo de software e, em muitos casos, os padrões de processo incluem atividades de processo específicas que asseguram que os padrões de produto sejam seguidos.
+
+Podemos destacar alguns aspectos relacionados aos padrões de software:
+
+Incluem melhores práticas, evitando a repetição de erros
+
+Provêm um framework para a implementação do processo de garantia de qualidade, assegurando que essas melhores práticas sejam cumpridas
+
+Permitem a continuidade quando da ocorrência de substituições na equipe
+
+A equipe de qualidade deve gerar, podendo ter como base modelos de padrões nacionais e internacionais, os padrões necessários para sua organização. Recomenda-se que esse trabalho inclua o envolvimento da equipe de desenvolvimento, uma sistemática revisão dos padrões e a disponibilização de ferramentas CASE de apoio aos padrões.
+
+A aplicação de um determinado processo de desenvolvimento de software depende fortemente da complexidade do escopo do problema, de modo que poderão ser utilizados diferentes tipos de processos de software em uma organização, impactando o processo de garantia da qualidade. Do exposto, a equipe de desenvolvimento deve ter a autoridade de modificar os padrões de processo de acordo com as circunstâncias de cada projeto em comum acordo com a equipe de qualidade; importante ressaltar a possibilidade de alterações nos padrões existentes, ou até mesmo a inclusão de novos padrões.
+
+
+Padrões ISO 9000
+Vejamos agora um exemplo de padrão de processo internacional e vamos entender de forma simplificada como pode ocorrer a sua adoção por parte de uma empresa.
+
+ISO 9000 é um conjunto internacional de padrões aplicados a um sistema de gerenciamento de qualidade genérico, podendo ser aplicado na indústria de manufatura, na indústria de serviço e outros.
+
+O padrão ISO 9001 não é especificamente voltado para desenvolvimento de software, mas possui uma interpretação denominada ISO 9000-3 que estabelece princípios gerais que podem ser aplicados ao software.
+
+As necessidades delineadas pelos tópicos da ISO 9001 são:
+
+Responsabilidade administrativa.
+Um sistema de qualidade.
+Revisão contratada.
+Controle de projeto.
+Controle de dados e documentos.
+Identificação e rastreabilidade de produtos.
+Controle de processos.
+Inspeções e testes.
+Ações preventivas e corretivas.
+Registros de controle de qualidade.
+Auditorias de qualidade internas.
+Treinamento.
+Manutenção.
+Técnicas estatísticas.
+Atenção
+Uma organização de software que busque uma certificação ISO 9001 tem de estabelecer políticas e procedimentos para atender a cada uma das necessidades citadas, bem como ser capaz de demonstrar que tais políticas e procedimentos estão sendo seguidos. A certificação é um indicador da seriedade de como uma organização trata a qualidade.
+
+Os relacionamentos entre o padrão ISO 9000, o manual de qualidade e os planos de qualidade de projeto individual, de acordo com Sommerville (2019), são mostrados na Figura 6. O manual de qualidade, ou Plano SQA, aplica os elementos básicos do padrão ISO 9000. Cada projeto instancia um plano de qualidade a partir do referido manual e de acordo com o processo de desenvolvimento de software adotado. O manual determina o processo de qualidade da organização, que devidamente adaptado a cada novo projeto, permite a implantação do gerenciamento de qualidade de cada projeto instanciado.
+
+
+Figura 6 – ISO 9000 versus gerenciamento da qualidade.
+Fonte: O Autor.
+
+Agora, assista ao vídeo sobre o padrão ISO 9000 e sua aplicabilidade à qualidade de software:
+
+
+Padrão ISO 9126
+Vejamos agora um exemplo de padrão de produto disponível para adoção em um projeto de software. O padrão ISO 9126 foi desenvolvido como uma tentativa de identificar os atributos fundamentais de qualidade para software. O padrão identifica seis atributos fundamentais de qualidade:
+
+Clique nas barras para ver as informações.
+Funcionalidade
+O grau com que o software satisfaz às necessidades declaradas conforme indicado pelos subatributos adequabilidade, exatidão, interoperabilidade, conformidade e segurança.
+
+Confiabilidade
+Quantidade de tempo que o software fica disponível para uso conforme indicado pelos subatributos maturidade, tolerância a falhas, facilidade de recuperação.
+
+Usabilidade
+Grau de facilidade de utilização do software conforme indicado pelos subatributos facilidade de compreensão, facilidade de aprendizagem, operabilidade.
+
+Eficiência
+O grau de otimização do uso, pelo software, dos recursos do sistema conforme indicado pelos subatributos comportamento em relação ao tempo, comportamento em relação aos recursos.
+
+Facilidade de manutenção
+A facilidade com a qual uma correção pode ser realizada no software conforme indicado pelos subatributos facilidade de análise, facilidade de realização de mudanças, estabilidade, testabilidade.
+
+Portabilidade
+A facilidade com a qual um software pode ser transposto de um ambiente a outro conforme indicado pelos subatributos adaptabilidade, facilidade de instalação, conformidade, facilidade de substituição.
+
+Gerenciamento da qualidade de acordo com o PMBOK
+Vamos agora entender o gerenciamento da qualidade segundo o PMBOK (2017).
+
+Uma das dez áreas de conhecimento do PMBOK é o Gerenciamento da Qualidade do Projeto que inclui os processos para incorporação da política de qualidade da organização com relação ao planejamento, gerenciamento e controle dos requisitos de qualidade do projeto e do produto para atender às expectativas dos clientes. A referida área possui três processos que serão descritos a seguir:
+
+Planejamento	Execução	Monitoramento e Controle
+Gerenciar a Qualidade	Controlar a Qualidade	Planejar o Gerenciamento da Qualidade
+Processo do grupo de processo planejamento que permite identificar os requisitos e/ou padrões da qualidade do projeto e suas entregas, e documentar como o projeto demonstrará a conformidade com os requisitos e/ou padrões de qualidade, tendo como principal entrega o plano de gerenciamento da qualidade.	Processo do grupo de processo execução que transforma o plano de gerenciamento da qualidade em atividades da qualidade executáveis que incorporam no projeto as políticas de qualidade da organização.	Processo do grupo de processo planejamento que monitora e registra resultados da execução de atividades de gerenciamento da qualidade para avaliar o desempenho e garantir que as saídas do projeto sejam completas, corretas e atendam às expectativas do cliente.
+Tabela 1 – Processos do Gerenciamento da Qualidade do Projeto.
+Atenção
+O Gerenciamento da Qualidade do Projeto trata do gerenciamento do projeto e das entregas do projeto, adotando, entre outras, a premissa de que a prevenção é preferível à inspeção, pois é melhor obter a qualidade nas entregas, em vez de identificar não conformidades em uma determinada inspeção. Nesse caso, o custo de prevenção é geralmente muito menor do que o custo de corrigir os erros identificados.
+
+Existem cinco níveis de gerenciamento da qualidade cada vez mais eficaz, conforme a seguir:
+
+1. Deixar que o cliente encontre os defeitos é uma abordagem que pode gerar problemas de garantia, recalls, retrabalho e outros, sendo em geral uma abordagem mais cara.
+
+2. Detectar e corrigir os defeitos antes que as entregas sejam enviadas para o cliente como parte do processo de controlar a qualidade, pois esse processo tem custos relacionados, que são principalmente os custos de avaliação e os custos internos de falhas.
+
+3. Usar a garantia da qualidade para examinar e corrigir o processo em si e não apenas defeitos especiais.
+
+4. Incorporar a qualidade no planejamento e design do projeto e do produto.
+
+5. Criar uma cultura na organização que esteja ciente e comprometida com a qualidade em processos e produtos.
+
+Resumindo
+Neste módulo, avaliamos a importância da garantia da qualidade no desenvolvimento de software.
+
+Incialmente, destacamos que um sistema de garantia da qualidade define a estrutura organizacional responsável pela gestão da qualidade, garantindo o atendimento às expectativas do cliente.
+
+Vimos que o processo de garantia de qualidade de software, parte do referido sistema, enfatiza a adoção de padrões que devem ser aplicados ao processo de desenvolvimento de software, bem como garantir que esses sejam cumpridos; os padrões devem ser aplicados nos processos e produtos.
+
+A adoção de um padrão, tal como os especificados pela ISO, permite a geração de manuais de qualidade da organização, que por sua vez define o processo de qualidade da organização, sendo o mesmo customizado para cada projeto em função de sua complexidade e processo de desenvolvimento de software adotado.
+
+Vimos, também, que o PMBOK possui três processos na área de conhecimento e gerenciamento da qualidade de projetos em diferentes grupos de processos.
+
+Agora é com você! Vamos verificar se atingimos o objetivo deste módulo? Você está convidado a realizar as atividades a seguir.

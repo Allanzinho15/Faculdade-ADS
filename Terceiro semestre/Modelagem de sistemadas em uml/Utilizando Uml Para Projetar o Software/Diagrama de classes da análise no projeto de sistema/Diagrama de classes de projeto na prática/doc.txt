@@ -1,0 +1,73 @@
+Diagrama de classes de projeto na prática
+No desenvolvimento de sistemas, o diagrama de classes de projeto tem o papel de detalhar a estrutura do software. Esse diagrama especifica:
+
+
+As classes que compõem o sistema.
+ 
+Os atributos.
+ 
+Os métodos.
+ 
+As associações entre classes.
+
+Na prática, construir um diagrama de classes de projeto é fundamental para garantir um design claro e bem estruturado, facilitando a comunicação entre os membros da equipe de desenvolvimento e servindo como base para a implementação do código. Portanto, dominar a criação e interpretação de diagramas de classes de projeto é essencial para qualquer desenvolvedor que almeja construir sistemas robustos e escaláveis.
+
+
+Vamos construir um diagrama de classes sobre o minimundo locadora de veículos, mais especificamente relacionado ao caso de uso alugar veículo, o qual teve seu diagrama de sequência desenvolvido anteriormente?
+
+
+Comentário
+As informações (métodos, atributos e associações) do diagrama são referentes ao caso de uso alugar veículo. Os métodos definidos nesse diagrama de sequência serão utilizados no diagrama de classes de projeto. A confecção dos diagramas de sequência dos demais casos de uso possivelmente trarão novos elementos de informação para o diagrama de classes de projeto do minimundo considerado.
+
+
+Este vídeo apresenta a prática da elaboração do diagrama de classes de projeto, a partir do refinamento do diagrama de classes gerado na etapa de análise do processo de desenvolvimento de software.
+
+
+
+Roteiro de prática
+
+
+Vejamos o diagrama de classes elaborado na etapa de análise:
+
+
+
+
+Diagrama de classes de projeto (parcial).
+
+Com base no diagrama de classes de análise e no diagrama de sequência ilustrado na imagem a seguir, será elaborado o diagrama de classes de projeto, que representa um refinamento do diagrama de classes de análise.
+
+
+
+
+
+Diagrama de sequência.
+No diagrama do projeto, os atributos das classes, os métodos e as associações são adequados às questões de implementação, ficando mais detalhado do que o diagrama de classes de análise original, o qual só se preocupava com as questões conceituais do mundo real.
+
+
+Por questões de simplicidade, só serão representados alguns atributos e métodos, ficando claro que os atributos e métodos não contemplados devem seguir os mesmos conceitos. Vejamos o diagrama do projeto proposto como solução:
+
+
+
+
+Diagrama de classes de projeto (parcial).
+
+Veja que todos os métodos identificados no diagrama de sequência desenvolvido estão representados no diagrama de classes do projeto, bem como a navegabilidade de cada associação. Vale dizer que todos os atributos são privados (na frente do atributo). Dessa forma, não é possível alterar diretamente qualquer atributo (encapsulamento). Vale destacar mais alguns pontos importantes:
+
+
+Métodos Set e Get
+
+As classes terão métodos Set e Get, que alteram e leem os valores dos atributos privados, porém não são representados no diagrama de classes de projeto, pois são subentendidos.
+
+Ferramenta CASE
+
+Qualquer ferramenta CASE (Computer-aided software engineering) gera os métodos Set e Get para os atributos privados.
+
+Responsabilidade do projetista
+
+Cabe ao projetista definir se alguma verificação deve ser incluída no código desses métodos (por exemplo, validação de datas).
+
+Se uma ferramenta CASE for utilizada para geração automática de código, os tipos detalhados são necessários, mas se o diagrama for usado exclusivamente por desenvolvedores de software, o excesso de informação pode poluir o diagrama e dificultar seu entendimento. No diagrama de sequência, por exemplo, não há troca de mensagens entre as classes de entidade.
+
+
+Dica
+Um diagrama de sequência para o mesmo minimundo poderia prever tais mensagens, e não estaria errado. Como sabemos, não há apenas uma forma correta de modelagem.

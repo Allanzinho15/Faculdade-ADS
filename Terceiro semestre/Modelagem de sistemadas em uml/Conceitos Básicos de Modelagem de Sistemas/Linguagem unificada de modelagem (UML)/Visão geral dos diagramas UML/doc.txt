@@ -1,0 +1,97 @@
+Visão geral dos diagramas UML
+Esses diagramas fornecem uma linguagem visual unificada para modelar sistemas complexos, permitindo uma comunicação clara e eficiente entre desenvolvedores, analistas e stakeholders. Compreender a variedade de diagramas UML disponíveis, e saber quando e como aplicá-los em diferentes estágios do desenvolvimento de software, é fundamental para garantir precisão, consistência e compreensão do sistema em desenvolvimento. Portanto, o conhecimento teórico sobre os diagramas UML oferece uma base sólida para análise, projeto e documentação desses sistemas.
+
+
+Confira neste vídeo uma visão geral dos diagramas UML.
+
+
+
+Aqui vamos analisar a versão mais recente da UML, a 2.5.1, que traz 14 diagramas com as divisões a seguir.
+
+
+Diagramas estruturais
+
+São estruturas estáticas necessárias ao sistema, como os pacotes, as classes, os objetos, os componentes e a estrutura de nós (estruturas computacionais). São essenciais para o funcionamento do sistema. Também são chamadas de estruturas estáticas.
+
+Diagramas comportamentais
+
+Evidenciam o comportamento (funcionamento) de parte de um sistema ou processo de negócio relacionado ao sistema, segundo determinada perspectiva. Estão relacionados às funcionalidades do sistema, aos estados de um objeto em seu ciclo de vida, às interações entre os objetos, entre outros aspectos. Também são chamados de diagramas dinâmicos.
+
+Observe esses diagramas!
+
+
+
+Diagramas da UML.
+
+Fique agora com uma breve descrição de cada diagrama da UML. Vamos lá!
+
+
+
+Diagrama de perfil
+
+Permite a definição de tipos padronizados, como estereótipos, restrições e valores rotulados. O foco é a adequação aos modelos UML para diferentes plataformas, por exemplo.
+
+
+Diagrama de classes
+
+Descreve, para cada classe, suas propriedades (atributos e métodos) e seus relacionamentos com as demais classes. Classe é a base estrutural dos sistemas orientados a objetos.
+
+
+Diagrama de estruturas compostas
+
+Possibilita a descrição de colaborações internas de classes, interfaces ou componentes, visando à especificação de uma funcionalidade.
+
+
+Diagrama de componentes
+
+Apresenta a estrutura e as conexões entre os componentes de um sistema.
+
+
+Diagrama de implantação
+
+Especifica o ambiente computacional sobre o qual o sistema vai operar, além de distribuir os artefatos (pacotes, classes e componentes) nos nós (elementos computacionais).
+
+
+Diagrama de objetos
+
+É um diagrama de classes instanciado, ou seja, mostra exemplos de instâncias de classes.
+
+
+Diagrama de pacotes
+
+Descreve estruturas hierárquicas que englobam outros elementos, como outros pacotes, casos de uso, classes. Usado para modularizar logicamente um sistema em suas partes relevantes (subsistemas).
+
+
+Diagrama de atividades
+
+Descreve o comportamento de procedimentos, processos de negócios e fluxos de trabalho, suportando processamento sequencial e paralelo.
+
+
+Diagrama de casos de uso
+
+Mostra como os usuários (atores) interagem com o sistema, do ponto de vista externo, evidenciando as funcionalidades com as quais interagem.
+
+
+Diagrama de estados
+
+Mostra como os eventos que afetam o sistema alteram o estado dos objetos ao longo de seus ciclos de vida.
+
+
+Diagrama de sequência
+
+Mostra como os objetos interagem, evidenciando a linha de tempo (a sequência das interações).
+
+
+Diagrama de comunicação
+
+Mostra como os objetos interagem, evidenciando as conexões e colaborações entre eles.
+
+
+Diagrama de visão geral de interação
+
+Um mix de diagrama de sequência e de atividades. Uma especialização do diagrama de atividades para interações.
+
+
+Diagrama de tempo
+
+Diagrama de interação, com foco nas restrições de temporização, por exemplo, para evidenciar as mudanças no estado de um objeto ao longo do tempo.

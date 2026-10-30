@@ -1,0 +1,36 @@
+Fluxo de Trabalho
+Após o detalhamento das fases do RUP ilustradas na Figura 9, vamos entender as atividades transversais. Essas atividades, que correspondem às atividades genéricas de um processo de desenvolvimento de software, apresentadas anteriormente, compõem o denominado fluxo de trabalho, sendo as atividades distribuídas em todas as fases.
+
+ 
+
+Como ocorre o relacionamento entre as dimensões fases do projeto X fluxos de projeto da Figura 9?
+ 
+
+Cada atividade do fluxo de trabalho se desenvolve de forma mais intensa em determinada fase. Por exemplo, os fluxos de trabalho da modelagem de negócio e requisitos são intensos na fase de concepção, justamente quando são definidos os requisitos de alto nível do negócio; a análise e design, i.e., projeto, tem uma intensidade na concepção em função dos modelos de análise e projeto, entretanto podemos observar alguma atividade na fase de construção, pois alguns modelos são refinados nesta fase do software.
+
+ 
+
+Por que ocorre a atividade de implementação na fase de elaboração? Essa fase não é intensa em análise e projeto?
+ 
+
+Lembra-se da prototipação? Podemos nessa fase validar algum requisito do software aplicando a prototipação que inclui atividade de codificação, i.e., implementação.
+
+ 
+
+O RUP define três grupos de atividades de apoio ao desenvolvimento do software:
+
+
+
+Ambiente
+
+Inclui as atividades necessárias para configurar os processos e as ferramentas que darão suporte à equipe de desenvolvimento.
+
+
+Gerenciamento de configuração e mudança
+
+Permite a estruturação sistemática dos artefatos, tais como documentos e modelos, que precisam estar sob controle de versão, devendo essas alterações serem visíveis.
+
+
+Gerência de projeto
+
+Enfatiza a importância do gerenciamento de projetos; nessa atividade, sugerimos a utilização das melhores práticas contidas no PMBOK (o guia Project Management Body of Knowledge é um conjunto de práticas na gestão de projetos organizado pelo instituto PMI, sendo considerado a base do conhecimento sobre gestão de projetos por profissionais da área.

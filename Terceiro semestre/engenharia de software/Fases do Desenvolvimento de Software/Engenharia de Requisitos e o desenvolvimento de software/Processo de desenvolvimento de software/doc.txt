@@ -1,0 +1,16 @@
+Processo de desenvolvimento de software
+Você sabe por que se aplica de forma intensa o conceito de abstração no desenvolvimento de software? Porque esse processo é iniciado com especificações e modelos com alto nível de abstração e, à medida que o desenvolvimento de software se aproxima da codificação, o nível de abstração diminui, de modo que o código representa o nível mais baixo da abstração ou de maior detalhamento na especificação do software.
+
+ 
+
+Os diferentes modelos de processos de desenvolvimento de software possuem as seguintes atividades típicas:
+
+ 
+
+Levantamento de requisitos
+Análise
+Projeto
+Implementação
+Testes
+
+Vamos, agora, descrever cada uma das atividades comumente previstas em um processo de desenvolvimento de software.

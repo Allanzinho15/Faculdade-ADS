@@ -1,0 +1,99 @@
+Diagrama de atividades
+É fundamental para a modelagem eficiente de processos e fluxos de trabalho em sistemas complexos. Esses diagramas oferecem uma representação visual clara das sequências de ações e decisões dentro de um sistema, facilitando a compreensão e comunicação entre desenvolvedores e partes interessadas.
+
+
+Ao identificar corretamente atividades, transições e condições de guarda, todos os aspectos dinâmicos do processo são capturados com precisão. Isso contribui para projetos mais coesos e bem estruturados, essenciais para o desenvolvimento de software de alta qualidade.
+
+
+Neste vídeo, compreenda a aplicação do diagrama de atividades, utilizando a UML, ao longo do processo de desenvolvimento de software. O vídeo vai abordar fluxo de controle sequencial, fluxo de controle paralelo, raias e modelagem da lógica de uma operação complexa.
+
+
+
+Definição
+
+
+Um diagrama de atividade pode ser considerado um tipo especial de diagrama de estados, em que são representados os estados de uma atividade em vez dos estados de um objeto. Ao contrário dos diagramas de estados, que são orientados a eventos, diagramas de atividade são orientados a fluxos de controle.
+
+
+Muitos autores dizem que o diagrama de atividades é um fluxograma. Na verdade, o diagrama de atividade pode ser visto como uma extensão dos fluxogramas. Além de possuir toda a semântica existente em um fluxograma (com notação ligeiramente diferente), o diagrama de atividade possui notação para representar ações concorrentes (paralelas), juntamente com a sua sincronização.
+
+
+
+
+Exemplo de diagrama de atividades.
+
+Os elementos de um diagrama de atividade podem ser divididos em dois grupos:
+
+
+Controles sequenciais
+
+Elementos utilizados para representar fluxos de controle sequenciais.
+
+Controles paralelos
+
+Elementos utilizados para representar fluxos de controle paralelos.
+
+Veremos mais detalhes de cada tipo a seguir.
+
+
+Fluxo de controle sequencial
+
+Os elementos de um diagrama de atividade usados no controle sequencial são:
+
+
+
+Estado ação e estado atividade
+Um diagrama de atividades exibe os passos de uma computação. Cada estado corresponde a um dos passos da computação, em que o sistema está realizando algo. Um estado em um diagrama de atividade pode ser um estado atividade ou um estado ação. O primeiro leva um certo tempo para ser finalizado. Já o segundo é realizado instantaneamente.
+
+
+Estados inicial e final e condição de guarda
+Assim como no diagrama de estados, um diagrama de atividade deve ter um estado inicial; ele pode ter também vários estados finais e guardas associados a transições. Um diagrama de atividade pode não ter estado final, o que significa que o processo ou procedimento sendo modelado é cíclico.
+
+
+Transição de término
+Uma transição de término liga um estado a outro. Essa transição significa o término de um passo e o consequente início do outro. Observe que, em vez de ser disparada pela ocorrência de um evento (como nos diagramas de estados), essa transição é disparada pelo término de um estado de ação. Pode haver uma transição rotulada com a condição de guarda especial [else], o que significa que, se todas as demais condições de guarda foram avaliadas como falsas, a transição associada a essa guarda especial é disparada.
+
+
+Pontos de ramificação
+Um ponto de ramificação possui uma única transição de entrada e várias de saída. Para cada transição de saída, há uma condição de guarda associada. Quando o fluxo de controle chega a um ponto de ramificação, uma e somente uma das condições de guarda deve ser verdadeira.
+
+
+Ponto de união
+Um ponto de união reúne diversas transições que, direta ou indiretamente, têm um ponto de ramificação em comum.
+
+Fluxo de controle paralelo
+
+Um diagrama de atividade pode conter fluxos de controle paralelos. Isso significa que é possível haver dois ou mais fluxos de controle sendo executados simultaneamente em um diagrama de atividades. Para sincronizar dois ou mais fluxos paralelos, as barras de sincronização são utilizadas. Há dois tipos de barra de sincronização:
+
+
+
+Barra de bifurcação (fork)
+
+
+Uma barra de bifurcação recebe uma transição de entrada e cria dois ou mais fluxos de controle paralelos. A partir desse momento, cada um dos fluxos criados é executado independentemente e em paralelo com os demais.
+
+
+
+Barra de junção (join)
+
+
+Uma barra de junção recebe duas ou mais transições de entrada e une os fluxos de controle em um único fluxo. Seu objetivo é sincronizar fluxos de controle paralelos já existentes. As transições de saída da barra de junção só são disparadas após o disparo de todas as transições de entrada.
+
+
+Raias
+
+Algumas vezes, as atividades de um processo podem ser distribuídas por vários agentes que o executarão. Isso normalmente ocorre em processos de negócio de uma organização, em que as tarefas são executadas por pessoas ou departamentos diversos. Nesses casos, o processo pode ser representado em um diagrama de atividades com o uso de raias de natação. As raias de natação dividem o diagrama de atividades em compartimentos. Cada compartimento contém atividades que são realizadas por um agente específico. Além disso, as entidades de cada compartimento podem estar realizando atividades em paralelo.
+
+
+
+
+Exemplo de diagrama de atividades com raias e fork.
+
+Modelagem da lógica de uma operação complexa
+
+Quando um sistema de software é adequadamente decomposto em seus objetos constituintes e as responsabilidades de cada objeto estão bem definidas, a maioria das operações é bastante simples. Essas operações não necessitam de modelagem gráfica para serem entendidas. No entanto, em alguns casos, notadamente quando uma operação de uma classe de controle implementa uma regra de negócio, pode haver a necessidade de se descrever a lógica dessa operação ou da própria regra de negócio. Diagramas de atividade também podem ser utilizados com esse objetivo, nisso se assemelhando a um fluxograma.
+
+
+O que você achou do conteúdo?
+
+Relatar problema

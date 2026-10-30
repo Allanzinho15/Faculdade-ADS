@@ -1,0 +1,63 @@
+Análise Qualitativa dos Riscos
+Até o momento, temos uma lista com os prováveis riscos do projeto.
+
+ 
+
+Vamos imaginar que tenhamos uma longa lista. Isso, intuitivamente, nos leva a considerar a necessidade de determinarmos a importância relativa entre os referidos riscos, a fim de que possamos saber quais os riscos prioritários.
+
+
+É interessante destacar que a tratativa de riscos poderá gerar alocação de recursos financeiros, impactando o orçamento do projeto, ou seja, não é possível tratar os riscos listados com a mesma prioridade, devido às limitações de tempo e recursos.
+
+
+O objetivo da Análise Qualitativa dos Riscos é priorizar os riscos, combinando a probabilidade de ocorrência e, caso o risco ocorra, o seu impacto. Essa combinação permite determinar o potencial de cada risco em influenciar os resultados do projeto. A probabilidade determina a dimensão da incerteza e o impacto, o efeito sobre os objetivos do projeto.
+
+ 
+
+No início deste módulo, definimos três eventos, a título de exemplo, no projeto de uma viagem ao exterior. Vamos agora aplicar a Análise Qualitativa de Riscos nesses eventos.
+
+
+Probabilidades
+
+Temos que definir as probabilidades que serão adotadas:
+
+Grande chance de ocorrer	0,95
+Provavelmente ocorrerá	0,75
+Igual chance de ocorrer ou não	0,50
+Baixa chance de ocorrer	0,25
+Pouca chance de ocorrer	0,10
+ 
+
+Graus de impacto
+
+Definir os graus de impacto:
+
+Grau de impacto	Peso
+Muito grande	5
+Grande	4
+Moderado	3
+Pequeno	2
+Muito pequeno	1
+ 
+
+Aplicação
+
+
+Podemos, então, aplicar os valores a cada evento:
+Evento	Probabilidade	Impacto	Probabilidade x Impacto
+1) Ocorrência de um problema de saúde, por causa de um acidente ou ter contraído alguma doença	0,75	5	3,75
+1) Cancelamento da passagem pela companhia aérea	0,50	3	1,5
+3) A quantidade de dólar adquirida não ser suficiente	0,50	4	2,0
+ 
+
+Temos agora prioridades! De acordo com a tabela, o evento mais crítico está relacionado com a saúde, em seguida, com a quantidade de dólar e, finalmente, com a passagem.
+
+
+Saiba Mais
+A Força Aérea Americana determina em seus projetos de software os seguintes componentes de risco: desempenho, custo, suporte e cronograma. As categorias de impacto incluem: catastrófico, crítico, marginal e negligenciável.
+
+
+Você pode questionar: como determino a probabilidade e o impacto, valores que agregam incertezas? Lembre-se de que a área de conhecimento Gerenciamento de Risco do Projeto requer, como as demais áreas, especialistas na respectiva área. Os profissionais que trabalham com risco têm a expertise necessária no trato desses números que representam incertezas, principalmente, por experiências em projetos passados semelhantes.
+
+ 
+
+O gerente de projetos é um integrador de conhecimentos e não precisa ter expertise em todas as áreas de conhecimento, mas tem que entender bem dos processos aplicados nas diferentes áreas.

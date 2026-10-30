@@ -1,0 +1,111 @@
+MÓDULO 4
+Descrever as medições e métricas do software
+
+Medição
+Um elemento-chave de qualquer processo de engenharia é a medição, pois podemos aplicar a máxima “Não se controla o que não se mede”.
+
+Vamos entender o conceito de medição por meio dos termos medida, medição e métricas. No contexto de engenharia de software, uma medida proporciona uma indicação quantitativa da extensão, quantidade, capacidade ou tamanho de algum atributo de um produto ou processo, sendo a medição ato de determinar uma medida.
+
+A métrica é uma medida quantitativa do grau com o qual um sistema, componente ou processo possui determinado atributo.
+
+Exemplo
+Exemplificando, uma medida é estabelecida quando ocorre a coleta do número de erros descobertos em um componente de software. A medição ocorre como resultado de um conjunto de revisões de componentes e testes de unidade investigados na coleta de medidas do número de erros para cada um. A métrica de software relaciona as medidas individuais, ou seja, o número médio de erros encontrados por revisão ou o número médio de erros encontrados por teste de unidade.
+
+A medição de software está preocupada com a quantificação de algum atributo de um sistema de software, como a sua complexidade ou a sua confiabilidade. Comparando os valores medidos uns com os outros e com os padrões que se aplicam a uma organização, deve ser possível tirar conclusões sobre a qualidade do software ou avaliar a eficácia de processos de software, de ferramentas e de métodos, ou seja, o gerenciamento da qualidade pode contar com medições de atributos que afetam a qualidade do software.
+
+Processo de medição
+O fluxo abaixo ilustra um processo de medição proposto por Sommerville (2019), que pode ser parte de um processo de avaliação da qualidade de software, no qual cada componente do sistema pode ser analisado separadamente usando uma variedade de métricas. Os valores dessas métricas podem, então, ser comparados com diferentes componentes e, talvez, com dados de medição históricos, coletados em projetos anteriores. Medições anômalas, que se desviam significativamente da norma, em geral indicam problemas com a qualidade desses componentes.
+
+Clique nas barras para ver as informações.
+Escolher as medições a serem feitas
+Inclui a formulação das questões às quais a medida se destina a responder, bem como a definição das medições necessárias para respondê-las.
+
+Selecionar os componentes a serem avaliados
+Selecionar um conjunto representativo de componentes para medição, a fim de permitir uma avaliação geral da qualidade do sistema.
+
+Mediar as características dos componentes
+Os componentes selecionados são medidos, e os valores de métricas associados são calculados, sendo sugerido o uso de uma ferramenta de coleta automática de dados.
+
+Identificar medições anômalas
+Depois que as medições do componente foram feitas, é possível compará-las umas com as outras e com as medições anteriores registradas em um banco de dados de medição, devendo-se procurar valores atipicamente altos ou baixos para cada métrica, pois eles sugerem que pode haver problemas com o componente que está exibindo esses valores.
+
+Analisar componentes anômalos
+Ao identificar componentes que têm valores anômalos, é preciso examiná-los para decidir se esses valores de métricas anormais significam que a qualidade do componente está comprometida ou não, pois um valor de métrica anormal, e.g., para a complexidade, não significa necessariamente um componente de má qualidade, pois pode haver algum outro motivo para o alto valor, ou seja, pode não haver problema de qualidade com o componente.
+
+Uma boa prática inclui a manutenção dos dados coletados como um recurso organizacional e guardar registros históricos de todos os projetos, pois o estabelecimento de um banco de dados de medição robusto permitirá realizar comparações de qualidade de software em projetos e validar as relações entre atributos de componentes internos e características de qualidade.
+
+
+Método GQM
+O método GQM (Goal – Question – Metric) é uma técnica aplicada no planejamento do trabalho de medição, ou seja, permite a identificação de métricas significativas para qualquer parte do processo de software. O GQM organiza o planejamento de uma medição de software em etapas de acordo com as descrições a seguir:
+
+Clique nas informações a seguir.
+
+Conheça as métricas utilizadas no processo de garantia da qualidade de software:
+
+
+Métricas
+Relembrando
+Como afirmado anteriormente, uma métrica é uma medida quantitativa do grau com o qual um sistema, componente ou processo possui determinado atributo, tal como o número médio de erros encontrados por revisão ou o número médio de erros encontrados por teste de unidade.
+
+A Engenharia de Software é uma área de conhecimento quantitativa, portanto, uma métrica de produto ajuda os engenheiros de software a visualizar o projeto e a construção do software por meio de atributos específicos e mensuráveis permitindo aos mesmos criar um software de alta qualidade.
+
+Vamos entender como são utilizadas as métricas.
+
+No contexto do processo de definição e após a definição das métricas, coletam-se os dados necessários para derivar as métricas formuladas, sendo as mesmas analisadas com base em diretrizes preestabelecidas e dados do passado; os resultados das análises são interpretados para obter informações sobre a qualidade do software e os dados da interpretação podem gerar alterações nos requisitos, modelos de projeto, código-fonte ou processo de software.
+
+Saiba mais
+Uma melhor prática é descrever um conjunto de atributos a serem aplicados às métricas, tais como: Fácil aprendizado em relação à sua derivação e com uma computação sem demanda de esforço; deverá satisfazer as ideias do engenheiro sobre o atributo do produto considerado (por exemplo, uma métrica que mede coesão de módulo deverá crescer em valor na medida em que aumenta o nível de coesão); sempre produzir resultados que não sejam ambíguos; a computação matemática da métrica deverá usar medidas que não resultem em combinações incomuns de unidades, e.g., multiplicar o número de pessoas nas equipes de projeto pelas variáveis da linguagem de programação no programa resulta em uma mistura duvidosa de unidades que não é claramente convincente; baseadas no modelo de requisitos, modelo de projeto ou na própria estrutura do programa; fornecer informações que podem levar a um produto final de melhor qualidade.
+
+Podemos afirmar que uma métrica de software é uma característica de um sistema de software, da documentação do sistema ou do processo de desenvolvimento, que pode ser medida objetivamente. De acordo com Sommerville (2019), as métricas de software podem ser:
+
+Clique nas barras para ver as informações.
+MÉTRICAS DE CONTROLE OU DE PROCESSO
+Apoiam o gerenciamento de processos, ou seja, geralmente estão associadas aos processos de software, tais como o esforço médio ou o tempo necessário para reparar defeitos relatados. Podem ser usados três tipos de métricas de processo:
+
+O tempo que um determinado processo leva para ser concluído.
+Os recursos necessários para um determinado processo, tais como o esforço total, em pessoas-dia, custos de viagens ou recursos de computadores.
+O número de ocorrências de um determinado evento, tais como o número de defeitos detectados durante a inspeção de código, o número de alterações de requisitos solicitadas, o número de relatórios de defeitos em um sistema entregue e o número médio de linhas de código modificadas em resposta a uma mudança de requisitos.
+MÉTRICAS DE PREVISÃO OU DE PRODUTO
+Também denominadas de métricas de produto, estão associadas ao produto software e permitem quantificar atributos internos de um sistema de software, tais como o tamanho do sistema, medido em linhas de código, ou o número de métodos associados a cada classe.
+
+As métricas de produtos enquadram-se em duas classes:
+
+Métricas dinâmicas, cujas medições são realizadas no software em execução durante um teste de sistema ou em operação.
+Métricas estáticas, cujas medições são feitas a partir de representações do sistema, como o projeto, o programa ou a documentação.
+As métricas estáticas ajudam a avaliar a complexidade, a compreensibilidade e a manutenibilidade de um sistema ou de seus componentes. A tabela a seguir exemplifica algumas métricas estáticas de produto software.
+
+Métrica	Descrição
+Fan-in / fan-out
+
+Fan-in: Número de funções ou métodos que chamam outra função ou método (por exemplo, x).
+Fan-out: Número de funções que são chamadas pela função x.
+Um valor elevado para o fan-in significa que x está fortemente acoplado ao resto do projeto e as mudanças em x terão um amplo efeito dominó.
+Um valor elevado para fan-out sugere que a complexidade geral de x pode ser alta por causa da complexidade da lógica de controle necessária para coordenar os componentes chamados.
+Comprimento do código
+
+Medida do tamanho de um programa.
+Geralmente, quanto maior o tamanho do código de um componente, mais complexo e propenso a erros ele tende a ser.
+Complexidade ciclomática
+
+Visa a analisar a estrutura do código-fonte.
+Tabela 4 – Métricas estáticas de produto.
+As métricas dinâmicas ajudam a avaliar a eficiência e a confiabilidade de um sistema.
+
+Exemplo
+A confiabilidade é uma característica de qualidade de software a ser avaliada, pois, de forma simplificada, um software é confiável quando não falha (ver Figura 4. Fatores de qualidade de software de McCall). Nesse caso, podemos aplicar algumas métricas dinâmicas: Total de falhas relatadas durante o teste, número de falhas corrigidas, tempo médio entre as falhas, porcentagem de falhas corrigidas, entre outras.
+
+As métricas de controle e de previsão podem influenciar a tomada de decisões de gerenciamento, como mostrado na Figura 9. Os gerentes usam as medições de processo para decidir se as alterações desse processo devem ser feitas e as métricas de previsão para decidir se as alterações de software são necessárias e se o software está pronto para entrar em produção.
+
+
+Figura 9 – Medições de previsão e controle.
+Fonte: O Autor.
+Resumindo
+Neste módulo, destacamos a importância das medições e métricas para a qualidade do software.
+
+A medição de software tem como objetivo a quantificação de algum atributo de um sistema de software, como a sua complexidade ou a sua confiabilidade. Comparando os valores medidos uns com os outros e com os padrões que se aplicam a uma organização, deve ser possível tirar conclusões sobre a qualidade do software ou avaliar a eficácia de processos de software, de ferramentas e de métodos. Um processo de medição pode ser parte de um processo de avaliação da qualidade de software, onde cada componente do sistema pode ser analisado separadamente usando uma variedade de métricas.
+
+A Engenharia de Software é uma área de conhecimento quantitativa, portanto, uma métrica de produto ajuda os engenheiros de software a visualizar o projeto e a construção do software por meio de atributos específicos e mensuráveis permitindo aos mesmos criar um software de alta qualidade.
+
+As métricas de controle geralmente estão associadas aos processos de software e as métricas de previsão associadas ao produto software, permitindo quantificar atributos de um sistema de software.
+
+Agora é com você! Vamos verificar se atingimos o objetivo deste módulo? Você está convidado a realizar as atividades a seguir.

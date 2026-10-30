@@ -1,0 +1,124 @@
+Áreas de conhecimento em Gerenciamento de Projetos
+Assim como a complexidade é um fator determinante na definição de um processo de software, também é inerente ao Gerenciamento de Projeto, de modo que, quanto maior o problema, mais multidisciplinar este se torna.
+
+ 
+
+Em função dessa complexidade, qual seria a sua equipe técnica para desenvolver um projeto de software?
+
+ 
+
+Provavelmente, você pensaria em engenheiro de software, analistas, administrador de banco de dados, programadores, arquitetos de software, entre outros.
+
+ 
+
+Perfeito, essa seria uma boa equipe!
+
+
+
+
+Mas essa equipe seria capaz de realizar a “GESTÃO” de um projeto de software? Podemos considerar que uma equipe de Gerenciamento de Projeto deve ser composta por especialistas em custos que realizem orçamentos realistas; especialistas em aquisições que tenham capacitações na realização de contratações ou licitações; especialistas em recursos humanos, a fim de gerenciar os direitos trabalhistas da equipe de projeto; e outros.
+
+
+É possível que essa equipe técnica resolva parte do problema em função da complexidade na área de gestão que um projeto de software possa requerer.
+
+ 
+
+Considerando que o gerenciamento de projetos é uma atividade multidisciplinar, o PMBOK realiza a fatoração dessa complexidade em 10 (dez) áreas de conhecimento, onde cada área é composta por um conjunto de processos, como ilustra a figura 15.
+
+A figura 15 lista as áreas de conhecimento e o seu relacionamento com os grupos de processos.
+
+
+
+Figura 15 – Áreas de conhecimento x Grupos de processos.
+
+Você poderia perguntar como gerente de projeto: qual a minha equipe então?
+
+ 
+
+Respondendo ao questionamento, o perfil de sua equipe deverá estar alinhado às áreas de conhecimento que serão descritas a seguir.
+
+ 
+
+Conheça no vídeo a seguir as Áreas de Conhecimento e Grupos de Processos do PMBOK aplicados ao Desenvolvimento de Software.
+
+
+
+Gerenciamento da integração do projeto
+
+Área que inclui os processos que permitem a integração das diferentes áreas de conhecimento, estando essa área sob controle direto do gerente de projetos.
+
+
+Podemos dizer que o gerente de projeto atua como um maestro, pois não precisa ter conhecimento específico de cada área de conhecimento. Este combina os resultados em todas as outras áreas de conhecimento e tem a visão geral do projeto, pois é o único responsável pelo projeto como um todo.
+
+
+Observe na figura 15 que a única área com processos em todos os grupos de processos é a Integração. Isso significa que o gerente de projetos está presente em todas as etapas de gestão.
+
+ 
+
+Cabe destacar, mais uma vez, que o Termo de Abertura do Projeto é o documento que autoriza a alocação de recursos ao projeto.
+
+Gerenciamento do escopo do projeto
+
+Área que inclui os processos necessários para assegurar que o projeto contemple todo e somente o trabalho necessário para que este termine com sucesso. Nesta área, são especificados e detalhados os requisitos de software.
+
+ 
+
+A principal técnica para a definição do escopo é a confecção da Estrutura Analítica do Projeto (EAP) ou Work Breakdown Structure (WBS).
+
+ 
+
+A figura 16 ilustra um exemplo de EAP, onde cada elemento constitui uma entrega e as entregas que não são decompostas são chamadas de pacotes de trabalho ou workpackages. Os pacotes de trabalho são conjuntos de tarefas ou ações que, efetivamente, serão executadas no projeto.
+
+
+
+Figura 16 – Exemplo de EAP.
+
+Gerenciamento do cronograma do projeto
+
+Área que inclui os processos necessários para gerenciar o término pontual do projeto, tendo como principal entrega no planejamento o cronograma (físico) do projeto.
+
+ 
+
+O cronograma do projeto é gerado na etapa de planejamento do projeto. Inicialmente, são identificadas as atividades, a partir dos pacotes de trabalho da EAP e, para cada atividade, devemos especificar a duração e os respectivos insumos. Em seguida, é elaborado o diagrama de rede do cronograma do projeto, que determina as interdependências entre as atividades, tal como ilustrado na figura 17.
+
+
+
+Figura 17 – Diagrama de Rede do Cronograma do Projeto.
+
+Finalmente, podemos gerar o cronograma do projeto, exemplificado na figura 18.
+
+
+
+Figura 18 – Exemplo de Cronograma Detalhado do Projeto.
+
+
+Gerenciamento dos custos do projeto
+Inclui os processos envolvidos na gestão dos orçamentos do projeto, a fim de permitir que o projeto possa ser encerrado dentro do orçamento aprovado.
+
+
+Gerenciamento da qualidade do projeto
+Área que inclui os processos que garantem o atendimento aos requisitos do projeto e, como consequência, as expectativas dos financiadores do projeto.
+
+
+Gerenciamento dos recursos do projeto
+Área que inclui os processos para identificar, adquirir e gerenciar os recursos necessários para a conclusão bem-sucedida do projeto.
+
+
+Gerenciamento das comunicações do projeto
+Área que inclui os processos necessários para assegurar que as informações do projeto tenham uma gestão oportuna e apropriada.
+
+
+Gerenciamento dos riscos do projeto
+Área que inclui os processos de gestão dos riscos em um projeto.
+
+
+Gerenciamento das aquisições do projeto
+Área que inclui os processos necessários para comprar ou adquirir produtos, serviços ou resultados externos à equipe do projeto.
+
+
+Gerenciamento das partes interessadas do projeto
+Área que inclui os processos exigidos para identificar partes interessadas que possam gerar impacto no projeto, bem como desenvolver estratégias para o seu engajamento eficaz nas decisões e execução do projeto.
+
+O que você achou do conteúdo?
+
+Relatar problema

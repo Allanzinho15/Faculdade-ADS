@@ -1,0 +1,21 @@
+Projeto de software
+Podemos observar que os principais modelos da etapa de análise do processo de desenvolvimento de software são: o modelo de casos de uso, o modelo de classes de análise, o modelo de atividades e o modelo de estados.
+
+
+Atenção
+Muitos autores e profissionais de Engenharia de Software preferem usar o termo original do inglês design no lugar de projeto, para não confundir com o homógrafo projeto, no sentido de project, cujo significado é diferente de design. Neste texto, o termo projeto é usado indistintamente no sentido de project ou de design, dependendo do contexto.
+
+
+Você acha possível implementar um software com os referidos modelos? Provavelmente, faltam mais detalhes. Vamos, agora, tratar desses detalhes.
+
+ 
+
+O conceito de abstração é fundamental no processo de desenvolvimento de software, pois ele é iniciado com especificações e modelos com alto nível de abstração.
+
+ 
+
+A etapa projeto de software diminui o nível de abstração dos diagramas de análise por meio de refinamentos sucessivos, como também exige a criação de novos modelos.
+
+ 
+
+As principais atividades realizadas na fase de projeto serão descritas a seguir.

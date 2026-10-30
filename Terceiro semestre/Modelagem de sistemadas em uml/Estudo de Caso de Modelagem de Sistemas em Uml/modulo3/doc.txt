@@ -1,0 +1,139 @@
+MÓDULO 3
+Construir os modelos de análise para um estudo de caso de modelagem de sistemas em UML
+
+Modelo de classes
+Após termos gerado o modelo de casos de uso com as funcionalidades a serem disponibilizadas aos usuários, e ainda na etapa de análise do processo de desenvolvimento de software genérico, vamos à construção do modelo de classes.
+
+As referidas funcionalidades necessitam, internamente, que objetos colaborem mutuamente para produção dos resultados esperados pelos respectivos usuários; essa colaboração possui um aspecto estrutural estático que permite compreender como o sistema está estruturado internamente para que as citadas funcionalidades externamente visíveis sejam produzidas.
+
+A abstração que permite identificar o aspecto estrutural e estático dos objetos que compõem a solução do problema é a modelagem de classes.
+
+Um modelo de classes é composto por um ou mais diagramas de classes, mostrando a existência das classes e os seus relacionamentos numa visão lógica e estática do sistema.
+
+Atenção
+O modelo de classes evolui durante o processo de desenvolvimento. Portanto, o modelo de classes na etapa de análise não deve representar detalhes da solução do problema, limitando-se à identificação das classes, atributos e associações.
+
+Classes se relacionam com outras classes ou mesmo com a própria classe através de associações, que podem ser associações simples ou específicas, como a agregação, a composição e a generalização/especialização. Esta última é também conhecida como herança, pelo fato de as classes especializadas (subclasses) herdarem as propriedades das classes genéricas (superclasses). Quando uma subclasse for uma especialização de diferentes superclasses, ocorre a herança múltipla, prevista na orientação a objetos e implementada pela UML.
+
+
+ARTEFATOS DO MODELO DE CLASSES
+O especialista Alberto Tavares da Silva apresenta o modelo de classes e os diagramas do estudo de caso.
+
+
+Estudo de caso – modelo de classes
+Daremos continuidade ao nosso estudo de caso a partir dos casos de uso identificados no módulo anterior, aplicando a técnica de identificação de classes denominada “Análise de casos de uso”, ou seja, a técnica de identificação dirigida por casos de uso. Nessa técnica, o engenheiro de software busca identificar as classes necessárias para produzir o comportamento que está documentado na descrição de caso de uso, de modo que quando todos os casos de uso tiverem sido analisados, todas as classes terão sido identificadas, ou a maioria delas.
+
+Selecionemos o caso de uso “Registrar Reserva” para início da criação do nosso modelo de classes. Analisando a descrição textual desse caso de uso, mostrada anteriormente, podemos identificar os seguintes objetos:
+
+Cliente
+
+Funcionário (reserva realizada por telefone)
+
+Reserva
+
+Pousada
+
+Quarto
+
+Tipo de quarto
+
+Preço da diária (para cálculo do valor total da reserva)
+
+Pagamento (no caso de reserva online)
+
+O diagrama de classes de análise para o caso de uso Registrar Reserva, a seguir, propõe uma solução para a estrutura estática dos objetos identificados, cabendo ressaltar que a tipagem de dados no modelo de classes de análise não é obrigatória.
+
+
+Diagrama de classes de análise para o caso de uso Registrar Reserva gerado pela ferramenta Astah.
+Vejamos as principais abstrações aplicadas:
+
+swap_horiz Arraste para os lados.
+Pessoa é uma superclasse de Cliente e Funcionário.
+
+Toda reserva está associada a 1 (um) cliente, que pode fazer 1 (uma) ou mais reservas.
+
+Uma reserva é registrada por no mínimo 0 (zero) funcionário (reserva online) e no máximo 1 (um) funcionário (reserva por telefone).
+
+Uma reserva pode possuir no mínimo 1 (um) e no máximo 3 (três) quartos (RN 2).
+
+• Uma pousada possui no mínimo 1 (um) e no máximo vários quartos, sendo utilizada a associação de composição, ou seja, o objeto parte (Quarto) só tem existência se o objeto todo (Pousada) existir.
+
+Um quarto se associa com várias instâncias da classe PrecoDiaria, sendo o valor cobrado dependente da data da reserva.
+
+Uma reserva pode estar associada a no mínimo 0 (zero), caso de reserva por telefone, ou no máximo vários pagamentos por cartão, caso de reserva online.
+
+Historicamente, um funcionário pode ter gerenciado 0 (zero) ou mais pousadas e uma pousada pode ter sido gerenciada por 1 (um) ou mais gerentes.
+
+Aplicando a mesma abstração, com foco nos objetos, para os demais casos de uso, temos como resultado o diagrama de classes de análise proposto para o nosso estudo de caso ilustrado a seguir.
+
+
+Diagrama de classes do estudo de caso gerado pela ferramenta Astah.
+Atenção
+Assim como no modelo de casos de uso, é importante ressaltar que não há uma solução única para o modelo de classes, em face das diversas possibilidades de modelagem de classes, atributos e associações resultantes do modelo de casos de uso.
+
+Destacamos a abstração aplicada à classe Consumo, sendo essa uma classe associativa resultante da associação entre Quarto e Produto, e que depois se associa à classe Funcionário, responsável pelo registro do consumo. Normalmente, uma classe associativa é necessária quando duas ou mais classes estão associadas, sendo necessário manter informações sobre essa associação, ou seja, toda vez que ocorre um consumo é registrada a data e a quantidade do produto consumido por um funcionário. Essa solução foi aplicada à classe associativa Gerenciamento que permite identificar a data em que um funcionário assume a função de gerente em uma pousada, bem como a respectiva data de liberação da função.
+
+Modelo de atividades
+O modelo de atividades é composto por diagramas de atividades que, entre outros, descrevem os aspectos dinâmicos de um sistema, ou seja, um diagrama de atividade exibe passos de uma computação. Os referidos diagramas possuem as seguintes aplicações:
+
+Clique nos itens
+Estudo de caso ‒ modelo de atividades
+Prossigamos no nosso estudo de caso construindo o diagrama de atividades que represente graficamente a modelagem da descrição de caso de uso “Registrar Reserva”, estabelecida anteriormente de forma textual em “Estudo de caso – descrições de casos de uso”.
+
+Analisando a referida descrição, podemos observar que a interação ocorre entre os atores Cliente/Recepção (que possuem um relacionamento de generalização) e o sistema, ou seja, o diagrama de atividades deve conter duas raias de acordo com a imagem a seguir, de modo que algumas atividades são de responsabilidade dos atores e outras, do sistema.
+
+
+Diagrama de atividades parcial do caso de uso Registrar Reserva gerado pela ferramenta Astah.
+No diagrama de atividades parcial do caso de uso Registrar Reserva, podemos ver as primeiras etapas de montagem do diagrama considerando os seguintes passos computacionais:
+
+Fluxo Principal:
+
+O sistema busca as pousadas disponíveis.
+O Cliente/Recepção informa a pousada destino e as datas de check-in e check-out.
+O sistema busca quartos disponíveis no período informado.
+O sistema lista os quartos disponíveis para o período informado por tipo, incluindo a quantidade máxima de pessoas a serem acomodadas.
+O Cliente/Recepção seleciona os quartos e informa a quantidade de pessoas por quarto selecionado, sendo no mínimo 1 quarto e no máximo 3 (de acordo com RN 2 – Tabela 3).
+O sistema exige os dados de login do cliente para efetivação da reserva online.
+...
+
+Fluxo Alternativo (6): reserva realizada por contato telefônico (recepção da pousada)
+
+O sistema exige dados de login do funcionário da recepção para efetivação da reserva por contato telefônico.
+Tabela: Alberto Tavares da Silva.
+
+Após a definição das raias, podemos inserir o elemento que representa o início do processo (círculo escuro). O primeiro passo a considerar é “Busca as pousadas disponíveis” sob responsabilidade do Sistema, sendo a próxima atividade “Informa a pousada destino e as datas de check-in e check-out”, do ator Cliente/Recepção. Interessante observar que no passo 6 “O sistema exige os dados de login do cliente para efetivação da reserva online” temos um fluxo alternativo (losango), ou seja, caso a reserva seja online, a atividade a ser realizada pelo sistema é “Exige os dados de login do cliente para efetivação da reserva online” e, no caso de reserva por telefone, a atividade será “Exige dados de login do funcionário da recepção para efetivação da reserva por contato telefônico”. Aplicando a mesma abstração nos demais fluxos da referida descrição, teremos o diagrama de atividades do caso de uso “Registrar Reserva” ilustrado na imagem a seguir, onde podemos observar que o fluxo de atividades tem quatro possíveis encerramentos, representados pelos círculos vazados.
+
+
+Diagrama de atividades do caso de uso Registrar Reserva gerado pela ferramenta Astah.
+Modelo de estados
+Ainda na etapa de análise do processo, vejamos o modelo de estados.
+
+No contexto do paradigma orientado a objetos, um determinado objeto possui um estado particular, mudando de estado quando acontece algum evento interno ou externo ao sistema.
+
+Nessa transição de um estado para outro, um objeto realiza determinadas ações dentro do sistema.
+
+O modelo de estados é composto por diagramas de estados que descrevem os possíveis estados pelos quais objetos, instâncias de uma determinada classe, podem passar e as alterações dos estados como resultado de eventos que atingem esses objetos.
+
+Estudo de caso ‒ modelo de estados
+Dando continuidade ao nosso estudo de caso, podemos identificar, no diagrama de classes do estudo de caso, uma classe cujos objetos possuem mudanças significativas de estados, a classe Reserva. Uma reserva pode assumir estados durante a execução do software, tal como no diagrama de atividades do caso de uso Registrar Reserva. Uma reserva pode ter dois estados iniciais:
+
+Em validação
+Quando a reserva é realizada por telefone
+
+Confirmada
+Quando a reserva é realizada de forma online
+
+Analisemos a mudança de estado de “Em validação” para “Confirmada”, cuja expressão para transição é “Cliente deposita pré-reserva [até 24h depois da reserva] / Confirmar reserva”, ou seja, temos a expressão “evento [condição de guarda] / ação”. O evento corresponde a “Cliente deposita pré-reserva”, a condição para a mudança de estado inclui “[até 24h depois da reserva]” e, finalmente, a ação correspondente no sistema é denominada de “Confirmar reserva”. Aplicando a mesma expressão às demais mudanças de estados, temos o diagrama de estados ilustrado a seguir.
+
+
+Diagrama de estados para a classe Reserva gerado pela ferramenta Astah.
+Vimos, neste módulo, a construção dos artefatos da fase de análise, a saber:
+
+Clique nas barras para ver as informações.
+Modelo de classes de análise
+Corresponde à estrutura estática dos objetos que irão colaborar mutuamente para a produção dos resultados esperados pelos respectivos usuários, ou seja, essa colaboração possui um aspecto estrutural estático que permite compreender como o sistema está estruturado internamente para que as citadas funcionalidades externamente visíveis sejam produzidas.
+
+Modelo de atividades
+Composto de diagramas de atividades, permite descrever os aspectos dinâmicos de um sistema tendo três possíveis aplicações: modelagem de processo de negócio, modelagem da lógica de um caso de uso e modelagem da lógica de uma operação ou método.
+
+Modelo de estados

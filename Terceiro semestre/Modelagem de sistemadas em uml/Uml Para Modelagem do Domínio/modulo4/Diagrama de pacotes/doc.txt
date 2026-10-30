@@ -1,0 +1,94 @@
+
+Diagrama de pacotes
+Sistemas complexos exigem uma abordagem estruturada para sua representação, e os diagramas de pacotes da UML são uma solução eficaz para isso. Afinal, ao agruparem casos de uso, classes e outros pacotes, esses diagramas simplificam a visualização e organização do sistema.
+
+Os agrupamentos feitos pelos diagramas de pacote da UML ― também chamados de pacotes ― permitem a definição de relacionamentos e visibilidades entre os elementos contidos, facilitando a compreensão da arquitetura do sistema. Além disso, os diagramas de pacotes são interessantes para ilustrar a interdependência entre os diferentes componentes do sistema e são amplamente utilizados na modelagem de casos de uso e na definição da arquitetura do software.
+
+Você vai acompanhar, neste vídeo, o emprego do diagrama de pacotes, que permite organizar e agrupar elementos relacionados em unidades chamadas pacotes, facilitando a visualização da estrutura modular do sistema, mostrando dependências entre os pacotes e promovendo a organização e o gerenciamento eficientes do desenvolvimento de software.
+
+
+Visão geral do diagrama de pacotes
+Muitos sistemas possuem uma quantidade bastante grande de casos de uso e classes, portanto, representá-los em um único diagrama é inviável devido à sua complexidade para o entendimento. Para resolver esse problema, usamos o elemento da UML chamado de pacote (do inglês, package).
+
+Os pacotes servem para agrupar diagramas, tais como:
+
+Classes
+Casos de uso
+Outros pacotes
+Normalmente, os grupos de classes são associados com módulos de programação do sistema. Uma classe só pode aparecer uma vez no mesmo pacote, mas pode estar presente em vários pacotes diferentes.
+
+A seguir, conheça algumas características do pacote:
+
+Definição
+Um pacote representa um grupo de elementos que pode se relacionar com outros pacotes por meio de uma relação de dependência.
+
+Visibilidade
+É possível definir a visibilidade, conforme estudamos anteriormente, de pacotes e dos elementos contidos nele.
+
+Utilização
+Pacotes são úteis para prover uma visão geral de um conjunto grande de objetos; para organizar um modelo grande e agrupar seus elementos.
+
+A representação gráfica de um pacote é um retângulo com uma aba no canto superior esquerdo, com o nome do pacote na aba ou no centro do retângulo. A Imagem 4 adiante mostra um exemplo de pacotes que agrupam conjuntos de classes.
+
+O pacote Módulo Docente agrupa as classes relacionadas com professores, o Módulo Discente agrupa as classes relacionadas com alunos, e o Módulo Organização Curricular agrupa classes pertinentes à matriz curricular, em um sistema acadêmico. Veja:
+
+Imagem 4: Exemplo de representação de pacote.
+
+Desdobramentos dos diagramas no pacote
+As ligações entre pacotes são relacionamentos de dependência. Um pacote P1 depende de outro pacote P2, se algum elemento contido em P1 depende de algum elemento contido em P2.
+
+A Imagem 5 adiante mostra o diagrama de pacotes do exemplo do sistema acadêmico sem os relacionamentos explícitos entre as classes internas; apenas com a representação de dependências existentes entre os próprios pacotes. Ou seja: os pacotes se relacionam com outros pacotes por meio de um vínculo de dependência. Veja:
+
+Imagem 5: Exemplo de representação de dependências entre pacotes.
+
+As dependências entre pacotes mostram que um pacote depende ou influencia outro. Elas podem ser divididas em dois tipos:
+
+Acesso
+Importação
+A dependência de acesso indica que um pacote requer assistência das funções de outro pacote.
+
+Ambas são representadas por uma linha pontilhada com uma seta apontando para o pacote dependente.
+
+Pacotes também podem formar grupos de pacotes e hierarquias. A Imagem 6 (Bezerra, 2015) mostra como pacotes podem ser agrupados dentro de outros pacotes, formando uma hierarquia de contenção:
+
+
+Imagem 6: Agrupamento de pacotes.
+
+Além disso, como já vimos, existem três tipos de visibilidade de elementos dentro dos pacotes:
+
++ (público)
+Visível por todos que importam ou acessam o pacote.
+
+# (protegido)
+Visível só pelos pacotes filhos (por relação de generalização).
+
+– (privado)
+Visível só por outros elementos do pacote.
+
+Note que aqui não se aplica a visibilidade de pacotes (~), que é aplicável tão somente a atributo de classe que seja visível a qualquer classe pertencente ao mesmo pacote no qual está definida a classe.
+
+No contexto da modelagem de casos de uso, os pacotes podem ser utilizados com diversos objetivos. Alguns desses objetivos são:
+
+Estruturar o modelo de casos de uso com base nos grupos de usuários do sistema.
+Definir a prioridade na qual os casos de uso serão desenvolvidos.
+Definir o grau de correlação entre os casos de uso.
+O critério para criar os pacotes é subjetivo e depende da visão e das necessidades do projetista. Normalmente, o projetista define uma semântica e aloca elementos similares em um pacote, pois esses elementos tendem a ser alterados em conjunto no mesmo pacote.
+
+Um pacote bem estruturado tem as seguintes características:
+
+1
+É coeso em relação aos elementos incluídos.
+
+2
+É fracamente acoplado em relação à exportação apenas dos elementos que os outros pacotes precisam enxergar.
+
+3
+Não contém muitos alinhamentos, ou seja, possui um conjunto equilibrado de elementos
+
+Ao especificar um pacote, é uma prática usar a forma simples de ícone retangular, obscurecendo o seu conteúdo. No caso da necessidade de apresentar o seu conteúdo interno (como nas imagens 4 e 5), deve-se mostrar apenas os elementos necessários para a compreensão do significado.
+
+Esse diagrama também é muito utilizado para ilustrar a arquitetura de um sistema, mostrando o agrupamento de suas classes. A Imagem 7 adiante mostra um exemplo de diagrama de pacotes usado com o objetivo de organizar as classes de acordo com as camadas da arquitetura do sistema. Tipicamente, um sistema pode ser organizado conforme o padrão de projeto Model (Modelo), View (Visão) e Control (Controle).
+
+Imagem 7: Exemplo de diagrama de pacotes.
+
+O pacote tem uma grande similaridade com a agregação. O fato de um pacote ser composto de modelos de elementos cria uma espécie de agregação de composição, pois, se esse pacote for destruído, todo o seu conteúdo também será.

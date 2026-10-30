@@ -1,0 +1,87 @@
+
+Requisitos funcionais e não funcionais
+Vamos iniciar nosso estudo entendendo quais requisitos formam a base para a concepção e a implementação de soluções eficazes. Vamos, então, compreender a distinção e a importância dos requisitos funcionais e não funcionais para o sucesso na engenharia de software e no desenvolvimento de sistemas. Assim, enquanto os requisitos funcionais definem o que o sistema deve fazer, os não funcionais especificam como ele deve se comportar em termos de desempenho, segurança e usabilidade.
+
+Lembre-se de que um conhecimento sólido sobre os tipos de requisitos prepara você a contribuir de forma significativa para projetos e equipes de desenvolvimento e para desafios futuros na área de tecnologia da informação.
+
+Você vai acompanhar, no vídeo a seguir, a importância dos requisitos funcionais e não funcionais no desenvolvimento de um sistema, destacando que os funcionais definem o que o sistema deve fazer, enquanto os não funcionais determinam como o sistema deve operar.
+
+
+O desenvolvimento de um sistema começa pelo entendimento do problema de negócio e o levantamento de quais requisitos esse sistema de software deve satisfazer para resolvê-lo. Não existe uma definição padronizada para requisito na literatura de engenharia de software. A norma ISO/IEC/IEEE (IEEE, 1990) apresenta os seguintes enunciados para explicar o que é requisito:
+
+chevron_left
+
+
+
+
+chevron_right
+chevron_left
+1 de 4
+chevron_right
+Os requisitos são o ponto de partida para todo o processo de desenvolvimento, sendo a base para as atividades de análise e projeto, bem como implementação e testes.
+
+De acordo com Sommerville (2011), a área de engenharia de software faz uma distinção, em termos de nível de detalhamento de requisitos, entre requisitos de usuário e requisitos de sistema. O primeiro expressa os requisitos abstratos de alto nível, e o segundo revela uma descrição detalhada do que o sistema deve fazer. Veja outra descrição de cada um deles:
+
+Requisitos de usuário
+São declarações, em uma linguagem natural com diagramas, de quais serviços o sistema deverá fornecer a seus usuários e as restrições com as quais este deve operar (Sommerville, 2011).
+
+Requisitos de sistema
+São descrições mais detalhadas das funções, serviços e restrições operacionais do sistema de software (Sommerville, 2011).
+
+Em uma perspectiva mais técnica, os requisitos de software são normalmente classificados como requisitos funcionais e requisitos não funcionais.
+
+Requisitos funcionais
+Veja, a seguir, como Sommerville (2011) define esses requisitos:
+
+Requisitos funcionais são declarações de serviços que o sistema deve fornecer, de como o sistema deve reagir a entradas específicas e de como o sistema deve se comportar em determinadas situações.
+
+(Sommerville, 2011)
+É importante ressaltar que o requisito funcional é uma funcionalidade do sistema, é algo que o sistema deve realizar para prover um resultado para o usuário. Requisitos funcionais pressupõem interação do sistema com usuários.
+
+Veja a seguir alguns exemplos de enunciados dos chamados requisitos funcionais:
+
+1
+O usuário deve ser capaz de pesquisar por nome na base de dados disponível.
+
+2
+O sistema deve designar um identificador único (NUMERO_PEDIDO) para cada pedido do usuário.
+
+3
+O sistema deve apresentar o documento selecionado para leitura do usuário.
+
+Perceba que, em todos os exemplos, estamos definindo atividades que o sistema deve realizar, e, em todas essas atividades, o usuário está envolvido, seja fornecendo entradas ou recebendo saídas (resultados).
+
+Requisitos não funcionais
+A especificação de um sistema precisa considerar também como esses requisitos serão entregues. Ou seja, quais características de qualidade e quais restrições desejamos impor ao sistema. Assim, definimos os chamados requisitos não funcionais. Veja o que diz Sommerville (2011):
+
+Requisitos não funcionais são restrições aos serviços ou funções oferecidos pelo sistema. Incluem restrições de timing, restrições no processo de desenvolvimento e restrições impostas pelas normas. Ao contrário das características individuais ou serviços do sistema, os requisitos não funcionais, muitas vezes, aplicam-se ao sistema como um todo.
+
+(Sommerville, 2011)
+Requisitos não funcionais (RNF) são frequentemente mais críticos do que os requisitos funcionais (RF). Deixar de atender a um RNF pode significar a inutilização de todo o sistema. Os RNF podem afetar a arquitetura geral de um sistema em vez de apenas componentes individuais. No caso de um website, um único RNF pode originar uma série de RF relacionados, que, por sua vez, definem os serviços necessários.
+
+Existem diversas classificações que visam a organizar e prover melhor entendimento sobre os RNF. Um exemplo desse tipo de classificação é apresentado a seguir.
+
+Requisitos de produto
+Usabilidade, eficiência, desempenho, confiança, proteção.
+
+Requisitos organizacionais
+Ambientais, operacionais, processo de desenvolvimento.
+
+Requisitos externos
+Reguladores, éticos, legais, contábeis.
+
+Observe, a seguir, alguns exemplos de enunciados de requisitos não funcionais:
+
+timer
+Disponibilidade do sistema
+O sistema deve estar disponível durante todas as horas normais de trabalho (2ª a 6ª, 8h30 às 17h). Períodos de não operação dentro desses intervalos não podem ultrapassar 2 segundos em um dia.
+
+verified_user
+Autenticação do usuário
+O sistema deve requerer autenticação dos usuários para permitir acesso.
+
+privacy_tip
+Privacidade dos usuários
+O sistema deve implementar disposições de privacidade dos usuários de acordo com a Lei Geral de Proteção de Dados.
+
+Você pode perceber, nesses exemplos, que esses requisitos não indicam o que o sistema realiza, mas como ele entrega uma ou mais de suas funcionalidades.

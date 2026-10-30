@@ -1,0 +1,40 @@
+Construção de diagramas de transições de estados
+É muito importante para o desenvolvimento de sistemas, pois esses diagramas representam como os objetos respondem a diferentes eventos ao longo do tempo. Compreender esses conceitos permite aos desenvolvedores visualizar e modelar o comportamento dinâmico do sistema, identificar estados críticos e transições, e garantir que todas as possíveis situações e respostas sejam contempladas. Isso resulta em um projeto mais robusto e previsível, facilitando a detecção de erros e a implementação de funcionalidades complexas de forma clara e estruturada.
+
+
+Este vídeo apresenta a construção de diagramas de transições de estados, utilizando a UML ao longo do processo de desenvolvimento de software.
+
+
+
+Para sistemas bastante simples, a definição dos estados de todos os objetos não é tão trabalhosa. No entanto, a quantidade de estados possíveis de todos os objetos de um sistema complexo é grande. Isso torna a construção de um DTE para o sistema inteiro uma tarefa bastante complexa.
+
+
+Para resolver o problema da explosão exponencial de estados, os diagramas de estados são desenhados por classe.
+
+
+Geralmente, cada classe é simples o suficiente para que o diagrama de estados correspondente seja compreensível. Note, contudo, que essa solução de dividir a modelagem de estados por classes do sistema tem a desvantagem de dificultar a visualização do estado do sistema como um todo. Essa desvantagem é parcialmente compensada pela construção de diagramas de interação.
+
+
+Nem todas as classes de um sistema precisam de um DTE. Um diagrama de estados é desenhado somente para classes que exibem um comportamento dinâmico relevante. A relevância do comportamento de uma classe depende muito de cada situação em particular. No entanto, objetos cujo histórico precisa ser rastreado pelo sistema são típicos para se construir um diagrama de estados. Uma vez selecionadas as classes para cada uma das quais se deve construir um diagrama de estados, acompanhe essa sequência de passos:
+
+ 
+
+Identifique os estados relevantes para a classe.
+ 
+Identifique os eventos relevantes aos objetos de uma classe. Para cada evento, identifique qual transição que ele ocasiona.
+ 
+Para cada estado, identifique as transições possíveis quando um evento relevante ocorre.
+ 
+Para cada estado, identifique os eventos internos e as ações correspondentes relevantes.
+ 
+Para cada transição, verifique se há fatores que influenciam o seu disparo. Se esse for o caso, uma condição de guarda deve ser definida.
+ 
+Verifique também se alguma ação deve ser executada quando uma transição é disparada (ações).
+ 
+Para cada condição de guarda e para cada ação, identifique os atributos e as ligações que estão envolvidos. Pode ser que esses atributos ou ligações ainda não existam. Nesse caso, eles devem ser adicionados ao modelo de classes.
+ 
+Defina o estado inicial e os eventuais estados finais.
+ 
+Desenhe o diagrama de estados. Procure posicionar os estados de tal forma que o ciclo de vida do objeto possa ser visualizado de cima para baixo e da esquerda para a direita.
+
+A construção de diagramas de estados de um sistema frequentemente leva à descoberta de novos atributos para uma classe, principalmente atributos que servem de abstrações para estados. Além disso, esse processo de construção permite identificar novas operações na classe, pois os objetos precisam reagir aos eventos que eles recebem, e essas reações são realizadas mediante operações.

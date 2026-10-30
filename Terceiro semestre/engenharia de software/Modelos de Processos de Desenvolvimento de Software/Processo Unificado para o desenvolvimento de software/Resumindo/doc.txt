@@ -1,0 +1,10 @@
+Resumindo
+Neste módulo, pudemos avaliar a importância do Processo Unificado no contexto do desenvolvimento de software. Inicialmente, apresentamos a UML, linguagem de modelagem unificada, a qual define o padrão dos artefatos de software de acordo com o paradigma de desenvolvimento orientado a objetos a serem utilizados em dado modelo de processo de desenvolvimento de software.
+
+ 
+
+Prioritariamente, o RUP é um modelo de processo de software para o desenvolvimento de acordo com o paradigma orientado a objetos. Esse processo tem um alto grau de formalismo, possuindo os seguintes princípios: baseado em casos de uso, centrado em arquitetura e iterativo e incremental. Enfim, se o problema for complexo, o RUP é um forte candidato a ser escolhido por algum engenheiro de software como requisito não funcional “modelo de processo de software”.
+
+
+Atenção
+Vale destacar que o RUP pode ser ajustado a qualquer escala de complexidade e a seleção do requisito não será tão simplista.

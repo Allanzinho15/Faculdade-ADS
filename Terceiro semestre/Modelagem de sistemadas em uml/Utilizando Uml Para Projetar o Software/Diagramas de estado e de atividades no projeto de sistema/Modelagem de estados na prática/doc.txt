@@ -1,0 +1,45 @@
+Modelagem de estados na prática
+Faz muito sentido quando uma classe apresenta alguns estados que mudam a forma dos objetos correspondentes se comportarem. A prática dessa modelagem é fundamental para a compreensão dos possíveis comportamentos dos objetos de uma classe. Para essa modelagem, no minimundo de exemplo, vamos inserir dois novos casos de uso, os quais incorporam a questão do defeito: enviar veículo para conserto e receber veículo de conserto.
+
+
+Quando um veículo apresenta um defeito estando alugado, o aluguel é encerrado. Por isso, o relacionamento extend entre os casos de uso enviar veículo para conserto e encerrar aluguel. Caso o cliente queira, um novo aluguel é feito com outro carro, mas de forma independente do aluguel antigo.
+
+
+
+
+Diagrama de casos de uso.
+
+Essas novas funcionalidades induzem à criação da classe Oficina, pois a locadora se relaciona com 3 oficinas para a realização dos consertos. Também é necessária a classe cConserto, uma classe associativa entre cVeículo e cOficina. O novo diagrama de classes de análise fica desta forma:
+
+
+
+
+Diagrama de classes.
+
+Esse novo requisito (conserto do veículo) é utilizado na elaboração do diagrama de estados da classe Veículo, pois a classe passa a ter estados significativos, o que justifica a criação desse tipo de diagrama.
+
+
+Prática de construção de diagrama de estado
+
+Este vídeo apresenta a prática da construção de um diagrama de estado, a partir de determinado minimundo, utilizando a UML.
+
+
+
+Roteiro de prática
+
+
+Vamos modelar os estados da classe veículo. O entendimento do minimundo permite inferir que essa classe apresenta alguns estados, tais como: disponível, alugado etc. A modelagem de estados permite uma melhor compreensão de como os objetos dessa classe funcionam em cada estado.
+
+
+Primeiramente, identifique os eventos relevantes aos objetos de uma classe. Exemplo: alugar e encerrar aluguel, apresentar defeito, enviar para oficina e finalizar conserto. Para cada evento, identifique qual transição ele ocasiona. No exemplo, o evento alugar muda o estado do veículo de disponível para alugado; o evento encerrar aluguel muda de alugado para disponível. O evento apresentar defeito muda o estado disponível ou alugado para indisponível. O evento enviar oficina muda o estado de indisponível para consertando. Por fim, o evento finalizar conserto muda o estado consertando para disponível. Os estados possíveis da classe Veículo são, então: disponível, alugado, indisponível e consertando.
+
+
+A construção do diagrama de estado da classe permite visualizar quais operações são possíveis em cada estado. Lembre-se de que um estado é caracterizado por valores em determinados atributos, pela situação das associações com outros objetos e pelas operações permitidas. Assim, é provável que durante a modelagem de estados o diagrama de classes precise ser atualizado, incorporando novos atributos ou relacionamentos.
+
+
+O diagrama de estados deve ser desenhado de tal forma que o ciclo de vida do objeto possa ser visualizado de cima para baixo e da esquerda para a direita. Veja uma solução na seguinte imagem.
+
+
+
+
+Diagrama de estados.

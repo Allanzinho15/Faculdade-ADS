@@ -1,0 +1,56 @@
+Extreme programming - XP
+
+A Extreme Programming, ou simplesmente XP, é considerada um processo de desenvolvimento de software ágil, tendo sido proposta por Kent Beck em 1999. A XP adota valores que servem como critérios que norteiam as partes interessadas de um projeto, incluindo: comunicação, simplicidade, feedback, coragem e respeito.
+
+ 
+
+Vejamos uma breve descrição de cada valor:
+
+
+Comunicação
+
+A comunicação objetiva construir um entendimento dos requisitos com o mínimo de documentação formal e o máximo de interação entre equipe de desenvolvimento e clientes.
+
+
+Simplicidade
+
+A simplicidade sugere que a equipe adote soluções mais simples, criando um ambiente onde o custo de mudanças no futuro seja baixo.
+
+
+Feedback
+
+O feedback permite que os programadores também tenham feedback quando da execução dos testes e quando da validação funcional por parte dos clientes, permitindo a correção de erros e alterações nos requisitos.
+
+
+Coragem
+
+A coragem é necessária para lidar com o risco de erro, que deve ser considerado natural e se traduz em confiança nos seus mecanismos de prevenção e proteção.
+
+
+Respeito
+
+Saiba Mais
+Assim como um segundo nível de abstração, a XP possui cinco princípios que servem para ajudar a equipe de software na escolha de alternativas de solução de problemas durante o projeto. Os princípios incluem: feedback rápido, assumir simplicidade, mudança incremental, abraçando mudanças e trabalho de qualidade.
+
+
+A XP possui doze práticas que se enquadram nos valores e princípios descritos na tabela a seguir:
+
+
+TABELA 1 – Doze práticas enquadradas nos valores e princípios da XP
+Prática	Descrição
+Jogo de Planejamento	Os requisitos são registrados em cartões, ou fichas, denominados “história de usuários”, sendo a descrição e a priorização realizadas pelos clientes. A equipe de desenvolvimento estima a duração de cada release.
+Pequenas Releases	Cada release deve ser a menor possível, incluindo os requisitos mais importantes para o negócio. As releases frequentes permitem um maior feedback para clientes e equipe de desenvolvimento, facilitando o aprendizado e a correção dos defeitos do software.
+Metáfora	Facilita a comunicação com o cliente, entendendo a sua realidade, isto é, procura traduzir as palavras do usuário para o significado que ele espera dentro do projeto. Como exemplo, a metáfora “Estoque 4.0” para um subsistema de gestão virtual dos estoques no contexto de um sistema de logística.
+Projeto Simples	Projeto simples inclui projetar somente as histórias de usuários, ou funcionalidades, previamente definidas, bem como se concentrar em soluções de projeto simples e bem estruturadas, tal como o menor número possível de classes e métodos.
+Cliente no local de Trabalho	Incluir um cliente na equipe de desenvolvimento para responder perguntas, ou alguém da parte do cliente com conhecimento do negócio. O cliente é protagonista em um projeto XP.
+Semana de 40 horas	Estimula a busca de um ritmo sustentado de trabalho, tal como 40 horas semanais. Horas extras são permitidas quando trouxerem produtividade para a execução do projeto, devendo estar restringidas a duas semanas seguidas.
+Programação Pareada	Todo código deve ser gerado por dois programadores trabalhando em um único computador. O programador codifica e o parceiro revisa e sugere. Dessa forma, o programa sempre é revisto por duas pessoas, evitando e diminuindo, assim, a possibilidade de defeitos. Com isso, busca-se sempre a evolução da equipe, melhorando a qualidade do código fonte gerado.
+Propriedade Coletiva	O código fonte pode ser alterado por qualquer membro da equipe de desenvolvimento, de modo que esta detém a propriedade do código. O objetivo com isso é fazer a equipe conhecer todas as partes do sistema. Os testes de unidade e integração garantem a estabilidade dessa prática.
+Padronização do Código	A prática da propriedade coletiva de código exige o estabelecimento de regras para programar a serem seguidas por todos. O objetivo é facilitar o entendimento do código.
+Desenvolvimento Orientado a Testes	Um framework automatizado é sugerido para a escrita dos testes unitários, antes que determinada funcionalidade seja implementada, técnica denominada “test first”.
+
+Os testes de integração também são realizados sistematicamente.
+
+Os testes de validação são especificados pelos clientes a partir das histórias de usuários.
+Refatoração	A refatoração é um processo de modificar a estrutura interna do software sem alterar o seu comportamento externo, permitindo a melhoria contínua da programação com o mínimo de introdução de erros e mantendo a compatibilidade com o código já existente.
+Integração Contínua	O sistema deverá ser integrado sempre que produzir uma nova funcionalidade. Essa continuidade permite a detecção imediata de erros de integração, evitando problemas de compatibilidade e interface.

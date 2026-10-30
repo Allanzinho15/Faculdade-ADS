@@ -1,0 +1,62 @@
+Fundamentos do princípio da segregação de interfaces (ISP)
+Estabelece que clientes de uma classe não devem ser forçados a depender de operações que não utilizem.
+
+
+Neste vídeo, exploramos um dos princípios SOLID de design de software. Veja como o ISP ajuda a criar sistemas mais flexíveis e fáceis de manter ao dividir interfaces grandes em outras menores e mais específicas. Aprenda a aplicar esse princípio para melhorar a modularidade e reduzir a dependência entre componentes, tornando seu código mais robusto e fácil de evoluir.
+
+
+
+Violação do princípio ISP
+
+O código do exemplo a seguir apresenta uma interface que viola o princípio ISP por reunir operações que dificilmente serão utilizadas em conjunto. As operações login e registrar estão ligadas ao registro e à autorização de acesso de um usuário, enquanto a operação logErro registra mensagens de erro ocorridas durante algum processamento. A operação enviarEmail permite enviar um correio eletrônico para o usuário logado.
+
+
+Java (OpenJDK 13.0.1)
+
+public interface IUsuario {
+    boolean login(String login, String senha);
+    boolean registrar(String login, String senha, String email);
+    void logErro(String msgErro);
+    boolean enviarEmail(String assunto, String conteudo);
+}
+
+Copiar
+
+Segregação das interfaces
+
+Segundo o princípio ISP, devemos manter a coesão funcional das interfaces, evitando colocar operações de diferentes naturezas em uma única interface. Aplicando ao exemplo, poderíamos segregar a interface original em outras três. Confira o exemplo a seguir.
+
+
+IAutorizacao
+
+Com as operações de login e registro de usuários.
+
+IMensagem
+
+Com as operações de registro de erro, aviso e informações.
+
+IEmail
+
+Para o envio de e-mail.
+
+Veja o exemplo a seguir:
+
+
+Java (OpenJDK 13.0.1)
+
+public interface IAutorizacao {
+    boolean login(String login, String senha);
+    boolean registrar(String login, String senha, String email);
+}
+
+public interface IEmail {
+    boolean enviarEmail(String assunto, String conteudo);    
+}
+
+public interface IMensagem {
+    void logErro(String msgErro);    
+    void logAviso(String msgAviso);
+    void logInfo(String msgInfo);
+}
+
+Copiar

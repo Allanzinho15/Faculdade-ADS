@@ -1,0 +1,23 @@
+Refinamento dos aspectos estáticos e estruturais do sistema
+O modelo de classes representa os aspectos estáticos e estruturais do sistema. A partir do modelo de classes gerado na análise, vamos inserir novos elementos que permitirão a implementação das classes, ou seja, aplicaremos refinamentos que possibilitam reduzir o grau de abstração. A Figura 5 exemplifica as abstrações possíveis de uma classe durante o processo de desenvolvimento de software. Ao final, temos uma especificação de classe em condições de ser codificada.
+
+
+Exemplo
+
+
+
+Figura 5 - Exemplo de refinamentos em uma classe.
+
+Vamos analisar os refinamentos: a primeira estrutura indica uma classe e o respectivo nome; a segunda inclui os atributos; a terceira adiciona os métodos ou funções das classes, e a quarta detalha os atributos e métodos. Na análise, não é importante definirmos os tipos de dados, sendo fundamental no projeto, pois a especificação de projeto tem de garantir a implementação, ou seja, a codificação da classe.
+
+ 
+
+Além desse refinamento, novos elementos são inseridos em função das associações entre as classes, das heranças existentes, ou mesmo em virtude da criação de novas classes.
+
+ 
+
+Um aspecto importante é a possibilidade de aplicação de padrões de projeto, ou design patterns, no modelo de classes de projeto. Esses padrões representam templates de melhores práticas para a solução de determinados problemas comuns, que serão resolvidos mais facilmente quando implementados pelo programador. A Figura 6 exemplifica o padrão Factory Method.
+
+
+
+Figura 6 - Exemplo do padrão Factory Method.

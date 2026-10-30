@@ -1,0 +1,32 @@
+Resumindo
+Neste módulo, compreendemos as principais características das metodologias ágeis e, em particular, da Extreme Programming – XP. A partir do questionamento do excesso de formalismo dos processos prescritivos dominantes em meados da década de 1990, foi redigido o Manifesto para o Desenvolvimento Ágil de Software, com quatro valores: Indivíduos e interações, mais do que processos e ferramentas; software em funcionamento, mais do que documentação abrangente; colaboração com o cliente, mais do que negociação de contratos; e resposta a mudanças, mais do que seguir um plano.
+
+ 
+
+A maioria dos métodos ágeis de desenvolvimento de software tem como foco o software, em vez de formalismos de projeto e documentação, assumem um fluxo de processo iterativo e incremental e apoiam aplicações com requisitos altamente voláteis durante o desenvolvimento.
+
+ 
+
+A XP possui um conjunto de valores, princípios e práticas como base aos que assumem a metodologia XP.
+
+ 
+
+O processo XP possui quatro atividades metodológicas:
+
+ 
+
+O planejamento está fundamentado nas histórias de usuários.
+
+ 
+
+O projeto tem um mínimo de formalismo em função de gerar um único tipo de artefato, os cartões CRC, sendo sugeridas a prototipação e refatoração nessa etapa.
+
+ 
+
+A codificação sugere o trabalho em par de programadores alocados em um único computador, permitindo uma revisão de código em tempo real.
+
+ 
+
+Os testes têm uma característica peculiar, são escritos antes da codificação e aplicados de forma sistemática em ambiente automatizado; na sequência, temos os testes unitários, de integração e aceitação.
+
+

@@ -1,0 +1,14 @@
+Detalhamento dos aspectos dinâmicos do sistema
+O que seriam aspectos dinâmicos? Lembre-se: o paradigma dominante na indústria de software é a orientação a objetos, que, de forma simplificada, é a representação do mundo real por meio de objetos que se comunicam por meio de mensagens.
+
+ 
+
+A referida comunicação representa a dinâmica existente entre os objetos e, para a sua representação, temos o modelo de interação, que inclui dois diagramas: diagrama de comunicação e diagrama de sequência. Ambos os diagramas têm a mesma abstração dinâmica com representações distintas e recíprocas.
+
+
+
+Figura 7 - Diagrama sequência versus classes de projeto.
+
+Qual a relação existente entre o modelo de classes e o modelo de interação?
+
+O modelo de interação é desenvolvido usualmente em paralelo com o modelo de classes de projetos, de modo que os métodos implementados nas classes são identificados a partir das mensagens definidas no modelo de interação. A Figura 7 exemplifica, à esquerda, parte de um diagrama de sequência, onde a mensagem “validar” estabelece uma comunicação entre os objetos “controlador acesso” e “usuário”, sendo a mensagem implementada no objeto receptor “usuário”, ou seja, a classe “usuário” inclui o método “validar” com os respectivos parâmetros.

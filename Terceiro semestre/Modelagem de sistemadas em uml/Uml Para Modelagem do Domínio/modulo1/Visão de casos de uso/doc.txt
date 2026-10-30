@@ -1,0 +1,138 @@
+Visão de casos de uso
+Ao detalhar as interações entre usuários e sistema em questão e facilitar a comunicação eficaz entre desenvolvedores, designers e stakeholders, a visão de casos de uso oferece uma compreensão abrangente dos requisitos do sistema e promove o sucesso dos projetos de software. Podemos, então, entender sua importância na área de ciência da computação e engenharia de software.
+
+Ao dominar essa abordagem teórica, você poderá traduzir as necessidades dos usuários em funcionalidades específicas do software, garantindo que os sistemas atendam adequadamente às demandas e expectativas dos usuários finais.
+
+Você verá, no vídeo a seguir, a visão de casos de uso da UML como um conjunto de funções que o sistema deve executar para atender às necessidades dos usuários, abordando diagrama de casos de uso, atores e caso de uso.
+
+
+A visão de casos de uso da UML apresenta o conjunto de funções (ou usos) que o sistema deve executar para atender às necessidades dos usuários. No modelo de casos de uso, o sistema é visto sob a perspectiva do usuário. A documentação dos requisitos funcionais em um diagrama de casos de uso dá início ao processo de análise do sistema e permite entender sua abrangência e complexidade.
+
+Diagrama de casos de uso
+O objetivo do diagrama de casos de uso é apresentar uma visão geral dos requisitos funcionais do sistema e, portanto, ele é o digrama mais abstrato, flexível e simples da UML.
+
+Esse diagrama é composto pelos seguintes elementos:
+
+Casos de uso
+Atores
+Relacionamentos
+A Imagem 1 a seguir mostra um diagrama de casos de uso para um sistema bancário.
+
+
+Imagem 1: Exemplo de diagrama de casos de uso para banco.
+
+Os possíveis usos de um sistema são representados pelos casos de uso no diagrama. Um caso de uso pode estar diretamente associado a um ou mais requisitos funcionais, identificados na etapa de levantamento de requisitos do processo de desenvolvimento.
+
+Conforme observado na Imagem 1, o caso de uso assume a forma gráfica de uma elipse contendo o seu nome no interior; nela, podemos observar quatro casos de usos representados:
+
+Abrir conta corrente
+Depositar dinheiro
+Sacar dinheiro
+Consultar saldo
+O caso de uso é o elemento fundamental do modelo de casos de uso.
+
+verified
+Recomendação
+Embora não exista um padrão para nomear casos de uso, a boa prática recomenda utilizar uma frase verbal iniciando com verbo no infinitivo, denotando a ação prevista na funcionalidade representada pelo caso de uso.
+
+O segundo elemento do diagrama de casos de uso é o ator, que é representado nesse diagrama por um boneco palito, com o nome na parte inferior.
+
+O ator é quem utiliza ou interage em um caso de uso, ou seja, é uma entidade externa que interage com o sistema, mas que não faz parte dele.
+
+Interagir significa trocar informações com o sistema, seja fornecendo ou recebendo essas informações. Na Imagem 1, temos a representação do ator Cliente, que interage com os quatro casos de uso.
+
+extension
+Exemplo
+No caso de uso Consultar Saldo, o ator Cliente informa os dados de sua conta e recebe como resposta do sistema o valor de seu saldo.
+
+O terceiro elemento do diagrama de casos de uso são os Relacionamentos, que permitem associar:
+
+Casos de uso com seus atores
+Casos de uso com outros casos de uso
+Atores com outros atores
+A forma mais comum e obrigatória dos relacionamentos é entre atores e casos de uso, que assume a representação gráfica de segmento de reta (uma linha cheia), ligando o ator ao caso de uso no qual ele interage.
+
+Na Imagem 1, observamos que o ator Cliente interage com os quatro casos de uso presentes nesse modelo, portanto, esses elementos gráficos estão ligados por uma reta.
+
+A seguir, vamos detalhar cada um desses elementos.
+
+Atores
+Medeiros (2004) explica que atores atuam em casos de uso realizando atividades.
+
+O ator não é uma entidade específica, mas representa um papel ou aspecto particular de uma entidade. O ator pode representar papéis executados por usuários humanos, um componente de hardware, outros sistemas com os quais o sistema em desenvolvimento se comunica. Desse modo, o nome do ator deve expressar esse papel de forma clara.
+
+No exemplo da Imagem 1, o ator é o papel de cliente do banco. Esse papel pode ser assumido pelos diversos clientes do banco.
+
+text_snippet
+Resumindo
+Durante a execução de uma funcionalidade do sistema (um ou mais requisitos funcionais), o ator precisa prover entradas (informações) para o sistema e deve receber respostas dele.
+
+Existem tipos de atores que geralmente aparecem nos sistemas. São eles:
+
+
+Cargos
+Empregado, cliente, gerente, vendedor, comprador etc.
+
+
+Organizações e suas divisões
+Fornecedor, agência reguladora, administradora de cartões, setor de vendas etc.
+
+
+Outros sistemas
+Sistema de vendas, sistema de cobrança, sistema de pagamento etc.
+
+
+Hardware
+Sensor de temperatura, leitora de código de barras etc.
+
+O relacionamento de generalização entre atores indica que uma instância do primeiro ator interage com os mesmos tipos de instância de casos de uso do segundo. Porém, o contrário não é verdade.
+
+Os casos de uso associados ao ator mais específico nesse relacionamento são exclusivos desse ator, que herda os casos de uso associados ao ator mais genérico. A Imagem 2, a seguir, mostra um exemplo desse tipo de relacionamento, no qual percebemos que tanto o ator Vendedor quanto o ator Supervisor interagem com o caso de uso Fazer pedido. No entanto, apenas o Supervisor participa do caso de uso Aprovar crédito. Veja:
+
+
+Imagem 2: Exemplo do relacionamento de generalização entre atores,.
+
+Normalmente, o ator inicia a sequência de interações em um caso de uso. Portanto, a forma mais fácil de começar a construir um modelo de casos de uso é identificar todos os atores.
+
+O analista de sistemas pode observar as fontes que devem fornecer informações a serem processadas pelo sistema e para quem os resultados do processamento devam ser fornecidos. Bezerra (2015) sugere algumas perguntas úteis para guiar os analistas de sistemas:
+
+Que órgãos, empresas ou pessoas utilizarão o sistema?
+Que sistemas ou equipamentos vão se comunicar com o sistema a ser construído?
+Alguém deve ser informado de alguma ocorrência no sistema?
+Quem está interessado em certo requisito funcional do sistema?
+A partir daí, durante a identificação dos casos de uso, o analista poderá perceber a existência de outros atores não identificados nessa etapa.
+
+Caso de uso
+Caso de uso é a descrição de uma sequência de interações entre um sistema e um ou mais atores externos a esse sistema. De acordo com Bezerra (2015):
+
+Os casos de usos permitem a um observador externo ao sistema entender quais são as funcionalidades fornecidas pelo sistema e quais são os resultados externos produzidos por elas. Porém, não é possível saber como o sistema trabalha internamente para produzir esses resultados.
+
+Um modelo de casos de uso pode conter vários casos de uso, dependendo do tamanho e da complexidade do sistema. Veja a seguir mais algumas considerações importantes sobre esses casos:
+
+chevron_left
+
+
+chevron_right
+chevron_left
+1 de 2
+chevron_right
+Casos de uso podem relatar as diversas formas de utilização de uma funcionalidade do sistema. Assim, podemos definir cada uma dessas formas por meio de cenários.
+
+help
+O que seria um cenário?
+Resposta
+Pode ser entendido como a instância de execução de um caso de uso. Portanto, diversos cenários para o mesmo caso de uso podem ser escritos. Os cenários podem ser usados para a especificação dos casos de testes do sistema.
+
+Para identificar os casos de uso, podemos pensar em dois tipos que sempre estarão presentes nos sistemas:
+
+Estão relacionados diretamente aos objetivos dos atores, ou seja, são as funcionalidades que agregam valor aos usuários. Bezerra (2015) sugere uma lista de perguntas para auxiliar os analistas de sistemas na descoberta dos casos de uso primários de um sistema:
+
+Quais são as necessidades e os objetivos de cada ator em relação ao sistema?
+Que informações o sistema deve produzir?
+O sistema deve realizar alguma ação que ocorre regularmente no tempo?
+Para cada requisito funcional, existe um caso de uso (ou mais) para atendê-lo?
+Alguns casos de uso são iniciados não por um ator, mas por um evento temporal. Desse modo, normalmente o ator é o tipo de entidade que recebe a informação resultante (por exemplo, um cliente que receba uma notificação do sistema).
+
+Esses casos não apresentam uma relação direta de valor para os atores, mas são imprescindíveis para o funcionamento do sistema. Por exemplo, a manutenção de cadastros (inclusão, alteração, consulta e exclusão das diversas informações que alimentam o sistema). Um sistema bancário precisa cadastrar as informações sobre os clientes.
+
+O que você achou do conteúdo?

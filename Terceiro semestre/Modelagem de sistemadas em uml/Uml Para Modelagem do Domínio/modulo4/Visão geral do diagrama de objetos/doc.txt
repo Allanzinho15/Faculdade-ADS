@@ -1,0 +1,94 @@
+Visão geral do diagrama de objetos
+Os diagramas de objetos, um dos elementos-chave da UML (Unified Modeling Language), oferecem uma perspectiva detalhada das instâncias das classes em um sistema. Similares aos diagramas de classes, eles retratam a estrutura estática do sistema, mas em um nível mais granular, mostrando instâncias específicas em determinado momento.
+
+Esse tipo de diagrama facilita o entendimento das associações entre objetos, destacando os valores dos atributos e suas interações. Embora menos comuns que os diagramas de classes, os diagramas de objetos atuam na validação do sistema, oferecendo percepções valiosas durante o processo de desenvolvimento.
+
+Você vai assistir, neste vídeo, ao emprego do diagrama de objetos na modelagem de objetos, que é o processo de representar entidades do mundo real como objetos no software, definindo suas propriedades e comportamentos e facilitando a implementação de sistemas orientados a objetos.
+
+
+Além do diagrama de classes, a UML define um segundo tipo de diagrama na perspectiva estática e estrutural do sistema: o diagrama de objetos.
+
+assignment_ind
+Comentário
+Assim como objetos são instâncias de classes, os diagramas de objetos podem ser vistos como instâncias de diagramas de classes.
+
+Um diagrama de objetos UML representa uma instância específica de um diagrama de classes em determinado momento. Portanto, do ponto de vista gráfico, ele é bastante parecido com o diagrama de classes. Bezerra (2015) afirma que um diagrama de objetos exibe uma “fotografia” do sistema em certo momento, mostrando as associações estabelecidas entre objetos, de acordo com suas interações e com os valores que seus atributos assumem.
+
+Um diagrama de objetos mostra:
+
+Os valores de atributos do conjunto de objetos que ele representa.
+Como esses objetos se relacionam entre si.
+Um objeto, ou uma instância de uma classe, possui uma identificação única (não existem dois objetos iguais) e os seus atributos assumem determinados valores em um momento específico no tempo.
+
+Os valores dos atributos podem sofrer alterações e, nesse caso, dizemos que o objeto sofreu uma mudança de estado.
+
+extension
+Exemplo
+O objeto Maria, criado a partir de uma classe Pessoa, possui como valor do atributo Endereço: Rua das Palmeiras. Quando Maria muda de endereço, o valor do atributo passa a ser o novo endereço: Avenida Vieira Souto. Assim, em um diagrama de estados, o objeto Maria seria representado com o valor do atributo Endereço quando o diagrama foi criado.
+
+No diagrama de objetos, não faz sentido falar em operações, que são as mesmas para todos os objetos de uma classe. Portanto, nesse diagrama, o elemento principal, o Objeto, possui apenas o nome e os atributos com seus valores.
+
+Cada objeto é representado por um retângulo com dois compartimentos. O compartimento superior mostra a identificação do objeto na forma de texto sublinhado:
+
+:NomeClasse
+
+nomeObjeto: NomeClasse
+
+Lembre-se de que cada objeto é único e, portanto, esse nome identifica exclusivamente um objeto. A identificação do objeto pode ser omitida.
+
+extension
+Exemplo
+Marta: Professor
+:Professor
+No primeiro caso, o objeto da classe professor foi identificado com o nome Marta; no segundo, o analista optou por não caracterizar o objeto em si, significando que pode estar se referindo a qualquer objeto daquela classe.
+
+assignment_ind
+Comentário
+A representação com a identificação do objeto omitida é frequentemente usada na etapa de projeto do processo de desenvolvimento de sistemas, quando se representa a interação entre objetos (instâncias de classes) nos diagramas de sequência ou de comunicação.
+
+No compartimento inferior (cuja utilização é opcional), aparecem os valores que os atributos definidos na classe assumem para este objeto. Dessa forma, deve mostrar uma lista de pares da forma: nome do atributo = valor do atributo.
+
+A Imagem 1 adiante reproduz o exemplo de diagrama de objetos mostrado por Bezerra (2015). Nesse exemplo:
+
+Uma instância de pedido é associada a três instâncias de ItemPedido.
+Cada item, por sua vez, está ligado a um produto.
+Os valores para cada atributo de cada objeto são apresentados nesse diagrama:
+
+
+Imagem 1: Exemplo de dagrama de objetos.
+
+Você pode observar também que não existem detalhes nos relacionamentos, tal como no diagrama de classes. Os relacionamentos no diagrama de objetos mostram uma situação específica em que aqueles objetos se encontram, não as possíveis relações entre eles.
+
+No diagrama da Imagem 1, temos um Pedido que possui 3 Itens associados a ele, e 1 Produto associado respectivamente a cada Item.
+
+A imagem 2, a seguir, mostra outro exemplo de diagrama de objetos, em que observamos que o Cliente Pablo está associado a 2 contratos de aluguel de carros diferentes. Cada contrato tem seu identificador e atributos próprios. Esse diagrama ajuda no entendimento da situação desse cliente:
+
+
+Imagem 2: Exemplo de diagrama de objetos.
+
+De acordo com Bezerra (2015), diagramas de objetos não são muito utilizados na prática. Mas eles podem ser úteis na atividade de validação no processo de desenvolvimento, pois permitem ilustrar e esclarecer certos aspectos de um diagrama de classes.
+
+wb_incandescent
+Dica
+Mesmo antes de criar um diagrama de classes, você pode criar um diagrama de objetos para descobrir fatos sobre elementos específicos e suas associações ou para esclarecer dúvidas por meio de exemplos específicos. Além disso, ajuda na construção dos diagramas de interação (de sequência ou comunicação), pois estes utilizam a mesma notação.
+
+Os diagramas de objetos podem ter as seguintes aplicações:
+
+1
+Ajudar na análise de uma interação específica.
+
+2
+Mostrar uma visão geral de alto nível do sistema.
+
+3
+Validar um diagrama de classes.
+
+4
+Verificar se o sistema foi desenvolvido conforme os requisitos.
+
+5
+Analisar se uma regra de negócio está sendo cumprida.
+
+Para criar esses diagramas, procure exibir associações entre objetos somente com uma ligação (por exemplo, uma linha única juntando dois objetos, sem setas ou outros detalhes), pois um diagrama de objetos tem por objetivo mostrar somente a existência de associações e não os tipos de associações, como em um diagrama de classes.
+
+Além disso, evite representar todos os objetos em um único diagrama de objetos, pois ele apresenta apenas um estado do objeto.

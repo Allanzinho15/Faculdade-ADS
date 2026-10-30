@@ -1,0 +1,49 @@
+Manutenção versus Reengenharia de software
+Vamos considerar determinado produto de software implantado. Ao longo do tempo, a equipe de engenheiros de software realiza as manutenções necessárias em função de erros detectados ou de alterações geradas a partir da volatilidade dos requisitos. Paralelamente, a tecnologia vai se tornando obsoleta, e a manutenção, cada vez mais difícil.
+
+
+O que você faria? Que tal reconstruirmos o produto com mais funcionalidades, melhor desempenho, confiabilidade e manutenibilidade? Esse processo é denominado reengenharia.
+
+A reengenharia possui dois níveis: reengenharia de processos de negócio e reengenharia de software.
+
+ 
+
+No primeiro nível, também denominado estratégico, a reengenharia de processos de negócio visa – por meio de alterações em regras de negócio, ou seja, das tarefas que permitem a obtenção de um resultado de negócio – o aumento da eficiência e competitividade de uma empresa.
+
+ 
+
+Destacamos que um software tem como importante objetivo agregar valor a uma organização por meio da automação de processos; portanto, a referida alteração no negócio deve ser absorvida pela engenharia de software, gerando dois cenários:
+
+
+Cenário 1
+
+
+Que exige a construção de um novo software.
+
+
+Cenário 2
+
+
+Que permite a modificação de um software existente.
+
+
+No segundo cenário, aplicamos a reengenharia de software, o que extrapola os objetivos da etapa manutenção.
+
+
+Resumindo
+Neste módulo, destacamos a importância das etapas de implantação e manutenção do processo de desenvolvimento de software.
+
+ 
+
+A implantação inclui a migração do software de um ambiente de desenvolvimento para um ambiente de produção, permitindo a utilização do software pelos diversos usuários envolvidos.
+
+ 
+
+Após a etapa de implantação, temos a manutenção. A existência de erros descobertos em produção é um fato; para tal, a equipe de engenheiros de software terá de aplicar as tarefas definidas no processo de gerenciamento de alterações. Outro motivo comum de solicitação de manutenção ocorre em função da volatilidade dos requisitos.
+
+ 
+
+Com o tempo, as solicitações vão sendo intensificadas em função de alterações de regras de negócios ou pela obsolescência da tecnologia, podendo-se, neste caso, aplicar a reengenharia de software, o que extrapola a etapa de manutenção.
+
+
+Agora, é com você! Vamos verificar se atingimos o objetivo deste módulo? Você está convidado a realizar as atividades a seguir.

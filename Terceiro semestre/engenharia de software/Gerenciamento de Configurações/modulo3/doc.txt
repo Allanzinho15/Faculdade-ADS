@@ -1,0 +1,116 @@
+MÓDULO 3
+Descrever a construção de sistemas
+
+Construção de sistemas
+
+Fonte: Shutterstock
+O processo de criar um sistema executável, também conhecido como build, compilando e ligando os componentes do sistema, as bibliotecas externas, os arquivos de configuração e outras informações, é denominado de construção de sistema.
+
+Dica
+As ferramentas de construção de sistema e de controle de versões devem ser integradas, pois o processo de construção usa versões dos componentes do repositório gerenciado pelo sistema de controle de versões. Considerando que a construção de um sistema envolve diferentes informações sobre o software e seu ambiente operacional, sugere-se o uso de uma ferramenta de construção automatizada para criar um build do sistema.
+
+Podemos observar na Figura 7 que o referido build poderá incluir, além dos arquivos de código-fonte envolvidos na construção do sistema, as bibliotecas vinculadas externamente, os arquivos de dados, os arquivos de configuração, ou mesmo as especificações das versões do compilador e ferramentas de software utilizadas na construção.
+
+Idealmente, deve ser possível construir um sistema completo com um único comando ou clique do mouse.
+
+
+Figura 7 – Construção de sistemas. Fonte: O Autor.
+Vejamos algumas funcionalidades usualmente disponíveis em ferramentas para integração e construção de sistemas:
+
+Clique nas barras para ver as informações.
+Geração do script de construção
+Permite a análise do programa em construção, identificando componentes dependentes e gerando automaticamente um script de construção ou arquivo de configuração.
+
+Integração com o sistema de controle de versão
+Realiza o check-out das versões necessárias dos componentes que estão no sistema de controle de versão, de forma a garantir a integridade do build.
+
+Recompilação mínima
+Analisa qual código-fonte precisa ser recompilado e realizar as compilações essenciais.
+
+Criação do sistema executável
+Vincula os arquivos objetos compilados uns aos outros e a outros arquivos necessários, como bibliotecas e arquivos de configuração, para criar um sistema executável.
+
+Automação dos testes
+Executa automaticamente testes usando ferramentas de automação de teste, a fim de verificar a correta integração dos componentes do build em função das possíveis mudanças.
+
+Emissão de relatórios
+Fornece relatórios sobre o sucesso ou a falha da construção, bem como dos testes executados.
+
+Geração da documentação
+Gera notas de lançamento sobre o build e páginas de ajuda do sistema.
+
+O script de construção é uma definição do sistema a ser construído, incluindo informações sobre os componentes e suas dependências e versões das ferramentas usadas para compilar e ligar o sistema, sendo, então, necessário à linguagem de configuração adotada descrever os componentes do sistema a serem incluídos na construção e suas dependências.
+
+Podemos observar na Figura 8 as plataformas de sistema envolvidas, o que confere um grau de complexidade no processo de construção.
+
+
+Figura 8 – Plataformas de desenvolvimento, construção e destino. Fonte: O Autor.
+Vejamos as plataformas:
+
+Clique nas informações a seguir.
+Integração contínua
+Os métodos ágeis recomendam que a construção do sistema seja realizada com bastante frequência, com testes automatizados utilizados para descobrir problemas de software. As construções frequentes fazem parte de um processo de integração contínua, como mostrado na Figura 9.
+
+
+Figura 9 – Integração contínua. Fonte: O Autor.
+
+Assista, a seguir, um vídeo sobre O processo de integração contínua em metodologias ágeis.
+
+
+Atenção
+As metodologias ágeis adotam, entre outras melhores práticas, a possibilidade de atendimento rápido às mudanças e a integração de forma sistemática, o que requer a reconstrução frequente da mainline que representa uma sequência de baselines representando diferentes versões do sistema.
+
+As etapas da integração contínua ilustradas na Figura 9 são:
+
+Clique nas informações a seguir.
+A vantagem da integração contínua é que ela permite a descoberta e a alteração imediata dos problemas causados pelas interações entre diferentes desenvolvedores, sendo o sistema mais recente no mainline o sistema funcional definitivo. Entretanto, podem ocorrer restrições na aplicação da integração contínua, vejamos:
+
+Se o sistema for muito grande, pode levar muito tempo para construí-lo e testá-lo, especialmente se a integração com outros sistemas de aplicações estiver envolvida, podendo ser inviável a construção do sistema várias vezes ao dia.
+
+Caso a plataforma de desenvolvimento seja diferente da plataforma de destino, pode não ser possível executar os testes do sistema na área de trabalho particular do desenvolvedor, em função de possíveis diferenças no hardware, no sistema operacional ou no software instalado, gerando a necessidade de um tempo maior para os testes.
+
+Nos sistemas grandes ou naqueles cuja plataforma de execução não é a mesma da plataforma de desenvolvimento, a integração contínua costuma ser impossível.
+
+Vejamos uma alternativa considerando um sistema de construção diária:
+
+Clique no botão para ver as informações.
+A vantagem de usar construções frequentes do software é a maior chance de encontrar falhas nas interações de componentes de forma precoce. Desta forma, a construção frequente incentiva testes unitários completos dos componentes com o objetivo de evitar que o check-in de uma determinada versão gere uma falha no sistema inteiro.
+
+Ligação do código-fonte ao código objeto
+Como a compilação é um processo computacionalmente intensivo realizado por um determinado compilador, ferramentas de apoio à construção do sistema podem ser projetadas para minimizar a quantidade de compilação necessária, verificando se está disponível uma versão compilada de um componente, pois, em caso positivo, não há necessidade de recompilar esse componente.
+
+Entendamos como ocorre a ligação do código-fonte de um componente ao seu código objeto equivalente.
+
+Esta ligação é realizada por meio da designação de uma assinatura exclusiva a cada arquivo de componente de código-fonte armazenado, tendo o código objeto correspondente, que foi compilado a partir do código-fonte, uma assinatura relacionada; caso o código-fonte seja editado, esta assinatura é alterada.
+
+Pela comparação das assinaturas nos arquivos de código-fonte e de código objeto, é possível decidir se o componente de código-fonte foi usado para gerar o componente de código objeto.
+
+
+Figura 10 – Ligando código-fonte e código objeto. Fonte: O Autor.Figura 10 – Ligando código-fonte e código objeto. Fonte: O Autor.
+Vejamos os dois tipos de assinaturas apresentados por Sommerville (2019), conforme exibido na Figura 10.
+
+Timestamps de modificação
+A assinatura no arquivo de código-fonte é a data e a hora (timestamps) em que esse arquivo foi modificado. Sempre que ocorrer a modificação do arquivo de código-fonte de um componente, o sistema realiza a recompilação para criar um novo arquivo de código objeto correspondente.
+
+Observemos a Figura 10, na qual os componentes Comp.java e Comp.class têm assinaturas de modificação de 17:03:05:15:02:2018 e 16:58:43:15:02:2018, respectivamente. Isto significa que o código Java foi modificado às 17 horas, 3 minutos e 5 segundos do dia 15 de fevereiro de 2018 e a versão compilada foi modificada às 16 horas, 58 minutos e 43 segundos do dia 15 de fevereiro de 2018. Neste caso, o sistema recompilaria automaticamente Comp.java, porque a versão compilada tem uma data de modificação anterior à versão mais recente do componente.
+
+Somas de verificação (checksum) de código-fonte
+A assinatura no arquivo de código-fonte é uma soma de verificação (checksum) calculada a partir dos dados no arquivo, gerando um número exclusivo a partir do texto de origem como entrada, de forma que qualquer alteração no texto, até mesmo um único caractere, gera uma soma de verificação diferente, sendo essa soma de verificação atribuída ao código-fonte somente antes da compilação e identifica exclusivamente o arquivo de origem.
+
+O sistema de construção, em seguida, marca o arquivo de código objeto gerado com a assinatura da soma de verificação, portanto, se não houver nenhum arquivo de código objeto com a mesma assinatura que o arquivo de código-fonte a ser incluído em um sistema, a recompilação do código-fonte é necessária.
+
+Como os arquivos de código objeto normalmente não são versionados, a abordagem timestamps significa que apenas o arquivo de código objeto compilado mais recentemente é mantido no sistema. A abordagem de soma de verificação tem a vantagem de permitir que sejam mantidas simultaneamente muitas versões diferentes do código objeto de um componente. A assinatura em vez do nome do arquivo é o vínculo entre código-fonte e objeto, pois o código-fonte e os arquivos de código objeto têm a mesma assinatura.
+
+Resumindo
+Neste módulo, pudemos compreender o processo de construção de um sistema executável por meio da compilação e da ligação dos componentes do sistema, das bibliotecas externas, dos arquivos de configuração e de outras informações necessárias ao referido processo.
+
+
+As ferramentas de construção de sistema e de controle de versões devem ser integradas, pois o processo de construção usa versões dos componentes do repositório gerenciado pelo sistema de controle de versões.
+
+
+Entendemos que a integração contínua permite a descoberta e a alteração imediata dos problemas causados pelas interações entre diferentes desenvolvedores, sendo o sistema mais recente no mainline o sistema funcional definitivo.
+
+
+A compilação é um processo computacionalmente intensivo exigindo o gerenciamento da ligação do código-fonte de um componente ao seu código objeto equivalente, sendo esta ligação realizada por meio da designação de uma assinatura exclusiva a cada arquivo de componente de código-fonte armazenado, tendo o código objeto correspondente, que foi compilado a partir do código-fonte, uma assinatura relacionada.
+
+Agora é com você! Vamos verificar se atingimos o objetivo deste módulo? Você está convidado a realizar as atividades a seguir.

@@ -1,0 +1,82 @@
+Detalhamento da arquitetura do sistema
+
+Figura 8 - Camadas de software.
+
+ 
+
+Uma atividade que aplicamos de forma intensa na Engenharia de Software é a fatoração, ou seja, a decomposição da solução do problema em partes menores, facilitando principalmente o trato da complexidade.
+
+ 
+
+Imaginemos um sistema de software complexo; intuitivamente, temos de realizar a decomposição em subsistemas. O processo do projeto que permite identificar os referidos subsistemas, estabelecendo um framework para controle e comunicação entre eles, é denominado projeto de arquitetura.
+
+A arquitetura é definida por meio de duas abstrações: lógica e física.
+
+ 
+
+A Figura 8 ilustra uma divisão lógica comumente aplicada no projeto de arquitetura, sendo composta das seguintes camadas: apresentação, aplicação, domínio e serviços técnicos.
+
+
+Importante destacar que as camadas mais altas devem depender das camadas mais baixas – essa fatoração permite melhor trato da complexidade, ou seja, decomposição do sistema em partes menores. Outra vantagem é o reúso, pois as camadas inferiores são independentes das camadas superiores. A arquitetura em camadas permite baixo acoplamento, ou seja, mínimo de dependências entre os subsistemas, e alta coesão, isto é, deve haver mais associações entre as classes internamente do que externamente.
+
+ 
+
+A camada de apresentação da Figura 8 inclui as denominadas classes de fronteira, que permitem a instanciação dos objetos de fronteira que interagem com os usuários.
+
+ 
+
+A camada de aplicação inclui as classes de controle, que permitem a instanciação dos objetos de controle que atuam como intermediários entre os objetos da camada de apresentação e os objetos do domínio do problema.
+
+ 
+
+A camada de domínio é composta pelas classes de domínio oriundas do diagrama de classes, que permitem a instanciação dos objetos do domínio do problema – esses objetos podem conter métodos que alteram o próprio estado.
+
+ 
+
+Finalmente, a camada de serviços técnicos pode incluir serviços genéricos, cabendo destaque à camada de persistência de dados.
+
+ 
+
+Assim como existem padrões de projeto aplicados ao projeto de classes (Figura 6), temos também padrões aplicados à arquitetura. Como exemplo, podemos destacar o padrão de arquitetura em camadas denominado MVC (Model-View-Controller), formulado na década de 1970 e focado no reúso de código e na separação de conceitos em três camadas interconectadas, tal como ilustra a Figura 9.
+
+ 
+
+O controlador (controller) tem funcionalidade para atualizar o estado do modelo, como, por exemplo, uma nota fiscal, ou alterar a apresentação da visão do modelo.
+
+ 
+
+Um modelo (model) mantém os dados, notificando visões e controladores quando da ocorrência de mudança em seu estado.
+
+ 
+
+A visão (view) permite a exibição dos dados.
+
+
+
+Figura 9 - Arquitetura MVC.
+
+Após a definição lógica da arquitetura, o engenheiro de software precisará definir a arquitetura física por meio do modelo de implantação, que projeta a infraestrutura de hardware necessária para o software projetado.
+
+
+Você poderia questionar: “O engenheiro de software especifica hardware?”.
+
+Nesse caso, não, mas o projeto tem de definir os nós computacionais necessários para a implantação do software, devendo a especificação do hardware ficar por conta da equipe de infraestrutura. A Figura 10 exemplifica um diagrama de implantação com quatro nós computacionais e as respectivas conexões.
+
+
+
+Figura 10 - Diagrama de implantação.
+
+Você lembra qual a composição das camadas apresentadas?
+
+Cada camada é composta por um conjunto de classes, formando componentes diversos. Os componentes podem ser compostos por uma ou mais classes que encapsulam funcionalidades de forma independente – um conjunto de componentes pode compor um sistema complexo. A forma de representar essa “componentização” do software é definida no modelo de implementação. A Figura 11 ilustra o diagrama de componentes embutido no diagrama de implantação da Figura 10, de modo que podemos verificar a alocação por nó computacional dos referidos componentes.
+
+
+
+Figura 11 - Diagrama de componentes embutido.
+
+Arquitetura de sistemas de software
+
+
+Neste vídeo, você conhecerá um pouco sobre a arquitetura de sistemas de software.
+
+

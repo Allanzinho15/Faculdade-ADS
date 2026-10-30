@@ -1,0 +1,100 @@
+Diagramas de comunicação e de sequência na UML
+Em sistemas computacionais orientados a objetos, as funcionalidades são realizadas por meio da colaboração. Os objetos interagem, executando, assim, os casos de uso. Na UML, essas interações são representadas por diagramas de interação, que mostram o comportamento dinâmico do sistema ao descrever o fluxo de mensagens entre objetos.
+
+ 
+
+Existem dois tipos principais: diagramas de interação de comunicação e de sequência. Eles ajudam a detalhar e refinar outros modelos, fornecendo aos programadores uma visão clara dos objetos e mensagens envolvidos nos casos de uso do sistema. 
+
+ 
+
+Neste vídeo, conheça as atividades típicas de um processo de desenvolvimento de software e os cenários possíveis de aplicação dos diagramas de interação.
+
+
+
+Atividades do desenvolvimento de software
+
+Independentemente do processo adotado, as atividades típicas de um processo de desenvolvimento de software, geralmente, compreendem as seguintes etapas:
+
+
+Levantamento de requisitos
+ 
+Análise
+ 
+Projeto (design)
+ 
+Implementação
+ 
+Testes
+ 
+Implantação
+
+Essas atividades são realizadas por etapas ou fases, em que uma etapa depende dos artefatos resultantes das anteriores. Neste conteúdo, focaremos na etapa de projeto (ou design) do sistema, na qual existe uma dependência de seus artefatos em relação aos artefatos elaborados na fase de análise (ou modelagem).
+
+ 
+
+A imagem a seguir ilustra os diagramas da UML que, usualmente, são construídos nos modelos de análise e de projeto. Trata-se de uma visão prática, uma vez que a especificação da linguagem UML não determina quais diagramas devam ser usados em quais etapas e, tampouco, em que ordem devem ser elaborados. Observe!
+
+
+
+
+Modelos da fase de análise X Modelos da fase de projeto.
+
+Diagramas de interação
+
+Como você já sabe, em sistemas computacionais orientados a objetos, os casos de uso são realizados a partir da colaboração entre grupos de objetos que se comunicam.
+
+
+Comentário
+Na UML, as comunicações são representadas por diagramas de interação, que mostram o comportamento interativo de um sistema. Os diagramas de interação descrevem o fluxo de mensagens e fornecem contexto para uma ou mais linhas da vida de objetos dentro de um sistema. Além disso, os diagramas de interação podem ser usados para:
+ 
+
+Representar as sequências organizadas dentro de um sistema.
+ 
+Servir como um meio para visualizar dados em tempo real.
+
+Os diagramas de interação podem ser implementados em diversos cenários para fornecer um conjunto exclusivo de informações. Conheça algumas possibilidades de uso:
+
+
+Modelar um sistema, como uma sequência de eventos organizada por tempo.
+ 
+Fazer a engenharia reversa ou avançada de um sistema ou processo.
+ 
+Organizar a estrutura de vários eventos interativos.
+ 
+Mostrar, de forma simples, o comportamento de mensagens e linhas da vida dentro de um sistema.
+ 
+Identificar possíveis conexões entre elementos de linhas da vida.
+
+Comentário
+Engenharia reversa, no contexto da Engenharia de Software, significa obter o modelo a partir do sistema implementado.
+
+
+Podemos, então, dizer que seus principais objetivos são fornecer:
+
+
+Informações adicionais
+
+Obter informações adicionais para completar e aprimorar outros modelos (modelo de casos de uso e de classes).
+
+Visão detalhada
+
+Fornecer aos programadores uma visão detalhada dos objetos e das mensagens envolvidos na realização dos casos de uso do sistema.
+
+Além disso, há dois tipos de diagrama de interação. Vamos conhecê-los!
+
+
+
+
+Diagrama de comunicação.
+
+
+
+Diagrama de sequência.
+
+Cada tipo de diagrama aborda uma perspectiva diferente do comportamento de um sistema. Em um diagrama de interação, as mensagens trocadas entre objetos, em geral, serão métodos da classe a que pertence o objeto receptor da mensagem, com os mesmos elementos oriundos das mensagens. Isso será percebido ao estudarmos os diagramas de classe de projeto.
+
+
+Os diagramas de interação servem para refinar o diagrama de classes na etapa de projeto, com o detalhamento dos métodos.
+
+
+Os diagramas da etapa de projeto apresentados na imagem anterior estão relacionados entre si e com os diagramas da etapa de análise, de modo que a construção de um diagrama depende de outros. Vamos ver, a seguir, os conceitos básicos de cada diagrama, como construí-los e utilizá-los.

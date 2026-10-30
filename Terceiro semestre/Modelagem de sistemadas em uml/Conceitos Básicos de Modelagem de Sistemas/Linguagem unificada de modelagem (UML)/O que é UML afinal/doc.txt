@@ -1,0 +1,62 @@
+O que é UML, afinal?
+É uma linguagem visual padronizada usada para modelar sistemas de software, fornecendo uma representação gráfica e detalhada das estruturas, dos comportamentos e das interações de um sistema. Dominar os conceitos teóricos da UML capacita você a comunicar efetivamente suas ideias de design, colaborar de forma mais eficaz com suas equipes de desenvolvimento, entender modelos existentes e interpretar documentação técnica. Além disso, o conhecimento da UML é altamente valorizado na indústria de TI, oferecendo uma vantagem competitiva no mercado de trabalho.
+
+
+Neste vídeo, vamos explorar a UML como uma linguagem padronizada que disponibiliza uma variedade de diagramas, cada um oferecendo perspectivas distintas, para a modelagem de sistemas orientados a objetos. Assista!
+
+
+
+A linguagem unificada de modelagem (UML) oferece um conjunto de diagramas, sob diferentes visões, que permitem a modelagem de sistemas orientada a objetos, independentemente de tecnologia e de processos e metodologias de desenvolvimento de sistemas, cabendo seu uso em qualquer contexto de desenvolvimento orientado a objetos.
+
+
+No final da década de 1990, as linguagens de programação orientadas a objeto já eram uma realidade, e cada profissional que desenvolvia atividade de análise e projeto de sistemas criava seus próprios modelos, baseados em suas necessidades e realidades. Ou seja, não havia consenso no mercado sobre os modelos a serem usados para modelagem de sistemas desenvolvidos sob a tecnologia de orientação a objetos.
+
+
+Três competentes profissionais despontavam com seus modelos naquele momento:
+
+
+Ivar Jacobson, idealizador do método OOSE (Object-Oriented Software Engineering).
+James Rumbaugh, criador do método OMT (Object Modeling Technique).
+Grady Booch, criador do método que leva seu nome.
+
+A UML foi adotada pela OMG (Object Management Group) em 1997, consolidando-se a partir da fusão dos três métodos mencionados, tornando-se uma linguagem de modelagem padrão para sistemas desenvolvidos sob o paradigma orientado a objetos.
+
+
+UML tornou-se o padrão para modelagem gráfica, não apenas para objetos e, de fato, faz sentido essa afirmativa, pois a UML pode ser a linguagem de modelagem para diagramar sistemas concorrentes e distribuídos.
+
+(Fowler, 2005.)
+Desde sua versão inicial, a UML sofreu mudanças substanciais e atualmente encontra-se em sua versão 2.5.1, de dezembro de 2017.
+
+
+A UML é uma linguagem padrão para construção de projetos de sistemas, voltada para a visualização, a especificação, a construção e a documentação de artefatos de um sistema. Foi projetada para ser independente do método ou processo de desenvolvimento utilizado.
+
+
+A UML é uma linguagem de modelagem, não é um método de desenvolvimento nem tampouco uma metodologia ou um processo de desenvolvimento de sistemas, uma vez que não determina a ordem e nem como os diagramas devem ser usados. Simplesmente disponibiliza os diagramas, sob as várias visões necessárias ao desenvolvimento de sistemas, e cada empresa (ou equipe de desenvolvimento) a utiliza da forma como lhe convenha, ou seja, adequando a UML ao seu processo ou metodologia de desenvolvimento de sistemas. A UML é uma linguagem que tem o seguinte objetivo. Vejamos!
+
+
+Visualização
+
+A modelagem gráfica facilita a compreensão do sistema e das decisões tomadas durante as fases de análise e projeto, além de melhorar significativamente a comunicação entre os membros da equipe, permitindo que suas interpretações sejam feitas sem ambiguidades.
+
+Especificação
+
+Permite a construção de modelos precisos, não ambíguos e completos sob diferentes visões e atendendo às necessidades de modelagem das diferentes fases do processo de desenvolvimento de software, independentemente do processo ou modelo usado.
+
+Construção
+
+Os diagramas UML podem ser integrados às principais e mais populares linguagens de programação do mercado, como Java e C++. No entanto, para isso, é necessário utilizar uma ferramenta CASE (Computer-Aided Software Engineering) integrada que seja capaz de gerar código-fonte específico para essas linguagens a partir dos diagramas UML.
+
+
+
+A UML é uma linguagem de modelagem padronizada em que podemos observar o seguinte:
+
+
+É independente de tecnologia, adequando-se a todo método, metodologia ou processo de desenvolvimento.
+ 
+
+Não diz quais diagramas usar e nem em que ordem, pois a metodologia de desenvolvimento ditará essa ordem.
+ 
+
+Disponibiliza diagramas sob diferentes visões ou perspectivas.
+
+Para Fowler (2005), a UML se tornou não somente a notação gráfica dominante no mundo orientado a objetos, como também uma técnica popular nos círculos não orientado a objetos.

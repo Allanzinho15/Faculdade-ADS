@@ -1,0 +1,117 @@
+Criador e baixo acoplamento
+Os padrões GRASP se concentram na definição das responsabilidades de cada componente de software.
+
+
+É fundamental identificar o objeto mais apropriado para realizar determinadas tarefas. Segundo o padrão criador, você, pessoa desenvolvedora, deve definir qual objeto será responsável por instanciar outros. Isso se dá no caso de uma classe desenho com um método para criar objetos da classe polígono, o que gera uma figura completa com os polígonos criados ao final.
+
+
+Outro padrão GRASP é o baixo acoplamento. Nele, o desenvolvedor visa assegurar o mínimo de acoplamento entre os objetos e os componentes, facilitando tanto a manutenção como a evolução do sistema.
+
+
+Acompanhe, neste vídeo, como o padrão GRASP criador trata da instanciação de objetos de um sistema e como o padrão GRASP baixo acoplamento aborda o grau de dependência de um módulo em relação a outros módulos.
+
+
+
+Padrão GRASP criador
+
+Problema
+
+A instanciação de objetos é uma das instruções mais presentes em um programa orientado a objetos. Embora um comando simples, como new ClasseX em Java, resolva a questão, a instanciação indiscriminada – e sem critérios bem definidos – de objetos por todo o sistema tende a gerar uma estrutura pouco flexível, difícil de modificar e com alto acoplamento entre os módulos.
+
+
+A pergunta que esse padrão tenta responder é:
+
+
+Quem deve ser responsável pela instanciação de um objeto de determinada classe?
+
+
+Solução
+
+Coloque em uma classe X a responsabilidade de criar uma instância da classe Y se X for um agregado formado por instâncias de Y ou se X possuir os dados de inicialização necessários para a criação de uma instância de Y.
+
+
+No exemplo do site de vendas de produtos pela internet, considerando o modelo de classes da imagem especialista – classes de domínio, qual classe deveria ser responsável pela criação das instâncias de item do pedido?
+
+
+Uma abordagem comum, mas inadequada, é instanciar o item em uma classe de serviço e apenas acumulá-lo no pedido. Entretanto, quando se trata de uma relação entre um agregado e suas partes, a responsabilidade pela criação das partes deve ser alocada ao agregado responsável por todo o ciclo de vida de suas partes (criação e destruição).
+
+
+A imagem a seguir apresenta o diagrama de classes após definirmos a operação adicionarItem na classe pedido. Perceba que as operações vão sendo definidas nas diversas classes à medida que estabelecemos os mecanismos de colaboração para cada funcionalidade do sistema.
+
+
+
+
+Padrão creator – classes de domínio.
+
+Consequências
+
+Veja, a seguir, a indicação e a contraindicação do padrão Criador.
+
+
+Indicação
+
+
+É especialmente indicado para criar instâncias que formam parte de um agregado por promover uma solução de menor acoplamento.
+
+
+Contraindicação 
+
+
+Não é apropriado em algumas situações especiais, como a criação condicional de uma instância dentro de uma família de classes similares.
+
+
+Padrão GRASP baixo acoplamento
+
+Problema
+
+Vamos começar definindo o que é acoplamento. Ele corresponde ao grau de dependência de um módulo em relação a outros do sistema.
+
+
+Um módulo com alto acoplamento depende de vários outros módulos e tipicamente apresenta problemas, como propagação de mudanças pelas relações de dependência, dificuldade de entendê-lo isoladamente e de reusá-lo em outro contexto por exigir a presença dos diversos módulos que formam a sua cadeia de dependências.
+
+
+Outra questão importante com relação ao acoplamento é a natureza das dependências. Veja:
+
+ 
+
+1. Se uma classe A depende de uma classe B, dizemos que A depende de uma implementação concreta presente em B.
+
+ 
+
+2. Se a classe A depende da interface I, A depende de uma abstração e pode funcionar com diferentes implementações de I sem depender de uma específica.
+
+
+Sistemas mais flexíveis são construídos quando fazemos implementações (classes) dependerem de abstrações (interfaces), especialmente quando a interface abstrair diferentes possibilidades de implementação, seja por envolver diferentes soluções tecnológicas (ex.: soluções de armazenamento e recuperação de dados) ou por englobar diversas questões de negócio (ex.: diferentes regras de negócio e diversos fornecedores de uma mesma solução de pagamento, entre outros).
+
+
+A pergunta que esse padrão tenta responder é:
+
+
+Como definir as relações de dependência entre as classes de um sistema a fim de manter o acoplamento baixo, minimizar o impacto de mudanças e facilitar o reuso?
+
+
+Solução
+
+Distribuir as responsabilidades de modo que gere baixo acoplamento entre os módulos.
+
+
+Para você entender o conceito de baixo acoplamento, vamos apresentar um contraexemplo, isto é, uma situação em que um acoplamento maior do que o desejado foi criado.
+
+
+A imagem a seguir apresenta outra solução para o problema mostrado no padrão especialista, na qual fazemos o cálculo do preço do item do pedido dentro da operação obterValorTotal da classe pedido. Para isso, percorremos todos os itens do pedido, obtemos a quantidade, o produto de cada item e o preço unitário do produto e multiplicamos a quantidade pelo preço unitário.
+
+
+Essa solução gerou um acoplamento entre pedido e produto que não está presente na solução dada pelo padrão especialista. Confira!
+
+
+
+
+Padrão baixo acoplamento – exemplo de alto acoplamento.
+
+Consequências
+
+Acoplamento é um princípio fundamental da estruturação de software, que deve ser considerado em qualquer decisão de projeto de software. Portanto, avalie com cuidado se cada acoplamento definido no projeto é realmente necessário ou se existem alternativas que levariam a um acoplamento menor ou se alguma abstração poderia ser criada para não gerar dependência com uma implementação específica.
+
+
+Atenção
+Cuidado para não gerar soluções excessivamente complexas, em que não haja motivação real para criar soluções mais flexíveis. Em geral, manter as classes de domínio isoladas e não dependentes de tecnologia (ex.: persistência, GUI e integração entre sistemas) é uma política geral de acoplamento, que deve ser seguida, pois é recomendada por diversas proposições de arquitetura.

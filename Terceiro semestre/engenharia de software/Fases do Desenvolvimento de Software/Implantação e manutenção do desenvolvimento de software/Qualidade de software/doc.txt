@@ -1,0 +1,41 @@
+Qualidade de software
+Um dos fatores que exerce influência negativa sobre um projeto é a complexidade, estando associada a uma característica bastante simples: o tamanho das especificações. Em programas de computador, o problema de complexidade é ainda mais grave, em razão das interações entre os diversos componentes do sistema.
+
+ 
+
+A discussão sobre problemas de software versus complexidade não estará completa sem abordar o assunto qualidade. De forma simplificada, a qualidade está em conformidade com os requisitos, tendo como objetivo satisfazer o cliente por meio da aplicação da Engenharia de Software, nosso contexto.
+
+
+
+A norma ISO 9126 identifica seis atributos fundamentais de qualidade para o software:
+
+
+
+Funcionalidade
+Satisfação dos requisitos funcionais.
+
+
+Confiabilidade
+Tempo de disponibilidade do software.
+
+
+Usabilidade
+Facilidade de uso.
+
+
+Eficiência
+Otimização dos recursos do sistema.
+
+
+Facilidade de manutenção
+Realização de correção no software.
+
+
+Portabilidade
+Adequação a diferentes ambientes.
+
+A qualidade possui duas dimensões fundamentais aplicáveis ao software: as dimensões da qualidade do processo e da qualidade do produto.
+
+ 
+
+Considerando que estamos descrevendo a etapa de implementação do processo de software, vamos apresentar considerações relativas à qualidade do produto software, ou seja, aos testes que garantem a qualidade do produto software.

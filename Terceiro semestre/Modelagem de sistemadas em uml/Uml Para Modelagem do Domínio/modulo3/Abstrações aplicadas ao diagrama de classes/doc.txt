@@ -1,0 +1,94 @@
+Abstrações aplicadas ao diagrama de classes
+Ao lidar com classes associativas ― isto é, as que estão ligadas a associações em vez de estarem ligadas diretamente a outras classes ― ou classes que herdam características de outras, a utilização de abstrações se torna ainda mais importante. Por isso, as abstrações aplicadas ao diagrama de classes são importantes para simplificar a representação de sistemas complexos.
+
+Assim, empregar abstrações no diagrama de classes para representar classes com características estruturais específicas permite que desenvolvedores foquem os aspectos essenciais da relação entre as classes, promovendo uma modelagem mais clara e eficaz do sistema.
+
+Neste vídeo, você verá as abstrações que podem ser aplicadas ao diagrama de classes, incluindo as classes associativas, as autoassociações, a associação todo-parte e o mecanismo de herança.
+
+
+Classes associativas
+São classes que estão ligadas a associações, em vez de estarem ligadas a outras classes. São também chamadas de classes de associação.
+
+assignment_ind
+Comentário
+A classe associativa normalmente aparece quando duas ou mais classes estão associadas e há a necessidade de se manter informações sobre a associação que existe entre elas.
+
+É muito comum a necessidade de classes associativas em relacionamentos muitos para muitos, ou seja 0..* 0..*.
+
+Uma classe associativa é representada pela mesma notação utilizada para uma classe comum. A diferença é que aquela é ligada por uma linha tracejada a uma associação.
+
+A Imagem 5 a seguir mostra uma classe associativa, na qual um professor ministra uma disciplina em determinada turma (que possui número, ano e semestre específicos).
+
+
+Imagem 5: Exemplo de classe associativa.
+
+Autoassociação
+Tem como objetivo relacionar objetos da mesma classe, mas cada objeto tem um papel distinto nessa associação. Por exemplo, na Imagem 6 a seguir, objetos da classe Empregado estão associados entre si, um empregado como supervisor, que supervisiona outros empregados.
+
+A imagem ilustra, também, o uso de papéis (roles) para distinguir o lado supervisor (multiplicidade 1) do lado supervisionado (lado muitos) da autoassociação.
+
+
+Imagem 6: Exemplo de autoassociação.
+
+Todo-parte
+Existe uma categoria especial de relacionamento que possui uma semântica (significado) particular: todo-parte.
+
+Uma relação todo-parte entre dois objetos indica que um dos objetos está contido (é uma parte do) no outro, ou seja, o objeto do lado todo contém o do lado parte.
+
+A UML define dois tipos de relacionamentos todo-parte: a agregação e a composição.
+
+report_problem
+Atenção!
+A agregação e a composição são casos especiais da associação. Logo, todas as características válidas para uma associação valem para agregações e composições. Agregações/composições são assimétricas no sentido que, se um objeto A é parte de um objeto B, o objeto B não pode ser parte do objeto A.
+
+Agregações e composições propagam comportamento, pois um comportamento que se aplica a um todo, automaticamente se aplica às suas partes. Nas agregações/composições, as partes são normalmente criadas e destruídas pelo todo. Cada uma delas é representada da seguinte forma:
+
+Uma agregação é representada graficamente como uma linha que conecta as classes relacionadas, com um diamante (losango) branco perto da classe que representa o todo.
+Uma composição é representada por meio de um diamante negro.
+A Imagem 7 apresenta um relacionamento de composição. Um pedido é composto de vários itens de pedidos.
+
+
+Imagem 7: Exemplo de relacionamento de composição.
+
+A diferença entre agregação e composição é sutil, pois não é muito bem definida na UML. Ambas são relacionamentos todo-parte, mas pode-se dizer que:
+
+Agregação
+Na agregação, a parte pode existir independentemente do todo.
+
+close
+Composição
+Na composição, a existência da parte depende da existência do todo.
+
+No exemplo da Imagem 7 não faria sentido a existência de ItemPedido se não existisse Pedido.
+
+extension
+Exemplo
+Como agregação, poderíamos citar a associação entre Equipe e Jogador, em que este último é parte da Equipe; entretanto, um Jogador existe independentemente da existência da Equipe. Isso significa que a destruição de uma Equipe (todo) não implicaria na destruição do Jogador (parte), como ocorre na composição.
+
+Herança
+Outro relacionamento com semântica específica é o de herança, ou relacionamento de generalização/especialização. Esse tipo de relacionamento, diferente dos que você estudou, significa um relacionamento de generalidade ou especialidade entre as classes envolvidas.
+
+extension
+Exemplo
+O conceito animais é mais genérico que o conceito mamífero, que, por sua vez, é mais genérico que o conceito macaco.
+
+Nesse tipo de relacionamento, as classes mais específicas herdam características das classes mais genéricas. Conheça a seguir alguns termos utilizados na herança:
+
+Subclasse
+Usamos o termo subclasse para denotar a classe que herda as propriedades de outra classe mediante uma generalização.
+
+Superclasse
+Já a classe que possui propriedades herdadas por outras classes é chamada de superclasse.
+
+No diagrama de classes, a herança é representada por uma flecha partindo da subclasse em direção à superclasse.
+
+Um relacionamento de herança representa um conjunto de objetos que compartilham um conjunto comum de propriedades (atributos, operações, associações), características inerentes à superclasse, além de possuírem características próprias.
+
+A Imagem 8 mostra um relacionamento de herança.
+
+
+Imagem 8: Exemplo de relacionamento de herança.
+
+Nesse exemplo, um professor pode ser do tipo Tempo Integral ou Horista. Ambos possuem nome e matrícula, porém, o Professor Tempo Integral possui salário, e o Professor Horista possui valor de hora paga.
+
+Note que, além dos atributos da classe genérica (no exemplo, Professor), as classes especializadas herdam também as operações (não especificadas no exemplo), assim como os relacionamentos (no exemplo, a associação ministra) da classe genérica.

@@ -1,0 +1,36 @@
+Tecnologia em Camadas
+A Engenharia de Software é uma tecnologia em camadas, como ilustra a figura 2. Vejamos as descrições das referidas camadas:
+
+
+
+Camada de qualidade
+Garante que os requisitos que atendem às expectativas do usuário serão cumpridos.
+
+
+Camada de processo
+Determina as etapas de desenvolvimento do software.
+
+
+Camada de métodos
+Define, por exemplo, quais as técnicas de elicitação de requisitos, os artefatos gerados em função da técnica de modelagem adotada, tal como, modelo de casos de uso ou de classes.
+
+
+Camada de ferramentas
+Estimula a utilização de ferramentas “CASE” (Computer-Aided Software Engineering) no desenho dos diversos artefatos ou mesmo na geração automática de código, entre outras aplicações; a tecnologia CASE está disponível para uso em todas as etapas do processo de desenvolvimento de software.
+
+
+Figura 2 - Camadas da Engenharia de Software.
+
+Considerando um produto tangível para todos nós, você poderia imaginar que um dia construirá sua casa própria? Vamos imaginar que sim. O que você precisaria para levar em frente esta construção? Um processo?
+
+ 
+
+Certamente, pois terá que organizar as etapas da construção: fundação, estrutura, cobertura, alvenaria, instalações etc. Agora a construção da casa fica mais fácil.
+
+ 
+
+Da mesma maneira, a construção de um software necessita de processo; esse deverá ocorrer de acordo com as melhores práticas estabelecidas pela Engenharia de Software.
+
+ 
+
+É importante destacar que a base da Engenharia de Software é a camada de processo.

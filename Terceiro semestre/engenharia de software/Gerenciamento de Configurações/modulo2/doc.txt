@@ -1,0 +1,120 @@
+MÓDULO 2
+Descrever o gerenciamento das mudanças, versões e releases
+
+Processo de gerenciamento de configurações de software
+O processo de gerenciamento de configurações de software (GCS), proposto por Pressman (2016), inclui tarefas que têm quatro objetivos primários:
+
+Identificar todos os itens que coletivamente definem a configuração do software
+
+Gerenciar alterações de um ou mais desses itens
+
+Facilitar a construção de diferentes versões de uma aplicação
+
+Assegurar que a qualidade do software seja mantida à medida que a configuração evolui com o tempo
+
+O referido processo define cinco tarefas de GCS: Identificação, controle de versão, controle de alteração, auditoria de configuração e relatos, tal como ilustra a Figura 3.
+
+
+Figura 3 - Camadas do processo GCS. Fonte: O Autor.
+Atenção
+As camadas são concêntricas, de modo que os itens de configuração de software (ICS) transitam da camada mais interna para as camadas externas, tornando-se parte da configuração do software de uma ou mais versões da aplicação ou sistema.
+
+À medida que um ICS se move através de uma camada, as ações deduzidas por cada tarefa GCS podem ser ou não aplicáveis, pois caso não sejam solicitadas alterações para o ICS, a camada de controle de alteração não se aplica. Um ICS possui uma versão específica do software, sendo mantido um registro do ICS, tal como seu nome, data de criação, designação da versão etc, para fins de auditoria da configuração e relato para aqueles que precisam ter conhecimento.
+
+
+No vídeo a seguir, você assistirá explicações sobre Controle de alterações de software.
+
+
+Gerenciamento de mudanças
+A camada controle de alterações, definida na Figura 3, é denominada de gerenciamento de mudanças por Sommerville (2019). As mudanças podem ser necessárias a partir de alterações nas necessidades organizacionais e nos requisitos, ou em função de defeitos que necessitam ser corrigidos.
+
+O gerenciamento de mudanças permite que as alterações sejam aplicadas ao sistema de uma maneira controlada, ou seja, garante que a evolução do sistema seja controlada e que as alterações mais urgentes e com bom custo-benefício sejam priorizadas.
+
+A Figura 4 ilustra um processo de gerenciamento de mudanças que deve entrar em vigor quando o software for entregue para lançamento aos clientes ou para implantação dentro de uma organização, cabendo destacar que o formalismo depende da complexidade do software.
+
+Atenção
+Importante, também, são as ferramentas utilizadas no gerenciamento de mudanças, tais como um sistema de rastreamento de defeitos ou um software integrado a um pacote de gerenciamento de configuração de sistemas de larga escala, como o Rational Clear Case.
+
+
+Figura 4 – Gerenciamento de mudança. Fonte: O Autor.
+Clique nas informações a seguir.
+Você sabia
+Os fatores que influenciam a decisão sobre a implementação ou não de uma mudança incluem as consequências de não fazer a mudança em caso de uma falha de software muito grave que compromete o uso operacional do sistema; usuários beneficiados pela mudança; os custos envolvidos na mudança; caso uma nova versão do software tenha sido disponibilizada recentemente aos clientes, pode fazer sentido postergar a mudança para a próxima mudança.
+
+Nos produtos de software, tal como o CAD, as solicitações de mudança vêm da equipe de suporte ao cliente, da equipe de marketing da empresa ou dos próprios desenvolvedores, sendo que esses pedidos podem refletir sugestões e feedbacks de clientes ou análises do que é oferecido pelos produtos concorrentes. Neste caso, o processo de solicitação de mudança, mostrado na Figura 4, é iniciado depois da liberação do sistema aos clientes.
+
+Durante o desenvolvimento, quando novas versões do sistema são criadas por meio de construções sistemáticas, não há necessidade de um processo formal de gerenciamento de mudanças, pois as mudanças que afetam os componentes individuais são passadas diretamente para o desenvolvedor do sistema, que pode aceitá-las ou indicar por que não são necessárias. No entanto, uma autoridade independente, como um arquiteto do sistema, deve avaliar e priorizar as mudanças que afetam os módulos do sistema produzidos por diferentes times de desenvolvimento.
+
+Em alguns métodos ágeis, os clientes propõem mudanças nos requisitos do sistema e trabalham com a equipe de desenvolvimento na avaliação dos impactos das mudanças e nas decisões relativas à implementação das mesmas.
+
+Gerenciamento de versões
+O gerenciamento de versões tem como objetivo controlar as diferentes versões de componentes de software e dos sistemas, envolvendo também a garantia de que as alterações feitas por diferentes desenvolvedores não interfiram umas com as outras. De acordo com Sommerville (2019), o gerenciamento de versões é o processo de gerenciamento de codelines e baselines.
+
+A Figura 5 ilustra que diferentes baselines usam versões diferentes dos componentes de cada codeline, onde podemos destacar a mainline que incorpora uma sequência de baselines representando diferentes versões do sistema.
+
+
+Figura 5 – Codelines e baselines. Fonte: O Autor.
+As baselines são importantes porque, muitas vezes, é preciso recriar uma versão individual de um sistema, tal como a instanciação de um software em versões específicas para cada cliente, ou mesmo recriar a versão entregue a um cliente, caso relate defeitos em seu sistema que necessitem ser alterados.
+
+Existem dois tipos de sistemas de controle de versão modernos:
+
+Clique nas informações a seguir.
+
+
+Ambos os sistemas possuem funcionalidades semelhantes, mas as implementam de maneiras diferentes.
+
+As principais características destes sistemas são:
+
+Clique nas barras para ver as informações.
+Identificação de versão e lançamento
+As versões gerenciadas de um componente recebem identificadores únicos quando são submetidas a um sistema, permitindo que diferentes versões do mesmo componente sejam gerenciadas, sem alterar o nome dele.
+
+Registro do histórico de mudanças
+Manutenção dos registros das mudanças feitas para criar uma versão nova de um componente, com base em uma versão anterior.
+
+Desenvolvimento independente
+Permite que diferentes desenvolvedores possam estar trabalhando simultaneamente no mesmo componente, controlando os componentes em que se fez check-out para edição, e assegura que as mudanças feitas em um componente por desenvolvedores diferentes não interfiram umas nas outras.
+
+Apoio de projeto
+Apoia o desenvolvimento de vários projetos que compartilham componentes.
+
+Gerenciamento de armazenamento
+Pode utilizar mecanismos eficientes que garantam que não sejam mantidas cópias duplicadas de arquivos idênticos, tal como casos em que há apenas pequenas diferenças entre os arquivos. O sistema de controle de versão pode armazenar estas diferenças em vez de manter várias cópias dos arquivos.
+
+A maior parte do desenvolvimento de software é uma atividade para ser realizada por um time, então, frequentemente, diversos membros trabalham no mesmo componente de modo simultâneo.
+
+Vamos exemplificar um cenário baseado na Figura 6, a fim de que possamos entender como funcionam os sistemas com repositório centralizado, tal como o SVN (Subversion).
+
+Um engenheiro de software utiliza uma área de trabalho “ALFA”, um segundo engenheiro, a área de trabalho “BETA”, ambos requerem mudanças em componentes comuns. Para apoiar o desenvolvimento independente sem interferências, todos os sistemas de controle de versão usam o conceito de um repositório de projeto, mantendo uma versão 'mestre' de todos os componentes, que é utilizada para criar as baselines para a construção do sistema.
+
+Ao modificar componentes, os desenvolvedores copiam estes componentes do repositório para sua área de trabalho, ou seja, realizam a operação de check-out, e executam implementações nestas cópias. Após implementadas as alterações, realizam a operação de check-in, ou seja, os componentes modificados são devolvidos para o repositório, criando uma versão nova do componente, que pode ser compartilhada.
+
+
+Figura 6 – Check-in e check-out de repositório centralizado. Fonte: O Autor.
+Em um sistema de controle de versão distribuído, tal como o Git, existe um repositório 'mestre' no servidor que mantém o código produzido pelo time de desenvolvimento. Em vez de simplesmente fazer o check-out dos arquivos de que precisa, um desenvolvedor cria um clone do repositório do projeto, que é baixado e instalado em seu computador.
+
+Os desenvolvedores trabalham nos arquivos necessários e mantêm as novas versões em seu repositório particular, em seu próprio computador. Quando terminam de fazer as alterações, realizam um commit nas mesmas, atualizando seu repositório. A disponibilização dessas alterações para o repositório do projeto ocorre por meio de uma operação push, cabendo ao gerente de configuração ‘puxar' (pull) esses arquivos para o repositório do projeto, ou seja, um repositório pode se comunicar com qualquer outro através das operações básicas pull e push.
+
+Gerenciamento de releases
+Uma release, ou lançamento de sistema, é uma versão do software distribuída para os clientes, podendo esses lançamentos serem categorizados, para software de mercado, em lançamentos principais (major releases), por oferecerem uma nova funcionalidade significativa, e lançamentos secundários (minor releases), que consertam defeitos e solucionam problemas relatados por clientes, tal como IDE 4.2.
+
+Comentário
+Isto significa um lançamento secundário 2 do lançamento principal 4 da IDE, sendo esses lançamentos secundários comumente gratuitos. Entretanto, provavelmente o cliente terá que pagar pela versão 5.0.
+
+Um lançamento de produto de software não é apenas o código executável do sistema, podendo incluir:
+
+
+A complexidade do processo de gerenciamento de lançamentos do sistema depende do número de clientes, pois pode ser preciso criar lançamentos do sistema para cada cliente, em função, por exemplo, de diferentes hardwares. Neste caso, os sistemas e processos de gerenciamento de configurações têm de ser projetados para fornecer informações sobre quais clientes têm quais versões do sistema e a relação entre os lançamentos e as versões do sistema. No caso de um problema com um sistema entregue, o GCS deve ser capaz de recuperar todas as versões dos componentes utilizadas nesse sistema específico.
+
+Resumindo
+Vimos neste módulo que um processo de gestão de configuração de software (GCS) define cinco tarefas: Identificação dos itens de configuração de software (ICS), controle de versão, controle de alteração, auditoria de configuração e relatos.
+
+O gerenciamento de mudanças permite que as alterações sejam aplicadas ao sistema de uma maneira controlada, ou seja, garante que a evolução do sistema seja controlada e que as alterações mais urgentes e com bom custo-benefício sejam priorizadas.
+
+
+O gerenciamento de versões tem como objetivo controlar as diferentes versões de componentes de software e dos sistemas, envolvendo também a garantia de que as alterações feitas por diferentes desenvolvedores não interfiram umas com as outras.
+
+
+O gerenciamento de releases, cuja complexidade depende do número de clientes, requer que os processos de gerenciamento de configuração sejam projetados para fornecer informações sobre quais clientes têm quais versões do sistema e a relação entre os lançamentos e as versões do sistema.
+
+Agora é com você! Vamos verificar se atingimos o objetivo deste módulo? Você está convidado a realizar as atividades a seguir.

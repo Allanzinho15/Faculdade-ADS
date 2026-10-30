@@ -1,0 +1,133 @@
+Análise de sistemas orientada a objetos
+É fundamental no desenvolvimento de software moderno, oferecendo uma abordagem coerente e eficiente para capturar os requisitos do sistema e modelar soluções complexas. Ao entender seus conceitos e práticas, desenvolvedores e analistas podem criar sistemas mais robustos, flexíveis e reutilizáveis, que se alinham melhor às necessidades dos usuários finais. Esse conhecimento teórico não apenas melhora a qualidade do design do sistema, mas também facilita a comunicação dentro das equipes de desenvolvimento, estabelecendo uma linguagem comum que apoia uma implementação eficaz e uma manutenção simplificada ao longo do ciclo de vida do software.
+
+
+Entenda neste video as etapas de levantamento e análise de requisitos na análise de sistemas orientada a objetos.
+
+
+
+Análise de sistemas
+
+Antes de entrarmos no universo da análise sob a perspectiva da orientação a objetos, vamos fazer breves comentários sobre a atividade de análise no contexto do desenvolvimento de software. De maneira simples, a atividade de análise busca identificar o que os usuários e outros interessados (stakeholders) necessitam que o sistema realize. A análise de sistemas envolve investigar os problemas e requisitos (necessidades dos usuários) de um contexto específico, com o objetivo de construir um sistema automatizado.
+
+
+O foco da atividade de análise é estudar e entender o funcionamento de um sistema sob pelo menos alguns pontos de vista:
+
+
+Da estrutura que sustenta o sistema (os dados).
+Dos procedimentos e processos intervenientes no sistema.
+Da dinâmica de funcionamento do fluxo de informações e dados.
+
+Além desses, outros aspectos podem ser adicionados, dependendo da especificidade do sistema em construção.
+
+
+A atividade de análise, por ser muito abrangente, costuma ser dividida da seguinte forma. Acompanhe!
+
+
+
+Levantamento de requisitos
+Também chamado de investigação dos requisitos, consiste em entender a realidade, identificar a abrangência do sistema e capturar as necessidades dos usuários. Isso é feito usando técnicas específicas para o levantamento de requisitos.
+
+
+Análise dos requisitos
+Consiste no estudo e compreensão das necessidades, bem como do funcionamento e da dinâmica da organização. O objetivo é construir modelos que representem o sistema a ser desenvolvido em sua concepção lógica, sem considerar os recursos tecnológicos que o sustentarão.
+
+A atividade de análise não considera nenhum recurso tecnológico que possa ser utilizado pelo sistema em construção. A ideia é construir uma estratégia de solução sem considerar como (com que tecnologia) essa estratégia será construída.
+
+
+Atenção
+A preocupação da atividade de análise é identificar O QUE o sistema deve fazer para atender às necessidades de seus usuários.
+
+
+A finalidade da atividade de análise é construir a melhor solução, que possa ser implementada em qualquer tecnologia (plataforma operacional, linguagem de programação e banco de dados), de acordo com as disponíveis no mercado, naquele momento.
+
+
+Na orientação a objetos, o foco está na identificação, compreensão e definição dos objetos de software e em como eles irão colaborar para atender satisfatoriamente aos requisitos dos usuários.
+
+
+Levantamento de requisitos
+
+Requisito pode ser definido como uma condição ou capacidade que deve ser alcançada por um sistema para satisfazer uma necessidade.
+
+
+Nessa fase, o objetivo é dialogar com as pessoas ligadas ao sistema (patrocinadores, gestores, usuários atuais e futuros, entre outros) para compreender suas necessidades e expectativas individuais. O foco principal está na compreensão do problema.
+
+
+Atenção
+As necessidades e preferências dos usuários são tecnicamente denominadas requisitos. Os desenvolvedores e outras partes interessadas se reúnem para identificar os requisitos do sistema, levando em conta o contexto específico e o domínio do problema ao qual o sistema se aplica.
+
+
+Para que os desenvolvedores possam identificar as necessidades dos usuários do sistema, é usado um conjunto de técnicas de levantamento de dados, desde as tradicionais entrevistas, reuniões, observação do ambiente do usuário e questionários até técnicas mais sofisticadas como brainstorm.
+
+
+O produto gerado por essa fase é o documento de requisitos, que contém todos os requisitos necessários ao sistema. Confira sua classificação!
+
+
+
+Requisitos funcionais
+Declaram as funcionalidades necessárias ao sistema.
+
+
+Requisitos não funcionais
+Apresentam algumas características associadas a uma, algumas ou todas as funcionalidades, e referem-se a aspectos de qualidade, confiabilidade, desempenho, portabilidade, segurança e usabilidade do sistema.
+
+Para exemplificar melhor, considere um sistema financeiro que precise das seguintes funcionalidades:
+
+
+Cadastramento dos pagamentos
+Quitação dos pagamentos
+Cadastramento das receitas
+Quitação das receitas
+Emissão das faturas
+
+Cada uma das cinco funcionalidades anteriores representa um requisito funcional do sistema. Imagine, então, que o sistema precise ser touch screen. Tal característica da funcionalidade Emissão das faturas é um requisito não funcional de usabilidade (relacionada com uma interface de qualidade). Outro requisito não funcional de segurança seria a necessidade de um backup diário da base de dados.
+
+
+
+Programadora em conexão com usuário do sistema.
+
+A correta identificação e seu registro no documento de requisitos são cruciais para a precisão e a qualidade do processo de desenvolvimento do sistema. Um requisito faltante ou outro mal definido pode ser fatal para seu sucesso. Esse documento seguirá como base da comunicação entre os desenvolvedores e os usuários, devendo ser validado por estes, uma vez que servirá de norte para as atividades subsequentes do desenvolvimento do sistema. É, portanto, fundamental a participação ativa e efetiva dos usuários do sistema na fase de levantamento de requisitos.
+
+
+No documento de requisitos estará definido, também, o escopo do sistema. Portanto, o principal objetivo da fase de levantamento de requisitos é compreender profundamente o sistema antes de iniciar sua construção.
+
+
+Análise de requisitos
+
+Nessa fase, os requisitos funcionais e não funcionais são traduzidos para os modelos que a equipe planeja utilizar.
+
+
+A principal atividade é desdobrar os requisitos funcionais em funcionalidades do sistema, uma vez que não necessariamente há uma relação de 1 para 1, ou seja, um requisito funcional pode demandar mais de uma funcionalidade e uma funcionalidade pode agregar mais de um requisito funcional.
+
+
+A análise de requisitos tem, minimamente, duas perspectivas ou visões. Confira!
+
+
+
+Análise do domínio (ou do negócio)
+Visa identificar ou modelar os objetos que serão usados na aplicação. Por exemplo, Pagamento é um objeto no contexto do sistema financeiro, usado para exemplificar os requisitos funcionais. Logo, Pagamento é um objeto do domínio, assim como Recebimento e Fatura.
+
+
+Análise da aplicação
+Nessa etapa, identificamos objetos importantes para o sistema, mesmo que não sejam óbvios para os analistas de domínio. Esses objetos são específicos da aplicação, como uma interface de cadastramento de pagamentos em um sistema financeiro. O objetivo é apenas identificar esses objetos, sem detalhar sua implementação, que será feita na fase de projeto.
+
+Entenda melhor com o esquema a seguir.
+
+
+Análise do domínio
+
+
+Objetos do domínio (relacionado ao problema).
+
+
+Análise da aplicação
+
+
+Objetos da aplicação (relacionado a aspectos computacionais de alto nível).
+
+
+Os principais diagramas UML utilizados nas fases de análise incluem os diagramas de casos de uso e de classes. Em alguns casos, também são úteis os diagramas de interação e de estados.
+
+
+Curiosidade
+Análise pode ser traduzida em ”faça a coisa certa”.

@@ -1,0 +1,104 @@
+MÓDULO 1
+Descrever o planejamento de gerenciamento de configurações
+
+CONCEITO DE GERENCIAMENTO DE CONFIGURAÇÕES
+Consideremos que uma equipe de engenheiros de software desenvolve uma aplicação para gestão de vendas cujo fluxo de processo é iterativo e incremental, aplicando-se a cada subconjunto de requisitos as tarefas típicas de um processo de desenvolvimento de software, isto é, levantamento de requisitos, análise, projeto, implementação, testes e implantação.
+
+Ao final, após o aval da equipe de qualidade, é disponibilizada aos usuários uma versão em produção. Imediatamente, essa equipe aplica as referidas tarefas em um segundo subconjunto de requisitos, sendo que, durante a implementação da versão 2, soa o alarme do ambiente de produção informando que foi detectada uma falha na versão 1.
+
+Temos dois cenários possíveis:
+
+CENÁRIO 1
+
+1
+Finalizar a versão 2 com as alterações necessárias à eliminação do defeito.
+
+Ou
+CENÁRIO 2
+
+2
+Aplicar as alterações na versão 1, colocá-la em produção e refletir as alterações na versão 2.
+
+O que você faria? Seria tecnicamente viável um software com defeito em produção até que seja substituído por uma nova versão?
+
+Resposta
+Este cenário, sem dúvida, seria um risco. Neste caso, a melhor solução técnica é o cenário 2. Temos basicamente duas tarefas a executar: Primeira, obter a versão 1 e realizar as alterações devidas e, segunda, replicar as alterações realizadas na versão 1 na versão em desenvolvimento.
+
+A solução para o nosso pequeno estudo de caso exige a implantação de um processo de gerenciamento de configurações de software (GCS).
+
+Atenção
+Importante, o software está em constante processo de mudança, principalmente pela volatilidade dos requisitos, pela evolução tecnológica ou pelos defeitos detectados, ou seja, surgem necessidades de alterações em função de atualização de plataforma, de novos recursos de hardwares, de adaptações a novos requisitos do negócio, de restrições orçamentárias ou de cronograma que causam a redefinição do sistema ou produto e outros.
+
+O GCS inclui um conjunto de atividades destinadas a gerenciar as alterações identificando os artefatos que precisam ser alterados, estabelecendo relações entre eles, definindo mecanismos para gerenciar diferentes versões desses artefatos, controlando as alterações impostas e auditando e relatando as alterações feitas. O GCS gerencia alterações através de todo o ciclo de vida de um software, podendo ser visto como uma atividade de garantia de qualidade do software aplicada através de todo o processo de desenvolvimento do software.
+
+Comumente, tais atividades cabem à equipe de qualidade, podendo ser designada uma equipe específica para controlar o processo GCS. Cabe destacar que alterações não controladas podem impactar negativamente a qualidade do software, sendo a gestão de alterações parte essencial da gestão da qualidade.
+
+Pressman (2016), identifica quatro importantes elementos que devem compor um sistema de GCS:
+
+Clique nas barras para ver as informações.
+Elementos de componente
+Conjunto de ferramentas acopladas em um sistema de gestão de arquivos que possibilita acesso à gestão de cada item de configuração de software.
+
+Elementos de processo
+Coleção de ações e tarefas que definem uma abordagem eficaz da gestão de alterações para todas as partes envolvidas na gestão, engenharia e uso do software.
+
+Elementos de construção
+Conjunto de ferramentas que automatizam a construção do software, assegurando que tenha sido montado o conjunto apropriado de componentes validados.
+
+Elementos humanos
+Conjunto de ferramentas e características de processo usados pela equipe de software para implementar um GCS eficaz.
+
+Planejamento de gerenciamento de configurações
+O plano de gerenciamento de configurações descreve os padrões e procedimentos que devem ser adaptados para atender aos requisitos e às restrições de cada projeto específico. O plano de GCS deve incluir:
+
+
+A inclusão de outros tópicos no plano GCS é possível, tal como o gerenciamento de software oriundo de fornecedores externos e procedimentos de auditoria dos processos de GCS. A definição de responsabilidades inclui quem é o responsável pela entrega de cada documento ou de componente de software para a garantia da qualidade e para o gerenciamento de configuração, bem como os revisores de cada documento.
+
+
+Assista, a seguir, um vídeo sobre Itens de Configuração de Software:
+
+
+Gestão de item de configuração de software (ICS)
+Um fato comum no desenvolvimento de software é a alteração, pois clientes querem modificar requisitos, engenheiros de software e gerentes querem modificar seus métodos.
+
+Comentário
+Por que tanta necessidade de mudanças? O entendimento do problema evolui durante o processo de desenvolvimento de software, gerando a necessidade de alterações.
+
+Vamos ao entendimento do conceito item de configuração de software (ICS), cuja identificação está prevista no plano de GCS. Um ICS é uma informação criada como parte do processo de engenharia de software, tal como única seção de uma grande especificação ou um caso de teste em um grande conjunto de testes, ou seja:
+
+Exemplo
+Um ICS é todo ou parte de um artefato, por exemplo, um documento, um conjunto inteiro de casos de teste ou um programa ou componente com nome.
+
+Um ICS pode incluir ferramentas de software sob o controle de configuração, tais como versões específicas de editores, compiladores, browsers e outras ferramentas automáticas.
+
+Como essas ferramentas foram usadas para produzir documentação, código-fonte e dados, elas devem estar disponíveis quando alterações forem feitas na configuração do software, pois uma nova versão de uma ferramenta (por exemplo, uma IDE) pode produzir resultados diferentes daqueles da versão original.
+
+
+Figura 1 – Objetos de configuração. Fonte: O Autor.
+Os ICS são organizados como objetos de configuração que podem ser persistidos em um banco de dados, sendo que cada objeto de configuração tem um nome, atributos e pode estar associado a outros objetos. De acordo com a Figura 1, os objetos de configuração EspecificaçãoProjeto, ModeloDados, ComponenteN, CódigoFonte e EspecificaçãoTeste são definidos individualmente, estando relacionados entre si, como mostram as setas. As setas curvas são indicativas de relacionamento de composição, de modo que ModeloDados e ComponenteN são parte do objeto EspecificaçãoProjeto.
+
+Você sabia
+Um conceito importante na gestão de configuração de software é a referência, que é uma especificação ou produto que tenha sido formalmente revisado e acordado, que depois serve de base para mais desenvolvimento, e pode ser alterado somente por meio de procedimentos formais de controle de alteração.
+
+Uma vez estabelecido um ICS como uma referência, podem ser feitas alterações, mas deve ser aplicado um processo específico e formal para avaliar e verificar cada alteração. No contexto de Engenharia de Software, uma referência é um marco no desenvolvimento de software. Uma referência é marcada pelo fornecimento de um ou mais ICS que foram aprovados em consequência de uma revisão técnica.
+
+Vamos exemplificar:
+
+Considerando que os elementos de um modelo de projeto foram documentados e que todas as partes do modelo foram revisadas, corrigidas e então aprovadas, o modelo do projeto torna-se uma referência. Outras alterações na arquitetura do programa, documentadas no modelo de projeto, podem ser feitas apenas depois que cada uma tenha sido avaliada e aprovada. Embora as referências possam ser definidas em qualquer nível de detalhe, as referências de software mais comuns estão na Figura 2.
+
+
+Figura 2 – ICS versus banco de dados de projeto. Fonte: O Autor.
+A Figura 2 ilustra a sequência de eventos que levam a uma referência, pois a partir de tarefas de engenharia de software são gerados os ICSs, sendo posteriormente revisados, aprovados e registrados em um banco de dados de projeto ou repositório de software.
+
+Quando um engenheiro de software quer fazer uma alteração em um ICS que se tornou referencial, o mesmo é copiado do banco de dados de projeto para o ambiente de desenvolvimento do engenheiro. Porém, esse ICS somente poderá ser modificado se os controles de GCS, tal como o controle de versão, forem seguidos.
+
+Resumindo
+Vimos neste módulo que o gerenciamento de configurações de software (GCS) inclui um conjunto de atividades destinadas a gerenciar alterações, identificando os artefatos que precisam ser alterados, estabelecendo relações entre eles, definindo mecanismos para gerenciar diferentes versões desses artefatos, controlando as alterações impostas e auditando e relatando as alterações feitas.
+
+
+O plano de gerenciamento de configurações descreve os padrões e procedimentos que devem ser adaptados para atender aos requisitos e às restrições de cada projeto específico, cabendo destaque à identificação dos itens de configuração de software (ICS) e da base de dados onde serão armazenados os ICSs.
+
+
+Um ICS é uma informação criada como parte do processo de engenharia de software, tal como um caso de teste em um grande conjunto de testes, podendo o mesmo tornar-se um referencial registrado no banco de dados. A partir deste registro, qualquer alteração será aplicada de acordo com controles de GCS.
+
+Agora é com você! Vamos verificar se atingimos o objetivo deste módulo? Você está convidado a realizar as atividades a seguir.

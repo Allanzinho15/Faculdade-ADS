@@ -1,0 +1,31 @@
+O processo de desenvolvimento ágil Scrum
+Veja, a seguir, o fluxo do processo Scrum, seus papéis, eventos e artefatos produzidos:
+
+
+O processo de desenvolvimento ágil Scrum
+
+
+
+O fluxo de processo Scrum está ilustrado na Figura 11. Os requisitos que definem as funcionalidades a serem entregues são agrupadas pelo product owner no product backlog.
+
+ 
+
+Veja mais detalhes sobre este fluxo, a seguir:
+
+
+
+Reunião de planejamento de sprint
+No início de cada sprint, é realizada a reunião de planejamento de sprint, com a participação do product owner, scrum master e scrum teams, a fim de que sejam priorizados e selecionados os requisitos do product backlog que serão implementados no sprint em planejamento. Esses requisitos são decompostos em tarefas, para cada tarefa é alocado um responsável que realiza a sua estimativa. Ao final da reunião, essas tarefas passam a compor o sprint backlog.
+
+
+Desenvolvimento do sprint
+Na sequência, a scrum team inicia o desenvolvimento do sprint de acordo com o planejado. No início de cada dia do sprint, a daily scrum permite o compartilhamento, entre os membros da equipe, do que foi concluído no dia anterior e quais as prioridades do dia atual. O scrum master conduz essa reunião.
+
+
+Reunião de revisão de sprint
+Ao final do sprint, ocorre a reunião de revisão de sprint que permite a geração de um product backlog revisto, sendo definidas as prováveis exigências para o próximo sprint; os requisitos podem ser ajustados em função de sua volatilidade ou de novas tecnologias. Participam dessa reunião o project owner, o scrum master e a scrum team.
+
+
+Reunião de retrospectiva do sprint
+A última atividade da iteração sprint é a reunião de retrospectiva do sprint com a finalidade de levantar as lições aprendidas nessa iteração, incluindo os pontos positivos e o que precisa ser aprimorado nas próximas reuniões.
+

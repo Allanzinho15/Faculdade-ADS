@@ -1,0 +1,79 @@
+Modelagem de atividades na prática
+Assim como o diagrama de estados deve ser criado para classes com comportamento complexo, o diagrama de atividades deve ser criado para os casos de uso com fluxos de controle complexos. Assim como o diagrama de estados é aplicado a apenas uma classe, cada diagrama de atividades deve ser feito para um único caso de uso.
+
+
+No entanto, o diagrama de atividades pode também ser utilizado para modelar o funcionamento geral de um negócio, oferecendo uma visão de alto nível dos macroprocessos, ou para detalhar a lógica de uma regra de negócio específica, proporcionando uma visão mais aprofundada.
+
+
+Para nosso exemplo prático de modelagem de atividades, será feita a modelagem de atividades do caso de uso enviar veículo para conserto. Para a confecção do diagrama de atividades, deve ser observada a descrição do caso de uso a ser modelado. Como o caso de uso de exemplo já foi introduzido, vamos apresentar uma descrição para ele, e para o caso de uso encerrar aluguel, do qual ele pode ser acionado por meio de um relacionamento <>.
+
+
+Assista ao vídeo para compreender como a apresentação deverá permitir a prática da modelagem de atividades, a partir de determinado minimundo, utilizando a UML.
+
+
+
+Roteiro de prática
+
+
+A seguir, temos as duas descrições dos casos de uso encerrar aluguel e enviar veículo para conserto.
+
+
+Caso de uso encerrar aluguel
+
+
+Funcionário inicia caso de uso.
+ 
+Sistema solicita código do funcionário.
+ 
+Funcionário fornece seu código.
+ 
+Sistema valida código e solicita CNH do cliente.
+ 
+Funcionário fornece CNH.
+ 
+Sistema disponibiliza aluguel.
+ 
+Funcionário informa encerramento do aluguel, informando possíveis observações. Caso encerramento se deva a um defeito no veículo, o caso de uso enviar veículo para conserto é realizado.
+ 
+Sistema armazena informações e encerra o aluguel.
+ 
+Caso de uso é encerrado.
+
+Caso de uso enviar veículo para conserto
+
+
+Funcionário inicia caso de uso.
+ 
+Se o veículo estiver alugado, o sistema obtém placa do veículo diretamente do registro do aluguel quando o caso de uso é iniciado a partir do caso de uso encerrar aluguel e não executa o próximo passo. Caso contrário, o sistema solicita a placa do veículo.
+ 
+Funcionário fornece placa do veículo.
+ 
+Sistema armazena indisponibilidade do veículo e mostra oficinas disponíveis.
+ 
+Funcionário seleciona oficina.
+ 
+O sistema armazena as informações do conserto e encerra o caso de uso, retornando ao caso de uso encerrar aluguel, caso tenha sido iniciado a partir dele.
+
+Observe que no passo 7 do caso de uso encerrar aluguel pode ocorrer a chamada do encerrar aluguel (relacionamento <>), e o passo 2 desse caso de uso trata dessa chamada. Observando a lógica do encerrar aluguel, é possível identificar:
+
+
+Ao receber o veículo com defeito, ele pode estar alugado ou não.
+ 
+Se estiver alugado, o aluguel é encerrado.
+ 
+O veículo é colocado indisponível.
+ 
+A oficina é escolhida.
+ 
+O veículo é enviado para a oficina.
+
+O diagrama de atividades correspondente é apresentado a seguir.
+
+
+
+
+Diagrama de atividades.
+
+O que você achou do conteúdo?
+
+Relatar problema

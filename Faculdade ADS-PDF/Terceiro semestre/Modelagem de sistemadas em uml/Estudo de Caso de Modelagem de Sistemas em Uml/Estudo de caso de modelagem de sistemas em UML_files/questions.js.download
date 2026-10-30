@@ -1,0 +1,756 @@
+// Dados default utilizados no builder
+let defaultQuestionData = {
+	negativeFeedback: `<div style="font-size: 1rem;">
+							<p class="mb-0"><strong>Opa! Algo não deu certo.</strong></p>
+							<p>Mas não se preocupe, você pode voltar ao tópico {{link}} e, após reler o conteúdo, tentar novamente.</p>
+					   </div>`,
+	positiveFeedback: `<p class="mb-0"><strong>Parabéns!</strong> A alternativa <strong>{{correta}}</strong> está correta.</p>`
+}
+
+let defaultPrintData = '<p class="mb-0">A alternativa <strong>{{correta}}</strong> está correta.</p>'
+
+const questions = {
+	/* 
+		idContainer: {
+			questions: [
+				{
+					uuid:'',
+					title: `Título da questão`,
+					answers: [
+						{
+							uuid:'',
+							text: `Texto da opção`,
+							correct: false
+						}, 
+						{	
+							uuid:'',
+							text: `Texto da opção`,
+							correct: true
+						}
+					],
+					positiveFeedback:{
+						title: `Título do feedback`  => `Comentário` é o valor padrão
+						text: `Texto do feedback`
+					},
+					negativeFeedback:{
+						title: `Título do feedback`  => `Comentário é o valor padrão
+						text: `Texto do feedback`
+					}, 
+					questionId: `idDessaQuestão`
+				}
+			], 
+			unlockCondition: [`idDaQuestãoDesejada`] ou quantidade de questões
+									Ex:  [`q1q1`] ou 1...N
+									
+									1 para apenas uma das questões,
+									2 para duas questões,
+									N para N questões ou
+									o questionId: `q1q1` para alguma questão específica.
+		}
+		
+	*/
+	question1: {
+		questions: [{
+				uuid: '',
+				title: `1. (IESES – 2016) Um contrato de desenvolvimento de software definiu que a primeira entrega atenderia somente requisitos funcionais. Dada esta primeira entrega, o cliente entrou em contato com a empresa encarregada do desenvolvimento. O cliente dizia que não poderia aceitar esta entrega, pois o sistema estava muito lento, sendo que as especificações do contrato eram bem claras sobre o tempo de resposta do sistema. Neste cenário, pode-se afirmar que:`,
+				buttonName:`Responder`,
+				textAlertNoOption:`Atenção, pelo menos uma opção deve ser marcada!`,
+				titleFeedback: `Comentário`,
+				buttonFeedbackTryAgain: `Tentar novamente`,
+				answers: [{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O cliente está errado, pois não é possível especificar em contrato garantias sobre o tempo de resposta do sistema.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O cliente está errado, pois o tempo de resposta seria um requisito não funcional do sistema.</p>`,
+						correct: true
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O cliente está correto, pois o cliente está sempre correto, independentemente do que está escrito no contrato</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O cliente está errado, pois o tempo de resposta não pode ser considerado como requisito de sistema.</p>`,
+						correct: false
+					},
+
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O cliente está correto, pois o tempo de resposta é um requisito funcional do sistema.</p>`,
+						correct: false
+					},
+				],
+				positiveFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+							<br/>
+							<p>A primeira entrega inclui a avaliação somente dos requisitos funcionais, que correspondem aos serviços a serem disponibilizados aos usuários, sendo o tempo de resposta um requisito não funcional, ou seja, não incluída nessa entrega inicial.  </p>
+						</div>
+					`
+				},
+				negativeFeedback: {
+					text: `{{defaultText}}`,
+					link: `<a href="#RNF" class="mdc-text-yellow-200"><u>Requisitos não funcionais (RNF) </u></a>`
+				},
+				questionId: `q1q1`
+			},
+			{
+				uuid: '',
+				title: `2. (Instituto Excelência ‒ 2018 ‒ Adaptada) Considerando a análise de requisitos e os requisitos funcionais de um software, assinale a alternativa abaixo que contém apenas exemplos de requisitos funcionais.`,
+				buttonName:`Responder`,
+				textAlertNoOption:`Atenção, pelo menos uma opção deve ser marcada!`,
+				titleFeedback: `Comentário`,
+				buttonFeedbackTryAgain: `Tentar novamente`,
+				answers: [{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O Sistema deverá cadastrar médicos; A base de dados deve ser protegida para acesso apenas de usuários autorizados; O sistema deve ser implementado em PHP com banco de dados SQL.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O tempo de resposta do sistema não deve ultrapassar 30 segundos; O sistema deverá gerar cadastro e agendamento de consultas; O Sistema deve ter autenticação de duplo fator.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O sistema deverá cadastrar prontuários médicos; O sistema deve gerar relatórios de pacientes atendidos; O sistema deverá fazer o cancelamento de consultas.</p>`,
+						correct: true
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">Infraestrutura da rede e computadores devem ser padrão open source; O tempo de resposta do sistema não deve ultrapassar 30 segundos. A base de dados deve ser protegida para acesso apenas de usuários autorizados.</p>`,
+						correct: false
+					},
+
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O sistema deverá permitir consultas por todos os médicos; O sistema deve gerar relatórios de prontuários; A implementação do sistema deve usar o padrão MVC.</p>`,
+						correct: false
+					},
+
+				],
+				positiveFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+							<br/>
+							<p>A opção C descreve somente serviços que deverão estar disponibilizados pelo sistema aos usuários.</p>
+						</div>
+					`
+				},
+				negativeFeedback: {
+					text: `{{defaultText}}`,
+					link: `<a href="#RF" class="mdc-text-yellow-200"><u>Requisitos funcionais (RF)</u></a>`
+				},
+				questionId: `q1q2`
+			}
+		],
+		unlockCondition: 1
+	},
+	question2: {
+		questions: [{
+				uuid: '',
+				title: `1. (ESAF - 2004) Na modelagem com UML, o Diagrama de Casos de Uso fornece:`,
+				buttonName:`Responder`,
+				textAlertNoOption:`Atenção, pelo menos uma opção deve ser marcada!`,
+				titleFeedback: `Comentário`,
+				buttonFeedbackTryAgain: `Tentar novamente`,
+				answers: [{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O comportamento dinâmico do sistema, tornando-se ideal para especificar as exigências de tempo real ou restrições do desenho.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O contexto completo de uma interação, inclusive os objetos e seus relacionamentos pertinentes a uma interação particular.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O comportamento estático do ator que participa deste diagrama, apenas com o objetivo de receber a informação final de execução do processo.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">Um modo de descrever a visão externa do sistema e suas interações com o mundo exterior, representando uma visão de alto nível da funcionalidade do sistema mediante uma requisição do usuário.</p>`,
+						correct: true
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">Um gráfico de atores montado sem a especificação de domínio, comunicações ou associações entre atores.</p>`,
+						correct: false
+					},
+				],
+				positiveFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+							<br/>
+							<p>O diagrama de casos de uso é um modelo com alto nível de abstração, onde são definidas as funcionalidades que irão atender às expectativas dos usuários denominados atores.</p>
+						</div>
+					`
+				},
+				negativeFeedback: {
+					text: `{{defaultText}}`,
+					link: `<a href="#module2-topic1" class="mdc-text-yellow-200"><u>Estudo de Caso – Diagrama de Casos de Uso </u></a>`
+				},
+				questionId: `q2q1`
+			},
+			{
+				uuid: '',
+				title: `2. 2)	(FGV - Senado Federal - 2008) Considere o caso de uso ilustrado na figura utilizando a notação UML.
+				<div class='col-12 text-center order-1 m-4'>
+                        <figure class="figure">
+                            <img src='img/img_09.jpg' alt='' title="Alberto Tavares da Silva." class='figure-img img-fluid rounded'>
+                        </figure>
+                </div>
+				A descrição do cenário que melhor descreve esse caso de uso é:
+				`,
+				buttonName:`Responder`,
+				textAlertNoOption:`Atenção, pelo menos uma opção deve ser marcada!`,
+				titleFeedback: `Comentário`,
+				buttonFeedbackTryAgain: `Tentar novamente`,
+				answers: [{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O atendente verifica o histórico dos pacientes que possuem consultas agendadas.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">Um paciente liga para a clínica para marcar uma consulta. A atendente verifica o histórico do paciente, busca um horário vazio e agenda a consulta.</p>`,
+						correct: true
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O atendente inclui os pacientes que têm consulta agendada e não possuem um histórico de atendimento.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O paciente liga para a clínica para agendar uma consulta e para alterar o seu histórico.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O atendente não marca consultas para pacientes que não tenham histórico na clínica.</p>`,
+						correct: false
+					},
+				],
+				positiveFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+							<br/>
+							<p>No caso de o paciente ligar para a clínica, o ator responsável pelo agendamento é o Atendente, sendo o comportamento do caso de uso “Verificar Histórico do Paciente” realizado pelo caso de uso inclusor “Agendar Consulta” em função da abstração que estabelece o relacionamento entre os dois casos de uso denominada <<include>>.</p>
+						</div>
+					`
+				},
+				negativeFeedback: {
+					text: `{{defaultText}}`,
+					link: `<a href="#module2-topic1" class="mdc-text-yellow-200"><u>Estudo de caso – descrições de casos de uso </u></a>`
+				},
+				questionId: `q2q2`
+			}
+		],
+		unlockCondition: 1
+	},
+	question3: {
+		questions: [{
+				uuid: '',
+				title: `1. (FEPESE – SEFAZ – SC – 2010) Relacione cada tipo de diagrama de UML da Coluna 1 com os respectivos elementos sintáticos da Coluna 2.<br/>
+				<br/>
+				Coluna 1<br/>
+				1. Diagrama de atividades<br/>
+				2. Diagrama de máquina de estados<br/>
+				<br/>
+				Coluna 2<br/>
+				( ) Ação<br/>
+				( ) Estado final<br/>
+				( ) Fluxo de controle<br/>
+				( ) Pseudoestado inicial<br/>
+				( ) Nodo fusão<br/>
+				( ) Pseudoestado escolha<br/>
+				( ) Transição<br/>
+				<br/>
+				Assinale a alternativa que indica a sequência correta, de cima para baixo.
+
+				`,
+				buttonName:`Responder`,
+				textAlertNoOption:`Atenção, pelo menos uma opção deve ser marcada!`,
+				titleFeedback: `Comentário`,
+				buttonFeedbackTryAgain: `Tentar novamente`,
+				answers: [{
+						uuid: '',
+						text: `<p class="mb-0 size_question">1 - 2 - 1 - 2 - 1 - 1 - 1</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">1 - 2 - 1 - 2 - 1 - 2 - 1</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">1 - 2 - 1 - 2 - 1 - 2 - 2</p>`,
+						correct: true
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">1 - 2 - 2 - 2 - 1 - 2 - 2</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">2 - 1 - 2 - 1 - 2 - 1 - 1</p>`,
+						correct: false
+					},
+				],
+				positiveFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+							<br/>
+							<p>Ação, fluxo de controle e nodo fusão são elementos sintáticos do diagrama de atividades, que modela a dinâmica do sistema como um todo; e estado final, pseudoestado inicial, pseudoestado escolha e transição são elementos sintáticos do diagrama de estados, também denominado diagrama de máquina de estados, que modela a dinâmica de objetos específicos.</p>
+						</div>
+					`
+				},
+				negativeFeedback: {
+					text: `{{defaultText}}`,
+					link: `<a href="#module3-topic2" class="mdc-text-yellow-200"><u>Modelo de atividades </u></a>`
+				},
+				questionId: `q3q1`
+			},
+			{
+				uuid: '',
+				title: `2. (CESGRANRIO ‒ BR Distribuidora ‒2008)
+				<div class='col-12 text-center order-1'>
+					<figure class="figure">
+						<img src='img/img_15.jpg' alt='' title="Alberto Tavares da Silva." class='figure-img img-fluid rounded'>
+					
+					</figure>
+				</div>
+				A figura anterior mostra um diagrama de classes UML desenvolvido para um projeto em que ainda não se sabe em que linguagem será realizada a implementação. Sobre o diagrama, assinale a afirmação correta.
+					`,
+				buttonName:`Responder`,
+				textAlertNoOption:`Atenção, pelo menos uma opção deve ser marcada!`,
+				titleFeedback: `Comentário`,
+				buttonFeedbackTryAgain: `Tentar novamente`,
+				answers: [{
+						uuid: '',
+						text: `<p class="mb-0 size_question">Há um erro na cardinalidade da associação entre ClasseA e ClasseB, pois se trata de uma composição e, como tal, um objeto da ClasseB só pode estar associado a um objeto da ClasseA.</p>`,
+						correct: true
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">Há uma dependência cíclica entre ClasseB, ClasseC e ClasseE, o que não é permitido pela UML.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O fato de que ClasseD generaliza ClasseA e ClasseB se traduz em herança múltipla, o que não é permitido pela UML.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">Retirando a ClasseA, o diagrama resultante corresponde ao padrão de projeto <strong>composite</strong>.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">e)	Invertendo o sentido de todas as generalizações, o diagrama resultante corresponde ao padrão de projeto <strong>chain of responsability</strong>.</p>`,
+						correct: false
+					},
+				],
+				positiveFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+							<br/>
+							<p>A composição é um relacionamento do tipo todo-parte, onde o objeto-todo (no caso a ClasseA) controla o ciclo de vida do objeto-parte (no caso a ClasseB), quer dizer, o objeto-parte não tem sentido existir sem o seu objeto-todo. Nesse caso, um objeto da ClasseB se relaciona com uma única instância de objeto da ClasseA.</p>
+						</div>
+					`
+				},
+				negativeFeedback: {
+					text: `{{defaultText}}`,
+					link: `<a href="#module3-topic0" class="mdc-text-yellow-200"><u>Modelo de classes </u></a>`
+				},
+				questionId: `q3q2`
+			}
+		],
+		unlockCondition: 1
+	},
+	question4: {
+		questions: [{
+				uuid: '',
+				title: `1. (ESAF – CGU – 2006) Quanto ao uso de diagramas na UML para a modelagem de objetos, é correto afirmar que o diagrama de sequência:`,
+				buttonName:`Responder`,
+				textAlertNoOption:`Atenção, pelo menos uma opção deve ser marcada!`,
+				titleFeedback: `Comentário`,
+				buttonFeedbackTryAgain: `Tentar novamente`,
+				answers: [{
+						uuid: '',
+						text: `<p class="mb-0 size_question">Descreve a funcionalidade do sistema percebida por atores externos.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">Apresenta a interação de sequência de tempo dos objetos que participam na interação.</p>`,
+						correct: true
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">Apresenta a interação de sequência de atores que participam na interação.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">Descreve a funcionalidade do sistema percebida por atores internos.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">Apresenta a interação de sequência estática de pacotes, relacionamentos e instâncias.</p>`,
+						correct: false
+					},
+				],
+				positiveFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+							<br/>
+							<p>O diagrama de sequência representa a sequência de mensagens trocadas entre objetos.</p>
+						</div>
+					`
+				},
+				negativeFeedback: {
+					text: `{{defaultText}}`,
+					link: `<a href="#module4-topic0" class="mdc-text-yellow-200"><u>Modelo de interação</u></a>`
+				},
+				questionId: `q4q1`
+			},
+			{
+				uuid: '',
+				title: `2. (FGV ‒ DPE-RJ ‒ 2014) Maria participa de um projeto cujo objetivo é desenvolver em C# uma versão orientada a objetos de um software legado, e deseja criar um diagrama UML para definir os modelos das classes do sistema. Esse diagrama deve representar as estruturas dessas classes, determinando:`,
+				buttonName:`Responder`,
+				textAlertNoOption:`Atenção, pelo menos uma opção deve ser marcada!`,
+				titleFeedback: `Comentário`,
+				buttonFeedbackTryAgain: `Tentar novamente`,
+				answers: [{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O conjunto de casos de testes segundo as melhores práticas de desenvolvimento de software.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">A sequência de criação dos objetos.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">Os atributos e os métodos.</p>`,
+						correct: true
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">Os casos de uso que deram origem ao diagrama.</p>`,
+						correct: false
+					},
+					{
+						uuid: '',
+						text: `<p class="mb-0 size_question">O número de objetos que serão criados quando o sistema estiver em produção.</p>`,
+						correct: false
+					},
+				],
+				positiveFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+							<br/>
+							<p>O modelo de classes de projeto permite o refinamento dos atributos identificados no modelo de classes de análise e a identificação dos métodos, ou operações, que compõem cada classe a partir dos diagramas de sequência ou comunicação.							</p>
+						</div>
+					`
+				},
+				negativeFeedback: {
+					text: `{{defaultText}}`,
+					link: `<a href="#module4-topic2" class="mdc-text-yellow-200"><u>Modelo de classes de projeto </u></a>`
+				},
+				questionId: `q4q2`
+			}
+		],
+		unlockCondition: 1
+	}
+}
+
+
+
+/*
+
+
+MODELO MÃO NA MASSA
+Caso utilize tire o comentário dos blocos abaixo
+
+*/
+
+///////////////////////////////////////////////////////////////////////////////////
+
+/*
+
+let defaultExerciseData = {
+	negativeFeedback: '<p class="mb-3">A alternativa correta é <strong>{{correta}}</strong>.</p>,
+	positiveFeedback: '<p class="mb-3">A alternativa <strong>{{correta}}</strong> está correta.</p>',
+}
+
+const exercises = {
+	maonamassa01: {
+		questions: [{
+				title: `1. `,
+				answers: [{
+						text: `<p class="mb-0 size_question">Opção A</p>`,
+						correct: false
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção B</p>`,
+						correct: false
+					},
+					{
+
+						text: `<p class="mb-0 size_question">Opção C</p>`,
+						correct: true
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção D</p>`,
+						correct: false
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção E</p>`,
+						correct: false
+					}
+				],
+				positiveFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+							
+						</div>
+					`
+				},
+				negativeFeedback: {
+					text: `
+	
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+						</div>
+					`,
+				},
+			},
+			{
+				title: `2. `,
+				answers: [{
+						text: `<p class="mb-0 size_question">Opção A</p>`,
+						correct: false
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção B</p>`,
+						correct: false
+					},
+					{
+
+						text: `<p class="mb-0 size_question">Opção C</p>`,
+						correct: true
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção D</p>`,
+						correct: false
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção E</p>`,
+						correct: false
+					}
+				],
+				positiveFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+							
+						</div>
+					`
+				},
+				negativeFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+						</div>
+					`,
+				},
+			},
+			{
+				title: `3. `,
+				answers: [{
+						text: `<p class="mb-0 size_question">Opção A</p>`,
+						correct: false
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção B</p>`,
+						correct: false
+					},
+					{
+
+						text: `<p class="mb-0 size_question">Opção C</p>`,
+						correct: true
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção D</p>`,
+						correct: false
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção E</p>`,
+						correct: false
+					}
+				],
+				positiveFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+							
+						</div>
+					`
+				},
+				negativeFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+						</div>
+					`,
+				},
+			},
+			{
+				title: `4. `,
+				answers: [{
+						text: `<p class="mb-0 size_question">Opção A</p>`,
+						correct: false
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção B</p>`,
+						correct: false
+					},
+					{
+
+						text: `<p class="mb-0 size_question">Opção C</p>`,
+						correct: true
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção D</p>`,
+						correct: false
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção E</p>`,
+						correct: false
+					}
+				],
+				positiveFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+							
+						</div>
+					`
+				},
+				negativeFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+						</div>
+					`,
+				},
+			},
+			{
+				title: `5. `,
+				answers: [{
+						text: `<p class="mb-0 size_question">Opção A</p>`,
+						correct: false
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção B</p>`,
+						correct: false
+					},
+					{
+
+						text: `<p class="mb-0 size_question">Opção C</p>`,
+						correct: true
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção D</p>`,
+						correct: false
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção E</p>`,
+						correct: false
+					}
+				],
+				positiveFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+							
+						</div>
+					`
+				},
+				negativeFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+						</div>
+					`,
+				},
+			},
+			{
+				title: `6. `,
+				answers: [{
+						text: `<p class="mb-0 size_question">Opção A</p>`,
+						correct: false
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção B</p>`,
+						correct: false
+					},
+					{
+
+						text: `<p class="mb-0 size_question">Opção C</p>`,
+						correct: true
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção D</p>`,
+						correct: false
+					},
+					{
+						text: `<p class="mb-0 size_question">Opção E</p>`,
+						correct: false
+					}
+				],
+				positiveFeedback: {
+					text: `
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+							
+						</div>
+					`
+				},
+				negativeFeedback: {
+					text: `
+	
+						<div style="font-size: 1rem;">
+							{{defaultText}}
+						</div>
+					`,
+				},
+			}
+		],
+		btnTryAgain: false,
+	}
+}
+*/

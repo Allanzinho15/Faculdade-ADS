@@ -1,0 +1,78 @@
+Gestão de configurações versus Implantação
+Vamos imaginar que estamos desenvolvendo um software utilizando o fluxo de processo iterativo e incremental, ou evolucionário, sendo esse fluxo comumente adotado atualmente. Após os testes, geramos a primeira versão e a disponibilizamos no ambiente de produção. Neste ponto, realizamos a implantação dessa versão.
+
+ 
+
+O que faz a equipe desenvolvedora? Inicia o desenvolvimento da segunda versão, ou seja, mais um conjunto de requisitos é analisado em um novo ciclo iterativo. Em algum momento, soa um alerta dos usuários informando que “temos um defeito” no software em produção.
+
+
+O que você faria como engenheiro de software?
+
+Cenário 1
+
+
+Terminar a versão 2 com o defeito corrigido e liberá-la para produção.
+
+
+Cenário 2
+
+
+Realizar a manutenção, eliminando o defeito na versão 1, liberá-la para produção e realizar a devida alteração na versão 2 em desenvolvimento.
+
+
+Tecnicamente, o cenário 2 é a melhor solução, pois o usuário teria de aguardar a liberação da versão 2, convivendo por um período com o impacto negativo do defeito do software no ambiente de produção.
+
+ 
+
+Neste pequeno estudo de caso, podemos destacar dois problemas para o engenheiro de software: o controle de alterações e o controle de versões.
+
+Nesta etapa, temos de considerar alguns aspectos que relacionam a gestão de configurações com a implantação de um sistema.
+
+ 
+
+Gestão de configuração, de forma simplificada, é um conjunto de tarefas que visam gerenciar as alterações durante o desenvolvimento do software, sendo essa gestão aplicada em todas as etapas do processo de desenvolvimento de software. Uma das tarefas do processo de gestão de configuração é denominada “controle de alterações”, permitindo solucionar o primeiro problema apresentado anteriormente.
+
+ 
+
+A Figura 15 ilustra um processo de controle de alterações, que, a partir de uma solicitação de alteração, requer a avaliação do mérito técnico, dos efeitos colaterais em potencial, do impacto global em termos de configuração e da funcionalidade e do custo da alteração. Na referida figura, o acrônimo ECO (Engineering Change Order) representa um pedido de alteração de engenharia.
+
+
+Qual a importância deste processo para a etapa de implantação?
+
+O processo tem de estar bem definido e ajustado à complexidade do software quando implantado, pois os defeitos serão identificados em produção, e os procedimentos de alteração estarão definidos.
+
+Lembre-se de que, em projetos complexos, a falta de um controle de alterações pode gerar o caos. Afinal, sabe-se que a fase de testes não é capaz de zerar a existência de erros.
+
+ 
+
+Vamos, agora, ao segundo problema do nosso pequeno exemplo apresentado, ou seja, “controle de versões”. Neste caso, ainda no contexto do gerenciamento de configuração, podemos destacar o gerenciamento de releases.
+
+ 
+
+Um release de sistema é uma versão do mesmo distribuída aos clientes. A gestão de releases determina quando um release será liberado para o cliente, gerencia o processo de criação e de meios de distribuição, bem como documenta o release.
+
+ 
+
+Um release pode incluir:
+
+ 
+
+Arquivos de configuração
+Arquivos de dados
+Um programa de instalação
+Documentação eletrônica ou em papel
+Empacotamento e publicidade associada
+
+Agora, confira o processo de controle de alterações.
+
+
+
+
+Figura 15 – O processo de controle de alterações.
+
+Processo de gerenciamento de riscos na etapa de planejamento
+
+
+Neste vídeo, você conhecerá um pouco sobre o processo de gerenciamento de riscos na etapa de planejamento.
+
+

@@ -1,0 +1,102 @@
+Especialista
+GRASP é o acrônimo para o termo em inglês general responsibility assignment software patterns. Ele foi definido por Craig Larman no livro Applying UML and patterns, que define padrões gerais para a atribuição de responsabilidades em software. Veja a diferenciação entre os padrões GoF e GRASP:
+
+
+Padrões GoF
+
+Abordam problemas específicos encontrados no projeto de software.
+
+
+Padrões GRASP
+
+São princípios gerais de design para software orientado a objetos.
+
+
+Neste conteúdo, você vai aprender seis padrões GRASP:
+
+
+Especialista
+Criador
+Baixo acoplamento
+Alta coesão
+Controlador
+Polimorfismo
+
+Confira, neste vídeo, o padrão GRASP especialista, que aborda o princípio geral de atribuição de responsabilidades aos objetos de um sistema.
+
+
+
+Problema
+
+Quando estamos elaborando a solução técnica de um projeto e utilizamos objetos, a nossa principal tarefa consiste em definir as responsabilidades de cada classe e as interações necessárias entre os objetos dela para cumprir as funcionalidades esperadas com uma estrutura fácil de entender, manter e estender.
+
+
+Solução
+
+O padrão especialista trata do princípio geral de atribuição de responsabilidades aos objetos de um sistema: atribua a responsabilidade ao especialista, isto é, ao módulo que tem o conhecimento necessário para realizá-la.
+
+
+Comentário
+Atribuir a responsabilidade ao especialista é uma especulação que utilizamos em nosso cotidiano. A quem você atribuiria a responsabilidade de trocar a parte elétrica da sua casa? Possivelmente a alguém com o conhecimento necessário para realizar a atividade (um especialista), ou seja, um eletricista.
+
+
+Suponha que você esteja desenvolvendo um site de vendas pela internet.
+
+
+A imagem a seguir apresenta um modelo simplificado de classes desse domínio. Digamos que o site deva apresentar o pedido do cliente e o valor total do pedido.
+
+
+Como você organizaria as responsabilidades entre as classes para fornecer as informações desejadas?
+
+
+
+Padrão especialista – classes de domínio.
+
+O valor total do pedido pode ser definido como a soma total de cada um de seus itens.
+
+ 
+
+Segundo o padrão especialista, a responsabilidade deve ficar com o detentor da informação. Nesse caso, quem conhece todos os itens que compõem o pedido? Ele próprio, não é mesmo? Então, vamos definir a operação obterValorTotal na classe pedido.
+
+
+Vamos responder, primeiro, a algumas perguntas:
+
+
+Onde ficaria o cálculo do preço de um item do pedido?
+Quais informações são necessárias para esse cálculo?
+Quem conhece as informações sobre a quantidade e o preço do produto?
+
+Como a classe item do pedido conhece a quantidade e o produto associado, vamos definir nela a operação obterValor.
+
+
+Para o preço do produto, basta o objeto referente ao item do pedido pedir essa informação para o produto, por meio da operação de acesso getPrecoUnitario.
+
+
+A imagem seguinte apresenta o diagrama de classes com a alocação de responsabilidades resultante.
+
+
+
+
+Padrão especialista – alocação de responsabilidades.
+
+Na próxima imagem, o diagrama de sequência ilustra a colaboração definida para implementar a obtenção do valor total de um pedido. Veja!
+
+
+
+
+Padrão especialista – colaboração (opção 1).
+
+Consequências
+
+Quando o padrão especialista não é seguido, é comum encontrarmos a solução deficiente (antipadrão) conhecida como God Class. Ela consiste em definir apenas operações de acesso (chamadas de getters e setters) nas classes de domínio. É usual também concentrarmos a lógica de determinada funcionalidade do sistema em uma única classe, geralmente definida na forma de uma classe de controle ou serviço. Essa classe implementa procedimentos utilizando as operações de acesso das diversas classes de domínio, que, nesse estilo de solução, são conhecidas como classes “idiotas”.
+
+
+Existem, entretanto, situações em que o uso desse padrão pode comprometer conceitos como coesão e acoplamento.
+
+
+Exemplo
+Qual classe deveria ser responsável por implementar o armazenamento dos dados de um pedido no banco de dados?
+
+ 
+
+Pelo princípio do especialista, deveria ser a própria classe pedido, uma vez que ela detém todas as informações que serão armazenadas. Porém, essa solução acoplaria a classe de negócio com conceitos relativos à tecnologia de armazenamento (e.g. SQL, NoSQL, arquivos etc.), ferindo o princípio fundamental da coesão, pois a classe pedido ficaria sujeita a dois tipos de mudança: no negócio e na tecnologia de armazenamento, o que é absolutamente inadequado.

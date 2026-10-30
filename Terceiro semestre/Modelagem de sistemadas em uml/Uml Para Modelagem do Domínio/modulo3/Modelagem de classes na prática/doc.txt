@@ -1,0 +1,59 @@
+Modelagem de classes na prática
+Vamos ver como modelar o diagrama de classes a partir do diagrama de casos de uso, mais especificamente, das descrições de cada caso de uso. A descrição do caso de uso alugar veículo será utilizada para a identificação das classes de entidade do minimundo.
+
+Classes de entidade são aquelas que representam os elementos do mundo real. São os elementos referente aos quais informações precisam ser tratadas e armazenadas pelo sistema. Porém, para que cada caso de uso seja executado, algumas classes de entidade são necessárias. A identificação de cada classe é feita da seguinte maneira:
+
+Os substantivos da descrição do caso de uso, que são as classes candidatas, devem ser sublinhados.
+Se cada substantivo sublinhado representar algo que possa ter mais de um representante no mundo real e se for necessário armazenar informações sobre cada representante, então esse substantivo passa de classe candidata a classe de entidade. Do contrário, ele é descartado.
+Outros substantivos sublinhados podem se referir às características dessas classes de entidade.
+Com a identificação de como as classes candidatas se relacionam, definindo nome do relacionamento e multiplicidade.
+Vamos ver isso na prática!
+
+Neste vídeo, você vai assistir à prática da modelagem de classes, que envolve a criação do diagrama que representa as classes de um sistema, seus atributos, métodos e relacionamentos a partir de um determinado minimundo, utilizando a UML.
+
+
+Roteiro de prática
+Considerando a descrição do caso de uso alugar veículo apresentada, veja que ator funcionário executa caso de uso alugar veículo, de acordo com os seguintes passos:
+
+Funcionário inicia o caso de uso.
+Sistema solicita o código do funcionário.
+Funcionário fornece seu código.
+Sistema valida e solicita os dados do cliente.
+Funcionário fornece a carteira nacional de habilitação (CNH) do cliente.
+Sistema verifica a CNH.
+Se a CNH já for cadastrada, o sistema disponibiliza os demais dados (nome, telefone e endereço) e vai para o passo 7.
+Se não for, o funcionário fornece demais dados (Nome, telefone e endereço).
+Sistema armazena informações.
+Sistema disponibiliza tipos de veículo de acordo com os automóveis à disposição para aluguel.
+Funcionário seleciona tipo de veículo.
+Sistema disponibiliza veículos daquele tipo.
+Funcionário seleciona veículo, informando data de início e de fim de aluguel.
+Sistema armazena dados do aluguel.
+Caso de uso é encerrado.
+Cenário de exceção 1
+
+No passo 4, o código fornecido pelo funcionário no passo 3 não é validado pelo sistema:
+
+4a. Sistema não valida código do funcionário.
+4b. Se não for a terceira tentativa, o sistema retorna ao passo 3.
+4c. Se for a terceira tentativa, o passo 12 é executado.
+Cenário de exceção 2
+
+No passo 7, não há veículos disponíveis para aluguel:
+
+7a. Passo 12 é executado.
+No caso de uso alugar veículo, temos o substantivo funcionário (que também é um ator) citado nos passos 1, 2, 3, 5, 6b, 8 e 10. Em relação ao funcionário, as duas perguntas do item 2 têm resposta positiva. Então, funcionário é uma classe de entidade. Repetindo os passos 2, 3 e 4 para todos os substantivos sublinhados, obtemos as classes de entidade funcionário, cliente, aluguel, tipo de veículo e veículo.
+
+Por que essas classes? Porque elas representam elementos do mundo real referentes aos elementos dos quais o sistema deve armazenar informações. Como atributos (características) de cada classe, temos os demais substantivos: código do funcionário; CNH, nome, telefone e endereço do cliente e data de início e fim do aluguel.
+
+Mas lembre-se: nem todos os atributos estarão explicitamente citados nas descrições. Como relacionamentos, veja as possibilidades que podemos inferir:
+
+Um funcionário cadastra um ou vários aluguéis (o que só pode ser realizado por um funcionário).
+Um cliente pode alugar vários veículos (um por vez) e que cada automóvel pode ser alugado por vários clientes (um por vez também). Portanto, o aluguel é uma classe associativa entre cliente e veículo.
+Um veículo sempre é de um determinado tipo, que, por sua vez, tem vários veículos associados.
+O processo realizado permite desenhar o diagrama de classes da figura. Ao fazer isso para cada caso de uso, conforme o processo descrito, as classes de entidade podem se repetir e novas classes e novos relacionamentos podem surgir. Ao final da análise de todos os casos de uso do diagrama, cria-se um diagrama final, unindo-se todos os diagramas criados, sem repetir classes e relacionamentos.
+
+No caso de uso em questão, o diagrama criado é o da imagem a seguir. Para que ele represente também o diagrama de classes final, está faltando apenas o relacionamento finalizar entre aluguel e funcionário, que representa que um funcionário pode finalizar vários objetos da classe aluguel, mas um aluguel só pode ser finalizado por um funcionário. Esse relacionamento é percebido no caso de uso encerrar aluguel. Veja!
+
+
+Imagem 9: Diagrama de classes.

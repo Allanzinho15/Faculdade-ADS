@@ -1,0 +1,69 @@
+Principais características do paradigma orientado a objeto
+Compreender conceitos como encapsulamento, herança, polimorfismo e abstração permite aos desenvolvedores criarem soluções mais modulares, flexíveis e fáceis de manter. Essas características capacitam os profissionais de tecnologia a desenvolverem sistemas que melhor representam e modelam objetos do mundo real, resultando em um código mais legível, reutilizável e escalável. Em resumo, o conhecimento teórico dessas características é essencial para impulsionar a qualidade e a eficácia no desenvolvimento de software orientado a objetos.
+
+
+Entenda neste vídeo as principais características do paradigma orientado a objeto.
+
+
+
+Os pilares da orientação a objetos
+
+Entre as principais características do paradigma orientado a objeto (OO), destacamos:
+
+
+Abstração
+
+É um processo mental que permeia toda a orientação a objetos, como um princípio básico que serve de base aos demais princípios. A abstração permite que, ao estudar algo, ponhamos nossa concentração nos aspectos relevantes e deixemos de lado os menos importantes. Permite, portanto, gerenciar a complexidade de um objeto para que possamos nos ater às suas propriedades essenciais. E os aspectos essenciais de um objeto dependem, claro, do contexto no qual os analisamos, podendo variar. Ou seja, uma propriedade de um objeto pode ser relevante em um contexto e não ser em outro.
+
+
+Encapsulamento
+
+O objeto esconde (encapsula) seus dados (atributos) do acesso indevido por outros objetos e somente permite que eles sejam acessados por operações implementadas pelos seus próprios métodos (funcionalidades que implementam o comportamento do objeto). Com isso, o encapsulamento protege os dados do objeto do uso arbitrário ou não intencional.
+
+
+O encapsulamento é uma técnica para minimizar a interdependência entre as classes, pois apenas os métodos da respectiva classe podem alterar seus dados (atributos), facilitando a identificação de erros e a alteração dos programas. Em outras palavras, garante que apenas os métodos da própria classe possam alterar o estado de um objeto, como podemos ver na imagem.
+
+
+
+Encapsulamento.
+
+Herança
+
+Mecanismo para derivar novas classes a partir da definição de classes existentes, com base em um processo de refinamento. Uma classe derivada ou descendente herda os dados (atributos) e o comportamento (métodos) da classe base ou ancestral ou ascendente. A implementação da herança garante a reutilização de código, que, além de economizar tempo e dinheiro, propicia mais segurança ao processo de desenvolvimento, visto que as funcionalidades da classe base podem ter sido usadas e testadas.
+
+
+Polimorfismo
+
+A palavra deriva do grego e significa “muitas formas”. A partir do momento em que uma classe herda atributos e métodos de uma (herança simples) ou mais (herança múltipla) classes base, ela tem o poder de alterar o comportamento de cada um desses procedimentos (métodos). Isso amplia o poder do reaproveitamento de código promovido pela herança, permitindo que se aproveite alguns métodos e se altere (redefina) outros. Dessa forma, um método com mesmo nome em classes distintas pode ter diferentes comportamentos.
+
+
+Exemplificando herança e polimorfismo
+
+Observe o exemplo da imagem a seguir, na qual identificamos uma herança: Pagamento em Dinheiro, Pagamento em CC (cartão de crédito) e Pagamento em Cheque herdam da classe Pagamento, o atributo Valor e o método Pagar.
+
+
+
+Herança e polimorfismo.
+
+Observe que, em cada classe filha (Pagamento em Dinheiro, Pagamento em Cartão e Pagamento em Cheque), o método PagarConta é escrito de forma diferente, com distintos parâmetros e códigos internos, conforme exige a respectiva forma de pagamento. Essa possibilidade ocorre pelo princípio do polimorfismo.
+
+
+Orientação a objetos como elemento de reusabilidade e extensibilidade
+
+A orientação a objetos minimiza a gestão da complexidade na medida em que permite uma organização mais adequada de seus componentes, além de seu reaproveitamento. Um dos principais motivos para a baixa produtividade na construção de sistemas computacionais é a dificuldade de reutilização de código.
+
+
+Atenção
+As hierarquias de classes (herança) são estruturas que permitem o seu reaproveitamento entre aplicações que, se bem projetadas, podem ser reutilizadas em vários sistemas, otimizando tempo e dinheiro.
+
+
+Além disso, tais estruturas podem ser estendidas (usando o princípio do polimorfismo) sem corromper o que já existe. Assim, podemos concluir que a orientação a objetos traz em si alguns benefícios. Veja!
+
+
+
+Reusabilidade
+O uso de componentes já escritos pode ser a base para outros softwares (através da herança).
+
+
+Extensibilidade
+Novos componentes podem ser desenvolvidos a partir de outros, já desenvolvidos, sem afetar o comportamento do componente de origem (mediante o princípio do polimorfismo) e permitindo que esse comportamento seja alterado, estendido para um novo contexto

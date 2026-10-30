@@ -1,0 +1,72 @@
+Template method
+Não são raras as situações em que grande parte de um processo bem estabelecido possa ser reutilizada em outros contextos, mas com pequenas modificações. O padrão template method parte desse princípio, definindo o esqueleto principal de uma operação genérica, com chamada para métodos abstratos em determinados trechos, delegando para os filhos a implementação desses métodos.
+
+
+Por exemplo, você pode criar um método de persistência genérico, com a abertura da conexão, inicialização da transação, execução do comando SQL, finalização da transação e desconexão, mas de forma que o comando a ser executado seja definido nos descendentes.
+
+
+Neste vídeo, exploramos uma técnica poderosa que define a estrutura de um algoritmo em uma classe-mãe, permitindo que subclasses específicas personalizem certos passos do processo sem alterar a estrutura geral. Veja como esse padrão facilita a reutilização de código e promove a flexibilidade em projetos de software orientado a objetos, enquanto exemplificamos sua aplicação prática em cenários do mundo real.
+
+
+
+Problema
+
+O padrão template method é aplicável quando temos diferentes implementações de uma operação, em que alguns passos são idênticos e outros são específicos de cada implementação.
+
+
+Para ilustrar o problema, suponha a implementação de duas máquinas de bebidas: uma de café e outra de chá. O procedimento de preparação é bem similar, pois há alguns passos em comum, mas outros específicos:
+
+
+
+Máquina de café
+
+
+Esquentar a água.
+Preparar mistura (via moagem do café).
+Colocar a mistura no copo.
+Adicionar açúcar, se selecionado.
+Adicionar leite, se selecionado.
+Liberar a bebida.
+
+
+Máquina de chá
+
+
+Esquentar a água.
+Preparar mistura (via infusão do chá).
+Colocar a mistura no copo.
+Adicionar açúcar, se selecionado.
+Adicionar limão, se selecionado.
+Liberar a bebida.
+
+O problema consiste em implementar diferentes formas concretas de um algoritmo padrão contendo pontos de variação, sem clonar o algoritmo em cada forma concreta nem produzir uma única implementação contendo diversas estruturas condicionais.
+
+
+Solução
+
+A imagem a seguir apresenta a estrutura geral da solução.
+
+
+
+
+Template method – estrutura.
+
+O procedimento genérico é definido em um método na classe abstrata. Cada passo do procedimento é definido como uma operação na classe abstrata. Alguns passos são comuns e, portanto, podem ser implementados na própria classe abstrata. Os passos específicos são definidos como operações abstratas na classe abstrata, sendo as implementações específicas implementadas nas subclasses, como é o caso do passo 2.
+
+
+A imagem seguinte apresenta uma solução para o problema das máquinas de café e de chá, utilizando o padrão template method.
+
+
+
+
+Template method – exemplo.
+
+O método prepararReceita, definido na superclasse MaquinaBebida, possui seis passos estabelecidos como operações na mesma classe. Note que existem dois passos definidos como operações abstratas, pois são executados de forma específica nas duas máquinas: prepararMistura e adicionarComplemento. Cada máquina derivada da classe abstrata MaquinaBebida implementa apenas os passos específicos, isto é, apenas a implementação das duas operações abstratas.
+
+
+Consequências
+
+O padrão template method evita a duplicação de algoritmos que apresentem a mesma estrutura, com alguns pontos de variação entre eles. O algoritmo é implementado apenas uma vez em uma classe abstrata, em que os pontos de variação são definidos. As subclasses específicas implementam esses pontos de variação. Dessa forma, qualquer alteração no algoritmo comum pode ser feita em apenas um módulo.
+
+
+Esse padrão é muito utilizado na implementação de frameworks, permitindo a construção de estruturas de controle invertidas, também conhecidas como princípio de Hollywood ou Não nos chame, nós o chamaremos, referindo-se a estruturas em que a superclasse é quem chama os métodos definidos nas subclasses, e não o contrário.

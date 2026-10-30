@@ -1,0 +1,75 @@
+Teste de sistema
+A última etapa na espiral, apresentada na Figura 14, é o teste de sistema, que extrapola os limites da engenharia de software, ou seja, considera o contexto mais amplo da engenharia de sistemas de computadores. Após ser validado, o software deve ser combinado com outros elementos do sistema, tais como hardware, base de dados etc.
+
+ 
+
+Vejamos alguns testes sugeridos nesta etapa.
+
+
+Teste de recuperação
+
+
+Este teste tem por objetivo avaliar o comportamento do software após a ocorrência de um erro ou de determinadas condições anormais.
+
+ 
+
+Os testes de recuperação devem também contemplar os procedimentos de recuperação do estado inicial da transação interrompida, impedindo que determinados processamentos sejam realizados pela metade e sejam futuramente interpretados como completos. Como exemplo, simular saque com defeito no caixa eletrônico ou simular saque com queda de energia.
+
+
+Teste de segurança
+
+
+Teste cujo objetivo é detectar as falhas de segurança que podem comprometer o sigilo e a fidelidade das informações, bem como provocar perdas de dados ou interrupções de processamento. Esses ataques à segurança do software podem ter origens internas ou externas.
+
+A ideia é avaliar o nível de segurança que toda a infraestrutura oferece, simulando situações que provocam a quebra de protocolos de segurança. Como exemplo, avaliar se a senha do cartão está sendo requisitada antes e depois da transação ou avaliar se a senha adicional e randômica está sendo requisitada no início da operação.
+
+
+Teste por esforço
+
+
+Teste com o objetivo de simular condições atípicas de utilização do software, provocando aumentos e reduções sucessivas de transações que superem os volumes máximos previstos para o software, gerando contínuas situações de pico e avaliando como o software e toda a infraestrutura estão se comportando. Como exemplo, simular 10.000 saques simultâneos.
+
+
+Teste de desempenho
+
+
+Teste cujo objetivo é determinar se o desempenho, nas situações previstas de pico máximo de acesso e concorrência, está consistente com os requisitos definidos.
+
+Devemos especificar os tempos de resposta considerados factíveis à realização de cada cenário. Como exemplo, garantir que manipulação com dispositivos físicos no saque não ultrapassem 10 segundos da operação.
+
+
+Teste de disponibilização
+
+
+Também chamado de teste de configuração, tem por objetivo executar o software sobre diversas configurações de softwares e hardwares. A ideia é garantir que a solução tecnológica seja executada adequadamente sobre os mais variados ambientes de produção previstos nas fases de levantamento dos requisitos.
+
+ 
+
+O referido teste também examina todos os procedimentos de instalação e instaladores a serem utilizados pelos clientes, bem como a documentação que será usada pelos usuários finais. Como exemplo, simular saque com impressora dos fornecedores X, Y e Z.
+
+
+Resumindo
+Neste módulo, pudemos avaliar a importância das etapas de implementação e testes do processo de desenvolvimento de software.
+
+ 
+
+À medida que o programador codifica a solução a partir dos modelos gerados na etapa de projeto, os testes são aplicados por meio de uma estratégia de testes em forma de espiral, incluindo quatro categorias de testes.
+
+ 
+
+Inicialmente, o teste unitário permite validar a estrutura interna de cada componente de software.
+
+ 
+
+O teste de integração possibilita validar a integração de novos componentes, ou componentes que passaram por manutenção, com os componentes previamente validados.
+
+ 
+
+O teste de validação inclui a realização de testes de alto nível realizados pelos usuários finais do sistema, inicialmente em ambientes controlados pelo desenvolvedor e, posteriormente, em ambientes de produção não controlados pelo desenvolvedor, a fim de que ocorra a verificação do atendimento aos requisitos. Ao final, podemos ter a aceitação do sistema pelo usuário.
+
+ 
+
+Finalizando, o teste de sistema, que extrapola os limites da Engenharia de Software, permite combinar o software com outros elementos do sistema, tais como hardware, base de dados etc.
+
+
+Agora, é com você! Vamos verificar se atingimos o objetivo deste módulo? Você está convidado a realizar as atividades a seguir.

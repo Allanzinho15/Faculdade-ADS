@@ -1,0 +1,27 @@
+Eventos Scrum
+Os eventos permitem otimizar a organização das inspeções e iterações, sendo por meio deles que os conceitos descritos são postos em prática de uma forma ágil e produtiva. Os eventos permitem, também, a minimização da necessidade de reuniões não contempladas no Scrum. Os eventos possuem um tempo pré-definido com uma duração máxima estipulada denominada de timebox, o que garante uma quantidade apropriada de tempo no planejamento.
+
+ 
+
+Vejamos os eventos Scrum.
+
+
+
+Sprint
+O Sprint corresponde a uma unidade de iteração em Scrum, tendo uma duração (timebox) em torno de um mês, ao final do qual é gerado um incremento de produto em condições de uso pelos usuários finais. Ele possui duração consistente durante todo o desenvolvimento. Cada Sprint inclui as atividades típicas de um processo de desenvolvimento de software, tais como, levantamento de requisitos, análise, projeto etc.
+
+
+Reunião de planejamento do Sprint
+A Reunião de planejamento do Sprint permite planejar o trabalho a ser realizado em dado Sprint, sendo esse plano resultado de trabalho colaborativo da equipe scrum. A reunião é limitada a 8h para um Sprint de um mês, dividida em duas partes que, respectivamente, buscam respostas às seguintes perguntas: O que será entregue no incremento resultante do Sprint planejado? Como será alcançado o trabalho necessário para entregar o incremento?
+
+
+Reunião diária do Sprint (Daily Scrum)
+A Reunião diária do Sprint (Daily Scrum), como diz o próprio nome, é um evento diário limitado a 15 minutos, no qual a equipe scrum ajusta as atividades e cria um plano para as próximas 24 horas. Isso é feito inspecionando o trabalho desde a última daily scrum e pela previsão do trabalho a ser feito antes da próxima reunião diária.
+
+
+Revisão do Sprint
+A Revisão do Sprint é realizada no final do sprint para inspecionar o incremento e adaptar, se necessário, o product backlog. Essa é uma reunião informal, e a apresentação do incremento destina-se a obter feedback e a fomentar a colaboração na equipe, não devendo ultrapassar quatro horas para sprints de um mês.
+
+
+Retrospectiva do Sprint
+A Retrospectiva do Sprint é uma oportunidade formal para a equipe scrum inspecionar e criar um plano de melhorias a ser seguido durante o próximo Sprint, sendo uma reunião limitada a 3h para sprints de um mês. Os objetivos dessa retrospectiva incluem verificar como correu o último sprint no que diz respeito às pessoas, relações, processos e ferramentas; identificar e ordenar os itens que correram de forma satisfatória e potenciais ajustes; e criar um plano para implementar melhorias no modo como a equipe scrum faz o seu trabalho.

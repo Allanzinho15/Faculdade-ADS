@@ -1,0 +1,54 @@
+Modelos como elementos de comunicação
+Os modelos facilitam a compreensão e a representação da realidade, tanto para os membros da equipe de desenvolvimento quanto para os usuários finais. Eles servem como ferramentas eficazes para traduzir os requisitos e as necessidades dos usuários em uma linguagem compreensível para os desenvolvedores, garantindo que o sistema atenda adequadamente às expectativas e às demandas. Além disso, os modelos auxiliam na validação e na verificação dos requisitos, contribuindo para o sucesso do projeto de desenvolvimento de software.
+
+
+Compreenderemos neste vídeo a utilização de modelos como elementos de comunicação no processo de desenvolvimento de sistemas computacionais. Assista!
+
+
+
+Entendimento e validação dos modelos com os usuários
+
+A partir dos modelos, compreendemos e nos certificamos do correto entendimento da realidade dos usuários.
+
+
+
+Equipe levantando dados com os usuários.
+Momento 1
+
+A equipe de desenvolvimento se reúne com os usuários e, usando técnicas de levantamento de dados, compreende a realidade e as necessidades dos usuários, visando implementá-las no sistema. Os dados levantados são registrados e usados na construção dos modelos. Esse momento acontece com maior intensidade na fase de requisitos, mas também está presente nas fases de análise e de projeto.
+
+
+Equipe construindo os modelos.
+Momento 2
+
+A equipe de desenvolvimento constrói os modelos que julga pertinentes para que se possa compreender e destacar os aspectos relevantes da realidade. Esse momento acontece nas fases de requisitos, análise e projeto.
+
+
+Equipe validando dados com os usuários.
+Momento 3
+
+A equipe de desenvolvimento se reúne com os usuários, apresentando e discutindo os modelos construídos, visando validá-los e responder à pergunta base: os modelos que construímos representam de fato a realidade dos usuários? Em caso positivo, prossegue-se no desenvolvimento; caso contrário, os modelos são ajustados e confirmados novamente com os usuários, até que estejam adequados. Esse momento acontece nas fases de requisitos, análise e projeto.
+
+
+
+Os modelos são fundamentais para garantir o correto entendimento da realidade dos usuários. A equipe coleta dados, constrói os modelos com base nessas informações e, finalmente, valida-os com os usuários para assegurar que representam adequadamente a realidade.
+
+
+Entendimento do sistema por membros da equipe de desenvolvimento
+
+
+Outra finalidade dos modelos no desenvolvimento de sistemas é orientar membros da equipe em relação às suas tarefas no processo.
+
+
+Exemplo
+O programador deve construir os programas, mas não tem livre acesso aos usuários e nem precisa, pois os modelos servem como elementos de comunicação com todos da equipe. Os projetistas do software devem compreender a realidade dos requisitos para construir os modelos de projeto, por isso precisam ler os modelos das fases de requisitos e de análise. Os programadores consultam os modelos de seu interesse e conversam com os membros que fizeram o levantamento de dados e a modelagem para compreenderem melhor o contexto e desenvolverem com mais eficiência os programas necessários.
+
+
+Outro exemplo é o projetista de interface, que precisa compreender o funcionamento de um determinado recurso para criar a interface adequada. Nesse caso, ele consulta o modelo que descreve a interação do usuário com o sistema para a funcionalidade em questão. Esse processo ocorre em todas as fases do projeto, já que sempre haverá desenvolvedores recebendo tarefas e consultando os modelos relevantes.
+
+
+A imagem a seguir ilustra a consulta de diferentes pessoas da equipe aos modelos desenvolvidos.
+
+
+
+Equipe consultando os modelos.

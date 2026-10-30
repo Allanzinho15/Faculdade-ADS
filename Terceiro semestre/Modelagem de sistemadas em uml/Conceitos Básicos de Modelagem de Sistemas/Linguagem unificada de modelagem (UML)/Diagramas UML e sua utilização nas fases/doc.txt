@@ -1,0 +1,62 @@
+Diagramas UML e sua utilização nas fases
+Esses diagramas servem como uma linguagem padrão para visualizar, especificar, construir e documentar os artefatos de um sistema. Desde a análise até a implementação e manutenção, os diagramas UML ajudam a comunicar conceitos complexos de forma clara e concisa, facilitando a compreensão entre os membros da equipe e garantindo uma representação precisa dos requisitos e da arquitetura do sistema em todas as etapas do processo de desenvolvimento.
+
+
+Comprenda neste vídeo o uso dos diagramas UML e sua utilização nas fases de análise e projeto do processo de desenvolvimento de software.
+
+
+
+Dificilmente usamos todos os diagramas da UML em um único sistema. Há um conjunto de 4 a 8 diagramas que são os mais usados: pacotes, casos de uso, classes, sequência (ou comunicação), estados, atividades, componentes e implantação. Todos os mencionados são relevantes, mas os em negrito são os essenciais.
+
+
+Já descrevemos aqui as atividades das fases de análise (levantamento e análise de requisitos) e projeto independentemente do processo de desenvolvimento por entender que ambas estarão presentes em qualquer processo que usemos. Agora, partindo desse mesmo pressuposto, vamos descrever os diagramas UML que podem ser usados em cada uma dessas três fases. Citaremos apenas os diagramas mais usados.
+
+
+Diagramas UML na atividade de análise
+
+Aqui estão os itens essenciais para a atividade de análise. Veja!
+
+
+
+Levantamento de requisitos
+
+Esboço inicial do diagrama de pacotes para grandes sistemas, evidenciando a necessidade de particionamento.
+Esboço inicial do diagrama de casos de uso.
+Esboço inicial do diagrama conceitual de classes em alto nível (sem detalhes).
+
+Análise de requisitos
+
+Detalhamento e aprofundamento do diagrama de pacotes.
+Detalhamento e aprofundamento do diagrama de casos de uso.
+Detalhamento e aprofundamento do diagrama conceitual de classes.
+Diagrama de estados para os objetos mais complexos durante seu ciclo de vida.
+Diagrama de atividades para elucidar um processo ou fluxo de trabalho relevante ou ainda para elucidar um caso de uso mais complexo.
+O diagrama conceitual de classes destaca as classes, incluindo seus principais atributos (inicialmente sem métodos), e os principais relacionamentos entre elas, geralmente representando apenas associações, que são os relacionamentos mais básicos entre classes.
+
+
+Os diagramas usados no levantamento de requisitos são, em geral, esboços para a própria pessoa ou para debater com colegas da equipe. Já na fase de análise de requisitos, alguns diagramas, em geral pacotes e casos de uso, são usados para conversas com usuários.
+
+
+Diagramas UML na atividade de projeto
+
+Aqui estão os itens essenciais para a atividade de projeto:
+
+
+Adição de detalhes ao diagrama conceitual de classes, que passa a ser o diagrama de classes de projeto.
+ 
+
+Diagrama de sequência ou diagrama de comunicação, para cenários de uso mais relevantes, o que ajuda a identificar métodos das classes envolvidas na interação.
+ 
+
+Detalhamento dos diagramas de estados elaborados na atividade de análise, podendo modelar outros objetos percebidos.
+ 
+
+Diagrama de componentes, caso o software use algum já pronto ou a ser construído.
+ 
+
+Diagrama de implantação, evidenciando as unidades computacionais e alocando os componentes nelas.
+ 
+
+Diagrama de atividades, esclarecendo métodos de classes mais complexos ou que usem processamento paralelo.
+
+O diagrama de classes de projeto é derivado do diagrama conceitual de classes, adicionando novos atributos, todos os métodos necessários e identificando os relacionamentos corretos entre as classes (não apenas associações). Ele também inclui as multiplicidades e outros elementos relevantes da UML.

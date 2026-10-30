@@ -1,0 +1,54 @@
+Mapeamento objeto-relacional
+O padrão da indústria de software atualmente é o paradigma orientado a objetos, que podem assumir estruturas de dados com elevado grau de complexidade, sendo que a maioria deles, em algum momento, necessita de persistência.
+
+ 
+
+Por outro lado, o padrão das tecnologias de banco de dados ainda é o modelo relacional, ou seja, temos uma estrutura de armazenamento bidimensional denominada tabela.
+
+
+O que fazer para integrar os dois padrões?
+
+Vamos utilizar o diagrama de classes como modelo conceitual do banco de dados e, a partir de então, gerar o modelo lógico de banco de dados, criando as tabelas necessárias às persistências exigidas pelos objetos. Esse processo é denominado mapeamento objeto-relacional. A Figura 12 ilustra um exemplo de associação muitos-para-muitos em um diagrama de classes, cujo mapeamento gera as três tabelas descritas.
+
+
+
+Figura 12 - Exemplo de associação muitos-para-muitos.
+
+Agora, confira o resultado do mapeamento muitos-para muitos:
+
+
+Plain Text
+
+
+
+Light Mode
+
+Copiar
+
+Realização do projeto da interface gráfica com o usuário
+
+
+O diagrama de casos de uso define as funcionalidades do sistema, sendo que cada caso de uso representa uma interação completa entre o sistema e um agente externo denominado ator. Nessa interação, precisamos definir uma interface como meio de comunicação homem-máquina. Nesse ponto, o requisito-chave não funcional é usabilidade, portanto é fundamental a participação do usuário no processo de definição das interfaces, ou seja, “deixe o usuário no comando”.
+
+ 
+
+Vamos apresentar possíveis questões relativas à interface que podem surgir: tempo de resposta – em um sistema de venda online com alto tempo de resposta, talvez ocorra uma desistência e uma ida para o concorrente; recursos de ajuda, disponíveis sem que haja necessidade de abandonar a interface; tratamento de erros, por meio de uma linguagem inteligível para o usuário; acessibilidade da aplicação, com foco no atendimento aos usuários com necessidades especiais.
+
+
+Resumindo
+Neste módulo, pudemos avaliar a importância da etapa de projeto no processo de desenvolvimento de software.
+
+ 
+
+Cabe ao engenheiro de software implementar as seguintes atividades que genericamente compõem a etapa de projeto:
+
+ 
+
+Refinamento dos aspectos estáticos e estruturais do sistema.
+Detalhamento dos aspectos dinâmicos do sistema.
+Detalhamento da arquitetura do sistema.
+Mapeamento objeto-relacional.
+Realização do projeto da interface gráfica com o usuário.
+ 
+
+Ao final desta etapa, podemos iniciar a implementação do software de acordo com as especificações contidas nos modelos de projeto gerados.

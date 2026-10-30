@@ -1,0 +1,6 @@
+Resumindo
+Neste módulo, destacamos os processos de desenvolvimento ágil Scrum e Processo Unificado Ágil (AUP). O Scrum é uma metodologia que possui uma destacada aplicação em projetos de software. Existe a possibilidade de aplicarmos a metodologia Scrum no gerenciamento de projeto ágil de software ou como processo ágil de desenvolvimento de software. Como todo processo ágil, aplica o fluxo de processo iterativo, sendo cada iteração denominada de sprint e, ao final de cada um destes, é gerada uma entrega, isto é, um software operacional.
+
+ 
+
+O método AUP tem suas origens no Processo Unificado (RUP), podendo ser considerado uma versão simplificada em função de sua adesão aos valores e princípios das metodologias ágeis. As fases do projeto permanecem as mesmas do RUP, tais como, concepção, elaboração, construção e transição. As mudanças significativas estão nas atividades iterativas compostas de modelagem, implementação, testes, implantação, gerenciamento de configurações, gestão de projetos e ambiente.

@@ -1,0 +1,196 @@
+MÓDULO 1
+Descrever a qualidade de processo e de produto de software
+
+Engenharia de Software vs. Qualidade
+Vamos iniciar nosso estudo sobre qualidade no contexto da área de conhecimento Engenharia de Software, que tem como principal produto o software.
+
+A cada dia, o produto software está mais presente nas nossas vidas, quer por meio das redes sociais, em nossos veículos ou nas nossas residências.
+
+No contexto da qualidade de software, podemos destacar a denominada “Crise do software” sintetizada pela afirmativa a seguir:
+
+A maior causa da crise do software é que as máquinas se tornaram várias ordens de magnitude mais potentes! Em termos diretos, enquanto não havia máquinas, programar não era um problema; quando tivemos computadores fracos, isso se tornou um problema pequeno, e agora que temos computadores gigantescos, programar tornou-se um problema gigantesco.
+DIJKSTRA, 1972
+
+Importante destacar que o aprimoramento tecnológico do hardware nos últimos anos permitiu o desenvolvimento de softwares cada vez mais complexos, tendo um forte impacto na indústria de software.
+
+Exemplo
+Podemos apresentar a substituição do paradigma estruturado pelo paradigma orientado a objetos, que permite o reuso intensivo de especificação, bem como uma melhor manutenibilidade e, como consequência, o desenvolvimento de softwares mais complexos.
+
+Podemos imaginar as sérias consequências na falha de um software embarcado em uma aeronave com 500 passageiros ou em um sistema de controle de tráfego aéreo de uma grande cidade. Uma falha seria algo bem trágico!
+
+Ambos os exemplos possuem uma característica comum: A complexidade. A melhor tratativa para a complexidade é a aplicação de metodologia que permita a decomposição do problema em problemas menores de forma sistemática, cabendo à engenharia de software essa sistematização.
+
+A engenharia de software é uma tecnologia em camadas . Veja:
+
+
+Figura 1 – Camadas da Engenharia de Software.
+Clique nas barras para ver as informações.
+Qualidade
+A camada qualidade garante que os requisitos que atendem às expectativas do usuário serão cumpridos.
+
+Processo
+A camada de processo determina as etapas de desenvolvimento do software.
+
+Métodos
+A camada de métodos define os artefatos gerados em função da técnica de modelagem adotada.
+
+Ferramentas
+A camada ferramentas estimula a utilização de ferramentas CASE.
+
+Retornando aos nossos exemplos, qual camada evitaria uma falha?
+
+Vejamos os seguintes argumentos e depois tire a sua conclusão.
+
+Atenção
+A camada base é a camada de processo, sendo a camada qualidade dependente da existência dessa, ou seja, a definição de um processo de desenvolvimento de software é condição para a implantação de um sistema de qualidade em um projeto de software.
+
+Os métodos e ferramentas da engenharia de software servem, entre outras coisas, ao propósito de garantir, ou pelo menos facilitar, a obtenção do objetivo de garantir a qualidade no software.
+
+
+Assista ao vídeo abaixo para saber um pouco mais sobre qualidade de software e as atividades de gerenciamento da qualidade no processo de desenvolvimento de software:
+
+
+Qualidade de Software
+De acordo com Pressman (2016), a qualidade de software é definida como uma gestão de qualidade efetiva, aplicada de modo a criar um produto útil que forneça valor mensurável para aqueles que o produzem e para aqueles que o utilizam.
+
+
+Roger Pressman
+Vamos a uma análise da citada definição:
+
+Clique nas informações a seguir.
+
+
+
+O gerenciamento de qualidade de software usualmente é estruturado em três atividades principais:
+
+
+Figura 2 – Gerenciamento da qualidade.
+Garantia de qualidade: Estabelece um conjunto de procedimentos e padrões organizacionais que permitem a geração de software com qualidade.
+
+Planejamento de qualidade: Permite o ajuste dos procedimentos e padrões a um determinado projeto de software.
+
+Controle de qualidade: Inclui a definição e aprovação de processos que assegurem que a equipe de desenvolvimento de software tenha seguido os procedimentos e os padrões de qualidade de projeto.
+
+A Figura 3 ilustra o relacionamento entre o processo de gerenciamento da qualidade e o processo de desenvolvimento de software proposta por Sommerville (2019). O primeiro permite uma verificação independente no segundo, verificando as entregas de artefatos do projeto. Uma melhor prática é que a equipe de garantia de qualidade seja independente da equipe de desenvolvimento, pois no caso de surgirem problemas, tal como atraso no projeto, poderia ocorrer um comprometimento da qualidade de modo a cumprir o cronograma.
+
+
+Figura 3 – Gerenciamento de qualidade versus processo de desenvolvimento.
+Fonte: O Autor.
+Podemos visualizar a qualidade de software sob duas dimensões:
+
+Clique nas barras para ver as informações.
+Processo
+Podemos destacar que o processo de desenvolvimento do software exige que diversas decisões sejam tomadas ao longo do mesmo. Portanto, se desejamos produzir software com qualidade, é necessário garantir a qualidade em todas as etapas do processo.
+
+Produto
+Destacamos que softwares mal testados provocam prejuízos enormes às empresas, pois um simples erro poderá, por exemplo, gerar requisições de compras desnecessárias, produzir indicadores falsos de produtividade, entre outros; podem, também, afetar o processo de tomada de decisão de gerentes e executivos que apoiam-se nas informações para minimizar riscos, direcionar esforços, promover investimentos, sempre na busca da excelência operacional, pois a qualidade das decisões está intimamente ligada à qualidade das informações disponibilizadas pelos softwares organizacionais.
+
+Qualidade do processo
+Processo é uma sequência de etapas que permitem a geração de um produto, no nosso caso, o software.
+
+Atenção
+O processo permite uma melhor tratativa em relação à complexidade de obtenção de um determinado produto, pois na maioria das vezes é um trabalho multidisciplinar realizado por analistas, programadores, gerentes de projeto, gerentes de teste e outros.
+
+A Engenharia de Software possui uma diversidade de modelos para processos de desenvolvimento de software que atendem a diferentes problemas, sendo um requisito importante na seleção de um processo a complexidade.
+
+Basicamente, quanto maior a complexidade de um sistema, mais formal deverá ser o processo adotado.
+
+Uma metodologia de processo genérica, segundo Pressman (2016), compreende cinco atividades:
+
+Comunicação
+A comunicação permite o entendimento do problema, a definição de objetivos para o projeto, bem como a identificação de requisitos.
+
+Planejamento
+Inclui o gerenciamento de projeto.
+
+Modelagem
+Abrange a geração de modelos, tal como o modelo de casos de uso.
+
+Construção
+Inclui, a partir dos modelos gerados, a codificação e os testes de software de acordo com o planejado.
+
+Entrega
+Disponibiliza o produto em produção de acordo com o planejado.
+
+A garantia da qualidade de um software inclui o estabelecimento de uma cultura de não tolerância a erros.
+
+Os processos devem estar estruturados com mecanismos de detecção de defeitos nos diversos artefatos gerados durante o processo, com o objetivo de evitar a propagação de defeitos nas fases seguintes, refletindo na inserção de defeitos durante a codificação. Os artefatos incluem qualquer entrega gerada durante o processo de software, incluindo, entre outros, os documentos de requisitos, os modelos, bem como o produto software.
+
+Comentário
+Usualmente, os testes estão relacionados ao produto software, mas podemos aplicar testes em todas as tarefas do processo de desenvolvimento de software, sendo esses denominados de testes de verificação, conhecidos também como testes estáticos. Os objetivos desses testes são os artefatos gerados durante todo o processo de desenvolvimento do software, tal como o diagrama de classes ou o diagrama de casos de uso.
+
+Atenção
+A produção de software com qualidade exige o estabelecimento de um processo de desenvolvimento de software, pois não poderemos garantir a qualidade de algo que não existe.
+
+Qualidade do produto
+Pressman (2016) descreve os fatores de qualidade do produto software de McCall, sendo uma proposta de categorização dos fatores que afetam a qualidade de software. Esses fatores de qualidade de software, apresentados na Figura 4, focam em três etapas de um produto de software: revisão do produto, transição e operação.
+
+
+Figura 4 – Fatores de qualidade de software de McCall.
+Fonte: O Autor.
+Vejamos uma descrição dos referidos fatores, cabendo destacar que a avaliação da qualidade de uma aplicação usando esses fatores possibilitará uma sólida indicação da qualidade de um software:
+
+Correção - O quanto um programa satisfaz a sua especificação e atende às necessidades do cliente.
+
+Confiabilidade - O quanto se pode esperar que um programa realize a função pretendida com a precisão exigida.
+
+Eficiência - A quantidade de recursos computacionais e código exigidos por um programa para desempenhar sua função.
+
+Integridade - O quanto o acesso ao software ou dados por pessoas não autorizadas pode ser controlado.
+
+Usabilidade - Esforço necessário para aprender, operar, preparar a entrada de dados e interpretar a saída de um programa.
+
+
+
+Facilidade de manutenção - Esforço necessário para localizar e corrigir um erro em um programa.
+
+Flexibilidade - Esforço necessário para modificar um programa em operação.
+
+Testabilidade - Esforço necessário para testar um programa de modo a garantir que ele desempenhe a função destinada.
+
+Portabilidade - Esforço necessário para transferir o programa de um ambiente de hardware e/ou software para outro.
+
+Reusabilidade - O quanto um programa, ou partes do mesmo, pode ser reutilizado em outras aplicações.
+
+Interoperabilidade - Esforço necessário para integrar um sistema a outro.
+
+
+A qualidade do produto pode ser garantida por meio de um sistemático plano de testes executado durante a etapa de codificação do processo de software, sendo esses testes denominados de testes de validação.
+
+Inicialmente, ocorre a validação da estrutura interna da unidade de software, bem como sua aderência aos requisitos estabelecidos.
+
+Em seguida, a validação da sua integração com as unidades de software desenvolvidas anteriormente, com destaque para as validações das interfaces dos componentes de software.
+
+Finalmente, ocorre a validação funcional e não funcional do software como um todo, sendo os usuários envolvidos nessa etapa.
+
+Os procedimentos de testes aplicados diretamente em softwares são também denominados de testes de software ou testes dinâmicos.
+
+Os testes de software podem sofrer um alto nível de automação, o que possibilita a criação de complexos ambientes de testes que simulam diversos cenários de utilização. Quanto mais cenários simulados, maior o nível de validação que obtemos do produto, caracterizando maior nível de qualidade do software desenvolvido.
+
+Custos da qualidade
+
+Figura 5 – O custo da qualidade.
+O custo da qualidade é composto pelo custo da conformidade e custo da não conformidade.
+
+Clique nas barras para ver as informações.
+Custo da conformidade
+Agrega o custo da prevenção de defeitos e o custo da detecção de defeitos ou falhas. O custo de prevenção inclui os esforços do sistema de qualidade em evitar a ocorrência de defeitos, tais como detalhamento de metodologias, treinamentos, utilização de ferramentas, estabelecimento de procedimentos, entre outros. O custo de detecção de defeitos, também denominado de custo de avaliação, é composto pelos custos relacionados à atividade de avaliação, detecção ou inspeção da qualidade do processo ou do produto, tais como revisões de artefatos (requisitos, modelos, planos de testes etc), inspeções de código, testes de software, auditorias, entre outros.
+
+Custo da não conformidade
+O custo proveniente da falta de qualidade, que desapareceria caso não surgisse nenhum erro antes ou depois da entrega do produto ao cliente, soma-se aos custos relacionados às correções de defeitos originados no processo de desenvolvimento de software, tais como retrabalhos, ações corretivas, atrasos nos cronogramas, perdas financeiras e operacionais, entre outros. Tais custos podem ser denominados de custos de falhas internas, ou seja, erros identificados antes da entrega do software ao cliente, e custos de falhas externas, associados aos erros identificados após a referida entrega.
+
+Quanto mais cedo ocorrer a identificação de um defeito, menor o custo.
+
+Resumindo
+Neste módulo, destacamos a importância da qualidade no contexto da engenharia de software. Vimos que a qualidade de software possui duas dimensões: processo e produto.
+
+A qualidade do processo exige a definição prévia de um processo de desenvolvimento de software que viabilize a sua aplicação.
+
+Nessa dimensão, são aplicados os testes de verificação nos artefatos gerados nas diversas etapas do processo de software, com o objetivo de impedir a propagação de defeitos nas etapas posteriores do referido processo.
+
+A qualidade do produto é aplicada ao software na etapa de codificação do processo de software. A partir de um plano de testes, são aplicados os testes de validação ou testes de software, que validam desde a estrutura interna de uma unidade de software até as funcionalidades por parte dos usuários.
+
+Atenção
+Lembre-se de que um sistema de qualidade tem um custo associado à conformidade, ou seja, à obtenção da garantia da qualidade do software, tendo, também, um custo associado à não conformidade, ou seja, à falta de qualidade do software.
+
+Agora é com você! Vamos verificar se atingimos o objetivo deste módulo? Você está convidado a realizar as atividades a seguir.

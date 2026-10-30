@@ -1,0 +1,83 @@
+Processo unificado
+O Processo Unificado, também denominado de Rational Unified Process (RUP), é um processo de desenvolvimento de software criado pela Rational Software Corporation, empresa fundada pelos criadores da UML, posteriormente adquirida pela IBM.
+
+
+O RUP é considerado um processo formal que permite ser utilizado na solução de problemas com alta complexidade, entretanto, pode ser customizado para projetos de qualquer escala.
+
+
+O RUP possui três princípios:
+
+
+
+Guiado por casos de uso
+O planejamento do desenvolvimento é feito em função dos casos de uso, de modo que o processo é iniciado pela abstração funcional, ou seja, pelos serviços desejados pelos usuários.
+
+
+Centrado em arquitetura
+O RUP enfatiza o papel da arquitetura permitindo ao arquiteto de software manter o foco nas metas corretas, tais como, compreensibilidade, confiança em mudanças futuras e reutilização.
+
+ 
+
+A arquitetura deve permitir a realização dos requisitos, abrangendo um conjunto de decisões estruturais e comportamentais, alinhado às duas categorias de diagramas ilustradas na Figura 8, com destaque para a modularização da solução.
+
+
+Iterativo e incremental
+O RUP aplica o modelo de processo de software iterativo e incremental. De forma evolucionária, novos requisitos são incorporados ocorrendo o versionamento das entregas de software ao usuário final, fundamental ao desenvolvimento de software moderno. Não necessariamente deve ocorrer uma entrega ao final de uma iteração.
+
+A Figura 9 ilustra o aspecto bidimensional do RUP. Na horizontal, temos as fases que permitem capturar o aspecto temporal do projeto, que podem ser utilizadas como marcos durante esse projeto, e na vertical, as atividades iterativas. Vejamos as descrições dessas fases.
+
+
+
+Figura 9 – O Processo Unificado
+
+O Processo Unificado (Rational Unified Process)
+
+
+
+Veja mais detalhes sobre as etapas do modelo unificado a seguir:
+
+
+
+Iniciação
+
+A fase de iniciação, também denominada de concepção, exige do engenheiro de software uma visão inicial e geral do sistema a ser desenvolvido, cabendo destacar a possibilidade da utilização dos modelos de estado ou de atividades no desenho dos processos de negócio, isto é, a aplicação da primeira atividade do fluxo de trabalho que é a modelagem de negócio. Tal modelagem permite aos engenheiros de software compreender o negócio e garantir que todas as partes interessadas tenham um entendimento comum do domínio do problema.
+
+ 
+
+A partir dessa compreensão do negócio, pode-se obter os requisitos fundamentais do projeto, isto é, requisitos funcionais e não funcionais. Em seguida, realizar a modelagem dos casos de uso mais críticos, incluídos os principais serviços disponibilizados aos usuários, e a modelagem de classes, para entendimento da estrutura de dados a ser gerenciada pelo sistema.
+
+ 
+
+A identificação dos principais requisitos, junto aos modelos de casos de uso e classes iniciais, permite o estabelecimento do escopo do projeto. Nessa fase, a arquitetura do sistema limita-se a um esquema provisório com os principais subsistemas e as funções e recursos que o compõem.
+
+ 
+
+Temos agora dois grandes desafios aplicáveis a muitos projetos de software: verificar a viabilidade técnica e financeira do projeto, bem como garantir o seu financiamento, visto que ambos os desafios incluem também a análise de riscos.
+
+ 
+
+Podemos avançar com o projeto? Caso positivo, vamos realizar o planejamento detalhado da fase de Elaboração e geral das demais fases. Caso negativo, encerramos nossas atividades.
+
+
+Elaboração
+Com o projeto de software aprovado, iniciamos a fase de elaboração, que é realizada de forma iterativa e incremental, de acordo com a Figura 9. Vamos reduzir o nível de abstração dos modelos de casos de uso e de classes iniciais, finalizando a atividade de análise do processo de software.
+
+ 
+
+Na sequência, temos a atividade de projeto na qual ocorre o refinamento de alguns modelos da análise e a criação de novos, assim como o modelo de interação, que representa os aspectos dinâmicos do sistema, além de construir um protótipo da interface com o usuário. A representação arquitetural é expandida em cinco visões do software: modelo de casos de uso, modelo de análise, modelo de projeto, modelo de implementação e modelo de implantação. Cada visão inclui um conjunto de modelos com seus respectivos diagramas. Nessa fase, devemos, também, minimizar os riscos e realizar o planejamento da fase de construção.
+
+
+Construção
+A fase de construção segue o modelo de arquitetura gerando os componentes, ou aplica-se o reuso, que tornam os casos de uso operacionais para os usuários.
+
+ 
+
+Os modelos gerados na fase de elaboração são concluídos para refletir a versão final do incremento de software. Com o avanço da codificação, são realizados os testes unitários, os testes de integração entre os componentes e os testes de validação, até o teste beta, em que os usuários realizam a validação em ambiente de desenvolvimento controlado.
+
+
+Transição
+A fase de transição tem como objetivo realizar a implantação do software no ambiente de produção. Inicialmente, o software é disponibilizado aos usuários para realização do teste beta em ambiente não controlado pelo desenvolvimento, tendo como foco a correção de defeitos e mudanças necessárias em função dos feedbacks dos usuários.
+
+ 
+
+Nessa fase, podem ocorrer a elaboração dos manuais do usuário, treinamento dos usuários, procedimentos de instalação, montagem de estrutura de suporte ou definição do processo de manufatura. Na conclusão dessa fase, o incremento torna-se uma versão de produção utilizável pela comunidade de usuários.

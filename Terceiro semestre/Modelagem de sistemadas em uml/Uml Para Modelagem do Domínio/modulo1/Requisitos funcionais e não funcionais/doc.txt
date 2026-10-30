@@ -1,0 +1,34 @@
+Modelagem de casos de uso na prática
+Aprender a modelagem de casos de uso na prática dá a você acesso a uma ferramenta interessante para traduzir os requisitos do cliente em funcionalidades tangíveis do sistema. Isso facilita a comunicação entre desenvolvedores, designers e stakeholders e garante que o produto final atenda às necessidades reais dos usuários.
+
+Para entender e treinar a confecção de um diagrama de casos de uso, vamos usar como minimundo uma locadora de veículos. Após entrevistar o responsável, chegou-se às seguintes conclusões:
+
+Cada cliente só pode alugar um veículo de cada vez, e o aluguel só pode ser feito quando um funcionário acessa o sistema.
+Um cliente pode consultar remotamente os veículos disponíveis, que são categorizados por tipo.
+O cliente pode prorrogar remotamente o aluguel sem que seja necessária a intervenção de algum funcionário.
+A devolução do veículo também só pode ser feita por um funcionário acessando o sistema, e não precisa ser o mesmo que registrou o aluguel.
+Três tipos de veículos estão disponíveis: luxo, normal e popular.
+Os veículos de um mesmo tipo têm preços e características similares.
+Quando a locadora adquire um veículo, um funcionário deve cadastrá-lo no sistema.
+video_library
+Modelagem de casos de uso na prática
+No vídeo a seguir, você assistirá a uma apresentação que permitirá a prática da modelagem de casos de uso a partir de determinado minimundo e utilizando a UML. A modelagem de casos de uso é uma técnica que descreve as interações entre usuários e um sistema, identificando suas principais funcionalidades.
+
+
+Roteiro de prática
+Agora vamos usar o diagrama de casos de uso para representar a descrição anterior do minimundo locadora de automóveis. O diagrama é criado em três passos:
+
+identificação dos atores
+identificação dos casos de uso
+desenho do diagrama
+A partir da descrição do minimundo, vamos identificar os atores e os casos de uso. Para identificar os atores, temos que perceber quem interage com o sistema. O texto resultante da entrevista mostra que apenas dois atores interagem com o sistema: cliente (acesso remoto) e funcionário. O próximo passo, após a identificação dos atores, é definir quais são as suas interações com o sistema. Cada interação corresponde a um caso de uso.
+
+No item 1 fica clara a existência do caso de uso alugar veículo, que é realizado pelo ator funcionário.
+Os itens 2 e 3 mostram a existência de dois casos de uso remotos: consultar veículos e prorrogar aluguel. Ambos os casos de uso são executados pelo ator cliente.
+O item 4 indica a existência do caso de uso devolver veículo, e o ator desse caso de uso é o funcionário.
+Os itens 5 e 6 não indicam nenhum novo caso de uso.
+Mas o item 7 introduz o caso de uso cadastrar novo veículo, que é realizado pelo funcionário.
+Uma vez identificados os atores e os casos de uso, o próximo passo é desenhar diagrama de casos de uso da imagem com os cinco casos de uso e os dois atores.
+
+
+Imagem 6: Diagrama de casos de uso.

@@ -1,0 +1,97 @@
+Diagrama de componentes
+Apresenta o relacionamento entre os diferentes componentes de um sistema de software. Na UML, o termo componente refere-se a um módulo que representa sistemas ou subsistemas com capacidade de interagir. Para isso, existe uma abordagem de desenvolvimento em torno de componentes.
+
+
+O diagrama de componentes permite documentar como os componentes estão estruturados, organizados e como se relacionam, permitindo uma melhor compreensão e facilitando a sua reutilização. Também serve para modelar arquivos de processos de negócio, descrevendo as partes que participam dele e suas relações.
+
+
+Assista ao vídeo para compreender o emprego do diagrama de componentes, utilizando a UML, ao longo do processo de desenvolvimento de software.
+
+
+
+O diagrama de componentes apresenta o relacionamento entre os diferentes componentes de um sistema de software. Na UML, o termo "componente" refere-se a um módulo que representa sistemas ou subsistemas com capacidade de interagir. Para isso, existe uma abordagem de desenvolvimento em torno de componentes. Nesse diagrama, são representados os diferentes componentes de software necessários para que o sistema funcione corretamente.
+
+
+Comentário
+Em uma abordagem de programação orientada a objetos, o desenvolvedor usa o diagrama de componentes para agrupar classes com base em um objetivo comum. Assim, é função do diagrama de componentes documentar como os componentes estão estruturados, organizados e como se relacionam, permitindo uma melhor compreensão e facilitando a sua reutilização. Também serve para modelar arquivos de processos de negócio, descrevendo as partes que participam dele e suas relações.
+
+
+Um diagrama de componentes suporta tanto a especificação dos componentes lógicos, como, por exemplo, componentes de negócio, de processo, entre outros. Os principais benefícios na construção desse diagrama são:
+
+
+Permitir visualizar a estrutura lógica e física do sistema.
+ 
+Identificar os componentes do sistema e como eles se relacionam.
+ 
+Perceber o comportamento do serviço quanto à interface.
+
+Componente
+
+
+Um componente nada mais é do que uma caixa preta (artefato do sistema) que possui vida autônoma e que, somente por meio de suas interfaces, oferece ou requer serviços de outras caixas pretas, sem que para isso tenha que conhecer seus conteúdos. Um componente é modelado ao longo do ciclo de vida de desenvolvimento, incluindo a concepção da funcionalidade do sistema por meio de casos de uso, definição das classes, entre outros.
+
+
+Na UML, os componentes também fazem uso de estereótipos. Os mais utilizados são arquivos, tabela, banco de dados, executável e biblioteca. Assim sendo, podemos dizer que um componente é qualquer arquivo que seja necessário à execução do sistema de informação.
+
+
+
+Representação de um componente.
+
+Os componentes são elementos de alto nível que permitem o agrupamento de várias interfaces sem considerá-las um pacote. Cada componente é representado por um retângulo contendo um nome que deve traduzir sua função. Se necessário, pode conter um estereótipo. No canto superior do retângulo, há um ícone que é também um retângulo com dois menores sobrepostos.
+
+ 
+
+Os componentes também podem ser descritos por meio da visão externa usando símbolos de interface colados na caixa do componente. Nesse caso, é interessante anexar uma máquina de estados para interfaces, portas e para o próprio componente para permitir uma descrição mais precisa.
+
+
+
+
+Exemplo de diagrama de componentes.
+
+Quando mais detalhes são necessários para a perfeita especificação de um componente, podemos definir uma estrutura interna de partes e conectores, usando o que podemos chamar de visão interna ou “caixa branca”. Nessa estrutura, geralmente estão contidos outros componentes. Esses componentes podem ser implementados por diferentes tipos de arquivo.
+
+
+Comentário
+No diagrama de componentes, esses tipos podem ser destacados por meio de estereótipos, representados por rótulos acima do nome do componente. Nas diretrizes da UML definidas pela OMG, um artefato é dito como sendo definido pelo usuário e representa um elemento concreto do mundo físico. Ele pode ter propriedades ou operações e pode ser instanciado ou associado com outros artefatos.
+
+
+Interfaces
+
+
+São coleções de operações que especificam serviços de um componente. É por meio delas que os componentes se comunicam com o mundo externo, seja para oferecer ou receber serviços. Interfaces descrevem o comportamento visível externamente e não especificam qualquer estrutura (não podem incluir atributos), nem qualquer implementação.
+
+
+As interfaces fazem as associações entre os componentes do software.
+
+
+As interfaces podem ser chamadas quando requerem ou esperam serviços. Podem ser usadas opcionalmente por meio de portas em que é possível haver informações adicionais, tais como requisito de desempenho ou políticas que determinem que a interface seja realizada de maneira adequada.
+
+
+Conectores
+
+
+São utilizados nos diagramas de componentes para incluir interfaces baseadas em restrições e notações. Existem dois tipos principais de conectores:
+
+
+Conector assembly: conecta dois componentes para definir que um deles fornece os serviços que o outro requer.
+
+
+Concetor delegate: indica que um sinal que chega para um componente será transferido para o outro para tratamento ou manipulação. Isso significa que quando colocamos um conector de delegação, estamos dizendo que naquela instância do componente o trabalho não será realizado, mas por outro componente. Esse tipo de conector é bastante usado para modelar decomposição hierárquica em serviços.
+
+
+Camadas
+
+
+A arquitetura de sistemas em camadas permite isolar a camada de apresentação das de regras de negócio e de armazenamento de dados. Isso permite aumentar o desempenho do sistema, além de facilitar a manutenção, atualização e substituição de componentes. Isso é muito interessante nos sistemas atuais que se caracterizam muitas vezes por atender grande número de usuários e áreas de negócio.
+
+
+Exemplo
+Um exemplo clássico de arquitetura em camadas é o padrão de projeto MVC (Model – View – Controller), em que os componentes da aplicação consistem na interface (View) que invoca o controlador (Controller), o qual, por sua vez, acessa o banco de dados (Model).
+
+
+Essa separação das camadas de software permite a modularização e o reuso dos componentes do sistema. Um exemplo é ilustrado na imagem a seguir, em uma aplicação hipotética (note que diversas outras formas de componentização poderiam ser adotadas, a critério do projetista).
+
+
+
+
+Exemplo de diagrama de componentes usando MVC.

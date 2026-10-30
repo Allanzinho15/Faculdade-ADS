@@ -1,0 +1,90 @@
+Conhecendo o princípio da responsabilidade única (SRP)
+Segundo o SRP, cada módulo deve estar direcionado para um ator específico, e apenas um garante, por exemplo, que, em um sistema de vendas, as funções voltadas para o vendedor e o gestor não estejam presentes no mesmo módulo. A vantagem de adotar o SRP é a possibilidade de dividir o sistema em componentes menores voltados para atores específicos, o que viabiliza a distribuição deles em diferentes locais e plataformas, como o ponto de venda na loja física, para o vendedor, e a busca de produtos na web, para o cliente.
+
+
+Assista, neste vídeo, ao SOLID, acrônimo para os cinco princípios de projeto orientado a objetos, e à aplicação do princípio da responsabilidade única (SRP).
+
+
+
+Princípios SOLID
+
+O termo SOLID é frequentemente visto como um requisitado em perfis de vagas para desenvolvimento de software.
+
+
+Trata-se de um acrônimo para cinco princípios de projeto orientado a objetos. Definidos por Robert C. Martin, eles devem ser seguidos para nos ajudar a produzir software com uma estrutura sólida, isto é, uma estrutura que permita sua manutenção com menor esforço.
+
+
+Cada letra do acrônimo corresponde a um dos princípios: Confira a seguir!
+
+
+S
+
+
+Single-responsibility principle (SRP).
+
+
+O
+
+
+Open-closed principle (OCP).
+
+
+L
+
+
+Liskov substitution principle (LSP).
+
+
+I
+
+
+Interface segregation principle (ISP).
+
+
+D
+
+
+Dependency inversion principle (DIP).
+
+
+SRP
+
+Sigla do termo em inglês Single responsibility principle, estabelece que o módulo deve ser responsável por um – e apenas isso – ator, representando o papel desempenhado por alguém envolvido com o software. Nesse contexto, um módulo corresponde a um arquivo-fonte.
+
+
+Exemplo
+Em Java, um módulo corresponde a uma classe.
+
+
+Suponha que uma loja virtual tenha requisitos de busca de produtos por nome e departamento, além de cadastro de um novo produto e exportação de dados dos produtos em formato CSV. Se pensarmos conforme o padrão Especialista, por exemplo, todas essas funcionalidades trabalham com os dados dos produtos e poderiam ser alocadas no módulo ProdutoRepository, conforme ilustrado na imagem a seguir.
+
+
+
+Violação do princípio SRP.
+
+A alocação de responsabilidades viola o princípio SRP, pois define um módulo que atende a diferentes atores.
+
+
+Vamos analisar os atores envolvidos com cada responsabilidade do módulo:
+
+ 
+
+1. Pesquisar produtos por nome e departamento são demandas do cliente da loja.
+
+ 
+
+2. Incluir produto é uma demanda da área de vendas.
+
+ 
+
+3. GerarCSV é uma demanda da área de integração de sistemas.
+
+
+O módulo ProdutoRepository apresenta diferentes razões para mudar: a área de integração pode demandar novo formato para a exportação dos dados dos produtos, enquanto os clientes podem requerer novas formas de pesquisar os produtos.
+
+
+Segundo o princípio SRP, devemos separar essas responsabilidades em três módulos, o que nos daria a flexibilidade de separar a busca de produtos e a inclusão deles em serviços fisicamente independentes, o que possibilitaria atender diversas demandas de escalabilidade de forma mais racional.
+
+
+Exemplo
+A busca de produtos pode ter que atender a milhares de clientes simultâneos. No caso da inclusão de itens, esse número não deve passar de algumas dezenas de usuários.

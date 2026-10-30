@@ -1,0 +1,54 @@
+Conhecendo o padrão strategy
+Se você já se deparou com cenários nos quais várias ações distintas precisam ser executadas dependendo de uma condição específica, é provável que reconheça a complexidade que pode surgir em um código repleto de estruturas condicionais, como if e else.
+
+
+O padrão strategy oferece uma alternativa mais organizada para esse tipo de situação, sendo cada estratégia de ação definida em uma classe diferente. Uma classe de contexto verifica as variáveis de ambiente para selecionar a estratégia correta. Um exemplo simples: em um sistema de controle de armazéns, diferentes estratégias para alocação de espaço podem ser definidas, de acordo com a natureza e as dimensões do produto.
+
+
+Confira, neste vídeo, um dos padrões de design mais poderosos e versáteis do catálogo Gang of four e como o padrão strategy permite que você defina uma família de algoritmos, encapsule cada um deles e os torne intercambiáveis, facilitando a manutenção e a expansão do seu código.
+
+
+
+Problema
+
+O padrão strategy soluciona o problema que ocorre quando temos diferentes algoritmos para realizar determinada tarefa.
+
+
+Exemplo
+Uma loja de departamentos pode ter diferentes políticas de desconto aplicáveis em função da época do ano (ex.: Natal, Páscoa, Dia das mães e Dia das crianças).
+
+
+Como organizar esses algoritmos de forma que possamos respeitar o princípio open closed, fazendo com que o sistema de vendas possa aplicar novas políticas de desconto sem que seja necessário modificar o que já está implementado?
+
+
+Solução
+
+O padrão strategy define uma família de algoritmos, em que cada um é encapsulado em sua própria classe. Os diferentes algoritmos compõem uma família que pode ser utilizada de forma intercambiável, e novos algoritmos podem ser adicionados à família sem afetar o código existente.
+
+
+A imagem a seguir apresenta a estrutura do padrão. O tipo estrategia define uma interface comum a todos os algoritmos, podendo ser implementado como uma classe abstrata ou como uma interface. A interface genérica é utilizada pelo participante contexto, quando esse necessitar que o algoritmo seja executado. Estrategia A, B e C são implementações específicas do algoritmo genérico que o participante xontexto pode disparar. A estratégia específica deve ser injetada no módulo contexto, que pode alimentar a estratégia com seus dados. Veja:
+
+
+
+
+Padrão strategy – estrutura.
+
+A próxima imagem apresenta um exemplo de aplicação do padrão strategy. A classe venda representa uma venda da loja de departamentos. Uma política de desconto pode ser associada a uma venda no momento de sua instanciação e utilizada para cálculo do valor a ser pago pelo cliente. Acompanhe:
+
+
+
+
+Exemplo do padrão strategy.
+
+Para obter o valor a pagar da venda, basta obter o seu valor total, somando o valor de seus itens, e subtrair o valor retornado pela operação aplicar da instância de PoliticaDesconto, associada ao objeto venda.
+
+
+Note que novas políticas podem ser agregadas à solução. Basta adicionar uma nova implementação da interface PoliticaDesconto. Nenhuma alteração na classe venda é necessária, pois ela faz uso apenas da interface genérica, não dependendo de nenhuma política de descontos específica.
+
+
+Consequências
+
+O padrão strategy permite separar algoritmos de diferentes naturezas dos elementos necessários para sua execução. No exemplo da loja de departamentos, podemos aplicar à venda diferentes tipos de algoritmo, como: política de desconto, cálculo de frete e prazo de entrega, entre outros. Cada tipo de algoritmo conta com especializações que podem ser implementadas em uma família própria de algoritmos.
+
+
+O padrão strategy oferece uma solução elegante e extensível para o encapsulamento de algoritmos, que podem ter diferentes implementações, isolando, de suas implementações concretas, os módulos clientes desses algoritmos. Além disso, ele permite a remoção de estruturas condicionais complexas normalmente presentes quando as variações não são implementadas com esse padrão.

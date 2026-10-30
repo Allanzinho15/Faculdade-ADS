@@ -1,0 +1,88 @@
+Ciclo de vida do projeto x Grupos de processos
+O ciclo de vida do projeto inclui as fases genéricas ilustradas na figura 12 e que fazem parte de todo projeto.
+
+
+
+Figura 12 – Ciclo de vida do projeto.
+
+Qual a relação do ciclo de vida do projeto com o fluxo de processo do software?
+
+ 
+
+Os fluxos de processos ou ciclos de vida que apresentamos anteriormente incluem os tipos: linear, iterativo, evolucionário e paralelo. A seleção de um determinado Fluxo de Processo determina as fases pelas quais um projeto irá passar, do início ao término.
+
+ 
+
+Exemplificando: o engenheiro de software seleciona o Fluxo de Processo Evolucionário, ou Iterativo e Incremental, representado na figura 11. A partir dessa especificação, o ciclo de vida do projeto está estabelecido e as entregas do projeto ocorrerão por meio de uma série de iterações.
+
+ 
+
+Como esse ciclo de vida do projeto estabelecido é gerenciado?
+
+ 
+
+Por meio da execução de uma série de atividades de gerenciamento de projeto, conhecidas como processos de gerenciamento de projetos.
+
+ 
+
+Cada processo de gerenciamento de projetos transforma entradas em saídas através da aplicação de técnicas e ferramentas de gerenciamento de projetos apropriadas (figura 13). As saídas podem ser uma entrega ou um resultado.
+
+
+Figura 13 – Processo de Gerenciamento de Projeto.
+
+A figura 14 ilustra as cinco etapas que permitem a “GESTÃO” de um projeto: Iniciação; Planejamento; Execução; Monitoramento e Controle; e Encerramento.
+
+
+
+Figura 14 – Grupos de Processos.
+
+Temos que considerar que cada etapa possui um conjunto de processos, conjunto este denominado de Grupo de Processos de Gerenciamento de Projetos.
+
+
+De uma forma simplificada, o gerente de projetos tem que considerar as etapas de gestão, por exemplo, para a etapa INICIAÇÃO:
+
+ 
+
+Seleciona os processos que serão utilizados, considerando a complexidade do projeto.
+Aloca responsáveis por cada processo de acordo com a área de conhecimento.
+Os responsáveis realizam os processos de acordo com o que preconiza o PMBOK.
+Os responsáveis geram seus respectivos resultados para cada processo.
+ 
+
+Em seguida, aplica os passos de 1 a 4 anteriores para cada etapa do ciclo de vida do projeto: Planejamento, Execução, Monitoramento e Controle e Encerramento. Em projetos complexos, as etapas podem ocorrer de forma iterativa.
+
+
+Os cinco grupos de processos ilustrados na figura 14 serão descritos a seguir:
+
+
+
+Grupo de processos de iniciação
+Grupo que inclui os processos realizados no início de um projeto, cabendo destaque ao Termo de Abertura do Projeto, termo que autoriza a alocação de recursos ao projeto.
+
+
+Grupo de processos de planejamento
+Grupo que inclui os processos realizados para planejar a execução de um novo projeto. A primeira atividade de planejamento é o gerenciamento do escopo do projeto.
+
+ 
+
+A principal entrega do planejamento é o cronograma. O cronograma físico inclui as datas de início e término de todas as atividades do projeto.
+
+
+Grupo de processos de execução
+Aqui está um dos grandes desafios do gerente de projeto, que é executar o projeto de acordo com o planejado. Lembre-se de que o gerente de projetos não está sozinho, sendo um integrador de pessoas e distintos conhecimentos.
+
+
+Grupo de processos de monitoramento e controle
+Nesse grupo, podemos aplicar a máxima de que “não se controla o que não se mede”.
+
+ 
+
+Grupo que inclui os processos que permitem monitorar e controlar o progresso e desempenho do projeto. Caso alguma atividade não ocorra de acordo com o planejado, terá que ser avaliada uma ação corretiva a fim de que essa não conformidade seja tratada por meio de um gerenciamento de mudanças.
+
+
+Grupo de processos de encerramento
+Lembre-se, todo projeto é temporário, portanto, em algum momento, terá que ser, formalmente, encerrado.
+
+ 
+
+Grupo que inclui os processos que permitirão a conclusão ou encerramento do projeto, tais como, a entrega e aceitação do produto, a dispensa da equipe de projeto ou avaliação geral dos resultados.

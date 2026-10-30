@@ -1,0 +1,182 @@
+MÓDULO 4
+Descrever as ferramentas CASE para gerenciamento de configurações
+
+
+No vídeo a seguir, você compreenderá a importância do uso de ferramentas CASE para apoio ao gerenciamento de configurações.
+
+
+Ambientes de gerenciamento de configurações
+Usualmente, os processos de gerenciamento de configurações são padronizados, ou seja, incluem aplicações de procedimentos predefinidos que requerem o gerenciamento de grande quantidade de dados.
+
+Imaginemos um sistema que esteja sendo construído com base em versões de componentes e um determinado engenheiro de software realiza a publicação de uma versão com uma conexão de banco de dados X, sendo que ocorreu uma alteração de requisito não funcional para o banco de dados Y, ou seja, a versão do componente da camada de persistência não estava corretamente gerenciada.
+
+Atenção
+Com base nesse pequeno incidente, podemos concluir que o apoio de uma ferramenta CASE é essencial para o gerenciamento de configuração, podendo a mesma ser combinada para criar uma área de trabalho para apoiar todas as atividades de gerenciamento de configuração.
+
+Entendamos dois tipos de ambientes:
+
+Clique nas barras para ver as informações.
+Ambientes abertos
+Incluem ferramentas de código aberto para cada estágio do processo que são integradas por meio de procedimentos organizacionais padronizados para uso dessas ferramentas, ou seja, o gerenciamento de mudança, o gerenciamento de versões e a construção de sistemas possuem ferramentas específicas que devem ser integradas.
+
+Ambientes integrados
+Fornecem recursos integrados para controlar versões, a construção de sistemas e o rastreamento de mudanças.
+
+Destacamos que sistemas complexos com equipes de desenvolvimento geograficamente distantes necessitam de ferramentas de gerenciamento de configuração que apoiem o trabalho em diferentes localidades com múltiplos repositórios de dados para itens de configuração.
+
+Apoio para gerenciamento de mudanças
+Uma melhor prática sugere que um modelo de processo de mudanças deva ser projetado e integrado com um sistema de gerenciamento de versões, de modo que os documentos gerados nas atividades relacionadas com as mudanças sejam enviados para pessoas certas no tempo certo.
+
+As ferramentas de gerenciamento de mudanças geralmente fornecem os seguintes recursos para dar suporte ao processo:
+
+Clique nas barras para ver as informações.
+Editor de formulários
+Permite às pessoas criar ou completar formulários com propostas de mudanças.
+
+Sistema de workflow
+Permite à equipe de gerenciamento de configuração definir quem deve processar o formulário de solicitação de mudança e a ordem de processamento, sendo os formulários encaminhados automaticamente para as pessoas corretas no tempo certo, informando aos membros relevantes da equipe sobre o progresso da mudança.
+
+Banco de dados de mudança
+Usado para gerenciar todas as propostas de mudança e que pode estar ligado a um sistema de gerenciamento de versões, no qual recursos de consulta permitem à equipe de gerenciamento de configuração encontrar uma proposta específica de mudança.
+
+Sistema de relato de mudanças
+Gera relatórios gerenciais sobre o status das solicitações de mudança enviadas.
+
+Apoio para gerenciamento de versões
+As ferramentas de gerenciamento de versões controlam um repositório de itens de configuração no qual os conteúdos dos repositórios não podem ser alterados.
+
+Comentário
+Para trabalhar num item de configuração, o engenheiro de software deve retirá-lo por meio de uma operação check-out do repositório e guardá-lo num diretório de trabalho, sendo devolvido ao repositório, após a realização das mudanças no componente, por meio de uma operação check-in, sendo uma nova versão automaticamente criada.
+
+Os sistemas de gerenciamento de versões fornecem um conjunto básico de capacidades semelhantes, embora alguns recursos sejam mais sofisticados que outros.
+
+Vejamos:
+
+Clique nas barras para ver as informações.
+Identificação de versões e releases
+Versões gerenciadas recebem identificadores quando são enviadas ao sistema.
+
+Gerenciamento de armazenamento
+Um sistema de gerenciamento de versões fornece recursos de gerenciamento de armazenamento de maneira que as versões sejam descritas pela sua diferença em relação a uma versão mestre, sendo as diferenças entre versões representadas por um delta, que engloba as instruções necessárias para recriar a versão do sistema associado, tal como exemplifica a Figura 11, pois considerando que a última versão é a versão 1.3, a criação da versão 1.2 exige a aplicação do delta de mudança correspondente D3.
+
+Registro do histórico de mudanças
+Inclui o registro de todas as mudanças executadas no código de um sistema ou componente. Desenvolvimento independente ‒ Múltiplas versões de um sistema podem ser desenvolvidas em paralelo, podendo cada versão ser modificada de forma independente, tal como um release 1 pode ser modificado depois de iniciado o desenvolvimento do release 2, pois o sistema de gerenciamento de versões mantém a rastreabilidade dos componentes retirados por meio do check-out para a edição.
+
+Suporte a projetos
+Inclui o suporte a múltiplos projetos.
+
+
+Figura 11 – Versões baseadas em delta. Fonte: O Autor.
+Suporte para construção de sistemas
+A construção de sistemas é um processo computacional intensivo, podendo incluir centenas de arquivos.
+
+Atenção
+As ferramentas de construção de sistemas automatizam o processo de construção para reduzir a possibilidade de ocorrência de erro humano e, quando possível, minimizar o tempo necessário para a construção de sistemas.
+
+Vejamos alguns recursos que podem estar presentes em ferramentas CASE de construção de sistemas:
+
+
+Vamos entender esta dependência entre objetos derivados a partir da Figura 12, bem como a minimização da recompilação.
+
+Considere uma situação em que um programa de compilador chamado comp é criado por quatro módulos objetos chamados scan.o, syn.o, sem.o e cgen.o, sendo cada módulo objeto criado dos respectivos códigos-fontes, ou seja, scan.c, syn.c, sem.c e cgen.c. Um arquivo de declarações de variáveis e de constantes chamado defs.h é compartilhado por scan.c, syn.c e sem.c . Na Figura 12, as setas significam 'depende de', ou seja, a entidade na base da seta depende da entidade que está no topo, de modo que comp depende de scan.o, syn.o, sem. o e cgen.o; scan.o depende de scan.c, e assim, sucessivamente.
+
+O que você acha que ocorreria se scan.c fosse alterado?
+
+Inicialmente, a ferramenta de construção de sistemas detecta que o objeto derivado scan.o deva ser recriado pela comparação dos momentos da modificação do scan.o e do scan.c, pois scan.c foi modificado depois de scan.o. Em seguida, a referida ferramenta chama o compilador C para compilar o scan.c a fim de criar um novo objeto derivado, ou seja, o scan.o. A ferramenta de construção então usa a ligação de dependência entre comp e scan.o para detectar que comp deve ser recriado pela ligação de scan.o, syn.o, sem.o e cgen.o.
+
+Comentário
+A partir deste pequeno exemplo, podemos imaginar a complexidade de gerenciamento de diversos arquivos e respectivas dependências, ou seja, a automação do gerenciamento de versões é fortemente recomendada.
+
+Muitas ferramentas de construção de sistemas usam a data de modificação de arquivo como um atributo-chave para decidir se a recompilação é necessária, de modo que, se um arquivo de código-fonte é modificado depois do seu correspondente arquivo de código objeto, o arquivo de código objeto é recriado.
+
+Algumas ferramentas mantêm o registro da última versão do código objeto que corresponde ao mais recente componente de código-fonte modificado, outras ferramentas, entretanto, usam abordagens mais sofisticadas para o gerenciamento de objetos derivados, colocando uma marca nos objetos derivados com a identificação dos códigos-fontes usados para gerar os objetos, o que permite manter todos os objetos derivados.
+
+
+Figura 12 – Dependências entre componentes. Fonte: O Autor.
+Ferramentas CASE para gerenciamento de configuração
+As ferramentas CASE permitem que as atividades fundamentais de gerenciamento de configuração resultem em ganhos de produtividade no gerenciamento e controle de itens de configuração gerados ao longo do processo de desenvolvimento de software.
+
+De acordo com Andrade (2014), as ferramentas CASE podem ser divididas em três grupos principais ilustrados na Figura 13:
+
+Clique nas informações a seguir.
+
+
+
+
+Figura 13 - Principais grupos de ferramentas. Fonte: O Autor.
+Vejamos as ferramentas de suporte individual:
+
+Controle de versões permite a identificação, armazenamento e gerenciamento dos itens de configuração.
+Controle de mudança tem como foco os procedimentos pelos quais as mudanças de um ou mais itens de configuração são propostas, avaliadas, aprovadas e implantadas.
+Integração contínua permite a identificação, empacotamento e preparação de uma baseline, garantindo que as mudanças sejam construídas, testadas e relatadas.
+A tabela a seguir apresenta algumas ferramentas, divididas pelos grupos:
+
+Tipo de ferramenta
+
+Ferramentas open source
+
+Ferramentas comerciais
+
+Controle de versão
+
+CVS
+Subversion
+Aegis
+Arch
+JEDI
+
+PVC
+ClearCase
+StarTeam
+Perforce
+BitKeeper
+Synergy
+Serena
+Microsoft Visual Source Safe
+
+Controle de mudança
+
+Bugzilla
+Trac
+Mantis
+Scarab
+
+PVCS
+Jira
+FogBugz
+CaliberRM
+ClearQuest
+Perforce
+Synergy
+Serena
+
+Integração contínua
+
+Ant
+SCons
+Bitten
+Maven
+CruiseControl
+Gump
+TinderBox
+
+Build Forge
+Anthill Pro
+FinalBuilder
+
+Resumindo
+Neste módulo, destacamos a importância dos processos de gerenciamento de configurações, que incluem aplicações de procedimentos predefinidos que requerem o gerenciamento de grande quantidade de dados.
+
+
+Um modelo de processo de mudanças deve ser projetado e integrado com um sistema de gerenciamento de versões, de modo que os documentos gerados nas atividades relacionadas com as mudanças sejam enviados para pessoas certas no tempo certo.
+
+
+As ferramentas de gerenciamento de versões controlam um repositório de itens de configuração no qual os conteúdos dos repositórios não podem ser alterados, de modo que um item de configuração é retirado do repositório por meio de uma operação check-out, sendo devolvido ao repositório, após a realização das mudanças no referido item, por meio de uma operação check-in, sendo uma nova versão automaticamente criada.
+
+
+As ferramentas de construção de sistemas automatizam o processo de construção para reduzir a possibilidade de ocorrência de erro humano e, quando possível, minimizar o tempo necessário para a construção de sistemas.
+
+
+As ferramentas CASE permitem que as atividades fundamentais de gerenciamento de configurações resultem em ganhos de produtividade no gerenciamento e controle de itens de configuração gerados ao longo do processo de desenvolvimento de software.
+
+Agora é com você! Vamos verificar se atingimos o objetivo deste módulo? Você está convidado a realizar as atividades a seguir.

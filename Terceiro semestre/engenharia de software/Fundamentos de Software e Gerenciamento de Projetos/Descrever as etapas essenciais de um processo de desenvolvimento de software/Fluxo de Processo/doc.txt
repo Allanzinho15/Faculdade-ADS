@@ -1,0 +1,34 @@
+Fluxo de Processo
+A especificação de um processo de desenvolvimento de software, lembrando ser este um requisito não funcional, requer a definição de quais atividades irão compor o respectivo processo e como as referidas atividades serão encadeadas, também denominada de Fluxo de Processo ou Ciclo de Vida.
+
+
+
+Fluxo de Processo Linear
+A figura 7 ilustra o denominado Fluxo de Processo Linear, onde as atividades são executadas em sequência, de modo que cada atividade é realizada por completo uma única vez.
+
+
+Figura 7 - Fluxo de Processo Linear.
+
+Fluxo de Processo Iterativo
+A figura 8 ilustra o denominado Fluxo de Processo Iterativo, onde uma atividade ou um conjunto de atividades podem ser repetidas antes de prosseguir para a seguinte.
+
+
+Figura 8 - Fluxo de Processo Iterativo.
+
+Fluxo de Processo Evolucionário
+A figura 9 ilustra o denominado Fluxo de Processo Evolucionário, onde o sequenciamento de cada fluxo inclui todas as atividades, sendo que cada iteração completa gera uma nova versão do software, ou seja, o software agrega valor às suas funcionalidades a cada ciclo completo.
+
+
+Figura 9 - Fluxo de Processo Evolucionário.
+
+Fluxo de Processo Paralelo
+A figura 10 ilustra o denominado Fluxo de Processo Paralelo, que permite a execução de uma ou mais atividades em paralelo.
+
+
+Figura 10 - Fluxo de Processo Paralelo.
+
+Modelo de ciclo de vida iterativo e incremental
+A figura 11 ilustra o Modelo de Ciclo de Vida Iterativo e Incremental, onde cada iteração inclui todas as atividades e ocorre o versionamento do produto software gerado. Este modelo corresponde ao Fluxo de Processo Evolucionário. A cada novo ciclo, um subconjunto de requisitos é considerado.
+
+
+Figura 11 - Modelo de Ciclo de Vida Iterativo e Incremental.

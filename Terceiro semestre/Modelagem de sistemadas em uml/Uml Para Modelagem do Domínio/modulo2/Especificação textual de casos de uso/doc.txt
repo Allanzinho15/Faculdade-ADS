@@ -1,0 +1,113 @@
+Especificação textual de casos de uso
+Na engenharia de software, para descrevermos detalhadamente a interação entre atores e sistema, precisamos utilizar a especificação textual de casos de uso. Geralmente escrita em linguagem natural, ela delineia os requisitos funcionais do sistema, detalhando as ações que os atores executam e as respectivas respostas do sistema. Uma estrutura útil inclui campos como identificador único, nome, objetivo, atores, pré-condições, cenário principal, cenários alternativos, pós-condições e regras de negócio.
+
+Uma especificação textual bem elaborada possibilita uma base clara e compreensível para o desenvolvimento do software, promovendo a comunicação eficaz entre equipes e stakeholders durante todo o ciclo de vida do projeto.
+
+Você vai conferir, neste vídeo, os casos de uso incluídos no diagrama de casos de uso, que devem ser especificados em um formato textual para complementar a representação gráfica. Verá também o cenário principal e os alternativos de casos de uso.
+
+
+Especificação e formatos de casos de uso
+Os casos de uso incluídos pelos analistas no diagrama de casos de uso devem ser especificados em um formato de narrativa textual, para complementar a representação gráfica sob forma de diagramas. Desse modo, o modelo de casos de uso é formado pelo diagrama e pelo conjunto de todas as descrições dos casos de uso.
+
+A descrição textual permite o entendimento mais preciso de qual funcionalidade do sistema trata aquele caso de uso. Ela serve como ponto de partida para construção de outros modelos, tais como, modelo de classes, ainda na fase de análise, e o diagrama de sequência, na fase de projeto do desenvolvimento do sistema.
+
+A UML não propõe uma descrição formal de casos de uso e não existe uma forma padronizada para a escrita dessa especificação. Os analistas e, muitas vezes, as empresas definem seus padrões com base em exemplos, boas práticas e necessidades particulares de cada projeto de desenvolvimento. Assim, as especificações podem ser:
+
+Simples
+As especificações simples abstraem os detalhes da execução do caso de uso.
+
+Complexas
+As especificações mais complexas incluem todo o passo a passo a ser seguido para obter os resultados esperados.
+
+Uma vez que não existe um padrão definido pela UML, a descrição textual de um caso de uso pode ser feita em diferentes formatos. O que há em comum em todos esses formatos é a forma de expressão narrativa.
+
+O texto de um caso de uso é uma história que conta as ações ou a sequência de passos de um ou mais atores e do sistema para atingir determinado objetivo.
+
+verified
+Recomendação
+A descrição de um caso de uso deve ser clara, livre de jargões e termos técnicos, portanto, de fácil entendimento não só para a equipe de desenvolvimento, mas para os usuários finais, pois o modelo de casos de uso é lido e validado por todos os envolvidos.
+
+Essa narrativa pode ser escrita em um parágrafo contínuo, em passos numerados ou em uma tabela. Veja cada uma dessas formas adiante.
+
+Formato contínuo
+Neste formato, a narrativa é um texto livre. Como exemplo, considere o caso de uso Consultar saldo já apresentado anteriormente e que retomaremos mais uma vez a seguir.
+
+
+Imagem 1: Exemplo de diagrama de casos de uso para banco.
+
+Uma especificação em formato contínuo para esse caso de uso seria:
+
+Este caso de uso inicia quando o cliente chega ao caixa eletrônico e insere seu cartão. O sistema requisita a senha do cliente. Após o cliente fornecer sua senha e esta ser validada, o Sistema exibe as opções de operações possíveis. O cliente opta por consultar saldo. O sistema exibe o saldo da conta e o caso de uso termina.
+
+Formato numerado
+No formato numerado, a descrição do caso de uso da Imagem 1 seria:
+
+O cliente insere cartão no caixa eletrônico.
+O sistema solicita a senha.
+O cliente digita senha.
+O sistema valida a senha e exibe menu de operações disponíveis.
+O cliente seleciona a opção consultar o saldo.
+O sistema exibe o saldo da conta.
+Formato tabular
+No formato tabular, a descrição do mesmo caso tratado anteriormente seria uma tabela contendo uma coluna para cada ator e uma coluna para o sistema, da seguinte forma:
+
+Cliente	Sistema
+Insere cartão no caixa eletrônico.	
+Solicita a senha.
+Digita senha.	
+Valida a senha e exibe menu de operações disponíveis.
+Seleciona a opção consultar o saldo.	
+Exibe o saldo da conta.
+Tabela: Formato tabular para o exemplo de diagrama de casos de uso.
+Flavia Maria Santoro.
+
+Cenário principal e cenários alternativos
+A especificação de um caso de uso descreve a sequência de passos de interação entre o sistema e seus atores. A descrição do exemplo do caso de uso Abrir conta corrente, na Imagem 1, mostra uma sequência, um fluxo ou passo a passo mais usual, ou seja, aquela em que acontece exatamente o que era esperado nessa interação.
+
+Essa sequência é chamada de cenário (ou fluxo) principal do caso de uso. Nesse cenário, o ator consegue atingir seu objetivo seguindo o caminho “feliz”; em outras palavras, nada de excepcional acontece. De acordo com Lima (2005), é o fluxo mais óbvio, no qual todas as ações são bem-sucedidas.
+
+assignment_ind
+Comentário
+Não se esqueça de que cada caso de uso possui apenas um cenário principal e deve ser descrito de forma clara e concisa, sem uso de jargão computacional. Além disso, devem ser escritos do ponto de vista do usuário e, sempre que possível, com os termos que os usuários possam compreender.
+
+Agora, imagine a seguinte situação em nosso exemplo: O Cliente digita a senha errada. O que aconteceria no fluxo descrito?
+
+Nada, pois esse problema não é previsto nesse cenário!
+
+Para essa situação e algumas outras, o modelo de casos de uso prevê a especificação dos cenários alternativos e cenários de exceção. Entenda a seguir esses cenários:
+
+chevron_left
+
+
+chevron_right
+chevron_left
+1 de 2
+chevron_right
+De acordo com Bezerra (2015), esses cenários possuem as seguintes características:
+
+1
+Representam erros de operação no cenário principal.
+
+2
+Não têm sentido fora do contexto do caso de uso no qual ocorre (ou seja, não são casos de uso em si).
+
+3
+Precisam indicar em que passo o caso de uso continua ou, conforme for, indicar que o caso de uso está finalizado.
+
+No exemplo do caso de uso Abrir conta corrente, um cenário de exceção para a situação em que o Cliente digitasse sua senha errada poderia ser especificado da seguinte forma:
+
+O cliente insere cartão no caixa eletrônico.
+O sistema solicita a senha.
+O cliente digita senha.
+O sistema valida a senha e exibe menu de operações disponíveis.
+O cliente seleciona a opção consultar o saldo.
+O sistema exibe o saldo da conta.
+
+No passo 4, caso a senha seja incorreta:
+
+4a. O sistema informa que a senha está incorreta e solicita que o cliente digite novamente.
+
+4b. O caso de uso retorna ao passo 3.
+
+
+Observe que o cenário de exceção indica o ponto do cenário principal no qual o problema pode ocorrer e o ponto exato para onde o fluxo deve retornar. O analista deve especificar todas as possíveis exceções ou problemas usando esses tipos de cenários.

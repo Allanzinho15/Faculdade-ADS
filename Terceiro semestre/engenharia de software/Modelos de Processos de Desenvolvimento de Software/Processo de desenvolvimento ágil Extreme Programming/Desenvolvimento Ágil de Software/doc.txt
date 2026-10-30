@@ -1,0 +1,34 @@
+Desenvolvimento Ágil de Software
+Até meados dos anos 1990, os processos de desenvolvimento de software prescritivos exigiam um detalhado planejamento de projeto, um sistema de garantia da qualidade estabelecido, a aplicação de métodos de análise e projeto, tal como a modelagem de caso de uso, apoiados por ferramentas CASE e controlados por um disciplinado e formal modelo de processo de desenvolvimento de software.
+
+
+
+Essa visão era influenciada por equipes de engenheiros de software engajados em sistemas de software complexos que exigiam um esforço significativo de planejamento, projeto e documentação de sistema.
+
+ 
+
+Mas esse esforço justifica-se em sistemas de menor grau de complexidade?
+ 
+
+Em 2001, um grupo de 17 metodologistas e outros profissionais da indústria de software se reuniram no estado norte-americano de Utah para discutir e propor uma alternativa aos processos prescritivos dominantes à época. Ao final da reunião, esse grupo lançou as bases para um novo conceito de processo de software, as quais foram registradas em um documento que chamaram de Manifesto para o Desenvolvimento Ágil de Software, que inclui quatro valores:
+
+ 
+
+Indivíduos e interações, mais do que processos e ferramentas.
+Software em funcionamento, mais do que documentação abrangente.
+Colaboração com o cliente, mais do que negociação de contratos.
+Resposta a mudanças, mais do que seguir um plano.
+
+ 
+
+A maioria dos métodos ágeis de desenvolvimento de software têm foco no próprio software, em vez de em seu projeto e documentação, assumem um fluxo de processo iterativo e incremental para entrega de software e apoiam aplicações de negócios nas quais os requisitos possuem alta volatilidade durante o desenvolvimento.
+
+
+Um projeto de software ágil busca a capacidade de implantar uma nova versão a cada incremento, enfatizando o software funcional como uma medida primária de progresso.
+
+
+A entrega de software rápida permite que os clientes validem de forma imediata o incremento, indicando possíveis erros ou alterações de requisitos, bem como descrevendo novos requisitos para as próximas iterações.
+
+
+Atenção
+Métodos ágeis também enfatizam comunicações em tempo real entre equipe de desenvolvimento e clientes.

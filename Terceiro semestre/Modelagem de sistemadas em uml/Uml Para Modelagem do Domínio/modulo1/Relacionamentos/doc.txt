@@ -1,0 +1,78 @@
+Relacionamentos
+Os relacionamentos são responsáveis por estabelecer as associações entre atores e casos de uso. Todos os atores devem estar associados explicitamente aos casos de uso com os quais interagem. Além disso, podemos estabelecer relacionamentos entre os casos de uso ou entre os atores do sistema.
+
+O modelo de casos de uso permite os seguintes tipos de relacionamentos: comunicação, inclusão, extensão e generalização.
+
+Neste vídeo, você vai conferir a utilização dos relacionamentos no diagrama de casos de uso, que são: de comunicação, inclusão, extensão e generalização, responsáveis por estabelecer as associações entre atores e casos de uso.
+
+
+Relacionamento de comunicação
+É uma linha simples que mostra a que caso de uso determinado ator está associado, ou seja, esse ator interage com o sistema por meio do caso de uso.
+
+Um ator pode se relacionar com mais de um caso de uso, e todos os atores devem estar associados a pelo menos um caso de uso. Esse relacionamento foi mostrado na Imagem 1 apresentada anteriormente.
+
+report_problem
+Atenção!
+Um erro comum na elaboração de diagramas de casos de uso é estabelecer relacionamentos de comunicação entre casos de uso. Não existe troca de informações entre casos de uso, uma vez que são funcionalidades independentes entre si.
+
+Já os relacionamentos de inclusão (include), extensão (extend) e generalização são estabelecidos entre casos de uso.
+
+Relacionamento de inclusão
+Relacionamento de inclusão tem como objetivo principal a reutilização. Veja a seguir como pode ser utilizada:
+
+Repetição de passos de execução
+Suponha que uma parte dos passos de execução de um caso de uso se repita em diversos outros casos de uso.
+
+arrow_forward
+Criação e inclusão de um caso de uso
+Podemos criar um caso de uso separado e “incluí-lo” nos demais.
+
+A inclusão funciona de forma semelhante à chamada de uma função em um programa. A representação gráfica do relacionamento de inclusão é uma linha pontilhada com o estereótipo <<include>> apontando do caso de uso inclusor para o incluído.
+
+A Imagem 3 mostra um exemplo desse tipo de relacionamento:
+
+
+Imagem 3: Exemplo do relacionamento de inclusão entre casos de uso.
+
+Na Imagem 3, o ator Médico participa de dois casos de uso: Fazer pedido de exame e Fazer pedido de consulta. Em ambos os casos de uso, é necessário realizar os passos do caso de uso Solicitar prontuário. Portanto, este caso de uso é incluído nos dois primeiros.
+
+Relacionamento de extensão
+Tem como objetivo representar situações em que diferentes sequências de passos possam ser inseridas no mesmo caso de uso. Ou seja, dependendo de uma condição, o caso de uso segue um caminho diferente. Desse modo, um caso de uso estende outro, permitindo um comportamento eventual.
+
+assignment_ind
+Comentário
+A existência do caso de uso estendido deve ser independente da existência de quaisquer casos de uso que o estendam.
+
+A Imagem 4 mostra um relacionamento de extensão. Veja:
+
+
+Imagem 4: Exemplo do relacionamento de extensão entre casos de uso.
+
+Observe na Imagem 4 que o ator Cliente interage com o caso de uso Realizar compra. O caso de uso Validar limite de crédito pode ser necessário nesse contexto, portanto, é estendido para Realizar compra. Ambos os casos de uso representam funcionalidades independentes no sistema.
+
+Relacionamento de generalização
+Pode existir entre dois casos de uso ou entre dois atores (conforme vimos em Ator). Esse relacionamento permite que um caso de uso (mais específico) herde características de outro (mais genérico).
+
+Veja o que acontece na generalização entre casos de uso:
+
+Herança de um caso de uso
+Quando um caso de uso herda de outro, significa que as sequências de passos de execução do caso de uso mais genérico (pai) valem também para o mais específico (filho).
+
+Caso de uso herdeiro
+O caso de uso herdeiro participa de qualquer associação do qual o caso de uso mais genérico participe. Isso significa que um ator que interage com o caso de uso pai pode também interagir em qualquer caso de uso filho.
+
+A Imagem 5 mostra um relacionamento de generalização:
+
+
+Imagem 5: Exemplo do relacionamento de generalização entre casos de uso.
+
+Como podemos observar na Imagem 5, o caso de uso Cadastrar empregado executa uma sequência de passos de cadastro para qualquer funcionário.
+
+Já os casos de uso mais específicos (Cadastrar vendedor e Cadastrar supervisor) herdam esses passos e ainda possuem passos específicos para os tipos de funcionários Vendedor e Supervisor, respectivamente.
+
+Os tipos de relacionamento entre casos de uso abordados permitem manter a descrição dos casos de uso mais simples e sem repetições. Assim, veja como eles devem ser usados:
+
+Inclusão
+Extensão
+Generalização
+A inclusão deve ser usada quando um comportamento se repetir em mais de um caso de uso.

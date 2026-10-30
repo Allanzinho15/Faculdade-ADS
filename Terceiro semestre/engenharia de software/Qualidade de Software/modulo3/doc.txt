@@ -1,0 +1,177 @@
+MÓDULO 3
+Explicar o planejamento da qualidade e o controle da qualidade de software
+
+Planejamento da qualidade
+A equipe de SQA, ou equipe de garantia da qualidade, tem como atribuição auxiliar a equipe de software a obter um produto final de alta qualidade.
+
+O SEI recomenda um conjunto de ações de garantia da qualidade que tratam do planejamento, da supervisão, da manutenção de registros, da análise e de relatórios relativos à referida garantia.
+
+Comentário
+Essas ações deverão ser realizadas pela equipe de qualidade, sempre que possível independente, que, entre outras atividades, prepara um plano de qualidade de software para um projeto. O plano é desenvolvido como parte do planejamento de projeto, sendo revisado por todos os interessados.
+
+As ações de garantia da qualidade realizadas pela equipe de Engenharia de Software e equipe de qualidade são orientadas pelo plano, que identifica as avaliações, auditorias e revisões a serem realizadas, padrões que serão aplicados no projeto, procedimentos para relatório e acompanhamento de erros, produtos resultantes produzidos pelo grupo de SQA e o feedback que será fornecido à equipe de software.
+
+O plano de qualidade de software fornece um roteiro para instituir a garantia da qualidade de software, devendo ser desenvolvido pela equipe SQA ou pela equipe de desenvolvimento, no caso da inexistência da equipe SQA. O plano serve como um gabarito para atividades de garantia da qualidade de software que serão instituídas para cada projeto de software.
+
+Imagino um questionamento: Cada projeto de software tem um plano?
+
+Resposta
+Respondemos ao questionamento nos reportando à Figura 6, na qual podemos identificar que a organização elabora um manual de qualidade, ou uma política com procedimentos padrões, sendo instanciado para cada projeto, a partir desse manual, um plano de qualidade de software primariamente em função da complexidade e do processo de desenvolvimento do software em questão.
+
+Reveja:
+
+
+Figura 6 novamente – ISO 9000 versus gerenciamento da qualidade.
+Fonte: O Autor.
+Foi publicado pelo IEEE um padrão para planos de qualidade de software. O padrão recomenda uma estrutura que identifique:
+
+O propósito e o escopo do plano.
+Uma descrição de todos os artefatos resultantes de engenharia de software (por exemplo, modelos, documentos, código-fonte).
+Todos os padrões e práticas que são aplicados durante a gestão de qualidade.
+As ações e tarefas da garantia da qualidade (incluindo revisões e auditorias) e sua aplicação na gestão de qualidade.
+As ferramentas e os métodos que dão suporte às ações e tarefas da garantia da qualidade.
+Procedimentos para administração de configurações de software.
+Métodos para montagem, salvaguarda e manutenção de todos os registros relativos à garantia da qualidade.
+Papéis e responsabilidades dentro da organização relacionados com a qualidade do software.
+
+Planejamento da qualidade segundo o PMBOK
+O PMBOK demonstra a importância da qualidade em todos os projetos por meio da definição de uma área de conhecimento denominada de Gerenciamento da Qualidade do Projeto, sendo essa área composta de três processos em diferentes grupos de processos (Tabela 1), ou etapas do ciclo de vida, sendo o processo Planejar o Gerenciamento da Qualidade do grupo de processo planejamento; esse processo permite gerar o Plano de Gestão de Qualidade do Projeto como um todo.
+
+O processo Planejar o Gerenciamento da Qualidade, ilustrado na Tabela 2, é o processo de identificação dos requisitos e/ou padrões de qualidade do projeto e suas entregas, e de documentação de como o projeto demonstrará conformidade com os requisitos e/ou padrões de qualidade.
+
+O principal benefício desse processo é o fornecimento de orientação e direcionamento sobre como a qualidade será gerenciada e verificada ao longo de todo o projeto.
+
+De acordo com a Tabela 2, as entradas são convertidas em saídas pela aplicação das técnicas e ferramentas listadas, cabendo destaque à geração do Plano de Gerenciamento da Qualidade.
+
+Entradas	Técnicas e Ferramentas	Saídas
+Termo de abertura do projeto	Opinião especializada	Plano de gerenciamento da qualidade
+Plano de gerenciamento do projeto	Coleta de dados	Métricas da qualidade
+Documentos do projeto	Análise de dados	Atualizações do plano de gerenciamento do projeto
+Fatores ambientais da empresa	Tomada de decisões	Atualizações de documentos do projeto
+Ativos de processos organizacionais	Representação de dados	
+Planejamento de testes e inspeções	
+Reuniões	
+Tabela 2 – Planejar o Gerenciamento da Qualidade.
+Fonte: O Autor.
+
+Assista ao vídeo abaixo e conheça a importância dos diversos tipos de testes na garantia da qualidade de software.
+
+
+Planejamento de testes e revisões
+Relembrando
+Lembramos que teste é um processo sistemático e planejado que tem por finalidade única a identificação de erros.
+
+Vamos apresentar uma visão prática do planejamento de testes e revisões, item 6 do módulo “Técnicas e Ferramentas” da Tabela 2, que permite o planejamento da garantia da qualidade do processo e do produto, segundo Bartié (2002). Podemos observar na Figura 7 que o Processo de Qualidade de Software proposto está decomposto em fases que se organizam em um formato de "U".
+
+Na Figura 7, as etapas à esquerda estão relacionadas com a qualidade do processo de desenvolvimento de software, sendo aplicados os denominados testes de verificação. As etapas à direita estão relacionadas com a qualidade do produto software, sendo aplicados os denominados testes de validação.
+
+
+Figura 7 – Processo de Garantia da Qualidade em “U”.
+Fonte: O Autor.
+O objetivo de ambos os grupos de testes é garantir que durante o ciclo de desenvolvimento do software se produza efetivamente todos os produtos previstos na metodologia empregada e que o software em construção atenda aos requisitos.
+
+Os testes de verificação visam a garantir o processo de engenharia do software, enquanto os testes de validação estão focados na garantia da qualidade do produto de software, cabendo destacar que ambos os testes se complementam.
+
+Testes de verificação
+Avaliam a qualidade de todo o processo de desenvolvimento de software, validando se todas as documentações e atividades geradas estão de acordo com os padrões estabelecidos, reduzindo os riscos de propagação de falhas ao longo do processo.
+
+Os testes de verificação devem concentrar-se em dois aspectos bem distintos, de acordo com a Figura 8: As atividades de verificação com foco nas documentações são denominadas de revisões; e as que avaliam as atividades, são chamadas de auditorias.
+
+
+Figura 8 – Métodos Estruturados de Verificação.
+Fonte: O Autor.
+As duas situações são consideradas métodos estruturados, pois possuem planejamento, regras de condução e necessitam de profissionais qualificados para desempenhar essas funções e acompanhar seu progresso. A revisão é um processo de análise de determinado documento. O principal objetivo das auditorias de qualidade é avaliar se em determinado projeto a equipe de desenvolvimento segue o processo de desenvolvimento de software, ou seja, registrando os defeitos encontrados, produzindo os documentos de análise e projeto etc.
+
+Testes de validação
+Observando a Figura 7 novamente, iniciamos os testes de validação que focam na garantia do produto software. Os procedimentos de testes aplicados diretamente em softwares são também conhecidos como testes de software ou testes dinâmicos, podendo, em sua maioria, sofrer um alto nível de automação, o que possibilita a criação de complexos ambientes de testes que simulam diversos cenários de utilização.
+
+A validação da unidade de software tem como objetivo executar o software de forma a exercitar adequadamente toda a estrutura interna de um componente, como os desvios condicionais, os laços de processamento etc.
+
+
+
+A validação da integração objetiva a manutenção de compatibilidade das novas unidades construídas, ou modificadas, com os componentes previamente existentes.
+
+A validação do sistema conta com uma infraestrutura mais complexa de hardware, visando a estar o mais próximo do ambiente real de produção, sendo realizados os testes funcionais, que visam a verificar se a versão corrente do sistema permite executar processos ou casos de uso completos do ponto de vista do usuário, de modo a obter os resultados esperados, e os testes não funcionais, que visam a testar o software em relação às características não funcionais, como desempenho, segurança, confidencialidade, recuperação de falhas etc.
+
+
+
+Como essa é a última oportunidade efetiva de detectar falhas no software, poderemos empregar o aceite como uma estratégia para reduzir riscos de uma implantação na qual um erro vital não detectado pode comprometer a imagem da solução como um todo.
+
+Podemos dividir o aceite em três momentos distintos:
+
+Clique nas informações a seguir.
+
+
+
+Teste de sistema
+Você sabia
+De acordo com Pressman (2016), os testes de sistema, não inclusos na Figura 7, extrapolam os limites da engenharia de software, ou seja, consideram o contexto mais amplo da engenharia de sistemas de computadores.
+
+Após ser validado, o software deve ser combinado com outros elementos do sistema, tais como hardware, base de dados etc. Vejamos alguns testes sugeridos nesta etapa:
+
+Clique nas barras para ver as informações.
+Teste de Recuperação
+Tem por objetivo avaliar o comportamento do software após a ocorrência de um erro ou de determinadas condições anormais, tal como simular um saque com defeito no caixa eletrônico ou simular saque com queda de energia.
+
+Teste de Segurança
+Busca detectar as falhas de segurança que podem comprometer o sigilo e a fidelidade das informações, bem como provocar perdas de dados ou interrupções de processamento, tal como avaliar se a senha do cartão está sendo requisitada antes e depois da transação ou avaliar se a senha adicional e randômica está sendo requisitada no início da operação.
+
+Teste por Esforço
+Visa a simular condições atípicas de utilização do software, provocando aumentos e reduções sucessivas de transações que superem os volumes máximos previstos para o software, gerando contínuas situações de pico e avaliando como o software e toda a infraestrutura estão se comportando, tal como simular 10.000 saques simultâneos.
+
+Teste de Desempenho
+Objetiva determinar se o desempenho, nas situações previstas de pico máximo de acesso e concorrência, está consistente com os requisitos definidos, tal como garantir que a manipulação com dispositivos físicos no saque não ultrapasse 10 segundos da operação.
+
+Teste de Disponibilização
+Também chamado de teste de configuração, tem por objetivo executar o software sobre diversas configurações de softwares e hardwares; a ideia é garantir que a solução tecnológica seja executada adequadamente sobre os mais variados ambientes de produção previstos nas fases de levantamento dos requisitos, tal como simular um saque com impressoras dos fornecedores X, Y e Z.
+
+
+Controle de qualidade
+Controlar a qualidade é o processo de monitorar e registrar resultados da execução das atividades de gerenciamento da qualidade verificando se as entregas e o trabalho do projeto cumprem os requisitos especificados. O processo Controlar a Qualidade é realizado para medir a integridade, conformidade e adequação para uso de um produto ou serviço antes da aceitação do usuário e entrega final. Isso é feito medindo todos os passos, atributos e variáveis usados para verificar a conformidade com ou o cumprimento das especificações definidas no planejamento.
+
+Entradas	Técnicas e Ferramentas	Saídas
+Plano de gerenciamento do projeto
+- Plano de gerenciamento da qualidade	Coleta de dados
+- Listas de verificação
+- Folhas de verificação
+- Amostragem estatística
+- Questionário e pesquisas	Medições de controle da qualidade
+Documentos do projeto
+- Registro das lições apreendidas
+- Métricas da qualidade
+- Documentos de teste e avaliação	Análises de dados
+- Análises de desempenho
+- Análise de causa-raiz	Entregas verificadas
+Solicitações de mudança aprovadas	Inspeção	Informações sobre o desempenho do trabalho
+Entregas	Testes/avaliação de produtos	Solicitações de mudança
+Dados de desempenho do trabalho	Representação de dados
+- Diagramas de causa e efeito
+- Gráficos de controle
+- Histograma
+- Diagramas de dispersão	Atualizações do plano de gerenciamento do projeto
+- Plano de gerenciamento da qualidade
+Fatores ambientais da empresa	Reuniões	Atualizações de documentos do projeto
+- Registro das questões
+- Registro das lições apreendidas
+- Registro dos riscos
+- Documentos de teste e Avaliação
+Ativos de processos organizacionais		
+Tabela 3 – Controlar a Qualidade.
+Fonte: O Autor.
+Atenção
+• Devemos destacar que a entrada do processo “Documentos de testes e avaliação”, na coluna Entradas, incluem os testes aplicados na garantia do processo e do produto descritos anteriormente.
+
+• Um segundo destaque, na coluna Saídas, são as “Solicitações de mudança”, pois uma não conformidade observada poderá gerar uma atualização no registro de mudanças do projeto, sendo que as solicitações de mudança aprovadas podem incluir modificações, como reparos de defeitos, revisão dos métodos de trabalho e revisão dos cronogramas.
+
+Resumindo
+Neste módulo, compreendemos o Planejamento da Qualidade com destaque ao trabalho realizado pela equipe de garantia da qualidade, que tem como atribuição auxiliar a equipe de software a obter um produto final de alta qualidade.
+
+O plano de qualidade de software, elaborado pela referida equipe, fornece um roteiro para instituir a garantia da qualidade de software, servindo como um gabarito para as atividades de garantia da qualidade de software que serão instituídas para cada projeto de software.
+
+Existem padrões para os referidos planos propostos pelo IEEE, PMBOK, entre outros.
+
+Vimos também os testes de verificação que estão relacionados com a qualidade do processo de desenvolvimento de software e os testes de validação, relacionados com a qualidade do produto software.
+
+O processo Controlar a qualidade permite atender à máxima “Não se controla o que não se mede”, permitindo monitorar e registrar resultados da execução das atividades de gerenciamento da qualidade, verificando se as entregas e o trabalho do projeto cumprem os requisitos especificados.
+
+Agora é com você! Vamos verificar se atingimos o objetivo deste módulo? Você está convidado a realizar as atividades a seguir.

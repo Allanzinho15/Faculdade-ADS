@@ -1,0 +1,142 @@
+Diagrama de estado
+Permite modelar o comportamento dinâmico e o fluxo de controle dentro de uma aplicação. Diagramas de estado ajudam a entender as transições entre diferentes estados de um objeto ao longo do tempo, enquanto diagramas de atividades detalham o fluxo de trabalho e processos paralelos. Dominar esses conceitos possibilita a criação de sistemas mais eficientes e bem estruturados, facilitando a comunicação entre os desenvolvedores e melhorando a qualidade e a manutenção do software.
+
+
+Neste vídeo, compreenda a aplicação do diagrama de transição de estados, utilizando a UML no processo de desenvolvimento de software.
+
+
+
+Transição entre estados
+
+
+
+Exemplo de transição de estado.
+
+Objetos de um sistema de software orientado a objetos se encontram em um estado particular a cada momento. Um objeto muda de estado quando acontece algum evento interno ou externo ao sistema. Quando um objeto muda de um estado para outro, diz-se que ele realizou uma transição entre estados. Os estados e as transições de estado de um objeto constituem o seu ciclo de vida.
+
+ 
+
+No momento de sua transição de um estado para outro, um objeto normalmente realiza determinadas ações dentro do sistema. Veja alguns pontos importantes sobre a transição dos objetos:
+
+
+Cada objeto pode passar por um número finito de estados durante a sua vida. Quando um objeto transita de um estado para outro, significa que o sistema no qual ele está inserido também está mudando de estado.
+ 
+Pela análise das transições entre estados dos objetos de um sistema de software, é possível prever todas as possíveis operações realizadas, em função de eventos que podem ocorrer.
+ 
+O diagrama da UML utilizado para realizar essa análise é o diagrama de estados, também conhecido como diagrama de máquina de estado ou de transição de estado (DTE).
+ 
+Esse diagrama permite descrever o ciclo de vida de objetos de uma classe, os eventos que causam a transição de um estado para outro e a realização de operações resultantes.
+
+Atenção
+Assim como diagramas de interação não são construídos para todos os casos de uso, os diagramas de transição de estado não devem ser construídos para todas as classes de um sistema, mas apenas para aquelas que possuem um número definido de estados conhecidos, e quando o comportamento das classes de objetos é afetado e modificado pelos diferentes estados. Nessas classes, um DTE pode ser utilizado para enfatizar os eventos que resultam em mudanças de estado.
+
+
+Diagrama de transição de estados
+
+A UML tem um conjunto rico de notações para desenhar um DTE. Os elementos básicos de um diagrama de transição de estados são os estados e as transições. Associados a estas últimas estão os conceitos de evento, ação e atividade. Um DTE pode também conter elementos menos utilizados, mas às vezes úteis, como transições internas, estados aninhados e estados concorrentes. A imgem a seguir mostra um diagrama de estados para o objeto oferta de disciplina, que pode ter quatro estados: aberta, cancelada, lotada e fechada.
+
+
+
+
+Exemplo de diagrama de estados.
+
+Um estado é uma situação na vida de um objeto durante a qual ele satisfaz alguma condição ou realiza alguma atividade. Cada estado de um objeto é normalmente determinado pelos valores dos seus atributos e (ou) pelas suas ligações com outros objetos.
+
+
+A UML utiliza as seguintes notações para representar os estados:
+
+
+
+Estado
+
+O retângulo com as bordas arredondadas representa um estado. Em sua forma mais simples, o retângulo de um estado possui um único compartimento.
+
+
+Estado inicial
+
+O círculo preenchido indica o estado de um objeto quando ele é criado. Só pode haver um estado inicial em um DTE, restrição que serve para definir a partir de que ponto um DTE deve começar a ser lido.
+
+
+Estado final
+
+Representado por um círculo parcialmente preenchido. Diferentemente do estado inicial, pode haver vários estados finais, dependendo dos estados terminais do objeto modelado.
+
+Transições
+
+Os estados estão associados a outros pelas transições. Uma transição é mostrada como uma linha conectando estados, com uma seta apontando do estado origem para o estado destino. Quando ocorre uma transição entre estados, diz-se que a transição foi disparada. Note que, em uma transição, o estado subsequente pode ser igual ao estado original. Uma transição pode ser rotulada com uma expressão:
+
+
+evento (lista-parâmetros) [guarda] / [ação]
+
+
+A seguir, vamos entender os elementos envolvidos nas transições entre estados:
+
+
+
+Evento
+
+Um evento é algo que acontece em algum ponto no tempo e que pode modificar o estado de um objeto, provocando a transição de estado. Um evento pode conter uma lista de parâmetros que são passados para fornecer informações úteis ao objeto receptor de evento. A lista de parâmetros é especificada entre parênteses. Na imagem exemplo de diagrama de estados, realização de inscrição / qtdAlunos := qtdAlunos + 1 é um exemplo de evento.
+
+Os eventos relevantes a uma classe de objetos podem ser classificados em quatro tipos:
+ 
+
+Evento de chamada: recebimento de uma mensagem de outro objeto. Pode-se pensar nesse tipo de evento como uma solicitação de serviço de um objeto a outro.
+ 
+Evento de sinal: recebimento de um sinal. Este é um tipo especial do evento anterior. Nesse evento, o objeto recebe um sinal de outro objeto que pode fazê-lo mudar de estado. A diferença básica entre o evento de sinal e o evento de chamada é que neste último o objeto que envia a mensagem fica esperando a execução dela. No evento de sinal, o objeto remetente continua o seu processamento após ter enviado o sinal. O evento de sinal raramente é utilizado.
+ 
+Evento temporal: passagem de um intervalo de tempo predefinido. Em vez de receber uma mensagem específica, um objeto pode interpretar a passagem de um certo intervalo como sendo um evento.
+ 
+Evento de mudança: uma condição que se torna verdadeira. O fato de determinada condição se tornar verdadeira também pode ser visto como um evento.
+
+Condição de guarda
+
+Uma transição pode ter também uma condição de guarda. Uma condição de guarda, ou simplesmente guarda, é uma expressão de valor lógico, da mesma forma que a utilizada para diagramas de interação. A condição de guarda de uma transição pode ser definida utilizando-se parâmetros passados no evento e atributos e referências a ligações da classe em questão. Além disso, uma condição também pode testar o valor de um estado. Uma transição na qual foi definida uma condição de guarda é disparada somente se o evento associado ocorre e a condição de guarda é verdadeira. Se uma transição não tiver uma condição de guarda, ela sempre será disparada quando o evento ocorrer. É importante não confundir a condição de guarda de uma transição com um evento de mudança (que também é definido com uma expressão de valor lógico). A expressão condicional de uma condição de guarda é sempre apresentada entre colchetes, como em [qtdAlunos < capacidadeMáxima] e [else], visto no exemplo de diagrama de estados.
+
+
+Ações
+
+Ao transitar de um estado para outro, um objeto pode realizar uma ou mais ações. Uma ação é uma expressão que pode ser definida em termo dos atributos, das operações ou das associações da classe. Os parâmetros do evento também podem ser utilizados. Uma ação pode corresponder igualmente à execução de uma operação. A ação é representada na linha da transição e deve ser precedida por uma barra inclinada para a direita (símbolo “/”). Note que a ação associada a uma transição é executada somente se a transição for disparada. No exemplo de diagrama de estados, são exemplos de ações: / qtdAlunos := qtdAlunos + 1 e / qtdAlunos := qtdAlunos – 1.
+
+
+Atividades
+
+Semelhante a uma ação, uma atividade é algo que é executado pelo objeto. No entanto, uma atividade pode ser interrompida (considera-se que o tempo de execução de uma ação é tão insignificante que ela não pode ser interrompida). Por exemplo, enquanto a atividade estiver em execução, pode acontecer um evento que a interrompa e cause uma mudança de estado. Outra diferença entre ação e atividade é que uma atividade sempre está associada a um estado (ao contrário, uma ação está associada a uma transição).
+
+
+Ponto de junção
+
+Em algumas situações, o próximo estado de um objeto varia de acordo com o valor da condição de guarda. Se o valor da condição de guarda for verdadeiro, o objeto vai para um estado E1; se for falso, o objeto vai para outro estado E2. É como se a transição tivesse bifurcações e cada transição de saída da bifurcação tivesse uma condição de guarda. Essa situação pode ser representada em um DTE por um ponto de junção. Um ponto de junção é desenhado como um losango em que chegam uma ou mais transições (provenientes de estados diferentes) e de onde partem uma ou mais transições. A cada transição de saída do ponto de junção está associada uma condição de guarda. A transição que o objeto segue é aquela para a qual a condição de guarda é verdadeira. Note que há um ponto de junção no exemplo de diagrama de estados.
+
+
+Estados aninhados
+
+Podem existir estados aninhados dentro de outro estado. Um estado que contém diversos outros é dito composto. Todos os estados dentro de um estado composto herdam qualquer transição deste último. Isso significa que o uso de estados compostos geralmente torna um DTE mais legível.
+
+
+Estados concorrentes
+
+Um estado concorrente é um tipo especial de estado composto. Um objeto em um estado concorrente pode, na verdade, se encontrar em dois ou mais estados independentes.
+
+Identificação dos elementos de um diagrama de estados
+
+Um professor está licenciado quando não está ministrando curso algum durante o semestre.
+ 
+Uma oferta de disciplina está aberta quando a capacidade máxima não for alcançada; caso contrário, a oferta estará lotada.
+ 
+Um pedido está atendido quando todos os seus itens estão entregues.
+
+Conheça alguns pontos de partida para identificar estados de um objeto:
+
+
+Análise dos possíveis valores de seus atributos e as ligações que ele pode realizar com outros objetos.
+
+No entanto, a existência de atributos ou ligações não é suficiente para justificar a criação de um DTE para uma classe. O comportamento de objetos dessa classe deve depender de tais atributos ou ligações. Em relação a transições, devemos identificar os eventos que podem gerá-las. Além disso, é preciso examinar também se há algum fator que condicione o disparo da transição. Se existir, esse fator deve ser modelado como uma condição de guarda da transição. Já que as transições dependem de eventos para ocorrer, devem-se identificar esses eventos primeiramente.
+
+
+Descrição dos casos de uso
+
+Este é outro bom ponto de partida! Os eventos encontrados na descrição dos casos de uso são externos ao sistema. Contudo, uma transição pode também ser disparada por um evento interno ao sistema. Para identificar os eventos internos relevantes a um objeto, analise os diagramas de interação. Esses diagramas contêm mensagens sendo trocadas entre objetos e mensagens, que nada mais são do que solicitações de um objeto a outro. Essas solicitações podem ser vistas como eventos. De uma forma geral, cada operação com visibilidade pública de uma classe pode ser vista como um evento em potencial.
+
+
+Dica
+Outra fonte para identificação de eventos relevantes é analisar as regras de negócio definidas para o sistema. Normalmente, essas regras possuem informações sobre condições limites que permitem identificar estados e transições.

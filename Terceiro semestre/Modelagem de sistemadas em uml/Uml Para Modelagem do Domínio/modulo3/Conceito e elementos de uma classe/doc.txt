@@ -1,0 +1,116 @@
+Conceito e elementos de uma classe
+Qualquer pessoa que busque compreender a programação orientada a objetos precisa ter entendimento sólido dos conceitos e elementos de uma classe. Portanto, estudar esse assunto capacita quem deseja projetar sistemas robustos e flexíveis, pois promove a reutilização e a manutenção do código.
+
+Classe é a estrutura fundamental dos diagramas de classes, pois representa um modelo ou tipo de objeto que encapsula dados e operações relacionadas. Dentro de uma classe, os elementos principais incluem atributos (ou variáveis de instância), que descrevem as características do objeto, e métodos (ou funções de membro), que definem seu comportamento.
+
+Neste vídeo, você verá que uma classe inclui a descrição de atributos (características) e serviços (ações) comuns a um grupo de objetos, apresentando o conceito de classe e seus elementos essenciais.
+
+
+A abordagem de desenvolvimento de sistemas orientada a objetos assume que um sistema é uma coleção de entidades – os objetos – que se comunicam e realizam ações. A interação entre objetos é a forma de execução de uma funcionalidade do software.
+
+Essa abordagem se baseia nos seguintes princípios listados por Bezerra (2015):
+
+1
+Qualquer coisa representa um objeto.
+
+2
+Objetos realizam tarefas por meio da requisição de serviços a outros objetos.
+
+3
+Cada objeto pertence a uma classe, ou seja, classe é uma entidade que agrupa e abstrai objetos similares.
+
+4
+Uma classe funciona com repositório para comportamento associado aos objetos instanciados a partir dela.
+
+5
+Classes são organizadas em hierarquias.
+
+Entenda, a seguir, algumas definições e termos utilizados anteriormente:
+
+UML
+A UML é a linguagem padrão que permite a elaboração dos diversos modelos e das perspectivas de um sistema na abordagem da orientação a objetos.
+
+Classes
+Classes (e seus objetos) são os componentes básicos dessa abordagem.
+
+Objetos
+Objetos são entidades do mundo real que podemos observar. Por exemplo, um um carro, uma fruta, uma empresa, um empregado da empresa, um concerto de música, um restaurante, entre outros.
+
+Quando pensamos nesses objetos em termos de grupos de coisas, por exemplo, cada pessoa que assiste a aulas em uma turma é um objeto diferente, mas, se abstrairmos esses objetos, observando suas características comuns, criamos o conceito de Aluno, o qual é denominado, então, de Classe. Uma classe de objetos com caraterísticas comuns, tais como: estão matriculados em uma turma e assistem a aulas.
+
+Uma classe pode ser definida como uma descrição de atributos (características) e serviços (ações) comuns a um grupo de objetos.
+
+Bezerra (2015) ressalta que uma classe pode ser entendida como uma espécie de molde, a partir do qual objetos podem ser construídos. Portanto, é comum afirmarmos que um objeto é uma instância de uma classe. Cada objeto do mundo real é único, uma classe abstrai o tipo de objeto e permite que novos objetos sejam criados a partir desse modelo.
+
+extension
+Exemplo
+Se uma nova pessoa se matricula na turma, ela é um novo objeto instanciado a partir da classe Aluno.
+
+Quando estamos tratando da modelagem de um sistema, somente um subconjunto de características do grupo de objetos pode ser relevante. Portanto, uma classe representa uma abstração das características relevantes do mundo real para aquele conjunto de objetos.
+
+Voltando aos nossos alunos, as características relevantes desses objetos, para um sistema acadêmico, poderiam ser número de matrícula, idade e estilo de aprendizagem; mas outras, tais como o esporte favorito ou número do calçado, talvez não façam parte do interesse desse sistema.
+
+A estrutura de uma classe é composta de atributos e de operações. Veja o que cada um representa a seguir:
+
+Atributos
+Operações
+Os atributos descrevem os dados que deverão ser armazenados pelos objetos dessa classe (suas características). Cada atributo de uma classe é de um tipo de dados e possui um conjunto de valores que esse atributo pode assumir, chamado de domínio.
+
+Veja um exemplo de atributos e operações na Imagem 1 a seguir:
+
+
+Imagem 1: Exemplo de classe e seus atributos e operações,
+
+Observamos, na Imagem 1, que a representação de uma classe é feita por meio de um retângulo com três compartimentos: nome da classe, lista de atributos e lista de operações. Você também pode perceber a sintaxe de especificação dos atributos e operações.
+
+Um atributo é especificado no seguinte formato:
+
+[visibilidade] nome: tipo = valor_inicial
+
+Visibilidade de um atributo diz respeito ao seu nível de acesso, ou seja, permite definir quais atributos de um objeto são acessíveis por outros objetos. Essa propriedade serve para implementar o encapsulamento da estrutura interna da classe. A visibilidade de um atributo pode ser:
+
+chevron_left
+
+
+
+
+chevron_right
+chevron_left
+1 de 4
+chevron_right
+Veremos a diante que um pacote é um agrupamento de diagramas UML. Veja, a seguir, a que correspondem os elementos nome e tipo do atributo:
+
+Elemento nome
+O elemento nome, única parte obrigatória na sintaxe do atributo, corresponde ao nome do atributo.
+
+Elemento tipo
+O elemento tipo, que especifica o tipo do atributo, é dependente da linguagem de programação na qual a classe será implementada.
+
+Como exemplo de elemento tipo, podemos citar: int, float, boolean. No exemplo da Imagem 1, o atributo matrícula é do tipo int.
+
+É possível declarar o valor inicial que o atributo assume quando um objeto daquela classe for instanciado.
+
+Sempre que um objeto de uma classe é instanciado, o valor inicial declarado é automaticamente definido para o atributo.
+
+Em nosso exemplo, quando um novo aluno é inserido no sistema, assumimos que seu estiloAprendizagem é aula prática.
+
+Uma operação é especificada no seguinte formato:
+
+visibilidade nome(parâmetros): tipo-retorno {propriedades}
+
+O elemento nome corresponde ao nome dado à operação, em que normalmente usamos verbos que denotem a ação realizada por essa operação (no exemplo, assistirAula). Uma operação é ativada (executada) quando um objeto envia uma mensagem para outro, sendo essa mensagem o nome da operação.
+
+assignment_ind
+Comentário
+Do mesmo modo que os atributos, a visibilidade pode ser pública (+), privada (-), protegida (#) ou de pacote (~).
+
+Veja a seguir a descrição e algumas características dos parâmetros de uma operação:
+
+Definição de parâmetro
+Os parâmetros de uma operação são informações que ela recebe do objeto que envia a mensagem para requisitar a execução da operação.
+
+Quantidade de parâmetros
+Uma operação pode ter zero ou mais parâmetros, que devem ser separados por vírgulas.
+
+Tipo de parâmetro
+Parâmetros têm seu tipo definido: tipo retorno representa o tipo de dados do valor retornado por uma operação.

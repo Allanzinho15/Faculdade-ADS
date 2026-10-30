@@ -1,0 +1,31 @@
+Manutenção
+Realizada a implantação do software com sucesso, iniciamos imediatamente a próxima etapa: a manutenção.
+
+ 
+
+A etapa mais longa do ciclo de vida do software, a manutenção inclui a correção de defeitos não identificados nas etapas anteriores do processo de desenvolvimento de software, no aprimoramento da implementação dos subsistemas e na disponibilização de novas funcionalidades a partir da identificação de novos requisitos.
+
+ 
+
+Pouco tempo depois de iniciada a etapa de manutenção, começam a chegar aos engenheiros de software os relatos de erros, bem como solicitações de adaptações e melhorias. Estas devem ser planejadas, programadas e executadas. Reiteramos aqui a importância do processo de gestão de alterações descrito anteriormente e ilustrado na Figura 15.
+
+ 
+
+Outro problema associado à manutenção é a mobilidade dos engenheiros de software, pois, com o passar do tempo, a equipe que trabalhou no desenvolvimento do software pode ter sido substituída ou mesmo dissolvida, ou seja, pode ocorrer a inexistência de um engenheiro de software que conheça o sistema.
+
+
+
+Neste ponto, podemos destacar a importância do correto cumprimento de todas as etapas do processo de desenvolvimento de software, de modo a gerar uma solução bem estruturada para o projeto, incluindo os diversos modelos que representam decisões tomadas ao longo do projeto, o que permite o entendimento da solução por parte de um engenheiro de software que não trabalhou no desenvolvimento do produto.
+
+ 
+
+Na verdade, toda solução que aplica as melhores práticas da engenharia de software busca o cumprimento do requisito não funcional denominado manutenibilidade, sendo esse um indicativo qualitativo da facilidade de corrigir, adaptar ou melhorar o software.
+
+ 
+
+Importante! Um dos grandes objetivos da engenharia de software é criar sistemas que apresentem alta manutenibilidade.
+
+
+O que você achou do conteúdo?
+
+Relatar problema

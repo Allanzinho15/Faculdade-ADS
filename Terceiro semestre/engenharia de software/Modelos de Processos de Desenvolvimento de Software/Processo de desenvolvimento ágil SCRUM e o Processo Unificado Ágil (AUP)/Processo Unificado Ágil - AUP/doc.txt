@@ -1,0 +1,65 @@
+Processo Unificado Ágil - AUP
+O Processo Unificado Ágil, ou Agile Unified Process (AUP), é uma versão simplificada do Rational Unified Process (RUP). O AUP baseia-se nos seguintes princípios:
+
+
+
+A equipe sabe o que está fazendo. O AUP disponibiliza links de acesso à documentação com muitos detalhes, isso para os que estiverem interessados.
+Simplicidade. Tudo é descrito de forma concisa maximizando a simplicidade.
+Agilidade. O AUP está em conformidade com os valores e princípios da metodologia ágil de desenvolvimento de software.
+Concentre-se em atividades de alto valor. O foco está nas atividades que realmente agregam valor ao cliente.
+Independência de ferramenta. A recomendação é utilizar as ferramentas mais adequadas, que muitas vezes são ferramentas simples.
+Customização. O produto AUP é facilmente customizável às necessidades dos seus usuários.
+
+ 
+
+O AUP adota uma natureza serial para o que é amplo, e iterativo para o que é particular. Vejamos a natureza serial do AUP que inclui as mesmas quatro fases adotadas pelo RUP:
+
+
+
+Concepção
+
+Elaboração
+
+Construção
+
+Transição
+Tem como objetivos a identificação do escopo do projeto, de uma arquitetura em potencial para o sistema e a viabilidade do projeto.
+
+
+
+
+
+
+
+
+Vejamos a natureza iterativa do AUP. As atividades que são realizadas de forma iterativa pelos membros da equipe de desenvolvimento para construir, validar e entregar software operacional são as seguintes:
+
+
+
+Modelagem
+Inclui o entendimento do negócio em questão e do problema a ser resolvido pelo software, identificando uma solução; representações UML para os modelos são utilizadas, entretanto, devem ser suficientemente boas e adequadas, ou seja, o mínimo de formalismo.
+
+
+Implementação
+Transformação dos modelos em código executável, realizando os respectivos testes básicos, tais como testes unitários.
+
+
+Testes
+Realização de uma avaliação objetiva a fim de garantir a qualidade, incluindo a detecção de defeitos, a validação funcional e a verificação de que os requisitos são cumpridos.
+
+
+Implantação
+Planejar e executar a entrega do software operacional aos usuários finais e na obtenção de feedback dos usuários.
+
+
+Gerenciamento de configuração
+Garantir o acesso aos artefatos do projeto, incluindo o rastreamento das diversas versões, bem como o controle e gerenciamento de suas alterações.
+
+
+Gestão de projetos
+Planejar, monitorar e controlar as atividades do projeto a fim de que ele seja entregue no prazo, dentro do orçamento e atendendo as expectativas dos usuários.
+
+
+Ambiente
+Atua em apoio às demais atividades, garantindo a infraestrutura do processo que inclui padrões, ferramentas e outras tecnologias de suporte disponíveis à equipe.
+

@@ -1,0 +1,34 @@
+Processo de desenvolvimento de software
+O processo de desenvolvimento de software é iniciado com especificações e modelos com alto nível de abstração e, à medida que o desenvolvimento de software se aproxima da codificação, o nível de abstração diminui, de modo que o código representa o nível mais baixo da abstração ou de maior detalhamento na especificação do software.
+
+ 
+
+As atividades típicas que compõem o processo de desenvolvimento de software, descritas por Pressman (2016), estão representadas na Figura 1. O objetivo é ilustrar as atividades mais comuns que compõem os processos de desenvolvimento de software, ou seja, as atividades genéricas incorporadas por qualquer processo, sendo uma notória diferença entre os modelos, a ênfase dada a cada atividade.
+
+
+
+Figura 1 – Atividades Típicas de um Processo de Desenvolvimento de Software.
+
+Vamos agora descrever cada uma das atividades comumente previstas em um processo de desenvolvimento de software:
+
+
+
+Comunicação
+As primeiras atividades de um processo de software requerem uma comunicação intensiva com os usuários, buscando o entendimento do problema, a definição de objetivos para o projeto, bem como a identificação de requisitos.
+
+
+Planejamento
+Destaca-se, nesta atividade, a área de conhecimento e gerenciamento de projeto, que permitirá a elaboração de um Plano de Gerenciamento do Projeto de forma sistemática, tendo como entrega importante, o cronograma que inclui as atividades a serem desenvolvidas nesse projeto.
+
+
+Modelagem
+A engenharia tem como melhor prática a geração de modelos, tal como a planta baixa de uma casa, e a maioria desses modelos gráficos, denominados de diagramas na Engenharia de Software, podendo ser complementados por descrições textuais, assim como o modelo de casos de uso.
+
+
+Construção
+A partir dos modelos gerados, é realizada a construção ou implementação do software, portanto, os modelos determinam o comportamento deste. Essa atividade inclui a codificação e os testes de software de acordo com o planejado.
+
+
+Entrega
+Ao final, ocorre o objetivo de um plano de projeto de software, i.e., a entrega do produto em produção de acordo com o planejado.
+

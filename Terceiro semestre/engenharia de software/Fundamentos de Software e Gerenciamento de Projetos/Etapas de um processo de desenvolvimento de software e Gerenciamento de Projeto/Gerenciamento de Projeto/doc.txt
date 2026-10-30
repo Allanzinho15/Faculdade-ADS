@@ -1,0 +1,45 @@
+Gerenciamento de Projeto
+Agora que você tem uma boa compreensão das atividades genéricas que compõem um processo e as possibilidades de fluxos de processos, ou seja, os encadeamentos possíveis das referidas atividades, temos agora que compreender como aplicar de forma sistemática uma metodologia que lhe permita, a partir de uma necessidade de um determinado usuário, gerar o produto software desejado.
+
+ 
+
+A sigla PMI lhe diz algo? O PMI, Project Management Institute, é uma organização que visa disseminar as melhores práticas de Gerenciamento de Projetos em todo o mundo e que tem como premissa o fato de ser esse gerenciamento uma profissão.
+
+
+Dica
+A certificação de Profissional de Gerenciamento de Projetos (PMP)® do PMI é a certificação para gerentes de projeto reconhecida como uma das mais importantes para a indústria, incluindo a de software. No Brasil, podemos afirmar que é a mais importante.
+
+ 
+
+Qual seria a importância de uma certificação para você?
+
+ 
+
+A certificação complementa a formação acadêmica tornando o profissional de TI mais atualizado e com maior empregabilidade, tanto na busca de um novo posto de trabalho como de uma promoção.
+
+
+Retornando ao nosso tema PMI, este publica um conjunto de melhores práticas denominado de Guia de Conhecimento em Gerenciamento de Projetos – PMBOK, ou Project Management Body of Knowledge, em inglês. O Guia PMBOK é uma base sobre a qual podemos criar uma metodologia para obtenção do nosso produto, i.e., o software.
+
+ 
+
+Nesse contexto, temos que apresentar um primeiro conceito:
+
+
+Um projeto é um esforço temporário empreendido para criar um produto, serviço ou resultado único.
+(PMI, 2017)
+Podemos inferir do conceito que todo projeto tem início, meio e fim, por isso é temporário, sendo o mesmo fator impulsionador de mudança nas organizações.
+
+ 
+
+Agora, podemos apresentar um segundo conceito que cabe destaque:
+
+
+
+Gerenciamento de projetos é a aplicação de conhecimentos, habilidades, ferramentas e técnicas às atividades do projeto a fim de cumprir os seus requisitos. O gerenciamento de projetos é realizado através da aplicação e integração apropriadas dos processos de gerenciamento de projetos identificados para o projeto. O gerenciamento de projetos permite que as organizações executem projetos de forma eficaz e eficiente (PMI, 2017).
+
+
+Lembra que a Engenharia de Software está baseada em processos?
+
+A atividade de gerenciamento de projetos tem a mesma base.
+
+Vamos entender a seguir como funciona.

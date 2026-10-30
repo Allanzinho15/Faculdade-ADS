@@ -1,0 +1,127 @@
+Modelos de processos prescritivos
+A Engenharia de Software permite sistematizar o desenvolvimento de software por meio de processos. Nesse sentido, um modelo de processo identifica as atividades que serão desenvolvidas, sendo comumente utilizadas as atividades ilustradas na figura anterior.
+
+ 
+
+Podemos, então, afirmar que um modelo de processo sistematiza o trabalho de engenharia de software, incluindo as atividades, fluxos de processos, artefatos gerados e outros, propiciando, também, estabilidade, controle e organização ao referido trabalho.
+
+
+O que diferencia os modelos de processos? Embora todas as atividades típicas sejam utilizadas em todos os modelos, cada representação enfatiza de forma diferente cada atividade, e o encadeamento dessas ações — talvez o mais importante — é denominado de fluxo de processo.
+
+
+O primeiro conjunto de modelos que abordaremos são os denominados modelos de processos prescritivos, por prescreverem metodologias, tarefas, artefatos, garantia da qualidade e mecanismos de controle de mudanças, ou seja, um conjunto de elementos de processo.
+
+
+Modelo em cascata
+
+O modelo em cascata sugere uma abordagem sequencial, isto é, a execução das atividades ilustradas na Figura 1 de forma encadeada. Este é o modelo de processo mais antigo da engenharia de software e utilizado de forma intensa à época em que o paradigma de desenvolvimento estruturado era dominante na indústria de software.
+
+ 
+
+Podemos descrever algumas características negativas relativas a esse modelo, tais como:
+
+ 
+
+Projetos reais raramente seguem um fluxo sequencial, em função da volatilidade dos requisitos.
+Assume que é possível ao cliente explicitar detalhadamente todas as suas necessidades em forma de requisitos, antes do início das demais fases do desenvolvimento, aumentando a possibilidade de propagação de erros pelas fases do processo.
+Inflexibilidade na divisão do projeto em fases distintas, visto que uma versão do software somente estará disponível ao final do projeto.
+
+Dica
+Podemos aplicar o modelo em cascata em projetos com requisitos fixos e de forma que o fluxo de trabalho possa ser realizado sequencialmente até o seu encerramento.
+
+
+Modelos de processo incremental e Modelos de processo evolucionário
+
+Ambos os modelos dividem o desenvolvimento de um produto de software em ciclos, e cada ciclo de desenvolvimento inclui todas as atividades contidas na figura anterior.
+
+ 
+
+Podemos observar na Figura 2 a repetição, a cada incremento e de forma iterativa, das atividades típicas de um processo de software. Cada iteração considera um subconjunto de requisitos, ocorrendo uma entrega a cada final de ciclo, isto é, a cada novo incremento um novo conjunto de funcionalidades é disponibilizado ao usuário final.
+
+ 
+
+O desenvolvimento atual do software comumente tem restrições de prazos e uma alta volatilidade dos requisitos, limitando a geração de um produto abrangente. Esse modelo permite a geração de uma versão limitada que imediatamente agrega valor ao usuário.
+
+ 
+
+Qual é a diferença entre o modelo incremental e evolucionário?
+
+Modelo incremental
+
+
+No modelo incremental, ocorre a entrega de um produto essencial, estando as demais iterações bem definidas.
+
+
+Modelo evolucionário
+
+
+No modelo evolucionário, uma parte dos requisitos está bem entendida, ocorrendo o versionamento em função desse entendimento. A cada nova iteração ocorre um melhor entendimento do problema por meio da definição de novos requisitos e novas versões são geradas.
+
+
+
+Figura 2 – O modelo incremental.
+
+O modelo incremental de processo de desenvolvimento de software
+
+Veja, a seguir, as atividades típicas de desenvolvimento incremental que ocorrem em cada iteração do modelo:
+
+
+O modelo incremental de processo de desenvolvimento de software
+
+
+
+Prototipação
+
+Imagine a construção de uma grande barragem onde, em uma fase inicial, é construído um protótipo em escala reduzida para numericamente avaliar os esforços existentes. Depois dos testes, a maquete serve como peça de museu ou vai para um laboratório de uma universidade para estudos de caso.
+
+ 
+
+Você poderia questionar: como faço isso no software? A abstração é a mesma, porém o produto software tem suas peculiaridades.
+
+Vamos imaginar que um requisito não funcional determina que a replicação de dados ocorrerá por meio de uma tecnologia desconhecida da equipe de desenvolvimento. Seria razoável aguardar o momento do desenvolvimento para realizar a tratativa desse requisito?
+ 
+
+Na prototipação, o desenvolvedor interage diretamente com o usuário, escutando seus pedidos e desenvolvendo, imediatamente, um protótipo do produto desejado, isso de forma iterativa e evolucionária, como um “projeto rápido” apresentado a seguir.
+
+Saiba Mais
+Podemos descartar esse software gerado? Depende, normalmente essa primeira versão do protótipo serve apenas para validar um requisito e necessita ser reconstruída, mas, considerando as peculiaridades do software, essa mesma versão pode ser refinada e integrada ao sistema em desenvolvimento.
+
+
+Atenção, a prototipação pode ser utilizada como modelo de processo na solução de problemas de baixa complexidade.
+
+
+
+Figura 3 – O paradigma prototipação
+
+Modelo Espiral
+
+O Modelo Espiral foi originalmente proposto por Barry Boehm em 1988. De acordo com a Figura 4, cada quadrante da espiral corresponde a uma etapa do desenvolvimento e cada loop na espiral representa uma fase do processo de software. O loop mais interno pode estar relacionado com a viabilidade do sistema, o próximo, ao levantamento de requisitos e assim sucessivamente.
+
+
+Primeira etapa
+
+A primeira etapa (Analysis) inclui a determinação de objetivos, alternativas, riscos e restrições, em que ocorre o comprometimento dos envolvidos e o estabelecimento de uma estratégia para alcançar os objetivos.
+
+
+Segunda etapa
+
+Na segunda etapa (Evaluation), avaliação de alternativas, identificação e solução de riscos, executa-se uma análise de risco, sendo a prototipação uma boa ferramenta para tratar de ameaças.
+
+
+Terceira etapa
+
+Na terceira etapa (Development) ocorre o desenvolvimento do produto.
+
+
+Quarta etapa
+
+Na quarta etapa (Planning) o produto é avaliado, sendo realizado o planejamento para início de um novo ciclo.
+
+
+Figura 4 – O modelo espiral. Fonte: Wikimedia Commons
+
+Podemos fazer uso da abstração de forma a visualizarmos o modelo espiral como um metamodelo, tendo como exemplo o proposto por Pressman (2016), apresentado na Figura 5, na qual a espiral do modelo é dividida nas atividades genéricas ilustradas na Figura 1.
+
+
+
+Figura 5 – O modelo espiral. 

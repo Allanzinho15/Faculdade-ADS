@@ -1,0 +1,152 @@
+Utilizando modelos
+O entendimento teórico sobre o conceito de modelos e sua aplicabilidade é fundamental em diversas disciplinas. Os modelos são representações simplificadas da realidade, permitindo aos pesquisadores e profissionais analisarem, entenderem e preverem o comportamento de sistemas complexos. Eles servem como ferramentas poderosas para explorar cenários, testar hipóteses e tomar decisões embasadas. Ao compreender a natureza e a função dos modelos, os indivíduos podem empregar essas ferramentas de forma mais eficaz, contribuindo para o avanço do conhecimento em campos tão diversos quanto a ciência, a engenharia, a economia e a medicina.
+
+
+Vamos entender neste vídeo a importância do uso de modelos, representados por meio de diagramas, no processo de desenvolvimento de sistemas computacionais. Assista!
+
+
+
+O que são modelos e para que eles servem
+
+Uma família decide adquirir um imóvel na planta para moradia. Eles vão a um lançamento imobiliário a convite de um corretor conhecido. Ao chegarem, encontram um terreno vazio e um stand de vendas. Imediatamente surge a dúvida: como escolher o bloco e o apartamento de forma a garantir privacidade, considerando a vizinhança?
+
+
+O corretor inicia seu trabalho e leva a todos para conhecerem a maquete do empreendimento − que nada mais é do que a representação do empreendimento em bloco único − e a infraestrutura do parque aquático.
+
+
+A maquete é simplesmente uma representação em miniatura do condomínio real, ou seja, um modelo do empreendimento real. O empreendimento real será construído à imagem e semelhança da maquete. Assim, podemos estabelecer a primeira finalidade de um modelo: antecipar a existência de uma realidade para avaliar sua estrutura e comportamento.
+
+
+
+Maquete de um empreendimento.
+
+No exemplo a seguir, encontramos maquetes de um empreendimento imobiliário, mostrando a perspectiva externa, dando a visão clara da vizinhança, do posicionamento do imóvel, da piscina e área de lazer e da entrada.
+
+
+Analisando a maquete e o posicionamento do empreendimento no terreno, os integrantes da família verificam o bloco e a posição do imóvel que mais lhes interessam, avaliando a vizinhança e respectivas distâncias entre eles.
+
+
+A família seleciona três unidades e pergunta sobre a disposição dos cômodos. O corretor, então, apresenta a planta baixa de cada unidade selecionada. Veja!
+
+
+
+Planta de uma unidade de um empreendimento.
+
+Em seguida, eles se sentam à mesa com o corretor para escolher a unidade no bloco selecionado. O corretor então apresenta a tabela de preços de cada unidade do bloco selecionado, informando a metragem, o valor da unidade e as condições de pagamento.
+
+
+A planta ilustrativa da unidade é um segundo exemplo de modelo usado no mercado imobiliário, que possibilita ao comprador avaliar o posicionamento e a dimensão de cada cômodo.
+
+
+A família decide-se pelo imóvel, fecha o negócio e recebe um pen drive contendo outras plantas da unidade: elétrica, hidráulica, dentre outras. Cada uma dessas plantas representa um modelo sob uma diferente perspectiva.
+
+
+
+Protótipo automotivo.
+
+Outro exemplo de modelo muito comum atualmente são os protótipos, usados para aumentar a chance de sucesso dos produtos. A partir de um protótipo inicial, outros modelos podem ser demandados e aprimoramentos podem ser desenvolvidos. Os setores automobilístico e o de desenvolvimento de sistemas usam com eficácia protótipos como modelos.
+
+
+Um modelo é uma representação abstrata e simplificada da realidade, que pode variar conforme a perspectiva de observação. A principal finalidade de um modelo é antecipar a existência de uma realidade específica, permitindo avaliar sua estrutura e comportamento de maneira eficaz. Portanto, diferentes realidades podem exigir a criação de múltiplos modelos para atender às diversas necessidades de análise e compreensão.
+
+
+Modelos se aplicam ao contexto de desenvolvimento de sistemas?
+
+Na construção ou desenvolvimento de sistemas computacionais, assim como na construção imobiliária, há uma gradação da complexidade no processo de construção, que depende de alguns fatores, sendo o tamanho (do sistema ou do empreendimento) um deles.
+
+
+Os modelos, além da finalidade inicial, funcionam também como instrumento de gerenciamento da complexidade, considerando a limitação humana em lidar com ela. Os sistemas grandes e complexos carecem de ser modelados para sua melhor compreensão em sua totalidade.
+
+
+Modelos são capazes de revelar as propriedades essenciais de um sistema, ajudando no processo de abstração (concentração nos pontos de interesse) e permitindo que foquem o que é relevante.
+
+
+Entre os benefícios do uso de modelos no desenvolvimento de sistemas computacionais, além de prever o comportamento do sistema e gerenciar sua complexidade, destacam-se estes aqui. Veja!
+
+
+
+Comunicação entre as pessoas envolvidas
+O modelo serve como elemento de comunicação ou difusão de informações entre as pessoas envolvidas em sua construção.
+
+
+Redução nos custos do desenvolvimento
+A construção de modelos é bem mais barata que a construção do sistema em si. A descoberta de erros e falhas em modelos é bem menos onerosa e contribui para a redução dos custos finais do sistema computacional. Isso também vale para as eventuais necessidades de ajustes e melhorias no sistema.
+
+
+Facilidade para alterações do sistema
+A análise de melhorias, seja na fase de construção ou de manutenção, tende a ser mais efetiva quando elaborada sobre os modelos construídos, aumentando a assertividade e diminuindo seus custos. Daí a relevância e a necessidade de manter os modelos sempre atualizados.
+
+
+Documentação do sistema
+Os modelos servem de consulta e orientação a toda a equipe na construção e na manutenção do sistema, incluindo pessoas que sejam integradas após o início do desenvolvimento do sistema. Servem ainda para documentar as decisões tomadas.
+
+
+Delimitação do escopo do sistema
+A modelagem ajuda na delimitação do escopo, ou seja, abrangência do sistema, definindo o que será ou não tratado pelo sistema.
+
+Agora, vamos conhecer mais a seguir sobre modelagem. Acompanhe!
+
+
+Modelagem de sistemas
+
+Assim como exemplificamos no mercado imobiliário, no contexto de desenvolvimento de sistemas computacionais podem ser usados diferentes modelos de um mesmo sistema, em que cada um apresenta uma perspectiva (uma visão).
+
+
+Por exemplo, um sistema armazena e manipula dados por meio de funcionalidades e possui determinados controles. Podemos, então, considerar três diferentes perspectivas e construir modelos que representem cada uma delas, tais como:
+
+
+Os dados
+
+
+As funcionalidades
+
+
+Os controles
+
+
+Outra perspectiva seria a visão externa, a de um usuário, que enxerga as funcionalidades necessárias, mas desconhece o que ocorre internamente. Essa seria mais uma perspectiva e mais um modelo que ajudaria nessa compreensão.
+
+
+Confira algumas formas de abordar os sistemas computacionais por meio de visões.
+
+
+Externa
+
+Modela-se o ambiente em que o sistema está inserido, mostrando sua relação com os usuários e demais sistemas com que interage.
+
+
+Comportamental
+
+Modela-se o comportamento dinâmico do sistema e como ele reage aos eventos que o afetam.
+
+
+Estrutural
+
+Modela-se sua estrutura organizacional ou os dados que o sistema processa.
+
+
+Interacional
+
+Modela-se as interações de seus componentes ou ainda do sistema e seu ambiente externo.
+
+
+
+
+A construção dos diferentes modelos para um sistema compreende o que denominamos modelagem de sistemas, em que:
+
+
+Os modelos são abstratos, deixando de lado os detalhes e concentrando-se nos aspectos de interesse que são relevantes. A esse processo chamamos de abstração.
+ 
+
+Cada modelo apresenta o sistema sob uma diferente visão ou perspectiva da realidade.
+ 
+
+Os modelos são descritos em notações gráficas, que denominamos diagramas.
+
+Com base no que acabamos de estudar, observe!
+
+
+Modelagem de sistema de software consiste na utilização de notações gráficas e textuais com o objetivo de construir modelos que representam as partes essenciais de um sistema, considerando-se várias perspectivas diferentes e complementares.
+
+(Bezerra, 2015)
+Como veremos mais adiante, a UML é uma linguagem unificada de modelagem que permite a construção de um conjunto de modelos, na forma de diagramas, sob diferentes visões ou perspectivas que, em conjunto, integram a solução de modelagem do sistema quando desenvolvido usando o paradigma orientado a objetos.

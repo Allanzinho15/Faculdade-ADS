@@ -1,0 +1,96 @@
+//Coloque 'true' após o nome dos  scripts que deseja utilizar no tema
+let scripts = {
+    menu: true, //script responsável pela criação da estrutura do menu
+    questions: true, //script responsável pela criação da estrutura das questões e importação dos dados definidos em questions.js
+    feedback: true, //script responsável pela criação da estrutura de feedback dos vídeos
+    achievements: true, //script responsável pela criação da estrutura das conquistas
+    themeDefaultBar: true, //script responsável pela criação da estrutura da barra do tema
+    themeProgressBar: false, //script responsável pela criação da estrutura da barra de progresso do tema
+    modal: true, //script responsável pela criação de modal
+    player: true, //script responsável pelo player do podcast
+    aos: false, //script responsável por animações
+    typewriter: false, //script responsável pelo efeito 'Typewriter' nos elementos desejados
+    quiz: false, //script responsável pela criação da estrutura do quiz e importação dos dados definidos em quiz.js
+    swiper: true, //script responsável pelo efeito 'Swiper'
+    twentytwenty: false, //script responsável pelo efeito 'TwentyTwenty'
+    mathjaxToHTML: false, //script responsável pela importação da biblioteca MathJax que fará a conversão para HTML
+    mathjaxToSVG: false, //script responsável pela importação da biblioteca MathJax que fará a conversão para SVG
+    simpleCollapse: true, // Script para inclusão de collapses simples através da função toggleCollapse,
+    collapse: true, // Script para inclusão de collapses em abas através da estrutura de tags theme-collapse
+    accordion: true, // Script para inclusão de accordions em abas através da estrutura de tags theme-accordion
+    codeExercise: false, // Script responsável pelo funcionamento dos exercícios de codificação
+    rgbExercise: false, // Script responsável pelo funcionamento dos exercícios de RGB
+    SVGImporter: false, // Script responsável pelo importação de arquivos .svg
+    audioCard: false, // Script responsável pelo funcionamento dos áudios cards
+    horizontalTimeline: false, // Script responsável pelo funcionamento da timeline horizontal
+    charts: false, // Script responsável pelo funcionamento dos gráficos,
+    glossaryMenu: false, // Script responsável pela importação do menu de glossário
+    activities: false, // Script responsável pelo funcionamento das atividades de completar frases
+    sensible: false, // Script responsável pelo funcionamento da foto com conteudo sensível
+    editPrintText: false, // Script responsável em permitir a edição do texto do botão de impressão (js/printConfig.js)
+    customize: ['js/lightbox-plus-jquery.min.js']
+}
+
+let styles = {
+    fontawesome: true,
+    materialIcons: false,
+    animate: false,
+    timeline: false, // Estilo de timeline
+    mouseOverTextImage: false, // Estilo de ação de hover em imagem e texto
+    flexCard: false, // Estilo de flex card
+    codeBox: false, // Estilo de caixa de código
+    boxReport: false, // Estilo de relatos de experiência e/ou citação
+    tables: true, // Estilo das tabelas interativas
+    customize: ['css/lightbox.min.css']
+}
+
+// Não altere o trecho abaixo - Sujeito a parar o funcionamento do tema
+let configScript = document.createElement('script')
+configScript.setAttribute('type', 'text/javascript')
+configScript.setAttribute('src', '../assets/js/config.js')
+document.querySelector('head').appendChild(configScript)
+
+
+
+// Customização do swiper cards
+
+let customSwiperData = {
+  // 'seletor CSS': '{ configuração do swiper }'
+  
+  '.custom-swiper2': {
+      pagination: {
+          el: '.sw-pg-2',
+          type: 'bullets',
+          clickable: true,
+      },
+      a11y: {
+          firstSlideMessage:'Esse é o primeiro slide',
+          lastSlideMessage:'Esse é o último slide',
+          prevSlideMessage:'Slide anterior',
+          nextSlideMessage:'Próximo slide',
+          paginationBulletMessage:'Vá para o slide {{index}}',
+      },
+      breakpoints: {
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+  
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+  
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+  
+          360: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          }
+        },
+        grabCursor:true,
+  }
+}

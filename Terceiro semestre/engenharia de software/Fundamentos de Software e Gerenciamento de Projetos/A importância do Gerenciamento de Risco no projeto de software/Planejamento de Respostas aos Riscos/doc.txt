@@ -1,0 +1,12 @@
+Planejamento de Respostas aos Riscos
+O processo Planejar Respostas aos Riscos inclui o planejamento de ações para o aumento das oportunidades e redução das ameaças aos objetivos do projeto, gerenciando os riscos de acordo com sua prioridade. As referidas ações são representadas pelas respostas adequadas a cada risco, podendo ser incluído o tratamento a ser aplicado, por exemplo, mitigação, quando se busca reduzir o impacto no resultado do projeto, ou eliminação, uma resposta que elimine o referido impacto.
+
+
+Retornando ao nosso pequeno exemplo, temos uma proposta de respostas aos riscos identificados na tabela a seguir:
+
+
+Prioridade	Evento	Tratamento	Resposta
+1	Ocorrência de um problema de saúde, por causa de um acidente ou ter contraído alguma doença	Eliminação	Contratar o seguro viagem
+2	A quantidade de dólar adquirida não ser suficiente	Eliminação	Atualizar o cartão de crédito para uso internacional
+3	Cancelamento da passagem pela companhia aérea	Mitigação	Confirmar a reserva em companhia aérea com boas alternativas de voos
+ 

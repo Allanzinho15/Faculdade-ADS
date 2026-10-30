@@ -1,0 +1,198 @@
+Diagrama de classes de projeto: atributos e métodos
+Vamos tratar agora do diagrama de classes de projeto. Esse diagrama é um refinamento do diagrama de classes construído na fase de análise. Nesse refinamento, algumas classes sofrem alterações de suas propriedades com o objetivo de transformar o modelo de classes de análise no modelo de classes de projeto, assim como suas notações adicionais, transformações sobre atributos, operações e associações.
+
+
+Além disso, vamos abordar também os relacionamentos entre classes, apresentando outros elementos de notação e princípios de modelagem que não são usados na análise, mas que são importantes na construção do modelo de classes de projeto.
+
+
+Neste vídeo, compreenda a especificação de atributos e de métodos do diagrama de classes elaborado na etapa de projeto do processo de desenvolvimento de software.
+
+
+
+Definição
+
+
+O diagrama de classes de projeto apresenta os dados que serão necessários para a construção do sistema de informação. Esse é o diagrama que possui o maior número de símbolos para sua diagramação.
+
+
+Comentário
+O seu principal objetivo é permitir a visualização dos componentes das bases de dados do sistema, ou seja, as classes e seus objetos, relações entre elas, suas operações, seus métodos, suas interfaces e seus pacotes.
+
+
+Também é papel desse diagrama atender às demandas dos casos de uso, armazenando as estruturas de dados projetadas para o sistema. Entenda melhor o foco do diagrama nas fases de análise e de projeto na comparação, a seguir:
+
+
+Fase de análise
+
+O diagrama de classes pode ser usado para produzir o modelo conceitual que representará as classes e seus atributos (não consideramos aspectos relacionados ao software). Nos interessa apenas o domínio do problema (representação das informações necessárias ao sistema, conceitos e características observados no ambiente).
+
+
+Fase do projeto
+
+Já na fase de projeto, definimos a solução do problema, ou seja, damos importância ao software por meio do qual as classes serão programadas, evidenciamos detalhes da implementação, como, por exemplo, os tipos de dados dos atributos (varchar, integer, date etc.) e suas operações e métodos.
+
+
+Especificação de atributos
+
+No modelo de classes de análise, os atributos são definidos somente pelo nome. No entanto, a sintaxe completa da UML para definição de um atributo é bem mais detalhada. Essa sintaxe, usada na fase de especificação do modelo de classes de projeto, é a seguinte:
+
+
+::= [/] [visibilidade] nome[: tipo] [= valor_inicial]
+
+
+A visibilidade de um atributo indica seu nível de acesso. Ou seja, ela permite definir quais atributos de um objeto são acessíveis por outros objetos. A visibilidade de um atributo pode ser pública, protegida, privativa ou de pacote. A primeira é o que chamamos de default (se nenhuma visibilidade for especificada, essa é assumida).
+
+Comentário
+A propriedade de visibilidade serve para implementar o encapsulamento da estrutura interna da classe. Somente as propriedades realmente necessárias ao exterior da classe devem ser definidas com visibilidade pública. Todo o resto deve ser definido através das visibilidades protegida e privativa.
+
+
+A seguir, temos a lista de tipos de visibilidades, seus símbolos e significados:
+
+
+
+Pública (+)
+
+Protegida (#)
+
+Privativa (-)
+
+Pacote (~)
+Qualquer objeto externo pode obter acesso ao elemento, desde que tenha uma referência para a classe em que o atributo está definido.
+
+
+
+
+
+
+
+
+Veja a o que correspondem alguns elementos na sintaxe do atributo:
+
+
+Elemento NOME: corresponde ao nome do atributo. Na verdade, somente esse elemento é obrigatório na sintaxe de declaração de um atributo, visto que os demais são opcionais.
+
+
+Elemento TIPO: especifica o tipo do atributo. Esse elemento é dependente da linguagem de programação na qual a classe deve ser implementada. O tipo de um atributo pode ser definido pela utilização de um tipo primitivo da linguagem de programação a ser utilizada na implementação.
+
+
+Exemplo
+Se estamos utilizando a linguagem Java, temos, dentre outros, os seguintes tipos primitivos: int, float e boolean.
+
+
+Conheça outras possibilidades de definições para os atributos:
+
+
+A
+Valor
+
+
+Um valor inicial também pode ser declarado para o atributo. Dessa forma, sempre que um objeto de uma classe é instanciado, o valor inicial declarado é automaticamente definido para o atributo. Assim como o tipo, o valor inicial de um atributo também é dependente da linguagem de programação.
+
+
+B
+Classe
+
+
+Pode-se definir um atributo derivado em uma classe. Um atributo é derivado quando o seu valor pode ser obtido a partir do valor de outro(s) atributo(s). Por exemplo, o valor da idade de uma pessoa pode ser obtido a partir de sua data de nascimento. Um atributo derivado é representado com uma barra inclinada à esquerda (/). Atributos derivados normalmente são definidos por questões de desempenho.
+
+
+C
+Multiplicidade
+
+
+Os atributos também têm multiplicidade. Esta determina o número mínimo e máximo de valores que um atributo pode conter.
+
+
+A seguir, podemos ver as multiplicidades e seus significados, que são similares às multiplicidades dos relacionamentos entre classes:
+
+ 
+
+0..1: Indica que o atributo tem no mínimo zero (é opcional) e no máximo um valor.
+ 
+
+1..1: Indica que o atributo tem no mínimo um (é obrigatório) e no máximo um valor.
+ 
+
+0..*: Indica que o atributo tem no mínimo zero (é opcional) e no máximo muitos valores.
+ 
+
+*: Indica que o atributo tem muitos valores e equivale a 0..* (é opcional).
+ 
+
+1..*: Indica que o atributo tem no mínimo um (é obrigatório) e no máximo muitos valores.
+ 
+
+2..6: Indica que o atributo tem no mínimo dois e no máximo seis valores.
+
+
+Especificação de operações/métodos
+
+Na descrição do modelo de interações, declaramos que as operações de uma classe são identificadas em consequência da identificação de mensagens enviadas de um objeto a outro.
+
+
+
+No detalhamento dessas operações, devemos considerar diversos aspectos:
+
+ 
+
+Seu nome
+ 
+Lista de parâmetros
+ 
+Tipo de cada parâmetro
+ 
+Tipo de retorno
+
+As operações de uma classe correspondem a algum processamento realizado por essa classe. Em termos de implementação, uma operação é uma rotina associada a uma classe. A sintaxe definida na UML para uma operação é a seguinte:
+
+
+[visibilidade] nome([parâmetros]) [: tipo-retorno] [{propriedades}]
+
+
+A visibilidade segue a mesma simbologia das visibilidades para atributos. O elemento nome corresponde ao nome dado à operação.
+
+
+Operação pública: pode ser ativada com a passagem de uma mensagem para o objeto. Se for protegida, ela só é visível para a classe e para seus descendentes.
+
+
+Operação privativa: somente objetos da própria classe podem executá-la.
+
+
+Os parâmetros de uma operação correspondem às informações que ela recebe quando é executada.
+
+
+Normalmente, essas informações são fornecidas pelo objeto remetente da mensagem que pede a execução da operação no objeto receptor. Uma operação pode ter zero ou mais parâmetros, que são separados por vírgulas. Cada parâmetro da lista tem a seguinte sintaxe:
+
+
+[direção] nome-parâmetro: tipo-parâmetro
+
+
+O elemento direção serve para definir se o parâmetro pode ou não ser modificado pela operação. O modelador pode definir se o parâmetro é de entrada (IN), saída (OUT) ou ambos (INOUT). Se a direção for omitida, o valor assumido pelo parâmetro será IN, de entrada.
+
+
+A seguir, temos as possíveis direções na definição de um parâmetro pela UML:
+
+
+
+IN
+
+OUT
+
+INOUT
+Parâmetro de entrada: não pode ser modificado pela operação. Serve somente como informação para o objeto receptor.
+
+
+
+
+
+
+Veja a o que correspondem alguns elementos na sintaxe do métodos:
+
+
+nome-parâmetro: corresponde ao nome do parâmetro. Cada parâmetro deve ter um nome único dentro da assinatura da operação.
+
+
+tipo-parâmetro: corresponde ao tipo do parâmetro e é dependente da linguagem de programação.
+
+
+tipo-retorno: representa o tipo de dados do valor retornado por uma operação. Esse tipo depende da linguagem de programação.

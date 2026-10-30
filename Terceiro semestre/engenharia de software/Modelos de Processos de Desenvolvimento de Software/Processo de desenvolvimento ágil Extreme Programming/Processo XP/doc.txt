@@ -1,0 +1,6 @@
+Processo XP
+A XP adota o paradigma orientado a objetos, aplicando seus valores, princípios e práticas em um processo com quatro atividades metodológicas: planejamento, projeto, codificação e testes. A Figura 10 ilustra essas atividades metodológicas propostas por Pressman (2016).
+
+
+
+Figura 10 – O processo XP. 

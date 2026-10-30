@@ -1,0 +1,179 @@
+MÓDULO 2
+Construir o modelo de casos de uso para um estudo de caso de modelagem de sistemas em UML
+
+Modelo de casos de uso
+Vejamos agora a etapa de análise do processo de desenvolvimento de software genérico.
+
+
+Etapa: Análise.
+Nessa etapa, os engenheiros de software realizam um estudo detalhado dos requisitos levantados na etapa anterior, construindo modelos para representar o sistema a ser desenvolvido. Usualmente, a primeira abstração é a funcional, pois permite aos engenheiros de software moldar o sistema de acordo com as necessidades dos usuários.
+
+A referida abstração funcional é representada pelo modelo de casos de uso, que direciona diversas das atividades posteriores do ciclo de vida do sistema de software.
+
+O modelo de casos de uso é composto por um ou mais diagramas de casos de uso, artefatos gráficos, e pelas descrições de casos de usos, artefatos textuais. Os componentes do referido diagrama incluem casos de uso, atores, ou seja, elementos externos que interagem com o sistema, e relacionamentos entre os elementos anteriores.
+
+
+ARTEFATOS DO MODELO FUNCIONAL – DIAGRAMAS DE CASOS DE USO
+O especialista Alberto Tavares da Silva apresenta o modelo de casos de uso e os diagramas do estudo de caso.
+
+
+Estudo de caso – diagrama de casos de uso
+Vejamos agora a construção do diagrama de casos de uso com base nos requisitos funcionais listados no módulo anterior.
+
+RF 1
+Inicialmente, vamos analisar o RF 1 a seguir:
+
+RF 1
+
+O sistema deve permitir que os clientes realizem reservas de quartos online ou por contato telefônico com a recepção da pousada.
+
+Podemos identificar no texto um caso de uso denominado “Registrar Reserva”, interagindo com dois atores: Cliente ou Recepção. A referida abstração é representada a seguir.
+
+
+Diagrama de caso de uso RF 1 gerado pela ferramenta Astah.
+O relacionamento entre ambos os atores é denominado de generalização, ou seja, o ator Recepção pode realizar também o caso de uso do ator Cliente.
+
+RF 3
+Vamos analisar o RF 3 a seguir:
+
+RF 3
+
+Quando o cliente realiza uma reserva online, o sistema realiza a cobrança de uma diária no cartão de crédito para confirmação da reserva.
+
+Podemos identificar uma funcionalidade denominada “Registrar Cobrança de Diária”, interagindo com o caso de uso “Registrar Reserva” e com o ator Operadora Cartão Crédito. A abstração proposta está representada na imagem a seguir. Nesse caso, fizemos uso da abstração denominada “extend” que representa um relacionamento entre casos de uso, ou seja, o caso de uso “Registrar Reserva” (estendido) pode, na forma de um desvio condicional, incluir o comportamento representado pelo caso de uso “Registrar Cobrança de Diária” (extensor).
+
+
+Diagrama de casos de uso RF 3 gerado pela ferramenta Astah.
+RF 11
+Vamos analisar o RF 11 a seguir:
+
+RF 11
+
+A quitação da reserva, realizada pela recepção da pousada e somente com cartão de crédito, deve ocorrer no check-out.
+
+Podemos identificar uma funcionalidade denominada “Realizar Check-out” e uma segunda, “Quitar Reserva”. A primeira interage com o ator Recepção. A abstração proposta está representada a seguir.
+
+
+Diagrama de casos de uso RF 11 gerado pela ferramenta Astah.
+Nesse caso, fizemos uso da abstração denominada “include” que representa um relacionamento entre casos de uso, ou seja, o caso de uso “Realizar Check-out” (inclusor) utiliza, na forma de um desvio incondicional, o comportamento representado pelo caso de uso “Quitar Reserva” (incluído). Por sua vez, o caso de uso “Quitar Reserva” interage com o ator Operadora de Cartão de Crédito.
+
+Diagrama de Casos de Uso aplicando todos RF
+Aplicando as devidas abstrações para todos os requisitos funcionais listados na tabela de requisitos funcionais vista no módulo 1, propomos o diagrama de casos de uso, ilustrado a seguir, para nosso estudo de caso.
+
+
+Diagrama de casos de uso do estudo de caso gerado pela ferramenta Astah.
+Em sistemas complexos, representar todos os casos de uso do sistema em um único diagrama de casos de uso talvez o torne um tanto ilegível. Uma possibilidade é realizar o agrupamento de casos de uso em pacotes, podendo esse agrupamento lógico ocorrer por ator, por ciclo de desenvolvimento ou por área específica da empresa.
+
+Veja a seguir uma proposta de empacotamento por atores.
+
+
+Diagrama de pacotes de casos de uso do estudo de caso gerado pela ferramenta Astah.
+Atenção
+Importante destacar que um dos desafios iniciais do engenheiro de software é a modularização da solução do problema, sendo que esse empacotamento permite visualizar os principais módulos que poderão compor a referida modularização.
+
+Também vale ressaltar que não existe uma solução única para o modelo de casos de uso e tampouco para o empacotamento, sendo muito provável que diferentes equipes produzam modelos diferentes para o mesmo minimundo.
+
+Estudo de caso – descrições de casos de uso
+Lembramos que cada caso de uso é definido por meio de uma descrição textual das interações que ocorrem entre ator(es) e o sistema, não sendo a forma dessa descrição definida pela UML.
+
+De acordo com Bezerra (2014), existem dois tipos de casos de uso:
+
+Clique nos itens
+
+
+Vejamos um exemplo a partir de um caso de uso que apresente um objetivo bem específico para os atores Cliente e Recepção: “Registrar Reserva”. Nesse caso, temos dois cenários: um principal, que considera a reserva online realizada pelo cliente, e um alternativo, que considera a reserva realizada por telefone e registrada por um funcionário da recepção.
+
+Caso de uso: Registrar Reserva.
+
+Atores: Cliente ou Recepção (funcionário)
+
+Pré-condição: Cliente ou Recepção deve estar identificado pelo sistema.
+
+Fluxo Principal:
+
+O sistema busca as pousadas disponíveis.
+O Cliente/Recepção informa a pousada destino e as datas de check-in e check-out.
+O sistema busca quartos disponíveis no período informado.
+O sistema lista os quartos disponíveis para o período informado por tipo, incluindo a quantidade máxima de pessoas a serem acomodadas.
+O Cliente/Recepção seleciona os quartos e informa a quantidade de pessoas por quarto selecionado, sendo no mínimo 1 quarto e no máximo 3 (de acordo com RN 2).
+O sistema exige os dados de login do cliente para efetivação da reserva online.
+O cliente informa os dados para login no sistema.
+O sistema valida o cliente.
+O sistema calcula o valor total da reserva.
+O sistema gera um resumo da reserva incluindo a pousada, período, quantidade de pessoas acomodadas por quarto selecionado e valor a pagar.
+O Cliente/Recepção confirma a reserva.
+Obter confirmação de pagamento parcial de reserva online por meio de cartão de crédito <<extend Registrar Cobrança de Diária>>.
+O sistema registra a reserva e gera o código de reserva.
+Fluxo Alternativo (6): reserva realizada por contato telefônico (recepção da pousada)
+
+O sistema exige dados de login do funcionário da recepção para efetivação da reserva por contato telefônico.
+O funcionário da recepção informa dados para login.
+O funcionário da recepção informa o CPF do cliente.
+O sistema valida o cliente.
+Prosseguir no passo 9.
+Fluxo Alternativo (10): reserva realizada por contato telefônico (recepção da pousada)
+
+O sistema gera um resumo da reserva incluindo a pousada, período, quantidade de pessoas acomodadas por quarto selecionado, o valor total a pagar e o valor para depósito da pré-reserva pelo cliente (de acordo com RN 3).
+Prosseguir passo 11.
+Fluxo Alternativo (12): reserva realizada por contato telefônico (recepção da pousada)
+
+Prosseguir no passo 13.
+Fluxo de exceção (12): cartão de crédito não validado pela operadora.
+
+Se o cliente tiver outro cartão, repetir o passo 12, senão encerrar caso de uso.
+Pós-condição: o código da reserva deve ser informado ao cliente.
+
+Regras de negócio: RN 2 e RN 3.
+
+Tabela: Alberto Tavares da Silva.
+
+Vejamos agora uma descrição de um caso de uso considerado secundário, cuja realização inclui as operações de CRUD.
+
+Caso de uso: Manter Pousada.
+Atores: Setor administrativo (funcionário).
+
+Pré-condição: O funcionário do setor administrativo deve estar identificado pelo sistema.
+
+Fluxo Principal:
+
+O setor administrativo seleciona a operação:
+Opção Inserir.
+Opção Consultar.
+Opção Alterar.
+Opção Excluir.
+
+Fluxo Alternativo (1.1): Inserir
+
+O sistema busca os funcionários na função de gerente.
+O setor administrativo informa: CNPJ, nome, nome fantasia, endereço completo, telefone, e-mail de contato e seleciona o gerente da pousada.
+O sistema valida dados da nova pousada.
+O setor administrativo confirma o cadastro.
+O sistema registra a pousada com status de “ativa”.
+
+Fluxo Alternativo (1.2): Consultar
+
+O sistema busca as pousadas cadastradas.
+O setor administrativo seleciona a pousada.
+O sistema busca os dados da pousada, incluindo o gerente dela.
+
+Fluxo Alternativo (1.3): Alterar
+
+O setor administrativo seleciona a pousada.
+O sistema busca os dados da pousada, incluindo o gerente da pousada.
+O sistema busca os funcionários na função de gerente.
+O setor administrativo edita: CNPJ, nome, nome fantasia, endereço completo, telefone, e-mail de contato, seleciona novo gerente da pousada e/ou altera o status (ativa/inativa).
+O setor administrativo confirma a atualização.
+O sistema atualiza registro da pousada.
+
+Fluxo Alternativo (1.4): Excluir
+
+O sistema busca as pousadas cadastradas.
+O setor administrativo seleciona a pousada.
+O sistema busca os dados da pousada, incluindo o gerente da pousada.
+O setor administrativo confirma exclusão.
+O setor administrativo informa seus dados de login para confirmar a exclusão, pois serão excluídos todos os dados associados, tais como reservas, consumos, funcionários alocados.
+O sistema realiza a exclusão da pousada.
+
+Tabela: Alberto Tavares da Silva.
+
+Vimos neste módulo a geração do modelo de casos de uso de um estudo de caso, atividade da etapa de análise de um processo de desenvolvimento de software genérico, a partir de um documento de requisitos gerado na etapa levantamento de requisitos do referido processo.

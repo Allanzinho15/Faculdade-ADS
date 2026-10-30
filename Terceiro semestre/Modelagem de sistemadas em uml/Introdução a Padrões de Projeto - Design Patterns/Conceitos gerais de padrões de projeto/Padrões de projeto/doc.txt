@@ -1,0 +1,72 @@
+Padrões de projeto
+Melhoram o código e estabelecem um vocabulário comum entre diferentes equipes de desenvolvimento. Ao oferecerem soluções para problemas comuns, eles elevaram o nível de padronização do código e sua organização, facilitando a manutenção e possibilitando o surgimento de diversos frameworks.
+
+
+Essa característica reduziu o esforço necessário para o desenvolvimento de sistemas e teve impacto direto no projeto de bibliotecas para diversas plataformas. Compreender os padrões aprimora a forma de programar, facilita o uso das ferramentas de desenvolvimento atuais e melhora a comunicação com outros desenvolvedores.
+
+
+Acompanhe, neste vídeo, a motivação e a origem dos padrões de projeto como soluções gerais para problemas recorrentes durante o desenvolvimento de um software.
+
+
+
+Imagine que você foi alocado em um novo trabalho e está responsável por evoluir um sistema desenvolvido por outras pessoas ao longo de anos. Você não se sentiria mais confortável se o software tivesse sido projetado com estruturas de solução que você já conhece?
+
+
+Quando aprendemos a programar em uma linguagem orientada para objetos, por exemplo, somos capazes de definir classes, atributos, operações, interfaces e subclasses com ela. Esse conhecimento nos permite responder perguntas operacionais como: “Como eu escrevo a definição de uma classe nesta linguagem de programação?”.
+
+
+Entretanto, quando temos que estruturar um sistema, a pergunta se tornar bem mais complexa: “Quais classes, interfaces, relacionamentos, atributos e operações devemos definir para resolver esse problema de forma adequada?”.
+
+
+Ao desenvolvermos um sistema, deparamo-nos, inúmeras vezes, com essa pergunta. É comum um desenvolvedor iniciante se sentir perdido diante da diversidade de respostas possíveis, ainda mais quando algumas podem facilitar enquanto outras podem dificultar bastante as futuras evoluções do sistema.
+
+
+Que tipo de conhecimento um desenvolvedor experiente utiliza para estruturar um sistema?
+
+
+
+Tabuleiro de xadrez.
+
+Fazendo uma analogia com o jogo de xadrez, um desenvolvedor inexperiente compartilha semelhanças com um jogador iniciante, que sabe colocar as peças no tabuleiro, conhece os movimentos permitidos para cada peça e domina alguns princípios elementares do jogo, como a importância relativa das peças, e o centro do tabuleiro.
+
+
+Um desenvolvedor inexperiente conhece as construções básicas de programação (ex.: sequência, decisão, iteração, classes, objetos, atributos e operações) e alguns princípios elementares de estruturação de um sistema, como dividi-lo em módulos e evitar construir outros longos e complexos.
+
+
+O que diferencia os grandes enxadristas dos iniciantes? Vejamos.
+
+ 
+
+1. Os jogadores experiente estudaram ou vivenciaram inúmeras situações de jogo e acumularam experiência sobre as consequências que determinado lance pode gerar no desenrolar da partida.
+
+ 
+
+2. Quanto maior for o arsenal de situações conhecidas por um jogador, maiores serão as chances de ele fazer uma boa jogada em pouco tempo.
+
+ 
+
+3. Os jogadores de xadrez também têm prazo a cumprir. Existem campeonatos que definem o tempo máximo de duas horas para que cada enxadrista realize seus primeiros 40 lances.
+
+
+Contudo, o jogador iniciante não aprende apenas jogando e vivenciando situações, pois ele também pode estudar inúmeras situações catalogadas e feitas por outros jogadores. Existem catálogos de situações e estratégias para o início, o meio e a finalização de um jogo de xadrez.
+
+
+As estratégias para o início de jogo são conhecidas como aberturas. Cada uma tem um nome e corresponde a um conjunto de jogadas que gera consequências positivas e, eventualmente, negativas para cada lado. Uma dessas aberturas é o nome de uma minissérie original muito popular: O gambito da rainha. A produção, inclusive, possibilita conferir como é possível aprender e se desenvolver a partir do que outros jogadores já fizeram. A protagonista Beth Harmon tinha o hábito de ler materiais sobre partidas e movimentos e, assim, desenvolvia suas habilidades de jogadora. Caso estude bastante as jogadas, quem sabe você consegue ver uma partida no teto, exatamente como a personagem fazia na série.
+
+
+Você sabe o que diferencia os desenvolvedores experientes dos iniciantes?
+
+Os experientes acumularam conhecimento sobre as consequências de resolver um problema aplicando determinada estrutura de solução, isto é, dividindo a solução em um conjunto específico de módulos e estabelecendo uma estrutura particular de interação entre eles. A experiência acumulada permite que eles reusem, no presente, soluções que funcionaram bem no passado em problemas similares, produzindo sistemas flexíveis, elegantes e em menor tempo.
+
+Muitos problemas em estruturação de software são recorrentes. Então, que tal registrá-los com as respectivas soluções para que, de forma análoga aos livros de abertura do xadrez, possamos compartilhar esse conhecimento com desenvolvedores que estejam encarando pela primeira vez um problema análogo?
+
+
+Foi o que pensaram quatro engenheiros de software, lá em 1994:
+
+
+Erich Gamma
+Richard Helm
+Ralph Johnson
+John Vlissides
+
+Eles publicaram o livro Design patterns: elements of reusable object-oriented software, descrevendo 23 padrões que utilizaram no desenvolvimento de diversos sistemas ao longo de suas carreiras. Os autores ficaram conhecidos como a “gangue dos quatro” (tradução de gang of four), e os padrões publicados são conhecidos como os “padrões GoF”. Desde então, diversas publicações surgiram relatando novos padrões, críticas aos existentes, padrões específicos para determinadas linguagens e paradigmas de programação, além de padrões arquiteturais e até mesmo antipadrões – ou seja, construções que tipicamente trazem consequências negativas para a estrutura de um sistema.

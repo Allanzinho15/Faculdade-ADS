@@ -1,0 +1,25 @@
+Metodologia ágil SCRUM
+O termo Scrum, cujo significado se reporta a um método de reinício de jogada no esporte rugby, foi concebido fora da indústria de software como um estilo de gerenciamento de produtos. A partir de conceitos relacionados com este termo, Jeffrey Sutherland e Ken Schwaber, no início da década de 1990, desenvolveram o denominado Processo de Desenvolvimento SCRUM, publicado em 1995. Desde então, esse processo passou a ser aplicado no desenvolvimento de software em todo o mundo.
+
+
+
+A metodologia Scrum sofreu, posteriormente, desenvolvimentos adicionais abrangendo o gerenciamento de projetos, não necessariamente relacionados a projetos de software. Entretanto, o Scrum é empregado de forma sistemática no gerenciamento de projetos de desenvolvimento de software, utilizando-se dos valores e princípios do manifesto ágil junto aos conceitos definidos em seu framework. Tal metodologia tem sua aplicação recomendada principalmente quando, em função da complexidade do projeto, não é possível estabelecer todos os requisitos nas fases iniciais do planejamento.
+
+
+Importante destacar que alguns autores adotam uma abstração de aplicar ao Scrum uma denominação de processo ágil de desenvolvimento de software.
+
+
+
+Transparência
+
+A equipe de desenvolvedores deve dispor de um mesmo entendimento dos aspectos significativos do processo com base num padrão, tal como uma linguagem comum referente ao processo.
+
+
+Inspeção
+
+A máxima é “inspeção constante de todos os artefatos”, ou seja, a equipe de desenvolvedores deve sistematicamente inspecionar os artefatos Scrum e o progresso desses, de modo a detectar não conformidades; entretanto, a inspeção não deve ser um entrave à própria execução das tarefas.
+
+
+Adaptação
+
+Inclui a adaptação do produto software, que pode sofrer mudanças em função da volatilidade dos requisitos e/ou mudanças da tecnologia, bem como a adaptação do processo em função de alguma falha; os ajustes devem ser realizados o mais rápido possível de forma a evitar a propagação de desvios.

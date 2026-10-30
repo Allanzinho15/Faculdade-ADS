@@ -1,0 +1,246 @@
+Diagramas de sequência e de comunicação na UML
+São ferramentas essenciais para descrever como os objetos de um sistema de informação interagem. Enquanto os diagramas de sequência mostram a ordem temporal das mensagens trocadas entre objetos, os diagramas de comunicação destacam as associações e as mensagens trocadas, focando as conexões entre os objetos. Ambos são utilizados para documentar casos de uso complexos e validar operações das classes.
+
+ 
+
+Neste vídeo, conheça o emprego dos diagramas de sequência e de comunicação ao longo do processo de desenvolvimento de software, bem como seus principias elementos.
+
+
+
+Diagrama de sequência
+
+Diagramas de sequência recebem esse nome porque descrevem as comunicações entre objetos de um sistema de informação, ao longo de uma linha do tempo. Em geral, são construídos logo após os diagramas de caso de uso e de classes, pois têm como principais objetivos:
+
+
+Documentar casos de uso.
+ 
+Mostrar como os objetos do sistema se comunicam através de mensagens em ordem temporal.
+ 
+Validar se todas as operações das classes foram identificadas e declaradas.
+ 
+Validar a existência de um objeto necessário ao funcionamento do sistema.
+
+Atenção
+Não é necessário construir diagramas de sequência para todos os casos de uso do sistema. Apenas os mais complexos, relacionados com o negócio da aplicação, são explorados por esse tipo de diagrama. Ele pode ser bastante trabalhoso e criá-lo para todas as partes do sistema pode não ser produtivo e nem ter benefícios compensatórios.
+
+
+Dependendo da complexidade ou do número de objetos envolvidos ou da presença de desvios condicionais no caso de uso, vários diagramas de sequência serão necessários para representar as interações do sistema. Assim, devemos construir um diagrama de sequência principal, descrevendo as sequências normais entre os objetos (fluxo normal) e diagramas complementares, descrevendo sequências alternativas (fluxos alternativos) e tratamento de situações de erro (fluxos de exceção).
+
+
+Diagramas de sequência são complementares aos diagramas de caso de uso.
+
+
+Os diagramas de caso de uso são bastante completos nas descrições textuais, porém não são capazes de mostrar como os objetos do sistema se comunicam por intermédio de mensagens em ordem temporal, nem verificar se todas as operações das classes foram validadas e declaradas. Essas funções são muito mais bem executadas pelos diagramas de sequência.
+
+
+
+
+Exemplo esquemático de diagrama de sequência.
+
+Elementos do diagrama de sequência
+
+O diagrama de sequência é composto de diversos tipos de elementos, que você conhecerá, a seguir!
+
+
+Objetos
+
+ 
+
+São apresentados na parte superior do diagrama (um ao lado do outro) na dimensão horizontal (vide Exemplo esquemático de diagrama de sequência). Não há uma ordem específica de apresentação obrigatória. Sua ordem é relevante somente como forma de tornar o diagrama mais legível.
+
+
+Dica
+Uma boa prática pode ser colocar os elementos que têm mais interação mais próximos. Já no centro e abaixo dos objetos temos sua linha da vida (linha reta tracejada).
+
+
+Todo e qualquer objeto ou classe nesse diagrama pode ser representado com um retângulo com o seu nome, mas existem notações específicas para tipos especiais de objetos. São quatro tipos especiais, a saber:
+
+
+
+Ator
+
+Fronteira
+
+Controle
+
+Entidades
+É uma entidade externa que interage com o sistema enviando ou recebendo dados. Um ator é representado pelo estereótipo de boneco magro (“palito”), como nos diagramas de casos de uso. Mensagens podem ser trocadas entre atores, ou entre atores e objetos ou classes de fronteira.
+
+
+
+Exemplo de ator.
+
+
+
+
+
+
+
+
+
+
+Linha de vida
+
+Compõe a dimensão vertical (tempo) de cada objeto do diagrama. As linhas de vida representam a sequência na qual a vida do objeto transcorre durante a interação. Podem apresentar criação ou destruição de objetos. Quando são criadas interações entre os objetos, um retângulo sobre a linha é colocado (automaticamente pelas ferramentas de desenho de diagrama), identificando a interação. Mais de um retângulo pode existir em um único objeto. Esse retângulo é chamado de tempo de vida da interação.
+
+
+
+
+Exemplos de linhas de vida (destacados em vermelho).
+
+Mensagens
+
+São os serviços solicitados de um objeto a outro ou a ele mesmo, e as respostas a essas solicitações. Uma mensagem é representada por um segmento de reta, contendo uma seta em uma das suas extremidades. As mensagens são acompanhadas de um rótulo contendo seu nome. Podem conter também parâmetros da mensagem. Elas podem ser dos seguintes tipos:
+
+
+Mensagens síncronas.
+ 
+Mensagens assíncronas.
+ 
+Mensagens de retorno.
+ 
+Mensagens de criação de objeto.
+
+Observe que tipo de mensagem cada tipo de seta representa:
+
+
+
+
+Tipos de setas X Tipos de mensagens.
+
+Para cada uma delas, a linguagem usa notações diferentes. Na UML, o rótulo de uma mensagem deve seguir a seguinte sintaxe:
+
+
+[[expressão-sequência] controle:] [v :=] nome [(argumentos)]
+
+
+Os colchetes [ ] indicam que o elemento é opcional. Note que o único termo obrigatório corresponde ao nome da mensagem.
+
+
+Muitas vezes é necessário indicar que o termo controle está associado a uma expressão lógica. Nesse caso, a sintaxe para o termo controle pode ser uma condição ou uma iteração:
+
+
+‘*’ ‘[’ cláusulaiteração ‘]’
+
+
+ 
+
+‘[’ cláusulacondição ‘]’
+
+
+O símbolo * significa repetições da cláusula iterativa. Nessa sintaxe, os elementos entre aspas simples ‘ ‘ significam que fazem parte da expressão.
+
+
+Observe alguns exemplos de mensagens destacadas em vermelho:
+
+
+
+
+Exemplos de mensagens.
+
+Mensagens de iteração
+
+São mensagens que podem ser enviadas repetidas vezes. São precedidas de um asterisco e representadas dentro de colchetes.
+
+
+
+
+Exemplo de mensagens de iteração.
+
+Condições de guarda
+
+São mensagens que têm uma condição indicada para seu envio.
+
+
+
+
+Exemplo de condições de guarda.
+
+Autochamada
+
+São mensagens que partem do objeto de origem e atingem a linha de vida dele mesmo disparando operações.
+
+
+
+
+Exemplo de autochamada.
+
+Ocorrência de interação
+
+São elementos de modelagem úteis quando se deseja simplificar um diagrama e extrair uma porção para outro, ou quando existe uma porção de ocorrência que se possa fazer reuso em outro diagrama. É representado por uma moldura com a etiqueta “ref” que se refere a outro diagrama de sequência.
+
+
+
+
+Exemplo de ocorrência de interação.
+
+Opt
+
+São elementos que permitem tornar um trecho da interação opcional.
+
+
+
+
+Exemplo de interação opcional “opt”.
+
+Loop
+
+São elementos que permitem repetir um trecho da interação até “n” vezes.
+
+
+
+
+Exemplo de interação repetida “loop”.
+
+Alt
+
+São elementos que permitem que um trecho da interação seja alternativo.
+
+
+
+
+Exemplo de interação alternativa “Alt”.
+
+Diagrama de comunicação
+
+Diagramas de comunicação servem para mostrar como os objetos interagem para executar o comportamento de um caso de uso ou de parte dele, a fim de
+
+
+Determinar interfaces.
+ 
+Determinar responsabilidades de classes.
+ 
+Definir os papéis dos objetos que executam determinado fluxo de eventos.
+
+Portanto, os diagramas de comunicação representam o fluxo de mensagens que ocorre entre os objetos de um sistema de informação, assim como o diagrama de sequência. Os dois expressam informações semelhantes, mas numa forma de exibição diferente. Vamos ver quando aplicar cada um?
+
+
+Diagrama de sequência
+
+Se o objetivo for apresentar o fluxo de mensagens no decorrer do tempo, utilize o diagrama de sequência.
+
+
+Diagrama de comunicação
+
+Se a intenção for de dar ênfase a como os objetos estão vinculados e quais mensagens trocam entre si, use o diagrama de comunicação.
+
+
+No diagrama de comunicação, um vínculo é uma associação que identifica a ligação entre dois objetos envolvidos em um processo e é caracterizado pelo envio ou recebimento de uma mensagem ou de ambos.
+
+
+Comentário
+As mensagens enviadas de um objeto para outro são representadas por segmentos de retas com uma seta em uma das extremidades, indicando sua direção. Estas mensagens devem ter nome, parâmetros (opcional) e a sequência que é expressa por números, assim como no diagrama de sequência.
+
+
+Observe como um diagrama de comunicação deve se apresentar no exemplo a seguir!
+
+
+
+
+Exemplo esquemático de diagrama de comunicação correspondente ao diagrama de sequência, anteriormente apresentado.
+
+O exemplo esquemático apresentado ilustra a correspondência que existe entre o diagrama de sequência e o diagrama de comunicação. Os mesmos objetos são envolvidos, trocando as mesmas mensagens.
+
+
+Atenção
+O fluxo de execução das mensagens, que no diagrama de sequência é determinado pela ordem temporal de cima para baixo, aqui no diagrama de comunicação é determinado pela numeração ordenada das mensagens.

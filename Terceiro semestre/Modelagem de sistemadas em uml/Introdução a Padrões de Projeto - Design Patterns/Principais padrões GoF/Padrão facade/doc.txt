@@ -1,0 +1,37 @@
+Padrão facade
+Em muitas situações, determinadas chamadas complexas precisam ser efetuadas em diversos pontos do sistema, o que deixa o código extenso, principalmente nas interfaces gráficas. Isso dificulta a manutenção e diminui o nível de reuso.
+
+
+O padrão facade oferece uma solução para esse problema, concentrando as chamadas em componentes e subsistemas em classes que irão funcionar como fachadas, eliminando grande parte do código nas demais classes. Você pode, por exemplo, concentrar as chamadas para diversos serviços REST em uma fachada, o que permite que suas interfaces gráficas não tenham códigos voltados para a comunicação HTTP.
+
+
+Acompanhe, neste vídeo, o padrão GoF facade, um dos padrões de design fundamentais para simplificar a interação com sistemas complexos, e como ele cria uma interface unificada para um conjunto de interfaces em um subsistema, facilitando o uso e promovendo a redução da complexidade no desenvolvimento de software.
+
+
+
+Problema
+
+A questão resolvida pelo padrão estrutural facade (ou fachada) é reduzir a complexidade de implementação de uma operação do sistema, fornecendo uma interface simples de uso, ao mesmo tempo em que evita que a implementação precise lidar com diferentes tipos de objetos e chamadas de operações específicas.
+
+
+A próxima imagem apresenta uma situação típica em que o padrão facade pode ser utilizado. A classe GUI ponto de venda representa um elemento da camada de interface com o usuário responsável por registrar itens vendidos no caixa da loja. Para isso, quando os dados do item são entrados pelo operador, a implementação busca o produto chamando uma operação da classe ProdutoRepository, cria um ItemVenda, adicionando-o a um objeto venda, e salva a nova configuração da venda chamando uma operação da classe VendaRepository. Essa solução é inadequada, pois cria inúmeras dependências e gera maior complexidade em uma classe de interface com o usuário. Observe:
+
+
+
+Padrão facade – problema.
+
+Solução
+
+A imagem a seguir mostra como as dependências entre um elemento de interface com o usuário e os elementos de negócio e armazenamento podem ser simplificadas pela introdução da classe ServicoVenda. Ela passa a servir de fachada para a execução de uma operação complexa do sistema, oferecendo uma interface única e simplificada para a classe GUI ponto de venda.
+
+
+Em vez de chamar várias operações de diferentes objetos, basta chamar a operação registrarItem, definida na classe fachada. Dessa forma, os elementos da camada de interface com o usuário ficam isolados da complexidade de implementação e da estrutura interna dos objetos pertencentes à lógica de negócio envolvida na operação. Veja:
+
+
+
+
+Padrão facade – solução.
+
+Consequências
+
+O padrão facade é bastante utilizado na estruturação dos serviços lógicos que um sistema oferece, isolando a camada de interface com o usuário da estrutura da lógica de negócio do sistema. Portanto, esse padrão nada mais é do que a aplicação do princípio da abstração, em que isolamos um cliente de detalhes irrelevantes de implementação, promovendo uma estrutura com menor acoplamento entre as camadas.

@@ -1,0 +1,91 @@
+Alta coesão
+Vamos iniciar entendendo o que é coesão. Trata-se da propriedade de determinado componente de software que define o nível de coerência e eficácia no agrupamento e na execução de tarefas. O padrão de alta coesão do GRASP tem foco nessa propriedade, pois um objeto coeso apresenta maior independência de outros, além de apresentar uma semântica mais clara ao agrupar funcionalidades semelhantes.
+
+
+Como pessoa desenvolvedora, é importante seguir o padrão Alta coesão, criando, por exemplo, pacotes destinados a áreas específicas e com nomes representativos, nos quais as classes associadas estão restritas às funcionalidades exigidas pelos pacotes.
+
+
+Neste vídeo, você compreenderá que o padrão GRASP alta coesão se refere à forma de avaliar se as responsabilidades de um módulo estão, de fato, relacionadas em um sistema e se têm o mesmo propósito. Confira!
+
+
+
+Problema
+
+Coesão é uma maneira de avaliar se as responsabilidades de um módulo estão fortemente relacionadas e têm o mesmo objetivo. Buscamos criar módulos com alta coesão, isto é, elementos com responsabilidades focadas e com tamanho aceitável.
+
+
+Módulos ou classes com baixa coesão realizam muitas operações pouco correlacionadas, gerando sistemas de difícil entendimento, reuso e manutenção, além de serem muito sensíveis às mudanças.
+
+
+A pergunta que esse padrão tenta responder é:
+
+
+Como definir as responsabilidades dos módulos de forma que a complexidade resultante seja gerenciável?
+
+
+Solução
+
+Consiste em definir módulos de alta coesão. Mas como se mede a coesão?
+
+
+Ela está ligada ao critério utilizado para reunir um conjunto de elementos em um mesmo módulo. Veja:
+
+
+Coesão de um método de uma classe
+
+Um método reúne um conjunto de instruções.
+
+
+Coesão de uma classe
+
+Uma classe agrupa um conjunto de atributos e operações.
+
+
+Coesão de um pacote
+
+Um pacote junta um conjunto de classes e interfaces.
+
+
+Coesão de um subsistema
+
+Um subsistema reúne um conjunto de pacotes.
+
+
+
+
+A coesão de um módulo (seja ele classe, pacote ou subsistema) pode ser classificada de acordo com o critério utilizado para reunir o conjunto dos elementos que o compõem.
+
+
+Devemos estruturar os módulos de forma que eles apresentem coesão funcional, isto é, os elementos são agrupados porque, juntos, cumprem um único propósito bem definido.
+
+
+As classes do pacote java.io, da linguagem Java, por exemplo, estão reunidas por serem responsáveis pela entrada e pela saída de um programa. Nesse pacote, encontramos classes com responsabilidades bem específicas, como:
+
+
+
+FileOutputStream
+
+FilelnputStream
+
+FileReader
+
+FileWriter
+Para escrita de arquivos binários.
+
+
+
+
+
+
+
+
+Consequências
+
+Coesão e acoplamento são princípios fundamentais em projetos de software. A base da modularidade de um software está na definição de módulos com alta coesão e baixo acoplamento.
+
+
+Comentário
+Sistemas construídos com módulos que apresentam alta coesão tendem a ser mais flexíveis e mais fáceis de serem entendidos e evoluídos, além de proporcionarem mais possibilidades de reutilização e de serem um projeto com baixo acoplamento.
+
+
+Em sistemas distribuídos, é preciso balancear a elaboração de módulos com responsabilidades específicas a partir do princípio fundamental de sistemas distribuídos, que consiste em minimizar as chamadas entre processos.

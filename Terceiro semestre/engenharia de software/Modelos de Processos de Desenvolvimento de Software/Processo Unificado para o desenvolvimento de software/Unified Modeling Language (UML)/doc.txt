@@ -1,0 +1,47 @@
+Unified Modeling Language (UML)
+A compreensão do Processo Unificado exige que tenhamos o entendimento da Unified Modeling Language, comumente denominada de UML, que é uma linguagem de modelagem padrão para a elaboração de artefatos no contexto do paradigma de desenvolvimento orientado a objetos.
+
+
+Saiba Mais
+Até meados da década de 1990, o paradigma de desenvolvimento estruturado era o padrão mais utilizado na indústria de software, ou seja, os métodos vigentes aplicavam os conceitos estruturados nos artefatos gerados, tal como o diagrama de fluxo de dados na etapa de análise. Importante destacar que a unidade básica do software era a função.
+
+
+Considerando a evolução da complexidade do software, alguns metodologistas perceberam que os conceitos da orientação a objetos permitiam um melhor trato da complexidade, particularmente nos requisitos reuso e manutenibilidade. Esses metodologistas começaram a propor métodos com artefatos direcionados ao referido paradigma. A unidade básica do software passou a ser o objeto, que inclui dados ou atributos, e funções ou métodos, encapsulados.
+
+Em algum momento, percebeu-se a necessidade de um padrão para a modelagem de sistemas que fosse aceito e utilizado amplamente, surgindo a UML em 1996 como a linguagem “unificadora” das diversas propostas de métodos orientados a objetos. Em 1997, a UML foi aprovada pelo Object Management Group (OMG), tornando-se um padrão de modelagem orientada a objeto na indústria do software.
+
+
+A UML é uma linguagem visual, independente de linguagem de programação e de processo de desenvolvimento. Um processo de desenvolvimento que utilize a UML como linguagem de modelagem envolve a criação de artefatos de software gráficos, denominados de diagramas, que podem ser complementados por descrições textuais.
+
+
+Por que é definida como linguagem?
+ 
+
+Uma linguagem serve para a comunicação, possuindo uma sintaxe e uma semântica associada. A sintaxe determina o padrão de escrita, tal como, a estrutura de uma frase formada por “sujeito + verbo + predicado” e a semântica está associada ao significado da frase, tal como, “Carlos foi ao clube”. Fazendo uma analogia com a UML, a Figura 6 ilustra a estrutura de uma classe, cujo padrão inclui o nome da classe, atributos e métodos, ou seja, esse padrão de desenho, ou sintaxe do modelo, é definido pela UML.
+
+
+Nome da Classe
++ atributoPublico: tipo
+# atributoProtegido: tipo
+- atributoPrivado: tipo
++ operacao(argumento): tipoRetorno
+
+E a semântica?
+ 
+
+A partir do momento que construímos um diagrama com um conjunto de classes, assim como ilustrado na Figura 7, temos então a formação de uma rede semântica, na qual os objetos e associações representam uma abstração da estrutura estática de certo domínio do problema.
+
+
+
+Figura 7 – Exemplo de Diagrama de Classes
+
+E a comunicação?
+ 
+
+Como já afirmado, uma linguagem serve para comunicação. No caso do desenvolvimento de software, um modelo permite a comunicação entre engenheiros de software, entre estes e os usuários para validação dos referidos modelos, entre estes e os gerentes de projeto ou programadores; enfim, caso você, como engenheiro de software, desenhe um diagrama de classes, a semântica será compreendida por qualquer outro engenheiro de software que faça uso do paradigma orientado a objetos.
+
+
+
+Figura 8 – Diagramas da UML
+
+A Figura 8 ilustra os diagramas especificados na UML, com destaque para as duas categorias: diagramas comportamentais e diagramas estruturais. Os diagramas comportamentais têm ênfase na abstração funcional do projeto de software e os diagramas estruturais, nas abstrações das estruturas de dados e de componentes.

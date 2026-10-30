@@ -1,0 +1,24 @@
+Implementação
+Quais são as entregas da etapa “projeto” do processo de desenvolvimento de software? Modelos, ou seja, diagramas e especificações textuais que permitem a implementação, ou codificação do software. Realizando um paralelo com a Engenharia Civil, temos plantas baixas, projeto estrutural, hidráulico-sanitário, elétrico etc.; agora, podemos ir para o terreno construir a casa.
+
+ 
+
+A etapa “implementação” do processo de desenvolvimento de software permite realizar a tradução dos modelos de projeto em código executável por meio do uso de uma ou mais linguagens de programação.
+
+ 
+
+Temos aqui um desafio! Ainda não conhecemos todos os detalhes dos algoritmos que efetivamente resolvem o problema; para solucioná-lo, entram em cena os programadores.
+
+ 
+
+Podemos destacar o impacto de muitos requisitos não funcionais nesta etapa, tais como linguagens de programação, frameworks de persistência, e.g., framework para o mapeamento objeto-relacional escrito na linguagem Java denominado hibernate, sistema de gerenciamento de banco de dados, requisitos de qualidade, e.g., confiabilidade, usabilidade etc., reutilização de componentes, entre outros.
+
+ 
+
+Nesse contexto, podemos descrever a denominada “Crise do software” sintetizada pela afirmativa de Edsger Dijkstra, em 1972:
+
+
+A maior causa da crise do software é que as máquinas tornaram-se várias ordens de magnitude mais potentes! Em termos diretos, enquanto não havia máquinas, programar não era um problema; quando tivemos computadores fracos, isso se tornou um problema pequeno, e, agora que temos computadores gigantescos, programar tornou-se um problema gigantesco.
+PRESSMAN, 2016.
+Importante destacar que o desenvolvimento tecnológico do hardware nos últimos anos permitiu o desenvolvimento de softwares cada vez mais complexos, tendo forte impacto na indústria de software. Como exemplo, podemos apresentar a substituição do paradigma estruturado pelo paradigma orientado a objetos, baseado na programação orientada a objetos, que permite o reúso intensivo de especificação, bem como melhor manutenibilidade e, como consequência, o desenvolvimento de softwares mais complexos.
+

@@ -1,0 +1,111 @@
+Diagrama de classes de projeto: associações
+O conhecimento teórico sobre diagramas de classes de projeto e suas associações fornece a base necessária para compreender e modelar as relações entre diferentes classes em um sistema de software. Essas associações definem como os objetos interagem e colaboram, facilitando a organização e a estruturação do código. Entender esses conceitos permite criar sistemas mais coesos e bem estruturados, melhorando a manutenção e a escalabilidade do software.
+
+
+Assista ao vídeo para compreender a especificação de associações do diagrama de classes elaborado na etapa de projeto do processo de desenvolvimento de software.
+
+
+
+Especificação de associações
+
+
+No modelo de classes de análise, relacionamentos entre objetos são normalmente definidos apenas com o uso da associação (ou como um de seus casos especiais, a generalização, a agregação ou a composição).
+
+
+As associações são os mecanismos que permitem aos objetos se comunicarem, descrevendo a conexão entre as classes.
+
+
+Podem ter uma regra que especifica o propósito da associação e podem ser unidirecionais ou bidirecionais. Cada ponta da associação também possui um valor de multiplicidade que indica como os objetos de um lado se relacionam com os do outro lado. Existem diversos tipos de associação, que são modelados desde a etapa de análise:
+
+
+
+Unárias, reflexivas ou recursivas (autoassociação)
+
+Representam relacionamentos que ocorrem entre objetos da mesma classe.
+
+
+Autoassociação no diagrama de classes.
+
+
+Binárias
+
+Representam relacionamentos que ocorrem entre objetos de duas classes.
+
+
+Associação binária no diagrama de classes.
+
+
+Ternárias ou n-árias
+
+Representam relacionamentos que ocorrem entre objetos de mais de duas classes.
+
+
+Associação ternária no diagrama de classes.
+
+
+Agregação
+
+Representa relacionamentos todo-parte em que a classe do lado parte pode existir independentemente da classe do lado todo.
+
+
+Agregação no diagrama de classes.
+
+
+Composição
+
+Representa relacionamentos todo-parte em que a existência da classe do lado parte depende da existência da classe do lado todo.
+
+
+Composição no diagrama de classes.
+
+
+Generalização/especialização
+
+Representa relacionamentos entre um elemento genérico e um ou mais elementos específicos, em que o mais específico possui todas as características do elemento genérico e contém ainda particularidades não encontradas no genérico. Essa característica também é chamada de herança.
+
+
+Generalização/especialização no diagrama de classes.
+
+
+Classe associativa
+
+Representa relacionamentos entre classes com multiplicidade muitos para muitos e possuem propriedades próprias do relacionamento, e não das classes associadas.
+
+
+Classe associativa no diagrama de classes.
+
+Na etapa de projeto, uma espécie de associação relevante é a dependência, que representa relacionamentos entre classes, na qual uma é dependente da outra. Qualquer modificação na classe independente afetará diretamente objetos da classe dependente.
+
+
+
+
+Exemplo de associação de dependência.
+
+Uma dependência entre classes indica que uma classe depende dos serviços fornecidos pela outra. No modelo de análise, é suficiente para o modelador identificar a existência de associações entre classes, que é uma forma de dependência. Mas, na fase de especificação do modelo de classes, essa dependência precisa ser mais bem definida pelo projetista, uma vez que ela tem influência na forma utilizada para implementar as classes envolvidas.
+
+
+Vamos refletir sobre isso descrevendo, então, detalhes das possíveis formas de dependência? Para isso, considere duas classes, A e B, onde A depende de B. Veremos que vários tipos de dependência entre essas duas classes podem existir. Esses tipos são descritos a seguir:
+
+
+Dependência por atributo: A possui um atributo cujo tipo é B. A dependência por atributo é também chamada de dependência estrutural.
+ 
+Dependência por variável global: A utiliza uma variável global cujo tipo é B.
+ 
+Dependência por variável local: A possui alguma operação cuja implementação utiliza uma variável local de tipo B.
+ 
+Dependência por parâmetro: A possui pelo menos uma operação, que possui pelo menos um parâmetro, cujo tipo é B.
+
+A notação da UML para representar uma dependência no diagrama de classes é de uma seta tracejada ligando as classes envolvidas. A seta sai da classe dependente e chega na classe da qual depende. Ainda com respeito à notação, as dependências podem ser estereotipadas para indicar o tipo de dependência existente entre duas classes. Os estereótipos da UML para rotular relacionamentos de dependência são:
+
+
+<>
+
+Para variável global.
+
+<>
+
+Para variável local.
+
+<>
+
+Para variável local.

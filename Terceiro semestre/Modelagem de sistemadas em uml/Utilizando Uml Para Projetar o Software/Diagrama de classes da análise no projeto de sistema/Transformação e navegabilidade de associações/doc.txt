@@ -1,0 +1,85 @@
+Transformação e navegabilidade de associações
+Permite entender como as classes interagem dentro de um sistema. A navegabilidade define a direção na qual a associação pode ser percorrida, influenciando a acessibilidade dos dados. Já a transformação de associações abrange a conversão de relacionamentos conceituais em implementações práticas, garantindo a integridade e a funcionalidade do sistema.
+
+
+Compreender esses conceitos é importante para projetar sistemas coesos, eficientes e de fácil manutenção.
+
+
+Este vídeo explica como transformar associações conceituais em implementações práticas no diagrama de classes, abrangendo a conversão dos relacionamentos e a navegabilidade, que determina a direção em que a associação pode ser explorada, no contexto do projeto de desenvolvimento de software.
+
+
+
+Transformação de associações em dependências
+
+
+No modelo de classes de análise, o modelador especifica uma ou mais associações entre uma classe e as demais apresentadas. Na passagem do modelo de classes de análise para o de projeto, o modelador deve estudar cada associação para identificar se ela pode ser transformada em dependências. A razão para essa transformação é definir melhor o encapsulamento.
+
+
+Comentário
+Quanto menos dependências estruturais houver no modelo de classes, maior será a qualidade do projeto (do ponto de vista do encapsulamento e do acoplamento das classes constituintes). De um modo geral, as associações que ligam classes de entidade permanecem como associações no modelo de projeto.
+
+
+Classes persistentes e transientes
+
+As classes são divididas em:
+
+
+Persistentes
+
+Presumem que seus objetos precisam, de alguma maneira, ser preservados mesmo após o encerramento da utilização do sistema.
+
+
+Não persistentes (transientes)
+
+Terão seus objetos destruídos durante ou na finalização do uso do sistema. Estas são diferenciadas por estereótipos <<transient>>.
+
+
+Classes de interface
+
+Uma classe de interface é uma coleção de operações com um nome e é utilizada para especificar um tipo de serviço sem especificar como será sua implementação. Essas classes não têm métodos concretos, apenas o declaram para que outra classe possa implementá-lo.
+
+
+Classes de interface possibilitam que objetos externos ao sistema colaborem com uma ou mais classes do sistema.
+
+
+São exemplos as interfaces gráficas, as de interações entre os usuários e as telas do sistema. Há um estereótipo para ela () e sua implementação utiliza uma reta tracejada oriunda da classe de implementação, contendo a seta vazia na extremidade que aponta para a classe de interface, como ilustra o exemplo a seguir.
+
+
+
+
+Exemplo de classe de interface.
+
+Navegabilidade de associações
+
+As associações podem ser classificadas em bidirecionais e unidirecionais. Uma associação bidirecional indica que há um conhecimento mútuo entre os objetos associados. Ou seja, se um diagrama de classes exibe uma associação entre duas classes C1 e C2, as duas assertivas a seguir são verdadeiras:
+
+
+Cada objeto de C1 conhece todos os objetos de C2 aos quais está associado.
+ 
+Cada objeto de C2 conhece todos os objetos de C1 aos quais está associado.
+
+Graficamente, uma associação unidirecional é representada adicionando-se um sentido à associação. A classe para a qual o sentido aponta é aquela cujos objetos não possuem a visibilidade dos objetos da outra classe.
+
+
+Durante a construção do modelo de classes de análise, associações são normalmente consideradas “navegáveis” em ambos os sentidos, ou seja, as associações são bidirecionais. No modelo de classes de projeto, o modelador deve refinar a navegabilidade de todas as associações.
+
+
+Atenção
+Pode ser que algumas associações precisem permanecer bidirecionais. No entanto, se não houver essa necessidade, recomenda-se transformar a associação em unidirecional. Isso porque uma associação bidirecional é mais difícil de implementar e de manter do que uma associação unidirecional correspondente.
+
+Para entender isso, basta ver que o acoplamento entre as classes envolvidas na associação é maior quando a navegabilidade é bidirecional, prejudicando a modularização. Portanto, um dos objetivos a alcançar durante o projeto é identificar quais navegabilidades são realmente necessárias.
+
+
+A definição da navegabilidade se dá em função da troca de mensagens ocorridas nas interações entre objetos do sistema. Mais especificamente, devemos analisar os fluxos das mensagens entre objetos no diagrama de interações. Dados dois objetos associados, A e B, se há pelo menos uma mensagem de A para B em alguma interação, a associação deve ser navegável de A para B. Da mesma forma, se existir pelo menos uma mensagem de B para A, então a associação deve ser navegável de B para A.
+
+
+
+A definição do sentido da navegabilidade é feita em função das mensagens identificadas na modelagem de interação. Em particular, se um objeto do tipo A envia uma mensagem para outro do tipo B, então deve haver uma navegabilidade no sentido de A para B no diagrama de classes.
+
+
+Mesmo em situações em que a navegabilidade de uma associação precise ser bidirecional, é possível implementar apenas um de seus sentidos.
+
+
+
+
+Exemplo de navegabilidade.

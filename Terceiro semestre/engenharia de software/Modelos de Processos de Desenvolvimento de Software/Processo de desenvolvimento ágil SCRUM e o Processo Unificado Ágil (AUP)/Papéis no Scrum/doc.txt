@@ -1,0 +1,16 @@
+Papéis no Scrum
+Uma equipe Scrum é composta pelo Product Owner (Dono de Produto), Scrum Master e Scrum team.
+
+ 
+
+O Dono do Produto, ou Product Owner, faz o papel do cliente, determinando os requisitos e funcionalidades que deverão ser entregues, incluindo as suas mudanças, além de manter e comunicar às partes interessadas uma visão clara do projeto e estar disponível para esclarecer eventuais questionamentos.
+
+
+
+O Scrum Master é o responsável por garantir que as regras do método Scrum estejam sendo seguidas, desempenhando, também, funções de um facilitador na resolução de problemas ou nas interferências externas. O Scrum Master é o mantenedor das regras e dos procedimentos do Scrum durante a execução do projeto, auxiliando a todos da equipe a entenderem seus papéis no processo.
+
+
+
+A Scrum Team, ou equipe scrum, é multidisciplinar, incluindo os especialistas necessários para desenvolver o produto de forma a não depender de membros externos, tais como programadores, administradores de banco de dados, web designers etc.
+
+

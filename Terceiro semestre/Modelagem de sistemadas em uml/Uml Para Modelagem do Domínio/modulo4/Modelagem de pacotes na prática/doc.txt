@@ -1,0 +1,20 @@
+
+Modelagem de pacotes na prática
+A modelagem de pacotes, como parte integrante do processo de desenvolvimento de software, demanda uma compreensão profunda das estruturas e relações entre os componentes do sistema. Assim, por meio da prática, são desenvolvidas habilidades importantes, como a capacidade de dividir logicamente um sistema em módulos coesos, identificar dependências entre pacotes e organizar eficientemente a arquitetura do software. Além disso, a prática também facilita a colaboração entre equipes, permitindo uma divisão clara de responsabilidades.
+
+Como exercício prático, veremos como o minimundo locadora de automóveis, usado como exemplo, poderia ser agrupado em pacotes. Vamos lá!
+
+Você vai conferir, no vídeo, a prática da modelagem de pacotes por meio do diagrama de pacotes que representa a estrutura modular do software. Esse diagrama organiza elementos relacionados em pacotes, mostra dependências entre eles, facilita a gestão de complexidade e promove a modularidade e reutilização no desenvolvimento de sistemas a partir de um determinado minimundo, utilizando a UML.
+
+
+Roteiro de prática
+O minimundo utilizado, apesar de bem simples, pode ser usado para essa modelagem, pois os conceitos principais podem ser compreendidos independentemente do tamanho do exemplo. Para criar o diagrama de pacotes relacionado ao modelo de classes do exemplo, siga os passos a seguir:
+
+Identificação dos módulos principais: analise o modelo de classes e identifique os principais grupos de classes que representam funcionalidades ou componentes relacionados. No exemplo, cliente, aluguel e veículo são os principais grupos lógicos.
+Agrupamento lógico: reúna as classes em pacotes de acordo com a sua funcionalidade ou responsabilidade. Cada pacote deve conter classes que estejam relacionadas e que contribuam para uma parte específica do sistema. No exemplo, o pacote cliente contém a classe cliente; o pacote aluguel, as classes aluguel e funcionário; e o pacote veículo contém as classes veículo e tipo veículo.
+Definição de dependências: identifique as dependências entre os pacotes, o que envolve determinar quais pacotes dependem de outros para funcionarem corretamente. Essas dependências podem ser representadas por setas que conectam os pacotes no diagrama. No exemplo, essas dependências são representadas pelas associações entre as classes pertencentes a cada pacote, como pode ser visto na Imagem 8 adiante.
+Organização hierárquica: organize, se necessário, os pacotes em uma estrutura hierárquica, mostrando níveis de abstração ou modularidade no sistema. No caso em tela, temos que um aluguel só pode ser realizado se o veículo estiver previamente cadastrado. Se o sistema for expandido, podemos pensar um pacote funcionário para cadastro e em cadastro de clientes, havendo necessidade de criação de casos de uso respectivos.
+Refinamento e revisão: revise o diagrama de pacotes para garantir que ele represente com precisão a estrutura e as relações entre os componentes do sistema, fazendo ajustes conforme necessário.
+Por fim, observe a imagem 8, que representa o diagrama de pacotes para o roteiro de prática:
+
+Imagem 8: Diagrama de pacotes.

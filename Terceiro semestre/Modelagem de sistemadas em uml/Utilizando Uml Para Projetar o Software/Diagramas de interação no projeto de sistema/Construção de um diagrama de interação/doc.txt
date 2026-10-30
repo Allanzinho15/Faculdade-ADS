@@ -1,0 +1,98 @@
+Construção de um diagrama de interação
+Para construir um diagrama de interação, seja de sequência ou de comunicação, é necessário seguir passos específicos: determinar o caso de uso, identificar os objetos envolvidos e suas conexões, definir a sequência de mensagens e seus tipos, e usar um software UML apropriado para criar o diagrama. Esses diagramas ajudam a visualizar a dinâmica entre objetos e a refinar modelos de casos de uso e de classes, tornando a interação do sistema mais clara e compreensível.
+
+
+Este vídeo apresenta a construção de um diagrama de interação, bem como em que momento essa construção ocorre ao longo do processo de desenvolvimento de software.
+
+
+
+Como construir um diagrama de interação?
+
+Para criação de um diagrama de interação (sequência ou comunicação), você pode seguir os seguintes passos (em geral):
+
+ 
+
+Determine o caso de uso que será modelado e identifique suas operações.
+ 
+Para cada operação, identifique os objetos que farão parte de sua interação.
+ 
+Identifique as conexões e os relacionamentos entre eles e, em seguida, categorize-os.
+ 
+Identifique a sequência de fluxos de mensagens na interação entre os objetos.
+ 
+Identifique os tipos de mensagens, bem como sua sequência.
+ 
+Em seu software de diagramas UML, selecione as formas apropriadas para criar o diagrama.
+ 
+Insira um rótulo para todas as formas para representar cada evento, interação e mensagem em seu sistema.
+ 
+Nomeie o diagrama com algo que o identifique claramente, para facilitar na sua busca.
+
+As classes conceituais identificadas, que participam em cada caso de uso, correspondem às entidades do mundo real envolvidas na tarefa do caso do uso, como se este fosse executado manualmente. Durante a modelagem de interações, objetos dessas classes participam da realização de um ou mais casos de uso. Por outro lado, durante a modelagem de interações, o projetista pode ter a necessidade de adicionar classes de software (ou seja, classes da aplicação que não têm correspondência no mundo real) que ajudem a organizar as tarefas a serem executadas. Essas classes de software normalmente são necessárias para manter a coesão e o acoplamento das demais classes em um nível adequado.
+
+
+Dica
+Não se recomenda incluir o ator nem o objeto de fronteira primeiramente, porque isso dificulta o entendimento. É mais recomendado iniciar a modelagem da interação com a representação do recebimento da mensagem para ativação da operação de sistema, no caso de uso. Essa recomendação ajuda a separar a lógica do domínio e a lógica da interface com o usuário.
+
+
+Durante a aplicação do procedimento descrito acima, o projetista deve procurar construir diagramas de interação o mais inteligíveis possível. Por exemplo, é possível utilizar notas explicativas para esclarecer algumas partes do diagrama de interação. Essas notas podem conter texto livre ou pseudocódigo para orientar a programação.
+
+
+Outra estratégia que ajuda a construir um modelo de interações mais inteligível é utilizar os recursos de modularização (alt, loop, opt).
+
+
+
+Sempre que for adequado, o projetista deve fazer, com base nos princípios de projeto, com que as classes de domínio enviem mensagens entre si. Dessa forma, o controlador envia uma mensagem para um objeto do domínio e este, por sua vez, dispara o envio de mensagens para outros objetos do domínio, o que evita que o controlador precise ter conhecimento desses últimos.
+
+
+Em que momento construir o modelo de interações?
+
+Alguns textos sobre modelagem de sistemas orientados a objetos indicam o início da modelagem de interações já na atividade de análise. Outros defendem o início de sua construção somente na etapa de projeto. O fato é que a distinção entre essas duas fases não é tão nítida na modelagem orientada a objetos e a modelagem de interações pode ser realizada em ambas as fases. Vamos entender melhor?
+
+
+A
+Análise
+
+
+Nesta fase, podemos começar a construir o modelo de interações logo depois que uma primeira versão do modelo de casos de uso estiver pronta. Inicialmente, o modelo de interações pode ser utilizado para representar apenas os objetos participantes em cada caso de uso e com mensagens exibindo somente o nome da operação.
+
+
+B
+Projeto
+
+
+Já na etapa de projeto, o modelo de interações deve ser mais refinado, incluindo:
+
+ 
+
+Criação e destruição de objetos.
+ 
+Detalhes sobre o tipo.
+ 
+Assinatura completa de cada mensagem etc.
+
+C
+Processo incremental e interativo
+
+
+Nos processos incremental e interativo de desenvolvimento, cujos modelos evoluem juntos durante o desenvolvimento do sistema, eles são interdependentes. Isto ocorre mesmo que estes modelos representem visões distintas do sistema.
+
+
+Os itens a seguir demonstram como o modelo de interações se relaciona aos de casos de uso e de classes.
+
+
+
+Modelo de casos de uso ➔ modelo de interações
+Utilizamos os cenários extraídos do modelo de casos de uso como fonte de identificação de mensagens na modelagem de interações. É adequado que se verifique se cada cenário relevante para todos os casos de uso foi considerado na modelagem de interações.
+
+
+Modelo de classes de análise ➔ modelo de interações
+Utilizamos informações provenientes do modelo de classes para construir modelos de interações. Em particular, algumas responsabilidades já podem ter sido definidas durante a modelagem de classes de análise. A notação do diagrama de interações não precisa ser totalmente utilizada na fase de análise. Em particular, podemos definir diagramas de interação que apresentam as mensagens apenas com os seus nomes. Essa definição inicial deve ser refinada posteriormente com a utilização da sintaxe mais avançada.
+
+
+Modelo de interações ➔ modelo de casos de uso
+A partir do conhecimento adquirido com a construção do modelo de interações, podemos aperfeiçoar e validar os cenários do modelo de casos de uso.
+
+
+Modelo de interações ➔ modelo de classes
+Surge da necessidade de se disponibilizar informações necessárias para a alocação e o detalhamento de operações (métodos) durante a construção de modelos de interações. Exemplo: informações que não haviam sido identificadas anteriormente, mas, necessárias a certa classe de análise. Portanto, durante a modelagem de interações, operações são identificadas e novos atributos também podem ser identificados. Outro elemento, comumente identificado ou validado pela construção do modelo de interações, é a associação, em que uma mensagem entre objetos implica a existência de uma associação entre as classes envolvidas. Além disso, também é comum identificarmos novas classes , principalmente aquelas relacionadas ao domínio da solução do problema.
